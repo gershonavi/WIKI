@@ -15,7 +15,21 @@ def wiki_name(title):
     return urllib.parse.quote(title.replace(' ', '-'))
 
 
+def footnotes_to_list(md):
+    """GitHub wikis do not render [^n] footnotes; turn them into a numbered list."""
+    defs = dict(re.findall(r'^\[\^(\w+)\]: (.*)$', md, flags=re.M))
+    if not defs:
+        return md
+    md = re.sub(r'^\[\^(\w+)\]: .*\n?', '', md, flags=re.M)
+    md = re.sub(r'\[\^(\w+)\]', lambda m: f'<sup>[[{m.group(1)}]](#user-content-fn-{m.group(1)})</sup>', md)
+    notes = '\n'.join(f'<a id="fn-{k}"></a>{k}. {v}  ' for k, v in defs.items())
+    marker = '\n---\n'
+    i = md.find(marker)
+    return (md[:i] + '\n\n' + notes + '\n' + md[i:]) if i >= 0 else md + '\n\n' + notes + '\n'
+
+
 def convert(md):
+    md = footnotes_to_list(md)
     md = re.sub(r'\]\(([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
     md = md.replace('](../wiki/', f']({REPO}/blob/main/wiki/')
     md = md.replace('](LICENSE-CONTENT.md)', f']({REPO}/blob/main/LICENSE-CONTENT.md)')

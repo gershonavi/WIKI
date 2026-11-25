@@ -123,7 +123,8 @@ def strip_file_links(s):
         caption = parts[-1] if len(parts) > 1 else ''
         caption = re.sub(r'\[\[(?:[^|\]]*\|)?([^\]]*)\]\]', r'\1', caption)
         url = 'https://commons.wikimedia.org/wiki/Special:FilePath/' + urllib.parse.quote(fname.replace(' ', '_'))
-        out.append(f'<div class="image">[{url} תמונה: {fname}]</div>\n\n')
+        cap = caption.replace('"', "'")
+        out.append(f'<img src="{url}" alt="{cap}" width="320">\n\n')
         i = k
     return ''.join(out)
 
@@ -156,7 +157,8 @@ def fix_links(md, local):
         if t in local:
             return f'[{label}]({urllib.parse.quote(t)}.md)'
         return f'[{label}](https://he.wikipedia.org/wiki/{urllib.parse.quote(t.replace(" ", "_"))})'
-    return re.sub(r'\[([^\]]*)\]\(([^)\s]+)(?: "wikilink")?\)', repl, md)
+    md = re.sub(r'\[([^\]]*)\]\((\S+?) "wikilink"\)', repl, md)
+    return re.sub(r'\[([^\]]*)\]\(([^)\s]+)\)', repl, md)
 
 
 def write_index(files, sources):

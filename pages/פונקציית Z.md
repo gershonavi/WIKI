@@ -1,12 +1,8 @@
 # פונקציית Z
 
-<div class="image">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Z_function_in_the_complex_plane%2C_-5%2C_5.svg" alt="פונקציית Z במישור המרוכב, בשיטת צביעת תחום." width="320">
 
-[תמונה: Z function in the complex plane, -5, 5.svg](https://commons.wikimedia.org/wiki/Special:FilePath/Z_function_in_the_complex_plane%2C_-5%2C_5.svg)
-
-<div class="image">
-
-[תמונה: Z function in the complex plane, -40 -- 40.svg](https://commons.wikimedia.org/wiki/Special:FilePath/Z_function_in_the_complex_plane%2C_-40_--_40.svg)
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Z_function_in_the_complex_plane%2C_-40_--_40.svg" alt="פונקציית Z במישור המרוכב, בתחום רחב יותר." width="320">
 
 ב[מתמטיקה](https://he.wikipedia.org/wiki/%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%A7%D7%94), **פונקציית Z** (ב[אנגלית](https://he.wikipedia.org/wiki/%D7%90%D7%A0%D7%92%D7%9C%D7%99%D7%AA): Z function) היא [פונקציה](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94) המשמשת לחקר [פונקציית זטא של רימן](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA_%D7%96%D7%98%D7%90_%D7%A9%D7%9C_%D7%A8%D7%99%D7%9E%D7%9F) לאורך הישר הקריטי, שבו החלק הממשי של הארגומנט הוא חצי. היא נקראת גם **פונקציית Z של רימן-זיגל**, **פונקציית הזטא של רימן-זיגל**, **פונקציית הארדי** ו**פונקציית Z של הארדי**, על שם [גודפרי הרולד הארדי](https://he.wikipedia.org/wiki/%D7%92%D7%95%D7%93%D7%A4%D7%A8%D7%99_%D7%94%D7%A8%D7%95%D7%9C%D7%93_%D7%94%D7%90%D7%A8%D7%93%D7%99). אפשר להגדיר אותה בעזרת פונקציית התטא של רימן-זיגל $`\theta(t)`$ ופונקציית זטא של רימן:
 
@@ -128,7 +124,7 @@ Z(t) = \Omega\left( \exp\left(\frac{3}{4}\sqrt{\frac{\log t}{\log \log t}}\right
 
 ### השערת לינדלף
 
-*ערך מורחב: [השערת לינדלף](%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9C%D7%99%D7%A0%D7%93%D7%9C%D7%A3.md)* חזקות זוגיות גבוהות יותר נחקרו רבות, אך ידוע פחות על הממוצעים המתאימים. משערים, וזה נובע מהשערת רימן, ש-
+*ערך מורחב: [השערת לינדלף](https://he.wikipedia.org/wiki/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA_%D7%9C%D7%99%D7%A0%D7%93%D7%9C%D7%A3.md)* חזקות זוגיות גבוהות יותר נחקרו רבות, אך ידוע פחות על הממוצעים המתאימים. משערים, וזה נובע מהשערת רימן, ש-
 
 
 
@@ -136,7 +132,7 @@ Z(t) = \Omega\left( \exp\left(\frac{3}{4}\sqrt{\frac{\log t}{\log \log t}}\right
 \frac{1}{T} \int_0^T Z(t)^{2k} \, dt = o(T^\varepsilon)
 ```
 
- לכל $`\varepsilon`$ חיובי. כאן הסימון $`o`$ הקטן פירושו שהמנה של האגף השמאלי באגף הימני *כן* שואפת לאפס; כלומר, $`o`$ הקטן הוא השלילה של $`\Omega`$. השערה זו נקראת [השערת לינדלף](%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9C%D7%99%D7%A0%D7%93%D7%9C%D7%A3.md), והיא חלשה יותר מהשערת רימן. בדרך כלל מנסחים אותה בצורה השקולה
+ לכל $`\varepsilon`$ חיובי. כאן הסימון $`o`$ הקטן פירושו שהמנה של האגף השמאלי באגף הימני *כן* שואפת לאפס; כלומר, $`o`$ הקטן הוא השלילה של $`\Omega`$. השערה זו נקראת [השערת לינדלף](https://he.wikipedia.org/wiki/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA_%D7%9C%D7%99%D7%A0%D7%93%D7%9C%D7%A3.md), והיא חלשה יותר מהשערת רימן. בדרך כלל מנסחים אותה בצורה השקולה
 
 
 
@@ -157,7 +153,7 @@ Z(t) = o\left(\exp\left(\frac{10 \log t}{\log \log t}\right)\right),
 ## ראו גם
 
 - [פונקציית זטא של רימן](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA_%D7%96%D7%98%D7%90_%D7%A9%D7%9C_%D7%A8%D7%99%D7%9E%D7%9F)
-- [השערת לינדלף](%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9C%D7%99%D7%A0%D7%93%D7%9C%D7%A3.md)
+- [השערת לינדלף](https://he.wikipedia.org/wiki/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA_%D7%9C%D7%99%D7%A0%D7%93%D7%9C%D7%A3.md)
 - [השערת רימן](https://he.wikipedia.org/wiki/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA_%D7%A8%D7%99%D7%9E%D7%9F)
 
 ## לקריאה נוספת
