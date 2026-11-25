@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+"""Copy pages/*.md into a checkout of the GitHub wiki (WIKI.wiki).
+
+Usage: python3 sync_wiki.py PATH_TO_WIKI_CHECKOUT
+Run build.py first. Links are rewritten for the wiki's flat page names.
+"""
+import os, re, sys, urllib.parse
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+PAGES = os.path.join(ROOT, 'pages')
+REPO = 'https://github.com/gershonavi/WIKI'
+
+
+def wiki_name(title):
+    return urllib.parse.quote(title.replace(' ', '-'))
+
+
+def convert(md):
+    md = re.sub(r'\]\(([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
+    md = md.replace('](../wiki/', f']({REPO}/blob/main/wiki/')
+    md = md.replace('](LICENSE-CONTENT.md)', f']({REPO}/blob/main/LICENSE-CONTENT.md)')
+    md = md.replace('](LICENSE)', f']({REPO}/blob/main/LICENSE)')
+    return md
+
+
+def main(dest):
+    titles = sorted(f[:-3] for f in os.listdir(PAGES) if f.endswith('.md'))
+    for t in titles:
+        md = open(os.path.join(PAGES, t + '.md'), encoding='utf-8').read()
+        md = re.sub(r'^# .*\n\n', '', md, count=1)  # the wiki shows the title itself
+        open(os.path.join(dest, t + '.md'), 'w', encoding='utf-8').write(convert(md))
+    readme = open(os.path.join(ROOT, 'README.md'), encoding='utf-8').read()
+    home = re.sub(r'\]\(pages/([^)]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', readme)
+    home = re.sub(r'^# .*\n', '', home, count=1)
+    home = convert(home).replace('`wiki/`', f'[`wiki/`]({REPO}/tree/main/wiki)').replace('`pages/`', f'[`pages/`]({REPO}/tree/main/pages)')
+    open(os.path.join(dest, 'Home.md'), 'w', encoding='utf-8').write(home)
+    side = ['**[דף הבית](Home)**', '', f'**[הריפו]({REPO})**', '']
+    side += [f'* [{t}]({wiki_name(t)})' for t in titles]
+    open(os.path.join(dest, '_Sidebar.md'), 'w', encoding='utf-8').write('\n'.join(side) + '\n')
+    open(os.path.join(dest, '_Footer.md'), 'w', encoding='utf-8').write(
+        f'התוכן מתורגם מוויקיפדיה האנגלית ומופץ ברישיון [CC BY-SA 4.0]({REPO}/blob/main/LICENSE-CONTENT.md). '
+        f'הקוד ברישיון [MIT]({REPO}/blob/main/LICENSE).\n')
+    print(f'synced {len(titles)} pages')
+
+
+if __name__ == '__main__':
+    main(sys.argv[1])
