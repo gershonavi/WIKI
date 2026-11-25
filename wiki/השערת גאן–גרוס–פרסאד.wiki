@@ -1,0 +1,59 @@
+ב[[מתמטיקה]], '''השערת גאן–גרוס–פרסאד''' היא בעיית צמצום בתורת ההצגות של חבורות לי ממשיות או <math>p</math>-אדיות, שהציגו גאן וי טק, בנדיקט גרוס ודיפנדרה פרסאד.{{הערה|שם=GGP|1=W. T. Gan, B. H. Gross, D. Prasad, ''Symplectic local root numbers, central critical L-values, and restriction problems in the representation theory of classical groups'', Astérisque '''346''' (2012), pp. 1–109|כיווון=שמאל}} הבעיה צמחה מהשערה של גרוס ופרסאד עבור חבורות אורתוגונליות מיוחדות, והוכללה מאוחר יותר לכל ארבע החבורות הקלאסיות. במקרים שנבחנים ידוע ש'''הריבוי של הצמצומים הוא לכל היותר אחד''',{{הערה|1=A. Aizenbud, D. Gourevitch, S. Rallis, G. Schiffmann, ''Multiplicity one theorems'', Annals of Mathematics '''172''' (2010), no. 2, pp. 1407–1434, arXiv:0709.4215|כיווון=שמאל}}{{הערה|1=B. Sun, ''Multiplicity one theorems for Fourier–Jacobi models'', American Journal of Mathematics '''134''' (2012), no. 6, pp. 1655–1678, arXiv:0903.1417|כיווון=שמאל}}{{הערה|1=B. Sun, C.-B. Zhu, ''Multiplicity one theorems: the Archimedean case'', Annals of Mathematics '''175''' (2012), no. 1, pp. 23–44, arXiv:0903.1413|כיווון=שמאל}} וההשערה מתארת מתי הריבוי הוא בדיוק אחד.
+
+== מוטיבציה ==
+דוגמה מניעה היא בעיית ההסתעפות הקלאסית הבאה בתורה של חבורות לי קומפקטיות. תהי <math>\pi</math> הצגה אי-פריקה סופית-ממדית של החבורה האוניטרית הקומפקטית <math>U(n)</math>, ונתבונן בצמצום שלה לתת-החבורה המשוכנת באופן טבעי <math>U(n-1)</math>. ידוע שהצמצום הזה חסר ריבויים, אבל אפשר לשאול אילו בדיוק הצגות אי-פריקות של <math>U(n-1)</math> מופיעות בו.
+
+לפי תורת המשקל העליון של קרטן–וייל, ההצגות האי-פריקות של <math>U(n)</math> מסווגות לפי המשקלים העליונים שלהן, שנמצאים בהתאמה טבעית עם סדרות של מספרים שלמים <math>\underline{a} = (a_1 \geq a_2 \geq \cdots \geq a_n)</math>. נניח ש-<math>\pi</math> בעלת משקל עליון <math>\underline{a}</math>. אז הצגה אי-פריקה <math>\tau</math> של <math>U(n-1)</math> עם משקל עליון <math>\underline{b}</math> מופיעה בצמצום של <math>\pi</math> ל-<math>U(n-1)</math> אם ורק אם <math>\underline{a}</math> ו-<math>\underline{b}</math> '''משתלבים''', כלומר <math>a_1 \geq b_1 \geq a_2 \geq b_2 \geq \cdots \geq b_{n-1} \geq a_n</math>.{{הערה|1=H. Weyl, ''The Theory of Groups and Quantum Mechanics'', Dover Publications, 1950|כיווון=שמאל}}
+
+למשל, עבור <math>n = 2</math> וההצגה עם משקל עליון <math>(2, 0)</math> (ממימד 3), המשקלים <math>b_1</math> המשתלבים הם <math>0, 1, 2</math>: הצמצום ל-<math>U(1)</math> הוא סכום של שלושה קרקטרים שונים, כל אחד פעם אחת.
+
+השערת גאן–גרוס–פרסאד עוסקת בבעיית הצמצום המקבילה עבור חבורות קלאסיות אחרות (ובפרט חבורות לא קומפקטיות ו-<math>p</math>-אדיות).{{הערה|1=W. T. Gan, ''Recent progress on the Gross–Prasad conjecture'', Acta Mathematica Vietnamica '''39''' (2014), no. 1, pp. 11–33|כיווון=שמאל}}
+
+== הניסוח ==
+להשערה יש צורות שונות במקצת עבור החבורות הקלאסיות השונות. הניסוח עבור חבורות אוניטריות הוא כדלקמן.
+
+=== המסגרת ===
+יהי <math>V</math> מרחב וקטורי סופי-ממדי מעל שדה <math>k</math> שאינו ממאפיין 2, עם תבנית ססקוויליניארית לא מנוונת שהיא <math>\varepsilon</math>-הרמיטית (כלומר <math>\varepsilon = 1</math> אם התבנית הרמיטית, ו-<math>\varepsilon = -1</math> אם היא אנטי-הרמיטית). יהי <math>W</math> תת-מרחב לא מנוון של <math>V</math> כך ש-<math>V = W \oplus W^\perp</math> ו-<math>W^\perp</math> ממימד <math>(\varepsilon + 1)/2</math>. נגדיר <math>G = G(V) \times G(W)</math>, כאשר <math>G(V)</math> היא החבורה האוניטרית ששומרת על התבנית על <math>V</math>, ותהי <math>H = \Delta G(W)</math> תת-החבורה האלכסונית של <math>G</math>.
+
+תהי <math>\pi = \pi_1 \boxtimes \pi_2</math> הצגה חלקה אי-פריקה של <math>G</math>, ותהי <math>\nu</math> ההצגה הטריוויאלית ("המקרה של בסל") או הצגת וייל ("המקרה של פורייה–יעקובי"). יהי <math>\varphi = \varphi_1 \times \varphi_2</math> פרמטר L גנרי של <math>G = G(V) \times G(W)</math>, ויהי <math>\Pi_\varphi</math> חבילת ה-L של ווגן המתאימה.
+
+=== השערת גאן–גרוס–פרסאד המקומית ===
+אם <math>\varphi</math> הוא פרמטר L מקומי של <math>G</math>, אז
+
+:<math>\sum_{\text{relevant } \pi \in \Pi_\varphi} \dim \mathrm{Hom}_H (\pi \otimes \overline{\nu}, \mathbb{C}) = 1.</math>
+
+כלומר, בתוך כל חבילה יש בדיוק הצגה "רלוונטית" אחת שהצמצום שלה ל-<math>H</math> מכיל את <math>\nu</math>. יתרה מזו, אם <math>\eta_{\mathrm{GP}}</math> הוא "הקרקטר המובחן", המוגדר בעזרת [[הקבוע המקומי של לנגלנדס–דלין|הקבועים המקומיים של לנגלנדס–דלין]], אז
+
+:<math>\mathrm{Hom}_H (\pi(\varphi, \eta) \otimes \overline{\nu}, \mathbb{C}) \neq 0 \iff \eta = \eta_{\mathrm{GP}}.</math>
+
+=== השערת גאן–גרוס–פרסאד הגלובלית ===
+עבור הרחבה ריבועית של שדות <math>E/F</math>, נסמן <math>L_E(s, \pi_1 \times \pi_2) := L_E(s, \pi_1 \boxtimes \pi_2, \mathrm{std}_n \boxtimes \mathrm{std}_{n-1})</math>, כאשר <math>L_E</math> היא [[פונקציית L]] הגלובלית, המכפלה של הגורמים המקומיים שנתונים על ידי השערות לנגלנדס המקומיות. ההשערה אומרת שהטענות הבאות שקולות:
+# אינטגרל התקופה <math>P_H</math> אינו מתאפס על <math>\pi</math>.
+# לכל מקום <math>v</math>, מרחב ה-Hom המקומי <math>\mathrm{Hom}_{H(F_v)}(\pi_v, \nu_v) \neq 0</math>, ו-<math>L_E(1/2, \pi_1 \times \pi_2) \neq 0</math>.
+
+כלומר, אי-התאפסות של אינטגרל תקופה אוטומורפי שקולה לאי-התאפסות של [[ערכים מיוחדים של פונקציות L|ערך מרכזי]] של פונקציית L (יחד עם תנאים מקומיים). [[משפט ולדספורגר]] על המקרה של <math>\mathrm{SO}(3) \times \mathrm{SO}(2)</math> הוא אחד המקורות של ההשערה.
+
+== המצב הנוכחי ==
+=== ההשערה המקומית ===
+בסדרה של ארבעה מאמרים בין 2010 ל-2012 הוכיח ז'אן-לו ולדספורגר את השערת גאן–גרוס–פרסאד המקומית עבור הצגות ממותנות של חבורות אורתוגונליות מיוחדות מעל שדות <math>p</math>-אדיים.{{הערה|1=J.-L. Waldspurger, ''Une formule intégrale reliée à la conjecture locale de Gross–Prasad'', Compositio Mathematica '''146''' (2010), no. 5, pp. 1180–1290, arXiv:0902.1875|כיווון=שמאל}}{{הערה|1=J.-L. Waldspurger, ''Une formule intégrale reliée à la conjecture locale de Gross–Prasad, 2ème partie: extension aux représentations tempérées'', Astérisque '''347''' (2012), pp. 171–311|כיווון=שמאל}}{{הערה|1=J.-L. Waldspurger, ''La conjecture locale de Gross–Prasad pour les représentations tempérées des groupes spéciaux orthogonaux'', Astérisque '''347''' (2012), pp. 103–166|כיווון=שמאל}}{{הערה|1=J.-L. Waldspurger, ''Calcul d'une valeur d'un facteur ε par une formule intégrale'', Astérisque '''347''' (2012)|כיווון=שמאל}} (בערך האנגלי המאמר הראשון מתוארך ל-2012; כרך 146 של Compositio Mathematica יצא ב-2010.) ב-2012 הוכיחו קולט מוגלן וולדספורגר את ההשערה המקומית עבור הצגות גנריות לא ממותנות של חבורות אורתוגונליות מיוחדות מעל שדות <math>p</math>-אדיים.{{הערה|1=C. Moeglin, J.-L. Waldspurger, ''La conjecture locale de Gross–Prasad pour les groupes spéciaux orthogonaux: le cas général'', Astérisque '''347''' (2012)|כיווון=שמאל}}
+
+בעבודת הדוקטורט שלו מ-2013 הוכיח רפאל בוזאר-פלסי את ההשערה המקומית עבור ההצגות הממותנות של חבורות אוניטריות במקרה ההרמיטי ה-<math>p</math>-אדי, תחת אותן הנחות שנדרשות לביסוס השערת לנגלנדס המקומית.{{הערה|1=R. Beuzart-Plessis, ''La conjecture locale de Gross–Prasad pour les représentations tempérées des groupes unitaires'', עבודת דוקטורט, 2012|כיווון=שמאל}}
+
+הונגיו הה הוכיח את השערות גאן–גרוס–פרסאד עבור הצגות מהסדרה הבדידה של החבורה האוניטרית הממשית <math>U(p,q)</math>.{{הערה|1=H. He, ''On the Gan–Gross–Prasad conjectures for U(p,q)'', Inventiones Mathematicae '''209''' (2017), no. 3, pp. 837–884, arXiv:1508.02032|כיווון=שמאל}}
+
+=== ההשערה הגלובלית ===
+בסדרה של מאמרים בין 2004 ל-2009 הראו דייוויד גינזבורג, דיהואה ג'יאנג וסטיבן ראליס את הכיוון של ההשערה הגלובלית שבו (1) גורר את (2) עבור כל החבורות הקלאסיות המפוצלות-למחצה.{{הערה|1=D. Ginzburg, D. Jiang, S. Rallis, ''On the nonvanishing of the central value of the Rankin–Selberg L-functions'', Journal of the AMS '''17''' (2004), no. 3, pp. 679–722|כיווון=שמאל}}{{הערה|1=D. Ginzburg, D. Jiang, S. Rallis, ''On the nonvanishing of the central value of the Rankin–Selberg L-functions II'', in: Automorphic Representations, L-Functions and Applications: Progress and Prospects, de Gruyter, 2005, pp. 157–191|כיווון=שמאל}}{{הערה|1=D. Ginzburg, D. Jiang, S. Rallis, ''Models for certain residual representations of unitary groups'', in: Automorphic Forms and L-functions I, Contemporary Mathematics '''488''', AMS, 2009, pp. 125–146|כיווון=שמאל}}
+
+במקרה של בסל של ההשערה הגלובלית עבור חבורות אוניטריות, השתמש וי ז'אנג בתורת נוסחת העקבה היחסית של אֵרווה ז'אקה ובעבודה של ז'יוויי יון על הלמה היסודית, כדי להוכיח ב-2014 שההשערה נכונה בכפוף לתנאים מקומיים מסוימים.{{הערה|1=W. Zhang, ''Fourier transform and the global Gan–Gross–Prasad conjecture for unitary groups'', Annals of Mathematics '''180''' (2014), no. 3, pp. 971–1049|כיווון=שמאל}} (בערך האנגלי, הפרטים הביבליוגרפיים של המאמר של ז'אנג – ה-DOI ומספר ה-arXiv – הועתקו בטעות מהמאמר של סון וז'ו.)
+
+במקרה של פורייה–יעקובי של ההשערה הגלובלית עבור חבורות אוניטריות, הראו יפנג ליו והאנג שואה שההשערה נכונה במקרה האנטי-הרמיטי, בכפוף לתנאים מקומיים מסוימים.{{הערה|1=Y. Liu, ''Relative trace formulae toward Bessel and Fourier–Jacobi periods of unitary groups'', Manuscripta Mathematica '''145''' (2014), no. 1–2, pp. 1–69, arXiv:1012.4538|כיווון=שמאל}}{{הערה|1=H. Xue, ''The Gan–Gross–Prasad conjecture for U(n) × U(n)'', Advances in Mathematics '''262''' (2014), pp. 1130–1191|כיווון=שמאל}}
+
+במקרה של בסל של ההשערה הגלובלית עבור חבורות אורתוגונליות מיוחדות וחבורות אוניטריות, השתמשו דיהואה ג'יאנג ולֵיי ז'אנג בתורת הירידות האוטומורפיות המעוותות כדי להוכיח ש-(1) גורר את (2) באופן כללי לגמרי, כלומר לכל הצגה אוטומורפית חודית אי-פריקה עם פרמטר ארתור גלובלי גנרי, וש-(2) גורר את (1) בכפוף להנחה גלובלית מסוימת.{{הערה|1=D. Jiang, L. Zhang, ''Arthur parameters and cuspidal automorphic modules of classical groups'', Annals of Mathematics '''191''' (2020), no. 3, pp. 739–827, arXiv:1508.03205|כיווון=שמאל}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות אוטומורפיות]]
+[[קטגוריה:השערות במתמטיקה]]
+[[קטגוריה:תוכנית לנגלנדס]]
+[[קטגוריה:פונקציות זטא]]
