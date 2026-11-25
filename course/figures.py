@@ -2850,6 +2850,49 @@ def _():
     save('15-6')
 
 
+@fig('16-ma')
+def _():
+    N = 2 * 10 ** 6 - 1000
+    c = np.concatenate([[0], np.cumsum([isp(int(k)) for k in range(1, N + 2)])])
+    xs = np.arange(200000, N - 400, 97)
+    h = (np.log(xs) ** 2).astype(int)
+    real = (c[xs + h] - c[xs]) / np.log(xs)
+    rng = np.random.default_rng(3)
+    model = rng.binomial(h, 1 / np.log(xs)) / np.log(xs)
+    ax = plt.gca()
+    bins = np.linspace(0, 2.2, 45)
+    ax.hist(model, bins, color=GR, alpha=.6, label='Cramér model (independent coins)')
+    ax.hist(real, bins, histtype='step', color=C1, lw=2, label='real primes')
+    ax.axvline(1, color=C2, ls='--', lw=1)
+    ax.set_xlabel('(π(x + log²x) − π(x)) / log x'); ax.set_yticks([])
+    ax.set_title('Primes in short intervals vs. Cramér\'s model', fontsize=10); ax.legend(fontsize=7)
+    save('16-ma')
+
+
+@fig('11-6')
+def _():
+    from fractions import Fraction as Fr
+    from math import comb
+    import mpmath
+    mpmath.mp.dps = 60
+    z3 = mpmath.zeta(3)
+    ns = range(1, 13)
+    ap, ps = [], []
+    for n in ns:
+        cnk = lambda k: sum(Fr(1, m ** 3) for m in range(1, n + 1)) + sum(Fr((-1) ** (m - 1), 2 * m ** 3 * comb(n, m) * comb(n + m, m)) for m in range(1, k + 1))
+        b = sum(comb(n, k) ** 2 * comb(n + k, k) ** 2 for k in range(n + 1))
+        a = sum(cnk(k) * comb(n, k) ** 2 * comb(n + k, k) ** 2 for k in range(n + 1))
+        ap.append(float(abs(mpmath.mpf(a.numerator) / a.denominator / b - z3)))
+        ps.append(float(abs(mpmath.fsum(mpmath.mpf(1) / m ** 3 for m in range(1, n + 1)) - z3)))
+    ax = plt.gca()
+    ax.semilogy(list(ns), ap, 'o-', color=C1, label='Apéry: a_n / b_n')
+    ax.semilogy(list(ns), ps, 's-', color=GR, label='partial sums Σ 1/m³')
+    ax.semilogy(list(ns), [(np.sqrt(2) - 1) ** (8 * n) for n in ns], '--', color=C2, lw=1, label='(√2 − 1)^{8n} ≈ 0.00087^n')
+    ax.set_xlabel('n'); ax.set_ylabel('error |· − ζ(3)|'); ax.legend(fontsize=7)
+    ax.set_title('Apéry\'s approximations to ζ(3) gain ~3 digits per step', fontsize=10)
+    save('11-6')
+
+
 
 if __name__ == '__main__':
     import sys
