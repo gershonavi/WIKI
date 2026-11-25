@@ -130,7 +130,7 @@ Additive number theory:
 - [ ] Teichmüller character
 - [x] Gauss sum
 - [x] Jacobi sum
-- [ ] Stickelberger's theorem
+- [x] Stickelberger's theorem
 - [ ] Hasse–Davenport relation
 - [ ] Herbrand–Ribet theorem
 - [ ] Main conjecture of Iwasawa theory

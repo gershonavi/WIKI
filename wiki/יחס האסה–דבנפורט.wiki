@@ -1,0 +1,32 @@
+'''יחסי האסה–דבנפורט''', שהציגו הרולד דבנפורט ו[[הלמוט האסה]] (1935), הם שתי זהויות קשורות ל[[סכום גאוס|סכומי גאוס]]: האחת נקראת '''יחס ההרמה של האסה–דבנפורט''', והשנייה '''יחס המכפלה של האסה–דבנפורט'''. יחס ההרמה הוא שוויון ב[[תורת המספרים]] שמקשר בין סכומי גאוס מעל שדות שונים. [[אנדרה וייל]] (1949) השתמש בו כדי לחשב את פונקציית הזטא של על-משטח פרמה מעל [[שדה סופי]], וזה היה המניע ל[[השערות וייל]].
+
+סכומי גאוס הם מקבילות של [[פונקציית גמא]] מעל שדות סופיים, ויחס המכפלה של האסה–דבנפורט הוא המקבילה של '''נוסחת הכפל של גאוס'''
+:<math>\Gamma(z)\,\Gamma\left(z + \frac1k\right)\Gamma\left(z + \frac2k\right)\cdots\Gamma\left(z + \frac{k-1}{k}\right) = (2\pi)^{\frac{k-1}{2}}\,k^{1/2 - kz}\,\Gamma(kz).</math>
+למעשה, יחס המכפלה של האסה–דבנפורט נובע מנוסחת הכפל המקבילה ל[[פונקציית גמא p-אדית|פונקציות גמא p-אדיות]], יחד עם נוסחת גרוס–קובליץ (1979).
+
+== יחס ההרמה ==
+יהי <math>F</math> שדה סופי בן <math>q</math> איברים, ו-<math>F_s</math> השדה שעבורו <math>[F_s : F] = s</math>, כלומר <math>s</math> הוא ה[[ממד (אלגברה לינארית)|ממד]] של <math>F_s</math> כמרחב וקטורי מעל <math>F</math>. יהי <math>\alpha</math> איבר של <math>F_s</math>, ויהי <math>\chi</math> [[קרקטר (מתמטיקה)|קרקטר]] כפלי מ-<math>F</math> למספרים המרוכבים. תהי <math>N_{F_s/F}(\alpha)</math> ה[[נורמה (תורת השדות)|נורמה]] מ-<math>F_s</math> ל-<math>F</math>,
+:<math>N_{F_s/F}(\alpha) := \alpha\cdot\alpha^q\cdots\alpha^{q^{s-1}},</math>
+ויהי <math>\chi'</math> הקרקטר הכפלי על <math>F_s</math> שהוא ההרכבה של <math>\chi</math> עם הנורמה, <math>\chi'(\alpha) := \chi(N_{F_s/F}(\alpha))</math>. יהי <math>\psi</math> קרקטר חיבורי לא טריוויאלי של <math>F</math>, ו-<math>\psi'</math> הקרקטר החיבורי על <math>F_s</math> שהוא ההרכבה של <math>\psi</math> עם ה[[עקבה (תורת השדות)|עקבה]], <math>\psi'(\alpha) := \psi(\mathrm{Tr}_{F_s/F}(\alpha))</math>. יהי
+:<math>\tau(\chi, \psi) = \sum_{x\in F}\chi(x)\psi(x)</math>
+סכום הגאוס מעל <math>F</math>, ו-<math>\tau(\chi', \psi')</math> סכום הגאוס מעל <math>F_s</math>. אז '''יחס ההרמה של האסה–דבנפורט''' קובע ש-
+:<math>(-1)^s\cdot\tau(\chi, \psi)^s = -\tau(\chi', \psi').</math>
+
+'''דוגמה מחושבת: <math>F = \mathbb F_3</math>, <math>s = 2</math>.''' יהי <math>\chi</math> [[סמל לז'נדר]] מודולו 3 ו-<math>\psi(x) = e^{2\pi ix/3}</math>. אז <math>\tau(\chi, \psi) = e^{2\pi i/3} - e^{4\pi i/3} = i\sqrt3</math>. היחס מנבא <math>\tau(\chi', \psi') = -(-1)^2(i\sqrt3)^2 = 3</math>. חישוב ישיר ב-<math>\mathbb F_9 = \mathbb F_3[i]</math> (<math>i^2 = -1</math>), עם <math>N(x) = x^4</math> ו-<math>\mathrm{Tr}(x) = x + x^3</math>, על כל שמונת האיברים השונים מאפס, נותן אכן <math>\tau(\chi', \psi') = 3</math>.
+
+'''שימוש: ספירת נקודות.''' יחס ההרמה הוא מה שמאפשר לחשב את מספר הנקודות על יריעה (כמו עקום פרמה) מעל '''כל''' ההרחבות <math>\mathbb F_{q^s}</math> בבת אחת, ולכן לקבל ש[[פונקציית זטא מקומית|פונקציית הזטא]] רציונלית, עם אפסים שגודלם המוחלט <math>q^{-1/2}</math> – כי <math>|\tau| = \sqrt q</math>.
+
+== יחס המכפלה ==
+יחס המכפלה של האסה–דבנפורט קובע ש-
+:<math>\prod_{a \bmod m}\tau(\chi\rho^a, \psi) = -\chi^{-m}(m)\,\tau(\chi^m, \psi)\prod_{a \bmod m}\tau(\rho^a, \psi),</math>
+כאשר <math>\rho</math> קרקטר כפלי מסדר מדויק <math>m</math> שמחלק את <math>q - 1</math>, <math>\chi</math> קרקטר כפלי כלשהו, ו-<math>\psi</math> קרקטר חיבורי לא טריוויאלי.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. Davenport, H. Hasse, ''Die Nullstellen der Kongruenzzetafunktionen in gewissen zyklischen Fällen'', J. Reine Angew. Math. '''172''' (1935), pp. 151–182
+* B. H. Gross, N. Koblitz, ''Gauss sums and the p-adic Γ-function'', Annals of Mathematics '''109''' (1979), pp. 569–581
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', Springer, 1990, pp. 158–162
+* A. Weil, ''Numbers of solutions of equations in finite fields'', Bull. Amer. Math. Soc. '''55''' (1949), pp. 497–508
+</div>
+
+[[קטגוריה:שדות ציקלוטומיים]]

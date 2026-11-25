@@ -1,0 +1,57 @@
+ב[[מתמטיקה]], '''משפט שטיקלברגר''' הוא תוצאה ב[[תורת המספרים האלגברית]], שנותנת מידע על מבנה [[הצגת גלואה|מודול הגלואה]] של [[חבורת מחלקות האידיאלים|חבורות המחלקות]] של [[שדה ציקלוטומי|שדות ציקלוטומיים]]. מקרה פרטי הוכח לראשונה על ידי [[ארנסט קומר]] (1847), והתוצאה הכללית היא של לודוויג שטיקלברגר (1890).{{הערה|שם=W|1=L. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Graduate Texts in Mathematics '''83''', Springer, 1997, chapter 6|כיווון=שמאל}}
+
+== איבר שטיקלברגר ואידיאל שטיקלברגר ==
+נסמן ב-<math>K_m</math> את השדה הציקלוטומי ה-<math>m</math>-י, כלומר ה[[הרחבת שדות|הרחבה]] של ה[[מספר רציונלי|מספרים הרציונליים]] שמתקבלת מצירוף [[שורש יחידה|שורשי היחידה]] מסדר <math>m</math> ל-<math>\mathbb Q</math> (כאשר <math>m \ge 2</math> שלם). זו [[הרחבת גלואה]] של <math>\mathbb Q</math> עם [[חבורת גלואה]] <math>G_m</math> שאיזומורפית לחבורה הכפלית של השלמים מודולו <math>m</math>, <math>(\mathbb Z/m\mathbb Z)^\times</math>. '''איבר שטיקלברגר''' (מרמה <math>m</math>, או של <math>K_m</math>) הוא איבר ב[[חוג חבורה|חוג החבורה]] <math>\mathbb Q[G_m]</math>, ו'''אידיאל שטיקלברגר''' (מרמה <math>m</math>, או של <math>K_m</math>) הוא אידיאל בחוג החבורה <math>\mathbb Z[G_m]</math>. הם מוגדרים כך. יהי <math>\zeta_m</math> שורש יחידה פרימיטיבי מסדר <math>m</math>. האיזומורפיזם מ-<math>(\mathbb Z/m\mathbb Z)^\times</math> ל-<math>G_m</math> שולח איבר <math>a</math> ל-<math>\sigma_a</math> שמוגדר על ידי
+:<math>\sigma_a(\zeta_m) = \zeta_m^a.</math>
+איבר שטיקלברגר מרמה <math>m</math> מוגדר כ-
+:<math>\theta(K_m) = \frac1m\sum_{\substack{a=1\\(a,m)=1}}^m a\cdot\sigma_a^{-1} \in \mathbb Q[G_m].</math>
+אידיאל שטיקלברגר מרמה <math>m</math>, שמסומן <math>I(K_m)</math>, הוא קבוצת הכפולות השלמות של <math>\theta(K_m)</math> שהמקדמים שלהן שלמים:
+:<math>I(K_m) = \theta(K_m)\mathbb Z[G_m] \cap \mathbb Z[G_m].</math>
+
+באופן כללי יותר, אם <math>F</math> [[הרחבה אבלית|שדה מספרים אבלי]] שחבורת הגלואה שלו מעל <math>\mathbb Q</math> מסומנת <math>G_F</math>, אפשר להגדיר את '''איבר שטיקלברגר של <math>F</math>''' ואת '''אידיאל שטיקלברגר של <math>F</math>'''. לפי [[משפט קרונקר–ובר]] יש שלם <math>m</math> כך ש-<math>F \subseteq K_m</math>. נקבע את ה-<math>m</math> הקטן ביותר כזה (זה החלק הסופי של [[מוליך (תורת שדות המחלקה)|המוליך]] של <math>F</math> מעל <math>\mathbb Q</math>). יש הומומורפיזם טבעי <math>G_m \to G_F</math> שנתון על ידי צמצום: לכל <math>\sigma \in G_m</math>, התמונה שלו ב-<math>G_F</math> היא הצמצום שלו ל-<math>F</math>, שמסומן <math>\mathrm{res}_m\sigma</math>. איבר שטיקלברגר של <math>F</math> מוגדר אז כ-
+:<math>\theta(F) = \frac1m\sum_{\substack{a=1\\(a,m)=1}}^m a\cdot\mathrm{res}_m\sigma_a^{-1} \in \mathbb Q[G_F],</math>
+ואידיאל שטיקלברגר של <math>F</math>, <math>I(F) = \theta(F)\mathbb Z[G_F] \cap \mathbb Z[G_F]</math>, מוגדר כמו במקרה של <math>K_m</math>.
+
+במקרה הפרטי <math>F = K_m</math>, האידיאל <math>I(K_m)</math> נוצר על ידי <math>(a - \sigma_a)\theta(K_m)</math> כש-<math>a</math> עובר על <math>\mathbb Z/m\mathbb Z</math>. זה לא נכון ל-<math>F</math> כללי.{{הערה|1=Washington, Lemma 6.9 וההערות שאחריה.|כיווון=שמאל}}
+
+=== דוגמאות ===
+אם <math>F</math> [[שדה ממשי לחלוטין]] עם מוליך <math>m</math>, אז{{הערה|1=Washington, §6.2.|כיווון=שמאל}}
+:<math>\theta(F) = \frac{\varphi(m)}{2[F:\mathbb Q]}\sum_{\sigma\in G_F}\sigma,</math>
+כאשר <math>\varphi</math> [[פונקציית אוילר]] ו-<math>[F:\mathbb Q]</math> מעלת <math>F</math> מעל <math>\mathbb Q</math>. (הסיבה: <math>a</math> ו-<math>m - a</math> נותנים את אותו צמצום ל-<math>F</math>, כי <math>\sigma_{-1}</math> היא ההצמדה המרוכבת, שטריוויאלית על <math>F</math>; והממוצע של <math>a</math> ו-<math>m - a</math> הוא <math>m/2</math>.) בשדות ממשיים, אם כן, משפט שטיקלברגר נותן מידע טריוויאלי בלבד; כל העניין הוא ב"חלק המינוס".
+
+'''דוגמה מחושבת: <math>F = \mathbb Q(\sqrt{-23})</math>.''' המוליך הוא 23, ו-<math>G_F = \{1, \sigma\}</math> עם <math>\sigma</math> ההצמדה. הצמצום של <math>\sigma_a^{-1}</math> ל-<math>F</math> הוא 1 אם <math>a</math> [[שארית ריבועית]] מודולו 23, ו-<math>\sigma</math> אחרת. סכום השאריות הריבועיות בין 1 ל-22 הוא <math>A = 92</math>, וסכום אי-השאריות הוא <math>B = 161</math>, ולכן
+:<math>\theta(F) = \frac{92 + 161\sigma}{23} = 4 + 7\sigma \in \mathbb Z[G_F].</math>
+(שימו לב ש-<math>(B - A)/23 = 3 = h(-23)</math>, בהתאם ל[[נוסחת מספר המחלקות]] של דיריכלה.) לפי המשפט, <math>4 + 7\sigma</math> מאפס את חבורת המחלקות: לכל אידיאל <math>J</math>, האידיאל <math>J^4\,\sigma(J)^7</math> ראשי. אכן, <math>J\sigma(J) = (N(J))</math> ראשי, ולכן במחלקות <math>\sigma(J) \sim J^{-1}</math> ו-<math>J^4\sigma(J)^7 \sim J^{-3}</math> – שהוא ראשי, כי חבורת המחלקות מסדר 3.
+
+== ניסוח המשפט ==
+<blockquote>'''משפט שטיקלברגר.'''{{הערה|1=Washington, Theorem 6.10.|כיווון=שמאל}} יהי <math>F</math> שדה מספרים אבלי. אז אידיאל שטיקלברגר של <math>F</math> [[מאפס (תורת החוגים)|מאפס]] את חבורת המחלקות של <math>F</math>.</blockquote>
+
+שימו לב ש-<math>\theta(F)</math> עצמו אינו חייב להיות מאפס, אבל כל כפולה שלו ב-<math>\mathbb Z[G_F]</math> היא כזו.
+
+במפורש, המשפט אומר שאם <math>\alpha \in \mathbb Z[G_F]</math> כך ש-
+:<math>\alpha\theta(F) = \sum_{\sigma\in G_F} a_\sigma\sigma \in \mathbb Z[G_F],</math>
+ו-<math>J</math> [[אידיאל שבור]] כלשהו של <math>F</math>, אז
+:<math>\prod_{\sigma\in G_F}\sigma\bigl(J^{a_\sigma}\bigr)</math>
+הוא [[אידיאל ראשי]].
+
+'''הקשר לסכומי גאוס.''' ההוכחה הקלאסית עוברת דרך [[סכום גאוס|סכומי גאוס]]: לראשוני <math>\mathfrak P</math> של <math>K_m</math> מעל <math>p \equiv 1 \pmod m</math>, החזקה ה-<math>m</math>-ית של סכום הגאוס של קרקטר שארית החזקה ה-<math>m</math>-ית מודולו <math>\mathfrak P</math> יוצרת את האידיאל <math>\mathfrak P^{m\theta}</math>. כך <math>\theta</math> מקודד את הפירוק לאידיאלים ראשוניים של סכומי גאוס ו[[סכום יעקובי|סכומי יעקובי]]. (בדוגמה של [[סכום יעקובי]] מודולו 7, <math>J = -1 - 3\omega</math> הוא היוצר של ראשוני מעל 7 ב-<math>\mathbb Z[\omega]</math>.)
+
+== ראו גם ==
+* [[סכום יעקובי]]
+* [[סכום גאוס]]
+* [[משפט הרברנד–ריבט]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. Cohen, ''Number Theory – Volume I: Tools and Diophantine Equations'', Graduate Texts in Mathematics '''239''', Springer, 2007, pp. 150–170
+* A. Fröhlich, ''Stickelberger without Gauss sums'', in: ''Algebraic Number Fields'', Proc. Symp. LMS, Durham 1975, Academic Press, 1977, pp. 589–607
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990
+* E. Kummer, ''Über die Zerlegung der aus Wurzeln der Einheit gebildeten complexen Zahlen in ihre Primfactoren'', J. Reine Angew. Math. '''35''' (1847), pp. 327–367
+* L. Stickelberger, ''Ueber eine Verallgemeinerung der Kreistheilung'', Mathematische Annalen '''37''' (1890), pp. 321–367
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:שדות ציקלוטומיים]]
+[[קטגוריה:משפטים בתורת המספרים]]

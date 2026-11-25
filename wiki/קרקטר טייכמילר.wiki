@@ -1,0 +1,31 @@
+ב[[תורת המספרים]], '''קרקטר טייכמילר''' <math>\omega</math> (בראשוני <math>p</math>) הוא [[תורת הקרקטרים|קרקטר]] של <math>(\mathbb Z/q\mathbb Z)^\times</math>, כאשר <math>q = p</math> אם <math>p</math> אי-זוגי ו-<math>q = 4</math> אם <math>p = 2</math>, שמקבל ערכים בשורשי היחידה של ה[[מספר p-אדי|שלמים ה-p-אדיים]]. הוא הוצג על ידי [[אוסוולד טייכמילר]]. אם מזהים את שורשי היחידה בשלמים ה-p-אדיים עם שורשי היחידה המתאימים במספרים המרוכבים, אפשר לראות ב-<math>\omega</math> [[קרקטר דיריכלה]] רגיל עם מוליך <math>q</math>.
+
+באופן כללי יותר, בהינתן [[חוג הערכה בדידה]] שלם <math>O</math> ש[[שדה שאריות|שדה השאריות]] שלו <math>k</math> [[שדה משוכלל|משוכלל]] ממאפיין <math>p</math>, יש '''חתך''' כפלי יחיד <math>\omega : k \to O</math> של ההעתקה הטבעית על <math>O \to k</math>. התמונה של איבר תחת ההעתקה הזו נקראת '''נציג טייכמילר''' שלו. הצמצום של <math>\omega</math> ל-<math>k^\times</math> נקרא '''קרקטר טייכמילר'''.
+
+== הגדרה ==
+אם <math>x</math> שלם מודולו <math>p</math> (עם <math>p</math> אי-זוגי), אז <math>\omega(x)</math> הוא הפתרון היחיד של <math>\omega(x)^p = \omega(x)</math> ב-<math>\mathbb Z_p</math> ששקול ל-<math>x</math> מודולו <math>p</math>. אפשר להגדיר אותו גם על ידי
+:<math>\omega(x) = \lim_{n\to\infty} x^{p^n}.</math>
+(הגבול קיים: לפי [[המשפט הקטן של פרמה]] <math>x^p \equiv x \pmod p</math>, ובאינדוקציה <math>x^{p^{n+1}} \equiv x^{p^n} \pmod{p^{n+1}}</math>.)
+
+החבורה הכפלית של היחידות ה-p-אדיות היא מכפלה של החבורה הסופית של שורשי היחידה ושל חבורה שאיזומורפית לשלמים ה-p-אדיים: <math>\mathbb Z_p^\times \cong \mu_{p-1}\times(1 + p\mathbb Z_p)</math> ל-<math>p</math> אי-זוגי, ו-<math>\mathbb Z_2^\times = \{\pm1\}\times(1 + 4\mathbb Z_2)</math> ל-<math>p = 2</math>. החבורה הסופית ציקלית מסדר <math>p - 1</math> או 2, לפי ש-<math>p</math> אי-זוגי או זוגי, ולכן היא איזומורפית ל-<math>(\mathbb Z/q\mathbb Z)^\times</math>. קרקטר טייכמילר נותן איזומורפיזם קנוני בין שתי החבורות האלה. (ל-<math>p = 2</math>, התנאי <math>\omega^2 = \omega</math> מודולו 2 אינו מבחין בין <math>\pm1</math>, ולכן מגדירים את <math>\omega(x)</math> כ-<math>\pm1</math> ששקול ל-<math>x</math> מודולו 4.)
+
+'''דוגמה מחושבת: <math>p = 5</math>.''' שורשי היחידה ב-<math>\mathbb Z_5</math> הם <math>\pm1, \pm i</math> (שורשי <math>x^4 = 1</math>). <math>\omega(1) = 1</math> ו-<math>\omega(4) = -1</math>. נחשב את <math>\omega(2)</math>: ההעלאה החוזרת בחזקת 5 נותנת, מודולו <math>5^6</math>,
+:<math>\omega(2) \equiv 14557 = 2 + 1\cdot5 + 2\cdot5^2 + 1\cdot5^3 + 3\cdot5^4 + 4\cdot5^5 \pmod{5^6},</math>
+כלומר הספרות ה-5-אדיות של <math>\omega(2)</math> מתחילות ב-<math>\ldots 4\,3\,1\,2\,1\,2</math>. אכן <math>\omega(2)^2 \equiv -1 \pmod{5^6}</math>: <math>\omega(2)</math> הוא "השורש הריבועי של <math>-1</math>" ב-<math>\mathbb Z_5</math> ששקול ל-2 מודולו 5 (ובפרט <math>\omega(2) \equiv 7 \pmod{25}</math>, ו-<math>7^2 = 49 \equiv -1 \pmod{25}</math>). בהתאם, <math>\omega(3) = -\omega(2)</math> (שניהם <math>\equiv 3 \pmod 5</math>), שורש <math>-1</math> השני.
+
+הצגה מפורטת של בניית נציגי טייכמילר לשלמים ה-p-אדיים, באמצעות [[הלמה של הנזל|הרמת הנזל]], נמצאת בערך על [[וקטור ויט|וקטורי ויט]], שבהם יש להם תפקיד חשוב בהגדרת מבנה החוג.
+
+== שימושים ==
+קרקטר טייכמילר מופיע בכל מקום ב[[תורת איוואסאווה]] ובפונקציות L ה-p-אדיות: פונקציות ה-L ה-p-אדיות של קובוטה–לאופולדט מוגדרות עבור הקרקטרים <math>\omega^i</math>, והן מאנטרפולטות את הערכים <math>L(1 - n, \chi\omega^{-n})</math>. ב[[משפט הרברנד–ריבט]], חלק ה-<math>\omega^i</math> של חבורת המחלקות של <math>\mathbb Q(\zeta_p)</math> שונה מאפס בדיוק כש-<math>p</math> מחלק [[מספרי ברנולי|מספר ברנולי]] מסוים.
+
+== ראו גם ==
+* [[וקטור ויט]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. Cohen, ''Number Theory, Volume I: Tools and Diophantine Equations'', Graduate Texts in Mathematics '''239''', Springer, 2007, section 4.3
+* N. Koblitz, ''p-adic Numbers, p-adic Analysis, and Zeta-Functions'', Graduate Texts in Mathematics '''58''', Springer, 1984
+</div>
+
+[[קטגוריה:תורת שדות המחלקה]]
+[[קטגוריה:מספרים p-אדיים]]
