@@ -154,7 +154,7 @@ Additive number theory:
 - [x] Sato–Tate conjecture
 - [x] Conductor of an elliptic curve
 - [ ] Tate's algorithm
-- [ ] Twists of elliptic curves
+- [x] Twists of elliptic curves
 - [x] Mordell curve
 - [ ] Weil pairing
 - [ ] Tate curve
