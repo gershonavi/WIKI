@@ -1,0 +1,41 @@
+ב[[מתמטיקה]], '''קבוע פלר–טורנייר''' <math>C_\mathrm{FT}</math> (ב[[אנגלית]]: Feller–Tornier constant) הוא ה[[צפיפות (תורת המספרים)|צפיפות]] של קבוצת כל המספרים השלמים החיוביים שיש להם מספר זוגי של גורמים ראשוניים שונים המופיעים בחזקה גדולה מ-1 (תוך התעלמות מגורמים ראשוניים המופיעים בחזקה ראשונה בלבד).{{הערה|1={{MathWorld|Feller-TornierConstant|Feller–Tornier Constant}}|כיווון=שמאל}} הקבוע קרוי על שם [[ויליאם פלר]] (1906–1970) ואֶרהרד טורנייר (1894–1982).{{הערה|1=S. R. Finch, [http://oeis.org/wiki/Feller–Tornier_constant Mathematical Constants (Feller–Tornier constant)], OEIS Wiki|כיווון=שמאל}}
+:<math>\begin{align}
+C_\mathrm{FT} & ={1\over2}+\left( {1\over2} \prod_{n=1}^\infty \left(1-{2 \over p_n^2} \right) \right) \\
+& = {{1}\over{2}}\left(1+ \prod_{n=1}^\infty \left(1 - {{2}\over{p_n^2}} \right) \right) \\
+& = {1\over2}\left(1+{{1}\over{\zeta(2)}} \prod_{n=1}^\infty \left( 1-{{1}\over{p_n^2 -1}} \right) \right) \\
+& = {1\over2}+{{3}\over{\pi^2}} \prod_{n=1}^\infty \left( 1-{{1} \over {p_n^2 -1}} \right)= 0.66131704946\ldots
+\end{align}</math>
+{{OEIS|A065493}}
+
+לדוגמה, ב-<math>72 = 2^3 \cdot 3^2</math> שני גורמים ראשוניים מופיעים בחזקה גדולה מ-1 (מספר זוגי), ולכן 72 נספר; ב-<math>12 = 2^2 \cdot 3</math> רק גורם אחד כזה, ולכן 12 אינו נספר; וכל מספר [[חופשי מריבועים]] נספר (אפס גורמים כאלה).
+
+== הסבר לנוסחה ==
+נסמן ב-<math>\omega_2(k)</math> את מספר הראשוניים <math>p</math> כך ש-<math>p^2 \mid k</math>. ההסתברות ש-<math>p^2</math> מחלק מספר "אקראי" היא <math>1/p^2</math>, והמאורעות עבור ראשוניים שונים בלתי תלויים במובן של צפיפות. לכן הצפיפות של <math>\{k : (-1)^{\omega_2(k)} = 1\}</math> היא <math>\tfrac12\left(1 + \mathbb E(-1)^{\omega_2}\right)</math>, ו-
+:<math>\mathbb E (-1)^{\omega_2} = \prod_p \left(\left(1 - \frac{1}{p^2}\right) - \frac{1}{p^2}\right) = \prod_p\left(1 - \frac{2}{p^2}\right).</math>
+השוויון השלישי נובע מ-<math>1 - \frac{2}{p^2} = \left(1 - \frac{1}{p^2}\right)\left(1 - \frac{1}{p^2 - 1}\right)</math> ומ[[מכפלת אוילר]] <math>\prod_p (1 - p^{-2}) = 1/\zeta(2) = 6/\pi^2</math>.
+
+== ניסוח בעזרת סוגרי אייברסון ==
+[[סוגרי אייברסון]] מוגדרים כך:
+:<math>[P] = \begin{cases} 1 & \text{if } P \text{ is true,} \\ 0 & \text{if } P \text{ is false.} \end{cases}</math>
+בסימונים אלה,
+:<math>C_\mathrm{FT}= \lim_{n\to \infty} \frac{1}{n}\sum_{k=1}^n [\omega_2(k) \equiv 0 \bmod 2].</math>
+(בערך האנגלי מופיעה כאן [[פונקציות אומגה ראשוניות|פונקציית אומגה הגדולה]] <math>\Omega(k)</math>, מספר הגורמים הראשוניים של <math>k</math> עם ריבוי. זו טעות: הצפיפות של המספרים שבהם <math>\Omega(k)</math> זוגי היא <math>1/2</math>, שקול ל[[משפט המספרים הראשוניים]]. בחישוב עד <math>2 \cdot 10^6</math>, שיעור המספרים שבהם <math>\omega_2(k)</math> זוגי הוא 0.6614, ואילו שיעור המספרים שבהם <math>\Omega(k)</math> זוגי הוא 0.4997.)
+
+== פונקציית זטא הראשונית ==
+[[פונקציית זטא הראשונית]] <math>P</math> מוגדרת כך:
+:<math>P(s) = \sum_{p \text{ prime}} \frac 1 {p^s}.</math>
+קבוע פלר–טורנייר מקיים
+:<math>C_\mathrm{FT}= {1\over2} \left( 1+ \exp \left( -\sum_{n=1}^\infty {2^n P(2n) \over n} \right) \right).</math>
+(זה נובע מלקיחת לוגריתם במכפלה: <math>\log\left(1 - \frac{2}{p^2}\right) = -\sum_{n \ge 1}\frac{2^n}{n\,p^{2n}}</math>.)
+
+== ראו גם ==
+* [[פונקציית זטא של רימן]]
+* [[פונקציית L]]
+* [[מכפלת אוילר]]
+* [[ראשוניים תאומים]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:קבועים מתמטיים]]
+[[קטגוריה:פונקציות זטא]]

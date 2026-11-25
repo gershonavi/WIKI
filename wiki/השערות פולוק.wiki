@@ -1,0 +1,20 @@
+'''השערות פולוק''' (ב[[אנגלית]]: Pollock's conjectures) הן קבוצה של [[השערה|השערות]] קשורות זו לזו ב[[תורת המספרים האדיטיבית]].{{הערה|שם=dickson|1=L. E. Dickson, History of the Theory of Numbers, Volume II: Diophantine Analysis, Dover, 2005 (מקור: 1921), עמ' 22–23|כיווון=שמאל}} את ההשערות ניסח לראשונה ב-1850 פרדריק פולוק,{{הערה|שם=dickson}}{{הערה|1=F. Pollock, On the extension of the principle of Fermat's theorem on the polygonal numbers to the higher order of series whose ultimate differences are constant. With a new theorem proposed, applicable to all the orders, Abstracts of the Papers Communicated to the Royal Society of London 5, 1850, עמ' 922–924|כיווון=שמאל}} משפטן ופוליטיקאי שתרם מאמרים רבים במתמטיקה ל[[החברה המלכותית|חברה המלכותית]]. השערות אלה הן הרחבה חלקית של [[משפט המספרים המצולעים|משפט המספרים המצולעים של פרמה]] למספרים צורניים תלת-ממדיים, הנקראים גם מספרים פאוניים.
+
+== ההשערות ==
+* '''השערת פולוק על מספרים טטרהדרליים''': כל [[מספר טבעי|מספר שלם חיובי]] הוא סכום של 5 מספרים טטרהדרליים לכל היותר (המספרים <math>T_n = \frac{n(n+1)(n+2)}{6}</math>: 1, 4, 10, 20, 35, ...).
+: המספרים שאינם סכום של 4 מספרים טטרהדרליים לכל היותר הם הסדרה 17, 27, 33, 52, 73, ... {{OEIS|A000797}}, בת 241 איברים, ומשערים ש-343,867 הוא האחרון שבהם.{{הערה|1={{MathWorld|PollocksConjecture|Pollock's Conjecture}}|כיווון=שמאל}}
+* '''השערת פולוק על מספרים אוקטהדרליים''': כל מספר שלם חיובי הוא סכום של 7 מספרים אוקטהדרליים לכל היותר (המספרים <math>\frac{n(2n^2+1)}{3}</math>: 1, 6, 19, 44, ...).
+: השערה זו הוכחה לכל המספרים הגדולים מספיק; ליתר דיוק, כל מספר גדול מ-<math>e^{10^7}\approx6.59\cdot10^{4342944}</math> הוא גדול מספיק.{{הערה|1=Z. Elessar Brady, Sums of seven octahedral numbers, Journal of the London Mathematical Society 93 (1), 2016, עמ' 244–272, {{DOI|10.1112/jlms/jdv061}}|כיווון=שמאל}}
+* '''השערת פולוק על מעוקבים''': כל מספר שלם חיובי הוא סכום של 9 מעוקבים לכל היותר.
+: המקרה של המעוקבים הוכח בשנים 1909–1912 על ידי ארתור ויפריך{{הערה|1=A. Wieferich, Beweis des Satzes, daß sich eine jede ganze Zahl als Summe von höchstens neun positiven Kuben darstellen läßt, Mathematische Annalen 66 (1), 1909, עמ' 95–101, {{DOI|10.1007/BF01450913}}|כיווון=שמאל}} וא. ג'. קמפנר{{הערה|1=A. Kempner, Bemerkungen zum Waringschen Problem, Mathematische Annalen 72 (3), 1912, עמ' 387–399, {{DOI|10.1007/BF01456723}}|כיווון=שמאל}} (ראו [[בעיית וארינג]]).
+* '''השערות פולוק על מספרים איקוסהדרליים ודודקהדרליים''': כל מספר שלם חיובי הוא סכום של 13 מספרים איקוסהדרליים לכל היותר, וכל מספר שלם חיובי הוא סכום של 21 מספרים דודקהדרליים לכל היותר.
+: שתי ההשערות האלה תוקנו ואושרו ב-2025.{{הערה|1=D. Basak, A. Dong, K. Saettone, A. Zaharescu, Representations as Sums of Icosahedral and Dodecahedral Numbers: Proof of Pollock's Conjectures, International Mathematics Research Notices 2025 (13), 2025, {{DOI|10.1093/imrn/rnaf180}}|כיווון=שמאל}}
+* '''השערת פולוק על מספרים תשעוניים מרכזיים''': כל מספר שלם חיובי הוא סכום של 11 מספרים תשעוניים מרכזיים לכל היותר.
+: השערה זו אושרה ב-2023.{{הערה|1=M. Kureš, A Proof of Pollock's Conjecture on Centered Nonagonal Numbers, The Mathematical Intelligencer 46 (3), 2024, עמ' 234–235, {{DOI|10.1007/s00283-023-10307-0}}|כיווון=שמאל}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:השערות מתמטיות]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
+[[קטגוריה:תורת המספרים האדיטיבית]]

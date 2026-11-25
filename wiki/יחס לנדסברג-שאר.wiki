@@ -1,0 +1,21 @@
+ב[[תורת המספרים]] וב[[אנליזה הרמונית]], '''יחס לנדסברג–שאר''' (או '''זהות לנדסברג–שאר'''; ב[[אנגלית]]: Landsberg–Schaar relation) הוא השוויון הבא, התקף לכל זוג מספרים שלמים חיוביים <math>p</math> ו-<math>q</math>:
+:<math>\frac{1}{\sqrt{p}}\sum_{n=0}^{p-1}\exp\left(\frac{2\pi in^2q}{p}\right)=
+\frac{e^{\frac14\pi i}}{\sqrt{2q}}\sum_{n=0}^{2q-1}\exp\left(-\frac{\pi in^2p}{2q}\right).</math>
+
+הדרך המקובלת להוכיח אותו{{הערה|1=H. Dym, H. P. McKean, Fourier Series and Integrals, Academic Press, 1972|כיווון=שמאל}} היא להציב <math>\tau = \frac{2iq}{p} + \varepsilon</math>, עם <math>\varepsilon > 0</math>, בזהות הבאה של [[קרל גוסטב יעקב יעקובי|יעקובי]] (שהיא בעיקרה מקרה פרטי של נוסחת הסכימה של פואסון באנליזה הרמונית קלאסית):
+:<math>\sum_{n=-\infty}^{+\infty}e^{-\pi n^2\tau}=\frac{1}{\sqrt{\tau}}\sum_{n=-\infty}^{+\infty}e^{-\pi \frac{n^2}{\tau}},</math>
+ואז לשאוף עם <math>\varepsilon \to 0</math>. (כאשר <math>\varepsilon</math> קטן, הסכום באגף שמאל מתפרק לפי מחלקות שאריות מודולו <math>p</math>, וכל מחלקה תורמת בקירוב <math>\frac{1}{p\sqrt{\varepsilon}}</math> כפול גורם פאזה; כך מתקבל סכום גאוס מודולו <math>p</math>. באגף ימין, אחרי פיתוח <math>1/\tau</math>, מתקבל באופן דומה סכום מודולו <math>2q</math>. השוואת המקדמים של <math>\varepsilon^{-1/2}</math> נותנת את הזהות, עד כדי הצמדה מרוכבת של שני האגפים.)
+
+הוכחה המשתמשת רק בשיטות סופיות התגלתה ב-2018 על ידי בן מור.{{הערה|1=B. Moore, A proof of the Landsberg–Schaar relation by finite methods, The Ramanujan Journal 53 (3), 2020, עמ' 653–665, {{DOI|10.1007/s11139-019-00195-4}}, [https://arxiv.org/abs/1810.06172 arXiv:1810.06172]|כיווון=שמאל}}
+
+אם מציבים <math>q = 1</math>, הזהות הופכת לנוסחה ל[[סכום גאוס ריבועי|סכום גאוס הריבועי]] מודולו <math>p</math>. למשל, עבור <math>p</math> ראשוני אי-זוגי מתקבל <math>\sum_{n=0}^{p-1} e^{2\pi i n^2/p} = \sqrt p</math> אם <math>p \equiv 1 \pmod 4</math> ו-<math>i\sqrt p</math> אם <math>p \equiv 3 \pmod 4</math>: אגף ימין הוא <math>\frac{e^{\pi i/4}}{\sqrt 2}\left(1 + e^{-\pi i p/2}\right)</math>, שהוא 1 או <math>i</math>, בהתאם ל-<math>p \bmod 4</math>.
+
+אפשר לנסח את זהות לנדסברג–שאר באופן סימטרי יותר:
+:<math>\frac{1}{\sqrt{p}}\sum_{n=0}^{p-1}\exp\left(\frac{\pi in^2q}{p}\right)=
+\frac{e^{\frac14\pi i}}{\sqrt{q}}\sum_{n=0}^{q-1}\exp\left(-\frac{\pi in^2p}{q}\right),</math>
+בתנאי שמוסיפים את ההנחה ש-<math>pq</math> זוגי.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
