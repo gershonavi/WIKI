@@ -159,7 +159,7 @@ Additive number theory:
 - [x] Weil pairing
 - [x] Tate curve
 - [x] Néron–Ogg–Shafarevich criterion
-- [ ] Heegner point
+- [x] Heegner point
 - [ ] Elliptic curve point multiplication
 - [ ] Edwards curve
 - [ ] Montgomery curve

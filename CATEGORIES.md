@@ -342,7 +342,7 @@
 * [נפת טוראן](pages/%D7%A0%D7%A4%D7%AA%20%D7%98%D7%95%D7%A8%D7%90%D7%9F.md) – Turán sieve · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
 * [נפת לז'נדר](pages/%D7%A0%D7%A4%D7%AA%20%D7%9C%D7%96%27%D7%A0%D7%93%D7%A8.md) – Legendre sieve · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
 * [נפת סלברג](pages/%D7%A0%D7%A4%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg sieve · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
-* [נקודת הגנר](pages/%D7%A0%D7%A7%D7%95%D7%93%D7%AA%20%D7%94%D7%92%D7%A0%D7%A8.md)
+* [נקודת הגנר](pages/%D7%A0%D7%A7%D7%95%D7%93%D7%AA%20%D7%94%D7%92%D7%A0%D7%A8.md) – Heegner point · בקורס: [שיעור 20](COURSE.md)
 
 ### ס
 
