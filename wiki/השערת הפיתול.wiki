@@ -1,0 +1,65 @@
+ב[[גאומטריה אלגברית]] וב[[תורת המספרים]], '''השערת הפיתול''' או '''השערת החסימות האחידה לנקודות פיתול''' של [[יריעה אבלית|יריעות אבליות]] קובעת שאפשר לחסום את ה[[סדר (תורת החבורות)|סדר]] של [[חבורת פיתול|חבורת הפיתול]] של יריעה אבלית מעל [[שדה מספרים]] במונחי [[ממד של יריעה אלגברית|הממד של היריעה]] ושדה המספרים. גרסה חזקה יותר של ההשערה היא שאפשר לחסום את הפיתול במונחי הממד של היריעה והמעלה של שדה המספרים. השערת הפיתול נפתרה לחלוטין במקרה של [[עקום אליפטי|עקומים אליפטיים]]; המקרה של עקומים אליפטיים מעל <math>\mathbb Q</math> ידוע כ'''משפט הפיתול של מאזור'''.
+
+== עקומים אליפטיים ==
+בין 1906 ל-1911 פרסם [[בפו לוי]] סדרת מאמרים שחקרו את הסדרים הסופיים האפשריים של נקודות על עקומים אליפטיים מעל הרציונליים.{{הערה|שם=SS|1=N. Schappacher, R. Schoof, ''Beppo Levi and the arithmetic of elliptic curves'', The Mathematical Intelligencer '''18''' (1996), pp. 57–69, pp. 64–65|כיווון=שמאל}} הוא הראה שיש אינסוף עקומים אליפטיים מעל הרציונליים עם כל אחת מחבורות הפיתול הבאות:
+* <math>C_n</math> עם <math>1 \le n \le 10</math>, כאשר <math>C_n</math> מסמן את ה[[חבורה ציקלית|חבורה הציקלית]] מסדר <math>n</math>;
+* <math>C_{12}</math>;
+* <math>C_{2n}\times C_2</math> עם <math>1 \le n \le 4</math>, כאשר <math>\times</math> מסמן [[מכפלה ישרה של חבורות|סכום ישר]].
+בקונגרס הבינלאומי של המתמטיקאים ברומא ב-1908 שיער לוי שזו רשימה מלאה של חבורות הפיתול של עקומים אליפטיים מעל הרציונליים – בסך הכול 15 חבורות.{{הערה|שם=SS}} השערת הפיתול לעקומים אליפטיים מעל הרציונליים נוסחה מחדש באופן בלתי תלוי על ידי טריגווה נגל (1952), ושוב על ידי אנדרו אוג (1971), וההשערה נודעה בשם '''השערת אוג'''.
+
+'''דוגמאות.''' כמה מ-15 החבורות, עם עקומים מתאימים:
+* <math>C_5</math>: <math>y^2 + y = x^3 - x^2</math>, עם <math>P = (0, 0)</math>: <math>2P = (1, -1)</math>, <math>3P = (1, 0)</math>, <math>4P = (0, -1)</math>, <math>5P = O</math>.
+* <math>C_6</math>: <math>y^2 = x^3 + 1</math>, עם <math>P = (2, 3)</math> (ראו [[משפט נגל–לוץ]]).
+* <math>C_2 \times C_2</math>: <math>y^2 = x^3 - x</math>, עם שלוש הנקודות <math>(0, 0), (\pm1, 0)</math>.
+את חבורות הפיתול האלה מוצאים, למשל, בעזרת משפט נגל–לוץ ובעזרת השיכון של הפיתול ב-<math>E(\mathbb F_p)</math> לראשוניים עם רדוקציה טובה (ראו [[חבורת מורדל–וייל]]).
+
+אוג (1971) מצא את הקשר בין השערת הפיתול לעקומים אליפטיים מעל הרציונליים לבין התורה של '''העקומים המודולריים''' הקלאסיים: לעקום <math>E/\mathbb Q</math> יש נקודה רציונלית מסדר <math>N</math> בדיוק כשיש נקודה רציונלית לא "קוספידלית" על העקום המודולרי <math>X_1(N)</math>. בתחילת שנות ה-70 הראו העבודות של ז'רר ליגוזה, דניאל קוברט, [[בארי מאזור]] ו[[ג'ון טייט]] שכמה ערכים קטנים של <math>n</math> אינם מופיעים כסדרים של נקודות פיתול על עקומים אליפטיים מעל הרציונליים. מאזור (1977, 1978) הוכיח את השערת הפיתול המלאה לעקומים אליפטיים מעל הרציונליים.{{הערה|1=B. Mazur, ''Modular curves and the Eisenstein ideal'', Publ. Math. IHÉS '''47''' (1977), pp. 33–186; B. Mazur, ''Rational isogenies of prime degree'', Inventiones Mathematicae '''44''' (1978), pp. 129–162|כיווון=שמאל}} השיטות שלו הוכללו על ידי שלדון קמיני (1992) ועל ידי קמיני ומאזור (1995), שהשיגו חסימות אחידה עבור [[שדה ריבועי|שדות ריבועיים]] ועבור שדות מספרים ממעלה לכל היותר 8, בהתאמה. לבסוף, [[לואיק מרל]] (1996) הוכיח את ההשערה לעקומים אליפטיים מעל כל שדה מספרים.{{הערה|1=L. Merel, ''Bornes pour la torsion des courbes elliptiques sur les corps de nombres'', Inventiones Mathematicae '''124''' (1996), pp. 437–449|כיווון=שמאל}} הוא הוכיח, עבור שדה מספרים <math>K</math> ממעלה <math>d = [K : \mathbb Q]</math> ועקום אליפטי <math>E/K</math>, שיש חסם על סדר חבורת הפיתול שתלוי רק במעלה: <math>|E(K)_{\text{tors}}| \le B(d)</math>. יתרה מזו, אם <math>d \gt 1</math> ו-<math>P \in E(K)_{\text{tors}}</math> נקודה מסדר ראשוני <math>p</math>, אז <math>p \le d^{3d^2}</math>.
+
+חסם אפקטיבי לגודל חבורת הפיתול במונחי המעלה של שדה המספרים נתן פייר פרן (1999).{{הערה|1=P. Parent, ''Bornes effectives pour la torsion des courbes elliptiques sur les corps de nombres'', J. Reine Angew. Math. '''506''' (1999), pp. 85–116|כיווון=שמאל}} פרן הוכיח שעבור <math>P \in E(K)_{\text{tors}}</math> מסדר חזקת ראשוני <math>p^n</math>,
+:<math>p^n \le B(d, p) = \begin{cases} 129(3^d - 1)(3d)^6 & p = 2, \\ 65(5^d - 1)(2d)^6 & p = 3, \\ 65(3^d - 1)(2d)^6 & p \gt 3.\end{cases}</math>
+אם מגדירים <math>B_{\max}(d) = 129(5^d - 1)(3d)^6</math>, מתקבל ממשפט המבנה שמאחורי [[משפט מורדל–וייל]] (יש שני שלמים <math>n_1, n_2</math> כך ש-<math>E(K)_{\text{tors}} \cong \mathbb Z/n_1\mathbb Z \times \mathbb Z/n_2\mathbb Z</math>) חסם גס אבל אפקטיבי <math>B(d) = \bigl(B_{\max}(d)^{B_{\max}(d)}\bigr)^2</math>.
+
+ז'וזף אסטרלה נתן ברשימות פרטיות מ-1994 חסם טוב מעט יותר לנקודות מסדר ראשוני <math>p</math>, <math>p \le (3^{d/2} + 1)^2</math>, שמתברר כשימושי לחישובים מעל שדות ממעלה קטנה, אבל לבדו אינו מספיק כדי לתת חסם אפקטיבי על <math>|E(K)_{\text{tors}}|</math>. דריקס, קמיני, שטיין ושטול (2023) נותנים גרסה מפורסמת של התוצאה של אסטרלה.{{הערה|שם=DKSS|1=M. Derickx, S. Kamienny, W. Stein, M. Stoll, ''Torsion points on elliptic curves over number fields of small degree'', Algebra & Number Theory '''17''' (2023), pp. 267–308|כיווון=שמאל}}
+
+לשדות מספרים ממעלה קטנה ידועות תוצאות מעודנות יותר.{{הערה|1=A. V. Sutherland, ''Torsion subgroups of elliptic curves over number fields'', 2012|כיווון=שמאל}} רשימות מלאות של חבורות הפיתול האפשריות ניתנו לעקומים אליפטיים מעל שדות מספרים עד מעלה 4 (לעיל הרשימה המפורשת במעלה 1, כלומר מעל <math>\mathbb Q</math>). במעלות 1, 2 ו-4 כל החבורות שמופיעות, מופיעות אינסוף פעמים. אותו דבר נכון לשדות ממעלה שלישית,{{הערה|שם=BM|1=J. S. Balakrishnan, B. Mazur, N. Dogra, ''Ogg's Torsion conjecture: Fifty years later'', arXiv:2307.04752 (2023)|כיווון=שמאל}} פרט לחבורה <math>C_{21}</math>, שמופיעה רק בעקום אליפטי יחיד מעל <math>K = \mathbb Q(\zeta_9)^+</math>. בנוסף, כל חבורות הפיתול שמופיעות אינסוף פעמים נקבעו עד מעלה 7.{{הערה|1=F. Najman, ''Torsion groups of elliptic curves that appear infinitely often over septic fields'', arXiv:2602.03513 (2026)|כיווון=שמאל}} הטבלה הבאה נותנת את קבוצת כל הראשוניים <math>S(d)</math> שמופיעים בפועל כסדר של נקודת פיתול <math>P \in E(K)_{\text{tors}}</math>, ואת קבוצת הראשוניים <math>S'(d)</math> שמופיעים אינסוף פעמים, כאשר <math>\mathrm{Primes}(q)</math> מסמן את קבוצת הראשוניים שאינם גדולים מ-<math>q</math>.{{הערה|שם=DKSS}}{{הערה|1=M. Khawaja, ''Torsion primes for elliptic curves over degree 8 number fields'', Research in Number Theory '''10''' (2024), article 48|כיווון=שמאל}}
+
+{| class="wikitable" style="text-align:center"
+|+ ראשוניים שמופיעים (בהתאמה: מופיעים אינסוף פעמים) כסדרים של נקודות פיתול במעלה קטנה <math>d</math>
+|-
+! <math>d</math> !! 1 !! 2 !! 3 !! 4 !! 5 !! 6 !! 7 !! 8
+|-
+! <math>S(d)</math>
+| <math>\mathrm{Primes}(7)</math> || <math>\mathrm{Primes}(13)</math> || <math>\mathrm{Primes}(13)</math> || <math>\mathrm{Primes}(17)</math> || <math>\mathrm{Primes}(19)</math> || <math>\mathrm{Primes}(19)\cup\{37\}</math> || <math>\mathrm{Primes}(23)</math> || <math>\mathrm{Primes}(23)</math>
+|-
+! <math>S'(d)</math>
+| <math>\mathrm{Primes}(7)</math> || <math>\mathrm{Primes}(13)</math> || <math>\mathrm{Primes}(13)</math> || <math>\mathrm{Primes}(17)</math> || <math>\mathrm{Primes}(19)</math> || <math>\mathrm{Primes}(19)</math> || <math>\mathrm{Primes}(23)</math> || <math>\mathrm{Primes}(23)</math>
+|}
+(במעלה 1 זה אומר שסדר ראשוני של נקודת פיתול מעל <math>\mathbb Q</math> הוא 2, 3, 5 או 7 – בהתאם לרשימה של לוי, שבה אין <math>C_{11}</math> ואין <math>C_{13}</math>.)
+
+בארי מאזור נתן הרצאת סקירה על השערת הפיתול{{הערה|שם=BM}} לרגל הקמת קתדרת אוג במכון ללימודים מתקדמים בפרינסטון, באוקטובר 2022.
+
+== יריעות אבליות ==
+השערת החסימות האחידה ליריעות אבליות ממימד גבוה עדיין ברובה לא פתורה, אפילו במקרה של משטחים אבליים. במקרה הפרטי של משטחים אבליים שמוגדרים מעל <math>\mathbb Q</math>, שחוג האנדומורפיזמים הגאומטרי שלהם שווה לסדר מקסימלי ב[[אלגברת קווטרניונים]] לא מתפצלת, יף לאגה, קיארן שמברי, ארי שנידמן וג'ון וויט קבעו חסם מפורש של 18 על גודל חבורת הפיתול.{{הערה|1=J. Laga, C. Schembri, A. Shnidman, J. Voight, ''Rational torsion points on abelian surfaces with quaternionic multiplication'', Forum of Mathematics Sigma '''12''' (2024), e92|כיווון=שמאל}} הוכחה בהנחת השערת שפירו מוכללת נטענה לאחרונה בטיוטה של זייאנג גאו וקאיואן גו.{{הערה|שם=GG|1=Z. Gao, K. Gu, ''Uniformity in rational torsion and small points on abelian varieties'', arXiv:2608.22285 (2026)|כיווון=שמאל}}
+
+לעומת זאת, המצב מעל שדות פונקציות ממאפיין אפס מובן טוב יותר. בנג'מין בקר וג'ייקוב צימרמן הוכיחו את ההשערה למשטחים אבליים בטכניקות מגאומטריה היפרבולית;{{הערה|1=B. Bakker, J. Tsimerman, ''The geometric torsion conjecture for abelian varieties with real multiplication'', Journal of Differential Geometry '''109''' (2018), pp. 379–409|כיווון=שמאל}} טיוטה עדכנית של ניקול לופר וג'יט וו יאפ טוענת להוכחה במלוא הכלליות,{{הערה|1=N. Looper, J. W. Yap, ''Uniform boundedness of small points on abelian varieties over function fields'', arXiv:2603.23396 (2026)|כיווון=שמאל}} והוכחה חלופית עם חסמים מפורשים נטענת על ידי גאו וגו.{{הערה|שם=GG}}
+
+== ראו גם ==
+* [[דינמיקה אריתמטית|השערת החסימות האחידה לנקודות פרה-מחזוריות]]
+* [[משפט מורדל–וייל]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* S. Kamienny, ''Torsion points on elliptic curves and q-coefficients of modular forms'', Inventiones Mathematicae '''109''' (1992), pp. 221–229
+* S. Kamienny, B. Mazur, ''Rational torsion of prime order in elliptic curves over number fields'', Astérisque '''228''' (1995), pp. 81–100
+* T. Nagell, ''Problems in the theory of exceptional points on plane cubics of genus one'', in: ''Den 11te Skandinaviske Matematikerkongress, Trondheim 1949'', 1952, pp. 71–76
+* A. Ogg, ''Rational points of finite order on elliptic curves'', Inventiones Mathematicae '''12''' (1971), pp. 105–111
+* A. Ogg, ''Rational points on certain elliptic modular curves'', Proc. Symp. Pure Math. '''24''' (1973), pp. 221–231
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:יריעות אבליות]]
+[[קטגוריה:השערות מתמטיות]]
+[[קטגוריה:גאומטריה דיופנטית]]
+[[קטגוריה:עקומים אליפטיים]]

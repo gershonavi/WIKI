@@ -142,7 +142,7 @@ Additive number theory:
 ### עקומים אליפטיים (24)
 
 - [x] Mordell–Weil theorem
-- [ ] Mordell–Weil group
+- [x] Mordell–Weil group
 - [x] Hasse's theorem on elliptic curves
 - [x] Nagell–Lutz theorem
 - [ ] Mazur's torsion theorem
