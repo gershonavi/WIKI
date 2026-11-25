@@ -30,7 +30,10 @@ def footnotes_to_list(md):
 
 def convert(md):
     md = footnotes_to_list(md)
+    md = re.sub(r'\]\((?:\.\./)?(?:pages|course)/([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
     md = re.sub(r'\]\(([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
+    md = md.replace('](../COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)')
+    md = re.sub(r'\]\(([^)/\s:]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
     md = md.replace('](../wiki/', f']({REPO}/blob/main/wiki/')
     md = md.replace('](LICENSE-CONTENT.md)', f']({REPO}/blob/main/LICENSE-CONTENT.md)')
     md = md.replace('](LICENSE)', f']({REPO}/blob/main/LICENSE)')
@@ -48,7 +51,25 @@ def main(dest):
     home = re.sub(r'^# .*\n', '', home, count=1)
     home = convert(home).replace('`wiki/`', f'[`wiki/`]({REPO}/tree/main/wiki)').replace('`pages/`', f'[`pages/`]({REPO}/tree/main/pages)')
     open(os.path.join(dest, 'Home.md'), 'w', encoding='utf-8').write(home)
-    side = ['**[דף הבית](Home)**', '', f'**[הריפו]({REPO})**', '']
+    course_dir = os.path.join(ROOT, 'course')
+    lessons = sorted(f[:-3] for f in os.listdir(course_dir) if f.endswith('.md')) if os.path.isdir(course_dir) else []
+    for l in lessons:
+        md = open(os.path.join(course_dir, l + '.md'), encoding='utf-8').read()
+        open(os.path.join(dest, l + '.md'), 'w', encoding='utf-8').write(convert(md))
+    if os.path.exists(os.path.join(ROOT, 'COURSE.md')):
+        md = open(os.path.join(ROOT, 'COURSE.md'), encoding='utf-8').read()
+        md = re.sub(r'^# .*\n', '', md, count=1)
+        open(os.path.join(dest, 'קורס.md'), 'w', encoding='utf-8').write(convert(md))
+    side = ['**[דף הבית](Home)**', '', '**[הקורס](%D7%A7%D7%95%D7%A8%D7%A1)**', '']
+    titles = {}
+    up = os.path.join(course_dir, 'units.tsv')
+    if os.path.exists(up):
+        for row in open(up, encoding='utf-8').read().splitlines():
+            parts = row.split('\t')
+            if len(parts) >= 3 and not row.startswith('#'):
+                titles[parts[2][:-3]] = parts[1]
+    side += [f'{i+1}. [{titles.get(l, l)}]({wiki_name(l)})' for i, l in enumerate(lessons)]
+    side += ['', f'**[הריפו]({REPO})**', '', '**ערכים**', '']
     side += [f'* [{t}]({wiki_name(t)})' for t in titles]
     open(os.path.join(dest, '_Sidebar.md'), 'w', encoding='utf-8').write('\n'.join(side) + '\n')
     open(os.path.join(dest, '_Footer.md'), 'w', encoding='utf-8').write(

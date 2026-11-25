@@ -169,7 +169,8 @@ def write_index(files, sources):
         cats = re.findall(r'\[\[קטגוריה:([^\]|]+)', text) or ['שונות']
         bycat.setdefault(cats[0].strip(), []).append(title)
     lines = ['# ויקי תורת המספרים בעברית', '',
-             'אוסף ערכים בתורת המספרים, מתורגמים לעברית מוויקיפדיה האנגלית.',
+             'אוסף ערכים בתורת המספרים, מתורגמים לעברית מוויקיפדיה האנגלית, וקורס מסודר המבוסס עליהם.', '',
+             '**[לקורס: תורת המספרים בעברית, לפי סדר הלימוד](COURSE.md)**', '',
              'כל ערך מופיע פעמיים: כדף לקריאה בתיקייה `pages/`, וכקוד ויקי בתיקייה `wiki/` שאפשר להעתיק ישירות לוויקיפדיה.', '',
              '**רישיון:** התוכן ברישיון [CC BY-SA 4.0](LICENSE-CONTENT.md), כמו ויקיפדיה, כך שכל אחד רשאי להעתיק אותו בחזרה לוויקיפדיה עם ציון המקור. '
              'הקוד (סקריפט ההמרה) ברישיון [MIT](LICENSE).', '',
@@ -184,6 +185,54 @@ def write_index(files, sources):
     lines += ['## בנייה מחדש', '', '```', 'python3 build.py', '```', '',
               'הסקריפט ממיר כל קובץ `wiki/*.wiki` לדף Markdown ב-`pages/` (דורש pandoc).', '']
     open(os.path.join(ROOT, 'README.md'), 'w', encoding='utf-8').write('\n'.join(lines))
+
+
+def write_course(local):
+    path = os.path.join(ROOT, 'course', 'units.tsv')
+    if not os.path.exists(path):
+        return
+    lines = ['# קורס: תורת המספרים בעברית', '',
+             'הקורס בנוי לפי הסדר שבו הידע נבנה: כל יחידה נשענת על היחידות שלפניה.',
+             'בכל יחידה יש שיעור עם הסבר, דוגמאות פתורות שלב אחר שלב ותרגילים עם פתרונות, ואחריו רשימת ערכים להעמקה.', '',
+             'מקרא: ערכים בלי סימון נמצאים בוויקי הזה; ↗ – ערך קיים בוויקיפדיה העברית; ⏳ – ערך שעדיין בתור התרגום.', '']
+    assigned = set()
+    for row in open(path, encoding='utf-8').read().splitlines():
+        if not row.strip() or row.startswith('#'):
+            continue
+        num, title, lesson, arts = row.split('\t')
+        lp = os.path.join(ROOT, 'course', lesson)
+        head = f'## יחידה {num}: {title}'
+        lines.append(head)
+        lines.append('')
+        if os.path.exists(lp):
+            lines.append(f'**[שיעור {num}: {title}](course/{urllib.parse.quote(lesson)})**')
+        else:
+            lines.append(f'שיעור {num}: {title} (בכתיבה)')
+        lines.append('')
+        items = []
+        for a in arts.split('|'):
+            a = a.strip()
+            if not a:
+                continue
+            if a.startswith('he:'):
+                t = a[3:]
+                items.append(f'[{t}](https://he.wikipedia.org/wiki/{urllib.parse.quote(t.replace(" ", "_"))}) ↗')
+            elif a.startswith('en:'):
+                t = a[3:]
+                items.append(f'{t} ⏳')
+            else:
+                assigned.add(a)
+                if a in local:
+                    items.append(f'[{a}](pages/{urllib.parse.quote(a)}.md)')
+                else:
+                    items.append(f'{a} ⏳')
+        lines.append('ערכים: ' + ' · '.join(items))
+        lines.append('')
+    missing = sorted(local - assigned)
+    if missing:
+        lines += ['## ערכים נוספים', '', 'ערכים בוויקי שעוד לא שובצו ביחידה:', ''] + [f'* [{t}](pages/{urllib.parse.quote(t)}.md)' for t in missing] + ['']
+        print('unassigned:', ', '.join(missing))
+    open(os.path.join(ROOT, 'COURSE.md'), 'w', encoding='utf-8').write('\n'.join(lines))
 
 
 def main():
@@ -218,6 +267,7 @@ def main():
                  f'[קוד הוויקי של הדף](../wiki/{urllib.parse.quote(f)})</sub>\n')
         open(os.path.join(OUT, title + '.md'), 'w', encoding='utf-8').write(head + md + foot)
     write_index(files, sources)
+    write_course(local)
     print(f'built {len(files) - len(failed)} / {len(files)}')
     for t, e in failed:
         print('FAILED', t, e)
