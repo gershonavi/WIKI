@@ -94,7 +94,7 @@ Additive number theory:
 - [x] Totally real number field
 - [x] Totally imaginary number field
 - [x] Monogenic field
-- [ ] Golden field
+- [x] Golden field
 - [ ] S-unit
 - [ ] Narrow class group
 - [ ] Conductor–discriminant formula
