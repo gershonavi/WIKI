@@ -1,0 +1,30 @@
+'''בעיית בולי הדואר''' (ב[[אנגלית]]: postage stamp problem) היא חידה מתמטית ששואלת מהו ערך הדואר הקטן ביותר שאי אפשר להדביק על מעטפה, אם יש במעטפה מקום למספר מוגבל של בולים בלבד, ולבולים יכולים להיות רק ערכים נקובים מסוימים.{{הערה|שם=shallit|1=J. Shallit, [https://arxiv.org/abs/math.NT/0112257 The computational complexity of the local postage stamp problem], SIGACT News 33 (1), 2002, עמ' 90–94|כיווון=שמאל}}
+
+לדוגמה, נניח שבמעטפה יש מקום לשלושה בולים בלבד, וערכי הבולים הזמינים הם 1, 2, 5 ו-20 סנט. אז הפתרון הוא 13 סנט: כל ערך קטן יותר אפשר לקבל בעזרת שלושה בולים לכל היותר (למשל <math>4 = 2 + 2</math>, <math>8 = 5 + 2 + 1</math> וכן הלאה), אבל כדי לקבל 13 סנט צריך לפחות ארבעה בולים (<math>13 = 5 + 5 + 2 + 1</math>).
+
+== הגדרה מתמטית ==
+באופן מתמטי אפשר לנסח את הבעיה כך:
+: בהינתן מספר שלם <math>m</math> וקבוצה <math>V</math> של מספרים שלמים חיוביים, מצאו את המספר השלם הקטן ביותר <math>z</math> שאי אפשר לכתוב כסכום <math>v_1 + v_2 + \cdots + v_k</math> של <math>k \le m</math> איברים כלשהם (לא בהכרח שונים) של <math>V</math>.
+
+== סיבוכיות ==
+אפשר לפתור את הבעיה בחיפוש ממצה או בנסיגה (backtracking) בזמן מרבי פרופורציוני ל-<math>|V|^m</math>, כאשר <math>|V|</math> הוא מספר ערכי הבולים השונים המותרים. לכן, אם הקיבולת <math>m</math> של המעטפה קבועה, זו בעיה הניתנת לפתרון ב[[סיבוכיות זמן|זמן פולינומי]]. אם הקיבולת <math>m</math> שרירותית, ידוע שהבעיה [[NP-קשיות|NP-קשה]].{{הערה|שם=shallit}}
+
+== ראו גם ==
+* [[בעיית תרמיל הגב]]
+* [[בעיית וארינג]]
+
+== קישורים חיצוניים ==
+* W. F. Lunnon, A postage stamp problem, Comput. J. 12 (4), 1969, עמ' 377–380, {{DOI|10.1093/comjnl/12.4.377}}
+* R. Alter, J. A. Barnett, A postage stamp problem, Amer. Math. Monthly 87 (3), 1980, עמ' 206–210, {{DOI|10.2307/2321610}}
+* R. L. Graham, N. J. A. Sloane, On additive bases and harmonious graphs, SIAM J. Algebr. Discrete Methods 1 (4), 1980, עמ' 382–404, {{DOI|10.1137/0601045}}
+* M. F. Challis, Two new techniques for computing extremal h-bases A<sub>k</sub>, Comput. J. 36 (2), 1993, עמ' 117–126, {{DOI|10.1093/comjnl/36.2.117}}
+* J. Kohonen, J. Corander, Addition chains meet postage stamps: reducing the number of multiplications, 2013, [https://arxiv.org/abs/1310.7090 arXiv:1310.7090]
+* J. Kohonen, A meet-in-the-middle algorithm for finding extremal restricted additive 2-bases, 2014, [https://arxiv.org/abs/1403.5945 arXiv:1403.5945]
+* {{MathWorld|PostageStampProblem|Postage Stamp Problem}}
+* {{OEIS|A001212}}: הפתרון לבעיית בולי הדואר עם <math>n</math> ערכים נקובים ושני בולים
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האדיטיבית]]
+[[קטגוריה:מתמטיקה שימושית]]
