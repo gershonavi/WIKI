@@ -157,8 +157,22 @@ def fix_links(md, local):
         if t in local:
             return f'[{label}]({urllib.parse.quote(t)}.md)'
         return f'[{label}](https://he.wikipedia.org/wiki/{urllib.parse.quote(t.replace(" ", "_"))})'
-    # one pass: optional "wikilink" title, so links already rewritten are not touched twice
-    return re.sub(r'\[([^\]]*)\]\((\S+?)(?: "wikilink")?\)', repl, md)
+    # one pass (so a rewritten link is not rewritten again); the "wikilink" form first,
+    # because its target may itself contain parentheses
+    def either(m):
+        if m.group(1) is not None:
+            return repl(_M(m.group(1), m.group(2)))
+        return repl(_M(m.group(3), m.group(4)))
+    return re.sub(r'\[([^\]]*)\]\((\S+) "wikilink"\)|\[([^\]]*)\]\(([^)\s]+)\)', either, md)
+
+
+class _M:
+    def __init__(self, label, target):
+        self._g = (None, label, target)
+
+    def group(self, i):
+        return self._g[i] if i else f'[{self._g[1]}]({self._g[2]})'
+
 
 
 def write_index(files, sources):
