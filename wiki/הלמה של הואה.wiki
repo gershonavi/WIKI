@@ -1,0 +1,20 @@
+ב[[מתמטיקה]], '''הלמה של הואה''' (ב[[אנגלית]]: Hua's lemma),{{הערה|1=Hua Loo-keng, On Waring's problem, Quarterly Journal of Mathematics 9 (1), 1938, עמ' 199–202, {{DOI|10.1093/qmath/os-9.1.199}}|כיווון=שמאל}} הקרויה על שם הואה לו-קנג, היא הערכה ל[[סכום אקספוננציאלי|סכומים אקספוננציאליים]].
+
+היא קובעת שאם <math>P</math> הוא [[פולינום]] בעל ערכים שלמים ממעלה <math>k</math>, <math>\varepsilon</math> מספר ממשי חיובי, ו-<math>f</math> פונקציה המוגדרת על ידי
+:<math>f(\alpha)=\sum_{x=1}^N\exp(2\pi iP(x)\alpha),</math>
+אז
+:<math>\int_0^1|f(\alpha)|^\lambda \, d\alpha\ll_{P, \varepsilon} N^{\mu(\lambda)},</math>
+כאשר <math>(\lambda,\mu(\lambda))</math> נמצא על קו שבור שקודקודיו הם
+:<math>(2^\nu,\ 2^\nu-\nu+\varepsilon),\quad\nu=1,\ldots,k.</math>
+
+== הסבר ==
+(הסעיף הזה נוסף בתרגום.)
+* '''פירוש האינטגרל.''' כאשר <math>\lambda = 2s</math> זוגי, פותחים את <math>|f|^{2s} = f^s \bar f^s</math> ומשתמשים ב-<math>\int_0^1 e^{2\pi i h\alpha}\,d\alpha = 1</math> אם <math>h = 0</math> ו-0 אחרת. מתקבל ש-<math>\int_0^1|f(\alpha)|^{2s}d\alpha</math> הוא בדיוק מספר הפתרונות של
+:<math>P(x_1) + \cdots + P(x_s) = P(y_1) + \cdots + P(y_s), \qquad 1 \le x_i, y_i \le N.</math>
+* '''למה זה הגבול הנכון.''' יש <math>N^s</math> פתרונות "טריוויאליים" (כש-<math>y</math> הוא תמורה של <math>x</math>), ולכן האינטגרל הוא לפחות בערך <math>N^s = N^{\lambda/2}</math>. מנגד, הסכומים <math>P(x_1)+\dots+P(x_s)</math> נעים בטווח של גודל <math>N^k</math>, ולכן "בממוצע" צפוי מספר פתרונות של בערך <math>N^{2s}/N^k</math>. החסם של הואה, <math>N^{2^\nu - \nu + \varepsilon}</math> עבור <math>2s = 2^\nu</math>, נמצא בין שני הגבולות האלה. למשל, עבור <math>\nu = 1</math> הוא נותן <math>N^{1+\varepsilon}</math>, שזה כמעט מספר הפתרונות הטריוויאליים של <math>P(x) = P(y)</math>.
+* '''השימוש.''' הלמה משמשת להערכת התרומה של הקשתות המינוריות ב[[שיטת המעגל של הארדי וליטלווד|שיטת המעגל]], ובפרט בבעיית וורינג.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
