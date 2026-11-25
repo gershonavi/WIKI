@@ -70,7 +70,7 @@ Additive number theory:
 - [x] Fractional ideal
 - [x] Ideal norm
 - [x] Discriminant of an algebraic number field
-- [ ] Different ideal
+- [x] Different ideal
 - [ ] Fundamental unit (number theory)
 - [ ] Quadratic integer
 - [ ] Cubic field

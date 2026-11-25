@@ -1,0 +1,61 @@
+ב[[תורת המספרים האלגברית]], '''אידיאל השונה''' (different ideal, ולפעמים פשוט '''השונה''') מוגדר כדי למדוד את החוסר (האפשרי) בדואליות של [[חוג השלמים האלגבריים|חוג השלמים]] של [[שדה מספרים]] <math>K</math> ביחס ל[[עקבה (אלגברה)|עקבה]] של השדה. הוא מקודד את נתוני ה'''סיעוף''' של ה[[אידיאל ראשוני|אידיאלים הראשוניים]] של חוג השלמים. את המושג הציג [[ריכרד דדקינד]] ב-1882.{{הערה|1=R. Dedekind, ''Über die Discriminanten endlicher Körper'', Abhandlungen der Königlichen Gesellschaft der Wissenschaften zu Göttingen '''29''' (1882), no. 2, pp. 1–56|כיווון=שמאל}}{{הערה|1=N. Bourbaki, ''Elements of the History of Mathematics'', Springer, 1994, p. 102|כיווון=שמאל}}
+
+== הגדרה ==
+יהי <math>\mathcal O_K</math> חוג השלמים של <math>K</math>, ותהי <math>\mathrm{tr}</math> העקבה מ-<math>K</math> לשדה המספרים הרציונליים <math>\mathbb Q</math>. אז
+:<math>x \mapsto \mathrm{tr}\,x^2</math>
+היא [[תבנית ריבועית]] שלמה על <math>\mathcal O_K</math>. הדיסקרימיננטה שלה כתבנית ריבועית אינה בהכרח <math>\pm 1</math> (למעשה זה קורה רק במקרה <math>K = \mathbb Q</math>). נגדיר את '''השונה ההפוך''' (או '''הקו-שונה''',{{הערה|שם=S50|1=J.-P. Serre, ''Local Fields'', Graduate Texts in Mathematics '''67''', Springer, 1979, p. 50|כיווון=שמאל}}{{הערה|שם=FT125|1=A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', Cambridge Studies in Advanced Mathematics '''27''', Cambridge University Press, 1991, p. 125|כיווון=שמאל}} או '''המודול המשלים של דדקינד'''{{הערה|שם=N195|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, p. 195|כיווון=שמאל}}) כקבוצה <math>I</math> של כל <math>x \in K</math> שעבורם <math>\mathrm{tr}(xy)</math> שלם לכל <math>y \in \mathcal O_K</math>. זהו [[אידיאל שבור]] של <math>K</math> שמכיל את <math>\mathcal O_K</math>. לפי ההגדרה, '''אידיאל השונה''' <math>\delta_K</math> הוא האידיאל השבור ההפוך <math>I^{-1}</math>; זהו אידיאל (שלם) של <math>\mathcal O_K</math>.
+
+ה[[נורמה של אידיאל|נורמה]] של <math>\delta_K</math> שווה לאידיאל של <math>\mathbb Z</math> שנוצר על ידי [[דיסקרימיננטה של שדה מספרים|הדיסקרימיננטה]] <math>D_K</math> של <math>K</math>: <math>N(\delta_K) = |D_K|</math>.
+
+'''השונה של איבר''' <math>\alpha \in K</math> עם [[פולינום מינימלי]] <math>f</math> מוגדר כ-<math>\delta(\alpha) = f'(\alpha)</math> אם <math>\alpha</math> יוצר את השדה <math>K</math> (ו-0 אחרת).{{הערה|שם=Nark160|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', 2nd ed., Springer/PWN, 1990, p. 160|כיווון=שמאל}} אפשר לכתוב
+:<math>\delta(\alpha) = \prod_{i} \left({\alpha - \alpha^{(i)}}\right),</math>
+כאשר <math>\alpha^{(i)}</math> עוברים על כל שורשי הפולינום האופייני של <math>\alpha</math> פרט ל-<math>\alpha</math> עצמו.{{הערה|1=E. Hecke, ''Lectures on the Theory of Algebraic Numbers'', Graduate Texts in Mathematics '''77''', Springer, 1981, p. 116|כיווון=שמאל}} אידיאל השונה נוצר על ידי השונים של כל השלמים <math>\alpha \in \mathcal O_K</math>.{{הערה|שם=Nark160}}{{הערה|1=E. Hecke, ''Lectures on the Theory of Algebraic Numbers'', p. 121|כיווון=שמאל}} זו ההגדרה המקורית של דדקינד.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', pp. 197–198|כיווון=שמאל}} בפרט, אם <math>\mathcal O_K = \mathbb Z[\alpha]</math>, אז <math>\delta_K = (f'(\alpha))</math>.
+
+השונה מוגדר גם עבור הרחבה ממעלה סופית של שדות מקומיים, ויש לו תפקיד בסיסי בדואליות של פונטריאגין עבור שדות <math>p</math>-אדיים.
+
+== דוגמאות ==
+=== <math>\mathbb Q(i)</math> ===
+חוג השלמים הוא <math>\mathbb Z[i]</math>, והפולינום המינימלי של <math>i</math> הוא <math>f(x) = x^2+1</math>. לכן
+:<math>\delta_K = (f'(i)) = (2i) = (2) = (1+i)^2.</math>
+אפשר לחשב זאת גם ישירות מההגדרה. עבור <math>x = a+bi</math> מתקיים <math>\mathrm{tr}(x) = 2a</math> ו-<math>\mathrm{tr}(xi) = \mathrm{tr}(-b + ai) = -2b</math>, ולכן <math>\mathrm{tr}(xy) \in \mathbb Z</math> לכל <math>y \in \mathbb Z[i]</math> אם ורק אם <math>a, b \in \tfrac12\mathbb Z</math>. כלומר השונה ההפוך הוא <math>\tfrac12\mathbb Z[i]</math>, וההופכי שלו הוא <math>(2)</math>. הנורמה היא <math>N((2)) = 4 = |D_{\mathbb Q(i)}|</math>. הראשוני היחיד שמחלק את השונה הוא <math>(1+i)</math>, ואכן 2 הוא הראשוני היחיד שמסועף ב-<math>\mathbb Q(i)</math>.
+
+=== <math>\mathbb Q(\sqrt{-5})</math> ===
+כאן <math>\mathcal O_K = \mathbb Z[\sqrt{-5}]</math> ו-<math>f(x) = x^2+5</math>, ולכן <math>\delta_K = (2\sqrt{-5})</math>. בעזרת הפירוקים <math>(2) = \mathfrak p_2^2</math> (עם <math>\mathfrak p_2 = (2, 1+\sqrt{-5})</math>) ו-<math>(\sqrt{-5}) = \mathfrak p_5</math> מקבלים
+:<math>\delta_K = \mathfrak p_2^2\,\mathfrak p_5,\qquad N(\delta_K) = 2^2\cdot 5 = 20 = |D_K|.</math>
+המעריכים מתאימים לכלל שבסעיף על סיעוף: הראשוני 5 מסועף במתינות (<math>e = 2</math>, ו-5 אינו מחלק את 2), ולכן המעריך שלו הוא <math>e - 1 = 1</math>; הראשוני 2 מסועף בפראות (2 מחלק את <math>e = 2</math>), והמעריך שלו, 2, גדול מ-<math>e - 1</math>.
+
+=== <math>\mathbb Q(\sqrt{-3})</math> ===
+חוג השלמים הוא <math>\mathbb Z[\omega]</math> עם <math>\omega = \tfrac{-1+\sqrt{-3}}{2}</math>, והפולינום המינימלי של <math>\omega</math> הוא <math>x^2+x+1</math>. לכן <math>\delta_K = (2\omega+1) = (\sqrt{-3})</math>, עם נורמה <math>3 = |D_K|</math>.
+
+== השונה היחסי ==
+'''השונה היחסי''' <math>\delta_{L/K}</math> מוגדר באופן דומה עבור הרחבה <math>L/K</math> של שדות מספרים. הנורמה היחסית של השונה היחסי שווה לדיסקרימיננטה היחסית <math>\Delta_{L/K}</math>.{{הערה|שם=N201|1=J. Neukirch, ''Algebraic Number Theory'', p. 201|כיווון=שמאל}} במגדל שדות <math>L/K/F</math> השונים היחסיים קשורים ביחס <math>\delta_{L/F} = \delta_{L/K}\,\delta_{K/F}</math>.{{הערה|שם=N195}}{{הערה|שם=FT126|1=A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', p. 126|כיווון=שמאל}}
+
+השונה היחסי שווה למאפס (annihilator) של מודול הדיפרנציאלים של קהלר היחסי <math>\Omega^1_{\mathcal O_L/\mathcal O_K}</math>:{{הערה|שם=N201}}{{הערה|1=J.-P. Serre, ''Local Fields'', p. 59|כיווון=שמאל}}
+:<math>\delta_{L/K} = \{ x \in \mathcal O_L : x\, \mathrm{d} y = 0 \ \text{לכל}\ y \in \mathcal O_L \} .</math>
+
+המחלקה של השונה היחסי <math>\delta_{L/K}</math> היא תמיד ריבוע ב[[חבורת מחלקות האידיאלים|חבורת המחלקות]] של <math>\mathcal O_L</math>.{{הערה|1=E. Hecke, ''Lectures on the Theory of Algebraic Numbers'', pp. 234–236|כיווון=שמאל}} מאחר שהדיסקרימיננטה היחסית היא הנורמה של השונה היחסי, היא ריבוע של מחלקה בחבורת המחלקות של <math>\mathcal O_K</math>;{{הערה|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', p. 304|כיווון=שמאל}} למעשה, היא הריבוע של '''מחלקת שטייניץ''' של <math>\mathcal O_L</math> כמודול מעל <math>\mathcal O_K</math>.{{הערה|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', p. 401|כיווון=שמאל}}
+
+== סיעוף ==
+השונה היחסי מקודד את נתוני הסיעוף של ההרחבה <math>L/K</math>. אידיאל ראשוני <math>\mathfrak p</math> של <math>K</math> מסועף ב-<math>L</math> אם בפירוק של <math>\mathfrak p</math> ב-<math>L</math> מופיע ראשוני של <math>L</math> בחזקה גדולה מ-1; זה קורה אם ורק אם <math>\mathfrak p</math> מחלק את הדיסקרימיננטה היחסית <math>\Delta_{L/K}</math>. ליתר דיוק, אם
+:<math>\mathfrak p = \mathfrak P_1^{e_1} \cdots \mathfrak P_k^{e_k}</math>
+הוא הפירוק של <math>\mathfrak p</math> לאידיאלים ראשוניים של <math>L</math>, אז <math>\mathfrak P_i</math> מחלק את השונה היחסי <math>\delta_{L/K}</math> אם ורק אם <math>\mathfrak P_i</math> מסועף, כלומר אם ורק אם מדד הסיעוף <math>e_i</math> גדול מ-1.{{הערה|שם=FT126}}{{הערה|שם=N199|1=J. Neukirch, ''Algebraic Number Theory'', p. 199|כיווון=שמאל}} המעריך המדויק <math>s</math> שבו ראשוני מסועף <math>\mathfrak P</math> מחלק את <math>\delta</math> נקרא '''המעריך הדיפרנציאלי''' של <math>\mathfrak P</math>. אם <math>\mathfrak P</math> מסועף '''במתינות''' (tamely ramified), כלומר המאפיין <math>p</math> של שדה השארית אינו מחלק את <math>e</math>, אז <math>s = e - 1</math>.{{הערה|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', p. 166. בערך האנגלי נכתב "כאשר <math>\mathfrak P</math> אינו מחלק את <math>e</math>"; התנאי הנכון הוא שהראשוני <math>p</math> שמתחת ל-<math>\mathfrak P</math> אינו מחלק את <math>e</math>.|כיווון=שמאל}} אם <math>\mathfrak P</math> מסועף '''בפראות''' (wildly ramified), המעריך הדיפרנציאלי מקיים <math>e \le s \le e - 1 + v_{\mathfrak P}(e)</math>, כאשר <math>v_{\mathfrak P}</math> היא ההערכה של <math>L</math> ב-<math>\mathfrak P</math>.{{הערה|שם=N199}}{{הערה|1=E. Weiss, ''Algebraic Number Theory'', 2nd ed., Chelsea, 1976, p. 114|כיווון=שמאל}}{{הערה|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', pp. 194, 270|כיווון=שמאל}} (בדוגמה של <math>\mathbb Q(i)</math>: <math>e = 2</math> ו-<math>v_{(1+i)}(2) = 2</math>, ולכן <math>2 \le s \le 3</math>; ואכן <math>s = 2</math>.) עבור הרחבות גלואה אפשר לחשב את המעריך הדיפרנציאלי מהסדרים של חבורות הסיעוף הגבוהות <math>G_i</math>:{{הערה|1=E. Weiss, ''Algebraic Number Theory'', p. 115|כיווון=שמאל}}
+:<math>s = \sum_{i=0}^\infty (|G_i|-1).</math>
+(עבור <math>\mathbb Q(i)/\mathbb Q</math> בראשוני 2 מתקיים <math>|G_0| = |G_1| = 2</math> ו-<math>G_i</math> טריוויאלית עבור <math>i \ge 2</math>, ולכן <math>s = 1 + 1 = 2</math>.)
+
+== חישוב מקומי ==
+אפשר להגדיר את השונה גם עבור הרחבה <math>L/K</math> של שדות מקומיים. במקרה הזה אפשר להניח שההרחבה פשוטה, ונוצרת על ידי איבר פרימיטיבי <math>\alpha</math> שגם יוצר בסיס חזקות שלם. אם <math>f</math> הוא הפולינום המינימלי של <math>\alpha</math>, אז השונה נוצר על ידי <math>f'(\alpha)</math>.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', Cambridge Studies in Advanced Mathematics '''27''', Cambridge University Press, 1991
+* E. Hecke, ''Lectures on the Theory of Algebraic Numbers'', Graduate Texts in Mathematics '''77''', Springer, 1981
+* W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', 2nd ed., Springer, 1990
+* J. Neukirch, ''Algebraic Number Theory'', Grundlehren der mathematischen Wissenschaften '''322''', Springer, 1999
+* J.-P. Serre, ''Local Fields'', Graduate Texts in Mathematics '''67''', Springer, 1979
+* E. Weiss, ''Algebraic Number Theory'', 2nd ed., Chelsea, 1976
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
