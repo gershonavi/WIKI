@@ -77,7 +77,7 @@ Additive number theory:
 - [x] Biquadratic field
 - [x] Dedekind–Kummer theorem
 - [x] Splitting of prime ideals in Galois extensions
-- [ ] Ramification (mathematics)
+- [x] Ramification (mathematics)
 - [ ] Ramification group
 - [ ] P-adic valuation
 - [ ] Adele ring
