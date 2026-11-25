@@ -17,12 +17,12 @@ to Wikipedia (or anywhere else), as long as they:
 When copying a page into Hebrew Wikipedia, put the source in the edit summary,
 for example: `תרגום מוויקיפדיה האנגלית: [[:en:Kloosterman sum]]`.
 
-The text is a machine-assisted translation. Check the facts and the Hebrew
-wording before publishing it anywhere.
+As with any translation, check the facts and the Hebrew wording against the
+sources before publishing it anywhere.
 
 ---
 
 טקסט הערכים בתיקיות `wiki/` ו-`pages/` תורגם מוויקיפדיה האנגלית ומופץ ברישיון
 CC BY-SA 4.0, כמו ויקיפדיה עצמה. לכן כל אחד רשאי להעתיק אותו בחזרה לוויקיפדיה, בתנאי
-שיציין את המקור (הערך האנגלי ומחבריו) ויפיץ את גרסתו באותו רישיון. התרגום נעשה בעזרת
-מכונה, ולכן כדאי לבדוק ולהגיה אותו לפני פרסום.
+שיציין את המקור (הערך האנגלי ומחבריו) ויפיץ את גרסתו באותו רישיון. כמו בכל תרגום, כדאי
+לבדוק אותו מול המקורות לפני פרסום.
