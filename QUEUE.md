@@ -118,7 +118,7 @@ Additive number theory:
 - [x] Takagi existence theorem
 - [x] Hasse norm theorem
 - [ ] Local class field theory
-- [ ] Hilbert symbol
+- [x] Hilbert symbol
 - [ ] Ray class field
 - [ ] Complex multiplication
 - [ ] Conductor (class field theory)
