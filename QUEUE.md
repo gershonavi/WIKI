@@ -92,7 +92,7 @@ Additive number theory:
 - [x] Power residue symbol
 - [ ] CM-field
 - [x] Totally real number field
-- [ ] Totally imaginary number field
+- [x] Totally imaginary number field
 - [ ] Monogenic field
 - [ ] Golden field
 - [ ] S-unit
