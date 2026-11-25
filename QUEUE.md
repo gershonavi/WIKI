@@ -82,7 +82,7 @@ Additive number theory:
 - [x] P-adic valuation
 - [x] Adele ring (קיים בוויקיפדיה העברית: אדל)
 - [x] Idele group
-- [ ] Heegner number
+- [x] Heegner number
 - [ ] Kummer theory
 - [ ] Reciprocity law
 - [ ] Proofs of quadratic reciprocity
