@@ -127,7 +127,7 @@ Additive number theory:
 - [ ] Golod–Shafarevich theorem
 - [ ] Albert–Brauer–Hasse–Noether theorem
 - [ ] Langlands dual group
-- [ ] Teichmüller character
+- [x] Teichmüller character
 - [x] Gauss sum
 - [x] Jacobi sum
 - [x] Stickelberger's theorem
