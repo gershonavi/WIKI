@@ -42,7 +42,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Sum of two squares theorem
 - [ ] Multiplicative function
 - [ ] Completely multiplicative function
-- [ ] Deuring–Heilbronn phenomenon
+- [x] Deuring–Heilbronn phenomenon
 - [x] Semiprime
 - [x] Ernst Meissel
 
