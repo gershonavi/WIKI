@@ -1,0 +1,25 @@
+ב[[תורת המספרים]], '''פונקציית סכום המחלקים המשותפים המקסימליים''' (ב[[אנגלית]]: gcd-sum function),{{הערה|שם=toth|1=L. Tóth, A survey of gcd-sum functions, Journal of Integer Sequences 13, 2010|כיווון=שמאל}} הנקראת גם '''הפונקציה האריתמטית של פילאי''' (Pillai's arithmetical function),{{הערה|שם=toth}} מוגדרת לכל <math>n</math> על ידי
+:<math>P(n)=\sum_{k=1}^n\gcd(k,n),</math>
+כלומר סכום ה[[מחלק משותף מקסימלי|מחלקים המשותפים המקסימליים]] של <math>n</math> עם כל אחד מהמספרים <math>1, 2, \dots, n</math>. באופן שקול,{{הערה|שם=toth}}
+:<math>P(n) = \sum_{d\mid n} d\, \varphi(n/d),</math>
+כאשר <math>d</math> עובר על המחלקים של <math>n</math> ו-<math>\varphi</math> היא [[פונקציית אוילר]].
+
+אפשר לכתוב אותה גם כך:
+:<math>P(n) = \sum_{d \mid n} d\, \tau(d)\, \mu(n/d),</math>
+כאשר <math>\tau</math> היא [[פונקציית מחלקים|פונקציית מספר המחלקים]] ו-<math>\mu</math> היא [[פונקציית מביוס]].
+
+את [[פונקציה אריתמטית|הפונקציה האריתמטית]] ה[[פונקציה כפלית|כפלית]] הזו הציג המתמטיקאי ההודי סובאיה סיווסנקרנאראיאנה פילאי ב-1933.{{הערה|1=S. S. Pillai, On an arithmetic function, Annamalai University Journal II, 1933, עמ' 242–248|כיווון=שמאל}}{{הערה|1=K. Broughan, The gcd-sum function, Journal of Integer Sequences 4, 2002, מאמר 01.2.2, עמ' 1–19|כיווון=שמאל}}
+
+== דוגמה והסבר לנוסחה ==
+עבור <math>n = 6</math>: המחלקים המשותפים המקסימליים של 6 עם 1, 2, 3, 4, 5, 6 הם 1, 2, 3, 2, 1, 6, ולכן <math>P(6) = 15</math>.
+
+הנוסחה השנייה נובעת מקיבוץ האיברים לפי הערך של <math>\gcd(k,n)</math>: לכל מחלק <math>d</math> של <math>n</math>, המספרים <math>1 \le k \le n</math> שעבורם <math>\gcd(k,n) = d</math> הם בדיוק <math>k = d j</math> עם <math>1 \le j \le n/d</math> ו-<math>\gcd(j, n/d) = 1</math>, ויש <math>\varphi(n/d)</math> כאלה. עבור <math>n = 6</math>: <math>1\cdot\varphi(6) + 2\cdot\varphi(3) + 3\cdot\varphi(2) + 6\cdot\varphi(1) = 2 + 4 + 3 + 6 = 15</math>.
+
+מכיוון ש-<math>P</math> היא [[קונבולוציית דיריכלה]] של הפונקציות הכפליות <math>d \mapsto d</math> ו-<math>\varphi</math>, היא כפלית. עבור חזקת ראשוני מתקבל <math>P(p^k) = (k+1)p^k - k p^{k-1}</math>; בפרט <math>P(p) = 2p - 1</math>.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+{{OEIS|A018804}}
+
+[[קטגוריה:פונקציות אריתמטיות]]

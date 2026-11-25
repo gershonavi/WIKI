@@ -1,0 +1,22 @@
+ב[[מתמטיקה]], '''בעיית פונקציית אוילר של להמר''' (ב[[אנגלית]]: Lehmer's totient problem) שואלת אם יש [[מספר פריק]] <math>n</math> כך ש[[פונקציית אוילר]] <math>\varphi(n)</math> מחלקת את <math>n-1</math>. זוהי [[בעיה פתוחה]].
+
+ידוע ש-<math>\varphi(n) = n-1</math> אם ורק אם <math>n</math> ראשוני: אם <math>n</math> פריק, יש לו מחלק <math>d</math> עם <math>1 \lt d \lt n</math>, ו-<math>d</math> אינו זר ל-<math>n</math>, ולכן <math>\varphi(n) \le n - 2</math>. לכן לכל [[מספר ראשוני]] <math>n</math> מתקיים <math>\varphi(n) = n-1</math>, ובפרט <math>\varphi(n)</math> מחלק את <math>n-1</math>. [[דריק הנרי להמר]] שאל ב-1932 אם יש מספרים פריקים בעלי תכונה זו.{{הערה|שם=lehmer|1=D. H. Lehmer, On Euler's totient function, Bulletin of the American Mathematical Society 38 (10), 1932, עמ' 745–751, {{DOI|10.1090/s0002-9904-1932-05521-5}}|כיווון=שמאל}}
+
+לדוגמה, עבור <math>n = 15</math>: <math>\varphi(15) = 8</math> ו-<math>n - 1 = 14</math>, ו-8 אינו מחלק את 14. עבור <math>n = 561</math>, [[מספר קרמייקל|מספר הקרמייקל]] הקטן ביותר: <math>\varphi(561) = 320</math> ו-<math>560 = 320 + 240</math>, ולכן גם כאן אין התחלקות.
+
+== היסטוריה ==
+* להמר הראה שאם קיים פתרון פריק <math>n</math>, הוא חייב להיות אי-זוגי, [[חופשי מריבועים]], ומתחלק בלפחות שבעה ראשוניים שונים (כלומר <math>\omega(n) \geq 7</math>).{{הערה|שם=lehmer}} מספר כזה חייב גם להיות [[מספר קרמייקל]].
+* ב-1980 הוכיחו כהן והאגיס שלכל פתרון <math>n</math> של הבעיה, <math>\omega(n) \geq 14</math>.{{הערה|1=G. L. Cohen, P. Hagis jun., On the number of prime factors of n if φ(n) divides n−1, Nieuw Arch. Wiskd. III 28, 1980, עמ' 177–185|כיווון=שמאל}}{{הערה|1=J. Sándor, D. S. Mitrinović, B. Crstici (עורכים), Handbook of number theory I, Springer, 2006, עמ' 23|כיווון=שמאל}}
+* ב-1988 הראה האגיס שאם 3 מחלק פתרון כלשהו <math>n</math>, אז <math>n > 10^{1937042}</math> ו-<math>\omega(n) \geq 298848</math>.{{הערה|1=P. Hagis jun., On the equation M⋅φ(n)=n−1, Nieuw Arch. Wiskd. IV 6 (3), 1988, עמ' 255–261|כיווון=שמאל}}{{הערה|1=R. K. Guy, Unsolved problems in number theory, מהדורה שלישית, Springer, 2004, בעיה B37, עמ' 142|כיווון=שמאל}} את התוצאה שיפרו בורצ'י, צירבוס ופרקש, שהראו שאם 3 מחלק פתרון כלשהו <math>n</math>, אז <math>n > 10^{360000000}</math> ו-<math>\omega(n) \geq 40000000</math>.{{הערה|1=P. Burcsi, S. Czirbusz, G. Farkas, Computational investigation of Lehmer's totient problem, Ann. Univ. Sci. Budap. Rolando Eötvös, Sect. Comput. 35, 2011, עמ' 43–49|כיווון=שמאל}}
+* לפי תוצאה של לוקה ופומרנס מ-2011, מספר הפתרונות של הבעיה הקטנים מ-<math>X</math> הוא לכל היותר <math>X^{1/2} / (\log X)^{1/2 + o(1)}</math>.{{הערה|1=F. Luca, C. Pomerance, On composite integers n for which φ(n) ∣ n−1, Bol. Soc. Mat. Mexicana 17 (3), 2011, עמ' 13–21|כיווון=שמאל}}
+* ב-2019 הוכיחו בורק וז'מיה שכל פתרון <math>n</math> מקיים <math>n < 2^{2^{\omega(n)}} - 2^{2^{\omega(n)-1}}</math>.{{הערה|1=D. Burek, B. Żmija, A new upper bound for numbers with the Lehmer property and its application to repunit numbers, International Journal of Number Theory 15 (7), 2019, עמ' 1463–1468|כיווון=שמאל}}
+
+== לקריאה נוספת ==
+* Paulo Ribenboim, The New Book of Prime Number Records, מהדורה שלישית, Springer, 1996
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:השערות מתמטיות]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
+[[קטגוריה:פונקציות אריתמטיות]]
