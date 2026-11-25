@@ -1,0 +1,36 @@
+ב[[מתמטיקה]], '''פונקציית הזטא של רואל''' היא [[פונקציית זטא]] המתאימה ל[[מערכת דינמית]]. היא קרויה על שם הפיזיקאי המתמטי דוד רואל.
+
+== הגדרה פורמלית ==
+תהי <math>f</math> פונקציה המוגדרת על יריעה <math>M</math>, כך שקבוצת [[נקודת שבת|נקודות השבת]] <math>\mathrm{Fix}(f^n)</math> סופית לכל <math>n \ge 1</math>. תהי <math>\varphi</math> פונקציה על <math>M</math> שערכיה [[מטריצה|מטריצות]] מרוכבות מסדר <math>d\times d</math>. פונקציית הזטא מהסוג הראשון היא{{הערה|שם=T28|1=A. Terras, ''Zeta Functions of Graphs: A Stroll through the Garden'', Cambridge Studies in Advanced Mathematics '''128''', Cambridge University Press, 2010, p. 28|כיווון=שמאל}}
+
+:<math> \zeta(z) = \exp\left( \sum_{m\ge1} \frac{z^m}{m} \sum_{x\in\mathrm{Fix}(f^m)} \mathrm{Tr} \left( \prod_{k=0}^{m-1} \varphi(f^k(x)) \right) \right). </math>
+
+(בערך האנגלי נכתב שהקבוצה סופית "לכל <math>n > 1</math>"; ההגדרה משתמשת גם ב-<math>m = 1</math>, ולכן צריך <math>n \ge 1</math>.)
+
+== דוגמאות ==
+במקרה הפרטי <math>d = 1</math>, <math>\varphi = 1</math> מקבלים{{הערה|שם=T28}}
+
+:<math> \zeta(z) = \exp\left( \sum_{m\ge1} \frac{z^m}{m} \left|\mathrm{Fix}(f^m)\right| \right), </math>
+
+שהיא [[פונקציית זטא של ארטין–מאזור|פונקציית הזטא של ארטין–מאזור]].
+
+[[פונקציית זטא של איהרה|פונקציית הזטא של איהרה]] היא דוגמה לפונקציית זטא של רואל.{{הערה|1=Terras (2010), p. 29|כיווון=שמאל}}
+
+המשקל <math>\varphi</math> מאפשר לתת לכל מסלול מחזורי משקל שונה. למשל, אם <math>\varphi(x) = e^{-s\,g(x)}</math> עבור פונקציה ממשית <math>g</math>, כל מסלול מחזורי <math>x, f(x), \ldots, f^{m-1}(x)</math> מקבל את המשקל <math>e^{-s\,(g(x) + \cdots + g(f^{m-1}(x)))}</math>, בדומה לגורם <math>p^{-s}</math> ב[[מכפלת אוילר]] של [[פונקציית זטא של רימן]]. [[פונקציית זטא של סלברג]] קשורה לכך באופן הדוק: עבור הזרימה הגאודזית על משטח היפרבולי, המכפלה על הגאודזות הסגורות הראשוניות <math>\prod_p(1 - N(p)^{-s})^{-1}</math> היא פונקציית זטא מהסוג הזה, והיא שווה ל-<math>Z(s+1)/Z(s)</math>, כאשר <math>Z</math> היא פונקציית הזטא של סלברג.
+
+== ראו גם ==
+* [[פונקציית זטא של לפשץ]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* M. L. Lapidus, M. van Frankenhuijsen, ''Fractal Geometry, Complex Dimensions and Zeta Functions: Geometry and Spectra of Fractal Strings'', Springer Monographs in Mathematics, Springer, 2006
+* M. Kotani, T. Sunada, ''Zeta functions of finite graphs'', J. Math. Sci. Univ. Tokyo '''7''' (2000), pp. 7–25
+* A. Terras, ''Zeta Functions of Graphs: A Stroll through the Garden'', Cambridge University Press, 2010
+* D. Ruelle, ''[https://www.ams.org/notices/200208/fea-ruelle.pdf Dynamical zeta functions and transfer operators]'', Notices of the AMS '''49''' (2002), no. 8, pp. 887–895
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:מערכות דינמיות]]
