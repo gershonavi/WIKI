@@ -5083,6 +5083,189 @@ def _():
     save('T08-x4')
 
 
+@fig('T09-e1')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.6, 4.4)); _unit(ax, 1.15)
+    s = 0.5 + 14.1347j; n = np.arange(1, 31); z = n ** (-s)
+    ax.plot(z.real, z.imag, '-', color=GR, lw=.6)
+    ax.scatter(z.real, z.imag, c=n, cmap='viridis', s=18, zorder=3)
+    for k in (1, 2, 3, 10):
+        ax.annotate(f'n={k}', (z[k - 1].real, z[k - 1].imag), fontsize=8, xytext=(4, 4), textcoords='offset points')
+    ax.set_title('n^(−s), s = ½ + 14.1347i', fontsize=9)
+    save('T09-e1')
+
+
+@fig('T09-e2')
+def _():
+    fig_, ax = plt.subplots(figsize=(5.2, 3.6)); z = 0.5j; N = 12
+    S = np.cumsum([-(z ** n) / n for n in range(1, N + 1)]); S = np.concatenate([[0], S])
+    ax.plot(S.real, S.imag, 'o-', ms=3, color=C1, lw=.8, label='partial sums')
+    t = np.log(1 - z); ax.plot(t.real, t.imag, '*', ms=12, color=C2, label='log(1 − i/2)')
+    for k in (1, 2, 3):
+        ax.annotate(str(k), (S[k].real, S[k].imag), fontsize=8, xytext=(4, -10), textcoords='offset points')
+    ax.axhline(0, color=GR, lw=.6); ax.axvline(0, color=GR, lw=.6)
+    ax.set_xlim(-.03, .16); ax.set_ylim(-.55, .05); ax.set_xlabel('Re'); ax.set_ylabel('Im'); ax.legend(fontsize=8, loc='upper right')
+    save('T09-e2')
+
+
+@fig('T09-e3')
+def _():
+    fig_, ax = plt.subplots(figsize=(6.2, 3.2)); th = np.linspace(0, 2 * np.pi, 200)
+    for c, col, lab in ((0, C1, '|z| = 1: 2πi'), (2, C2, '|z − 2| = 1: 0')):
+        ax.plot(c + np.cos(th), np.sin(th), color=col, label=lab)
+        ax.annotate('', xy=(c + np.cos(1.7), np.sin(1.7)), xytext=(c + np.cos(1.4), np.sin(1.4)), arrowprops=dict(arrowstyle='->', color=col, lw=1.5))
+    ax.plot(0, 0, 'kx', ms=8); ax.annotate('pole of 1/z', (0, 0), xytext=(-0.5, -0.3), fontsize=8)
+    ax.axhline(0, color=GR, lw=.6); ax.axvline(0, color=GR, lw=.6); ax.set_aspect('equal'); ax.legend(fontsize=8, loc='upper right')
+    ax.set_xlim(-1.5, 3.8); ax.set_ylim(-1.4, 1.4)
+    save('T09-e3')
+
+
+@fig('T09-e4')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.8, 4.4)); s = 2 + 1j; n = np.arange(1, 201)
+    S = np.cumsum(n.astype(complex) ** (-s))
+    th = np.linspace(0, 2 * np.pi, 300); R = np.pi ** 2 / 6
+    ax.plot(R * np.cos(th), R * np.sin(th), color=GR, ls=':', label='|z| = ζ(2)')
+    ax.plot(S.real, S.imag, 'o-', ms=2, lw=.6, color=C1, label='partial sums')
+    ax.plot(1.15036, -0.43753, '*', ms=12, color=C2, label='ζ(2 + i)')
+    ax.axhline(0, color=GR, lw=.6); ax.axvline(0, color=GR, lw=.6); ax.set_aspect('equal'); ax.legend(fontsize=8, loc='upper left')
+    save('T09-e4')
+
+
+@fig('T09-x1')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.6, 4.4)); _unit(ax, 1.3)
+    for th, col in zip(np.linspace(0, np.pi, 7)[:-1], plt.cm.viridis(np.linspace(0, .9, 6))):
+        q = np.exp(-2j * th)
+        ax.plot(q.real, q.imag, 'o', color=col, ms=8, label=f'θ = {th / np.pi:.2f}π')
+    ax.legend(fontsize=7, loc='lower left'); ax.set_title('(f(z+h) − f(z))/h for f = z̄, h = re^(iθ)', fontsize=9)
+    save('T09-x1')
+
+
+@fig('T09-x2')
+def _():
+    ax = plt.gca(); n = np.arange(1, 41); z = 0.9
+    from math import lgamma
+    ax.semilogy(n, (2 * z) ** n, color=C1, label='(a) |2^n z^n|')
+    ax.semilogy(n, z ** n / n ** 2, color=C3, label='(b) |z^n / n²|')
+    ax.semilogy(n, np.exp(np.array([lgamma(k + 1) for k in n]) + n * np.log(z)), color=C2, label='(c) |n! z^n|')
+    ax.set_xlabel('n'); ax.legend(fontsize=8); ax.set_title('size of the n-th term at z = 0.9', fontsize=9)
+    save('T09-x2')
+
+
+@fig('T09-x3')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.2, 4)); 
+    ax.annotate('', xy=(1, 1), xytext=(0, 0), arrowprops=dict(arrowstyle='->', color=C1, lw=2))
+    ax.annotate('', xy=(1, 0), xytext=(0, 0), arrowprops=dict(arrowstyle='->', color=C2, lw=2))
+    ax.annotate('', xy=(1, 1), xytext=(1, 0), arrowprops=dict(arrowstyle='->', color=C2, lw=2))
+    ax.text(.3, .5, '(a)', color=C1); ax.text(1.05, .45, '(b)', color=C2)
+    ax.plot([0, 1, 1], [0, 0, 1], 'ko', ms=4); ax.text(-.12, -.12, '0'); ax.text(1.02, -.12, '1'); ax.text(1.02, 1.05, '1+i')
+    ax.set_xlim(-.3, 1.4); ax.set_ylim(-.3, 1.3); ax.set_aspect('equal'); ax.set_title('∫ z² dz = (−2 + 2i)/3 on both', fontsize=9)
+    save('T09-x3')
+
+
+@fig('T09-x4')
+def _():
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.2)); th = np.linspace(0, 2 * np.pi, 200)
+    for R, col in ((1.5, C3), (2, C1), (3, C4)):
+        a1.plot(R * np.cos(th), R * np.sin(th), color=col, label=f'R = {R}')
+    a1.plot([0, 0], [1, -1], 'kx', ms=8); a1.text(.15, 1, 'i'); a1.text(.15, -1.1, '−i')
+    a1.set_aspect('equal'); a1.legend(fontsize=7, loc='upper left', bbox_to_anchor=(1.0, 1.0)); a1.set_title('poles ±i inside', fontsize=9)
+    R = np.linspace(1.2, 20, 200); a2.plot(R, 2 * np.pi * R / (R ** 2 - 1), color=C2, label='ML bound')
+    a2.axhline(0, color=C1, label='actual value 0'); a2.set_xlabel('R'); a2.legend(fontsize=8); a2.set_ylim(-.5, 8)
+    save('T09-x4')
+
+
+@fig('T10-e1')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.8, 4.4)); th = np.linspace(0, 2 * np.pi, 200)
+    ax.plot(.6 * np.cos(th), .6 * np.sin(th), color=C3, label='R = 0.6: integral 0')
+    ax.plot(1.7 * np.cos(th), 1.7 * np.sin(th), color=C1, label='R = 1.7: 2πi(−i/2 + i/2) = 0')
+    ax.plot([0, 0], [1, -1], 'x', color=C2, ms=10, mew=2)
+    ax.text(.12, 1.05, 'Res = −i/2', fontsize=9, color=C2); ax.text(.12, -1.2, 'Res = i/2', fontsize=9, color=C2)
+    ax.axhline(0, color=GR, lw=.5); ax.axvline(0, color=GR, lw=.5); ax.set_aspect('equal'); ax.set_xlim(-2.2, 2.2); ax.set_ylim(-2.2, 2.4)
+    ax.legend(fontsize=8, loc='upper left'); ax.set_title('1/(z² + 1)', fontsize=9)
+    save('T10-e1')
+
+
+@fig('T10-e2')
+def _():
+    fig_, ax = plt.subplots(figsize=(5.6, 3.2)); R = 2.5; th = np.linspace(0, np.pi, 200)
+    ax.plot([-R, R], [0, 0], color=C1, lw=2, label='[−R, R]: → ∫ dx/(1+x²)')
+    ax.plot(R * np.cos(th), R * np.sin(th), color=C4, lw=2, label='C_R: ≤ πR/(R²−1) → 0')
+    ax.annotate('', xy=(R * np.cos(1.3), R * np.sin(1.3)), xytext=(R * np.cos(1.1), R * np.sin(1.1)), arrowprops=dict(arrowstyle='->', color=C4, lw=1.5))
+    ax.annotate('', xy=(.6, 0), xytext=(0, 0), arrowprops=dict(arrowstyle='->', color=C1, lw=1.5))
+    ax.plot([0, 0], [1, -1], 'x', color=C2, ms=10, mew=2); ax.text(.12, 1.05, 'i (inside)', fontsize=9); ax.text(.12, -1.2, '−i (outside)', fontsize=9)
+    ax.set_aspect('equal'); ax.set_xlim(-3, 3); ax.set_ylim(-1.6, 2.9); ax.legend(fontsize=7, loc='upper right')
+    save('T10-e2')
+
+
+@fig('T10-e3')
+def _():
+    ax = plt.gca(); import mpmath as mpm
+    Ts = np.linspace(2, 80, 70)
+    def I(y, T):
+        return float(mpm.re(mpm.quad(lambda t: mpm.power(y, 1 + 1j * t) / (1 + 1j * t), mpm.linspace(-T, T, int(T) + 1)) / (2 * mpm.pi)))
+    ax.plot(Ts, [I(2, T) for T in Ts], color=C1, label='y = 2')
+    ax.plot(Ts, [I(.5, T) for T in Ts], color=C2, label='y = ½')
+    ax.axhline(1, color=C1, ls=':', lw=.8); ax.axhline(0, color=C2, ls=':', lw=.8)
+    ax.set_xlabel('T'); ax.legend(fontsize=8); ax.set_title('(1/2πi) ∫ from 1−iT to 1+iT of y^s/s ds', fontsize=9)
+    save('T10-e3')
+
+
+@fig('T10-e4')
+def _():
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.3)); th = np.linspace(0, 2 * np.pi, 400); z = np.exp(1j * th)
+    r = np.roots([1, 0, 1, 1]); _unit(a1, 1.5)
+    a1.plot(r.real, r.imag, 'o', color=C2); a1.set_title('roots of z³ + z + 1', fontsize=9)
+    w = z ** 3 + z + 1
+    a2.plot(w.real, w.imag, color=C1); a2.plot(0, 0, 'k+', ms=10)
+    a2.annotate('', xy=(w[60].real, w[60].imag), xytext=(w[50].real, w[50].imag), arrowprops=dict(arrowstyle='->', color=C1, lw=1.5))
+    a2.set_aspect('equal'); a2.set_title('image of |z| = 1: winds once around 0', fontsize=9)
+    save('T10-e4')
+
+
+@fig('T10-x1')
+def _():
+    fig_, ax = plt.subplots(figsize=(5, 4.4)); N = 3; h = N + .5
+    ax.plot([-h, h, h, -h, -h], [-h, -h, h, h, -h], color=C1, label='square, side 2N+1 (N = 3)')
+    n = np.arange(-4, 5); ax.plot(n[n != 0], 0 * n[n != 0], 'x', color=C2, ms=8, mew=2, label='Res = 1/n²')
+    ax.plot(0, 0, 'x', color=C4, ms=10, mew=2, label='Res = −π²/3')
+    ax.set_aspect('equal'); ax.set_xlim(-4.6, 4.6); ax.set_ylim(-4.2, 5.2); ax.legend(fontsize=8, loc='upper center', ncol=2)
+    ax.set_title('π cot(πz) / z²', fontsize=9)
+    save('T10-x1')
+
+
+@fig('T10-x2')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.8, 4.4)); th = np.linspace(0, 2 * np.pi, 200)
+    ax.plot(.5 * np.cos(th), .5 * np.sin(th), color=C1, label='|z| = ½: 2πi')
+    ax.plot(2 * np.cos(th), 2 * np.sin(th), color=C3, label='|z| = 2: 0')
+    ax.plot([0, 1], [0, 0], 'x', color=C2, ms=10, mew=2); ax.text(-.15, -.3, 'Res 1', fontsize=8); ax.text(.9, -.3, 'Res −1', fontsize=8)
+    ax.axhline(0, color=GR, lw=.5); ax.axvline(0, color=GR, lw=.5); ax.set_aspect('equal'); ax.set_xlim(-2.4, 2.4); ax.set_ylim(-2.4, 2.8)
+    ax.legend(fontsize=8, loc='upper left'); ax.set_title('1/(z(1 − z))', fontsize=9)
+    save('T10-x2')
+
+
+@fig('T10-x3')
+def _():
+    ax = plt.gca(); x = np.linspace(.02, 1, 20000)
+    ax.plot(x, np.sin(np.pi / x), color=C1, lw=.6)
+    n = np.arange(1, 50); ax.plot(1 / n, 0 * n, '.', color=C2, ms=4, label='zeros 1/n')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('sin(π/x)', fontsize=9)
+    save('T10-x3')
+
+
+@fig('T10-x4')
+def _():
+    ax = plt.gca(); T = np.linspace(0, 100, 400)
+    ax.plot(T, np.arctan(T) / np.pi, color=C1); ax.axhline(.5, color=C2, ls='--', label='½')
+    ax.plot([1, 10, 100], np.arctan([1, 10, 100]) / np.pi, 'o', color=C1, ms=4)
+    ax.set_xlabel('T'); ax.legend(fontsize=8); ax.set_title('(1/2πi) ∫ ds/s on [1 − iT, 1 + iT] = arctan(T)/π', fontsize=9)
+    save('T10-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
