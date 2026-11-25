@@ -135,7 +135,7 @@ Additive number theory:
 - [x] Herbrand–Ribet theorem
 - [ ] Main conjecture of Iwasawa theory
 - [x] Cyclotomic unit
-- [ ] Cyclotomic character
+- [x] Cyclotomic character
 - [x] Hilbert–Speiser theorem
 - [x] Thaine's theorem
 

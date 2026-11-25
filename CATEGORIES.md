@@ -418,7 +418,7 @@
 * [קומבינטוריקה אריתמטית](pages/%D7%A7%D7%95%D7%9E%D7%91%D7%99%D7%A0%D7%98%D7%95%D7%A8%D7%99%D7%A7%D7%94%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic combinatorics · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
 * [קרנק של חלוקה](pages/%D7%A7%D7%A8%D7%A0%D7%A7%20%D7%A9%D7%9C%20%D7%97%D7%9C%D7%95%D7%A7%D7%94.md) – Crank of a partition · בקורס: [שיעור 8](course/08-%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%95%D7%AA-%D7%93%D7%99%D7%95%D7%A4%D7%A0%D7%98%D7%99%D7%95%D7%AA.md)
 * [קרקטר טייכמילר](pages/%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%20%D7%98%D7%99%D7%99%D7%9B%D7%9E%D7%99%D7%9C%D7%A8.md) – Teichmüller character · בקורס: [שיעור 19א](COURSE.md)
-* [קרקטר ציקלוטומי](pages/%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%20%D7%A6%D7%99%D7%A7%D7%9C%D7%95%D7%98%D7%95%D7%9E%D7%99.md)
+* [קרקטר ציקלוטומי](pages/%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%20%D7%A6%D7%99%D7%A7%D7%9C%D7%95%D7%98%D7%95%D7%9E%D7%99.md) – Cyclotomic character · בקורס: [שיעור 19א](COURSE.md)
 * [קרקטר של הקה](pages/%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%20%D7%A9%D7%9C%20%D7%94%D7%A7%D7%94.md) – Hecke character · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
 
 ### ר
