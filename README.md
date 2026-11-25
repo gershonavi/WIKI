@@ -152,7 +152,7 @@
 
 * [קבוע לז'נדר](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9C%D7%96%27%D7%A0%D7%93%D7%A8.md) – Legendre's constant
 * [קבוע לנדאו-רמנוג'אן](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9C%D7%A0%D7%93%D7%90%D7%95-%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md) – Landau–Ramanujan constant
-* [קבוע פלר-טורנייר](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%A4%D7%9C%D7%A8-%D7%98%D7%95%D7%A8%D7%A0%D7%99%D7%99%D7%A8.md)
+* [קבוע פלר-טורנייר](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%A4%D7%9C%D7%A8-%D7%98%D7%95%D7%A8%D7%A0%D7%99%D7%99%D7%A8.md) – Feller–Tornier constant
 
 ### שונות
 
