@@ -88,7 +88,7 @@ Additive number theory:
 - [ ] Proofs of quadratic reciprocity
 - [x] Cubic reciprocity
 - [x] Quartic reciprocity
-- [ ] Eisenstein reciprocity
+- [x] Eisenstein reciprocity
 - [x] Power residue symbol
 - [ ] CM-field
 - [ ] Totally real number field

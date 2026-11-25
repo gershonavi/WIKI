@@ -314,7 +314,7 @@
 * [דיסקרימיננטה של שדה מספרים](pages/%D7%93%D7%99%D7%A1%D7%A7%D7%A8%D7%99%D7%9E%D7%99%D7%A0%D7%A0%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%A9%D7%93%D7%94%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md) – Discriminant of an algebraic number field
 * [הדדיות ממעלה רביעית](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A8%D7%91%D7%99%D7%A2%D7%99%D7%AA.md) – Quartic reciprocity
 * [הדדיות ממעלה שלישית](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99%D7%A9%D7%99%D7%AA.md) – Cubic reciprocity
-* [הדדיות של אייזנשטיין](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F.md)
+* [הדדיות של אייזנשטיין](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F.md) – Eisenstein reciprocity
 * [הערכה p-אדית](pages/%D7%94%D7%A2%D7%A8%D7%9B%D7%94%20p-%D7%90%D7%93%D7%99%D7%AA.md) – P-adic valuation
 * [הרחבה אבלית](pages/%D7%94%D7%A8%D7%97%D7%91%D7%94%20%D7%90%D7%91%D7%9C%D7%99%D7%AA.md) – Abelian extension
 * [חבורת האידלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%9C%D7%99%D7%9D.md) – Idele group
