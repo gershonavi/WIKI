@@ -16,7 +16,7 @@
 :<math>\mathrm{vol}\bigl(SL_2(\mathbb Z_p)\bigr) = \frac{|SL_2(\mathbb F_p)|}{p^{3}} = \frac{p(p^2 - 1)}{p^3} = 1 - p^{-2}.</math>
 (למשל ל-<math>p = 2</math>: <math>|SL_2(\mathbb F_2)| = 6</math>, ו-<math>6/8 = 3/4 = 1 - 2^{-2}</math>.) המכפלה על כל הראשוניים היא
 :<math>\prod_p (1 - p^{-2}) = \frac{1}{\zeta(2)} = \frac{6}{\pi^2}</math>
-לפי [[מכפלת אוילר]]. כיוון ש-<math>SL_2(\mathbb Q)</math> צפופה מספיק כדי ש-<math>SL_2(\mathbb A)/SL_2(\mathbb Q) \cong SL_2(\mathbb R)/SL_2(\mathbb Z)</math> כפול <math>\prod_p SL_2(\mathbb Z_p)</math> (תכונת ה"קירוב החזק"), מקבלים
+לפי [[מכפלת אוילר]]. לפי תכונת ה'''קירוב החזק''' של <math>SL_2</math>, מתקיים <math>SL_2(\mathbb A) = SL_2(\mathbb Q)\cdot\bigl(SL_2(\mathbb R)\times\prod_p SL_2(\mathbb Z_p)\bigr)</math>, והחיתוך של <math>SL_2(\mathbb Q)</math> עם הקבוצה בסוגריים הוא <math>SL_2(\mathbb Z)</math>. לכן תחום יסודי ל-<math>SL_2(\mathbb A)/SL_2(\mathbb Q)</math> הוא מכפלה של תחום יסודי ל-<math>SL_2(\mathbb R)/SL_2(\mathbb Z)</math> ב-<math>\prod_p SL_2(\mathbb Z_p)</math>, ומקבלים
 :<math>\tau(SL_2) = \mathrm{vol}\bigl(SL_2(\mathbb R)/SL_2(\mathbb Z)\bigr)\cdot\frac{1}{\zeta(2)}.</math>
 הטענה <math>\tau(SL_2) = 1</math> שקולה אפוא לכך שהנפח הממשי, במידה שמושרית מ-<math>\omega</math>, הוא <math>\zeta(2) = \pi^2/6</math> – זו גרסה של החישוב הקלאסי של השטח של [[תחום יסודי]] של [[החבורה המודולרית]] במישור העליון, <math>\pi/3</math>. באופן כללי, <math>\mathrm{vol}(SL_n(\mathbb Z_p)) = \prod_{j=2}^{n}(1 - p^{-j})</math>, והנפח של <math>SL_n(\mathbb R)/SL_n(\mathbb Z)</math> הוא <math>\zeta(2)\zeta(3)\cdots\zeta(n)</math> – וזה תוכן הטענה <math>\tau(SL_n) = 1</math> (מינקובסקי, זיגל, לנגלנדס).
 
