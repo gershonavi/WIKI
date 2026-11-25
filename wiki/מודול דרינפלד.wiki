@@ -1,0 +1,70 @@
+ב[[מתמטיקה]], '''מודול דרינפלד''' (או '''מודול אליפטי''') הוא, בקירוב, סוג מיוחד של [[מודול (מבנה אלגברי)|מודול]] מעל חוג של פונקציות על עקום מעל [[שדה סופי]], שמכליל את '''מודול קרליץ'''. באופן לא פורמלי, הם נותנים מקבילה של תורת ה[[כפל מרוכב|כפל המרוכב]] עבור שדות פונקציות. '''שטוקה''' (shtuka, נקראת גם '''F-אלומה''' או chtouca) היא מעין הכללה של מודול דרינפלד: בקירוב, [[אגד וקטורי]] מעל עקום, יחד עם מבנה נוסף שמזהה "סיבוב פרובניוס" של האגד עם "שינוי" שלו.
+
+מודולי דרינפלד הוצגו על ידי [[ולדימיר דרינפלד]] (1974), שהשתמש בהם כדי להוכיח את [[השערות לנגלנדס]] עבור <math>GL_2</math> של [[שדה פונקציות אלגברי]] בכמה מקרים פרטיים. מאוחר יותר המציא את השטוקות, והשתמש בשטוקות מדרגה 2 כדי להוכיח את שאר המקרים של השערות לנגלנדס עבור <math>GL_2</math>. [[לורן לפורג]] הוכיח את השערות לנגלנדס עבור <math>GL_n</math> של שדה פונקציות, על ידי חקר ערימת המודולי של שטוקות מדרגה <math>n</math>.
+
+"שטוקה" היא מילה רוסית (штука) שמשמעותה "עותק בודד", והיא באה מהשם הגרמני Stück, "חתיכה, פריט, יחידה". ברוסית המילה משמשת גם בסלנג ל"דבר" עם תכונות ידועות שאין לו שם בראשו של הדובר.
+
+== מודולי דרינפלד ==
+=== חוג הפולינומים החיבוריים ===
+יהי <math>L</math> שדה ממאפיין <math>p \gt 0</math>. החוג <math>L\{\tau\}</math> מוגדר כחוג ה[[חוג פולינומים מסובב|פולינומים הלא חילופיים]] (או "המסובבים") <math>a_0 + a_1\tau + a_2\tau^2 + \cdots</math> מעל <math>L</math>, עם הכפל שנקבע על ידי
+:<math>\tau a = a^p\tau, \qquad a \in L.</math>
+אפשר לחשוב על האיבר <math>\tau</math> כעל [[אנדומורפיזם פרובניוס|איבר פרובניוס]]: <math>L</math> הוא מודול שמאלי מעל <math>L\{\tau\}</math>, כשאיברי <math>L</math> פועלים בכפל ו-<math>\tau</math> פועל כאנדומורפיזם פרובניוס של <math>L</math>. אפשר לחשוב על <math>L\{\tau\}</math> גם כעל חוג כל הפולינומים ה'''חיבוריים''' (באופן מוחלט)
+:<math>a_0x + a_1x^p + a_2x^{p^2} + \cdots = a_0\tau^0 + a_1\tau + a_2\tau^2 + \cdots</math>
+ב-<math>L[x]</math>, כאשר פולינום <math>f</math> נקרא חיבורי אם <math>f(x + y) = f(x) + f(y)</math> (כאיברים של <math>L[x, y]</math>). חוג הפולינומים החיבוריים נוצר כאלגברה מעל <math>L</math> על ידי הפולינום <math>\tau = x^p</math>. הכפל בחוג הפולינומים החיבוריים הוא '''הרכבה''' של פולינומים, ולא כפל רגיל, והוא אינו חילופי.
+
+'''דוגמה.''' ב-<math>\mathbb F_4\{\tau\}</math> (<math>p = 2</math>), עם <math>\omega</math> יוצר של <math>\mathbb F_4^*</math>: <math>\tau\omega = \omega^2\tau</math>, ואילו <math>\omega\tau = \omega\tau</math>. כפולינומים: <math>\tau\circ(\omega x) = (\omega x)^2 = \omega^2x^2</math>, ו-<math>(\omega x)\circ\tau = \omega x^2</math> – שונים, כי <math>\omega^2 \ne \omega</math>.
+
+=== הגדרה ===
+יהי <math>F</math> שדה פונקציות אלגברי עם שדה קבועים סופי, ונקבע [[מקום (מתמטיקה)|מקום]] <math>\infty</math> של <math>F</math>. נגדיר את <math>A</math> כחוג האיברים של <math>F</math> שהם רגולריים בכל מקום פרט אולי ל-<math>\infty</math>. בפרט, <math>A</math> הוא [[תחום דדקינד]], והוא בדיד ב-<math>F</math> (בטופולוגיה שמושרית מ-<math>\infty</math>). למשל, אפשר לקחת את <math>A</math> להיות [[חוג פולינומים|חוג הפולינומים]] <math>\mathbb F_q[t]</math> – המקבילה של <math>\mathbb Z</math> בתוך <math>\mathbb Q</math>. יהי <math>L</math> שדה עם הומומורפיזם של חוגים <math>\iota : A \to L</math>.
+:'''מודול <math>A</math> של דרינפלד''' מעל <math>L</math> הוא הומומורפיזם של חוגים <math>\phi : A \to L\{\tau\}</math> שהתמונה שלו אינה מוכלת ב-<math>L</math>, כך שההרכבה של <math>\phi</math> עם <math>d : L\{\tau\} \to L</math>, <math>a_0 + a_1\tau + \cdots \mapsto a_0</math>, מתלכדת עם <math>\iota : A \to L</math>.
+התנאי שהתמונה של <math>A</math> אינה ב-<math>L</math> הוא תנאי אי-התנוונות, שנועד לסלק מקרים טריוויאליים; והתנאי <math>d\circ\phi = \iota</math> נותן את הרושם שמודול דרינפלד הוא פשוט דפורמציה של ההעתקה <math>\iota</math>.
+
+כיוון שאפשר לחשוב על <math>L\{\tau\}</math> כעל אנדומורפיזמים של החבורה החיבורית של <math>L</math>, אפשר לראות מודול <math>A</math> של דרינפלד כפעולה של <math>A</math> על החבורה החיבורית של <math>L</math>, או במילים אחרות כ-<math>A</math>-מודול שהחבורה החיבורית שלו היא החבורה החיבורית של <math>L</math>. (המקבילה בעולם המספרים: עקום אליפטי עם כפל מרוכב, שבו סדר בשדה ריבועי מדומה פועל על נקודות העקום.)
+
+=== דוגמאות ===
+* נגדיר <math>A = \mathbb F_p[T]</math>, חוג הפולינומים הרגיל (החילופי!) מעל השדה הסופי מסדר <math>p</math>; כלומר <math>A</math> הוא חוג הקואורדינטות של עקום אפיני מגנוס 0. אז מודול דרינפלד <math>\psi</math> נקבע על ידי התמונה <math>\psi(T)</math> של <math>T</math>, שיכולה להיות כל איבר לא קבוע של <math>L\{\tau\}</math>. לכן אפשר לזהות מודולי דרינפלד עם איברים לא קבועים של <math>L\{\tau\}</math>. (בגנוס גבוה יותר התיאור מסובך יותר.)
+* '''מודול קרליץ''' הוא מודול הדרינפלד <math>\psi</math> שנתון על ידי <math>\psi(T) = T + \tau</math>, כאשר <math>A = \mathbb F_p[T]</math> ו-<math>L</math> שדה מתאים, שלם וסגור אלגברית, שמכיל את <math>A</math>. ליאונרד קרליץ תיאר אותו ב-1935, שנים רבות לפני ההגדרה הכללית של מודול דרינפלד.{{הערה|1=ראו D. Goss, ''Basic Structures of Function Field Arithmetic'', Springer, 1996, chapter 3.|כיווון=שמאל}}
+
+'''דוגמה מחושבת: מודול קרליץ כמקבילה של שורשי היחידה.''' בשפת הפולינומים החיבוריים, <math>\psi_T(x) = Tx + x^p</math>. כיוון ש-<math>\psi</math> הומומורפיזם, <math>\psi_{T^2} = \psi_T\circ\psi_T</math>:
+:<math>\psi_{T^2} = (T + \tau)^2 = T^2 + T\tau + \tau T + \tau^2 = T^2 + (T + T^p)\tau + \tau^2,</math>
+כלומר <math>\psi_{T^2}(x) = T^2x + (T + T^p)x^p + x^{p^2}</math>. (בדיקה ל-<math>p = 2</math>: <math>\psi_T(\psi_T(x)) = T(Tx + x^2) + (Tx + x^2)^2 = T^2x + (T + T^2)x^2 + x^4</math>.) באופן כללי, ל-<math>a \in A</math> ממעלה <math>d</math>, <math>\psi_a(x)</math> הוא פולינום חיבורי ממעלה <math>p^d = |A/aA|</math>.
+:נקודות ה'''<math>a</math>-פיתול''' – שורשי <math>\psi_a(x) = 0</math> – יוצרות <math>A</math>-מודול איזומורפי ל-<math>A/aA</math>, בדיוק כמו ש-<math>n</math>-שורשי היחידה (שורשי <math>x^n - 1</math>) יוצרים חבורה איזומורפית ל-<math>\mathbb Z/n\mathbb Z</math>. למשל, נקודות ה-<math>T</math>-פיתול הן <math>x = 0</math> ושורשי <math>x^{p-1} = -T</math>; צירוף שלהן ל-<math>\mathbb F_p(T)</math> נותן הרחבה ממעלה <math>p - 1</math> עם חבורת גלואה <math>(A/TA)^* \cong \mathbb F_p^*</math> – המקבילה של השדה הציקלוטומי <math>\mathbb Q(\zeta_p)</math> עם חבורת הגלואה <math>(\mathbb Z/p)^*</math>. ההרחבות שמתקבלות מנקודות פיתול של מודול קרליץ הן בדיוק ה"הרחבות הציקלוטומיות" של <math>\mathbb F_p(T)</math>, ומתארות את ההרחבות האבליות שלו (מקבילה של [[משפט קרונקר–ובר]]).
+
+== שטוקות ==
+יהי <math>X</math> עקום מעל השדה הסופי <math>\mathbb F_p</math>. '''שטוקה''' (ימנית) מדרגה <math>r</math> מעל [[סכמה (מתמטיקה)|סכמה]] (או ערימה) <math>U</math> נתונה על ידי הנתונים הבאים:
+* אלומות חופשיות מקומית <math>E, E'</math> מדרגה <math>r</math> מעל <math>U\times X</math>, יחד עם מורפיזמים חד-חד-ערכיים
+::<math>E \to E' \leftarrow (\mathrm{Fr}\times 1)^*E,</math>
+:שהקו-גרעינים שלהם נתמכים על גרפים מסוימים של מורפיזמים מ-<math>U</math> ל-<math>X</math> (שנקראים '''האפס''' ו'''הקוטב''' של השטוקה, ומסומנים בדרך כלל 0 ו-<math>\infty</math>), והם חופשיים מקומית מדרגה 1 על התומכים שלהם. כאן <math>(\mathrm{Fr}\times1)^*E</math> הוא המשיכה של <math>E</math> לאורך אנדומורפיזם פרובניוס של <math>U</math>.
+'''שטוקה שמאלית''' מוגדרת באותו אופן, אבל עם כיוון הפוך של המורפיזמים. אם הקוטב והאפס של השטוקה זרים, שטוקות שמאליות וימניות הן בעצם אותו דבר.
+
+כשמשנים את <math>U</math>, מקבלים [[ערימה אלגברית]] <math>\mathrm{Shtuka}^r</math> של שטוקות מדרגה <math>r</math>, שטוקה "אוניברסלית" מעל <math>\mathrm{Shtuka}^r\times X</math>, ומורפיזם <math>(\infty, 0)</math> מ-<math>\mathrm{Shtuka}^r</math> ל-<math>X\times X</math>, שהוא חלק וממימד יחסי <math>2r - 2</math>. הערימה <math>\mathrm{Shtuka}^r</math> אינה מטיפוס סופי עבור <math>r \gt 1</math>.
+
+מודולי דרינפלד הם, במובן מסוים, סוגים מיוחדים של שטוקות (זה כלל לא ברור מההגדרות). ליתר דיוק, דרינפלד הראה איך לבנות שטוקה ממודול דרינפלד.{{הערה|1=V. G. Drinfeld, ''Commutative subrings of certain noncommutative rings'', Funkcional. Anal. i Prilozhen. '''11''' (1977), no. 1, pp. 11–14, 96|כיווון=שמאל}}
+
+== שימושים ==
+השערות לנגלנדס לשדות פונקציות קובעות (בקירוב גס) שיש התאמה חד-חד-ערכית בין הצגות אוטומורפיות קוספידליות של <math>GL_n</math> לבין [[הצגת גלואה|הצגות]] מסוימות של חבורת גלואה. דרינפלד השתמש במודולי דרינפלד כדי להוכיח כמה מקרים פרטיים של השערות לנגלנדס, ואחר כך הוכיח את השערות לנגלנדס המלאות ל-<math>GL_2</math> על ידי הכללת מודולי דרינפלד לשטוקות. החלק ה"קשה" בהוכחת ההשערות הוא לבנות הצגות גלואה עם תכונות מסוימות, ודרינפלד בנה את הצגות הגלואה הדרושות על ידי מציאתן בתוך הקוהומולוגיה ה-<math>l</math>-אדית של מרחבי מודולי מסוימים של שטוקות מדרגה 2.
+
+דרינפלד הציע שאפשר להשתמש במרחבי המודולי של שטוקות מדרגה <math>r</math> באופן דומה כדי להוכיח את השערות לנגלנדס ל-<math>GL_r</math>. את הבעיות הטכניות האדירות שבביצוע התוכנית הזו פתר לפורג אחרי שנים רבות של מאמץ (משפט לפורג, 2002).
+
+== לקריאה נוספת ==
+<div dir="ltr">
+'''מודולי דרינפלד'''
+* V. Drinfeld, ''Elliptic modules'' (Russian), Matematicheskii Sbornik '''94''' (1974); English translation in Math. USSR Sbornik '''23''' (1974), pp. 561–592
+* D. Goss, ''Basic Structures of Function Field Arithmetic'', Ergebnisse der Mathematik (3) '''35''', Springer, 1996
+* E.-U. Gekeler, ''Drinfel'd module'', Encyclopedia of Mathematics
+* G. Laumon, ''Cohomology of Drinfeld Modular Varieties, Part 1'', Cambridge University Press, 1996
+* G. Laumon, J.-L. Waldspurger, ''Cohomology of Drinfeld Modular Varieties, Part 2'', Cambridge University Press, 1996
+* M. Rosen, ''Number Theory in Function Fields'', Graduate Texts in Mathematics '''210''', Springer, 2002, chapter 13
+'''שטוקות'''
+* V. G. Drinfeld, ''Cohomology of compactified moduli varieties of F-sheaves of rank 2'', J. Soviet Math. '''46''' (1989), pp. 1789–1821
+* V. G. Drinfeld, ''Moduli varieties of F-sheaves'', Functional Anal. Appl. '''21''' (1987), pp. 107–122
+* D. Goss, ''What is a shtuka?'', Notices of the AMS '''50''' (2003)
+* D. Kazhdan, ''An introduction to Drinfeld's Shtuka'', in: ''Automorphic Forms, Representations and L-functions'', Proc. Sympos. Pure Math. '''XXXIII''', Part 2, AMS, 1979, pp. 347–356
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:גאומטריה אלגברית]]
+[[קטגוריה:שדות סופיים]]

@@ -108,7 +108,7 @@ Additive number theory:
 - [x] Arithmetic dynamics
 - [ ] Drinfeld module
 - [x] Formal group law
-- [ ] Galois cohomology
+- [x] Galois cohomology
 - [x] Tamagawa number
 - [x] Profinite integer
 
