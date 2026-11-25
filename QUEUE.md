@@ -69,7 +69,7 @@ Additive number theory:
 - [x] Ideal class group
 - [x] Fractional ideal
 - [x] Ideal norm
-- [ ] Discriminant of an algebraic number field
+- [x] Discriminant of an algebraic number field
 - [ ] Different ideal
 - [ ] Fundamental unit (number theory)
 - [ ] Quadratic integer

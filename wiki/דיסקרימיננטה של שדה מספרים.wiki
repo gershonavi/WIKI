@@ -1,0 +1,117 @@
+ב[[מתמטיקה]], '''הדיסקרימיננטה''' של [[שדה מספרים]] היא אינווריאנטה מספרית שמודדת, באופן לא פורמלי, את "הגודל" של ([[חוג השלמים האלגבריים|חוג השלמים]] של) שדה המספרים. ליתר דיוק, היא פרופורציונלית לריבוע הנפח של ה[[תחום יסודי|תחום היסודי]] של חוג השלמים, והיא קובעת אילו [[מספר ראשוני|ראשוניים]] '''מסועפים''' בשדה.
+
+הדיסקרימיננטה היא מהאינווריאנטות הבסיסיות ביותר של שדה מספרים, והיא מופיעה בכמה נוסחאות אנליטיות חשובות, כמו [[משוואת הפונקציה (פונקציית L)|משוואת הפונקציה]] של [[פונקציית זטא של דדקינד|פונקציית הזטא של דדקינד]] של <math>K</math> ונוסחת מספר המחלקה האנליטית של <math>K</math>. לפי משפט של שארל הרמיט, יש רק מספר סופי של שדות מספרים עם דיסקרימיננטה חסומה; אבל קביעת המספר הזה היא עדיין בעיה פתוחה ונושא למחקר עכשווי.{{הערה|1=H. Cohen, F. Diaz y Diaz, M. Olivier, ''A Survey of Discriminant Counting'', in: Algorithmic Number Theory (ANTS-V, Sydney, 2002), Lecture Notes in Computer Science '''2369''', Springer, 2002, pp. 80–94|כיווון=שמאל}}
+
+לדיסקרימיננטה של <math>K</math> קוראים לפעמים '''הדיסקרימיננטה המוחלטת''' של <math>K</math>, כדי להבדיל אותה מ'''הדיסקרימיננטה היחסית''' של הרחבה <math>K/L</math> של שדות מספרים. הדיסקרימיננטה היחסית היא [[אידיאל (אלגברה)|אידיאל]] בחוג השלמים של <math>L</math>, וכמו הדיסקרימיננטה המוחלטת היא מראה אילו ראשוניים מסועפים בהרחבה <math>K/L</math>. זוהי הכללה של הדיסקרימיננטה המוחלטת שבה <math>L</math> יכול להיות גדול מ-<math>\mathbb Q</math>; כאשר <math>L=\mathbb Q</math>, הדיסקרימיננטה היחסית של <math>K/\mathbb Q</math> היא האידיאל הראשי של <math>\mathbb Z</math> שנוצר על ידי הדיסקרימיננטה המוחלטת של <math>K</math>.
+
+== הגדרה ==
+יהי <math>K</math> שדה מספרים ממעלה <math>n</math>, ויהי <math>\mathcal{O}_K</math> חוג השלמים שלו. יהי <math>b_1,\dots,b_n</math> '''בסיס שלם''' של <math>\mathcal{O}_K</math> (כלומר בסיס שלו כ[[מודול (מבנה אלגברי)|מודול]] מעל <math>\mathbb Z</math>), ותהי <math>\{\sigma_1,\dots,\sigma_n\}</math> קבוצת ה[[שיכון (מתמטיקה)|שיכונים]] של <math>K</math> במספרים המרוכבים (כלומר ההומומורפיזמים החד-חד-ערכיים של חוגים <math>K\to\mathbb C</math>). '''הדיסקרימיננטה''' של <math>K</math> היא ריבוע ה[[דטרמיננטה]] של המטריצה <math>B</math> מסדר <math>n\times n</math> שהאיבר ה-<math>(i,j)</math> שלה הוא <math>\sigma_i(b_j)</math>:
+:<math>\Delta_K=\det\begin{pmatrix}
+\sigma_1(b_1) & \sigma_1(b_2) &\cdots & \sigma_1(b_n) \\
+\sigma_2(b_1) & \ddots & & \vdots \\
+\vdots & & \ddots & \vdots \\
+\sigma_n(b_1) & \cdots & \cdots & \sigma_n(b_n)
+\end{pmatrix}^2.</math>
+באופן שקול, אפשר להשתמש ב[[עקבה (אלגברה)|עקבה]] מ-<math>K</math> ל-<math>\mathbb Q</math>: נגדיר את '''תבנית העקבה''' כמטריצה שהאיבר ה-<math>(i,j)</math> שלה הוא <math>\mathrm{Tr}_{K/\mathbb Q}(b_ib_j)</math>. המטריצה הזו שווה ל-<math>B^T B</math>, ולכן הדטרמיננטה שלה שווה לדיסקרימיננטה. הדיסקרימיננטה אינה תלויה בבחירת הבסיס השלם: מעבר לבסיס אחר נעשה במטריצה שלמה הפיכה, שהדטרמיננטה שלה <math>\pm 1</math>, וריבועה 1.
+
+באותו אופן מגדירים את הדיסקרימיננטה של '''סדר''' ב-<math>K</math> (תת-חוג של <math>\mathcal O_K</math> בעל דרגה <math>n</math>) עם בסיס שלם <math>b_1,\dots,b_n</math>. אם <math>\mathcal O \subseteq \mathcal O_K</math> סדר מאינדקס <math>m = [\mathcal O_K : \mathcal O]</math>, אז <math>\mathrm{disc}(\mathcal O) = m^2\,\Delta_K</math>.
+
+== דוגמאות ==
+=== דוגמה מחושבת: <math>\mathbb Q(\sqrt{-5})</math> ===
+חוג השלמים הוא <math>\mathbb Z[\sqrt{-5}]</math>, עם בסיס שלם <math>b_1 = 1</math>, <math>b_2 = \sqrt{-5}</math>, ושני השיכונים שולחים את <math>\sqrt{-5}</math> ל-<math>\pm i\sqrt5</math>. העקבות הן <math>\mathrm{Tr}(1) = 2</math>, <math>\mathrm{Tr}(\sqrt{-5}) = 0</math> ו-<math>\mathrm{Tr}(\sqrt{-5}\cdot\sqrt{-5}) = \mathrm{Tr}(-5) = -10</math>, ולכן
+:<math>\Delta_K = \det\begin{pmatrix} 2 & 0 \\ 0 & -10\end{pmatrix} = -20.</math>
+אותה תוצאה מתקבלת מההגדרה הראשונה: <math>\det\begin{pmatrix} 1 & i\sqrt5 \\ 1 & -i\sqrt5\end{pmatrix}^2 = (-2i\sqrt5)^2 = -20</math>. הראשוניים שמחלקים את <math>-20</math> הם 2 ו-5, ואכן אלה בדיוק הראשוניים המסועפים: <math>(2) = (2, 1+\sqrt{-5})^2</math> ו-<math>(5) = (\sqrt{-5})^2</math>.
+
+=== שדות ריבועיים ===
+יהי <math>d</math> מספר שלם [[קבוצה ללא הפרשים ריבועיים|חופשי מריבועים]]. הדיסקרימיננטה של <math>K=\mathbb Q(\sqrt{d})</math> היא{{הערה|שם=MP|1=Yu. I. Manin, A. A. Panchishkin, ''Introduction to Modern Number Theory'', Encyclopaedia of Mathematical Sciences '''49''', 2nd ed., Springer, 2007, p. 130|כיווון=שמאל}}
+:<math>\Delta_K=\begin{cases} d & d\equiv 1\pmod 4, \\ 4d & d\equiv 2,3\pmod 4. \end{cases}</math>
+(כאשר <math>d \equiv 1 \pmod 4</math>, הבסיס השלם הוא <math>1, \tfrac{1+\sqrt d}{2}</math>, והחישוב נותן <math>\det\begin{pmatrix} 2 & 1 \\ 1 & \tfrac{1+d}{2}\end{pmatrix} = d</math>.) מספר שלם שמופיע כדיסקרימיננטה של שדה ריבועי נקרא '''דיסקרימיננטה יסודית'''.{{הערה|שם=C|1=H. Cohen, ''A Course in Computational Algebraic Number Theory'', Graduate Texts in Mathematics '''138''', Springer, 1993, Definition 5.1.2|כיווון=שמאל}} למשל, <math>\Delta_{\mathbb Q(i)} = -4</math>, <math>\Delta_{\mathbb Q(\sqrt{-3})} = -3</math> ו-<math>\Delta_{\mathbb Q(\sqrt5)} = 5</math>.
+
+=== שדות ציקלוטומיים ===
+יהי <math>n>2</math> מספר שלם, יהי <math>\zeta_n</math> [[שורש יחידה]] פרימיטיבי מסדר <math>n</math>, ויהי <math>K_n=\mathbb Q(\zeta_n)</math> ה[[שדה ציקלוטומי|שדה הציקלוטומי]] ה-<math>n</math>-י. הדיסקרימיננטה של <math>K_n</math> היא{{הערה|שם=MP}}{{הערה|1=L. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Graduate Texts in Mathematics '''83''', Springer, 1997, Proposition 2.7|כיווון=שמאל}}
+:<math>\Delta_{K_n} = (-1)^{\varphi(n)/2} \frac{n^{\varphi(n)}}{\displaystyle\prod_{p\mid n} p^{\varphi(n)/(p-1)}},</math>
+כאשר <math>\varphi(n)</math> היא [[פונקציית אוילר]], והמכפלה במכנה היא על הראשוניים <math>p</math> שמחלקים את <math>n</math>. לדוגמה:
+* <math>n = 5</math>: <math>\varphi(5) = 4</math>, ולכן <math>\Delta = (+1)\cdot 5^4/5^{4/4} = 625/5 = 125 = 5^3</math>.
+* <math>n = 8</math>: <math>\varphi(8) = 4</math>, ולכן <math>\Delta = 8^4/2^{4} = 4096/16 = 256</math>.
+* <math>n = 7</math>: <math>\varphi(7) = 6</math>, ולכן <math>\Delta = (-1)^3\, 7^6/7 = -7^5 = -16807</math>.
+* <math>n = 12</math>: <math>\varphi(12) = 4</math>, ולכן <math>\Delta = 12^4/(2^4\cdot 3^2) = 20736/144 = 144</math>.
+
+=== בסיסי חזקות ===
+אם לחוג השלמים <math>\mathcal{O}_K</math> יש '''בסיס חזקות''', כלומר אפשר לכתוב <math>\mathcal{O}_K=\mathbb Z[\alpha]</math>, אז הדיסקרימיננטה של <math>K</math> שווה ל[[דיסקרימיננטה]] של ה[[פולינום מינימלי|פולינום המינימלי]] של <math>\alpha</math>. כדי לראות זאת, בוחרים את הבסיס השלם
+:<math>b_1=1,\ b_2=\alpha,\ b_3=\alpha^2,\ \dots,\ b_n = \alpha^{n-1}.</math>
+אז המטריצה <math>B</math> מההגדרה היא מטריצת ונדרמונד של <math>\alpha_i=\sigma_i(\alpha)</math>, והדטרמיננטה שלה בריבוע היא
+:<math>\prod_{1\leq i\lt j\leq n}(\alpha_i-\alpha_j)^2,</math>
+שזו בדיוק ההגדרה של הדיסקרימיננטה של הפולינום המינימלי. למשל, <math>\mathbb Z[\zeta_5]</math> הוא חוג השלמים של <math>\mathbb Q(\zeta_5)</math>, והדיסקרימיננטה של [[פולינום ציקלוטומי|הפולינום הציקלוטומי]] <math>x^4+x^3+x^2+x+1</math> היא אכן 125.
+
+=== הדוגמה של דדקינד: שדה בלי בסיס חזקות ===
+יהי <math>K=\mathbb Q(\alpha)</math> השדה המתקבל מצירוף שורש <math>\alpha</math> של הפולינום <math>x^3-x^2-2x-8</math>. זו הדוגמה המקורית של [[ריכרד דדקינד]] לשדה מספרים שלחוג השלמים שלו אין בסיס חזקות. בסיס שלם הוא
+:<math>\left\{1,\ \alpha,\ \tfrac{\alpha(\alpha+1)}{2}\right\},</math>
+והדיסקרימיננטה של <math>K</math> היא <math>-503</math>.{{הערה|1=R. Dedekind, ''Über den Zusammenhang zwischen der Theorie der Ideale und der Theorie der höheren Congruenzen'', Abhandlungen der Königlichen Gesellschaft der Wissenschaften zu Göttingen '''23''' (1878), pp. 30–31|כיווון=שמאל}}{{הערה|שם=Nark|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', 3rd ed., Springer Monographs in Mathematics, Springer, 2004, p. 64|כיווון=שמאל}}
+
+כך אפשר לבדוק זאת: הדיסקרימיננטה של הפולינום היא <math>-2012 = 2^2\cdot(-503)</math>, ולכן <math>\mathrm{disc}(\mathbb Z[\alpha]) = -2012</math>. האיבר <math>\beta = \tfrac{\alpha(\alpha+1)}{2}</math> אינו ב-<math>\mathbb Z[\alpha]</math>, אבל הוא שלם אלגברי: הפולינום המינימלי שלו הוא <math>x^3-3x^2-10x-8</math>. לכן <math>\mathbb Z[\alpha]</math> הוא סדר מאינדקס 2 בחוג השלמים, ו-<math>\Delta_K = -2012/2^2 = -503</math>. אפשר להראות שלכל <math>\gamma \in \mathcal O_K</math> האינדקס <math>[\mathcal O_K:\mathbb Z[\gamma]]</math> זוגי, משום שהראשוני 2 מתפצל ב-<math>K</math> לשלושה אידיאלים ראשוניים שונים מנורמה 2, בעוד שבשדה <math>\mathbb F_2</math> יש רק שני פולינומים אי-פריקים ממעלה 1; זו הסיבה שאין בסיס חזקות.
+
+=== דיסקרימיננטות חוזרות ===
+הדיסקרימיננטה של שדה ריבועי קובעת אותו באופן יחיד, אבל באופן כללי זה לא נכון לשדות ממעלה גבוהה יותר. לדוגמה, יש שני שדות ממעלה שלישית לא איזומורפיים עם דיסקרימיננטה 3969, שמתקבלים מצירוף שורש של <math>x^3-21x+28</math> או של <math>x^3-21x-35</math>, בהתאמה.{{הערה|1=H. Cohen, ''A Course in Computational Algebraic Number Theory'', Theorem 6.4.6|כיווון=שמאל}} (הדיסקרימיננטות של הפולינומים עצמם הן <math>15876 = 2^2\cdot 3969</math> ו-<math>3969 = 3^4\cdot 7^2</math>.)
+
+== תוצאות בסיסיות ==
+* '''משפט בריל''':{{הערה|שם=Koch|1=H. Koch, ''Algebraic Number Theory'', Encyclopaedia of Mathematical Sciences '''62''', Springer, 1997, p. 11|כיווון=שמאל}} הסימן של הדיסקרימיננטה הוא <math>(-1)^{r_2}</math>, כאשר <math>r_2</math> הוא מספר המקומות המרוכבים של <math>K</math>.{{הערה|1=L. Washington, ''Introduction to Cyclotomic Fields'', Lemma 2.2|כיווון=שמאל}} (למשל, ל-<math>\mathbb Q(\sqrt{-5})</math> יש מקום מרוכב אחד, והדיסקרימיננטה <math>-20</math> שלילית.)
+* ראשוני <math>p</math> מסועף ב-<math>K</math> אם ורק אם <math>p</math> מחלק את <math>\Delta_K</math>.{{הערה|שם=N3|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, Corollary III.2.12|כיווון=שמאל}}
+* '''משפט שטיקלברגר''':{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Exercise I.2.7|כיווון=שמאל}}
+:<math>\Delta_K\equiv 0\ \text{או}\ 1 \pmod 4.</math>
+:(בדוגמאות שלמעלה: <math>-20 \equiv 0</math>, <math>-503 \equiv 1</math>, <math>125 \equiv 1</math> ו-<math>3969 \equiv 1 \pmod 4</math>.)
+* '''חסם מינקובסקי''':{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Proposition III.2.14|כיווון=שמאל}} אם <math>n</math> היא המעלה של ההרחבה <math>K/\mathbb Q</math> ו-<math>r_2</math> מספר המקומות המרוכבים של <math>K</math>, אז
+:<math>|\Delta_K|^{1/2}\geq \frac{n^n}{n!}\left(\frac{\pi}{4}\right)^{r_2} \geq \frac{n^n}{n!}\left(\frac{\pi}{4}\right)^{n/2}.</math>
+:למשל, עבור שדה ריבועי מדומה (<math>n = 2</math>, <math>r_2 = 1</math>) מקבלים <math>|\Delta_K|^{1/2} \ge 2\cdot\tfrac{\pi}{4} = \tfrac{\pi}{2}</math>, כלומר <math>|\Delta_K| \ge 2.47</math>; ואכן הדיסקרימיננטה הקטנה ביותר בערכה המוחלט היא <math>-3</math>.
+* '''[[משפט מינקובסקי]]''':{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Theorem III.2.17|כיווון=שמאל}} אם <math>K \ne \mathbb Q</math>, אז <math>|\Delta_K|>1</math> (זה נובע ישירות מחסם מינקובסקי, כי <math>\tfrac{n^n}{n!}\left(\tfrac{\pi}{4}\right)^{n/2} \gt 1</math> לכל <math>n \ge 2</math>). מכאן שלכל שדה מספרים שונה מ-<math>\mathbb Q</math> יש לפחות ראשוני מסועף אחד.
+* '''משפט הרמיט–מינקובסקי''':{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Theorem III.2.16|כיווון=שמאל}} יהי <math>N</math> מספר שלם חיובי. יש רק מספר סופי (עד כדי איזומורפיזם) של שדות מספרים <math>K</math> עם <math>|\Delta_K|\lt N</math>. גם זה נובע מחסם מינקובסקי (שחוסם את המעלה), יחד עם משפט הרמיט (שיש רק מספר סופי של שדות מספרים עם דיסקרימיננטה נתונה).
+
+== היסטוריה ==
+את ההגדרה של הדיסקרימיננטה של שדה מספרים כללי <math>K</math> נתן דדקינד ב-1871, לאחר שהראה שלכל שדה מספרים יש בסיס שלם.{{הערה|שם=DX|1=R. Dedekind, נספח X למהדורה השנייה של ''Vorlesungen über Zahlentheorie'' של P. G. Lejeune Dirichlet, Vieweg, 1871|כיווון=שמאל}} כבר אז הוא הכיר את הקשר בין הדיסקרימיננטה לסיעוף.{{הערה|1=N. Bourbaki, ''Elements of the History of Mathematics'', Springer, 1994|כיווון=שמאל}}
+
+משפט הרמיט קודם להגדרה הכללית של הדיסקרימיננטה: שארל הרמיט פרסם את הוכחתו ב-1857.{{הערה|1=C. Hermite, ''Extrait d'une lettre de M. C. Hermite à M. Borchardt…'', Journal für die reine und angewandte Mathematik '''53''' (1857), pp. 182–192|כיווון=שמאל}} ב-1877 קבע אלכסנדר פון בריל את הסימן של הדיסקרימיננטה.{{הערה|1=A. von Brill, ''Ueber die Discriminante'', Mathematische Annalen '''12''' (1877), pp. 87–89|כיווון=שמאל}} [[לאופולד קרונקר]] ניסח לראשונה את משפט מינקובסקי ב-1882,{{הערה|1=L. Kronecker, ''Grundzüge einer arithmetischen Theorie der algebraischen Grössen'', Journal für die reine und angewandte Mathematik '''92''' (1882), pp. 1–122|כיווון=שמאל}} אבל ההוכחה הראשונה ניתנה על ידי [[הרמן מינקובסקי]] ב-1891.{{הערה|1=H. Minkowski, ''Ueber die positiven quadratischen Formen und über kettenbruchähnliche Algorithmen'', Journal für die reine und angewandte Mathematik '''107''' (1891), pp. 278–297|כיווון=שמאל}} באותה שנה פרסם מינקובסקי את החסם שלו על הדיסקרימיננטה.{{הערה|1=H. Minkowski, ''Théorèmes d'arithmétiques'', Comptes rendus de l'Académie des sciences '''112''' (1891), pp. 209–212|כיווון=שמאל}} לקראת סוף המאה ה-19 הוכיח לודוויג שטיקלברגר את המשפט שלו על השארית של הדיסקרימיננטה מודולו 4.{{הערה|1=L. Stickelberger, ''Über eine neue Eigenschaft der Diskriminanten algebraischer Zahlkörper'', Proceedings of the First International Congress of Mathematicians, Zürich, 1897, pp. 182–193|כיווון=שמאל}}{{הערה|1=כל העובדות בפסקה זו מופיעות אצל Narkiewicz (2004), pp. 59, 81|כיווון=שמאל}}
+
+== הדיסקרימיננטה היחסית ==
+את הדיסקרימיננטה שהוגדרה למעלה מכנים לפעמים הדיסקרימיננטה ''המוחלטת'' של <math>K</math>, כדי להבדיל אותה מ'''הדיסקרימיננטה היחסית''' <math>\Delta_{K/L}</math> של הרחבה <math>K/L</math> של שדות מספרים, שהיא אידיאל ב-<math>\mathcal O_L</math>. ההגדרה דומה להגדרת הדיסקרימיננטה המוחלטת, אבל היא צריכה להביא בחשבון שאידיאלים ב-<math>\mathcal O_L</math> אינם בהכרח ראשיים, וייתכן שאין ל-<math>\mathcal O_K</math> בסיס מעל <math>\mathcal O_L</math>. תהי <math>\{\sigma_1, \ldots, \sigma_n\}</math> קבוצת השיכונים של <math>K</math> ב-<math>\mathbb C</math> שהם הזהות על <math>L</math>. לכל בסיס <math>b_1, \ldots, b_n</math> של <math>K</math> מעל <math>L</math>, נסמן ב-<math>d(b_1, \ldots, b_n)</math> את ריבוע הדטרמיננטה של המטריצה מסדר <math>n\times n</math> שהאיבר ה-<math>(i,j)</math> שלה הוא <math>\sigma_i(b_j)</math>. הדיסקרימיננטה היחסית של <math>K/L</math> היא האידיאל שנוצר על ידי כל הערכים <math>d(b_1, \ldots, b_n)</math>, כאשר <math>\{b_1, \ldots, b_n\}</math> עובר על כל הבסיסים השלמים של <math>K/L</math> (כלומר בסיסים שבהם <math>b_i \in \mathcal O_K</math> לכל <math>i</math>). באופן שקול, הדיסקרימיננטה היחסית של <math>K/L</math> היא ה[[נורמה של אידיאל|נורמה]] של אידיאל '''השונה''' (different) של <math>K/L</math>.{{הערה|שם=N32|1=J. Neukirch, ''Algebraic Number Theory'', §III.2|כיווון=שמאל}} כאשר <math>L = \mathbb Q</math>, הדיסקרימיננטה היחסית <math>\Delta_{K/\mathbb Q}</math> היא האידיאל הראשי של <math>\mathbb Z</math> שנוצר על ידי הדיסקרימיננטה המוחלטת <math>\Delta_K</math>. במגדל שדות <math>K/L/F</math> הדיסקרימיננטות היחסיות קשורות ביחס
+:<math>\Delta_{K/F} = \mathcal{N}_{L/F}\left({\Delta_{K/L}}\right) \Delta_{L/F}^{[K:L]},</math>
+כאשר <math>\mathcal{N}</math> מסמן את הנורמה היחסית.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Corollary III.2.10; או A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', Cambridge University Press, 1993, Proposition III.2.15|כיווון=שמאל}}
+
+למשל, במגדל <math>\mathbb Q(\zeta_8)/\mathbb Q(i)/\mathbb Q</math> מתקיים <math>\Delta_{\mathbb Q(\zeta_8)} = 256</math> ו-<math>\Delta_{\mathbb Q(i)}^{2} = 16</math>, ולכן הנורמה של הדיסקרימיננטה היחסית של <math>\mathbb Q(\zeta_8)/\mathbb Q(i)</math> היא <math>256/16 = 16</math>.
+
+=== סיעוף ===
+הדיסקרימיננטה היחסית קובעת את נתוני הסיעוף של ההרחבה <math>K/L</math>: אידיאל ראשוני <math>\mathfrak p</math> של <math>L</math> מסועף ב-<math>K</math> אם ורק אם הוא מחלק את הדיסקרימיננטה היחסית <math>\Delta_{K/L}</math>. הרחבה לא מסועפת אם ורק אם הדיסקרימיננטה שלה היא אידיאל היחידה.{{הערה|שם=N32}} חסם מינקובסקי שלמעלה מראה שאין ל-<math>\mathbb Q</math> הרחבות לא מסועפות לא טריוויאליות. לשדות גדולים יותר מ-<math>\mathbb Q</math> יכולות להיות הרחבות לא מסועפות: לדוגמה, לכל שדה שמספר המחלקה שלו גדול מ-1, שדה המחלקות של הילברט שלו הוא הרחבה לא מסועפת לא טריוויאלית (ראו [[חבורת מחלקות האידיאלים]]).
+
+== דיסקרימיננטת השורש ==
+'''דיסקרימיננטת השורש''' של שדה מספרים <math>K</math> ממעלה <math>n</math> מוגדרת על ידי הנוסחה
+:<math>\mathrm{rd}_K = |\Delta_K|^{1/n}.</math>{{הערה|שם=HM|1=F. Hajir, C. Maire, ''Tamely ramified towers and discriminant bounds for number fields. II'', Journal of Symbolic Computation '''33''' (2002), pp. 415–423|כיווון=שמאל}}
+מהיחס בין הדיסקרימיננטות היחסיות במגדל שדות נובע שדיסקרימיננטת השורש אינה משתנה בהרחבה לא מסועפת.
+
+=== חסמים תחתונים אסימפטוטיים ===
+יהיו <math>\rho</math> ו-<math>\sigma</math> מספרים רציונליים אי-שליליים, לא שניהם 0, ויהי <math>n</math> מספר שלם חיובי כך שהזוג <math>(r, 2s) = (\rho n, \sigma n)</math> נמצא ב-<math>\mathbb Z \times 2\mathbb Z</math>. נסמן ב-<math>\alpha_n(\rho, \sigma)</math> את האינפימום של <math>\mathrm{rd}_K</math> כאשר <math>K</math> עובר על שדות מספרים ממעלה <math>n</math> עם <math>r</math> שיכונים ממשיים ו-<math>2s</math> שיכונים מרוכבים, ונגדיר <math>\alpha(\rho, \sigma) = \liminf_{n\to\infty} \alpha_n(\rho, \sigma)</math>. אז
+:<math>\alpha(\rho,\sigma) \ge 60.8^\rho\, 22.3^\sigma,</math>
+ו[[השערת רימן|השערת רימן המוכללת]] גוררת את החסם החזק יותר
+:<math>\alpha(\rho,\sigma) \ge 215.3^\rho\, 44.7^\sigma.</math>{{הערה|שם=K181|1=H. Koch, ''Algebraic Number Theory'', pp. 181–182|כיווון=שמאל}}
+יש גם חסם תחתון שמתקיים בכל מעלה, ולא רק אסימפטוטית: עבור שדות ממשיים לחלוטין, דיסקרימיננטת השורש גדולה מ-14, למעט 1229 יוצאים מן הכלל.{{הערה|1=J. Voight, ''Enumeration of totally real number fields of bounded root discriminant'', in: Algorithmic Number Theory (ANTS-VIII, Banff, 2008), Lecture Notes in Computer Science '''5011''', Springer, 2008, pp. 268–281|כיווון=שמאל}}
+
+=== חסמים עליונים אסימפטוטיים ===
+מנגד, קיום של מגדל שדות מחלקה אינסופי יכול לתת חסמים עליונים על <math>\alpha(\rho, \sigma)</math>. לדוגמה, מגדל שדות המחלקה האינסופי מעל <math>\mathbb Q(\sqrt{-m})</math> עם <math>m = 3\cdot5\cdot7\cdot11\cdot19</math> נותן שדות ממעלה גדולה כרצוננו עם דיסקרימיננטת שורש <math>2\sqrt{m} \approx 296.276</math>,{{הערה|שם=K181}} ולכן <math>\alpha(0,1) \lt 296.276</math>. בעזרת מגדלים עם סיעוף מתון (tamely ramified) הראו חאג'יר ומר ש-<math>\alpha(1,0) \lt 954.3</math> ו-<math>\alpha(0,1) \lt 82.2</math>,{{הערה|שם=HM}} ושיפרו חסמים קודמים של מרטינה.{{הערה|1=J. Martinet, ''Tours de corps de classes et estimations de discriminants'', Inventiones Mathematicae '''44''' (1978), pp. 65–73|כיווון=שמאל}}
+
+== קשר לגדלים אחרים ==
+* כששוכנים את <math>\mathcal O_K</math> ב-<math>K\otimes_{\mathbb Q}\mathbb R</math>, הנפח של התחום היסודי של <math>\mathcal O_K</math> הוא <math>\sqrt{|\Delta_K|}</math> (לפעמים משתמשים במידה אחרת, ואז הנפח הוא <math>2^{-r_2}\sqrt{|\Delta_K|}</math>, כאשר <math>r_2</math> מספר המקומות המרוכבים של <math>K</math>). למשל, עבור השדה שמתקבל מצירוף שורש של <math>x^3 - x^2 - 2x + 1</math> הדיסקרימיננטה היא <math>49 = 7^2</math>; הנפח של התחום היסודי הוא 7, והשדה מסועף רק ב-7.
+* בגלל הופעתה בנפח הזה, הדיסקרימיננטה מופיעה גם במשוואת הפונקציה של פונקציית הזטא של דדקינד של <math>K</math>, ולכן גם בנוסחת מספר המחלקה האנליטית וב[[משפט בראואר-זיגל]].
+* הדיסקרימיננטה היחסית של <math>K/L</math> היא [[מוליך ארטין|מוליך ארטין]] של ההצגה הרגולרית של [[חבורת גלואה]] של <math>K/L</math>. זה נותן קשר למוליכי ארטין של הקרקטרים של חבורת הגלואה של <math>K/L</math>, שנקרא '''נוסחת המוליך–דיסקרימיננטה'''.{{הערה|1=J.-P. Serre, ''Local class field theory'', in: J. W. S. Cassels, A. Fröhlich (eds.), Algebraic Number Theory, Academic Press, London, 1967, Section 4.4|כיווון=שמאל}} למשל, עבור שדה ריבועי, המוליך של הקרקטר הריבועי שווה ל-<math>|\Delta_K|</math>.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. Cohen, ''A Course in Computational Algebraic Number Theory'', Graduate Texts in Mathematics '''138''', Springer, 1993
+* A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', Cambridge Studies in Advanced Mathematics '''27''', Cambridge University Press, 1993
+* H. Koch, ''Algebraic Number Theory'', Encyclopaedia of Mathematical Sciences '''62''', Springer, 1997
+* J. S. Milne, ''Algebraic Number Theory'', course notes, 1998
+* W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', 3rd ed., Springer, 2004
+* J. Neukirch, ''Algebraic Number Theory'', Grundlehren der mathematischen Wissenschaften '''322''', Springer, 1999
+* L. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Graduate Texts in Mathematics '''83''', Springer, 1997
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
