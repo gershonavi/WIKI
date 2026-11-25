@@ -1,0 +1,42 @@
+ב[[מתמטיקה]], '''תורת שדות המחלקה המקומית''', שהציג [[הלמוט האסה]],{{הערה|1=H. Hasse, ''Die Normenresttheorie relativ-Abelscher Zahlkörper als Klassenkörpertheorie im Kleinen'', J. Reine Angew. Math. '''162''' (1930), pp. 145–154|כיווון=שמאל}} היא חקר ה[[הרחבה אבלית|הרחבות האבליות]] של [[שדה מקומי|שדות מקומיים]]. כאן "שדה מקומי" פירושו שדה שלם ביחס ל[[ערך מוחלט]] או ל[[הערכה בדידה]] עם [[שדה שאריות]] סופי. לכן כל שדה מקומי איזומורפי (כ[[שדה טופולוגי]]) למספרים הממשיים <math>\mathbb R</math>, למרוכבים <math>\mathbb C</math>, ל[[הרחבה סופית]] של ה[[מספר p-אדי|מספרים ה-p-אדיים]] <math>\mathbb Q_p</math> (עבור ראשוני <math>p</math> כלשהו), או לשדה [[טור לורן|טורי לורן]] הפורמליים <math>\mathbb F_q((T))</math> מעל [[שדה סופי]] <math>\mathbb F_q</math>.
+
+== הגישות לתורה ==
+תורת שדות המחלקה המקומית נותנת תיאור של [[חבורת גלואה|חבורת הגלואה]] <math>G</math> של ההרחבה האבלית המקסימלית של שדה מקומי <math>K</math>, באמצעות '''העתקת ההדדיות''', שיוצאת מהחבורה הכפלית <math>K^\times = K\setminus\{0\}</math>. עבור הרחבה אבלית סופית <math>L</math> של <math>K</math>, העתקת ההדדיות משרה איזומורפיזם בין חבורת המנה <math>K^\times/N(L^\times)</math> של <math>K^\times</math> ב'''חבורת הנורמות''' <math>N(L^\times)</math> של ההרחבה לבין חבורת הגלואה <math>\mathrm{Gal}(L/K)</math>:{{הערה|שם=FV|1=I. Fesenko, S. Vostokov, ''Local Fields and their Extensions'', 2nd ed., AMS, 2002|כיווון=שמאל}}
+:<math>K^\times/N_{L/K}(L^\times) \xrightarrow{\ \sim\ } \mathrm{Gal}(L/K).</math>
+
+'''משפט הקיום''' בתורת שדות המחלקה המקומית יוצר התאמה חד-חד-ערכית בין תת-חבורות פתוחות מ[[אינדקס (תורת החבורות)|אינדקס]] סופי בחבורה הכפלית <math>K^\times</math> לבין ההרחבות האבליות הסופיות של השדה <math>K</math>. להרחבה אבלית סופית <math>L</math> של <math>K</math>, תת-החבורה הפתוחה מאינדקס סופי המתאימה היא חבורת הנורמות <math>N(L^\times)</math>. העתקת ההדדיות שולחת את חבורות היחידות הגבוהות <math>U^{(n)} = 1 + \mathfrak p^n</math> ל[[חבורת סיעוף|חבורות הסיעוף]] הגבוהות.{{הערה|שם=FV}}
+
+== דוגמאות מעל <math>\mathbb Q_p</math> ==
+החבורה הכפלית מתפרקת כ-<math>\mathbb Q_p^\times = p^{\mathbb Z}\times\mathbb Z_p^\times</math>. נראה כמה חבורות נורמות:
+* '''ההרחבה הלא מסועפת ממעלה <math>n</math>''' (שנוצרת משורשי יחידה מסדר <math>p^n - 1</math>): חבורת הנורמות היא <math>p^{n\mathbb Z}\times\mathbb Z_p^\times</math>, והמנה <math>\mathbb Q_p^\times/N \cong \mathbb Z/n</math>, כשהמחלקה של <math>p</math> הולכת לאיבר פרובניוס. יחידות הן תמיד נורמות בהרחבה לא מסועפת; <math>p</math> עצמו לא.
+* '''ההרחבה המסועפת לחלוטין <math>\mathbb Q_p(\zeta_{p^n})</math>''': חבורת הנורמות היא <math>p^{\mathbb Z}\times(1 + p^n\mathbb Z_p)</math>, והמנה <math>\mathbb Z_p^\times/(1 + p^n\mathbb Z_p) \cong (\mathbb Z/p^n)^\times</math> – חבורת הגלואה של ההרחבה. כאן <math>p</math> הוא נורמה (של <math>1 - \zeta_p</math>, כשל-<math>n = 1</math> מתקיים <math>N(1 - \zeta_p) = \Phi_p(1) = p</math>).
+* '''הרחבות ריבועיות.''' לפי משפט הקיום, ההרחבות הריבועיות של <math>K</math> מתאימות לתת-החבורות מאינדקס 2 של <math>K^\times</math> שמכילות את <math>K^{\times2}</math>. ל-<math>p</math> אי-זוגי, <math>|\mathbb Q_p^\times/\mathbb Q_p^{\times2}| = 4</math> (נציגים: <math>1, u, p, up</math> עם <math>u</math> לא ריבוע), ולכן יש בדיוק '''שלוש''' הרחבות ריבועיות. למשל ל-<math>\mathbb Q_3</math>: <math>\mathbb Q_3(\sqrt{-1})</math> (לא מסועפת), <math>\mathbb Q_3(\sqrt3)</math> ו-<math>\mathbb Q_3(\sqrt{-3})</math> (מסועפות). ל-<math>\mathbb Q_2</math> יש <math>|\mathbb Q_2^\times/\mathbb Q_2^{\times2}| = 8</math>, ולכן שבע הרחבות ריבועיות: <math>\mathbb Q_2(\sqrt d)</math> עם <math>d \in \{-1, \pm2, \pm5, \pm10\}</math>.
+* '''קשר ל[[סמל הילברט]].''' ב-<math>\mathbb Q_3(\sqrt{-1})</math> (לא מסועפת), 3 אינו נורמה – ובהתאם <math>(3, -1)_3 = -1</math> – ואילו כל יחידה היא נורמה.
+
+בעזרת העתקת ההדדיות המקומית מגדירים את [[סמל הילברט]] ואת ההכללות שלו. מציאת נוסחאות מפורשות עבורו היא אחד מתת-הכיוונים של תורת השדות המקומיים, ויש לה היסטוריה ארוכה ועשירה.{{הערה|שם=Vost|1=S. V. Vostokov, ''Explicit formulas for the Hilbert symbol'', in: I. Fesenko, M. Kurihara (eds.), ''Invitation to Higher Local Fields'', Geometry & Topology Monographs '''3''', 2000, pp. 81–90|כיווון=שמאל}}
+
+יש גישות [[קוהומולוגיה|קוהומולוגיות]] וגישות לא קוהומולוגיות לתורת שדות המחלקה המקומית. הגישות הקוהומולוגיות נוטות להיות לא מפורשות, כי הן משתמשות במכפלת הכוס של חבורות [[קוהומולוגיית גלואה]] הראשונות. בין הגישות השונות:{{הערה|שם=FV}} הגישה של האסה באמצעות [[חבורת בראואר]], גישות קוהומולוגיות, השיטות המפורשות של יורגן נויקירך ושל מיכאל הזווינקל, [[חוק חבורה פורמלי|תורת לובין–טייט]], ואחרות.
+
+== הכללות ==
+הכללות של תורת שדות המחלקה המקומית לשדות מקומיים עם שדה שאריות '''קוואזי-סופי''' היו הרחבות קלות של התורה, שהשיג ג' וופלס בשנות ה-50.{{הערה|שם=Vost}}
+
+תורת שדות מחלקה p-אדית מפורשת לשדות מקומיים עם שדות שאריות [[שדה משוכלל|משוכללים]] ולא משוכללים שאינם סופיים צריכה להתמודד עם בעיה חדשה: חבורות נורמות מאינדקס אינסופי. תורות מתאימות בנה איוון פסנקו.{{הערה|1=I. Fesenko, ''Local class field theory: perfect residue field case'', Izvestiya: Mathematics '''43''' (1994), pp. 65–81; I. Fesenko, ''On general local reciprocity maps'', J. Reine Angew. Math. '''473''' (1996), pp. 207–222|כיווון=שמאל}} תורת שדות המחלקה המקומית הלא חילופית של פסנקו, להרחבות גלואה "פרו-סופיות אריתמטית" של שדות מקומיים, חוקרת העתקת קו-מחזור הדדיות מקומית מתאימה ואת תכונותיה.{{הערה|1=I. Fesenko, ''Nonabelian local reciprocity maps'', in: ''Class Field Theory – Its Centenary and Prospect'', Advanced Studies in Pure Math., Mathematical Society of Japan, 2001, pp. 63–78|כיווון=שמאל}} אפשר לראות בתורה האריתמטית הזו חלופה ל[[התאמת לנגלנדס המקומית]], שהיא תורת-הצגות.
+
+== תורת שדות מחלקה מקומית גבוהה ==
+עבור '''שדה מקומי ממימד גבוה''' <math>K</math> יש העתקת הדדיות מקומית גבוהה, שמתארת הרחבות אבליות של השדה במונחי תת-חבורות פתוחות מאינדקס סופי ב'''חבורת K של מילנור''' של השדה. כלומר, אם <math>K</math> שדה מקומי <math>n</math>-ממדי, משתמשים ב-<math>K^M_n(K)</math>, או במנה המופרדת שלה עם טופולוגיה מתאימה. כש-<math>n = 1</math> התורה הופכת לתורת שדות המחלקה המקומית הרגילה (<math>K^M_1(K) = K^\times</math>). בניגוד למקרה הקלאסי, חבורות K של מילנור אינן מקיימות ירידת גלואה כש-<math>n \gt 1</math>. את התורה הכללית של שדות מחלקה מקומית גבוהה פיתחו קאזויה קאטו ואיוון פסנקו.
+
+תורת שדות המחלקה המקומית הגבוהה היא חלק מ'''תורת שדות המחלקה הגבוהה''', שחוקרת הרחבות אבליות (בהתאמה, כיסויים אבליים) של שדות פונקציות רציונליות של סכמות נאותות ורגולריות, שטוחות מעל השלמים.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* I. Fesenko, M. Kurihara (eds.), ''Invitation to Higher Local Fields'', Geometry & Topology Monographs '''3''', 2000
+* K. Iwasawa, ''Local Class Field Theory'', Oxford University Press, 1986
+* J. Neukirch, ''Class Field Theory'', Grundlehren '''280''', Springer, 1986
+* J.-P. Serre, ''Local class field theory'', in: J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', 1967, pp. 128–161
+* J.-P. Serre, ''Local Fields'', Graduate Texts in Mathematics '''67''', Springer, 1979
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת שדות המחלקה]]
