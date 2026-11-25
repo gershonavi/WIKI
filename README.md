@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (163)
+## ערכים (166)
 
 ### אנליזה מרוכבת
 
@@ -52,8 +52,10 @@
 * [השערת אופרמן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%95%D7%A4%D7%A8%D7%9E%D7%9F.md) – Oppermann's conjecture
 * [השערת ברוקאר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%95%D7%A7%D7%90%D7%A8.md) – Brocard's conjecture
 * [השערת גרים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%A8%D7%99%D7%9D.md) – Grimm's conjecture
+* [השערת האחות בייטר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%90%D7%97%D7%95%D7%AA%20%D7%91%D7%99%D7%99%D7%98%D7%A8.md)
 * [השערת למואן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9C%D7%9E%D7%95%D7%90%D7%9F.md) – Lemoine's conjecture
 * [השערת פירוזבח](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A4%D7%99%D7%A8%D7%95%D7%96%D7%91%D7%97.md) – Firoozbakht's conjecture
+* [מספר פורצ'ן](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A4%D7%95%D7%A8%D7%A6%27%D7%9F.md) – Fortunate number
 * [משפט פרות](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%A8%D7%95%D7%AA.md) – Proth's theorem
 * [פונקציות אומגה ראשוניות](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20%D7%90%D7%95%D7%9E%D7%92%D7%94%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%95%D7%AA.md) – Prime omega function
 
@@ -194,6 +196,7 @@
 
 * [בסיס אדיטיבי](pages/%D7%91%D7%A1%D7%99%D7%A1%20%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99.md) – Additive basis
 * [בעיית בולי הדואר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%91%D7%95%D7%9C%D7%99%20%D7%94%D7%93%D7%95%D7%90%D7%A8.md) – Postage stamp problem
+* [בעיית וורינג–גולדבך](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%95%D7%95%D7%A8%D7%99%D7%A0%D7%92%E2%80%93%D7%92%D7%95%D7%9C%D7%93%D7%91%D7%9A.md)
 * [השערת ארדש-טוראן על בסיסים אדיטיביים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%A8%D7%93%D7%A9-%D7%98%D7%95%D7%A8%D7%90%D7%9F%20%D7%A2%D7%9C%20%D7%91%D7%A1%D7%99%D7%A1%D7%99%D7%9D%20%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99%D7%99%D7%9D.md) – Erdős–Turán conjecture on additive bases
 * [השערת וורינג על מספרים ראשוניים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%95%D7%95%D7%A8%D7%99%D7%A0%D7%92%20%D7%A2%D7%9C%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md) – Waring's prime number conjecture
 * [מספר מנומס](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A0%D7%95%D7%9E%D7%A1.md) – Polite number

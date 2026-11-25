@@ -1,0 +1,28 @@
+ב[[מתמטיקה]], '''השערת האחות בייטר''' (ב[[אנגלית]]: Sister Beiter conjecture) היא השערה על גודל המקדמים של [[פולינום ציקלוטומי|פולינומים ציקלוטומיים]] טרנאריים (כלומר כאלה שהאינדקס שלהם הוא מכפלה של שלושה מספרים ראשוניים). היא קרויה על שם מריון בייטר, נזירה קתולית שהציעה אותה לראשונה ב-1968.{{הערה|שם=b68|1=M. Beiter, Magnitude of the Coefficients of the Cyclotomic Polynomial F_pqr(x), The American Mathematical Monthly 75 (4), 1968, עמ' 370–372, {{DOI|10.2307/2313416}}|כיווון=שמאל}}
+
+== רקע ==
+עבור <math>n \ge 1</math> מסמנים ב-<math>A(n)</math> את המקדם המקסימלי (בערך מוחלט) של הפולינום הציקלוטומי <math>\Phi_n(x)</math>.
+
+יהיו <math>3\leq p\leq q\leq r</math> שלושה מספרים ראשוניים. במקרה זה הפולינום הציקלוטומי <math>\Phi_{pqr}(x)</math> נקרא ''טרנארי''. ב-1895 הוכיח א. ס. באנג{{הערה|1=A. S. Bang, Om Ligningen Φn(x)=0, Tidsskr. Math. 6, 1895, עמ' 6–12|כיווון=שמאל}} ש-<math>A(pqr)\leq p-1</math>. מכאן נובע קיומו של
+:<math>M(p):=\max_{p\leq q\leq r}A(pqr)</math>
+(המקסימום על פני כל הראשוניים <math>q, r</math> כאלה),
+המקיים <math>1\leq M(p)\leq p-1</math>.
+
+'''דוגמה (נוספה בתרגום).''' ל-<math>\Phi_{3\cdot5\cdot7}(x) = \Phi_{105}(x)</math>, הפולינום הציקלוטומי הראשון שיש לו מקדם שאינו <math>0</math> או <math>\pm1</math>, יש מקדם <math>-2</math>, ולכן <math>A(105) = 2 = p - 1</math>, כלומר החסם של באנג מושג כאן.
+
+== הניסוח ==
+האחות בייטר שיערה ב-1968{{הערה|שם=b68}} ש-<math>M(p)\leq \frac{p+1}{2}</math>. ההשערה הופרכה מאוחר יותר, והוצעה '''השערת האחות בייטר המתוקנת''': <math>M(p)\leq \frac{2}{3}p</math>.
+
+'''דוגמה נגדית (נוספה בתרגום, ונבדקה בחישוב).''' עבור <math>p = 17</math>, <math>q = 29</math>, <math>r = 41</math> מתקיים <math>A(17\cdot29\cdot41) = 10</math>, ואילו <math>\frac{p+1}{2} = 9</math>. לכן <math>M(17) \ge 10 \gt 9</math>, וההשערה המקורית שגויה. החסם המתוקן, <math>\frac23 \cdot 17 \approx 11.3</math>, מתקיים.
+
+== מצב ==
+טיוטת מאמר מ-2023{{הערה|1=B. Juran, P. Moree, A. Riekert, D. Schmitz, J. Völlmecke, A proof of the corrected Sister Beiter cyclotomic coefficient conjecture inspired by Zhao and Zhang, arXiv:[https://arxiv.org/abs/2304.09250 2304.09250], 2023|כיווון=שמאל}} מסבירה את ההיסטוריה בפירוט, וטוענת שהיא מוכיחה את ההשערה המתוקנת. במפורש, היא טוענת להוכיח ש-
+:<math>M(p)\leq\frac{2}{3}p</math>
+וגם
+:<math>\lim_{p\rightarrow\infty}\frac{M(p)}{p}= \frac{2}{3}.</math>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:השערות מתמטיות]]
