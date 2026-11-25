@@ -93,7 +93,7 @@ Additive number theory:
 - [x] CM-field
 - [x] Totally real number field
 - [x] Totally imaginary number field
-- [ ] Monogenic field
+- [x] Monogenic field
 - [ ] Golden field
 - [ ] S-unit
 - [ ] Narrow class group

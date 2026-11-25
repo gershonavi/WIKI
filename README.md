@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (288)
+## ערכים (290)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -317,6 +317,7 @@
 * [הדדיות של אייזנשטיין](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F.md) – Eisenstein reciprocity
 * [הערכה p-אדית](pages/%D7%94%D7%A2%D7%A8%D7%9B%D7%94%20p-%D7%90%D7%93%D7%99%D7%AA.md) – P-adic valuation
 * [הרחבה אבלית](pages/%D7%94%D7%A8%D7%97%D7%91%D7%94%20%D7%90%D7%91%D7%9C%D7%99%D7%AA.md) – Abelian extension
+* [השדה הזהוב](pages/%D7%94%D7%A9%D7%93%D7%94%20%D7%94%D7%96%D7%94%D7%95%D7%91.md)
 * [חבורת האידלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%9C%D7%99%D7%9D.md) – Idele group
 * [חבורת מחלקות האידיאלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%9E%D7%97%D7%9C%D7%A7%D7%95%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D.md) – Ideal class group
 * [חבורת סיעוף](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%A1%D7%99%D7%A2%D7%95%D7%A3.md) – Ramification group
@@ -333,6 +334,7 @@
 * [שדה CM](pages/%D7%A9%D7%93%D7%94%20CM.md) – CM-field
 * [שדה דו-ריבועי](pages/%D7%A9%D7%93%D7%94%20%D7%93%D7%95-%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99.md) – Biquadratic field
 * [שדה מדומה לחלוטין](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%93%D7%95%D7%9E%D7%94%20%D7%9C%D7%97%D7%9C%D7%95%D7%98%D7%99%D7%9F.md) – Totally imaginary number field
+* [שדה מונוגני](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%95%D7%A0%D7%95%D7%92%D7%A0%D7%99.md) – Monogenic field
 * [שדה ממעלה שלישית](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99%D7%A9%D7%99%D7%AA.md) – Cubic field
 * [שדה ממשי לחלוטין](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%9E%D7%A9%D7%99%20%D7%9C%D7%97%D7%9C%D7%95%D7%98%D7%99%D7%9F.md) – Totally real number field
 * [שלם ריבועי](pages/%D7%A9%D7%9C%D7%9D%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99.md) – Quadratic integer

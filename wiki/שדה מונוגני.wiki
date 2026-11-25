@@ -1,0 +1,26 @@
+ב[[מתמטיקה]], '''שדה מונוגני''' הוא [[שדה מספרים]] <math>K</math> שבו יש איבר <math>a</math> כך ש[[חוג השלמים]] <math>\mathcal O_K</math> שווה לתת-החוג <math>\mathbb Z[a]</math> של <math>K</math> שנוצר על ידי <math>a</math>. במקרה כזה <math>\mathcal O_K</math> הוא מנה של [[חוג פולינומים|חוג הפולינומים]] <math>\mathbb Z[X]</math>, והחזקות <math>1, a, a^2, \dots, a^{n-1}</math> של <math>a</math> (כאשר <math>n = [K:\mathbb Q]</math>) הן [[בסיס שלם]] של <math>\mathcal O_K</math>, שנקרא '''בסיס חזקות שלם''' (power integral basis).
+
+בשדה מונוגני <math>K</math>, ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה של השדה]] שווה ל[[דיסקרימיננטה]] של ה[[פולינום מינימלי|פולינום המינימלי]] של <math>a</math>. באופן כללי, לכל שלם אלגברי <math>\alpha</math> שיוצר את <math>K</math> מתקיים
+:<math>\operatorname{disc}(f_\alpha) = [\mathcal O_K : \mathbb Z[\alpha]]^2 \cdot d_K,</math>
+ולכן <math>K</math> מונוגני בדיוק כאשר יש <math>\alpha</math> שה[[אינדקס (תורת החבורות)|אינדקס]] <math>[\mathcal O_K : \mathbb Z[\alpha]]</math> שלו שווה ל-1.
+
+== דוגמאות ==
+דוגמאות לשדות מונוגניים:
+* [[שדה ריבועי|שדות ריבועיים]]: אם <math>K = \mathbb Q(\sqrt d)</math>, כאשר <math>d</math> [[מספר חופשי מריבועים|חופשי מריבועים]], אז <math>\mathcal O_K = \mathbb Z[a]</math> עם <math>a = (1+\sqrt d)/2</math> אם <math>d \equiv 1 \pmod 4</math>, ועם <math>a = \sqrt d</math> אם <math>d \equiv 2, 3 \pmod 4</math>.
+:'''דוגמה.''' ל-<math>d = 5</math>: <math>a = \tfrac{1+\sqrt5}{2}</math> הוא שורש של <math>x^2 - x - 1</math>, שהדיסקרימיננטה שלו <math>1 + 4 = 5 = d_K</math>. לעומת זאת <math>\sqrt5</math> הוא שורש של <math>x^2 - 5</math>, שהדיסקרימיננטה שלו <math>20 = 2^2\cdot 5</math>, ובהתאם <math>[\mathcal O_K : \mathbb Z[\sqrt5]] = 2</math>: היוצר <math>\sqrt5</math> אינו נותן בסיס חזקות, אבל היוצר <math>\tfrac{1+\sqrt5}{2}</math> כן.
+* [[שדה ציקלוטומי|שדות ציקלוטומיים]]: אם <math>K = \mathbb Q(\zeta)</math> עם <math>\zeta</math> [[שורש יחידה]], אז <math>\mathcal O_K = \mathbb Z[\zeta]</math>. גם תת-השדה הממשי המקסימלי <math>\mathbb Q(\zeta)^{+} = \mathbb Q(\zeta + \zeta^{-1})</math> מונוגני, וחוג השלמים שלו הוא <math>\mathbb Z[\zeta+\zeta^{-1}]</math>.
+:'''דוגמה.''' ל-<math>\zeta = \zeta_7</math>: <math>\theta = \zeta_7 + \zeta_7^{-1} = 2\cos\tfrac{2\pi}{7}</math> הוא שורש של <math>x^3 + x^2 - 2x - 1</math>, שהדיסקרימיננטה שלו <math>49 = 7^2</math> – וזו בדיוק הדיסקרימיננטה של השדה הממשי לחלוטין <math>\mathbb Q(\zeta_7)^+</math>.
+
+כל השדות הריבועיים מונוגניים, אבל כבר בין [[שדה ממעלה שלישית|השדות ממעלה שלישית]] יש רבים שאינם מונוגניים. הדוגמה הראשונה שנמצאה לשדה מספרים לא מונוגני היא השדה ממעלה שלישית שנוצר על ידי שורש של הפולינום <math>X^3 - X^2 - 2X - 8</math>, והיא של [[ריכרד דדקינד]].
+
+'''פירוט הדוגמה של דדקינד.''' יהי <math>\theta</math> שורש של <math>f(X) = X^3 - X^2 - 2X - 8</math>.
+* הדיסקרימיננטה של <math>f</math> היא <math>-2012 = -2^2\cdot 503</math>, ואילו הדיסקרימיננטה של השדה היא <math>d_K = -503</math>. לכן <math>[\mathcal O_K:\mathbb Z[\theta]] = 2</math>, והאיבר <math>\tfrac{\theta^2+\theta}{2}</math> הוא שלם אלגברי שאינו ב-<math>\mathbb Z[\theta]</math>; בסיס שלם הוא <math>1, \theta, \tfrac{\theta^2+\theta}{2}</math>.
+* הסיבה שאין שום <math>\alpha</math> עם <math>\mathcal O_K = \mathbb Z[\alpha]</math> היא שהראשוני 2 '''מתפצל לחלוטין''' ב-<math>K</math>: <math>2\mathcal O_K = \mathfrak p_1 \mathfrak p_2 \mathfrak p_3</math> עם שלושה אידיאלים ראשוניים שונים, כל אחד מנורמה 2. אילו היה <math>\mathcal O_K = \mathbb Z[\alpha]</math>, אז לפי [[משפט דדקינד–קומר]] הפיצול של 2 היה משקף את הפירוק של הפולינום המינימלי של <math>\alpha</math> מודולו 2 לשלושה גורמים לינאריים '''שונים'''. אבל מעל <math>\mathbb F_2</math> יש רק שני פולינומים לינאריים, <math>X</math> ו-<math>X+1</math> – כלומר אין מספיק "מקום" לשלושה. זה מכשול '''מקומי''' למונוגניות, ובאמצעותו דדקינד הראה ש-2 מחלק את האינדקס <math>[\mathcal O_K : \mathbb Z[\alpha]]</math> לכל <math>\alpha \in \mathcal O_K</math> שיוצר את <math>K</math> (תופעה שנקראת "מחלק אינדקס משותף").
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', 3rd ed., Springer-Verlag, 2004, p. 64
+* I. Gaál, ''Diophantine Equations and Power Integral Bases'', Birkhäuser, Boston, 2002
+</div>
+
+[[קטגוריה:תורת המספרים האלגברית]]
