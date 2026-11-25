@@ -1,0 +1,88 @@
+ב[[מתמטיקה]], [[השערת ברטראן]] (שהיא כיום [[משפט (מתמטיקה)|משפט]]) קובעת שלכל <math>n \ge 2</math> קיים [[מספר ראשוני]] <math>p</math> כך ש-<math>n<p<2n</math>. ההשערה נוסחה לראשונה ב-1845 על ידי [[ז'וזף ברטראן]],{{הערה|1=Joseph Bertrand, Mémoire sur le nombre de valeurs que peut prendre une fonction quand on y permute les lettres qu'elle renferme, Journal de l'École Royale Polytechnique 18 (Cahier 30), 1845, עמ' 123–140|כיווון=שמאל}} ו[[הוכחה]] לראשונה על ידי [[פפנוטי צ'בישב|צ'בישב]]. הוכחה קצרה יותר, אך גם היא מתקדמת, נתן [[סריניוואסה רמנוג'אן|רמנוג'אן]].{{הערה|1=S. Ramanujan, A proof of Bertrand's postulate, Journal of the Indian Mathematical Society 11, 1919, עמ' 181–182|כיווון=שמאל}}
+
+הוכחה אלמנטרית פרסם [[פאול ארדש]] ב-1932, כאחד מפרסומיו המתמטיים הראשונים.{{הערה|1=P. Erdős, [https://users.renyi.hu/~p_erdos/1932-01.pdf Beweis eines Satzes von Tschebyschef], Acta Scientiarum Mathematicarum (Szeged) 5 (3–4), 1932, עמ' 194–198|כיווון=שמאל}} הרעיון הבסיסי הוא להראות של[[מקדם בינומי|מקדם הבינומי]] המרכזי חייב להיות גורם ראשוני בקטע <math>(n, 2n)</math>, אחרת אינו יכול להיות גדול מספיק. מראים זאת באמצעות ניתוח של הפירוק שלו לגורמים ראשוניים.
+
+שלבי ההוכחה העיקריים הם אלה. תחילה מראים שהתרומה של כל חזקת ראשוני <math>p^r</math> בפירוק של המקדם הבינומי המרכזי <math>\textstyle\binom{2n}{n}=(2n)!/(n!)^2</math> היא לכל היותר <math>2n</math>; אחר כך מראים שכל ראשוני הגדול מ-<math>\sqrt{2n}</math> מופיע בפירוק לכל היותר פעם אחת.
+
+בשלב הבא מוכיחים שאין ל-<math>\tbinom{2n}{n}</math> גורמים ראשוניים בקטע <math>(\tfrac{2n}{3}, n]</math>. מהחסמים האלה נובע שהתרומה לגודל של <math>\tbinom{2n}{n}</math> מהגורמים הראשוניים שאינם גדולים מ-<math>n</math> גדלה [[אסימפטוטה|אסימפטוטית]] כמו <math>\theta^{n}</math>, עבור <math>\theta<4</math> כלשהו. מאחר שהמקדם הבינומי המרכזי גדל לפחות כמו <math>4^n/2n</math>, מקבלים ([[הוכחה בדרך השלילה|בדרך השלילה]], עבור <math>n</math> גדול מספיק) שלמקדם הבינומי חייב להיות גורם ראשוני נוסף, והוא יכול להימצא רק בין <math>n</math> ל-<math>2n</math>.
+
+הטיעון שלהלן הוא בעיקרו הטיעון של ארדש, והוא תקף לכל <math>n\ge128</math>. את הערכים הנותרים של <math>n</math> בודקים ישירות, וכך ההוכחה מושלמת.
+
+== הלמות שבהוכחה ==
+ההוכחה משתמשת בארבע ה[[למה (מתמטיקה)|למות]] הבאות, שמבססות עובדות על הראשוניים המופיעים במקדמים הבינומיים המרכזיים.
+
+=== למה 1 ===
+לכל [[מספר שלם]] <math>n>0</math> מתקיים
+:<math>\frac{4^n}{2n} \le \binom{2n}{n}.</math>
+
+'''הוכחה:''' לפי [[הבינום של ניוטון]],
+:<math>4^n = (1 + 1)^{2n} = \sum_{k = 0}^{2n} \binom{2n}{k}=2+\sum_{k = 1}^{2n-1} \binom{2n}{k} \le 2n\binom{2n}{n},</math>
+כי <math>\tbinom{2n}{n}</math> הוא האיבר הגדול ביותר בסכום, ובסכום יש <math>2n</math> איברים (כולל ה-2 שמחוץ לסימן הסכימה, שקטן מ-<math>\tbinom{2n}{n}</math>).
+
+=== למה 2 ===
+עבור ראשוני קבוע <math>p</math>, נגדיר את <math>R(n,p)=\nu_p\left( \tbinom{2n}{n} \right)</math> להיות ה[[מספר p-אדי|הערכה ה-<math>p</math>-אדית]] של המקדם הבינומי המרכזי <math>\tbinom{2n}{n}</math>, כלומר [[מספר טבעי|המספר הטבעי]] הגדול ביותר <math>r</math> כך ש-<math>p^r</math> מחלק את <math>\tbinom{2n}{n}</math>; ובניסוח שקול, החזקה שבה <math>p</math> מופיע בפירוק של <math>\tbinom{2n}{n}</math> לגורמים ראשוניים.
+
+לכל ראשוני <math>p</math> מתקיים <math>p^{R(n,p)}\le 2n</math>.
+
+'''הוכחה:''' החזקה של <math>p</math> ב-<math>n!</math> נתונה על ידי הנוסחה של לז'נדר
+:<math>\sum_{j = 1}^\infty \left\lfloor \frac{n}{p^j} \right\rfloor,</math>
+ולכן
+:<math>R(n,p)=\sum_{j = 1}^\infty \left\lfloor \frac{2n}{p^j} \right\rfloor - 2\sum_{j = 1}^\infty \left\lfloor \frac{n}{p^j} \right\rfloor=\sum_{j = 1}^\infty \left(\left\lfloor \frac{2n}{p^j} \right\rfloor - 2\left\lfloor \frac{n}{p^j} \right\rfloor\right).</math>
+כל איבר בסכום האחרון הוא 0 (אם החלק השברי של <math>n/p^j</math> קטן מ-<math>1/2</math>) או 1 (אם הוא לפחות <math>1/2</math>), וכל האיברים עם <math>j>\log_p(2n)</math> מתאפסים. לכן
+:<math>R(n,p) \le \log_p(2n),</math>
+ו-
+:<math>p^{R(n,p)} \le p^{\log_p(2n)} = 2n.</math>
+
+=== למה 3 ===
+אם <math>p</math> ראשוני [[זוגיות (מתמטיקה)|אי-זוגי]] ו-<math>\frac{2n}{3} < p \leq n</math>, אז <math>R(n,p) = 0.</math>
+
+'''הוכחה:''' במונה של הביטוי <math>\tbinom{2n}{n}=(2n)!/(n!)^2</math> יש בדיוק שני גורמים של <math>p</math>, שמקורם באיברים <math>p</math> ו-<math>2p</math> של <math>(2n)!</math>, ובמכנה יש גם שני גורמים של <math>p</math>, אחד מכל אחד משני העותקים של <math>n!</math> (מהאיבר <math>p</math>). כל הגורמים האלה מצטמצמים, ולא נשארים גורמים של <math>p</math> ב-<math>\tbinom{2n}{n}</math>. (החסם על <math>p</math> בהנחות הלמה מבטיח ש-<math>3p</math> גדול מכדי להיות איבר במונה, וההנחה ש-<math>p</math> אי-זוגי נחוצה כדי שהאיבר <math>2p</math> יתרום למונה רק גורם אחד של <math>p</math>.)
+
+=== למה 4 ===
+נותנים חסם עליון לפונקציית ה[[פרימוריאל]]
+:<math>n\#=\prod_{p\,\le\,n}p,</math>
+כאשר המכפלה היא על כל המספרים ה'''ראשוניים''' <math>p</math> הקטנים מ-<math>n</math> או שווים לו.
+
+לכל <math>n\ge1</math> מתקיים <math>n\#<4^n</math>.
+
+'''הוכחה:''' נשתמש ב[[אינדוקציה מתמטית|אינדוקציה שלמה]].
+
+עבור <math>n=1,2</math> מתקיים <math>1\#=1<4</math> ו-<math>2\#=2<4^2=16</math>.
+
+נניח שהאי-שוויון מתקיים לכל <math>1\le n\le2k-1</math>. מאחר ש-<math>n=2k>2</math> פריק, מתקיים
+:<math>(2k)\#=(2k-1)\#<4^{2k-1}<4^{2k}.</math>
+
+עכשיו נניח שהאי-שוויון מתקיים לכל <math>1\le n\le2k</math>. מאחר ש-<math>\binom{2k+1}{k}=\frac{(2k+1)!}{k!(k+1)!}</math> הוא מספר שלם, וכל הראשוניים <math>k+2\le p\le2k+1</math> מופיעים רק במונה, מתקיים
+:<math>\frac{(2k+1)\#}{(k+1)\#}\le\binom{2k+1}{k}=\frac12\left[\binom{2k+1}{k}+\binom{2k+1}{k+1}\right]<\frac12(1+1)^{2k+1}=4^k .</math>
+לכן
+:<math>(2k+1)\#=(k+1)\#\cdot\frac{(2k+1)\#}{(k+1)\#}<4^{k+1}\cdot4^k=4^{2k+1}.</math>
+
+== ההוכחה מתוך הלמות ==
+נתבונן בפירוק של <math>\textstyle\binom{2n}{n}</math> לגורמים ראשוניים, עבור <math>n \ge 128</math>:
+:<math>\binom{2n}{n}=\left(\,\prod_{p\,\le\,\sqrt{2n}}p^{R(n,p)}\right)\left(\prod_{\sqrt{2n}\,<\,p\,\le\,2n/3}p^{R(n,p)}\right)\left(\,\prod_{n\,<\,p\,\leq\,2n}p\right).</math>
+כאן השתמשנו בלמה 3, שלפיה אף ראשוני <math>\frac{2n}{3} < p \leq n</math> אינו מופיע (כל הראשוניים בקטע זה אי-זוגיים, כי <math>2n/3 > 2</math>), ובלמה 2, שלפיה ראשוני <math>p > \sqrt{2n}</math> מופיע לכל היותר בחזקה 1 (כי <math>p^2 > 2n</math>). ראשוניים גדולים מ-<math>2n</math> אינם מחלקים את <math>(2n)!</math> כלל.
+
+למה 1 נותנת את החסם התחתון <math>\textstyle\binom{2n}{n}\geq\frac{4^n}{2n}</math>, ואילו למה 2 נותנת את החסם העליון
+:<math>\prod_{p\,\le\,\sqrt{2n}}p^{R(n,p)}\leq(2n)^{\pi(\sqrt{2n})}</math>
+במונחי [[פונקציית המספרים הראשוניים]] <math>\pi(x)</math>. בגורם האמצעי <math>R(n,p)\leq1</math>, ולכן למה 4 נותנת את החסם העליון
+:<math>\prod_{\sqrt{2n}\,<\,p\,\le\,2n/3}p^{R(n,p)}\leq\prod_{p\,\leq\,2n/3}p<4^{2n/3}.</math>
+
+מכאן שאם <math>(2n)^{\pi(\sqrt{2n})}\cdot4^{2n/3}\leq\frac{4^n}{2n}</math>, אז הגורם השלישי <math>\prod_{n\,<\,p\,\leq 2n}p</math> חייב להיות גדול מ-1, ולכן קיים ראשוני <math>n<p\leq2n</math>; כלומר <math>\pi(2n)>\pi(n)</math>.
+
+נשתמש עכשיו בכך שלכל <math>m\geq9</math> מתקיים <math>\pi(m)\leq\frac{2m}{3}-1</math>. זה נובע מכך שהמספרים 1, 9 וכל המספרים הזוגיים הגדולים מ-2 אינם ראשוניים, ומספרם לפחות <math>1+\frac{m-1}{2}>1+\frac{m}{3}</math>. אם מציבים זאת (עם <math>m = \sqrt{2n}</math>) באי-השוויון שלמעלה ומסדרים, מקבלים ש-<math>\pi(2n)>\pi(n)</math> בכל פעם ש-<math>(2n)^{(2/3)\sqrt{2n}}\leq 4^{n/3}</math>.
+
+בלוגריתם לפי בסיס 2, תנאי זה הופך ל-<math>(1+\log_2 n)\sqrt{2n}\leq n</math>. בהעלאה בריבוע של שני האגפים מקבלים <math>2(1+\log_2 n)^2\leq n</math>. שני האגפים שווים כאשר <math>n=128</math>; אגף שמאל הוא [[פונקציה קעורה]] של <math>n</math> בתחום זה, ושיפועו ב-<math>n = 128</math> קטן מ-1, ולכן האי-שוויון מתקיים לכל <math>n\geq 128</math>. (הדרישה <math>\sqrt{2n}\geq 9</math> מתקיימת כמובן בתחום זה.)
+
+לסיכום, הראינו ש-<math>\pi(2n)>\pi(n)</math> לכל <math>n\geq128</math>. עבור <math>n<128</math> התוצאה נכונה גם כן, כפי שרואים מרשימת המספרים הראשוניים 2, 3, 5, 7, 13, 23, 43, 83, 163, שבה כל מספר קטן מכפליים קודמו. לכן התוצאה נכונה לכל מספר שלם <math>n\geq1</math>.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+== קישורים חיצוניים ==
+* (באנגלית) Leo Goldmakher, [https://web.williams.edu/Mathematics/lg5/Chebyshev.pdf Chebyshev's Theorem and Bertrand's Postulate]
+* (באנגלית) [https://sites.math.washington.edu/~mathcircle/circle/archive/2013-14/advanced/mc-13a-w10.pdf Proof of Bertrand's Postulate], UW Math Circle
+* (באנגלית) הוכחה במערכת Mizar: [http://mizar.org/version/current/html/nat_4.html#T56 nat_4]
+* {{MathWorld|BertrandsPostulate|Bertrand's Postulate}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:משפטים בתורת המספרים]]

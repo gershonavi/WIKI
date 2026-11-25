@@ -31,7 +31,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Landau prime ideal theorem
 - [x] Rosser's theorem
 - [x] Wolstenholme's theorem
-- [ ] Proof of Bertrand's postulate
+- [x] Proof of Bertrand's postulate
 - [x] Brun's theorem (קיים בוויקיפדיה העברית: קבוע ברון)
 - [ ] Green–Tao theorem
 - [x] Twin prime conjecture (קיים בוויקיפדיה העברית: השערת המספרים הראשוניים התאומים)
