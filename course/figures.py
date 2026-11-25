@@ -2785,6 +2785,46 @@ def _():
     save('15-ro')
 
 
+@fig('04-7')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(6.8, 2.8))
+    xs = np.arange(9)
+    cub = [pow(int(x), 3, 9) for x in xs]
+    axs[0].bar(xs, [c if c < 5 else c - 9 for c in cub], color=C1)
+    axs[0].set_xticks(xs); axs[0].set_xlabel('x mod 9'); axs[0].axhline(0, color='k', lw=.5)
+    axs[0].set_title('x³ mod 9 ∈ {0, 1, −1}', fontsize=9)
+    sums = {(a + b + c) % 9 for a in (0, 1, 8) for b in (0, 1, 8) for c in (0, 1, 8)}
+    axs[1].bar(range(9), [1] * 9, color=[C3 if r in sums else C2 for r in range(9)])
+    axs[1].set_xticks(range(9)); axs[1].set_yticks([]); axs[1].set_xlabel('n mod 9')
+    axs[1].set_title('sums of three cubes mod 9: never 4 or 5 (red)', fontsize=9)
+    save('04-7')
+
+
+@fig('08-7')
+def _():
+    from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
+    fig_ = plt.figure(figsize=(6.8, 3.0))
+    ax = fig_.add_subplot(1, 2, 1, projection='3d')
+    a, b, c = 1, 2, 2
+    for (x0, y0, z0), (x1, y1, z1) in [((0,0,0),(a,0,0)),((0,0,0),(0,b,0)),((0,0,0),(0,0,c)),((a,0,0),(a,b,0)),((a,0,0),(a,0,c)),((0,b,0),(a,b,0)),((0,b,0),(0,b,c)),((0,0,c),(a,0,c)),((0,0,c),(0,b,c)),((a,b,0),(a,b,c)),((a,0,c),(a,b,c)),((0,b,c),(a,b,c))]:
+        ax.plot([x0, x1], [y0, y1], [z0, z1], color=C1)
+    ax.plot([0, a], [0, b], [0, c], color=C2, lw=2)
+    ax.set_title('box 1×2×2, diagonal 3', fontsize=9); ax.set_xticks([]); ax.set_yticks([]); ax.set_zticks([])
+    ax2 = fig_.add_subplot(1, 2, 2)
+    from math import gcd as g
+    ds = {}
+    for x in range(1, 60):
+        for y in range(x, 60):
+            for z in range(y, 60):
+                d2 = x * x + y * y + z * z; d = math.isqrt(d2)
+                if d * d == d2 and d < 60 and g(g(x, y), g(z, d)) == 1:
+                    ds[d] = ds.get(d, 0) + 1
+    ks = sorted(ds)
+    ax2.bar(ks, [ds[k] for k in ks], color=C1, width=1.2)
+    ax2.set_xlabel('d (always odd)'); ax2.set_title('primitive quadruples with norm d', fontsize=9)
+    save('08-7')
+
+
 
 if __name__ == '__main__':
     import sys

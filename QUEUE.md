@@ -58,4 +58,4 @@ Sieve theory and theorems: Jurkat–Richert theorem; Sieve of Pritchard; Goldsto
 
 
 
-Additive number theory: Postage stamp problem; Additive basis; Pythagorean quadruple; Restricted sumset; Cameron–Erdős conjecture; Arithmetic combinatorics; Folkman's theorem; Erdős–Turán conjecture on additive bases; Minimum overlap problem; Pollock's conjectures; Square-difference-free set; Erdős–Tetali theorem; Sums of three cubes
+Additive number theory: Additive basis; Restricted sumset; Cameron–Erdős conjecture; Arithmetic combinatorics; Folkman's theorem; Erdős–Turán conjecture on additive bases; Minimum overlap problem; Pollock's conjectures; Square-difference-free set; Erdős–Tetali theorem
