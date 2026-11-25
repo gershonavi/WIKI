@@ -137,6 +137,13 @@ def strip_file_links(s):
 
 
 def preprocess(text):
+    # '}}' inside <math> would close an enclosing {{template}} early; TeX ignores the space
+    def _sep(m):
+        b = m.group(1)
+        while '}}' in b:
+            b = b.replace('}}', '} }')
+        return '<math>' + b + '</math>'
+    text = re.sub(r'<math>(.*?)</math>', _sep, text, flags=re.S)
     cats = re.findall(r'\[\[קטגוריה:([^\]|]+)(?:\|[^\]]*)?\]\]', text)
     text = re.sub(r'\[\[קטגוריה:[^\]]*\]\]\n?', '', text)
     text = re.sub(r'__[A-Z]+__', '', text)
@@ -148,6 +155,7 @@ def preprocess(text):
 
 def fix_math(md):
     """Use GitHub's robust math syntax: ```math blocks and $`...`$ inline."""
+    md = re.sub(r'\\operatorname\s*\{', r'\\mathrm{', md)  # GitHub's MathJax rejects \operatorname
     md = re.sub(r'\$\$(.+?)\$\$', lambda m: '\n\n```math\n' + m.group(1).strip() + '\n```\n\n', md, flags=re.S)
     parts = re.split(r'(```math\n.*?\n```)', md, flags=re.S)
     for i in range(0, len(parts), 2):

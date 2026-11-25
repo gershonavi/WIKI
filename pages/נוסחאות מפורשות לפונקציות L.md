@@ -39,22 +39,22 @@ f(x) = \pi_0(x) + \frac{1}{2}\,\pi_0(x^{1/2}) + \frac{1}{3}\,\pi_0(x^{1/3}) + \c
 
 
 ```math
-f(x) = \operatorname{li}(x) - \sum_\rho \operatorname{li}(x^\rho) - \log(2) + \int_x^\infty \frac{dt}{t\,(t^2-1)\log(t)},
+f(x) = \mathrm{li}(x) - \sum_\rho \mathrm{li}(x^\rho) - \log(2) + \int_x^\infty \frac{dt}{t\,(t^2-1)\log(t)},
 ```
 
 
 
-כאשר הסכום עובר על האפסים הלא-טריוויאליים $`\rho`$ של פונקציית זטא של רימן. הסכום אינו מתכנס בהחלט, אך ניתן לחשב אותו כאשר מסדרים את האפסים לפי הערך המוחלט של החלק המדומה שלהם. $`\operatorname{li}`$ היא [פונקציית האינטגרל הלוגריתמי](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA_%D7%94%D7%90%D7%99%D7%A0%D7%98%D7%92%D7%A8%D7%9C_%D7%94%D7%9C%D7%95%D7%92%D7%A8%D7%99%D7%AA%D7%9E%D7%99), המוגדרת כערך העיקרי של קושי של האינטגרל המתבדר
+כאשר הסכום עובר על האפסים הלא-טריוויאליים $`\rho`$ של פונקציית זטא של רימן. הסכום אינו מתכנס בהחלט, אך ניתן לחשב אותו כאשר מסדרים את האפסים לפי הערך המוחלט של החלק המדומה שלהם. $`\mathrm{li}`$ היא [פונקציית האינטגרל הלוגריתמי](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA_%D7%94%D7%90%D7%99%D7%A0%D7%98%D7%92%D7%A8%D7%9C_%D7%94%D7%9C%D7%95%D7%92%D7%A8%D7%99%D7%AA%D7%9E%D7%99), המוגדרת כערך העיקרי של קושי של האינטגרל המתבדר
 
 
 
 ```math
-\operatorname{li}(x) = \int_0^x \frac{dt}{\log(t)}.
+\mathrm{li}(x) = \int_0^x \frac{dt}{\log(t)}.
 ```
 
 
 
-האיברים $`\operatorname{li}(x^\rho)`$ דורשים הגדרה זהירה, מאחר של-$`\operatorname{li}`$ יש [נקודות הסתעפות](https://he.wikipedia.org/wiki/%D7%A0%D7%A7%D7%95%D7%93%D7%AA_%D7%94%D7%A1%D7%AA%D7%A2%D7%A4%D7%95%D7%AA) ב-0 וב-1; הם מוגדרים באמצעות [המשכה אנליטית](https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%A9%D7%9B%D7%94_%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA) במשתנה המרוכב $`\rho`$ בתחום $`x>1`$, $`\operatorname{Re}(\rho)>0`$. גם האיברים האחרים מתאימים לאפסים: האיבר הדומיננטי $`\operatorname{li}(x)`$ נובע מהקוטב ב-$`s=1`$, הנחשב כאפס מריבוי $`-1`$, והאיברים הקטנים הנותרים נובעים מהאפסים הטריוויאליים. הנוסחה מראה שאפסי פונקציית זטא של רימן שולטים בתנודות של הראשוניים סביב מיקומם ה"צפוי".[^4]
+האיברים $`\mathrm{li}(x^\rho)`$ דורשים הגדרה זהירה, מאחר של-$`\mathrm{li}`$ יש [נקודות הסתעפות](https://he.wikipedia.org/wiki/%D7%A0%D7%A7%D7%95%D7%93%D7%AA_%D7%94%D7%A1%D7%AA%D7%A2%D7%A4%D7%95%D7%AA) ב-0 וב-1; הם מוגדרים באמצעות [המשכה אנליטית](https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%A9%D7%9B%D7%94_%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA) במשתנה המרוכב $`\rho`$ בתחום $`x>1`$, $`\mathrm{Re}(\rho)>0`$. גם האיברים האחרים מתאימים לאפסים: האיבר הדומיננטי $`\mathrm{li}(x)`$ נובע מהקוטב ב-$`s=1`$, הנחשב כאפס מריבוי $`-1`$, והאיברים הקטנים הנותרים נובעים מהאפסים הטריוויאליים. הנוסחה מראה שאפסי פונקציית זטא של רימן שולטים בתנודות של הראשוניים סביב מיקומם ה"צפוי".[^4]
 
 ההוכחה המלאה הראשונה של פון מנגולד, משנת 1895, החלה בהוכחת הנוסחה הבאה עבור [פונקציית צ'בישב](%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%A6%27%D7%91%D7%99%D7%A9%D7%91.md) $`\psi`$:[^5]
 
@@ -71,7 +71,7 @@ f(x) = \operatorname{li}(x) - \sum_\rho \operatorname{li}(x^\rho) - \log(2) + \i
 
 
 ```math
-\sum_\rho\frac{x^\rho}{\rho} = \lim_{T \to \infty} \sum_{\rho:\,|\operatorname{Im} \rho| \le T} \frac{x^\rho}{\rho}.
+\sum_\rho\frac{x^\rho}{\rho} = \lim_{T \to \infty} \sum_{\rho:\,|\mathrm{Im} \rho| \le T} \frac{x^\rho}{\rho}.
 ```
 
 
@@ -83,7 +83,7 @@ f(x) = \operatorname{li}(x) - \sum_\rho \operatorname{li}(x^\rho) - \log(2) + \i
 
 
 ```math
-\Phi(1)+\Phi(0)-\sum_\rho\Phi(\rho) = \sum_{p,m} \frac{\log(p)}{p^{m/2}} \Big( F(\log(p^m)) + F(-\log(p^m)) \Big) - \frac{1}{2\pi} \int_{-\infty}^\infty \varphi(t)\Psi(t)\,dt,
+\Phi(1)+\Phi(0)-\sum_\rho\Phi(\rho) = \sum_{p,m} \frac{\log(p)}{p^{m/2} } \Big( F(\log(p^m)) + F(-\log(p^m)) \Big) - \frac{1}{2\pi} \int_{-\infty}^\infty \varphi(t)\Psi(t)\,dt,
 ```
 
 
@@ -95,13 +95,13 @@ f(x) = \operatorname{li}(x) - \sum_\rho \operatorname{li}(x^\rho) - \log(2) + \i
 - $`F`$ היא [פונקציה חלקה](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94_%D7%97%D7%9C%D7%A7%D7%94) שכל נגזרותיה דועכות במהירות;
 - $`\varphi`$ היא [התמרת פורייה](https://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%9E%D7%A8%D7%AA_%D7%A4%D7%95%D7%A8%D7%99%D7%99%D7%94) של $`F`$: $`\varphi(t) = \int_{-\infty}^\infty F(x)e^{itx}\,dx`$;
 - $`\Phi(1/2 + it) = \varphi(t)`$;
-- $`\Psi(t) = - \log( \pi ) + \operatorname{Re}(\psi(1/4 + it/2))`$, כאשר $`\psi = \Gamma'/\Gamma`$ היא [פונקציית הדיגמא](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA_%D7%93%D7%99%D7%92%D7%9E%D7%90).
+- $`\Psi(t) = - \log( \pi ) + \mathrm{Re}(\psi(1/4 + it/2))`$, כאשר $`\psi = \Gamma'/\Gamma`$ היא [פונקציית הדיגמא](https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA_%D7%93%D7%99%D7%92%D7%9E%D7%90).
 
 באופן גס, הנוסחה המפורשת אומרת שהתמרת פורייה של אפסי פונקציית זטא היא קבוצת חזקות הראשוניים, בתוספת כמה גורמים אלמנטריים. מרגע שמנסחים זאת כך, הנוסחה נובעת מכך שהתמרת פורייה היא [אופרטור אוניטרי](https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8_%D7%90%D7%95%D7%A0%D7%99%D7%98%D7%A8%D7%99), ולכן מכפלה סקלרית במרחב הזמן שווה למכפלה הסקלרית של ההתמרות במרחב התדירות.
 
 האיברים בנוסחה נוצרים באופן הבא:
 
-- האיברים באגף ימין באים מהנגזרת הלוגריתמית של $`\zeta^*(s)= \Gamma(s/2)\pi^{-s/2}\prod_p \frac{1}{1-p^{-s}}`$: האיברים המתאימים לראשוני $`p`$ באים מגורם אוילר של $`p`$ ב[מכפלת אוילר](https://he.wikipedia.org/wiki/%D7%9E%D7%9B%D7%A4%D7%9C%D7%AA_%D7%90%D7%95%D7%99%D7%9C%D7%A8), והאיבר האחרון, הכולל את $`\Psi`$, בא מגורם הגמא (גורם אוילר "באינסוף").
+- האיברים באגף ימין באים מהנגזרת הלוגריתמית של $`\zeta^*(s)= \Gamma(s/2)\pi^{-s/2}\prod_p \frac{1}{1-p^{-s} }`$: האיברים המתאימים לראשוני $`p`$ באים מגורם אוילר של $`p`$ ב[מכפלת אוילר](https://he.wikipedia.org/wiki/%D7%9E%D7%9B%D7%A4%D7%9C%D7%AA_%D7%90%D7%95%D7%99%D7%9C%D7%A8), והאיבר האחרון, הכולל את $`\Psi`$, בא מגורם הגמא (גורם אוילר "באינסוף").
 - אגף שמאל הוא סכום על כל האפסים של $`\zeta^*`$, הנספרים עם ריבוי, כך שהקטבים ב-0 וב-1 נספרים כאפסים מסדר $`-1`$.
 
 ניתן להבין את הנוסחה של וייל כך. המטרה היא לכתוב
@@ -109,7 +109,7 @@ f(x) = \operatorname{li}(x) - \sum_\rho \operatorname{li}(x^\rho) - \log(2) + \i
 
 
 ```math
-\frac{d}{du} \left[ \sum_{n \le e^{|u|}} \Lambda(n) + \frac{1}{2} \ln(1-e^{-2|u|})\right] = \sum_{n=1}^\infty \Lambda(n) \left[ \delta(u+\ln n) + \delta(u-\ln n) \right] + \frac{1}{2}\frac{d\ln(1-e^{-2|u|})}{du} = e^u - \sum_\rho e^{\rho u},
+\frac{d}{du} \left[ \sum_{n \le e^{|u|} } \Lambda(n) + \frac{1}{2} \ln(1-e^{-2|u|})\right] = \sum_{n=1}^\infty \Lambda(n) \left[ \delta(u+\ln n) + \delta(u-\ln n) \right] + \frac{1}{2}\frac{d\ln(1-e^{-2|u|})}{du} = e^u - \sum_\rho e^{\rho u},
 ```
 
 
@@ -153,7 +153,7 @@ g(u) = \sum_{n=1}^\infty \Lambda(n) \left[ \delta(u+\ln n) + \delta(u-\ln n) \ri
 
 
 ```math
-\sum_\rho F(\rho) = \operatorname{Tr}(F(\widehat T )).
+\sum_\rho F(\rho) = \mathrm{Tr}(F(\widehat T )).
 ```
 
 

@@ -57,7 +57,7 @@ Q(a, z) = \frac{\Gamma(a,z)}{\Gamma(a)} = \frac 1 {\Gamma(a)} \int_z^\infty u^{a
 
 
 ```math
-Z(t) =2 \Re \left(e^{i \theta(t)} \left(\sum_{n=1}^\infty Q\left(\frac{s}{2},\pi i n^2 \right) - \frac{\pi^{s/2} e^{\pi i s/4}} {s \Gamma\left(\frac{s}{2}\right)} \right) \right).
+Z(t) =2 \Re \left(e^{i \theta(t)} \left(\sum_{n=1}^\infty Q\left(\frac{s}{2},\pi i n^2 \right) - \frac{\pi^{s/2} e^{\pi i s/4} } {s \Gamma\left(\frac{s}{2}\right)} \right) \right).
 ```
 
 
@@ -81,7 +81,7 @@ Z(t) =2 \Re \left(e^{i \theta(t)} \left(\sum_{n=1}^\infty Q\left(\frac{s}{2},\pi
 
 
 ```math
-Z(t) = \Omega\left( \exp\left(\frac{3}{4}\sqrt{\frac{\log t}{\log \log t}}\right) \right),
+Z(t) = \Omega\left( \exp\left(\frac{3}{4}\sqrt{\frac{\log t}{\log \log t} }\right) \right),
 ```
 
  כאשר הסימון פירושו שהמנה של $`Z(t)`$ בפונקציה שבתוך $`\Omega`$ אינה שואפת לאפס כאשר $`t`$ גדל.
@@ -120,7 +120,7 @@ Z(t) = \Omega\left( \exp\left(\frac{3}{4}\sqrt{\frac{\log t}{\log \log t}}\right
 \frac{1}{T} \int_0^T Z(t)^4 dt \sim \frac{1}{2\pi^2}(\log T)^4,
 ```
 
- ומכאן שהשורש הרביעי של ממוצע החזקה הרביעית גדל כמו $`\tfrac{1}{2^{1/4} \sqrt{\pi}} \log t`$.
+ ומכאן שהשורש הרביעי של ממוצע החזקה הרביעית גדל כמו $`\tfrac{1}{2^{1/4} \sqrt{\pi} } \log t`$.
 
 ### השערת לינדלף
 
