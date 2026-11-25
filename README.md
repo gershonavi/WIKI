@@ -210,7 +210,7 @@
 * [השערת וורינג על מספרים ראשוניים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%95%D7%95%D7%A8%D7%99%D7%A0%D7%92%20%D7%A2%D7%9C%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md) – Waring's prime number conjecture
 * [מספר מנומס](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A0%D7%95%D7%9E%D7%A1.md) – Polite number
 * [משפט המספרים המצולעים הממורכזים](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%9E%D7%A6%D7%95%D7%9C%D7%A2%D7%99%D7%9D%20%D7%94%D7%9E%D7%9E%D7%95%D7%A8%D7%9B%D7%96%D7%99%D7%9D.md) – Centered polygonal number theorem
-* [משפט פולקמן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%95%D7%9C%D7%A7%D7%9E%D7%9F.md)
+* [משפט פולקמן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%95%D7%9C%D7%A7%D7%9E%D7%9F.md) – Folkman's theorem
 * [סכום קבוצות מוגבל](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A7%D7%91%D7%95%D7%A6%D7%95%D7%AA%20%D7%9E%D7%95%D7%92%D7%91%D7%9C.md) – Restricted sumset
 * [קבוצה ללא הפרשים ריבועיים](pages/%D7%A7%D7%91%D7%95%D7%A6%D7%94%20%D7%9C%D7%9C%D7%90%20%D7%94%D7%A4%D7%A8%D7%A9%D7%99%D7%9D%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%99%D7%9D.md)
 
