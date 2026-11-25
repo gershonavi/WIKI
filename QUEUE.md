@@ -155,7 +155,7 @@ Additive number theory:
 - [x] Conductor of an elliptic curve
 - [ ] Tate's algorithm
 - [ ] Twists of elliptic curves
-- [ ] Mordell curve
+- [x] Mordell curve
 - [ ] Weil pairing
 - [ ] Tate curve
 - [ ] Néron–Ogg–Shafarevich criterion
