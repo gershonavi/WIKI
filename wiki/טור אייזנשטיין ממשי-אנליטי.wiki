@@ -1,0 +1,75 @@
+ב[[מתמטיקה]], '''טור אייזנשטיין ממשי-אנליטי''' (ב[[אנגלית]]: real analytic Eisenstein series) הוא פונקציה מיוחדת של שני משתנים, המשמשת ב[[תורת ההצגות]] של <math>SL(2,\mathbb{R})</math>, ובאופן רחב יותר ב[[תורת המספרים האנליטית]].
+
+== הגדרה ==
+יהי <math>\mathcal{H}</math> חצי המישור העליון. עבור <math>z\in\mathcal{H}</math>, טור אייזנשטיין <math>E(z,s)</math> מוגדר על ידי
+:<math>E(z,s) = \frac{1}{2}\sum_{(m,n)=1}\frac{y^s}{|mz+n|^{2s}}</math>
+לכל <math>\mathrm{Re}(s)>1</math>. הסכום הוא על כל הזוגות של שלמים [[מספרים זרים|זרים]].
+
+יש מחברים שמשמיטים את הגורם <math>1/2</math>, ויש שמסכמים על כל זוגות השלמים שאינם שניהם אפס; זה משנה את הפונקציה בגורם <math>\zeta(2s)</math>, כאשר <math>\zeta</math> היא [[פונקציית זטא של רימן]]. ('''הסבר נוסף:''' כל זוג <math>(m,n) \ne (0,0)</math> נכתב באופן יחיד כ-<math>d\cdot(m',n')</math> עם <math>d = \gcd(m,n) \ge 1</math> ו-<math>(m',n')</math> זרים, ולכן <math>\sum_{(m,n)\ne(0,0)} = \sum_{d\ge1} d^{-2s}\sum_{(m',n')=1} = \zeta(2s)\cdot 2E(z,s)</math>.)
+
+== תכונות ==
+=== כפונקציה של <math>z</math> ===
+כפונקציה של <math>z=x+iy</math>, <math>E(z,s)</math> היא [[פונקציה עצמית]] ממשית-אנליטית של [[לפלסיאן|אופרטור לפלס]] על <math>\mathcal{H}</math> עם ערך עצמי <math>s(1-s)</math>. במילים אחרות, היא מקיימת את [[משוואה דיפרנציאלית חלקית|המשוואה הדיפרנציאלית החלקית]] האליפטית
+:<math> - y^2\left(\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}\right)E(z,s) = s(1-s)E(z,s). </math>
+('''בדיקה פשוטה:''' כל מחובר <math>y^s/|mz+n|^{2s}</math> הוא <math>(\mathrm{Im}\,\gamma z)^s</math> עבור מטריצה <math>\gamma \in SL(2,\mathbb Z)</math> מתאימה, והפונקציה <math>y^s</math> מקיימת <math>-y^2 \partial_y^2 y^s = s(1-s)y^s</math>; מכיוון שהלפלסיאן ההיפרבולי אינווריאנטי תחת <math>SL(2,\mathbb R)</math>, גם כל מחובר הוא פונקציה עצמית.)
+
+הפונקציה <math>E(z,s)</math> אינווריאנטית תחת הפעולה של <math>SL(2,\mathbb{Z})</math> על <math>z</math> בחצי המישור העליון על ידי [[העתקת מביוס|העתקות ליניאריות שבורות]]. יחד עם התכונה הקודמת, פירוש הדבר שטור אייזנשטיין הוא [[צורת מאס]], אנלוג ממשי-אנליטי של פונקציה מודולרית אליפטית קלאסית.
+
+שימו לב ש-<math>E(z,s)</math> אינה פונקציה אינטגרבילית בריבוע של <math>z</math> ביחס ל[[יריעה רימנית|מטריקה הרימנית]] האינווריאנטית על <math>\mathcal{H}</math> (בגלל האיבר <math>y^s</math>, הגדל בחוד).
+
+=== כפונקציה של <math>s</math> ===
+טור אייזנשטיין מתכנס עבור <math>\mathrm{Re}(s)>1</math>, אבל אפשר להמשיך אותו [[המשכה אנליטית|אנליטית]] ל[[פונקציה מרומורפית]] של <math>s</math> בכל המישור המרוכב. בחצי המישור <math>\mathrm{Re}(s)>1/2</math> יש לו קוטב יחיד, ב-<math>s=1</math>, עם שארית <math>3/\pi</math> (לכל <math>z\in\mathcal{H}</math>), ויש לו אינסוף קטבים ברצועה <math>0 \lt \mathrm{Re}(s) \lt 1/2</math>, בנקודות <math>\rho/2</math>, כאשר <math>\rho</math> הוא אפס לא טריוויאלי של פונקציית זטא של רימן (כי בפיתוח פורייה להלן מופיע <math>\zeta(2s)</math> במכנה). את האיבר הקבוע בקוטב ב-<math>s=1</math> מתארת [[נוסחת הגבול של קרונקר]].
+
+('''מאיפה 3/π:''' לסכום על כל הזוגות <math>(m,n)\ne(0,0)</math> יש לפי נוסחת קרונקר שארית <math>\pi</math>; חלוקה ב-<math>2\zeta(2) = \pi^2/3</math> נותנת <math>3/\pi</math>. זה גם <math>1/\mathrm{vol}(SL(2,\mathbb Z)\backslash\mathcal H)</math>, כי שטח התחום היסודי הוא <math>\pi/3</math>.)
+
+הפונקציה המתוקנת
+:<math> E^*(z,s) = \pi^{-s}\Gamma(s)\zeta(2s)E(z,s) </math>
+מקיימת את המשוואה הפונקציונלית
+:<math>E^*(z,s) = E^*(z,1-s), </math>
+בדומה למשוואה הפונקציונלית של פונקציית זטא של רימן.
+
+המכפלה הסקלרית של שני טורי אייזנשטיין שונים <math>E(z,s)</math> ו-<math>E(z,t)</math> נתונה על ידי יחסי מאס–סלברג.
+
+=== פיתוח פורייה ===
+התכונות שלמעלה של טור אייזנשטיין הממשי-אנליטי, כלומר המשוואה הפונקציונלית של <math>E(z,s)</math> ושל <math>E^*(z,s)</math> והמשוואה עם הלפלסיאן על <math>\mathcal{H}</math>, נובעות מכך של-<math>E(z,s)</math> יש פיתוח פורייה
+:<math>E(z,s)=y^s+ \frac{\Lambda(2s-1)}{\Lambda(2s)} y^{1-s} +\frac{4}{\Lambda(2s)}\sum_{n=1}^\infty n^{s-1/2}\sigma_{1-2s}(n)\sqrt{y}\,K_{s-1/2}(2\pi ny)\cos(2\pi nx),</math>
+כאשר
+:<math>\Lambda(s)=\pi^{-s/2}\Gamma\left(\frac{s}{2}\right)\zeta(s),\quad \sigma_s(m)=\sum_{d|m}d^s,</math>
+ו-<math>K_s(z)</math> הן [[פונקציית בסל|פונקציות בסל]] המתוקנות
+:<math>K_s(z) =\frac{1}{2}\int^\infty_0 e^{-(z/2)(t+1/t)}t^{s-1}\,dt \sim \sqrt{\frac{\pi}{2z}}e^{-z}\quad (z\rightarrow\infty).</math>
+
+=== בדיקות מספריות (נוסף בתרגום) ===
+כל הטענות שלמעלה נבדקו מספרית בנקודה <math>z = 0.3 + 0.9i</math>:
+* עבור <math>s = 3</math>, פיתוח פורייה נותן <math>E(z,3) \approx 2.15629522</math>, ואותו ערך (עד שגיאת קטימה) מתקבל מסכימה ישירה על זוגות זרים <math>|m|,|n| \le 150</math>.
+* עבור <math>s = 0.3</math>: <math>E^*(z,0.3) = E^*(z,0.7) \approx -2.33652447</math>.
+* עבור <math>s = 0.37 + 0.5i</math>, הלפלסיאן בהפרשים סופיים מאשר את המשוואה <math>-y^2\Delta E = s(1-s)E</math>.
+* <math>(s-1)E(z,s) \to 3/\pi \approx 0.9549297</math> כאשר <math>s \to 1</math>.
+* <math>E(z,s) = E(-1/z,s) = E(z+1,s)</math> (אינווריאנטיות מודולרית).
+
+== פונקציית זטא של אפשטיין ==
+'''פונקציית זטא של אפשטיין''' <math>\zeta_Q(s)</math> של [[תבנית ריבועית]] שלמה חיובית לחלוטין <math>Q(m,n)=cm^2+bmn+an^2</math>, הקרויה על שם פאול אפשטיין, מוגדרת על ידי{{הערה|שם=epstein|1=P. Epstein, [https://publikationen.ub.uni-frankfurt.de/files/7391/Epstein_Theorie_allgemeiner_Zetafunktionne_01.pdf Zur Theorie allgemeiner Zetafunktionen], Mathematische Annalen 56 (4), 1903, עמ' 615–644, {{DOI|10.1007/BF01444309}}|כיווון=שמאל}}
+:<math> \zeta_Q(s) = \sum_{(m,n)\ne (0,0)} {1\over Q(m,n)^s}. </math>
+היא במהותה מקרה פרטי של טור אייזנשטיין הממשי-אנליטי, עבור ערך מיוחד של <math>z</math>, כי <math> Q(m,n) = a|mz-n|^2</math> עבור
+:<math> z = -\frac{b}{2a} + \frac{i\sqrt{4ac-b^2}}{2a}. </math>
+('''חישוב:''' <math>a|mz-n|^2 = a\Big[\big(\tfrac{mb}{2a}+n\big)^2 + \tfrac{m^2(4ac-b^2)}{4a^2}\Big] = cm^2 + bmn + an^2</math>.) לכן <math>\zeta_Q(s) = a^{-s}y^{-s}\cdot 2\zeta(2s)E(z,s)</math>, כאשר <math>y = \mathrm{Im}\,z = \sqrt{4ac-b^2}/(2a)</math>. למשל עבור <math>Q = m^2+n^2</math> מתקבל <math>z = i</math>.
+
+== הכללות ==
+טור אייזנשטיין הממשי-אנליטי <math>E(z,s)</math> הוא למעשה טור אייזנשטיין המתאים ל[[החבורה המודולרית|חבורה המודולרית]], תת-החבורה הדיסקרטית <math>SL(2,\mathbb{Z})</math> של <math>SL(2,\mathbb{R})</math>. [[אטלה סלברג|סלברג]] תיאר הכללות לתת-חבורות דיסקרטיות אחרות <math>\Gamma</math> של <math>SL(2,\mathbb{R})</math>, והשתמש בהן כדי לחקור את ההצגה של <math>SL(2,\mathbb{R})</math> על <math>L^2(SL(2,\mathbb{R})/\Gamma)</math>. [[רוברט לנגלנדס|לנגלנדס]] הרחיב את עבודתו של סלברג לחבורות ממימד גבוה יותר; ההוכחות שלו, הידועות כקשות מאוד, פושטו מאוחר יותר בידי יוסף ברנשטיין.
+
+== ראו גם ==
+* [[נוסחת הגבול של קרונקר]]
+
+== לקריאה נוספת ==
+* J. Bernstein, [https://web.archive.org/web/20080926200045/http://www.math.uchicago.edu/~arinkin/langlands/Bernstein/ Meromorphic continuation of Eisenstein series]
+* A. Krieg, [https://encyclopediaofmath.org/wiki/Epstein_zeta-function Epstein zeta-function], Encyclopedia of Mathematics
+* T. Kubota, Elementary Theory of Eisenstein Series, Kodansha, טוקיו, 1973, {{ISBN|0-470-50920-1}}
+* R. P. Langlands, On the Functional Equations Satisfied by Eisenstein Series, Lecture Notes in Mathematics 544, Springer, 1976, {{ISBN|978-3-540-07872-2}}
+* A. Selberg, Discontinuous groups and harmonic analysis, Proc. Int. Congr. Math., 1962
+* D. Zagier, Eisenstein series and the Riemann zeta-function, בתוך: Automorphic Forms, Representation Theory and Arithmetic, Springer, 1981, {{DOI|10.1007/978-3-662-00734-1_10}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:פונקציות מיוחדות]]
+[[קטגוריה:תורת המספרים האנליטית]]

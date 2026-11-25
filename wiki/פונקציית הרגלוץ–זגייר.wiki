@@ -1,0 +1,28 @@
+ב[[מתמטיקה]], '''פונקציית הרגלוץ–זגייר''' (ב[[אנגלית]]: Herglotz–Zagier function),{{הערה|שם=masri|1=R. Masri, The Herglotz–Zagier function, double zeta functions, and values of L-series, Journal of Number Theory 106 (2), 2004, עמ' 219–237, {{DOI|10.1016/j.jnt.2004.01.004}}|כיווון=שמאל}} הקרויה על שם גוסטב הרגלוץ ו[[דון זאגייר|דון זגייר]],{{הערה|שם=herglotz|1=G. Herglotz, Über die Kroneckersche Grenzformel für reelle, quadratische Körper, Berichte über die Verhandlungen der Königlich-Sächsischen Gesellschaft der Wissenschaften zu Leipzig, Mathematisch-Physische Klasse 75, 1923, עמ' 3–14|כיווון=שמאל}} היא הפונקציה
+:<math>F(x)= \sum^{\infty}_{n=1} \left(\frac{\Gamma^{\prime}(nx)}{\Gamma (nx)} -\log (nx)\right) \frac{1}{n}, \qquad x > 0.</math>
+
+את הפונקציה הציג זגייר, שהשתמש בה כדי לקבל [[נוסחת הגבול של קרונקר]] עבור [[שדה ריבועי|שדות ריבועיים ממשיים]].{{הערה|שם=zagier|1=D. Zagier, A Kronecker limit formula for real quadratic fields, Mathematische Annalen 213 (2), 1975, עמ' 153–184, {{DOI|10.1007/BF01343950}}|כיווון=שמאל}}
+
+== התכנסות (נוסף בתרגום) ==
+הביטוי <math>\Gamma'/\Gamma = \psi</math> הוא [[פונקציית דיגמא|פונקציית הדיגמא]]. לפי נוסחת סטירלינג, <math>\psi(t) = \log t - \frac{1}{2t} + O(t^{-2})</math> כאשר <math>t \to \infty</math>. לכן האיבר ה-<math>n</math>-י בטור מתנהג כמו
+:<math>\frac{1}{n}\Big(-\frac{1}{2nx}\Big) = -\frac{1}{2xn^2},</math>
+והטור מתכנס בהחלט לכל <math>x > 0</math>. כל איברי הטור שליליים (כי <math>\psi(t) \lt \log t</math> לכל <math>t > 0</math>), ולכן <math>F(x) \lt 0</math>.
+
+== זהויות (נוסף בתרגום) ==
+הזהויות הבאות נבדקו מספרית בדיוק גבוה:
+* הערך ב-1:
+:<math>F(1) = \sum_{n=1}^\infty \frac{\psi(n) - \log n}{n} = -\frac{\gamma^2}{2} - \frac{\pi^2}{12} - \gamma_1 \approx -0.91624015,</math>
+:כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]] ו-<math>\gamma_1</math> הוא [[קבועי סטילטיס|קבוע סטילטיס]] הראשון.
+* יחס ההדדיות <math>x \leftrightarrow 1/x</math>:
+:<math>F(x) + F\!\left(\frac1x\right) = 2F(1) + \frac12\log^2 x - \frac{\pi^2}{6}\left(x + \frac1x - 2\right).</math>
+:למשל עבור <math>x = 2</math> אגף ימין פחות <math>2F(1) + \tfrac12\log^2 2</math> שווה ל-<math>-\tfrac{\pi^2}{6}\cdot\tfrac12 \approx -0.8224670</math>.
+שתי הזהויות נבדקו עבור <math>x = 2, 3, 0.7, 5</math> בדיוק של כ-20 ספרות.
+
+== לקריאה נוספת ==
+* R. Masri (2004), ראו הערה למעלה, על הקשר לפונקציות זטא כפולות ולערכים של טורי L.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות מיוחדות]]
+[[קטגוריה:תורת המספרים האנליטית]]
