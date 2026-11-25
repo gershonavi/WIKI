@@ -82,7 +82,8 @@ def circle_nodes(ax, n, labels=None, r=1.0, color='k', size=60, start=90):
     ax.add_patch(plt.Circle((0, 0), r, fill=False, color='#dddddd'))
     for k, (x, y) in enumerate(pts):
         ax.scatter([x], [y], s=size, color=color, zorder=3)
-        ax.annotate(str(labels[k] if labels else k), (x * 1.16, y * 1.16), ha='center', va='center', fontsize=9)
+        ax.annotate(str(labels[k] if labels else k), (x * 1.16, y * 1.16), ha='center', va='center', fontsize=9, annotation_clip=False)
+    ax.set_xlim(-1.3 * r, 1.3 * r); ax.set_ylim(-1.3 * r, 1.3 * r)
     ax.set_aspect('equal'); ax.axis('off')
     return pts
 
@@ -3070,6 +3071,1249 @@ def _():
     ax.set_title('Deshouillers–Dress–Tenenbaum: log d / log n follows the arcsine law', fontsize=9)
     save('09-8')
 
+
+
+
+# ================= proof-methods course (P01–P06) =================
+def _grid_table(ax, rows, cols, cell, title, hl=None, rlab='', clab=''):
+    """cell(r,c) -> text; hl(r,c) -> facecolor or None"""
+    for i, r in enumerate(rows):
+        ax.text(-0.5, -i, str(r), ha='center', va='center', fontsize=9, weight='bold')
+        for j, c in enumerate(cols):
+            fc = (hl(r, c) if hl else None) or 'white'
+            ax.add_patch(plt.Rectangle((j, -i - .5), 1, 1, fc=fc, ec='#bbbbbb'))
+            ax.text(j + .5, -i, str(cell(r, c)), ha='center', va='center', fontsize=9)
+    for j, c in enumerate(cols):
+        ax.text(j + .5, .85, str(c), ha='center', va='center', fontsize=9, weight='bold')
+    ax.text(-0.5, .85, rlab + '\\' + clab if rlab else '', ha='center', va='center', fontsize=8, color=GR)
+    ax.set_xlim(-1.1, len(cols) + .1); ax.set_ylim(-len(rows) + .3, 1.4)
+    ax.set_aspect('equal'); ax.axis('off'); ax.set_title(title, fontsize=9)
+
+
+@fig('P01-e1')
+def _():
+    ax = plt.gca()
+    a, b = 4, 3
+    for k in range(a):
+        ax.scatter([k, k], [1, 0], s=70, color=C1)
+    ax.scatter([a], [1], s=70, color=C2)
+    for k in range(b):
+        ax.scatter([k + a + 1.6, k + a + 1.6], [1, 0], s=70, color=C3)
+    ax.scatter([a + b + 1.6], [1], s=70, color=C2)
+    ax.text(a / 2, -0.8, '2a + 1 = 9', ha='center'); ax.text(a + 1.6 + b / 2, -0.8, '2b + 1 = 7', ha='center')
+    ax.annotate('', xy=(a + b + 1.6, 0.05), xytext=(a, 0.95), arrowprops=dict(arrowstyle='->', color=C2, lw=1.5, connectionstyle='arc3,rad=-0.2'))
+    ax.text(a + 1.2, 0.35, 'the two leftover dots\nform one more pair', color=C2, fontsize=8)
+    ax.set_xlim(-1, 11); ax.set_ylim(-1.2, 1.7); ax.axis('off')
+    ax.set_title('odd + odd: every dot gets a partner, so the sum 2(a+b+1) is even', fontsize=9)
+    save('P01-e1')
+
+
+@fig('P01-e2')
+def _():
+    ax = plt.gca()
+    ns = np.arange(1, 13)
+    for n in ns:
+        ax.bar(n - .18, n, .36, color=C1 if n % 2 == 0 else '#c6dbef')
+        ax.bar(n + .18, n + 1, .36, color=C1 if (n + 1) % 2 == 0 else '#c6dbef')
+        ax.text(n, n + 1.6, str(n * (n + 1)), ha='center', fontsize=7)
+    ax.set_xticks(ns); ax.set_xlabel('n   (left bar: n, right bar: n+1; dark = even)')
+    ax.set_title('n(n+1): in each pair exactly one factor is even, so the product (on top) is even', fontsize=9)
+    save('P01-e2')
+
+
+@fig('P01-e3')
+def _():
+    ax = plt.gca()
+    rows = list(range(2, 11))
+    cols = ['n-1', 'n', 'n+1']
+    vals = lambda n, c: {'n-1': n - 1, 'n': n, 'n+1': n + 1}[c]
+    def hl(n, c):
+        v = vals(n, c)
+        if v % 3 == 0 and v % 2 == 0: return '#c7b3e5'
+        if v % 3 == 0: return '#fdd0a2'
+        if v % 2 == 0: return '#c6dbef'
+    _grid_table(ax, rows, cols, vals, '', hl)
+    for i, n in enumerate(rows):
+        ax.text(3.3, -i, f'n³−n = {n**3 - n} = 6·{(n**3 - n)//6}', va='center', fontsize=8)
+    ax.set_xlim(-1.1, 8)
+    ax.set_title('three consecutive numbers: one is ≡0 mod 3 (orange), one is even (blue); purple = both', fontsize=9)
+    save('P01-e3')
+
+
+@fig('P01-x1')
+def _():
+    ax = plt.gca()
+    a, b, c = 4, 12, 20
+    xs = np.arange(0, 37)
+    ax.plot([0, 36], [0, 0], color=GR, lw=1)
+    for x in xs:
+        ax.plot([x, x], [-.08, .08], color='#cccccc', lw=.8)
+    ax.scatter(xs[::a], 0 * xs[::a], s=40, color=C1, zorder=3, label='multiples of a = 4')
+    for v, name, col, y in [(b, 'b = 12', C3, .5), (c, 'c = 20', C4, .5), (b + c, 'b + c = 32', C2, .5)]:
+        ax.annotate(name, (v, 0.05), (v, y), ha='center', color=col, arrowprops=dict(arrowstyle='->', color=col))
+    ax.annotate('', xy=(32, -.3), xytext=(12, -.3), arrowprops=dict(arrowstyle='->', color=C4, lw=1.3))
+    ax.text(22, -.45, 'jump by c = 5 steps of 4', ha='center', color=C4, fontsize=8)
+    ax.set_ylim(-.7, .8); ax.set_yticks([]); ax.legend(fontsize=8, loc='upper left')
+    ax.spines['left'].set_visible(False)
+    ax.set_title('b = 3·4 and c = 5·4, so b + c = (3+5)·4 lands on a multiple of 4 again', fontsize=9)
+    save('P01-x1')
+
+
+@fig('P01-x2')
+def _():
+    ax = plt.gca()
+    _grid_table(ax, ['n even', 'n odd'], ['n²', 'n', '1', 'n²+n+1'],
+                lambda r, c: {'n²': 'even' if r == 'n even' else 'odd', 'n': 'even' if r == 'n even' else 'odd',
+                              '1': 'odd', 'n²+n+1': 'odd'}[c],
+                'two cases cover all n; in both the sum is odd',
+                lambda r, c: '#fde0dd' if c == 'n²+n+1' else None)
+    ax.set_xlim(-1.6, 4.2)
+    save('P01-x2')
+
+
+@fig('P01-x3')
+def _():
+    ax = plt.gca()
+    _grid_table(ax, ['n mod 5', 'n⁵ mod 5', 'n⁵−n mod 5'], list(range(5)),
+                lambda r, c: {'n mod 5': c, 'n⁵ mod 5': pow(c, 5, 5), 'n⁵−n mod 5': (pow(c, 5) - c) % 5}[r],
+                'five cases (n ≡ 0,1,2,3,4 mod 5); in every case n⁵ − n ≡ 0',
+                lambda r, c: '#c7e9c0' if r == 'n⁵−n mod 5' else None)
+    ax.set_xlim(-1.8, 5.2)
+    save('P01-x3')
+
+
+@fig('P01-x4')
+def _():
+    fig_, axs = plt.subplots(1, 4, figsize=(6.4, 2.1))
+    cols = [C1, C4, C3, '#9467bd']
+    for ax, k in zip(axs, [1, 2, 3, 4]):
+        n = 2 * k + 1
+        for i in range(n):
+            for j in range(n):
+                if (i, j) == (k, k):
+                    c = C2
+                elif i < k + 1 and j < k:      # bottom-left k+1 wide, k tall
+                    c = cols[0]
+                elif i >= k + 1 and j < k + 1:  # bottom-right
+                    c = cols[1]
+                elif i >= k and j >= k + 1:     # top-right
+                    c = cols[2]
+                else:
+                    c = cols[3]
+                ax.add_patch(plt.Rectangle((i, j), .9, .9, fc=c))
+        ax.set_xlim(-.2, n); ax.set_ylim(-.2, n)
+        ax.set_title(f'{n}² = 4·{k}·{k+1} + 1', fontsize=8)
+        ax.set_aspect('equal'); ax.axis('off')
+    plt.suptitle('(2k+1)² = four k×(k+1) rectangles + the centre; k(k+1) is even, so 4k(k+1) is divisible by 8', fontsize=8.5)
+    save('P01-x4')
+
+
+@fig('P02-e1')
+def _():
+    ax = plt.gca()
+    cols = [C1, C4, C3, C2, '#9467bd', '#8c564b']
+    n = 6
+    for k in range(n):
+        for i in range(k + 1):
+            ax.add_patch(plt.Rectangle((i, k), .92, .92, fc=cols[k], alpha=.75))
+            if i < k:
+                ax.add_patch(plt.Rectangle((k, i), .92, .92, fc=cols[k], alpha=.75))
+        ax.text(n + .4, k + .45, f'+{2*k+1}  → {(k+1)**2}', va='center', fontsize=8, color=cols[k])
+    ax.set_xlim(-.2, n + 3); ax.set_ylim(-.2, n + .2); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('the induction step: an L of 2n+1 squares turns n² into (n+1)²', fontsize=9)
+    save('P02-e1')
+
+
+@fig('P02-e2')
+def _():
+    ax = plt.gca()
+    ns = np.arange(1, 9)
+    v = [4 ** n - 1 for n in ns]
+    ax.bar(ns, v, color=C1)
+    for n, x in zip(ns, v):
+        ax.text(n, x * 1.15, f'3·{x//3}', ha='center', fontsize=7)
+    ax.set_yscale('log'); ax.set_xlabel('n'); ax.set_ylabel('4ⁿ − 1')
+    ax.set_title('4ⁿ⁺¹ − 1 = 4(4ⁿ − 1) + 3: divisibility by 3 passes from each bar to the next', fontsize=9)
+    save('P02-e2')
+
+
+@fig('P02-e3')
+def _():
+    ax = plt.gca()
+    factor_tree(ax, 360, 0, 'strong induction: 360 = 2·180, and 180 < 360 is already a product of primes')
+    ax.axis('off')
+    save('P02-e3')
+
+
+@fig('P02-e4')
+def _():
+    ax = plt.gca()
+    rep = lambda n: [(a, b) for a in range(n // 3 + 1) for b in range(n // 5 + 1) if 3 * a + 5 * b == n]
+    for n in range(1, 25):
+        r = rep(n)
+        c = C3 if r else '#dddddd'
+        ax.bar(n, 1, color=c, ec='white')
+        if r:
+            a, b = r[0]
+            ax.text(n, .5, f'{a}·3\n+{b}·5', ha='center', va='center', fontsize=5.5, rotation=0)
+    for n in [8, 9, 10]:
+        ax.bar(n, 1, fill=False, ec=C2, lw=2)
+    ax.annotate('base: 8, 9, 10', (9, 1.02), (9, 1.35), ha='center', color=C2, arrowprops=dict(arrowstyle='->', color=C2))
+    for n in range(11, 25):
+        arrow(ax, (n - 3, 1.08), (n, 1.08), color=GR, rad=-.6)
+    ax.set_xticks(range(1, 25)); ax.set_yticks([]); ax.set_ylim(0, 1.8); ax.tick_params(labelsize=7)
+    ax.set_title('green = can be paid with 3s and 5s; from 8 on, n is reached from n − 3', fontsize=9)
+    save('P02-e4')
+
+
+@fig('P02-x1')
+def _():
+    ax = plt.gca()
+    n = 7
+    for k in range(1, n + 1):
+        for j in range(k):
+            ax.add_patch(plt.Rectangle((k - 1, j), .92, .92, fc=C1))
+        for j in range(k, n + 1):
+            ax.add_patch(plt.Rectangle((k - 1, j), .92, .92, fc=C4, alpha=.6))
+    ax.text(n / 2, -.8, f'n = {n} columns', ha='center'); ax.text(n + .4, (n + 1) / 2, f'n+1 = {n+1}\nrows', va='center')
+    ax.set_xlim(-.3, n + 2); ax.set_ylim(-1.2, n + 1.3); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('two copies of 1+2+…+n (blue, orange) fill an n×(n+1) rectangle', fontsize=9)
+    save('P02-x1')
+
+
+@fig('P02-x2')
+def _():
+    ax = plt.gca()
+    n = np.arange(1, 11)
+    ax.plot(n, 2.0 ** n, 'o-', color=C1, label='2ⁿ'); ax.plot(n, n ** 2, 's-', color=C2, label='n²')
+    ax.axvspan(4.5, 10.5, color=C3, alpha=.08)
+    ax.text(7.5, 30, 'induction works here:\nbase n = 5 (32 > 25)', ha='center', color=C3, fontsize=8)
+    ax.set_yscale('log'); ax.set_xticks(n); ax.legend(); ax.set_xlabel('n')
+    ax.set_title('2ⁿ > n² fails at n = 2, 3, 4 – the base case matters', fontsize=9)
+    save('P02-x2')
+
+
+@fig('P02-x3')
+def _():
+    ax = plt.gca()
+    euclid_tiles(ax, 55, 34, 'gcd(F₁₀, F₉) = gcd(55, 34): each step returns two consecutive Fibonacci numbers')
+    save('P02-x3')
+
+
+@fig('P02-x4')
+def _():
+    ax = plt.gca()
+    ax.add_patch(plt.Circle((0, 0), .8, fill=False, ec=C1, lw=2)); ax.add_patch(plt.Circle((1.9, 0), .8, fill=False, ec=C4, lw=2))
+    ax.scatter([0], [0], s=200, color='#8c564b'); ax.scatter([1.9], [0], s=200, color='#bbbbbb')
+    ax.text(0, -1.1, 'horses 1…n  (n = 1)', ha='center', color=C1); ax.text(1.9, -1.1, 'horses 2…n+1', ha='center', color=C4)
+    ax.text(.95, 1.0, 'no common horse!', ha='center', color=C2)
+    ax.set_xlim(-1.2, 3.1); ax.set_ylim(-1.4, 1.3); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('the step n = 1 → 2 breaks: the two groups of size n do not overlap', fontsize=9)
+    save('P02-x4')
+
+
+@fig('P03-e1')
+def _():
+    ax = plt.gca()
+    a, b = 17, 12  # 17² = 289, 2·12² = 288: nearly a solution
+    ax.add_patch(plt.Rectangle((0, 0), a, a, fill=False, ec='k', lw=1.5))
+    ax.add_patch(plt.Rectangle((0, 0), b, b, fc=C1, alpha=.35, ec=C1))
+    ax.add_patch(plt.Rectangle((a - b, a - b), b, b, fc=C4, alpha=.35, ec=C4))
+    ax.add_patch(plt.Rectangle((a - b, a - b), 2 * b - a, 2 * b - a, fc='#7a4fa3', alpha=.6))
+    ax.add_patch(plt.Rectangle((b, 0), a - b, a - b, fc='none', ec=C2, lw=1.5, hatch='//'))
+    ax.add_patch(plt.Rectangle((0, b), a - b, a - b, fc='none', ec=C2, lw=1.5, hatch='//'))
+    ax.text(a + .5, a / 2, 'side a', va='center'); ax.text(b / 2, -1.2, 'side b', ha='center', color=C1)
+    ax.text(a / 2, a / 2, 'overlap:\nside 2b − a', ha='center', va='center', color='white', fontsize=8)
+    ax.text(a + .5, 2, 'uncovered corners:\nside a − b (red)', fontsize=8, color=C2)
+    ax.set_xlim(-1, a + 8); ax.set_ylim(-2, a + 1); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('if a² = 2b², overlap area = uncovered area: (2b−a)² = 2(a−b)², a smaller solution', fontsize=9)
+    save('P03-e1')
+
+
+@fig('P03-e2')
+def _():
+    ax = plt.gca()
+    import sympy
+    ks = range(1, 9)
+    for k in ks:
+        P = math.prod(PR[:k]) + 1
+        f = sympy.factorint(P)
+        ok = len(f) == 1 and list(f.values())[0] == 1
+        ax.bar(k, math.log10(P), color=C3 if ok else C4)
+        lab = str(P) if ok else '·'.join(map(str, f))
+        ax.text(k, math.log10(P) + .15, lab, ha='center', fontsize=6.5, rotation=0 if k < 6 else 20)
+    ax.set_xlabel('k  (N = p₁p₂…p_k + 1)'); ax.set_ylabel('log₁₀ N'); ax.set_ylim(0, 8.3)
+    ax.set_title('green: N is prime; orange: N is not prime, but its prime factors are new', fontsize=9)
+    save('P03-e2')
+
+
+@fig('P03-x3')
+def _():
+    ax = plt.gca()
+    bs = np.arange(1, 31)
+    best = [min(abs(a ** 3 - 2 * int(b) ** 3) for a in range(1, 2 * int(b) + 2)) for b in bs]
+    ax.bar(bs, best, color=C1)
+    ax.set_yscale('log'); ax.set_xlabel('b'); ax.set_ylabel('min over a of |a³ − 2b³|')
+    ax.axhline(1, color=C2, lw=1, ls=':')
+    ax.set_title('a³ = 2b³ never holds: the closest a always misses (the bars never reach 0)', fontsize=9)
+    save('P03-x3')
+
+
+@fig('P03-x1')
+def _():
+    ax = plt.gca()
+    _grid_table(ax, ['a mod 3', 'a² mod 3'], [0, 1, 2], lambda r, c: c if r == 'a mod 3' else c * c % 3,
+                'a² ≡ 0 mod 3 only when a ≡ 0: so 3 | a² forces 3 | a',
+                lambda r, c: '#fdd0a2' if c == 0 else None)
+    ax.set_xlim(-1.8, 3.2)
+    save('P03-x1')
+
+
+@fig('P03-x2')
+def _():
+    ax = plt.gca()
+    rows = [([3], 11, {11: 1}), ([3, 7], 83, {83: 1}), ([3, 7, 11], 923, {13: 1, 71: 1}), ([3, 7, 11, 19], 17555, {5: 1, 3511: 1})]
+    for i, (ps, N, f) in enumerate(rows):
+        ax.text(0, -i, f'4·{"·".join(map(str, ps))} − 1 = {N}', va='center', fontsize=9)
+        x = 5.2
+        for p in f:
+            ax.text(x, -i, str(p), va='center', fontsize=9, color='white',
+                    bbox=dict(boxstyle='round', fc=C2 if p % 4 == 3 else C1))
+            x += 1.1
+    ax.text(5.2, .8, 'prime factors (red ≡ 3 mod 4, blue ≡ 1 mod 4)', fontsize=8)
+    ax.set_xlim(-.2, 9); ax.set_ylim(-3.6, 1.2); ax.axis('off')
+    ax.set_title('N ≡ 3 mod 4 always has a red factor, and it is not in the list', fontsize=9)
+    save('P03-x2')
+
+
+@fig('P03-x4')
+def _():
+    ax = plt.gca()
+    ax.plot([0, 1.05], [0, 0], color='k', lw=1)
+    q = 1.0
+    for k in range(7):
+        ax.scatter([q], [0], s=30, color=C1 if k == 0 else C4, zorder=3)
+        if k < 4: ax.text(q, .08 if k % 2 == 0 else -.14, f'r/{2**k}' if k else 'r', ha='center', fontsize=8)
+        q /= 2
+    ax.scatter([0], [0], s=30, color='k'); ax.text(0, .08, '0', ha='center')
+    ax.set_ylim(-.3, .3); ax.axis('off')
+    ax.set_title('any positive rational r has r/2 below it: no smallest one can exist', fontsize=9)
+    save('P03-x4')
+
+
+@fig('P04-e1')
+def _():
+    ax = plt.gca()
+    s = '111111'
+    def row(y, blocks, lab, col):
+        x = 0
+        for bl in blocks:
+            for ch in bl:
+                ax.add_patch(plt.Rectangle((x, y), .9, .9, fc=col, alpha=.6)); ax.text(x + .45, y + .45, ch, ha='center', va='center')
+                x += 1
+            x += .4
+        ax.text(x + .3, y + .45, lab, va='center', fontsize=8)
+    row(2, [s], '2⁶ − 1 = 63 in binary', '#dddddd')
+    row(1, ['11'] * 3, '= 11₂ · 10101₂ = 3 · 21', C1)
+    row(0, ['111'] * 2, '= 111₂ · 1001₂ = 7 · 9', C4)
+    ax.set_xlim(-.3, 14); ax.set_ylim(-.3, 3.1); ax.axis('off')
+    ax.set_title('n = 6 = 2·3 is composite ⇒ 2⁶−1 splits into blocks of 2 or 3 ones ⇒ composite', fontsize=9)
+    save('P04-e1')
+
+
+@fig('P04-e2')
+def _():
+    ax = plt.gca()
+    ax.add_patch(plt.Rectangle((0, 0), 50, 50, fc=C2, alpha=.15))
+    xs = np.linspace(0, 100, 10)
+    ax.plot(xs, 100 - xs, color=C1, lw=1.5)
+    ax.fill_between(xs, 100 - xs, 100, color=C1, alpha=.1)
+    ax.text(25, 25, 'x < 50 and y < 50\n⇒ x + y < 100', ha='center', va='center', color=C2)
+    ax.text(70, 75, 'x + y ≥ 100', ha='center', color=C1)
+    ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.set_aspect('equal'); ax.set_xlabel('x'); ax.set_ylabel('y')
+    ax.set_title('the red square (¬Q) lies entirely outside the blue region (P): ¬Q ⇒ ¬P', fontsize=9)
+    save('P04-e2')
+
+
+@fig('P04-e3')
+def _():
+    ax = plt.gca()
+    import sympy
+    for n in range(1, 17):
+        f = sympy.factorint(2 ** n + 1)
+        pr = len(f) == 1 and list(f.values())[0] == 1
+        pow2 = n & (n - 1) == 0
+        ax.bar(n, math.log2(2 ** n + 1), color=C3 if pr else ('#dddddd'), ec=C2 if pow2 else 'none', lw=1.5)
+        if not pow2:
+            m = n
+            while m % 2 == 0: m //= 2
+            a = n // m
+            ax.text(n, math.log2(2 ** n + 1) + .3, str(2 ** a + 1), ha='center', fontsize=6.5, color=C4)
+    ax.set_xticks(range(1, 17)); ax.set_xlabel('n'); ax.set_ylabel('log₂(2ⁿ+1)')
+    ax.set_title('green = 2ⁿ+1 prime; red frame = n a power of 2; orange = the factor 2ᵃ+1 found', fontsize=9)
+    save('P04-e3')
+
+
+@fig('P04-x1')
+def _():
+    ax = plt.gca()
+    for n in range(1, 13):
+        ax.scatter(n, n * n, s=60, color=C1 if n % 2 == 0 else C4, zorder=3)
+    ax.plot(range(1, 13), [n * n for n in range(1, 13)], color='#dddddd', zorder=1)
+    ax.scatter([], [], color=C1, label='n even ⇒ n² even'); ax.scatter([], [], color=C4, label='n odd ⇒ n² odd')
+    ax.legend(fontsize=8); ax.set_xlabel('n'); ax.set_ylabel('n²')
+    ax.set_title('n² has the same parity as n', fontsize=9)
+    save('P04-x1')
+
+
+@fig('P04-x2')
+def _():
+    ax = plt.gca()
+    for n in range(-6, 7):
+        ax.scatter(n, 3 * n + 2, s=50, color=C4 if n % 2 else C1, zorder=3)
+        ax.text(n, 3 * n + 3.5, str(3 * n + 2), ha='center', fontsize=7)
+    ax.axhline(0, color=GR, lw=.6)
+    ax.scatter([], [], color=C1, label='n even ⇒ 3n+2 even'); ax.scatter([], [], color=C4, label='n odd ⇒ 3n+2 odd')
+    ax.legend(fontsize=8); ax.set_xlabel('n')
+    ax.set_title('contrapositive: n even ⇒ 3n + 2 even', fontsize=9)
+    save('P04-x2')
+
+
+@fig('P04-x3')
+def _():
+    ax = plt.gca()
+    m = 12
+    T = np.array([[a * x % m for x in range(m)] for a in range(m)])
+    ax.imshow(T == 1, cmap='Greens', aspect='equal')
+    for a in range(m):
+        g = math.gcd(a, m)
+        ax.text(m - .2, a, f'gcd={g}', fontsize=7, va='center', color=C3 if g == 1 else C2)
+    ax.set_xticks(range(m)); ax.set_yticks(range(m)); ax.set_xlabel('x'); ax.set_ylabel('a')
+    ax.set_xlim(-.5, m + 1.8)
+    ax.set_title('a·x ≡ 1 mod 12 (green cells) only in rows with gcd(a,12) = 1', fontsize=9)
+    save('P04-x3')
+
+
+@fig('P04-x4')
+def _():
+    ax = plt.gca()
+    import sympy
+    ps = [p for p in PR if p <= 31]
+    for p in ps:
+        ax.bar(p, 1, color=C3 if sympy.isprime(2 ** p - 1) else C2, width=1.2)
+    ax.text(11, 1.05, '2047 = 23·89', ha='center', color=C2, fontsize=8)
+    ax.set_xticks(ps); ax.set_yticks([]); ax.set_ylim(0, 1.3); ax.set_xlabel('prime p')
+    ax.set_title('2ᵖ − 1 for prime p: green = prime, red = composite. The converse fails.', fontsize=9)
+    save('P04-x4')
+
+
+@fig('P05-e1')
+def _():
+    ax = plt.gca()
+    nums = [17, 42, 8, 33, 91, 64]
+    for r in range(5):
+        ax.add_patch(plt.Rectangle((r * 1.3, 0), 1.1, 2.4, fill=False, ec='k'))
+        ax.text(r * 1.3 + .55, -.3, f'≡{r} (mod 5)', ha='center', fontsize=8)
+    cnt = [0] * 5
+    for x in nums:
+        r = x % 5
+        ax.text(r * 1.3 + .55, .4 + .6 * cnt[r], str(x), ha='center', fontsize=10,
+                color=C2 if nums.count(x) and [y % 5 for y in nums].count(r) > 1 else 'k')
+        cnt[r] += 1
+    ax.set_xlim(-.2, 6.6); ax.set_ylim(-.6, 2.7); ax.axis('off')
+    ax.set_title('6 numbers, 5 boxes (remainders): 42 and 17 share a box, so 5 | 42 − 17', fontsize=9)
+    save('P05-e1')
+
+
+@fig('P05-e2')
+def _():
+    ax = plt.gca()
+    n = 6
+    chosen = [2, 3, 5, 8, 9, 11, 12]
+    for k in range(n):
+        ax.add_patch(plt.Rectangle((k * 1.3, 0), 1.1, 1, fill=False, ec='k'))
+        for j, v in enumerate([2 * k + 1, 2 * k + 2]):
+            ax.text(k * 1.3 + .3 + .5 * j, .5, str(v), ha='center', va='center',
+                    color='white' if v in chosen else 'k',
+                    bbox=dict(boxstyle='circle', fc=(C2 if all(w in chosen for w in [2*k+1, 2*k+2]) else C1) if v in chosen else 'white', ec='none'))
+    ax.set_xlim(-.2, 8); ax.set_ylim(-.3, 1.3); ax.axis('off')
+    ax.set_title('7 numbers from 1…12 in 6 boxes {2k−1, 2k}: a box holds two consecutive, coprime numbers', fontsize=9)
+    save('P05-e2')
+
+
+@fig('P05-e3')
+def _():
+    ax = plt.gca()
+    rs = [int('1' * k) % 7 for k in range(1, 9)]
+    ax.plot(range(1, 9), rs, 'o-', color=C1)
+    for k, r in enumerate(rs, 1):
+        ax.text(k, r + .3, '1' * k, ha='center', fontsize=6, rotation=30)
+    ax.scatter([6], [0], s=120, facecolors='none', edgecolors=C2, lw=2)
+    ax.set_xlabel('k (number of ones)'); ax.set_ylabel('111…1 mod 7'); ax.set_yticks(range(7)); ax.set_ylim(-.6, 7.5)
+    ax.set_title('remainders of 1, 11, 111, … mod 7: among 8 of them two repeat; here 111111 ≡ 0', fontsize=9)
+    save('P05-e3')
+
+
+@fig('P05-e4')
+def _():
+    ax = plt.gca()
+    N = 10
+    a = math.sqrt(2)
+    for k in range(N + 1):
+        ax.axvline(k / N, color='#dddddd', lw=.8)
+    fr = [(q * a) % 1 for q in range(0, N + 1)]
+    for q, f in enumerate(fr):
+        ax.scatter(f, 0, s=40, color=C1, zorder=3); ax.text(f, .06 + .05 * (q % 3), str(q), ha='center', fontsize=7)
+    ax.annotate('', xy=(fr[5], -.1), xytext=(fr[0], -.1), arrowprops=dict(arrowstyle='<->', color=C2))
+    ax.text((fr[0] + fr[5]) / 2, -.18, f'q = 5: |5√2 − 7| = {abs(5*a-7):.3f} < 1/10', ha='center', color=C2, fontsize=8)
+    ax.set_ylim(-.3, .3); ax.set_yticks([]); ax.set_xlabel('fractional part of q√2, q = 0…10, in 10 boxes')
+    ax.set_title('11 points in 10 boxes: two are within 1/10 of each other', fontsize=9)
+    save('P05-e4')
+
+
+@fig('P05-x1')
+def _():
+    ax = plt.gca()
+    n = 5
+    for i, o in enumerate(range(1, 2 * n, 2)):
+        chain = []
+        x = o
+        while x <= 2 * n:
+            chain.append(x); x *= 2
+        for j, v in enumerate(chain):
+            ax.text(j, -i, str(v), ha='center', va='center', bbox=dict(boxstyle='round', fc='#c6dbef'))
+            if j: ax.annotate('', (j - .25, -i), (j - .75, -i), arrowprops=dict(arrowstyle='->', color=GR))
+        ax.text(-1, -i, f'odd part {o}', ha='right', va='center', fontsize=8)
+    ax.set_xlim(-3, 4); ax.set_ylim(-n + .4, .6); ax.axis('off')
+    ax.set_title('1…10 split into 5 chains by odd part; 6 numbers ⇒ two in one chain ⇒ one divides the other', fontsize=9)
+    save('P05-x1')
+
+
+@fig('P05-x2')
+def _():
+    ax = plt.gca()
+    pts = [(1, 2), (4, 7), (3, 3), (6, 1), (2, 5)]
+    cls = {(0, 0): C1, (0, 1): C3, (1, 0): C4, (1, 1): C2}
+    for x, y in pts:
+        ax.scatter(x, y, s=70, color=cls[(x % 2, y % 2)], zorder=3)
+        ax.text(x + .15, y + .2, f'({x},{y})', fontsize=8)
+    ax.plot([1, 3], [3 - 2 + 2, 3], alpha=0)
+    ax.plot([1, 3], [5 - 3, 3], color=GR, ls=':')
+    ax.plot([4, 2], [7, 5], color=C2, ls='--'); ax.scatter([3], [6], marker='x', color=C2, s=60)
+    ax.text(3.1, 6.2, 'midpoint (3,6)', color=C2, fontsize=8)
+    ax.set_xticks(range(8)); ax.set_yticks(range(9)); ax.grid(alpha=.3); ax.set_aspect('equal')
+    ax.set_title('4 parity colours, 5 points: (4,7) and (2,5) share a colour; midpoint is a lattice point', fontsize=9)
+    save('P05-x2')
+
+
+@fig('P05-x3')
+def _():
+    ax = plt.gca()
+    a = [3, 5, 7, 2, 4, 9]
+    n = len(a)
+    S = np.cumsum(a)
+    ax.bar(range(1, n + 1), S % n, color=C1)
+    for i, s in enumerate(S, 1):
+        ax.text(i, s % n + .15, f'S{i}={s}', ha='center', fontsize=7)
+    ax.set_xlabel('k'); ax.set_ylabel('S_k mod 6'); ax.set_xticks(range(1, n + 1))
+    ax.set_title('a = 3,5,7,2,4,9: S₁ ≡ S₃ (mod 6), so a₂+a₃ = 12 is divisible by 6', fontsize=9)
+    save('P05-x3')
+
+
+@fig('P05-x4')
+def _():
+    ax = plt.gca()
+    pts = circle_nodes(ax, 7, labels=list(range(7)))
+    r, seq = 1, []
+    for _ in range(6):
+        nr = r * 10 % 7
+        arrow(ax, pts[r], pts[nr]); seq.append(r * 10 // 7); r = nr
+    ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('long division 1/7: remainders 1→3→2→6→4→5→1; digits ' + ''.join(map(str, seq)) + ' repeat', fontsize=9)
+    save('P05-x4')
+
+
+def _sq_circle(ax, m, k, title):
+    pts = circle_nodes(ax, m, labels=list(range(m)))
+    S = sorted({x ** k % m for x in range(m)})
+    for s in S:
+        ax.scatter(*pts[s], s=180, color=C3, zorder=4)
+    for x in range(m):
+        arrow(ax, pts[x], pts[x ** k % m], color='#bbbbbb', rad=.25)
+    ax.set_aspect('equal'); ax.axis('off'); ax.set_title(title, fontsize=9)
+
+
+@fig('P06-e1')
+def _():
+    ax = plt.gca()
+    _grid_table(ax, [0, 1], [0, 1], lambda a, b: (a + b) % 4, 'x² + y² mod 4: the squares are only 0 or 1, the sum never reaches 3',
+                lambda a, b: '#c7e9c0', 'x²', 'y²')
+    ax.set_xlim(-1.4, 2.4)
+    save('P06-e1')
+
+
+@fig('P06-e2')
+def _():
+    _sq_circle(plt.gca(), 5, 2, 'squares mod 5 (green): 0, 1, 4. The value 2 is never hit.')
+    save('P06-e2')
+
+
+@fig('P06-e3')
+def _():
+    ax = plt.gca()
+    sums = sorted({(a + b + c) % 9 for a in (0, 1, 8) for b in (0, 1, 8) for c in (0, 1, 8)})
+    for r in range(9):
+        ax.bar(r, 1, color=C3 if r in sums else C2)
+    ax.set_xticks(range(9)); ax.set_yticks([]); ax.set_xlabel('residue mod 9')
+    ax.set_title('cubes mod 9 ∈ {0, 1, 8}; sums of three hit the green residues only, never 4 or 5', fontsize=9)
+    save('P06-e3')
+
+
+@fig('P06-e4')
+def _():
+    ax = plt.gca()
+    sums = sorted({(a + b + c) % 8 for a in (0, 1, 4) for b in (0, 1, 4) for c in (0, 1, 4)})
+    for r in range(8):
+        ax.bar(r, 1, color=C3 if r in sums else C2)
+    ax.set_xticks(range(8)); ax.set_yticks([]); ax.set_xlabel('residue mod 8')
+    ax.set_title('squares mod 8 ∈ {0, 1, 4}; three of them never sum to 7 mod 8', fontsize=9)
+    save('P06-e4')
+
+
+@fig('P06-x1')
+def _():
+    ax = plt.gca()
+    pts = circle_nodes(ax, 7, labels=list(range(7)))
+    x = 1
+    for _ in range(3):
+        arrow(ax, pts[x], pts[2 * x % 7]); x = 2 * x % 7
+    for v in (1, 2, 4):
+        ax.scatter(*pts[v], s=160, color=C1, zorder=4)
+    for v in (2, 3, 5):
+        ax.scatter(*pts[v], s=60, facecolors='none', edgecolors=C4, lw=2, zorder=5)
+    ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('2ⁿ mod 7 cycles 1→2→4 (blue); 2ⁿ+1 is 2, 3 or 5 (orange) – never 0', fontsize=9)
+    save('P06-x1')
+
+
+@fig('P06-x2')
+def _():
+    _sq_circle(plt.gca(), 16, 4, 'fourth powers mod 16 are 0 or 1 (green); 2023 ≡ 7 is out of reach')
+    save('P06-x2')
+
+
+@fig('P06-x3')
+def _():
+    ax = plt.gca()
+    _grid_table(ax, ['n mod 5', 'n²+n+1 mod 5'], list(range(5)), lambda r, c: c if r == 'n mod 5' else (c * c + c + 1) % 5,
+                'n² + n + 1 mod 5 takes only the values 1, 2, 3', lambda r, c: '#c6dbef' if r != 'n mod 5' else None)
+    ax.set_xlim(-2.3, 5.2)
+    save('P06-x3')
+
+
+@fig('P06-x4')
+def _():
+    ax = plt.gca()
+    ds = [x * x % 10 for x in range(10)]
+    for d in range(10):
+        ax.bar(d, ds.count(d), color=C3 if ds.count(d) else C2)
+        if not ds.count(d): ax.text(d, .1, '✗', ha='center', color='white')
+    ax.set_xticks(range(10)); ax.set_xlabel('last digit of n²'); ax.set_ylabel('how many n mod 10')
+    ax.set_title('last digit of a square: never 2, 3, 7, 8', fontsize=9)
+    save('P06-x4')
+
+
+# ================= proof-methods course (P07–P12) =================
+def _descent_chain(ax, triples, title, labels=('x', 'y', 'z')):
+    for i, t in enumerate(triples):
+        y = -i
+        ax.text(0, y, '(' + ', '.join(map(str, t)) + ')', ha='center', va='center', fontsize=10,
+                bbox=dict(boxstyle='round', fc='#c6dbef' if i < len(triples) - 1 else '#fde0dd'))
+        if i < len(triples) - 1:
+            ax.annotate('', (0, y - .7), (0, y - .3), arrowprops=dict(arrowstyle='->', color=C2, lw=1.5))
+    ax.set_xlim(-3, 3); ax.set_ylim(-len(triples) + .4, .6); ax.axis('off'); ax.set_title(title, fontsize=9)
+
+
+@fig('P07-e1')
+def _():
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.4, 3.0), gridspec_kw={'width_ratios': [1.1, 1]})
+    _grid_table(a1, [0, 1, 2], [0, 1, 2], lambda x, y: (x * x + y * y) % 3, 'x² + y² mod 3 (rows x, columns y mod 3)',
+                lambda x, y: '#c7e9c0' if (x * x + y * y) % 3 == 0 else None)
+    a1.set_xlim(-1.2, 3.2)
+    a2.set_xlim(0, 1); a2.axis('off')
+    a2.text(.05, .8, 'if x² + y² = 3z² then 3 | x² + y²', fontsize=9)
+    a2.text(.05, .65, '⇒ x = 3x₁, y = 3y₁  (only green cell)', fontsize=9)
+    a2.text(.05, .5, '⇒ 9(x₁² + y₁²) = 3z² ⇒ 3 | z', fontsize=9)
+    a2.text(.05, .35, '⇒ (x₁, y₁, z/3) is a smaller solution', fontsize=9, color=C2)
+    a2.text(.05, .15, 'positive z cannot shrink forever', fontsize=9, color=C2)
+    save('P07-e1')
+
+
+@fig('P07-e2')
+def _():
+    ax = plt.gca()
+    rows = [(0, 1), (1, 0), (1, 1)]
+    ax.axis('off')
+    lines = ['x³ + 2y³ + 4z³ = 0',
+             'mod 2: x³ ≡ 0 ⇒ x = 2x₁',
+             '8x₁³ + 2y³ + 4z³ = 0 ⇒ y³ + 2z³ + 4x₁³ = 0',
+             'same equation, variables rotated: (y, z, x₁)',
+             'repeat ⇒ y, z even too ⇒ (x/2, y/2, z/2) is a solution',
+             'so 2ᵏ divides x, y, z for every k ⇒ x = y = z = 0']
+    for i, l in enumerate(lines):
+        ax.text(0, -i, l, fontsize=9, va='center', color=C2 if i == len(lines) - 1 else 'k')
+        if i: ax.annotate('', (-.04, -i + .25), (-.04, -i + .75), arrowprops=dict(arrowstyle='->', color=C1), xycoords='data')
+    ax.set_xlim(-.1, 1); ax.set_ylim(-len(lines) + .4, .6)
+    ax.set_title('descent by halving: a nonzero solution would give an endless chain of halvings', fontsize=9)
+    save('P07-e2')
+
+
+@fig('P07-e3')
+def _():
+    ax = plt.gca()
+    seq = [100]
+    while seq[-1] > 1:
+        seq.append(seq[-1] // 2 if seq[-1] % 2 == 0 else seq[-1] - 1)
+    ax.step(range(len(seq)), seq, where='post', color=C1)
+    ax.scatter(range(len(seq)), seq, color=C1, s=20)
+    for i, s in enumerate(seq):
+        ax.text(i, s + 3, str(s), ha='center', fontsize=7)
+    ax.axhline(0, color=C2, lw=1); ax.text(len(seq) - 1, 6, 'floor: 1', color=C2, ha='right', fontsize=8)
+    ax.set_xlabel('step'); ax.set_ylabel('value')
+    ax.set_title('a strictly decreasing sequence of positive integers must stop (here after 9 steps)', fontsize=9)
+    save('P07-e3')
+
+
+@fig('P07-x1')
+def _():
+    _descent_chain(plt.gca(), [('x', 'y'), ('y', 'x − y'), ('2y − x', 'x − y'), ('…', '…')],
+                   'x² = 2y²  ⇒  (2y − x)² = 2(x − y)², with 0 < x − y < y: a smaller solution')
+    save('P07-x1')
+
+
+@fig('P07-x2')
+def _():
+    _sq_circle(plt.gca(), 7, 2, 'squares mod 7: 0, 1, 2, 4. No two nonzero ones add up to 0 mod 7.')
+    save('P07-x2')
+
+
+@fig('P07-x3')
+def _():
+    ax = plt.gca()
+    cubes = sorted({x ** 3 % 9 for x in range(9)})
+    _grid_table(ax, ['x mod 3', 'x³ mod 9'], [0, 1, 2], lambda r, c: c if r == 'x mod 3' else c ** 3 % 9,
+                'x³ + 3y³ + 9z³ = 0: mod 3 gives 3 | x; then mod 9 gives 3 | y; then 3 | z', lambda r, c: '#fdd0a2' if c == 0 else None)
+    ax.set_xlim(-1.8, 3.2)
+    save('P07-x3')
+
+
+@fig('P07-x4')
+def _():
+    ax = plt.gca()
+    _grid_table(ax, [0, 1], [0, 1, 2, 3], lambda a, k: '', '', None)
+    ax.cla()
+    trip = [(a, b, c) for a in (0, 1) for b in (0, 1) for c in (0, 1)]
+    ok = [(a + b + c) % 4 == 0 for a, b, c in trip]
+    for i, (t, o) in enumerate(zip(trip, ok)):
+        ax.bar(i, 1, color=C3 if o else '#dddddd')
+        ax.text(i, .5, '\n'.join(map(str, t)), ha='center', va='center', fontsize=8)
+        ax.text(i, 1.05, str(sum(t)), ha='center', fontsize=8)
+    ax.set_xticks([]); ax.set_yticks([]); ax.set_ylim(0, 1.3)
+    ax.set_title('x², y², z² mod 4 ∈ {0,1}; the sum is ≡ 0 mod 4 only when all three are 0, i.e. all even', fontsize=9)
+    save('P07-x4')
+
+
+@fig('P08-e1')
+def _():
+    ax = plt.gca()
+    a, b = 12, 18
+    X, Y = np.meshgrid(range(-4, 5), range(-4, 5))
+    V = a * X + b * Y
+    sc = ax.scatter(X, Y, c=V, cmap='coolwarm', s=120)
+    for x, y, v in zip(X.flat, Y.flat, V.flat):
+        ax.text(x, y, str(v), ha='center', va='center', fontsize=6)
+    pos = V[V > 0].min()
+    for x, y, v in zip(X.flat, Y.flat, V.flat):
+        if v == pos:
+            ax.scatter(x, y, s=260, facecolors='none', edgecolors='k', lw=1.5)
+    ax.set_xlabel('x'); ax.set_ylabel('y'); ax.set_aspect('equal')
+    ax.set_title(f'12x + 18y: the smallest positive value (circled) is {pos} = gcd(12, 18)', fontsize=9)
+    save('P08-e1')
+
+
+@fig('P08-e2')
+def _():
+    ax = plt.gca()
+    a, b = 7, 31
+    ax.plot([-5, 36], [0, 0], color=GR)
+    for q in range(0, 6):
+        ax.plot([q * a] * 2, [-.15, .15], color=C1)
+        ax.text(q * a, -.4, f'{q}·7', ha='center', fontsize=8, color=C1)
+    ax.scatter([b], [0], color=C2, s=50, zorder=3); ax.text(b, .3, 'b = 31', color=C2, ha='center')
+    for q in range(0, 5):
+        r = b - q * a
+        ax.annotate('', (b, .7 + .25 * q), (q * a, .7 + .25 * q), arrowprops=dict(arrowstyle='<->', color=C3 if q == 4 else '#bbbbbb'))
+        ax.text(q * a - .5, .7 + .25 * q, f'r = {r}', ha='right', va='center', fontsize=7, color=C3 if q == 4 else GR)
+    ax.set_ylim(-.7, 2.1); ax.set_xlim(-8, 36); ax.axis('off')
+    ax.set_title('the least non-negative b − 7q is r = 3 < 7 (green): 31 = 4·7 + 3', fontsize=9)
+    save('P08-e2')
+
+
+@fig('P08-e3')
+def _():
+    ax = plt.gca()
+    ns = range(2, 41)
+    sd = [min(d for d in range(2, n + 1) if n % d == 0) for n in ns]
+    ax.bar(ns, sd, color=[C3 if isp(n) else C1 for n in ns])
+    ax.set_xlabel('n'); ax.set_ylabel('smallest divisor > 1')
+    ax.set_title('the smallest divisor > 1 is always prime (green bars: n itself is prime)', fontsize=9)
+    save('P08-e3')
+
+
+@fig('P08-x1')
+def _():
+    ax = plt.gca()
+    p, a, b = 7, 4, 21
+    X = np.arange(-6, 7)
+    Y = np.arange(-6, 7)
+    for x in X:
+        for y in Y:
+            v = p * x + a * y
+            if v == 1:
+                ax.scatter(x, y, color=C2, s=50, zorder=3); ax.text(x + .2, y + .2, f'7·{x} + 4·{y} = 1', fontsize=7, color=C2)
+            else:
+                ax.scatter(x, y, color='#dddddd', s=8)
+    ax.set_aspect('equal'); ax.set_xlabel('x'); ax.set_ylabel('y')
+    ax.set_title('gcd(7, 4) = 1: points with 7x + 4y = 1 exist. Multiply by b: b = 7bx + 4by', fontsize=9)
+    save('P08-x1')
+
+
+@fig('P08-x2')
+def _():
+    ax = plt.gca()
+    for x in range(0, 13):
+        for y in range(0, 10):
+            ax.scatter(x, y, color='#dddddd', s=6)
+    ax.plot([0, 12], [0, 9], color=C1)
+    for k in range(1, 4):
+        ax.scatter(4 * k, 3 * k, color=C1, s=40, zorder=3); ax.text(4 * k + .2, 3 * k - .6, f'{3*k}/{4*k}', fontsize=8)
+    ax.scatter(4, 3, color=C2, s=90, zorder=4)
+    ax.set_xlabel('denominator'); ax.set_ylabel('numerator'); ax.set_aspect('equal')
+    ax.set_title('fractions equal to 6/8 lie on one ray; the lattice point nearest 0 gives 3/4', fontsize=9)
+    save('P08-x2')
+
+
+@fig('P08-x3')
+def _():
+    ax = plt.gca()
+    n = 45
+    rem, y = n, 0
+    while rem:
+        p = 1 << (rem.bit_length() - 1)
+        ax.add_patch(plt.Rectangle((n - rem, 0), p, 1, fc=[C1, C4, C3, C2, '#9467bd'][y % 5], ec='white'))
+        ax.text(n - rem + p / 2, .5, str(p), ha='center', va='center', color='white')
+        ax.text(n - rem + p / 2, 1.2, f'left: {rem - p}', ha='center', fontsize=7)
+        rem -= p; y += 1
+    ax.set_xlim(-1, n + 1); ax.set_ylim(-.3, 1.6); ax.axis('off')
+    ax.set_title('take the largest power of 2 that fits, repeat: 45 = 32 + 8 + 4 + 1', fontsize=9)
+    save('P08-x3')
+
+
+@fig('P08-x4')
+def _():
+    ax = plt.gca()
+    from fractions import Fraction
+    n = 10
+    terms = [Fraction(1, k) for k in range(1, n + 1)]
+    v2 = lambda k: (k & -k).bit_length() - 1
+    ax.bar(range(1, n + 1), [v2(k) for k in range(1, n + 1)], color=[C2 if k == 8 else C1 for k in range(1, n + 1)])
+    ax.set_xlabel('k'); ax.set_ylabel('power of 2 in k')
+    H = sum(terms)
+    ax.set_title(f'only k = 8 has the largest power of 2; H₁₀ = {H.numerator}/{H.denominator} has even denominator', fontsize=9)
+    save('P08-x4')
+
+
+@fig('P09-e1')
+def _():
+    ax = plt.gca()
+    for x in range(110, 132):
+        c = C3 if isp(x) else ('#fdd0a2' if 122 <= x <= 125 else '#dddddd')
+        ax.bar(x, 1, color=c, ec='white')
+        if 122 <= x <= 125:
+            d = x - 120
+            ax.text(x, .5, f'{d}|', ha='center', va='center', fontsize=7)
+    ax.set_yticks([]); ax.set_xlabel('n'); ax.set_xticks(range(110, 132, 2))
+    ax.set_title('5! + 2, …, 5! + 5 = 122…125 (orange) are composite: k divides 5! + k. Green = primes.', fontsize=9)
+    save('P09-e1')
+
+
+@fig('P09-e2')
+def _():
+    ax = plt.gca()
+    ns = range(0, 51)
+    v = [n * n + n + 41 for n in ns]
+    ax.bar(ns, [1] * len(v), color=[C3 if isp(x) else C2 for x in v])
+    ax.text(40, 1.05, '40: 1681 = 41²', ha='center', color=C2, fontsize=8)
+    ax.set_yticks([]); ax.set_ylim(0, 1.25); ax.set_xlabel('n')
+    ax.set_title('n² + n + 41: prime (green) for n = 0…39, and then a counterexample', fontsize=9)
+    save('P09-e2')
+
+
+@fig('P09-e3')
+def _():
+    ax = plt.gca()
+    for k in range(6):
+        F = 2 ** (2 ** k) + 1
+        ax.bar(k, math.log2(F), color=C3 if k < 5 else C2)
+        ax.text(k, math.log2(F) + .6, str(F) if k < 5 else '641 · 6700417', ha='center', fontsize=8)
+    ax.set_xlabel('k'); ax.set_ylabel('log₂ F_k'); ax.set_ylim(0, 37)
+    ax.set_title('Fermat numbers F_k = 2^(2^k) + 1: prime for k ≤ 4, composite at k = 5 (Euler)', fontsize=9)
+    save('P09-e3')
+
+
+@fig('P09-x1')
+def _():
+    ax = plt.gca()
+    for k in range(7):
+        v = 127 - 2 ** k
+        f = factor(v)
+        ax.barh(k, v, color='#dddddd')
+        ax.text(v + 2, k, f'127 − {2**k} = {v} = ' + '·'.join(f'{p}^{e}' if e > 1 else str(p) for p, e in f.items()) if isinstance(f, dict) else f'{v}', va='center', fontsize=8)
+    ax.set_yticks(range(7)); ax.set_yticklabels([f'2^{k}' for k in range(7)]); ax.set_xlim(0, 230)
+    ax.set_title('127 − 2ᵏ is never prime: 127 is not "prime + power of 2"', fontsize=9)
+    save('P09-x1')
+
+
+@fig('P09-x2')
+def _():
+    ax = plt.gca()
+    for x in range(14, 34):
+        ax.bar(x, 1, color=C3 if isp(x) else ('#fdd0a2' if 24 <= x <= 28 else '#dddddd'), ec='white')
+        ax.text(x, .5, str(x), ha='center', va='center', fontsize=7, rotation=90)
+    ax.set_yticks([]); ax.set_xticks([])
+    ax.set_title('24, 25, 26, 27, 28: the first run of five composite numbers (6! + 2 = 722 is far larger)', fontsize=9)
+    save('P09-x2')
+
+
+@fig('P09-x3')
+def _():
+    ax = plt.gca()
+    for i in range(5):
+        for j in range(2):
+            d = 2 ** i * 3 ** j
+            ax.text(i, j, str(d), ha='center', va='center', bbox=dict(boxstyle='round', fc='#c6dbef'))
+            if i: ax.plot([i - 1 + .2, i - .2], [j, j], color=GR)
+            if j: ax.plot([i, i], [.2, .8], color=GR)
+    ax.set_xlim(-.5, 4.5); ax.set_ylim(-.6, 1.6); ax.axis('off')
+    ax.set_title('48 = 2⁴·3: divisors 2ⁱ3ʲ form a 5 × 2 grid, so d(48) = 10', fontsize=9)
+    save('P09-x3')
+
+
+@fig('P09-x4')
+def _():
+    ax = plt.gca()
+    r = math.sqrt(2)
+    x = np.linspace(.5, 2.2, 200)
+    ax.plot(x, x ** r, color=C1, label='t^√2')
+    ax.scatter([r], [r ** r], color=C4, zorder=3); ax.text(r + .05, r ** r - .25, f'√2^√2 ≈ {r**r:.4f}', color=C4, fontsize=8)
+    ax.scatter([r ** r], [2], color=C2, zorder=3); ax.text(r ** r - .05, 2.15, '(√2^√2)^√2 = 2', color=C2, fontsize=8, ha='right')
+    ax.axhline(2, color=GR, lw=.6, ls=':')
+    ax.legend(fontsize=8); ax.set_xlabel('t')
+    ax.set_title('either √2^√2 is rational, or raising it to √2 gives the rational 2', fontsize=9)
+    save('P09-x4')
+
+
+@fig('P10-e1')
+def _():
+    ax = plt.gca()
+    x = 12
+    for a in range(1, x + 1):
+        for b in range(1, x // a + 1):
+            ax.scatter(a, b, color=C1, s=18, zorder=3)
+    t = np.linspace(1, x, 200)
+    ax.plot(t, x / t, color=C2, lw=1)
+    for a in range(1, x + 1):
+        ax.text(a, -0.6, str(x // a), ha='center', fontsize=7, color=C4)
+    for n in range(1, x + 1):
+        pass
+    ax.text(x + .3, -0.6, f'Σ = {sum(x // a for a in range(1, x + 1))}', fontsize=8, color=C4)
+    ax.set_xlim(0, x + 2); ax.set_ylim(-1.2, x + .5); ax.set_xlabel('d'); ax.set_ylabel('m')
+    ax.set_title('points (d, m) with dm ≤ 12: column d holds ⌊12/d⌋ points; each n = dm counts d(n) times', fontsize=9)
+    save('P10-e1')
+
+
+@fig('P10-e2')
+def _():
+    ax = plt.gca()
+    n = 12
+    from fractions import Fraction
+    dens = sorted({Fraction(k, n).denominator for k in range(1, n + 1)})
+    cols = dict(zip(dens, [C1, C4, C3, C2, '#9467bd', '#8c564b']))
+    for k in range(1, n + 1):
+        f = Fraction(k, n)
+        ax.bar(k, 1, color=cols[f.denominator])
+        ax.text(k, .5, f'{f.numerator}/{f.denominator}', ha='center', va='center', fontsize=7, color='white', rotation=90)
+    from matplotlib.patches import Patch
+    ax.legend(handles=[Patch(color=cols[d], label=f'denominator {d}: φ({d}) = {phi(d)}') for d in dens],
+              fontsize=6.5, ncol=3, loc='upper center', bbox_to_anchor=(.5, -.05)); ax.set_xticks([]); ax.set_yticks([])
+    ax.set_title('k/12 in lowest terms: grouping by denominator gives Σ_{d|12} φ(d) = 12', fontsize=9)
+    save('P10-e2')
+
+
+@fig('P10-e3')
+def _():
+    ax = plt.gca()
+    p = 11
+    pts = circle_nodes(ax, p - 1, labels=list(range(1, p)))
+    done = set()
+    for a in range(1, p):
+        b = pow(a, -1, p)
+        if a in done: continue
+        done |= {a, b}
+        if a == b:
+            ax.scatter(*pts[a - 1], s=200, facecolors='none', edgecolors=C2, lw=2)
+        else:
+            ax.plot(*zip(pts[a - 1], pts[b - 1]), color=C1, lw=1.2)
+    ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('mod 11: each a is paired with a⁻¹ (lines); only 1 and 10 = −1 pair with themselves', fontsize=9)
+    save('P10-e3')
+
+
+@fig('P10-x1')
+def _():
+    ax = plt.gca()
+    n = 10
+    for k in range(1, n + 1):
+        ax.bar(k, k, color=C1); ax.bar(k, n + 1 - k, bottom=k, color=C4)
+    ax.axhline(n + 1, color=C2, ls=':')
+    ax.set_xlabel('k'); ax.set_title('k + (n+1−k) = n+1 in every column: 2(1+…+n) = n(n+1)', fontsize=9)
+    save('P10-x1')
+
+
+@fig('P10-x2')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(6.4, 2.6))
+    for ax, n in zip(axs, [36, 40]):
+        ds = divisors(n)
+        for i, d in enumerate([d for d in ds if d * d <= n]):
+            e = n // d
+            ax.text(0, -i, str(d), ha='center', va='center', bbox=dict(boxstyle='round', fc='#c6dbef'))
+            if e != d:
+                ax.text(2, -i, str(e), ha='center', va='center', bbox=dict(boxstyle='round', fc='#fdd0a2'))
+                ax.plot([.3, 1.7], [-i, -i], color=GR)
+            else:
+                ax.text(1, -i, 'alone', ha='center', va='center', color=C2, fontsize=8)
+        ax.set_xlim(-.6, 2.6); ax.set_ylim(-5, .6); ax.axis('off')
+        ax.set_title(f'n = {n}: d(n) = {len(ds)}', fontsize=9)
+    plt.suptitle('divisors pair up as d ↔ n/d; only √n (for a square) is left alone', fontsize=9)
+    save('P10-x2')
+
+
+@fig('P10-x3')
+def _():
+    ax = plt.gca()
+    n = 15
+    U = [k for k in range(1, n) if math.gcd(k, n) == 1]
+    for k in U:
+        ax.scatter(k, 0, s=80, color=C1, zorder=3); ax.text(k, -.15, str(k), ha='center', fontsize=8)
+    for i, k in enumerate(U[:len(U) // 2]):
+        ax.annotate('', (n - k, .05), (k, .05), arrowprops=dict(arrowstyle='-', color=C4, connectionstyle='arc3,rad=-.5'))
+    ax.set_ylim(-.3, 1.2); ax.set_xlim(0, n); ax.axis('off')
+    ax.set_title(f'units mod 15 pair as k ↔ 15 − k (each pair sums to 15): sum = 15·8/2 = {sum(U)}', fontsize=9)
+    save('P10-x3')
+
+
+@fig('P10-x4')
+def _():
+    ax = plt.gca()
+    n = 20
+    for k in range(1, n + 1):
+        v = (k & -k).bit_length() - 1
+        for j in range(v):
+            ax.add_patch(plt.Rectangle((k - .4, j), .8, .9, fc=[C1, C4, C3, C2][j]))
+    for j in range(4):
+        ax.text(n + 1, j + .45, f'row {j+1}: ⌊20/{2**(j+1)}⌋ = {n // 2**(j+1)}', va='center', fontsize=8, color=[C1, C4, C3, C2][j])
+    ax.set_xlim(0, n + 7); ax.set_ylim(-.2, 4.5); ax.set_xticks(range(1, n + 1)); ax.set_yticks([])
+    ax.set_title('the 2s in 20!: count by columns (per k) or by rows: 10 + 5 + 2 + 1 = 18', fontsize=9)
+    save('P10-x4')
+
+
+@fig('P11-e1')
+def _():
+    ax = plt.gca()
+    v2 = lambda k: (int(k) & -int(k)).bit_length() - 1
+    a = np.arange(1, 25)
+    ax.scatter(a, [2 * v2(x) for x in a], color=C1, label='exponent of 2 in a² (always even)')
+    ax.scatter(a + .3, [2 * v2(x) + 1 for x in a], color=C2, marker='s', label='exponent of 2 in 2b² (always odd)')
+    ax.set_xlabel('a or b'); ax.set_yticks(range(0, 10)); ax.legend(fontsize=8)
+    ax.set_title('a² = 2b² would need one number with both an even and an odd exponent of 2', fontsize=9)
+    save('P11-e1')
+
+
+@fig('P11-e2')
+def _():
+    ax = plt.gca()
+    for i in range(4):
+        for j in range(3):
+            ax.text(i, j, str(2 ** i * 3 ** j), ha='center', va='center', bbox=dict(boxstyle='round', fc='#c7e9c0'))
+            if i: ax.plot([i - .8, i - .2], [j, j], color=GR)
+            if j: ax.plot([i, i], [j - .75, j - .25], color=GR)
+    ax.text(1.5, -.8, '2⁰ … 2³  (4 choices)', ha='center'); ax.text(3.6, 1, '3⁰ … 3²\n(3 choices)', va='center')
+    ax.set_xlim(-.5, 4.6); ax.set_ylim(-1.1, 2.5); ax.axis('off')
+    ax.set_title('72 = 2³·3²: each divisor is 2ⁱ3ʲ, so d(72) = 4·3 = 12', fontsize=9)
+    save('P11-e2')
+
+
+@fig('P11-e3')
+def _():
+    ax = plt.gca()
+    ps = [2, 3, 5, 7]
+    e = lambda n, p: (lambda f: f.get(p, 0))(factor(n))
+    a, b = 360, 84
+    x = np.arange(len(ps))
+    ax.bar(x - .2, [e(a, p) for p in ps], .4, color=C1, label='360 = 2³·3²·5')
+    ax.bar(x + .2, [e(b, p) for p in ps], .4, color=C4, label='84 = 2²·3·7')
+    for i, p in enumerate(ps):
+        lo, hi = min(e(a, p), e(b, p)), max(e(a, p), e(b, p))
+        ax.text(i, hi + .25, f'min {lo} / max {hi}', ha='center', fontsize=7)
+    ax.set_xticks(x); ax.set_xticklabels(map(str, ps)); ax.set_xlabel('prime'); ax.set_ylabel('exponent'); ax.legend(fontsize=8)
+    ax.set_ylim(0, 4)
+    ax.set_title(f'gcd = 2²·3 = {math.gcd(a,b)} (minima), lcm = 2³·3²·5·7 = {a*b//math.gcd(a,b)} (maxima)', fontsize=9)
+    save('P11-e3')
+
+
+@fig('P11-x1')
+def _():
+    ax = plt.gca()
+    a = np.arange(0, 12)
+    ax.scatter(a, a * math.log10(2), color=C1, label='log 2ᵃ'); ax.scatter(a, a * math.log10(3), color=C4, marker='s', label='log 3ᵇ')
+    ax.set_xlabel('exponent'); ax.legend(fontsize=8)
+    ax.set_title('2ᵃ is even and 3ᵇ is odd: the two families meet only at 1 (a = b = 0)', fontsize=9)
+    save('P11-x1')
+
+
+@fig('P11-x2')
+def _():
+    ax = plt.gca()
+    a, b = 2 ** 2 * 3 ** 4, 5 ** 2 * 7 ** 2
+    ps = [2, 3, 5, 7]
+    ax.bar(range(4), [factor(a).get(p, 0) for p in ps], color=C1, label=f'a = {a}')
+    ax.bar(range(4), [factor(b).get(p, 0) for p in ps], color=C4, label=f'b = {b}')
+    ax.set_xticks(range(4)); ax.set_xticklabels(map(str, ps)); ax.set_ylabel('exponent'); ax.set_yticks(range(5)); ax.legend(fontsize=8)
+    ax.set_title('gcd(a,b) = 1: each prime belongs to a or to b; ab square ⇒ every bar even', fontsize=9)
+    save('P11-x2')
+
+
+@fig('P11-x3')
+def _():
+    ax = plt.gca()
+    for a in range(0, 7):
+        for b in range(0, 7):
+            c1 = (a - 1) % 2 == 0 and b % 2 == 0
+            c2 = a % 3 == 0 and (b - 1) % 3 == 0
+            col = C2 if c1 and c2 else (C1 if c1 else (C4 if c2 else '#eeeeee'))
+            ax.scatter(a, b, s=120, color=col)
+    ax.scatter([], [], color=C1, label='n/2 is a square'); ax.scatter([], [], color=C4, label='n/3 is a cube'); ax.scatter([], [], color=C2, label='both')
+    ax.set_xlabel('a (exponent of 2)'); ax.set_ylabel('b (exponent of 3)'); ax.legend(fontsize=8, loc='upper right')
+    ax.set_title('n = 2ᵃ3ᵇ: the first red point is (3, 4), n = 648', fontsize=9)
+    save('P11-x3')
+
+
+@fig('P11-x4')
+def _():
+    ax = plt.gca()
+    D8, D9 = [1, 2, 4, 8], [1, 3, 9]
+    for i, a in enumerate(D8):
+        for j, b in enumerate(D9):
+            ax.add_patch(plt.Rectangle((i, j), .95, .95, fc='#c6dbef'))
+            ax.text(i + .47, j + .47, str(a * b), ha='center', va='center')
+    for i, a in enumerate(D8): ax.text(i + .47, -.4, str(a), ha='center', color=C1)
+    for j, b in enumerate(D9): ax.text(-.4, j + .47, str(b), va='center', color=C4)
+    ax.text(2, -1, 'row sums × column sums: 15 · 13 = 195', ha='center')
+    ax.set_xlim(-.8, 4.2); ax.set_ylim(-1.3, 3.2); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('σ(72): the divisors fill a grid, so σ(72) = σ(8)·σ(9)', fontsize=9)
+    save('P11-x4')
+
+
+@fig('P12-e1')
+def _():
+    ax = plt.gca()
+    ns = np.arange(1, 31)
+    C = [math.comb(2 * n, n) for n in ns]
+    P = [math.prod(p for p in PR if n < p <= 2 * n) for n in ns]
+    ax.plot(ns, [math.log(c) for c in C], 'o-', color=C1, label='log C(2n, n)', ms=3)
+    ax.plot(ns, ns * math.log(4), color=C2, label='n log 4')
+    ax.plot(ns, [math.log(p) for p in P], 's-', color=C3, label='log Π_{n<p≤2n} p', ms=3)
+    ax.legend(fontsize=8); ax.set_xlabel('n')
+    ax.set_title('primes in (n, 2n] divide C(2n,n) ≤ 4ⁿ, so their product is at most 4ⁿ', fontsize=9)
+    save('P12-e1')
+
+
+@fig('P12-e2')
+def _():
+    ax = plt.gca()
+    ns = np.arange(1, 9)
+    P = [n * (n + 1) * (n + 2) * (n + 3) for n in ns]
+    up = [(n * n + 3 * n + 1) ** 2 - x for n, x in zip(ns, P)]
+    down = [x - (n * n + 3 * n) ** 2 for n, x in zip(ns, P)]
+    ax.bar(ns - .2, down, .4, color=C1, label='P − (n²+3n)²  (distance to the square below)')
+    ax.bar(ns + .2, up, .4, color=C2, label='(n²+3n+1)² − P  (always 1)')
+    for n, d in zip(ns, down):
+        ax.text(n - .2, d + 2, str(d), ha='center', fontsize=7)
+    ax.set_xlabel('n'); ax.legend(fontsize=8)
+    ax.set_title('P = n(n+1)(n+2)(n+3) lies strictly between two consecutive squares', fontsize=9)
+    save('P12-e2')
+
+
+@fig('P12-e3')
+def _():
+    ax = plt.gca()
+    X = 3000
+    d = np.zeros(X + 1)
+    for k in range(1, X + 1):
+        d[k::k] += 1
+    xs = np.arange(1, X + 1)
+    ax.plot(xs, d[1:], '.', ms=1, color='#bbbbbb', label='d(n)')
+    ax.plot(xs, np.cumsum(d[1:]) / xs, color=C1, label='average of d(1…n)')
+    ax.plot(xs, np.log(xs) + 2 * 0.5772 - 1, '--', color=C2, label='log n + 2γ − 1')
+    ax.set_ylim(0, 30); ax.legend(fontsize=8); ax.set_xlabel('n')
+    ax.set_title('d(n) jumps around, but its average grows like log n', fontsize=9)
+    save('P12-e3')
+
+
+@fig('P12-x1')
+def _():
+    ax = plt.gca()
+    for n in range(1, 9):
+        ax.plot([n - .3, n + .3], [n * n] * 2, color=C1); ax.plot([n - .3, n + .3], [(n + 1) ** 2] * 2, color=C1)
+        ax.scatter(n, n * n + n + 1, color=C2, zorder=3)
+    ax.set_xlabel('n'); ax.set_title('n² < n² + n + 1 < (n+1)²: trapped strictly between consecutive squares', fontsize=9)
+    save('P12-x1')
+
+
+@fig('P12-x2')
+def _():
+    ax = plt.gca()
+    n = np.arange(1, 31)
+    lf = [math.lgamma(k + 1) for k in n]
+    ax.plot(n, lf, 'o', color=C1, ms=3, label='log n!')
+    ax.plot(n, n * np.log(n), color=C2, label='n log n')
+    ax.plot(n, n * np.log(n) - n, color=C3, label='n log n − n')
+    ax.legend(fontsize=8); ax.set_xlabel('n')
+    ax.set_title('(n/e)ⁿ ≤ n! ≤ nⁿ, on a log scale', fontsize=9)
+    save('P12-x2')
+
+
+@fig('P12-x3')
+def _():
+    ax = plt.gca()
+    xs = np.arange(1, 201)
+    pi = np.cumsum([isp(k) for k in xs])
+    ax.step(xs, pi, color=C1, label='π(x)')
+    ax.plot(xs, xs / 3 + 2, color=C2, label='x/3 + 2')
+    ax.legend(fontsize=8); ax.set_xlabel('x')
+    ax.set_title('primes > 3 are ≡ ±1 mod 6, so π(x) ≤ x/3 + 2', fontsize=9)
+    save('P12-x3')
 
 
 if __name__ == '__main__':

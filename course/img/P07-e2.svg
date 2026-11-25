@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="244.8pt" viewBox="0 0 460.8 244.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T14:18:07.697345</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 244.8 
+L 460.8 244.8 
+L 460.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="50.727273" y="48.968281" transform="rotate(-0 50.727273 48.968281)">x³ + 2y³ + 4z³ = 0</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="50.727273" y="82.594289" transform="rotate(-0 50.727273 82.594289)">mod 2: x³ ≡ 0 ⇒ x = 2x₁</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 34.756364 56.099864 
+Q 34.756364 62.506845 34.756364 67.795793 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+    <path d="M 36.756364 63.795793 
+L 34.756364 67.795793 
+L 32.756364 63.795793 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="50.727273" y="116.220297" transform="rotate(-0 50.727273 116.220297)">8x₁³ + 2y³ + 4z³ = 0 ⇒ y³ + 2z³ + 4x₁³ = 0</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 34.756364 89.725872 
+Q 34.756364 96.132853 34.756364 101.421801 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+    <path d="M 36.756364 97.421801 
+L 34.756364 101.421801 
+L 32.756364 97.421801 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="50.727273" y="149.846305" transform="rotate(-0 50.727273 149.846305)">same equation, variables rotated: (y, z, x₁)</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 34.756364 123.35188 
+Q 34.756364 129.758861 34.756364 135.047809 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+    <path d="M 36.756364 131.047809 
+L 34.756364 135.047809 
+L 32.756364 131.047809 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="50.727273" y="183.472313" transform="rotate(-0 50.727273 183.472313)">repeat ⇒ y, z even too ⇒ (x/2, y/2, z/2) is a solution</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 34.756364 156.977888 
+Q 34.756364 163.384869 34.756364 168.673817 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+    <path d="M 36.756364 164.673817 
+L 34.756364 168.673817 
+L 32.756364 164.673817 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #d62728" x="50.727273" y="217.098321" transform="rotate(-0 50.727273 217.098321)">so 2ᵏ divides x, y, z for every k ⇒ x = y = z = 0</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 34.756364 190.603896 
+Q 34.756364 197.010878 34.756364 202.299825 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+    <path d="M 36.756364 198.299825 
+L 34.756364 202.299825 
+L 32.756364 198.299825 
+" style="fill: none; stroke: #1f77b4; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="230.4" y="19.51875" transform="rotate(-0 230.4 19.51875)">descent by halving: a nonzero solution would give an endless chain of halvings</text>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -232,6 +232,7 @@ def write_course(local):
              'הקורס בנוי לפי הסדר שבו הידע נבנה: כל יחידה נשענת על היחידות שלפניה.',
              'בכל יחידה יש שיעור עם הסבר, דוגמאות פתורות שלב אחר שלב ותרגילים עם פתרונות, ואחריו רשימת ערכים להעמקה.',
              'לכל דוגמה פתורה ולכל תרגיל מצורף איור שעוזר לראות את הבעיה (האיורים נוצרים על ידי הסקריפט `course/figures.py`).', '',
+             'רוצים קודם לחזק את שיטות ההוכחה? ראו את הקורס המשלים [שיטות הוכחה בתורת המספרים](PROOFS.md).', '',
              'מקרא: ערכים בלי סימון נמצאים בוויקי הזה; ↗ – ערך קיים בוויקיפדיה העברית; ⏳ – ערך שעדיין בתור התרגום.', '']
     assigned = set()
     for row in open(path, encoding='utf-8').read().splitlines():
@@ -273,6 +274,25 @@ def write_course(local):
     open(os.path.join(ROOT, 'COURSE.md'), 'w', encoding='utf-8').write('\n'.join(lines))
 
 
+def write_proofs():
+    path = os.path.join(ROOT, 'course', 'proofs.tsv')
+    if not os.path.exists(path):
+        return
+    lines = ['# קורס: שיטות הוכחה בתורת המספרים', '',
+             'קורס קצר שמלמד את שיטות ההוכחה העיקריות בתורת המספרים, כל אחת בשיעור משלה.',
+             'בכל שיעור יש הסבר של העיקרון, דוגמאות פשוטות ופתורות שלב אחר שלב, ותרגילים עם פתרונות. לכל דוגמה ולכל תרגיל מצורף איור.',
+             'הקורס מתאים כהכנה ל[קורס הראשי](COURSE.md) או במקביל אליו; השיעורים מפנים לשיעורים המתאימים שם.', '',
+             '| שיעור | השיטה | הרעיון בקצרה |', '|---|---|---|']
+    for row in open(path, encoding='utf-8').read().splitlines():
+        if not row.strip() or row.startswith('#'):
+            continue
+        num, title, lesson, idea = row.split('\t')
+        lines.append(f'| {num} | [{title}](course/{urllib.parse.quote(lesson)}) | {idea} |')
+    lines += ['', '**סדר מומלץ:** P1–P4 הן שיטות לוגיות כלליות; P5–P8 הן שיטות שמשמשות בעיקר בתורת המספרים; P9–P12 משלבות כמה שיטות יחד.',
+              '', '---', '<sub>התוכן מופץ ברישיון [CC BY-SA 4.0](LICENSE-CONTENT.md).</sub>', '']
+    open(os.path.join(ROOT, 'PROOFS.md'), 'w', encoding='utf-8').write('\n'.join(lines))
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     files = sorted(f for f in os.listdir(SRC) if f.endswith('.wiki'))
@@ -306,6 +326,7 @@ def main():
         open(os.path.join(OUT, title + '.md'), 'w', encoding='utf-8').write(head + md + foot)
     write_index(files, sources)
     write_course(local)
+    write_proofs()
     print(f'built {len(files) - len(failed)} / {len(files)}')
     for t, e in failed:
         print('FAILED', t, e)

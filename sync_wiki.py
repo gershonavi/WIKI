@@ -9,6 +9,7 @@ import os, re, shutil, sys, urllib.parse
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(ROOT, 'pages')
 REPO = 'https://github.com/gershonavi/WIKI'
+PROOFS_PAGE = urllib.parse.quote('שיטות-הוכחה')
 
 
 def wiki_name(title):
@@ -32,6 +33,7 @@ def convert(md):
     md = footnotes_to_list(md)
     md = re.sub(r'\]\((?:\.\./)?(?:pages|course)/([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
     md = md.replace('](../COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)').replace('](COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)')
+    md = md.replace('](../PROOFS.md)', '](' + PROOFS_PAGE + ')').replace('](PROOFS.md)', '](' + PROOFS_PAGE + ')')
     md = md.replace('](LICENSE-CONTENT.md)', f']({REPO}/blob/main/LICENSE-CONTENT.md)')
     md = re.sub(r'\]\(([^)/\s:]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
     md = md.replace('](../wiki/', f']({REPO}/blob/main/wiki/')
@@ -40,8 +42,8 @@ def convert(md):
 
 
 def main(dest):
-    titles = sorted(f[:-3] for f in os.listdir(PAGES) if f.endswith('.md'))
-    for t in titles:
+    page_titles = sorted(f[:-3] for f in os.listdir(PAGES) if f.endswith('.md'))
+    for t in page_titles:
         md = open(os.path.join(PAGES, t + '.md'), encoding='utf-8').read()
         md = re.sub(r'^# .*\n\n', '', md, count=1)  # the wiki shows the title itself
         open(os.path.join(dest, t + '.md'), 'w', encoding='utf-8').write(convert(md))
@@ -64,6 +66,10 @@ def main(dest):
         md = open(os.path.join(ROOT, 'COURSE.md'), encoding='utf-8').read()
         md = re.sub(r'^# .*\n', '', md, count=1)
         open(os.path.join(dest, 'קורס.md'), 'w', encoding='utf-8').write(convert(md))
+    if os.path.exists(os.path.join(ROOT, 'PROOFS.md')):
+        md = open(os.path.join(ROOT, 'PROOFS.md'), encoding='utf-8').read()
+        md = re.sub(r'^# .*\n', '', md, count=1)
+        open(os.path.join(dest, 'שיטות-הוכחה.md'), 'w', encoding='utf-8').write(convert(md))
     side = ['**[דף הבית](Home)**', '', '**[הקורס](%D7%A7%D7%95%D7%A8%D7%A1)**', '']
     titles = {}
     up = os.path.join(course_dir, 'units.tsv')
@@ -72,14 +78,24 @@ def main(dest):
             parts = row.split('\t')
             if len(parts) >= 3 and not row.startswith('#'):
                 titles[parts[2][:-3]] = parts[1]
-    side += [f'{i+1}. [{titles.get(l, l)}]({wiki_name(l)})' for i, l in enumerate(lessons)]
+    main_lessons = [l for l in lessons if not l.startswith('P')]
+    side += [f'{i+1}. [{titles.get(l, l)}]({wiki_name(l)})' for i, l in enumerate(main_lessons)]
+    pp = os.path.join(course_dir, 'proofs.tsv')
+    if os.path.exists(pp):
+        ptitles = {}
+        for row in open(pp, encoding='utf-8').read().splitlines():
+            parts = row.split('\t')
+            if len(parts) >= 3 and not row.startswith('#'):
+                ptitles[parts[2][:-3]] = (parts[0], parts[1])
+        side += ['', f'**[שיטות הוכחה]({PROOFS_PAGE})**', '']
+        side += [f'* {ptitles[l][0]}. [{ptitles[l][1]}]({wiki_name(l)})' for l in lessons if l in ptitles]
     side += ['', f'**[הריפו]({REPO})**', '', '**ערכים**', '']
-    side += [f'* [{t}]({wiki_name(t)})' for t in titles]
+    side += [f'* [{t}]({wiki_name(t)})' for t in page_titles]
     open(os.path.join(dest, '_Sidebar.md'), 'w', encoding='utf-8').write('\n'.join(side) + '\n')
     open(os.path.join(dest, '_Footer.md'), 'w', encoding='utf-8').write(
         f'התוכן מתורגם מוויקיפדיה האנגלית ומופץ ברישיון [CC BY-SA 4.0]({REPO}/blob/main/LICENSE-CONTENT.md). '
         f'הקוד ברישיון [MIT]({REPO}/blob/main/LICENSE).\n')
-    print(f'synced {len(titles)} pages')
+    print(f'synced {len(page_titles)} pages')
 
 
 if __name__ == '__main__':
