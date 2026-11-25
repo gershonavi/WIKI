@@ -110,7 +110,7 @@ def page(title, desc, body, url, depth):
 {MATHJAX}
 </head>
 <body>
-<header><a href="{up}index.html">דף הבית</a><a href="{up}COURSE.html">הקורס</a><a href="{up}PROOFS.html">שיטות הוכחה</a><a href="{REPO}">GitHub</a></header>
+<header><a href="{up}index.html">דף הבית</a><a href="{up}COURSE.html">הקורס</a><a href="{up}PROOFS.html">שיטות הוכחה</a><a href="{up}CATEGORIES.html">קטגוריות</a><a href="{REPO}">GitHub</a></header>
 <main>
 {body}
 </main>
@@ -125,6 +125,7 @@ def main(out):
         shutil.rmtree(out)
     os.makedirs(os.path.join(out, 'pages'))
     os.makedirs(os.path.join(out, 'course'))
+    os.makedirs(os.path.join(out, 'categories'))
     shutil.copytree(os.path.join(ROOT, 'course', 'img'), os.path.join(out, 'course', 'img'))
     static = os.path.join(ROOT, 'site-static')
     if os.path.isdir(static):
