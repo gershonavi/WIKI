@@ -1,0 +1,78 @@
+ב[[מתמטיקה]], '''[[תנועה בראונית]]''' ו'''[[פונקציית זטא של רימן]]''' הן שני אובייקטים מרכזיים שמקורם בתחומים שונים – [[תורת ההסתברות]] ו[[תורת המספרים האנליטית]] – ויש ביניהם קשרים מתמטיים. הקשרים בין [[תהליך סטוכסטי|תהליכים סטוכסטיים]] הנגזרים מהתנועה הבראונית לבין פונקציית זטא מראים, במובן מסוים, באופן אינטואיטיבי, את ההתנהגות הסטוכסטית שמסתתרת מאחורי פונקציית זטא. הצגה של פונקציית זטא בעזרת תהליכים סטוכסטיים נקראת '''הצגה סטוכסטית'''.{{הערה|1=D. Williams, ''Brownian motion and the Riemann zeta-function'', in: ''Disorder in Physical Systems: A Volume in Honour of John M. Hammersley'', Oxford University Press, 1990, pp. 361–372|כיווון=שמאל}}{{הערה|שם=MansuyYor|1=R. Mansuy, M. Yor, ''Aspects of Brownian Motion'', Universitext, Springer, 2008, pp. 165–167|כיווון=שמאל}}
+
+== תנועה בראונית ופונקציית זטא ==
+נסמן ב-<math>\zeta(s)</math> את פונקציית זטא של רימן וב-<math>\Gamma</math> את [[פונקציית גמא]]. [[פונקציית קסי של רימן]] מוגדרת על ידי
+
+:<math> \xi(s) := \frac{1}{2}s(s-1)\pi^{-s/2}\Gamma\left(\tfrac{1}{2}s\right)\zeta(s),</math>
+
+והיא מקיימת את משוואת הפונקציה
+
+:<math>\xi(s)=\xi(1-s)\quad \text{for all } s\in \mathbb{C}.</math>
+
+מתברר ש-<math>2\xi(s)</math> מתאר את ה[[מומנט (סטטיסטיקה)|מומנטים]] של התפלגות הסתברות <math>\mu</math> על <math>(0,\infty)</math>:{{הערה|שם=MansuyYor}}{{הערה|1=L. Smith, P. Diaconis, ''Honest Bernoulli excursions'', Journal of Applied Probability '''25''' (1988), no. 3, pp. 464–477|כיווון=שמאל}}
+
+:<math>2\xi(s)=\mathbb{E}[X^s]=\int_{0}^{\infty} x^s \, d\mu(x)\quad \text{for all } s\in\mathbb{C},</math>
+
+כאשר <math>X</math> משתנה מקרי בעל ההתפלגות <math>\mu</math>. (בפרט <math>2\xi(0) = 1</math>, כפי שצריך: המסה הכוללת היא 1.) משוואת הפונקציה <math>\xi(s) = \xi(1-s)</math> אומרת אז ש-<math>\mathbb E[X^s] = \mathbb E[X^{1-s}]</math>.
+
+=== גשר בראוני ופונקציית זטא ===
+ב-1987 הוכיחו מרק יור ופיליפ ביאן שלמשתנה המקרי המוגדר כהפרש בין המקסימום למינימום של [[גשר בראוני]] <math>(b_s)_{0\leq s\leq 1}</math> (אחרי נרמול) יש בדיוק ההתפלגות הזו. גשר בראוני הוא תנועה בראונית חד-ממדית <math>(W_t)_{0\leq t\leq 1}</math> בהתניה <math>W_0=W_1=0</math>.{{הערה|1=P. Biane, M. Yor, ''Valeurs principales associées aux temps locaux browniens'', Bulletin des Sciences Mathématiques '''111''' (1987), pp. 23–101|כיווון=שמאל}} הם הראו ש
+
+:<math>X=\sqrt{\frac{2}{\pi}}\left(\max_{0\leq s \leq 1} b_s-\min_{0\leq s \leq 1} b_s\right)</math>
+
+פותר את משוואת המומנטים
+
+:<math>2\xi(s)=\mathbb{E}[X^s].</math>
+
+עם זאת, זה לא התהליך היחיד שקשור להתפלגות הזו; למשל, גם תהליך בסל נותן משתנים מקריים בעלי אותה התפלגות.
+
+=== תהליך בסל ופונקציית זטא ===
+'''תהליך בסל''' <math>\mathrm{Bes}(d)</math> מסדר <math>d</math> הוא ה[[נורמה (מתמטיקה)|נורמה]] האוקלידית של תנועה בראונית <math>d</math>-ממדית. התהליך <math>\mathrm{Bes}(3)</math> מוגדר על ידי
+
+:<math>R_t:=\sqrt{\left(W_t^{(1)}\right)^2+\left(W_t^{(2)}\right)^2+\left(W_t^{(3)}\right)^2},</math>
+
+כאשר <math>W_t=(W_t^{(1)},W_t^{(2)},W_t^{(3)})</math> היא תנועה בראונית תלת-ממדית.
+
+נגדיר את זמן הפגיעה <math>T_1:=\inf\{t\geq 0 : R_t=1\}</math>, ותהי <math>\tilde{T}_1</math> זמן פגיעה בלתי תלוי של תהליך <math>\mathrm{Bes}(3)</math> אחר. נגדיר את המשתנה המקרי
+
+:<math>N=\frac{\pi}{2}\left(T_1+\tilde{T}_1\right).</math>
+
+אז{{הערה|שם=BPY|1=P. Biane, J. Pitman, M. Yor, ''Probability laws related to the Jacobi theta and Riemann zeta functions, and Brownian excursions'', Bulletin of the American Mathematical Society (N.S.) '''38''' (2001), no. 4, pp. 435–465, arXiv:math/9912170|כיווון=שמאל}}{{הערה|שם=MansuyYor}}
+
+:<math>2\xi(2s)=\mathbb{E}[N^s],</math>
+
+כלומר ל-<math>N</math> יש אותה התפלגות כמו ל-<math>X^2</math>.
+
+=== ההתפלגות ===
+נסמן ב-<math>\varphi</math> את הצפיפות של <math>X^2</math> (שהיא גם הצפיפות של <math>N</math>). היא מקיימת{{הערה|שם=MansuyYor}}
+
+:<math>\varphi(t)=2t\, \Theta''(t) + 3\Theta'(t)</math>
+
+עבור [[פונקציית תטא|פונקציית התטא]]
+
+:<math>\Theta(t)=\sum_{n=-\infty}^{\infty}e^{-\pi n^2t}.</math>
+
+פרמטריזציה אחרת, <math>G(y):=\Theta(y^2)</math>, נותנת{{הערה|שם=BPY}}
+
+:<math>h(y)=2y\, G'(y)+y^2G''(y),</math>
+
+ובצורה מפורשת
+
+:<math>h(y)=4y^2\sum_{n=1}^{\infty}\pi\left(2\pi n^4 y^2 - 3n^2\right)e^{-\pi n^2 y^2},</math>
+
+כאשר <math>h(y)=2y^2\varphi(y^2)</math> ו
+
+:<math>2\xi(s)=\int_0^{\infty} y^{s-1}h(y)\,dy.</math>
+
+כלומר הצפיפות של <math>X</math> עצמו היא <math>h(y)/y = 2y\,\varphi(y^2)</math>. (בערך האנגלי נכתב <math>h(y) = 2y\varphi(y^2)</math> ו-<math>\varphi</math> מתוארת כצפיפות של <math>\mu</math>; אבל הנוסחה <math>h = 2yG' + y^2G''</math>, שאותה אפשר לבדוק ישירות, נותנת <math>h(y) = 2y^2\varphi(y^2)</math>. הנוסחה <math>2\xi(s)=\int_0^{\infty} y^{s-1}h(y)\,dy</math> נכונה: שתי אינטגרציות בחלקים נותנות <math>s(s-1)\int_0^\infty y^{s-1}(G(y) - 1)\,dy = s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s) = 2\xi(s)</math>.)
+
+הפונקציה <math>h</math> קרובה מאוד לפונקציה <math>\Phi</math> שמופיעה בהגדרה של [[השערת ניומן|קבוע דה ברויין–ניומן]]: בהצבה <math>y = e^{2u}</math> מקבלים <math>h(e^{2u}) = 4\Phi(u)\,e^{-u}</math>.
+
+== ראו גם ==
+* [[השערת המתאם הזוגי של מונטגומרי]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת ההסתברות]]
+[[קטגוריה:פונקציות זטא]]
