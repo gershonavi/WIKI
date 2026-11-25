@@ -23,7 +23,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Extremal orders of an arithmetic function
 - [x] Bell series
 - [x] Generalized Riemann hypothesis
-- [ ] Particular values of the Riemann zeta function
+- [x] Particular values of the Riemann zeta function
 - [x] Hecke character
 - [x] Selberg class
 - [x] Lerch transcendent

@@ -1,0 +1,444 @@
+[[קובץ:Riemann-Zeta-Func.png|ממוזער|פונקציית זטא של רימן במישור המרוכב, בשיטת צביעת התחום.]]
+ב[[מתמטיקה]], [[פונקציית זטא של רימן]] היא פונקציה ב[[אנליזה מרוכבת]], שיש לה חשיבות גם ב[[תורת המספרים]]. היא מסומנת לרוב <math>\zeta(s)</math>, וקרויה על שם המתמטיקאי [[ברנהרד רימן]]. כאשר הארגומנט <math>s</math> הוא [[מספר ממשי]] גדול מ-1, פונקציית זטא מקיימת את המשוואה
+:<math>\zeta(s) = \sum_{n=1}^\infty\frac{1}{n^s} .</math>
+לכן היא נותנת את הסכום של [[טור (מתמטיקה)|טורים אינסופיים]] מתכנסים שונים, כמו <math>\zeta(2) = \frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \ldots</math> יש נוסחאות מפורשות או יעילות לחישוב מספרי של <math>\zeta(s)</math> בארגומנטים שלמים, וכל הערכים האלה ממשיים, כולל הדוגמה הזו. ערך זה מפרט את הנוסחאות האלה, יחד עם טבלאות ערכים. הוא כולל גם נגזרות וכמה טורים שבנויים מערכי פונקציית זטא בארגומנטים שלמים.
+
+אותה משוואה ב-<math>s</math> מתקיימת גם כאשר <math>s</math> הוא [[מספר מרוכב]] שחלקו הממשי גדול מ-1, ואז הסכום האינסופי עדיין מתכנס. אפשר להרחיב את פונקציית זטא לכל ה[[המישור המרוכב|מישור המרוכב]] באמצעות [[המשכה אנליטית]], פרט ל[[קוטב (אנליזה מרוכבת)|קוטב]] פשוט ב-<math>s=1</math>. הנגזרת המרוכבת קיימת בתחום הכללי הזה, ולכן פונקציית זטא היא [[פונקציה מרומורפית]]. המשוואה שלמעלה אינה תקפה עוד עבור הערכים המורחבים של <math>s</math>, שעבורם הטור המתאים מתבדר. לדוגמה, פונקציית זטא המלאה מוגדרת ב-<math>s=-1</math> (וערכה שם סופי), אבל הטור המתאים הוא <math>1 + 2 + 3 + \ldots</math>, שהסכומים החלקיים שלו גדלים ללא חסם.
+
+ערכי פונקציית זטא שבהמשך כוללים את ערכי הפונקציה במספרים הזוגיים השליליים (<math>s=-2,-4</math> וכן הלאה), שבהם <math>\zeta(s)=0</math>, והם נקראים '''האפסים הטריוויאליים'''. האפיון של האפסים הלא-טריוויאליים במישור המרוכב חשוב בתורת המספרים, בגלל [[השערת רימן]].
+
+== פונקציית זטא של רימן ב-0 וב-1 ==
+באפס מתקיים
+:<math>\zeta(0)= {B^-_1}=-{B^+_1}=-\tfrac{1}{2},</math>
+כאשר <math>B^\pm_1 = \pm\tfrac12</math> הם שתי המוסכמות המקובלות ל[[מספרי ברנולי|מספר ברנולי]] <math>B_1</math>.
+
+ב-1 יש קוטב, ולכן <math>\zeta(1)</math> אינו סופי, אבל הגבולות משמאל ומימין הם
+:<math>\lim_{\varepsilon\to 0^\pm}\zeta(1+\varepsilon) = \pm\infty .</math>
+מאחר שזה קוטב מסדר ראשון, השארית שלו היא
+:<math>\lim_{\varepsilon\to 0} \varepsilon \zeta(1+\varepsilon) = 1 .</math>
+
+== מספרים שלמים חיוביים ==
+=== מספרים זוגיים חיוביים ===
+עבור מספרים זוגיים חיוביים <math>n</math> יש קשר ל[[מספרי ברנולי]] <math>B_n</math>:
+:<math>\zeta(n) = (-1)^{\tfrac{n}{2}+1}\frac{(2\pi)^{n}B_n}{2(n!)} .</math>
+
+החישוב של <math>\zeta(2)</math> ידוע בשם [[בעיית בזל]]. הערך של <math>\zeta(4)</math> קשור ל[[חוק סטפן-בולצמן]] ולקירוב של וין בפיזיקה. הערכים הראשונים הם:
+:<math>
+\begin{align}
+\zeta(2) & = 1 + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi^2}{6} \\[4pt]
+\zeta(4) & = 1 + \frac{1}{2^4} + \frac{1}{3^4} + \cdots = \frac{\pi^4}{90} \\[4pt]
+\zeta(6) & = 1 + \frac{1}{2^6} + \frac{1}{3^6} + \cdots = \frac{\pi^6}{945} \\[4pt]
+\zeta(8) & = 1 + \frac{1}{2^8} + \frac{1}{3^8} + \cdots = \frac{\pi^8}{9450} \\[4pt]
+\zeta(10) & = 1 + \frac{1}{2^{10}} + \frac{1}{3^{10}} + \cdots = \frac{\pi^{10}}{93555} \\[4pt]
+\zeta(12) & = 1 + \frac{1}{2^{12}} + \frac{1}{3^{12}} + \cdots = \frac{691\pi^{12}}{638512875} \\[4pt]
+\zeta(14) & = 1 + \frac{1}{2^{14}} + \frac{1}{3^{14}} + \cdots = \frac{2\pi^{14}}{18243225} \\[4pt]
+\zeta(16) & = 1 + \frac{1}{2^{16}} + \frac{1}{3^{16}} + \cdots = \frac{3617\pi^{16}}{325641566250} .
+\end{align}
+</math>
+בגבול <math>n \rightarrow \infty</math> מקבלים <math>\zeta (\infty) = 1</math>.
+
+{| class="wikitable"
+|+ ערכים נבחרים במספרים זוגיים
+! ערך !! פיתוח עשרוני !! מקור
+|-
+| <math>\zeta(2)</math>
+| 1.6449340668482264364...
+| [https://oeis.org/A013661 A013661]
+|-
+| <math>\zeta(4)</math>
+| 1.0823232337111381915...
+| [https://oeis.org/A013662 A013662]
+|-
+| <math>\zeta(6)</math>
+| 1.0173430619844491397...
+| [https://oeis.org/A013664 A013664]
+|-
+| <math>\zeta(8)</math>
+| 1.0040773561979443393...
+| [https://oeis.org/A013666 A013666]
+|-
+| <math>\zeta(10)</math>
+| 1.0009945751278180853...
+| [https://oeis.org/A013668 A013668]
+|-
+| <math>\zeta(12)</math>
+| 1.0002460865533080482...
+| [https://oeis.org/A013670 A013670]
+|-
+| <math>\zeta(14)</math>
+| 1.0000612481350587048...
+| [https://oeis.org/A013672 A013672]
+|-
+| <math>\zeta(16)</math>
+| 1.0000152822594086518...
+| [https://oeis.org/A013674 A013674]
+|}
+
+את הקשר בין ערכי זטא במספרים הזוגיים החיוביים לחזקות של <math>\pi</math> אפשר לכתוב כ-
+:<math>a_n \zeta(2n) = \pi^{2n} b_n ,</math>
+כאשר <math>a_n</math> ו-<math>b_n</math> הם מספרים שלמים חיוביים [[מספרים זרים|זרים]] לכל <math>n</math>. הם נתונים בסדרות [https://oeis.org/A002432 A002432] ו-[https://oeis.org/A046988 A046988] ב-OEIS. חלק מהערכים:
+
+{| class="wikitable"
+|+ מקדמים
+! <math>n</math> !! <math>a_n</math> !! <math>b_n</math>
+|-
+| 1 || 6 || 1
+|-
+| 2 || 90 || 1
+|-
+| 3 || 945 || 1
+|-
+| 4 || 9450 || 1
+|-
+| 5 || 93555 || 1
+|-
+| 6 || 638512875 || 691
+|-
+| 7 || 18243225 || 2
+|-
+| 8 || 325641566250 || 3617
+|-
+| 9 || 38979295480125 || 43867
+|-
+| 10 || 1531329465290625 || 174611
+|-
+| 11 || 13447856940643125 || 155366
+|-
+| 12 || 201919571963756521875 || 236364091
+|-
+| 13 || 11094481976030578125 || 1315862
+|-
+| 14 || 564653660170076273671875 || 6785560294
+|-
+| 15 || 5660878804669082674070015625 || 6892673020804
+|-
+| 16 || 62490220571022341207266406250 || 7709321041217
+|-
+| 17 || 12130454581433748587292890625 || 151628697551
+|}
+
+אם נסמן <math>\eta_n=b_n/a_n</math> את המקדם של <math>\pi^{2n}</math> כמו למעלה,
+:<math>\zeta(2n) = \sum_{\ell=1}^{\infty}\frac{1}{\ell^{2n}}=\eta_n\pi^{2n},</math>
+אז מתקבלת נוסחת הנסיגה
+:<math>
+\begin{align}
+\eta_1 &= 1/6, \\
+\eta_n &= \sum_{\ell=1}^{n-1}(-1)^{\ell-1}\frac{\eta_{n-\ell}}{(2\ell+1)!}+(-1)^{n+1}\frac{n}{(2n+1)!} .
+\end{align}
+</math>
+את נוסחת הנסיגה הזו אפשר לגזור מנוסחת הנסיגה של מספרי ברנולי.
+
+יש גם נוסחת נסיגה נוספת:
+:<math>\zeta(2n)=\frac{1}{n+\frac{1}{2}} \sum_{k=1}^{n-1} \zeta(2k)\zeta(2n-2k) \quad \text{ for } \quad n>1 ,</math>
+שאפשר להוכיח בעזרת הזהות <math>\frac{d}{dx} \cot(x) = -1-\cot^{2} (x)</math>.
+
+ל[[פונקציה יוצרת|פונקציה היוצרת]] של ערכי פונקציית זטא במספרים הזוגיים האי-שליליים יש הצורה
+:<math>\sum_{n=0}^\infty \zeta(2n) x^{2n} = -\frac{\pi x}{2} \cot(\pi x) = -\frac{1}{2} + \frac{\pi^2}{6} x^2 + \frac{\pi^4}{90} x^4+\frac{\pi^6}{945}x^6 + \cdots</math>
+מאחר ש-<math>\lim_{n\rightarrow\infty} \zeta(2n)=1</math>, הנוסחה מראה גם שעבור <math>n\rightarrow\infty</math>
+:<math>\left|B_{2n}\right| \sim \frac{2\,(2n)!}{(2\pi)^{2n}} .</math>
+
+=== מספרים אי-זוגיים חיוביים ===
+סכום ה[[טור הרמוני|טור ההרמוני]] אינסופי:
+:<math>\zeta(1) = 1 + \frac{1}{2} + \frac{1}{3} + \cdots = \infty .</math>
+
+הערך <math>\zeta(3)</math> ידוע גם בשם [[קבוע אפרי]], ויש לו תפקיד ביחס הגירומגנטי של האלקטרון. הערך <math>\zeta(3)</math> מופיע גם ב[[חוק פלאנק]]. ערכים אלה וערכים נוספים:
+
+{| class="wikitable"
+|+ ערכים נבחרים במספרים אי-זוגיים
+! ערך !! פיתוח עשרוני !! מקור
+|-
+| <math>\zeta(3)</math>
+| 1.2020569031595942853...
+| [https://oeis.org/A002117 A002117]
+|-
+| <math>\zeta(5)</math>
+| 1.0369277551433699263...
+| [https://oeis.org/A013663 A013663]
+|-
+| <math>\zeta(7)</math>
+| 1.0083492773819228268...
+| [https://oeis.org/A013665 A013665]
+|-
+| <math>\zeta(9)</math>
+| 1.0020083928260822144...
+| [https://oeis.org/A013667 A013667]
+|-
+| <math>\zeta(11)</math>
+| 1.0004941886041194645...
+| [https://oeis.org/A013669 A013669]
+|-
+| <math>\zeta(13)</math>
+| 1.0001227133475784891...
+| [https://oeis.org/A013671 A013671]
+|-
+| <math>\zeta(15)</math>
+| 1.0000305882363070204...
+| [https://oeis.org/A013673 A013673]
+|}
+
+ידוע ש-<math>\zeta(3)</math> אי-רציונלי ([[משפט אפרי]]), ושאינסוף מהמספרים <math>\zeta(2n+1)</math> אי-רציונליים.{{הערה|1=T. Rivoal, La fonction zeta de Riemann prend une infinité de valeurs irrationnelles aux entiers impairs, Comptes Rendus de l'Académie des Sciences, Série I 331 (4), 2000, עמ' 267–270, {{DOI|10.1016/S0764-4442(00)01624-4}}, {{arXiv|math/0008051}}|כיווון=שמאל}} יש גם תוצאות על אי-רציונליות של ערכי פונקציית זטא בתת-קבוצות מסוימות של המספרים האי-זוגיים החיוביים; למשל, לפחות אחד מהמספרים <math>\zeta(5), \zeta(7), \zeta(9)</math> או <math>\zeta(11)</math> אי-רציונלי.{{הערה|שם=zud|1=W. Zudilin, One of the numbers ζ(5), ζ(7), ζ(9), ζ(11) is irrational, Russian Mathematical Surveys 56 (4), 2001, עמ' 774–776, {{DOI|10.1070/rm2001v056n04abeh000427}}|כיווון=שמאל}}
+
+ערכי פונקציית זטא במספרים האי-זוגיים החיוביים מופיעים בפיזיקה, בפרט בפונקציות המתאם של שרשרת הספינים האנטי-פרומגנטית XXX (מודל הייזנברג).{{הערה|1=H. E. Boos, V. E. Korepin, Y. Nishiyama, M. Shiroishi, Quantum correlations and number theory, J. Phys. A 35 (20), 2002, עמ' 4443–4452, {{DOI|10.1088/0305-4470/35/20/305}}, {{arXiv|cond-mat/0202346}}|כיווון=שמאל}}
+
+רוב הזהויות שבהמשך מקורן בסיימון פלאף. הן בולטות בכך שהן מתכנסות מהר מאוד, ונותנות כמעט שלוש ספרות של דיוק בכל איבר, ולכן הן שימושיות לחישובים ברמת דיוק גבוהה. פלאף ניסח את הזהויות בלי הוכחה,{{הערה|1=S. Plouffe, [http://www.plouffe.fr/simon/identities.html Identities for Zeta(2*n+1)]|כיווון=שמאל}} והוכחות ניתנו מאוחר יותר על ידי מחברים אחרים.{{הערה|1=[https://cs.uwaterloo.ca/journals/JIS/VOL14/Lopatto/lopatto2.html Formulas for Odd Zeta Values and Powers of Pi], Journal of Integer Sequences 14|כיווון=שמאל}}{{הערה|שם=gueto|1=E. Güeto, Elegant Techniques for Zeta and Harmonic Series: A new accessible approach to the Basel problem, Euler sums, and Plouffe identities, ברצלונה, 2026, עמ' 228|כיווון=שמאל}}
+
+==== ζ(5) ====
+:<math>\begin{align}
+\zeta(5)&=\frac{1}{294}\pi^5 -\frac{72}{35} \sum_{n=1}^\infty \frac{1}{n^5 (e^{2\pi n} -1)}-\frac{2}{35} \sum_{n=1}^\infty \frac{1}{n^5 (e^{2\pi n} +1)}\\
+\zeta(5)&=12 \sum_{n=1}^\infty \frac{1}{n^5 \sinh (\pi n)} -\frac{39}{20} \sum_{n=1}^\infty \frac{1}{n^5 (e^{2\pi n} -1)}+\frac{1}{20} \sum_{n=1}^\infty \frac{1}{n^5 (e^{2\pi n} +1)}
+\end{align}</math>
+לאחרונה פורסמו גרסאות נוספות, למשל:{{הערה|שם=gueto}}
+:<math>\zeta(5)=\frac{\pi^5}{270}-\frac{32}{15}\sum_{n=1}^\infty\frac{1}{n^5(e^{\pi n}+(-1)^n)} .</math>
+
+בספטמבר 2026 פרסם אביר פאוזן (Aabir Fauzan) כתב יד שבו הוכחה לכך ש-<math>\zeta(5)</math> אי-רציונלי, בשיטה של דטרמיננטות הנקל; ההוכחה נוסחה ונבדקה פורמלית במערכת ההוכחות Lean, ועבודות המשך כבר מסתמכות עליה.{{הערה|1=A. Fauzan, [https://zenodo.org/records/22826419 ζ(5) is irrational], Zenodo, 2026, {{DOI|10.5281/zenodo.22826419}}|כיווון=שמאל}}{{הערה|1=M. Firsching, [https://github.com/mo271/Zeta5 Zeta5], GitHub; D. Romik, ζ(5) is irrational: a Lean 4 formalization of A. Fauzan's proof, 2026|כיווון=שמאל}}{{הערה|1=L. Lai, [https://arxiv.org/abs/2610.06838 The linear independence of 1, ζ(3), and ζ(4)], 2026; {{MathWorld|RiemannZetaFunctionZeta5|Riemann Zeta Function zeta(5)}}|כיווון=שמאל}}
+
+==== ζ(7) ====
+:<math>\zeta(7)=\frac{19}{56700}\pi^7 - 2 \sum_{n=1}^\infty \frac{1}{n^7 (e^{2\pi n} -1)} .</math>
+הסכום הוא מהצורה של טור למברט.
+
+==== ζ(2n + 1) ====
+נגדיר את הגדלים
+:<math>S_\pm(s) = \sum_{n=1}^\infty \frac{1}{n^s (e^{2\pi n} \pm 1)} .</math>
+אז אפשר לתת שורה של קשרים מהצורה
+:<math>0=a_n \zeta(n) - b_n \pi^{n} + c_n S_-(n) + d_n S_+(n),</math>
+כאשר <math>a_n, b_n, c_n</math> ו-<math>d_n</math> הם מספרים שלמים אי-שליליים. פלאף נותן טבלת ערכים:
+
+{| class="wikitable"
+|+ מקדמים
+! <math>n</math> !! <math>a_n</math> ([https://oeis.org/A395662 A395662]) !! <math>b_n</math> ([https://oeis.org/A395663 A395663]) !! <math>c_n</math> ([https://oeis.org/A396050 A396050]) !! <math>d_n</math> ([https://oeis.org/A395748 A395748])
+|-
+| 3 || 180 || 7 || 360 || 0
+|-
+| 5 || 1470 || 5 || 3024 || 84
+|-
+| 7 || 56700 || 19 || 113400 || 0
+|-
+| 9 || 18523890 || 625 || 37122624 || 74844
+|-
+| 11 || 425675250 || 1453 || 851350500 || 0
+|-
+| 13 || 257432175 || 89 || 514926720 || 62370
+|-
+| 15 || 390769879500 || 13687 || 781539759000 || 0
+|-
+| 17 || 1904417007743250 || 6758333 || 3808863131673600 || 29116187100
+|-
+| 19 || 21438612514068750 || 7708537 || 42877225028137500 || 0
+|-
+| 21 || 1881063815762259253125 || 68529640373 || 3762129424572110592000 || 1793047592085750
+|}
+
+את הקבועים השלמים האלה אפשר לבטא כסכומים של מספרי ברנולי, כפי שמופיע אצל (Vepstas, 2006).
+
+אלגוריתם מהיר לחישוב פונקציית זטא של רימן בכל ארגומנט שלם נתנה יקטרינה קרצובה.{{הערה|1=E. A. Karatsuba, Fast calculation of the Riemann zeta function ζ(s) for integer values of the argument s, Probl. Peredachi Inf. 31 (4), 1995, עמ' 69–80; E. A. Karatsuba, Fast computation of the Riemann zeta function for integer argument, Dokl. Math. 54 (1), 1996, עמ' 626; E. A. Karatsuba, Fast evaluation of ζ(3), Probl. Inf. Transm. 29 (1), 1993, עמ' 58–62|כיווון=שמאל}}
+
+== מספרים שלמים שליליים ==
+באופן כללי, עבור מספרים שלמים שליליים מתקיים
+:<math>\zeta(-n)= - \frac{B_{n+1}}{n+1}</math>
+(במוסכמה <math>B_1 = +\tfrac12</math>; עבור <math>n \ge 1</math> אין הבדל בין המוסכמות).
+
+האפסים ה"טריוויאליים" מתקבלים במספרים הזוגיים השליליים:
+:<math>\zeta(-2n)=0 .</math>
+
+הערכים הראשונים במספרים האי-זוגיים השליליים הם
+:<math>
+\begin{align}
+\zeta(-1) &=-\frac{1}{12} \\[4pt]
+\zeta(-3) &=\frac{1}{120} \\[4pt]
+\zeta(-5) &=-\frac{1}{252} \\[4pt]
+\zeta(-7) &=\frac{1}{240} \\[4pt]
+\zeta(-9) &= -\frac{1}{132} \\[4pt]
+\zeta(-11)&= \frac{691}{32760} \\[4pt]
+\zeta(-13)&= -\frac{1}{12}
+\end{align}
+</math>
+לכן אפשר להשתמש בערכים <math>\zeta(m)</math> כהגדרה של מספרי ברנולי.
+
+עם זאת, בדיוק כמו מספרי ברנולי, ערכים אלה אינם נשארים קטנים ככל שהמספרים האי-זוגיים השליליים גדלים בערכם המוחלט. על הערך <math>\zeta(-1)</math> ראו הערך על הטור <math>1 + 2 + 3 + 4 + \cdots</math> (באנגלית: "1 + 2 + 3 + 4 + ⋯").
+
+== נגזרות ==
+הנגזרת של פונקציית זטא במספרים הזוגיים השליליים נתונה על ידי
+:<math>\zeta^{\prime}(-2n) = (-1)^n \frac {(2n)!} {2 (2\pi)^{2n}} \zeta (2n+1) .</math>
+הערכים הראשונים הם
+:<math>
+\begin{align}
+\zeta^{\prime}(-2) & = -\frac{\zeta(3)}{4\pi^2} \\[4pt]
+\zeta^{\prime}(-4) & = \frac{3}{4\pi^4} \zeta(5) \\[4pt]
+\zeta^{\prime}(-6) & = -\frac{45}{8\pi^6} \zeta(7) \\[4pt]
+\zeta^{\prime}(-8) & = \frac{315}{4\pi^8} \zeta(9) .
+\end{align}
+</math>
+
+מתקיים גם
+:<math>
+\begin{align}
+\zeta^{\prime}(0) & = -\frac{1}{2}\ln(2\pi) \\[4pt]
+\zeta^{\prime}(-1) & = \frac{1}{12}-\ln A \\[4pt]
+\zeta^{\prime}(2) & = \frac{1}{6}\pi^2(\gamma +\ln 2-12\ln A+\ln \pi)
+\end{align}
+</math>
+כאשר <math>A</math> הוא קבוע גלישר–קינקלין. הזהות הראשונה גוררת שהמכפלה המרוגלרת של ההופכיים של המספרים השלמים החיוביים היא <math>1/\sqrt{2\pi}</math>, ומכאן ה"משוואה" המשעשעת <math>\infty!=\sqrt{2\pi}</math>.{{הערה|1=E. Muñoz García, R. Pérez Marco, The Product Over All Primes is <math>4\pi^2</math>, Commun. Math. Phys. 277, 2008, עמ' 69–81|כיווון=שמאל}}
+
+מהנגזרת הלוגריתמית של משוואת הפונקציה מתקבל
+:<math>2\frac{\zeta'(1/2)}{\zeta(1/2)} = \log(2\pi)+\frac{\pi\cos(\pi/4)}{2\sin(\pi/4)}-\frac{\Gamma'(1/2)}{\Gamma(1/2)}=\log(2\pi)+\frac{\pi}{2}+2\log 2+\gamma .</math>
+
+{| class="wikitable"
+|+ נגזרות נבחרות
+! ערך !! פיתוח עשרוני !! מקור
+|-
+| <math>\zeta'(3)</math>
+| -0.19812624288563685333...
+| [https://oeis.org/A244115 A244115]
+|-
+| <math>\zeta'(2)</math>
+| -0.93754825431584375370...
+| [https://oeis.org/A073002 A073002]
+|-
+| <math>\zeta'(0)</math>
+| -0.91893853320467274178...
+| [https://oeis.org/A075700 A075700]
+|-
+| <math>\zeta'(-\tfrac{1}{2})</math>
+| -0.36085433959994760734...
+| [https://oeis.org/A271854 A271854]
+|-
+| <math>\zeta'(-1)</math>
+| -0.16542114370045092921...
+| [https://oeis.org/A084448 A084448]
+|-
+| <math>\zeta'(-2)</math>
+| -0.030448457058393270780...
+| [https://oeis.org/A240966 A240966]
+|-
+| <math>\zeta'(-3)</math>
+| +0.0053785763577743011444...
+| [https://oeis.org/A259068 A259068]
+|-
+| <math>\zeta'(-4)</math>
+| +0.0079838114502686242806...
+| [https://oeis.org/A259069 A259069]
+|-
+| <math>\zeta'(-5)</math>
+| -0.00057298598019863520499...
+| [https://oeis.org/A259070 A259070]
+|-
+| <math>\zeta'(-6)</math>
+| -0.0058997591435159374506...
+| [https://oeis.org/A259071 A259071]
+|-
+| <math>\zeta'(-7)</math>
+| -0.00072864268015924065246...
+| [https://oeis.org/A259072 A259072]
+|-
+| <math>\zeta'(-8)</math>
+| +0.0083161619856022473595...
+| [https://oeis.org/A259073 A259073]
+|}
+
+== טורים שמערבים את ζ(n) ==
+את הסכומים הבאים אפשר לגזור מהפונקציה היוצרת
+:<math>\sum_{k=2}^\infty \zeta(k) x^{k-1}=-\psi_0(1-x)-\gamma ,</math>
+כאשר <math>\psi_0</math> היא [[פונקציית דיגמא]]:
+:<math>
+\begin{align}
+\sum_{k=2}^\infty (\zeta(k) -1) & = 1 \\[4pt]
+\sum_{k=1}^\infty (\zeta(2k) -1) & = \frac{3}{4} \\[4pt]
+\sum_{k=1}^\infty (\zeta(2k+1) -1) & = \frac{1}{4} \\[4pt]
+\sum_{k=2}^\infty (-1)^k(\zeta(k) -1) & = \frac{1}{2}
+\end{align}
+</math>
+
+טורים הקשורים ל[[קבוע אוילר-מסקרוני]] (המסומן <math>\gamma</math>) הם
+:<math>
+\begin{align}
+\sum_{k=2}^\infty (-1)^k \frac{\zeta(k)}{k} & = \gamma \\[4pt]
+\sum_{k=2}^\infty \frac{\zeta(k) - 1}{k} & = 1 - \gamma \\[4pt]
+\sum_{k=2}^\infty (-1)^k \frac{\zeta(k)-1}{k} & = \ln2 + \gamma - 1
+\end{align}
+</math>
+ואם משתמשים בערך העיקרי
+:<math>\zeta(k) = \lim_{\varepsilon \to 0} \frac{\zeta(k+\varepsilon)+\zeta(k-\varepsilon)}{2},</math>
+שמשפיע כמובן רק על הערך ב-1, אפשר לנסח את הנוסחאות האלה כך:
+:<math>
+\begin{align}
+\sum_{k=1}^\infty (-1)^k \frac{\zeta(k)}{k} & = 0 \\[4pt]
+\sum_{k=1}^\infty \frac{\zeta(k) - 1}{k} & = 0 \\[4pt]
+\sum_{k=1}^\infty (-1)^k \frac{\zeta(k)-1}{k} & = \ln2
+\end{align}
+</math>
+והן מראות שהתוצאות תלויות בערך העיקרי <math>\zeta(1)=\gamma</math>.
+
+== אפסים לא טריוויאליים ==
+האפסים של פונקציית זטא של רימן, פרט למספרים הזוגיים השליליים, נקראים "אפסים לא טריוויאליים". [[השערת רימן]] קובעת שהחלק הממשי של כל אפס לא טריוויאלי הוא <math>\tfrac12</math>. כל האפסים הלא טריוויאליים הידועים הם מהצורה <math>z=\tfrac12+yi</math>, כאשר <math>y</math> ממשי. הטבלה הבאה נותנת את הפיתוח העשרוני של <math>\operatorname{Im}(z)</math> עבור האפסים הלא טריוויאליים הראשונים:
+
+{| class="wikitable"
+|+ אפסים לא טריוויאליים נבחרים
+! פיתוח עשרוני של <math>\operatorname{Im}(z)</math> !! מקור
+|-
+| 14.134725141734693790...
+| [https://oeis.org/A058303 A058303]
+|-
+| 21.022039638771554992...
+| [https://oeis.org/A065434 A065434]
+|-
+| 25.010857580145688763...
+| [https://oeis.org/A065452 A065452]
+|-
+| 30.424876125859513210...
+| [https://oeis.org/A065453 A065453]
+|-
+| 32.935061587739189690...
+| [https://oeis.org/A192492 A192492]
+|-
+| 37.586178158825671257...
+| [https://oeis.org/A305741 A305741]
+|-
+| 40.918719012147495187...
+| [https://oeis.org/A305742 A305742]
+|-
+| 43.327073280914999519...
+| [https://oeis.org/A305743 A305743]
+|-
+| 48.005150881167159727...
+| [https://oeis.org/A305744 A305744]
+|-
+| 49.773832477672302181...
+| [https://oeis.org/A306004 A306004]
+|}
+
+[[אנדרו אודליצקו]] חישב את 2 מיליון האפסים הלא טריוויאליים הראשונים בדיוק של <math>4\times10^{-9}</math>, ואת 100 האפסים הראשונים בדיוק של 1000 ספרות אחרי הנקודה. באתר שלו יש טבלאות ורשימות ביבליוגרפיות.{{הערה|1=A. Odlyzko, [http://www.dtc.umn.edu/~odlyzko/zeta_tables/index.html Tables of zeros of the Riemann zeta function]; A. Odlyzko, [http://www.dtc.umn.edu/~odlyzko/doc/zeta.html Papers on Zeros of the Riemann Zeta Function and Related Topics]|כיווון=שמאל}} טבלה של כ-103 מיליארד אפסים בדיוק גבוה (עד <math>2^{-102}\approx2\cdot10^{-31}</math>) זמינה לגישה אינטראקטיבית ולהורדה במאגר LMFDB.{{הערה|1=[https://www.lmfdb.org/zeros/zeta/ LMFDB: Zeros of ζ(s)]|כיווון=שמאל}}
+
+== יחסים ==
+אף שקשה לחשב ערכים מסוימים של פונקציית זטא, לעיתים קרובות אפשר למצוא יחסים מסוימים על ידי הצבת ערכים מיוחדים של [[פונקציית גמא]] במשוואת הפונקציה
+:<math>\zeta(s) = 2^s\pi^{s-1}\sin\left(\frac{\pi s}{2}\right)\Gamma(1-s)\zeta(1-s) .</math>
+יש קשרים פשוטים בארגומנטים של חצי-שלם:
+:<math>
+\begin{align}
+\frac{\zeta(3/2)}{\zeta(-1/2)} &= -4\pi \\
+\frac{\zeta(5/2)}{\zeta(-3/2)} &= -\frac{16\pi^2}{3} \\
+\frac{\zeta(7/2)}{\zeta(-5/2)} &= \frac{64\pi^3}{15} \\
+\frac{\zeta(9/2)}{\zeta(-7/2)} &= \frac{256\pi^4}{105}
+\end{align}
+</math>
+דוגמאות נוספות נובעות מקשרים מורכבים יותר של פונקציית גמא. לדוגמה, מהקשר
+:<math>\Gamma\left(\tfrac{3}{4}\right) =\left(\tfrac{\pi} {2}\right) ^{\tfrac{1}{4}} {\operatorname{AGM}\left(\sqrt 2, 1\right)}^{\tfrac{1}{2}}</math>
+נובע היחס
+:<math>\frac{\zeta(3/4)}{\zeta(1/4)} = 2\sqrt{\frac{\pi}{(2-\sqrt{2})\operatorname{AGM}\left(\sqrt 2, 1\right)}},</math>
+כאשר AGM הוא [[ממוצע אריתמטי-גאומטרי|הממוצע האריתמטי-גאומטרי]]. באופן דומה אפשר לקבל קשרים עם שורשים; למשל, מ-
+:<math>\frac{\Gamma\left(\frac{1}{5}\right)^2}{\Gamma\left(\frac{1}{10}\right)\Gamma\left(\frac{3}{10}\right)} = \frac{\sqrt{1+\sqrt{5}}}{2^{\tfrac{7}{10}}\sqrt[4]{5}}</math>
+נובע הקשר
+:<math>\frac{\zeta(1/5)^2\zeta(7/10)\zeta(9/10)}{\zeta(1/10)\zeta(3/10)\zeta(4/5)^2} = \frac{(5-\sqrt{5})\left(\sqrt{10}+\sqrt{5+\sqrt{5}}\right)}{10\cdot2^{\tfrac{3}{10}}} .</math>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+== לקריאה נוספת ==
+* Ó. Ciaurri, L. M. Navas, F. J. Ruiz, J. L. Varona, A Simple Computation of ζ(2k), The American Mathematical Monthly 122 (5), 2015, עמ' 444–451, {{DOI|10.4169/amer.math.monthly.122.5.444}}, {{arXiv|1209.5030}}
+* S. Plouffe, [https://web.archive.org/web/20090130142844/http://www.lacim.uqam.ca/~plouffe/identities.html Identities inspired from Ramanujan Notebooks], 1998
+* S. Plouffe, [https://web.archive.org/web/20090404003553/http://www.lacim.uqam.ca/%7Eplouffe/inspired22.html Identities inspired by Ramanujan Notebooks part 2], 2006
+* L. Vepstas, [http://www.linas.org/math/plouffe-ram.pdf On Plouffe's Ramanujan identities], The Ramanujan Journal 27 (3), 2012, עמ' 387–408, {{DOI|10.1007/s11139-011-9335-9}}, {{arXiv|math/0609775}}
+* W. Zudilin, One of the Numbers ζ(5), ζ(7), ζ(9), ζ(11) Is Irrational, Russian Mathematical Surveys 56 (4), 2001, עמ' 774–776
+* A. Odlyzko: [http://www.dtc.umn.edu/~odlyzko/doc/zeta.html ביבליוגרפיה], [http://www.dtc.umn.edu/~odlyzko/zeta_tables/index.html טבלאות]
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:קבועים מתמטיים]]
