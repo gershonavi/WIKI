@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (283)
+## ערכים (285)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -314,6 +314,7 @@
 * [דיסקרימיננטה של שדה מספרים](pages/%D7%93%D7%99%D7%A1%D7%A7%D7%A8%D7%99%D7%9E%D7%99%D7%A0%D7%A0%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%A9%D7%93%D7%94%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md) – Discriminant of an algebraic number field
 * [הדדיות ממעלה רביעית](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A8%D7%91%D7%99%D7%A2%D7%99%D7%AA.md) – Quartic reciprocity
 * [הדדיות ממעלה שלישית](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99%D7%A9%D7%99%D7%AA.md) – Cubic reciprocity
+* [הדדיות של אייזנשטיין](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F.md)
 * [הערכה p-אדית](pages/%D7%94%D7%A2%D7%A8%D7%9B%D7%94%20p-%D7%90%D7%93%D7%99%D7%AA.md) – P-adic valuation
 * [הרחבה אבלית](pages/%D7%94%D7%A8%D7%97%D7%91%D7%94%20%D7%90%D7%91%D7%9C%D7%99%D7%AA.md) – Abelian extension
 * [חבורת האידלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%9C%D7%99%D7%9D.md) – Idele group
@@ -324,6 +325,7 @@
 * [מספר הגנר](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%92%D7%A0%D7%A8.md) – Heegner number
 * [משפט דדקינד–קומר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%93%D7%93%D7%A7%D7%99%D7%A0%D7%93%E2%80%93%D7%A7%D7%95%D7%9E%D7%A8.md) – Dedekind–Kummer theorem
 * [נורמה של אידיאל](pages/%D7%A0%D7%95%D7%A8%D7%9E%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C.md) – Ideal norm
+* [סימן שארית חזקה](pages/%D7%A1%D7%99%D7%9E%D7%9F%20%D7%A9%D7%90%D7%A8%D7%99%D7%AA%20%D7%97%D7%96%D7%A7%D7%94.md) – Power residue symbol
 * [סיעוף (מתמטיקה)](pages/%D7%A1%D7%99%D7%A2%D7%95%D7%A3%20%28%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%A7%D7%94%29.md) – Ramification (mathematics)
 * [עבודת הדוקטורט של טייט](pages/%D7%A2%D7%91%D7%95%D7%93%D7%AA%20%D7%94%D7%93%D7%95%D7%A7%D7%98%D7%95%D7%A8%D7%98%20%D7%A9%D7%9C%20%D7%98%D7%99%D7%99%D7%98.md) – Tate's thesis
 * [פונקציית L אקוויווריאנטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%A7%D7%95%D7%95%D7%99%D7%95%D7%95%D7%A8%D7%99%D7%90%D7%A0%D7%98%D7%99%D7%AA.md) – Equivariant L-function

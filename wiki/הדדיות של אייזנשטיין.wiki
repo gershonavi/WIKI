@@ -1,0 +1,74 @@
+ב[[תורת המספרים האלגברית]], '''חוק ההדדיות של אייזנשטיין''' הוא [[חוק הדדיות]] שמרחיב את [[משפט ההדדיות הריבועית|חוק ההדדיות הריבועית]] ואת [[הדדיות ממעלה שלישית|חוק ההדדיות ממעלה שלישית]] לשאריות של חזקות גבוהות יותר. זהו אחד מחוקי ההדדיות הגבוהים המוקדמים והפשוטים ביותר, והוא נובע מכמה חוקי הדדיות מאוחרים וחזקים יותר, כמו חוק ההדדיות של ארטין. פרדיננד גוטהולד אייזנשטיין הציג אותו ב-1850, אף על פי ש[[קרל גוסטב יעקב יעקובי|יעקובי]] הכריז קודם לכן (ב-1839, בלי הוכחה) על תוצאה דומה למקרים הפרטיים של חזקות 5, 8 ו-12.{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000, p. 392|כיווון=שמאל}}
+
+== רקע וסימונים ==
+יהי <math>m \gt 1</math> מספר שלם, ויהי <math>\mathcal{O}_m</math> [[חוג השלמים האלגבריים|חוג השלמים]] של ה[[שדה ציקלוטומי|שדה הציקלוטומי]] ה-<math>m</math>-י <math>\mathbb{Q}(\zeta_m)</math>, כאשר <math>\zeta_m=e^{2 \pi i/m}</math> [[שורש יחידה]] פרימיטיבי מסדר <math>m</math>. המספרים <math>\zeta_m, \zeta_m^2,\dots,\zeta_m^m=1</math> הם [[איבר הפיך|יחידות]] ב-<math>\mathcal{O}_m</math> (יש גם יחידות אחרות).
+
+=== מספרים ראשיים ===
+מספר <math>\alpha\in\mathcal{O}_m</math> נקרא '''ראשי''' (primary){{הערה|1=K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990, ch. 14.2. למרמאייר (ch. 11.2) משתמש במונח '''חצי-ראשי''' (semi-primary).|כיווון=שמאל}} אם הוא אינו יחידה, הוא זר ל-<math>m</math>, והוא שקול למספר שלם רציונלי (כלומר ב-<math>\mathbb{Z}</math>) מודולו <math>(1-\zeta_m)^2</math>.
+
+הלמה הבאה מראה שמספרים ראשיים ב-<math>\mathcal{O}_m</math> מקבילים למספרים שלמים חיוביים ב-<math>\mathbb{Z}</math>. נניח ש-<math>\alpha, \beta\in\mathcal{O}_m</math>, ושניהם זרים ל-<math>m</math>. אז
+* יש מספר שלם <math>c</math> שעבורו <math>\zeta_m^c\alpha</math> ראשי, והוא יחיד מודולו <math>m</math>.
+* אם <math>\alpha</math> ו-<math>\beta</math> ראשיים, אז <math>\alpha\pm\beta</math> ראשי, בתנאי ש-<math>\alpha\pm\beta</math> זר ל-<math>m</math>.
+* אם <math>\alpha</math> ו-<math>\beta</math> ראשיים, אז <math>\alpha\beta</math> ראשי.
+* <math>\alpha^m</math> ראשי.
+
+החשיבות של <math>1-\zeta_m</math> שמופיע בהגדרה בולטת במיוחד כאשר <math>m = l</math> ראשוני. במקרה הזה <math>l=(1-\zeta_l)(1-\zeta_l^2)\cdots(1-\zeta_l^{l-1})</math>, והאידיאל הראשוני <math>(l)</math> של <math>\mathbb{Z}</math> [[סיעוף (מתמטיקה)|מסועף לחלוטין]] ב-<math>\mathbb{Q}(\zeta_l)</math>: <math>(l)=(1-\zeta_l)^{l-1}</math>, והאידיאל <math>(1-\zeta_l)</math> ראשוני ממעלה 1.
+
+'''דוגמה (<math>m = 3</math>).''' כאן <math>(1 - \omega)^2 = -3\omega</math>, ולכן "שקול למספר שלם מודולו <math>(1-\omega)^2</math>" פירושו "שקול למספר שלם מודולו 3". לדוגמה, <math>\alpha = -1 - 3\omega \equiv -1 \pmod 3</math> ראשי, ואילו <math>3 + \omega</math> (נורמה 7) אינו ראשי, כי המקדם של <math>\omega</math> אינו מתחלק ב-3. מבין שלושת החברים שלו, <math>3 + \omega</math>, <math>\omega(3+\omega) = 3\omega + \omega^2 = -1 + 2\omega</math> ו-<math>\omega^2(3 + \omega) = 3\omega^2 + 1 = -2 - 3\omega</math>, רק האחרון ראשי, כפי שמבטיחה הלמה.
+
+=== סימן שארית החזקה ה-<math>m</math>-ית ===
+עבור <math>\alpha, \beta\in\mathcal{O}_m</math>, [[סימן שארית חזקה|סימן שארית החזקה ה-<math>m</math>-ית]] של <math>\mathcal{O}_m</math> הוא אפס או שורש יחידה מסדר <math>m</math>:
+:<math>\left(\frac{\alpha}{\beta }\right)_m = \begin{cases} \zeta,\ \zeta^m=1 & \alpha,\ \beta\ \text{זרים},\\ 0 & \text{אחרת}. \end{cases}</math>
+זוהי הגרסה לחזקות <math>m</math>-יות של [[סימן יעקובי]] הקלאסי (הריבועי, <math>m = 2</math>). בהנחה ש-<math>\alpha</math> ו-<math>\beta</math> זרים:
+* אם <math>\eta\in\mathcal{O}_m</math> ו-<math>\alpha\equiv\eta^m \pmod{\beta}</math>, אז <math>\left(\frac{\alpha}{\beta }\right)_m = 1</math>.
+* אם <math>\left(\frac{\alpha}{\beta }\right)_m \neq1</math>, אז <math>\alpha</math> אינו חזקה <math>m</math>-ית מודולו <math>\beta</math>.
+* אם <math>\left(\frac{\alpha}{\beta }\right)_m =1</math>, ייתכן ש-<math>\alpha</math> חזקה <math>m</math>-ית מודולו <math>\beta</math> וייתכן שלא.
+
+== ניסוח המשפט ==
+יהי <math>m\in\mathbb{Z}</math> ראשוני אי-זוגי, ויהי <math>a\in\mathbb{Z}</math> מספר שלם זר ל-<math>m</math>. אז:{{הערה|שם=L119|1=F. Lemmermeyer, ''Reciprocity Laws'', Thm. 11.9; K. Ireland, M. Rosen, ch. 14, Thm. 1|כיווון=שמאל}}
+
+'''השלמה ראשונה:'''
+:<math>\left(\frac{\zeta_m}{a }\right)_m = \zeta_m^{\frac{a^{m-1}-1}{m}}.</math>
+
+'''השלמה שנייה:'''
+:<math>\left(\frac{1-\zeta_m}{a }\right)_m = \left(\frac{\zeta_m}{a }\right)_m^{\frac{m+1}{2}}.</math>
+
+'''הדדיות של אייזנשטיין:''' יהי <math>\alpha\in\mathcal{O}_m</math> ראשי (ולכן זר ל-<math>m</math>), ונניח ש-<math>\alpha</math> זר גם ל-<math>a</math>. אז
+:<math>\left(\frac{\alpha}{a }\right)_m = \left(\frac{a}{\alpha }\right)_m.</math>
+כלומר, כש"אחד הצדדים" הוא מספר שלם רגיל, ההדדיות מושלמת – בלי גורם תיקון.
+
+'''דוגמה (<math>m = 3</math>, <math>a = 2</math>, <math>\alpha = -1 - 3\omega</math>).''' ב-<math>\mathbb Z[\omega]</math> הראשוני 2 אינרטי, עם <math>N(2) = 4</math>, ולכן <math>\left(\tfrac{\alpha}{2}\right)_3 \equiv \alpha^{(4-1)/3} = \alpha \pmod 2</math>. מודולו 2, <math>\alpha = -1 - 3\omega \equiv 1 + \omega = -\omega^2 \equiv \omega^2</math>, ולכן <math>\left(\tfrac{\alpha}{2}\right)_3 = \omega^2</math>. בכיוון השני, <math>\alpha</math> ראשוני מנורמה 7, ומודולו <math>\alpha</math> האיבר <math>\omega</math> עובר ל-2 (ב-<math>\mathbb F_7</math>), ולכן <math>\left(\tfrac{2}{\alpha}\right)_3 \equiv 2^{(7-1)/3} = 4 = 2^2</math>, כלומר <math>\omega^2</math>. שני הצדדים שווים. (וגם ההשלמה הראשונה: <math>\left(\tfrac{\omega}{2}\right)_3 = \omega^{(2^2-1)/3} = \omega</math>, ואכן <math>\omega^{(4-1)/3} = \omega</math>.)
+
+== הוכחה ==
+המשפט נובע מ'''יחס שטיקלברגר''', על פירוק של סכומי גאוס לאידיאלים ראשוניים בשדות ציקלוטומיים.{{הערה|1=K. Ireland, M. Rosen, ch. 14.5; F. Lemmermeyer, ch. 11.2|כיווון=שמאל}} [[אנדרה וייל]] נתן דיון היסטורי בכמה מחוקי ההדדיות המוקדמים, כולל הוכחה של חוק אייזנשטיין בעזרת סכומי גאוס וסכומי יעקובי, שמבוססת על ההוכחה המקורית של אייזנשטיין.{{הערה|1=A. Weil, ''La cyclotomie jadis et naguère'', Séminaire Bourbaki, Vol. 1973/1974, Exp. No. 452, Lecture Notes in Math. '''431''', Springer, 1975, pp. 318–338|כיווון=שמאל}}
+
+== הכללה ==
+ב-1922 הוכיח טייג'י טקאגי שאם <math>K\supseteq\mathbb{Q}(\zeta_l)</math> שדה מספרים כלשהו שמכיל את שורשי היחידה מסדר <math>l</math>, עבור ראשוני <math>l</math>, אז חוק אייזנשטיין לחזקות <math>l</math>-יות מתקיים ב-<math>K</math>.
+
+== שימושים ==
+=== המקרה הראשון של המשפט האחרון של פרמה ===
+נניח ש-<math>p</math> ראשוני אי-זוגי, ש-<math>x^p+y^p+z^p=0</math> עבור מספרים שלמים <math>x,y,z</math> זרים בזוגות, וש-<math>p\nmid xyz</math>. זהו '''המקרה הראשון''' של [[המשפט האחרון של פרמה]] (המקרה השני הוא <math>p\mid xyz</math>). בעזרת ההדדיות של אייזנשטיין אפשר להוכיח את המשפטים הבאים:
+* '''(ויפריך, 1909)''' תחת ההנחות האלה, <math>2^{p-1}\equiv 1 \pmod{p^2}</math>. ראשוניים שמקיימים זאת נקראים '''ראשוני ויפריך'''; הידועים היחידים הם 1093 ו-3511. (לדוגמה, <math>2^{1092} \equiv 1 \pmod{1093^2}</math>.)
+* '''(מירימנוף, 1911)''' תחת ההנחות האלה, <math>3^{p-1}\equiv 1 \pmod{p^2}</math>.
+* '''(פורטוונגלר, 1912)''' תחת ההנחות האלה, לכל ראשוני <math>r\mid x</math> מתקיים <math>r^{p-1}\equiv1 \pmod{p^2}</math>; וכך גם לכל ראשוני <math>r\mid (x-y)</math>.
+* '''(ונדיבר)''' תחת ההנחות האלה, אם בנוסף <math>p \gt 3</math>, אז <math>x^p\equiv x</math>, <math>y^p\equiv y</math> ו-<math>z^p\equiv z \pmod{p^3}</math>.
+
+=== חזקות מודולו רוב הראשוניים ===
+בעזרת חוק אייזנשטיין אפשר להוכיח את המשפט הבא (של טרוסט, אנקני ורוג'רס):{{הערה|1=K. Ireland, M. Rosen, ch. 14.6, Thm. 4. זה חלק ממשפט כללי יותר: נניח ש-<math>x^n\equiv a\pmod{p}</math> פתירה לכל הראשוניים <math>p</math> פרט למספר סופי. אז אם <math>8\nmid n</math>, <math>a=b^n</math>; ואם <math>8\mid n</math>, <math>a=b^n</math> או <math>a=2^{n/2}b^n</math>.|כיווון=שמאל}} נניח ש-<math>a\in\mathbb{Z}</math> ו-<math>l\nmid a</math>, כאשר <math>l</math> ראשוני אי-זוגי. אם <math>x^l\equiv a \pmod{p}</math> פתירה לכל הראשוניים <math>p</math> פרט למספר סופי, אז <math>a=b^l</math> עבור מספר שלם <math>b</math>. (התנאי <math>8 \nmid n</math> בהכללה הכרחי: <math>16 = 2^{8/2}</math> הוא חזקה שמינית מודולו כל ראשוני אי-זוגי, אף על פי שאינו חזקה שמינית של מספר שלם.)
+
+== ראו גם ==
+* [[הדדיות ממעלה רביעית]]
+* [[חוק הדדיות]]
+* [[סימן שארית חזקה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. Eisenstein, ''Beweis der allgemeinsten Reciprocitätsgesetze zwischen reellen und komplexen Zahlen'', Verhandlungen der Königlich Preußischen Akademie der Wissenschaften zu Berlin (1850), pp. 189–198
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990
+* F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]

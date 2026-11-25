@@ -1,0 +1,65 @@
+ב[[תורת המספרים האלגברית]], '''סימן שארית החזקה ה-<math>n</math>-ית''' (עבור מספר שלם <math>n \gt 2</math>) הוא הכללה של [[סימן לז'נדר]] (הריבועי) לחזקות <math>n</math>-יות. משתמשים בסימנים האלה בניסוח ובהוכחה של [[הדדיות ממעלה שלישית|ההדדיות ממעלה שלישית]], [[הדדיות ממעלה רביעית|ממעלה רביעית]], [[הדדיות של אייזנשטיין|של אייזנשטיין]], ושל [[חוק הדדיות|חוקי הדדיות]] גבוהים יותר דומים.{{הערה|1=כל העובדות בערך זה מופיעות אצל F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000, ch. 4.1, ואצל K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990, ch. 14.2.|כיווון=שמאל}}
+
+== רקע וסימונים ==
+יהי <math>k</math> [[שדה מספרים]] עם [[חוג השלמים האלגבריים|חוג שלמים]] <math>\mathcal{O}_k</math> שמכיל [[שורש יחידה]] פרימיטיבי מסדר <math>n</math>, <math>\zeta_n</math>. יהי <math>\mathfrak{p} \subset \mathcal{O}_k</math> [[אידיאל ראשוני]], ונניח ש-<math>n</math> ו-<math>\mathfrak{p}</math> זרים (כלומר <math>n \notin \mathfrak{p}</math>). ה[[נורמה של אידיאל|נורמה]] של <math>\mathfrak{p}</math> היא מספר האיברים בחוג המנה, שהוא [[שדה סופי]]:
+:<math>\mathrm{N} \mathfrak{p} := |\mathcal{O}_k / \mathfrak{p}|.</math>
+ב-<math>\mathcal{O}_k</math> מתקיימת מקבילה למשפט של פרמה: אם <math>\alpha \in \mathcal{O}_k \setminus \mathfrak{p}</math>, אז
+:<math>\alpha^{\mathrm{N} \mathfrak{p} -1}\equiv 1 \pmod{\mathfrak{p}}.</math>
+בנוסף, <math>\mathrm{N} \mathfrak{p} \equiv 1 \pmod{n}</math>: שורשי היחידה מסדר <math>n</math> שונים זה מזה מודולו <math>\mathfrak p</math> (כי <math>n = \prod_{j=1}^{n-1}(1 - \zeta_n^j)</math> אינו ב-<math>\mathfrak p</math>), ולכן הם תת-חבורה מסדר <math>n</math> של החבורה הכפלית של השדה <math>\mathcal O_k/\mathfrak p</math>, שסדרה <math>\mathrm N\mathfrak p - 1</math>. מהעובדות האלה נובע שהביטוי
+:<math>\alpha^{\frac{\mathrm{N} \mathfrak{p} -1}{n}}\equiv \zeta_n^s\pmod{\mathfrak{p}}</math>
+מוגדר היטב ושקול לשורש יחידה יחיד מסדר <math>n</math>, <math>\zeta_n^s</math>.
+
+== הגדרה ==
+שורש היחידה הזה נקרא '''סימן שארית החזקה ה-<math>n</math>-ית''' של <math>\mathcal{O}_k</math>, ומסמנים אותו
+:<math>\left(\frac{\alpha}{\mathfrak{p} }\right)_n= \zeta_n^s \equiv \alpha^{\frac{\mathrm{N} \mathfrak{p} -1}{n}}\pmod{\mathfrak{p}}.</math>
+
+'''דוגמה (<math>n = 3</math>).''' יהי <math>k = \mathbb Q(\omega)</math>, <math>\omega = e^{2\pi i/3}</math>, ויהי <math>\mathfrak p = (\pi)</math> עם <math>\pi = -1 - 3\omega</math>, ראשוני מנורמה 7. בשדה <math>\mathbb Z[\omega]/\mathfrak p \cong \mathbb F_7</math> האיבר <math>\omega</math> עובר ל-2 (כי <math>2^2 + 2 + 1 = 7</math>). אז <math>\left(\tfrac{2}{\mathfrak p}\right)_3 \equiv 2^{(7-1)/3} = 4 = 2^2</math>, כלומר <math>\left(\tfrac{2}{\mathfrak p}\right)_3 = \omega^2 \ne 1</math> – ולכן 2 אינו קובייה מודולו <math>\mathfrak p</math>, בהתאמה לכך שהקובים מודולו 7 הם רק 0, 1 ו-6. לעומת זאת <math>\left(\tfrac{6}{\mathfrak p}\right)_3 \equiv 6^2 = 36 \equiv 1</math>, ואכן <math>6 \equiv 3^3 \pmod 7</math>.
+
+== תכונות ==
+לסימן החזקה ה-<math>n</math>-ית יש תכונות שמקבילות לגמרי לאלה של [[סימן יעקובי]] הריבועי הקלאסי (כאן <math>\zeta</math> שורש יחידה פרימיטיבי קבוע מסדר <math>n</math>):
+:<math>\left(\frac{\alpha}{\mathfrak{p} }\right)_n = \begin{cases}
+0 & \alpha\in\mathfrak{p},\\
+1 & \alpha\notin\mathfrak{p}\ \text{ויש}\ \eta \in\mathcal{O}_k\ \text{עם}\ \alpha \equiv \eta^n \pmod{\mathfrak{p}},\\
+\zeta^s \ne 1 & \alpha\notin\mathfrak{p}\ \text{ואין}\ \eta\ \text{כזה.}
+\end{cases}</math>
+בכל המקרים (אפס או לא),
+:<math>\left(\frac{\alpha}{\mathfrak{p}}\right)_n \equiv \alpha^{\frac{\mathrm{N} \mathfrak{p} -1}{n}}\pmod{\mathfrak{p}},\qquad \left(\frac{\alpha}{\mathfrak{p}}\right)_n \left(\frac{\beta}{\mathfrak{p}}\right)_n = \left(\frac{\alpha\beta}{\mathfrak{p} }\right)_n,\qquad \alpha \equiv\beta\pmod{\mathfrak{p}} \ \Rightarrow \ \left(\frac{\alpha}{\mathfrak{p} }\right)_n = \left(\frac{\beta}{\mathfrak{p} }\right)_n .</math>
+(הקריטריון השני – שארית <math>n</math>-ית אם ורק אם הסימן 1 – נובע מכך שהחבורה הכפלית של שדה סופי ציקלית.)
+
+== הקשר לסימן הילברט ==
+סימן שארית החזקה ה-<math>n</math>-ית קשור לסימן הילברט <math>(\cdot,\cdot)_{\mathfrak{p}}</math> בראשוני <math>\mathfrak{p}</math> לפי
+:<math>\left(\frac{\alpha}{\mathfrak{p} }\right)_n = (\pi, \alpha)_{\mathfrak{p}}</math>
+במקרה ש-<math>\mathfrak{p}</math> זר ל-<math>n</math>, כאשר <math>\pi</math> איבר מקומי כלשהו של השדה המקומי <math>K_{\mathfrak{p}}</math>.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Grundlehren der Mathematischen Wissenschaften '''322''', Springer, 1999, p. 336|כיווון=שמאל}}
+
+== הכללות ==
+אפשר להרחיב את סימן החזקה ה-<math>n</math>-ית כך שב"מכנה" יופיעו אידיאלים שאינם ראשוניים או איברים שונים מאפס, באותו אופן שבו סימן יעקובי מרחיב את סימן לז'נדר. כל אידיאל <math>\mathfrak{a}\subset\mathcal{O}_k</math> הוא מכפלה של אידיאלים ראשוניים, בדרך יחידה: <math>\mathfrak{a} = \mathfrak{p}_1 \cdots\mathfrak{p}_g</math>. מרחיבים את הסימן באופן כפלי:
+:<math>\left(\frac{\alpha}{\mathfrak{a} }\right)_n = \left(\frac{\alpha}{\mathfrak{p}_1 }\right)_n \cdots \left(\frac{\alpha}{\mathfrak{p}_g }\right)_n.</math>
+עבור <math>0 \neq \beta\in\mathcal{O}_k</math> מגדירים <math>\left(\frac{\alpha}{\beta}\right)_n := \left(\frac{\alpha}{(\beta) }\right)_n</math>, כאשר <math>(\beta)</math> האידיאל הראשי שנוצר על ידי <math>\beta</math>. כמו סימן יעקובי הריבועי, הסימן הזה כפלי גם בפרמטר העליון וגם בתחתון:
+* אם <math>\alpha\equiv\beta\pmod{\mathfrak{a}}</math> אז <math>\left(\tfrac{\alpha}{\mathfrak{a} }\right)_n = \left(\tfrac{\beta}{\mathfrak{a} }\right)_n</math>.
+* <math>\left(\tfrac{\alpha}{\mathfrak{a} }\right)_n \left(\tfrac{\beta}{\mathfrak{a} }\right)_n = \left(\tfrac{\alpha\beta}{\mathfrak{a} }\right)_n</math> ו-<math>\left(\tfrac{\alpha}{\mathfrak{a} }\right)_n \left(\tfrac{\alpha}{\mathfrak{b} }\right)_n = \left(\tfrac{\alpha}{\mathfrak{ab} }\right)_n</math>.
+מאחר שהסימן תמיד שורש יחידה מסדר <math>n</math>, ובגלל הכפליות, הוא שווה ל-1 בכל פעם שאחד הפרמטרים הוא חזקה <math>n</math>-ית; הכיוון ההפוך אינו נכון:
+* אם <math>\alpha\equiv\eta^n\pmod{\mathfrak{a}}</math> אז <math>\left(\tfrac{\alpha}{\mathfrak{a} }\right)_n =1</math>.
+* אם <math>\left(\tfrac{\alpha}{\mathfrak{a} }\right)_n \neq 1</math> אז <math>\alpha</math> אינו חזקה <math>n</math>-ית מודולו <math>\mathfrak{a}</math>.
+* אם <math>\left(\tfrac{\alpha}{\mathfrak{a} }\right)_n =1</math>, ייתכן ש-<math>\alpha</math> חזקה <math>n</math>-ית מודולו <math>\mathfrak{a}</math> וייתכן שלא. (כבר במקרה הריבועי: <math>\left(\tfrac{2}{15}\right) = \left(\tfrac23\right)\left(\tfrac25\right) = (-1)(-1) = 1</math>, אבל 2 אינו ריבוע מודולו 15.)
+
+== חוק ההדדיות לחזקות ==
+'''חוק ההדדיות לחזקות''', המקבילה של [[משפט ההדדיות הריבועית|חוק ההדדיות הריבועית]], אפשר לנסח במונחי סימני הילברט:{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', p. 415|כיווון=שמאל}}
+:<math>\left({\frac{\alpha}{\beta}}\right)_n \left({\frac{\beta}{\alpha}}\right)_n^{-1} = \prod_{\mathfrak{p} \mid n\infty} (\alpha,\beta)_{\mathfrak{p}},</math>
+בכל פעם ש-<math>\alpha</math> ו-<math>\beta</math> זרים. כלומר, ה"תיקון" להדדיות מגיע רק מהמקומות שמחלקים את <math>n</math> ומהמקומות האינסופיים.
+
+== ראו גם ==
+* [[חוק הדדיות]]
+* [[סימן לז'נדר]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. Gras, ''Class Field Theory. From Theory to Practice'', Springer Monographs in Mathematics, Springer, 2003, pp. 204–207
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990
+* F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000
+* J. Neukirch, ''Algebraic Number Theory'', Springer, 1999
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
