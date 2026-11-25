@@ -120,7 +120,7 @@ Additive number theory:
 - [x] Local class field theory
 - [x] Hilbert symbol
 - [x] Ray class field
-- [ ] Complex multiplication
+- [x] Complex multiplication
 - [x] Conductor (class field theory)
 - [x] Weil group
 - [x] Genus field
