@@ -95,7 +95,7 @@ Additive number theory:
 - [x] Totally imaginary number field
 - [x] Monogenic field
 - [x] Golden field
-- [ ] S-unit
+- [x] S-unit
 - [ ] Narrow class group
 - [ ] Conductor–discriminant formula
 - [ ] Galois representation

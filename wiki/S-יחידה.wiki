@@ -1,0 +1,45 @@
+ב[[מתמטיקה]], בתחום [[תורת המספרים האלגברית]], '''S-יחידה''' היא הכללה של המושג [[הפיך (מתמטיקה)|יחידה]] של [[חוג השלמים]] של שדה. רבות מהתוצאות שנכונות ליחידות נכונות גם ל-S-יחידות.
+
+== הגדרה ==
+יהי <math>K</math> [[שדה מספרים]] עם חוג שלמים <math>R</math>, ותהי <math>S</math> קבוצה סופית של [[אידיאל ראשוני|אידיאלים ראשוניים]] של <math>R</math>. איבר <math>x</math> של <math>K</math> הוא '''S-יחידה''' אם ה[[אידיאל שבור|אידיאל השבור]] הראשי <math>(x)</math> הוא מכפלה של ראשוניים מ-<math>S</math> (בחזקות חיוביות או שליליות). בחוג השלמים הרגילים <math>\mathbb Z</math> אפשר לקחת את <math>S</math> כקבוצה סופית של [[מספר ראשוני|מספרים ראשוניים]], ולהגדיר S-יחידה כ[[מספר רציונלי]] שהמונה והמכנה שלו מתחלקים רק בראשוניים מ-<math>S</math>.
+
+'''דוגמאות.'''
+* ב-<math>\mathbb Q</math> עם <math>S = \{2, 3\}</math>, ה-S-יחידות הן המספרים <math>\pm 2^a 3^b</math> עם <math>a, b \in \mathbb Z</math>, למשל <math>-\tfrac{8}{9}</math>, <math>\tfrac{3}{2}</math>, <math>6</math>. אלה בדיוק האיברים ההפיכים של החוג <math>\mathbb Z[\tfrac16]</math>.
+* ב-<math>K = \mathbb Q(\sqrt2)</math> עם <math>S = \{(\sqrt2)\}</math> (הראשוני היחיד מעל 2, <math>2 = (\sqrt2)^2</math>), ה-S-יחידות הן <math>\pm(1+\sqrt2)^m(\sqrt2)^n</math> עם <math>m, n \in \mathbb Z</math>.
+
+== תכונות ==
+ה-S-יחידות יוצרות [[חבורה (מבנה אלגברי)|חבורה]] כפלית שמכילה את היחידות של <math>R</math>.
+
+[[משפט היחידות של דיריכלה]] נכון גם ל-S-יחידות: חבורת ה-S-יחידות [[חבורה אבלית נוצרת סופית|נוצרת סופית]], וה[[דרגה של חבורה אבלית|דרגה]] שלה (המספר המקסימלי של איברים בלתי תלויים כפלית) היא <math>r + s</math>, כאשר <math>r</math> הדרגה של חבורת היחידות ו-<math>s = |S|</math>. הסיבה: לכל <math>\mathfrak p \in S</math> ההעתקה <math>x \mapsto v_{\mathfrak p}(x)</math> נותנת הומומורפיזם לחבורה <math>\mathbb Z^s</math>, שהגרעין שלו הוא חבורת היחידות; והתמונה שלו מאינדקס סופי, כי לכל <math>\mathfrak p</math> החזקה <math>\mathfrak p^h</math> (כאשר <math>h</math> [[מספר המחלקות]]) ראשית.
+
+בדוגמאות שלמעלה: ב-<math>\mathbb Q</math>, <math>r = 0</math> ו-<math>s = 2</math>, והחבורה <math>\{\pm 2^a3^b\} \cong \{\pm1\}\times\mathbb Z^2</math> מדרגה 2. ב-<math>\mathbb Q(\sqrt2)</math>, <math>r = 1</math> ו-<math>s = 1</math>, והדרגה היא 2, עם יוצרים <math>1+\sqrt2</math> ו-<math>\sqrt2</math>.
+
+== משוואת ה-S-יחידות ==
+'''משוואת ה-S-יחידות''' היא ה[[משוואה דיופנטית]]
+:<math>u + v = 1,</math>
+כאשר <math>u</math> ו-<math>v</math> מוגבלים להיות S-יחידות של <math>K</math> (או, באופן כללי יותר, איברים של תת-חבורה נוצרת סופית של החבורה הכפלית של שדה כלשהו ממאפיין 0). מספר הפתרונות של המשוואה סופי,{{הערה|1=F. Beukers, H. P. Schlickewei, ''The equation x+y=1 in finitely generated groups'', Acta Arithmetica '''78''' (1996), pp. 189–199|כיווון=שמאל}} ואפשר למצוא את הפתרונות באופן אפקטיבי בעזרת הערכות על [[צורה לינארית בלוגריתמים|צורות לינאריות בלוגריתמים]], כפי שפותחו ב[[תורת המספרים הטרנסצנדנטיים]]. מגוון רחב של משוואות דיופנטיות ניתן, עקרונית, לרדוקציה לצורה כלשהי של משוואת ה-S-יחידות. דוגמה בולטת היא [[משפט זיגל על נקודות שלמות|משפט זיגל]] על נקודות שלמות על [[עקום אליפטי|עקומים אליפטיים]], ובאופן כללי יותר על עקומים סופר-אליפטיים מהצורה <math>y^n = f(x)</math>.
+
+'''דוגמה מחושבת: <math>S = \{2, 3\}</math> מעל <math>\mathbb Q</math>.''' נחפש את כל הפתרונות של <math>u + v = 1</math> עם <math>u, v \in \{\pm 2^a 3^b\}</math>. אחרי הכפלה במכנה משותף זו בעיית מציאת כל השוויונות <math>x + y = z</math> בשלמים זרים מהצורה <math>\pm 2^a3^b</math>. השוויונות היסודיים הם
+:<math>1 + 1 = 2, \quad 1 + 2 = 3, \quad 1 + 3 = 4, \quad 1 + 8 = 9,</math>
+וכל אחד מהם נותן כמה פתרונות של <math>u + v = 1</math>, לפי איזה מהאיברים מעבירים לאגף ימין ובאיזה מחלקים. למשל מ-<math>1 + 8 = 9</math> מתקבלים
+:<math>\tfrac19 + \tfrac89 = 1, \qquad 9 + (-8) = 1, \qquad \tfrac98 + \left(-\tfrac18\right) = 1</math>
+(ועוד שלושה מהחלפת הסדר של <math>u</math> ו-<math>v</math>). בסך הכול יש בדיוק 21 זוגות סדורים <math>(u, v)</math>; חיפוש ממוחשב על כל המעריכים בטווח <math>|a|, |b| \le 40</math> מוצא בדיוק אותם, והגבולות האפקטיביים מבטיחים שאין פתרונות נוספים. הפתרון "הגדול" ביותר, <math>9 - 8 = 1</math>, הוא המקרה המפורסם של [[השערת קטלן]] (<math>3^2 - 2^3 = 1</math>).
+
+פותר ממוחשב למשוואת ה-S-יחידות זמין בתוכנה [[SageMath]].
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. Everest, A. van der Poorten, I. Shparlinski, T. Ward, ''Recurrence Sequences'', Mathematical Surveys and Monographs '''104''', AMS, 2003, pp. 19–22
+* S. Lang, ''Elliptic Curves: Diophantine Analysis'', Grundlehren '''231''', Springer, 1978, pp. 128–153
+* S. Lang, ''Algebraic Number Theory'', Springer, 1986, Chap. V
+* N. Smart, ''The Algorithmic Resolution of Diophantine Equations'', LMS Student Texts '''41''', Cambridge University Press, 1998, Chap. 9
+* J. Neukirch, ''Class Field Theory'', Grundlehren '''280''', Springer, 1986, pp. 72–73
+* A. Baker, G. Wüstholz, ''Logarithmic Forms and Diophantine Geometry'', Cambridge University Press, 2007
+* E. Bombieri, W. Gubler, ''Heights in Diophantine Geometry'', Cambridge University Press, 2006
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:משוואות דיופנטיות]]

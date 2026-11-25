@@ -1,0 +1,50 @@
+ב[[תורת המספרים האלגברית]], '''חבורת המחלקות הצרה''' של [[שדה מספרים]] <math>K</math> היא עידון של [[חבורת מחלקות האידיאלים|חבורת המחלקות]] של <math>K</math>, שמביא בחשבון מידע על השיכונים של <math>K</math> בשדה ה[[מספר ממשי|מספרים הממשיים]].
+
+== הגדרה ==
+יהי <math>K</math> הרחבה סופית של <math>\mathbb Q</math>. חבורת המחלקות הרגילה של <math>K</math> מוגדרת כ[[חבורת מנה|מנה]]
+:<math>C_K = I_K/P_K,</math>
+כאשר <math>I_K</math> חבורת ה[[אידיאל שבור|אידיאלים השבורים]] של <math>K</math>, ו-<math>P_K</math> תת-החבורה של האידיאלים השבורים הראשיים, מהצורה <math>a\mathcal O_K</math> עם <math>a \in K^\times</math>.
+
+'''חבורת המחלקות הצרה''' מוגדרת כמנה
+:<math>C_K^+ = I_K/P_K^+,</math>
+כאשר <math>P_K^+</math> היא חבורת האידיאלים השבורים הראשיים '''החיוביים לחלוטין''': אידיאלים מהצורה <math>a\mathcal O_K</math>, כאשר <math>\sigma(a) \gt 0</math> לכל שיכון <math>\sigma : K \to \mathbb R</math>.
+
+== הקשר לחבורת המחלקות הרגילה ==
+כיוון ש-<math>P_K^+ \subseteq P_K</math>, יש העתקה טבעית על <math>C_K^+ \to C_K</math>, שהגרעין שלה הוא <math>P_K/P_K^+</math>. לכן <math>h^+ = h \cdot [P_K : P_K^+]</math>, והאינדקס הזה מחלק את <math>2^{r_1}</math>, כאשר <math>r_1</math> מספר השיכונים הממשיים. בפרט:
+* אם <math>K</math> [[שדה מדומה לחלוטין|מדומה לחלוטין]] (<math>r_1 = 0</math>), התנאי ריק ו-<math>C_K^+ = C_K</math>.
+* אם <math>K = \mathbb Q(\sqrt d)</math> [[שדה ריבועי]] ממשי עם [[יחידה יסודית (תורת המספרים)|יחידה יסודית]] <math>\varepsilon</math>, אז <math>h^+ = h</math> אם <math>N(\varepsilon) = -1</math>, ו-<math>h^+ = 2h</math> אם <math>N(\varepsilon) = +1</math>. הסיבה: אידיאל ראשי <math>(a)</math> הוא חיובי לחלוטין אם אפשר להחליף את <math>a</math> ביוצר אחר <math>a\eta</math> (עם <math>\eta</math> יחידה) כך ששני הצמודים חיוביים. כפל ב-<math>-1</math> הופך את שני הסימנים, וכפל ביחידה מנורמה <math>-1</math> הופך רק את אחד מהם; לכן אם יש יחידה כזו, כל אידיאל ראשי חיובי לחלוטין.
+:'''דוגמאות.''' ב-<math>\mathbb Q(\sqrt2)</math>, <math>\varepsilon = 1 + \sqrt2</math> מנורמה <math>-1</math>, ולכן <math>h^+ = h = 1</math>. ב-<math>\mathbb Q(\sqrt6)</math>, <math>\varepsilon = 5 + 2\sqrt6</math> מנורמה <math>25 - 24 = +1</math>, ולכן <math>h^+ = 2h = 2</math>. למשל, האידיאל <math>(\sqrt6)</math> הוא ראשי, אבל אינו חיובי לחלוטין: <math>\pm\sqrt6\,\varepsilon^n</math> תמיד בעל צמודים מסימנים מנוגדים, כי <math>N(\sqrt6\,\varepsilon^n) = -6</math>.
+
+== שימושים ==
+חבורת המחלקות הצרה מופיעה באופן בולט בתורת ההצגה של שלמים על ידי [[תבנית ריבועית|תבניות ריבועיות]]. דוגמה היא התוצאה הבאה:{{הערה|1=A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', Cambridge University Press, 1991, Chapter V, Theorem 1.25|כיווון=שמאל}}
+
+'''משפט.''' יהי <math>K = \mathbb Q(\sqrt d)</math>, כאשר <math>d</math> [[מספר חופשי מריבועים|חופשי מריבועים]], ונניח שחבורת המחלקות הצרה של <math>K</math> טריוויאלית. יהי <math>\{\omega_1, \omega_2\}</math> בסיס של [[חוג השלמים]] של <math>K</math>, ונגדיר את התבנית הריבועית
+:<math>q_K(x, y) = N_{K/\mathbb Q}(\omega_1x + \omega_2y),</math>
+כאשר <math>N_{K/\mathbb Q}</math> ה[[נורמה (תורת השדות)|נורמה]]. אז מספר ראשוני <math>p</math> הוא מהצורה <math>p = q_K(x, y)</math> עם <math>x, y</math> שלמים '''אם ורק אם''' מתקיים אחד מהתנאים
+:<math>p \mid d_K;</math> או <math>p = 2</math> ו-<math>d_K \equiv 1 \pmod 8;</math> או <math>p \gt 2</math> ו-<math>\left(\tfrac{d_K}{p}\right) = 1,</math>
+כאשר <math>d_K</math> ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] של <math>K</math> ו-<math>\left(\tfrac ab\right)</math> [[סמל לז'נדר]].
+
+(רעיון ההוכחה: התנאים הם בדיוק התנאים לכך ש-<math>p</math> אינו אינרטי, כלומר שיש אידיאל ראשוני <math>\mathfrak p</math> מנורמה <math>p</math>. אם <math>C_K^+</math> טריוויאלית, אז <math>\mathfrak p = (\alpha)</math> עם <math>\alpha</math> חיובי לחלוטין, ולכן <math>N(\alpha) = +p</math> – ולא רק <math>\pm p</math>.)
+
+=== דוגמאות ===
+אפשר להוכיח שלשדות הריבועיים <math>\mathbb Q(\sqrt{-1})</math>, <math>\mathbb Q(\sqrt2)</math>, <math>\mathbb Q(\sqrt{-3})</math> יש חבורת מחלקות צרה טריוויאלית. בבחירת בסיסים מתאימים לחוגי השלמים, המשפט נותן:
+* ראשוני <math>p</math> הוא מהצורה <math>x^2 + y^2</math> אם ורק אם <math>p = 2</math> או <math>p \equiv 1 \pmod 4</math>. (זהו [[משפט פרמה על סכום של שני ריבועים]].)
+* ראשוני <math>p</math> הוא מהצורה <math>x^2 - 2y^2</math> אם ורק אם <math>p = 2</math> או <math>p \equiv 1, 7 \pmod 8</math>. (למשל <math>7 = 9 - 2</math>, <math>17 = 25 - 8</math>, <math>23 = 25 - 2</math>, <math>2 = 4 - 2</math>; אבל 3, 5, 11, 13 אינם מהצורה הזו.)
+* ראשוני <math>p</math> הוא מהצורה <math>x^2 - xy + y^2</math> אם ורק אם <math>p = 3</math> או <math>p \equiv 1 \pmod 3</math> (ראו [[ראשוני אייזנשטיין]]).
+
+דוגמה שממחישה את ההבדל בין חבורת המחלקות הצרה לחבורת המחלקות הרגילה היא <math>\mathbb Q(\sqrt6)</math>. חבורת המחלקות שלו טריוויאלית, אבל לחבורת המחלקות הצרה שלו יש סדר 2 (ראו למעלה). כיוון שחבורת המחלקות טריוויאלית, הטענה הבאה נכונה:
+* ראשוני <math>p</math> או הנגדי שלו <math>-p</math> הוא מהצורה <math>\pm p = x^2 - 6y^2</math> אם ורק אם <math>p = 2</math>, <math>p = 3</math> או <math>\left(\tfrac{6}{p}\right) = 1</math>.
+אבל הטענה שגויה אם מתמקדים רק ב-<math>p</math> ולא ב-<math>-p</math> (והיא שגויה אפילו עבור <math>p = 2</math>: <math>-2 = 2^2 - 6\cdot 1^2</math>, אבל <math>x^2 - 6y^2 = 2</math> בלתי אפשרי, כי <math>x^2 \equiv 2 \pmod 3</math> אין לה פתרון), משום שחבורת המחלקות הצרה אינה טריוויאלית. הטענה שמסווגת את <math>p</math> החיוביים היא:
+* ראשוני <math>p</math> הוא מהצורה <math>p = x^2 - 6y^2</math> אם ורק אם <math>p = 3</math>, או <math>\left(\tfrac{6}{p}\right) = 1</math> ו-<math>\left(\tfrac{-2}{p}\right) = 1</math>.
+(הטענה הראשונה מתירה ראשוניים <math>p \equiv 1, 5, 19, 23 \pmod{24}</math>, והשנייה רק <math>p \equiv 1, 19 \pmod{24}</math>.)
+
+'''בדיקה מספרית.''' הראשוניים עד 101 שעבורם <math>\left(\tfrac6p\right) = 1</math> הם 5, 19, 23, 29, 43, 47, 53, 67, 71, 73, 97, 101. מתוכם, אלה שהם מהצורה <math>x^2 - 6y^2</math> בדיוק (ולא רק <math>-p</math>) הם 19, 43, 67, 73, 97 – כולם <math>\equiv 1</math> או <math>19 \pmod{24}</math>. למשל <math>19 = 5^2 - 6\cdot 1^2</math> ו-<math>73 = 13^2 - 6\cdot 4^2</math>; ואילו <math>5</math> מופיע רק כ-<math>-5 = 1 - 6</math>.
+
+== ראו גם ==
+* [[חבורת מחלקות האידיאלים]]
+* [[תבנית ריבועית]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
