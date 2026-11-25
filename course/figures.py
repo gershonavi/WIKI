@@ -2931,6 +2931,47 @@ def _():
     save('09-7')
 
 
+@fig('02-7')
+def _():
+    F = [0, 1]
+    for _ in range(40):
+        F.append(F[-1] + F[-2])
+    M = 24
+    G = np.array([[gcd(F[m], F[n]) == F[gcd(m, n)] for n in range(1, M + 1)] for m in range(1, M + 1)])
+    V = np.array([[gcd(m, n) for n in range(1, M + 1)] for m in range(1, M + 1)])
+    ax = plt.gca()
+    im = ax.imshow(V, origin='lower', cmap='viridis', extent=(0.5, M + .5, 0.5, M + .5))
+    plt.colorbar(im, ax=ax, fraction=.046, label='gcd(m, n)')
+    ax.set_xlabel('n'); ax.set_ylabel('m')
+    ax.set_title(f'gcd(F_m, F_n) = F_gcd(m,n): holds in all {G.sum()} of {M*M} cells', fontsize=9)
+    save('02-7')
+
+
+@fig('16-fi')
+def _():
+    X = 10 ** 6
+    pts = []
+    b = 1
+    while b ** 4 < X:
+        a = 1
+        while a * a + b ** 4 <= X:
+            if isp(a * a + b ** 4):
+                pts.append((a, b))
+            a += 1
+        b += 1
+    A = np.array(pts)
+    fig_, axs = plt.subplots(1, 2, figsize=(6.8, 3.0))
+    axs[0].scatter(A[:, 0], A[:, 1], s=1, color=C1)
+    axs[0].set_xlabel('a'); axs[0].set_ylabel('b'); axs[0].set_title('a² + b⁴ prime, ≤ 10⁶', fontsize=9)
+    xs = np.unique(np.logspace(2, 6, 40).astype(int))
+    vals = np.array([a * a + b ** 4 for a, b in pts])
+    cnt = [4 * (vals <= x).sum() for x in xs]
+    axs[1].loglog(xs, cnt, 'o', ms=3, color=C1, label='count (a, b ∈ ℤ)')
+    axs[1].loglog(xs, 4.798 * xs ** 0.75 / np.log(xs), color=C2, label='4.80·x^{3/4}/log x')
+    axs[1].set_xlabel('x'); axs[1].legend(fontsize=7); axs[1].set_title('Friedlander–Iwaniec asymptotic', fontsize=9)
+    save('16-fi')
+
+
 
 if __name__ == '__main__':
     import sys
