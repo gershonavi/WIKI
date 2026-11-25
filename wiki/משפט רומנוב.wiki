@@ -1,0 +1,72 @@
+ב[[מתמטיקה]], ובפרט ב[[תורת המספרים האדיטיבית]], '''משפט רומנוב''' (ב[[אנגלית]]: Romanov's theorem) הוא משפט שהוכיח ניקולאי פבלוביץ' רומנוב. לפי המשפט, בהינתן בסיס קבוע <math>b</math>, לקבוצת המספרים שהם סכום של [[מספר ראשוני]] ושל חזקה חיובית שלמה של <math>b</math> יש [[צפיפות (תורת המספרים)|צפיפות אסימפטוטית תחתונה]] חיובית.
+
+== ניסוח ==
+רומנוב ניסח בתחילה שתי טענות שהוכיח:{{הערה|1=N. P. Romanoff, Über einige Sätze der additiven Zahlentheorie, Mathematische Annalen 109 (1), 1934, עמ' 668–678, {{DOI|10.1007/BF01449161}}|כיווון=שמאל}}
+* בכל קטע <math>(0,x)</math> יש יותר מ-<math>\alpha x</math> מספרים שאפשר להציגם כסכום של מספר ראשוני ושל חזקה <math>k</math>-ית של מספר שלם, כאשר <math>\alpha</math> הוא קבוע חיובי מסוים התלוי רק ב-<math>k</math>.
+* בכל קטע <math>(0,x)</math> יש יותר מ-<math>\beta x</math> מספרים שאפשר להציגם כסכום של מספר ראשוני ושל חזקה של <math>a</math>. כאן <math>a</math> הוא מספר שלם נתון ו-<math>\beta</math> הוא קבוע חיובי התלוי רק ב-<math>a</math>.
+הטענה השנייה היא זו שמקובל לכנות "משפט רומנוב", למשל בספרו של נתנסון.{{הערה|1=M. B. Nathanson, Additive Number Theory: The Classical Bases, Springer, 2013|כיווון=שמאל}}
+
+באופן מדויק, יהי
+:<math>d(x)=\frac{\left\vert \{n\le x:n=p+2^k,\ p\ \mathrm{prime},\ k\in\mathbb{N}\} \right\vert}{x}</math>
+ויהיו <math>\underline{d}=\liminf_{x\to\infty}d(x)</math> ו-<math>\overline{d}=\limsup_{x\to\infty}d(x)</math>. משפט רומנוב קובע ש-<math>\underline{d}>0</math>.{{הערה|שם=es|1=C. Elsholtz, J.-C. Schlage-Puchta, On Romanov's constant, Mathematische Zeitschrift 288 (3), 2018, עמ' 713–724, {{DOI|10.1007/s00209-017-1908-x}}|כיווון=שמאל}}
+
+לשם המחשה: מבין המספרים עד <math>10^7</math>, כ-45.8% הם מהצורה <math>p + 2^k</math>.
+
+== היסטוריה ==
+[[אלפונס דה פוליניאק]] כתב ב-1849 שכל מספר אי-זוגי גדול מ-3 אפשר לכתוב כסכום של ראשוני אי-זוגי ושל חזקה של 2. (עד מהרה הוא הבחין בדוגמה נגדית, 959.){{הערה|1=A. de Polignac, Recherches nouvelles sur les nombres premiers, Comptes rendus 29, 1849, עמ' 397–401|כיווון=שמאל}}{{הערה|1=הדוגמה הנגדית הקטנה ביותר היא 127, שהוא עצמו ראשוני; הדוגמה הנגדית הפריקה הקטנה ביותר היא <math>905 = 5 \cdot 181</math>, ואחריה <math>959 = 7 \cdot 137</math>.|כיווון=ימין}} זה המקרה <math>a=2</math> של הניסוח המקורי. הדוגמה הנגדית 959 הוזכרה למעשה גם במכתב של [[לאונרד אוילר]] ל[[כריסטיאן גולדבך]],{{הערה|1=L. Euler, [http://eulerarchive.maa.org/correspondence/letters/OO0879.pdf מכתב לגולדבך], 16 בדצמבר 1752|כיווון=שמאל}} אך הם עבדו בכיוון ההפוך, וניסו למצוא מספרים אי-זוגיים שאי אפשר להציג בצורה זו.
+
+ב-1934 הוכיח רומנוב את המשפט. הקבוע החיובי <math>\beta</math> במקרה <math>a=2</math> נקרא לימים '''קבוע רומנוב'''.{{הערה|שם=pintz|1=J. Pintz, A note on Romanov's constant, Acta Mathematica Hungarica 112 (1), 2006, עמ' 1–14, {{DOI|10.1007/s10474-006-0060-6}}|כיווון=שמאל}} נעשו הערכות שונות לקבוע, וכן ל-<math>\overline{d}</math>; תולדות השיפורים מפורטות בטבלה שלהלן.{{הערה|שם=es}} בפרט, מכיוון שהוכח ש-<math>\overline{d}</math> קטן מ-0.5, נובע שלמספרים האי-זוגיים שאי אפשר להציג בצורה זו יש צפיפות אסימפטוטית תחתונה חיובית.
+
+{| class="wikitable"
+|+ שיפורים של <math>\overline{d}</math> ו-<math>\underline{d}</math>
+! שנה
+! חסם תחתון ל-<math>\underline{d}</math>
+! חסם עליון ל-<math>\overline{d}</math>
+! מוכיח
+! הערות
+|-
+| 1950
+|
+| <math>0.5-5.06\times 10^{-80}</math>{{הערה|1=הערך המדויק הוא <math>0.5-\frac{1}{2^{241}\times 3\times 5\times 7\times 13\times 17\times 241}</math>.|כיווון=ימין}}
+| [[פאול ארדש]]
+| {{הערה|1=P. Erdős, On integers of the form 2<sup>k</sup>+p and some related problems, Summa Brasiliensis Mathematicae 2, 1950, עמ' 113–125|כיווון=שמאל}} ההוכחה הראשונה לכך שיש אינסוף מספרים אי-זוגיים שאינם מהצורה <math>2^k+p</math>, באמצעות סדרה חשבונית מפורשת
+|-
+| 2004
+| 0.0868
+|
+| צ'ן, סון
+| {{הערה|1=Y.-G. Chen, X.-G. Sun, On Romanoff's constant, Journal of Number Theory 106 (2), 2004, עמ' 275–284, {{DOI|10.1016/j.jnt.2003.11.009}}|כיווון=שמאל}}
+|-
+| 2006
+| 0.0933
+| 0.49094093{{הערה|1=הערך שצוטט הוא 0.4909409303984105956480078184, והוא מקורב בלבד.|כיווון=ימין}}
+| הבזיז'ה, רובלו
+| {{הערה|1=L. Habsieger, X.-F. Roblot, On integers of the form p+2<sup>k</sup>, Acta Arithmetica 122 (1), 2006, עמ' 45–50, {{DOI|10.4064/aa122-1-4}}|כיווון=שמאל}} מתייחס רק למספרים אי-זוגיים; לא מדויק, ראו הערה
+|-
+| 2006
+| 0.093626
+|
+| פינץ
+| {{הערה|שם=pintz}} במקור הוכח 0.9367, אך נמצאה שגיאה, ותיקונה נותן 0.093626
+|-
+| 2010
+| 0.0936275
+|
+| הבזיז'ה, סיבאק-פישלר
+| {{הערה|1=L. Habsieger, J. Sivak-Fischler, An effective version of the Bombieri–Vinogradov theorem, and applications to Chen's theorem and to sums of primes and powers of two, Archiv der Mathematik 95 (6), 2010, עמ' 557–566, {{DOI|10.1007/s00013-010-0202-5}}|כיווון=שמאל}}
+|-
+| 2018
+| 0.107648
+|
+| אלשולץ, שלאגה-פוכטה
+|
+|}
+
+== הכללות ==
+תוצאות אנלוגיות למשפט רומנוב ב[[שדה מספרים|שדות מספרים]] הוכיח ריגר ב-1961.{{הערה|1=G. J. Rieger, Verallgemeinerung zweier Sätze von Romanov aus der additiven Zahlentheorie, Mathematische Annalen 144 (1), 1961, עמ' 49–55, {{DOI|10.1007/BF01396540}}|כיווון=שמאל}} ב-2015 הוכח המשפט גם עבור פולינומים מעל שדות סופיים.{{הערה|1=I. E. Shparlinski, A. J. Weingartner, An explicit polynomial analogue of Romanoff's theorem, 2015, [https://arxiv.org/abs/1510.08991 arXiv:1510.08991]|כיווון=שמאל}} גם ב-2015 נמצאה סדרה חשבונית של שלמים גאוסיים שאי אפשר להציג אותם כסכום של ראשוני גאוסי ושל חזקה של <math>1+i</math>.{{הערה|1=M. G. Madritsch, S. Planitzer, Romanov's Theorem in Number Fields, [https://arxiv.org/abs/1512.04869 arXiv:1512.04869]|כיווון=שמאל}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האדיטיבית]]
