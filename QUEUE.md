@@ -38,7 +38,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Polignac's conjecture
 - [ ] First Hardy–Littlewood conjecture
 - [x] Andrica's conjecture
-- [ ] Legendre's three-square theorem
+- [x] Legendre's three-square theorem
 - [ ] Sum of two squares theorem
 - [ ] Multiplicative function
 - [ ] Completely multiplicative function
