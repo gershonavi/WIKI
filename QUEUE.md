@@ -20,7 +20,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Landau's function
 - [x] Totient summatory function
 - [x] Average order of an arithmetic function
-- [ ] Extremal orders of an arithmetic function
+- [x] Extremal orders of an arithmetic function
 - [x] Bell series
 - [ ] Generalized Riemann hypothesis
 - [ ] Particular values of the Riemann zeta function
