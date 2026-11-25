@@ -106,7 +106,7 @@ Additive number theory:
 - [x] Newton polygon
 - [x] Skolem–Mahler–Lech theorem
 - [x] Arithmetic dynamics
-- [ ] Drinfeld module
+- [x] Drinfeld module
 - [x] Formal group law
 - [x] Galois cohomology
 - [x] Tamagawa number
