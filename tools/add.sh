@@ -16,5 +16,5 @@ EOF
 python3 build.py | tail -1
 git add -A
 git -c user.name=gershonavi -c user.email=gershonavi@users.noreply.github.com commit -qm "Add: $he ($en)"
-git push -q 2>&1 | tail -1 || true
+for i in 1 2 3; do git push -q 2>/dev/null && break; sleep 3; done; git fetch -q; [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] || echo "PUSH FAILED"
 echo "published $he"
