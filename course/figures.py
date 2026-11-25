@@ -5631,6 +5631,343 @@ def _():
     save('18-8')
 
 
+# ---------- tools lesson T14: rings, ideals, field extensions ----------
+def _lattice(ax, R=4, d=-1, color=GR, s=10):
+    import itertools
+    pts = [(a, b) for a in range(-R, R + 1) for b in range(-R, R + 1)]
+    sq = math.sqrt(abs(d))
+    ax.scatter([a for a, b in pts], [b * sq for a, b in pts], s=s, color=color, zorder=2)
+    ax.axhline(0, color=GR, lw=.5); ax.axvline(0, color=GR, lw=.5); ax.set_aspect('equal')
+
+
+@fig('T14-e1')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.2, 4.2)); _lattice(ax, 3)
+    t = np.linspace(0, 2 * np.pi, 200); ax.plot(np.cos(t), np.sin(t), color=C2, lw=.8, ls='--')
+    for z, lab in [(1, '1'), (-1, '−1'), (1j, 'i'), (-1j, '−i')]:
+        ax.plot(z.real, z.imag, 'o', color=C2, ms=8, zorder=3); ax.text(z.real + .15, z.imag + .15, lab, color=C2)
+    ax.set_title('Z[i]: units have norm a² + b² = 1', fontsize=9)
+    save('T14-e1')
+
+
+@fig('T14-e2')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.6, 4.6)); cols = [C1, C3, C4, C2, '#9467bd']
+    for a in range(-5, 6):
+        for b in range(-5, 6):
+            r = (a - 2 * b) % 5
+            ax.plot(a, b, 'o', color=cols[r], ms=7 if r == 0 else 4, zorder=3 if r == 0 else 2)
+    v1, v2 = np.array([2, 1]), np.array([-1, 2])
+    ax.add_patch(plt.Polygon([[0, 0], v1, v1 + v2, v2], fc=C1, alpha=.12, ec=C1))
+    ax.text(2.1, 1.1, '2+i'); ax.text(-1.4, 2.2, 'i(2+i)')
+    ax.set_aspect('equal'); ax.axhline(0, color=GR, lw=.5); ax.axvline(0, color=GR, lw=.5)
+    ax.set_title('ideal (2+i): big blue points; 5 colours = 5 classes', fontsize=9)
+    save('T14-e2')
+
+
+@fig('T14-e3')
+def _():
+    fig_, ax = plt.subplots(figsize=(5.0, 3.4)); ax.axis('off'); ax.set_xlim(0, 10); ax.set_ylim(0, 6)
+    def B(x, y, t): ax.text(x, y, t, ha='center', va='center', fontsize=10, bbox=dict(boxstyle='round,pad=0.3', fc='white', ec=C1))
+    B(5, 5.3, 'Q(√2, √3)'); B(2, 3, 'Q(√2)'); B(5, 3, 'Q(√6)'); B(8, 3, 'Q(√3)'); B(5, .7, 'Q')
+    for x in (2, 5, 8):
+        ax.plot([x, 5], [3.35, 4.95], color=GR); ax.plot([x, 5], [2.65, 1.05], color=GR)
+        ax.text((x + 5) / 2 - .3, 4.2, '2', fontsize=8, color=C2); ax.text((x + 5) / 2 - .3, 1.8, '2', fontsize=8, color=C2)
+    ax.text(9.2, 5.3, 'degree 4', fontsize=8, color=C2)
+    save('T14-e3')
+
+
+@fig('T14-e4')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.2, 4.2))
+    t = np.linspace(0, 2 * np.pi, 200); ax.plot(np.cos(t), np.sin(t), color=GR, lw=.6)
+    z = [np.exp(2j * np.pi * k / 5) for k in range(5)]
+    for k in range(5):
+        ax.plot(z[k].real, z[k].imag, 'o', color=C1 if k else GR, ms=8); ax.text(1.12 * z[k].real - .08, 1.12 * z[k].imag, f'ζ^{k}' if k > 1 else ('ζ' if k else '1'))
+    order = [1, 2, 4, 3, 1]
+    for a, b in zip(order, order[1:]):
+        ax.annotate('', xy=(z[b].real, z[b].imag), xytext=(z[a].real, z[a].imag), arrowprops=dict(arrowstyle='->', color=C2, connectionstyle='arc3,rad=0.15'))
+    ax.set_aspect('equal'); ax.axis('off'); ax.set_title('σ₂: ζ ↦ ζ²  (order 4)', fontsize=9)
+    save('T14-e4')
+
+
+@fig('T14-1')
+def _():
+    ax = plt.gca(); a = np.linspace(-12, 12, 800)
+    for s, c in [(1, C1), (-1, C3)]:
+        b2 = (a ** 2 - s) / 2; m = b2 >= 0
+        ax.plot(a[m], np.sqrt(b2[m]), color=c, lw=.8); ax.plot(a[m], -np.sqrt(b2[m]), color=c, lw=.8)
+    u = 1 + math.sqrt(2); pts = []
+    for k in range(-4, 5):
+        x = u ** k; xb = (-1 / u) ** k; A, B_ = (x + xb) / 2, (x - xb) / (2 * math.sqrt(2))
+        for sg in (1, -1): pts.append((sg * A, sg * B_))
+    ax.plot([p[0] for p in pts], [p[1] for p in pts], 'o', color=C2, ms=4)
+    ax.set_xlim(-12, 12); ax.set_ylim(-9, 9); ax.set_xlabel('a'); ax.set_ylabel('b')
+    ax.set_title('a² − 2b² = 1 (blue), = −1 (green); units ±(1+√2)^k in red', fontsize=9)
+    save('T14-1')
+
+
+@fig('T14-2')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.4, 4.0))
+    for a in range(-1, 6):
+        for b in range(-2, 3):
+            ax.plot(a, b, '.', color=GR)
+    w = (47 - 1j) / 13; ax.plot(w.real, w.imag, '*', color=C2, ms=12); ax.text(w.real + .1, w.imag + .25, 'α/β ≈ 3.62−0.08i', color=C2, fontsize=8)
+    ax.plot(4, 0, 'o', color=C1, ms=8); ax.text(4.1, -.4, 'q = 4', color=C1, fontsize=8)
+    ax.add_patch(plt.Circle((4, 0), .707, fill=False, ec=C1, ls='--'))
+    ax.set_aspect('equal'); ax.set_title('rounding to the nearest lattice point: |α/β − q| ≤ 1/√2', fontsize=8)
+    save('T14-2')
+
+
+@fig('T14-3')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(6.6, 3.2))
+    def table(ax, n, title):
+        els = [(a, b) for a in range(n) for b in range(n)]
+        M = np.zeros((len(els), len(els)))
+        for i, (a, b) in enumerate(els):
+            for j, (c, d) in enumerate(els):
+                M[i, j] = 1 if ((a * c - b * d) % n, (a * d + b * c) % n) == (0, 0) else (2 if ((a * c - b * d) % n, (a * d + b * c) % n) == (1, 0) else 0)
+        ax.imshow(M, cmap=matplotlib.colors.ListedColormap(['white', C2, C3]))
+        ax.set_title(title, fontsize=8); ax.set_xticks([]); ax.set_yticks([])
+    table(axs[0], 3, 'Z[i]/(3): green = product 1, red = 0')
+    table(axs[1], 5, 'Z[i]/(5): red off the edges = zero divisors')
+    save('T14-3')
+
+
+@fig('T14-4')
+def _():
+    ax = plt.gca(); x = np.linspace(-.5, 3.2, 400); ax.plot(x, x ** 3 - 3 * x ** 2 + 3 * x - 3, color=C1)
+    r = 1 + 2 ** (1 / 3); ax.plot(r, 0, 'o', color=C2); ax.text(r + .05, .6, '1 + ∛2', color=C2)
+    ax.axhline(0, color=GR, lw=.6); ax.set_xlabel('x'); ax.set_title('x³ − 3x² + 3x − 3 = (x − 1)³ − 2', fontsize=9)
+    save('T14-4')
+
+
+@fig('T14-5')
+def _():
+    fig_, ax = plt.subplots(figsize=(6.4, 3.2)); ax.axis('off'); ax.set_xlim(0, 12); ax.set_ylim(0, 6)
+    def B(x, y, t, c=C1): ax.text(x, y, t, ha='center', va='center', fontsize=8, bbox=dict(boxstyle='round,pad=0.3', fc='white', ec=c))
+    B(3, 5.3, '{1}', C2); B(1, 3, '{1, σ}', C2); B(3, 3, '{1, στ}', C2); B(5, 3, '{1, τ}', C2); B(3, .7, 'G = {1, σ, τ, στ}', C2)
+    B(9, .7, 'Q(√2, √3)'); B(7, 3, 'Q(√2)'); B(9, 3, 'Q(√6)'); B(11, 3, 'Q(√3)'); B(9, 5.3, 'Q')
+    for x in (1, 3, 5):
+        ax.plot([x, 3], [3.35, 4.95], color=GR); ax.plot([x, 3], [2.65, 1.05], color=GR)
+    for x in (7, 9, 11):
+        ax.plot([x, 9], [3.35, 4.95], color=GR); ax.plot([x, 9], [2.65, 1.05], color=GR)
+    ax.annotate('', xy=(6.3, 3), xytext=(5.7, 3), arrowprops=dict(arrowstyle='<->', color=C3))
+    ax.text(6, 3.5, 'fixed field', fontsize=7, ha='center', color=C3)
+    save('T14-5')
+
+
+@fig('T14-6')
+def _():
+    ax = plt.gca(); vals = sorted({a * a + 5 * b * b for a in range(0, 8) for b in range(0, 4)})
+    vals = [v for v in vals if v <= 30]
+    ax.bar(range(0, 31), [1 if v in vals else 0 for v in range(0, 31)], color=[C1 if v in vals else C2 for v in range(31)])
+    for v in (2, 3): ax.text(v, .1, '✗', ha='center', color=C2, fontsize=12)
+    ax.set_xlabel('n'); ax.set_yticks([]); ax.set_title('which n ≤ 30 are norms a² + 5b²? (blue = yes)', fontsize=9)
+    save('T14-6')
+
+
+# ---------- lesson 19: algebraic number theory ----------
+def _hform(D):
+    """reduced primitive forms (a,b,c) of discriminant D<0"""
+    out = []; a = 1
+    while 3 * a * a <= -D:
+        for b in range(-a + 1, a + 1):
+            if (b * b - D) % (4 * a) == 0:
+                c = (b * b - D) // (4 * a)
+                if c < a or gcd(gcd(a, abs(b)), c) != 1 or (b < 0 and a == c):
+                    continue
+                out.append((a, b, c))
+        a += 1
+    return out
+
+
+def _sqfree(n):
+    return all(n % (p * p) for p in range(2, int(n ** .5) + 1))
+
+
+@fig('19-e1')
+def _():
+    fig_, ax = plt.subplots(figsize=(5.4, 3.6)); s5 = math.sqrt(5)
+    for a in range(-4, 5):
+        for b in range(-2, 3):
+            ax.plot(a, b * s5, 'o', color=C1 if a * a + 5 * b * b in (4, 6, 9) else GR, ms=5)
+    t = np.linspace(0, 2 * np.pi, 300)
+    for n, c in [(2, C2), (3, C4), (6, C3)]:
+        ax.plot(np.sqrt(n) * np.cos(t), np.sqrt(n) * np.sin(t), color=c, lw=1, label=f'a² + 5b² = {n}')
+    for z, lab in [((2, 0), '2'), ((-3, 0), '3'), ((1, s5), '1+√−5'), ((1, -s5), '1−√−5')]:
+        ax.text(z[0] + .1, z[1] + .25, lab, fontsize=8)
+    ax.set_aspect('equal'); ax.legend(fontsize=7, loc='upper right'); ax.set_title('no lattice point has norm 2 or 3', fontsize=9)
+    save('19-e1')
+
+
+@fig('19-e2')
+def _():
+    fig_, axs = plt.subplots(1, 3, figsize=(7.2, 2.8))
+    bases = [((1, 0), (0, 1), 'Z[i]'), ((1, 0), (.5, math.sqrt(3) / 2), 'Z[ω],  ω = (1+√−3)/2'), ((1, 0), (0, math.sqrt(5)), 'Z[√−5]')]
+    for ax, (u, v, t) in zip(axs, bases):
+        P = [(a * u[0] + b * v[0], a * u[1] + b * v[1]) for a in range(-4, 5) for b in range(-4, 5)]
+        P = [p for p in P if abs(p[0]) <= 2.6 and abs(p[1]) <= 2.6]
+        ax.plot([p[0] for p in P], [p[1] for p in P], 'o', color=C1, ms=4)
+        ax.add_patch(plt.Polygon([[0, 0], u, (u[0] + v[0], u[1] + v[1]), v], fc=C4, alpha=.3))
+        ax.set_aspect('equal'); ax.set_xlim(-2.7, 2.7); ax.set_ylim(-2.7, 2.7); ax.set_title(t, fontsize=8); ax.set_xticks([]); ax.set_yticks([])
+    save('19-e2')
+
+
+@fig('19-e3')
+def _():
+    fig_, ax = plt.subplots(figsize=(5.0, 3.8)); s5 = math.sqrt(5)
+    for a in range(-5, 6):
+        for b in range(-2, 3):
+            inP = (a - b) % 2 == 0          # a + b√−5 ∈ (2, 1+√−5)  ⇔  a ≡ b (mod 2)
+            ax.plot(a, b * s5, 'o', color=C1 if inP else GR, ms=7 if inP else 3)
+    ax.add_patch(plt.Polygon([[0, 0], [2, 0], [3, s5], [1, s5]], fc=C1, alpha=.15, ec=C1))
+    ax.text(2.1, -.6, '2'); ax.text(1.1, s5 + .3, '1+√−5')
+    ax.set_aspect('equal'); ax.set_title('p₂ = {a + b√−5 : a ≡ b (mod 2)}: index 2', fontsize=9)
+    save('19-e3')
+
+
+@fig('19-e4')
+def _():
+    fig_, ax = plt.subplots(figsize=(6.6, 3.0))
+    sq20 = {1, 3, 7, 9}
+    ps = [p for p in PR if p < 200]
+    for p in ps:
+        if p in (2, 5): c, y = C2, 0
+        elif p % 20 in sq20: c, y = C1, 1
+        else: c, y = GR, -1
+        ax.plot(p, y, 'o', color=c, ms=5)
+    ax.set_yticks([-1, 0, 1]); ax.set_yticklabels(['inert', 'ramified', 'split'])
+    ax.set_xlabel('p'); ax.set_title('Q(√−5): split ⇔ p ≡ 1, 3, 7, 9 (mod 20)', fontsize=9)
+    save('19-e4')
+
+
+@fig('19-e5')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.4, 4.4)); s5 = math.sqrt(5)
+    for a in range(-4, 5):
+        for b in range(-2, 3):
+            ax.plot(a, b * s5, 'o', color=C1, ms=4)
+    ax.add_patch(plt.Polygon([[0, 0], [1, 0], [1, s5], [0, s5]], fc=C4, alpha=.35))
+    from matplotlib.patches import Ellipse
+    ax.add_patch(Ellipse((0, 0), 2 * 2.3, 2 * 2.9, fc='none', ec=C2, lw=1.5))
+    ax.text(-1.5, 3.1, 'area > 4 · area of cell', color=C2, fontsize=8)
+    ax.set_aspect('equal'); ax.set_xlim(-4, 4); ax.set_ylim(-4.6, 4.6); ax.set_title('Minkowski: big symmetric convex set ∋ lattice point ≠ 0', fontsize=8)
+    save('19-e5')
+
+
+@fig('19-e6')
+def _():
+    ax = plt.gca(); ds = [d for d in range(1, 401) if _sqfree(d)]
+    hs = [len(_hform(-d if (-d) % 4 == 1 else -4 * d)) for d in ds]
+    ax.plot(ds, hs, '.', color=C1, ms=3)
+    ones = [d for d, h in zip(ds, hs) if h == 1]
+    ax.plot(ones, [1] * len(ones), 'o', color=C2, ms=5)
+    for d in ones:
+        if d >= 19: ax.text(d, 2.2, str(d), fontsize=7, ha='center', color=C2)
+    x = np.linspace(1, 400, 200); ax.plot(x, np.sqrt(4 * x) / np.pi, color=GR, ls='--', lw=.8, label='~ √|Δ| / π')
+    ax.set_xlabel('d'); ax.set_ylabel('h(Q(√−d))'); ax.legend(fontsize=7); ax.set_title('class numbers; h = 1 only for 9 fields', fontsize=9)
+    save('19-e6')
+
+
+def _chi_m23():
+    sq = set((k * k) % 23 for k in range(1, 23))
+    return np.array([0] + [1 if r in sq else -1 for r in range(1, 23)])
+
+
+@fig('19-e7')
+def _():
+    ax = plt.gca(); n = np.arange(1, 3001); c = _chi_m23()[n % 23]
+    ax.plot(n, np.cumsum(c / n), color=C1, lw=.8)
+    ax.axhline(3 * np.pi / np.sqrt(23), color=C2, ls='--', label='2π·3 / (2√23) ≈ 1.9652')
+    ax.set_xlabel('N'); ax.set_ylim(1.3, 2.4); ax.legend(fontsize=8); ax.set_title('Σ_{n≤N} χ₋₂₃(n)/n', fontsize=9)
+    save('19-e7')
+
+
+@fig('19-1')
+def _():
+    ax = plt.gca(); ax.bar(['N(p₂)', 'N(p₃)', 'N(p₂)·N(p₃)', 'N(1+√−5)'], [2, 3, 6, 6], color=[C1, C4, C3, C2])
+    ax.set_title('norms multiply', fontsize=9)
+    save('19-1')
+
+
+@fig('19-2')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.6, 4.6))
+    for a in range(-8, 9):
+        for b in range(-8, 9):
+            n = a * a + b * b
+            g = (isp(n)) or (b == 0 and isp(abs(a)) and abs(a) % 4 == 3) or (a == 0 and isp(abs(b)) and abs(b) % 4 == 3)
+            if g: ax.plot(a, b, 's', color=C2 if (a == 0 or b == 0) else C1, ms=4)
+    ax.set_aspect('equal'); ax.set_title('Gaussian primes |a|, |b| ≤ 8', fontsize=9); ax.axhline(0, color=GR, lw=.4); ax.axvline(0, color=GR, lw=.4)
+    save('19-2')
+
+
+@fig('19-3')
+def _():
+    ax = plt.gca(); D = -47; F = _hform(D)
+    b = np.linspace(-1, 1, 200); ax.fill_between(b, np.abs(b), 1.5, color=C4, alpha=.15)
+    ax.plot(b, np.abs(b), color=GR, lw=.8)
+    for (a_, b_, c_) in F:
+        ax.plot(b_ / a_, a_ / math.sqrt(-D) * 2, 'o', color=C1)
+        ax.text(b_ / a_ + .03, a_ / math.sqrt(-D) * 2 + .04, f'({a_},{b_},{c_})', fontsize=7)
+    ax.set_xlabel('b / a'); ax.set_ylabel('scaled a'); ax.set_title('the 5 reduced forms of discriminant −47', fontsize=9)
+    save('19-3')
+
+
+@fig('19-4')
+def _():
+    ax = plt.gca(); n = np.arange(0, 46); v = n * n + n + 41
+    ax.bar(n, v, color=[C3 if isp(int(x)) else C2 for x in v])
+    ax.set_xlabel('n'); ax.set_title('n² + n + 41: green = prime', fontsize=9)
+    save('19-4')
+
+
+def _fund_unit_log(d):
+    """log of the fundamental unit of Q(sqrt d), via the continued fraction of sqrt(d)"""
+    a0 = int(math.isqrt(d)); m, dd, a = 0, 1, a0; p0, p1, q0, q1 = 1, a0, 0, 1
+    for _ in range(2000):
+        v = p1 * p1 - d * q1 * q1
+        if d % 4 == 1 and abs(d) > 5:
+            pass
+        if v in (1, -1):
+            best = math.log(p1 + q1 * math.sqrt(d))
+            if d % 4 == 1:   # a smaller unit (x + y sqrt d)/2 with x, y odd may exist
+                for y in range(1, q1 + 1, 2):
+                    xs = [math.isqrt(d * y * y + s_) for s_ in (-4, 4) if d * y * y + s_ > 0 and math.isqrt(d * y * y + s_) ** 2 == d * y * y + s_]
+                    if xs:
+                        return math.log((min(xs) + y * math.sqrt(d)) / 2)
+            return best
+        m = dd * a - m; dd = (d - m * m) // dd; a = (a0 + m) // dd
+        p0, p1 = p1, a * p1 + p0; q0, q1 = q1, a * q1 + q0
+    return float('nan')
+
+
+@fig('19-5')
+def _():
+    ax = plt.gca(); ds = [d for d in range(2, 101) if _sqfree(d)]
+    L = [_fund_unit_log(d) for d in ds]
+    ax.bar(ds, L, color=[C2 if d in (13, 19, 94) else C1 for d in ds])
+    ax.set_xlabel('d'); ax.set_ylabel('log ε_d'); ax.set_title('size of the fundamental unit (red: d = 13, 19, 94)', fontsize=9)
+    save('19-5')
+
+
+@fig('19-6')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if p < 120 and p != 5]
+    f = []
+    for p in ps:
+        k, x = 1, p % 5
+        while x != 1: x = x * p % 5; k += 1
+        f.append(k)
+    ax.scatter(ps, f, c=[{1: C3, 2: C4, 4: C1}[k] for k in f], s=18)
+    ax.plot([5], [1], 'x', color=C2, ms=9); ax.text(6, 1.2, 'p = 5: e = 4', color=C2, fontsize=8)
+    ax.set_yticks([1, 2, 4]); ax.set_xlabel('p'); ax.set_ylabel('f = order of p mod 5'); ax.set_title('Q(ζ₅): g = 4/f', fontsize=9)
+    save('19-6')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
