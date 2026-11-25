@@ -1,0 +1,93 @@
+ב[[תורת המספרים]], '''ההערכה ה-<math>p</math>-אדית''' או '''הסדר ה-<math>p</math>-אדי''' של [[מספר שלם]] <math>n</math> הוא המעריך של החזקה הגבוהה ביותר של ה[[מספר ראשוני|מספר הראשוני]] <math>p</math> שמחלקת את <math>n</math>. מסמנים אותה <math>\nu_p(n)</math>. באופן שקול, <math>\nu_p(n)</math> הוא המעריך שבו <math>p</math> מופיע בפירוק לגורמים ראשוניים של <math>n</math>.
+
+ההערכה ה-<math>p</math>-אדית היא [[הערכה (אלגברה)|הערכה]], והיא נותנת מקבילה ל[[ערך מוחלט|ערך המוחלט]] הרגיל; אבל בניגוד לערך המוחלט הרגיל, הערך המוחלט ה-<math>p</math>-אדי אינו ארכימדי. ההשלמה של המספרים הרציונליים ביחס לערך המוחלט הרגיל נותנת את ה[[מספר ממשי|מספרים הממשיים]] <math>\mathbb R</math>, ואילו ההשלמה של המספרים הרציונליים ביחס לערך המוחלט ה-<math>p</math>-אדי נותנת את ה[[מספר p-אדי|מספרים ה-<math>p</math>-אדיים]] <math>\mathbb Q_p</math>.{{הערה|1=D. S. Dummit, R. M. Foote, ''Abstract Algebra'', 3rd ed., Wiley, 2003, pp. 758–759|כיווון=שמאל}}
+
+== הגדרה ותכונות ==
+יהי <math>p</math> מספר ראשוני.
+
+=== מספרים שלמים ===
+'''ההערכה ה-<math>p</math>-אדית''' של מספר שלם <math>n</math> מוגדרת כ-
+:<math>\nu_p(n)=
+\begin{cases}
+\max\{k \in \mathbb{N}_0 : p^k \mid n\} & n \neq 0,\\
+\infty & n=0,
+\end{cases}</math>
+כאשר <math>\mathbb{N}_0</math> היא קבוצת המספרים הטבעיים (כולל אפס) ו-<math>m \mid n</math> פירושו ש-<math>m</math> מחלק את <math>n</math>. בפרט, <math>\nu_p</math> היא פונקציה <math>\nu_p \colon \mathbb{Z} \to \mathbb{N}_0 \cup\{\infty\}</math>.{{הערה|1=K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', Springer, New York, 2000, p. 3|כיווון=שמאל}}
+
+לדוגמה, <math>\nu_2(-12) = 2</math>, <math>\nu_3(-12) = 1</math> ו-<math>\nu_5(-12) = 0</math>, משום ש-<math>|{-12}| = 12 = 2^2 \cdot 3^1 \cdot 5^0</math>.
+
+לפעמים משתמשים בסימון <math>p^k \parallel n</math> כדי לומר ש-<math>k = \nu_p(n)</math>.{{הערה|1=I. Niven, H. S. Zuckerman, H. L. Montgomery, ''An Introduction to the Theory of Numbers'', 5th ed., Wiley, 1991, p. 4|כיווון=שמאל}}
+
+אם <math>n</math> מספר שלם חיובי, אז <math>\nu_p(n) \leq \log_p n</math>; זה נובע ישירות מכך ש-<math>n \geq p^{\nu_p(n)}</math>.
+
+=== מספרים רציונליים ===
+אפשר להרחיב את ההערכה ה-<math>p</math>-אדית למספרים ה[[מספר רציונלי|רציונליים]], כפונקציה
+:<math>\nu_p : \mathbb{Q} \to \mathbb{Z} \cup\{\infty\}</math>{{הערה|1=עם יחס הסדר הרגיל, <math>\infty \gt n</math>, וכללי החשבון <math>\infty + n = n + \infty = \infty</math>.}}
+המוגדרת על ידי
+:<math>\nu_p\left(\frac{r}{s}\right)=\nu_p(r)-\nu_p(s).</math>
+לדוגמה, <math>\nu_2 \bigl(\tfrac{9}{8}\bigr) = -3</math> ו-<math>\nu_3 \bigl(\tfrac{9}{8}\bigr) = 2</math>, משום ש-<math>\tfrac{9}{8} = 2^{-3}\cdot 3^2</math>.
+
+כמה תכונות:
+:<math>\nu_p(r\cdot s) = \nu_p(r) + \nu_p(s),</math>
+:<math>\nu_p(r+s) \geq \min\bigl\{ \nu_p(r), \nu_p(s)\bigr\}.</math>
+יתרה מזו, אם <math>\nu_p(r) \neq \nu_p(s)</math>, אז
+:<math>\nu_p(r+s)= \min\bigl\{ \nu_p(r), \nu_p(s)\bigr\}.</math>
+'''דוגמאות.''' <math>\nu_2(4 + 6) = \nu_2(10) = 1 = \min\{2, 1\}</math>, כמו שמבטיחה התכונה האחרונה. לעומת זאת, כשההערכות שוות ההערכה של הסכום יכולה לגדול: <math>\nu_2(4 + 4) = \nu_2(8) = 3 \gt 2</math>, ו-<math>\nu_3(1 + 2) = 1 \gt 0</math>.
+
+=== נוסחה להערכה ה-<math>p</math>-אדית של מספרים שלמים ===
+[[נוסחת לז'נדר]] קובעת ש-
+:<math>\nu_p(n!)=\sum_{i=1}^{\infty}{\left\lfloor{\frac{n}{p^i}}\right\rfloor}.</math>
+לדוגמה, <math>\nu_5(100!) = \lfloor 100/5\rfloor + \lfloor 100/25\rfloor = 20 + 4 = 24</math>, ולכן <math>100!</math> מסתיים ב-24 אפסים (בבסיס 10 מספר האפסים נקבע על ידי <math>\min\{\nu_2, \nu_5\} = \nu_5</math>).
+
+לכל מספר שלם חיובי <math>n</math> מתקיים <math>n = \frac{n!}{(n-1)!}</math>, ולכן <math>\nu_p(n)=\nu_p(n!)-\nu_p((n-1)!)</math>. מכאן
+:<math>\nu_p(n)=\sum_{i=1}^{\infty}{\bigg(\left\lfloor{\frac{n}{p^i}}\right\rfloor-\left\lfloor{\frac{n-1}{p^i}}\right\rfloor\bigg)}.</math>
+את הטור האינסופי הזה אפשר לקצר ל-<math>\sum_{i=1}^{\lfloor\log_p n\rfloor}{\bigg(\left\lfloor{\frac{n}{p^i}}\right\rfloor-\left\lfloor{\frac{n-1}{p^i}}\right\rfloor\bigg)}</math> (כל מחובר הוא 1 אם <math>p^i \mid n</math> ו-0 אחרת). את הנוסחה אפשר להרחיב גם לשלמים שליליים:
+:<math>\nu_p(n) =\sum_{i=1}^{\lfloor\log_p |n|\rfloor}{\bigg(\left\lfloor{\frac{|n|}{p^i}}\right\rfloor-\left\lfloor{\frac{|n|-1}{p^i}}\right\rfloor\bigg)}.</math>
+
+'''הרמת המעריך.''' לחישוב ההערכה של הפרשים של חזקות יש כלל נוח: אם <math>p</math> ראשוני אי-זוגי שמחלק את <math>a - b</math> ואינו מחלק את <math>ab</math>, אז <math>\nu_p(a^n - b^n) = \nu_p(a - b) + \nu_p(n)</math>. לדוגמה, <math>\nu_3(10^9 - 1) = \nu_3(9) + \nu_3(9) = 4</math>, ואכן <math>999999999 = 3^4\cdot 37\cdot 333667</math>.
+
+== הערך המוחלט ה-<math>p</math>-אדי ==
+'''הערך המוחלט ה-<math>p</math>-אדי''' (או '''הנורמה ה-<math>p</math>-אדית''',{{הערה|1=M. R. Murty, ''Problems in Analytic Number Theory'', Graduate Texts in Mathematics '''206''', Springer, New York, 2001, pp. 147–148|כיווון=שמאל}} אף על פי שאינה נורמה במובן של האנליזה) על <math>\mathbb Q</math> הוא הפונקציה
+:<math>|\cdot|_p \colon \mathbb Q \to \mathbb R_{\ge 0}</math>
+המוגדרת על ידי
+:<math>|r|_p = p^{-\nu_p(r)}.</math>
+לכן <math>|0|_p = p^{-\infty} = 0</math> לכל <math>p</math>, ולדוגמה <math>|{-12}|_2 = 2^{-2} = \tfrac{1}{4}</math> ו-<math>\bigl|\tfrac{9}{8}\bigr|_2 = 2^{-(-3)} = 8</math>. מספר "קטן" <math>p</math>-אדית אם הוא מתחלק בחזקה גבוהה של <math>p</math>: למשל <math>|3^{10}|_3 = 3^{-10}</math>.
+
+לערך המוחלט ה-<math>p</math>-אדי יש התכונות הבאות:
+:{| class="wikitable"
+|-
+| אי-שליליות || <math>|r|_p \geq 0</math>
+|-
+| חיוביות מוגדרת || <math>|r|_p = 0 \iff r = 0</math>
+|-
+| כפליות || <math>|r s|_p = |r|_p|s|_p</math>
+|-
+| אי-ארכימדיות || <math>|r+s|_p \leq \max\left(|r|_p, |s|_p\right)</math>
+|}
+מהכפליות נובע ש-<math>|1|_p=1=|{-1}|_p</math>, ולכן גם <math>|{-r}|_p = |r|_p</math>. התת-אדיטיביות <math>|r+s|_p \leq |r|_p + |s|_p</math> נובעת מ[[אי-שוויון המשולש]] האי-ארכימדי <math>|r+s|_p \leq \max\left(|r|_p, |s|_p\right)</math>.
+
+=== נוסחת המכפלה ===
+לבחירת הבסיס <math>p</math> בחזקה <math>p^{-\nu_p(r)}</math> אין השפעה על רוב התכונות, אבל היא מאפשרת את '''נוסחת המכפלה''':
+:<math>\prod_{0, p} |r|_p = 1</math> לכל <math>r \in \mathbb Q^\times</math>,
+כאשר המכפלה היא על כל הראשוניים <math>p</math> ועל הערך המוחלט הרגיל, שמסומן כאן <math>|r|_0</math>. זה נובע פשוט מהפירוק לגורמים ראשוניים: כל חזקת ראשוני <math>p^k</math> תורמת את ההופכי שלה לערך המוחלט ה-<math>p</math>-אדי, והערך המוחלט הארכימדי הרגיל מבטל את כולם. לדוגמה, עבור <math>r = -12</math>: <math>|{-12}|_0 \cdot |{-12}|_2 \cdot |{-12}|_3 = 12 \cdot \tfrac14 \cdot \tfrac13 = 1</math>, ושאר הגורמים שווים ל-1. עבור <math>r = \tfrac98</math>: <math>\tfrac98 \cdot 8 \cdot \tfrac19 = 1</math>.
+
+לפי [[משפט אוסטרובסקי]], הערך המוחלט הרגיל והערכים המוחלטים ה-<math>p</math>-אדיים שמופיעים בנוסחה הם כל הערכים המוחלטים על המספרים הרציונליים, עד כדי שקילות. אפשר להשתמש בנוסחת מכפלה דומה כדי להגדיר באופן אקסיומטי [[שדה גלובלי|שדות גלובליים]], שהמספרים הרציונליים הם הדוגמה הפשוטה ביותר להם.
+
+=== מטריקה והשלמה ===
+אפשר להגדיר על הקבוצה <math>\mathbb Q</math> [[מרחב מטרי|מטריקה]] (לא ארכימדית ואינווריאנטית להזזות)
+:<math>d \colon \mathbb Q \times \mathbb Q \to \mathbb R_{\ge 0},\qquad d(r,s) = |r-s|_p.</math>
+ה[[מרחב מטרי שלם|השלמה]] של <math>\mathbb Q</math> ביחס למטריקה הזו נותנת את הקבוצה <math>\mathbb Q_p</math> של המספרים ה-<math>p</math>-אדיים. כמו המספרים הרציונליים, הם יוצרים שדה, ואפשר להרחיב אליהם את ההערכה ה-<math>p</math>-אדית ואת הערך המוחלט ה-<math>p</math>-אדי, כך ש-<math>\mathbb Q_p</math> הוא שדה שלם עם הערכה.
+
+'''דוגמה: טור שמתכנס <math>p</math>-אדית.''' בערך המוחלט ה-3-אדי, הסכומים החלקיים <math>s_n = 1 + 3 + 9 + \cdots + 3^{n-1} = \tfrac{3^n - 1}{2}</math> מתכנסים ל-<math>-\tfrac12</math>, משום ש-
+:<math>\left|s_n - \left(-\tfrac12\right)\right|_3 = \left|\tfrac{3^n}{2}\right|_3 = 3^{-n} \to 0.</math>
+כלומר, ב-<math>\mathbb Q_3</math> מתקיים <math>1 + 3 + 9 + 27 + \cdots = -\tfrac12</math> – בהתאם לנוסחה לטור הנדסי <math>\tfrac{1}{1-3}</math>, שתקפה כאן משום ש-<math>|3|_3 \lt 1</math>.
+
+== ראו גם ==
+* [[משפט אוסטרובסקי]]
+* [[נוסחת לז'נדר]] – להערכה ה-<math>p</math>-אדית של <math>n!</math>
+* [[נורמה של אידיאל]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]

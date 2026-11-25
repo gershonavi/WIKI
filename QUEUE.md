@@ -79,7 +79,7 @@ Additive number theory:
 - [x] Splitting of prime ideals in Galois extensions
 - [x] Ramification (mathematics)
 - [x] Ramification group
-- [ ] P-adic valuation
+- [x] P-adic valuation
 - [ ] Adele ring
 - [ ] Idele group
 - [ ] Heegner number
