@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (251)
+## ערכים (254)
 
 ### אנליזה מרוכבת
 
@@ -207,6 +207,8 @@
 * [נוסחת רימן-זיגל](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%96%D7%99%D7%92%D7%9C.md) – Riemann–Siegel formula
 * [ערכים מיוחדים של פונקציות L](pages/%D7%A2%D7%A8%D7%9B%D7%99%D7%9D%20%D7%9E%D7%99%D7%95%D7%97%D7%93%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20L.md) – Special values of L-functions
 * [ערכים מיוחדים של פונקציית זטא של רימן](pages/%D7%A2%D7%A8%D7%9B%D7%99%D7%9D%20%D7%9E%D7%99%D7%95%D7%97%D7%93%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%99%D7%9E%D7%9F.md) – Particular values of the Riemann zeta function
+* [פונקציית L מוטיבית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%9E%D7%95%D7%98%D7%99%D7%91%D7%99%D7%AA.md) – Motivic L-function
+* [פונקציית L סטנדרטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%A1%D7%98%D7%A0%D7%93%D7%A8%D7%98%D7%99%D7%AA.md) – Standard L-function
 * [פונקציית L של שימיזו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%A9%D7%9C%20%D7%A9%D7%99%D7%9E%D7%99%D7%96%D7%95.md) – Shimizu L-function
 * [פונקציית Z](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20Z.md) – Z function
 * [פונקציית אטא של דיריכלה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Dirichlet eta function
@@ -317,6 +319,7 @@
 
 * [בעיית מספר המחלקה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%94.md) – Class number problem
 * [עבודת הדוקטורט של טייט](pages/%D7%A2%D7%91%D7%95%D7%93%D7%AA%20%D7%94%D7%93%D7%95%D7%A7%D7%98%D7%95%D7%A8%D7%98%20%D7%A9%D7%9C%20%D7%98%D7%99%D7%99%D7%98.md) – Tate's thesis
+* [פונקציית L אקוויווריאנטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%A7%D7%95%D7%95%D7%99%D7%95%D7%95%D7%A8%D7%99%D7%90%D7%A0%D7%98%D7%99%D7%AA.md) – Equivariant L-function
 * [תורת המספרים האנליטית המופשטת](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA%20%D7%94%D7%9E%D7%95%D7%A4%D7%A9%D7%98%D7%AA.md) – Abstract analytic number theory
 
 ### תורת המספרים האנליטית
