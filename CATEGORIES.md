@@ -11,7 +11,7 @@
 * [השערות מתמטיות](categories/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%95%D7%AA.md) (22)
 * [תורת המספרים האדיטיבית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99%D7%AA.md) (21)
 * [תורת המספרים](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md) (17)
-* [תורת המספרים האלגברית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%AA.md) (9)
+* [תורת המספרים האלגברית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%AA.md) (10)
 * [תבניות מודולריות](categories/%D7%AA%D7%91%D7%A0%D7%99%D7%95%D7%AA%20%D7%9E%D7%95%D7%93%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA.md) (8)
 * [חוקרי תורת המספרים](categories/%D7%97%D7%95%D7%A7%D7%A8%D7%99%20%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md) (7)
 * [קבועים מתמטיים](categories/%D7%A7%D7%91%D7%95%D7%A2%D7%99%D7%9D%20%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%99%D7%9D.md) (7)
@@ -25,6 +25,7 @@
 * [מספרים טרנסצנדנטיים](categories/%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%98%D7%A8%D7%A0%D7%A1%D7%A6%D7%A0%D7%93%D7%A0%D7%98%D7%99%D7%99%D7%9D.md) (3)
 * [מערכות דינמיות](categories/%D7%9E%D7%A2%D7%A8%D7%9B%D7%95%D7%AA%20%D7%93%D7%99%D7%A0%D7%9E%D7%99%D7%95%D7%AA.md) (3)
 * [תוכנית לנגלנדס](categories/%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1.md) (3)
+* [תורת החבורות](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%97%D7%91%D7%95%D7%A8%D7%95%D7%AA.md) (3)
 * [תורת המספרים החישובית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%97%D7%99%D7%A9%D7%95%D7%91%D7%99%D7%AA.md) (3)
 * [תורת הנפה](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md) (3)
 * [אנליזה מרוכבת](categories/%D7%90%D7%A0%D7%9C%D7%99%D7%96%D7%94%20%D7%9E%D7%A8%D7%95%D7%9B%D7%91%D7%AA.md) (2)
@@ -33,7 +34,6 @@
 * [קומבינטוריקה](categories/%D7%A7%D7%95%D7%9E%D7%91%D7%99%D7%A0%D7%98%D7%95%D7%A8%D7%99%D7%A7%D7%94.md) (2)
 * [תורה ספקטרלית](categories/%D7%AA%D7%95%D7%A8%D7%94%20%D7%A1%D7%A4%D7%A7%D7%98%D7%A8%D7%9C%D7%99%D7%AA.md) (2)
 * [תורת ההצגות](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%94%D7%A6%D7%92%D7%95%D7%AA.md) (2)
-* [תורת החבורות](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%97%D7%91%D7%95%D7%A8%D7%95%D7%AA.md) (2)
 * [אלגוריתמים](categories/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9E%D7%99%D7%9D.md) (1)
 * [אלן טיורינג](categories/%D7%90%D7%9C%D7%9F%20%D7%98%D7%99%D7%95%D7%A8%D7%99%D7%A0%D7%92.md) (1)
 * [אנליזה מתמטית](categories/%D7%90%D7%A0%D7%9C%D7%99%D7%96%D7%94%20%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) (1)
@@ -68,17 +68,17 @@
 * [תורת שדות המחלקה](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%A9%D7%93%D7%95%D7%AA%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%94.md) (1)
 * [תמורות](categories/%D7%AA%D7%9E%D7%95%D7%A8%D7%95%D7%AA.md) (1)
 
-## כל הערכים לפי סדר האלף-בית (262)
+## כל הערכים לפי סדר האלף-בית (263)
 
 
 ### א
 
-* [אופרטור הקה](pages/%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8%20%D7%94%D7%A7%D7%94.md) – Hecke operator · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
+* [אופרטור הקה](pages/%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8%20%D7%94%D7%A7%D7%94.md) – Hecke operator · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md), [שיעור 21](COURSE.md)
 * [אי-שוויון בונזה](pages/%D7%90%D7%99-%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F%20%D7%91%D7%95%D7%A0%D7%96%D7%94.md) – Bonse's inequality · בקורס: [שיעור 3](course/03-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [אי-שוויון ברג'ס](pages/%D7%90%D7%99-%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F%20%D7%91%D7%A8%D7%92%27%D7%A1.md) – Burgess inequality · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
 * [אלגוריתם p-1 של פולארד](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20p-1%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%9C%D7%90%D7%A8%D7%93.md) – Pollard's p − 1 algorithm · בקורס: [שיעור 3](course/03-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [אלגוריתם אודליצקו-שנהאגה](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%90%D7%95%D7%93%D7%9C%D7%99%D7%A6%D7%A7%D7%95-%D7%A9%D7%A0%D7%94%D7%90%D7%92%D7%94.md) – Odlyzko–Schönhage algorithm · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
-* [אלגוריתם לנסטרה לפירוק בעקומים אליפטיים](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9C%D7%A0%D7%A1%D7%98%D7%A8%D7%94%20%D7%9C%D7%A4%D7%99%D7%A8%D7%95%D7%A7%20%D7%91%D7%A2%D7%A7%D7%95%D7%9E%D7%99%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99%D7%99%D7%9D.md) – Lenstra elliptic-curve factorization · בקורס: [שיעור 3](course/03-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
+* [אלגוריתם לנסטרה לפירוק בעקומים אליפטיים](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9C%D7%A0%D7%A1%D7%98%D7%A8%D7%94%20%D7%9C%D7%A4%D7%99%D7%A8%D7%95%D7%A7%20%D7%91%D7%A2%D7%A7%D7%95%D7%9E%D7%99%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99%D7%99%D7%9D.md) – Lenstra elliptic-curve factorization · בקורס: [שיעור 3](course/03-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md), [שיעור 20](COURSE.md)
 * [אלגוריתם מייסל-להמר](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9C%D7%94%D7%9E%D7%A8.md) – Meissel–Lehmer algorithm · בקורס: [שיעור 10](course/10-%D7%94%D7%AA%D7%A4%D7%9C%D7%92%D7%95%D7%AA-%D7%90%D7%9C%D7%9E%D7%A0%D7%98%D7%A8%D7%99%D7%AA.md), [שיעור 17](course/17-%D7%90%D7%99%D7%A9%D7%99%D7%9D.md)
 * [אפס זיגל](pages/%D7%90%D7%A4%D7%A1%20%D7%96%D7%99%D7%92%D7%9C.md) – Siegel zero · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
 * [ארנסט מייסל](pages/%D7%90%D7%A8%D7%A0%D7%A1%D7%98%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C.md) – Ernst Meissel · בקורס: [שיעור 10](course/10-%D7%94%D7%AA%D7%A4%D7%9C%D7%92%D7%95%D7%AA-%D7%90%D7%9C%D7%9E%D7%A0%D7%98%D7%A8%D7%99%D7%AA.md), [שיעור 17](course/17-%D7%90%D7%99%D7%A9%D7%99%D7%9D.md)
@@ -93,13 +93,13 @@
 * [בעיית המחלקים של דיריכלה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Divisor summatory function · בקורס: [שיעור 9](course/09-%D7%A1%D7%93%D7%A8%D7%99%D7%9D-%D7%A9%D7%9C-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA.md), [שיטות הוכחה P10](course/P10-%D7%A1%D7%A4%D7%99%D7%A8%D7%94-%D7%9B%D7%A4%D7%95%D7%9C%D7%94-%D7%95%D7%96%D7%99%D7%95%D7%95%D7%92.md)
 * [בעיית הקבוע](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%94%D7%A7%D7%91%D7%95%D7%A2.md) – Constant problem · בקורס: [שיעור 8](course/08-%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%95%D7%AA-%D7%93%D7%99%D7%95%D7%A4%D7%A0%D7%98%D7%99%D7%95%D7%AA.md)
 * [בעיית וורינג–גולדבך](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%95%D7%95%D7%A8%D7%99%D7%A0%D7%92%E2%80%93%D7%92%D7%95%D7%9C%D7%93%D7%91%D7%9A.md) – Waring–Goldbach problem · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
-* [בעיית מספר המחלקה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%94.md) – Class number problem · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
+* [בעיית מספר המחלקה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%94.md) – Class number problem · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md), [שיעור 19](COURSE.md)
 * [בעיית פונקציית אוילר של להמר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8%20%D7%A9%D7%9C%20%D7%9C%D7%94%D7%9E%D7%A8.md) – Lehmer's totient problem · בקורס: [שיעור 5](course/05-%D7%A4%D7%A8%D7%9E%D7%94-%D7%90%D7%95%D7%99%D7%9C%D7%A8-%D7%95%D7%99%D7%9C%D7%A1%D7%95%D7%9F.md)
 
 ### ג
 
 * [ג'פרי לגריאס](pages/%D7%92%27%D7%A4%D7%A8%D7%99%20%D7%9C%D7%92%D7%A8%D7%99%D7%90%D7%A1.md) – Jeffrey Lagarias · בקורס: [שיעור 17](course/17-%D7%90%D7%99%D7%A9%D7%99%D7%9D.md)
-* [גידול תת-חבורות](pages/%D7%92%D7%99%D7%93%D7%95%D7%9C%20%D7%AA%D7%AA-%D7%97%D7%91%D7%95%D7%A8%D7%95%D7%AA.md) – Subgroup growth · בקורס: [שיעור 19](COURSE.md)
+* [גידול תת-חבורות](pages/%D7%92%D7%99%D7%93%D7%95%D7%9C%20%D7%AA%D7%AA-%D7%97%D7%91%D7%95%D7%A8%D7%95%D7%AA.md) – Subgroup growth · בקורס: [שיעור 22](COURSE.md)
 
 ### ד
 
@@ -128,7 +128,7 @@
 * [העקום המודולרי הקלאסי](pages/%D7%94%D7%A2%D7%A7%D7%95%D7%9D%20%D7%94%D7%9E%D7%95%D7%93%D7%95%D7%9C%D7%A8%D7%99%20%D7%94%D7%A7%D7%9C%D7%90%D7%A1%D7%99.md) – Classical modular curve · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
 * [הפונקציה האריתמטית של פילאי](pages/%D7%94%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%94%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA%20%D7%A9%D7%9C%20%D7%A4%D7%99%D7%9C%D7%90%D7%99.md) – Pillai's arithmetical function · בקורס: [שיעור 6](course/06-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%95%D7%AA.md)
 * [הפונקציה הסכומית של פונקציית אוילר](pages/%D7%94%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%94%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%AA%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8.md) – Totient summatory function · בקורס: [שיעור 9](course/09-%D7%A1%D7%93%D7%A8%D7%99%D7%9D-%D7%A9%D7%9C-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA.md)
-* [הקבוע המקומי של לנגלנדס–דלין](pages/%D7%94%D7%A7%D7%91%D7%95%D7%A2%20%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%20%D7%A9%D7%9C%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1%E2%80%93%D7%93%D7%9C%D7%99%D7%9F.md) – Langlands–Deligne local constant · בקורס: [שיעור 20](COURSE.md)
+* [הקבוע המקומי של לנגלנדס–דלין](pages/%D7%94%D7%A7%D7%91%D7%95%D7%A2%20%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%20%D7%A9%D7%9C%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1%E2%80%93%D7%93%D7%9C%D7%99%D7%9F.md) – Langlands–Deligne local constant · בקורס: [שיעור 23](COURSE.md)
 * [הקריטריון של וייל](pages/%D7%94%D7%A7%D7%A8%D7%99%D7%98%D7%A8%D7%99%D7%95%D7%9F%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%99%D7%9C.md) – Weil's criterion · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
 * [הרולד אדוארדס](pages/%D7%94%D7%A8%D7%95%D7%9C%D7%93%20%D7%90%D7%93%D7%95%D7%90%D7%A8%D7%93%D7%A1.md) – Harold Edwards (mathematician) · בקורס: [שיעור 17](course/17-%D7%90%D7%99%D7%A9%D7%99%D7%9D.md)
 * [הרולד דבנפורט](pages/%D7%94%D7%A8%D7%95%D7%9C%D7%93%20%D7%93%D7%91%D7%A0%D7%A4%D7%95%D7%A8%D7%98.md) – Harold Davenport · בקורס: [שיעור 17](course/17-%D7%90%D7%99%D7%A9%D7%99%D7%9D.md)
@@ -139,7 +139,7 @@
 * [השערה H של שינצל](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%94%20H%20%D7%A9%D7%9C%20%D7%A9%D7%99%D7%A0%D7%A6%D7%9C.md) – Schinzel's hypothesis H · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערות הארדי–ליטלווד על פונקציית זטא](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%90%D7%A8%D7%93%D7%99%E2%80%93%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90.md) – Hardy–Littlewood zeta function conjectures · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערות וייל](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%95%D7%99%D7%99%D7%9C.md) – Weil conjectures · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
-* [השערות לנגלנדס המקומיות](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1%20%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%95%D7%AA.md) – Local Langlands conjectures · בקורס: [שיעור 20](COURSE.md)
+* [השערות לנגלנדס המקומיות](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1%20%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%95%D7%AA.md) – Local Langlands conjectures · בקורס: [שיעור 23](COURSE.md)
 * [השערות מרסן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%9E%D7%A8%D7%A1%D7%9F.md) – Mersenne conjectures · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערות סטארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%A1%D7%98%D7%90%D7%A8%D7%A7.md) – Stark conjectures · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
 * [השערות פולוק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%A4%D7%95%D7%9C%D7%95%D7%A7.md) – Pollock's conjectures · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
@@ -153,10 +153,10 @@
 * [השערת בייטמן-הורן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%99%D7%99%D7%98%D7%9E%D7%9F-%D7%94%D7%95%D7%A8%D7%9F.md) – Bateman–Horn conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערת ברומר–סטארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%95%D7%9E%D7%A8%E2%80%93%D7%A1%D7%98%D7%90%D7%A8%D7%A7.md) – Brumer–Stark conjecture · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
 * [השערת ברוקאר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%95%D7%A7%D7%90%D7%A8.md) – Brocard's conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
-* [השערת גאן–גרוס–פרסאד](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%90%D7%9F%E2%80%93%D7%92%D7%A8%D7%95%D7%A1%E2%80%93%D7%A4%D7%A8%D7%A1%D7%90%D7%93.md) – Gan–Gross–Prasad conjecture · בקורס: [שיעור 20](COURSE.md)
+* [השערת גאן–גרוס–פרסאד](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%90%D7%9F%E2%80%93%D7%92%D7%A8%D7%95%D7%A1%E2%80%93%D7%A4%D7%A8%D7%A1%D7%90%D7%93.md) – Gan–Gross–Prasad conjecture · בקורס: [שיעור 23](COURSE.md)
 * [השערת גילברת'](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%99%D7%9C%D7%91%D7%A8%D7%AA%27.md) – Gilbreath's conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערת גרים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%A8%D7%99%D7%9D.md) – Grimm's conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
-* [השערת דווארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%93%D7%95%D7%95%D7%90%D7%A8%D7%A7.md) – Dwork conjecture · בקורס: [שיעור 19](COURSE.md)
+* [השערת דווארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%93%D7%95%D7%95%D7%90%D7%A8%D7%A7.md) – Dwork conjecture · בקורס: [שיעור 22](COURSE.md)
 * [השערת דיקסון](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%93%D7%99%D7%A7%D7%A1%D7%95%D7%9F.md) – Dickson's conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערת האחות בייטר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%90%D7%97%D7%95%D7%AA%20%D7%91%D7%99%D7%99%D7%98%D7%A8.md) – Sister Beiter conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערת הארדי-ליטלווד הראשונה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%90%D7%A8%D7%93%D7%99-%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%94.md) – First Hardy–Littlewood conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
@@ -175,7 +175,7 @@
 * [השערת קרמר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%9E%D7%A8.md) – Cramér's conjecture · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערת רימן הגדולה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94.md) – Grand Riemann hypothesis · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [השערת רימן המוכללת](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%9E%D7%95%D7%9B%D7%9C%D7%9C%D7%AA.md) – Generalized Riemann hypothesis · בקורס: [שיעור 8](course/08-%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%95%D7%AA-%D7%93%D7%99%D7%95%D7%A4%D7%A0%D7%98%D7%99%D7%95%D7%AA.md), [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
-* [השערת רמנוג'אן–פטרסון](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F%E2%80%93%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F.md) – Ramanujan–Petersson conjecture · בקורס: [שיעור 20](COURSE.md)
+* [השערת רמנוג'אן–פטרסון](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F%E2%80%93%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F.md) – Ramanujan–Petersson conjecture · בקורס: [שיעור 23](COURSE.md)
 * [התמרת מלין](pages/%D7%94%D7%AA%D7%9E%D7%A8%D7%AA%20%D7%9E%D7%9C%D7%99%D7%9F.md) – Mellin transform · בקורס: [שיעור כלים כ11](course/T11-%D7%92%D7%9E%D7%90-%D7%A4%D7%95%D7%A8%D7%99%D7%99%D7%94-%D7%95%D7%AA%D7%98%D7%90.md), [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
 
 ### ו
@@ -186,17 +186,21 @@
 
 * [זוג להמר](pages/%D7%96%D7%95%D7%92%20%D7%9C%D7%94%D7%9E%D7%A8.md) – Lehmer pair · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 
+### ח
+
+* [חבורת מחלקות האידיאלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%9E%D7%97%D7%9C%D7%A7%D7%95%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D.md) – Ideal class group · בקורס: [שיעור 19](COURSE.md)
+
 ### ט
 
-* [טור אייזנשטיין ממשי-אנליטי](pages/%D7%98%D7%95%D7%A8%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F%20%D7%9E%D7%9E%D7%A9%D7%99-%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99.md) – Real analytic Eisenstein series · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
+* [טור אייזנשטיין ממשי-אנליטי](pages/%D7%98%D7%95%D7%A8%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F%20%D7%9E%D7%9E%D7%A9%D7%99-%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99.md) – Real analytic Eisenstein series · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md), [שיעור 21](COURSE.md)
 * [טור בל](pages/%D7%98%D7%95%D7%A8%20%D7%91%D7%9C.md) – Bell series · בקורס: [שיעור 6](course/06-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%95%D7%AA.md)
 * [טור זטא רציונלי](pages/%D7%98%D7%95%D7%A8%20%D7%96%D7%98%D7%90%20%D7%A8%D7%A6%D7%99%D7%95%D7%A0%D7%9C%D7%99.md) – Rational zeta series · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
 
 ### י
 
-* [יחס הקונגרואנציה של אייכלר–שימורה](pages/%D7%99%D7%97%D7%A1%20%D7%94%D7%A7%D7%95%D7%A0%D7%92%D7%A8%D7%95%D7%90%D7%A0%D7%A6%D7%99%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%9B%D7%9C%D7%A8%E2%80%93%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Eichler–Shimura congruence relation · בקורס: [שיעור 20](COURSE.md)
+* [יחס הקונגרואנציה של אייכלר–שימורה](pages/%D7%99%D7%97%D7%A1%20%D7%94%D7%A7%D7%95%D7%A0%D7%92%D7%A8%D7%95%D7%90%D7%A0%D7%A6%D7%99%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%9B%D7%9C%D7%A8%E2%80%93%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Eichler–Shimura congruence relation · בקורס: [שיעור 23](COURSE.md)
 * [יחס לנדסברג-שאר](pages/%D7%99%D7%97%D7%A1%20%D7%9C%D7%A0%D7%93%D7%A1%D7%91%D7%A8%D7%92-%D7%A9%D7%90%D7%A8.md) – Landsberg–Schaar relation · בקורס: [שיעור 7](course/07-%D7%A9%D7%90%D7%A8%D7%99%D7%95%D7%AA-%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%95%D7%AA.md)
-* [יריעת שימורה](pages/%D7%99%D7%A8%D7%99%D7%A2%D7%AA%20%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Shimura variety · בקורס: [שיעור 20](COURSE.md)
+* [יריעת שימורה](pages/%D7%99%D7%A8%D7%99%D7%A2%D7%AA%20%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Shimura variety · בקורס: [שיעור 23](COURSE.md)
 
 ### מ
 
@@ -223,7 +227,7 @@
 * [משפט ארדש–דלאנז'](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%93%D7%A9%E2%80%93%D7%93%D7%9C%D7%90%D7%A0%D7%96%27.md) – Erdős–Delange theorem · בקורס: [שיעור 10](course/10-%D7%94%D7%AA%D7%A4%D7%9C%D7%92%D7%95%D7%AA-%D7%90%D7%9C%D7%9E%D7%A0%D7%98%D7%A8%D7%99%D7%AA.md)
 * [משפט בומביירי-וינוגרדוב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%95%D7%9E%D7%91%D7%99%D7%99%D7%A8%D7%99-%D7%95%D7%99%D7%A0%D7%95%D7%92%D7%A8%D7%93%D7%95%D7%91.md) – Bombieri–Vinogradov theorem · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
 * [משפט בירץ'](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%99%D7%A8%D7%A5%27.md) – Birch's theorem · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
-* [משפט בראואר-זיגל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%90%D7%95%D7%90%D7%A8-%D7%96%D7%99%D7%92%D7%9C.md) – Brauer–Siegel theorem · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
+* [משפט בראואר-זיגל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%90%D7%95%D7%90%D7%A8-%D7%96%D7%99%D7%92%D7%9C.md) – Brauer–Siegel theorem · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md), [שיעור 19](COURSE.md)
 * [משפט ברבן-דבנפורט-הלברשטם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%91%D7%9F-%D7%93%D7%91%D7%A0%D7%A4%D7%95%D7%A8%D7%98-%D7%94%D7%9C%D7%91%D7%A8%D7%A9%D7%98%D7%9D.md) – Barban–Davenport–Halberstam theorem · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
 * [משפט ברון-טיצ'מרש](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%95%D7%9F-%D7%98%D7%99%D7%A6%27%D7%9E%D7%A8%D7%A9.md) – Brun–Titchmarsh theorem · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
 * [משפט גרוסוולד–שניצר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%92%D7%A8%D7%95%D7%A1%D7%95%D7%95%D7%9C%D7%93%E2%80%93%D7%A9%D7%A0%D7%99%D7%A6%D7%A8.md) – Grosswald–Schnitzer theorem · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
@@ -239,7 +243,7 @@
 * [משפט הניפוי של רוג'רס](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%A0%D7%99%D7%A4%D7%95%D7%99%20%D7%A9%D7%9C%20%D7%A8%D7%95%D7%92%27%D7%A8%D7%A1.md) – Rogers sieving theorem · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
 * [משפט הערך הממוצע של וינוגרדוב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%A2%D7%A8%D7%9A%20%D7%94%D7%9E%D7%9E%D7%95%D7%A6%D7%A2%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%A0%D7%95%D7%92%D7%A8%D7%93%D7%95%D7%91.md) – Vinogradov's mean-value theorem · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
 * [משפט וולסטנהולם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%95%D7%9C%D7%A1%D7%98%D7%A0%D7%94%D7%95%D7%9C%D7%9D.md) – Wolstenholme's theorem · בקורס: [שיעור 5](course/05-%D7%A4%D7%A8%D7%9E%D7%94-%D7%90%D7%95%D7%99%D7%9C%D7%A8-%D7%95%D7%99%D7%9C%D7%A1%D7%95%D7%9F.md)
-* [משפט ולדספורגר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%9C%D7%93%D7%A1%D7%A4%D7%95%D7%A8%D7%92%D7%A8.md) – Waldspurger's theorem · בקורס: [שיעור 20](COURSE.md)
+* [משפט ולדספורגר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%9C%D7%93%D7%A1%D7%A4%D7%95%D7%A8%D7%92%D7%A8.md) – Waldspurger's theorem · בקורס: [שיעור 23](COURSE.md)
 * [משפט ונטיגם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%A0%D7%98%D7%99%D7%92%D7%9D.md) – Vantieghems theorem · בקורס: [שיעור 5](course/05-%D7%A4%D7%A8%D7%9E%D7%94-%D7%90%D7%95%D7%99%D7%9C%D7%A8-%D7%95%D7%99%D7%9C%D7%A1%D7%95%D7%9F.md)
 * [משפט זיגל-ולפיש](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%96%D7%99%D7%92%D7%9C-%D7%95%D7%9C%D7%A4%D7%99%D7%A9.md) – Siegel–Walfisz theorem · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
 * [משפט יורקט-ריכרט](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%99%D7%95%D7%A8%D7%A7%D7%98-%D7%A8%D7%99%D7%9B%D7%A8%D7%98.md) – Jurkat–Richert theorem · בקורס: [שיעור 14](course/14-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%A0%D7%A4%D7%94.md)
@@ -260,7 +264,7 @@
 
 * [נגזרת אריתמטית](pages/%D7%A0%D7%92%D7%96%D7%A8%D7%AA%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic derivative · בקורס: [שיעור 6](course/06-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%95%D7%AA.md)
 * [נוסחאות מפורשות לפונקציות L](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%90%D7%95%D7%AA%20%D7%9E%D7%A4%D7%95%D7%A8%D7%A9%D7%95%D7%AA%20%D7%9C%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20L.md) – Explicit formulae for L-functions · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
-* [נוסחת הגבול של קרונקר](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%92%D7%91%D7%95%D7%9C%20%D7%A9%D7%9C%20%D7%A7%D7%A8%D7%95%D7%A0%D7%A7%D7%A8.md) – Kronecker limit formula · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
+* [נוסחת הגבול של קרונקר](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%92%D7%91%D7%95%D7%9C%20%D7%A9%D7%9C%20%D7%A7%D7%A8%D7%95%D7%A0%D7%A7%D7%A8.md) – Kronecker limit formula · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md), [שיעור 21](COURSE.md)
 * [נוסחת העקבה של פטרסון](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%A2%D7%A7%D7%91%D7%94%20%D7%A9%D7%9C%20%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F.md) – Petersson trace formula · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
 * [נוסחת העקבה של קוזנצוב](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%A2%D7%A7%D7%91%D7%94%20%D7%A9%D7%9C%20%D7%A7%D7%95%D7%96%D7%A0%D7%A6%D7%95%D7%91.md) – Kuznetsov trace formula · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
 * [נוסחת וורונוי](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%95%D7%95%D7%A8%D7%95%D7%A0%D7%95%D7%99.md) – Voronoi formula · בקורס: [שיעור 9](course/09-%D7%A1%D7%93%D7%A8%D7%99%D7%9D-%D7%A9%D7%9C-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA.md)
@@ -302,11 +306,11 @@
 * [פונקציית E](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20E.md) – E-function · בקורס: [שיעור 8](course/08-%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%95%D7%AA-%D7%93%D7%99%D7%95%D7%A4%D7%A0%D7%98%D7%99%D7%95%D7%AA.md)
 * [פונקציית G של זיגל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20G%20%D7%A9%D7%9C%20%D7%96%D7%99%D7%92%D7%9C.md) – Siegel G-function · בקורס: [שיעור 8](course/08-%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%95%D7%AA-%D7%93%D7%99%D7%95%D7%A4%D7%A0%D7%98%D7%99%D7%95%D7%AA.md)
 * [פונקציית L p-אדית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20p-%D7%90%D7%93%D7%99%D7%AA.md) – P-adic L-function · בקורס: [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
-* [פונקציית L אוטומורפית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%95%D7%A8%D7%A4%D7%99%D7%AA.md) – Automorphic L-function · בקורס: [שיעור 20](COURSE.md)
-* [פונקציית L אקוויווריאנטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%A7%D7%95%D7%95%D7%99%D7%95%D7%95%D7%A8%D7%99%D7%90%D7%A0%D7%98%D7%99%D7%AA.md) – Equivariant L-function · בקורס: [שיעור 20](COURSE.md)
-* [פונקציית L מוטיבית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%9E%D7%95%D7%98%D7%99%D7%91%D7%99%D7%AA.md) – Motivic L-function · בקורס: [שיעור 20](COURSE.md)
-* [פונקציית L סטנדרטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%A1%D7%98%D7%A0%D7%93%D7%A8%D7%98%D7%99%D7%AA.md) – Standard L-function · בקורס: [שיעור 20](COURSE.md)
-* [פונקציית L של שימיזו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%A9%D7%9C%20%D7%A9%D7%99%D7%9E%D7%99%D7%96%D7%95.md) – Shimizu L-function · בקורס: [שיעור 20](COURSE.md)
+* [פונקציית L אוטומורפית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%95%D7%A8%D7%A4%D7%99%D7%AA.md) – Automorphic L-function · בקורס: [שיעור 23](COURSE.md)
+* [פונקציית L אקוויווריאנטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%A7%D7%95%D7%95%D7%99%D7%95%D7%95%D7%A8%D7%99%D7%90%D7%A0%D7%98%D7%99%D7%AA.md) – Equivariant L-function · בקורס: [שיעור 23](COURSE.md)
+* [פונקציית L מוטיבית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%9E%D7%95%D7%98%D7%99%D7%91%D7%99%D7%AA.md) – Motivic L-function · בקורס: [שיעור 23](COURSE.md)
+* [פונקציית L סטנדרטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%A1%D7%98%D7%A0%D7%93%D7%A8%D7%98%D7%99%D7%AA.md) – Standard L-function · בקורס: [שיעור 23](COURSE.md)
+* [פונקציית L של שימיזו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%A9%D7%9C%20%D7%A9%D7%99%D7%9E%D7%99%D7%96%D7%95.md) – Shimizu L-function · בקורס: [שיעור 23](COURSE.md)
 * [פונקציית Z](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20Z.md) – Z function · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [פונקציית אטא של דיריכלה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Dirichlet eta function · בקורס: [שיעור כלים כ9](course/T09-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%9E%D7%A8%D7%95%D7%9B%D7%91%D7%95%D7%AA.md), [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
 * [פונקציית דיקמן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%93%D7%99%D7%A7%D7%9E%D7%9F.md) – Dickman function · בקורס: [שיעור 9](course/09-%D7%A1%D7%93%D7%A8%D7%99%D7%9D-%D7%A9%D7%9C-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA.md), [שיעור 13](course/13-%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D-%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-L.md)
@@ -316,26 +320,26 @@
 * [פונקציית התטא של רימן-זיגל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%94%D7%AA%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%96%D7%99%D7%92%D7%9C.md) – Riemann–Siegel theta function · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [פונקציית ז'ורדן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%27%D7%95%D7%A8%D7%93%D7%9F.md) – Jordan's totient function · בקורס: [שיעור 6](course/06-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%95%D7%AA.md)
 * [פונקציית זטא (אופרטור)](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%28%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8%29.md) – Zeta function (operator) · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
-* [פונקציית זטא אריתמטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא אריתמטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא הראשונית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%AA.md) – Prime zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
-* [פונקציית זטא מקומית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%AA.md) – Local zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא מקומית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%AA.md) – Local zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא מרובה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%9E%D7%A8%D7%95%D7%91%D7%94.md) – Multiple zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
-* [פונקציית זטא של איגוסה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%92%D7%95%D7%A1%D7%94.md) – Igusa zeta function · בקורס: [שיעור 19](COURSE.md)
-* [פונקציית זטא של איהרה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%94%D7%A8%D7%94.md) – Ihara zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא של איגוסה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%92%D7%95%D7%A1%D7%94.md) – Igusa zeta function · בקורס: [שיעור 22](COURSE.md)
+* [פונקציית זטא של איהרה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%94%D7%A8%D7%94.md) – Ihara zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא של איירי](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%A8%D7%99.md) – Airy zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
-* [פונקציית זטא של ארטין–מאזור](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%A8%D7%98%D7%99%D7%9F%E2%80%93%D7%9E%D7%90%D7%96%D7%95%D7%A8.md) – Artin–Mazur zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא של ארטין–מאזור](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%A8%D7%98%D7%99%D7%9F%E2%80%93%D7%9E%D7%90%D7%96%D7%95%D7%A8.md) – Artin–Mazur zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא של ארקאווה–קאנקו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%A8%D7%A7%D7%90%D7%95%D7%95%D7%94%E2%80%93%D7%A7%D7%90%D7%A0%D7%A7%D7%95.md) – Arakawa–Kaneko zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
 * [פונקציית זטא של בארנס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%91%D7%90%D7%A8%D7%A0%D7%A1.md) – Barnes zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
 * [פונקציית זטא של בירלינג](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%91%D7%99%D7%A8%D7%9C%D7%99%D7%A0%D7%92.md) – Beurling zeta function · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
-* [פונקציית זטא של גוס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%92%D7%95%D7%A1.md) – Goss zeta function · בקורס: [שיעור 19](COURSE.md)
-* [פונקציית זטא של האסה–וייל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A1%D7%94%E2%80%93%D7%95%D7%99%D7%99%D7%9C.md) – Hasse–Weil zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא של גוס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%92%D7%95%D7%A1.md) – Goss zeta function · בקורס: [שיעור 22](COURSE.md)
+* [פונקציית זטא של האסה–וייל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A1%D7%94%E2%80%93%D7%95%D7%99%D7%99%D7%9C.md) – Hasse–Weil zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא של הורוויץ](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%95%D7%A8%D7%95%D7%95%D7%99%D7%A5.md) – Hurwitz zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
 * [פונקציית זטא של ויטן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%98%D7%9F.md) – Witten zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
-* [פונקציית זטא של לפשץ](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9C%D7%A4%D7%A9%D7%A5.md) – Lefschetz zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא של לפשץ](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9C%D7%A4%D7%A9%D7%A5.md) – Lefschetz zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא של מטסומוטו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9E%D7%98%D7%A1%D7%95%D7%9E%D7%95%D7%98%D7%95.md) – Matsumoto zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
-* [פונקציית זטא של מינאקשיסונדרם–פליז'ל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9E%D7%99%D7%A0%D7%90%D7%A7%D7%A9%D7%99%D7%A1%D7%95%D7%A0%D7%93%D7%A8%D7%9D%E2%80%93%D7%A4%D7%9C%D7%99%D7%96%27%D7%9C.md) – Minakshisundaram–Pleijel zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא של מינאקשיסונדרם–פליז'ל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9E%D7%99%D7%A0%D7%90%D7%A7%D7%A9%D7%99%D7%A1%D7%95%D7%A0%D7%93%D7%A8%D7%9D%E2%80%93%D7%A4%D7%9C%D7%99%D7%96%27%D7%9C.md) – Minakshisundaram–Pleijel zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא של סלברג](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg zeta function · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
-* [פונקציית זטא של רואל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%95%D7%90%D7%9C.md) – Ruelle zeta function · בקורס: [שיעור 19](COURSE.md)
+* [פונקציית זטא של רואל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%95%D7%90%D7%9C.md) – Ruelle zeta function · בקורס: [שיעור 22](COURSE.md)
 * [פונקציית זטא של שינטני](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A9%D7%99%D7%A0%D7%98%D7%A0%D7%99.md) – Shintani zeta function · בקורס: [שיעור 11](course/11-%D7%98%D7%95%D7%A8%D7%99-%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94-%D7%95%D7%96%D7%98%D7%90.md)
 * [פונקציית לנדאו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%9C%D7%A0%D7%93%D7%90%D7%95.md) – Landau's function · בקורס: [שיעור 9](course/09-%D7%A1%D7%93%D7%A8%D7%99%D7%9D-%D7%A9%D7%9C-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA.md)
 * [פונקציית מרטנס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Mertens function · בקורס: [שיעור 12](course/12-%D7%9E%D7%A9%D7%A4%D7%98-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
@@ -373,7 +377,7 @@
 * [שיטת המטריצה של מאייר](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%94%20%D7%A9%D7%9C%20%D7%9E%D7%90%D7%99%D7%99%D7%A8.md) – Maier's matrix method · בקורס: [שיעור 16](course/16-%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA-%D7%A2%D7%9C-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [שיטת המעגל של הארדי וליטלווד](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%A2%D7%92%D7%9C%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A8%D7%93%D7%99%20%D7%95%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93.md) – Hardy–Ramanujan–Littlewood circle method · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
 * [שיטת הפירוק של דיקסון](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%A4%D7%99%D7%A8%D7%95%D7%A7%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A7%D7%A1%D7%95%D7%9F.md) – Dixon's factorization method · בקורס: [שיעור 3](course/03-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
-* [שיטת רנקין–סלברג](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%A8%D7%A0%D7%A7%D7%99%D7%9F%E2%80%93%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Rankin–Selberg method · בקורס: [שיעור 20](COURSE.md)
+* [שיטת רנקין–סלברג](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%A8%D7%A0%D7%A7%D7%99%D7%9F%E2%80%93%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Rankin–Selberg method · בקורס: [שיעור 23](COURSE.md)
 
 ### ת
 

@@ -15,6 +15,9 @@ open('QUEUE.md', 'w', encoding='utf-8').write(q)
 EOF
 python3 build.py | tail -1
 git add -A
-git -c user.name=gershonavi -c user.email=gershonavi@users.noreply.github.com commit -qm "Add: $he ($en)"
+git -c user.name=gershonavi -c user.email=gershonavi@users.noreply.github.com commit -qm "Add: $he ($en)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_014esT4unZubBTWJSSwC5KmA"
 for i in 1 2 3; do git push -q 2>/dev/null && break; sleep 3; done; git fetch -q; [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] || echo "PUSH FAILED"
 echo "published $he"

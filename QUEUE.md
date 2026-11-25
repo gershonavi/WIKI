@@ -66,7 +66,7 @@ Additive number theory:
 ### תורת המספרים האלגברית (46)
 
 - [ ] Abelian extension
-- [ ] Ideal class group
+- [x] Ideal class group
 - [ ] Fractional ideal
 - [ ] Ideal norm
 - [ ] Discriminant of an algebraic number field
