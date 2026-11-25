@@ -71,7 +71,7 @@ Additive number theory:
 - [x] Ideal norm
 - [x] Discriminant of an algebraic number field
 - [x] Different ideal
-- [ ] Fundamental unit (number theory)
+- [x] Fundamental unit (number theory)
 - [ ] Quadratic integer
 - [ ] Cubic field
 - [ ] Biquadratic field

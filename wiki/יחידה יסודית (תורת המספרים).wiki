@@ -1,0 +1,86 @@
+ב[[תורת המספרים האלגברית]], '''יחידה יסודית''' היא יוצר (מודולו [[שורש יחידה|שורשי היחידה]]) של חבורת ה[[איבר הפיך|איברים ההפיכים]] (היחידות) של [[חוג השלמים האלגבריים|חוג השלמים]] של [[שדה מספרים]], כאשר לחבורה הזו יש דרגה 1 (כלומר כאשר חבורת היחידות מודולו תת-חבורת הפיתול שלה היא חבורה ציקלית אינסופית). לפי [[משפט היחידות של דיריכלה]], הדרגה של חבורת היחידות היא <math>r_1 + r_2 - 1</math>, כאשר <math>r_1</math> מספר השיכונים הממשיים ו-<math>r_2</math> מספר הזוגות של שיכונים מרוכבים. לכן הדרגה היא 1 בדיוק כאשר השדה הוא [[שדה ריבועי]] ממשי (<math>r_1 = 2, r_2 = 0</math>), שדה ממעלה שלישית מרוכב (<math>r_1 = 1, r_2 = 1</math>), או שדה ממעלה רביעית מדומה לחלוטין (<math>r_1 = 0, r_2 = 2</math>). כאשר לחבורת היחידות יש דרגה <math>\ge 1</math>, בסיס שלה מודולו הפיתול נקרא '''מערכת יסודית של יחידות'''.{{הערה|שם=AW|1=Ş. Alaca, K. S. Williams, ''Introductory Algebraic Number Theory'', Cambridge University Press, 2004, §13.4|כיווון=שמאל}} יש מחברים שמשתמשים במונח '''יחידה יסודית''' לכל איבר של מערכת יסודית של יחידות, בלי להגביל את עצמם למקרה של דרגה 1 (למשל Neukirch, ''Algebraic Number Theory'', עמ' 42).
+
+== שדות ריבועיים ממשיים ==
+בשדה ריבועי ממשי <math>K=\mathbb{Q}(\sqrt{d})</math> (עם <math>d \gt 1</math> חופשי מריבועים) נהוג לנרמל את היחידה היסודית <math>\varepsilon</math> כך ש-<math>\varepsilon \gt 1</math> (כמספר ממשי). אז היא מאופיינת באופן יחיד כיחידה הקטנה ביותר מבין היחידות הגדולות מ-1, וכל יחידה של <math>\mathcal O_K</math> היא מהצורה <math>\pm\varepsilon^k</math> עם <math>k \in \mathbb Z</math>. אם <math>\Delta</math> היא [[דיסקרימיננטה של שדה מספרים|הדיסקרימיננטה]] של <math>K</math>, אז היחידה היסודית היא
+:<math>\varepsilon=\frac{a+b\sqrt{\Delta}}{2},</math>
+כאשר <math>(a, b)</math> הוא הפתרון הקטן ביותר בשלמים חיוביים של{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Grundlehren der mathematischen Wissenschaften '''322''', Springer, 1999, Exercise I.7.1|כיווון=שמאל}}
+:<math>x^2-\Delta y^2=\pm4.</math>
+זוהי בעצם [[משוואת פל]] או משוואת פל השלילית, ואת הפתרונות שלה אפשר למצוא בעזרת פיתוח ה[[שבר משולב|שבר המשולב]] של <math>\sqrt{d}</math>. הנורמה של <math>\varepsilon</math> היא <math>(a^2 - \Delta b^2)/4 = \pm 1</math>, לפי הסימן במשוואה.
+
+=== דוגמה מלאה: <math>\mathbb Q(\sqrt 7)</math> ===
+כאן <math>7 \equiv 3 \pmod 4</math>, ולכן <math>\Delta = 28</math> ו-<math>\mathcal O_K = \mathbb Z[\sqrt7]</math>. השבר המשולב של <math>\sqrt 7</math> הוא <math>[2; \overline{1, 1, 1, 4}]</math>, והשברים המצטברים שלו הם
+:<math>\tfrac21,\ \tfrac31,\ \tfrac52,\ \tfrac83,\ \ldots</math>
+בודקים את <math>p^2 - 7q^2</math>: מקבלים <math>4 - 7 = -3</math>, <math>9 - 7 = 2</math>, <math>25 - 28 = -3</math>, ו-<math>64 - 63 = 1</math>. לכן הפתרון הקטן ביותר של <math>x^2 - 7y^2 = \pm 1</math> הוא <math>(8, 3)</math>, ו-
+:<math>\varepsilon = 8 + 3\sqrt 7 \approx 15.94,\qquad N(\varepsilon) = 64 - 63 = 1.</math>
+(בניסוח עם <math>\Delta</math>: <math>16^2 - 28\cdot 3^2 = 4</math>, ו-<math>\tfrac{16 + 3\sqrt{28}}{2} = 8 + 3\sqrt 7</math>.) מאחר שאורך המחזור, 4, זוגי, אין ב-<math>\mathbb Q(\sqrt 7)</math> יחידה מנורמה <math>-1</math>; זה מתיישב גם עם כך ש-7 ≡ 3 (mod 4) מחלק את <math>\Delta</math>.
+
+=== דוגמה מלאה: <math>\mathbb Q(\sqrt{13})</math> ===
+כאן <math>13 \equiv 1 \pmod 4</math>, ולכן <math>\Delta = 13</math> ו-<math>\mathcal O_K = \mathbb Z[\tfrac{1+\sqrt{13}}{2}]</math>. הפתרון הקטן ביותר של <math>x^2 - 13y^2 = \pm 4</math> הוא <math>(3, 1)</math>, עם <math>9 - 13 = -4</math>. לכן
+:<math>\varepsilon = \frac{3 + \sqrt{13}}{2} \approx 3.30,\qquad N(\varepsilon) = \frac{9 - 13}{4} = -1.</math>
+השבר המשולב של <math>\sqrt{13}</math> הוא <math>[3; \overline{1,1,1,1,6}]</math>, עם מחזור באורך 5 – אי-זוגי, כמצופה. (ב-<math>\mathbb Z[\sqrt{13}]</math> לבדו היחידה הקטנה ביותר היא <math>\varepsilon^3 = 18 + 5\sqrt{13}</math>, עם <math>18^2 - 13\cdot 5^2 = -1</math>.)
+
+=== טבלה ===
+{| class="wikitable" style="text-align:center; direction:ltr"
+! <math>d</math> !! <math>\Delta</math> !! <math>\varepsilon</math> !! <math>N(\varepsilon)</math>
+|-
+| 2 || 8 || <math>1+\sqrt2</math> || −1
+|-
+| 3 || 12 || <math>2+\sqrt3</math> || +1
+|-
+| 5 || 5 || <math>\tfrac{1+\sqrt5}{2}</math> || −1
+|-
+| 6 || 24 || <math>5+2\sqrt6</math> || +1
+|-
+| 7 || 28 || <math>8+3\sqrt7</math> || +1
+|-
+| 10 || 40 || <math>3+\sqrt{10}</math> || −1
+|-
+| 11 || 44 || <math>10+3\sqrt{11}</math> || +1
+|-
+| 13 || 13 || <math>\tfrac{3+\sqrt{13}}{2}</math> || −1
+|-
+| 14 || 56 || <math>15+4\sqrt{14}</math> || +1
+|-
+| 15 || 60 || <math>4+\sqrt{15}</math> || +1
+|-
+| 17 || 17 || <math>4+\sqrt{17}</math> || −1
+|-
+| 19 || 76 || <math>170+39\sqrt{19}</math> || +1
+|-
+| 21 || 21 || <math>\tfrac{5+\sqrt{21}}{2}</math> || +1
+|-
+| 22 || 88 || <math>197+42\sqrt{22}</math> || +1
+|-
+| 23 || 92 || <math>24+5\sqrt{23}</math> || +1
+|-
+| 34 || 136 || <math>35+6\sqrt{34}</math> || +1
+|}
+היחידה היסודית של <math>\mathbb Q(\sqrt5)</math> היא [[יחס הזהב]]. הדוגמה של <math>d = 19</math> מראה שהיחידה היסודית יכולה להיות גדולה יחסית ל-<math>d</math>.
+
+=== יחידות מנורמה −1 ===
+השאלה אם למשוואה <math>x^2-\Delta y^2=-4</math> יש פתרון קובעת אם [[חבורת מחלקות האידיאלים|חבורת המחלקות]] של <math>K</math> שווה לחבורת המחלקות הצרה שלו, או באופן שקול, אם יש ב-<math>K</math> יחידה מנורמה <math>-1</math>. ידוע שזה קורה אם ורק אם אורך המחזור של פיתוח השבר המשולב של <math>\sqrt{d}</math> אי-זוגי.{{הערה|1=בערך האנגלי התנאי מנוסח עם <math>\sqrt{\Delta}</math> במקום <math>\sqrt d</math>. בניסוח הזה הוא אינו נכון: למשל עבור <math>d = 2</math> מתקיים <math>\sqrt{\Delta} = \sqrt 8 = [2; \overline{1, 4}]</math>, עם מחזור באורך 2, אף על פי ש-<math>1+\sqrt2</math> היא יחידה מנורמה <math>-1</math>. עם <math>\sqrt 2 = [1; \overline{2}]</math> (מחזור באורך 1) התנאי מתקיים.}} יש קשר פשוט יותר שמתקבל משיקולי קונגרואנציות: אם <math>\Delta</math> מתחלק בראשוני השקול ל-3 מודולו 4, אז אין ב-<math>K</math> יחידה מנורמה <math>-1</math> (כי <math>x^2 \equiv -1</math> אינה פתירה מודולו ראשוני כזה). אבל הכיוון ההפוך אינו נכון, כפי שמראה הדוגמה <math>d = 34</math>:{{הערה|1=Ş. Alaca, K. S. Williams, ''Introductory Algebraic Number Theory'', Table 11.5.4|כיווון=שמאל}} <math>\Delta = 136 = 2^3\cdot 17</math> אינו מתחלק באף ראשוני כזה, אבל היחידה היסודית <math>35 + 6\sqrt{34}</math> היא מנורמה <math>+1</math>, ו-<math>\sqrt{34} = [5; \overline{1, 4, 1, 10}]</math> עם מחזור באורך 4.
+
+בתחילת שנות ה-90 הציע פטר סטיבנהגן מודל הסתברותי, שהוביל אותו להשערה על השכיחות שבה הכיוון ההפוך נכשל. ליתר דיוק, אם <math>D(X)</math> הוא מספר השדות הריבועיים הממשיים שהדיסקרימיננטה שלהם <math>\Delta \lt X</math> אינה מתחלקת באף ראשוני השקול ל-3 מודולו 4, ו-<math>D^-(X)</math> הוא מספר אלה מביניהם שיש בהם יחידה מנורמה <math>-1</math>, אז{{הערה|1=P. Stevenhagen, ''The number of real quadratic fields having units of negative norm'', Experimental Mathematics '''2''' (1993), no. 2, pp. 121–136, Conjecture 1.4|כיווון=שמאל}}
+:<math>\lim_{X\rightarrow\infty}\frac{D^-(X)}{D(X)}=1-\prod_{j\geq1\text{ אי-זוגי}}\left(1-2^{-j}\right) \approx 0.5806.</math>
+במילים אחרות, הכיוון ההפוך נכשל בכ-42% מהמקרים. אטיין פוברי ויורגן קלינרס הוכיחו שהכיוון ההפוך נכשל בשיעור שבין כשליש לכ-58% מהמקרים,{{הערה|1=É. Fouvry, J. Klüners, ''On the negative Pell equation'', Annals of Mathematics '''172''' (2010), no. 3, pp. 2035–2104|כיווון=שמאל}} וב-2022 טענו פטר קוימנס וקרלו פגאנו להוכחה מלאה של ההשערה של סטיבנהגן.{{הערה|1=P. Koymans, C. Pagano, ''On Stevenhagen's conjecture'', arXiv:2201.13424, 2022|כיווון=שמאל}}
+
+== שדות ממעלה שלישית ==
+אם <math>K</math> שדה ממעלה שלישית מרוכב, יש לו שיכון ממשי יחיד, ואפשר לבחור את היחידה היסודית <math>\varepsilon</math> באופן יחיד כך ש-<math>|\varepsilon| \gt 1</math> בשיכון הזה. אם הדיסקרימיננטה <math>\Delta</math> של <math>K</math> מקיימת <math>|\Delta| \ge 33</math>, אז{{הערה|1=Ş. Alaca, K. S. Williams, ''Introductory Algebraic Number Theory'', Theorem 13.6.1|כיווון=שמאל}}
+:<math>\varepsilon^3\gt\frac{|\Delta|-27}{4}.</math>
+לדוגמה, היחידה היסודית של <math>\mathbb{Q}(\sqrt[3]{2})</math> היא
+:<math>\varepsilon = 1+\sqrt[3]{2}+\sqrt[3]{4} \approx 3.847.</math>
+זו אכן יחידה: <math>(\sqrt[3]{2}-1)(1+\sqrt[3]{2}+\sqrt[3]{4}) = (\sqrt[3]2)^3 - 1 = 1</math>, ולכן ההופכי שלה הוא <math>\sqrt[3]{2} - 1</math>, שגם הוא שלם אלגברי. מתקיים <math>\varepsilon^3\approx 56.95</math>, והדיסקרימיננטה של השדה היא <math>-108</math>, ולכן
+:<math>\frac{|\Delta|-27}{4}=\frac{81}{4} = 20.25,</math>
+ואכן <math>\varepsilon^3 \approx 56.95 \gt 20.25</math>.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Ş. Alaca, K. S. Williams, ''Introductory Algebraic Number Theory'', Cambridge University Press, 2004
+* D. Buell, ''Binary Quadratic Forms: Classical Theory and Modern Computations'', Springer, 1989, pp. 92–93
+* J. Neukirch, ''Algebraic Number Theory'', Springer, 1999
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
