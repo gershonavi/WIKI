@@ -1,0 +1,33 @@
+ב[[מתמטיקה]], ובפרט ב[[תורת המספרים]], '''השערת ניומן''' (ב[[אנגלית]]: Newman's conjecture) היא [[השערה (מתמטיקה)|השערה]] על ההתנהגות של [[פונקציית החלוקה]] [[חשבון מודולרי|מודולו]] מספר שלם כלשהו. ליתר דיוק, היא קובעת שלכל שלמים <math>m</math> ו-<math>r</math> עם <math>0 \le r \le m-1</math>, הערך של פונקציית החלוקה <math>p(n)</math> מקיים את החפיפה <math>p(n) \equiv r \pmod{m}</math> עבור אינסוף שלמים אי-שליליים <math>n</math>. את ההשערה ניסח המתמטיקאי מוריס ניומן ב-1960.{{הערה|שם=n60|1=M. Newman, Periodicity Modulo m and Divisibility Properties of the Partition Function, Transactions of the American Mathematical Society 97 (2), 1960, עמ' 225–236, {{DOI|10.2307/1993300}}|כיווון=שמאל}} היא עדיין לא נפתרה.
+
+(להבדיל מההשערה של צ'רלס מ. ניומן על קבוע דה ברויין–ניומן.)
+
+== היסטוריה ==
+אודמונד קולברג היה כנראה הראשון ש[[הוכחה|הוכיח]] תוצאה קשורה, והיא שפונקציית החלוקה מקבלת גם ערכים [[זוגיות (מתמטיקה)|זוגיים]] וגם ערכים אי-זוגיים אינסוף פעמים. ההוכחה הייתה אלמנטרית ונגישה בקלות, וניומן הציע אותה כתרגיל ב-American Mathematical Monthly.{{הערה|1=M. V. Subbarao, Some Remarks on the Partition Function, The American Mathematical Monthly 73 (8), 1966, עמ' 851–854, {{DOI|10.2307/2314179}}|כיווון=שמאל}}{{הערה|1=O. Kolberg, Note on the Parity of the Partition Functions, Mathematica Scandinavica 7, 1959, עמ' 377–378, {{DOI|10.7146/math.scand.a-10584}}|כיווון=שמאל}}{{הערה|1=M. Newman, J. H. van Lint, 4944, The American Mathematical Monthly 69 (2), 1962, עמ' 175, {{DOI|10.2307/2312568}}|כיווון=שמאל}}
+
+שנה אחר כך, ב-1960, הציע ניומן את ההשערה והוכיח במאמרו המקורי את המקרים <math>m = 5</math> ו-<math>m = 13</math>,{{הערה|שם=n60}} ואת <math>m = 65</math> שנתיים מאוחר יותר.{{הערה|1=M. Newman, Congruences for the partition function to composite moduli, Illinois Journal of Mathematics 6 (1), 1962, עמ' 59–63, {{DOI|10.1215/ijm/1255631806}}|כיווון=שמאל}}
+
+קן אונו, מתמטיקאי אמריקאי, התקדם עוד בכך שהציג תנאים מספיקים לכך שההשערה תתקיים עבור <math>m</math> [[מספר ראשוני|ראשוני]]. תחילה הראה שהשערת ניומן מתקיימת עבור <math>m</math> ראשוני אם לכל <math>r</math> בין 0 ל-<math>m-1</math> יש שלם אי-שלילי <math>n</math> כך ש-
+* <math>24 \mid mn+1</math>, וגם
+* <math>p \left(\frac{mn+1}{24} \right) \equiv r \pmod{m}</math>.
+הוא השתמש בתוצאה הזו, יחד עם תוכנת מחשב, כדי להוכיח את ההשערה לכל הראשוניים הקטנים מ-1000, פרט ל-3.{{הערה|שם=ono|1=K. Ono, Distribution of the Partition Function Modulo m, Annals of Mathematics 151 (1), 2000, עמ' 293–307, {{DOI|10.2307/121118}}|כיווון=שמאל}} אלגרן הרחיב את התוצאה והראה שהתנאי של אונו מתקיים למעשה לכל המספרים ה[[מספר פריק|פריקים]] ה[[מספרים זרים|זרים]] ל-6.{{הערה|1=S. Ahlgren, Distribution of the partition function modulo composite integers M, Mathematische Annalen 318 (4), 2000, עמ' 795–803, {{DOI|10.1007/s002080000142}}|כיווון=שמאל}}
+
+שלוש שנים מאוחר יותר הראה אונו (עם ברונייה) שלכל ראשוני <math>m</math> גדול מ-3, אחד מהבאים חייב להתקיים:
+* השערת ניומן מתקיימת עבור <math>m</math>, או
+* <math>m\mid p(mn+k)</math> לכל שלם אי-שלילי <math>n</math>, כאשר <math>1\le k \lt 24</math> ו-<math>24k\equiv 1 \pmod{m}</math>.
+בעזרת מחשב הוא הוכיח את המשפט לכל הראשוניים הקטנים מ-200,000, פרט ל-3.{{הערה|1=J. H. Bruinier, K. Ono, Coefficients of half-integral weight modular forms, Journal of Number Theory 99 (1), 2003, עמ' 164–179, {{DOI|10.1016/S0022-314X(02)00061-6}}|כיווון=שמאל}}
+
+(האפשרות השנייה היא חפיפה בסגנון רמנוג'אן, כמו <math>5 \mid p(5n+4)</math>. כאן <math>m = 5</math>, <math>k = 4</math> ו-<math>24 \cdot 4 = 96 \equiv 1 \pmod 5</math>.)
+
+אחר כך השתמשו אלגרן ובוילן בקריטריון של אונו כדי להרחיב את השערת ניומן לכל הראשוניים, פרט אולי ל-3.{{הערה|1=S. Ahlgren, M. Boylan, Arithmetic properties of the partition function, Inventiones Mathematicae 153 (3), 2003, עמ' 487–502, {{DOI|10.1007/s00222-003-0295-6}}|כיווון=שמאל}} שנתיים אחר כך הרחיבו את התוצאה לכל חזקות הראשוניים פרט לחזקות של 2 או של 3.{{הערה|1=S. Ahlgren, M. Boylan, Coefficients of half-integral weight modular forms modulo ℓ^j, Mathematische Annalen 331 (1), 2005, עמ' 219–239, {{DOI|10.1007/s00208-004-0555-9}}|כיווון=שמאל}}
+
+== התקדמות חלקית ומקרים שנפתרו ==
+הטענה החלשה יותר, שלחפיפה <math>p(n)\equiv 0 \pmod{m}</math> יש לפחות פתרון אחד, הוכחה לכל הראשוניים <math>m</math>. היא נודעה בעבר כהשערת ארדש–איביץ', על שם המתמטיקאים [[פאול ארדש]] ואלכסנדר איביץ'. את השאלה הכריע א. שינצל.{{הערה|שם=ono}}
+
+'''דוגמה (נוספה בתרגום).''' ערכי <math>p(n)</math> הראשונים הם <math>1, 1, 2, 3, 5, 7, 11, 15, 22, 30, 42, 56, 77, \dots</math>. מודולו 2 הם <math>1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, \dots</math>, ומודולו 3 כבר בין הערכים הראשונים מופיעות כל השאריות: <math>p(0) = 1</math>, <math>p(2) = 2</math>, <math>p(3) = 3 \equiv 0</math>. ההשערה אומרת שכל שארית חוזרת אינסוף פעמים.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]

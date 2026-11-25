@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (152)
+## ערכים (157)
 
 ### אנליזה מרוכבת
 
@@ -27,6 +27,7 @@
 * [השערת דיקסון](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%93%D7%99%D7%A7%D7%A1%D7%95%D7%9F.md) – Dickson's conjecture
 * [השערת הארדי-ליטלווד הראשונה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%90%D7%A8%D7%93%D7%99-%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%94.md) – First Hardy–Littlewood conjecture
 * [השערת המתאם הזוגי של מונטגומרי](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%9E%D7%AA%D7%90%D7%9D%20%D7%94%D7%96%D7%95%D7%92%D7%99%20%D7%A9%D7%9C%20%D7%9E%D7%95%D7%A0%D7%98%D7%92%D7%95%D7%9E%D7%A8%D7%99.md) – Montgomery's pair correlation conjecture
+* [השערת ניומן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A0%D7%99%D7%95%D7%9E%D7%9F.md)
 * [השערת פוליניאק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A4%D7%95%D7%9C%D7%99%D7%A0%D7%99%D7%90%D7%A7.md) – Polignac's conjecture
 * [מספר אידוניאלי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%90%D7%99%D7%93%D7%95%D7%A0%D7%99%D7%90%D7%9C%D7%99.md) – Idoneal number
 
@@ -191,6 +192,7 @@
 * [בעיית בולי הדואר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%91%D7%95%D7%9C%D7%99%20%D7%94%D7%93%D7%95%D7%90%D7%A8.md) – Postage stamp problem
 * [השערת ארדש-טוראן על בסיסים אדיטיביים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%A8%D7%93%D7%A9-%D7%98%D7%95%D7%A8%D7%90%D7%9F%20%D7%A2%D7%9C%20%D7%91%D7%A1%D7%99%D7%A1%D7%99%D7%9D%20%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99%D7%99%D7%9D.md) – Erdős–Turán conjecture on additive bases
 * [מספר מנומס](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A0%D7%95%D7%9E%D7%A1.md) – Polite number
+* [משפט המספרים המצולעים הממורכזים](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%9E%D7%A6%D7%95%D7%9C%D7%A2%D7%99%D7%9D%20%D7%94%D7%9E%D7%9E%D7%95%D7%A8%D7%9B%D7%96%D7%99%D7%9D.md)
 
 ### תורת המספרים האלגברית
 
@@ -202,6 +204,8 @@
 * [אלגוריתם אודליצקו-שנהאגה](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%90%D7%95%D7%93%D7%9C%D7%99%D7%A6%D7%A7%D7%95-%D7%A9%D7%A0%D7%94%D7%90%D7%92%D7%94.md) – Odlyzko–Schönhage algorithm
 * [אפס זיגל](pages/%D7%90%D7%A4%D7%A1%20%D7%96%D7%99%D7%92%D7%9C.md) – Siegel zero
 * [בעיית 3 חלקי 2 של מאהלר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%203%20%D7%97%D7%9C%D7%A7%D7%99%202%20%D7%A9%D7%9C%20%D7%9E%D7%90%D7%94%D7%9C%D7%A8.md) – Mahler's 3/2 problem
+* [הזהות של דגן לשמונה ריבועים](pages/%D7%94%D7%96%D7%94%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%93%D7%92%D7%9F%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A0%D7%94%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D.md)
+* [הזהות של פפיסטר לשישה עשר ריבועים](pages/%D7%94%D7%96%D7%94%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%A4%D7%A4%D7%99%D7%A1%D7%98%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A9%D7%94%20%D7%A2%D7%A9%D7%A8%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D.md) – Pfister's sixteen-square identity
 * [הלמה של הואה](pages/%D7%94%D7%9C%D7%9E%D7%94%20%D7%A9%D7%9C%20%D7%94%D7%95%D7%90%D7%94.md) – Hua's lemma
 * [הנפה הגדולה](pages/%D7%94%D7%A0%D7%A4%D7%94%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94.md) – Large sieve
 * [השיטה של טוראן](pages/%D7%94%D7%A9%D7%99%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%98%D7%95%D7%A8%D7%90%D7%9F.md) – Turán's method
@@ -231,6 +235,7 @@
 * [סכום קרקטרים](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D.md) – Character sum
 * [פונקציית דיקמן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%93%D7%99%D7%A7%D7%9E%D7%9F.md) – Dickman function
 * [קבוע מייסל-מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
+* [קבוצת היילברון](pages/%D7%A7%D7%91%D7%95%D7%A6%D7%AA%20%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md)
 * [שיטת המעגל של הארדי וליטלווד](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%A2%D7%92%D7%9C%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A8%D7%93%D7%99%20%D7%95%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93.md) – Hardy–Ramanujan–Littlewood circle method
 * [תופעת דויירינג-היילברון](pages/%D7%AA%D7%95%D7%A4%D7%A2%D7%AA%20%D7%93%D7%95%D7%99%D7%99%D7%A8%D7%99%D7%A0%D7%92-%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Deuring–Heilbronn phenomenon
 * [תורת המספרים האנליטית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA.md) – Analytic number theory

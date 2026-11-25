@@ -1,0 +1,20 @@
+ב[[מתמטיקה]], '''קבוצת היילברון''' (ב[[אנגלית]]: Heilbronn set) היא קבוצה אינסופית <math>S</math> של מספרים טבעיים, כך שאפשר לקרב כל [[מספר ממשי]] בדיוק כרצוננו בשבר שהמכנה שלו ב-<math>S</math>. לכל מספר ממשי <math>\theta</math> ולכל מספר טבעי <math>h</math> קל למצוא את השלם <math>g</math> שעבורו <math>g/h</math> הקרוב ביותר ל-<math>\theta</math>. למשל, עבור המספר הממשי <math>\pi</math> ו-<math>h=100</math> מתקבל <math>g=314</math>. אם קוראים "קרבה" של <math>\theta</math> ל-<math>g/h</math> להפרש בין <math>h\theta</math> לבין <math>g</math>, הקרבה תמיד קטנה מ-1/2 (בדוגמה שלנו היא <math>0.15926\ldots</math>). אוסף של מספרים הוא קבוצת היילברון אם לכל <math>\theta</math> אפשר תמיד למצוא סדרה של ערכי <math>h</math> בקבוצה שעבורם הקרבה שואפת לאפס.
+
+באופן מתמטי יותר, נסמן ב-<math>\|\alpha\|</math> את המרחק מ-<math>\alpha</math> לשלם הקרוב ביותר. אז <math>\mathcal H</math> היא קבוצת היילברון אם ורק אם לכל מספר ממשי <math>\theta</math> ולכל <math>\varepsilon>0</math> יש <math>h\in\mathcal H</math> כך ש-<math>\|h\theta\| \lt \varepsilon</math>.{{הערה|1=H. L. Montgomery, Ten lectures on the Interface Between Analytic Number Theory and Harmonic Analysis, CBMS Regional Conference Series in Mathematics 84, American Mathematical Society, 1994|כיווון=שמאל}}
+
+== דוגמאות ==
+המספרים הטבעיים הם קבוצת היילברון, כי [[משפט הקירוב של דיריכלה]] מראה שיש <math>q \le \lceil 1/\varepsilon \rceil</math> עם <math>\|q\theta\| \lt \varepsilon</math>. (ההוכחה בעזרת [[עקרון שובך היונים]] מופיעה בשיעור P5 בקורס שיטות ההוכחה.)
+
+החזקות ה-<math>k</math>-יות של השלמים הן קבוצת היילברון. זה נובע מתוצאה של [[איוואן וינוגרדוב|וינוגרדוב]], שהראה שלכל <math>N</math> ו-<math>k</math> יש מעריך <math>\eta_k>0</math> ו-<math>q \lt N</math> כך ש-<math>\|q^k\theta\|\ll N^{-\eta_k}</math>.{{הערה|1=I. M. Vinogradov, Analytischer Beweis des Satzes uber die Verteilung der Bruchteile eines ganzen Polynoms, Bull. Acad. Sci. USSR 21 (6), 1927, עמ' 567–578|כיווון=שמאל}} במקרה <math>k=2</math> הצליח הנס היילברון להראות שאפשר לקחת את <math>\eta_2</math> קרוב כרצוננו ל-1/2.{{הערה|1=H. Heilbronn, On the distribution of the sequence n²θ (mod 1), Q. J. Math. 19, 1948, עמ' 249–256, {{DOI|10.1093/qmath/os-19.1.249}}|כיווון=שמאל}} אלכסנדרו זהרסקו שיפר את התוצאה של היילברון והראה שאפשר לקחת את <math>\eta_2</math> קרוב כרצוננו ל-4/7.{{הערה|1=A. Zaharescu, Small values of n²α (mod 1), Invent. Math. 121 (2), 1995, עמ' 379–388, {{DOI|10.1007/BF01884304}}|כיווון=שמאל}}
+
+כל קבוצת ואן דר קורפוט היא גם קבוצת היילברון.
+
+== דוגמה לקבוצה שאינה קבוצת היילברון ==
+החזקות של 10 אינן קבוצת היילברון. ניקח <math>\varepsilon=0.001</math>. אז הטענה ש-<math>\|10^k\theta\| \lt \varepsilon</math> עבור <math>k</math> כלשהו שקולה לטענה שבפיתוח העשרוני של <math>\theta</math> מופיעים איפשהו שלושה אפסים רצופים או שלוש תשיעיות רצופות. זה לא נכון לכל המספרים הממשיים.
+
+'''הסבר (נוסף בתרגום).''' כפל ב-<math>10^k</math> מזיז את הנקודה העשרונית <math>k</math> מקומות ימינה, ולכן החלק השבור של <math>10^k\theta</math> הוא <math>0.d_{k+1}d_{k+2}d_{k+3}\ldots</math>, כאשר <math>d_i</math> הן ספרות <math>\theta</math>. המרחק לשלם הקרוב קטן מ-0.001 רק אם החלק השבור קטן מ-0.001 (שלוש ספרות 0) או גדול מ-0.999 (שלוש ספרות 9). מספר כמו <math>\theta = 0.121212\ldots = 4/33</math> אין בו אף רצף כזה, ולכן <math>\|10^k \theta\| \ge 0.001</math> לכל <math>k</math>.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
