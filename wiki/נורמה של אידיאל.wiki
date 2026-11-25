@@ -1,0 +1,63 @@
+ב[[אלגברה קומוטטיבית]], '''הנורמה של אידיאל''' היא הכללה של [[נורמה (אלגברה)|הנורמה של איבר]] ב[[הרחבת שדות]]. היא חשובה במיוחד ב[[תורת המספרים]], משום שהיא מודדת את "הגודל" של [[אידיאל (אלגברה)|אידיאל]] בחוג מספרים מסובך בעזרת אידיאל בחוג פשוט יותר. כשהחוג הפשוט הוא חוג השלמים <math>\mathbb Z</math>, הנורמה של אידיאל <math>I \ne 0</math> בחוג מספרים <math>R</math> היא פשוט מספר האיברים של [[חוג מנה|חוג המנה]] הסופי <math>R/I</math>.
+
+== הנורמה המוחלטת ==
+יהי <math>L</math> [[שדה מספרים]] עם [[חוג השלמים האלגבריים|חוג שלמים]] <math>\mathcal{O}_L</math>, ויהי <math>\mathfrak a</math> אידיאל (שלם) שונה מאפס של <math>\mathcal{O}_L</math>. '''הנורמה המוחלטת''' של <math>\mathfrak a</math> היא
+:<math>N(\mathfrak a) :=\left [ \mathcal{O}_L: \mathfrak a\right ]=\left|\mathcal{O}_L/\mathfrak a\right|.</math>
+לפי מוסכמה, הנורמה של אידיאל האפס היא אפס.
+
+אם <math>\mathfrak a=(a)</math> [[אידיאל (אלגברה)|אידיאל ראשי]], אז
+:<math>N(\mathfrak a)=\left|N_{L/\mathbb{Q}}(a)\right|.</math>{{הערה|שם=Marcus|1=D. A. Marcus, ''Number Fields'', Universitext, Springer, New York, 1977, Theorem 22c|כיווון=שמאל}}
+
+הנורמה היא [[פונקציה כפלית לחלוטין|כפלית לחלוטין]]: לכל שני אידיאלים <math>\mathfrak a</math> ו-<math>\mathfrak b</math> של <math>\mathcal{O}_L</math>,
+:<math>N(\mathfrak a\cdot\mathfrak b)=N(\mathfrak a)N(\mathfrak b).</math>{{הערה|שם=Marcus}}
+לכן הנורמה המוחלטת מתרחבת באופן יחיד ל[[הומומורפיזם]] של חבורות
+:<math>N\colon\mathcal{I}_{\mathcal{O}_L}\to\mathbb{Q}_{>0}^\times,</math>
+המוגדר על כל ה[[אידיאל שבור|אידיאלים השבורים]] השונים מאפס של <math>\mathcal{O}_L</math>.
+
+אם <math>\mathfrak p</math> אידיאל ראשוני שונה מאפס, חוג המנה <math>\mathcal O_L/\mathfrak p</math> הוא [[שדה סופי]], ולכן <math>N(\mathfrak p) = p^f</math>, כאשר <math>p</math> הוא הראשוני היחיד ב-<math>\mathfrak p \cap \mathbb Z</math> ו-<math>f</math> הוא '''דרגת השארית''' של <math>\mathfrak p</math>. בעזרת הכפליות, הנורמה של כל אידיאל מתקבלת מהפירוק שלו לאידיאלים ראשוניים.
+
+אפשר להשתמש בנורמה של אידיאל <math>\mathfrak a</math> כדי לחסום מלמעלה את נורמת השדה של האיבר ה"קטן ביותר" בו: תמיד קיים <math>a\in\mathfrak a</math> שונה מאפס שעבורו
+:<math>\left|N_{L/\mathbb{Q}}(a)\right|\leq \left ( \frac{2}{\pi}\right )^s \sqrt{\left|\Delta_L\right|}\,N(\mathfrak a),</math>
+כאשר <math>\Delta_L</math> היא ה[[דיסקרימיננטה]] של <math>L</math>, ו-<math>s</math> הוא מספר הזוגות של [[שיכון (מתמטיקה)|שיכונים]] מרוכבים (לא ממשיים) של <math>L</math> ב-<math>\mathbb{C}</math>, כלומר מספר המקומות המרוכבים של <math>L</math>.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Grundlehren der mathematischen Wissenschaften '''322''', Springer, 1999, Lemma I.6.2|כיווון=שמאל}} החסם הזה הוא הבסיס להוכחה שמספר המחלקה של שדה מספרים סופי (ראו [[חבורת מחלקות האידיאלים]]).
+
+== דוגמאות ==
+=== בשלמים של גאוס ===
+יהי <math>L = \mathbb Q(i)</math>, כך ש-<math>\mathcal O_L = \mathbb Z[i]</math> ו-<math>N_{L/\mathbb Q}(a+bi) = a^2+b^2</math>.
+* '''האידיאל <math>(2+i)</math>.''' לפי הנוסחה לאידיאלים ראשיים, <math>N((2+i)) = 2^2+1^2 = 5</math>. אפשר לראות זאת ישירות: מודולו <math>2+i</math> מתקיים <math>i \equiv -2</math>, ולכן כל <math>a+bi</math> שקול למספר שלם <math>a - 2b</math>; בנוסף <math>5 = (2+i)(2-i)</math> שייך לאידיאל. לכן <math>\mathbb Z[i]/(2+i) = \{0,1,2,3,4\}</math> הוא השדה <math>\mathbb Z/5\mathbb Z</math>, עם 5 איברים בדיוק.
+* '''האידיאל <math>(1+i)</math>.''' <math>N((1+i)) = 1 + 1 = 2</math>, וחוג המנה הוא <math>\{0, 1\}</math>.
+* '''האידיאל <math>(3)</math>.''' <math>N((3)) = 3^2 + 0^2 = 9</math>. הנציגים של <math>\mathbb Z[i]/(3)</math> הם <math>a+bi</math> עם <math>a, b \in \{0,1,2\}</math> – תשעה איברים. מאחר ש-<math>x^2+1</math> אי-פריק מודולו 3, חוג המנה הוא השדה בן 9 האיברים, ו-<math>(3)</math> אידיאל ראשוני עם דרגת שארית <math>f = 2</math>.
+* '''כפליות.''' <math>(5) = (2+i)(2-i)</math>, ולכן <math>N((5)) = 5 \cdot 5 = 25</math>, בהתאמה ל-<math>N_{L/\mathbb Q}(5) = 25</math>.
+
+=== ב-<math>\mathbb Z[\sqrt{-5}]</math> ===
+כאן <math>N(a+b\sqrt{-5}) = a^2+5b^2</math>. לאידיאל הלא-ראשי <math>J = (2, 1+\sqrt{-5})</math> יש נורמה 2: מודולו <math>J</math> מתקיים <math>\sqrt{-5} \equiv -1</math> ו-<math>2 \equiv 0</math>, ולכן חוג המנה הוא <math>\{0, 1\}</math>. באופן דומה ל-<math>J_3 = (3, 1+\sqrt{-5})</math> יש נורמה 3. מאחר ש-<math>(1+\sqrt{-5}) = J J_3</math>, הכפליות נותנת <math>N((1+\sqrt{-5})) = 2\cdot 3 = 6</math>, וזה אכן <math>1^2 + 5\cdot 1^2</math>.
+
+נבדוק גם את החסם על האיבר הקטן ביותר: עבור <math>L = \mathbb Q(\sqrt{-5})</math> יש <math>s = 1</math> ו-<math>\Delta_L = -20</math>, ולכן עבור <math>\mathfrak a = J</math> החסם הוא <math>\tfrac{2}{\pi}\sqrt{20}\cdot 2 \approx 5.69</math>. ואכן <math>2 \in J</math> ו-<math>N_{L/\mathbb Q}(2) = 4 \le 5.69</math>. מאחר ש-<math>J</math> אינו ראשי, אין בו איבר מנורמה 2 בדיוק, ולכן 4 היא הנורמה הקטנה ביותר של איבר שונה מאפס ב-<math>J</math>.
+
+== הנורמה היחסית ==
+יהי <math>A</math> [[חוג דדקינד]] עם [[שדה שברים]] <math>K</math>, ויהי <math>B</math> הסגור השלם של <math>A</math> ב[[הרחבה ספרבילית]] סופית <math>L</math> של <math>K</math> (מכאן נובע שגם <math>B</math> חוג דדקינד). נסמן ב-<math>\mathcal{I}_A</math> וב-<math>\mathcal{I}_B</math> את חבורות האידיאלים של <math>A</math> ו-<math>B</math>, בהתאמה (כלומר, את קבוצות האידיאלים השבורים השונים מאפס). בעקבות הגישה של [[ז'אן-פייר סר]], '''העתקת הנורמה'''
+:<math>N_{B/A}\colon \mathcal{I}_B \to \mathcal{I}_A</math>
+היא ההומומורפיזם היחיד של חבורות שמקיים
+:<math>N_{B/A}(\mathfrak q) = \mathfrak{p}^{[B/\mathfrak q : A/\mathfrak p]}</math>
+לכל [[אידיאל ראשוני]] <math>\mathfrak q \ne 0</math> של <math>B</math>, כאשר <math>\mathfrak p = \mathfrak q\cap A</math> הוא האידיאל הראשוני של <math>A</math> ש"מתחת" ל-<math>\mathfrak q</math>.
+
+באופן שקול, לכל <math>\mathfrak b\in\mathcal{I}_B</math> אפשר להגדיר את <math>N_{B/A}(\mathfrak{b})</math> כאידיאל השבור של <math>A</math> שנוצר על ידי הקבוצה <math>\{ N_{L/K}(x) : x \in \mathfrak{b} \}</math> של נורמות השדה של איברי <math>\mathfrak b</math>.{{הערה|1=G. J. Janusz, ''Algebraic Number Fields'', 2nd ed., Graduate Studies in Mathematics '''7''', AMS, 1996, Proposition I.8.2|כיווון=שמאל}}
+
+עבור <math>\mathfrak a \in \mathcal{I}_A</math> מתקיים <math>N_{B/A}(\mathfrak a B) = \mathfrak a^n</math>, כאשר <math>n = [L : K]</math>. הנורמה של אידיאל ראשי מתיישבת עם נורמת השדה של איבר:
+:<math>N_{B/A}(xB) = N_{L/K}(x)A.</math>{{הערה|1=J.-P. Serre, ''Local Fields'', Graduate Texts in Mathematics '''67''', Springer, New York, 1979, §I.5, Proposition 14|כיווון=שמאל}}
+
+תהי <math>L/K</math> [[הרחבת גלואה]] של שדות מספרים עם חוגי שלמים <math>\mathcal{O}_K\subset \mathcal{O}_L</math>. אז כל מה שנאמר למעלה חל עם <math>A = \mathcal{O}_K</math> ו-<math>B = \mathcal{O}_L</math>, ולכל <math>\mathfrak b\in\mathcal{I}_{\mathcal{O}_L}</math> מתקיים
+:<math>N_{\mathcal{O}_L/\mathcal{O}_K}(\mathfrak b)= K \cap\prod_{\sigma \in \mathrm{Gal}(L/K)} \sigma (\mathfrak b),</math>
+שהוא איבר של <math>\mathcal{I}_{\mathcal{O}_K}</math>. למשל, עבור <math>\mathbb Q(i)/\mathbb Q</math> והאידיאל <math>(2+i)</math>, ההצמדה המרוכבת נותנת <math>(2+i)(2-i) = (5)</math>, ולכן <math>N((2+i)) = (5)</math>. עבור <math>(3)</math>, שהוא אידיאל ראשוני מעל <math>3</math> עם <math>[\mathbb Z[i]/(3) : \mathbb Z/3] = 2</math>, ההגדרה נותנת <math>N((3)) = (3)^2 = (9)</math>, בהתאמה ל-<math>N_{L/\mathbb Q}(3) = 9</math>.
+
+את הסימון <math>N_{\mathcal{O}_L/\mathcal{O}_K}</math> מקצרים לפעמים ל-<math>N_{L/K}</math>. זהו שימוש חופשי בסימון, שמתיישב עם הסימון <math>N_{L/K}</math> לנורמת השדה, כפי שצוין למעלה.
+
+במקרה <math>K=\mathbb{Q}</math> טבעי להשתמש במספרים [[מספר רציונלי|רציונליים]] חיוביים כטווח של <math>N_{\mathcal{O}_L/\mathbb{Z}}</math>, משום שחבורת המחלקות של <math>\mathbb{Z}</math> טריוויאלית וחבורת היחידות שלו היא <math>\{\pm 1\}</math>, ולכן כל אידיאל שבור שונה מאפס של <math>\mathbb{Z}</math> נוצר על ידי מספר רציונלי חיובי יחיד. לפי המוסכמה הזו, הנורמה היחסית מ-<math>L</math> ל-<math>K=\mathbb{Q}</math> מתלכדת עם הנורמה המוחלטת.
+
+== ראו גם ==
+* [[נורמה (אלגברה)]]
+* [[פונקציית זטא של דדקינד]] – הטור <math>\sum_{\mathfrak a} N(\mathfrak a)^{-s}</math> על כל האידיאלים השונים מאפס
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
