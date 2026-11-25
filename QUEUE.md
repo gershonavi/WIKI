@@ -24,7 +24,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Bell series
 - [x] Generalized Riemann hypothesis
 - [ ] Particular values of the Riemann zeta function
-- [ ] Hecke character
+- [x] Hecke character
 - [x] Selberg class
 - [x] Lerch transcendent
 - [x] Clausen function
