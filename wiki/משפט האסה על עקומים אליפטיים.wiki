@@ -1,0 +1,52 @@
+ב[[מתמטיקה]], '''משפט האסה על עקומים אליפטיים''', שנקרא גם '''חסם האסה''', נותן הערכה למספר הנקודות על [[עקום אליפטי]] מעל [[שדה סופי]].
+
+באופן פורמלי, המשפט קובע שאם <math>N</math> מספר הנקודות על העקום האליפטי <math>E</math> מעל שדה סופי בן <math>q</math> איברים, אז
+:<math>|N - (q + 1)| \le 2\sqrt q.</math>
+הסיבה היא ש-<math>N</math> שונה מ-<math>q + 1</math>, מספר הנקודות על [[ישר פרויקטיבי|הישר הפרויקטיבי]] מעל אותו שדה, ב"איבר שגיאה" שהוא סכום של שני [[מספר מרוכב|מספרים מרוכבים]], שהערך המוחלט של כל אחד מהם <math>\sqrt q</math>. בפירוט: <math>N = q + 1 - a</math>, כאשר <math>a = \alpha + \bar\alpha</math> ו-<math>\alpha\bar\alpha = q</math>; לכן <math>|a| \le 2|\alpha| = 2\sqrt q</math>. כאן <math>\alpha, \bar\alpha</math> הם הערכים העצמיים של [[אנדומורפיזם פרובניוס]] על מודול טייט של העקום, והם שורשי הפולינום <math>x^2 - ax + q</math>.
+
+התוצאה שוערה במקור על ידי [[אמיל ארטין]] בעבודת הדוקטורט שלו.{{הערה|1=E. Artin, ''Quadratische Körper im Gebiete der höheren Kongruenzen. II'', Mathematische Zeitschrift '''19''' (1924), pp. 207–246|כיווון=שמאל}} [[הלמוט האסה]] הוכיח אותה ב-1933, וההוכחה פורסמה בסדרת מאמרים ב-1936.{{הערה|1=H. Hasse, ''Zur Theorie der abstrakten elliptischen Funktionenkörper. I, II & III'', J. Reine Angew. Math. '''175''' (1936)|כיווון=שמאל}}
+
+משפט האסה שקול לקביעת ה[[ערך מוחלט|ערך המוחלט]] של השורשים של [[פונקציית זטא מקומית|פונקציית הזטא המקומית]] של <math>E</math>. בצורה הזו אפשר לראות בו את המקבילה של [[השערת רימן]] עבור [[שדה פונקציות|שדה הפונקציות]] שמתאים לעקום האליפטי.
+
+== דוגמה מחושבת ==
+לעקום <math>E : y^2 + y = x^3 - x^2</math> (מוליך 11), ספירת הנקודות מעל <math>\mathbb F_p</math> (כולל הנקודה שבאינסוף) נותנת <math>a_p = p + 1 - N_p</math>:
+{| class="wikitable" style="text-align:center"
+! <math>p</math> !! 2 !! 3 !! 5 !! 7 !! 13 !! 17 !! 19 !! 23
+|-
+! <math>N_p</math>
+| 5 || 5 || 5 || 10 || 10 || 20 || 20 || 25
+|-
+! <math>a_p</math>
+| <math>-2</math> || <math>-1</math> || <math>1</math> || <math>-2</math> || <math>4</math> || <math>-2</math> || <math>0</math> || <math>-1</math>
+|-
+! <math>2\sqrt p</math>
+| 2.83 || 3.46 || 4.47 || 5.29 || 7.21 || 8.25 || 8.72 || 9.59
+|}
+בכל המקרים <math>|a_p| \le 2\sqrt p</math>. למשל ל-<math>p = 13</math>: <math>x^2 - 4x + 13 = 0</math> נותן <math>\alpha = 2 \pm 3i</math>, ו-<math>|\alpha| = \sqrt{13}</math>.
+
+== חסם האסה–וייל ==
+הכללה של חסם האסה ל[[עקום אלגברי|עקומים אלגבריים]] מ[[גנוס (מתמטיקה)|גנוס]] גבוה יותר היא '''חסם האסה–וייל'''. הוא נותן חסם על מספר הנקודות על עקום מעל שדה סופי. אם מספר הנקודות על העקום <math>C</math> מגנוס <math>g</math> מעל השדה הסופי <math>\mathbb F_q</math> הוא <math>\#C(\mathbb F_q)</math>, אז
+:<math>|\#C(\mathbb F_q) - (q + 1)| \le 2g\sqrt q.</math>
+גם התוצאה הזו שקולה לקביעת הערך המוחלט של שורשי פונקציית הזטא המקומית של <math>C</math>, והיא המקבילה של השערת רימן עבור שדה הפונקציות של העקום. חסם האסה–וייל מצטמצם לחסם האסה הרגיל כשמפעילים אותו על עקומים אליפטיים, שהגנוס שלהם <math>g = 1</math>.
+
+חסם האסה–וייל הוא תוצאה של [[השערות וייל]], שהציע [[אנדרה וייל]] ב-1949, ושוייל עצמו הוכיח עבור עקומים.{{הערה|1=A. Weil, ''Numbers of solutions of equations in finite fields'', Bull. Amer. Math. Soc. '''55''' (1949), pp. 497–508|כיווון=שמאל}}
+
+== ראו גם ==
+* [[השערת סאטו–טייט]] – על התפלגות <math>a_p/(2\sqrt p)</math> בקטע <math>[-1, 1]</math>
+* [[האלגוריתם של סחוף]] – לחישוב <math>N</math>
+* [[סכום קלוסטרמן|חסם וייל לסכומי קלוסטרמן]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* N. E. Hurt, ''Many Rational Points: Coding Theory and Algebraic Geometry'', Springer, 2003
+* H. Niederreiter, C. Xing, ''Algebraic Geometry in Coding Theory and Cryptography'', Princeton University Press, 2009
+* J. H. Silverman, ''The Arithmetic of Elliptic Curves'', 2nd ed., Springer, 2009, chapter "Elliptic curves over finite fields"
+* L. C. Washington, ''Elliptic Curves: Number Theory and Cryptography'', 2nd ed., Chapman & Hall/CRC, 2008
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:עקומים אליפטיים]]
+[[קטגוריה:שדות סופיים]]
+[[קטגוריה:משפטים בתורת המספרים]]
