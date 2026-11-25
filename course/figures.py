@@ -4809,6 +4809,84 @@ def _():
     save('T05-x4')
 
 
+@fig('T06-e1')
+def _():
+    ax = plt.gca(); x = np.linspace(1, 40, 2000); N = np.floor(x)
+    ax.plot(x, N * (N + 1) / 2 - x ** 2 / 2, color=C1, lw=1, label='Σ_{n≤x} n − x²/2')
+    ax.plot(x, x / 2 + 1 / 8, '--', color=C2, lw=.8, label='±(x/2 + 1/8)'); ax.plot(x, -x / 2 - 1 / 8, '--', color=C2, lw=.8)
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('the error stays inside a band of width O(x)', fontsize=9)
+    save('T06-e1')
+
+
+@fig('T06-e2')
+def _():
+    ax = plt.gca(); x = np.linspace(1, 300, 3000); N = np.floor(x).astype(int)
+    H = np.cumsum(1 / np.arange(1, 301))[N - 1]
+    ax.plot(x, H - np.log(x), color=C1, label='H(x) − log x')
+    ax.axhline(0.5772, color=C2, ls='--', label='γ'); ax.axhline(1, color=GR, ls=':'); ax.axhline(0, color=GR, ls=':')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('H(x) = log x + O(1): the difference stays in [0, 1]', fontsize=9)
+    save('T06-e2')
+
+
+@fig('T06-e3')
+def _():
+    ax = plt.gca(); x = np.logspace(1, 8, 200)
+    for f, l, c in [(x * np.log(x), 'x log x', 'k'), (x, 'x', C1), (np.sqrt(x) * np.log(x), '√x log x', C2), (np.sqrt(x), '√x', C3)]:
+        ax.loglog(x, f, color=c, label=l)
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('(x + O(√x))(log x + O(1)) = x log x + O(x)', fontsize=9)
+    save('T06-e3')
+
+
+@fig('T06-e4')
+def _():
+    ax = plt.gca(); X = 20000
+    d = np.zeros(X + 1, dtype=int)
+    for k in range(1, X + 1):
+        d[k::k] += 1
+    D = np.cumsum(d[1:]); x = np.arange(1, X + 1)
+    ax.semilogx(x[9:], (D[9:] - x[9:] * np.log(x[9:])) / x[9:], color=C1, lw=.6, label='(D(x) − x log x)/x')
+    ax.axhline(2 * 0.5772 - 1, color=C2, ls='--', label='2γ − 1 ≈ 0.154')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('Σ_{n≤x} d(n) = x log x + O(x)', fontsize=9)
+    save('T06-e4')
+
+
+@fig('T06-x1')
+def _():
+    ax = plt.gca(); x = np.logspace(.5, 12, 300)
+    ax.semilogx(x, x ** 2 / x ** 3, label='(a) x²/x³', color=C1)
+    ax.semilogx(x, np.log(x) / x ** .01, label='(c) log x / x^0.01', color=C2)
+    ax.semilogx(x, 2 + 0 * x, label='(e) 2^{x+1}/2^x', color=C3)
+    ax.semilogx(x, 1 + 1 / np.sqrt(x), label='(f) (x+√x)/x', color=C4)
+    ax.set_ylim(0, 30); ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('ratios f/g for the statements', fontsize=9)
+    save('T06-x1')
+
+
+@fig('T06-x2')
+def _():
+    ax = plt.gca(); X = 5000; x = np.arange(1, X + 1)
+    S = np.cumsum(np.sqrt(x))
+    ax.plot(x, (S - 2 / 3 * x ** 1.5) / np.sqrt(x), color=C1); ax.axhline(.5, color=C2, ls='--')
+    ax.set_xlabel('x'); ax.set_title('(Σ√n − ⅔x^{3/2})/√x → ½', fontsize=9)
+    save('T06-x2')
+
+
+@fig('T06-x3')
+def _():
+    ax = plt.gca(); x = np.logspace(0, 4, 100)
+    ax.semilogx(x, x * (np.e - (1 + 1 / x) ** x), color=C1); ax.axhline(np.e / 2, color=C2, ls='--', label='e/2')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('x·(e − (1+1/x)^x) ≤ e/2', fontsize=9)
+    save('T06-x3')
+
+
+@fig('T06-x4')
+def _():
+    ax = plt.gca(); X = 200; x = np.arange(1, X + 1)
+    tail = np.pi ** 2 / 6 - np.cumsum(1 / x ** 2)
+    ax.plot(x, x * tail, color=C1); ax.axhline(1, color=C2, ls='--')
+    ax.set_xlabel('x'); ax.set_title('x·(ζ(2) − Σ_{n≤x} 1/n²) → 1', fontsize=9)
+    save('T06-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
