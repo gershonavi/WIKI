@@ -1,10 +1,5 @@
 ב[[מתמטיקה]], '''קבוע פלר–טורנייר''' <math>C_\mathrm{FT}</math> (ב[[אנגלית]]: Feller–Tornier constant) הוא ה[[צפיפות (תורת המספרים)|צפיפות]] של קבוצת כל המספרים השלמים החיוביים שיש להם מספר זוגי של גורמים ראשוניים שונים המופיעים בחזקה גדולה מ-1 (תוך התעלמות מגורמים ראשוניים המופיעים בחזקה ראשונה בלבד).{{הערה|1={{MathWorld|Feller-TornierConstant|Feller–Tornier Constant}}|כיווון=שמאל}} הקבוע קרוי על שם [[ויליאם פלר]] (1906–1970) ואֶרהרד טורנייר (1894–1982).{{הערה|1=S. R. Finch, [http://oeis.org/wiki/Feller–Tornier_constant Mathematical Constants (Feller–Tornier constant)], OEIS Wiki|כיווון=שמאל}}
-:<math>\begin{align}
-C_\mathrm{FT} & ={1\over2}+\left( {1\over2} \prod_{n=1}^\infty \left(1-{2 \over p_n^2} \right) \right) \\
-& = {{1}\over{2}}\left(1+ \prod_{n=1}^\infty \left(1 - {{2}\over{p_n^2}} \right) \right) \\
-& = {1\over2}\left(1+{{1}\over{\zeta(2)}} \prod_{n=1}^\infty \left( 1-{{1}\over{p_n^2 -1}} \right) \right) \\
-& = {1\over2}+{{3}\over{\pi^2}} \prod_{n=1}^\infty \left( 1-{{1} \over {p_n^2 -1}} \right)= 0.66131704946\ldots
-\end{align}</math>
+:<math>\begin{align} C_\mathrm{FT} & ={1\over2}+\left( {1\over2} \prod_{n=1}^\infty \left(1-{2 \over p_n^2} \right) \right) \\ & = {{1}\over{2}}\left(1+ \prod_{n=1}^\infty \left(1 - {{2}\over{p_n^2}} \right) \right) \\ & = {1\over2}\left(1+{{1}\over{\zeta(2)}} \prod_{n=1}^\infty \left( 1-{{1}\over{p_n^2 -1}} \right) \right) \\ & = {1\over2}+{{3}\over{\pi^2}} \prod_{n=1}^\infty \left( 1-{{1} \over {p_n^2 -1}} \right)= 0.66131704946\ldots \end{align}</math>
 {{OEIS|A065493}}
 
 לדוגמה, ב-<math>72 = 2^3 \cdot 3^2</math> שני גורמים ראשוניים מופיעים בחזקה גדולה מ-1 (מספר זוגי), ולכן 72 נספר; ב-<math>12 = 2^2 \cdot 3</math> רק גורם אחד כזה, ולכן 12 אינו נספר; וכל מספר [[חופשי מריבועים]] נספר (אפס גורמים כאלה).

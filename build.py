@@ -142,6 +142,8 @@ def preprocess(text):
         b = m.group(1)
         while '}}' in b:
             b = b.replace('}}', '} }')
+        while '{{' in b:  # '{{{' would be read as a template parameter
+            b = b.replace('{{', '{ {')
         return '<math>' + b + '</math>'
     text = re.sub(r'<math>(.*?)</math>', _sep, text, flags=re.S)
     cats = re.findall(r'\[\[קטגוריה:([^\]|]+)(?:\|[^\]]*)?\]\]', text)
