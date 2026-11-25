@@ -90,7 +90,7 @@ Additive number theory:
 - [x] Quartic reciprocity
 - [x] Eisenstein reciprocity
 - [x] Power residue symbol
-- [ ] CM-field
+- [x] CM-field
 - [x] Totally real number field
 - [x] Totally imaginary number field
 - [ ] Monogenic field

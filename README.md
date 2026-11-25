@@ -330,7 +330,7 @@
 * [עבודת הדוקטורט של טייט](pages/%D7%A2%D7%91%D7%95%D7%93%D7%AA%20%D7%94%D7%93%D7%95%D7%A7%D7%98%D7%95%D7%A8%D7%98%20%D7%A9%D7%9C%20%D7%98%D7%99%D7%99%D7%98.md) – Tate's thesis
 * [פונקציית L אקוויווריאנטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%A7%D7%95%D7%95%D7%99%D7%95%D7%95%D7%A8%D7%99%D7%90%D7%A0%D7%98%D7%99%D7%AA.md) – Equivariant L-function
 * [פיצול של אידיאלים ראשוניים בהרחבות גלואה](pages/%D7%A4%D7%99%D7%A6%D7%95%D7%9C%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D%20%D7%91%D7%94%D7%A8%D7%97%D7%91%D7%95%D7%AA%20%D7%92%D7%9C%D7%95%D7%90%D7%94.md) – Splitting of prime ideals in Galois extensions
-* [שדה CM](pages/%D7%A9%D7%93%D7%94%20CM.md)
+* [שדה CM](pages/%D7%A9%D7%93%D7%94%20CM.md) – CM-field
 * [שדה דו-ריבועי](pages/%D7%A9%D7%93%D7%94%20%D7%93%D7%95-%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99.md) – Biquadratic field
 * [שדה מדומה לחלוטין](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%93%D7%95%D7%9E%D7%94%20%D7%9C%D7%97%D7%9C%D7%95%D7%98%D7%99%D7%9F.md) – Totally imaginary number field
 * [שדה ממעלה שלישית](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99%D7%A9%D7%99%D7%AA.md) – Cubic field
