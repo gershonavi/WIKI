@@ -15,7 +15,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Burgess inequality
 - [x] Smooth number
 - [x] Dickman function
-- [ ] Multiplicative number theory
+- [x] Multiplicative number theory
 - [ ] Hardy–Ramanujan–Littlewood circle method
 - [ ] Landau's function
 - [ ] Totient summatory function

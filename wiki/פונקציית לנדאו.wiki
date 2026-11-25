@@ -1,0 +1,47 @@
+ב[[מתמטיקה]], '''פונקציית לנדאו''' <math>g(n)</math>, הקרויה על שם [[אדמונד לנדאו]], מוגדרת לכל [[מספר טבעי]] <math>n</math> כ[[סדר (תורת החבורות)|סדר]] הגדול ביותר של איבר ב[[החבורה הסימטרית|חבורה הסימטרית]] <math>S_n</math>. באופן שקול, <math>g(n)</math> היא [[המכפלה המשותפת המינימלית|הכפולה המשותפת הקטנה ביותר]] הגדולה ביותר של [[חלוקה (תורת המספרים)|חלוקה]] כלשהי של <math>n</math>, או המספר המרבי של הפעמים שאפשר להפעיל [[תמורה]] של <math>n</math> איברים על עצמה לפני שהיא חוזרת לסדר ההתחלתי.
+
+למשל, <math>5 = 2 + 3</math> ו-<math>\operatorname{lcm}(2,3) = 6</math>. אף חלוקה אחרת של 5 אינה נותנת כפולה משותפת גדולה יותר, ולכן <math>g(5) = 6</math>. איבר מסדר 6 בחבורה <math>S_5</math> הוא, בכתיב מחזורים, <math>(1\ 2)(3\ 4\ 5)</math>. אותו טיעון חל גם על המספר 6, כלומר <math>g(6) = 6</math>. קיימות סדרות ארוכות כרצוננו של מספרים עוקבים <math>n, n+1, \ldots, n+m</math> שעליהן הפונקציה <math>g</math> קבועה.{{הערה|1=Jean-Louis Nicolas, ''Sur l'ordre maximum d'un élément dans le groupe S<sub>n</sub> des permutations'', Acta Arithmetica '''14''' (1968), pp. 315–332|כיווון=שמאל}}
+
+הסדרה <math>g(0) = 1, g(1) = 1, g(2) = 2, g(3) = 3, g(4) = 4, g(5) = 6, g(6) = 6, g(7) = 12, g(8) = 15, \ldots</math> (סדרה [https://oeis.org/A000793 A000793] ב-OEIS) קרויה על שם לנדאו, שהוכיח בשנת 1902 כי{{הערה|1=E. Landau, ''Über die Maximalordnung der Permutationen gegebenen Grades'', Archiv der Mathematik und Physik, Ser. 3, vol. 5 (1903); see also Landau's ''Handbuch'', pp. 92–103|כיווון=שמאל}}
+
+:<math>\lim_{n\to\infty}\frac{\ln(g(n))}{\sqrt{n \ln(n)}} = 1,</math>
+
+כאשר <math>\ln</math> הוא ה[[לוגריתם טבעי|לוגריתם הטבעי]]. באופן שקול, בסימון o קטנה, <math>g(n) = e^{(1+o(1))\sqrt{n\ln n}}</math>.
+
+ליתר דיוק,{{הערה|שם=mnr88|1=J. P. Massias, J. L. Nicolas and G. Robin, ''Évaluation asymptotique de l'ordre maximum d'un élément du groupe symétrique'', Acta Arithmetica '''50''' (1988), pp. 221–242|כיווון=שמאל}}
+
+:<math>\ln g(n)=\sqrt{n\ln n}\left(1+\frac{\ln\ln n-1}{2\ln n}-\frac{(\ln\ln n)^2-6\ln\ln n+9}{8(\ln n)^2}+O\left(\left(\frac{\ln\ln n}{\ln n}\right)^3\right)\right).</math>
+
+אם <math>\pi(x)-\operatorname{Li}(x)=O(R(x))</math>, כאשר <math>\pi</math> היא [[פונקציית המספרים הראשוניים]] ו-<math>\operatorname{Li}</math> היא [[פונקציית האינטגרל הלוגריתמי]] עם ההופכית <math>\operatorname{Li}^{-1}</math> (ולפי פורד אפשר לקחת <math>R(x)=x\exp\bigl(-c(\ln x)^{3/5}(\ln\ln x)^{-1/5}\bigr)</math> עבור קבוע כלשהו <math>c > 0</math>{{הערה|1=Kevin Ford, ''Vinogradov's integral and bounds for the Riemann zeta function'', Proceedings of the London Mathematical Society '''85''' (2002), no. 3, pp. 565–633, {{DOI|10.1112/S0024611502013655}}|כיווון=שמאל}}), אז{{הערה|שם=mnr88}}
+
+:<math>\ln g(n)=\sqrt{\operatorname{Li}^{-1}(n)}+O\bigl(R(\sqrt{n\ln n})\ln n\bigr).</math>
+
+הטענה שלכל <math>n</math> גדול מספיק
+
+:<math>\ln g(n)<\sqrt{\operatorname{Li}^{-1}(n)}</math>
+
+שקולה ל[[השערת רימן]].
+
+אפשר להראות ש-
+
+:<math>g(n)\le e^{n/e},</math>
+
+כאשר שוויון מתקיים רק עבור <math>n = 0</math>, ולמעשה{{הערה|1=Jean-Pierre Massias, ''Majoration explicite de l'ordre maximum d'un élément du groupe symétrique'', Annales de la Faculté des Sciences de Toulouse, Mathématiques (5) '''6''' (1984), no. 3–4, pp. 269–281|כיווון=שמאל}}
+
+:<math>g(n) \le \exp\left(1.05314\sqrt{n\ln n}\right).</math>
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* W. Miller, ''The maximum order of an element of a finite symmetric group'', American Mathematical Monthly '''94''' (1987), pp. 497–506
+* J.-L. Nicolas, ''On Landau's function g(n)'', in: ''The Mathematics of Paul Erdős'', vol. 1, Springer-Verlag, 1997, pp. 228–240
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://oeis.org/A000793 סדרה A000793] ב-OEIS: פונקציית לנדאו
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת החבורות]]
+[[קטגוריה:תמורות]]
+[[קטגוריה:פונקציות אריתמטיות]]

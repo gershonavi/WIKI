@@ -7,7 +7,7 @@
 
 **הערה:** התרגומים נעשו בעזרת מכונה. כדאי לבדוק ולהגיה כל ערך לפני שמפרסמים אותו.
 
-## ערכים (77)
+## ערכים (79)
 
 ### אנליזה מרוכבת
 
@@ -99,6 +99,10 @@
 * [פונקציית ז'ורדן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%27%D7%95%D7%A8%D7%93%D7%9F.md) – Jordan's totient function
 * [פרימוריאל](pages/%D7%A4%D7%A8%D7%99%D7%9E%D7%95%D7%A8%D7%99%D7%90%D7%9C.md) – Primorial
 
+### תורת החבורות
+
+* [פונקציית לנדאו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%9C%D7%A0%D7%93%D7%90%D7%95.md)
+
 ### תורת המספרים
 
 * [אלגוריתם מייסל-להמר](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9C%D7%94%D7%9E%D7%A8.md) – Meissel–Lehmer algorithm
@@ -138,6 +142,7 @@
 * [פונקציית דיקמן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%93%D7%99%D7%A7%D7%9E%D7%9F.md) – Dickman function
 * [קבוע מייסל-מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
 * [תורת המספרים האנליטית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA.md) – Analytic number theory
+* [תורת המספרים הכפלית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%9B%D7%A4%D7%9C%D7%99%D7%AA.md) – Multiplicative number theory
 * [תורת הנפה](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md) – Sieve theory
 
 ## בנייה מחדש
