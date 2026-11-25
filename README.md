@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (146)
+## ערכים (147)
 
 ### אנליזה מרוכבת
 
@@ -204,6 +204,7 @@
 * [השערה H של שינצל](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%94%20H%20%D7%A9%D7%9C%20%D7%A9%D7%99%D7%A0%D7%A6%D7%9C.md) – Schinzel's hypothesis H
 * [השערת אליוט-הלברשטם](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%9C%D7%99%D7%95%D7%98-%D7%94%D7%9C%D7%91%D7%A8%D7%A9%D7%98%D7%9D.md) – Elliott–Halberstam conjecture
 * [השערת בייטמן-הורן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%99%D7%99%D7%98%D7%9E%D7%9F-%D7%94%D7%95%D7%A8%D7%9F.md) – Bateman–Horn conjecture
+* [השערת גילברת'](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%99%D7%9C%D7%91%D7%A8%D7%AA%27.md) – Gilbreath's conjecture
 * [השערת לינדלף](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9C%D7%99%D7%A0%D7%93%D7%9C%D7%A3.md) – Lindelöf hypothesis
 * [השערת מרטנס](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Mertens conjecture
 * [השערת קרמר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%9E%D7%A8.md) – Cramér's conjecture
