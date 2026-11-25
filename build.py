@@ -77,6 +77,10 @@ def render_template(name, pos, named):
     if name in ('ltr', 'שמאל'):
         return expand(get('1'))
     if name == 'MathWorld':
+        u = (named.get('urlname') or get('1')).strip()
+        t = (named.get('title') or get('2') or u).strip()
+        if u:
+            return f'(באנגלית) [https://mathworld.wolfram.com/{u}.html {t}], באתר MathWorld'
         return '[https://mathworld.wolfram.com MathWorld]'
     if name == 'פירוש נוסף':
         return ''
