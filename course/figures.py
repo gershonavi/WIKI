@@ -2612,9 +2612,30 @@ def _():
 
 
 
+
+@fig('08-lr')
+def _():
+    X = 10 ** 7
+    s = np.zeros(X, dtype=bool)
+    for a in range(int(sqrt(X)) + 1):
+        c = np.arange(a, int(sqrt(max(X - 1 - a * a, 0))) + 1)
+        s[a * a + c * c] = True
+    s[0] = False
+    cum = np.cumsum(s)
+    xs = np.unique(np.logspace(2, 7, 60).astype(int) - 1)
+    r = cum[xs] / (xs / np.sqrt(np.log(xs)))
+    ax = plt.gca()
+    ax.semilogx(xs, r, color=C1, label='N(x) / (x/√log x)')
+    ax.axhline(0.7642236536, color=C2, ls='--', label='b ≈ 0.76422')
+    ax.set_xlabel('x'); ax.set_ylim(0.7, 0.95); ax.legend()
+    ax.set_title('Sums of two squares below x: slow convergence to b')
+    save('08-lr')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
     for k in keys:
         FIGS[k]()
     print('drew', len(keys), 'figures into', OUT)
+
