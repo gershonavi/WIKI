@@ -1,0 +1,79 @@
+ב[[אלגברה מופשטת]] וב[[תורת המספרים]], '''תורת קומר''' נותנת תיאור של סוגים מסוימים של [[הרחבת שדות|הרחבות שדות]] שמתקבלות מצירוף שורשים מסדר <math>n</math> של איברים של שדה הבסיס. את התורה פיתח לראשונה [[ארנסט קומר|ארנסט אדוארד קומר]] בשנות ה-40 של המאה ה-19, בעבודתו פורצת הדרך על [[המשפט האחרון של פרמה]]. הטענות העיקריות אינן תלויות בטבע השדה – פרט ל[[מאפיין (אלגברה)|מאפיין]] שלו, שאסור לו לחלק את המספר השלם <math>n</math> – ולכן הן שייכות לאלגברה המופשטת. את התורה של הרחבות ציקליות של שדה <math>K</math> כאשר המאפיין של <math>K</math> כן מחלק את <math>n</math> מכנים '''תורת ארטין–שרייר'''.
+
+תורת קומר היא בסיסית, למשל, ב[[תורת שדות המחלקה]] ובאופן כללי בהבנת [[הרחבה אבלית|הרחבות אבליות]]: לפיה, בנוכחות מספיק שורשי יחידה, אפשר להבין הרחבות ציקליות במונחים של הוצאת שורשים. הקושי העיקרי בתורת שדות המחלקה הוא להיפטר משורשי היחידה הנוספים ("לרדת" חזרה לשדות קטנים יותר), וזה עניין רציני הרבה יותר.
+
+== הרחבות קומר ==
+'''הרחבת קומר''' היא הרחבת שדות <math>L/K</math> שעבורה, עבור מספר שלם נתון <math>n \gt 1</math>:
+* <math>K</math> מכיל <math>n</math> [[שורש יחידה|שורשי יחידה]] שונים מסדר <math>n</math> (כלומר <math>n</math> שורשים שונים של <math>X^n - 1</math>);
+* ל-<math>L/K</math> יש [[חבורת גלואה]] [[חבורה אבלית|אבלית]] עם מעריך <math>n</math>.
+
+לדוגמה, כאשר <math>n = 2</math>, התנאי הראשון מתקיים תמיד אם המאפיין של <math>K</math> שונה מ-2. הרחבות קומר במקרה הזה כוללות את '''ההרחבות הריבועיות''' <math>L= K(\sqrt{a})</math>, כאשר <math>a \in K</math> אינו ריבוע. לפי הנוסחה הרגילה לפתרון [[משוואה ממעלה שנייה|משוואות ריבועיות]], כל הרחבה ממעלה 2 של <math>K</math> היא מהצורה הזו. הרחבות קומר במקרה הזה כוללות גם את '''ההרחבות הדו-ריבועיות''' (ראו [[שדה דו-ריבועי]]) ואת ההרחבות הרב-ריבועיות הכלליות יותר. כאשר המאפיין של <math>K</math> הוא 2, אין הרחבות קומר כאלה.
+
+כאשר <math>n = 3</math>, אין הרחבות קומר ממעלה 3 של שדה ה[[מספר רציונלי|מספרים הרציונליים]] <math>\mathbb Q</math>, משום ששלושה שורשים שלישיים של 1 דורשים [[מספר מרוכב|מספרים מרוכבים]]. אם לוקחים את <math>L</math> להיות [[שדה פיצול|שדה הפיצול]] של <math>X^3 - a</math> מעל <math>\mathbb Q</math>, כאשר <math>a</math> אינו קובייה במספרים הרציונליים, אז <math>L</math> מכיל תת-שדה <math>K</math> עם שלושה שורשים שלישיים של 1; זה משום שאם <math>\alpha</math> ו-<math>\beta</math> שורשים של הפולינום, אז <math>(\alpha/\beta)^3 = 1</math>, והפולינום ספרבילי. אז <math>L/K</math> היא הרחבת קומר.
+
+באופן כללי יותר, כאשר <math>K</math> מכיל <math>n</math> שורשי יחידה שונים מסדר <math>n</math> (וזה גורר שהמאפיין של <math>K</math> אינו מחלק את <math>n</math>), אז צירוף לשורש מסדר <math>n</math> של איבר כלשהו <math>a</math> של <math>K</math> יוצר הרחבת קומר (ממעלה <math>m</math>, עבור <math>m</math> כלשהו שמחלק את <math>n</math>). כשדה הפיצול של הפולינום <math>X^n - a</math>, הרחבת קומר היא בהכרח [[הרחבת גלואה]], עם חבורת גלואה [[חבורה ציקלית|ציקלית]] מסדר <math>m</math>. קל לעקוב אחרי פעולת גלואה דרך שורש היחידה שמופיע לפני <math>\sqrt[n]{a}</math>.
+
+'''דוגמה מלאה.''' יהי <math>K = \mathbb Q(\zeta_3)</math>, כאשר <math>\zeta_3 = e^{2\pi i/3}</math>, ויהי <math>L = K(\sqrt[3]{2})</math>. האוטומורפיזמים של <math>L/K</math> נקבעים לפי התמונה של <math>\sqrt[3]2</math>, שחייבת להיות שורש של <math>X^3 - 2</math>, כלומר <math>\zeta_3^j\sqrt[3]2</math> עבור <math>j = 0, 1, 2</math>. האוטומורפיזם <math>\sigma: \sqrt[3]2 \mapsto \zeta_3\sqrt[3]2</math> מקיים <math>\sigma^2(\sqrt[3]2) = \sigma(\zeta_3)\sigma(\sqrt[3]2) = \zeta_3^2\sqrt[3]2</math> (כי <math>\sigma</math> מקבע את <math>K</math>) ו-<math>\sigma^3 = \mathrm{id}</math>, ולכן <math>\mathrm{Gal}(L/K) = \langle\sigma\rangle</math> ציקלית מסדר 3. ההעתקה <math>\sigma^j \mapsto \sigma^j(\sqrt[3]2)/\sqrt[3]2 = \zeta_3^j</math> היא איזומורפיזם בין חבורת הגלואה לחבורת שורשי היחידה <math>\mu_3</math>. לעומת זאת, מעל <math>\mathbb Q</math> עצמו ההרחבה <math>\mathbb Q(\sqrt[3]2)/\mathbb Q</math> אינה אפילו הרחבת גלואה.
+
+'''תורת קומר''' נותנת את הכיוון ההפוך. כאשר <math>K</math> מכיל <math>n</math> שורשי יחידה שונים מסדר <math>n</math>, היא קובעת שכל הרחבה אבלית של <math>K</math> עם מעריך שמחלק את <math>n</math> מתקבלת מהוצאת שורשים של איברים של <math>K</math>. יתרה מזו, אם <math>K^\times</math> מסמן את החבורה הכפלית של האיברים השונים מאפס של <math>K</math>, ההרחבות האבליות של <math>K</math> עם מעריך <math>n</math> נמצאות בהתאמה חד-חד-ערכית ועל עם תת-החבורות של
+:<math>K^{\times}/(K^{\times})^n,</math>
+כלומר עם איברים של <math>K^\times</math> מודולו חזקות <math>n</math>-יות. את ההתאמה אפשר לתאר במפורש כך. בהינתן תת-חבורה
+:<math>\Delta \subseteq K^{\times}/(K^{\times})^n,</math>
+ההרחבה המתאימה היא
+:<math>K \left (\Delta^{1/n} \right ),\qquad \Delta^{1/n} = \left \{ \sqrt[n]{a}:a\in K^{\times},\ a \cdot \left (K^{\times} \right )^n \in \Delta \right \}.</math>
+למעשה מספיק לצרף שורש מסדר <math>n</math> של נציג אחד לכל איבר בקבוצת יוצרים כלשהי של החבורה <math>\Delta</math>. בכיוון ההפוך, אם <math>L</math> הרחבת קומר של <math>K</math>, משחזרים את <math>\Delta</math> לפי הכלל
+:<math>\Delta = \left (K^\times \cap (L^\times)^n \right )/(K^{\times})^n.</math>
+במקרה כזה יש איזומורפיזם
+:<math>\Delta \cong \mathrm{Hom}_{\text{c}}(\mathrm{Gal}(L/K), \mu_n),\qquad a \mapsto \left(\sigma \mapsto \frac{\sigma(\alpha)}{\alpha}\right),</math>
+כאשר <math>\alpha</math> שורש כלשהו מסדר <math>n</math> של <math>a</math> ב-<math>L</math>. כאן <math>\mu_n</math> מסמן את החבורה הכפלית של שורשי היחידה מסדר <math>n</math> (ששייכים ל-<math>K</math>), ו-<math>\mathrm{Hom}_{\text{c}}(\mathrm{Gal}(L/K), \mu_n)</math> היא חבורת ההומומורפיזמים הרציפים מ-<math>\mathrm{Gal}(L/K)</math>, עם טופולוגיית קרול, ל-<math>\mu_n</math> עם הטופולוגיה הדיסקרטית (עם פעולת חבורה של כפל נקודתי). אפשר לראות בחבורה הזו (עם הטופולוגיה הדיסקרטית) גם את ה[[דואליות פונטריאגין|דואלית של פונטריאגין]] של <math>\mathrm{Gal}(L/K)</math>, אם רואים ב-<math>\mu_n</math> תת-חבורה של חבורת המעגל. אם ההרחבה <math>L/K</math> סופית, אז <math>\mathrm{Gal}(L/K)</math> היא חבורה דיסקרטית סופית, ומתקיים
+:<math>\Delta \cong \mathrm{Hom}(\mathrm{Gal}(L/K), \mu_n) \cong \mathrm{Gal}(L/K),</math>
+אבל האיזומורפיזם האחרון אינו טבעי.
+
+'''דוגמה.''' עבור <math>K = \mathbb Q</math> ו-<math>n = 2</math>, תת-החבורה <math>\Delta = \langle 2, 3\rangle \subseteq \mathbb Q^\times/(\mathbb Q^\times)^2</math> מכילה ארבעה איברים, <math>\{1, 2, 3, 6\}</math> (מודולו ריבועים), וההרחבה המתאימה היא <math>\mathbb Q(\sqrt2, \sqrt3)</math> – שמכילה גם את <math>\sqrt6 = \sqrt2\sqrt3</math>. חבורת הגלואה שלה היא <math>\mathbb Z/2\times\mathbb Z/2 \cong \Delta</math>, ושלוש תת-ההרחבות הריבועיות שלה, <math>\mathbb Q(\sqrt2)</math>, <math>\mathbb Q(\sqrt3)</math> ו-<math>\mathbb Q(\sqrt6)</math>, מתאימות לשלוש תת-החבורות מסדר 2 של <math>\Delta</math>.
+
+=== שחזור <math>a^{1/n}</math> מאיבר פרימיטיבי ===
+יהי <math>p</math> ראשוני, יהי <math>K</math> שדה שמכיל את <math>\zeta_p</math>, ותהי <math>K(\beta)/K</math> הרחבת גלואה ממעלה <math>p</math>. חבורת הגלואה ציקלית, ונוצרת על ידי <math>\sigma</math> כלשהו. נגדיר ('''הממיס של לגראנז'''')
+:<math>\alpha= \sum_{l=0}^{p-1} \zeta_p^{l} \sigma^l(\beta) \in K(\beta).</math>
+אם בוחרים את <math>\beta</math> כראוי (למשל, אם <math>\{\sigma^i(\beta)\}_{i=0}^{p-1}</math> הוא בסיס נורמלי), אז <math>\alpha\neq 0</math> ו-
+:<math>\zeta_p \sigma(\alpha) = \sum_{l=0}^{p-1} \zeta_p^{l+1} \sigma^{l+1}(\beta) = \alpha.</math>
+לכן <math>\alpha\ne \sigma(\alpha)</math>, ולכן <math>K(\alpha) = K(\beta)</math>, ו-
+:<math>\alpha^p = \pm \prod_{l=0}^{p-1} \zeta_p^{-l} \alpha = \pm \prod_{l=0}^{p-1} \sigma^l(\alpha) = \pm N_{K(\beta)/K}(\alpha) \in K,</math>
+כאשר הסימן הוא <math>+</math> אם <math>p</math> אי-זוגי ו-<math>-</math> אם <math>p=2</math>.
+
+'''דוגמה, <math>p = 2</math>.''' יהיו <math>K = \mathbb Q</math> (שמכיל את <math>\zeta_2 = -1</math>) ו-<math>\beta = \tfrac{1+\sqrt5}{2}</math>, עם <math>\sigma(\beta) = \tfrac{1-\sqrt5}{2}</math>. אז <math>\alpha = \beta - \sigma(\beta) = \sqrt5</math>, ואכן <math>\alpha^2 = 5 = -N(\alpha)</math>, כי <math>N(\sqrt5) = \sqrt5\cdot(-\sqrt5) = -5</math>.
+
+כאשר <math>L/K</math> הרחבה אבלית ממעלה <math>n= \prod_{j=1}^m p_j</math> חופשית מריבועים, כך ש-<math>\zeta_n \in K</math>, מפעילים את אותו טיעון על תת-השדות <math>K(\beta_j)/K</math>, שהם הרחבות גלואה ממעלה <math>p_j</math>, ומקבלים
+:<math>L = K \left (a_1^{1/p_1},\ldots,a_m^{1/p_m} \right ) = K \left (A^{1/p_1},\ldots,A^{1/p_m} \right )= K \left (A^{1/n} \right ),\qquad A = \prod_{j=1}^m a_j^{n/p_j} \in K.</math>
+
+== העתקת קומר ==
+אחד הכלים העיקריים בתורת קומר הוא '''העתקת קומר'''. יהי <math>m</math> מספר שלם חיובי, ויהי <math>K</math> שדה, שאינו בהכרח מכיל את שורשי היחידה מסדר <math>m</math>. נסמן ב-<math>\overline{K}</math> את ה[[סגור אלגברי|סגור האלגברי]] של <math>K</math>. יש סדרה מדויקת קצרה
+:<math>0\to \overline{K}^{\times}[m] \to \overline{K}^{\times} \xrightarrow{z\mapsto z^m} \overline{K}^{\times}\to 0.</math>
+בוחרים הרחבה <math>L/K</math>, ולוקחים קוהומולוגיה ביחס ל-<math>\mathrm{Gal}(\overline{K}/L)</math>; מקבלים את הסדרה
+:<math>0\to L^{\times}/(L^{\times})^{m} \to H^1\left(L, \overline{K}^{\times}[m]\right) \to H^1\left(L,\overline{K}^{\times}\right)[m]\to 0.</math>
+לפי [[משפט הילברט 90]], <math>H^1\left(L,\overline{K}^{\times}\right)=0</math>, ולכן מתקבל איזומורפיזם <math>\delta: L^{\times}/\left(L^{\times}\right)^m\xrightarrow{\sim}H^1\left(L,\overline{K}^{\times}[m]\right)</math>. זוהי העתקת קומר. יש גרסה של ההעתקה הזו גם כשמתייחסים לכל ה-<math>m</math> בבת אחת: מאחר ש-<math>L^{\times}/(L^{\times})^m=L^{\times}\otimes m^{-1} \mathbb{Z}/\mathbb{Z}</math>, לקיחת הגבול הישר על <math>m</math> נותנת איזומורפיזם
+:<math>\delta: L^{\times} \otimes \mathbb{Q}/\mathbb{Z} \xrightarrow{\sim} H^1\left(L, \overline{K}_{\mathrm{tors}}\right),</math>
+כאשר <math>\mathrm{tors}</math> מסמן את תת-חבורת הפיתול של שורשי היחידה. (כאשר <math>\mu_m \subseteq L</math>, הפעולה על <math>\overline K^\times[m] = \mu_m</math> טריוויאלית, <math>H^1(L, \mu_m) = \mathrm{Hom}(\mathrm{Gal}(\overline K/L), \mu_m)</math>, ומקבלים בחזרה את ההתאמה של תורת קומר שתוארה למעלה.)
+
+== לעקומים אליפטיים ==
+משתמשים בתורת קומר לעיתים קרובות בהקשר של [[עקום אליפטי|עקומים אליפטיים]]. יהי <math>E/K</math> עקום אליפטי. יש סדרה מדויקת קצרה
+:<math>0\to E[m]\to E \xrightarrow{P\mapsto m\cdot P} E \to 0,</math>
+שבה העתקת הכפל ב-<math>m</math> היא על, משום ש-<math>E</math> חליקה (מעל הסגור האלגברי). בוחרים הרחבה אלגברית <math>L/K</math> ולוקחים קוהומולוגיה; מקבלים את '''סדרת קומר''' של <math>E</math>:
+:<math>0\to E(L)/mE(L)\to H^1(L, E[m])\to H^1(L,E)[m]\to 0.</math>
+החישוב של '''חבורת מורדל–וייל החלשה''' <math>E(L)/mE(L)</math> הוא חלק מרכזי בהוכחה של משפט מורדל–וייל. העובדה ש-<math>H^1(L,E)</math> אינה מתאפסת מוסיפה לתורה סיבוך מהותי. (לדוגמה, עבור העקום <math>y^2 = x^3 - x</math> מעל <math>\mathbb Q</math>, החבורה <math>E(\mathbb Q)</math> מורכבת מארבע נקודות בלבד – נקודת האינסוף ו-<math>(0,0), (1,0), (-1,0)</math> – ולכן <math>E(\mathbb Q)/2E(\mathbb Q) \cong (\mathbb Z/2)^2</math>.)
+
+== הכללות ==
+נניח ש-<math>G</math> [[חבורה פרו-סופית]] שפועלת על מודול <math>A</math>, ושיש הומומורפיזם על <math>\pi</math> מה-<math>G</math>-מודול <math>A</math> לעצמו. נניח גם ש-<math>G</math> פועלת באופן טריוויאלי על הגרעין <math>C</math> של <math>\pi</math>, ושחבורת הקוהומולוגיה הראשונה <math>H^1(G,A)</math> טריוויאלית. אז הסדרה המדויקת של קוהומולוגיית חבורות מראה שיש איזומורפיזם בין <math>A^G/\pi(A^G)</math> לבין <math>\mathrm{Hom}(G,C)</math>.
+
+תורת קומר היא המקרה הפרטי שבו <math>A</math> היא החבורה הכפלית של הסגור הספרבילי של שדה <math>k</math>, <math>G</math> היא חבורת הגלואה, <math>\pi</math> היא העתקת החזקה ה-<math>n</math>-ית ו-<math>C</math> היא חבורת שורשי היחידה מסדר <math>n</math>. תורת ארטין–שרייר היא המקרה הפרטי שבו <math>A</math> היא החבורה החיבורית של הסגור הספרבילי של שדה <math>k</math> ממאפיין חיובי <math>p</math>, <math>G</math> היא חבורת הגלואה, <math>\pi</math> היא העתקת פרובניוס פחות הזהות, ו-<math>C</math> הוא השדה הסופי בן <math>p</math> איברים. אם לוקחים את <math>A</math> להיות החבורה החיבורית של חוג וקטורי ויט קטומים, מקבלים את ההכללה של ויט לתורת ארטין–שרייר, להרחבות עם מעריך שמחלק את <math>p^n</math>.
+
+== ראו גם ==
+* [[שדה ריבועי]]
+* [[הרחבה אבלית]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* ''Kummer extension'', Encyclopedia of Mathematics
+* B. Birch, ''Cyclotomic fields and Kummer extensions'', in: J. W. S. Cassels, A. Fröhlich (eds.), Algebraic Number Theory, Academic Press, 1973, chapter III, pp. 85–93
+</div>
+
+[[קטגוריה:תורת המספרים האלגברית]]

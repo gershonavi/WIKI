@@ -83,7 +83,7 @@ Additive number theory:
 - [x] Adele ring (קיים בוויקיפדיה העברית: אדל)
 - [x] Idele group
 - [x] Heegner number
-- [ ] Kummer theory
+- [x] Kummer theory
 - [ ] Reciprocity law
 - [ ] Proofs of quadratic reciprocity
 - [ ] Cubic reciprocity
