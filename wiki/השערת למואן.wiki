@@ -1,0 +1,31 @@
+ב[[תורת המספרים]], '''השערת למואן''' (ב[[אנגלית]]: Lemoine's conjecture), הידועה לעיתים גם בשם '''השערת לוי''', קובעת שכל [[זוגיות (מתמטיקה)|מספר אי-זוגי]] גדול מ-5 ניתן להצגה כסכום של [[מספר ראשוני]] אי-זוגי ושל [[מספר חצי-ראשוני]] זוגי.
+
+את ההשערה הציע לראשונה אמיל למואן ב-1895, אך האתר [[MathWorld]] ייחס אותה בטעות להיימן לוי, שעסק בה בשנות ה-60 של המאה ה-20.{{הערה|שם=mw|1={{MathWorld|LevysConjecture|Levy's Conjecture}}|כיווון=שמאל}}
+
+== ניסוח פורמלי ==
+באופן אלגברי, ההשערה קובעת שלמשוואה <math>2n + 1 = p + 2q</math> יש תמיד פתרון במספרים ראשוניים <math>p</math> ו-<math>q</math> (לא בהכרח שונים), לכל <math>n > 2</math>. מהשערת למואן נובעת [[השערת גולדבך החלשה]]: אם <math>2n+1 = p + 2q</math>, אז <math>2n+1 = p + q + q</math> הוא סכום של שלושה ראשוניים.
+
+ב-2008 שיער ז'י-ויי סון באופן דומה שכל מספר אי-זוגי גדול מ-3 ניתן להצגה כסכום של מספר ראשוני ושל מכפלת שני מספרים שלמים חיוביים עוקבים; כלומר, <math>2n + 1 = p + m(m+1)</math> לכל <math>n > 1</math>.{{הערה|1=Zhi-Wei Sun, On sums of primes and triangular numbers, 2008, [https://arxiv.org/abs/0803.3737 arXiv:0803.3737]|כיווון=שמאל}}
+
+== דוגמה ==
+למשל, את המספר האי-זוגי <math>47</math> אפשר להציג כסכום של ראשוני ושל חצי-ראשוני זוגי בארבע דרכים שונות:
+: <math>47 = 13 + 2\cdot 17 = 37 + 2\cdot5 = 41 + 2\cdot3 = 43 + 2\cdot2</math>
+מספר הדרכים לעשות זאת נתון בסדרה {{OEIS|A046927}}. השערת למואן אומרת שבסדרה זו אין אפסים אחרי שלושת האיברים הראשונים.
+
+== עדויות ==
+לפי MathWorld, ההשערה נבדקה על ידי קורביט עד <math>10^9</math>.{{הערה|שם=mw}} ברשומת בלוג מיוני 2019 נטען שההשערה נבדקה עד <math>10^{10}</math>.{{הערה|1=[https://www.makethebrainhappy.com/2019/06/lemoines-conjecture-verified-to-1010.html Lemoine's Conjecture Verified to 10^10], 19 ביוני 2019|כיווון=שמאל}}
+
+ב-2017 פרסמו אגמה וגנזל הוכחה להשערה, אך בהמשך התברר שהיא שגויה.{{הערה|1=T. Agama, B. Gensel, A Proof of Lemoine's Conjecture by Circles of Partition, [https://arxiv.org/abs/1709.05335 arXiv:1709.05335]|כיווון=שמאל}}
+
+== לקריאה נוספת ==
+* Emile Lemoine, L'intermédiaire des mathématiciens 1 (1894), עמ' 179; שם, 3 (1896), עמ' 151
+* H. Levy, On Goldbach's Conjecture, Math. Gaz. 47 (1963), עמ' 274
+* L. Hodges, A lesser-known Goldbach conjecture, Math. Mag. 66 (1993), עמ' 45–47, {{DOI|10.2307/2690477}}
+* J. O. Kiltinen, P. B. Young, Goldbach, Lemoine, and a Know/Don't Know Problem, Mathematics Magazine 58 (4), 1985, עמ' 195–203, {{DOI|10.2307/2689513}}
+* ריצ'רד גיא, Unsolved Problems in Number Theory, Springer, 2004, בעיה C1
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]

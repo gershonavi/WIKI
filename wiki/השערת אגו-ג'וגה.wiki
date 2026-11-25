@@ -1,0 +1,39 @@
+ב[[תורת המספרים]], '''השערת אגו–ג'וגה''' (ב[[אנגלית]]: Agoh–Giuga conjecture) על [[מספרי ברנולי]] <math>B_k</math> קובעת ש-<math>p</math> הוא [[מספר ראשוני]] [[אם ורק אם]]
+:<math>pB_{p-1} \equiv -1 \pmod p.</math>
+ההשערה קרויה על שם טקשי אגו וג'וזפה ג'וגה.
+
+== ניסוח שקול ==
+ההשערה בניסוח שלמעלה היא של טקשי אגו.{{הערה|שם=agoh|1=T. Agoh, On Giuga's conjecture, Manuscripta Mathematica 87 (4), 1995, עמ' 501–510, {{DOI|10.1007/bf02570490}}|כיווון=שמאל}} ניסוח שקול הציע ג'וזפה ג'וגה ב-1950:{{הערה|1=G. Giuga, Su una presumibile proprietà caratteristica dei numeri primi, Istituto Lombardo di Scienze e Lettere, Rendiconti, Classe di Scienze Matematiche e Naturali 14 (83), 1950, עמ' 511–518|כיווון=שמאל}} <math>p</math> הוא ראשוני אם ורק אם
+:<math>1^{p-1}+2^{p-1}+ \cdots +(p-1)^{p-1} \equiv -1 \pmod p,</math>
+או בכתיב מקוצר,
+:<math>\sum_{i=1}^{p-1} i^{p-1} \equiv -1 \pmod p.</math>
+
+קל להראות שאם <math>p</math> ראשוני, השקילות השנייה מתקיימת: לפי [[המשפט הקטן של פרמה]],
+:<math>a^{p-1} \equiv 1 \pmod p</math>
+לכל <math>a = 1,2,\dots,p-1</math>, ולכן הסכום הוא <math>p-1</math> איברים ששווים כולם ל-1, כלומר <math>p - 1 \equiv -1 \pmod p</math>.
+
+לדוגמה, עבור <math>p = 5</math>: <math>1 + 16 + 81 + 256 = 354 = 5 \cdot 71 - 1 \equiv -1 \pmod 5</math>. לעומת זאת, עבור המספר הפריק <math>n = 4</math>: <math>1 + 8 + 27 = 36 \equiv 0 \pmod 4</math>.
+
+== מצב ההשערה ==
+הטענה היא עדיין השערה, כי טרם הוכח שאם <math>n</math> אינו ראשוני (כלומר, <math>n</math> [[מספר פריק|פריק]]), הנוסחה אינה מתקיימת. הוכח שמספר פריק <math>n</math> מקיים את הנוסחה אם ורק אם הוא גם [[מספר קרמייקל]] וגם מספר ג'וגה, ושאם מספר כזה קיים, יש בו לפחות 13,800 ספרות.{{הערה|1=D. Borwein, J. M. Borwein, P. B. Borwein, R. Girgensohn, Giuga's conjecture on primality, American Mathematical Monthly 103 (1), 1996, עמ' 40–50, {{DOI|10.2307/2975213}}|כיווון=שמאל}} ב-2001 הראה סוריני שדוגמה נגדית אפשרית צריכה להיות גדולה מ-<math>10^{36067}</math>;{{הערה|1=L. Sorini, Un metodo euristico per la soluzione della congettura di Giuga, Quaderni di Economia, Matematica e Statistica, DESP, Università di Urbino Carlo Bo 68, 2001|כיווון=שמאל}} זה הגבול שהציע בדוקי לשיטת ההוכחה שג'וגה עצמו הציע להשערתו.
+
+== הקשר למשפט וילסון ==
+השערת אגו–ג'וגה דומה ל[[משפט וילסון]], שהוכח. משפט וילסון קובע שמספר <math>p</math> הוא ראשוני אם ורק אם
+:<math>(p-1)! \equiv -1 \pmod p,</math>
+או בכתיב אחר,
+:<math>\prod_{i=1}^{p-1} i \equiv -1 \pmod p.</math>
+
+עבור ראשוני אי-זוגי <math>p</math> מתקיים
+:<math>\prod_{i=1}^{p-1} i^{p-1} \equiv (-1)^{p-1} \equiv 1 \pmod p,</math>
+וגם עבור <math>p=2</math> המכפלה היא <math>1^1 = 1</math>.
+
+לכן, אם השערת אגו–ג'וגה נכונה, אז יחד עם משפט וילסון: מספר <math>p</math> הוא ראשוני אם ורק אם
+:<math>\sum_{i=1}^{p-1} i^{p-1} \equiv -1 \pmod p</math>
+וגם
+:<math>\prod_{i=1}^{p-1} i^{p-1} \equiv 1 \pmod p.</math>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
