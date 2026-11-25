@@ -109,7 +109,7 @@ Additive number theory:
 - [ ] Drinfeld module
 - [ ] Formal group law
 - [ ] Galois cohomology
-- [ ] Tamagawa number
+- [x] Tamagawa number
 - [x] Profinite integer
 
 ### תורת שדות המחלקה והתחום הציקלוטומי (24)
