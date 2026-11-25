@@ -168,7 +168,7 @@
 * [דרגה של עקום אליפטי](pages/%D7%93%D7%A8%D7%92%D7%94%20%D7%A9%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99.md) – Rank of an elliptic curve
 * [האלגוריתם של טייט](pages/%D7%94%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%A9%D7%9C%20%D7%98%D7%99%D7%99%D7%98.md) – Tate's algorithm
 * [השערת סאטו–טייט](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A1%D7%90%D7%98%D7%95%E2%80%93%D7%98%D7%99%D7%99%D7%98.md) – Sato–Tate conjecture
-* [חסם ברומר](pages/%D7%97%D7%A1%D7%9D%20%D7%91%D7%A8%D7%95%D7%9E%D7%A8.md)
+* [חסם ברומר](pages/%D7%97%D7%A1%D7%9D%20%D7%91%D7%A8%D7%95%D7%9E%D7%A8.md) – Brumer bound
 * [חסם מסטר](pages/%D7%97%D7%A1%D7%9D%20%D7%9E%D7%A1%D7%98%D7%A8.md)
 * [מוליך של עקום אליפטי](pages/%D7%9E%D7%95%D7%9C%D7%99%D7%9A%20%D7%A9%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99.md) – Conductor of an elliptic curve
 * [משפט האסה על עקומים אליפטיים](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%A1%D7%94%20%D7%A2%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9E%D7%99%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99%D7%99%D7%9D.md) – Hasse's theorem on elliptic curves

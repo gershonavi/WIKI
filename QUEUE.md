@@ -163,7 +163,7 @@ Additive number theory:
 - [ ] Elliptic curve point multiplication
 - [ ] Edwards curve
 - [ ] Montgomery curve
-- [ ] Brumer bound
+- [x] Brumer bound
 - [ ] Mestre bound
 
 ### תבניות מודולריות (37)
