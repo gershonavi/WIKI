@@ -1,0 +1,103 @@
+ב[[מתמטיקה]], '''פונקציית הטאו של רמנוג'אן''' (ב[[אנגלית]]: Ramanujan tau function), שחקר [[סריניוואסה רמנוג'אן]],{{הערה|שם=ram|1=S. Ramanujan, On certain arithmetical functions, Transactions of the Cambridge Philosophical Society 22 (9), 1916, עמ' 159–184|כיווון=שמאל}} היא הפונקציה <math>\tau : \mathbb{N}\to\mathbb{Z}</math> המוגדרת על ידי
+:<math>\sum_{n=1}^\infty\tau(n)q^n=q\prod_{n=1}^\infty(1-q^n)^{24} = q\phi(q)^{24} = \eta(z)^{24}=\Delta(z),</math>
+כאשר <math>\phi(q) = \prod_{n \ge 1}(1 - q^n)</math> היא פונקציית אוילר (של טורי <math>q</math>), <math>\eta</math> היא פונקציית האטא של דדקינד, <math>\Delta(z)</math> היא הדיסקרימיננטה המודולרית, ו-<math>q=e^{2\pi iz}</math> עם <math>\mathrm{Im}(z)>0</math>.
+
+== ערכים ==
+הערכים הראשונים של פונקציית הטאו מופיעים בטבלה הבאה {{OEIS|A000594}}:
+{| class="wikitable" style="text-align:center; direction:ltr"
+|-
+! <math>n</math>
+|1||2||3||4||5||6||7||8||9||10||11||12||13||14||15||16
+|-
+! <math>\tau(n)</math>
+|1||−24||252||−1472||4830||−6048||−16744||84480||−113643||−115920||534612||−370944||−577738||401856||1217160||987136
+|}
+
+הערך של הפונקציה בריבוע אי-זוגי הוא מספר אי-זוגי, ובכל מספר אחר הפונקציה מקבלת ערך [[זוגיות (מתמטיקה)|זוגי]].{{הערה|1={{OEIS|A016754}}|כיווון=שמאל}} (הסבר: מודולו 2, <math>(1 - q^n)^{24} \equiv (1 - q^{8n})^3</math>, ולפי זהות יעקובי <math>\prod(1-q^{m})^3 = \sum_{k \ge 0} (-1)^k(2k+1)q^{k(k+1)/2}</math>; לכן <math>\Delta \equiv \sum_k q^{1 + 4k(k+1)} = \sum_k q^{(2k+1)^2} \pmod 2</math>.)
+
+== תכונות עיקריות ==
+רמנוג'אן שיער שתי תכונות של <math>\tau(n)</math>,{{הערה|שם=ram}} שאפשר לנסח באופן שקול כך:
+* <math>\tau(mn)=\tau(m)\tau(n)</math> אם <math>m</math> ו-<math>n</math> [[מספרים זרים|זרים]] (כלומר, <math>\tau(n)</math> היא [[פונקציה כפלית]]).
+* <math>\tau(p^{r+1})=\tau(p)\tau(p^r)-p^{11}\tau(p^{r-1})</math> עבור <math>p</math> [[מספר ראשוני|ראשוני]] ו-<math>r>0</math>.
+יחד, שתי התכונות שקולות לזהות
+:<math>\tau(m)\tau(n) = \sum_{d\mid(m,n)}d^{11}\,\tau\left(\frac{mn}{d^2}\right),\quad m,n\geq 1.</math>
+את שתי התכונות הוכיח לואיס מורדל, בעזרת מה שמוכר כיום כתורת אופרטורי הקה.{{הערה|1=L. J. Mordell, On Mr. Ramanujan's empirical expansions of modular functions, Proceedings of the Cambridge Philosophical Society 19, 1917, עמ' 117–124|כיווון=שמאל}} רמנוג'אן שיער גם תכונה שלישית,
+:<math>|\tau(p)| \le 2 p^{11/2}</math>
+לכל ראשוני <math>p</math>, הנקראת '''השערת רמנוג'אן'''. בהנחת שתי התכונות הראשונות, רמנוג'אן ציין שהשערתו שקולה לאי-השוויון
+:<math>|\tau(n)| \le d(n)\, n^{11/2}</math>
+לכל <math>n \ge 1</math>, כאשר <math>d(n)</math> היא [[פונקציית מחלקים|פונקציית מספר המחלקים]]. ההערכה החלשה יותר <math>\tau(n)=O(n^6)</math> קלה בהרבה להוכחה. את השערת רמנוג'אן הוכיח פייר דליין ב-1974, כתוצאה מהוכחתו את השערות וייל.
+
+== פונקציית ה-L של רמנוג'אן ==
+מכיוון שהדיסקרימיננטה המודולרית <math>\Delta(z)</math> היא [[תבנית מודולרית|תבנית שפיצית]] ממשקל 12, היא מגדירה [[פונקציית L]], הנקראת פונקציית ה-L של רמנוג'אן. היא מוגדרת עבור <math>\mathrm{Re}(s)>13/2</math> על ידי [[טור דיריכלה|טור הדיריכלה]]
+:<math>L(s,\Delta)=\sum_{n=1}^\infty\frac{\tau (n)}{n^s},</math>
+ובזכות שתי התכונות הראשונות של <math>\tau(n)</math> יש לה [[מכפלת אוילר]]
+:<math>L(s,\Delta)=\prod_{p\ \mathrm{prime}}\frac{1}{1-\tau(p)p^{-s}+p^{11-2s}},</math>
+התקפה עבור <math>\mathrm{Re}(s)>13/2</math>. היא מקיימת את המשוואה הפונקציונלית
+:<math>(2\pi)^{-s}\Gamma(s)L(s,\Delta)=(2\pi)^{-(12-s)}\Gamma(12-s)L(12-s,\Delta),</math>
+המאפשרת [[המשכה אנליטית]] של <math>L(s,\Delta)</math> לכל המספרים המרוכבים <math>s</math>, וכך היא [[פונקציה שלמה]]. רמנוג'אן שיער שלכל האפסים הלא טריוויאליים של <math>L(s,\Delta)</math> יש חלק ממשי 6.{{מקור}} זהו מקרה פרטי של [[השערת רימן המוכללת|השערת רימן הגדולה]]. רוברט רנקין הראה של-<math>L(s,\Delta)</math> אין אפסים על הישר <math>\mathrm{Re}(s)=13/2</math>.{{מקור}}
+
+== חפיפות לפונקציית הטאו ==
+עבור <math>k\in\mathbb{Z}</math> ו-<math>n\in\mathbb{N}</math>, [[פונקציית מחלקים|פונקציית המחלקים]] <math>\sigma_k(n)</math> היא סכום החזקות ה-<math>k</math>-יות של מחלקי <math>n</math>. פונקציית הטאו מקיימת כמה יחסי חפיפה; רבים מהם אפשר לבטא בעזרת <math>\sigma_k(n)</math>. הנה כמה מהם:{{הערה|שם=sd|1=H. P. F. Swinnerton-Dyer, On ℓ-adic representations and congruences for coefficients of modular forms, בתוך: W. Kuyk, J.-P. Serre (עורכים), Modular Functions of One Variable III, Lecture Notes in Mathematics 350, Springer, 1973, עמ' 1–55, {{DOI|10.1007/978-3-540-37802-0_1}}|כיווון=שמאל}}
+# <math>\tau(n)\equiv\sigma_{11}(n) \pmod{2^{11}}</math> עבור <math>n\equiv 1 \pmod{8}</math>{{הערה|שם=kol|1=בזכות O. Kolberg, Congruences for Ramanujan's function τ(n), Årbok for Universitetet i Bergen, Matematisk-Naturvitenskapelig Serie 11, 1962|כיווון=שמאל}}
+# <math>\tau(n)\equiv 1217\, \sigma_{11}(n) \pmod{2^{13}}</math> עבור <math>n\equiv 3 \pmod{8}</math>{{הערה|שם=kol}}
+# <math>\tau(n)\equiv 1537\, \sigma_{11}(n) \pmod{2^{12}}</math> עבור <math>n\equiv 5 \pmod{8}</math>{{הערה|שם=kol}}
+# <math>\tau(n)\equiv 705\, \sigma_{11}(n) \pmod{2^{14}}</math> עבור <math>n\equiv 7 \pmod{8}</math>{{הערה|שם=kol}}
+# <math>\tau(n)\equiv n^{-610}\sigma_{1231}(n) \pmod{3^{6}}</math> עבור <math>n\equiv 1 \pmod{3}</math>{{הערה|שם=ash|1=בזכות M. H. Ashworth, Congruence and identical properties of modular forms, עבודת דוקטורט, אוקספורד, 1968|כיווון=שמאל}}
+# <math>\tau(n)\equiv n^{-610}\sigma_{1231}(n) \pmod{3^{7}}</math> עבור <math>n\equiv 2 \pmod{3}</math>{{הערה|שם=ash}}
+# <math>\tau(n)\equiv n^{-30}\sigma_{71}(n) \pmod{5^{3}}</math> עבור <math>n\not\equiv 0 \pmod{5}</math>{{הערה|1=בזכות לאהיווי|כיווון=ימין}}
+# <math>\tau(n)\equiv n\,\sigma_{9}(n) \pmod{7}</math>{{הערה|שם=leh|1=בזכות D. H. Lehmer|כיווון=ימין}}
+# <math>\tau(n)\equiv n\,\sigma_{9}(n) \pmod{7^2}</math> עבור <math>n\equiv 3,5,6 \pmod{7}</math>{{הערה|שם=leh}}
+# <math>\tau(n)\equiv\sigma_{11}(n) \pmod{691}</math>.{{הערה|1=בזכות Ramanujan (1916)|כיווון=ימין}}
+
+עבור ראשוניים <math>p\neq 23</math> מתקיים:{{הערה|שם=sd}}{{הערה|1=J. R. Wilton, Congruence properties of Ramanujan's function τ(n), Proceedings of the London Mathematical Society 31, 1930, עמ' 1–10, {{DOI|10.1112/plms/s2-31.1.1}}|כיווון=שמאל}}
+<ol start="11">
+<li><math>\tau(p)\equiv 0 \pmod{23}</math> אם <math>\left(\frac{p}{23}\right)=-1</math>;</li>
+<li><math>\tau(p)\equiv \sigma_{11}(p) \pmod{23^2}</math> אם <math>p</math> מהצורה <math>a^2+23 b^2</math>;{{הערה|1=בזכות J.-P. Serre, Une interprétation des congruences relatives à la fonction τ de Ramanujan, Séminaire Delange-Pisot-Poitou 14, 1968, סעיף 4.5|כיווון=שמאל}}</li>
+<li><math>\tau(p)\equiv -1 \pmod{23}</math> אחרת.</li>
+</ol>
+כל החפיפות האלה נבדקו כאן בחישוב עבור כל <math>n < 400</math> (ותנאי 23 עבור כל הראשוניים עד 2600).
+
+== נוסחאות מפורשות ==
+ב-1972 הוכיח [[איאן מקדונלד]] נוסחה מפורשת לפונקציית הטאו של רמנוג'אן:{{הערה|1=F. J. Dyson, Missed opportunities, Bulletin of the American Mathematical Society 78 (5), 1972, עמ' 635–652, {{DOI|10.1090/S0002-9904-1972-12971-9}}|כיווון=שמאל}}
+:<math>\tau(n) = \frac{1}{1!\,2!\,3!\,4!} \sum_{\substack{x_1+x_2+x_3+x_4+x_5=0\\ x_1^2+x_2^2+x_3^2+x_4^2+x_5^2=10n\\ x_i\equiv i \bmod 5,\ i=1,\dots,5}} \prod_{1\le i<j\le 5}(x_i-x_j).</math>
+ב-1975 הוכיח דאגלס ניבור את הנוסחה{{הערה|1=D. Niebur, A formula for Ramanujan's τ-function, Illinois Journal of Mathematics 19 (3), 1975, עמ' 448–449, {{DOI|10.1215/ijm/1256050746}}|כיווון=שמאל}}
+:<math>\tau(n)=n^4\sigma(n)-24\sum_{i=1}^{n-1}i^2(35i^2-52in+18n^2)\sigma(i)\sigma(n-i),</math>
+כאשר <math>\sigma(n)</math> היא פונקציית סכום המחלקים.
+
+== השערות על פונקציית הטאו ==
+נניח ש-<math>f</math> היא תבנית חדשה (newform) ממשקל <math>k</math> שמקדמי פורייה שלה <math>a(n)</math> שלמים. נתבונן בבעיה:
+: בהנחה של-<math>f</math> אין כפל מרוכב, האם כמעט לכל הראשוניים <math>p</math> מתקיים <math>a(p)\not\equiv 0\pmod{p}</math>?
+אכן, לרוב הראשוניים צריכה להיות תכונה זו, ולכן הם נקראים ''רגילים''. למרות ההתקדמות הגדולה של דליין וסר בייצוגי גלואה, הקובעים את <math>a(n) \bmod p</math> עבור <math>n</math> זר ל-<math>p</math>, לא ברור איך לחשב את <math>a(p)\bmod p</math>. המשפט היחיד בהקשר זה הוא התוצאה המפורסמת של [[נועם אלקיס|אלקיס]] על עקומים אליפטיים מודולריים, המבטיחה שיש אינסוף ראשוניים <math>p</math> שעבורם <math>a(p)=0</math>, ולכן הם חופפים ל-0 מודולו <math>p</math>. אין דוגמאות ידועות של <math>f</math> ללא כפל מרוכב ממשקל גדול מ-2 שעבורן <math>a(p)\not\equiv 0\pmod{p}</math> לאינסוף ראשוניים <math>p</math> (אף שזה אמור להיות נכון כמעט לכל <math>p</math>). אין גם דוגמאות ידועות שבהן <math>a(p)\equiv 0 \pmod{p}</math> לאינסוף ראשוניים <math>p</math>. חלק מהחוקרים החלו לפקפק בכך ש-<math>a(p)\equiv 0 \pmod{p}</math> לאינסוף <math>p</math>. כראיה הביאו רבים את <math>\tau(p)</math> של רמנוג'אן (המקרה של משקל 12). הפתרונות היחידים עד <math>10^{10}</math> של המשוואה <math>\tau(p)\equiv 0\pmod{p}</math> הם 2, 3, 5, 7, 2411 ו-7,758,337,633 {{OEIS|A007659}}.{{הערה|1=N. Lygeros, O. Rozier, [https://cs.uwaterloo.ca/journals/JIS/VOL13/Lygeros/lygeros5.pdf A new solution for the equation τ(p) ≡ 0 (mod p)], Journal of Integer Sequences 13, 2010, מאמר 10.7.4|כיווון=שמאל}}
+
+[[דריק הנרי להמר|להמר]] שיער ב-1947 ש-<math>\tau(n)\neq 0</math> לכל <math>n</math>, טענה המכונה לעיתים '''השערת להמר'''.{{הערה|1=D. H. Lehmer, The vanishing of Ramanujan's function τ(n), Duke Mathematical Journal 14 (2), 1947, עמ' 429–433, {{DOI|10.1215/s0012-7094-47-01436-1}}|כיווון=שמאל}} להמר בדק את ההשערה עבור <math>n</math> עד 214,928,639,999 (אפוסטול 1997, עמ' 22). הטבלה הבאה מסכמת את ההתקדמות במציאת ערכים גדלים והולכים של <math>N</math> שעבורם התנאי מתקיים לכל <math>n\leq N</math>.
+{| class="wikitable"
+|-
+! <math>N</math> !! מקור
+|-
+| style="text-align:left" | 3,316,799 || להמר (1947)
+|-
+| style="text-align:left" | 214,928,639,999 || להמר (1949)
+|-
+| style="text-align:left" | 1,000,000,000,000,000 || סר (1973, עמ' 98), סר (1985)
+|-
+| style="text-align:left" | 1,213,229,187,071,998 || ג'נינגס (1993)
+|-
+| style="text-align:left" | 22,689,242,781,695,999 || ג'ורדן וקלי (1999)
+|-
+| style="text-align:left" | 22,798,241,520,242,687,999 || בוסמן (2007)
+|-
+| style="text-align:left" | 982,149,821,766,199,295,999 || זנג ויין (2013)
+|-
+| style="text-align:left" | 816,212,624,008,487,344,127,999 || דריקס, ואן הוייג וזנג (2013)
+|}
+
+== לקריאה נוספת ==
+* T. M. Apostol, Modular Functions and Dirichlet Series in Number Theory, מהדורה שנייה, Graduate Texts in Mathematics 41, Springer, 1990
+* M. Newman, A table of τ(p) modulo p, p prime, 3 ≤ p ≤ 16067, National Bureau of Standards, 1972
+* R. A. Rankin, Ramanujan's tau-function and its generalizations, בתוך: G. E. Andrews (עורך), Ramanujan revisited, Academic Press, 1988, עמ' 245–268
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]
+[[קטגוריה:פונקציות זטא]]
