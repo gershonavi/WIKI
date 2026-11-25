@@ -121,7 +121,7 @@ Additive number theory:
 - [x] Hilbert symbol
 - [x] Ray class field
 - [ ] Complex multiplication
-- [ ] Conductor (class field theory)
+- [x] Conductor (class field theory)
 - [ ] Weil group
 - [ ] Genus field
 - [ ] Golod–Shafarevich theorem

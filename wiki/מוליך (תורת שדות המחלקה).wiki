@@ -1,0 +1,53 @@
+ב[[תורת המספרים האלגברית]], '''המוליך''' של [[הרחבה אבלית]] [[הרחבה סופית|סופית]] של [[שדה מקומי|שדות מקומיים]] או [[שדה גלובלי|גלובליים]] נותן מדד כמותי ל[[סיעוף (מתמטיקה)|סיעוף]] בהרחבה. ההגדרה של המוליך קשורה ל[[הדדיות ארטין|העתקת ארטין]].
+
+== המוליך המקומי ==
+תהי <math>L/K</math> הרחבה אבלית סופית של [[שדה מקומי|שדות מקומיים]] לא ארכימדיים. '''המוליך''' של <math>L/K</math>, שמסומן <math>\mathfrak f(L/K)</math>, הוא ה[[מספר שלם|שלם]] האי-שלילי הקטן ביותר <math>n</math> כך שחבורת היחידות הגבוהה
+:<math>U^{(n)} = 1 + \mathfrak m_K^n = \{u \in \mathcal O^\times : u \equiv 1 \pmod{\mathfrak m_K^n}\}</math>
+מוכלת ב-<math>N_{L/K}(L^\times)</math>, כאשר <math>N_{L/K}</math> העתקת ה[[נורמה (תורת השדות)|נורמה]] ו-<math>\mathfrak m_K</math> האידיאל המקסימלי של <math>K</math> (ומוסכם ש-<math>U^{(0)} = \mathcal O^\times</math>).{{הערה|שם=Serre|1=J.-P. Serre, ''Local class field theory'', in: J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967, §4.2|כיווון=שמאל}} באופן שקול, <math>n</math> הוא השלם הקטן ביותר כך ש[[תורת שדות המחלקה המקומית|העתקת ארטין המקומית]] טריוויאלית על <math>U_K^{(n)}</math>. לפעמים מגדירים את המוליך כ-<math>\mathfrak m_K^n</math>, עם <math>n</math> כמו למעלה.{{הערה|שם=Neu|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, definition V.1.6, proposition V.1.7, §VI.6|כיווון=שמאל}}
+
+המוליך של הרחבה מודד את הסיעוף. איכותית, ההרחבה [[סיעוף (מתמטיקה)|לא מסועפת]] אם ורק אם המוליך הוא אפס,{{הערה|שם=Neu}} והיא מסועפת באופן מאולף (ומסועפת) אם ורק אם המוליך הוא 1.{{הערה|שם=Milne|1=J. Milne, ''Class Field Theory'', v4.03, 2020, I.1.9, III.3.5, V.3.8, V.3.11|כיווון=שמאל}} ליתר דיוק, המוליך מחשב את אי-הטריוויאליות של [[חבורת סיעוף|חבורות הסיעוף הגבוהות]]: אם <math>s</math> השלם הגדול ביותר שעבורו חבורת הסיעוף <math>G_s</math> ב"מספור התחתון" אינה טריוויאלית, אז <math>\mathfrak f(L/K) = \eta_{L/K}(s) + 1</math>, כאשר <math>\eta_{L/K}</math> הפונקציה שמתרגמת מ"מספור תחתון" ל"מספור עליון" של חבורות הסיעוף הגבוהות.{{הערה|שם=Serre}}
+
+המוליך של <math>L/K</math> קשור גם ל[[נוסחת המוליך–הדיסקרימיננטה|מוליכי ארטין]] של קרקטרים של [[חבורת גלואה|חבורת הגלואה]] <math>\mathrm{Gal}(L/K)</math>. בפרט,{{הערה|1=E. Artin, J. Tate, ''Class Field Theory'', 2nd ed., AMS, 2009, corollary to theorem XI.14, p. 100|כיווון=שמאל}}
+:<math>\mathfrak m_K^{\mathfrak f(L/K)} = \operatorname{lcm}_\chi \mathfrak m_K^{\mathfrak f_\chi},</math>
+כאשר <math>\chi</math> עובר על כל הקרקטרים הכפליים המרוכבים של <math>\mathrm{Gal}(L/K)</math>, <math>\mathfrak f_\chi</math> מוליך ארטין של <math>\chi</math>, ו-lcm ה[[כפולה משותפת מינימלית|כפולה המשותפת המינימלית]].
+
+'''דוגמאות מעל <math>\mathbb Q_2</math>.'''
+* <math>\mathbb Q_2(\sqrt5)/\mathbb Q_2</math> לא מסועפת: מוליך 0.
+* <math>\mathbb Q_2(i)/\mathbb Q_2</math>: יחידה <math>u</math> היא נורמה (כלומר סכום של שני ריבועים ב-<math>\mathbb Q_2</math>) בדיוק כאשר <math>(u, -1)_2 = 1</math>, כלומר <math>u \equiv 1 \pmod 4</math>. לכן <math>U^{(2)} = 1 + 4\mathbb Z_2</math> מוכלת בחבורת הנורמות, אבל <math>U^{(1)}</math> לא (3 אינו נורמה). המוליך הוא 2, כלומר <math>2^2 = 4</math> – בהתאמה לדיסקרימיננטה <math>-4</math> של <math>\mathbb Q(i)</math>.
+* <math>\mathbb Q_2(\sqrt2)/\mathbb Q_2</math>: יחידה <math>u</math> היא נורמה מ-<math>\mathbb Q_2(\sqrt 2)</math> בדיוק כאשר <math>(u, 2)_2 = (-1)^{(u^2-1)/8} = 1</math>, כלומר <math>u \equiv \pm1 \pmod 8</math>. לכן המוליך הוא 3, כלומר <math>2^3 = 8</math> – כמו הדיסקרימיננטה 8 של <math>\mathbb Q(\sqrt2)</math>. בשתי הדוגמאות האחרונות הסיעוף פראי, והמוליך גדול מ-1.
+
+=== שדות כלליים יותר ===
+אפשר להגדיר את המוליך באותו אופן גם כש-<math>L/K</math> הרחבת גלואה סופית של שדות מקומיים שאינה בהכרח אבלית.{{הערה|שם=Serre}} אבל הוא תלוי רק ב-<math>L^{\text{ab}}/K</math>, ההרחבה האבלית המקסימלית של <math>K</math> בתוך <math>L</math>, בגלל '''משפט הגבלת הנורמה''', שקובע שבמצב הזה{{הערה|שם=Milne}}
+:<math>N_{L/K}(L^\times) = N_{L^{\text{ab}}/K}\bigl((L^{\text{ab}})^\times\bigr).</math>
+נוסף על כך, אפשר להגדיר את המוליך כש-<math>L</math> ו-<math>K</math> כלליים מעט יותר משדות מקומיים, כלומר כשהם שדות שלמים עם הערכה ושדה שאריות קוואזי-סופי – זה המצב שבו הפורמליזם של תורת שדות המחלקה המקומית עובד.
+
+=== שדות ארכימדיים ===
+בעיקר לטובת המוליכים הגלובליים, המוליך של ההרחבה הטריוויאלית <math>\mathbb R/\mathbb R</math> מוגדר כ-0, והמוליך של ההרחבה <math>\mathbb C/\mathbb R</math> מוגדר כ-1.{{הערה|שם=Cohen|1=H. Cohen, ''Advanced Topics in Computational Number Theory'', Graduate Texts in Mathematics '''193''', Springer, 2000, definition 3.4.1|כיווון=שמאל}}
+
+== המוליך הגלובלי ==
+=== שדות מספרים ===
+את '''המוליך''' של הרחבה אבלית <math>L/K</math> של [[שדה מספרים|שדות מספרים]] אפשר להגדיר, בדומה למקרה המקומי, באמצעות העתקת ארטין. תהי <math>\theta : I^{\mathbf m} \to \mathrm{Gal}(L/K)</math> העתקת ארטין הגלובלית, כאשר ה[[מודולוס (תורת המספרים האלגברית)|מודולוס]] <math>\mathbf m</math> הוא מודולוס מגדיר של <math>L/K</math>; אומרים ש[[הדדיות ארטין]] מתקיימת עבור <math>\mathbf m</math> אם <math>\theta</math> מתפרקת דרך [[שדה מחלקת קרן|חבורת מחלקות הקרן]] מודולו <math>\mathbf m</math>. מגדירים את המוליך של <math>L/K</math>, שמסומן <math>\mathfrak f(L/K)</math>, כמחלק המשותף המקסימלי של כל המודולוסים שעבורם ההדדיות מתקיימת. למעשה ההדדיות מתקיימת עבור <math>\mathfrak f(L/K)</math>, ולכן זהו המודולוס הקטן ביותר כזה.{{הערה|שם=Milne}}{{הערה|1=G. Janusz, ''Algebraic Number Fields'', 2nd ed., AMS, 1996, pp. 158, 168–169|כיווון=שמאל}}{{הערה|1=יש מחברים שמשמיטים את המקומות האינסופיים מהמוליך; ראו Neukirch, §VI.6.|כיווון=שמאל}}
+
+==== דוגמאות ====
+* כששדה הבסיס הוא הרציונליים, [[משפט קרונקר–ובר]] קובע ששדה מספרים אלגבריים <math>K</math> אבלי מעל <math>\mathbb Q</math> אם ורק אם הוא תת-שדה של [[שדה ציקלוטומי]] <math>\mathbb Q(\zeta_n)</math>.{{הערה|1=Yu. I. Manin, A. A. Panchishkin, ''Introduction to Modern Number Theory'', 2nd ed., Springer, 2005, pp. 155, 168|כיווון=שמאל}} אם <math>n</math> השלם הקטן ביותר שעבורו זה מתקיים, המוליך של <math>K</math> הוא <math>n</math> אם <math>K</math> נשמר תחת הצמדה מרוכבת, ו-<math>n\infty</math> אחרת.
+* תהי <math>L/K</math> ההרחבה <math>\mathbb Q(\sqrt d)/\mathbb Q</math>, עם <math>d</math> [[מספר חופשי מריבועים|חופשי מריבועים]]. אז{{הערה|שם=Milne}}
+::<math>\mathfrak f(\mathbb Q(\sqrt d)/\mathbb Q) = \begin{cases} |\Delta_{\mathbb Q(\sqrt d)}| & d \gt 0, \\ \infty\,|\Delta_{\mathbb Q(\sqrt d)}| & d \lt 0,\end{cases}</math>
+:כאשר <math>\Delta_{\mathbb Q(\sqrt d)}</math> ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] של <math>\mathbb Q(\sqrt d)/\mathbb Q</math>. למשל: <math>\mathfrak f(\mathbb Q(\sqrt5)) = 5</math> (ואכן <math>\sqrt5 \in \mathbb Q(\zeta_5)</math>), <math>\mathfrak f(\mathbb Q(\sqrt{-3})) = 3\infty</math> (<math>\sqrt{-3} \in \mathbb Q(\zeta_3)</math>), <math>\mathfrak f(\mathbb Q(\sqrt2)) = 8</math> (<math>\sqrt2 = \zeta_8 + \zeta_8^{-1}</math>), <math>\mathfrak f(\mathbb Q(i)) = 4\infty</math>.
+
+==== הקשר למוליכים מקומיים ולסיעוף ====
+המוליך הגלובלי הוא מכפלת המוליכים המקומיים:{{הערה|1=לחלק הסופי ראו Neukirch, proposition VI.6.5; לחלק האינסופי, Cohen, definition 3.4.1.|כיווון=שמאל}}
+:<math>\mathfrak f(L/K) = \prod_{\mathfrak p}\mathfrak p^{\mathfrak f(L_{\mathfrak p}/K_{\mathfrak p})}.</math>
+כתוצאה, ראשוני סופי מסועף ב-<math>L/K</math> אם ורק אם הוא מחלק את <math>\mathfrak f(L/K)</math>.{{הערה|שם=Neu}} ראשוני אינסופי <math>v</math> מופיע במוליך אם ורק אם <math>v</math> ממשי והופך למרוכב ב-<math>L</math>. (למשל ל-<math>\mathbb Q(\sqrt{-6})</math>: הדיסקרימיננטה <math>-24 = -2^3\cdot3</math>, והמוליך <math>2^3\cdot 3^1\cdot\infty</math> – המוליך המקומי ב-2 הוא 3 (פראי), ב-3 הוא 1 (מאולף).)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* E. Artin, J. Tate, ''Class Field Theory'', 2nd ed., AMS, 2009
+* H. Cohen, ''Advanced Topics in Computational Number Theory'', Springer, 2000
+* J. Milne, ''Class Field Theory'', course notes, 2020
+* J. Neukirch, ''Algebraic Number Theory'', Springer, 1999
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת שדות המחלקה]]
