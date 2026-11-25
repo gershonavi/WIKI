@@ -91,7 +91,7 @@ Additive number theory:
 - [x] Eisenstein reciprocity
 - [x] Power residue symbol
 - [ ] CM-field
-- [ ] Totally real number field
+- [x] Totally real number field
 - [ ] Totally imaginary number field
 - [ ] Monogenic field
 - [ ] Golden field

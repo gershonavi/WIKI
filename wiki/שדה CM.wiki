@@ -1,0 +1,32 @@
+ב[[מתמטיקה]], '''שדה CM''' הוא סוג מסוים של [[שדה מספרים]], שנקרא כך בגלל הקשר ההדוק שלו לתורת ה'''כפל המרוכב''' (complex multiplication). שם נוסף שמשתמשים בו הוא '''שדה J'''. את הקיצור "CM" הציגו [[גורו שימורה]] ויוטקה טניאמה.{{הערה|1=G. Shimura, Y. Taniyama, ''Complex Multiplication of Abelian Varieties and Its Applications to Number Theory'', Publications of the Mathematical Society of Japan '''6''', Tokyo, 1961|כיווון=שמאל}}
+
+== הגדרה ==
+שדה מספרים <math>K</math> הוא שדה CM אם הוא הרחבה ריבועית <math>K/F</math>, שבה שדה הבסיס <math>F</math> [[שדה ממשי לחלוטין|ממשי לחלוטין]] אבל <math>K</math> [[שדה מדומה לחלוטין|מדומה לחלוטין]]; כלומר, כל [[שיכון (מתמטיקה)|שיכון]] של <math>F</math> ב-<math>\mathbb C</math> נמצא כולו בתוך <math>\mathbb R</math>, אבל אין שיכון של <math>K</math> ב-<math>\mathbb R</math>.
+
+במילים אחרות, יש תת-שדה <math>F</math> של <math>K</math> כך ש-<math>K</math> נוצר מעל <math>F</math> על ידי שורש ריבועי יחיד של איבר, נאמר <math>\beta = \sqrt{\alpha}</math>, באופן שכל השורשים של ה[[פולינום מינימלי|פולינום המינימלי]] של <math>\beta</math> מעל <math>\mathbb Q</math> הם מספרים מרוכבים לא ממשיים. לשם כך צריך לבחור את <math>\alpha</math> '''שלילי לחלוטין''', כלומר כך שלכל שיכון <math>\sigma</math> של <math>F</math> בשדה הממשי מתקיים <math>\sigma(\alpha) \lt 0</math>.
+
+== תכונות ==
+אחת התכונות של שדה CM היא שה[[הצמדה מרוכבת|הצמדה המרוכבת]] ב-<math>\mathbb C</math> משרה אוטומורפיזם של השדה שאינו תלוי בשיכון שלו ב-<math>\mathbb C</math>. בסימונים שלמעלה, האוטומורפיזם הזה בהכרח שולח את <math>\beta</math> ל-<math>-\beta</math> ומקבע את <math>F</math>.
+
+שדה מספרים <math>K</math> הוא שדה CM אם ורק אם יש לו "חוסר ביחידות", כלומר אם הוא מכיל תת-שדה אמיתי <math>F</math> שלחבורת היחידות שלו יש אותה דרגה (מעל <math>\mathbb Z</math>) כמו לזו של <math>K</math>.{{הערה|1=R. Remak, ''Über algebraische Zahlkörper mit schwachem Einheitsdefekt'', Compositio Mathematica '''12''' (1954), pp. 35–80|כיווון=שמאל}} למעשה, <math>F</math> הוא תת-השדה הממשי לחלוטין שהוזכר למעלה. זה נובע מ[[משפט היחידות של דיריכלה]]: אם <math>[F:\mathbb Q] = d</math>, אז ל-<math>F</math> (ממשי לחלוטין) יש <math>r_1 = d</math>, <math>r_2 = 0</math>, ודרגת היחידות <math>d - 1</math>; ול-<math>K</math> (מדומה לחלוטין, ממעלה <math>2d</math>) יש <math>r_1 = 0</math>, <math>r_2 = d</math>, ושוב דרגה <math>d - 1</math>.
+
+== דוגמאות ==
+* הדוגמה הפשוטה ביותר, ושממנה באה המוטיבציה, היא [[שדה ריבועי]] מדומה, שבו תת-השדה הממשי לחלוטין הוא פשוט שדה המספרים הרציונליים. (כאן שתי חבורות היחידות מדרגה 0.)
+* אחת הדוגמאות החשובות ביותר היא ה[[שדה ציקלוטומי|שדה הציקלוטומי]] <math>\mathbb Q(\zeta_n)</math>, שנוצר על ידי [[שורש יחידה]] פרימיטיבי מסדר <math>n</math>. זו הרחבה ריבועית מדומה לחלוטין של השדה הממשי לחלוטין <math>\mathbb Q(\zeta_n +\zeta_n^{-1})</math>. השדה האחרון הוא השדה הקבוע של ההצמדה המרוכבת, ו-<math>\mathbb Q(\zeta_n)</math> מתקבל ממנו מצירוף שורש ריבועי של <math>(\zeta_n+\zeta_n^{-1})^2-4 = (\zeta_n - \zeta_n^{-1})^2</math>.
+:'''דוגמה מחושבת, <math>n = 5</math>.''' כאן <math>\zeta_5 + \zeta_5^{-1} = 2\cos 72^\circ = \tfrac{-1+\sqrt5}{2}</math>, ולכן <math>F = \mathbb Q(\sqrt5)</math>, ו-
+::<math>\alpha = (\zeta_5+\zeta_5^{-1})^2 - 4 = \frac{3 - \sqrt5}{2} - 4 = \frac{-5 - \sqrt5}{2} \approx -3.618.</math>
+:בשני השיכונים של <math>\mathbb Q(\sqrt 5)</math> (<math>\sqrt5 \mapsto \pm\sqrt5</math>) מתקבלים <math>\tfrac{-5\mp\sqrt5}{2} \approx -3.618, -1.382</math> – שניהם שליליים, כלומר <math>\alpha</math> שלילי לחלוטין, ו-<math>\mathbb Q(\zeta_5) = \mathbb Q(\sqrt5)\bigl(\sqrt{\alpha}\bigr)</math>. בהתאם לכך, לחבורות היחידות של <math>\mathbb Q(\zeta_5)</math> ושל <math>\mathbb Q(\sqrt5)</math> יש אותה דרגה, 1: היחידה היסודית <math>\tfrac{1+\sqrt5}{2}</math> של <math>\mathbb Q(\sqrt5)</math> היא (עד כדי שורש יחידה) גם יחידה יסודית של <math>\mathbb Q(\zeta_5)</math>.
+* האיחוד <math>\mathbb Q^{\mathrm{CM}}</math> של כל שדות ה-CM דומה לשדה CM, פרט לכך שהמעלה שלו אינסופית. זו הרחבה ריבועית של האיחוד <math>\mathbb Q^{\mathrm R}</math> של כל השדות הממשיים לחלוטין. חבורת הגלואה המוחלטת <math>\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q^{\mathrm R})</math> נוצרת (כתת-חבורה סגורה) על ידי כל האיברים מסדר 2 ב-<math>\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)</math>, ו-<math>\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q^{\mathrm{CM}})</math> היא תת-חבורה מאינדקס 2 שלה. למרכז של חבורת הגלואה <math>\mathrm{Gal}(\mathbb Q^{\mathrm{CM}}/\mathbb Q)</math> יש יוצר מסדר 2 (ההצמדה המרוכבת), והמנה במרכז היא החבורה <math>\mathrm{Gal}(\mathbb Q^{\mathrm R}/\mathbb Q)</math>.
+* אם <math>V</math> [[יריעה אבלית]] מרוכבת ממימד <math>n</math>, אז לכל אלגברה אבלית <math>F</math> של אנדומורפיזמים של <math>V</math> יש דרגה לכל היותר <math>2n</math> מעל <math>\mathbb Z</math>. אם הדרגה היא <math>2n</math> ו-<math>V</math> פשוטה, אז <math>F</math> הוא סדר בשדה CM. בכיוון ההפוך, כל שדה CM מתקבל כך מיריעה אבלית מרוכבת פשוטה כלשהי, שהיא יחידה עד כדי איזוגניה. (במקרה <math>n = 1</math>: עקום אליפטי עם כפל מרוכב, שחוג האנדומורפיזמים שלו הוא סדר בשדה ריבועי מדומה.)
+* דוגמה לשדה מדומה לחלוטין שאינו שדה CM היא שדה המספרים שמוגדר על ידי הפולינום <math>x^4 + x^3 - x^2 - x + 1</math>. לכל ארבעת השורשים שלו (<math>\approx -1.192 \pm 0.548i</math> ו-<math>0.692 \pm 0.318i</math>) יש חלק מדומה שונה מאפס, ולכן השדה מדומה לחלוטין; אבל הוא אינו הרחבה ריבועית של שדה ממשי לחלוטין. (חבורת הגלואה של סגור הגלואה שלו היא החבורה הדיהדרלית מסדר 8, והדיסקרימיננטה של הפולינום היא <math>117 = 3^2\cdot 13</math>.)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. Shimura, ''Introduction to the Arithmetic Theory of Automorphic Functions'', Publications of the Mathematical Society of Japan '''11''', Princeton University Press, 1971
+* L. C. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Graduate Texts in Mathematics '''83''', Springer, 1997
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
