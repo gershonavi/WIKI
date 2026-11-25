@@ -1,0 +1,38 @@
+ב[[תורת המספרים האלגברית]], '''משפט אלברט–בראואר–האסה–נתר''' קובע ש[[אלגברה פשוטה מרכזית]] מעל [[שדה מספרים]] <math>K</math> שמתפצלת מעל כל [[השלמה (אלגברה)|השלמה]] <math>K_v</math> היא [[חוג מטריצות|אלגברת מטריצות]] מעל <math>K</math>. המשפט הוא דוגמה ל[[עקרון מקומי-גלובלי]] בתורת המספרים האלגברית, והוא מוביל לתיאור מלא של [[אלגברה עם חילוק|האלגבראות עם חילוק]] סופיות-הממד מעל שדות מספרים, במונחי '''אינווריאנטי האסה''' המקומיים שלהן. הוא הוכח באופן בלתי תלוי על ידי ריכרד בראואר, [[הלמוט האסה]] ו[[אמי נתר]] (1932), ועל ידי אברהם אדריאן אלברט.
+
+== ניסוח המשפט ==
+תהי <math>A</math> אלגברה פשוטה מרכזית מדרגה <math>d</math> מעל שדה מספרים <math>K</math>. נניח שלכל [[הערכה (אלגברה)|הערכה]] <math>v</math>, האלגברה <math>A</math> מתפצלת מעל השדה המקומי המתאים <math>K_v</math>:
+:<math>A \otimes_K K_v \simeq M_d(K_v).</math>
+אז <math>A</math> איזומורפית לאלגברת המטריצות <math>M_d(K)</math>.
+
+== דוגמה: אלגבראות קווטרניונים מעל <math>\mathbb Q</math> ==
+ל[[אלגברת קווטרניונים]] <math>(a, b)_{\mathbb Q}</math> (עם בסיס <math>1, i, j, k</math>, <math>i^2 = a</math>, <math>j^2 = b</math>, <math>ij = -ji = k</math>), ההתפצלות ב-<math>\mathbb Q_v</math> נקבעת על ידי [[סמל הילברט]]: <math>(a, b)_{\mathbb Q} \otimes \mathbb Q_v \cong M_2(\mathbb Q_v)</math> אם ורק אם <math>(a, b)_v = 1</math>. לכן המשפט אומר: '''<math>(a, b)_{\mathbb Q} \cong M_2(\mathbb Q)</math> אם ורק אם <math>(a, b)_v = 1</math> לכל <math>v</math>'''.
+* <math>(-1, -1)_{\mathbb Q}</math> (הקווטרניונים של המילטון עם מקדמים רציונליים): <math>(-1, -1)_\infty = (-1, -1)_2 = -1</math>, ולכן זו אלגברה עם חילוק, "מסועפת" ב-2 וב-<math>\infty</math>.
+* <math>(5, -1)_{\mathbb Q}</math>: <math>(5, -1)_v = 1</math> לכל <math>v</math>, ולפי המשפט <math>(5, -1)_{\mathbb Q} \cong M_2(\mathbb Q)</math>. אכן, <math>5 = 1^2 + 2^2</math> הוא נורמה מ-<math>\mathbb Q(i)</math>, וזה התנאי הגלובלי להתפצלות.
+* <math>(3, 7)_{\mathbb Q}</math>: מסועפת בדיוק ב-2 וב-7.
+בכל הדוגמאות מספר המקומות המסועפים '''זוגי''' – זו נוסחת המכפלה <math>\prod_v (a, b)_v = 1</math>, כלומר [[חוק ההדדיות הריבועית]].
+
+== שימושים ==
+בעזרת תורת [[חבורת בראואר]] מראים ששתי אלגבראות פשוטות מרכזיות <math>A</math> ו-<math>B</math> מעל שדה מספרים <math>K</math> (מאותו ממד) איזומורפיות מעל <math>K</math> אם ורק אם ההשלמות <math>A_v</math> ו-<math>B_v</math> איזומורפיות מעל ההשלמה <math>K_v</math> לכל <math>v</math>. בשפת חבורת בראואר: ההעתקה <math>\mathrm{Br}(K) \to \bigoplus_v \mathrm{Br}(K_v)</math> חד-חד-ערכית, ויחד עם תורת שדות המחלקה מתקבלת הסדרה המדויקת
+:<math>0 \to \mathrm{Br}(K) \to \bigoplus_v\mathrm{Br}(K_v) \xrightarrow{\ \sum\mathrm{inv}_v\ } \mathbb Q/\mathbb Z \to 0,</math>
+כאשר <math>\mathrm{Br}(K_v) \cong \mathbb Q/\mathbb Z</math> למקומות לא ארכימדיים, <math>\mathbb Z/2</math> למקומות ממשיים ו-0 למרוכבים.
+
+יחד עם '''משפט גרונוולד–וונג''', משפט אלברט–בראואר–האסה–נתר גורר שכל אלגברה פשוטה מרכזית מעל שדה מספרים היא '''ציקלית''', כלומר אפשר לקבל אותה בבנייה מפורשת מ[[הרחבה ציקלית|הרחבת שדות ציקלית]] <math>L/K</math>.
+
+== ראו גם ==
+* [[תורת שדות המחלקה]]
+* [[משפט הנורמה של האסה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. A. Albert, H. Hasse, ''A determination of all normal division algebras over an algebraic number field'', Trans. Amer. Math. Soc. '''34''' (1932), pp. 722–726
+* R. Brauer, H. Hasse, E. Noether, ''Beweis eines Hauptsatzes in der Theorie der Algebren'', J. Reine Angew. Math. '''167''' (1932), pp. 399–404
+* D. D. Fenster, J. Schwermer, ''Delicate collaboration: Adrian Albert and Helmut Hasse and the Principal Theorem in Division Algebras'', Archive for History of Exact Sciences '''59''' (2005), pp. 349–379
+* R. Pierce, ''Associative Algebras'', Graduate Texts in Mathematics '''88''', Springer, 1982
+* I. Reiner, ''Maximal Orders'', LMS Monographs '''28''', Oxford University Press, 2003, p. 276
+* P. Roquette, ''The Brauer–Hasse–Noether theorem in historical perspective'', Heidelberger Akademie der Wissenschaften, 2005
+* N. E. Albert, ''A<sup>3</sup> & His Algebra'', iUniverse, 2005
+</div>
+
+[[קטגוריה:תורת שדות המחלקה]]
+[[קטגוריה:משפטים בתורת המספרים]]

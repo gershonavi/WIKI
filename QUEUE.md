@@ -124,7 +124,7 @@ Additive number theory:
 - [x] Conductor (class field theory)
 - [ ] Weil group
 - [x] Genus field
-- [ ] Golod–Shafarevich theorem
+- [x] Golod–Shafarevich theorem
 - [ ] Albert–Brauer–Hasse–Noether theorem
 - [ ] Langlands dual group
 - [x] Teichmüller character

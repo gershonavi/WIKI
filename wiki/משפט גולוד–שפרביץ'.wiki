@@ -1,0 +1,42 @@
+ב[[מתמטיקה]], '''משפט גולוד–שפרביץ'''' הוא תוצאה ב[[אלגברה הומולוגית]] לא חילופית, שפותרת את '''בעיית מגדל שדות המחלקה''' בכך שהיא מראה שמגדלי [[משפט הקיום של טקאגי|שדות מחלקה]] יכולים להיות אינסופיים. הוא קרוי על שם יבגני גולוד ו[[איגור שפרביץ']], שהוכיחו אותו ב-1964.
+
+== האי-שוויון ==
+תהי <math>A = K\langle x_1, \dots, x_n\rangle</math> ה[[אלגברה חופשית|אלגברה החופשית]] מעל [[שדה (מבנה אלגברי)|שדה]] <math>K</math> ב-<math>n = d + 1</math> משתנים לא מתחלפים, ויהי <math>J</math> ה[[אידיאל (אלגברה)|אידיאל]] הדו-צדדי של <math>A</math> שנוצר על ידי איברים [[פולינום הומוגני|הומוגניים]] <math>f_j</math> של <math>A</math> ממעלות <math>d_j</math>, עם
+:<math>2 \le d_1 \le d_2 \le \cdots,</math>
+כאשר <math>d_j</math> שואף לאינסוף. יהי <math>r_i</math> מספר ה-<math>d_j</math> ששווים ל-<math>i</math>, לכל <math>i \ge 2</math>.
+
+תהי <math>B = A/J</math>; זו [[אלגברה מדורגת]], <math>B = \bigoplus_j B_j</math>, כאשר <math>B_j</math> הוא החלק ההומוגני ממעלה <math>j</math>. יהי <math>b_j = \dim B_j</math>. '''האי-שוויון היסודי''' של גולוד ושפרביץ' קובע ש-
+:<math>b_j \ge nb_{j-1} - \sum_{i=2}^{j} b_{j-i}r_i</math>
+לכל <math>j</math>. כתוצאה, <math>B</math> אינסופית-ממד אם <math>r_i \le d^2/4</math> לכל <math>i \ge 2</math>.
+
+'''למה דווקא <math>d^2/4</math>?''' האי-שוויון אומר, בשפת [[פונקציה יוצרת|פונקציות יוצרות]], שהטור <math>\sum b_jt^j</math> "גדול" מ-<math>1/H(t)</math>, כאשר <math>H(t) = 1 - nt + \sum_{i\ge2}r_it^i</math>. אם יש <math>t_0 \in (0, 1)</math> עם <math>H(t_0) \le 0</math>, ה-<math>b_j</math> אינם יכולים להתאפס החל ממקום מסוים. במקרה הקיצוני <math>r_i = d^2/4</math> לכל <math>i</math>:
+:<math>(1 - t)H(t) = (1 - t)(1 - (d+1)t) + \tfrac{d^2}{4}t^2 = 1 - (d+2)t + \left(\tfrac{d+2}{2}\right)^2t^2 = \left(1 - \tfrac{d+2}{2}t\right)^2,</math>
+שמתאפס ב-<math>t_0 = \tfrac{2}{d+2} \in (0, 1)</math>. כלומר <math>d^2/4</math> הוא בדיוק הסף.
+
+== שימושים ==
+לתוצאה יש שימושים חשובים ב[[תורת החבורות הקומבינטורית]]:
+* אם <math>G</math> [[חבורת p|חבורת <math>p</math>]] סופית לא טריוויאלית, אז <math>r \gt d^2/4</math>, כאשר <math>d = \dim H^1(G, \mathbb Z/p\mathbb Z)</math> ו-<math>r = \dim H^2(G, \mathbb Z/p\mathbb Z)</math> ([[קוהומולוגיה של חבורות|חבורות הקוהומולוגיה]] מודולו <math>p</math> של <math>G</math>). בפרט, אם <math>G</math> חבורת <math>p</math> סופית עם מספר יוצרים מינימלי <math>d</math> ועם <math>r</math> יחסים בהצגה נתונה, אז <math>r \gt d^2/4</math>. (למשל, חבורת <math>p</math> סופית עם 4 יוצרים חייבת לפחות 5 יחסים.)
+* לכל ראשוני <math>p</math> יש חבורה אינסופית <math>G</math>, שנוצרת על ידי שלושה איברים, שבה הסדר של כל איבר הוא חזקה של <math>p</math>. החבורה <math>G</math> היא דוגמה נגדית ל[[בעיית ברנסייד|השערת ברנסייד]] המוכללת: היא [[חבורה נוצרת סופית]], אינסופית ו[[חבורת פיתול|פיתולית]], אף על פי שאין חסם אחיד על הסדרים של איבריה.
+
+=== תורת שדות המחלקה ===
+ב[[תורת שדות המחלקה]], '''מגדל שדות המחלקה''' של [[שדה מספרים]] נוצר על ידי חזרה על בניית [[משפט הקיום של טקאגי|שדה המחלקה של הילברט]]: <math>K = K_0 \subseteq K_1 \subseteq K_2 \subseteq \cdots</math>, כאשר <math>K_{i+1}</math> שדה המחלקה של הילברט של <math>K_i</math>. בעיית מגדל שדות המחלקה שואלת אם המגדל הזה תמיד סופי, כלומר אם בסופו של דבר מגיעים לשדה עם [[מספר המחלקות]] 1 (פורטוונגלר שאל זאת, והאסה הציג את הבעיה ב-1926). מסקנה ממשפט גולוד–שפרביץ' היא שמגדלים כאלה יכולים להיות [[מגדל שדות אינסופי|אינסופיים]] (במילים אחרות, לא תמיד מסתיימים בשדה ששווה לשדה המחלקה של הילברט שלו). ליתר דיוק, אם <math>K</math> [[שדה ריבועי]] מדומה שה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] שלו מתחלקת בשישה ראשוניים שונים לפחות, אז ההרחבה ה-2 המקסימלית ה[[פיצול של אידיאלים ראשוניים בהרחבות גלואה|לא מסועפת]] של <math>K</math> ממעלה אינסופית.
+
+'''דוגמה.''' ל-<math>K = \mathbb Q(\sqrt{-30030})</math>, כאשר <math>30030 = 2\cdot3\cdot5\cdot7\cdot11\cdot13</math>: הדיסקרימיננטה היא <math>-4\cdot30030 = -120120</math>, עם שישה גורמים ראשוניים. לפי [[שדה הגנוס|תורת הגנוסים]], הדרגה של ה-2-חלק של חבורת המחלקות היא <math>6 - 1 = 5</math>, וזה מספיק כדי שהאי-שוויון של גולוד–שפרביץ' (בצורה <math>r \gt d^2/4</math> לחבורת הגלואה של ההרחבה ה-2 הלא מסועפת המקסימלית) יכשל עבור כל מנה סופית. לכן מגדל שדות המחלקה של <math>K</math> אינסופי.
+
+באופן כללי יותר, לשדה מספרים עם מספיק גורמים ראשוניים בדיסקרימיננטה יש מגדל שדות מחלקה אינסופי.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* E. S. Golod, I. R. Shafarevich, ''On the class field tower'' (Russian), Izv. Akad. Nauk SSSR '''28''' (1964), pp. 261–272
+* E. S. Golod, ''On nil-algebras and finitely approximable p-groups'' (Russian), Izv. Akad. Nauk SSSR '''28''' (1964), pp. 273–276
+* I. N. Herstein, ''Noncommutative Rings'', 5th ed., Carus Mathematical Monographs, MAA, 2005, chapter 8
+* H. Hasse, ''Bericht über neuere Untersuchungen und Probleme aus der Theorie der algebraischen Zahlkörper'', Jahresbericht der DMV '''35''' (1926), pp. 1–55
+* D. L. Johnson, ''Topics in the Theory of Group Presentations'', LMS Lecture Note Series '''42''', Cambridge University Press, 1980, chapter VI
+* H. Koch, ''Number Theory II: Algebraic Number Theory'', Encyclopedia of Mathematical Sciences '''62''', Springer, 1992, p. 180
+* W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', 3rd ed., Springer, 2004, p. 194
+* P. Roquette, ''On class field towers'', in: J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967, pp. 231–249
+* J.-P. Serre, ''Galois Cohomology'', Springer, 2001
+</div>
+
+[[קטגוריה:תורת שדות המחלקה]]
+[[קטגוריה:משפטים בתורת החבורות]]
