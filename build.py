@@ -160,14 +160,21 @@ def fix_math(md):
     md = re.sub(r'\\operatorname\s*\{', r'\\mathrm{', md)  # GitHub's MathJax rejects \operatorname
     for mw, tex in (('R', 'mathbb{R}'), ('N', 'mathbb{N}'), ('Z', 'mathbb{Z}'), ('Q', 'mathbb{Q}'), ('C', 'mathbb{C}'), ('Complex', 'mathbb{C}'), ('infin', 'infty')):
         md = re.sub(r'\\' + mw + r'(?![A-Za-z])', lambda m, t=tex: '\\' + t, md)  # MediaWiki-only macros
-    md = re.sub(r'\$\$(.+?)\$\$', lambda m: '\n\n```math\n' + m.group(1).strip() + '\n```\n\n', md, flags=re.S)
-    parts = re.split(r'(```math\n.*?\n```)', md, flags=re.S)
+    def display(m):
+        # keep the block inside a list item: indent it like the line it came from
+        line = md[md.rfind('\n', 0, m.start()) + 1:m.start()]
+        lead = re.match(r'[ ]*(?:(?:\d+\.|[*+-])[ ]+)?', line).group(0)
+        ind = ' ' * len(lead)
+        body = '\n'.join(ind + l for l in m.group(1).strip().split('\n'))
+        return f'\n\n{ind}```math\n{body}\n{ind}```\n\n'
+    md = re.sub(r'\$\$(.+?)\$\$', display, md, flags=re.S)
+    parts = re.split(r'([ ]*```math\n.*?\n[ ]*```)', md, flags=re.S)
     for i in range(0, len(parts), 2):
         parts[i] = re.sub(r'(?<![\\$])\$(?!\$)([^$\n]+?)(?<!\\)\$', lambda m: '$`' + m.group(1) + '`$', parts[i])
     md = ''.join(parts)
     # GitHub reads '<' followed by a letter or backslash as the start of an HTML tag
     lt = re.compile(r'<(?=[A-Za-z\\])')
-    md = re.sub(r'(```math\n)(.*?)(\n```)', lambda m: m.group(1) + lt.sub(r'\\lt ', m.group(2)) + m.group(3), md, flags=re.S)
+    md = re.sub(r'(```math\n)(.*?)(\n[ ]*```)', lambda m: m.group(1) + lt.sub(r'\\lt ', m.group(2)) + m.group(3), md, flags=re.S)
     return re.sub(r'(\$`)(.+?)(`\$)', lambda m: m.group(1) + lt.sub(r'\\lt ', m.group(2)) + m.group(3), md)
 
 
@@ -209,6 +216,7 @@ def write_index(files, sources):
              'אוסף ערכים בתורת המספרים, מתורגמים לעברית מוויקיפדיה האנגלית, וקורס מסודר המבוסס עליהם.', '',
              '**[לקורס: תורת המספרים בעברית, לפי סדר הלימוד](COURSE.md)**', '',
              '**[קורס משלים: שיטות הוכחה בתורת המספרים](PROOFS.md)** – אינדוקציה, שלילה, שובך היונים, ירידה אינסופית ועוד, עם דוגמאות פשוטות ואיור לכל דוגמה.', '',
+             'כל התוכן זמין גם כאתר: **[gershonavi.github.io/WIKI](https://gershonavi.github.io/WIKI/)**.', '',
              'כל ערך מופיע פעמיים: כדף לקריאה בתיקייה `pages/`, וכקוד ויקי בתיקייה `wiki/` שאפשר להעתיק ישירות לוויקיפדיה.', '',
              '**רישיון:** התוכן ברישיון [CC BY-SA 4.0](LICENSE-CONTENT.md), כמו ויקיפדיה, כך שכל אחד רשאי להעתיק אותו בחזרה לוויקיפדיה עם ציון המקור. '
              'הקוד (סקריפט ההמרה) ברישיון [MIT](LICENSE).', '',
