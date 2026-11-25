@@ -31,11 +31,10 @@ def footnotes_to_list(md):
 def convert(md):
     md = footnotes_to_list(md)
     md = re.sub(r'\]\((?:\.\./)?(?:pages|course)/([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
-    md = re.sub(r'\]\(([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
-    md = md.replace('](../COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)')
+    md = md.replace('](../COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)').replace('](COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)')
+    md = md.replace('](LICENSE-CONTENT.md)', f']({REPO}/blob/main/LICENSE-CONTENT.md)')
     md = re.sub(r'\]\(([^)/\s:]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
     md = md.replace('](../wiki/', f']({REPO}/blob/main/wiki/')
-    md = md.replace('](LICENSE-CONTENT.md)', f']({REPO}/blob/main/LICENSE-CONTENT.md)')
     md = md.replace('](LICENSE)', f']({REPO}/blob/main/LICENSE)')
     return md
 

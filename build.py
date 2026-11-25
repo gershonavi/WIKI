@@ -157,8 +157,8 @@ def fix_links(md, local):
         if t in local:
             return f'[{label}]({urllib.parse.quote(t)}.md)'
         return f'[{label}](https://he.wikipedia.org/wiki/{urllib.parse.quote(t.replace(" ", "_"))})'
-    md = re.sub(r'\[([^\]]*)\]\((\S+?) "wikilink"\)', repl, md)
-    return re.sub(r'\[([^\]]*)\]\(([^)\s]+)\)', repl, md)
+    # one pass: optional "wikilink" title, so links already rewritten are not touched twice
+    return re.sub(r'\[([^\]]*)\]\((\S+?)(?: "wikilink")?\)', repl, md)
 
 
 def write_index(files, sources):
