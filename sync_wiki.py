@@ -104,7 +104,7 @@ def main(dest):
             parts = row.split('\t')
             if len(parts) >= 3 and not row.startswith('#') and parts[2][:-3] in lessons:
                 order.append((parts[0], parts[2][:-3]))
-    side += [f'* {num}. [{titles.get(l, l)}]({wiki_name(l)})' for num, l in order]
+    side += [f'* {num}\\. [{titles.get(l, l)}]({wiki_name(l)})' for num, l in order]
     pp = os.path.join(course_dir, 'proofs.tsv')
     if os.path.exists(pp):
         ptitles = {}
@@ -113,7 +113,7 @@ def main(dest):
             if len(parts) >= 3 and not row.startswith('#'):
                 ptitles[parts[2][:-3]] = (parts[0], parts[1])
         side += ['', f'**[שיטות הוכחה]({PROOFS_PAGE})**', '']
-        side += [f'* {ptitles[l][0]}. [{ptitles[l][1]}]({wiki_name(l)})' for l in lessons if l in ptitles]
+        side += [f'* {ptitles[l][0]}\\. [{ptitles[l][1]}]({wiki_name(l)})' for l in lessons if l in ptitles]
     side += ['', f'**[ערכים לפי קטגוריה]({CATS_PAGE})** ({len(page_titles)})', '']
     main_cats = sorted((c for c in cat_titles if cat_size[c] >= 3), key=lambda c: (-cat_size[c], c))
     side += [f'* [{c}]({wiki_name(CAT_PREFIX + c)}) ({cat_size[c]})' for c in main_cats]
