@@ -1,0 +1,41 @@
+ב[[תורת המספרים]], '''הקבוע המקומי של לנגלנדס–דלין''', הקרוי על שם [[רוברט לנגלנדס]] ופייר דלין, ונקרא גם '''גורם אפסילון מקומי''',{{הערה|1=K. Kramer, J. Tunnell, ''Elliptic curves and local ε-factors'', Compositio Mathematica '''46''' (1982), no. 3, pp. 307–352|כיווון=שמאל}} הוא פונקציה המתאימה ל[[הצגה (מתמטיקה)|הצגה]] <math>\rho</math> של חבורת וייל של שדה מקומי. ב[[משוואת הפונקציה (פונקציית L)|משוואת הפונקציה]]
+
+:<math>L(\rho,s) = \varepsilon(\rho,s)\,L(\rho^\vee,1-s)</math>
+
+של [[פונקציית L של ארטין]] המתאימה ל-<math>\rho</math> מופיעה פונקציה <math>\varepsilon(\rho,s)</math>, ששווה לקבוע שנקרא '''מספר השורש של ארטין''' כפול פונקציה ממשית אלמנטרית של <math>s</math>. לנגלנדס גילה שאפשר לכתוב את <math>\varepsilon(\rho,s)</math> באופן קנוני כמכפלה
+
+:<math>\varepsilon(\rho,s) = \prod_v \varepsilon(\rho_v,s,\psi_v)</math>
+
+של קבועים מקומיים <math>\varepsilon(\rho_v,s,\psi_v)</math> המתאימים לראשוניים <math>v</math>.
+
+ב[[עבודת הדוקטורט של טייט|עבודת הדוקטורט שלו]] הוכיח ג'ון טייט את קיום הקבועים המקומיים במקרה ש-<math>\rho</math> חד-ממדית. ברנרד דווארק הוכיח את קיום הקבוע המקומי <math>\varepsilon(\rho_v,s,\psi_v)</math> עד כדי סימן.{{הערה|1=B. Dwork, ''On the Artin root number'', American Journal of Mathematics '''78''' (1956), no. 2, pp. 444–472|כיווון=שמאל}} ההוכחה המקורית של לנגלנדס (1970) לקיום הקבועים המקומיים השתמשה בשיטות מקומיות, הייתה ארוכה ומסובכת למדי, ומעולם לא פורסמה. דלין גילה מאוחר יותר הוכחה פשוטה יותר בשיטות גלובליות.{{הערה|1=P. Deligne, ''Les constantes des équations fonctionnelles des fonctions L'', in: Modular Functions of One Variable II, Lecture Notes in Mathematics '''349''', Springer, 1973, pp. 501–597|כיווון=שמאל}}
+
+== תכונות ==
+הקבועים המקומיים <math>\varepsilon(\rho,s,\psi_E)</math> תלויים בהצגה <math>\rho</math> של חבורת וייל של שדה מקומי <math>E</math>, ובבחירה של קרקטר לא טריוויאלי <math>\psi_E</math> של החבורה החיבורית של <math>E</math>. הם מקיימים את התנאים הבאים:
+* אם <math>\rho</math> חד-ממדית, אז <math>\varepsilon(\rho,s,\psi_E)</math> הוא הקבוע שמתאים לה לפי עבודת הדוקטורט של טייט, כקבוע במשוואת הפונקציה של פונקציית ה-L המקומית.
+* <math>\varepsilon(\rho_1\oplus\rho_2,s,\psi_E) = \varepsilon(\rho_1,s,\psi_E)\,\varepsilon(\rho_2,s,\psi_E)</math>. כתוצאה מכך אפשר להגדיר את <math>\varepsilon(\rho,s,\psi_E)</math> גם עבור הצגות וירטואליות <math>\rho</math>.
+* אם <math>\rho</math> הצגה וירטואלית ממימד 0 ו-<math>E</math> מכיל את <math>K</math>, אז <math>\varepsilon(\rho,s,\psi_E) = \varepsilon(\mathrm{Ind}_{E/K} \rho, s, \psi_K)</math>, כאשר <math>\psi_E = \psi_K \circ \mathrm{Tr}_{E/K}</math>.
+
+משפט בראואר על קרקטרים מושרים גורר ששלוש התכונות האלה קובעות את הקבועים המקומיים באופן יחיד: כל הצגה היא צירוף שלם של הצגות המושרות מקרקטרים חד-ממדיים.
+
+דלין חישב את הקבועים המקומיים של הצגות ממשיות (אורתוגונליות) של חבורת וייל, ובטא אותם בעזרת מחלקת שטיפל–וויטני השנייה של ההצגה.{{הערה|1=P. Deligne, ''Les constantes locales de l'équation fonctionnelle de la fonction L d'Artin d'une représentation orthogonale'', Inventiones Mathematicae '''35''' (1976), pp. 299–316|כיווון=שמאל}} (בערך האנגלי נאמר שדלין הראה שהקבועים המקומיים "טריוויאליים" עבור הצגות אורתוגונליות. הקבועים המקומיים עצמם אינם טריוויאליים באופן כללי; מה שטריוויאלי הוא מספר השורש הגלובלי: מספר השורש של ארטין של הצגה אורתוגונלית הוא <math>W(\rho) = 1</math>, והחישוב של דלין נותן לכך הוכחה.)
+
+== מוסכמות סימון ==
+יש כמה מוסכמות שונות לסימון הקבועים המקומיים.
+* הפרמטר <math>s</math> מיותר, ואפשר לשלב אותו בהצגה <math>\rho</math>, כי <math>\varepsilon(\rho, s, \psi_E) = \varepsilon(\rho\otimes|\cdot|^s, 0, \psi_E)</math> עבור קרקטר מתאים <math>|\cdot|</math>.
+* דלין כולל פרמטר נוסף <math>dx</math>, שהוא בחירה של [[מידת האר]] על השדה המקומי. מוסכמות אחרות משמיטות את הפרמטר הזה על ידי קיבוע של מידת האר: או מידת האר שהיא דואלית לעצמה ביחס ל-<math>\psi</math> (שבה השתמש לנגלנדס), או מידת האר שנותנת לשלמים של <math>E</math> מידה 1. המוסכמות השונות נבדלות באיברים אלמנטריים שהם מספרים ממשיים חיוביים.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* C. J. Bushnell, G. Henniart, ''The Local Langlands Conjecture for GL(2)'', Grundlehren der Mathematischen Wissenschaften '''335''', Springer, 2006
+* R. P. Langlands, ''[http://publications.ias.edu/rpl/paper/61 On the functional equation of the Artin L-functions]'', unpublished notes, 1970
+* J. T. Tate, ''Local constants'', in: A. Fröhlich (ed.), Algebraic Number Fields: L-functions and Galois Properties (Durham, 1975), Academic Press, 1977, pp. 89–131
+* J. Tate, ''Number theoretic background'', in: Automorphic Forms, Representations, and L-functions, Part 2, Proc. Sympos. Pure Math. '''33''', AMS, 1979, pp. 3–26
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת ההצגות]]
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת שדות המחלקה]]
