@@ -98,7 +98,7 @@ Additive number theory:
 - [x] S-unit
 - [x] Narrow class group
 - [x] Conductor–discriminant formula
-- [ ] Galois representation
+- [x] Galois representation
 - [x] Kummer–Vandiver conjecture
 - [x] Leopoldt's conjecture
 - [x] Hilbert's ninth problem
