@@ -1,0 +1,38 @@
+ב[[מתמטיקה]], '''פונקציית זטא של ויטן''' (ב[[אנגלית]]: Witten zeta function) היא פונקציה המתאימה למערכת שורשים, שמקודדת את הממדים של ה[[הצגה אי-פריקה|הצגות האי-פריקות]] של [[חבורת לי]] המתאימה. את פונקציות הזטא האלה הציג [[דון זאגייר|דון זגייר]], שקרא להן על שם המחקר של [[אדוארד ויטן]] על הערכים המיוחדים שלהן (בין היתר).{{הערה|1=D. Zagier, Values of Zeta Functions and Their Applications, בתוך: First European Congress of Mathematics, Paris, July 6–10, 1992, Birkhäuser, 1994, עמ' 497–512, {{DOI|10.1007/978-3-0348-9112-7_23}}|כיווון=שמאל}}{{הערה|שם=witten|1=E. Witten, [http://projecteuclid.org/euclid.cmp/1104248198 On quantum gauge theories in two dimensions], Communications in Mathematical Physics 141 (1), 1991, עמ' 153–209, {{DOI|10.1007/bf02100009}}|כיווון=שמאל}} שימו לב שבמאמר של ויטן{{הערה|שם=witten}} פונקציות הזטא של ויטן אינן מופיעות כאובייקטים מפורשים בפני עצמם.
+
+== הגדרה ==
+אם <math>G</math> היא חבורת לי קומפקטית ופשוטה-למחצה, פונקציית הזטא של ויטן המתאימה היא (ההמשכה המרומורפית של) הטור
+:<math>\zeta_G(s)=\sum_\rho\frac{1}{(\dim\rho)^s},</math>
+כאשר הסכום הוא על מחלקות השקילות של ההצגות האי-פריקות של <math>G</math>.
+
+במקרה ש-<math>G</math> קשירה ופשוטת קשר, ההתאמה בין ההצגות של <math>G</math> לבין ההצגות של [[אלגברת לי]] שלה, יחד עם נוסחת הממד של ויל, מראות שאפשר לכתוב את <math>\zeta_G(s)</math> כ
+:<math>\sum_{m_1,\dots,m_r>0}\prod_{\alpha\in \Phi^+}\left(\frac{\langle\alpha^\vee, \rho\rangle}{\langle\alpha^\vee, m_1\lambda_1+\cdots+m_r\lambda_r\rangle}\right)^{s},</math>
+כאשר <math>\Phi^+</math> היא קבוצת השורשים החיוביים, <math>\{\lambda_i\}</math> היא קבוצת המשקלים היסודיים, <math>\rho = \lambda_1 + \cdots + \lambda_r</math>, ו-<math>r</math> הוא הדרגה. (בערך האנגלי נכתב ש-<math>\lambda_i</math> הם השורשים הפשוטים, וחסר גורם הנרמול <math>\langle\alpha^\vee,\rho\rangle</math> שבנוסחת הממד של ויל. בלי הגורם הזה, למשל עבור <math>SU(3)</math>, היה מתקבל <math>m_1m_2(m_1+m_2)</math> במקום הממד <math>m_1m_2(m_1+m_2)/2</math> שבדוגמה להלן.)
+
+== דוגמאות ==
+* <math>\zeta_{SU(2)}(s)=\zeta(s)</math>, [[פונקציית זטא של רימן]]. (לחבורה <math>SU(2)</math> יש בדיוק הצגה אי-פריקה אחת מכל ממד <math>n \ge 1</math>.)
+* <math>\zeta_{SU(3)}(s)=\sum_{x=1}^{\infty}\sum_{y=1}^{\infty}\frac{1}{(xy(x+y)/2)^s}.</math> (הממדים של ההצגות האי-פריקות של <math>SU(3)</math> הם <math>xy(x+y)/2</math>: <math>1, 3, 3, 6, 6, 8, 10, 10, 15, \ldots</math>; למשל <math>x = y = 1</math> נותן את ההצגה הטריוויאלית, ו-<math>x = 2, y = 1</math> נותן את ההצגה הסטנדרטית ממד 3.)
+
+== אבסיסת ההתכנסות ==
+אם <math>G</math> פשוטה ופשוטת קשר, אבסיסת ההתכנסות של <math>\zeta_G(s)</math> היא <math>r/\kappa</math>, כאשר <math>r</math> הוא הדרגה ו-<math>\kappa=|\Phi^{+}|</math>. זהו משפט של אלכס לובוצקי ומייקל לרסן.{{הערה|1=M. Larsen, A. Lubotzky, Representation growth of linear groups, Journal of the European Mathematical Society 10 (2), 2008, עמ' 351–390, {{DOI|10.4171/JEMS/113}}, arXiv:math/0607369|כיווון=שמאל}} הוכחה חדשה נתנו יוקה הסה ואלכסנדר סטסינסקי,{{הערה|1=J. Häsä, A. Stasinski, Representation growth of compact linear groups, Transactions of the American Mathematical Society 372 (2), 2019, עמ' 925–980, {{DOI|10.1090/tran/7618}}, arXiv:1710.09112|כיווון=שמאל}} והיא נותנת תוצאה כללית יותר: ערך מפורש (במונחים קומבינטוריים פשוטים) של אבסיסת ההתכנסות של כל "פונקציית זטא של מלין" מהצורה
+:<math>\sum_{x_1,\dots,x_r=1}^{\infty}\frac{1}{P(x_1,\dots,x_r)^s},</math>
+כאשר <math>P(x_1,\dots,x_r)</math> היא מכפלה של פולינומים ליניאריים עם מקדמים ממשיים אי-שליליים. (למשל עבור <math>SU(3)</math>: <math>r = 2</math>, <math>\kappa = 3</math>, ולכן האבסיסה היא <math>2/3</math>.)
+
+== סינגולריות וערכים של פונקציית הזטא של ויטן עבור SU(3) ==
+<math>\zeta_{SU(3)}</math> מתכנסת בהחלט ב-<math>\{ s \in \mathbb{C}: \mathrm{Re}(s)>2/3 \}</math>, ואפשר להרחיב אותה מרומורפית ל-<math>\mathbb{C}</math>. הסינגולריות שלה נמצאות בקבוצה <math>\Bigl\{ \frac{2}{3} \Bigr\} \cup \Bigl\{ \frac{1}{2}-k: k \in \mathbb{N} \Bigr\},</math> וכולן קטבים פשוטים.{{הערה|1=D. Romik, On the number of n-dimensional representations of SU(3), the Bernoulli numbers, and the Witten zeta function, Acta Arithmetica 180 (2), 2017, עמ' 111–159, {{DOI|10.4064/aa8455-3-2017}}, arXiv:1503.03776|כיווון=שמאל}} בפרט, הערכים של <math>\zeta_{SU(3)}(s)</math> מוגדרים היטב בכל השלמים, והם חושבו בידי קזוהירו אונודרה.{{הערה|1=K. Onodera, A functional relation for Tornheim's double zeta functions, Acta Arithmetica 162 (4), 2014, עמ' 337–354, {{DOI|10.4064/aa162-4-2}}, arXiv:1211.1480|כיווון=שמאל}}
+
+ב-<math>s=0</math> מתקיים <math>\zeta_{SU(3)}(0) = \frac{1}{3}</math> ו-<math>\zeta_{SU(3)}'(0)=\log(2^{4/3}\pi)</math>.
+
+יהי <math>a</math> שלם חיובי. מתקיים
+:<math>\zeta_{SU(3)}(a)=\frac{2^{a+2}}{1+(-1)^a 2} \sum_{k=0}^{\lfloor a/2\rfloor} {2a-2k-1 \choose a-1} \zeta(2k) \zeta(3a-2k).</math>
+(בערך האנגלי נכתב בטעות <math>\zeta(3a-k)</math> במקום <math>\zeta(3a-2k)</math>. '''בדיקה:''' עבור <math>a = 2</math> הנוסחה המתוקנת נותנת <math>\tfrac{16}{3}\big(3\zeta(0)\zeta(6) + \zeta(2)\zeta(4)\big) = \tfrac{4\pi^6}{2835} \approx 1.3564574</math>, בהתאם לסכימה ישירה של הטור הכפול; הנוסחה עם <math>\zeta(3a-k)</math> נותנת <math>0.958</math>. ההתאמה נבדקה עבור <math>a = 2, \ldots, 6</math>.)
+
+אם <math>a</math> אי-זוגי, ל-<math>\zeta_{SU(3)}</math> יש אפס פשוט ב-<math>s=-a</math>, ו
+:<math>\zeta_{SU(3)}'(-a)=\frac{2^{-a+1} (a!)^2}{(2a+1)!} \zeta'(-3a-1) + 2^{-a+2} \sum_{k=0}^{(a-1)/2} {a \choose 2k} \zeta(-a-2k) \zeta'(-2a+2k).</math>
+אם <math>a</math> זוגי, ל-<math>\zeta_{SU(3)}</math> יש אפס מסדר 2 ב-<math>s=-a</math>, ו
+:<math>\zeta_{SU(3)}''(-a)=2^{-a+2}\sum_{k=0}^{a/2} {a \choose 2k} \zeta'(-a-2k)\zeta'(-2a+2k).</math>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא ופונקציות L]]

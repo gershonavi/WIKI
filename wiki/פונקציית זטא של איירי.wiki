@@ -1,0 +1,31 @@
+ב[[מתמטיקה]], '''פונקציית זטא של איירי''' (ב[[אנגלית]]: Airy zeta function), שנחקרה בידי ריצ'רד קרנדל (1996),{{הערה|שם=cr|1=R. E. Crandall, On the quantum zeta function, Journal of Physics A: Mathematical and General 29 (21), 1996, עמ' 6795–6816, {{DOI|10.1088/0305-4470/29/21/014}}|כיווון=שמאל}} היא פונקציה הדומה ל[[פונקציית זטא של רימן]], הקשורה לאפסים של [[פונקציית איירי]].
+
+== הגדרה ==
+פונקציית איירי
+:<math>\mathrm{Ai}(x) = \frac{1}{\pi} \int_0^\infty \cos\left(\tfrac13t^3 + xt\right)\, dt</math>
+חיובית עבור <math>x</math> חיובי, אבל מתנודדת עבור ערכים שליליים של <math>x</math>. אפסי איירי הם הערכים <math>\{a_i\}_{i=1}^\infty</math> שבהם <math>\mathrm{Ai}(a_i) = 0</math>, מסודרים לפי גודל עולה: <math>|a_1|\lt|a_2|\lt\cdots</math>. (כולם שליליים: <math>a_1 \approx -2.33811</math>, <math>a_2 \approx -4.08795</math>, <math>a_3 \approx -5.52056</math>, ...)
+
+פונקציית זטא של איירי היא הפונקציה המוגדרת מסדרת האפסים הזו על ידי הטור
+:<math>\zeta_{\mathrm{Ai}}(s)=\sum_{i=1}^{\infty} \frac{1}{|a_i|^s}.</math>
+הטור הזה מתכנס כאשר ה[[מספר מרוכב|חלק הממשי]] של <math>s</math> גדול מ-<math>3/2</math>, ואפשר להרחיב אותו בעזרת [[המשכה אנליטית]] לערכים אחרים של <math>s</math>.
+
+('''למה 3/2, נוסף בתרגום:''' לפי האסימפטוטיקה <math>a_k \approx -\left[\tfrac{3\pi}{8}(4k-1)\right]^{2/3}</math>, מתקיים <math>|a_k|^{-s} \asymp k^{-2s/3}</math>, והטור מתכנס בדיוק כאשר <math>2s/3 > 1</math>.)
+
+== ערכים בשלמים ==
+כמו פונקציית זטא של רימן, שהערך שלה <math>\zeta(2)=\pi^2/6</math> הוא הפתרון של [[בעיית בזל]], גם את פונקציית זטא של איירי אפשר לחשב במדויק ב-<math>s = 2</math>:
+:<math>\zeta_{\mathrm{Ai}}(2)=\sum_{i=1}^{\infty} \frac{1}{a_i^2}=\frac{3^{5/3}\Gamma^4(\frac23)}{4\pi^2} \approx 0.5314572,</math>
+כאשר <math>\Gamma</math> היא [[פונקציית גמא]], גרסה רציפה של ה[[עצרת]]. חישובים דומים אפשריים גם עבור ערכים שלמים גדולים יותר של <math>s</math>.
+
+('''הוכחה, נוסף בתרגום:''' לפי משפט הפירוק של הדמר, <math>\mathrm{Ai}(x) = \mathrm{Ai}(0)\,e^{cx}\prod_k\left(1 - \frac{x}{a_k}\right)e^{x/a_k}</math>. גזירה פעמיים של <math>\log\mathrm{Ai}</math> בנקודה 0 נותנת <math>\frac{\mathrm{Ai}''(0)}{\mathrm{Ai}(0)} - \left(\frac{\mathrm{Ai}'(0)}{\mathrm{Ai}(0)}\right)^2 = -\sum_k \frac{1}{a_k^2}</math>. מכיוון ש-<math>\mathrm{Ai}'' = x\,\mathrm{Ai}</math>, האיבר הראשון מתאפס, ולכן <math>\zeta_{\mathrm{Ai}}(2) = \left(\mathrm{Ai}'(0)/\mathrm{Ai}(0)\right)^2</math>. הצבת <math>\mathrm{Ai}(0) = 3^{-2/3}/\Gamma(\tfrac23)</math> ו-<math>\mathrm{Ai}'(0) = -3^{-1/3}/\Gamma(\tfrac13)</math>, יחד עם <math>\Gamma(\tfrac13)\Gamma(\tfrac23) = 2\pi/\sqrt3</math>, נותנת את הנוסחה. בדיקה מספרית: סכום 2000 האפסים הראשונים, ועוד הערכה אסימפטוטית של הזנב, נותן <math>0.5314572</math>.)
+
+משערים שההמשכה האנליטית של פונקציית זטא של איירי מקבלת ב-1 את הערך
+:<math>\zeta_{\mathrm{Ai}}(1)=-\frac{\Gamma(\frac23)}{\Gamma(\frac43)\sqrt[3]{9}} \approx -0.7290111.</math>
+(הערך הזה שווה בדיוק ל-<math>\mathrm{Ai}'(0)/\mathrm{Ai}(0)</math>, בהתאם לנגזרת הראשונה של <math>\log\mathrm{Ai}</math> בפירוק של הדמר.)
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/AiryZetaFunction.html Airy Zeta Function], MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא ופונקציות L]]
