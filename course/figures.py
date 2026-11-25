@@ -2893,6 +2893,44 @@ def _():
     save('11-6')
 
 
+@fig('15-po')
+def _():
+    N = 1000
+    T = [n * (n + 1) * (n + 2) // 6 for n in range(1, 30) if n * (n + 1) * (n + 2) // 6 <= N]
+    d = np.full(N + 1, 99); d[0] = 0
+    for m in range(1, N + 1):
+        d[m] = 1 + min(d[m - t] for t in T if t <= m)
+    ns = np.arange(1, N + 1)
+    cols = {1: '#bbbbbb', 2: C3, 3: C1, 4: C4, 5: C2}
+    ax = plt.gca()
+    ax.scatter(ns, d[1:], s=6, c=[cols[int(v)] for v in d[1:]])
+    ax.set_yticks([1, 2, 3, 4, 5]); ax.set_ylim(0.5, 5.6)
+    ax.set_xlabel('n'); ax.set_ylabel('fewest tetrahedral numbers')
+    ax.set_title('Pollock: every n needs at most 5 tetrahedral numbers (1, 4, 10, 20, ...)', fontsize=9)
+    save('15-po')
+
+
+@fig('09-7')
+def _():
+    N = 300000
+    c2 = np.zeros(N + 1, int)
+    sv = np.ones(N + 1, bool); sv[:2] = False
+    for p in range(2, int(N ** .5) + 1):
+        if sv[p]:
+            sv[p * p::p] = False
+            c2[p * p::p * p] += 1
+    even = (c2[1:] % 2 == 0)
+    xs = np.unique(np.logspace(1, np.log10(N), 80).astype(int))
+    cum = np.cumsum(even)
+    ax = plt.gca()
+    ax.semilogx(xs, cum[xs - 1] / xs, color=C1, label='share with ω₂(k) even')
+    ax.axhline(0.66131705, color=C2, ls='--', lw=1, label='C_FT = ½(1 + ∏(1 − 2/p²)) ≈ 0.6613')
+    ax.axhline(6 / pi ** 2, color=GR, ls=':', lw=1, label='squarefree only: 6/π² ≈ 0.6079')
+    ax.set_xlabel('x'); ax.set_ylim(0.55, 0.75); ax.legend(fontsize=7)
+    ax.set_title('Feller–Tornier: an even number of primes with p² | k', fontsize=10)
+    save('09-7')
+
+
 
 if __name__ == '__main__':
     import sys
