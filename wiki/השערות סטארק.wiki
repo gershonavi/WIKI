@@ -1,0 +1,48 @@
+ב[[תורת המספרים]], '''השערות סטארק''', שהוצגו על ידי הרולד סטארק (1971, 1975, 1976, 1980) והורחבו אחר כך על ידי ג'ון טייט (1984), נותנות מידע משוער על המקדם של האיבר המוביל ב[[טור טיילור|פיתוח טיילור]] של [[פונקציית L של ארטין]] המתאימה ל[[הרחבת גלואה]] <math>K/k</math> של [[שדה מספרים|שדות מספרים]]. ההשערות מכלילות את נוסחת מספר המחלקות האנליטית, שמבטאת את המקדם המוביל של טור טיילור של [[פונקציית זטא של דדקינד]] של שדה מספרים כמכפלה של רגולטור, הקשור ל-S-יחידות של השדה, במספר רציונלי.
+
+כאשר <math>K/k</math> היא הרחבה אבלית וסדר ההתאפסות של פונקציית ה-L ב-<math>s = 0</math> הוא אחד, נתן סטארק עידון להשערתו, שמנבא את קיומן של S-יחידות מסוימות, שנקראות '''יחידות סטארק''', שיוצרות הרחבות אבליות של שדות מספרים.
+
+== ניסוח ==
+=== המקרה הכללי ===
+השערות סטארק, בצורתן הכללית ביותר, מנבאות שהמקדם המוביל של פונקציית L של ארטין הוא מכפלה של סוג של רגולטור, '''רגולטור סטארק''', ב[[מספר אלגברי]].
+
+=== המקרה האבלי מדרגה אחת ===
+כאשר ההרחבה אבלית וסדר ההתאפסות של פונקציית L ב-<math>s = 0</math> הוא אחד, ההשערה המעודנת של סטארק מנבאת את קיומן של '''יחידות סטארק''', שהשורשים שלהן יוצרים הרחבות קומר של <math>K</math> שהן אבליות מעל שדה הבסיס <math>k</math> (ולא רק אבליות מעל <math>K</math>, כפי שתורת קומר נותנת). לכן לעידון הזה של ההשערה יש השלכות תאורטיות לפתרון [[הבעיות של הילברט|הבעיה ה-12 של הילברט]].
+
+=== דוגמה: <math>k = \mathbb Q</math> ===
+עבור <math>k = \mathbb Q</math>, ההשערה האבלית מדרגה אחת היא משפט, שנובע מהנוסחה הקלאסית לנגזרת של פונקציות L של דיריכלה ב-<math>s = 0</math>: עבור קרקטר דיריכלה זוגי <math>\chi \ne 1</math> מודולו <math>f</math>, <math>L'(0, \chi) = -\tfrac12\sum_{a=1}^{f}\chi(a)\log\left|1 - e^{2\pi ia/f}\right|</math>. כאן יחידות סטארק הן (כמעט) ה'''יחידות הציקלוטומיות''' <math>1 - e^{2\pi ia/f}</math>, והשדות שהן יוצרות הם תת-שדות של [[שדה ציקלוטומי|שדות ציקלוטומיים]] – בהתאם למשפט קרונקר–ובר. למשל, עבור הקרקטר הריבועי מודולו 5 מקבלים <math>L'(0, \chi) = \log\tfrac{1+\sqrt5}{2} = 0.4812\ldots</math>, הלוגריתם של היחידה היסודית של <math>\mathbb Q(\sqrt5)</math> (חישוב מספרי מאשר את השוויון).
+
+== חישוב ==
+יחידות סטארק במקרה האבלי מדרגה אחת חושבו בדוגמאות מסוימות, מה שאפשר לאמת את נכונות ההשערה המעודנת. הן גם כלי חישובי חשוב ליצירת הרחבות אבליות של שדות מספרים, ומהוות בסיס לכמה אלגוריתמים סטנדרטיים לחישוב הרחבות אבליות של שדות מספרים.
+
+מקרים מדרגה אחת משמשים בגרסאות האחרונות של מערכת PARI/GP לחישוב שדות המחלקות של הילברט של שדות מספרים ממשיים לחלוטין, וההשערות נותנות פתרון אחד לבעיה ה-12 של הילברט, שקראה למתמטיקאים להראות איך אפשר לבנות [[תורת שדות המחלקה|שדות מחלקה]] מעל כל שדה מספרים בשיטות של [[אנליזה מרוכבת]]. (בערך האנגלי נכתב "המקרים הראשונים מדרגה אפס"; השיטה של PARI, הפונקציה <code>bnrstark</code>, משתמשת ביחידות סטארק, כלומר במקרה מדרגה אחת.)
+
+== התקדמות ==
+ההשערה העיקרית של סטארק הוכחה בכמה מקרים מיוחדים, כמו כשהקרקטר שמגדיר את פונקציית ה-L מקבל רק ערכים רציונליים. פרט למקרים ששדה הבסיס הוא שדה המספרים הרציונליים או [[שדה ריבועי]] מדומה, שטופלו בעבודה של סטארק,{{הערה|1=H. M. Stark, ''L-functions at s = 1. IV. First derivatives at s = 0'', Advances in Mathematics '''35''' (1980), no. 3, pp. 197–235|כיווון=שמאל}} השערות סטארק האבליות עדיין לא הוכחו עבור שדות מספרים. יותר התקדמות הושגה עבור [[שדה פונקציות|שדות פונקציות]].
+
+מנין (2004) קשר את השערות סטארק לגאומטריה הלא קומוטטיבית של אלן קון.{{הערה|1=Yu. I. Manin, A. A. Panchishkin, ''Introduction to Modern Number Theory'', Encyclopaedia of Mathematical Sciences '''49''', 2nd ed., Springer, 2007, p. 171|כיווון=שמאל}} זה נותן מסגרת מושגית לחקר ההשערות, אף שכרגע לא ברור אם הטכניקות של מנין יובילו להוכחה.
+
+== גרסאות ==
+ב-1980 ניסח בנדיקט גרוס את '''השערת גרוס–סטארק''', מקבילה <math>p</math>-אדית של השערות סטארק, שמקשרת בין נגזרות של פונקציות L ה-<math>p</math>-אדיות של דלין–ריבה (עבור קרקטרים זוגיים לחלוטין של שדות מספרים ממשיים לחלוטין) לבין <math>p</math>-יחידות.{{הערה|1=B. H. Gross, ''p-adic L-series at s = 0'', Journal of the Faculty of Science, University of Tokyo '''28''' (1982), pp. 979–994|כיווון=שמאל}} השערה זו הוכחה בתנאי על ידי אנרי דרמון, סמית דסגופטה ורוברט פולאק ב-2011.{{הערה|1=H. Darmon, S. Dasgupta, R. Pollack, ''Hilbert modular forms and the Gross–Stark conjecture'', Annals of Mathematics '''174''' (2011), no. 1, pp. 439–484|כיווון=שמאל}} ההוכחה הושלמה ונעשתה ללא תנאי על ידי דסגופטה, מהש קקדה וקווין ונטולו ב-2018.{{הערה|1=S. Dasgupta, M. Kakde, K. Ventullo, ''On the Gross–Stark conjecture'', Annals of Mathematics '''188''' (2018), no. 3, pp. 833–870|כיווון=שמאל}} גרוס הציע ב-1988 עידון נוסף של ההשערה ה-<math>p</math>-אדית.{{הערה|1=B. H. Gross, ''On the values of abelian L-functions at s = 0'', Journal of the Faculty of Science, University of Tokyo '''35''' (1988), pp. 177–197|כיווון=שמאל}}
+
+ב-1984 ניסח ג'ון טייט את [[השערת ברומר–סטארק]], שנותנת עידון של השערת סטארק האבלית מדרגה אחת בראשוניים סופיים שמתפצלים לחלוטין (עבור הרחבות מרוכבות לחלוטין של שדות בסיס ממשיים לחלוטין). המקבילה של השערת ברומר–סטארק לשדות פונקציות הוכחה על ידי ג'ון טייט ופייר דלין ב-1984.{{הערה|שם=Tate84|1=J. Tate, ''Les conjectures de Stark sur les fonctions L d'Artin en s = 0'', Progress in Mathematics '''47''', Birkhäuser, 1984|כיווון=שמאל}}{{הערה|שם=Rosen|1=M. Rosen, ''Number Theory in Function Fields'', Graduate Texts in Mathematics '''210''', Springer, 2002, פרק 15: The Brumer–Stark conjecture|כיווון=שמאל}} ב-2023 פורסמה ההוכחה של דסגופטה וקקדה להשערת ברומר–סטארק, פרט לראשוני 2.{{הערה|שם=DK|1=S. Dasgupta, M. Kakde, ''On the Brumer–Stark conjecture and refinements'', Annals of Mathematics '''197''' (2023), no. 1, pp. 289–388, arXiv:2010.00657|כיווון=שמאל}}
+
+ב-1996 הציע קרל רובין עידון שלם (מעל <math>\mathbb Z</math>) של השערת סטארק במקרה האבלי.{{הערה|1=K. Rubin, ''A Stark conjecture "over Z" for abelian L-functions with multiple zeros'', Annales de l'Institut Fourier '''46''' (1996), pp. 33–62|כיווון=שמאל}} ב-1999 הציע כריסטיאן דומיטרו פופסקו מקבילה של השערת רובין לשדות פונקציות, והוכיח אותה בכמה מקרים.{{הערה|1=C. D. Popescu, ''On a refined Stark conjecture for function fields'', Compositio Mathematica '''116''' (1999), no. 3, pp. 321–367|כיווון=שמאל}}
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. Burns, J. Sands, D. Solomon (eds.), ''Stark's Conjectures: Recent Work and New Directions'', Contemporary Mathematics '''358''', AMS, 2004
+* Yu. I. Manin, ''Real multiplication and noncommutative geometry (ein Alterstraum)'', in: The Legacy of Niels Henrik Abel, Springer, 2004, pp. 685–727, arXiv:math/0202109
+* H. M. Stark, ''Values of L-functions at s = 1. I. L-functions for quadratic forms'', Advances in Mathematics '''7''' (1971), pp. 301–343
+* H. M. Stark, ''L-functions at s = 1. II. Artin L-functions with rational characters'', Advances in Mathematics '''17''' (1975), pp. 60–92
+* H. M. Stark, ''L-functions at s = 1. III. Totally real fields and Hilbert's twelfth problem'', Advances in Mathematics '''22''' (1976), pp. 64–84
+* H. M. Stark, ''Class fields and modular forms of weight one'', in: Modular Functions of One Variable V, Lecture Notes in Mathematics '''601''', Springer, 1977, pp. 277–287
+* D. R. Hayes, [https://web.archive.org/web/20120204044231/http://www.math.umass.edu/~dhayes/lecs.html Lectures on Stark's Conjectures], 1999
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:השערות במתמטיקה]]
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:פונקציות זטא]]
