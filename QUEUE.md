@@ -21,7 +21,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Totient summatory function
 - [ ] Average order of an arithmetic function
 - [ ] Extremal orders of an arithmetic function
-- [ ] Bell series
+- [x] Bell series
 - [ ] Generalized Riemann hypothesis
 - [ ] Particular values of the Riemann zeta function
 - [ ] Hecke character
