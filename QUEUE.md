@@ -16,7 +16,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Smooth number
 - [x] Dickman function
 - [x] Multiplicative number theory
-- [ ] Hardy–Ramanujan–Littlewood circle method
+- [x] Hardy–Ramanujan–Littlewood circle method
 - [x] Landau's function
 - [x] Totient summatory function
 - [x] Average order of an arithmetic function

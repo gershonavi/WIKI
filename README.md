@@ -7,7 +7,7 @@
 
 **הערה:** התרגומים נעשו בעזרת מכונה. כדאי לבדוק ולהגיה כל ערך לפני שמפרסמים אותו.
 
-## ערכים (86)
+## ערכים (87)
 
 ### אנליזה מרוכבת
 
@@ -153,6 +153,7 @@
 * [סכום קרקטרים](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D.md) – Character sum
 * [פונקציית דיקמן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%93%D7%99%D7%A7%D7%9E%D7%9F.md) – Dickman function
 * [קבוע מייסל-מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
+* [שיטת המעגל של הארדי וליטלווד](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%A2%D7%92%D7%9C%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A8%D7%93%D7%99%20%D7%95%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93.md) – Hardy–Ramanujan–Littlewood circle method
 * [תופעת דויירינג-היילברון](pages/%D7%AA%D7%95%D7%A4%D7%A2%D7%AA%20%D7%93%D7%95%D7%99%D7%99%D7%A8%D7%99%D7%A0%D7%92-%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Deuring–Heilbronn phenomenon
 * [תורת המספרים האנליטית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA.md) – Analytic number theory
 * [תורת המספרים הכפלית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%9B%D7%A4%D7%9C%D7%99%D7%AA.md) – Multiplicative number theory
