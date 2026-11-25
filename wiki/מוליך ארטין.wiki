@@ -1,0 +1,66 @@
+ב[[תורת המספרים]], '''מוליך ארטין''' (Artin conductor) הוא מספר או [[אידיאל (תורת החוגים)|אידיאל]] המתאים לקרקטר של [[חבורת גלואה]] של [[שדה (מבנה אלגברי)|שדה]] מקומי או גלובלי. הוא הוצג על ידי [[אמיל ארטין]]{{הערה|1=E. Artin, ''Zur Theorie der L-Reihen mit allgemeinen Gruppencharakteren'', Abh. Math. Sem. Univ. Hamburg '''8''' (1930), pp. 292–306|כיווון=שמאל}}{{הערה|1=E. Artin, ''Die gruppentheoretische Struktur der Diskriminanten algebraischer Zahlkörper'', Journal für die reine und angewandte Mathematik '''164''' (1931), pp. 1–11|כיווון=שמאל}} כביטוי שמופיע ב[[משוואת הפונקציה (פונקציית L)|משוואת הפונקציה]] של [[פונקציית L של ארטין]].
+
+== מוליכי ארטין מקומיים ==
+נניח ש-<math>L</math> היא [[הרחבת גלואה]] סופית של השדה המקומי <math>K</math>, עם חבורת גלואה <math>G</math>. אם <math>\chi</math> הוא קרקטר של <math>G</math>, אז מוליך ארטין של <math>\chi</math> הוא המספר
+
+:<math>f(\chi)=\sum_{i\ge 0}\frac{g_i}{g_0}\bigl(\chi(1)-\chi(G_i)\bigr),</math>
+
+כאשר <math>G_i</math> היא חבורת ההסתעפות ה-<math>i</math>-ית (במספור התחתון), מסדר <math>g_i</math>, ו-<math>\chi(G_i)</math> הוא הערך הממוצע של <math>\chi</math> על <math>G_i</math>.{{הערה|שם=S158|1=J.-P. Serre, ''Local class field theory'', in: J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967, pp. 128–161, עמ' 158–159|כיווון=שמאל}} המוליך המקומי הוא מספר שלם.{{הערה|1=Yu. I. Manin, A. A. Panchishkin, ''Introduction to Modern Number Theory'', Encyclopaedia of Mathematical Sciences '''49''', 2nd ed., Springer, 2005, p. 329|כיווון=שמאל}} באופן היוריסטי, מוליך ארטין מודד עד כמה הפעולה של חבורות ההסתעפות הגבוהות רחוקה מלהיות טריוויאלית. בפרט, אם <math>\chi</math> אינו מסועף, מוליך ארטין שלו הוא אפס. לכן, אם <math>L</math> אינה מסועפת מעל <math>K</math>, מוליכי ארטין של כל הקרקטרים <math>\chi</math> הם אפס.
+
+ה'''אינווריאנט הפראי''' או '''מוליך סוואן''' של הקרקטר הוא
+
+:<math> f(\chi) - \bigl(\chi(1)-\chi(G_0)\bigr), </math>
+
+כלומר סכום האיברים מהסדר הגבוה, עם <math>i>0</math>.
+
+=== דוגמה ===
+נתבונן בהרחבה <math>L = \mathbb Q_2(i)</math> של <math>K = \mathbb Q_2</math>, עם <math>G = \{1, \sigma\}</math>, כאשר <math>\sigma(i) = -i</math>, ובקרקטר הלא-טריוויאלי <math>\chi</math> (<math>\chi(\sigma) = -1</math>). המספר <math>\pi = 1 + i</math> הוא יוצר של האידיאל המקסימלי של <math>L</math>, ו-<math>\sigma(\pi) - \pi = -2i</math>, שהערכתו (ב-<math>L</math>) היא 2. לכן <math>\sigma \in G_0 = G_1</math>, אבל <math>\sigma \notin G_2</math>: <math>g_0 = g_1 = 2</math> ו-<math>G_i</math> טריוויאלית עבור <math>i \ge 2</math>. הממוצע של <math>\chi</math> על <math>G_0 = G_1</math> הוא <math>0</math>, ועל החבורה הטריוויאלית הוא 1. לכן
+
+:<math>f(\chi) = 1\cdot(1 - 0) + 1\cdot(1 - 0) + 0 = 2,</math>
+
+ומוליך סוואן הוא <math>2 - 1 = 1</math>: ההסתעפות כאן "פראית". המוליך הגלובלי של הקרקטר הריבועי של <math>\mathbb Q(i)</math> הוא לכן <math>2^2 = 4</math>, ובהתאם לנוסחת המוליך-דיסקרימיננטה (ראו בהמשך), זה הערך המוחלט של הדיסקרימיננטה של <math>\mathbb Q(i)</math>, שהיא <math>-4</math>.
+
+== מוליכי ארטין גלובליים ==
+'''מוליך ארטין הגלובלי''' של הצגה <math>\chi</math> של חבורת הגלואה <math>G</math> של הרחבה סופית <math>L/K</math> של שדות גלובליים הוא אידיאל של <math>K</math>, המוגדר על ידי
+
+:<math>\mathfrak{f}(\chi) = \prod_p p^{f(\chi,p)},</math>
+
+כאשר המכפלה היא על הראשוניים <math>p</math> של <math>K</math>, ו-<math>f(\chi,p)</math> הוא מוליך ארטין המקומי של הצמצום של <math>\chi</math> לחבורת הפירוק של ראשוני כלשהו של <math>L</math> שמעל <math>p</math>.{{הערה|שם=S158}} כיוון שמוליך ארטין המקומי הוא אפס בראשוניים שאינם מסועפים, די לקחת את המכפלה על הראשוניים שמסתעפים ב-<math>L/K</math>.
+
+== הצגת ארטין וקרקטר ארטין ==
+נניח ש-<math>L</math> היא הרחבת גלואה סופית של השדה המקומי <math>K</math>, עם חבורת גלואה <math>G</math>. '''קרקטר ארטין''' <math>a_G</math> של <math>G</math> הוא הקרקטר
+
+:<math>a_G=\sum_\chi f(\chi)\,\chi</math>
+
+(הסכום על הקרקטרים האי-פריקים), ו'''הצגת ארטין''' <math>A_G</math> היא ההצגה הליניארית המרוכבת של <math>G</math> שזה הקרקטר שלה. וייל (1946) ביקש בנייה ישירה של הצגת ארטין. סר (1960) הראה שאפשר לממש את הצגת ארטין מעל השדה המקומי <math>\mathbb Q_\ell</math>, לכל ראשוני <math>\ell</math> השונה ממאפיין השאריות <math>p</math>. פונטן (1971) הראה שאפשר לממש אותה מעל חוג וקטורי ויט המתאים. באופן כללי אי אפשר לממש אותה מעל הרציונליים או מעל השדה המקומי <math>\mathbb Q_p</math>, וזה מרמז שאין דרך פשוטה לבנות את הצגת ארטין במפורש.{{הערה|1=Serre (1967), p. 160|כיווון=שמאל}}
+
+== הצגת סוואן ==
+'''קרקטר סוואן''' <math>sw_G</math> נתון על ידי
+
+:<math>sw_G= a_G -r_G+1, </math>
+
+כאשר <math>r_G</math> הוא הקרקטר של ההצגה הרגולרית ו-<math>1</math> הוא הקרקטר של ההצגה הטריוויאלית.{{הערה|1=V. P. Snaith, ''Explicit Brauer Induction With Applications to Algebra and Number Theory'', Cambridge Studies in Advanced Mathematics '''40''', Cambridge University Press, 1994, p. 248|כיווון=שמאל}} קרקטר סוואן הוא הקרקטר של הצגה של <math>G</math>. ריצ'רד סוואן (1963) הראה שיש הצגה [[מודול פרויקטיבי|פרויקטיבית]] יחידה של <math>G</math> מעל השלמים ה-<math>\ell</math>-אדיים שהקרקטר שלה הוא קרקטר סוואן.
+
+== שימושים ==
+מוליך ארטין מופיע ב'''נוסחת המוליך-דיסקרימיננטה''' לדיסקרימיננטה של שדה גלובלי: הדיסקרימיננטה (היחסית) של <math>L/K</math> שווה למכפלת המוליכים <math>\mathfrak f(\chi)^{\chi(1)}</math> על כל הקרקטרים האי-פריקים <math>\chi</math> של <math>G</math>.{{הערה|1=Serre (1967), p. 160|כיווון=שמאל}} (בדוגמה של <math>\mathbb Q(i)</math>: המוליך של הקרקטר הטריוויאלי הוא 1, ושל הקרקטר הריבועי הוא 4.)
+
+הרמה האופטימלית בהשערת המודולריות של סר מבוטאת בעזרת מוליך ארטין.
+
+מוליך ארטין מופיע במשוואת הפונקציה של פונקציית L של ארטין.
+
+הצגות ארטין וסוואן משמשות להגדרת המוליך של עקום אליפטי או של [[יריעה אבלית]].
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J.-M. Fontaine, ''Sur les représentations d'Artin'', in: Colloque de Théorie des Nombres (Bordeaux, 1969), Mém. Soc. Math. France '''25''', 1971, pp. 71–81
+* J.-P. Serre, ''Sur la rationalité des représentations d'Artin'', Annals of Mathematics '''72''' (1960), no. 2, pp. 405–420
+* R. G. Swan, ''The Grothendieck ring of a finite group'', Topology '''2''' (1963), pp. 85–110
+* A. Weil, ''L'avenir des mathématiques'', Bol. Soc. Mat. São Paulo '''1''' (1946), pp. 55–68
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים]]
+[[קטגוריה:תורת ההצגות]]
+[[קטגוריה:פונקציות זטא]]
