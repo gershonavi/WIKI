@@ -27,7 +27,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Hecke character
 - [x] Selberg class
 - [ ] Lerch transcendent
-- [ ] Clausen function
+- [x] Clausen function
 - [x] Landau prime ideal theorem
 - [x] Rosser's theorem
 - [x] Wolstenholme's theorem
