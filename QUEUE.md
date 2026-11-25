@@ -132,7 +132,7 @@ Additive number theory:
 - [x] Jacobi sum
 - [x] Stickelberger's theorem
 - [x] Hasse–Davenport relation
-- [ ] Herbrand–Ribet theorem
+- [x] Herbrand–Ribet theorem
 - [ ] Main conjecture of Iwasawa theory
 - [ ] Cyclotomic unit
 - [ ] Cyclotomic character

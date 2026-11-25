@@ -1,0 +1,32 @@
+ב[[מתמטיקה]], '''משפט הילברט–שפייזר''' הוא תוצאה על [[שדה ציקלוטומי|שדות ציקלוטומיים]], שמאפיינת את אלה שיש להם '''בסיס שלם נורמלי'''. באופן כללי יותר, הוא חל על כל [[הרחבה אבלית]] סופית של <math>\mathbb Q</math>, שלפי [[משפט קרונקר–ובר]] איזומורפיות לתת-שדות של שדות ציקלוטומיים.
+
+:'''משפט הילברט–שפייזר.''' להרחבה אבלית סופית <math>K/\mathbb Q</math> יש בסיס שלם נורמלי אם ורק אם היא [[סיעוף (מתמטיקה)|מסועפת באופן מאולף]] מעל <math>\mathbb Q</math>.
+
+זה התנאי ש-<math>K</math> תהיה [[תת-שדה]] של <math>\mathbb Q(\zeta_n)</math>, כאשר <math>n</math> [[מספר חופשי מריבועים|חופשי מריבועים]] ו[[מספר אי-זוגי|אי-זוגי]]. (הסיבה: הסיעוף ב-<math>p</math> מאולף בדיוק כשהמוליך מתחלק ב-<math>p</math> לכל היותר פעם אחת; ובהרחבה אבלית של <math>\mathbb Q</math> הסיעוף ב-2 תמיד פראי, כי המוליך מתחלק אז ב-4.) התוצאה הוצגה על ידי [[דויד הילברט]] (1897, Satz 132) ב-''Zahlbericht'' שלו, ועל ידי אנדראס שפייזר (1916).
+
+== בנייה ==
+במקרים שבהם המשפט קובע שבסיס שלם נורמלי קיים, אפשר לבנות אותו בעזרת [[מחזור גאוסי|מחזורים גאוסיים]]. למשל, אם לוקחים <math>n</math> ראשוני <math>p \gt 2</math>, ל-<math>\mathbb Q(\zeta_p)</math> יש בסיס שלם נורמלי שמורכב מכל שורשי היחידה מסדר <math>p</math> פרט ל-1: <math>\zeta, \zeta^2, \dots, \zeta^{p-1}</math> (שהם הצמודים של <math>\zeta</math>). לשדה <math>K</math> שמוכל בו, אפשר להשתמש ב[[עקבה (תורת השדות)|עקבה]] כדי לבנות בסיס כזה גם ב-<math>K</math>: העקבה של <math>\zeta</math> ל-<math>K</math> היא מחזור גאוסי, והצמודים שלה הם בסיס שלם נורמלי. במקרה ש-<math>n</math> חופשי מריבועים ואי-זוגי, <math>\mathbb Q(\zeta_n)</math> הוא הרכבה של תת-שדות מהסוג הזה עבור הראשוניים <math>p</math> שמחלקים את <math>n</math> (זה נובע מטיעון פשוט על סיעוף), ואפשר להשתמש בפירוק הזה לטיפול בכל אחד מתת-השדות שלו.
+
+== דוגמאות ==
+* <math>\mathbb Q(\sqrt5)</math> (מוליך 5, אי-זוגי וחופשי מריבועים): <math>\varphi = \tfrac{1+\sqrt5}{2}</math> וצמודו <math>\bar\varphi = 1 - \varphi</math> הם בסיס של <math>\mathbb Z[\varphi]</math> – מטריצת המעבר מ-<math>(1, \varphi)</math> היא <math>\left(\begin{smallmatrix}0 & 1\\ 1 & -1\end{smallmatrix}\right)</math>, עם דטרמיננטה <math>-1</math>. (<math>\varphi = -(\zeta_5^2 + \zeta_5^3)</math>, כלומר זהו מחזור גאוסי עד כדי סימן.)
+* <math>\mathbb Q(\sqrt{-3}) = \mathbb Q(\zeta_3)</math>: הבסיס <math>\zeta_3, \zeta_3^2</math>.
+* <math>\mathbb Q(i)</math> (מוליך 4): אין בסיס שלם נורמלי, כי אם <math>\alpha = a + bi</math>, הדטרמיננטה של <math>(\alpha, \bar\alpha)</math> בבסיס <math>(1, i)</math> היא <math>-2ab \ne \pm1</math>. בהתאם, הסיעוף ב-2 פראי.
+* <math>\mathbb Q(\sqrt3)</math> (מוליך 12): גם כאן הסיעוף ב-2 פראי, ואין בסיס שלם נורמלי.
+
+== היפוך והכללות ==
+גרייתר, רפלוגל, רובין ושריווסטב (1999) הוכיחו היפוך של משפט הילברט–שפייזר:{{הערה|1=C. Greither, D. R. Replogle, K. Rubin, A. Srivastav, ''Swan modules and Hilbert–Speiser number fields'', Journal of Number Theory '''79''' (1999), pp. 164–173|כיווון=שמאל}}
+:לכל הרחבה אבלית סופית מסועפת באופן מאולף <math>K</math> של שדה מספרים קבוע <math>J</math> יש בסיס שלם נורמלי יחסי אם ורק אם <math>J = \mathbb Q</math>.
+
+יש מקבילה אליפטית של המשפט, שהוכיחו שריווסטב וטיילור (1990),{{הערה|1=A. Srivastav, M. J. Taylor, ''Elliptic curves with complex multiplication and Galois module structure'', Inventiones Mathematicae '''99''' (1990), pp. 165–184|כיווון=שמאל}} והיא נקראת היום משפט שריווסטב–טיילור.{{הערה|1=A. Agboola, ''Torsion points on elliptic curves and Galois module structure'', Inventiones Mathematicae '''123''' (1996), pp. 105–122|כיווון=שמאל}}
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. Hilbert, ''Die Theorie der algebraischen Zahlkörper'', Jahresbericht der DMV '''4''' (1897), pp. 175–546; English translation ''The Theory of Algebraic Number Fields'', Springer, 1998, theorem 132
+* A. Speiser, ''Gruppendeterminante und Körperdiskriminante'', Mathematische Annalen '''77''' (1916), pp. 546–562
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:שדות ציקלוטומיים]]
+[[קטגוריה:משפטים בתורת המספרים]]

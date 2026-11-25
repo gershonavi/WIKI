@@ -1,0 +1,32 @@
+ב[[מתמטיקה]], '''יחידה ציקלוטומית''' (או '''יחידה מעגלית''') היא [[הפיך (מתמטיקה)|יחידה]] של [[שדה מספרים]] שהיא מכפלה של מספרים מהצורה <math>\zeta_n^a - 1</math>, כאשר <math>\zeta_n</math> [[שורש יחידה]] מסדר <math>n</math> ו-<math>0 \lt a \lt n</math>.
+
+== תכונות ==
+היחידות הציקלוטומיות יוצרות [[תת-חבורה]] מ[[אינדקס (תורת החבורות)|אינדקס]] סופי ב[[משפט היחידות של דיריכלה|חבורת היחידות]] של [[שדה ציקלוטומי]]. האינדקס של תת-החבורה של היחידות הציקלוטומיות ה'''ממשיות''' (היחידות הציקלוטומיות שבתת-השדה הממשי המקסימלי) בתוך חבורת היחידות הממשיות המלאה שווה ל[[מספר המחלקות]] של תת-השדה הממשי המקסימלי של השדה הציקלוטומי (לשדות מרמה שהיא חזקת ראשוני).{{הערה|שם=W|1=L. C. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Springer, 1997, Theorem 8.2; §8.8, p. 150|כיווון=שמאל}} זוהי מקבילה מפתיעה ל[[נוסחת מספר המחלקות]]: יחידות "מפורשות" נותנות מידע על חבורת המחלקות.
+
+* אם <math>n</math> [[חזקת ראשוני]], אז <math>\zeta_n^a - 1</math> אינו יחידה (הנורמה שלו היא <math>p</math>); אבל המספרים <math>(\zeta_n^a - 1)/(\zeta_n - 1)</math> עם <math>(a, n) = 1</math>, יחד עם <math>\pm\zeta_n^a</math>, יוצרים את חבורת היחידות הציקלוטומיות.
+* אם <math>n</math> [[מספר פריק|פריק]] עם שני גורמים ראשוניים שונים או יותר, אז <math>\zeta_n^a - 1</math> הוא יחידה. תת-חבורת היחידות הציקלוטומיות שנוצרת על ידי <math>(\zeta_n^a - 1)/(\zeta_n - 1)</math> עם <math>(a, n) = 1</math> אינה בדרך כלל מאינדקס סופי.{{הערה|שם=W}} (למשל ל-<math>n = 6</math>: <math>\zeta_6 - 1 = e^{2\pi i/3}</math>, שורש יחידה – ובפרט יחידה.)
+
+'''דוגמה: <math>n = 5</math>.''' היחידה הציקלוטומית <math>\frac{\zeta_5^2 - 1}{\zeta_5 - 1} = 1 + \zeta_5</math> מקיימת <math>|1 + \zeta_5| = 2\cos\tfrac{\pi}{5} = \varphi = \tfrac{1 + \sqrt5}{2}</math>; ואכן <math>1 + \zeta_5 = \zeta_{10}\cdot\varphi</math> עד כדי שורש יחידה, כלומר היחידות הציקלוטומיות של <math>\mathbb Q(\zeta_5)</math> מכילות את יחס הזהב, שהוא ה[[יחידה יסודית (תורת המספרים)|יחידה היסודית]] של תת-השדה הממשי <math>\mathbb Q(\sqrt5)</math>. האינדקס הוא 1 – בהתאם לכך שמספר המחלקות של <math>\mathbb Q(\sqrt5)</math> הוא 1 (ראו [[השדה הזהוב]]).
+
+היחידות הציקלוטומיות מקיימות '''יחסי התפלגות''' (distribution relations). יהי <math>p</math> ראשוני אי-זוגי, ונסמן <math>g_a = \exp(2\pi ia) - 1</math> לכל <math>a</math> רציונלי. אז לכל <math>a</math> עם <math>g_a \ne 0</math>,
+:<math>\prod_{pb = a} g_b = g_a,</math>
+כאשר המכפלה היא על <math>b</math> מודולו 1 שמקיימים <math>pb \equiv a \pmod 1</math>, כלומר <math>b = (a + j)/p</math>, <math>j = 0, \dots, p - 1</math>.{{הערה|1=S. Lang, ''Cyclotomic Fields I and II'', Graduate Texts in Mathematics '''121''', Springer, 1990, p. 157|כיווון=שמאל}} (הוכחה: אם <math>x = e^{2\pi ia/p}</math>, אז <math>\prod_{j}(x\zeta_p^j - 1) = x^p - 1</math> ל-<math>p</math> אי-זוגי, כי <math>\prod_j(t - x\zeta_p^j) = t^p - x^p</math>.) היחסים האלה הם המקבילה הסופית של נוסחת הכפל של גאוס ל[[פונקציית גמא]], בדומה ל[[יחס האסה–דבנפורט]] ל[[סכום גאוס|סכומי גאוס]].
+
+בעזרת יחסי ההתפלגות ויחס הסימטריה <math>\zeta_n^a - 1 = -\zeta_n^a(\zeta_n^{-a} - 1)</math> אפשר לבנות בסיס <math>B_n</math> של היחידות הציקלוטומיות, עם התכונה ש-<math>B_d \subseteq B_n</math> כש-<math>d \mid n</math>.
+
+== ראו גם ==
+* [[השערת קומר–ונדיבר]]
+* [[משפט תיין]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* S. Lang, ''Cyclotomic Fields I and II'', 2nd combined ed., Graduate Texts in Mathematics '''121''', Springer, 1990
+* W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', 2nd ed., Springer, 1990
+* L. C. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Graduate Texts in Mathematics '''83''', Springer, 1997
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:שדות ציקלוטומיים]]
