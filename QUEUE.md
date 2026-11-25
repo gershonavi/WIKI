@@ -76,7 +76,7 @@ Additive number theory:
 - [x] Cubic field
 - [x] Biquadratic field
 - [x] Dedekind–Kummer theorem
-- [ ] Splitting of prime ideals in Galois extensions
+- [x] Splitting of prime ideals in Galois extensions
 - [ ] Ramification (mathematics)
 - [ ] Ramification group
 - [ ] P-adic valuation

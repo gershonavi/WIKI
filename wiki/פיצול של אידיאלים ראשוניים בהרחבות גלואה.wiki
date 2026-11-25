@@ -1,0 +1,161 @@
+ב[[מתמטיקה]], הקשר בין [[חבורת גלואה|חבורת הגלואה]] <math>G</math> של [[הרחבת גלואה]] <math>L</math> של [[שדה מספרים]] <math>K</math>, לבין האופן שבו ה[[אידיאל ראשוני|אידיאלים הראשוניים]] <math>P</math> של [[חוג השלמים האלגבריים|חוג השלמים]] <math>\mathcal O_K</math> מתפרקים למכפלות של אידיאלים ראשוניים של <math>\mathcal O_L</math>, הוא אחד החלקים העשירים ביותר של [[תורת המספרים האלגברית]]. את '''הפיצול של אידיאלים ראשוניים בהרחבות גלואה''' מייחסים לפעמים לדויד הילברט, וקוראים לו '''תורת הילברט'''. יש לו מקבילה גאומטרית, לכיסויים מסועפים של משטחי רימן, שהיא פשוטה יותר משום שצריך להתחשב בה רק בסוג אחד של תת-חבורות של <math>G</math>, ולא בשניים. המקבילה הזו הייתה ידועה עוד לפני הילברט.
+
+== הגדרות ==
+תהי <math>L/K</math> הרחבה סופית של שדות מספרים, ויהיו <math>\mathcal O_K</math> ו-<math>\mathcal O_L</math> חוגי השלמים של <math>K</math> ו-<math>L</math>, בהתאמה, כלומר הסגור השלם של <math>\mathbb Z</math> בשדה המתאים. יהי <math>p</math> אידיאל ראשוני שונה מאפס של <math>\mathcal O_K</math>, או באופן שקול [[אידיאל מקסימלי]], כך ש-<math>\mathcal O_K/p</math> הוא שדה.
+
+מהתורה הבסיסית של חוגים חד-ממדיים נובע שיש פירוק יחיד
+:<math>p\mathcal O_L = \prod_{j=1}^{g} P_j^{e_j}</math>
+של האידיאל <math>p\mathcal O_L</math> (האידיאל ש-<math>p</math> יוצר ב-<math>\mathcal O_L</math>) למכפלה של אידיאלים מקסימליים שונים <math>P_j</math>, עם ריבויים <math>e_j</math>.
+
+השדה <math>F = \mathcal O_K/p</math> משוכן באופן טבעי בשדה <math>F_j = \mathcal O_L/P_j</math> לכל <math>j</math>. המעלה <math>f_j = [\mathcal O_L/P_j : \mathcal O_K/p]</math> של '''הרחבת שדה השארית''' הזו נקראת '''דרגת האינרציה''' (או דרגת השארית) של <math>P_j</math> מעל <math>p</math>.
+
+הריבוי <math>e_j</math> נקרא '''מדד הסיעוף''' של <math>P_j</math> מעל <math>p</math>. אם הוא גדול מ-1 עבור <math>j</math> כלשהו, אומרים שההרחבה <math>L/K</math> '''מסועפת''' ב-<math>p</math> (או ש-<math>p</math> מסועף ב-<math>L</math>). אחרת אומרים ש-<math>L/K</math> '''לא מסועפת''' ב-<math>p</math>. במקרה כזה, לפי [[משפט השאריות הסיני]], המנה <math>\mathcal O_L/p\mathcal O_L</math> היא מכפלה של השדות <math>F_j</math>. ההרחבה <math>L/K</math> מסועפת בדיוק בראשוניים שמחלקים את [[דיסקרימיננטה של שדה מספרים|הדיסקרימיננטה היחסית]], ולכן היא לא מסועפת בכל הראשוניים פרט למספר סופי.
+
+מהכפליות של [[נורמה של אידיאל|נורמת האידיאלים]] נובע
+:<math>[L:K]=\sum_{j=1}^{g} e_j f_j.</math>
+אם <math>f_j = e_j = 1</math> לכל <math>j</math> (ולכן <math>g = [L:K]</math>), אומרים ש-<math>p</math> '''מתפצל לחלוטין''' ב-<math>L</math>. אם <math>g = 1</math> ו-<math>f_1 = 1</math> (ולכן <math>e_1 = [L:K]</math>), אומרים ש-<math>p</math> '''מסועף לחלוטין''' ב-<math>L</math>. לבסוף, אם <math>g = 1</math> ו-<math>e_1 = 1</math> (ולכן <math>f_1 = [L:K]</math>), אומרים ש-<math>p</math> '''אינרטי''' ב-<math>L</math>.
+
+'''דוגמה להרחבה שאינה גלואה.''' ב-<math>\mathbb Q(\sqrt[3]2)</math> מתקיים <math>(5) = \mathfrak p_1\mathfrak p_2</math> עם <math>f_1 = 1</math> ו-<math>f_2 = 2</math> (ראו [[משפט דדקינד–קומר]]); הסכום <math>1\cdot 1 + 1\cdot 2 = 3</math> הוא המעלה. דרגות האינרציה שונות זו מזו – דבר שאינו יכול לקרות בהרחבת גלואה, כפי שיוסבר עכשיו.
+
+=== המצב בהרחבת גלואה ===
+מכאן והלאה נניח שההרחבה <math>L/K</math> היא הרחבת גלואה. אז אפשר להשתמש בלמת ההתחמקות מראשוניים כדי להראות שחבורת הגלואה <math>G=\mathrm{Gal}(L/K)</math> פועלת באופן טרנזיטיבי על האידיאלים <math>P_j</math>. כלומר, הגורמים הראשוניים של <math>p</math> ב-<math>L</math> יוצרים מסלול יחיד תחת האוטומורפיזמים של <math>L</math> מעל <math>K</math>. מכאן ומיחידות הפירוק נובע ש-<math>f = f_j</math> ו-<math>e = e_j</math> אינם תלויים ב-<math>j</math> – דבר שבהחלט אינו בהכרח נכון בהרחבות שאינן גלואה. היחסים הבסיסיים הם אז
+:<math>p\mathcal O_L = \left(\prod_{j=1}^{g} P_j\right)^e</math>
+ו-
+:<math>[L:K]=efg.</math>
+
+מהיחס הזה נובע ש-<math>[L:K]/ef</math> שווה למספר <math>g</math> של הגורמים הראשוניים של <math>p</math> ב-<math>\mathcal O_L</math>. לפי נוסחת המסלול–מייצב, המספר הזה שווה גם ל-<math>|G|/|D_{P_j}|</math> לכל <math>j</math>, כאשר <math>D_{P_j}</math>, '''חבורת הפירוק''' של <math>P_j</math>, היא תת-החבורה של האיברים של <math>G</math> ששולחים את <math>P_j</math> לעצמו. מאחר שלפי [[תורת גלואה]] המעלה של <math>L/K</math> שווה לסדר של <math>G</math>, נובע שהסדר של חבורת הפירוק <math>D_{P_j}</math> הוא <math>ef</math> לכל <math>j</math>.
+
+חבורת הפירוק מכילה תת-חבורה <math>I_{P_j}</math>, שנקראת '''חבורת האינרציה''' של <math>P_j</math>, ומורכבת מהאוטומורפיזמים של <math>L/K</math> שמשרים את אוטומורפיזם הזהות על <math>F_j</math>. במילים אחרות, <math>I_{P_j}</math> היא הגרעין של העתקת הצמצום <math>D_{P_j}\to\mathrm{Gal}(F_j/F)</math>. אפשר להראות שההעתקה הזו על, ומכאן ש-<math>\mathrm{Gal}(F_j/F)</math> איזומורפית ל-<math>D_{P_j}/I_{P_j}</math>, והסדר של חבורת האינרציה <math>I_{P_j}</math> הוא <math>e</math>.
+
+התורה של '''איבר פרובניוס''' הולכת רחוק יותר, ומזהה איבר של <math>D_{P_j}/I_{P_j}</math> (עבור <math>j</math> נתון) שמתאים ל[[הומומורפיזם פרובניוס|אוטומורפיזם פרובניוס]] בחבורת הגלואה של הרחבת השדות הסופיים <math>F_j/F</math>. במקרה הלא-מסועף, הסדר של <math>D_{P_j}</math> הוא <math>f</math> ו-<math>I_{P_j}</math> טריוויאלית, ולכן במקרה הזה איבר פרובניוס הוא איבר של <math>D_{P_j}</math>, ולכן גם של <math>G</math>. עבור <math>j</math>-ים שונים, החבורות <math>D_{P_j}</math> הן תת-חבורות צמודות ב-<math>G</math>: מאחר ש-<math>G</math> פועלת באופן טרנזיטיבי על ה-<math>P_j</math>, קל לבדוק שאם <math>\sigma</math> שולח את <math>P_j</math> ל-<math>P_{j'}</math>, אז <math>\sigma D_{P_j} \sigma^{-1} = D_{P_{j'}}</math>. לכן, אם <math>G</math> [[חבורה אבלית|אבלית]], איבר פרובניוס של ראשוני לא מסועף <math>p</math> אינו תלוי בבחירת <math>P_j</math>. יתרה מזו, במקרה האבלי, ההתאמה של איבר פרובניוס לכל ראשוני לא מסועף של <math>K</math>, כשמרחיבים אותה באופן כפלי, מגדירה הומומורפיזם מחבורת האידיאלים הלא-מסועפים של <math>K</math> ל-<math>G</math>. ההעתקה הזו, שנקראת '''העתקת ארטין''', היא מרכיב מרכזי של [[תורת שדות המחלקה]], שחוקרת את ה[[הרחבה אבלית|הרחבות האבליות]] הסופיות של שדה מספרים נתון <math>K</math>.{{הערה|1=J. S. Milne, ''Class Field Theory'', course notes, 2020|כיווון=שמאל}}
+
+במקבילה הגאומטרית, ליריעות מרוכבות או לגאומטריה אלגברית מעל שדה סגור אלגברית, המושגים של חבורת פירוק וחבורת אינרציה מתלכדים. שם, בהינתן כיסוי גלואה מסועף, לכל הנקודות פרט למספר סופי יש אותו מספר של מקורות.
+
+את הפיצול של ראשוניים בהרחבות שאינן גלואה אפשר לחקור בעזרת שדה פיצול, כלומר הרחבת גלואה גדולה יותר. לדוגמה, ב[[שדה ממעלה שלישית|שדות ממעלה שלישית]] הפיצול בדרך כלל "נשלט" על ידי שדה ממעלה 6 שמכיל אותם.
+
+== דוגמה: השלמים של גאוס ==
+בסעיף הזה נתאר את הפיצול של אידיאלים ראשוניים בהרחבה <math>\mathbb Q(i)/\mathbb Q</math>. כלומר, <math>K = \mathbb Q</math> ו-<math>L = \mathbb Q(i)</math>, ולכן <math>\mathcal O_K = \mathbb Z</math> ו-<math>\mathcal O_L = \mathbb Z[i]</math> הוא חוג השלמים של גאוס. המקרה הזה רחוק מלהיות מייצג – אחרי הכול, ב-<math>\mathbb Z[i]</math> יש פירוק יחיד, ו[[בעיית מספר המחלקה|אין הרבה שדות ריבועיים מדומים עם פירוק יחיד]] – אבל הוא מדגים רבים מהמאפיינים של התורה.
+
+נסמן ב-<math>G</math> את חבורת הגלואה של <math>\mathbb Q(i)/\mathbb Q</math>, וב-<math>\sigma</math> את אוטומורפיזם ההצמדה המרוכבת ב-<math>G</math>. יש שלושה מקרים.
+
+=== הראשוני <math>p = 2</math> ===
+הראשוני 2 של <math>\mathbb Z</math> מסועף ב-<math>\mathbb Z[i]</math>:
+:<math>(2)=(1+i)^2.</math>
+מדד הסיעוף כאן הוא אפוא <math>e = 2</math>. שדה השארית הוא
+:<math>\mathcal O_L / (1+i)\mathcal O_L,</math>
+השדה הסופי בן שני איברים. חבורת הפירוק חייבת להיות כל <math>G</math>, משום שיש רק ראשוני אחד של <math>\mathbb Z[i]</math> מעל 2. גם חבורת האינרציה היא כל <math>G</math>, משום ש-
+:<math>a+bi\equiv a-bi\pmod{1+i}</math>
+לכל שני שלמים <math>a</math> ו-<math>b</math>, שכן <math>a+bi = 2bi + (a-bi) = (1+i) (1-i)bi + (a-bi) \equiv a-bi \pmod{1+i}</math>.
+
+למעשה, 2 הוא הראשוני ''היחיד'' שמסועף ב-<math>\mathbb Z[i]</math>, משום שכל ראשוני מסועף חייב לחלק את הדיסקרימיננטה של <math>\mathbb Z[i]</math>, שהיא <math>-4</math>.
+
+=== ראשוניים <math>p \equiv 1 \pmod 4</math> ===
+כל ראשוני <math>p \equiv 1 \pmod 4</math> ''מתפצל'' לשני אידיאלים ראשוניים שונים ב-<math>\mathbb Z[i]</math>; זהו ביטוי של המשפט של פרמה על [[סכום של שני ריבועים|סכומים של שני ריבועים]]. לדוגמה:
+:<math>13=(2+3i)(2-3i).</math>
+חבורות הפירוק במקרה הזה הן שתיהן החבורה הטריוויאלית <math>\{1\}</math>; אכן, האוטומורפיזם <math>\sigma</math> ''מחליף'' בין שני הראשוניים <math>(2+3i)</math> ו-<math>(2-3i)</math>, ולכן אינו יכול להיות בחבורת הפירוק של אף אחד מהם. גם חבורת האינרציה, שהיא תת-חבורה של חבורת הפירוק, טריוויאלית. יש שני שדות שארית, אחד לכל ראשוני,
+:<math>\mathcal O_L / (2 \pm 3i)\mathcal O_L,</math>
+ושניהם איזומורפיים לשדה הסופי בן 13 איברים. איבר פרובניוס הוא האוטומורפיזם הטריוויאלי; פירוש הדבר ש-
+:<math>(a+bi)^{13}\equiv a + bi\pmod{2\pm3i}</math>
+לכל שני שלמים <math>a</math> ו-<math>b</math>. (למשל, מודולו <math>2+3i</math> מתקיים <math>i \equiv 8</math>, כי <math>2 + 3\cdot 8 = 26 \equiv 0 \pmod{13}</math>, ולכן <math>a + bi \equiv a + 8b</math>, ו-<math>(a+8b)^{13} \equiv a + 8b \pmod{13}</math> לפי [[המשפט הקטן של פרמה]].)
+
+=== ראשוניים <math>p \equiv 3 \pmod 4</math> ===
+כל ראשוני <math>p \equiv 3 \pmod 4</math> נשאר ''אינרטי'' ב-<math>\mathbb Z[i]</math>, כלומר אינו מתפצל. לדוגמה, <math>(7)</math> נשאר ראשוני ב-<math>\mathbb Z[i]</math>. במצב הזה חבורת הפירוק היא כל <math>G</math>, שוב משום שיש גורם ראשוני אחד בלבד. אבל המצב שונה מהמקרה <math>p = 2</math>, משום שעכשיו <math>\sigma</math> ''אינו'' פועל באופן טריוויאלי על שדה השארית
+:<math>\mathcal O_L / (7)\mathcal O_L,</math>
+שהוא השדה הסופי בן <math>7^2 = 49</math> איברים. לדוגמה, ההפרש בין <math>1+i</math> לבין <math>\sigma(1 + i) = 1 - i</math> הוא <math>2i</math>, שבוודאי אינו מתחלק ב-7. לכן חבורת האינרציה טריוויאלית. לחבורת הגלואה של שדה השארית הזה מעל תת-השדה <math>\mathbb Z/7\mathbb Z</math> יש סדר 2, והיא נוצרת על ידי התמונה של איבר פרובניוס. איבר פרובניוס הוא לא אחר מאשר <math>\sigma</math>; פירוש הדבר ש-
+:<math>(a+bi)^7\equiv a-bi\pmod 7</math>
+לכל שני שלמים <math>a</math> ו-<math>b</math>. (בדיקה: <math>(1+i)^2 = 2i</math>, <math>(1+i)^4 = -4</math>, <math>(1+i)^6 = -8i</math>, ולכן <math>(1+i)^7 = -8i(1+i) = 8 - 8i \equiv 1 - i \pmod 7</math>.)
+
+=== סיכום ===
+{| class="wikitable"
+|-
+! ראשוני ב-<math>\mathbb Z</math>
+! איך הוא מתפצל ב-<math>\mathbb Z[i]</math>
+! חבורת האינרציה
+! חבורת הפירוק
+|-
+| 2
+| מסועף עם מדד 2
+| <math>G</math>
+| <math>G</math>
+|-
+| <math>p \equiv 1 \pmod 4</math>
+| מתפצל לשני גורמים שונים
+| 1
+| 1
+|-
+| <math>p \equiv 3 \pmod 4</math>
+| נשאר אינרטי
+| 1
+| <math>G</math>
+|}
+
+== דוגמה נוספת: השדה הציקלוטומי <math>\mathbb Q(\zeta_5)</math> ==
+כאן <math>G = (\mathbb Z/5\mathbb Z)^\times</math>, ציקלית מסדר 4, וחוג השלמים הוא <math>\mathbb Z[\zeta_5]</math>. עבור ראשוני <math>p \ne 5</math>, איבר פרובניוס הוא <math>\sigma_p: \zeta_5 \mapsto \zeta_5^p</math>, ולכן דרגת האינרציה <math>f</math> היא הסדר של <math>p</math> מודולו 5, ו-<math>g = 4/f</math>. הפירוק של <math>x^4+x^3+x^2+x+1</math> מודולו <math>p</math> מאשר זאת:
+{| class="wikitable" style="text-align:center"
+! <math>p</math> !! <math>p \bmod 5</math> !! סדר <math>p</math> מודולו 5 !! הפירוק מודולו <math>p</math> !! <math>e, f, g</math>
+|-
+| 2 || 2 || 4 || אי-פריק || <math>1, 4, 1</math> (אינרטי)
+|-
+| 3 || 3 || 4 || אי-פריק || <math>1, 4, 1</math> (אינרטי)
+|-
+| 5 || 0 || — || <math>(x-1)^4</math> || <math>4, 1, 1</math> (מסועף לחלוטין)
+|-
+| 11 || 1 || 1 || ארבעה גורמים לינאריים || <math>1, 1, 4</math> (מתפצל לחלוטין)
+|-
+| 19 || 4 || 2 || <math>(x^2+5x+1)(x^2-4x+1)</math> || <math>1, 2, 2</math>
+|-
+| 29 || 4 || 2 || <math>(x^2+6x+1)(x^2-5x+1)</math> || <math>1, 2, 2</math>
+|-
+| 31 || 1 || 1 || ארבעה גורמים לינאריים || <math>1, 1, 4</math> (מתפצל לחלוטין)
+|}
+בכל השורות <math>efg = 4</math>, וכל הגורמים באותה שורה מאותה מעלה, כמו שצריך בהרחבת גלואה.
+
+== חישוב הפירוק ==
+נניח שרוצים לקבוע את הפירוק של אידיאל ראשוני <math>P</math> של <math>\mathcal O_K</math> לראשוניים של <math>\mathcal O_L</math>. השיטה הבאה (Neukirch, עמ' 47) פותרת את הבעיה במקרים רבים. האסטרטגיה היא לבחור שלם <math>\theta</math> ב-<math>\mathcal O_L</math> כך ש-<math>L</math> נוצר מעל <math>K</math> על ידי <math>\theta</math> (קיומו של <math>\theta</math> כזה מובטח לפי [[משפט האיבר הפרימיטיבי]]), ואז לבחון את ה[[פולינום מינימלי|פולינום המינימלי]] <math>H(X)</math> של <math>\theta</math> מעל <math>K</math>; זהו פולינום מתוקן עם מקדמים ב-<math>\mathcal O_K</math>. מצמצמים את המקדמים של <math>H(X)</math> מודולו <math>P</math>, ומקבלים פולינום מתוקן <math>h(X)</math> עם מקדמים בשדה השארית (הסופי) <math>F = \mathcal O_K/P</math>. נניח ש-<math>h(X)</math> מתפרק בחוג הפולינומים <math>F[X]</math> כ-
+:<math>h(X) = h_1(X)^{e_1} \cdots h_n(X)^{e_n},</math>
+כאשר <math>h_j</math> פולינומים מתוקנים אי-פריקים ושונים ב-<math>F[X]</math>. אז, כל עוד <math>P</math> אינו אחד ממספר סופי של ראשוניים חריגים (התנאי המדויק מתואר בהמשך), הפירוק של <math>P</math> הוא
+:<math>P \mathcal O_L = Q_1^{e_1} \cdots Q_n^{e_n},</math>
+כאשר <math>Q_j</math> אידיאלים ראשוניים שונים של <math>\mathcal O_L</math>. בנוסף, דרגת האינרציה של כל <math>Q_j</math> שווה למעלה של הפולינום המתאים <math>h_j</math>, ויש נוסחה מפורשת ל-<math>Q_j</math>:
+:<math>Q_j = P \mathcal O_L + h_j(\theta) \mathcal O_L,</math>
+כאשר <math>h_j</math> מסמן כאן הרמה של הפולינום <math>h_j</math> ל-<math>K[X]</math>. זהו [[משפט דדקינד–קומר]]. במקרה של הרחבת גלואה, כל דרגות האינרציה שוות, וכל מדדי הסיעוף <math>e_1 = \cdots = e_n</math> שווים.
+
+הראשוניים החריגים, שעבורם התוצאה הזו אינה בהכרח מתקיימת, הם אלה שאינם זרים ל'''מוליך''' של החוג <math>\mathcal O_K[\theta]</math>. המוליך מוגדר כאידיאל
+:<math>\{ y \in \mathcal O_L : y\mathcal O_L \subseteq \mathcal O_K[\theta]\};</math>
+הוא מודד עד כמה הסדר <math>\mathcal O_K[\theta]</math> רחוק מלהיות כל חוג השלמים (הסדר המקסימלי) <math>\mathcal O_L</math>.
+
+הסתייגות חשובה היא שיש דוגמאות של <math>L/K</math> ו-<math>P</math> שבהן ''אין'' שום <math>\theta</math> שמקיים את ההנחות שלמעלה.{{הערה|1=W. A. Stein, ''Factoring Primes in Rings of Integers'', 2002, section ''Essential Discriminant Divisors''|כיווון=שמאל}} כך קורה למשל בראשוני 2 בשדה ממעלה שלישית של דדקינד (ראו [[דיסקרימיננטה של שדה מספרים]]). לכן אי אפשר להשתמש באלגוריתם שלמעלה כדי לפרק <math>P</math> כזה, וצריך להשתמש בשיטות מתוחכמות יותר.{{הערה|1=W. A. Stein, ''Factoring Primes in Rings of Integers'', 2002, section ''Method that Always Works''|כיווון=שמאל}}
+
+=== דוגמה ===
+נחזור למקרה של השלמים של גאוס. ניקח את <math>\theta</math> להיות היחידה המדומה <math>i</math>, עם פולינום מינימלי <math>H(X) = X^2 + 1</math>. מאחר ש-<math>\mathbb Z[i]</math> הוא כל חוג השלמים של <math>\mathbb Q(i)</math>, המוליך הוא אידיאל היחידה, ולכן אין ראשוניים חריגים.
+
+עבור <math>P = (2)</math> צריך לעבוד בשדה <math>\mathbb Z/2\mathbb Z</math>, כלומר לפרק את הפולינום <math>X^2 + 1</math> מודולו 2:
+:<math>X^2 + 1 \equiv (X+1)^2 \pmod 2.</math>
+לכן יש רק גורם ראשוני אחד, עם דרגת אינרציה 1 ומדד סיעוף 2, והוא
+:<math>Q = (2)\mathbb Z[i] + (i+1)\mathbb Z[i] = (1+i)\mathbb Z[i].</math>
+
+המקרה הבא הוא <math>P = (p)</math> עבור ראשוני <math>p \equiv 3 \pmod 4</math>; לשם הקונקרטיות ניקח <math>P = (7)</math>. הפולינום <math>X^2 + 1</math> אי-פריק מודולו 7. לכן יש רק גורם ראשוני אחד, עם דרגת אינרציה 2 ומדד סיעוף 1, והוא
+:<math>Q = (7)\mathbb Z[i] + (i^2 + 1)\mathbb Z[i] = 7\mathbb Z[i].</math>
+
+המקרה האחרון הוא <math>P = (p)</math> עבור ראשוני <math>p \equiv 1 \pmod 4</math>; ניקח שוב <math>P = (13)</math>. הפעם יש פירוק
+:<math>X^2 + 1 \equiv (X + 5)(X - 5) \pmod{13}</math>
+(כי <math>5^2 = 25 \equiv -1 \pmod{13}</math>). לכן יש ''שני'' גורמים ראשוניים, ולשניהם דרגת אינרציה ומדד סיעוף 1. הם
+:<math>Q_1 = (13)\mathbb Z[i] + (i + 5)\mathbb Z[i] = (2+3i)\mathbb Z[i]</math>
+ו-
+:<math>Q_2 = (13)\mathbb Z[i] + (i - 5)\mathbb Z[i] = (2-3i)\mathbb Z[i].</math>
+(כדי לראות את השוויון הראשון: מודולו <math>Q_1</math> מתקיים <math>i \equiv -5</math>, ולכן <math>2 + 3i \equiv 2 - 15 = -13 \equiv 0</math>, כלומר <math>2+3i \in Q_1</math>; ומאחר שלשני האידיאלים יש נורמה 13, הם שווים.)
+
+== ראו גם ==
+* משפט הצפיפות של צ'בוטרב
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. Neukirch, ''Algebraic Number Theory'', Grundlehren der mathematischen Wissenschaften '''322''', Springer, 1999
+* W. Stein, ''A brief introduction to classical and adelic algebraic number theory'', 2004
+* ''Splitting and ramification in number fields and Galois extensions'', PlanetMath
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:תורת גלואה]]
