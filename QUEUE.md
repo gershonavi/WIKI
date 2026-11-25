@@ -101,7 +101,7 @@ Additive number theory:
 - [ ] Galois representation
 - [x] Kummer–Vandiver conjecture
 - [x] Leopoldt's conjecture
-- [ ] Hilbert's ninth problem
+- [x] Hilbert's ninth problem
 - [ ] Height function
 - [ ] Newton polygon
 - [ ] Skolem–Mahler–Lech theorem
