@@ -1,0 +1,34 @@
+ב[[מתמטיקה]], '''הנוסחה של חג'יקוסטס''' (ב[[אנגלית]]: Hadjicostas's formula) היא נוסחה שמקשרת [[אינטגרל כפול]] מסוים לערכים של [[פונקציית גמא]] ושל [[פונקציית זטא של רימן]]. היא קרויה על שם פטרוס חג'יקוסטס.
+
+== ניסוח ==
+יהי <math>s</math> [[מספר מרוכב]] עם <math>s \ne -1</math> ו-<math>\mathrm{Re}(s) > -2</math>. אז
+:<math>\int_0^1\int_0^1 \frac{1-x}{1-xy}(-\log(xy))^s\,dx\,dy=\Gamma(s+2)\left(\zeta(s+2)-\frac{1}{s+1}\right).</math>
+כאן <math>\Gamma</math> היא פונקציית גמא ו-<math>\zeta</math> היא פונקציית זטא של רימן.
+
+=== רעיון ההוכחה (נוסף בתרגום) ===
+עבור <math>\mathrm{Re}(s) > -1</math> מפתחים <math>\frac{1}{1-xy} = \sum_{n\ge0}(xy)^n</math>. אחרי ההצבה <math>u = xy</math> (עבור <math>x</math> קבוע), האינטגרל הופך לסכום של אינטגרלים מהצורה <math>\int_0^1 u^n(-\log u)^s\,du = \frac{\Gamma(s+1)}{(n+1)^{s+1}}</math>, וסכימתם נותנת את אגף ימין. את התוצאה מרחיבים ל-<math>\mathrm{Re}(s) > -2</math> בעזרת [[המשכה אנליטית]].
+
+== רקע ==
+המקרה הראשון של הנוסחה הוכח ושימש את פריטס בויקרס במאמרו שנתן הוכחה חלופית ל[[משפט אפרי]].{{הערה|1=F. Beukers, A note on the irrationality of ζ(2) and ζ(3), Bull. London Math. Soc. 11 (3), 1979, עמ' 268–272, {{DOI|10.1112/blms/11.3.268}}. (בערך האנגלי המאמר מתואר כמאמר מ-1978, אבל הוא פורסם ב-1979.)|כיווון=שמאל}} הוא הוכיח את הנוסחה עבור <math>s = 0</math>, והוכיח ניסוח שקול עבור המקרה <math>s = 1</math>. זה הוביל את פטרוס חג'יקוסטס לשער את הנוסחה שלמעלה ב-2004,{{הערה|1=P. Hadjicostas, A conjecture-generalization of Sondow's formula, arXiv:math.NT/0405423, 2004|כיווון=שמאל}} ובתוך שבוע הוכיח אותה רובין צ'פמן.{{הערה|1=R. Chapman, A proof of Hadjicostas's conjecture, arXiv:math/0405478, 2004|כיווון=שמאל}} הוא הוכיח שהנוסחה נכונה כאשר <math>\mathrm{Re}(s) > -1</math>, ואחר כך הרחיב את התוצאה בעזרת המשכה אנליטית כדי לקבל את התוצאה המלאה.
+
+== מקרים פרטיים ==
+מלבד שני המקרים שבהם השתמש בויקרס כדי לקבל ביטויים חלופיים ל-<math>\zeta(2)</math> ול-<math>\zeta(3)</math>:
+:<math>s = 0:\quad \int_0^1\int_0^1 \frac{1-x}{1-xy}\,dx\,dy = \zeta(2) - 1 \approx 0.644934,</math>
+:<math>s = 1:\quad \int_0^1\int_0^1 \frac{1-x}{1-xy}(-\log(xy))\,dx\,dy = 2\zeta(3) - 1 \approx 1.404114,</math>
+אפשר להשתמש בנוסחה כדי לבטא את [[קבוע אוילר-מסקרוני|קבוע אוילר–מסקרוני]] כאינטגרל כפול, על ידי השאפת <math>s</math> ל-<math>-1</math>:
+:<math>\gamma=\int_0^1\int_0^1\frac{1-x}{(1-xy)(-\log(xy))}\,dx\,dy.</math>
+('''למה הגבול נותן את γ (נוסף בתרגום):''' כאשר <math>s \to -1</math>, <math>\Gamma(s+2) \to 1</math>, ו-<math>\zeta(s+2) - \frac{1}{s+1} \to \gamma</math>, כי <math>\zeta(1+t) = \frac1t + \gamma + O(t)</math>.)
+
+את הנוסחה האחרונה גילה לראשונה ג'ונתן זונדו,{{הערה|1=J. Sondow, Criteria for irrationality of Euler's constant, Proc. Amer. Math. Soc. 131 (11), 2003, עמ' 3335–3344, {{DOI|10.1090/S0002-9939-03-07081-3}}, arXiv:math/0209070|כיווון=שמאל}} והיא הנוסחה שאליה מתייחסת הכותרת של המאמר של חג'יקוסטס.
+
+כל המקרים שלמעלה, וגם המקרה <math>s = 1/2</math> (שבו שני האגפים שווים ל-<math>0.8970663\ldots</math>), נבדקו באינטגרציה נומרית.
+
+== ראו גם ==
+* K. Hessami Pilehrood, T. Hessami Pilehrood, Vacca-type series for values of the generalized-Euler-constant function and its derivative, arXiv:0808.0410, 2008
+* J. Sondow, Double integrals for Euler's constant and ln 4/π and an analog of Hadjicostas's formula, American Mathematical Monthly 112, 2005, עמ' 61–65, {{DOI|10.2307/30037385}}, arXiv:math.CA/0211148
+* J. Sondow, P. Hadjicostas, The generalized-Euler-constant function γ(z) and a generalization of Somos's quadratic recurrence constant, Journal of Mathematical Analysis and Applications 332, 2008, עמ' 292–314, {{DOI|10.1016/j.jmaa.2006.09.081}}, arXiv:math/0610499
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא ופונקציות L]]
