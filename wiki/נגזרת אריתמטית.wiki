@@ -1,0 +1,105 @@
+ב[[תורת המספרים]], '''הנגזרת האריתמטית''' (ב[[אנגלית]]: arithmetic derivative או number derivative) היא [[פונקציה]] המוגדרת על [[מספר שלם|מספרים שלמים]] על בסיס ה[[המשפט היסודי של האריתמטיקה|פירוק לגורמים ראשוניים]], באנלוגיה ל[[כלל המכפלה]] של ה[[נגזרת]] של פונקציה ב[[אנליזה מתמטית]].
+
+יש גרסאות רבות של "נגזרות אריתמטיות". מלבד זו שבערך זה, יש למשל את הנגזרת האריתמטית של איהרה ואת הנגזרות האריתמטיות של בויום.
+
+== היסטוריה מוקדמת ==
+את הנגזרת האריתמטית הציג המתמטיקאי הספרדי חוסה מינגוט שלי ב-1911.{{הערה|1=D. J. M. Shelly, Una cuestión de la teoria de los numeros, Association Esp. Granada, 1911, עמ' 1–12|כיווון=שמאל}}{{הערה|שם=lava|1=P. P. Lava, G. Balzarotti, La derivata aritmetica: Alla scoperta di un nuovo approccio alla teoria dei numeri, Hoepli, מילאנו, 2013|כיווון=שמאל}} הנגזרת האריתמטית הופיעה גם בתחרות פטנם של 1950.{{הערה|1=J. Scholes, [https://prase.cz/kalva/putnam/putn50.html 10th Putnam 1950]|כיווון=שמאל}}
+
+== הגדרה ==
+עבור [[מספר טבעי|מספרים טבעיים]] <math>n</math>, הנגזרת האריתמטית <math>D(n)</math> מוגדרת כך:{{הערה|1=בערך זה משמש הסימון <math>D(n)</math> של [[אוליבר הביסייד]] לנגזרת האריתמטית של <math>n</math>. יש סימונים אפשריים אחרים, כמו <math>n'</math>. הסימון של הביסייד מדגיש שהנגזרת האריתמטית היא [[פונקציה אריתמטית|פונקציה על השלמים]], ומתאים יותר לסימון של הפעלה חוזרת <math>D^k</math> עבור נגזרות אריתמטיות מסדר שני ומעלה.|כיווון=שמאל}}
+* <math>D(p) = 1</math> לכל [[מספר ראשוני|ראשוני]] <math>p</math>.
+* <math>D(mn) = D(m)n + mD(n)</math> לכל <math>m, n \in \mathbb N</math> (כלל לייבניץ).
+
+== הרחבות מעבר למספרים הטבעיים ==
+אדוארד ברבו הרחיב את ה[[תחום של פונקציה|תחום]] לכל המספרים השלמים, והראה שהבחירה <math>D(-n) = -D(n)</math> מרחיבה את התחום לשלמים באופן יחיד ועקבי עם נוסחת המכפלה. ברבו הרחיב את הנגזרת גם ל[[מספר רציונלי|מספרים הרציונליים]], והראה שכלל המנה המוכר נותן נגזרת מוגדרת היטב על <math>\mathbb Q</math>:
+:<math>D\left(\frac{m}{n}\right) = \frac{D(m)n-m D(n)}{n^2} .</math>{{הערה|שם=barb61|1=E. J. Barbeau, Remarks on an Arithmetic Derivative, Canadian Mathematical Bulletin 4 (2), 1961, עמ' 117–122, {{DOI|10.4153/CMB-1961-013-0}}|כיווון=שמאל}}{{הערה|1=E. J. Barbeau, Problem, Canad. Math. Congress Notes 5 (8), 1973, עמ' 6–7|כיווון=שמאל}}
+
+ויקטור אופנרובסקי ובו אולנדר הרחיבו אותה למספרים [[מספר אי-רציונלי|אי-רציונליים]] שאפשר לכתוב כמכפלה של ראשוניים בחזקות רציונליות כלשהן, וכך אפשר לחשב ביטויים כמו <math>D(\sqrt{3})</math>.{{הערה|שם=jis2003|1=V. Ufnarovski, B. Åhlander, [https://cs.uwaterloo.ca/journals/JIS/VOL6/Ufnarovski/ufnarovski.pdf How to Differentiate a Number], Journal of Integer Sequences 6 (3), 2003|כיווון=שמאל}}
+
+אפשר להרחיב את הנגזרת האריתמטית גם לכל [[תחום פריקות יחידה]],{{הערה|שם=jis2003}} כמו [[חוג השלמים של גאוס|השלמים של גאוס]] והשלמים של אייזנשטיין, ולשדה השברים שלו. אם תחום פריקות היחידה הוא [[חוג פולינומים]], הנגזרת האריתמטית מתלכדת עם הגזירה על חוג הפולינומים הזה. לדוגמה, הנגזרת הרגילה היא הנגזרת האריתמטית בחוגים של [[פולינום|פולינומים]] ממשיים ומרוכבים במשתנה אחד ובשדות של [[פונקציה רציונלית|הפונקציות הרציונליות]] המתאימות; אפשר להוכיח זאת בעזרת [[המשפט היסודי של האלגברה]].
+
+הנגזרת האריתמטית הורחבה גם ל[[חשבון מודולרי|חוג השלמים מודולו n]].{{הערה|1=M. Krebs, C. Emmons, A. Shaheen, How to Differentiate an Integer Modulo n, The College Mathematics Journal 40 (5), 2009, עמ' 345–353, {{DOI|10.4169/074683409X475661}}|כיווון=שמאל}}
+
+== תכונות בסיסיות ==
+מכלל לייבניץ נובע ש-<math>D(0) = 0</math> (מציבים <math>m = n = 0</math>) ו-<math>D(1) = 0</math> (מציבים <math>m = n = 1</math>).
+
+גם '''כלל החזקה''' תקף לנגזרת האריתמטית. לכל מספרים שלמים <math>k</math> ו-<math>n \ge 0</math>:
+:<math>D(k^n) = nk^{n-1} D(k).</math>
+מכאן אפשר לחשב את הנגזרת מתוך הפירוק לגורמים ראשוניים של מספר שלם <math>x = \prod_{p \in \mathbb{P}} p^{n_p}</math> (כאן <math>n_p = \nu_p(x)</math> היא ההערכה ה-<math>p</math>-אדית של <math>x</math>):
+:<math>D(x) = \sum_{p \in \mathbb{P}} \frac{x}{p^{n_p}} n_p \, p^{n_p-1} D(p) = \sum_{p \mid x,\ p \in \mathbb{P}} n_p \frac x p D(p) = x \sum_{p \mid x,\ p \in \mathbb{P}} \frac {n_p} {p} D(p).</math>
+
+נוסחה זו מראה שאם יודעים את הנגזרת של כל המספרים הראשוניים, הנגזרת ידועה לחלוטין. למעשה, משפחת הנגזרות החלקיות האריתמטיות <math>\frac \partial {\partial p}</math> ביחס לראשוני <math>p</math>, המוגדרות על ידי <math>\frac \partial {\partial p}(q)=0</math> לכל ראשוני <math>q \ne p</math> ו-<math>\frac \partial {\partial p}(p)=1</math>, מאפשרת לכתוב כל נגזרת כסכום אינסופי (לא אמיתי). עבור נגזרת חלקית זו מתקיים <math>\frac {\partial x}{\partial p} = n_p \frac x p</math>.
+
+בדרך כלל לוקחים את הנגזרת שבה <math>D(p)=1</math> לכל ראשוני <math>p</math>, ואז
+:<math>D=\sum_{p \in \mathbb{P}}\frac \partial {\partial p}, \qquad D(x)= x \sum_{p \in \mathbb{P}} \frac {n_p} p.</math>
+
+עם נגזרת זו מתקבל, למשל,
+:<math>D(60) = D(2^2 \cdot 3 \cdot 5) = 60 \cdot \left(\frac{2}{2} + \frac{1}{3} + \frac{1}{5}\right) = 92,</math>
+או
+:<math>D(81) = D(3^4) = 4\cdot 3^3\cdot D(3) = 4\cdot 27\cdot 1 = 108.</math>
+סדרת הנגזרות של <math>x = 0, 1, 2, \ldots</math> מתחילה כך {{OEIS|A003415}}:
+:<math>0, 0, 1, 1, 4, 1, 5, 1, 12, 6, 7, 1, 16, 1, 9, \ldots</math>
+
+== פונקציות קשורות ==
+'''הנגזרת הלוגריתמית'''
+:<math>\operatorname{ld}(x)=\frac{D(x)}{x} = \sum_{p \mid x,\ p \in \mathbb{P}} \frac {\nu_p(x)} {p}</math>
+היא [[פונקציה אדיטיבית (תורת המספרים)|פונקציה אדיטיבית לחלוטין]]: <math>\operatorname{ld}(x \cdot y) = \operatorname{ld}(x)+\operatorname{ld}(y)</math>.
+
+יהי <math>p</math> ראשוני. '''הנגזרת החלקית האריתמטית''' של <math>x</math> ביחס ל-<math>p</math> מוגדרת כ-<math>D_p(x) = \frac {\nu_p(x)} {p} x</math>. לכן הנגזרת האריתמטית של <math>x</math> היא <math>D(x) = \sum_{p \mid x} D_p(x)</math>.
+
+תהי <math>S</math> קבוצה לא ריקה של ראשוניים. '''תת-הנגזרת האריתמטית''' של <math>x</math> ביחס ל-<math>S</math> מוגדרת כ-<math>D_S(x) = \sum_{p \mid x,\ p \in S} D_p(x)</math>. אם <math>S</math> היא קבוצת כל הראשוניים, אז <math>D_S(x) = D(x)</math>, הנגזרת האריתמטית הרגילה. אם <math>S=\{p\}</math>, אז <math>D_S(x) = D_p(x)</math>, הנגזרת החלקית האריתמטית.
+
+פונקציה אריתמטית <math>f</math> נקראת '''לייבניץ-אדיטיבית''' אם יש [[פונקציה כפלית לחלוטין]] <math>h_f</math> כך ש-<math>f(mn) = f(m)h_f(n)+f(n)h_f(m)</math> לכל מספרים שלמים חיוביים <math>m</math> ו-<math>n</math>. מניע למושג זה הוא שפונקציות לייבניץ-אדיטיביות הן הכללות של הנגזרת האריתמטית <math>D</math>; כלומר, <math>D</math> היא לייבניץ-אדיטיבית עם <math>h_D(n)=n</math>.
+
+הפונקציה <math>\delta</math> המופיעה בסעיף 3.5 של הספר של שנדור ואטנסוב היא בדיוק הנגזרת האריתמטית הרגילה <math>D</math>.
+
+== אי-שוויונות וחסמים ==
+ברבו בחן חסמים על הנגזרת האריתמטית{{הערה|שם=barb61}} ומצא ש-
+:<math>D(n) \leq \frac{n \log_2 n}{2}</math>
+ו-
+:<math>D(n) \geq \Omega(n)\, n^{\frac{\Omega(n)-1}{\Omega(n)}},</math>
+כאשר <math>\Omega(n)</math>, אחת מ[[פונקציות אומגה ראשוניות|פונקציות האומגה הראשוניות]], היא מספר הגורמים הראשוניים של <math>n</math> (עם ריבוי). בשני החסמים יש שוויון כאשר <math>n</math> הוא חזקה של 2.
+
+דאל, אולסון ולויקו מצאו שהנגזרת האריתמטית של מספרים טבעיים חסומה על ידי{{הערה|שם=dol|1=N. Dahl, J. Olsson, A. Loiko, [https://arxiv.org/abs/1108.4762 Investigations on the properties of the arithmetic derivative], 2011, עמ' 4|כיווון=שמאל}}
+:<math>D(n) \leq \frac{n \log_p n}{p},</math>
+כאשר <math>p</math> הוא הראשוני הקטן ביותר המחלק את <math>n</math>, ויש שוויון כאשר <math>n</math> הוא חזקה של <math>p</math>.
+
+לויקו, אולסון ודאל מצאו שאי אפשר למצוא חסמים דומים לנגזרת האריתמטית המורחבת למספרים הרציונליים: הם הוכיחו שבין כל שני מספרים רציונליים יש מספרים רציונליים אחרים עם נגזרות גדולות או קטנות כרצוננו. (פירוש הדבר שהנגזרת האריתמטית אינה [[פונקציה רציפה]] מ-<math>\mathbb{Q}</math> ל-<math>\mathbb{Q}</math>.){{הערה|שם=dol}}
+
+== סדר הממוצע ==
+מתקיים
+:<math>\sum_{n \le x} \frac{D(n)}{n} = T_0 x + O(\log x \log\log x)</math>
+ו-
+:<math>\sum_{n \le x} D(n) = \frac{1}{2}T_0 x^2 + O(x^{1+\delta})</math>
+לכל <math>\delta > 0</math>, כאשר
+:<math>T_0 = \sum_p \frac{1}{p(p-1)} \approx 0.7732 .</math>
+(ראו גם [[סדר ממוצע של פונקציה אריתמטית]].)
+
+== חשיבות לתורת המספרים ==
+אופנרובסקי ואולנדר תיארו את הקשר של הפונקציה להשערות מפורסמות בתורת המספרים, כמו [[השערת המספרים הראשוניים התאומים]], השערת השלשות הראשוניות ו[[השערת גולדבך]]. לדוגמה, השערת גולדבך גוררת שלכל <math>k > 1</math> יש <math>n</math> כך ש-<math>D(n) = 2k</math> (כי אם <math>2k = p + q</math> עם <math>p, q</math> ראשוניים, אז <math>D(pq) = p + q</math>). השערת הראשוניים התאומים גוררת שיש אינסוף <math>k</math> שעבורם <math>D^2(k) = 1</math> (אם <math>p</math> ו-<math>p+2</math> ראשוניים, אז <math>D(2p) = p+2</math> ו-<math>D(p+2) = 1</math>).{{הערה|שם=jis2003}}
+
+== ראו גם ==
+* [[פונקציה אריתמטית]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+== לקריאה נוספת ==
+* E. J. Barbeau, Remarks on an arithmetic derivative, Canadian Mathematical Bulletin 4 (2), 1961, עמ' 117–122
+* V. Ufnarovski, B. Åhlander, [https://www.cs.uwaterloo.ca/journals/JIS/VOL6/Ufnarovski/ufnarovski.html How to Differentiate a Number], Journal of Integer Sequences 6, 2003, מאמר 03.3.4
+* [https://web.archive.org/web/20071018000709/http://planetmath.org/encyclopedia/ArithmeticDerivative.html Arithmetic Derivative], PlanetMath
+* L. Westrick, [https://web.archive.org/web/20050426071741/http://web.mit.edu/lwest/www/intmain.pdf Investigations of the Number Derivative], 2003
+* I. Peterson, [http://www.maa.org/mathland/mathtrek_03_22_04.html Math Trek: Deriving the Structure of Numbers]
+* M. Stay, [https://cs.uwaterloo.ca/journals/JIS/VOL8/Stay/stay44.html Generalized Number Derivatives], Journal of Integer Sequences 8, 2005, מאמר 05.1.4
+* G. Balzarotti, P. P. Lava, La derivata aritmetica. Alla scoperta di un nuovo approccio alla teoria dei numeri, Hoepli, 2013
+* J. Sandor, K. Atanassov, Arithmetic Functions, סעיף 3.5, Nova Science Publishers, 2021
+* J. Kovič, [https://cs.uwaterloo.ca/journals/JIS/VOL15/Kovic/kovic4.pdf The Arithmetic Derivative and Antiderivative], Journal of Integer Sequences 15, 2012
+* P. Haukkanen, J. K. Merikoski, M. Mattila, T. Tossavainen, [https://cs.uwaterloo.ca/journals/JIS/VOL20/Tossavainen/tossa11.pdf The arithmetic Jacobian matrix and determinant], Journal of Integer Sequences 20, 2017
+* P. Haukkanen, J. K. Merikoski, T. Tossavainen, [https://www.emis.de/journals/JIS/VOL19/Tossavainen/tossa6.pdf On Arithmetic Partial Differential Equations], Journal of Integer Sequences 19, 2016
+* P. Haukkanen, J. K. Merikoski, T. Tossavainen, [https://nntdm.net/volume-24-2018/number-3/68-76/ The arithmetic derivative and Leibniz-additive functions], Notes on Number Theory and Discrete Mathematics 24 (3), 2018, עמ' 68–76
+* P. Haukkanen, [https://nntdm.net/volume-25-2019/number-2/1-7/ Generalized arithmetic subderivative], Notes on Number Theory and Discrete Mathematics 25 (2), 2019, עמ' 1–7
+* P. Haukkanen, J. K. Merikoski, T. Tossavainen, [https://cs.uwaterloo.ca/journals/JIS/VOL23/Merikoski/meri7.html Arithmetic Subderivatives: p-adic Discontinuity and Continuity], Journal of Integer Sequences 23, 2020
+* J. K. Merikoski, P. Haukkanen, T. Tossavainen, [https://publikacio.uni-eszterhazy.hu/3712/1/AMI_50_from145to157.pdf Arithmetic subderivatives and Leibniz-additive functions], Annales Mathematicae et Informaticae 50, 2019
+* J. K. Merikoski, P. Haukkanen, T. Tossavainen, [https://math.colgate.edu/~integers/v33/v33.pdf Complete additivity, complete multiplicativity, and Leibniz-additivity on rationals], Integers 21, 2021
+
+[[קטגוריה:פונקציות אריתמטיות]]
