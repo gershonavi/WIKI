@@ -43,4 +43,4 @@ f(z)=\sum_{n=0}^\infty a_n z^n,
 
 
 ---
-<sub>התוכן מופץ ברישיון [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), ואפשר להעתיק אותו בחזרה לוויקיפדיה. [קוד הוויקי של הדף](../wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20G%20%D7%A9%D7%9C%20%D7%96%D7%99%D7%92%D7%9C.wiki)</sub>
+<sub>מבוסס על הערך [Siegel G-function](https://en.wikipedia.org/wiki/Siegel_G-function) בוויקיפדיה האנגלית ([היסטוריית העריכות ומחברים](https://en.wikipedia.org/w/index.php?title=Siegel_G-function&action=history)). התוכן מופץ ברישיון [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), ואפשר להעתיק אותו בחזרה לוויקיפדיה. [קוד הוויקי של הדף](../wiki/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20G%20%D7%A9%D7%9C%20%D7%96%D7%99%D7%92%D7%9C.wiki)</sub>
