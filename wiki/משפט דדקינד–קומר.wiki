@@ -1,0 +1,66 @@
+ב[[תורת המספרים האלגברית]], '''משפט דדקינד–קומר''' מתאר איך [[אידיאל ראשוני]] ב[[חוג דדקינד]] מתפרק בסגור השלם של החוג בהרחבה סופית.{{הערה|שם=N|1=J. Neukirch, ''Algebraic Number Theory'', Springer, Berlin, 1999, pp. 48–49|כיווון=שמאל}} המשפט קרוי על שם [[ריכרד דדקינד]], שפיתח אותו על בסיס עבודתו של [[ארנסט קומר]]. בפועל, המשפט הופך את השאלה "איך מתפרק הראשוני <math>p</math> בשדה המספרים?" לשאלה חישובית פשוטה: איך מתפרק פולינום מודולו <math>p</math>.
+
+== הניסוח לשדות מספרים ==
+יהי <math>K</math> [[שדה מספרים]] ויהי <math>\mathcal O_K</math> [[חוג השלמים האלגבריים|חוג השלמים]] של <math>K</math>. יהי <math>\alpha \in \mathcal O_K</math> כך ש-<math>\mathbb{Q}(\alpha)=K</math>, ויהי <math>f \in \mathbb Z[x]</math> ה[[פולינום מינימלי|פולינום המינימלי]] של <math>\alpha</math>. לכל ראשוני <math>p</math> שאינו מחלק את האינדקס <math>[\mathcal O_K : \mathbb Z[\alpha]]</math>, נכתוב
+:<math>f(x) \equiv \pi_1 (x)^{e_1} \cdots \pi_g(x)^{e_g} \pmod p,</math>
+כאשר <math>\pi_i (x)</math> הם [[פולינום אי פריק|פולינומים אי-פריקים]] מתוקנים ושונים זה מזה ב-<math>\mathbb F_p[x]</math>. אז האידיאל <math>(p) = p \mathcal O_K</math> מתפרק לאידיאלים ראשוניים כ-
+:<math>(p) = \mathfrak p_1^{e_1} \cdots \mathfrak p_g^{e_g},\qquad \mathfrak p_i = (p, \pi_i(\alpha)),</math>
+כאשר <math>N(\mathfrak p_i) = p^{\deg \pi_i}</math> ו-<math>N</math> היא [[נורמה של אידיאל|הנורמה של האידיאל]].{{הערה|1=K. Conrad, ''Factoring after Dedekind'', expository note|כיווון=שמאל}} (כאן <math>\pi_i(\alpha)</math> פירושו הערך של הרמה כלשהי של <math>\pi_i</math> ל-<math>\mathbb Z[x]</math> בנקודה <math>\alpha</math>.)
+
+במילים: המעריכים <math>e_i</math> הם '''מדדי הסיעוף''', המעלות <math>\deg\pi_i</math> הן '''דרגות השארית''', ו-<math>\textstyle\sum e_i \deg \pi_i = \deg f = [K:\mathbb Q]</math>. בפרט, <math>p</math> מסועף אם ורק אם ל-<math>f</math> יש גורם חוזר מודולו <math>p</math>.
+
+== דוגמאות ==
+=== השלמים של גאוס ===
+יהי <math>K = \mathbb Q(i)</math>, <math>\alpha = i</math>, <math>f = x^2+1</math>. כאן <math>\mathcal O_K = \mathbb Z[i]</math>, האינדקס הוא 1, והמשפט חל על כל ראשוני.
+* <math>p = 2</math>: <math>x^2 + 1 \equiv (x+1)^2 \pmod 2</math>, ולכן <math>(2) = (2, 1+i)^2 = (1+i)^2</math>: הראשוני 2 '''מסועף'''.
+* <math>p = 5</math>: <math>x^2 + 1 \equiv (x-2)(x+2) \pmod 5</math>, ולכן <math>(5) = (5, i-2)(5, i+2)</math>, שני אידיאלים שונים מנורמה 5: הראשוני 5 '''מתפצל'''. (אכן <math>(5, i-2) = (2-i)</math>, כי <math>5 = (2-i)(2+i)</math>.)
+* <math>p = 3</math>: <math>x^2+1</math> אי-פריק מודולו 3, ולכן <math>(3)</math> נשאר ראשוני, עם נורמה <math>3^2 = 9</math>: הראשוני 3 '''אינרטי'''.
+באופן כללי, <math>x^2 + 1</math> מתפרק מודולו ראשוני אי-זוגי <math>p</math> אם ורק אם <math>-1</math> הוא שארית ריבועית מודולו <math>p</math>, כלומר אם ורק אם <math>p \equiv 1 \pmod 4</math>. זהו התוכן האלגברי של המשפט של פרמה על [[סכום של שני ריבועים|סכומים של שני ריבועים]].
+
+=== <math>\mathbb Q(\sqrt{-5})</math> ===
+כאן <math>\mathcal O_K = \mathbb Z[\sqrt{-5}]</math> ו-<math>f = x^2 + 5</math>.
+{| class="wikitable" style="text-align:center"
+! <math>p</math> !! <math>x^2 + 5 \bmod p</math> !! הפירוק של <math>(p)</math> !! סוג
+|-
+| 2 || <math>(x+1)^2</math> || <math>(2, 1+\sqrt{-5})^2</math> || מסועף
+|-
+| 3 || <math>(x-1)(x+1)</math> || <math>(3, \sqrt{-5}-1)(3, \sqrt{-5}+1)</math> || מתפצל
+|-
+| 5 || <math>x^2</math> || <math>(\sqrt{-5})^2</math> || מסועף
+|-
+| 7 || <math>(x-3)(x+3)</math> || <math>(7, \sqrt{-5}-3)(7, \sqrt{-5}+3)</math> || מתפצל
+|-
+| 11 || אי-פריק || <math>(11)</math> || אינרטי
+|}
+הראשוניים המסועפים, 2 ו-5, הם בדיוק אלה שמחלקים את [[דיסקרימיננטה של שדה מספרים|הדיסקרימיננטה]] <math>-20</math>. האידיאלים <math>(2, 1+\sqrt{-5})</math> ו-<math>(3, \sqrt{-5} \pm 1)</math> אינם ראשיים (ראו [[חבורת מחלקות האידיאלים]]), ולכן הפירוק לאידיאלים "רואה" את מה שהפירוק לאיברים מסתיר.
+
+=== <math>\mathbb Q(\sqrt[3]2)</math> ===
+כאן <math>\mathcal O_K = \mathbb Z[\sqrt[3]2]</math> ו-<math>f = x^3 - 2</math>.
+* <math>p = 2</math>: <math>x^3 \equiv x^3</math>, ולכן <math>(2) = (\sqrt[3]2)^3</math> – מסועף לחלוטין.
+* <math>p = 3</math>: <math>x^3 - 2 \equiv x^3 + 1 \equiv (x+1)^3 \pmod 3</math>, ולכן <math>(3) = (3, \sqrt[3]2 + 1)^3</math> – מסועף לחלוטין. (2 ו-3 הם בדיוק הראשוניים שמחלקים את הדיסקרימיננטה <math>-108 = -2^2\cdot 3^3</math>.)
+* <math>p = 5</math>: <math>3^3 = 27 \equiv 2</math>, ולכן <math>x^3 - 2 \equiv (x-3)(x^2+3x+4) \pmod 5</math>, והגורם הריבועי אי-פריק (הדיסקרימיננטה שלו <math>9 - 16 \equiv 3</math> אינה ריבוע מודולו 5). לכן <math>(5) = \mathfrak p_1\mathfrak p_2</math> עם <math>N(\mathfrak p_1) = 5</math> ו-<math>N(\mathfrak p_2) = 25</math>.
+* <math>p = 7</math>: ל-<math>x^3 = 2</math> אין פתרון מודולו 7 (הקובים מודולו 7 הם 0, 1, 6), ולכן <math>x^3 - 2</math> אי-פריק ו-<math>(7)</math> אינרטי, עם נורמה <math>7^3 = 343</math>.
+* <math>p = 31</math>: <math>4^3 = 64 \equiv 2</math>, <math>7^3 = 343 \equiv 2</math> ו-<math>20^3 = 8000 \equiv 2 \pmod{31}</math>, ולכן <math>x^3 - 2 \equiv (x-4)(x-7)(x-20)</math> ו-<math>(31)</math> מתפצל לשלושה אידיאלים ראשוניים מנורמה 31.
+
+=== מה קורה כשהתנאי על האינדקס לא מתקיים ===
+בדוגמה של דדקינד, <math>K = \mathbb Q(\alpha)</math> עם <math>\alpha^3 - \alpha^2 - 2\alpha - 8 = 0</math>, האינדקס <math>[\mathcal O_K:\mathbb Z[\alpha]]</math> הוא 2 (ראו [[דיסקרימיננטה של שדה מספרים]]). מודולו 2 מתקיים <math>x^3 - x^2 - 2x - 8 \equiv x^2(x+1)</math>, ואילו היינו מפעילים את המשפט היינו מסיקים ש-2 מסועף. אבל למעשה 2 אינו מחלק את הדיסקרימיננטה <math>-503</math> של השדה, ולכן אינו מסועף; הוא מתפצל לשלושה אידיאלים ראשוניים שונים מנורמה 2. התנאי ש-<math>p</math> לא יחלק את האינדקס הוא אפוא הכרחי.
+
+== הניסוח לחוגי דדקינד ==
+משפט דדקינד–קומר נכון גם במצב כללי יותר משדות מספרים. יהי <math>\mathfrak o</math> חוג דדקינד עם [[שדה שברים]] <math>K</math>, תהי <math>L/K</math> [[הרחבה ספרבילית]] סופית עם <math>L=K[\theta]</math> עבור יוצר מתאים <math>\theta</math>, ויהי <math>\mathcal O</math> הסגור השלם של <math>\mathfrak o</math> ב-<math>L</math>. המצב הקודם הוא מקרה פרטי, עם <math>\mathfrak o = \mathbb Z</math>, <math>K=\mathbb Q</math> ו-<math>\mathcal O = \mathcal O_L</math>.
+
+יהי <math>(0)\neq\mathfrak p\subseteq\mathfrak o</math> אידיאל ראשוני שזר ל'''מוליך''' <math>\mathfrak F=\{a\in \mathcal O : a\mathcal O\subseteq\mathfrak o[\theta]\}</math> (כלומר <math>\mathfrak p\mathcal O + \mathfrak F = \mathcal O</math>). יהי <math>f\in \mathfrak o[x]</math> הפולינום המינימלי של <math>\theta</math>. לפולינום <math>\overline f\in(\mathfrak o / \mathfrak p)[x]</math> יש פירוק
+:<math>\overline f=\overline{f_1}^{e_1}\cdots \overline{f_r}^{e_r}</math>
+עם פולינומים אי-פריקים <math>\overline{f_i}</math> שונים זה מזה. אז הפירוק של <math>\mathfrak p</math> לאידיאלים ראשוניים מעל <math>\mathcal O</math> הוא
+:<math>\mathfrak p\mathcal O=\mathfrak P_1^{e_1}\cdots \mathfrak P_r^{e_r},</math>
+כאשר <math>\mathfrak P_i=\mathfrak p\mathcal O+f_i(\theta)\mathcal O</math>, ו-<math>f_i</math> הם הרמות של הפולינומים <math>\overline{f_i}</math> ל-<math>\mathfrak o[x]</math>.{{הערה|שם=N}} דרגת השארית של <math>\mathfrak P_i</math> היא <math>\deg \overline{f_i}</math>.
+
+== ראו גם ==
+* [[אידיאל השונה]]
+* [[נורמה של אידיאל]]
+* [[שלם ריבועי]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:משפטים בתורת המספרים]]
