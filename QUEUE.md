@@ -14,7 +14,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Pólya-Vinogradov inequality (redirect; covered in סכום קרקטרים)
 - [x] Burgess inequality
 - [ ] Smooth number
-- [ ] Dickman function
+- [x] Dickman function
 - [ ] Multiplicative number theory
 - [ ] Hardy–Ramanujan–Littlewood circle method
 - [ ] Landau's function
