@@ -96,7 +96,7 @@
 
 ### תורת המספרים
 
-* [אלגוריתם מייסל–להמר](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C%E2%80%93%D7%9C%D7%94%D7%9E%D7%A8.md) – Meissel–Lehmer algorithm
+* [אלגוריתם מייסל-להמר](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9C%D7%94%D7%9E%D7%A8.md) – Meissel–Lehmer algorithm
 * [בעיית הזוגיות (תורת הנפה)](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%94%D7%96%D7%95%D7%92%D7%99%D7%95%D7%AA%20%28%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94%29.md) – Parity problem
 * [הלמה היסודית של תורת הנפה](pages/%D7%94%D7%9C%D7%9E%D7%94%20%D7%94%D7%99%D7%A1%D7%95%D7%93%D7%99%D7%AA%20%D7%A9%D7%9C%20%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md) – Fundamental lemma of sieve theory
 * [הנפה הגדולה יותר](pages/%D7%94%D7%A0%D7%A4%D7%94%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94%20%D7%99%D7%95%D7%AA%D7%A8.md) – Larger sieve
@@ -126,7 +126,7 @@
 * [נפת לז'נדר](pages/%D7%A0%D7%A4%D7%AA%20%D7%9C%D7%96%27%D7%A0%D7%93%D7%A8.md) – Legendre sieve
 * [נפת סלברג](pages/%D7%A0%D7%A4%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg sieve
 * [סכום קלוסטרמן](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A7%D7%9C%D7%95%D7%A1%D7%98%D7%A8%D7%9E%D7%9F.md) – Kloosterman sum
-* [קבוע מייסל–מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C%E2%80%93%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
+* [קבוע מייסל-מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
 * [תורת המספרים האנליטית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA.md) – Analytic number theory
 * [תורת הנפה](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md) – Sieve theory
 
