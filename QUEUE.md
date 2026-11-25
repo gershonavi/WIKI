@@ -153,7 +153,7 @@ Additive number theory:
 - [x] Frey curve
 - [x] Sato–Tate conjecture
 - [x] Conductor of an elliptic curve
-- [ ] Tate's algorithm
+- [x] Tate's algorithm
 - [x] Twists of elliptic curves
 - [x] Mordell curve
 - [x] Weil pairing
