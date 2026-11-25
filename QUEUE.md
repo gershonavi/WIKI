@@ -29,7 +29,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Lerch transcendent
 - [ ] Clausen function
 - [ ] Landau prime ideal theorem
-- [ ] Rosser's theorem
+- [x] Rosser's theorem
 - [ ] Wolstenholme's theorem
 - [ ] Proof of Bertrand's postulate
 - [ ] Brun's theorem
