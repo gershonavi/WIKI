@@ -138,6 +138,15 @@ def preprocess(text):
     return text, cats
 
 
+def fix_math(md):
+    """Use GitHub's robust math syntax: ```math blocks and $`...`$ inline."""
+    md = re.sub(r'\$\$(.+?)\$\$', lambda m: '\n\n```math\n' + m.group(1).strip() + '\n```\n\n', md, flags=re.S)
+    parts = re.split(r'(```math\n.*?\n```)', md, flags=re.S)
+    for i in range(0, len(parts), 2):
+        parts[i] = re.sub(r'(?<![\\$])\$(?!\$)([^$\n]+?)(?<!\\)\$', lambda m: '$`' + m.group(1) + '`$', parts[i])
+    return ''.join(parts)
+
+
 def fix_links(md, local):
     def repl(m):
         label, target = m.group(1), m.group(2)
@@ -194,7 +203,7 @@ def main():
                            input=pre, capture_output=True, text=True)
         if r.returncode != 0:
             failed.append((title, r.stderr[:200])); continue
-        md = fix_links(r.stdout.replace('<references/>', ''), local)
+        md = fix_math(fix_links(r.stdout.replace('<references/>', ''), local))
         head = f'# {title}\n\n'
         foot = ''
         if cats:
