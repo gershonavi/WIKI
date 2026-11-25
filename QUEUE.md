@@ -123,7 +123,7 @@ Additive number theory:
 - [ ] Complex multiplication
 - [x] Conductor (class field theory)
 - [ ] Weil group
-- [ ] Genus field
+- [x] Genus field
 - [ ] Golod–Shafarevich theorem
 - [ ] Albert–Brauer–Hasse–Noether theorem
 - [ ] Langlands dual group
