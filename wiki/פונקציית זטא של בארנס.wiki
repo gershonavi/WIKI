@@ -1,0 +1,24 @@
+ב[[מתמטיקה]], '''פונקציית זטא של בארנס''' (ב[[אנגלית]]: Barnes zeta function) היא הכללה של [[פונקציית זטא של רימן]] שהציג ארנסט ויליאם בארנס ב-1901.{{הערה|שם=b1901|1=E. W. Barnes, The Theory of the Double Gamma Function, Philosophical Transactions of the Royal Society of London, Series A 196, 1901, עמ' 265–387, {{DOI|10.1098/rsta.1901.0006}}|כיווון=שמאל}} היא מוכללת עוד יותר על ידי פונקציית הזטא של שינטני.
+
+== הגדרה ==
+פונקציית הזטא של בארנס מוגדרת על ידי
+:<math>\zeta_N(s,w\mid a_1,\ldots,a_N)=\sum_{n_1,\dots,n_N\ge 0}\frac{1}{(w+n_1a_1+\cdots+n_Na_N)^s},</math>
+כאשר ל-<math>w</math> ול-<math>a_j</math> יש חלק ממשי חיובי, ול-<math>s</math> יש חלק ממשי גדול מ-<math>N</math>.
+
+יש לה [[המשכה אנליטית|המשכה מרומורפית]] לכל <math>s</math> מרוכב, שהסינגולריות היחידות שלה הן קטבים פשוטים (לכל היותר) ב-<math>s = 1, 2, \ldots, N</math>. עבור <math>N = w = a_1 = 1</math> היא פונקציית זטא של רימן. באופן כללי יותר, עבור <math>N = 1</math> ו-<math>a_1 = 1</math> מתקבלת [[פונקציית זטא של הורוויץ]] <math>\zeta(s,w)</math>.
+
+== דוגמה: N = 2 (נוסף בתרגום) ==
+עבור <math>N = 2</math> ו-<math>a_1 = a_2 = 1</math>, מספר הזוגות <math>(n_1, n_2)</math> עם <math>n_1 + n_2 = m</math> הוא <math>m + 1</math>, ולכן
+:<math>\zeta_2(s, w \mid 1, 1) = \sum_{m \ge 0}\frac{m+1}{(w+m)^s} = \zeta(s-1, w) + (1-w)\,\zeta(s, w),</math>
+כי <math>m + 1 = (w + m) + (1 - w)</math>. מכאן רואים את הקטבים: <math>\zeta(s-1,w)</math> תורם קוטב ב-<math>s = 2</math> עם שארית 1, ו-<math>(1-w)\zeta(s,w)</math> תורם קוטב ב-<math>s = 1</math> עם שארית <math>1 - w</math>. בפרט, כאשר <math>w = 1</math> הקוטב ב-<math>s = 1</math> נעלם, ומתקבל <math>\zeta_2(s,1\mid1,1) = \zeta(s-1)</math>. (הזהות נבדקה מספרית, למשל עבור <math>w = 0.6</math>, <math>s = 3.5</math>.)
+
+== לקריאה נוספת ==
+* E. W. Barnes, The Theory of the Double Gamma Function. [Abstract], Proceedings of the Royal Society of London 66, 1899, עמ' 265–268, {{DOI|10.1098/rspl.1899.0101}}
+* E. W. Barnes, On the theory of the multiple gamma function, Trans. Camb. Philos. Soc. 19, 1904, עמ' 374–425
+* E. Friedman, S. Ruijsenaars, Shintani–Barnes zeta and gamma functions, Advances in Mathematics 187 (2), 2004, עמ' 362–395, {{DOI|10.1016/j.aim.2003.07.020}}
+* S. N. M. Ruijsenaars, [https://ir.cwi.nl/pub/2100 On Barnes' multiple zeta and gamma functions], Advances in Mathematics 156 (1), 2000, עמ' 107–132, {{DOI|10.1006/aima.2000.1946}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא ופונקציות L]]

@@ -1,0 +1,34 @@
+ב[[מתמטיקה]], '''פונקציית הזטא של ארקאווה–קאנקו''' (ב[[אנגלית]]: Arakawa–Kaneko zeta function) היא הכללה של [[פונקציית זטא של רימן]], שמייצרת ערכים מיוחדים של פונקציית ה[[פולילוגריתם]].
+
+== הגדרה ==
+פונקציית הזטא <math>\xi_k(s)</math> מוגדרת על ידי
+:<math>\xi_k(s) = \frac{1}{\Gamma(s)} \int_0^{\infty} \frac{t^{s-1}}{e^t-1}\mathrm{Li}_k(1-e^{-t}) \, dt,</math>
+כאשר <math>\mathrm{Li}_k</math> הוא הפולילוגריתם ה-<math>k</math>-י
+:<math>\mathrm{Li}_k(z) = \sum_{n=1}^{\infty} \frac{z^n}{n^k}.</math>
+
+== תכונות ==
+האינטגרל מתכנס עבור <math>\mathrm{Re}(s) > 0</math>, ול-<math>\xi_k(s)</math> יש [[המשכה אנליטית]] לכל המישור המרוכב כ[[פונקציה שלמה]].
+
+המקרה הפרטי <math>k = 1</math> נותן <math>\xi_1(s) = s \zeta(s+1)</math>, כאשר <math>\zeta</math> היא פונקציית זטא של רימן. ('''הוכחה, נוסף בתרגום:''' <math>\mathrm{Li}_1(z) = -\log(1-z)</math>, ולכן <math>\mathrm{Li}_1(1-e^{-t}) = t</math>, והאינטגרל הוא <math>\frac{1}{\Gamma(s)}\int_0^\infty\frac{t^s}{e^t-1}dt = \frac{\Gamma(s+1)\zeta(s+1)}{\Gamma(s)} = s\zeta(s+1)</math>.)
+
+המקרה הפרטי <math>s = 1</math> נותן, באופן מפתיע, גם <math>\xi_k(1) = \zeta(k+1)</math>.
+
+הערכים בשלמים קשורים לערכים של [[פונקציית זטא מרובה|פונקציות זטא מרובות]] (בגרסת ה"כוכב", שבה מותר שוויון בין האינדקסים) על ידי
+:<math>\xi_k(m) = \zeta^\star(k+1,\underbrace{1,\ldots,1}_{m-1}),</math>
+כאשר
+:<math>\zeta^\star(k_1,k_2,\dots,k_n)=\sum_{m_1\ge m_2\ge\cdots\ge m_n \ge 1}\frac{1}{m_1^{k_1}m_2^{k_2}\cdots m_n^{k_n}}.</math>
+(בערך האנגלי הנוסחה מופיעה בצורה <math>\xi_k(m) = \zeta_m^*(k,1,\ldots,1)</math>, עם סכום על <math>m_1 \lt m_2 \lt \cdots \lt m_n</math> שבו המעריך <math>k</math> על האינדקס הקטן ביותר. בצורה זו הטור מתבדר, כי המעריך 1 נמצא על האינדקס הגדול ביותר; ואף אחרי היפוך הסדר, הערכים אינם מתאימים. הניסוח המתוקן כאן נבדק מספרית.)
+
+=== דוגמאות (נוסף בתרגום, נבדקו מספרית) ===
+* <math>\xi_2(2) = \zeta^\star(3,1) = \zeta(3,1) + \zeta(4) = \frac{\pi^4}{360} + \frac{\pi^4}{90} = \frac{\pi^4}{72} \approx 1.3529040.</math>
+* <math>\xi_3(2) = \zeta^\star(4,1) = 3\zeta(5) - \zeta(2)\zeta(3) \approx 1.1334789.</math>
+* <math>\xi_2(3) = \zeta^\star(3,1,1) = \zeta(2)\zeta(3) - \tfrac12\zeta(5) \approx 1.4588405.</math>
+* <math>\xi_1(2.5) = 2.5\,\zeta(3.5) \approx 2.8168347</math>, ו-<math>\xi_2(1) = \zeta(3)</math>, <math>\xi_3(1) = \zeta(4)</math>.
+כאן <math>\zeta(a,b) = \sum_{m\gt n\ge1}m^{-a}n^{-b}</math> הם ערכי זטא כפולים רגילים (עם אי-שוויון חזק), ו-<math>\zeta^\star</math> כולל גם את האיברים עם שוויון: למשל <math>\zeta^\star(3,1) = \zeta(3,1) + \zeta(4)</math>.
+
+== לקריאה נוספת ==
+* M. Kaneko, Poly-Bernoulli numbers, Journal de Théorie des Nombres de Bordeaux 9, 1997, עמ' 221–228, {{DOI|10.5802/jtnb.197}}
+* T. Arakawa, M. Kaneko, [http://projecteuclid.org/euclid.nmj/1114630825 Multiple zeta values, poly-Bernoulli numbers, and related zeta functions], Nagoya Mathematical Journal 153, 1999, עמ' 189–209, {{DOI|10.1017/S0027763000006954}}
+* M.-A. Coppo, B. Candelpergher, The Arakawa–Kaneko zeta function, The Ramanujan Journal 22 (2), 2010, עמ' 153–162, {{DOI|10.1007/s11139-009-9205-x}}
+
+[[קטגוריה:פונקציות זטא ופונקציות L]]
