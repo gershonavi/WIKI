@@ -1,0 +1,66 @@
+ב[[מתמטיקה]], ובפרט ב[[תורת המספרים האנליטית]], '''הזהות של ווהן''' היא [[זהות (מתמטיקה)|זהות]] שמצא רוברט צ'ארלס ווהן בשנת 1977,{{הערה|שם=vaughan|1=R. C. Vaughan, ''Sommes trigonométriques sur les nombres premiers'', Comptes Rendus de l'Académie des Sciences, Série A '''285''' (1977), pp. 981–983|כיווון=שמאל}} ושבעזרתה אפשר לפשט את עבודתו של [[איוואן וינוגרדוב|וינוגרדוב]] על סכומים טריגונומטריים. הזהות משמשת להערכת פונקציות סכומיות מהצורה
+
+:<math>\sum_{n \leq N} f(n)\Lambda(n),</math>
+
+כאשר <math>f</math> היא [[פונקציה אריתמטית]] כלשהי של המספרים הטבעיים <math>n</math>, שערכיה ביישומים הם לעיתים קרובות [[שורש יחידה|שורשי יחידה]], ו-<math>\Lambda</math> היא [[פונקציית פון מנגולד]].
+
+== אופן השימוש בשיטה ==
+המוטיבציה לבניית הזהות מתוארת בקצרה בתחילת פרק 24 בספרו של [[הרולד דבנפורט|דבנפורט]].{{הערה|שם=dav|1=Harold Davenport, ''Multiplicative Number Theory'', 3rd ed., Graduate Texts in Mathematics 74, Springer, New York, 2000, chapters 24–26|כיווון=שמאל}} בונים ארבעה סכומים נפרדים, על סמך פירוק ה[[נגזרת לוגריתמית|נגזרת הלוגריתמית]] של [[פונקציית זטא של רימן]] באמצעות [[טור דיריכלה|טורי דיריכלה]] חלקיים, הקטועים בגבולות העליונים <math>U</math> ו-<math>V</math>. במדויק, מגדירים
+
+:<math>F(s) = \sum_{m \leq U} \Lambda(m) m^{-s}, \qquad G(s) = \sum_{d \leq V} \mu(d) d^{-s},</math>
+
+כאשר <math>\mu</math> היא [[פונקציית מביוס]], ומקבלים את הזהות המדויקת
+
+:<math>-\frac{\zeta'(s)}{\zeta(s)} = F(s) - \zeta(s) F(s) G(s) - \zeta'(s) G(s) + \left(-\frac{\zeta'(s)}{\zeta(s)} - F(s)\right) (1-\zeta(s) G(s)).</math>
+
+מפיתוח זה נובע שאפשר לכתוב
+
+:<math>\Lambda(n) = a_1(n) + a_2(n) + a_3(n) + a_4(n),</math>
+
+כאשר
+
+:<math>\begin{align}
+a_1(n) & = \begin{cases} \Lambda(n), & n \leq U, \\ 0, & n > U, \end{cases} \\
+a_2(n) & = - \sum_{\stackrel{mdr = n}{m \leq U,\ d \leq V}} \Lambda(m) \mu(d), \\
+a_3(n) & = \sum_{\stackrel{hd=n}{d \leq V}} \mu(d) \log h, \\
+a_4(n) & = -\sum_{\stackrel{mk=n}{m > U,\ k > 1}} \Lambda(m) \left(\sum_{\stackrel{d|k}{d \leq V}} \mu(d)\right).
+\end{align}</math>
+
+מגדירים את הפונקציות הסכומיות המתאימות, עבור <math>1 \leq i \leq 4</math>,
+
+:<math>S_i(N) = \sum_{n \leq N} f(n) a_i(n),</math>
+
+כך ש-
+
+:<math>\sum_{n \leq N} f(n) \Lambda(n) = S_1(N) + S_2(N) + S_3(N) + S_4(N).</math>
+
+לבסוף, אחרי הערכות טכניות ועדינות של הסכומים האלה, מתקבלת הצורה הבאה של הזהות של ווהן, בהנחה ש-<math>|f(n)| \leq 1</math> לכל <math>n</math>, <math>U,V \geq 2</math> ו-<math>UV \leq N</math>:
+
+:<math>\sum_{n \leq N} f(n) \Lambda(n) \ll U + (\log N) \sum_{t\leq UV}\left(\max_{w} \left|\sum_{w \leq r \leq N/t} f(rt)\right|\right) + \sqrt{N} (\log N)^3 \max_{U \leq M \leq N/V} \max_{V \leq j \leq N/M}\left(\sum_{V < k \leq N/M} \left| \sum_{\stackrel{M < m \leq 2M}{m \leq N/k,\ m \leq N/j}} f(mj) \overline{f(mk)}\right|\right)^{1/2}.</math>
+
+בחלק מהמקרים אפשר לקבל הערכות חדות יותר אם מטפלים ברכיב <math>S_2</math> בזהירות רבה יותר, ומפצלים אותו לסכום על <math>t \leq U</math> ולסכום על <math>U < t \leq UV</math>. הבחירה האופטימלית של <math>U</math> ו-<math>V</math> כפונקציות של <math>N</math> תלויה ביישום.
+
+== יישומים ==
+* הזהות של ווהן שימשה לפישוט ההוכחה של [[משפט בומביירי-וינוגרדוב]] ולחקר סכומי קומר.
+* בפרק 25 בספרו של דבנפורט הזהות משמשת להערכת [[סכום אקספוננציאלי]] חשוב של וינוגרדוב, הקשור לראשוניים:
+:<math>S(\alpha) = \sum_{n \leq N} \Lambda(n) e(n\alpha),</math>
+:כאשר <math>e(x) = e^{2\pi i x}</math>. אם <math>\alpha</math> ממשי ו-<math>a/q</math> קירוב רציונלי שלו המקיים <math>\left| \alpha - a/q \right| \leq 1/q^2</math> ו-<math>\gcd(a, q) = 1</math>, אז
+:<math>S(\alpha) \ll \left(\frac{N}{\sqrt{q}} + N^{4/5} + \sqrt{Nq}\right) (\log N)^4.</math>
+:ההערכה נובעת מהזהות של ווהן דרך הטענה
+:<math>S(\alpha) \ll \left(UV + q + \frac{N}{\sqrt{U}} + \frac{N}{\sqrt{V}} + \frac{N}{\sqrt{q}} + \sqrt{Nq}\right) (\log(qN))^4,</math>
+:ובחירת <math>U = V = N^{2/5}</math> במקרים הלא טריוויאליים, שבהם <math>q \leq N</math>.
+* בפרק 26 בספרו של דבנפורט השיטה משמשת להערכת סכומים אקספוננציאליים של שלושה ראשוניים, בדרך להוכחת [[השערת גולדבך#ההשערה החלשה|משפט וינוגרדוב]].
+* הזהות שימשה גם בעבודות נוספות, למשל בהוכחה של [[טרנס טאו]] שכל שלם גדול מ-1 הוא סכום של לכל היותר חמישה ראשוניים,{{הערה|1=T. Tao, ''Every integer greater than 1 is the sum of at most five primes'', 2012, [https://arxiv.org/abs/1201.6656 arXiv:1201.6656]|כיווון=שמאל}} בעבודתו של קונרי על אפסי פונקציית זטא על הישר הקריטי,{{הערה|1=J. B. Conrey, ''More than two fifths of the zeros of the Riemann zeta function are on the critical line'', J. Reine Angew. Math. '''399''' (1989), pp. 1–26|כיווון=שמאל}} בעבודה של מונטגומרי וּווהן על התפלגות מספרים [[מספר חופשי מריבועים|חופשיים מריבועים]],{{הערה|1=H. L. Montgomery and R. C. Vaughan, ''On the distribution of square-free numbers'', in: H. Halberstam and C. Hooley (eds.), ''Recent Progress in Analytic Number Theory'', vol. 1, 1981, pp. 247–256|כיווון=שמאל}} ובעבודה של הית'-בראון ופטרסון על סכומי קומר.{{הערה|1=D. R. Heath-Brown and S. J. Patterson, ''The distribution of Kummer sums at prime arguments'', J. Reine Angew. Math. '''310''' (1979), pp. 110–130|כיווון=שמאל}}
+
+== הכללות ==
+רוג'ר הית'-בראון הכליל את הזהות של ווהן בשנת 1982.{{הערה|1=D. R. Heath-Brown, ''Prime numbers in short intervals and a generalized Vaughan identity'', Canadian Journal of Mathematics '''34''' (1982), no. 6, pp. 1365–1377, {{DOI|10.4153/CJM-1982-095-9}}|כיווון=שמאל}}
+
+== קישורים חיצוניים ==
+* {{אנגלית}} S. W. Graham, [https://encyclopediaofmath.org/wiki/Vaughan_identity Vaughan identity], באתר Encyclopedia of Mathematics
+* {{אנגלית}} [https://proofwiki.org/wiki/Vaughan's_Identity Vaughan's Identity], באתר ProofWiki
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים האנליטית]]
+[[קטגוריה:זהויות מתמטיות]]
