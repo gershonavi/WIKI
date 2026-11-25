@@ -143,7 +143,7 @@ Additive number theory:
 
 - [x] Mordell–Weil theorem
 - [ ] Mordell–Weil group
-- [ ] Hasse's theorem on elliptic curves
+- [x] Hasse's theorem on elliptic curves
 - [ ] Nagell–Lutz theorem
 - [ ] Mazur's torsion theorem
 - [ ] Supersingular elliptic curve
