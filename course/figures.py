@@ -4420,6 +4420,123 @@ def _():
     save('T01-x4')
 
 
+def _unit(ax, lim=1.35):
+    t = np.linspace(0, 2 * np.pi, 300)
+    ax.plot(np.cos(t), np.sin(t), color=GR, lw=.8)
+    ax.axhline(0, color=GR, lw=.5); ax.axvline(0, color=GR, lw=.5)
+    ax.set_xlim(-lim, lim); ax.set_ylim(-lim, lim); ax.set_aspect('equal')
+
+
+def _arrow(ax, z, color, label=None, start=0j):
+    ax.annotate('', xy=(z.real, z.imag), xytext=(start.real, start.imag),
+                arrowprops=dict(arrowstyle='->', color=color, lw=1.6))
+    if label:
+        ax.text(z.real * 1.08 + .05, z.imag * 1.08 + .05, label, color=color, fontsize=9)
+
+
+@fig('T02-e1')
+def _():
+    ax = plt.gca()
+    for z, c, l in [(1 + 2j, C1, '1+2i'), (3 - 1j, C3, '3−i'), (5 + 5j, C2, '5+5i')]:
+        _arrow(ax, z, c, l)
+    ax.axhline(0, color=GR, lw=.5); ax.axvline(0, color=GR, lw=.5)
+    ax.set_xlim(-1, 6.5); ax.set_ylim(-1.8, 6); ax.set_aspect('equal')
+    ax.set_title('lengths √5·√10 = 5√2; angles 63.4° + (−18.4°) = 45°', fontsize=9)
+    save('T02-e1')
+
+
+@fig('T02-e2')
+def _():
+    fig_, (a, b) = plt.subplots(1, 2, figsize=(6.4, 3.2))
+    w = [cmath.exp(2j * pi * k / 3) for k in range(3)]
+    _unit(a)
+    for k, z in enumerate(w):
+        _arrow(a, z, [C1, C2, C3][k], ['1', 'ω', 'ω²'][k])
+    a.set_title('z³ = 1: three roots', fontsize=9)
+    _unit(b); p = 0j
+    for k, z in enumerate(w):
+        _arrow(b, p + z, [C1, C2, C3][k], start=p); p += z
+    b.set_title('head to tail: 1 + ω + ω² = 0', fontsize=9)
+    save('T02-e2')
+
+
+@fig('T02-e3')
+def _():
+    ax = plt.gca(); n = 6; ks = np.arange(n + 1)
+    cs = [comb(n, k) for k in ks]
+    ax.bar(ks, cs, color=[C2 if k % 3 == 0 else '#c9d6e6' for k in ks])
+    for k, c in zip(ks, cs):
+        ax.text(k, c + .4, str(c), ha='center', fontsize=9)
+    ax.set_xlabel('k'); ax.set_title('C(6,k): filter keeps 3 | k → 1 + 20 + 1 = 22 = (2⁶ + 2cos 2π)/3', fontsize=9)
+    save('T02-e3')
+
+
+@fig('T02-e4')
+def _():
+    ax = plt.gca(); th = 1.9; z = cmath.exp(1j * th)
+    _unit(ax, 2.2)
+    _arrow(ax, 1, C1, '1'); _arrow(ax, z, C3, 'e^(iθ)')
+    ax.plot([1, 1 + z.real], [0, z.imag], color=C3, ls='--', lw=.8); ax.plot([z.real, 1 + z.real], [z.imag, z.imag], color=C1, ls='--', lw=.8)
+    _arrow(ax, 1 + z, C2, '1 + e^(iθ)')
+    ax.set_title('rhombus: |1 + e^(iθ)| = 2|cos(θ/2)| (here θ = 1.9)', fontsize=9)
+    save('T02-e4')
+
+
+@fig('T02-x1')
+def _():
+    ax = plt.gca(); p = 1 + 0j
+    for k in range(9):
+        z = (1 + 1j) ** k
+        ax.scatter(z.real, z.imag, color=C1, s=20, zorder=3)
+        ax.text(z.real + .3, z.imag + .3, f'k={k}', fontsize=7)
+        if k:
+            ax.plot([p.real, z.real], [p.imag, z.imag], color=C1, lw=.8)
+        p = z
+    ax.axhline(0, color=GR, lw=.5); ax.axvline(0, color=GR, lw=.5); ax.set_aspect('equal')
+    ax.set_title('(1+i)^k: length ×√2, angle +45° each step; k = 8 gives 16', fontsize=9)
+    save('T02-x1')
+
+
+@fig('T02-x2')
+def _():
+    fig_, (a, b) = plt.subplots(1, 2, figsize=(6.4, 3.2))
+    w = [cmath.exp(2j * pi * 2 * k / 5) for k in range(5)]
+    _unit(a)
+    for k in range(5):
+        z0 = w[k]; z1 = w[(k + 1) % 5]
+        a.plot([z0.real, z1.real], [z0.imag, z1.imag], color=C1)
+        a.text(z0.real * 1.15, z0.imag * 1.15, 'ω' + '⁰²⁴⁶⁸'[k], fontsize=9, ha='center')
+    a.set_title('ω^{2k}: star order', fontsize=9)
+    _unit(b, 2.2); p = 0j
+    for z in w:
+        _arrow(b, p + z, C2, start=p); p += z
+    b.set_title('head to tail: sum = 0', fontsize=9)
+    save('T02-x2')
+
+
+@fig('T02-x3')
+def _():
+    ax = plt.gca(); _unit(ax)
+    for k in range(12):
+        z = cmath.exp(2j * pi * k / 12)
+        prim = gcd(k, 12) == 1
+        ax.scatter(z.real, z.imag, s=60 if prim else 25, color=C2 if prim else C1, zorder=3)
+        ax.text(z.real * 1.17, z.imag * 1.17, str(k), ha='center', va='center', fontsize=8, color=C2 if prim else 'k')
+    ax.set_title('12th roots of unity e(k/12); primitive: k = 1, 5, 7, 11', fontsize=9)
+    save('T02-x3')
+
+
+@fig('T02-x4')
+def _():
+    ax = plt.gca(); n = 8; ks = np.arange(n + 1)
+    cs = [comb(n, k) for k in ks]
+    ax.bar(ks, cs, color=[C2 if k % 4 == 0 else '#c9d6e6' for k in ks])
+    for k, c in zip(ks, cs):
+        ax.text(k, c + 1, str(c), ha='center', fontsize=9)
+    ax.set_xlabel('k'); ax.set_title('C(8,k): filter keeps 4 | k → 1 + 70 + 1 = 72 = (256 + 16 + 16)/4', fontsize=9)
+    save('T02-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
