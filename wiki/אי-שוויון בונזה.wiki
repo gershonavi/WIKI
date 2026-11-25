@@ -1,0 +1,11 @@
+ב[[תורת המספרים]], '''אי-שוויון בונזה''' (ב[[אנגלית]]: Bonse's inequality), הקרוי על שם ה. בונזה,{{הערה|שם=bonse|1=H. Bonse, Über eine bekannte Eigenschaft der Zahl 30 und ihre Verallgemeinerung, Archiv der Mathematik und Physik 3 (12), 1907, עמ' 292–295|כיווון=שמאל}} מקשר בין גודלו של [[פרימוריאל]] לבין ה[[מספר ראשוני|מספר הראשוני]] הקטן ביותר שאינו מופיע בפירוק שלו לגורמים ראשוניים. לפי אי-השוויון, לכל <math>n\geq 4</math>, אם <math>p_1,\dots,p_n,p_{n+1}</math> הם <math>n+1</math> המספרים הראשוניים הראשונים, אז{{הערה|1=J. V. Uspensky, M. A. Heaslet, Elementary Number Theory, McGraw-Hill, ניו יורק, 1939, עמ' 87|כיווון=שמאל}}
+:<math> p_n\# = \prod_{i=1}^n p_i > p_{n+1}^2. </math>
+לדוגמה, עבור <math>n = 4</math>: <math>2 \cdot 3 \cdot 5 \cdot 7 = 210 > 11^2 = 121</math>.
+
+ברקלי רוסר הוכיח את החסם העליון <math>n\#\leq 2.83^n</math>.{{הערה|1=B. Rosser, Explicit bounds for some functions of prime numbers, American Journal of Mathematics 63 (1), 1941, עמ' 211–232, {{DOI|10.2307/2371291}}|כיווון=שמאל}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:משפטים בתורת המספרים]]

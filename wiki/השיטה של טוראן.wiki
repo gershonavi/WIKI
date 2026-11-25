@@ -1,0 +1,25 @@
+ב[[מתמטיקה]], '''השיטה של טוראן''' (ב[[אנגלית]]: Turán's method), על שם [[פאל טוראן]], נותנת חסמים תחתונים ל[[סכום אקספוננציאלי|סכומים אקספוננציאליים]] ולסכומי חזקות מרוכבים. השיטה שימשה בבעיות של פיזור שווה.
+
+השיטה חלה על סכומים מהצורה
+:<math> s_\nu = \sum_{n=1}^N b_n z_n^\nu ,</math>
+כאשר <math>b_n</math> ו-<math>z_n</math> הם [[מספר מרוכב|מספרים מרוכבים]] ו-<math>\nu</math> עובר על טווח של מספרים שלמים. יש שתי תוצאות עיקריות, בהתאם לגודל המספרים <math>z_n</math>.
+
+== המשפט הראשון של טוראן ==
+התוצאה הראשונה חלה על סכומים <math>s_\nu</math> שבהם <math>|z_n| \ge 1</math> לכל <math>n</math>. לכל טווח של ערכי <math>\nu</math> באורך <math>N</math>, נאמר <math>\nu = M+1, \ldots, M+N</math>, יש <math>\nu</math> כך ש-<math>|s_\nu| \ge c(M, N)\,|s_0|</math>, כאשר
+:<math> c(M,N) = \left( \sum_{k=0}^{N-1} \binom{M+k}{k} 2^k \right)^{-1} . </math>
+אפשר להחליף את הביטוי הזה בביטוי החלש יותר אך הפשוט <math>\left( \frac{N}{2e(M+N)} \right)^{N-1}</math>.
+
+מתוצאה זו אפשר להסיק את משפט הפערים של פברי.
+
+== המשפט השני של טוראן ==
+התוצאה השנייה חלה על סכומים <math>s_\nu</math> שבהם <math>|z_n| \le 1</math> לכל <math>n</math>. נניח שהמספרים <math>z_n</math> מסודרים בסדר יורד של ערכם המוחלט ומנורמלים כך ש-<math>|z_1| = 1</math>. אז יש <math>\nu</math> כך ש-
+:<math> |s_\nu| \ge 2 \left( \frac{N}{8e(M+N)} \right)^N \min_{1\le j\le N} \left|\sum_{n=1}^j b_n \right| . </math>
+
+== ראו גם ==
+* [[משפט טוראן]] בתורת הגרפים
+
+== לקריאה נוספת ==
+* H. L. Montgomery, Ten lectures on the interface between analytic number theory and harmonic analysis, Regional Conference Series in Mathematics 84, American Mathematical Society, 1994
+* P. Turán, On a new method of analysis and its applications (עורכים: G. Halász, J. Pintz), John Wiley & Sons, 1984
+
+[[קטגוריה:תורת המספרים האנליטית]]
