@@ -1,0 +1,39 @@
+ב[[תורת המספרים]], '''השערת פוליניאק''' נוסחה על ידי אלפונס דה פוליניאק בשנת 1849,{{הערה|1=A. de Polignac, ''Recherches nouvelles sur les nombres premiers'', Comptes rendus '''29''' (1849), pp. 397–401|כיווון=שמאל}} והיא קובעת:
+:לכל [[זוגיות (מתמטיקה)|מספר זוגי]] חיובי <math>n</math>, יש אינסוף [[הרווח בין ראשוניים עוקבים|פערים בין ראשוניים]] בגודל <math>n</math>. במילים אחרות, יש אינסוף זוגות של [[מספר ראשוני|מספרים ראשוניים]] עוקבים שההפרש ביניהם הוא <math>n</math>.{{הערה|1=J. J. Tattersall, ''Elementary Number Theory in Nine Chapters'', Cambridge University Press, 2005, p. 112|כיווון=שמאל}}
+
+ההשערה טרם הוכחה או הופרכה עבור אף ערך של <math>n</math>. עם זאת, בשנת 2013 הושגה פריצת דרך חשובה, כאשר יטאנג ג'אנג הוכיח שיש אינסוף פערים בין ראשוניים בגודל <math>n</math> עבור ערך כלשהו <math>n < 70{,}000{,}000</math>.{{הערה|1=Yitang Zhang, ''Bounded gaps between primes'', Annals of Mathematics '''179''' (2014), no. 3, pp. 1121–1174, {{DOI|10.4007/annals.2014.179.3.7}}|כיווון=שמאל}} מאוחר יותר באותה שנה הכריז ג'יימס מיינרד על פריצת דרך קשורה, שהוכיחה שיש אינסוף פערים בגודל כלשהו שאינו גדול מ-600. עד אפריל 2014 צמצם פרויקט Polymath את החסם ל-246, ובהנחת [[השערת אליוט-הלברשטם]] ובהנחת הצורה המוכללת שלה, ל-12 ול-6, בהתאמה.{{הערה|1=[http://michaelnielsen.org/polymath1/index.php?title=Bounded_gaps_between_primes Bounded gaps between primes], Polymath project wiki|כיווון=שמאל}}
+
+עבור <math>n = 2</math> זוהי השערת [[ראשוניים תאומים|הראשוניים התאומים]]. עבור <math>n = 4</math> היא אומרת שיש אינסוף ראשוניים "בני דודים" <math>(p, p+4)</math>, ועבור <math>n = 6</math> היא אומרת שיש אינסוף זוגות ראשוניים <math>(p, p+6)</math> בלי ראשוני ביניהם.
+
+[[השערת דיקסון]] מכלילה את השערת פוליניאק לכל קונסטלציות הראשוניים.
+
+בשנת 1966 הוכיח צ'ן ג'ינגרון גרסה מעט חלשה יותר של ההשערה: יש אינסוף ראשוניים <math>p</math> כך ש-<math>p+k</math> הוא ראשוני או מספר [[מספר חופשי מריבועים|חופשי מריבועים]] בעל לכל היותר שני גורמים ראשוניים (ראו [[משפט צ'ן]] ו[[מספר חצי-ראשוני]]).{{הערה|1=J. R. Chen, ''On the representation of a large even integer as the sum of a prime and the product of at most two primes'', Kexue Tongbao '''11''' (1966), no. 9, pp. 385–386|כיווון=שמאל}}
+
+== צפיפות משוערת ==
+עבור <math>n</math> זוגי, נסמן ב-<math>\pi_n(x)</math> את מספר הראשוניים <math>p \le x</math> שעבורם גם <math>p + n</math> ראשוני. השערת הארדי-ליטלווד הראשונה אומרת שהצפיפות האסימפטוטית היא מהצורה
+
+:<math>\pi_n(x) \sim 2 C_n \frac{x}{(\ln x)^2} \sim 2 C_n \int_2^x \frac{dt}{(\ln t)^2},</math>
+
+כאשר <math>C_n</math> הוא פונקציה של <math>n</math>, והסימן <math>\sim</math> פירושו שהמנה בין שני הביטויים שואפת ל-1 כאשר <math>x</math> שואף לאינסוף.{{הערה|1=Paul T. Bateman and Harold G. Diamond, ''Analytic Number Theory'', World Scientific, 2004, p. 313|כיווון=שמאל}}
+
+<math>C_2</math> הוא קבוע הראשוניים התאומים
+
+:<math>C_2 = \prod_{p\ge 3} \frac{p(p-2)}{(p-1)^2} \approx 0.66016\,18158\,46869\,57392\ldots,</math>
+
+כאשר המכפלה היא על כל הראשוניים <math>p \ge 3</math>. <math>C_n</math> הוא <math>C_2</math> כפול גורם התלוי בגורמים הראשוניים האי-זוגיים <math>q</math> של <math>n</math>:
+
+:<math>C_n = C_2 \prod_{q|n} \frac{q-1}{q-2}.</math>
+
+למשל, <math>C_4 = C_2</math> ו-<math>C_6 = 2C_2</math>. לראשוניים התאומים יש אותה צפיפות משוערת כמו לזוגות <math>(p, p+4)</math>, ומחצית מזו של הזוגות <math>(p, p+6)</math>.
+
+כל גורם ראשוני אי-זוגי <math>q</math> של <math>n</math> מגדיל את הצפיפות המשוערת, לעומת הראשוניים התאומים, בגורם <math>\tfrac{q-1}{q-2}</math>. הנה טיעון היוריסטי לכך, הנשען על הנחות שלא הוכחו, ולכן המסקנה נשארת השערה. ההסתברות שראשוני אי-זוגי אקראי <math>q</math> מחלק את <math>a</math> או את <math>a + 2</math> בזוג "פוטנציאלי" אקראי של תאומים היא <math>\tfrac{2}{q}</math>, משום ש-<math>q</math> מחלק אחד מ-<math>q</math> המספרים מ-<math>a</math> עד <math>a+q-1</math>. נניח עכשיו ש-<math>q</math> מחלק את <math>n</math>, ונתבונן בזוג פוטנציאלי <math>(a, a + n)</math>. <math>q</math> מחלק את <math>a + n</math> אם ורק אם הוא מחלק את <math>a</math>, וההסתברות לכך היא <math>\tfrac{1}{q}</math>. היחס בין ההסתברות ש-<math>(a, a+n)</math> חופשי מהגורם <math>q</math> לבין ההסתברות ש-<math>(a, a+2)</math> חופשי ממנו הוא אפוא <math>\tfrac{q-1}{q}</math> חלקי <math>\tfrac{q-2}{q}</math>, כלומר <math>\tfrac{q-1}{q-2}</math>, וזה עובר לצפיפות המשוערת. במקרה <math>n = 6</math> הטיעון פשוט: אם <math>a</math> אקראי, ההסתברות ש-3 מחלק את <math>a</math> או את <math>a + 2</math> היא 2/3, אבל ההסתברות שהוא מחלק את <math>a</math> או את <math>a + 6</math> היא רק 1/3, ולכן משערים שהסיכוי שהזוג השני יהיה כולו ראשוני כפול.
+
+== קישורים חיצוניים ==
+* {{אנגלית}} Eric W. Weisstein, [https://mathworld.wolfram.com/dePolignacsConjecture.html de Polignac's Conjecture], באתר MathWorld
+* {{אנגלית}} Eric W. Weisstein, [https://mathworld.wolfram.com/k-TupleConjecture.html k-Tuple Conjecture], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
+[[קטגוריה:מספרים ראשוניים]]

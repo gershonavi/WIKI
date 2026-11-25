@@ -37,7 +37,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Twin prime conjecture
 - [ ] Polignac's conjecture
 - [ ] First Hardy–Littlewood conjecture
-- [ ] Andrica's conjecture
+- [x] Andrica's conjecture
 - [ ] Legendre's three-square theorem
 - [ ] Sum of two squares theorem
 - [ ] Multiplicative function
