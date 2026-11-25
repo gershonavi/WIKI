@@ -129,7 +129,7 @@ Additive number theory:
 - [ ] Langlands dual group
 - [ ] Teichmüller character
 - [x] Gauss sum
-- [ ] Jacobi sum
+- [x] Jacobi sum
 - [ ] Stickelberger's theorem
 - [ ] Hasse–Davenport relation
 - [ ] Herbrand–Ribet theorem
