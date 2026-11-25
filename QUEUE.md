@@ -33,7 +33,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Wolstenholme's theorem
 - [x] Proof of Bertrand's postulate
 - [x] Brun's theorem (קיים בוויקיפדיה העברית: קבוע ברון)
-- [ ] Green–Tao theorem
+- [x] Green–Tao theorem
 - [x] Twin prime conjecture (קיים בוויקיפדיה העברית: השערת המספרים הראשוניים התאומים)
 - [x] Polignac's conjecture
 - [ ] First Hardy–Littlewood conjecture

@@ -89,7 +89,7 @@ def render_template(name, pos, named):
     if name == 'דרוש מקור':
         return ''
     if name == 'OEIS':
-        a = get('1').strip()
+        a = (named.get('id') or get('1')).strip()
         return f'(סדרה [https://oeis.org/{a} {a}] ב-OEIS)'
     return ''  # unknown templates are dropped
 
