@@ -1,0 +1,215 @@
+ב[[תורת המספרים]], '''חבורת האידלים''' היא דרך "לארוז" את האריתמטיקה הכפלית של [[שדה גלובלי]] בכל ההשלמות שלו בבת אחת, כך שהיא מכילה גם את המידע על פירוק יחיד וגם את הנתונים על היחידות. באופן פורמלי, חבורת האידלים של שדה גלובלי <math>K</math> היא '''המכפלה הישרה המצומצמת'''
+:<math>\mathbb A_K^\times = {\prod_v}' K_v^\times</math>
+של החבורות הכפליות של ההשלמות של <math>K</math>, ביחס לחבורות היחידות <math>\mathcal O_v^\times</math> במקומות הלא-ארכימדיים. באופן שקול, זוהי חבורת האיברים ההפיכים של [[אדל|חוג האדלים]] <math>\mathbb A_K</math>, עם טופולוגיה עדינה יותר מטופולוגיית תת-המרחב שמגיעה מ-<math>\mathbb A_K</math>.
+
+המנה <math>C_K=\mathbb A_K^\times/K^\times</math> נקראת '''חבורת מחלקות האידלים'''. באידלים ובחבורות מחלקות האידלים משתמשים ב[[תורת שדות המחלקה]]. ג'ון טייט השתמש בהם ב[[עבודת הדוקטורט של טייט|עבודת הדוקטורט שלו]] כדי לנסח [[פונקציית זטא|פונקציות זטא]] ו[[פונקציית L|פונקציות L]] גלובליות וקרקטרים של הקה.
+
+== הגדרה ==
+יהי <math>K</math> שדה גלובלי, ויהי <math>v</math> משתנה שעובר על המקומות של <math>K</math>. לכל מקום <math>v</math> נסמן ב-<math>K_v</math> את ההשלמה של <math>K</math> ב-<math>v</math>. אם <math>v</math> לא ארכימדי, נסמן ב-<math>\mathcal O_v</math> את חוג ההערכה המתאים וב-<math>\mathcal O_v^\times</math> את חבורת היחידות שלו.
+
+'''חבורת האידלים''' של <math>K</math>, שמסומנת בדרך כלל <math>\mathbb A_K^\times</math> או <math>I_K</math>, היא המכפלה המצומצמת
+:<math>\mathbb A_K^\times = {\prod_v}' K_v^\times</math>
+של החבורות <math>K_v^\times</math>, ביחס לתת-החבורות <math>\mathcal O_v^\times</math> במקומות הלא-ארכימדיים. כלומר, '''אידל''' הוא משפחה
+:<math>x=(x_v)_v,\qquad x_v\in K_v^\times,</math>
+כך ש-<math>x_v\in \mathcal O_v^\times</math> לכל המקומות הלא-ארכימדיים <math>v</math> פרט למספר סופי. הכפל מוגדר רכיב-רכיב.{{הערה|שם=NVI|1=J. Neukirch, ''Algebraic Number Theory'', Grundlehren der mathematischen Wissenschaften '''322''', Springer, 1999, ch. VI, §1|כיווון=שמאל}}{{הערה|שם=WIV|1=A. Weil, ''Basic Number Theory'', Classics in Mathematics, Springer, 1995, ch. IV|כיווון=שמאל}}
+
+באופן שקול, חבורת האידלים היא חבורת האיברים ההפיכים של חוג האדלים <math>\mathbb A_K</math>. אבל הטופולוגיה שלה ''אינה'' טופולוגיית תת-המרחב שמגיעה מ-<math>\mathbb A_K</math>; זוהי טופולוגיית המכפלה המצומצמת, או באופן שקול הטופולוגיה שמושרית מהשיכון
+:<math>\mathbb A_K^\times \longrightarrow \mathbb A_K \times \mathbb A_K,\qquad x\mapsto (x,x^{-1}).</math>
+
+החבורה הכפלית <math>K^\times</math> משוכנת באופן אלכסוני ב-<math>\mathbb A_K^\times</math>, והמנה
+:<math>C_K=\mathbb A_K^\times/K^\times</math>
+נקראת '''חבורת מחלקות האידלים''' של <math>K</math>.
+
+== מוטיבציה ==
+אפשר לראות בחבורת האידלים עידון טופולוגי של חבורת ה[[אידיאל שבור|אידיאלים השבורים]] של [[שדה מספרים]]. אם <math>K</math> שדה מספרים עם [[חוג השלמים האלגבריים|חוג שלמים]] <math>\mathcal O_K</math>, לכל אידיאל שבור שונה מאפס יש פירוק יחיד
+:<math>\mathfrak a=\prod_{\mathfrak p}\mathfrak p^{n_{\mathfrak p}},</math>
+כאשר <math>\mathfrak p</math> עובר על האידיאלים הראשוניים השונים מאפס של <math>\mathcal O_K</math>, וכל המספרים השלמים <math>n_{\mathfrak p}</math> פרט למספר סופי הם אפס. כלומר, חבורת האידיאלים השבורים רושמת, לכל מקום סופי של <math>K</math>, הערכה שלמה.
+
+אידל רושם נתוני הערכה מקומיים דומים, אבל עם מידע מקומי נוסף. עבור אידל <math>x=(x_v)_v</math>, הרכיב <math>x_{\mathfrak p}\in K_{\mathfrak p}^{\times}</math> במקום סופי קובע מספר שלם <math>v_{\mathfrak p}(x_{\mathfrak p})</math>. מאחר ש-<math>x_{\mathfrak p}</math> יחידה לכל <math>\mathfrak p</math> פרט למספר סופי, המספרים האלה מגדירים אידיאל שבור
+:<math>(x)_{\mathrm{fin}}=\prod_{\mathfrak p}\mathfrak p^{v_{\mathfrak p}(x_{\mathfrak p})}.</math>
+כך מתקבל הומומורפיזם על מחבורת האידלים לחבורת האידיאלים השבורים. השיכון האלכסוני <math>K^\times\hookrightarrow \mathbb A_K^\times</math> שולח איבר <math>a\in K^\times</math> לאידל הראשי שהאידיאל השבור המתאים לו הוא האידיאל הראשי <math>(a)</math>. לכן, במעבר למנות, מתקבלת העתקה טבעית על
+:<math>\mathbb A_K^\times/K^\times \longrightarrow \mathrm{Cl}(K)</math>
+מחבורת מחלקות האידלים ל[[חבורת מחלקות האידיאלים]] הרגילה.{{הערה|שם=NVI}}
+
+כלומר, חבורת מחלקות האידלים מרחיבה את חבורת מחלקות האידיאלים. היא משלימה את הנתונים על הראשוניים הסופיים, שנמדדים על ידי אידיאלים שבורים, בחבורות היחידות המקומיות במקומות הסופיים ובחבורות הכפליות במקומות הארכימדיים. המידע הטופולוגי הנוסף הזה חשוב בתורת שדות המחלקה ובתורת הקרקטרים של הקה, שבה קרקטרים של חבורת מחלקות האידלים מחליפים קרקטרים שמוגדרים רק על חבורות מחלקות אידיאלים או חבורות מחלקות קרן.
+
+== טופולוגיה ומידת האר ==
+אף על פי שחבורת האידלים <math>\mathbb A_K^\times</math> היא חבורת האיברים ההפיכים של חוג האדלים <math>\mathbb A_K</math>, בדרך כלל לא נותנים לה את טופולוגיית תת-המרחב שמגיעה מ-<math>\mathbb A_K</math>: עם הטופולוגיה הזו פעולת ההיפוך עלולה לא להיות רציפה (ראו דוגמה בהמשך). במקום זאת, נותנים ל-<math>\mathbb A_K^\times</math> את טופולוגיית המכפלה המצומצמת ביחס לתת-החבורות הפתוחות והקומפקטיות <math>\mathcal O_v^\times</math> במקומות הלא-ארכימדיים. בסיס של סביבות פתוחות של איבר היחידה נתון על ידי מכפלות
+:<math>\prod_v U_v,</math>
+כאשר <math>U_v</math> סביבה פתוחה של <math>1</math> ב-<math>K_v^\times</math>, ו-<math>U_v=\mathcal O_v^\times</math> לכל המקומות הלא-ארכימדיים פרט למספר סופי. עם הטופולוגיה הזו, <math>\mathbb A_K^\times</math> היא [[חבורה טופולוגית]] [[מרחב קומפקטי מקומית|קומפקטית מקומית]].{{הערה|שם=WIV}}{{הערה|שם=NVI}}
+
+מאחר שחבורת האידלים קומפקטית מקומית, יש לה [[מידת האר]], שמסומנת בדרך כלל <math>d^\times x</math>. המידה הזו מתקבלת כמכפלה של מידות האר כפליות מקומיות על החבורות <math>K_v^\times</math>. במקום לא-ארכימדי <math>v</math> נהוג לנרמל את המידה המקומית כך ש-<math>\mathrm{vol}(\mathcal O_v^\times)=1</math>. במקום הממשי, מידת האר כפלית סטנדרטית על <math>\mathbb R^\times</math> היא
+:<math>d^\times x=\frac{dx}{|x|},</math>
+עד כדי כפל בקבוע חיובי, ובמקומות מרוכבים משתמשים בנרמולים מקבילים. הבחירות המקומיות האלה מתלכדות למידת האר כפלית על <math>\mathbb A_K^\times</math>. במידות כאלה משתמשים באנליזה הרמונית על האידלים, במיוחד בעבודת הדוקטורט של טייט ובתורה האנליטית של פונקציות ה-L של הקה.{{הערה|שם=Tate|1=J. Tate, ''Fourier analysis in number fields, and Hecke's zeta-functions'', in: J. W. S. Cassels, A. Fröhlich (eds.), Algebraic Number Theory, Academic Press, London, 1967, pp. 305–347|כיווון=שמאל}}{{הערה|1=D. Ramakrishnan, R. J. Valenza, ''Fourier Analysis on Number Fields'', Graduate Texts in Mathematics '''186''', Springer, 1999|כיווון=שמאל}}
+
+== העתקת הנורמה ואידלים מנורמה אחת ==
+לחבורת האידלים יש הומומורפיזם למספרים הממשיים החיוביים, שנקרא בדרך כלל '''הנורמה האידלית''' או '''המודול'''. בוחרים בכל השלמה <math>K_v</math> את הערך המוחלט המנורמל הסטנדרטי <math>|\cdot|_v</math>: במקום לא-ארכימדי <math>v</math> הוא מנורמל כך ש-
+:<math>|\varpi_v|_v=q_v^{-1},</math>
+כאשר <math>\varpi_v</math> איבר מקומי (uniformizer) ו-<math>q_v</math> הגודל של שדה השארית. במקומות הארכימדיים משתמשים בערכים המוחלטים המנורמלים הרגילים, כשהערך המוחלט המרוכב נלקח בריבוע. עבור אידל <math>x=(x_v)_v</math> מגדירים
+:<math>|x|_{\mathbb A}=\prod_v |x_v|_v.</math>
+המכפלה הזו סופית, משום ש-<math>x_v\in\mathcal O_v^\times</math> לכל המקומות הלא-ארכימדיים פרט למספר סופי, ולכן <math>|x_v|_v=1</math> לכל <math>v</math> פרט למספר סופי. לכן
+:<math>|\cdot|_{\mathbb A}:\mathbb A_K^\times\to \mathbb R_{>0}</math>
+הוא הומומורפיזם רציף של חבורות.{{הערה|שם=NVI}}{{הערה|שם=WIV}}
+
+האידלים מנורמה אחת הם האיברים בגרעין של ההומומורפיזם הזה:
+:<math>\mathbb A_K^1=\{x\in\mathbb A_K^\times: |x|_{\mathbb A}=1\}.</math>
+לפי '''נוסחת המכפלה''' לשדות גלובליים (ראו [[הערכה p-אדית]]), לכל איבר של <math>K^\times</math>, כשהוא משוכן באלכסון ב-<math>\mathbb A_K^\times</math>, יש נורמה אידלית 1. לכן <math>K^\times\subset \mathbb A_K^1</math>. המנה
+:<math>C_K^1=\mathbb A_K^1/K^\times</math>
+נקראת חבורת '''מחלקות האידלים מנורמה אחת'''. זוהי חבורה קומפקטית.{{הערה|שם=WIV}}{{הערה|שם=CF|1=J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, London, 1967|כיווון=שמאל}}
+
+הנורמה האידלית משרה הומומורפיזם על חבורת מחלקות האידלים, <math>|\cdot|_{\mathbb A}:C_K\to \mathbb R_{>0}</math>, שהגרעין שלו הוא <math>C_K^1</math>. עבור שדות מספרים מתקבלת [[סדרה מדויקת]]
+:<math>1\longrightarrow C_K^1\longrightarrow C_K \xrightarrow{|\cdot|_{\mathbb A}} \mathbb R_{>0}\longrightarrow 1.</math>
+כלומר, במקרה של שדה מספרים חבורת מחלקות האידלים אינה קומפקטית, אבל תת-החבורה של הנורמה אחת מודולו <math>K^\times</math> קומפקטית. הקומפקטיות הזו היא אחד הניסוחים האידליים של הסופיות של חבורת מחלקות האידיאלים, יחד עם משפט המבנה ליחידות.{{הערה|שם=NVI}}{{הערה|שם=WIV}}
+
+בשדות מספרים הנורמה האידלית היא על <math>\mathbb R_{>0}</math>, והסדרה המדויקת שלמעלה מתפצלת אחרי בחירה של רכיב ארכימדי חיובי. כלומר, <math>C_K</math> היא (באופן לא קנוני, או אחרי בחירה כזו) מכפלה של החבורה הקומפקטית <math>C_K^1</math> ב-<math>\mathbb R_{>0}</math>. בשדות פונקציות גלובליים, לעומת זאת, התמונה של הנורמה האידלית היא תת-חבורה דיסקרטית של <math>\mathbb R_{>0}</math>, ולכן המנה המתאימה דיסקרטית ואיזומורפית לחבורה ציקלית אינסופית.
+
+== נורמות להרחבות שדות ==
+תהי <math>L/K</math> הרחבה סופית של שדות גלובליים. לכל מקום <math>v</math> של <math>K</math> ולכל מקום <math>w</math> של <math>L</math> שמעליו יש העתקת נורמה מקומית <math>N_{L_w/K_v}:L_w^\times\to K_v^\times</math>. העתקות הנורמה המקומיות מתלכדות להומומורפיזם רציף של חבורות אידלים
+:<math>N_{L/K}:\mathbb A_L^\times\longrightarrow \mathbb A_K^\times,\qquad \left(N_{L/K}(y)\right)_v = \prod_{w\mid v} N_{L_w/K_v}(y_w).</math>
+המכפלה סופית לכל <math>v</math> קבוע. יתרה מזו, לכל המקומות הלא-ארכימדיים <math>w</math> פרט למספר סופי, הרכיב <math>y_w</math> נמצא ב-<math>\mathcal O_w^\times</math>, והנורמה המקומית שלו נמצאת ב-<math>\mathcal O_v^\times</math>. לכן <math>N_{L/K}(y)</math> הוא שוב אידל של <math>K</math>.{{הערה|שם=NVI}}{{הערה|שם=WIV}}
+
+העתקת הנורמה מתיישבת עם אידלים ראשיים: אם <math>a\in L^\times</math> משוכן באלכסון ב-<math>\mathbb A_L^\times</math>, אז <math>N_{L/K}(a)</math> הוא האידל הראשי של <math>K</math> שמתאים לנורמת השדה <math>N_{L/K}(a)\in K^\times</math>. לכן הנורמה משרה הומומורפיזם רציף על חבורות מחלקות האידלים, <math>N_{L/K}:C_L\to C_K</math>.
+
+השיכון של <math>K</math> ב-<math>L</math> נותן גם הומומורפיזם טבעי <math>\mathbb A_K^\times\to \mathbb A_L^\times</math>: אידל <math>x=(x_v)_v</math> של <math>K</math> נשלח לאידל שהרכיב שלו ב-<math>w\mid v</math> הוא התמונה של <math>x_v</math> ב-<math>L_w^\times</math>. תחת השיכון הזה,
+:<math>N_{L/K}(x)=x^{[L:K]}</math>
+(רכיב-רכיב), משום ש-<math>\prod_{w\mid v} N_{L_w/K_v}(x_v) = x_v^{\sum_{w\mid v}[L_w:K_v]} = x_v^{[L:K]}</math>.
+
+יש להבחין בין נורמת ההרחבה לבין הנורמה האידלית <math>|x|_{\mathbb A}</math>. עם זאת, הן מתיישבות זו עם זו: עם הערכים המוחלטים המנורמלים הסטנדרטיים, <math>|N_{L/K}(y)|_{\mathbb A_K} = |y|_{\mathbb A_L}</math>. בפרט, <math>N_{L/K}</math> שולחת את <math>\mathbb A_L^1</math> לתוך <math>\mathbb A_K^1</math>.
+
+בתורת שדות המחלקה הגלובלית, התמונה <math>N_{L/K}(C_L)</math> נקראת '''תת-חבורת הנורמות''' של <math>C_K</math>. עבור הרחבה אבלית סופית <math>L/K</math>, העתקת ההדדיות הגלובלית של ארטין מזהה את המנה <math>C_K/N_{L/K}(C_L)</math> עם חבורת הגלואה <math>\mathrm{Gal}(L/K)</math>, עד כדי המוסכמה הרגילה לגבי פרובניוס אריתמטי או גאומטרי.{{הערה|שם=NVI}}{{הערה|שם=CF}}{{הערה|שם=WVII|1=A. Weil, ''Basic Number Theory'', ch. VII|כיווון=שמאל}}
+
+== דוגמה: המספרים הרציונליים ==
+עבור <math>K=\mathbb Q</math>, חוג האדלים הסופיים הוא <math>\mathbb A_{\mathbb Q,\mathrm{fin}} = {\prod_p}' \mathbb Q_p</math>, והאדלים השלמים הסופיים הם <math>\widehat{\mathbb Z}=\prod_p \mathbb Z_p</math>. האידלים הסופיים הם
+:<math>\mathbb A_{\mathbb Q,\mathrm{fin}}^\times = {\prod_p}' \mathbb Q_p^\times,</math>
+כאשר המכפלה המצומצמת היא ביחס ל-<math>\mathbb Z_p^\times</math>, וחבורת האידלים של <math>\mathbb Q</math> היא
+:<math>\mathbb A_{\mathbb Q}^\times = \mathbb A_{\mathbb Q,\mathrm{fin}}^\times \times \mathbb R^\times.</math>
+לכל מחלקת אידלים יש נציג מהצורה
+:<math>(u,t)\in \widehat{\mathbb Z}^{\times}\times \mathbb R_{>0}.</math>
+אכן, כפל במספר רציונלי משנה את ההערכות הסופיות, ואפשר להשתמש בו כדי להפוך את כל הרכיבים הסופיים ליחידות <math>p</math>-אדיות; הגורם הממשי החיובי שנותר רושם את הנורמה האידלית. לכן
+:<math>\mathbb A_{\mathbb Q}^\times/\mathbb Q^\times \cong \widehat{\mathbb Z}^{\times}\times \mathbb R_{>0},\qquad \mathbb A_{\mathbb Q}^{1}/\mathbb Q^\times \cong \widehat{\mathbb Z}^{\times}.</math>
+זה משקף את העובדה שחבורת מחלקות האידיאלים של <math>\mathbb Q</math> טריוויאלית: החלק הסופי שנותר בחבורת מחלקות האידלים בא מחבורות היחידות המקומיות <math>\mathbb Z_p^\times</math>.
+
+'''דוגמה מחושבת.''' נתבונן באידל <math>\alpha</math> של <math>\mathbb Q</math> שבו <math>\alpha_2 = 24</math>, <math>\alpha_3 = \tfrac59</math>, <math>\alpha_p = 1</math> לכל ראשוני אחר ו-<math>\alpha_\infty = -\pi</math>. ההערכות הן <math>\nu_2(24) = 3</math> ו-<math>\nu_3(\tfrac59) = -2</math>, ולכן הנורמה האידלית היא
+:<math>|\alpha|_{\mathbb A} = 2^{-3}\cdot 3^{2}\cdot \pi = \tfrac{9\pi}{8}.</math>
+כדי להפוך את כל הרכיבים הסופיים ליחידות, כופלים במספר הרציונלי <math>q = -\tfrac98 = -2^{-3}\cdot 3^2</math> (משוכן באלכסון). מתקבל:
+* ב-2: <math>24\cdot(-\tfrac98) = -27</math>, יחידה ב-<math>\mathbb Z_2</math>;
+* ב-3: <math>\tfrac59\cdot(-\tfrac98) = -\tfrac58</math>, יחידה ב-<math>\mathbb Z_3</math>;
+* בכל ראשוני אחר <math>p</math>: <math>-\tfrac98</math>, יחידה ב-<math>\mathbb Z_p</math>;
+* ב-<math>\infty</math>: <math>-\pi\cdot(-\tfrac98) = \tfrac{9\pi}{8} \gt 0</math>.
+לכן מחלקת האידלים של <math>\alpha</math> מתאימה לזוג <math>(u, \tfrac{9\pi}{8})</math>, כאשר <math>u = (-27, -\tfrac58, -\tfrac98, -\tfrac98, \ldots) \in \widehat{\mathbb Z}^\times</math>, והרכיב הממשי שווה לנורמה האידלית, כמצופה. (הבחירה בסימן מינוס נדרשה כדי שהרכיב הממשי יהיה חיובי.)
+
+== תורת שדות המחלקה ==
+חבורת מחלקות האידלים נותנת ניסוח של [[תורת שדות המחלקה]]. תורת שדות המחלקה הגלובלית מתארת את ה[[הרחבה אבלית|הרחבות האבליות]] של שדה גלובלי <math>K</math> במונחים של מנות טופולוגיות של <math>C_K=\mathbb A_K^\times/K^\times</math>.
+
+התוצאה המרכזית היא '''חוק ההדדיות הגלובלי של ארטין'''. בניסוח אחד, לכל הרחבה אבלית סופית <math>L/K</math> יש הומומורפיזם הדדיות קנוני
+:<math>\theta_{L/K}: C_K \longrightarrow \mathrm{Gal}(L/K),</math>
+שהגרעין שלו הוא תת-חבורת הנורמות <math>N_{L/K}(C_L)\subset C_K</math>. הומומורפיזם ההדדיות משרה איזומורפיזם
+:<math>C_K/N_{L/K}(C_L)\cong \mathrm{Gal}(L/K),</math>
+עד כדי בחירה מוסכמת של אוטומורפיזם פרובניוס אריתמטי או גאומטרי.{{הערה|שם=NVI}}{{הערה|שם=CF}}{{הערה|שם=WVII}}
+
+לכן ההרחבות האבליות הסופיות של <math>K</math> מתאימות לתת-חבורות פתוחות מאינדקס סופי בחבורת מחלקות האידלים. תחת ההתאמה הזו, ההרחבה <math>L/K</math> מתאימה לתת-החבורה <math>N_{L/K}(C_L)</math>. זה מחליף את הניסוח הישן של תורת שדות המחלקה, במונחים של חבורות מחלקות אידיאלים, חבורות מחלקות קרן ותנאי קונגרואנציה, בטענה טופולוגית על מנות של <math>C_K</math>.
+
+הניסוח האידלי כולל גם את העתקות ההדדיות המקומיות של תורת שדות המחלקה המקומית: לכל מקום <math>v</math> של <math>K</math>, תורת שדות המחלקה המקומית מקשרת את <math>K_v^\times</math> לאבליזציה של [[חבורת גלואה|חבורת הגלואה]] של <math>K_v</math>. העתקת ההדדיות הגלובלית מתיישבת עם ההעתקות המקומיות האלה דרך השיכון של כל חבורה כפלית מקומית בחבורת האידלים. במקום סופי לא מסועף, איבר מקומי נשלח לאיבר פרובניוס (או להופכי שלו, לפי המוסכמה).
+
+תורת שדות המחלקה הקלאסית, במונחי אידיאלים, היא מקרה פרטי. מנות של חבורת מחלקות האידלים בתת-חבורות מסוימות נותנות את חבורות מחלקות הקרן, וההרחבות האבליות המתאימות הן שדות מחלקות הקרן. בפרט, שדה המחלקות של הילברט מתקבל מהמנה שמתאימה לחבורת מחלקות האידיאלים הרגילה.
+
+עבור ההרחבה האבלית המקסימלית <math>K^{\mathrm{ab}}</math>, העתקות ההדדיות ברמות הסופיות מתיישבות זו עם זו כאשר <math>L</math> עובר על ההרחבות האבליות הסופיות של <math>K</math>, ומתלכדות להעתקת הדדיות גלובלית מחבורת מחלקות האידלים ל-<math>\mathrm{Gal}(K^{\mathrm{ab}}/K)</math>.
+
+== קרקטרים של הקה ופונקציות L ==
+'''קרקטר של הקה''' של שדה גלובלי <math>K</math> אפשר לתאר כהומומורפיזם רציף
+:<math>\chi:\mathbb A_K^\times/K^\times \to \mathbb C^\times,</math>
+או באופן שקול כקרקטר רציף של חבורת האידלים <math>\mathbb A_K^\times</math> שהוא טריוויאלי על תת-החבורה <math>K^\times</math> המשוכנת באלכסון. קרקטרים כאלה הם הקרקטרים האוטומורפיים של <math>\mathrm{GL}_1(\mathbb A_K)</math>.
+
+אם כותבים אידל כ-<math>x=(x_v)_v</math>, קרקטר של הקה מתפרק לקרקטרים מקומיים <math>\chi_v:K_v^\times\to \mathbb C^\times</math>, עם <math>\chi(x)=\prod_v \chi_v(x_v)</math>. לכל המקומות הלא-ארכימדיים <math>v</math> פרט למספר סופי, הקרקטר המקומי <math>\chi_v</math> '''לא מסועף''', כלומר טריוויאלי על <math>\mathcal O_v^\times</math>. במקום כזה הערך שלו נקבע על ידי <math>\chi_v(\varpi_v)</math>.
+
+לקרקטר של הקה מתאימה פונקציית L גלובלית, שמוגדרת (עבור <math>s</math> מתאים) כמכפלת אוילר
+:<math>L(s,\chi)=\prod_v L_v(s,\chi_v).</math>
+במקום לא-ארכימדי לא מסועף <math>v</math>, לגורם המקומי יש הצורה
+:<math>L_v(s,\chi_v)=\left(1-\chi_v(\varpi_v)q_v^{-s}\right)^{-1},</math>
+כאשר <math>q_v</math> הגודל של שדה השארית. מספר סופי של מקומות סופיים נוספים נותנים גורמים מקומיים מסועפים, והמקומות הארכימדיים תורמים גורמי גמא. הגורמים המקומיים יחד נותנים את פונקציית ה-L המושלמת של הקה.{{הערה|שם=Tate}}{{הערה|1=A. Weil, ''Basic Number Theory'', Springer, 1995|כיווון=שמאל}}
+
+[[קרקטר דיריכלה|קרקטרים של דיריכלה]] וקרקטרים של מחלקות אידיאלים הם מקרים פרטיים. לדוגמה, מעל <math>\mathbb Q</math>, אפשר לפרש קרקטרים של דיריכלה כקרקטרים של הקה מסדר סופי עם מוליכים סופיים נתונים. באופן כללי יותר, קרקטרים של מחלקות קרן של שדה מספרים מתקבלים כקרקטרים מסדר סופי של מנות של חבורת מחלקות האידלים.
+
+פונקציות ה-L של הקה הן מהדוגמאות הבסיסיות ל[[פונקציית L אוטומורפית|פונקציות L אוטומורפיות]]. בעבודת הדוקטורט של טייט, ההמשכה האנליטית ו[[משוואת הפונקציה (פונקציית L)|משוואת הפונקציה]] של פונקציות ה-L האלה מתקבלות בעזרת אנליזה הרמונית על חוג האדלים ועל חבורת האידלים. הגישה הזו משחזרת את התורה האנליטית של פונקציות ה-L של דיריכלה ושל טורי ה-L המקוריים של הקה, ומסבירה את הפירוק המקומי–גלובלי שלהן במונחי מבנה המכפלה של האידלים.{{הערה|שם=Tate}}{{הערה|1=D. Bump, ''Automorphic Forms and Representations'', Cambridge Studies in Advanced Mathematics '''55''', Cambridge University Press, 1997|כיווון=שמאל}}
+
+== הקשר לחבורת מחלקות האידיאלים ==
+עבור שדה מספרים <math>K</math>, חבורת האידלים מעדנת את האריתמטיקה הרגילה של האידיאלים של <math>K</math>. יהי <math>\mathcal O_K</math> חוג השלמים של <math>K</math>, תהי <math>J_K</math> חבורת האידיאלים השבורים השונים מאפס של <math>K</math>, ויהי
+:<math>\widehat{\mathcal O}_K=\prod_{\mathfrak p}\mathcal O_{\mathfrak p}</math>
+ההשלמה הפרו-סופית של <math>\mathcal O_K</math>, עם חבורת יחידות <math>\widehat{\mathcal O}_K^\times=\prod_{\mathfrak p}\mathcal O_{\mathfrak p}^{\times}</math>. נסמן ב-<math>I_{K,\mathrm{fin}}={\prod_{\mathfrak p}}' K_{\mathfrak p}^{\times}</math> את חבורת האידלים הסופיים. יש הומומורפיזם טבעי על
+:<math>I_{K,\mathrm{fin}}\longrightarrow J_K,\qquad x=(x_{\mathfrak p})_{\mathfrak p}\longmapsto \prod_{\mathfrak p}\mathfrak p^{v_{\mathfrak p}(x_{\mathfrak p})},</math>
+כאשר <math>v_{\mathfrak p}</math> ההערכה החיבורית המנורמלת ב-<math>\mathfrak p</math>. המכפלה סופית משום ש-<math>x_{\mathfrak p}\in \mathcal O_{\mathfrak p}^{\times}</math> לכל <math>\mathfrak p</math> פרט למספר סופי. הגרעין של ההומומורפיזם הזה הוא בדיוק <math>\widehat{\mathcal O}_K^\times</math>, ולכן
+:<math>I_{K,\mathrm{fin}}/\widehat{\mathcal O}_K^\times\cong J_K.</math>
+כלומר, חבורת האידיאלים השבורים מזוהה עם המנה של חבורת האידלים הסופיים שמתקבלת משכחת רכיבי היחידות המקומיים.{{הערה|שם=NVI}}{{הערה|שם=CF}}
+
+השיכון האלכסוני <math>K^\times\hookrightarrow I_{K,\mathrm{fin}}</math> מתיישב עם אידיאלים ראשיים: אם <math>a\in K^\times</math>, האידל הסופי שכל רכיביו שווים ל-<math>a</math> נשלח לאידיאל השבור הראשי <math>(a)</math>. לכן ההומומורפיזם הקודם משרה העתקת מנה ממחלקות אידלים סופיים למחלקות אידיאלים, ובפרט
+:<math>\mathrm{Cl}(K) \cong I_{K,\mathrm{fin}}/K^\times\widehat{\mathcal O}_K^\times \cong \mathbb A_K^\times \big/ K^\times \Bigl( \widehat{\mathcal O}_K^\times \times \prod_{v\mid\infty}K_v^\times \Bigr).</math>
+כלומר, את חבורת מחלקות האידיאלים הרגילה מקבלים מחבורת מחלקות האידלים על ידי חלוקה בחבורות היחידות המקומיות הסופיות ובגורמים הכפליים הארכימדיים.
+
+'''סקיצת הוכחה.''' לכל ראשוני סופי <math>\mathfrak p</math> בוחרים איבר מקומי <math>\varpi_{\mathfrak p}</math> של <math>K_{\mathfrak p}</math>. כל איבר של <math>K_{\mathfrak p}^{\times}</math> אפשר לכתוב כ-<math>\varpi_{\mathfrak p}^n u</math>, עם <math>n\in\mathbb Z</math> ו-<math>u\in\mathcal O_{\mathfrak p}^{\times}</math>; לכן העתקת ההערכה רושמת בדיוק את המעריך של <math>\mathfrak p</math>. הגרעין מורכב בדיוק מהאידלים הסופיים שכל ההערכות שלהם אפס, כלומר <math>\widehat{\mathcal O}_K^\times</math>. ההעתקה על, משום שכל אידיאל שבור <math>\prod_{\mathfrak p}\mathfrak p^{n_{\mathfrak p}}</math> מיוצג על ידי האידל הסופי שהרכיב שלו ב-<math>\mathfrak p</math> הוא <math>\varpi_{\mathfrak p}^{n_{\mathfrak p}}</math> עבור הראשוניים שמופיעים במכפלה, ו-1 בכל מקום אחר. לבסוף, חלוקה בתמונה האלכסונית של <math>K^\times</math> מזהה אידיאלים שבורים ראשיים עם אידלים ראשיים, ונותנת את חבורת מחלקות האידיאלים.
+
+== מבנה נוסף וסקיצות הוכחה ==
+=== הטופולוגיה שמושרית מחוג האדלים ===
+יהי <math>R</math> חוג טופולוגי, ונגדיר <math>\iota: R^{\times} \to R \times R</math>, <math>x \mapsto (x,x^{-1})</math>. עם הטופולוגיה שמושרית מטופולוגיית המכפלה על <math>R \times R</math> דרך <math>\iota</math>, החבורה <math>R^{\times}</math> היא חבורה טופולוגית, והשיכון <math>R^{\times} \subset R</math> רציף. זוהי הטופולוגיה הגסה ביותר, מבין אלה שנובעות מהטופולוגיה על <math>R</math>, שהופכת את <math>R^\times</math> לחבורה טופולוגית. (מאחר ש-<math>R</math> חוג טופולוגי, די להראות שההיפוך רציף; וההיפוך פשוט מחליף את שני הרכיבים של <math>\iota</math>.) חבורת האידלים מצוידת בטופולוגיה הזו.
+
+טופולוגיית תת-המרחב שמגיעה מ-<math>\mathbb A_K</math> אינה מתאימה באופן כללי. לדוגמה, ההיפוך ב-<math>\mathbb A_{\mathbb Q}^\times</math> אינו רציף בטופולוגיה הזו. הסדרה
+:<math>x_1=(2,1,1,\ldots),\quad x_2=(1,3,1,\ldots),\quad x_3=(1,1,5,1,\ldots),\ \ldots</math>
+(שבה <math>x_n</math> שווה ל-<math>p_n</math> ברכיב של הראשוני ה-<math>n</math>-י ול-1 בכל השאר) מתכנסת ל-<math>1</math> ב-<math>\mathbb A_{\mathbb Q}</math>. כדי לראות זאת, תהי <math>U</math> סביבה של <math>0</math>; בלי הגבלת הכלליות אפשר להניח ש-<math>U=\prod_{p\leq N}U_p\times \prod_{p>N}\mathbb Z_p</math>. מאחר ש-<math>(x_n)_p-1\in \mathbb Z_p</math> לכל <math>p</math>, נובע ש-<math>x_n-1\in U</math> עבור <math>n</math> גדול מספיק. אבל ההופכיים <math>x_n^{-1}</math>, שהרכיב ה-<math>n</math>-י שלהם הוא <math>1/p_n \notin \mathbb Z_{p_n}</math>, אינם מתכנסים ל-<math>1</math> ב-<math>\mathbb A_{\mathbb Q}</math>.
+
+=== אידלים ראשיים ודיסקרטיות ===
+יש שיכון טבעי של <math>K^\times</math> ב-<math>I_K</math>, הנתון על ידי ההעתקה האלכסונית <math>a\mapsto (a,a,a,\ldots)</math>. מאחר ש-<math>K^\times</math> מוכלת ב-<math>K_v^\times</math> לכל <math>v</math>, השיכון מוגדר היטב וחד-חד-ערכי. בהקבלה לחבורת מחלקות האידיאלים, איברי <math>K^\times</math> ב-<math>I_K</math> נקראים '''אידלים ראשיים'''. תת-החבורה <math>K^\times</math> סגורה ודיסקרטית ב-<math>I_K</math>, ולכן <math>C_K=I_K/K^\times</math> היא חבורה טופולוגית קומפקטית מקומית ו[[מרחב האוסדורף]].
+
+=== נוסחת המכפלה וקומפקטיות מחלקות האידלים מנורמה אחת ===
+'''נוסחת המכפלה''' קובעת ש-<math>|k| = \prod_v |k|_v=1</math> לכל <math>k\in K^\times</math>.
+
+'''הוכחה''' (לשדות מספרים; המקרה של שדות פונקציות דומה). יהי <math>a\in K^\times</math>. בכל מקום סופי <math>v</math> שבו האידיאל הראשוני <math>\mathfrak p_v</math> אינו מחלק את <math>(a)</math>, <math>|a|_v=1</math>; זה נכון לכל <math>\mathfrak p_v</math> פרט למספר סופי. בעזרת הזהות <math>|a|_w=|N_{L_w/K_v}(a)|_v</math> (עבור מקום <math>w</math> של <math>L</math> מעל מקום <math>v</math> של <math>K</math>) ובעזרת ההתאמה בין נורמות מקומיות לגלובליות,
+:<math>\prod_v |a|_v =\prod_{p\leq \infty}\prod_{v\mid p}|N_{K_v/\mathbb Q_p}(a)|_p =\prod_{p\leq \infty}|N_{K/\mathbb Q}(a)|_p .</math>
+הנורמה שייכת ל-<math>\mathbb Q</math>, ולכן נשאר להוכיח את נוסחת המכפלה מעל <math>\mathbb Q</math>. נכתוב <math>a=\pm \prod_{p<\infty}p^{v_p}</math>, כאשר <math>v_p\in\mathbb Z</math> שווה ל-0 לכל <math>p</math> פרט למספר סופי. אז
+:<math>|a| =\Bigl(\prod_{p<\infty}|a|_p\Bigr)\cdot |a|_\infty =\Bigl(\prod_{p<\infty}p^{-v_p}\Bigr)\cdot \Bigl(\prod_{p<\infty}p^{v_p}\Bigr) =1.</math>
+
+ההוכחה של הקומפקטיות משתמשת בלמת הקירוב הבאה.
+
+:'''למה.''' יש קבוע <math>C</math>, שתלוי רק ב-<math>K</math>, כך שלכל <math>\alpha=(\alpha_v)_v\in \mathbb A_K</math> שמקיים <math>\prod_v|\alpha_v|_v>C</math> יש <math>\beta\in K^\times</math> כך ש-<math>|\beta|_v\leq |\alpha_v|_v</math> לכל <math>v</math>.{{הערה|1=J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', p. 66|כיווון=שמאל}}
+
+:'''משפט.''' <math>K^\times</math> דיסקרטית וקו-קומפקטית ב-<math>I_K^1</math>.
+
+'''הוכחה.''' מאחר ש-<math>K^\times</math> דיסקרטית ב-<math>I_K</math>, היא דיסקרטית גם ב-<math>I_K^1</math>. כדי להוכיח ש-<math>I_K^1/K^\times</math> קומפקטית, יהי <math>C</math> הקבוע מהלמה, ונניח ש-<math>\alpha\in\mathbb A_K</math> מקיים <math>\prod_v|\alpha_v|_v>C</math>. נגדיר
+:<math>W_\alpha:= \left\{ \xi=(\xi_v)_v\in \mathbb A_K: |\xi_v|_v\leq |\alpha_v|_v \ \text{לכל}\ v \right\}.</math>
+ברור ש-<math>W_\alpha</math> קומפקטית. נטען שההטלה הטבעית <math>W_\alpha\cap I_K^1\to I_K^1/K^\times</math> על. יהי <math>\beta=(\beta_v)_v\in I_K^1</math> כלשהו. אז <math>\prod_v|\beta_v^{-1}|_v=1</math>, ולכן <math>\prod_v|\beta_v^{-1}\alpha_v|_v = \prod_v|\alpha_v|_v >C</math>. לפי הלמה יש <math>\eta\in K^\times</math> כך ש-<math>|\eta|_v\leq |\beta_v^{-1}\alpha_v|_v</math> לכל <math>v</math>, ולכן <math>\eta\beta\in W_\alpha</math>. זה מוכיח שההטלה על; מאחר שהיא גם רציפה, הקומפקטיות נובעת.{{הערה|שם=WIV}}{{הערה|1=J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', p. 70|כיווון=שמאל}}
+
+=== המספרים הרציונליים ===
+יש איזומורפיזם קנוני <math>I_{\mathbb Q}^1/\mathbb Q^\times\cong \widehat{\mathbb Z}^{\times}</math>. יתרה מזו, <math>\widehat{\mathbb Z}^{\times}\times\{1\}\subset I_{\mathbb Q}^1</math> היא קבוצת נציגים עבור <math>I_{\mathbb Q}^1/\mathbb Q^\times</math>, ו-<math>\widehat{\mathbb Z}^{\times}\times(0,\infty)\subset I_{\mathbb Q}</math> היא קבוצת נציגים עבור <math>I_{\mathbb Q}/\mathbb Q^\times</math>.
+
+'''הוכחה.''' נתבונן בהעתקה <math>\phi:\widehat{\mathbb Z}^{\times}\to I_{\mathbb Q}^1/\mathbb Q^\times</math>, <math>(a_p)_p\mapsto ((a_p)_p,1)\mathbb Q^\times</math>. היא מוגדרת היטב, משום ש-<math>|a_p|_p=1</math> לכל <math>p</math>, ולכן <math>\bigl(\prod_{p<\infty}|a_p|_p\bigr)\cdot 1=1</math>. ברור ש-<math>\phi</math> הומומורפיזם רציף. אם <math>((a_p)_p,1)\mathbb Q^\times=((b_p)_p,1)\mathbb Q^\times</math>, יש <math>q\in\mathbb Q^\times</math> כך ש-<math>((a_p)_p,1)q=((b_p)_p,1)</math>; מהמקום האינסופי רואים ש-<math>q=1</math>, ולכן <math>\phi</math> חד-חד-ערכית. כדי להראות שהיא על, יהי <math>((\beta_p)_p,\beta_\infty)\mathbb Q^\times\in I_{\mathbb Q}^1/\mathbb Q^\times</math>. הערך המוחלט של האיבר הזה הוא 1, ולכן <math>|\beta_\infty|_\infty=1/\prod_p|\beta_p|_p\in\mathbb Q</math>. מכאן <math>\beta_\infty\in\mathbb Q</math>, ו-<math>((\beta_p)_p,\beta_\infty)\mathbb Q^\times = \bigl((\beta_p/\beta_\infty)_p,1\bigr)\mathbb Q^\times</math>. מאחר ש-<math>|\beta_p/\beta_\infty|_p=1</math> לכל <math>p</math>, נובע ש-<math>\phi</math> על.
+
+=== פירוק של חבורת האידלים ושל חבורת מחלקות האידלים ===
+הנורמה האידלית נותנת את הפירוקים
+:<math>I_K \cong I_K^1\times M,\qquad C_K \cong I_K^1/K^\times\times N,</math>
+כאשר <math>M \cong N \cong \mathbb Z</math> (ו-<math>M</math> דיסקרטית) אם <math>\mathrm{char}(K)>0</math>, ו-<math>M \cong N \cong \mathbb R_{>0}</math> (ו-<math>M</math> סגורה) אם <math>\mathrm{char}(K)=0</math>.
+
+'''הוכחה למקרה <math>\mathrm{char}(K)=0</math>.''' לכל <math>\lambda\in\mathbb R_{>0}</math> נגדיר את האידל <math>z(\lambda)</math> שרכיביו הם 1 במקומות הסופיים ו-<math>\lambda</math> במקומות הארכימדיים. ההעתקה <math>\lambda\mapsto z(\lambda)</math> היא איזומורפיזם של <math>\mathbb R_{>0}</math> על תת-חבורה סגורה <math>M</math> של <math>I_K</math>, והכפל נותן איזומורפיזם <math>M\times I_K^1\to I_K</math>. ההעתקה חד-חד-ערכית: אם <math>z(\lambda)\beta = 1</math> עם <math>\beta \in I_K^1</math>, אז <math>\beta_v = 1</math> במקומות הסופיים ו-<math>\beta_v = \lambda^{-1}</math> במקומות הארכימדיים, ומ-<math>\prod_v|\beta_v|_v=1</math> נובע <math>\lambda^n=1</math> (כאשר <math>n</math> מספר המקומות הארכימדיים, עם הריבוע במקומות המרוכבים), ולכן <math>\lambda=1</math>. היא על: לכל <math>\gamma\in I_K</math> נגדיר <math>\lambda:=|\gamma|^{1/n}</math> ו-<math>\beta=\gamma/z(\lambda)</math>; אז <math>|\beta|=|\gamma|/\lambda^n=1</math>. במקרה <math>\mathrm{char}(K)=p>0</math>, הערכים <math>|x|_v</math> כולם חזקות של <math>p</math>, ולכן התמונה של הנורמה האידלית היא תת-חבורה דיסקרטית לא טריוויאלית של <math>\mathbb R_{>0}</math>, שנוצרת על ידי <math>Q = p^m</math> כלשהו; בוחרים <math>z_1</math> עם <math>|z_1| = Q</math>, ו-<math>I_K</math> היא המכפלה הישרה של <math>I_K^1</math> ושל תת-החבורה (הדיסקרטית, האיזומורפית ל-<math>\mathbb Z</math>) שנוצרת על ידי <math>z_1</math>.
+
+=== אפיון בעזרת קבוצה סופית של מקומות ===
+יהי <math>K</math> שדה מספרים. יש קבוצה סופית של מקומות <math>S</math> כך ש-
+:<math>I_K= \Bigl( \prod_{v\in S}K_v^\times \times \prod_{v\notin S}\mathcal O_v^\times \Bigr)K^\times .</math>
+'''הוכחה.''' מספר המחלקה של שדה מספרים סופי, ולכן יהיו <math>\mathfrak a_1,\ldots,\mathfrak a_h</math> אידיאלים שמייצגים את המחלקות ב-<math>\mathrm{Cl}_K</math>. האידיאלים האלה נוצרים על ידי מספר סופי של אידיאלים ראשוניים <math>\mathfrak p_1,\ldots,\mathfrak p_n</math>. תהי <math>S</math> קבוצה סופית של מקומות שמכילה את המקומות הארכימדיים ואת המקומות הסופיים שמתאימים ל-<math>\mathfrak p_1,\ldots,\mathfrak p_n</math>. יהי <math>\alpha</math> אידל. האידיאל המתאים <math>(\alpha)=\prod_{v<\infty}\mathfrak p_v^{v(\alpha_v)}</math> שייך למחלקה של <math>\mathfrak a_i</math> כלשהו, כלומר <math>(\alpha)=\mathfrak a_i(a)</math> עבור אידיאל ראשי <math>(a)</math>. האידל <math>\alpha'=\alpha a^{-1}</math> נשלח לאידיאל <math>\mathfrak a_i</math>, ומאחר שהאידיאלים הראשוניים שב-<math>\mathfrak a_i</math> שייכים ל-<math>S</math>, נובע ש-<math>v(\alpha'_v)=0</math> לכל <math>v\notin S</math>, כלומר <math>\alpha'_v\in \mathcal O_v^\times</math>. לכן <math>\alpha = \alpha' a \in \bigl(\prod_{v\in S}K_v^\times \times \prod_{v\notin S}\mathcal O_v^\times\bigr)K^\times</math>.
+
+(בפרט, עבור <math>K = \mathbb Q</math>, שבו מספר המחלקה הוא 1, אפשר לקחת <math>S = \{\infty\}</math>: <math>I_{\mathbb Q} = (\mathbb R^\times \times \widehat{\mathbb Z}^\times)\mathbb Q^\times</math>, כמו בדוגמה המחושבת למעלה.)
+
+=== אידלים של אלגבראות ממימד סופי ===
+את הבנייה אפשר להרחיב לאלגבראות ממימד סופי מעל <math>K</math>. אם <math>A</math> אלגברה ממימד סופי מעל <math>K</math>, מצרפים ל-<math>\mathbb A_A^\times</math> טופולוגיה דומה לזו של <math>I_K</math>, וקוראים ל-<math>\mathbb A_A^\times</math> חבורת האידלים של <math>A</math>.{{הערה|שם=WIV}} אם <math>\alpha</math> תת-קבוצה סופית של <math>A</math> שמכילה בסיס של <math>A</math> מעל <math>K</math>, ו-<math>\alpha_v</math> המודול מעל <math>\mathcal O_v</math> שנוצר על ידי <math>\alpha</math> ב-<math>A_v</math>, אז לכל המקומות פרט למספר סופי <math>\alpha_v</math> הוא תת-חוג קומפקטי של <math>A_v</math>, ו-<math>\alpha_v^\times</math> תת-חבורה פתוחה וקומפקטית של <math>A_v^\times</math>. החבורה <math>\mathbb A_A^\times</math> היא האיחוד של תת-החבורות הפתוחות <math>\prod_{v\in P}A_v^\times \times \prod_{v\notin P}\alpha_v^\times</math>, כאשר <math>P</math> עובר על הקבוצות הסופיות של מקומות שמכילות מספיק מקומות. במקרה <math>A = K</math> מקבלים את התיאור של <math>I_K</math> כאיחוד של <math>\prod_{v\in P}K_v^\times \times \prod_{v\notin P}\mathcal O_v^\times</math>.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. Bump, ''Automorphic Forms and Representations'', Cambridge Studies in Advanced Mathematics '''55''', Cambridge University Press, 1997
+* J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, London, 1967
+* J. Neukirch, ''Algebraic Number Theory'', Grundlehren der mathematischen Wissenschaften '''322''', Springer, 1999
+* D. Ramakrishnan, R. J. Valenza, ''Fourier Analysis on Number Fields'', Graduate Texts in Mathematics '''186''', Springer, 1999
+* J. Tate, ''Fourier analysis in number fields, and Hecke's zeta-functions'', in: Cassels, Fröhlich (1967), pp. 305–347
+* A. Weil, ''Basic Number Theory'', Classics in Mathematics, Springer, 1995
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:תורת שדות המחלקה]]

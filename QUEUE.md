@@ -81,7 +81,7 @@ Additive number theory:
 - [x] Ramification group
 - [x] P-adic valuation
 - [x] Adele ring (קיים בוויקיפדיה העברית: אדל)
-- [ ] Idele group
+- [x] Idele group
 - [ ] Heegner number
 - [ ] Kummer theory
 - [ ] Reciprocity law
