@@ -136,7 +136,7 @@ Additive number theory:
 - [ ] Main conjecture of Iwasawa theory
 - [x] Cyclotomic unit
 - [ ] Cyclotomic character
-- [ ] Hilbert–Speiser theorem
+- [x] Hilbert–Speiser theorem
 - [ ] Thaine's theorem
 
 ### עקומים אליפטיים (24)
