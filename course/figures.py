@@ -2683,6 +2683,23 @@ def _():
     save('05-cm')
 
 
+@fig('07-7')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(6.8, 3.0))
+    for ax, p in zip(axs, (97, 1537)):
+        x, e, ch, ex = pow(5, 3, p), 3, [], []
+        ch.append(x); ex.append(e)
+        while e * 2 <= (p - 1) // 2:
+            x = x * x % p; e *= 2; ch.append(x); ex.append(e)
+        cols = [C1] * (len(ch) - 1) + [C3 if ch[-1] == p - 1 else C2]
+        ax.bar(range(len(ch)), ch, color=cols)
+        ax.axhline(p - 1, color='k', ls='--', lw=.8)
+        ax.set_xticks(range(len(ch))); ax.set_xticklabels([str(v) for v in ex], fontsize=7, rotation=45)
+        ax.set_xlabel('exponent e  (value 5^e mod p)', fontsize=8)
+        ax.set_title(f'p = {p}: last = {ch[-1]}' + (' = p−1 → prime' if ch[-1] == p - 1 else ' ≠ p−1 → composite'), fontsize=9)
+    save('07-7')
+
+
 
 if __name__ == '__main__':
     import sys
