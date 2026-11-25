@@ -1,0 +1,90 @@
+'''חוק ההדדיות של ארטין''', שהוכיח [[אמיל ארטין]] בסדרת מאמרים (1924; 1927; 1930), הוא משפט כללי ב[[תורת המספרים]] שמהווה חלק מרכזי של [[תורת שדות המחלקה]] הגלובלית.{{הערה|1=H. Hasse, ''History of Class Field Theory'', in: J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967, pp. 266–279|כיווון=שמאל}} המונח "[[חוק הדדיות]]" מתייחס לשורה ארוכה של טענות מספריות קונקרטיות יותר שהמשפט מכליל: מ[[חוק ההדדיות הריבועית]] ומחוקי ההדדיות של [[הדדיות של אייזנשטיין|אייזנשטיין]] ו[[ארנסט קומר|קומר]], ועד נוסחת המכפלה של [[דויד הילברט|הילברט]] ל[[סמל הילברט|סמל הנורמה]]. התוצאה של ארטין נתנה פתרון חלקי ל[[הבעיה התשיעית של הילברט]].
+
+== ניסוח ==
+תהי <math>L/K</math> [[הרחבת גלואה]] של [[שדה גלובלי|שדות גלובליים]], <math>\mathrm{Gal}(L/K)</math> [[חבורת גלואה|חבורת הגלואה]] של ההרחבה, ו-<math>C_K, C_L</math> [[חבורת האידלים|חבורות מחלקות האידלים]] של <math>K</math> ושל <math>L</math>. תהי
+:<math>N_{L/K} : C_L \to C_K</math>
+העתקת הנורמה על האידלים. חוק ההדדיות של ארטין קובע שיש איזומורפיזם קנוני בין חבורת המנה לבין ה[[אבליזציה]] של חבורת הגלואה:{{הערה|שם=N391|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, p. 391|כיווון=שמאל}}{{הערה|1=J. Neukirch, ''Algebraische Zahlentheorie'', Springer, 1992, p. 408. למעשה, גרסה מדויקת יותר של חוק ההדדיות עוקבת גם אחרי הסיעוף.|כיווון=שמאל}}
+:<math>\theta : C_K/N_{L/K}(C_L) \to \mathrm{Gal}(L/K)^{\text{ab}},</math>
+שמוגדר על ידי הרכבת ההעתקות המקומיות
+:<math>\theta_v : K_v^\times/N_{L_v/K_v}(L_v^\times) \to \mathrm{Gal}(L/K)^{\text{ab}}</math>
+עבור ה[[מקום (מתמטיקה)|מקומות]] השונים <math>v</math> של <math>K</math>.
+
+=== הערות ===
+* ההעתקה <math>\theta</math> נקראת '''העתקת הסמל הגלובלית''' או '''סמל ארטין'''.
+* לכל מקום <math>v</math>, ההעתקה המקומית <math>\theta_v</math> נקראת '''סמל ארטין המקומי''', '''העתקת ההדדיות המקומית''' או '''סמל שארית הנורמה'''.
+* ההעתקות המקומיות <math>\theta_v</math> הן בעצמן איזומורפיזמים; זה התוכן של חוק ההדדיות המקומי, תוצאת המפתח ב[[תורת שדות המחלקה המקומית]].
+
+=== הוכחה ===
+הוכחה קוהומולוגית של חוק ההדדיות הגלובלי אפשר לקבל כך: מוכיחים תחילה שהזוג
+:<math>\bigl(\mathrm{Gal}(K^{\text{sep}}/K),\ \varinjlim C_L\bigr)</math>
+הוא '''תצורת מחלקה''' (class formation) במובן של ארטין וטייט.{{הערה|1=J.-P. Serre, ''Local Fields'', Graduate Texts in Mathematics '''67''', Springer, 1979, p. 164|כיווון=שמאל}} אחר כך מוכיחים ש-
+:<math>\hat H^0(\mathrm{Gal}(L/K), C_L) \simeq \hat H^{-2}(\mathrm{Gal}(L/K), \mathbb Z),</math>
+כאשר <math>\hat H^i</math> הן [[קוהומולוגיית גלואה|חבורות הקוהומולוגיה של טייט]]. חישוב חבורות הקוהומולוגיה מראה ש-<math>\theta</math> איזומורפיזם: אגף שמאל הוא <math>C_K/N_{L/K}C_L</math>, ואגף ימין הוא <math>G^{\text{ab}}</math>.
+
+== חשיבות ==
+חוק ההדדיות של ארטין נותן תיאור של האבליזציה של חבורת הגלואה המוחלטת של שדה גלובלי <math>K</math>, שמבוסס על [[עקרון האסה|עקרון מקומי-גלובלי]] ועל [[איבר פרובניוס|איברי פרובניוס]]. יחד עם [[משפט הקיום של טקאגי]], הוא משמש לתיאור ה[[הרחבה אבלית|הרחבות האבליות]] של <math>K</math> במונחי האריתמטיקה של <math>K</math>, ולהבנת ההתנהגות של המקומות הלא ארכימדיים בהן. לכן אפשר לראות בו אחד המשפטים המרכזיים של תורת שדות המחלקה הגלובלית. אפשר להשתמש בו כדי להוכיח ש[[פונקציית L של ארטין|פונקציות L של ארטין]] [[פונקציה מרומורפית|מרומורפיות]], וגם כדי להוכיח את [[משפט הצפיפות של צ'בוטרב]].
+
+שנתיים אחרי פרסום חוק ההדדיות הכללי שלו ב-1927, ארטין גילה מחדש את '''הומומורפיזם ההעברה''' (transfer) של אי. שור, והשתמש בחוק ההדדיות כדי לתרגם את '''בעיית ההפיכה לראשיים''' (principalization) של מחלקות אידיאלים של שדות מספרים לבעיה תורת-חבורתית: קביעת הגרעינים של העברות של חבורות סופיות לא אבליות.{{הערה|1=E. Artin, ''Idealklassen in Oberkörpern und allgemeines Reziprozitätsgesetz'', Abh. Math. Sem. Univ. Hamburg '''7''' (1929), pp. 46–51|כיווון=שמאל}}
+
+== הרחבות סופיות של שדות גלובליים ==
+להגדרת העתקת ארטין עבור [[הרחבה אבלית]] סופית <math>L/K</math> של שדות גלובליים (כמו הרחבה אבלית סופית של <math>\mathbb Q</math>) יש תיאור קונקרטי במונחי [[אידיאל ראשוני|אידיאלים ראשוניים]] ו[[איבר פרובניוס|איברי פרובניוס]].
+
+אם <math>\mathfrak p</math> ראשוני של <math>K</math>, אז [[חבורת פירוק|חבורות הפירוק]] של הראשוניים <math>\mathfrak P</math> מעל <math>\mathfrak p</math> שוות זו לזו ב-<math>\mathrm{Gal}(L/K)</math>, כי החבורה אבלית. אם <math>\mathfrak p</math> [[סיעוף (מתמטיקה)|לא מסועף]] ב-<math>L</math>, אז חבורת הפירוק <math>D_{\mathfrak p}</math> איזומורפית באופן קנוני לחבורת הגלואה של הרחבת שדות השאריות <math>\mathcal O_{L,\mathfrak P}/\mathfrak P</math> מעל <math>\mathcal O_{K,\mathfrak p}/\mathfrak p</math>. לכן יש ב-<math>\mathrm{Gal}(L/K)</math> איבר פרובניוס מוגדר באופן קנוני, שמסומן <math>\mathrm{Frob}_{\mathfrak p}</math> או <math>\left(\frac{L/K}{\mathfrak p}\right)</math>: האיבר היחיד שמקיים <math>\mathrm{Frob}_{\mathfrak p}(x) \equiv x^{N\mathfrak p} \pmod{\mathfrak P}</math> לכל <math>x \in \mathcal O_L</math>. אם <math>\Delta</math> ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה היחסית]] של <math>L/K</math>, אז '''סמל ארטין''' (או '''העתקת ארטין''', או '''העתקת ההדדיות הגלובלית''') של <math>L/K</math> מוגדר על חבורת [[אידיאל שבור|האידיאלים השבורים]] הזרים ל-<math>\Delta</math>, <math>I_K^\Delta</math>, באופן כפלי:
+:<math>\left(\frac{L/K}{\cdot}\right) : I_K^\Delta \to \mathrm{Gal}(L/K), \qquad \prod_{i=1}^m \mathfrak p_i^{n_i} \mapsto \prod_{i=1}^m\left(\frac{L/K}{\mathfrak p_i}\right)^{n_i}.</math>
+
+'''חוק ההדדיות של ארטין''' (או '''חוק ההדדיות הגלובלי''') קובע שיש [[מודולוס (תורת המספרים האלגברית)|מודולוס]] <math>\mathbf c</math> של <math>K</math> כך שהעתקת ארטין משרה איזומורפיזם
+:<math>I_K^{\mathbf c}\big/ i(K_{\mathbf c,1})\,N_{L/K}(I_L^{\mathbf c}) \xrightarrow{\ \sim\ } \mathrm{Gal}(L/K),</math>
+כאשר <math>K_{\mathbf c,1}</math> היא '''הקרן''' מודולו <math>\mathbf c</math> (האיברים של <math>K^\times</math> ששקולים ל-1 מודולו <math>\mathbf c</math>, וחיוביים במקומות הממשיים שב-<math>\mathbf c</math>), <math>N_{L/K}</math> העתקת הנורמה, ו-<math>I_L^{\mathbf c}</math> האידיאלים השבורים של <math>L</math> הזרים ל-<math>\mathbf c</math>. מודולוס כזה נקרא '''מודולוס מגדיר''' של <math>L/K</math>. המודולוס המגדיר הקטן ביותר נקרא '''[[מוליך (תורת שדות המחלקה)|המוליך]]''' של <math>L/K</math>, ומסומן בדרך כלל <math>\mathfrak f(L/K)</math>.
+
+הנקודה המפתיעה היא ש'''פרובניוס של <math>\mathfrak p</math> תלוי רק במחלקה של <math>\mathfrak p</math> מודולו <math>\mathbf c</math>''' – כלומר, אופן הפיצול של ראשוני בהרחבה אבלית נקבע על ידי תנאי קונגרואנציה. זו הכללה רחבה של חוק ההדדיות הריבועית.
+
+=== דוגמאות ===
+==== שדות ריבועיים ====
+אם <math>d \ne 1</math> [[מספר חופשי מריבועים|חופשי מריבועים]], <math>K = \mathbb Q</math> ו-<math>L = \mathbb Q(\sqrt d)</math>, אפשר לזהות את <math>\mathrm{Gal}(L/\mathbb Q)</math> עם <math>\{\pm1\}</math>. הדיסקרימיננטה <math>\Delta</math> של <math>L</math> מעל <math>\mathbb Q</math> היא <math>d</math> או <math>4d</math>, לפי ש-<math>d \equiv 1 \pmod 4</math> או לא. העתקת ארטין מוגדרת אז על ראשוניים <math>p</math> שאינם מחלקים את <math>\Delta</math> על ידי
+:<math>p \mapsto \left(\frac{\Delta}{p}\right),</math>
+כאשר <math>\left(\frac{\Delta}{p}\right)</math> [[סמל קרונקר]].{{הערה|שם=Lem|1=F. Lemmermeyer, ''Reciprocity Laws: From Euler to Eisenstein'', Springer, 2000, §3.2|כיווון=שמאל}} ליתר דיוק, המוליך של <math>L/\mathbb Q</math> הוא האידיאל הראשי <math>(\Delta)</math> או <math>(\Delta)\infty</math>, לפי ש-<math>\Delta</math> חיובי או שלילי,{{הערה|שם=Milne|1=J. Milne, ''Class Field Theory'', v4.0, 2008, examples 3.2, 3.10, 3.11|כיווון=שמאל}} והעתקת ארטין על אידיאל <math>(n)</math> הזר ל-<math>\Delta</math> ניתנת על ידי סמל קרונקר <math>\left(\frac{\Delta}{n}\right)</math>. מכאן שראשוני <math>p</math> מתפצל או אינרטי ב-<math>L</math> לפי ש-<math>\left(\frac{\Delta}{p}\right)</math> שווה 1 או <math>-1</math>.
+
+'''דוגמה.''' ל-<math>L = \mathbb Q(\sqrt5)</math> (<math>\Delta = 5</math>, מוליך <math>(5)</math>): <math>\left(\frac 5p\right) = 1</math> בדיוק כש-<math>p \equiv \pm1 \pmod 5</math>. למשל 11, 19, 29, 31 מתפצלים, ו-7, 13 אינרטיים – תלוי רק ב-<math>p \bmod 5</math>, כפי שחוק ההדדיות של ארטין מבטיח (ראו [[השדה הזהוב]]).
+
+==== שדות ציקלוטומיים ====
+יהי <math>m \gt 1</math> אי-זוגי או כפולה של 4, יהי <math>\zeta_m</math> [[שורש יחידה]] פרימיטיבי מסדר <math>m</math>, ויהי <math>L = \mathbb Q(\zeta_m)</math> השדה הציקלוטומי ה-<math>m</math>-י. אפשר לזהות את <math>\mathrm{Gal}(L/\mathbb Q)</math> עם <math>(\mathbb Z/m\mathbb Z)^\times</math>, על ידי התאמת <math>a_\sigma</math> ל-<math>\sigma</math> לפי הכלל <math>\sigma(\zeta_m) = \zeta_m^{a_\sigma}</math>. המוליך של <math>L/\mathbb Q</math> הוא <math>(m)\infty</math>, והעתקת ארטין על אידיאל <math>(n)</math> הזר ל-<math>m</math> היא פשוט <math>n \bmod m</math> ב-<math>(\mathbb Z/m\mathbb Z)^\times</math>.{{הערה|שם=Milne}}
+
+'''דוגמה מחושבת: <math>m = 5</math>.''' הסדר של <math>p \bmod 5</math> ב-<math>(\mathbb Z/5)^\times</math> הוא ה[[מעלה שארית|מעלת השארית]] <math>f</math> של ראשוני מעל <math>p</math>, ומספר הראשוניים מעל <math>p</math> הוא <math>4/f</math>. נבדק על ידי פירוק <math>\Phi_5(x) = x^4 + x^3 + x^2 + x + 1</math> מודולו <math>p</math>:
+* <math>p = 11 \equiv 1</math> (סדר 1): <math>\Phi_5 \equiv (x+2)(x-3)(x-4)(x-5) \pmod{11}</math> – ארבעה גורמים לינאריים; 11 מתפצל לחלוטין.
+* <math>p = 19 \equiv 4</math> (סדר 2): <math>\Phi_5 \equiv (x^2 + 5x + 1)(x^2 - 4x + 1) \pmod{19}</math> – שני גורמים ריבועיים.
+* <math>p = 7 \equiv 2</math> ו-<math>p = 2</math> (סדר 4): <math>\Phi_5</math> אי-פריק מודולו <math>p</math> – <math>p</math> אינרטי.
+
+=== הקשר להדדיות הריבועית ===
+יהיו <math>p</math> ו-<math>\ell</math> ראשוניים אי-זוגיים שונים, ונסמן <math>\ell^* = (-1)^{\frac{\ell-1}{2}}\ell</math> (שתמיד <math>\equiv 1 \pmod 4</math>). חוק ההדדיות הריבועית קובע ש-
+:<math>\left(\frac{\ell^*}{p}\right) = \left(\frac{p}{\ell}\right).</math>
+הקשר בין חוק ההדדיות הריבועית לחוק ההדדיות של ארטין מתקבל מחקר השדה הריבועי <math>F = \mathbb Q(\sqrt{\ell^*})</math> והשדה הציקלוטומי <math>L = \mathbb Q(\zeta_\ell)</math>.{{הערה|שם=Lem}} ראשית, <math>F</math> תת-שדה של <math>L</math> (ראו [[סכום גאוס]]), ולכן אם <math>H = \mathrm{Gal}(L/F)</math> ו-<math>G = \mathrm{Gal}(L/\mathbb Q)</math>, אז <math>\mathrm{Gal}(F/\mathbb Q) = G/H</math>. כיוון שלאחרונה סדר 2, תת-החבורה <math>H</math> חייבת להיות חבורת הריבועים ב-<math>(\mathbb Z/\ell\mathbb Z)^\times</math>. תכונה בסיסית של סמל ארטין אומרת שלכל אידיאל <math>(n)</math> הזר ל-<math>\ell</math>,
+:<math>\left(\frac{F/\mathbb Q}{(n)}\right) = \left(\frac{L/\mathbb Q}{(n)}\right) \bmod H.</math>
+כש-<math>n = p</math>, זה מראה ש-<math>\left(\frac{\ell^*}{p}\right) = 1</math> אם ורק אם <math>p</math> מודולו <math>\ell</math> נמצא ב-<math>H</math>, כלומר אם ורק אם <math>p</math> ריבוע מודולו <math>\ell</math>.
+
+'''דוגמה.''' ל-<math>\ell = 5</math> (<math>\ell^* = 5</math>): <math>\left(\frac{5}{11}\right) = 1</math>, ו-<math>11 \equiv 1 = 1^2 \pmod 5</math>; <math>\left(\frac{5}{7}\right) = -1</math>, ו-<math>7 \equiv 2 \pmod 5</math> אינו ריבוע (הריבועים מודולו 5 הם 1, 4).
+
+== ניסוח במונחי פונקציות L ==
+גרסה חלופית של חוק ההדדיות, שמובילה ל[[תוכנית לנגלנדס]], מקשרת בין [[פונקציית L של ארטין|פונקציות L של ארטין]] של הרחבות אבליות של [[שדה מספרים]] לבין פונקציות L של הקה, שמתאימות לקרקטרים של חבורת מחלקות האידלים.{{הערה|1=J. Milne, ''Class Field Theory'', course notes|כיווון=שמאל}}
+
+'''קרקטר הקה''' (Größencharakter) של שדה מספרים <math>K</math> מוגדר כקוואזי-קרקטר של חבורת מחלקות האידלים של <math>K</math>. [[רוברט לנגלנדס]] פירש קרקטרי הקה כ[[תבנית אוטומורפית|תבניות אוטומורפיות]] על החבורה האלגברית הרדוקטיבית <math>GL(1)</math> מעל [[אדל|חוג האדלים]] של <math>K</math>.{{הערה|שם=Gelbart|1=S. S. Gelbart, ''Automorphic Forms on Adèle Groups'', Annals of Mathematics Studies '''83''', Princeton University Press, 1975|כיווון=שמאל}}
+
+תהי <math>E/K</math> הרחבת גלואה אבלית עם חבורת גלואה <math>G</math>. אז לכל [[קרקטר (מתמטיקה)|קרקטר]] <math>\sigma : G \to \mathbb C^\times</math> (כלומר, [[הצגה של חבורה|הצגה]] מרוכבת חד-ממדית של <math>G</math>) יש קרקטר הקה <math>\chi</math> של <math>K</math> כך ש-
+:<math>L^{\text{Artin}}_{E/K}(\sigma, s) = L^{\text{Hecke}}_K(\chi, s),</math>
+כאשר אגף שמאל הוא פונקציית ה-L של ארטין של ההרחבה עם הקרקטר <math>\sigma</math>, ואגף ימין פונקציית ה-L של הקה של <math>\chi</math>.{{הערה|שם=Gelbart}} (ל-<math>K = \mathbb Q</math> וקרקטר של <math>\mathrm{Gal}(\mathbb Q(\zeta_m)/\mathbb Q)</math>, קרקטר הקה הוא פשוט [[קרקטר דיריכלה]] מודולו <math>m</math>, והשוויון אומר שפונקציית ה-L של ארטין היא [[פונקציית L של דיריכלה]].)
+
+הניסוח של חוק ההדדיות של ארטין כשוויון של פונקציות L מאפשר לנסח הכללה להצגות <math>n</math>-ממדיות, אף על פי שהתאמה ישירה עדיין חסרה.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* E. Artin, ''Über eine neue Art von L-Reihen'', Abh. Math. Sem. Univ. Hamburg '''3''' (1924), pp. 89–108
+* E. Artin, ''Beweis des allgemeinen Reziprozitätsgesetzes'', Abh. Math. Sem. Univ. Hamburg '''5''' (1927), pp. 353–363
+* G. Frei, ''On the history of the Artin reciprocity law in abelian extensions of algebraic number fields: how Artin was led to his reciprocity law'', in: ''The Legacy of Niels Henrik Abel'', Springer, 2004, pp. 267–294
+* G. Janusz, ''Algebraic Number Fields'', Academic Press, 1973
+* S. Lang, ''Algebraic Number Theory'', 2nd ed., Graduate Texts in Mathematics '''110''', Springer, 1994
+* J.-P. Serre, ''Local class field theory''; J. Tate, ''Global class field theory'', in: Cassels–Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת שדות המחלקה]]

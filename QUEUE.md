@@ -114,7 +114,7 @@ Additive number theory:
 
 ### תורת שדות המחלקה והתחום הציקלוטומי (24)
 
-- [ ] Artin reciprocity
+- [x] Artin reciprocity
 - [ ] Takagi existence theorem
 - [ ] Hasse norm theorem
 - [ ] Local class field theory
