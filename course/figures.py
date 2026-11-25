@@ -5351,6 +5351,88 @@ def _():
     save('T11-x4')
 
 
+@fig('T12-e1')
+def _():
+    ax = plt.gca(); th = np.linspace(0, 2 * np.pi, 600); z = np.exp(1j * th)
+    L = np.log(np.abs((z - .5) * (z - 3)))
+    ax.plot(th, L, color=C1, label='log |f(e^(iθ))|'); ax.axhline(np.log(3), color=C2, ls='--', label='mean = log 3 = 1.099')
+    ax.axhline(np.log(1.5), color=C3, ls=':', label='log |f(0)| = 0.405')
+    ax.set_xlabel('θ'); ax.legend(fontsize=8); ax.set_title('Jensen: 0.405 = 1.099 − log 2', fontsize=9)
+    save('T12-e1')
+
+
+@fig('T12-e2')
+def _():
+    ax = plt.gca(); R = np.logspace(.5, 8, 300)
+    ax.semilogx(R, np.log(R ** 2) / np.log(R), color=C2, label='e^(z²): 2')
+    ax.semilogx(R, np.log(np.sqrt(R) + np.log1p(np.exp(-2 * np.sqrt(R))) - np.log(2)) / np.log(R), color=C1, label='cos √z → ½')
+    ax.semilogx(R, np.log(np.log(R ** 5 + 1)) / np.log(R), color=C3, label='z⁵ + 1 → 0')
+    ax.set_xlabel('R'); ax.set_ylabel('log log M(R) / log R'); ax.legend(fontsize=8); ax.set_title('order of growth', fontsize=9)
+    save('T12-e2')
+
+
+@fig('T12-e3')
+def _():
+    ax = plt.gca(); x = np.linspace(-3.5, 3.5, 500)
+    ax.plot(x, np.sin(np.pi * x), color='k', lw=2, label='sin πx')
+    for N, col in ((1, C4), (3, C3), (10, C2)):
+        P = np.pi * x * np.prod([1 - x ** 2 / n ** 2 for n in range(1, N + 1)], axis=0)
+        ax.plot(x, P, color=col, ls='--', label=f'N = {N}')
+    ax.set_ylim(-2.5, 2.5); ax.axhline(0, color=GR, lw=.5); ax.legend(fontsize=8); ax.set_xlabel('x'); ax.set_title('πx ∏_{n≤N} (1 − x²/n²)', fontsize=9)
+    save('T12-e3')
+
+
+@fig('T12-e4')
+def _():
+    import mpmath as mpm
+    g = np.array([float(mpm.zetazero(k).imag) for k in range(1, 101)])
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.2))
+    a1.plot(g, np.cumsum(1 / g), 'o-', ms=2, color=C1, label='Σ 1/γ')
+    T = np.linspace(14, 240, 200); a1.plot(T, np.log(T / (2 * np.pi)) ** 2 / (4 * np.pi), color=C2, ls='--', label='(1/4π) log²(T/2π)')
+    a1.set_xlabel('T'); a1.legend(fontsize=7); a1.set_title('diverges', fontsize=9)
+    a2.plot(g, np.cumsum(1 / g ** 2), 'o-', ms=2, color=C1, label='Σ 1/γ²'); a2.axhline(.0231, color=C2, ls='--', label='limit ≈ 0.0231')
+    a2.set_xlabel('T'); a2.legend(fontsize=7); a2.set_title('converges', fontsize=9)
+    save('T12-e4')
+
+
+@fig('T12-x1')
+def _():
+    ax = plt.gca(); R = np.linspace(1, 50, 300)
+    ax.plot(R, 1 / R, color=C1, label='Cauchy bound for |a₃|: C·R²/R³ (C = 1)')
+    ax.set_xlabel('R'); ax.legend(fontsize=8); ax.set_ylim(0, 1.05); ax.set_title('the bound → 0, so a₃ = 0', fontsize=9)
+    save('T12-x1')
+
+
+@fig('T12-x2')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.6, 4.6)); k = np.arange(-4, 5)
+    ax.plot(np.log(2) + 0 * k, 2 * np.pi * k, 'x', color=C2, ms=8, mew=2, label='zeros log 2 + 2πik')
+    th = np.linspace(0, 2 * np.pi, 300)
+    for r, col in ((7, C1), (20, C3)):
+        ax.plot(r * np.cos(th), r * np.sin(th), color=col, label=f'r = {r}: {int(np.sum(np.abs(np.log(2) + 2j * np.pi * np.arange(-10, 11)) <= r))} zeros')
+    ax.set_aspect('equal'); ax.legend(fontsize=7, loc='upper left'); ax.set_xlim(-22, 22); ax.set_ylim(-22, 27)
+    save('T12-x2')
+
+
+@fig('T12-x3')
+def _():
+    ax = plt.gca(); N = np.arange(1, 101); z = 1 / 3
+    P = np.cumprod(1 - 4 * z ** 2 / (2 * N - 1) ** 2)
+    ax.plot(N, P, 'o-', ms=2, color=C1, label='partial products at z = ⅓'); ax.axhline(.5, color=C2, ls='--', label='cos(π/3) = ½')
+    ax.set_xscale('log'); ax.set_xlabel('N'); ax.legend(fontsize=8); ax.set_title('cos πz = ∏ (1 − 4z²/(2n − 1)²)', fontsize=9)
+    save('T12-x3')
+
+
+@fig('T12-x4')
+def _():
+    ax = plt.gca(); x = np.linspace(-2.9, 2.9, 3000); x = x[np.min(np.abs(x[:, None] - np.arange(-3, 4)), axis=1) > .03]
+    S = 1 / x + sum(2 * x / (x ** 2 - n ** 2) for n in range(1, 21))
+    ax.plot(x, np.pi / np.tan(np.pi * x), '.', ms=1, color=C1, label='π cot πx')
+    ax.plot(x, S, '.', ms=.6, color=C2, label='1/x + Σ_{n≤20} 2x/(x² − n²)')
+    ax.set_ylim(-10, 10); ax.axhline(0, color=GR, lw=.5); ax.set_xlabel('x'); ax.legend(fontsize=8, markerscale=8)
+    save('T12-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
