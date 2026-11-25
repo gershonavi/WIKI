@@ -1,0 +1,60 @@
+ב[[תורת המספרים האדיטיבית]], תחום ב[[מתמטיקה]], '''משפט ארדש–טטלי''' (ב[[אנגלית]]: Erdős–Tetali theorem) הוא משפט קיום על [[בסיס אדיטיבי|בסיסים אדיטיביים]] חסכוניים מכל סדר. ליתר דיוק, הוא קובע שלכל מספר שלם קבוע <math>h \geq 2</math> יש תת-קבוצה של המספרים הטבעיים <math>\mathcal{B} \subseteq \mathbb{N}</math> המקיימת
+:<math>r_{\mathcal{B},h}(n) \asymp \log n,</math>
+כאשר <math>r_{\mathcal{B},h}(n)</math> הוא מספר הדרכים להציג מספר טבעי <math>n</math> כסכום של <math>h</math> איברים של <math>\mathcal{B}</math>.{{הערה|1=ניסוח חלופי בסימון Θ גדול: <math>r_{\mathcal{B},h}(n) = \Theta(\log n)</math>.|כיווון=ימין}}
+
+המשפט קרוי על שם [[פאול ארדש]] ופרסאד טטלי, שפרסמו אותו ב-1990.
+
+== מוטיבציה ==
+המוטיבציה המקורית לתוצאה זו מיוחסת לבעיה שהציג ש. סידון ב-1932 על ''בסיסים חסכוניים''. בסיס אדיטיבי <math>\mathcal{B}\subseteq\mathbb{N}</math> נקרא ''חסכוני''{{הערה|1=כמו אצל Halberstam & Roth (1983), עמ' 111.|כיווון=ימין}} (או לעיתים ''דליל''{{הערה|1=כמו אצל Tao & Vu (2006), עמ' 13.|כיווון=ימין}}) אם הוא בסיס אדיטיבי מסדר <math>h</math> ו-
+:<math>r_{\mathcal{B},h}(n) \ll_{\varepsilon} n^\varepsilon</math>
+לכל <math>\varepsilon > 0</math>. במילים אחרות, אלה בסיסים אדיטיביים שמשתמשים במעט מספרים ככל האפשר כדי להציג <math>n</math> נתון, ובכל זאת מציגים כל מספר טבעי. מושגים קשורים הם סדרות <math>B_h[g]</math> (הכללות של סדרות סידון){{הערה|1=ראו הגדרה 3 (עמ' 3) אצל K. O'Bryant, [http://www.emis.de/journals/EJC/Surveys/ds11.pdf A complete annotated bibliography of work related to Sidon sequences], Electronic Journal of Combinatorics 11, 2004, עמ' 39.|כיווון=שמאל}} ו[[השערת ארדש-טוראן על בסיסים אדיטיביים|השערת ארדש–טוראן על בסיסים אדיטיביים]].
+
+השאלה של סידון הייתה אם קיים בסיס חסכוני מסדר 2. ארדש נתן תשובה חיובית ב-1956,{{הערה|שם=e56|1=P. Erdős, Problems and results in additive number theory, Colloque sur la Théorie des Nombres, 1956, עמ' 127–137|כיווון=שמאל}} וכך הכריע את המקרה <math>h = 2</math> של המשפט. אף שרבים האמינו שהגרסה הכללית נכונה, לא הופיעה בספרות הוכחה מלאה לפני המאמר של ארדש וטטלי.{{הערה|1=ראו עמ' 264 אצל Erdős–Tetali (1990).|כיווון=ימין}}
+
+== רעיונות ההוכחה ==
+ההוכחה היא דוגמה לשיטה ההסתברותית, ואפשר לחלק אותה לשלושה שלבים עיקריים. ראשית, מגדירים ''סדרה אקראית'' <math>\omega \subseteq \mathbb{N}</math> על ידי
+:<math>\Pr(n\in \omega) = C\cdot n^{\frac{1}{h} - 1} (\log n)^{\frac{1}{h}},</math>
+כאשר <math>C>0</math> קבוע ממשי גדול, <math>h\geq 2</math> מספר שלם קבוע ו-<math>n</math> גדול מספיק כך שהנוסחה מוגדרת היטב. דיון מפורט במרחב ההסתברות הקשור לבנייה מסוג זה אפשר למצוא אצל Halberstam & Roth (1983).{{הערה|1=ראו משפט 1 בפרק III.|כיווון=ימין}} שנית, מראים שה[[תוחלת]] של ה[[משתנה מקרי|משתנה המקרי]] <math>r_{\omega,h}(n)</math> היא מסדר גודל של לוגריתם, כלומר
+:<math>\mathbb{E}(r_{\omega,h}(n)) \asymp \log n.</math>
+לבסוף, מראים ש-<math>r_{\omega,h}(n)</math> [[כמעט כל (מתמטיקה)|כמעט בוודאות]] מתרכז סביב התוחלת שלו. במפורש:
+:<math>\Pr\big(\exists c_1,c_2>0 ~:~ \text{for all large } n\in\mathbb{N} ,~ c_1\mathbb{E}(r_{\omega,h}(n)) \leq r_{\omega,h}(n) \leq c_2\mathbb{E}(r_{\omega,h}(n))\big) = 1.</math>
+זהו השלב הקריטי בהוכחה. במקור טופל בעזרת אי-שוויון יאנסון, סוג של אי-שוויון ריכוז לפולינומים במשתנים רבים. טאו ווו (2006){{הערה|1=סעיף 1.8 אצל Tao & Vu (2006).|כיווון=ימין}} מציגים את ההוכחה בעזרת אי-שוויון ריכוז דו-צדדי מתוחכם יותר של ואן וו (2000),{{הערה|1=V. H. Vu, On the concentration of multivariate polynomials with small expectation, Random Structures & Algorithms 16 (4), 2000, עמ' 344–363|כיווון=שמאל}} וכך מפשטים יחסית שלב זה. אלון וספנסר (2016) מסווגים הוכחה זו כמקרה של "פרדיגמת פואסון".{{הערה|1=פרק 8, עמ' 139 אצל Alon & Spencer (2016).|כיווון=ימין}}
+
+למה דווקא ההסתברות הזו? אם כל <math>m</math> נבחר בהסתברות <math>p_m \approx C m^{1/h - 1}(\log m)^{1/h}</math>, התוחלת של מספר ה-<math>h</math>-יות שסכומן <math>n</math> היא בערך <math>\sum_{m_1 + \dots + m_h = n} p_{m_1}\cdots p_{m_h}</math>, ובחישוב גס זה <math>C^h \log n</math> כפול קבוע: החזקות של <math>m</math> מבטלות זו את זו בדיוק, והלוגריתם נשאר.
+
+== הקשר להשערת ארדש–טוראן על בסיסים אדיטיביים ==
+השערת ארדש–טוראן המקורית על בסיסים אדיטיביים קובעת, בצורתה הכללית ביותר, שאם <math>\mathcal{B}\subseteq\mathbb{N}</math> בסיס אדיטיבי מסדר <math>h</math>, אז
+:<math>\limsup_{n\to \infty} r_{\mathcal{B},h}(n) = \infty;</math>
+כלומר, <math>r_{\mathcal{B},h}(n)</math> אינו יכול להיות חסום. במאמרו מ-1956 שאל ארדש{{הערה|שם=e56}} אם ייתכן ש-
+:<math>\limsup_{n\to\infty} \frac{r_{\mathcal{B},2}(n)}{\log n} > 0</math>
+לכל בסיס אדיטיבי <math>\mathcal{B}\subseteq\mathbb{N}</math> מסדר 2. במילים אחרות, <math>r_{\mathcal{B},2}(n)</math> לא רק אינו חסום, אלא שאף פונקציה קטנה מהלוגריתם אינה יכולה לחסום אותו. השאלה מתרחבת באופן טבעי ל-<math>h\geq 3</math>, וזו צורה חזקה יותר של השערת ארדש–טוראן. במובן מסוים, ההשערה אומרת שאין בסיסים אדיטיביים חסכוניים במידה ניכרת מאלה שקיומם מובטח לפי משפט ארדש–טטלי.
+
+== התפתחויות נוספות ==
+=== בסיסים חסכוניים חשיבים ===
+כל ההוכחות הידועות של משפט ארדש–טטלי הן, בשל טבעו של מרחב ההסתברות האינסופי שבו הן משתמשות, הוכחות לא קונסטרוקטיביות. עם זאת, קולונצאקיס (1995){{הערה|1=M. N. Kolountzakis, An effective additive basis for the integers, Discrete Mathematics 145 (1), 1995, עמ' 307–313, {{DOI|10.1016/0012-365X(94)00044-J}}|כיווון=שמאל}} הראה שקיימת [[קבוצה רקורסיבית]] <math>\mathcal{R}\subseteq \mathbb{N}</math> המקיימת <math>r_{\mathcal{R},2}(n) \asymp \log n</math>, כך שחישוב <math>\mathcal{R}\cap\{0,1,\ldots ,n\}</math> דורש זמן פולינומי ב-<math>n</math>. השאלה עבור <math>h\geq 3</math> נותרה פתוחה.
+
+=== תת-בסיסים חסכוניים ===
+בהינתן בסיס אדיטיבי כלשהו <math>\mathcal{A}\subseteq\mathbb{N}</math>, אפשר לשאול אם יש <math>\mathcal{B}\subseteq\mathcal{A}</math> כך ש-<math>\mathcal{B}</math> בסיס חסכוני. ואן וו (2000){{הערה|1=V. H. Vu, On a refinement of Waring's problem, Duke Mathematical Journal 105 (1), 2000, עמ' 107–134, {{DOI|10.1215/s0012-7094-00-10516-9}}|כיווון=שמאל}} הראה שכך הדבר עבור בסיסי וארינג <math>\mathbb{N}^{\wedge} k := \{0^k, 1^k, 2^k,\ldots \}</math>: לכל <math>k</math> קבוע יש תת-בסיסים חסכוניים של <math>\mathbb{N}^{\wedge}k</math> מסדר <math>s</math> לכל <math>s \geq s_k</math>, עבור קבוע חשיב גדול כלשהו <math>s_k</math>.
+
+=== קצבי גידול שאינם לוגריתם ===
+שאלה אפשרית נוספת היא אם תוצאות דומות נכונות עבור פונקציות שאינן הלוגריתם. כלומר, בהינתן מספר שלם <math>h\geq 2</math>, עבור אילו פונקציות <math>f</math> אפשר למצוא תת-קבוצה של המספרים הטבעיים <math>\mathcal{B}\subseteq \mathbb{N}</math> המקיימת <math>r_{\mathcal{B},h}(n) \asymp f(n)</math>? מתוצאה של כ. טאפולה (2019){{הערה|1=C. Táfula, An extension of the Erdős–Tetali theorem, Random Structures & Algorithms 55 (1), 2019, עמ' 173–214, {{DOI|10.1002/rsa.20812}}|כיווון=שמאל}} נובע שאם <math>f</math> פונקציה ממשית חיובית, אינטגרבילית מקומית, המקיימת
+* <math>\frac{1}{x}\int_{1}^{x} f(t) \,\mathrm{d}t \asymp f(x)</math>, וגם
+* <math>\log x \ll f(x) \ll x^{\frac{1}{h-1}}(\log x)^{-\varepsilon}</math> עבור <math>\varepsilon > 0</math> כלשהו,
+אז יש בסיס אדיטיבי <math>\mathcal{B}\subseteq \mathbb{N}</math> מסדר <math>h</math> המקיים <math>r_{\mathcal{B},h}(n) \asymp f(n)</math>. המקרה המזערי <math>f(x) = \log x</math> מחזיר את משפט ארדש–טטלי.
+
+== ראו גם ==
+* משפט ארדש–פוקס: לכל <math>C\in \mathbb{R}</math> שונה מאפס, '''אין''' קבוצה <math>\mathcal{B}\subseteq \mathbb{N}</math> המקיימת <math>\textstyle{\sum_{n\leq x} r_{\mathcal{B},2}(n) = Cx + o\left(x^{1/4} (\log x)^{-1/2}\right)}</math>.
+* [[השערת ארדש-טוראן על בסיסים אדיטיביים]]: אם <math>\mathcal{B}\subseteq\mathbb{N}</math> בסיס אדיטיבי מסדר 2, אז <math>r_{\mathcal{B},2}(n) \neq O(1)</math>.
+* [[בעיית וארינג]], הבעיה של הצגת מספרים כסכומים של חזקות <math>k</math>-יות, עבור <math>k\geq 2</math> קבוע.
+
+== לקריאה נוספת ==
+* P. Erdős, P. Tetali, Representations of integers as the sum of k terms, Random Structures & Algorithms 1 (3), 1990, עמ' 245–261, {{DOI|10.1002/rsa.3240010302}}
+* H. Halberstam, K. F. Roth, Sequences, Springer, 1983
+* N. Alon, J. Spencer, The probabilistic method, מהדורה רביעית, Wiley, 2016
+* T. Tao, V. Vu, Additive combinatorics, Cambridge University Press, 2006
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האדיטיבית]]
