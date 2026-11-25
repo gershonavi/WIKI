@@ -4537,6 +4537,108 @@ def _():
     save('T02-x4')
 
 
+@fig('T03-e1')
+def _():
+    ax = plt.gca(); p = 7; els = list(range(1, p))
+    order = {a: next(k for k in range(1, p) if pow(a, k, p) == 1) for a in els}
+    _grid_table(ax, els, els, lambda r, c: r * c % p,
+                'multiplication mod 7 (1s highlighted); right: order of a',
+                hl=lambda r, c: '#f6c9c9' if (r * c) % p == 1 else None, rlab='a', clab='b')
+    for i, a in enumerate(els):
+        ax.text(len(els) + .4, -i, f'ord {order[a]}', fontsize=8, va='center', color=C2 if order[a] == 6 else 'k')
+    ax.set_xlim(-1.1, len(els) + 1.6)
+    save('T03-e1')
+
+
+@fig('T03-e2')
+def _():
+    ax = plt.gca(); H = [1, 2, 4, 8]; H7 = [7, 14, 13, 11]
+    for i, x in enumerate(H):
+        ax.add_patch(plt.Circle((i, 1), .35, fc='#dde8f3', ec=C1)); ax.text(i, 1, str(x), ha='center', va='center')
+    for i, x in enumerate(H7):
+        ax.add_patch(plt.Circle((i, 0), .35, fc='#f6dada', ec=C2)); ax.text(i, 0, str(x), ha='center', va='center')
+    ax.text(-.9, 1, 'H = ⟨2⟩', ha='right', va='center', color=C1); ax.text(-.9, 0, '7H', ha='right', va='center', color=C2)
+    for i in range(3):
+        ax.annotate('', xy=(i + .62, 1), xytext=(i + .38, 1), arrowprops=dict(arrowstyle='->', color=GR))
+    ax.text(1.5, 1.55, '×2', color=GR, ha='center')
+    ax.set_xlim(-2.2, 3.6); ax.set_ylim(-.7, 1.8); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('(ℤ/15)^× = H ∪ 7H: two cosets of size 4, so |H| = 4 divides 8', fontsize=9)
+    save('T03-e2')
+
+
+@fig('T03-e3')
+def _():
+    ax = plt.gca()
+    _grid_table(ax, [1, 3, 5, 7], [1, 3, 5, 7], lambda r, c: r * c % 8, 'multiplication mod 8: the diagonal is all 1s',
+                hl=lambda r, c: '#f6c9c9' if r == c else None, rlab='a', clab='b')
+    save('T03-e3')
+
+
+@fig('T03-e4')
+def _():
+    fig_, axs = plt.subplots(1, 4, figsize=(6.4, 1.9))
+    for j, ax in enumerate(axs):
+        _unit(ax, 1.4)
+        vals = [1j ** (j * k) for k in range(4)]
+        for k, v in enumerate(vals):
+            ax.scatter(v.real + .06 * k, v.imag + .06 * k, s=40, color=[C1, C2, C3, C4][k], zorder=3)
+        ax.set_title(f'χ{j}: values at a = 1, 2, 4, 3', fontsize=7); ax.set_xticks([]); ax.set_yticks([])
+    plt.suptitle('characters of (ℤ/5)^× (generator 2): χj(2^k) = i^(jk)', fontsize=9)
+    save('T03-e4')
+
+
+@fig('T03-x1')
+def _():
+    ax = plt.gca(); p = 11; els = list(range(1, p))
+    ords = [next(k for k in range(1, p) if pow(a, k, p) == 1) for a in els]
+    ax.bar(els, ords, color=[C2 if o == 10 else '#c9d6e6' for o in ords])
+    ax.set_xticks(els); ax.set_yticks([1, 2, 5, 10]); ax.set_xlabel('a'); ax.set_ylabel('order of a mod 11')
+    ax.set_title('orders divide 10; generators (order 10): 2, 6, 7, 8', fontsize=9)
+    save('T03-x1')
+
+
+@fig('T03-x2')
+def _():
+    fig_, (a, b) = plt.subplots(1, 2, figsize=(6.4, 3.0))
+    for ax, p in [(a, 7), (b, 13)]:
+        _unit(ax, 1.4)
+        rs = [pow(10, k, p) for k in range(7)]
+        for k in range(6):
+            z0 = cmath.exp(2j * pi * rs[k] / p); z1 = cmath.exp(2j * pi * rs[k + 1] / p)
+            ax.annotate('', xy=(z1.real, z1.imag), xytext=(z0.real, z0.imag), arrowprops=dict(arrowstyle='->', color=C1))
+        for r in range(1, p):
+            z = cmath.exp(2j * pi * r / p)
+            ax.text(z.real * 1.2, z.imag * 1.2, str(r), fontsize=7, ha='center', va='center', color=C2 if r in rs else GR)
+        ax.set_title(f'remainders 10^k mod {p}: cycle of 6', fontsize=9); ax.set_xticks([]); ax.set_yticks([])
+    save('T03-x2')
+
+
+@fig('T03-x3')
+def _():
+    ax = plt.gca(); ks = np.arange(0, 25)
+    ax.plot(ks, [pow(3, int(k), 7) for k in ks], 'o-', color=C1, ms=4)
+    for k in range(0, 25, 6):
+        ax.axvline(k, color=GR, ls='--', lw=.7)
+    ax.set_xlabel('k'); ax.set_ylabel('3^k mod 7'); ax.set_yticks(range(1, 7))
+    ax.set_title('3^k mod 7 repeats with period 6; 3^100 ≡ 3^4 ≡ 4', fontsize=9)
+    save('T03-x3')
+
+
+@fig('T03-x4')
+def _():
+    ax = plt.gca(); p = 11
+    for a in range(1, p):
+        b = a * a % p
+        ax.annotate('', xy=(1, b), xytext=(0, a), arrowprops=dict(arrowstyle='->', color=C1 if a <= 5 else C3, lw=1))
+        ax.text(-.06, a, str(a), ha='right', va='center', fontsize=8)
+    for b in sorted({a * a % p for a in range(1, p)}):
+        ax.text(1.06, b, str(b), ha='left', va='center', fontsize=9, color=C2, weight='bold')
+    ax.set_xlim(-.3, 1.3); ax.set_ylim(.3, 10.7); ax.axis('off')
+    ax.text(0, 10.6, 'a', ha='center'); ax.text(1, 10.6, 'a² mod 11', ha='center')
+    ax.set_title('a ↦ a² mod 11: each square {1,3,4,5,9} is hit twice (a and 11−a)', fontsize=9)
+    save('T03-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
