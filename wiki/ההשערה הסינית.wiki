@@ -1,0 +1,20 @@
+ב[[תורת המספרים]], '''ההשערה הסינית''' (ב[[אנגלית]]: Chinese hypothesis) היא [[השערה (מתמטיקה)|השערה]] שהופרכה, שלפיה [[מספר שלם]] <math>n</math> הוא [[מספר ראשוני|ראשוני]] [[אם ורק אם]] הוא מקיים את התנאי ש-<math>2^n-2</math> מתחלק ב-<math>n</math>; במילים אחרות, ששלם <math>n</math> ראשוני אם ורק אם <math>2^n \equiv 2 \pmod{n}</math>. נכון שאם <math>n</math> ראשוני, אז <math>2^n \equiv 2 \pmod{n}</math> (זה מקרה פרטי של [[המשפט הקטן של פרמה]]), אבל הכיוון ההפוך (אם <math>2^n \equiv 2 \pmod{n}</math> אז <math>n</math> ראשוני) שגוי, ולכן ההשערה כולה שגויה. [[דוגמה נגדית|הדוגמה הנגדית]] הקטנה ביותר היא <math>n = 341 = 11\times31</math>. [[מספר פריק|מספרים פריקים]] <math>n</math> שעבורם <math>2^n-2</math> מתחלק ב-<math>n</math> נקראים מספרי פולה. הם סוג מיוחד של [[מספר פסאודו-ראשוני|פסאודו-ראשוניים של פרמה]].
+
+'''למה 341 היא דוגמה נגדית (הסבר נוסף).''' נבדוק מודולו כל אחד מהגורמים. מודולו 11: לפי פרמה <math>2^{10} \equiv 1</math>, ו-<math>341 = 34 \cdot 10 + 1</math>, ולכן <math>2^{341} \equiv 2</math>. מודולו 31: <math>2^5 = 32 \equiv 1</math>, ו-<math>341 = 68 \cdot 5 + 1</math>, ולכן <math>2^{341} \equiv 2</math>. מכיוון ש-11 ו-31 זרים, לפי [[משפט השאריות הסיני]] <math>2^{341} \equiv 2 \pmod{341}</math>, אף ש-341 פריק. (בחישוב ישיר, 341 הוא אכן המספר הפריק הקטן ביותר עם התכונה הזו.)
+
+== היסטוריה ==
+בעבר, ולפעמים עד היום, חשבו בטעות שמקורה של ההשערה הסינית בסין העתיקה. למעשה, היא מקורה באמצע המאה ה-19, בעבודתו של המתמטיקאי לי שאנלאן (1811–1882) מתקופת [[שושלת צ'ינג]].{{הערה|שם=rib|1=P. Ribenboim, The Little Book of Bigger Primes, Springer, 2006, עמ' 88–89|כיווון=שמאל}} מאוחר יותר הוא נודע לכך שהטענה שלו שגויה והסיר אותה מעבודותיו הבאות, אבל זה לא הספיק כדי למנוע מהטענה השגויה להופיע במקומות אחרים בשמו.{{הערה|שם=rib}} תרגום שגוי מאוחר יותר, בעבודה של ג'ינס מ-1898, תיארך את ההשערה לימי קונפוציוס, והוליד את המיתוס על המקור העתיק.{{הערה|שם=rib}}{{הערה|1=J. Needham (בשיתוף Wang Ling), Science and Civilisation in China, כרך 3: Mathematics and the Sciences of the Heavens and the Earth, Cambridge University Press, 1959, עמ' 54 (הערה d)|כיווון=שמאל}}
+
+== לקריאה נוספת ==
+* L. E. Dickson, History of the Theory of Numbers, Vol. 1: Divisibility and Primality, Dover, 2005
+* P. Erdős, On the Converse of Fermat's Theorem, American Mathematical Monthly 56 (9), 1949, עמ' 623–624, {{DOI|10.2307/2304732}}
+* R. Honsberger, An Old Chinese Theorem and Pierre de Fermat, בתוך: Mathematical Gems I, Math. Assoc. Amer., 1973, עמ' 1–9
+* J. H. Jeans, The converse of Fermat's theorem, Messenger of Mathematics 27, 1898, עמ' 174
+* J. Needham, Science and Civilisation in China, Vol. 3, פרק 19, Cambridge University Press, 1959
+* Han Qi, Transmission of Western Mathematics during the Kangxi Kingdom and Its Influence Over Chinese Mathematics, עבודת דוקטורט, בייג'ינג, 1991
+* P. Ribenboim, The New Book of Prime Number Records, Springer, 1996, עמ' 103–105
+* D. Shanks, Solved and Unsolved Problems in Number Theory, מהדורה רביעית, Chelsea, 1993, עמ' 19–20
+* Li Yan, Du Shiran, Chinese Mathematics: A Concise History, תרגום J. N. Crossley ו-A. W.-C. Lun, Clarendon Press, 1987
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:השערות מתמטיות]]
