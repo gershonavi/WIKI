@@ -145,7 +145,7 @@ Additive number theory:
 - [x] Mordell–Weil group
 - [x] Hasse's theorem on elliptic curves
 - [x] Nagell–Lutz theorem
-- [ ] Mazur's torsion theorem
+- [x] Mazur's torsion theorem (הפניה ל-Torsion conjecture: השערת הפיתול)
 - [ ] Supersingular elliptic curve
 - [ ] Counting points on elliptic curves
 - [ ] Schoof's algorithm
