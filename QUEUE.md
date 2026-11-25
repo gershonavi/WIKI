@@ -30,7 +30,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Clausen function
 - [x] Landau prime ideal theorem
 - [x] Rosser's theorem
-- [ ] Wolstenholme's theorem
+- [x] Wolstenholme's theorem
 - [ ] Proof of Bertrand's postulate
 - [ ] Brun's theorem
 - [ ] Green–Tao theorem
