@@ -32,15 +32,15 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Rosser's theorem
 - [x] Wolstenholme's theorem
 - [ ] Proof of Bertrand's postulate
-- [ ] Brun's theorem
+- [x] Brun's theorem (קיים בוויקיפדיה העברית: קבוע ברון)
 - [ ] Green–Tao theorem
-- [ ] Twin prime conjecture
+- [x] Twin prime conjecture (קיים בוויקיפדיה העברית: השערת המספרים הראשוניים התאומים)
 - [x] Polignac's conjecture
 - [ ] First Hardy–Littlewood conjecture
 - [x] Andrica's conjecture
 - [x] Legendre's three-square theorem
-- [ ] Sum of two squares theorem
-- [ ] Multiplicative function
+- [x] Sum of two squares theorem (קיים בוויקיפדיה העברית: סכום של שני ריבועים)
+- [x] Multiplicative function (קיים בוויקיפדיה העברית: פונקציה אריתמטית)
 - [ ] Completely multiplicative function
 - [x] Deuring–Heilbronn phenomenon
 - [x] Semiprime
