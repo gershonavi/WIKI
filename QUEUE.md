@@ -47,7 +47,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Ernst Meissel
 
 ## שאר הרשימה
-Analytic number theory: Effective results in number theory; Hecke operator; Mahler measure; Transcendental number theory; Abstract analytic number theory; Degen's eight-square identity; Classical modular curve; Real analytic Eisenstein series; E-function; Bombieri norm; Constant problem; Herglotz–Zagier function; Siegel G-function; Van der Corput's method; Maier's matrix method; Pfister's sixteen-square identity; Determinant method; Rank of an elliptic curve; Voronoi formula; Heilbronn set; Dirichlet series inversion; Newman's conjecture; Centered polygonal number theorem; Partial Euler Product
+Analytic number theory: Effective results in number theory; Hecke operator; Mahler measure; Transcendental number theory; Abstract analytic number theory; Classical modular curve; Real analytic Eisenstein series; E-function; Bombieri norm; Constant problem; Herglotz–Zagier function; Siegel G-function; Van der Corput's method; Maier's matrix method; Determinant method; Rank of an elliptic curve; Voronoi formula; Dirichlet series inversion; Partial Euler Product
 Arithmetic functions: Integer sequence; Rank of a partition; Crank of a partition; Lowest common divisor; Greatest common multiple
 Primes: Mersenne conjectures; Chinese hypothesis; Waring's prime number conjecture; Waring–Goldbach problem; Agrawal's conjecture; Fortune's conjecture; Sister Beiter conjecture; Near-square prime conjecture; Vantieghems theorem; Erdős–Delange theorem
 
