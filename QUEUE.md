@@ -50,7 +50,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 Analytic number theory:
 Arithmetic functions:
 
-Zeta and L-functions: List of zeta functions; Subgroup growth; Local Langlands conjectures; Shimura variety; Equivariant L-function; P-adic L-function; Eichler–Shimura congruence relation; Motivic L-function; Langlands–Deligne local constant; Automorphic L-function; Standard L-function; Shimizu L-function; Waldspurger's theorem; Gan–Gross–Prasad conjecture
+Zeta and L-functions: List of zeta functions; Subgroup growth; Local Langlands conjectures; Shimura variety; Equivariant L-function; P-adic L-function; Motivic L-function; Langlands–Deligne local constant; Automorphic L-function; Standard L-function; Gan–Gross–Prasad conjecture
 
 
 Sieve theory and theorems:

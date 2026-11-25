@@ -1,0 +1,20 @@
+ב[[מתמטיקה]], '''פונקציית ה-L של שימיזו''', שהוצגה על ידי הידאו שימיזו ב-1963,{{הערה|1=H. Shimizu, ''On discontinuous groups operating on the product of the upper half planes'', Annals of Mathematics '''77''' (1963), no. 1, pp. 33–71|כיווון=שמאל}} היא [[טור דיריכלה]] המתאים ל[[שדה מספרים]] ממשי לחלוטין. אטיה, דונלי וזינגר (1983){{הערה|1=M. F. Atiyah, H. Donnelly, I. M. Singer, ''Eta invariants, signature defects of cusps, and values of L-functions'', Annals of Mathematics (2) '''118''' (1983), no. 1, pp. 131–177|כיווון=שמאל}} הגדירו את פגם הסיגנטורה של השפה של יריעה בעזרת '''אינווריאנט אטא''', הערך ב-<math>s = 0</math> של פונקציית האטא שלהם, והשתמשו בכך כדי להראות שפגם הסיגנטורה של הירצברוך של חוד של משטח מודולרי של הילברט ניתן לביטוי בעזרת הערך של פונקציית L של שימיזו ב-<math>s = 0</math> או ב-<math>s = 1</math>.
+
+== הגדרה ==
+נניח ש-<math>K</math> הוא שדה מספרים ממשי לחלוטין, <math>M</math> הוא סריג בשדה, ו-<math>V</math> היא תת-חבורה מדרגה מקסימלית של חבורת היחידות החיוביות לחלוטין ששומרות על הסריג. טור ה-L של שימיזו נתון על ידי
+
+:<math>L(M,V,s) = \sum_{\mu\in (M\setminus\{0\})/V} \frac{\mathrm{sign}\, N(\mu)}{|N(\mu)|^s},</math>
+
+כאשר <math>N(\mu)</math> היא הנורמה של <math>\mu</math>. (הסכום הוא על מסלולי הפעולה של <math>V</math> על האיברים השונים מאפס של <math>M</math>; כיוון שהיחידות ב-<math>V</math> חיוביות לחלוטין, הנורמה והסימן שלה קבועים על כל מסלול.)
+
+הגורם <math>\mathrm{sign}\,N(\mu)</math> הופך את הטור ל"אי-זוגי": עבור שדה ריבועי ממשי, למשל, האיברים בעלי נורמה חיובית ובעלי נורמה שלילית נספרים בסימנים הפוכים.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* M. F. Atiyah, H. Donnelly, I. M. Singer, ''Geometry and analysis of Shimizu L-functions'', Proceedings of the National Academy of Sciences of the USA '''79''' (1982), no. 18, p. 5751
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]

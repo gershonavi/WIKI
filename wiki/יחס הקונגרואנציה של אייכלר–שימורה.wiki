@@ -1,0 +1,37 @@
+ב[[תורת המספרים]], '''יחס הקונגרואנציה של אייכלר–שימורה''' מבטא את [[פונקציית זטא מקומית|פונקציית ה-L המקומית]] של עקום מודולרי בראשוני <math>p</math> בעזרת הערכים העצמיים של [[אופרטור הקה|אופרטורי הקה]]. הוא הוצג על ידי מרטין אייכלר (1954) והוכלל על ידי [[גורו שימורה]] (1958). (אין לבלבל אותו עם איזומורפיזם אייכלר–שימורה.) בקירוב, הוא אומר שההתאמה על העקום המודולרי שמשרה את אופרטור הקה <math>T_p</math> קונגרואנטית מודולו <math>p</math> לסכום של העתקת פרובניוס <math>\mathrm{Frob}</math> והמשוחלפת שלה <math>\mathrm{Ver}</math>. במילים אחרות,
+
+:<math>T_p = \mathrm{Frob} + \mathrm{Ver}</math>
+
+כאנדומורפיזמים של היעקוביאן <math>J_0(N)_{\mathbb F_p}</math> של העקום המודולרי <math>X_0(N)</math> מעל השדה הסופי <math>\mathbb F_p</math> (עבור <math>p \nmid N</math>).
+
+יחס הקונגרואנציה של אייכלר–שימורה וההכללות שלו ליריעות שימורה ממלאים תפקיד מרכזי ב[[תוכנית לנגלנדס]]: הם מזהים חלק מ[[פונקציית זטא של האסה–וייל|פונקציית הזטא של האסה–וייל]] של עקום מודולרי, או של יריעה מודולרית כללית יותר, עם מכפלה של [[התמרת מלין|התמרות מלין]] של [[תבנית מודולרית|תבניות מודולריות]] ממשקל 2, או עם מכפלה של פונקציות L אוטומורפיות מקבילות.
+
+== מה נובע מהיחס ==
+אם <math>f = \sum a_n q^n</math> היא תבנית עצמית מנורמלת ממשקל 2 עבור <math>\Gamma_0(N)</math> עם מקדמים שלמים, ו-<math>E</math> הוא העקום האליפטי שמתאים לה (מנה של <math>J_0(N)</math>), אז מהיחס נובע ש-<math>a_p</math> הוא העקבה של פרובניוס על <math>E</math> מודולו <math>p</math>, כלומר
+
+:<math>a_p = p + 1 - \#E(\mathbb F_p)\qquad (p \nmid N).</math>
+
+כך פונקציית ה-L של התבנית המודולרית, <math>L(f, s) = \sum a_n n^{-s}</math>, שווה לפונקציית ה-L של העקום האליפטי – וזה מה שנותן לה המשכה אנליטית ומשוואת פונקציה (ראו [[משפט המודולריות]]).
+
+=== דוגמה: <math>N = 11</math> ===
+התבנית <math>f = q\prod_{n\ge1}(1-q^n)^2(1-q^{11n})^2 = q - 2q^2 - q^3 + 2q^4 + q^5 + \cdots</math> היא התבנית החודית היחידה (עד כדי כפל בקבוע) ממשקל 2 עבור <math>\Gamma_0(11)</math>, והיעקוביאן <math>J_0(11)</math> הוא העקום האליפטי <math>E: y^2 + y = x^3 - x^2 - 10x - 20</math>. ספירת נקודות מאשרת את היחס:
+
+{| class="wikitable" style="text-align:center"
+! <math>p</math> !! 2 !! 3 !! 5 !! 7 !! 13 !! 17 !! 19
+|-
+| <math>a_p</math> (מהתבנית) || −2 || −1 || 1 || −2 || 4 || −2 || 0
+|-
+| <math>p+1-\#E(\mathbb F_p)</math> || −2 || −1 || 1 || −2 || 4 || −2 || 0
+|}
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* M. Eichler, ''Quaternäre quadratische Formen und die Riemannsche Vermutung für die Kongruenzzetafunktion'', Archiv der Mathematik '''5''' (1954), no. 4–6, pp. 355–366
+* I. Piatetski-Shapiro, ''Zeta functions of modular curves'', in: Modular Functions of One Variable II, Lecture Notes in Mathematics '''349''', Springer, 1973, pp. 317–360
+* G. Shimura, ''Correspondances modulaires et les fonctions ζ de courbes algébriques'', Journal of the Mathematical Society of Japan '''10''' (1958), pp. 1–28
+* G. Shimura, ''Introduction to the Arithmetic Theory of Automorphic Functions'', Publications of the Mathematical Society of Japan '''11''', 1971
+</div>
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:משפטים בתורת המספרים]]
