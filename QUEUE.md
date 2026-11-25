@@ -137,7 +137,7 @@ Additive number theory:
 - [x] Cyclotomic unit
 - [ ] Cyclotomic character
 - [x] Hilbert–Speiser theorem
-- [ ] Thaine's theorem
+- [x] Thaine's theorem
 
 ### עקומים אליפטיים (24)
 

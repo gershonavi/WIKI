@@ -1,0 +1,51 @@
+ב[[תורת המספרים]], '''קרקטר ציקלוטומי''' הוא [[קרקטר (מתמטיקה)|קרקטר]] של [[חבורת גלואה]] שנותן את ה[[פעולת חבורה|פעולה]] של חבורת הגלואה על [[חבורה (מבנה אלגברי)|חבורה]] של [[שורש יחידה|שורשי יחידה]]. כ[[הצגה של חבורה|הצגה]] חד-ממדית מעל [[חוג (מבנה אלגברי)|חוג]] <math>R</math>, מרחב ההצגה שלו מסומן בדרך כלל <math>R(1)</math> (כלומר, זו הצגה <math>\chi : G \to \mathrm{Aut}_R(R(1)) \cong GL(1, R)</math>).
+
+== הקרקטר הציקלוטומי ה-p-אדי ==
+נקבע [[מספר ראשוני]] <math>p</math>, ונסמן ב-<math>G_{\mathbb Q}</math> את [[חבורת גלואה מוחלטת|חבורת הגלואה המוחלטת]] של ה[[מספר רציונלי|מספרים הרציונליים]]. שורשי היחידה
+:<math>\mu_{p^n} = \{\zeta \in \bar{\mathbb Q}^\times : \zeta^{p^n} = 1\}</math>
+יוצרים [[חבורה ציקלית]] מסדר <math>p^n</math>, שנוצרת על ידי כל בחירה של שורש יחידה פרימיטיבי <math>\zeta_{p^n}</math> מסדר <math>p^n</math>.
+
+כיוון שכל השורשים הפרימיטיביים ב-<math>\mu_{p^n}</math> צמודים זה לזה, חבורת הגלואה <math>G_{\mathbb Q}</math> פועלת על <math>\mu_{p^n}</math> באוטומורפיזמים. אחרי שקובעים שורש יחידה פרימיטיבי <math>\zeta_{p^n}</math>, כל איבר <math>\zeta \in \mu_{p^n}</math> אפשר לכתוב כחזקה של <math>\zeta_{p^n}</math>, עם מעריך יחיד ב-<math>\mathbb Z/p^n\mathbb Z</math>, שהוא הפיך אם <math>\zeta</math> פרימיטיבי. לכן אפשר לכתוב, לכל <math>\sigma \in G_{\mathbb Q}</math>,
+:<math>\sigma(\zeta) = \zeta^{a(\sigma, n)},</math>
+עם <math>a(\sigma, n) \in (\mathbb Z/p^n\mathbb Z)^\times</math> שאינו תלוי ב-<math>\zeta</math>, אלא רק ב-<math>\sigma</math>, ב-<math>p</math> וב-<math>n</math>. זה מגדיר [[הומומורפיזם של חבורות]] שנקרא '''הקרקטר הציקלוטומי מודולו <math>p^n</math>''':
+:<math>\chi_{p^n} : G_{\mathbb Q} \to (\mathbb Z/p^n\mathbb Z)^\times, \qquad \sigma \mapsto a(\sigma, n),</math>
+שנחשב לקרקטר כי הפעולה מתאימה להומומורפיזם <math>G_{\mathbb Q} \to \mathrm{Aut}(\mu_{p^n}) \cong (\mathbb Z/p^n\mathbb Z)^\times \cong GL_1(\mathbb Z/p^n\mathbb Z)</math>.
+
+כשקובעים את <math>p</math> ואת <math>\sigma</math> ומשנים את <math>n</math>, המספרים <math>a(\sigma, n)</math> יוצרים מערכת תואמת, במובן שהם נותנים איבר של ה[[גבול הפוך|גבול ההפוך]]
+:<math>\varprojlim_n (\mathbb Z/p^n\mathbb Z)^\times \cong \mathbb Z_p^\times,</math>
+היחידות בחוג ה[[מספר p-אדי|שלמים ה-p-אדיים]]. כך הקרקטרים <math>\chi_{p^n}</math> מתאחדים להומומורפיזם שנקרא '''הקרקטר הציקלוטומי ה-<math>p</math>-אדי''':
+:<math>\chi_p : G_{\mathbb Q} \to \mathbb Z_p^\times \cong GL_1(\mathbb Z_p), \qquad \sigma \mapsto (a(\sigma, n))_n,</math>
+שמקודד את הפעולה של <math>G_{\mathbb Q}</math> על כל שורשי היחידה מסדר חזקת <math>p</math> בבת אחת. למעשה, כש-<math>G_{\mathbb Q}</math> מצוידת בטופולוגיית קרול ו-<math>\mathbb Z_p</math> בטופולוגיה ה-<math>p</math>-אדית, זו הצגה רציפה של [[חבורה טופולוגית]].
+
+'''דוגמאות.'''
+* ל[[הצמדה מרוכבת]] <math>c</math>: <math>c(\zeta) = \bar\zeta = \zeta^{-1}</math>, ולכן <math>\chi_p(c) = -1</math>.
+* ל-<math>p = 5</math>, <math>n = 1</math>: הקרקטר <math>\chi_5</math> מזדהה עם האיזומורפיזם <math>\mathrm{Gal}(\mathbb Q(\zeta_5)/\mathbb Q) \cong (\mathbb Z/5)^\times</math>. הגרעין שלו הוא <math>G_{\mathbb Q(\zeta_5)}</math>, והתמונה כל <math>(\mathbb Z/5)^\times</math>.
+* התמונה של <math>\chi_p</math> היא כל <math>\mathbb Z_p^\times</math> – זו אי-הפריקות של [[פולינום ציקלוטומי|הפולינומים הציקלוטומיים]] <math>\Phi_{p^n}</math> לכל <math>n</math>.
+
+== כמערכת תואמת של הצגות ℓ-אדיות ==
+כשמשנים את <math>\ell</math> על כל המספרים הראשוניים, מתקבלת מהקרקטרים הציקלוטומיים ה-<math>\ell</math>-אדיים '''מערכת תואמת של הצגות ℓ-אדיות''' (כשעוסקים במערכות תואמות, נהוג לסמן ראשוני ב-<math>\ell</math> במקום <math>p</math>). כלומר, <math>\chi = \{\chi_\ell\}_\ell</math> היא "משפחה" של [[הצגת גלואה|הצגות ℓ-אדיות]]
+:<math>\chi_\ell : G_{\mathbb Q} \to GL_1(\mathbb Z_\ell)</math>
+שמקיימות תאימויות מסוימות בין ראשוניים שונים. למעשה, <math>\chi_\ell</math> הן מערכת '''תואמת היטב''' (strictly compatible): לכל <math>p \ne \ell</math>, <math>\chi_\ell(\mathrm{Frob}_p) = p</math> – אותו מספר שלם, בלי תלות ב-<math>\ell</math>.
+
+== מימושים גאומטריים ==
+הקרקטר הציקלוטומי ה-<math>p</math>-אדי הוא '''מודול טייט''' ה-<math>p</math>-אדי של סכמת החבורה הכפלית <math>\mathbb G_{m,\mathbb Q}</math> מעל <math>\mathbb Q</math>. לכן אפשר לראות את מרחב ההצגה שלו כגבול ההפוך של החבורות של שורשי היחידה מסדר <math>p^n</math> ב-<math>\bar{\mathbb Q}</math>, <math>\mathbb Z_p(1) = \varprojlim\mu_{p^n}</math>, תחת העתקות ההעלאה בחזקת <math>p</math>.
+
+במונחי [[קוהומולוגיה אטאלית|קוהומולוגיה]], הקרקטר הציקלוטומי ה-<math>p</math>-אדי הוא הדואלי של חבורת הקוהומולוגיה האטאלית ה-<math>p</math>-אדית הראשונה של <math>\mathbb G_m</math>. אפשר למצוא אותו גם בקוהומולוגיה האטאלית של [[יריעה פרויקטיבית]], כלומר של [[ישר פרויקטיבי|הישר הפרויקטיבי]]: הוא הדואלי של <math>H^2_{\text{ét}}(\mathbb P^1)</math>.
+
+במונחי [[מוטיב (גאומטריה אלגברית)|מוטיבים]], הקרקטר הציקלוטומי ה-<math>p</math>-אדי הוא המימוש ה-<math>p</math>-אדי של '''מוטיב טייט''' <math>\mathbb Z(1)</math>. כמוטיב של גרותנדיק, מוטיב טייט הוא הדואלי של <math>H^2(\mathbb P^1)</math>.{{הערה|1=P. Deligne, ''Valeurs de fonctions L et périodes d'intégrales'', in: A. Borel, W. Casselman (eds.), ''Automorphic Forms, Representations, and L-Functions'', Proc. Sympos. Pure Math. '''33''', Part 2, AMS, 1979, section 3, p. 325|כיווון=שמאל}}
+
+== תכונות ==
+לקרקטר הציקלוטומי ה-<math>p</math>-אדי יש כמה תכונות נוחות:
+* הוא [[סיעוף (מתמטיקה)|לא מסועף]] בכל הראשוניים <math>\ell \ne p</math> (כלומר, [[חבורת סיעוף|חבורת האינרציה]] ב-<math>\ell</math> פועלת טריוויאלית).
+* אם <math>\mathrm{Frob}_\ell</math> [[איבר פרובניוס]] עבור <math>\ell \ne p</math>, אז <math>\chi_p(\mathrm{Frob}_\ell) = \ell</math>. (כי פרובניוס פועל על שורשי היחידה, מודולו ראשוני מעל <math>\ell</math>, כהעלאה בחזקת <math>\ell</math>.) למשל, ב-<math>\mathbb Q(\zeta_5)</math>, <math>\chi_5(\mathrm{Frob}_{11}) = 11 \equiv 1 \pmod 5</math>, ולכן 11 מתפצל לחלוטין ב-<math>\mathbb Q(\zeta_5)</math>.
+* הוא '''קריסטליני''' ב-<math>p</math> (תנאי מתורת ההודג' ה-p-אדית).
+
+== ראו גם ==
+* [[קרקטר טייכמילר]] – הרדוקציה של <math>\chi_p</math> מודולו <math>p</math>, מורמת חזרה לשורשי יחידה
+* [[הצגת גלואה]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:שדות ציקלוטומיים]]
