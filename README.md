@@ -7,7 +7,7 @@
 
 **הערה:** התרגומים נעשו בעזרת מכונה. כדאי לבדוק ולהגיה כל ערך לפני שמפרסמים אותו.
 
-## ערכים (87)
+## ערכים (88)
 
 ### אנליזה מרוכבת
 
@@ -92,6 +92,7 @@
 ### פונקציות זטא
 
 * [השערת הילברט-פוליה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%99%D7%9C%D7%91%D7%A8%D7%98-%D7%A4%D7%95%D7%9C%D7%99%D7%94.md) – Hilbert–Pólya conjecture
+* [השערת רימן המוכללת](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%9E%D7%95%D7%9B%D7%9C%D7%9C%D7%AA.md) – Generalized Riemann hypothesis
 * [נוסחאות מפורשות לפונקציות L](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%90%D7%95%D7%AA%20%D7%9E%D7%A4%D7%95%D7%A8%D7%A9%D7%95%D7%AA%20%D7%9C%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20L.md) – Explicit formulae for L-functions
 * [נוסחת רימן-זיגל](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%96%D7%99%D7%92%D7%9C.md) – Riemann–Siegel formula
 * [פונקציית Z](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20Z.md) – Z function
