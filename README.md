@@ -10,7 +10,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (116)
+## ערכים (119)
 
 ### אנליזה מרוכבת
 
@@ -41,6 +41,7 @@
 * [השערת אגו-ג'וגה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%92%D7%95-%D7%92%27%D7%95%D7%92%D7%94.md) – Agoh–Giuga conjecture
 * [השערת אופרמן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%95%D7%A4%D7%A8%D7%9E%D7%9F.md) – Oppermann's conjecture
 * [השערת ברוקאר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%95%D7%A7%D7%90%D7%A8.md) – Brocard's conjecture
+* [השערת גרים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%A8%D7%99%D7%9D.md)
 * [השערת למואן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9C%D7%9E%D7%95%D7%90%D7%9F.md) – Lemoine's conjecture
 * [השערת פירוזבח](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A4%D7%99%D7%A8%D7%95%D7%96%D7%91%D7%97.md) – Firoozbakht's conjecture
 * [משפט פרות](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%A8%D7%95%D7%AA.md) – Proth's theorem
@@ -105,6 +106,7 @@
 * [השערת קרמייקל על פונקציית אוילר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%9E%D7%99%D7%99%D7%A7%D7%9C%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8.md) – Carmichael's totient function conjecture
 * [טור בל](pages/%D7%98%D7%95%D7%A8%20%D7%91%D7%9C.md) – Bell series
 * [מחלק אוניטרי](pages/%D7%9E%D7%97%D7%9C%D7%A7%20%D7%90%D7%95%D7%A0%D7%99%D7%98%D7%A8%D7%99.md) – Unitary divisor
+* [משפט ארדש-וינטנר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%93%D7%A9-%D7%95%D7%99%D7%A0%D7%98%D7%A0%D7%A8.md)
 * [נגזרת אריתמטית](pages/%D7%A0%D7%92%D7%96%D7%A8%D7%AA%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic derivative
 * [סדר ממוצע של פונקציה אריתמטית](pages/%D7%A1%D7%93%D7%A8%20%D7%9E%D7%9E%D7%95%D7%A6%D7%A2%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Average order of an arithmetic function
 * [סדר נורמלי של פונקציה אריתמטית](pages/%D7%A1%D7%93%D7%A8%20%D7%A0%D7%95%D7%A8%D7%9E%D7%9C%D7%99%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Normal order of an arithmetic function
@@ -112,6 +114,7 @@
 * [סכום רמנוג'אן](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md) – Ramanujan's sum
 * [פונקציה אדיטיבית (תורת המספרים)](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99%D7%AA%20%28%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%29.md) – Additive function
 * [פונקציה כפלית לחלוטין](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%9B%D7%A4%D7%9C%D7%99%D7%AA%20%D7%9C%D7%97%D7%9C%D7%95%D7%98%D7%99%D7%9F.md) – Completely multiplicative function
+* [פונקציית הדלתא של הולי](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%94%D7%93%D7%9C%D7%AA%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%95%D7%9C%D7%99.md) – Hooley's delta function
 * [פונקציית מרטנס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Mertens function
 * [פונקציית פסי של דדקינד](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%A4%D7%A1%D7%99%20%D7%A9%D7%9C%20%D7%93%D7%93%D7%A7%D7%99%D7%A0%D7%93.md) – Dedekind psi function
 * [פונקציית צ'בישב](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%A6%27%D7%91%D7%99%D7%A9%D7%91.md) – Chebyshev function

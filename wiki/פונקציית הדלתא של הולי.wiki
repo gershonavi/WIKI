@@ -1,0 +1,31 @@
+ב[[מתמטיקה]], '''פונקציית הדלתא של הולי''' (ב[[אנגלית]]: Hooley's delta function), הנקראת גם '''פונקציית הדלתא של ארדש–הולי''', מחזירה עבור <math>n</math> את המספר המרבי של [[מחלק|מחלקים]] של <math>n</math> הנמצאים בקטע <math>[u, eu]</math>, על פני כל הערכים של <math>u</math>, כאשר <math>e</math> הוא [[E (קבוע מתמטי)|המספר e]]. מסמנים אותה בדרך כלל <math>\Delta(n)</math>:
+:<math>\Delta(n) = \max_{u > 0}\ \#\{d : d \mid n,\ u \le d \le eu\}.</math>
+האיברים הראשונים של הסדרה הם
+:<math>1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 3, 1, 2, 2, 2, 1, 2, 1, 3, 2, 2, 1, 4, \dots</math>
+{{OEIS|A226898}}.
+
+לדוגמה, המחלקים של 24 הם 1, 2, 3, 4, 6, 8, 12, 24. בקטע <math>[3, 3e] \approx [3, 8.15]</math> נמצאים ארבעה מהם: 3, 4, 6, 8, ואין קטע כזה עם חמישה מחלקים, ולכן <math>\Delta(24) = 4</math>. לעומת זאת, למספר ראשוני <math>p</math> יש רק שני מחלקים, 1 ו-<math>p</math>, והיחס ביניהם גדול מ-<math>e</math> (עבור <math>p \geq 3</math>), ולכן <math>\Delta(p) = 1</math>.
+
+== היסטוריה ==
+את הסדרה הציג לראשונה [[פאול ארדש]] ב-1974,{{הערה|1=P. Erdős, On abundant-like numbers, Canadian Mathematical Bulletin 17 (4), 1974, עמ' 599–602, {{DOI|10.4153/CMB-1974-108-5}}|כיווון=שמאל}} ולאחר מכן חקר אותה כריסטופר הולי ב-1979.{{הערה|1=C. Hooley, On a new technique and its applications to the theory of numbers, Proceedings of the London Mathematical Society (3) 38, 1979, עמ' 115–151, {{DOI|10.1112/plms/s3-38.1.115}}|כיווון=שמאל}}
+
+ב-2023 הוכיחו דימיטריס קוקולופולוס ו[[טרנס טאו]] ש-
+:<math>\sum_{k=1}^n \Delta(k) \ll n (\log \log n)^{11/4}</math>
+עבור <math>n \ge 100</math>.{{הערה|1=D. Koukoulopoulos, T. Tao, An upper bound on the mean value of the Erdős–Hooley Delta function, Proceedings of the London Mathematical Society 127 (6), 2023, עמ' 1865–1885, {{DOI|10.1112/plms.12572}}|כיווון=שמאל}} בפרט, ה[[סדר ממוצע של פונקציה אריתמטית|סדר הממוצע]] של <math>\Delta(n)</math> קטן מכל חזקה חיובית של <math>\log n</math>.
+
+ב-2024 הוכיחו [[קווין פורד]], קוקולופולוס וטאו את החסם התחתון
+:<math>\sum_{k=1}^n \Delta(k) \gg n (\log \log n)^{1+\eta-\epsilon},</math>
+כאשר <math>\epsilon > 0</math> קבוע, <math>\eta=0.3533227\ldots</math>, ו-<math>n \geq 100</math>.{{הערה|1=K. Ford, D. Koukoulopoulos, T. Tao, A lower bound on the mean value of the Erdős–Hooley Delta function, Proceedings of the London Mathematical Society 129 (1), 2024, {{DOI|10.1112/plms.12618}}|כיווון=שמאל}}
+
+== שימוש ==
+הפונקציה מודדת את הנטייה של המחלקים של מספר להתקבץ זה ליד זה.
+
+הגידול של הסדרה מוגבל על ידי <math>\Delta(mn) \leq \Delta(n)\, d(m)</math>, כאשר <math>d(m)</math> הוא [[פונקציית מחלקים|מספר המחלקים]] של <math>m</math>.{{הערה|1=C. R. Greathouse, [https://oeis.org/A226898 Sequence A226898], OEIS|כיווון=שמאל}}
+
+== ראו גם ==
+* [[פונקציית מחלקים]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]
