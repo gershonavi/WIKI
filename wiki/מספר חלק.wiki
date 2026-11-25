@@ -1,0 +1,69 @@
+ב[[תורת המספרים]], '''מספר <math>n</math>-חלק''' (באנגלית: n-smooth number, ולעיתים גם n-friable) הוא [[מספר שלם]] שכל [[גורם ראשוני|גורמיו הראשוניים]] קטנים מ-<math>n</math> או שווים לו.{{הערה|שם=mw|1=Eric W. Weisstein, [https://mathworld.wolfram.com/SmoothNumber.html Smooth Number], MathWorld|כיווון=שמאל}} למשל, מספר 7-חלק הוא מספר שכל גורם ראשוני שלו הוא לכל היותר 7. לכן <math>49 = 7^2</math> ו-<math>15750 = 2 \times 3^2 \times 5^3 \times 7</math> הם 7-חלקים, ואילו 11 ו-<math>702 = 2 \times 3^3 \times 13</math> אינם 7-חלקים. נראה שאת המונח טבע [[לאונרד אדלמן]].{{הערה|1=M. E. Hellman and J. M. Reyneri, ''Fast computation of discrete logarithms in GF(q)'', Advances in Cryptology – Proceedings of Crypto 82 (1983), pp. 3–13, {{DOI|10.1007/978-1-4757-0602-4_1}}|כיווון=שמאל}} למספרים חלקים חשיבות מיוחדת ב[[קריפטוגרפיה]], הנשענת על פירוק מספרים שלמים לגורמים. המספרים ה-2-חלקים הם פשוט [[חזקה של שתיים|חזקות של 2]], והמספרים ה-5-חלקים ידועים גם כ"מספרים רגולריים".
+
+== הגדרה ==
+מספר שלם [[מספר חיובי|חיובי]] נקרא '''<math>B</math>-חלק''' אם אף אחד מגורמיו הראשוניים אינו גדול מ-<math>B</math>. למשל, הפירוק לגורמים ראשוניים של 1,620 הוא <math>2^2 \times 3^4 \times 5</math>, ולכן 1,620 הוא 5-חלק, כי אף אחד מגורמיו הראשוניים אינו גדול מ-5. ההגדרה כוללת גם מספרים שחסרים להם חלק מהגורמים הראשוניים הקטנים; למשל, 10 ו-12 הם 5-חלקים, אף שחסר בהם הגורם 3 או הגורם 5, בהתאמה. כל המספרים ה-5-חלקים הם מהצורה <math>2^a \times 3^b \times 5^c</math>, כאשר <math>a</math>, <math>b</math> ו-<math>c</math> שלמים אי-שליליים.
+
+המספרים ה-3-חלקים נקראו גם "מספרים הרמוניים",{{הערה|1=[https://oeis.org/A003586 סדרה A003586] ב-OEIS: 3-smooth numbers|כיווון=שמאל}} אף שלשם זה יש משמעויות נפוצות יותר, בעיקר סכומי ההופכיים של המספרים הטבעיים (ראו [[הסדרה ההרמונית]]). המספרים ה-5-חלקים נקראים גם מספרי המינג, והמספרים ה-7-חלקים נקראים לעיתים "מספרים צנועים" (humble numbers).
+
+אין צורך ש-<math>B</math> עצמו יופיע בין גורמי מספר <math>B</math>-חלק. אם הגורם הראשוני הגדול ביותר של מספר הוא <math>p</math>, המספר הוא <math>B</math>-חלק לכל <math>B \ge p</math>. במקרים רבים <math>B</math> ראשוני, אך מותר גם [[מספר פריק]]. מספר הוא <math>B</math>-חלק [[אם ורק אם]] הוא <math>p</math>-חלק, כאשר <math>p</math> הוא הראשוני הגדול ביותר שאינו גדול מ-<math>B</math>.
+
+== שימושים ==
+שימוש מעשי חשוב במספרים חלקים הוא באלגוריתמים של [[התמרת פורייה מהירה]] (כמו אלגוריתם קולי-טוקי), הפועלים על ידי פירוק רקורסיבי של בעיה בגודל <math>n</math> לבעיות בגודל הגורמים של <math>n</math>. כאשר משתמשים בגדלים <math>B</math>-חלקים, מקרי הבסיס של הרקורסיה הם ראשוניים קטנים, שעבורם יש אלגוריתמים יעילים.
+
+למספרים ה-5-חלקים (המספרים הרגולריים) תפקיד מיוחד ב[[מתמטיקה בבבל העתיקה|מתמטיקה הבבלית]].{{הערה|1=Asger Aaboe, ''Some Seleucid mathematical tables (extended reciprocals and squares of regular numbers)'', Journal of Cuneiform Studies '''19''' (1965), no. 3, pp. 79–86, {{DOI|10.2307/1359089}}|כיווון=שמאל}} הם חשובים גם ב[[תורת המוזיקה]],{{הערה|1=H. C. Longuet-Higgins, ''Letter to a musical friend'', Music Review (August 1962), pp. 244–248|כיווון=שמאל}} ובעיית היצירה היעילה שלהם שימשה כבעיית מבחן ב[[תכנות פונקציונלי]].{{הערה|1=Edsger W. Dijkstra, [http://www.cs.utexas.edu/users/EWD/ewd07xx/EWD792.PDF Hamming's exercise in SASL], Report EWD792, 1981|כיווון=שמאל}} במוזיקה, כוונון "p-limit" הוא קבוצת ה[[מרווח (מוזיקה)|מרווחים]] שהם יחסים בין שני מספרים <math>p</math>-חלקים.{{הערה|1=David Wright, ''Mathematics and Music'', Mathematical World 28, American Mathematical Society, Providence, R.I., 2009, p. 137|כיווון=שמאל}}
+
+למספרים חלקים כמה שימושים בקריפטוגרפיה.{{הערה|1=David Naccache and Igor Shparlinski, ''Divisibility, smoothness and cryptographic applications'', 2008, [https://arxiv.org/abs/0810.2067 arXiv:0810.2067]|כיווון=שמאל}} רוב השימושים נוגעים ל[[קריפטואנליזה]], למשל באלגוריתמים המהירים ביותר הידועים ל[[פירוק לגורמים|פירוק מספרים לגורמים]], כמו [[נפת שדה המספרים הכללית]]. פונקציית הגיבוב VSH היא דוגמה לשימוש בונה בחלקות לקבלת תכן בטוח שניתן להוכחה.
+
+== התפלגות ==
+נסמן ב-<math>\Psi(x,y)</math> את מספר השלמים ה-<math>y</math>-חלקים שאינם גדולים מ-<math>x</math> (פונקציית דה בראון).
+
+אם חסם החלקות <math>B</math> קבוע וקטן, יש הערכה טובה ל-<math>\Psi(x,B)</math>:
+
+:<math>\Psi(x,B) \sim \frac{1}{\pi(B)!} \prod_{p\le B}\frac{\log x}{\log p},</math>
+
+כאשר <math>\pi(B)</math> הוא [[פונקציית המספרים הראשוניים|מספר הראשוניים]] שאינם גדולים מ-<math>B</math>.
+
+אחרת, מגדירים את הפרמטר <math>u = \log x / \log y</math>, כלומר <math>x = y^u</math>. אז
+
+:<math>\Psi(x,y) = x\cdot \rho(u) + O\left(\frac{x}{\log y}\right),</math>
+
+כאשר <math>\rho(u)</math> היא [[פונקציית דיקמן]].
+
+לכל <math>k</math>, כמעט כל המספרים הטבעיים אינם <math>k</math>-חלקים.
+
+אם <math>n=n_1 n_2</math>, כאשר <math>n_1</math> הוא <math>B</math>-חלק ו-<math>n_2</math> אינו כזה (או שווה ל-1), אז <math>n_1</math> נקרא החלק ה-<math>B</math>-חלק של <math>n</math>. ידוע שהגודל היחסי של החלק ה-<math>x^{1/u}</math>-חלק של שלם אקראי שאינו גדול מ-<math>x</math> דועך לאט הרבה יותר מ-<math>\rho(u)</math>.{{הערה|1=Taechan Kim and Mehdi Tibouchi, ''Invalid curve attacks in a GLS setting'', in: ''Advances in Information and Computer Security – IWSEC 2015'', Lecture Notes in Computer Science 9241, Springer, 2015, pp. 41–55, {{DOI|10.1007/978-3-319-22425-1_3}}|כיווון=שמאל}}
+
+== מספרים חלקים-בחזקות ==
+מספר <math>m</math> נקרא '''<math>n</math>-חלק-בחזקות''' (powersmooth) אם כל חזקה של ראשוני <math>p^{\nu}</math> המחלקת את <math>m</math> מקיימת
+
+:<math>p^{\nu} \leq n.</math>
+
+למשל, <math>720 = 2^4 \times 3^2 \times 5</math> הוא 5-חלק, אך אינו 5-חלק-בחזקות (כי יש בו חזקות של ראשוניים הגדולות מ-5, כמו <math>3^2 = 9</math> ו-<math>2^4 = 16</math>). הוא 16-חלק-בחזקות, כי חזקת הראשוני הגדולה ביותר בו היא <math>2^4 = 16</math>, וכן הוא 17-חלק-בחזקות, 18-חלק-בחזקות וכן הלאה.
+
+בניגוד למספרים <math>n</math>-חלקים, לכל <math>n</math> חיובי יש רק מספר סופי של מספרים <math>n</math>-חלקים-בחזקות. למעשה, המספרים ה-<math>n</math>-חלקים-בחזקות הם בדיוק המחלקים החיוביים של [[המכפלה המשותפת המינימלית|הכפולה המשותפת הקטנה ביותר]] של <math>1, 2, \ldots, n</math> (סדרה [https://oeis.org/A003418 A003418] ב-OEIS). למשל, המספרים ה-9-חלקים-בחזקות (וגם ה-10-חלקים-בחזקות) הם בדיוק המחלקים החיוביים של 2520.
+
+למספרים חלקים ולמספרים חלקים-בחזקות יש שימושים בתורת המספרים, למשל ב[[אלגוריתם p-1 של פולארד|אלגוריתם p−1 של פולארד]] וב[[אלגוריתם לנסטרה לפירוק בעקומים אליפטיים|שיטת העקומים האליפטיים של לנסטרה]]. כאשר אומרים שיישומים כאלה עובדים עם "מספרים חלקים" בלי לציין <math>n</math>, הכוונה היא שהמספרים צריכים להיות <math>n</math>-חלקים-בחזקות עבור <math>n</math> קטן כלשהו. ככל ש-<math>n</math> גדל, ביצועי האלגוריתם יורדים במהירות. למשל, זמן הריצה של [[אלגוריתם פוליג-הלמן]] לחישוב [[לוגריתם דיסקרטי|לוגריתמים דיסקרטיים]] הוא <math>O(n^{1/2})</math> עבור [[חבורה (מבנה אלגברי)|חבורות]] שה[[סדר (תורת החבורות)|סדר]] שלהן <math>n</math>-חלק.
+
+== חלקות מעל קבוצה ==
+אומרים ש-<math>m</math> חלק מעל [[קבוצה (מתמטיקה)|קבוצה]] <math>A</math> אם יש פירוק של <math>m</math> לגורמים שהם חזקות של איברי <math>A</math>. למשל, מאחר ש-<math>12 = 4 \times 3</math>, המספר 12 חלק מעל הקבוצות <math>A_1 = \{4, 3\}</math>, <math>A_2 = \{2, 3\}</math> ו-<math>\mathbb{Z}</math>, אך אינו חלק מעל <math>A_3 = \{3, 5\}</math>, כי 12 מכיל את הגורם <math>4 = 2^2</math>, ולא 4 ולא 2 נמצאים ב-<math>A_3</math>.
+
+הקבוצה <math>A</math> אינה חייבת להיות קבוצה של גורמים ראשוניים, אך בדרך כלל היא [[תת-קבוצה]] ממשית של הראשוניים, כמו "בסיס הגורמים" ב[[שיטת הפירוק של דיקסון]] וב[[הנפה הריבועית]]. גם [[נפת שדה המספרים הכללית]] בונה בצורה דומה את מושג החלקות שלה, תחת ה[[הומומורפיזם]] <math>\varphi:\mathbb{Z}[\theta]\to\mathbb{Z}/n\mathbb{Z}</math>.{{הערה|1=Matthew E. Briggs, [https://personal.math.vt.edu/brown/doc/briggs_gnfs_thesis.pdf An Introduction to the General Number Field Sieve], Virginia Polytechnic Institute and State University, 1998|כיווון=שמאל}}
+
+== ראו גם ==
+* [[פונקציית דיקמן]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. Tenenbaum, ''Introduction to Analytic and Probabilistic Number Theory'', AMS, 2015
+* A. Granville, [http://www.dms.umontreal.ca/~andrew/PDF/msrire.pdf Smooth numbers: computational number theory and beyond], Proceedings of the MSRI workshop, 2008
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} Eric W. Weisstein, [https://mathworld.wolfram.com/SmoothNumber.html Smooth Number], באתר MathWorld
+* סדרות של מספרים <math>B</math>-חלקים ב-OEIS: 2-חלקים [https://oeis.org/A000079 A000079], 3-חלקים [https://oeis.org/A003586 A003586], 5-חלקים [https://oeis.org/A051037 A051037], 7-חלקים [https://oeis.org/A002473 A002473], 11-חלקים [https://oeis.org/A051038 A051038], 13-חלקים [https://oeis.org/A080197 A080197]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:סדרות של שלמים]]

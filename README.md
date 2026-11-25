@@ -7,7 +7,7 @@
 
 **הערה:** התרגומים נעשו בעזרת מכונה. כדאי לבדוק ולהגיה כל ערך לפני שמפרסמים אותו.
 
-## ערכים (76)
+## ערכים (77)
 
 ### אנליזה מרוכבת
 
@@ -126,6 +126,7 @@
 * [השערת מרטנס](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Mertens conjecture
 * [השערת קרמר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%9E%D7%A8.md) – Cramér's conjecture
 * [זוג להמר](pages/%D7%96%D7%95%D7%92%20%D7%9C%D7%94%D7%9E%D7%A8.md) – Lehmer pair
+* [מספר חלק](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%9C%D7%A7.md) – Smooth number
 * [משפט בראואר-זיגל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%90%D7%95%D7%90%D7%A8-%D7%96%D7%99%D7%92%D7%9C.md) – Brauer–Siegel theorem
 * [נוסחת פרון](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A4%D7%A8%D7%95%D7%9F.md) – Perron's formula
 * [נפת ברון](pages/%D7%A0%D7%A4%D7%AA%20%D7%91%D7%A8%D7%95%D7%9F.md) – Brun sieve

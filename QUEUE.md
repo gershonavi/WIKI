@@ -13,7 +13,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Character sum
 - [x] Pólya-Vinogradov inequality (redirect; covered in סכום קרקטרים)
 - [x] Burgess inequality
-- [ ] Smooth number
+- [x] Smooth number
 - [x] Dickman function
 - [ ] Multiplicative number theory
 - [ ] Hardy–Ramanujan–Littlewood circle method
