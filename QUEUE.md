@@ -156,7 +156,7 @@ Additive number theory:
 - [ ] Tate's algorithm
 - [x] Twists of elliptic curves
 - [x] Mordell curve
-- [ ] Weil pairing
+- [x] Weil pairing
 - [ ] Tate curve
 - [x] Néron–Ogg–Shafarevich criterion
 - [ ] Heegner point

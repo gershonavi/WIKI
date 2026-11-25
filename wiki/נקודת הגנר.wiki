@@ -1,0 +1,29 @@
+ב[[מתמטיקה]], '''נקודת הגנר''' היא נקודה על [[עקום מודולרי]] שהיא התמונה של נקודה ריבועית מדומה ב[[חצי המישור העליון]]. נקודות הגנר הוגדרו על ידי בריאן בירץ', וקרויות על שם קורט הגנר, שהשתמש ברעיונות דומים כדי להוכיח את [[בעיית מספר המחלקות|ההשערה של גאוס]] על [[שדה ריבועי|שדות ריבועיים]] מדומים עם מספר מחלקות 1 (ראו [[מספר הגנר]]).
+
+'''ההגדרה בפירוט.''' עבור עקום מודולרי <math>X_0(N)</math> ודיסקרימיננטה שלילית <math>D</math>, נקודת הגנר היא נקודה <math>\tau = \tfrac{-b + \sqrt D}{2a}</math> בחצי המישור העליון, כאשר <math>b^2 - 4ac = D</math>, כך שגם <math>\tau</math> וגם <math>N\tau</math> הן נקודות ריבועיות עם אותה דיסקרימיננטה <math>D</math>; בפועל, דורשים ש-<math>N \mid a</math>. לפי תורת ה[[כפל מרוכב|כפל המרוכב]], התמונה של נקודה כזו על <math>X_0(N)</math> מוגדרת מעל [[שדה מחלקת קרן|שדה המחלקה של הילברט]] <math>H</math> של <math>K = \mathbb Q(\sqrt D)</math> – ובפרט, הערך <math>j(\tau)</math> הוא שלם אלגברי שיוצר את <math>H</math>. אם <math>E</math> עקום אליפטי מוליך <math>N</math>, הפרמטריזציה המודולרית <math>X_0(N) \to E</math> (ראו [[עקום אליפטי מודולרי]]) שולחת נקודות הגנר לנקודות של <math>E(H)</math>, והעקבה שלהן מ-<math>H</math> ל-<math>K</math> נותנת נקודה <math>P_K \in E(K)</math>.
+
+'''הדוגמה הבסיסית: <math>N = 1</math>.''' על הישר <math>X_0(1)</math>, שהקואורדינטה שלו היא <math>j</math>, נקודות הגנר מדיסקרימיננטה <math>D</math> הן הערכים <math>j(\tau)</math> עבור <math>\tau</math> ריבועי מדומה מדיסקרימיננטה <math>D</math>. כשמספר המחלקות 1 הן רציונליות: <math>j(i) = 1728</math>, <math>j\bigl(\tfrac{1+\sqrt{-3}}{2}\bigr) = 0</math>, <math>j\bigl(\tfrac{1+\sqrt{-163}}{2}\bigr) = -640320^3</math>. הגנר השתמש בכך שהערכים האלה שלמים רציונליים (ובקשרים בינם לבין פונקציות מודולריות אחרות) כדי לקבל משוואות דיופנטיות שהפתרונות שלהן מתאימים לשדות עם מספר מחלקות 1, וכך הראה שיש בדיוק תשעה כאלה.
+
+== משפט גרוס–זגייר ==
+'''משפט גרוס–זגייר'''{{הערה|1=B. H. Gross, D. B. Zagier, ''Heegner points and derivatives of L-series'', Inventiones Mathematicae '''84''' (1986), pp. 225–320|כיווון=שמאל}} מתאר את ה[[פונקציית גובה|גובה (נרון–טייט)]] של נקודות הגנר במונחי הנגזרת של [[פונקציית L של עקום אליפטי|פונקציית ה-L]] של העקום האליפטי בנקודה <math>s = 1</math>. בקירוב:
+:<math>\hat h(P_K) = c\cdot L'(E, 1)\cdot L(E^D, 1),</math>
+כאשר <math>c</math> קבוע חיובי מפורש ו-<math>E^D</math> ה[[סיבוב של עקום אליפטי|סיבוב הריבועי]] של <math>E</math> ב-<math>D</math>. בפרט, אם לעקום האליפטי דרגה (אנליטית) 1, כלומר <math>L(E, 1) = 0 \ne L'(E, 1)</math>, אפשר להשתמש בנקודות הגנר כדי לבנות נקודה רציונלית על העקום מסדר אינסופי (כך ש[[חבורת מורדל–וייל]] מדרגה 1 לפחות). באופן כללי יותר, גרוס, קוהנן וזגייר (1987) הראו שאפשר להשתמש בנקודות הגנר כדי לבנות [[נקודה רציונלית|נקודות רציונליות]] על העקום לכל שלם חיובי <math>n</math>, והגבהים של הנקודות האלה הם המקדמים של תבנית מודולרית ממשקל <math>3/2</math>.{{הערה|1=B. H. Gross, W. Kohnen, D. Zagier, ''Heegner points and derivatives of L-series. II'', Mathematische Annalen '''278''' (1987), pp. 497–562|כיווון=שמאל}} שואו-וו ז'אנג הכליל את משפט גרוס–זגייר מעקומים אליפטיים ל[[יריעה אבלית|יריעות אבליות]] מודולריות.{{הערה|1=S.-W. Zhang, ''Gross–Zagier formula for GL<sub>2</sub>'', Asian Journal of Mathematics '''5''' (2001), pp. 183–290; S.-W. Zhang, ''Gross–Zagier formula for GL(2) II'', in: ''Heegner Points and Rankin L-Series'', MSRI Publications '''49''', Cambridge University Press, 2004, pp. 191–214; X. Yuan, S.-W. Zhang, W. Zhang, ''The Gross–Kohnen–Zagier theorem over totally real fields'', Compositio Mathematica '''145''' (2009), pp. 1147–1162|כיווון=שמאל}}
+
+== השערת בירץ' וסווינרטון-דייר ==
+ויקטור קוליווגין השתמש מאוחר יותר בנקודות הגנר כדי לבנות '''מערכות אוילר''', ובעזרתן הוכיח חלק גדול מ[[השערת בירץ' וסווינרטון-דייר]] לעקומים אליפטיים מדרגה 1: אם <math>L'(E, 1) \ne 0</math> אז דרגת <math>E(\mathbb Q)</math> היא בדיוק 1 ו[[חבורת טייט–שפרביץ']] סופית (ובדומה לדרגה 0). מ"ל בראון הוכיח את השערת בירץ' וסווינרטון-דייר לרוב העקומים האליפטיים מדרגה 1 מעל שדות גלובליים ממאפיין חיובי.{{הערה|1=M. L. Brown, ''On a conjecture of Tate for elliptic surfaces over finite fields'', Proc. London Math. Soc. '''69''' (1994), pp. 489–514; M. L. Brown, ''Heegner Modules and Elliptic Curves'', Lecture Notes in Mathematics '''1849''', Springer, 2004|כיווון=שמאל}}
+
+== חישוב ==
+אפשר להשתמש בנקודות הגנר כדי לחשב נקודות רציונליות גדולות מאוד על עקומים אליפטיים מדרגה 1, שלא היו נמצאות בשיטות נאיביות (לסקירה ראו מארק ווטקינס, 2006).{{הערה|1=M. Watkins, ''Some remarks on Heegner point computations'', arXiv:math/0506325 (2006)|כיווון=שמאל}} השיטה מחשבת את <math>P_K</math> נומרית, בדיוק גבוה, מהפרמטריזציה המודולרית (כטור בחזקות <math>q</math>), ואחר כך מזהה את הקואורדינטות כמספרים רציונליים. מימושים של האלגוריתם זמינים ב-Magma, ב-PARI/GP וב-Sage.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* B. Birch, ''Heegner points: the beginnings'', in: H. Darmon, S.-W. Zhang (eds.), ''Heegner Points and Rankin L-Series'', MSRI Publications '''49''', Cambridge University Press, 2004, pp. 1–10
+* H. Darmon, S.-W. Zhang (eds.), ''Heegner Points and Rankin L-Series'', MSRI Publications '''49''', Cambridge University Press, 2004
+* K. Heegner, ''Diophantische Analysis und Modulfunktionen'', Mathematische Zeitschrift '''56''' (1952), pp. 227–253
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:עקומים אליפטיים]]

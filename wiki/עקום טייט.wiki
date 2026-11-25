@@ -1,0 +1,50 @@
+ב[[מתמטיקה]], '''עקום טייט''' הוא עקום שמוגדר מעל חוג [[טור חזקות פורמלי|טורי החזקות הפורמליים]] <math>\mathbb Z[[q]]</math> עם מקדמים [[מספר שלם|שלמים]]. מעל תת-הסכמה הפתוחה שבה <math>q</math> הפיך, עקום טייט הוא [[עקום אליפטי]].
+
+אפשר להגדיר את עקום טייט גם עבור <math>q</math> שהוא איבר של [[שדה שלם]] עם נורמה קטנה מ-1, ואז טורי החזקות הפורמליים מתכנסים.
+
+עקום טייט הוצג על ידי [[ג'ון טייט]] בכתב יד מ-1959 שכותרתו המקורית הייתה "Rational Points on Elliptic Curves Over Complete Fields"; הוא לא פרסם את התוצאות שלו עד שנים רבות אחר כך (1995), ועבודתו הופיעה לראשונה אצל פטר רוקטה (1970).{{הערה|1=P. Roquette, ''Analytic Theory of Elliptic Functions over Local Fields'', Hamburger Mathematische Einzelschriften (N.F.) '''1''', Vandenhoeck & Ruprecht, 1970; J. Tate, ''A review of non-Archimedean elliptic functions'', in: J. Coates, S.-T. Yau (eds.), ''Elliptic Curves, Modular Forms, & Fermat's Last Theorem'', International Press, 1995, pp. 162–184|כיווון=שמאל}}
+
+== הגדרה ==
+עקום טייט הוא העקום במישור הפרויקטיבי מעל החוג <math>\mathbb Z[[q]]</math> של טורי החזקות הפורמליים עם מקדמים שלמים, שנתון (בתת-קבוצה פתוחה אפינית של המישור הפרויקטיבי) על ידי המשוואה
+:<math>y^2 + xy = x^3 + a_4x + a_6,</math>
+כאשר
+:<math>-a_4 = 5\sum_{n\ge1}\frac{n^3q^n}{1 - q^n} = 5q + 45q^2 + 140q^3 + \cdots,</math>
+:<math>-a_6 = \sum_{n\ge1}\frac{7n^5 + 5n^3}{12}\cdot\frac{q^n}{1 - q^n} = q + 23q^2 + 154q^3 + \cdots</math>
+הם טורי חזקות עם מקדמים שלמים.{{הערה|שם=MP|1=Yu. I. Manin, A. A. Panchishkin, ''Introduction to Modern Number Theory'', 2nd ed., Encyclopaedia of Mathematical Sciences '''49''', Springer, 2007, pp. 220, 300|כיווון=שמאל}} (בדיקה: המקדם של <math>q^n</math> ב-<math>\sum n^3q^n/(1 - q^n)</math> הוא <math>\sigma_3(n) = \sum_{d\mid n}d^3</math>, כלומר <math>1, 9, 28</math>, ו-<math>5\cdot9 = 45</math>, <math>5\cdot28 = 140</math>. שלמות המקדמים של <math>a_6</math> נובעת מכך ש-<math>7d^5 + 5d^3 \equiv 0 \pmod{12}</math> לכל <math>d</math>.) חישוב ממוחשב של הדיסקרימיננטה של העקום נותן
+:<math>\Delta = q - 24q^2 + 252q^3 - \cdots = q\prod_{n\ge1}(1 - q^n)^{24},</math>
+'''פונקציית הדלתא של רמנוג'אן''' – שאינה מתאפסת כש-<math>q \ne 0</math>, ולכן העקום אכן אליפטי שם.
+
+== עקום טייט מעל שדה שלם ==
+נניח שהשדה <math>k</math> שלם ביחס ל[[ערך מוחלט]] <math>|\cdot|</math>, ו-<math>q</math> איבר שונה מאפס של <math>k</math> עם <math>|q| \lt 1</math>. אז כל הטורים שלמעלה מתכנסים, ומגדירים עקום אליפטי מעל <math>k</math>. יתרה מזו, יש איזומורפיזם של חבורות מ-<math>k^*/q^{\mathbb Z}</math> לעקום האליפטי הזה, ששולח את <math>w</math> ל-<math>(x(w), y(w))</math> עבור <math>w</math> שאינו חזקה של <math>q</math>, כאשר
+:<math>x(w) = -y(w) - y(w^{-1}),</math>
+:<math>y(w) = \sum_{m\in\mathbb Z}\frac{(q^mw)^2}{(1 - q^mw)^3} + \sum_{m\ge1}\frac{q^m}{(1 - q^m)^2},</math>
+ושולח חזקות של <math>q</math> לנקודה שבאינסוף של העקום האליפטי. הטורים <math>x(w)</math> ו-<math>y(w)</math> אינם טורי חזקות פורמליים ב-<math>w</math>.
+
+החשיבות של זה: מעל שדה p-אדי <math>k = \mathbb Q_p</math>, אין "סריגים" ב-<math>k</math> (כמו <math>\mathbb Z + \mathbb Z\tau \subset \mathbb C</math>), ולכן אי אפשר לכתוב עקום אליפטי כ-<math>k/\Lambda</math>. אבל אפשר לכתוב אותו כ'''מנה כפלית''' <math>k^*/q^{\mathbb Z}</math> – וזה עובד בדיוק לעקומים עם רדוקציה כפלית (ראו להלן).
+
+== דוגמה אינטואיטיבית ==
+במקרה של העקום מעל שדה שלם, <math>k^*/q^{\mathbb Z}</math>, המקרה הקל ביותר לדמיון הוא <math>\mathbb C^*/q^{\mathbb Z}</math>, כאשר <math>q^{\mathbb Z}</math> היא תת-החבורה הבדידה שנוצרת על ידי מחזור כפלי אחד <math>q = e^{2\pi i\tau}</math>, כאשר המחזור <math>\tau = \omega_1/\omega_2</math>. שימו לב ש-<math>\mathbb C^*</math> איזומורפית ל-<math>(\mathbb C, +)/(\mathbb Z, +)</math>, דרך <math>z \mapsto e^{2\pi iz}</math>.
+
+כדי לראות למה עקום טייט מתאים, מבחינה עקרונית, לטורוס כשהשדה הוא <math>\mathbb C</math> עם הנורמה הרגילה: <math>q</math> כבר "מחזורי פעם אחת"; כשמחלקים בחזקות השלמות של <math>q</math>, מחלקים את <math>\mathbb C</math> ב-<math>\mathbb Z^2</math>, וזה טורוס. במילים אחרות, יש לנו טבעת (annulus), ומדביקים את השפה הפנימית לחיצונית.
+
+אבל הטבעת אינה מתאימה למעגל פחות נקודה: הטבעת היא קבוצת המספרים המרוכבים בין שתי חזקות עוקבות של <math>q</math>; למשל, כל המספרים המרוכבים שגודלם בין <math>|q|</math> ל-1. זה נותן שני מעגלים, השפה הפנימית והחיצונית של הטבעת.
+
+תמונת הטורוס כאן היא אוסף של טבעות מקוננות, שהולכות ונעשות צרות יותר ככל שמתקרבים לראשית. זה שונה במקצת מהשיטה הרגילה, שמתחילה בדף שטוח, <math>\mathbb C</math>, ומדביקה את הצדדים כדי ליצור גליל <math>\mathbb C/\mathbb Z</math>, ואחר כך מדביקה את שפות הגליל כדי ליצור טורוס, <math>\mathbb C/\mathbb Z^2</math>.
+
+זו הפשטה מסוימת. עקום טייט הוא באמת עקום מעל חוג טורי חזקות פורמליים ולא עקום מעל <math>\mathbb C</math>. באופן אינטואיטיבי, זו '''משפחה של עקומים''' שתלויה בפרמטר פורמלי. כשהפרמטר הפורמלי אפס, היא מתנוונת לטורוס "צבוט" (עקום עם צומת), וכשהוא שונה מאפס, היא טורוס.
+
+== תכונות ==
+[[אינווריאנט j]] של עקום טייט נתון על ידי טור חזקות ב-<math>q</math> עם איבר מוביל <math>q^{-1}</math>: <math>j = q^{-1} + 744 + 196884q + \cdots</math>, אותו פיתוח כמו של [[פונקציה מודולרית|פונקציית j]] המרוכבת.{{הערה|1=J. H. Silverman, ''Advanced Topics in the Arithmetic of Elliptic Curves'', Graduate Texts in Mathematics '''151''', Springer, 1994, p. 423|כיווון=שמאל}} לכן, מעל [[שדה מקומי]] p-אדי, <math>j</math> אינו שלם (<math>|j| = |q|^{-1} \gt 1</math>), ולעקום טייט יש '''רדוקציה יציבה למחצה מטיפוס כפלי'''. בכיוון ההפוך, כל עקום אליפטי יציב-למחצה מעל שדה מקומי (עם <math>j</math> לא שלם) איזומורפי לעקום טייט (עד כדי [[סיבוב של עקום אליפטי|סיבוב ריבועי]]).{{הערה|שם=MP}} את <math>q</math> מוצאים מ-<math>j</math> בהיפוך הטור: <math>q = j^{-1} + 744j^{-2} + \cdots</math>, שמתכנס כש-<math>|j| \gt 1</math>.
+
+'''דוגמה.''' לעקום <math>y^2 + y = x^3 - x^2</math> יש <math>j = -4096/11</math>, ולכן <math>|j|_{11} = 11 \gt 1</math>: מעל <math>\mathbb Q_{11}</math> הוא (עד כדי סיבוב) עקום טייט עם <math>|q|_{11} = 1/11</math>, בהתאם לרדוקציה הכפלית שלו ב-11 (ראו [[מוליך של עקום אליפטי]]).
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* S. Lang, ''Elliptic Functions'', 2nd ed., Graduate Texts in Mathematics '''112''', Springer, 1987
+* A. Robert, ''Elliptic Curves'', Lecture Notes in Mathematics '''326''', Springer, 1973
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:עקומים אליפטיים]]
