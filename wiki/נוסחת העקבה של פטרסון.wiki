@@ -1,0 +1,31 @@
+ב[[תורת המספרים האנליטית]], '''נוסחת העקבה של פטרסון''' (ב[[אנגלית]]: Petersson trace formula) היא מעין יחס אורתוגונליות בין המקדמים של [[תבנית מודולרית]] הולומורפית. היא מקרה פרטי של [[נוסחת העקבה של קוזנצוב]] הכללית יותר.
+
+== הנוסחה ==
+בצורתה הפשוטה ביותר, נוסחת העקבה של פטרסון היא כדלקמן. יהי <math>\mathcal{F}</math> [[בסיס אורתונורמלי]] של <math>S_k(\Gamma(1))</math>, מרחב תבניות החוד ממשקל <math>k>2</math> על <math>SL_2(\mathbb{Z})</math> (ביחס ל[[מכפלה פנימית|מכפלה הפנימית]] של פטרסון). אז לכל שני שלמים חיוביים <math>m,n</math> מתקיים
+:<math>
+\frac{\Gamma(k-1)}{(4\pi \sqrt{mn})^{k-1}} \sum_{f \in \mathcal{F}} \overline{\hat{f}(m)}\, \hat{f}(n) = \delta_{mn} + 2\pi i^{-k} \sum_{c > 0}\frac{S(m,n;c)}{c} J_{k-1}\left(\frac{4\pi \sqrt{mn}}{c}\right),
+</math>
+כאשר <math>\delta</math> היא [[הדלתא של קרונקר]], <math>S</math> הוא [[סכום קלוסטרמן]], <math>J</math> היא [[פונקציית בסל]] מהסוג הראשון, ו-<math>\hat f(n)</math> הוא המקדם ה-<math>n</math>-י בפיתוח פורייה <math>f(z) = \sum_{n \ge 1}\hat f(n)e^{2\pi i n z}</math>.
+
+== הסבר והמחשה (נוסף בתרגום) ==
+'''למה זה "יחס אורתוגונליות".''' אגף שמאל הוא בקירוב "מכפלה פנימית" בין הווקטורים <math>(\hat f(m))_f</math> ו-<math>(\hat f(n))_f</math>. אגף ימין אומר שהוא כמעט <math>\delta_{mn}</math>, בתוספת שגיאה שנשלטת על ידי סכומי קלוסטרמן. כאשר <math>mn</math> קטן ביחס ל-<math>k^2</math>, הארגומנטים של פונקציות בסל קטנים, ו-<math>J_{k-1}(x)</math> זעירה עבור <math>x</math> קטן ביחס ל-<math>k</math>; לכן איבר השגיאה זניח, והמקדמים מתנהגים כמו אורתוגונליים.
+
+'''המקור של הנוסחה.''' מחשבים את המקדם ה-<math>n</math>-י של טור פואנקרה <math>P_m</math> בשתי דרכים: ישירות, ממה שמתקבל סכום קלוסטרמן כפול פונקציית בסל; ובעזרת ההצגה של <math>P_m</math> בבסיס <math>\mathcal F</math>, שבה המקדמים הם <math>\langle P_m, f\rangle</math>, ואלה פרופורציונליים ל-<math>\overline{\hat f(m)}</math>.
+
+'''מקרים שבהם המרחב ריק.''' עבור <math>k = 4, 6, 8, 10</math> המרחב <math>S_k(\Gamma(1))</math> הוא אפס, ולכן אגף שמאל הוא 0, והנוסחה נותנת זהות לא טריוויאלית על סכומי קלוסטרמן. למשל עבור <math>k = 4</math> ו-<math>m = n = 1</math>:
+:<math>1 + 2\pi \sum_{c \ge 1} \frac{S(1,1;c)}{c}\, J_3\!\left(\frac{4\pi}{c}\right) = 0.</math>
+חישוב מספרי של הסכום עד <math>c = 400</math> נותן ערך של בערך <math>-2.7\cdot 10^{-7}</math>, ושארית זו נובעת רק מקטימת הטור. עבור <math>k = 6, 8, 10</math> השאריות קטנות עוד יותר.
+
+'''משקל 12 ופונקציית הטאו של רמנוג'ן.''' המרחב <math>S_{12}(\Gamma(1))</math> חד-ממדי ונפרש על ידי [[פונקציית הטאו של רמנוג'אן|הדיסקרימיננטה של רמנוג'ן]] <math>\Delta(z) = \sum \tau(n) q^n</math>. הבסיס האורתונורמלי הוא <math>\Delta/\sqrt{\langle \Delta,\Delta\rangle}</math>, ולכן אגף שמאל הוא
+:<math>\frac{\Gamma(11)}{(4\pi\sqrt{mn})^{11}}\cdot\frac{\tau(m)\tau(n)}{\langle\Delta,\Delta\rangle}.</math>
+מכאן:
+* היחס בין אגף ימין עבור <math>(m,n) = (1,2)</math> לאגף ימין עבור <math>(1,1)</math> חייב להיות <math>\tau(2)/2^{11/2} = -24/2^{5.5} \approx -0.5303301</math>, והיחס עבור <math>(2,2)</math> חייב להיות <math>\tau(2)^2/2^{11} = 0.28125</math>.
+* מאגף ימין עבור <math>m = n = 1</math> אפשר לחלץ את הנורמה: <math>\langle \Delta, \Delta\rangle \approx 1.0353620568 \cdot 10^{-6}</math>, הערך הידוע.
+שלוש הטענות נבדקו בחישוב מספרי של סכומי קלוסטרמן ופונקציות בסל.
+
+== לקריאה נוספת ==
+* הנריק איוונייץ, Topics in Classical Automorphic Forms, Graduate Studies in Mathematics 17, American Mathematical Society, פרובידנס, 1997 (בערך האנגלי נכתבה שנת 1991; הספר יצא ב-1997)
+* Petersson and Kuznetsov trace formulas, בתוך: Lie Groups and Automorphic Forms, AMS/IP Studies in Advanced Mathematics 37, 2006, עמ' 147–168, {{DOI|10.1090/amsip/037/04}}, {{ISBN|9780821841983}}
+
+[[קטגוריה:משפטים בתורת המספרים האנליטית]]
+[[קטגוריה:תבניות אוטומורפיות]]
