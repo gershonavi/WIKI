@@ -151,7 +151,7 @@ Additive number theory:
 - [ ] Schoof's algorithm
 - [x] Modular elliptic curve
 - [x] Frey curve
-- [ ] Sato–Tate conjecture
+- [x] Sato–Tate conjecture
 - [ ] Conductor of an elliptic curve
 - [ ] Tate's algorithm
 - [ ] Twists of elliptic curves
