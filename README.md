@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (220)
+## ערכים (222)
 
 ### אנליזה מרוכבת
 
@@ -31,6 +31,10 @@
 * [השערת ניומן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A0%D7%99%D7%95%D7%9E%D7%9F.md) – Newman's conjecture
 * [השערת פוליניאק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A4%D7%95%D7%9C%D7%99%D7%A0%D7%99%D7%90%D7%A7.md) – Polignac's conjecture
 * [מספר אידוניאלי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%90%D7%99%D7%93%D7%95%D7%A0%D7%99%D7%90%D7%9C%D7%99.md) – Idoneal number
+
+### השערות במתמטיקה
+
+* [השערות הארדי–ליטלווד על פונקציית זטא](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%90%D7%A8%D7%93%D7%99%E2%80%93%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90.md) – Hardy–Littlewood zeta function conjectures
 
 ### השערות מתמטיות
 
@@ -184,6 +188,7 @@
 * [הטרנסצנדנט של לרך](pages/%D7%94%D7%98%D7%A8%D7%A0%D7%A1%D7%A6%D7%A0%D7%93%D7%A0%D7%98%20%D7%A9%D7%9C%20%D7%9C%D7%A8%D7%9A.md) – Lerch transcendent
 * [הקריטריון של וייל](pages/%D7%94%D7%A7%D7%A8%D7%99%D7%98%D7%A8%D7%99%D7%95%D7%9F%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%99%D7%9C.md) – Weil's criterion
 * [השערת הילברט-פוליה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%99%D7%9C%D7%91%D7%A8%D7%98-%D7%A4%D7%95%D7%9C%D7%99%D7%94.md) – Hilbert–Pólya conjecture
+* [השערת סלברג על פונקציית זטא](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90.md) – Selberg's zeta function conjecture
 * [השערת רימן הגדולה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94.md) – Grand Riemann hypothesis
 * [השערת רימן המוכללת](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%9E%D7%95%D7%9B%D7%9C%D7%9C%D7%AA.md) – Generalized Riemann hypothesis
 * [מחלקת סלברג](pages/%D7%9E%D7%97%D7%9C%D7%A7%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg class

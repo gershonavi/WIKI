@@ -1,0 +1,32 @@
+ב[[מתמטיקה]], '''השערת סלברג''', הקרויה על שם [[אטלה סלברג]], היא [[משפט (מתמטיקה)|משפט]] על הצפיפות של האפסים של [[פונקציית זטא של רימן]] <math>\zeta\bigl(\tfrac12 + it\bigr)</math>. ידוע שלפונקציה יש אינסוף אפסים על הישר הזה במישור המרוכב; השאלה היא עד כמה הם צפופים. את התוצאות אפשר לנסח בעזרת <math>N(T)</math>, הפונקציה שסופרת את האפסים על הישר שעבורם <math>0 \le t \le T</math>.
+
+== רקע ==
+ב-1942 חקר סלברג את [[השערות הארדי–ליטלווד על פונקציית זטא|השערה 2 של הארדי וליטלווד]], והוכיח שלכל <math>\varepsilon > 0</math> קיימים <math>T_0 = T_0(\varepsilon) > 0</math> ו-<math>c = c(\varepsilon) > 0</math> כך שעבור <math>T \geq T_0</math> ו-<math>H=T^{0.5+\varepsilon}</math> מתקיים אי-השוויון
+
+:<math>N(T+H)-N(T) \geq cH\log T.</math>
+
+סלברג ניסח בתורו השערה על קטעים קצרים יותר:{{הערה|1=A. Selberg, ''On the zeros of Riemann's zeta-function'', Skr. Norske Vid. Akad. Oslo '''10''' (1942), pp. 1–59|כיווון=שמאל}} שאפשר להקטין את המעריך <math>a = 0.5</math> ב-
+
+:<math>H=T^{0.5+\varepsilon}.</math>
+
+== הוכחת ההשערה ==
+ב-1984 הוכיח אנטולי קרצובה{{הערה|1=A. A. Karatsuba, ''On the zeros of the function ζ(s) on short intervals of the critical line'', Izv. Akad. Nauk SSSR, Ser. Mat. '''48''' (1984), no. 3, pp. 569–584|כיווון=שמאל}}{{הערה|1=A. A. Karatsuba, ''The distribution of zeros of the function ζ(1/2 + it)'', Izv. Akad. Nauk SSSR, Ser. Mat. '''48''' (1984), no. 6, pp. 1214–1224|כיווון=שמאל}}{{הערה|1=A. A. Karatsuba, ''On the zeros of the Riemann zeta-function on the critical line'', Proc. Steklov Inst. Math. '''167''' (1985), pp. 167–178|כיווון=שמאל}} שעבור <math>\varepsilon</math> קבוע המקיים
+
+:<math>0<\varepsilon < 0.001,</math>
+
+עבור <math>T</math> גדול מספיק ועבור
+
+:<math>H = T^{a+\varepsilon},\qquad a = \tfrac{27}{82} = \tfrac{1}{3} -\tfrac{1}{246},</math>
+
+הקטע <math>(T, T+H)</math> של הערכים <math>t</math> מכיל לפחות <math>cH\ln T</math> אפסים ממשיים של הפונקציה <math>\zeta\bigl(\tfrac{1}{2}+it\bigr)</math>, ובכך אישר את השערת סלברג. אי אפשר לשפר את ההערכות של סלברג ושל קרצובה מבחינת סדר הגידול כאשר <math>T \to +\infty</math>, כי לפי [[נוסחת רימן-פון מנגולדט]] מספר כל האפסים של זטא עם חלק מדומה בקטע הוא רק <math>O(H \log T)</math>.
+
+== עבודה נוספת ==
+ב-1992 הוכיח קרצובה{{הערה|1=A. A. Karatsuba, ''On the number of zeros of the Riemann zeta-function lying in almost all short intervals of the critical line'', Izv. Ross. Akad. Nauk, Ser. Mat. '''56''' (1992), no. 2, pp. 372–397|כיווון=שמאל}} שגרסה של השערת סלברג מתקיימת עבור "כמעט כל" הקטעים <math>(T, T+H]</math> עם <math>H = T^{\varepsilon}</math>, כאשר <math>\varepsilon</math> מספר חיובי קבוע קטן כרצוננו. השיטה של קרצובה מאפשרת לחקור את האפסים של פונקציית זטא של רימן על קטעים "קצרים במיוחד" של הישר הקריטי, כלומר על קטעים <math>(T, T+H]</math> שאורכם <math>H</math> גדל לאט יותר מכל חזקה של <math>T</math>, קטנה ככל שתהיה.
+
+בפרט, הוא הוכיח שלכל שני מספרים <math>\varepsilon, \varepsilon_1</math> המקיימים <math>0 < \varepsilon, \varepsilon_1 < 1</math>, כמעט כל הקטעים <math>(T, T+H]</math> עם <math>H \ge \exp[(\ln T)^{\varepsilon}]</math> מכילים לפחות <math>H (\ln T)^{1-\varepsilon_1}</math> אפסים של הפונקציה <math>\zeta\bigl(\tfrac12 + it\bigr)</math>. הערכה זו קרובה מאוד לתוצאה המותנית שנובעת מ[[השערת רימן]].
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:השערות במתמטיקה]]

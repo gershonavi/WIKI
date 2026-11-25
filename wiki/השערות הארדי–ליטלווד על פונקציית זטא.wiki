@@ -1,0 +1,27 @@
+ב[[מתמטיקה]], '''השערות הארדי–ליטלווד על פונקציית זטא''', הקרויות על שם [[גודפרי הרולד הארדי]] וג'ון אדנסור ליטלווד, הן שתי השערות על המרחקים בין האפסים ועל הצפיפות של האפסים של [[פונקציית זטא של רימן]] על הישר הקריטי.
+
+== ההשערות ==
+ב-1914 הוכיח הארדי{{הערה|1=G. H. Hardy, ''Sur les zéros de la fonction ζ(s)'', Comptes Rendus de l'Académie des Sciences '''158''' (1914), pp. 1012–1014|כיווון=שמאל}} שלפונקציה <math>\zeta\bigl(\tfrac{1}{2}+it\bigr)</math>, כפונקציה של המשתנה הממשי <math>t</math>, יש אינסוף אפסים ממשיים – כלומר שיש אינסוף אפסים של זטא על הישר הקריטי.
+
+נסמן ב-<math>N(T)</math> את המספר הכולל של האפסים הממשיים, וב-<math>N_0(T)</math> את מספר האפסים מסדר אי-זוגי של הפונקציה <math>\zeta\bigl(\tfrac{1}{2}+it\bigr)</math> בקטע <math>(0,T]</math>.
+
+הארדי וליטלווד ניסחו{{הערה|1=G. H. Hardy, J. E. Littlewood, ''The zeros of Riemann's zeta-function on the critical line'', Mathematische Zeitschrift '''10''' (1921), no. 3–4, pp. 283–317|כיווון=שמאל}} שתי השערות. ההשערות האלה – על המרחק בין אפסים ממשיים של <math>\zeta\bigl(\tfrac{1}{2}+it\bigr)</math>, ועל הצפיפות של האפסים בקטעים <math>(T,T+H]</math> עבור <math>T > 0</math> גדול מספיק ו-<math>H = T^{a + \varepsilon}</math>, עם <math>a > 0</math> קטן ככל האפשר ו-<math>\varepsilon > 0</math> קטן כרצוננו – פתחו שני כיווני מחקר חדשים בחקר פונקציית זטא של רימן.
+
+'''1. לכל <math>\varepsilon > 0</math> קיים <math>T_0 = T_0(\varepsilon) > 0</math> כך שעבור <math>T \geq T_0</math> ו-<math>H=T^{0.25+\varepsilon}</math>, הקטע <math>(T,T+H]</math> מכיל אפס מסדר אי-זוגי של הפונקציה <math>\zeta\bigl(\tfrac{1}{2}+it\bigr)</math>.'''
+
+'''2. לכל <math>\varepsilon > 0</math> קיימים <math>T_0 = T_0(\varepsilon) > 0</math> ו-<math>c = c(\varepsilon) > 0</math> כך שעבור <math>T \geq T_0</math> ו-<math>H=T^{0.5+\varepsilon}</math> מתקיים אי-השוויון <math>N_0(T+H)-N_0(T) \geq cH</math>.'''
+
+== מצב ההשערות ==
+ב-1942 חקר [[אטלה סלברג]] את בעיה 2, והוכיח שלכל <math>\varepsilon > 0</math> קיימים <math>T_0 = T_0(\varepsilon) > 0</math> ו-<math>c = c(\varepsilon) > 0</math> כך שעבור <math>T \geq T_0</math> ו-<math>H=T^{0.5+\varepsilon}</math> מתקיים <math>N_0(T+H)-N_0(T) \geq cH\log T</math>. זו תוצאה חזקה יותר מהשערה 2 (בגורם <math>\log T</math>), והיא מסדר הגודל הנכון, כי לפי [[נוסחת רימן-פון מנגולדט]] מספר '''כל''' האפסים עם חלק מדומה בקטע <math>(T, T+H]</math> הוא בערך <math>\tfrac{H}{2\pi}\log T</math>. (הניסוח כאן הוא עבור <math>N_0</math>, כמו בעבודה של קרצובה שהמשיכה את התוצאה; בערך האנגלי מופיע במקומו <math>N</math>, ומכיוון ש-<math>N_0 \le N</math>, זו טענה חלשה יותר.)
+
+סלברג ניסח בתורו [[השערת סלברג על פונקציית זטא|השערה]]{{הערה|1=A. Selberg, ''On the zeros of Riemann's zeta-function'', Skr. Norske Vid. Akad. Oslo '''10''' (1942), pp. 1–59|כיווון=שמאל}} שאפשר להקטין את המעריך <math>a = 0.5</math> בתוצאה שלו. השערה זו הוכחה 42 שנים מאוחר יותר על ידי אנטולי קרצובה, שהראה שהתוצאה נכונה עבור <math>H = T^{27/82+\varepsilon}</math>.{{הערה|1=A. A. Karatsuba, ''On the zeros of the function ζ(s) on short intervals of the critical line'', Izv. Akad. Nauk SSSR, Ser. Mat. '''48''' (1984), no. 3, pp. 569–584|כיווון=שמאל}}
+
+== ראו גם ==
+* [[השיטה של טיורינג]]
+* [[פונקציית Z]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:השערות במתמטיקה]]
+[[קטגוריה:פונקציות זטא]]
