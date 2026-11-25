@@ -100,7 +100,7 @@ Additive number theory:
 - [x] Conductor–discriminant formula
 - [ ] Galois representation
 - [x] Kummer–Vandiver conjecture
-- [ ] Leopoldt's conjecture
+- [x] Leopoldt's conjecture
 - [ ] Hilbert's ninth problem
 - [ ] Height function
 - [ ] Newton polygon

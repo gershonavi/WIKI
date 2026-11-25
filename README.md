@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (294)
+## ערכים (297)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -314,12 +314,14 @@
 * [אידיאל שבור](pages/%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%20%D7%A9%D7%91%D7%95%D7%A8.md) – Fractional ideal
 * [בעיית מספר המחלקה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%94.md) – Class number problem
 * [דיסקרימיננטה של שדה מספרים](pages/%D7%93%D7%99%D7%A1%D7%A7%D7%A8%D7%99%D7%9E%D7%99%D7%A0%D7%A0%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%A9%D7%93%D7%94%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md) – Discriminant of an algebraic number field
+* [הבעיה התשיעית של הילברט](pages/%D7%94%D7%91%D7%A2%D7%99%D7%94%20%D7%94%D7%AA%D7%A9%D7%99%D7%A2%D7%99%D7%AA%20%D7%A9%D7%9C%20%D7%94%D7%99%D7%9C%D7%91%D7%A8%D7%98.md)
 * [הדדיות ממעלה רביעית](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A8%D7%91%D7%99%D7%A2%D7%99%D7%AA.md) – Quartic reciprocity
 * [הדדיות ממעלה שלישית](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99%D7%A9%D7%99%D7%AA.md) – Cubic reciprocity
 * [הדדיות של אייזנשטיין](pages/%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F.md) – Eisenstein reciprocity
 * [הערכה p-אדית](pages/%D7%94%D7%A2%D7%A8%D7%9B%D7%94%20p-%D7%90%D7%93%D7%99%D7%AA.md) – P-adic valuation
 * [הרחבה אבלית](pages/%D7%94%D7%A8%D7%97%D7%91%D7%94%20%D7%90%D7%91%D7%9C%D7%99%D7%AA.md) – Abelian extension
 * [השדה הזהוב](pages/%D7%94%D7%A9%D7%93%D7%94%20%D7%94%D7%96%D7%94%D7%95%D7%91.md) – Golden field
+* [השערת לאופולדט](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%9C%D7%90%D7%95%D7%A4%D7%95%D7%9C%D7%93%D7%98.md) – Leopoldt's conjecture
 * [חבורת האידלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%9C%D7%99%D7%9D.md) – Idele group
 * [חבורת המחלקות הצרה](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%95%D7%AA%20%D7%94%D7%A6%D7%A8%D7%94.md) – Narrow class group
 * [חבורת מחלקות האידיאלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%9E%D7%97%D7%9C%D7%A7%D7%95%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D.md) – Ideal class group
@@ -327,6 +329,7 @@
 * [חוק הדדיות](pages/%D7%97%D7%95%D7%A7%20%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA.md) – Reciprocity law
 * [יחידה יסודית (תורת המספרים)](pages/%D7%99%D7%97%D7%99%D7%93%D7%94%20%D7%99%D7%A1%D7%95%D7%93%D7%99%D7%AA%20%28%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%29.md) – Fundamental unit (number theory)
 * [מספר הגנר](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%92%D7%A0%D7%A8.md) – Heegner number
+* [מצולע ניוטון](pages/%D7%9E%D7%A6%D7%95%D7%9C%D7%A2%20%D7%A0%D7%99%D7%95%D7%98%D7%95%D7%9F.md)
 * [משפט דדקינד–קומר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%93%D7%93%D7%A7%D7%99%D7%A0%D7%93%E2%80%93%D7%A7%D7%95%D7%9E%D7%A8.md) – Dedekind–Kummer theorem
 * [נוסחת המוליך–הדיסקרימיננטה](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%9E%D7%95%D7%9C%D7%99%D7%9A%E2%80%93%D7%94%D7%93%D7%99%D7%A1%D7%A7%D7%A8%D7%99%D7%9E%D7%99%D7%A0%D7%A0%D7%98%D7%94.md) – Conductor–discriminant formula
 * [נורמה של אידיאל](pages/%D7%A0%D7%95%D7%A8%D7%9E%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C.md) – Ideal norm
