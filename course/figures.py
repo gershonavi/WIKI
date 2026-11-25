@@ -5266,6 +5266,91 @@ def _():
     save('T10-x4')
 
 
+@fig('T11-e1')
+def _():
+    ax = plt.gca(); from scipy.special import gamma as G
+    for a, b in ((-3.98, -3.02), (-2.98, -2.02), (-1.98, -1.02), (-.98, -.02), (.02, 5.2)):
+        x = np.linspace(a, b, 400); ax.plot(x, G(x), color=C1)
+    n = np.arange(1, 6); ax.plot(n, G(n), 'o', color=C2, label='Γ(n) = (n−1)!')
+    ax.plot(.5, np.sqrt(np.pi), 's', color=C3, label='Γ(½) = √π')
+    for k in range(0, 4):
+        ax.axvline(-k, color=GR, ls=':', lw=.8)
+    ax.set_ylim(-8, 26); ax.axhline(0, color=GR, lw=.5); ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('Γ(x)', fontsize=9)
+    save('T11-e1')
+
+
+@fig('T11-e2')
+def _():
+    ax = plt.gca(); x = np.linspace(-2, 2, 400); f = np.exp(-np.pi * x ** 2)
+    ax.fill_between(x, f, where=np.abs(x) <= 1, color=C1, alpha=.15, label='|x| ≤ 1: 0.988')
+    ax.fill_between(x, f, where=np.abs(x) <= .5, color=C1, alpha=.35, label='|x| ≤ ½: 0.790')
+    ax.plot(x, f, color=C1, lw=2, label='e^(−πx²)')
+    xi = np.linspace(-2, 2, 25); fh = [np.trapezoid(f * np.cos(2 * np.pi * x * t), x) for t in xi]
+    ax.plot(xi, fh, 'o', color=C2, ms=4, label='its Fourier transform (numerical)')
+    ax.set_xlabel('x, ξ'); ax.legend(fontsize=7); ax.set_title('the Gaussian is its own Fourier transform', fontsize=9)
+    save('T11-e2')
+
+
+@fig('T11-e3')
+def _():
+    ax = plt.gca(); n = np.arange(-40, 41)
+    th = lambda x: np.exp(-np.pi * np.outer(x, n ** 2)).sum(axis=1)
+    x = np.linspace(.05, 3, 300); ax.plot(x, th(x), color=C1, label='ϑ(x)')
+    xs = np.linspace(.05, 3, 30); ax.plot(xs, th(1 / xs) / np.sqrt(xs), 'o', ms=4, color=C2, label='x^(−½) ϑ(1/x)')
+    ax.plot(x, 1 / np.sqrt(x), ':', color=GR, label='1/√x')
+    ax.set_ylim(0, 5); ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('ϑ(1/x) = √x ϑ(x)', fontsize=9)
+    save('T11-e3')
+
+
+@fig('T11-e4')
+def _():
+    ax = plt.gca(); import mpmath as mpm
+    xi = lambda s: float(mpm.pi ** (-s / 2) * mpm.gamma(s / 2) * mpm.zeta(s))
+    for a, b in ((-1.5, -.04), (.04, .96), (1.04, 2.5)):
+        x = np.linspace(a, b, 120); ax.plot(x, [xi(t) for t in x], color=C1)
+    ax.axvline(.5, color=C2, ls='--', lw=.8, label='σ = ½'); ax.axvline(0, color=GR, ls=':'); ax.axvline(1, color=GR, ls=':')
+    ax.set_ylim(-12, 12); ax.axhline(0, color=GR, lw=.5); ax.set_xlabel('σ'); ax.legend(fontsize=8); ax.set_title('ξ(σ) = ξ(1 − σ)', fontsize=9)
+    save('T11-e4')
+
+
+@fig('T11-x1')
+def _():
+    ax = plt.gca(); from scipy.special import rgamma
+    x = np.linspace(-4.5, 5, 600); ax.plot(x, rgamma(x), color=C1, label='1/Γ(x)')
+    ax.plot(-np.arange(0, 5), 0 * np.arange(5), 'o', color=C2, label='zeros 0, −1, −2, …')
+    ax.axhline(0, color=GR, lw=.5); ax.set_ylim(-3, 3); ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('1/Γ is entire', fontsize=9)
+    save('T11-x1')
+
+
+@fig('T11-x2')
+def _():
+    ax = plt.gca(); N = np.arange(0, 101); n = np.arange(-100, 101)
+    S = [np.sum(1 / (1 + n[np.abs(n) <= k] ** 2)) for k in N]
+    ax.plot(N, S, color=C1, label='Σ_{|n|≤N} 1/(1 + n²)')
+    ax.axhline(np.pi / np.tanh(np.pi), color=C2, ls='--', label='π coth π ≈ 3.1533')
+    ax.axhline(np.pi, color=C3, ls=':', label='k = 0 term alone: π')
+    ax.set_xlabel('N'); ax.legend(fontsize=8); ax.set_ylim(.9, 3.3); ax.set_title('Poisson: Σ f(n) = Σ f̂(k)', fontsize=9)
+    save('T11-x2')
+
+
+@fig('T11-x3')
+def _():
+    ax = plt.gca(); x = np.linspace(1e-6, 15, 400); y = x / np.expm1(x)
+    ax.fill_between(x, y, color=C1, alpha=.25); ax.plot(x, y, color=C1, label='x/(e^x − 1)')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('area = Γ(2)ζ(2) = π²/6', fontsize=9)
+    save('T11-x3')
+
+
+@fig('T11-x4')
+def _():
+    ax = plt.gca(); import mpmath as mpm
+    x = np.linspace(-4, .8, 300); ax.plot(x, [float(mpm.zeta(t)) for t in x], color=C1, label='ζ(σ)')
+    ax.plot(-1, -1 / 12, 'o', color=C2, label='ζ(−1) = −1/12'); ax.plot([-2, -4], [0, 0], 's', color=C3, label='trivial zeros')
+    ax.plot(0, -.5, 'o', color=C4, label='ζ(0) = −½')
+    ax.axhline(0, color=GR, lw=.5); ax.set_ylim(-4, 1); ax.set_xlabel('σ'); ax.legend(fontsize=8); ax.set_title('analytic continuation of ζ', fontsize=9)
+    save('T11-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
