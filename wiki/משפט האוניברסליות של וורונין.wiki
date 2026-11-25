@@ -1,0 +1,120 @@
+[[קובץ:Voronin universality theorem.png|ממוזער|240px|כל פונקציה הולומורפית ''f'' שאינה מתאפסת ומוגדרת ברצועה ניתנת לקירוב על ידי פונקציית ζ.]]
+ב[[מתמטיקה]], '''האוניברסליות''' של [[פונקציית זטא|פונקציות זטא]] היא היכולת המפתיעה של [[פונקציית זטא של רימן]] ושל פונקציות דומות לה (כמו [[פונקציית L של דיריכלה|פונקציות L של דיריכלה]]) לקרב, בדיוק רב כרצוננו, כל [[פונקציה הולומורפית]] שאינה מתאפסת.
+
+את האוניברסליות של פונקציית זטא של רימן הוכיח לראשונה סרגיי וורונין ב-1975,{{הערה|1=S. M. Voronin, ''Theorem on the universality of the Riemann zeta function'', Izv. Akad. Nauk SSSR, Ser. Matem. '''39''' (1975), pp. 475–486; תורגם ל-Math. USSR Izv. '''9''' (1975), pp. 443–445|כיווון=שמאל}} והיא נקראת לעיתים '''משפט האוניברסליות של וורונין'''.
+
+[[קובץ:Voronin-3.png|ממוזער|150px|פונקציית זטא של רימן ברצועה <math>1/2<\mathrm{Re}(s)<1</math>, <math>103<\mathrm{Im}(s)<109</math>.]]
+
+== ניסוח פורמלי ==
+להלן ניסוח מדויק של האוניברסליות של פונקציית זטא של רימן <math>\zeta(s)</math>.
+
+תהי <math>U</math> תת-קבוצה [[קבוצה קומפקטית|קומפקטית]] של הרצועה
+
+:<math>\left\{ s \in \mathbb{C} : \tfrac12 < \mathrm{Re}(s) < 1 \right\}</math>
+
+כך שה[[משלים (תורת הקבוצות)|משלים]] של <math>U</math> [[מרחב קשיר|קשיר]]. תהי <math>f : U \to \mathbb{C}</math> [[פונקציה רציפה]] על <math>U</math>, הולומורפית ב[[פנים (טופולוגיה)|פנים]] של <math>U</math>, שאין לה אפסים ב-<math>U</math>. אז לכל <math>\varepsilon > 0</math> קיים <math>t \ge 0</math> כך ש
+
+:<math> \bigl| \zeta(s+it) - f(s) \bigr| < \varepsilon \qquad (1)</math>
+
+לכל <math>s \in U</math>. יתרה מזו, ה[[צפיפות טבעית|צפיפות התחתונה]] של קבוצת הערכים <math>t</math> שמקיימים את אי-השוויון חיובית. במדויק:
+
+:<math>0 < \liminf_{T \to \infty} \frac{1}{T}\, \lambda\!\left( \left\{ t \in [0,T] : \max_{s\in U} \bigl| \zeta(s+it) - f(s) \bigr| < \varepsilon \right\} \right),</math>
+
+כאשר <math>\lambda</math> היא [[מידת לבג]] על הישר הממשי ו-<math>\liminf</math> הוא ה[[גבול תחתון|גבול התחתון]].
+
+== דיון ==
+התנאי שהמשלים של <math>U</math> קשיר אומר, בעיקרון, שאין ב-<math>U</math> "חורים".
+
+המשמעות האינטואיטיבית של הטענה הראשונה: אפשר להזיז את <math>U</math> בהזזה אנכית <math>it</math> כך שפונקציית הזטא על העותק המוזז של <math>U</math> מקרבת את <math>f</math> על <math>U</math> בדיוק <math>\varepsilon</math>.
+
+אסור לפונקציה <math>f</math> להתאפס ב-<math>U</math>, וזו מגבלה מהותית: אם פונקציה הולומורפית יש לה אפס מבודד, אז גם לכל פונקציה הולומורפית "קרובה" אליה יש אפס (לפי [[משפט רושה]]). לפי [[השערת רימן]], לפונקציית זטא אין אפסים ברצועה הנדונה, ולכן היא אינה יכולה לקרב פונקציה כזו. את הפונקציה <math>f(s) = 0</math>, שמתאפסת זהותית על <math>U</math>, דווקא אפשר לקרב: בוחרים תחילה את הפונקציה ה"קרובה" <math>g(s) = \varepsilon/2</math> (שהיא הולומורפית ואינה מתאפסת), מוצאים הזזה אנכית שבה זטא מקרבת את <math>g</math> בדיוק <math>\varepsilon/2</math>, ואז היא מקרבת את <math>f</math> בדיוק <math>\varepsilon</math>.
+
+האיור המצורף מציג את פונקציית זטא בחלק מייצג של הרצועה. הצבע של הנקודה <math>s</math> מקודד את הערך <math>\zeta(s)</math>: הגוון מייצג את הארגומנט של <math>\zeta(s)</math>, כשאדום מציין ערכים ממשיים חיוביים, ומשם, נגד כיוון השעון, צהוב, ירוק, ציאן, כחול וסגול. צבעים עזים מציינים ערכים קרובים ל-0 (שחור = 0), וצבעים חיוורים מציינים ערכים רחוקים מ-0 (לבן = ∞). רואים באיור שלושה אפסים של פונקציית זטא, בערך ב-<math>1/2 + 103.7i</math>, ב-<math>1/2 + 105.5i</math> וב-<math>1/2 + 107.2i</math>. משפט וורונין אומר, בעיקרון, שהרצועה הזו מכילה כל "דפוס צבעים" אנליטי אפשרי שאינו משתמש בשחור או בלבן.
+
+המשמעות הגסה של הטענה על הצפיפות התחתונה: בהינתן פונקציה <math>f</math> ו-<math>\varepsilon > 0</math>, יש הסתברות חיובית שהזזה אנכית <math>it</math> שנבחרת באקראי תיתן קירוב של <math>f</math> בדיוק <math>\varepsilon</math>.
+
+הפנים של <math>U</math> יכול להיות ריק, ואז אין דרישה ש-<math>f</math> תהיה הולומורפית. למשל, אם <math>U</math> הוא [[קטע (מתמטיקה)|קטע]], אז פונקציה רציפה <math>f : U \to \mathbb{C}</math> היא עקומה ב[[המישור המרוכב|מישור המרוכב]], ומקבלים שפונקציית זטא "מקודדת" ברצועה כל עקומה אפשרית (כלומר כל צורה שאפשר לצייר בלי להרים את העיפרון), בדיוק רב כרצוננו (בתנאי שהעקומה אינה עוברת דרך 0).
+
+המשפט בניסוחו חל רק על תחומים <math>U</math> שמוכלים ברצועה. אולם אם מתירים הזזות ומתיחות, מוצאים בתוך פונקציית זטא גרסאות מקורבות של כל הפונקציות ההולומורפיות שאינן מתאפסות, גם על תחומים אחרים. בפרט, כיוון שפונקציית זטא עצמה הולומורפית, גרסאות שלה עצמה מקודדות בתוכה בקני מידה שונים – סימן ההיכר של [[פרקטל]].{{הערה|1=S. C. Woon, ''Riemann zeta function is a fractal'', arXiv:chao-dyn/9406003 (1994)|כיווון=שמאל}}
+
+אפשר לסכם את האופי המפתיע של המשפט כך: פונקציית זטא של רימן מכילה בתוכה "את כל ההתנהגויות האפשריות", ולכן היא "כאוטית" במובן מסוים – ועם זאת היא פונקציה אנליטית חלקה לחלוטין עם הגדרה פשוטה.
+
+=== סקיצה של ההוכחה ===
+להלן סקיצה של ההוכחה שמופיעה בספר של וורונין וקרצובה (1992).{{הערה|שם=Karatsuba1992|1=A. A. Karatsuba, S. M. Voronin, ''The Riemann Zeta-Function'', Walter de Gruyter, 1992, p. 396|כיווון=שמאל}} נעסוק רק במקרה ש-<math>U</math> הוא עיגול שמרכזו ב-<math>3/4</math>:
+
+:<math>U=\{ s\in \mathbb{C} : |s-3/4|<r \},\qquad 0<r<1/4,</math>
+
+ונטען שכל פונקציה הולומורפית שאינה מתאפסת ומוגדרת על <math>U</math> ניתנת לקירוב על ידי פונקציית זטא על הזזה אנכית של הקבוצה הזו.
+
+לאחר מעבר ל[[לוגריתם]], די להראות שלכל פונקציה הולומורפית <math>g : U \to \mathbb{C}</math> ולכל <math>\varepsilon > 0</math> קיים מספר ממשי <math>t</math> כך ש
+
+:<math> \left| \ln \zeta(s+it)-g(s) \right| < \varepsilon \quad \text{for all} \quad s \in U.</math>
+
+תחילה מקרבים את <math>g(s)</math> בעזרת הלוגריתם של מכפלות סופיות מסוימות, שמזכירות את [[מכפלת אוילר]] של פונקציית זטא:
+
+:<math>\zeta(s)=\prod_{p\in\mathbb{P}}\left(1-\frac{1}{p^s}\right)^{-1} ,</math>
+
+כאשר <math>\mathbb{P}</math> היא קבוצת כל ה[[מספר ראשוני|ראשוניים]].
+
+אם <math>\theta=(\theta_p)_{p\in\mathbb{P}}</math> היא סדרה של מספרים ממשיים, אחד לכל ראשוני <math>p</math>, ו-<math>M</math> היא [[קבוצה סופית]] של ראשוניים, מגדירים
+
+:<math>\zeta_M(s,\theta)=\prod_{p\in M}\left(1-\frac{e^{-2\pi i \theta_p}}{p^s}\right)^{-1}.</math>
+
+מתבוננים בסדרה המסוימת
+
+:<math>\hat\theta=\left(\frac{1}{4},\frac{2}{4},\frac{3}{4},\frac{4}{4},\frac{5}{4},\ldots\right)</math>
+
+וטוענים שאפשר לקרב את <math>g(s)</math> על ידי פונקציה מהצורה <math>\ln(\zeta_M(s,\hat\theta))</math>, עבור קבוצה מתאימה <math>M</math> של ראשוניים. ההוכחה של הטענה הזו משתמשת במרחב ברגמן <math>H</math> של הפונקציות ההולומורפיות על <math>U</math>, שהוא [[מרחב הילברט]] (בספר של וורונין וקרצובה הוא נקרא בטעות מרחב הרדי). מגדירים
+
+:<math>u_k(s)=\ln\left(1-\frac{e^{-\pi i k/2}}{p_k^s} \right),</math>
+
+כאשר <math>p_k</math> הוא הראשוני ה-<math>k</math>-י. אפשר להראות שהטור
+
+:<math>\sum_{k=1}^\infty u_k</math>
+
+[[התכנסות בתנאי|מתכנס בתנאי]] ב-<math>H</math>, במובן הבא: לכל איבר <math>v</math> של <math>H</math> יש סידור מחדש של הטור שמתכנס ב-<math>H</math> אל <math>v</math>. הטיעון משתמש במשפט שמכליל את [[משפט רימן על טורים]] למרחבי הילברט. בזכות הקשר בין הנורמה ב-<math>H</math> לבין הערך המוחלט המקסימלי של פונקציה, אפשר אז לקרב את הפונקציה הנתונה <math>g(s)</math> על ידי קטע התחלתי של הטור המסודר מחדש, כנדרש.
+
+בעזרת גרסה של משפט קרונקר, המופעלת על המספרים הממשיים <math>\frac{\ln 2}{2\pi}, \frac{\ln 3}{2\pi}, \frac{\ln 5}{2\pi},\ldots,\frac{\ln p_N}{2\pi}</math> (שהם בלתי תלויים ליניארית מעל הרציונליים, לפי [[המשפט היסודי של האריתמטיקה]]), מוצאים ערכים ממשיים של <math>t</math> שעבורם <math>\ln(\zeta_M(s+it,0))</math> מקרבת את <math>\ln(\zeta_M(s,\hat\theta))</math>. לבסוף, עבור חלק מהערכים האלה של <math>t</math>, <math>\ln(\zeta_M(s+it,0))</math> מקרבת את <math>\ln(\zeta(s+it))</math>, וזה מסיים את ההוכחה.
+
+המשפט מנוסח בלי הוכחה בסעיף 11.11 של הספר של טיצ'מרש והית'-בראון (1986),{{הערה|שם=titch|1=E. C. Titchmarsh, D. R. Heath-Brown, ''The Theory of the Riemann Zeta-function'', 2nd ed., Oxford University Press, 1986, pp. 308–309|כיווון=שמאל}} המהדורה השנייה של מונוגרפיה של טיצ'מרש מ-1951; תוצאה חלשה יותר מופיעה שם במשפט 11.9. אף שמשפט וורונין אינו מוכח שם, נגזרות ממנו שתי מסקנות:
+# יהי <math>\tfrac12<\sigma<1</math> קבוע. אז העקומה <math>\gamma(t) = (\zeta(\sigma+i t),\zeta'(\sigma+i t),\dots,\zeta^{(n-1)}(\sigma+i t))</math> צפופה ב-<math>\mathbb{C}^n</math>.
+# תהי <math>\Phi</math> פונקציה רציפה כלשהי, ויהיו <math>h_1,h_2,\dots,h_n</math> קבועים ממשיים. אז <math>\zeta(s)</math> אינה יכולה לקיים את המשוואה הדיפרנציאלית-הפרשית <math>\Phi\{\zeta(s+h_1),\zeta'(s+h_1),\dots,\zeta^{(n_1)}(s+h_1), \zeta(s+h_2),\dots,\zeta^{(n_2)}(s+h_2),\dots \} = 0</math>, אלא אם <math>\Phi</math> מתאפסת זהותית.
+
+== אוניברסליות אפקטיבית ==
+עבודות מהשנים האחרונות עוסקות באוניברסליות '''אפקטיבית'''. בתנאים שבתחילת הערך, קיימים ערכים של <math>t</math> שמקיימים את אי-השוויון (1). משפט אוניברסליות אפקטיבי נותן חסם עליון ל-<math>t</math> הקטן ביותר כזה.
+
+למשל, ב-2003 הוכיח גרונקשטיס שאם <math>f(s)</math> אנליטית ב-<math>|s| \le 0.05</math> ו-<math>\max_{|s| \le 0.05} |f(s)| \le 1</math>, אז לכל <math>\varepsilon</math> בטווח <math>0 < \varepsilon < 1/2</math> קיים מספר <math>t</math> בטווח <math>0 \le t \le \exp(\exp(10/\varepsilon^{13}))</math> כך ש
+
+:<math>\max_{|s| \le 0.0001} \left| \log \zeta\left(s + \tfrac{3}{4} + i t\right) - f(s) \right| < \varepsilon.</math>
+
+למשל, עבור <math>\varepsilon = 1/10</math> החסם הוא <math>t \le \exp(\exp(10\cdot 10^{13})) = \exp(\exp(10^{14}))</math>.
+
+אפשר לקבל גם חסמים על המידה של קבוצת הערכים האלה של <math>t</math>, כפונקציה של <math>\varepsilon</math>:{{הערה|1=R. Garunkštis, A. Laurinčikas, K. Matsumoto, J. Steuding, R. Steuding, ''Effective uniform approximation by the Riemann zeta-function'', Publicacions Matemàtiques '''54''' (2010), no. 1, pp. 209–219, עמ' 210|כיווון=שמאל}}
+
+:<math>\liminf_{T\to\infty} \frac{1}{T}\,\lambda\!\left( \left\{ t\in[0,T] : \max_{|s| \le 0.0001} \left| \log \zeta\left(s + \tfrac{3}{4} + i t\right) - f(s) \right| < \varepsilon \right\} \right) \ge \frac{1}{\exp(\varepsilon^{-13})}.</math>
+
+למשל, עבור <math>\varepsilon = 1/10</math> אגף ימין הוא <math>1 / \exp(10^{13})</math>.
+
+== אוניברסליות של פונקציות זטא אחרות ==
+הוכח שהאוניברסליות מתקיימת גם עבור פונקציות זטא של סלברג.{{הערה|1=P. Drungilas, R. Garunkštis, A. Kačėnas, ''Universality of the Selberg zeta-function for the modular group'', Forum Mathematicum '''25''' (2013), no. 3|כיווון=שמאל}}
+
+[[פונקציית L של דיריכלה|פונקציות L של דיריכלה]] מקיימות לא רק אוניברסליות, אלא גם '''אוניברסליות משותפת''': אפשר לקרב כל קבוצה של פונקציות באותם ערכים של <math>t</math> בפונקציות L שונות, כשכל פונקציה שמקרבים מותאמת לפונקציית L אחרת.{{הערה|1=B. Bagchi, ''A universality theorem for Dirichlet L-functions'', Mathematische Zeitschrift '''181''' (1982), no. 3, pp. 319–334|כיווון=שמאל}}{{הערה|שם=matsumoto|1=K. Matsumoto, ''A survey on the theory of universality for zeta and L-functions'', in: Plowing and Starring Through High Wave Forms, Proceedings of the 7th China–Japan Seminar on Number Theory, World Scientific, 2015, pp. 95–144, arXiv:1407.4216, סעיף 4|כיווון=שמאל}}
+
+תכונת אוניברסליות דומה הוכחה עבור פונקציית זטא של לרך <math>L(\lambda, \alpha, s)</math>, לפחות כאשר הפרמטר <math>\alpha</math> הוא [[מספר טרנסצנדנטי]] (שם, סעיף 5). הוכח גם שלחתכים של פונקציית זטא של לרך יש סוג של אוניברסליות משותפת (שם, סעיף 6).
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. A. Karatsuba, S. M. Voronin, ''The Riemann Zeta-Function'', de Gruyter Expositions in Mathematics, de Gruyter, 1992
+* A. Laurinčikas, ''Limit Theorems for the Riemann Zeta-Function'', Mathematics and Its Applications '''352''', Springer, 1996
+* J. Steuding, ''Value-Distribution of L-Functions'', Lecture Notes in Mathematics '''1877''', Springer, 2007
+* E. C. Titchmarsh, D. R. Heath-Brown, ''The Theory of the Riemann Zeta-function'', 2nd ed., Oxford University Press, 1986
+</div>
+
+== קישורים חיצוניים ==
+* [https://arxiv.org/abs/math/0309433v1 X-Ray of the Zeta Function] – בדיקה חזותית של המקומות שבהם זטא ממשית או מדומה טהורה, שמראה עד כמה היא מסובכת ברצועה הקריטית.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]
