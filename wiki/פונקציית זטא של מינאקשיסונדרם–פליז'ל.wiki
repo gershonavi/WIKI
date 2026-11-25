@@ -1,0 +1,74 @@
+'''פונקציית הזטא של מינאקשיסונדרם–פליז'ל''' היא [[פונקציית זטא (אופרטור)|פונקציית זטא]] שמקודדת את הערכים העצמיים של ה[[אופרטור לפלס|לפלסיאן]] של [[יריעה רימנית]] [[מרחב קומפקטי|קומפקטית]]. היא הוצגה על ידי סוברמיה מינאקשיסונדרם ואוקה פליז'ל ב-1949. המקרה של תחום קומפקטי במישור טופל לפני כן על ידי טורסטן קרלמן ב-1935.
+
+== הגדרה ==
+עבור יריעה רימנית קומפקטית <math>M</math> ממימד <math>N</math>, עם ערכים עצמיים <math>\lambda_1, \lambda_2, \ldots</math> של אופרטור לפלס–בלטרמי <math>\Delta</math>, פונקציית הזטא נתונה, עבור <math>\mathrm{Re}(s)</math> גדול מספיק, על ידי
+
+:<math> Z(s) = \mathrm{Tr}(\Delta^{-s}) = \sum_{n=1}^{\infty} | \lambda_{n} |^{-s}</math>
+
+(ערך עצמי שהוא אפס מושמט מהסכום). ליריעה יכולה להיות שפה, ואז צריך לקבוע תנאי שפה מתאימים, כמו תנאי דיריכלה או תנאי נוימן.
+
+באופן כללי יותר אפשר להגדיר
+
+:<math> Z(P, Q, s) = \sum_{n=1}^{\infty} \frac{f_n(P)f_n(Q)}{ \lambda_{n}^s}</math>
+
+עבור נקודות <math>P, Q</math> על היריעה, כאשר <math>f_n</math> הן הפונקציות העצמיות המנורמלות. את הפונקציה הזו אפשר להמשיך אנליטית ל[[פונקציה מרומורפית]] של <math>s</math> לכל <math>s</math> מרוכב, והיא הולומורפית כש-<math>P\ne Q</math>.
+
+הקטבים האפשריים היחידים הם קטבים פשוטים בנקודות <math>s = N/2, N/2-1, N/2-2,\dots, 1/2,-1/2, -3/2,\dots</math> כאשר <math>N</math> אי-זוגי, ובנקודות <math>s = N/2, N/2-1, \dots,2, 1 </math> כאשר <math>N</math> זוגי. אם <math>N</math> אי-זוגי, <math>Z(P,P,s)</math> מתאפסת בנקודות <math>s= 0, -1, -2,\dots</math>. אם <math>N</math> זוגי, אפשר לחשב את השאריות בקטבים במפורש בעזרת המטריקה, ובעזרת משפט וינר–איקהרה מקבלים כמסקנה את הקשר
+
+:<math>\sum_{\lambda_n < T} f_n(P)^2 \sim\frac{T^{N/2}}{(2\sqrt{\pi})^N\,\Gamma(N/2+1)},</math>
+
+כאשר הסימן <math>\sim</math> מציין שהמנה בין שני הצדדים שואפת ל-1 כש-<math>T</math> שואף ל-<math>+\infty</math>.{{הערה|1=S. Minakshisundaram, Å. Pleijel, ''Some properties of the eigenfunctions of the Laplace-operator on Riemannian manifolds'', Canadian Journal of Mathematics '''1''' (1949), no. 3, pp. 242–256|כיווון=שמאל}}
+
+את <math>Z(s)</math> אפשר לשחזר מ-<math>Z(P,P,s)</math> על ידי אינטגרציה על כל היריעה <math>M</math>:
+
+:<math>Z(s) = \int_M Z(P,P,s)\,dP.</math>
+
+== גרעין החום ==
+את ההמשכה האנליטית של פונקציית הזטא אפשר למצוא על ידי הצגתה בעזרת גרעין החום
+
+:<math> K(P,Q,t) = \sum_{n=1}^{\infty} f_n(P)f_n(Q)\, e^{- \lambda_{n}t} </math>
+
+כ[[התמרת מלין]]:
+
+:<math> Z(P,Q,s) = \frac{1}{\Gamma(s)} \int_0^\infty K(P,Q,t)\, t^{s-1}\, dt. </math>
+
+בפרט,
+
+:<math> Z(s) = \frac{1}{\Gamma(s)} \int_0^\infty K(t)\, t^{s-1}\, dt, </math>
+
+כאשר
+
+:<math> K(t)=\int_M K(P,P,t)\,dP=\sum^\infty_{i=1}e^{-\lambda_i t} </math>
+
+היא העקבה של גרעין החום.
+
+את הקטבים של פונקציית הזטא אפשר למצוא מההתנהגות האסימפטוטית של גרעין החום כש-<math>t \to 0</math>: כל איבר <math>c\, t^{-\alpha}</math> בפיתוח של <math>K(t)</math> נותן קוטב ב-<math>s = \alpha</math> עם שארית <math>c/\Gamma(\alpha)</math>. זה בדיוק המנגנון שבו [[פונקציית זטא של רימן|פונקציית זטא של רימן]] מקבלת את ההמשכה שלה מפונקציית התטא.
+
+== דוגמה ==
+אם היריעה היא מעגל (ממימד <math>N=1</math>) באורך <math>2\pi</math>, אז הערכים העצמיים של הלפלסיאן הם <math>n^2</math> עבור <math>n</math> שלם (הפונקציות העצמיות <math>e^{inx}</math>). פונקציית הזטא היא
+
+:<math>Z(s) = \sum_{n\ne 0}\frac{1}{(n^2)^s} = 2\zeta(2s),</math>
+
+כאשר <math>\zeta</math> היא [[פונקציית זטא של רימן]]. הקוטב היחיד שלה הוא ב-<math>s = 1/2 = N/2</math>, ובהתאם לתוצאה הכללית היא מתאפסת בשלמים השליליים: <math>2\zeta(-2k) = 0</math>. גרעין החום כאן הוא <math>K(t) = \sum_{n \ne 0} e^{-n^2t} = \vartheta(t/\pi) - 1</math>, כאשר <math>\vartheta</math> היא [[פונקציית תטא|פונקציית התטא]] של יעקובי, ו-<math>K(t) \approx \sqrt{\pi/t} - 1</math> כש-<math>t \to 0</math>.
+
+== שימושים ==
+יישום שיטת גרעין החום ל[[פיתוח אסימפטוטי]] עבור יריעה רימנית <math>(M,g)</math> נותן את שני המשפטים הבאים. שניהם פתרונות של הבעיה ההפוכה, שבה מסיקים תכונות או גדלים גאומטריים מהספקטרום של האופרטורים.
+
+# '''הפיתוח האסימפטוטי של מינאקשיסונדרם–פליז'ל.''' תהי <math>(M,g)</math> יריעה רימנית ממימד <math>n</math>. אז כש-<math>t\to0^+</math>, לעקבה של גרעין החום יש פיתוח אסימפטוטי מהצורה <math display="block"> K(t)\sim(4\pi t)^{-n/2}\sum^\infty_{m=0}a_m t^m. </math> בפרט, <math display="block"> a_0=\mathrm{Vol}(M,g),\qquad a_1=\frac{1}{6}\int_M S(x)\,dV, </math> כאשר <math>S(x)</math> היא העקמומיות הסקלרית, העקבה של עקמומיות ריצ'י, על <math>M</math>. בממד 2 המשמעות היא שהאינטגרל של העקמומיות הסקלרית קובע את [[מאפיין אוילר]] של <math>M</math>, לפי משפט גאוס–בונה: <math>a_1 = \tfrac{2\pi}{3}\chi(M)</math>.
+# '''הנוסחה האסימפטוטית של וייל.''' תהי <math>M</math> יריעה רימנית קומפקטית, עם ערכים עצמיים <math>0=\lambda_0\le\lambda_1\le\lambda_2\le\cdots</math>, כשכל ערך עצמי חוזר לפי הריבוי שלו. נסמן ב-<math>N(\lambda)</math> את מספר הערכים העצמיים הקטנים או שווים ל-<math>\lambda</math>, וב-<math>\omega_n</math> את הנפח של [[כדור (גאומטריה)|כדור היחידה]] ב-<math>\mathbb{R}^n</math>. אז <math display="block">N(\lambda)\sim\frac{\omega_n\, \mathrm{Vol}(M)\,\lambda^{n/2}}{(2\pi)^n}</math> כש-<math>\lambda \to \infty</math>. בנוסף, כש-<math>k \to \infty</math>, <math display="block"> (\lambda_k)^{n/2}\sim\frac{(2\pi)^n k}{\omega_n\, \mathrm{Vol}(M)}.</math> זה נקרא גם '''חוק וייל''', והוא מעודן על ידי הפיתוח האסימפטוטי של מינאקשיסונדרם–פליז'ל. (בדוגמה של המעגל: <math>n = 1</math>, <math>\omega_1 = 2</math>, <math>\mathrm{Vol} = 2\pi</math>, ולכן <math>N(\lambda) \sim 2\sqrt\lambda</math> – ואכן מספר השלמים עם <math>n^2 \le \lambda</math> הוא בערך <math>2\sqrt\lambda</math>.)
+
+== ראו גם ==
+* [[רגולריזציית זטא]]
+* [[פונקציית זטא של סלברג]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* M. Berger, P. Gauduchon, E. Mazet, ''Le Spectre d'une Variété Riemannienne'', Lecture Notes in Mathematics '''194''', Springer, 1971
+* T. Carleman, ''Propriétés asymptotiques des fonctions fondamentales des membranes vibrantes'', 8. Skand. Mat.-Kongr. (1935), pp. 34–44
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:גאומטריה דיפרנציאלית]]

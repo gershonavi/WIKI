@@ -1,0 +1,33 @@
+'''פונקציית הזטא של [[אופרטור (מתמטיקה)|אופרטור]]''' מתמטי <math>\mathcal O</math> היא הפונקציה המוגדרת על ידי
+
+:<math> \zeta_{\mathcal O}(s) = \mathrm{tr}\; \mathcal O^{-s} </math>
+
+עבור ערכי <math>s</math> שבהם הביטוי קיים, וכ[[המשכה אנליטית]] של הפונקציה הזו עבור ערכים אחרים של <math>s</math>. כאן <math>\mathrm{tr}</math> מסמן [[עקבה (אלגברה ליניארית)|עקבה]] פונקציונלית.
+
+לעיתים אפשר לבטא את פונקציית הזטא גם כ'''פונקציית זטא ספקטרלית'''{{הערה|1=M. L. Lapidus, M. van Frankenhuijsen, ''Fractal Geometry, Complex Dimensions and Zeta Functions'', Springer, 2006, p. 23|כיווון=שמאל}} בעזרת ה[[ערך עצמי|ערכים העצמיים]] <math>\lambda_i</math> של האופרטור <math>\mathcal O</math>:
+
+:<math> \zeta_{\mathcal O}(s) = \sum_{i} \lambda_i^{-s}. </math>
+
+משתמשים בה כדי לתת הגדרה מדויקת ל'''דטרמיננטה הפונקציונלית''' של אופרטור:
+
+:<math> \det \mathcal O := e^{-\zeta'_{\mathcal O}(0)}. </math>
+
+ההגדרה מוצדקת כך: עבור מטריצה סופית חיובית עם ערכים עצמיים <math>\lambda_i</math>, <math>-\zeta'_{\mathcal O}(0) = \sum_i \log\lambda_i</math>, ולכן <math>e^{-\zeta'_{\mathcal O}(0)} = \prod_i\lambda_i</math> היא הדטרמיננטה הרגילה. עבור אופרטור עם אינסוף ערכים עצמיים המכפלה מתבדרת, אבל <math>\zeta'_{\mathcal O}(0)</math> מוגדר בעזרת ההמשכה האנליטית (ראו [[רגולריזציית זטא]]). למשל, עבור אופרטור שהערכים העצמיים שלו הם <math>1, 2, 3, \ldots</math>, פונקציית הזטא היא [[פונקציית זטא של רימן]], והדטרמיננטה היא <math>e^{-\zeta'(0)} = \sqrt{2\pi}</math>.
+
+[[פונקציית זטא של מינאקשיסונדרם–פליז'ל|פונקציית הזטא של מינאקשיסונדרם–פליז'ל]] היא דוגמה לכך, כשהאופרטור הוא הלפלסיאן של [[יריעה רימנית]] קומפקטית.
+
+אחת המוטיבציות החשובות ביותר לתורת ארקלוב היא פונקציות הזטא של אופרטורים, יחד עם שיטת גרעיני החום, בהכללה אלגברו-גאומטרית.{{הערה|1=C. Soulé, ''Lectures on Arakelov Geometry'', Cambridge Studies in Advanced Mathematics '''33''', Cambridge University Press, 1992 (בשיתוף D. Abramovich, J.-F. Burnol, J. Kramer)|כיווון=שמאל}}
+
+== ראו גם ==
+* מטריקת קווילן (Quillen metric)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. Fursaev, D. Vassilevich, ''Operators, Geometry and Quanta: Methods of Spectral Geometry in Quantum Field Theory'', Theoretical and Mathematical Physics, Springer, 2011, p. 98
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:אנליזה פונקציונלית]]
