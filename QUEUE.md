@@ -126,7 +126,7 @@ Additive number theory:
 - [x] Genus field
 - [x] Golod–Shafarevich theorem
 - [x] Albert–Brauer–Hasse–Noether theorem
-- [ ] Langlands dual group
+- [x] Langlands dual group
 - [x] Teichmüller character
 - [x] Gauss sum
 - [x] Jacobi sum
