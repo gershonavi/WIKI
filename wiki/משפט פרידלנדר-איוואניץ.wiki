@@ -1,0 +1,44 @@
+ב[[תורת המספרים האנליטית]], '''משפט פרידלנדר–איוואניץ''' (ב[[אנגלית]]: Friedlander–Iwaniec theorem) קובע שיש אינסוף [[מספר ראשוני|מספרים ראשוניים]] מהצורה <math>a^2 + b^4</math>. הראשוניים הראשונים מהצורה הזו הם
+:2, 5, 17, 37, 41, 97, 101, 137, 181, 197, 241, 257, 277, 281, 337, 401, 457, 577, 617, 641, 661, 677, 757, 769, 821, 857, 881, 977, … {{OEIS|A028916}}.
+
+הקושי בטענה נובע מהדלילות הרבה של הסדרה: מספר המספרים השלמים מהצורה <math>a^2+b^4</math> הקטנים מ-<math>X</math> הוא בערך מסדר גודל של <math>X^{3/4}</math>. (יש בערך <math>\sqrt X</math> בחירות ל-<math>a</math> ו-<math>X^{1/4}</math> בחירות ל-<math>b</math>.) לשם השוואה, ראשוניים מהצורה <math>a^2 + b^2</math> – כלומר כל הראשוניים החופפים ל-1 מודולו 4 – מוכרים מאז פרמה, אבל במקרה זה מספר הערכים עד <math>X</math> הוא מסדר <math>X</math>, ושיטות הנפה הרגילות מתמודדות איתו.
+
+== היסטוריה ==
+את המשפט הוכיחו ב-1997 ג'ון פרידלנדר והנריק איוואניץ.{{הערה|1=J. Friedlander, H. Iwaniec, Using a parity-sensitive sieve to count prime values of a polynomial, PNAS 94 (4), 1997, עמ' 1054–1058, {{DOI|10.1073/pnas.94.4.1054}}|כיווון=שמאל}}{{הערה|1=J. Friedlander, H. Iwaniec, The polynomial X<sup>2</sup> + Y<sup>4</sup> captures its primes, Annals of Mathematics 148 (3), 1998, עמ' 945–1040, {{DOI|10.2307/121034}}, [https://arxiv.org/abs/math/9811185 arXiv:math/9811185]|כיווון=שמאל}} איוואניץ זכה ב-2001 ב[[פרס אוסטרובסקי]], בין השאר בזכות תרומתו לעבודה זו.{{הערה|1=[https://www.ams.org/notices/200207/comm-ostrowski.pdf Iwaniec, Sarnak, and Taylor Receive Ostrowski Prize]|כיווון=שמאל}} כפי שמרמזת כותרת המאמר הראשון, ההוכחה משתמשת בנפה שמסוגלת להבחין בזוגיות של מספר הגורמים הראשוניים – וכך לעקוף את "בעיית הזוגיות" שמונעת מנפות רגילות לספור ראשוניים.
+
+למעשה הם הוכיחו נוסחה אסימפטוטית: אם סופרים את הראשוניים <math>a^2 + b^4 \le x</math> עם ריבוי, על פני כל הזוגות <math>(a, b)</math> של מספרים שלמים (חיוביים ושליליים), אז המספר שלהם הוא
+:<math>f(x) \sim v \frac{x^{3/4}}{\log{x}},</math>
+כאשר
+:<math>v=2 \sqrt{\pi} \frac{\Gamma(5/4)}{\Gamma(7/4)} \prod_{p \equiv 1\bmod 4} \frac{p-2}{p-1} \prod_{p \equiv 3\bmod 4} \frac{p}{p-1} \approx 4.80.</math>
+(בערך האנגלי הנוסחה מיוחסת לעידון של הית'-בראון ולי, שבו <math>b</math> ראשוני. בדיקה מספרית מראה שהיא מתאימה לספירה שבה <math>b</math> הוא מספר שלם כלשהו: עבור <math>x = 10^8</math> יש 65,162 זוגות <math>(a, b)</math> עם <math>a, b \geq 1</math>, כלומר <math>4 \cdot 65{,}162 = 260{,}648</math> זוגות של שלמים, ואילו הנוסחה נותנת כ-260,486.)
+
+== עידונים ==
+את המשפט עידנו רוג'ר הית'-בראון ושיאננן לי ב-2017.{{הערה|1=D. R. Heath-Brown, X. Li, Prime values of a<sup>2</sup> + p<sup>4</sup>, Inventiones Mathematicae 208, 2017, עמ' 441–499, {{DOI|10.1007/s00222-016-0694-0}}, [https://arxiv.org/abs/1504.00531 arXiv:1504.00531]|כיווון=שמאל}} בפרט, הם הוכיחו שהפולינום <math>a^2 + b^4</math> מקבל אינסוף ערכים ראשוניים גם כאשר דורשים שגם המשתנה <math>b</math> יהיה ראשוני.
+
+ב-2024 הכליל מאמר של סטנלי יאו שיאו{{הערה|1=S. Y. Xiao, Prime values of f(a,b<sup>2</sup>) and f(a,p<sup>2</sup>), f quadratic, Algebra and Number Theory 18 (9), 2024, עמ' 1619–1679, {{DOI|10.2140/ant.2024.18.1619}}, [https://arxiv.org/abs/2111.04136 arXiv:2111.04136]|כיווון=שמאל}} את המשפטים של פרידלנדר–איוואניץ ושל הית'-בראון–לי ל[[תבנית ריבועית בינארית|תבניות ריבועיות בינאריות]] כלליות, כולל תבניות לא מוגדרות. בפרט, עבור <math>f(x,y) \in \mathbb{Z}[x,y]</math> תבנית ריבועית בינארית מוגדרת חיובית המקיימת <math>f(x,1) \not \equiv x(x+1) \pmod{2}</math>, נסמן ב-<math>\lambda</math> את ה[[פונקציה מציינת|פונקציה המציינת]] של הראשוניים, ונגדיר
+:<math>\mathfrak{S}_f = \mathrm{Area} \{(x,y) \in \mathbb{R}^2 : f(x,y^2) \leq 1\}</math>
+ו-
+:<math>\nu_f = \prod_{p \nmid \Delta(f)} \left(1 - \frac{\rho_f(p)}{p} \right) \left(1 - \frac{1}{p} \right)^{-1} \prod_{p \mid \Delta(f)} \left(1 - \frac{1}{p} \right)^{-1},</math>
+כאשר <math>\rho_f(m) = \# \{x \bmod m : f(x,1) \equiv 0 \pmod{m}\}</math>. אז מתקיימת הנוסחה האסימפטוטית
+:<math>\sum_{\substack{m, \ell \in \mathbb{Z}\\ f(m,\ell^2) \leq X}} \lambda(f(m, \ell^2)) = \frac{\nu_f \mathfrak{S}_f X^{3/4}}{\log X}\left(1 + O \left(\frac{\log \log X}{\log X} \right) \right).</math>
+כאן <math>\Delta(f)</math> היא ה[[דיסקרימיננטה]] של התבנית הריבועית <math>f</math>.
+
+עבור תבניות לא מוגדרות ואי-פריקות <math>f(x,y) \in \mathbb{Z}[x,y]</math> המקיימות <math>f(x,1) \not \equiv x(x+1) \pmod{2}</math>, נגדיר
+:<math>\mathfrak{S}_f = \lim_{X \rightarrow \infty} \frac{\mathrm{Area}\{(x,y) \in \mathbb{R}^2 : 0< f(x,y^2) \leq X,\ 0 < y < X^{1/4} \}}{X^{3/4}}.</math>
+אז מתקיימת הנוסחה האסימפטוטית
+:<math>\sum_{\substack{m, \ell \in \mathbb{Z}\\ f(m,\ell^2) \leq X \\ 0 < \ell \leq X^{3/4}}} \lambda (f(m, \ell^2)) = \frac{\nu_f \mathfrak{S}_f X^{3/4}}{\log X} \left(1 + O \left(\frac{\log \log X}{\log X} \right) \right).</math>
+
+== מקרה פרטי ==
+כאשר <math>b = 1</math>, ראשוני פרידלנדר–איוואניץ הם מהצורה <math>a^2+1</math>, והם יוצרים את הקבוצה
+:2, 5, 17, 37, 101, 197, 257, 401, 577, 677, 1297, 1601, 2917, 3137, 4357, 5477, 7057, 8101, 8837, 12101, 13457, 14401, 15377, … {{OEIS|A002496}}.
+לפי השערה (אחת מ[[בעיות לנדאו]]) הקבוצה הזו אינסופית. אולם זה אינו נובע ממשפט פרידלנדר–איוואניץ.
+
+== לקריאה נוספת ==
+* B. A. Cipra, Sieving Prime Numbers From Thin Ore, Science 279 (5347), 1998, עמ' 31, {{DOI|10.1126/science.279.5347.31}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:משפטים בתורת המספרים]]

@@ -1,0 +1,31 @@
+ב[[מתמטיקה]], '''סדרת התחלקות''' (ב[[אנגלית]]: divisibility sequence) היא [[סדרה (מתמטיקה)|סדרה]] של [[מספר שלם|מספרים שלמים]] <math>(a_n)</math>, שהאינדקסים שלה הם המספרים השלמים החיוביים <math>n</math>, כך ש-
+:<math>\text{if }m\mid n\text{ then }a_m\mid a_n</math>
+(אם <math>m</math> מחלק את <math>n</math>, אז <math>a_m</math> מחלק את <math>a_n</math>) לכל <math>m</math> ו-<math>n</math>. כלומר, בכל פעם שאינדקס אחד הוא כפולה של אינדקס אחר, גם האיבר המתאים הוא כפולה של האיבר האחר. אפשר להכליל את המושג לסדרות עם ערכים ב[[חוג (מבנה אלגברי)|חוג]] כלשהו שבו מוגדר מושג ההתחלקות.
+
+'''סדרת התחלקות חזקה''' היא סדרה של מספרים שלמים <math>(a_n)</math> כך שלכל זוג מספרים שלמים חיוביים <math>m</math> ו-<math>n</math>,
+:<math>\gcd(a_m,a_n) = a_{\gcd(m,n)},</math>
+כאשר <math>\gcd</math> הוא ה[[מחלק משותף מקסימלי|מחלק המשותף המקסימלי]].
+
+כל סדרת התחלקות חזקה היא סדרת התחלקות: <math>\gcd(m,n) = m</math> אם ורק אם <math>m\mid n</math>. לכן, לפי תכונת ההתחלקות החזקה, <math>\gcd(a_m,a_n) = a_m</math>, ולכן <math>a_m\mid a_n</math>.
+
+== דוגמאות ==
+כל [[סדרת לוקאס]] מהסוג הראשון <math>U_n(P, Q)</math> היא סדרת התחלקות. יתרה מזו, היא סדרת התחלקות חזקה כאשר <math>\gcd(P, Q) = 1</math>. דוגמאות מסוימות:
+* כל סדרה קבועה <math>a_n = k</math> היא סדרת התחלקות חזקה; זו הסדרה <math>kU_n(1, 0)</math> עבור <math>n \ge 1</math>.
+* כל סדרה מהצורה <math>a_n = kn</math>, עבור מספר שלם <math>k</math> שונה מאפס, היא סדרת התחלקות. היא שווה ל-<math>kU_n(2, 1)</math>.
+* [[סדרת פיבונאצ'י|מספרי פיבונאצ'י]] <math>F_n</math> הם סדרת התחלקות חזקה; זו הסדרה <math>U_n(1, -1)</math>. למשל <math>\gcd(F_{12}, F_{18}) = \gcd(144, 2584) = 8 = F_6</math>.
+* [[מספר מרסן|מספרי מרסן]] <math>a_n = 2^n-1</math> הם סדרת התחלקות חזקה; זו הסדרה <math>U_n(3, 2)</math>.
+* מספרי הרפיוניט <math>R^{(b)}_n</math> (המספרים שבבסיס <math>b</math> כתובים כרצף של <math>n</math> ספרות 1), עבור <math>n = 1, 2, \dots</math>, בכל בסיס <math>b</math>, הם סדרת התחלקות חזקה; זו הסדרה <math>U_n(b + 1, b)</math>.
+* כל סדרה מהצורה <math>a_n = A^n - B^n</math>, עבור מספרים שלמים <math>A>B>0</math>, היא סדרת התחלקות; זו הסדרה <math>(A - B)U_n(A + B, AB)</math>. אם <math>A</math> ו-<math>B</math> זרים, זו סדרת התחלקות חזקה.
+
+סדרות התחלקות אליפטיות הן משפחה נוספת של סדרות התחלקות.
+
+== לקריאה נוספת ==
+* G. Everest, A. van der Poorten, I. Shparlinski, T. Ward, Recurrence Sequences, American Mathematical Society, 2003
+* M. Hall, Divisibility sequences of third order, Am. J. Math. 58 (3), 1936, עמ' 577–584, {{DOI|10.2307/2370976}}
+* M. Ward, [http://projecteuclid.org/euclid.bams/1183501776 A note on divisibility sequences], Bull. Amer. Math. Soc. 45 (4), 1939, עמ' 334–336, {{DOI|10.1090/s0002-9904-1939-06980-2}}
+* V. E. Hoggatt Jr., C. T. Long, [http://www.fq.math.ca/Scanned/12-2/hoggatt1.pdf Divisibility properties of generalized Fibonacci polynomials], Fibonacci Quarterly, 1973, עמ' 113
+* J.-P. Bézivin, A. Pethő, A. J. van der Poorten, A full characterization of divisibility sequences, Am. J. Math. 112 (6), 1990, עמ' 985–1001, {{DOI|10.2307/2374733}}
+* P. Ingram, J. H. Silverman, Primitive divisors in elliptic divisibility sequences, בתוך: Number Theory, Analysis and Geometry. In Memory of Serge Lang, Springer, 2012, עמ' 243–271
+
+[[קטגוריה:סדרות של שלמים]]
+[[קטגוריה:פונקציות אריתמטיות]]
