@@ -1,0 +1,28 @@
+ב[[מתמטיקה]], '''שיטת הדטרמיננטה''' (ב[[אנגלית]]: determinant method) היא כל אחת ממשפחה של טכניקות ב[[תורת המספרים האנליטית]].
+
+את השם טבע רוג'ר הית'-בראון, והוא נובע מכך שלב השיטה הוא הערכה של [[דטרמיננטה]] מסוימת. השימוש העיקרי שלה הוא לתת [[חסם מלעיל|חסם עליון]] למספר הנקודות הרציונליות בעלות גובה חסום על [[יריעה אלגברית|יריעות אלגבריות]] המוגדרות מעל הרציונליים, או בקרבתן. החידוש העיקרי של שיטת הדטרמיננטה הוא שבכל גלגוליה, ההערכות המתקבלות אחידות ביחס למקדמים של הפולינומים המגדירים את היריעה, ותלויות רק בדרגה ובממד של היריעה.
+
+== הרעיון (נוסף בתרגום) ==
+נניח שרוצים לספור נקודות שלמות <math>P_1, \ldots, P_m</math> על עקום אלגברי <math>C</math> ממעלה <math>d</math>, בתוך קופסה בגודל <math>N</math>. בוחרים מעלה <math>D</math>, ובונים את המטריצה שבה כל שורה היא רשימת הערכים של כל [[מונום|המונומים]] ממעלה עד <math>D</math> בנקודה <math>P_i</math>:
+:<math>M = \big(x_i^{a}y_i^{b}\big)_{i,\ a+b\le D}.</math>
+* '''צד אריתמטי:''' כל מינור ריבועי של <math>M</math> הוא שלם, כי הנקודות שלמות. לכן אם הוא אינו אפס, ערכו המוחלט לפחות 1.
+* '''צד אנליטי:''' אם הנקודות קרובות זו לזו על העקום (למשל, כולן בקשת קצרה), אפשר לפתח את המונומים בטור טיילור לאורך העקום ולהראות שהמינור קטן מ-1.
+מכאן שהמינור חייב להתאפס, כלומר הנקודות הקרובות זו לזו נמצאות כולן על עקום עזר נוסף ממעלה <math>D</math>, שאינו מכיל את <math>C</math>. לפי משפט בזו, לשני העקומים יש לכל היותר <math>dD</math> נקודות משותפות. מחלקים את <math>C</math> לקשתות קצרות, ובכל קשת יש מעט נקודות; מכאן החסם. זה דומה לטיעון שב[[בעיית הקבוע]]: שלם קטן מ-1 בערכו המוחלט חייב להיות אפס.
+
+== פיתוח ==
+הגרסה המקורית של שיטת הדטרמיננטה פותחה בידי [[אנריקו בומביירי]] וג'ונתן פילה ב-1989.{{הערה|1=E. Bombieri, J. Pila, The number of integral points on arcs and ovals, Duke Mathematical Journal 59 (2), 1989, עמ' 337–357|כיווון=שמאל}} בהקשרה המקורי, התוצאות של בומביירי ופילה חלו רק על <math>\mathbb{A}^2</math>, כי הטיעונים שלהם הסתמכו במידה רבה על הגאומטריה של המישור. הגרסה של בומביירי–פילה לשיטת הדטרמיננטה כונתה מאוחר יותר '''שיטת הדטרמיננטה הממשית-אנליטית'''. (התוצאה המרכזית שלהם: על עקום אלגברי אי-פריק ממעלה <math>d</math>, המנופח פי <math>N</math>, יש לכל היותר <math>O_{d,\varepsilon}(N^{1/d+\varepsilon})</math> נקודות שלמות.) אוסקר מרמון הכליל את התוצאות של בומביירי ופילה ב-2010.{{הערה|1=O. Marmon, A generalization of the Bombieri-Pila determinant method, Proceedings of the HIM trimester on Diophantine equations, Journal of Mathematical Sciences 171, 2010, עמ' 736–744, {{DOI|10.1007/s10958-010-0178-5}}|כיווון=שמאל}}
+
+התוצאה של בומביירי ופילה הייתה חדשנית בגלל האחידות שלה ביחס לפולינומים המגדירים את העקומים. רוג'ר הית'-בראון קיבל ב-2002 את התוצאה המקבילה לזו של בומביירי ופילה בממדים גבוהים יותר,{{הערה|שם=hb02|1=D. R. Heath-Brown, The density of rational points on curves and surfaces, Annals of Mathematics 155 (2), 2002, עמ' 553–598|כיווון=שמאל}} בעזרת טיעון אחר. הגישה של הית'-בראון כונתה מאוחר יותר שיטת הדטרמיננטה '''ה-p-אדית המקומית'''. השימוש העיקרי בשיטת הדטרמיננטה של הית'-בראון היה בניסיון לפתור את מה שמכונה '''השערת גידול הממד'''.{{הערה|שם=hb02}}{{הערה|1=T. D. Browning, D. R. Heath-Brown, P. Salberger, Counting rational points on algebraic varieties, Duke Mathematical Journal 132 (3), 2006, עמ' 545–578|כיווון=שמאל}}
+
+מלבד הגישה הממשית-אנליטית של בומביירי ופילה והגישה ה-<math>p</math>-אדית המקומית של הית'-בראון, יש גישות נוספות: שיטת הדטרמיננטה המקורבת, גם היא של הית'-בראון;{{הערה|1=D. R. Heath-Brown, Sums and differences of three k-th powers, Journal of Number Theory 129, 2009, עמ' 1579–1594|כיווון=שמאל}} שיטת הדטרמיננטה הגלובלית של סלברגר;{{הערה|1=P. Salberger, Counting rational points on projective varieties, Proceedings of the London Mathematical Society 126 (4), 2023, עמ' 1092–1133, {{DOI|10.1112/plms.12508}}|כיווון=שמאל}}{{הערה|1=T. D. Browning, Quantitative Arithmetic of Projective Varieties, Progress in Mathematics 277, Birkhäuser|כיווון=שמאל}} וגרסה חדשה של שיטת הדטרמיננטה המקורבת של דיטמן ומרמון, החלה על פולינומים שהם כמעט דו-הומוגניים.{{הערה|1=R. Dietmann, O. Marmon, The density of twins of k-free numbers, Bulletin of the London Mathematical Society 46 (4), 2014, עמ' 818–826|כיווון=שמאל}}
+
+ב-2012 נוסחה השיטה מחדש בשפה של תורת ארקלוב בידי חואיי צ'ן.{{הערה|1=H. Chen, Explicit uniform estimation of rational points I. Estimation of heights, J. Reine Angew. Math. 668, 2012, עמ' 59–88|כיווון=שמאל}}{{הערה|1=H. Chen, Explicit uniform estimation of rational points II. Hypersurface coverings, J. Reine Angew. Math. 668, 2012, עמ' 89–108|כיווון=שמאל}} הניסוח הזה נחקר עוד בידי צ'ונחווי ליו ב-2022.{{הערה|1=C. Liu, On the global determinant method, Bulletin de la Société Mathématique de France 150 (4), 2022, עמ' 699–741|כיווון=שמאל}}
+
+ב-2016 קיבל סטנלי יאו שיאו הכללה של שיטת הדטרמיננטה הגלובלית של סלברגר למסגרת של מרחבים פרויקטיביים משוקללים.{{הערה|1=S. Y. Xiao, Power-free values of binary forms and the global determinant method, International Mathematics Research Notices, 2016, {{DOI|10.1093/imrn/rnw165}}|כיווון=שמאל}}
+
+התקדמות משמעותית הושגה בידי מרסלו פרדס ורומן סאסיק ב-2022,{{הערה|1=M. Paredes, R. Sasyk, Uniform bounds for the number of rational points on varieties over global fields, Algebra and Number Theory 16 (8), 2022, עמ' 1941–2000, {{DOI|10.2140/ant.2022.16.1941}}, arXiv:2101.12174|כיווון=שמאל}} שהכלילו את המשפטים המרכזיים של שיטת הדטרמיננטה (הגלובלית) ל[[שדה גלובלי|שדות גלובליים]], ובפרט ל[[שדה מספרים|שדות מספרים]].
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]

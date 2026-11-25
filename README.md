@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (199)
+## ערכים (201)
 
 ### אנליזה מרוכבת
 
@@ -254,6 +254,7 @@
 * [אלגוריתם אודליצקו-שנהאגה](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%90%D7%95%D7%93%D7%9C%D7%99%D7%A6%D7%A7%D7%95-%D7%A9%D7%A0%D7%94%D7%90%D7%92%D7%94.md) – Odlyzko–Schönhage algorithm
 * [אפס זיגל](pages/%D7%90%D7%A4%D7%A1%20%D7%96%D7%99%D7%92%D7%9C.md) – Siegel zero
 * [בעיית 3 חלקי 2 של מאהלר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%203%20%D7%97%D7%9C%D7%A7%D7%99%202%20%D7%A9%D7%9C%20%D7%9E%D7%90%D7%94%D7%9C%D7%A8.md) – Mahler's 3/2 problem
+* [בעיית הקבוע](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%94%D7%A7%D7%91%D7%95%D7%A2.md) – Constant problem
 * [הזהות של דגן לשמונה ריבועים](pages/%D7%94%D7%96%D7%94%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%93%D7%92%D7%9F%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A0%D7%94%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D.md) – Degen's eight-square identity
 * [הזהות של פפיסטר לשישה עשר ריבועים](pages/%D7%94%D7%96%D7%94%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%A4%D7%A4%D7%99%D7%A1%D7%98%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A9%D7%94%20%D7%A2%D7%A9%D7%A8%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D.md) – Pfister's sixteen-square identity
 * [היפוך טורי דיריכלה](pages/%D7%94%D7%99%D7%A4%D7%95%D7%9A%20%D7%98%D7%95%D7%A8%D7%99%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Dirichlet series inversion
@@ -292,6 +293,7 @@
 * [פונקציית דיקמן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%93%D7%99%D7%A7%D7%9E%D7%9F.md) – Dickman function
 * [קבוע מייסל-מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
 * [קבוצת היילברון](pages/%D7%A7%D7%91%D7%95%D7%A6%D7%AA%20%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Heilbronn set
+* [שיטת הדטרמיננטה](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%93%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%A0%D7%98%D7%94.md)
 * [שיטת המטריצה של מאייר](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%94%20%D7%A9%D7%9C%20%D7%9E%D7%90%D7%99%D7%99%D7%A8.md) – Maier's matrix method
 * [שיטת המעגל של הארדי וליטלווד](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%A2%D7%92%D7%9C%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A8%D7%93%D7%99%20%D7%95%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93.md) – Hardy–Ramanujan–Littlewood circle method
 * [תופעת דויירינג-היילברון](pages/%D7%AA%D7%95%D7%A4%D7%A2%D7%AA%20%D7%93%D7%95%D7%99%D7%99%D7%A8%D7%99%D7%A0%D7%92-%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Deuring–Heilbronn phenomenon
