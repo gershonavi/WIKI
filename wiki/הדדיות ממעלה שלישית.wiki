@@ -1,0 +1,140 @@
+'''הדדיות ממעלה שלישית''' (cubic reciprocity) היא אוסף של משפטים ב[[תורת המספרים]] האלמנטרית וב[[תורת המספרים האלגברית|אלגברית]], שקובעים תנאים לפתירות של ה[[חשבון מודולרי|קונגרואנציה]] <math>x^3 \equiv p \pmod q</math>. המילה "הדדיות" באה מהצורה של המשפט המרכזי, שקובע שאם <math>p</math> ו-<math>q</math> מספרים '''ראשיים''' (primary) בחוג השלמים של אייזנשטיין, ששניהם זרים ל-3, אז הקונגרואנציה <math>x^3 \equiv p \pmod q</math> פתירה אם ורק אם <math>x^3 \equiv q \pmod p</math> פתירה.
+
+== היסטוריה ==
+זמן מה לפני 1748 ניסח [[לאונרד אוילר|אוילר]] את ההשערות הראשונות על השאריות ממעלה שלישית של מספרים שלמים קטנים, אבל הן פורסמו רק ב-1849, 62 שנה אחרי מותו.{{הערה|1=L. Euler, ''Tractatus de numerorum doctrina capita sedecim quae supersunt'', §§ 407–410|כיווון=שמאל}}
+
+בעבודות שפרסם [[קרל פרידריך גאוס|גאוס]] מוזכרות שאריות ממעלה שלישית והדדיות שלוש פעמים: יש תוצאה אחת על שאריות ממעלה שלישית ב"מחקרים אריתמטיים" (1801).{{הערה|1=C. F. Gauss, ''Disquisitiones Arithmeticae'', הערת שוליים לסעיף 358|כיווון=שמאל}} במבוא להוכחה החמישית והשישית של חוק ההדדיות הריבועית (1818) הוא כתב שהוא מפרסם את ההוכחות האלה משום שאפשר להחיל את השיטות שלהן (הלמה של גאוס ו[[סכום גאוס ריבועי|סכומי גאוס]], בהתאמה) על הדדיות ממעלה שלישית וממעלה רביעית. לבסוף, בהערת שוליים במונוגרפיה השנייה (מתוך שתיים) שלו על הדדיות דו-ריבועית (1832), הוא כותב שהדדיות ממעלה שלישית מתוארת בצורה הפשוטה ביותר בחוג השלמים של אייזנשטיין.
+
+מהיומן שלו וממקורות אחרים שלא פורסמו עולה שגאוס הכיר את הכללים לשאריות ממעלה שלישית ורביעית של מספרים שלמים עד 1805, וגילה את המשפטים וההוכחות המלאים של הדדיות ממעלה שלישית ודו-ריבועית בסביבות 1814.{{הערה|שם=Cox83|1=D. A. Cox, ''Primes of the Form x² + ny²'', Wiley, 1989, pp. 83–90|כיווון=שמאל}}{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000, pp. 199–201, 222–224|כיווון=שמאל}} הוכחות לכך נמצאו בכתביו שפורסמו אחרי מותו, אבל לא ברור אם הן שלו או של אייזנשטיין.{{הערה|שם=L200|1=F. Lemmermeyer, ''Reciprocity Laws'', p. 200|כיווון=שמאל}}
+
+[[קרל גוסטב יעקב יעקובי|יעקובי]] פרסם כמה משפטים על שאריות ממעלה שלישית ב-1827, אבל בלי הוכחות. בהרצאותיו בקניגסברג ב-1836–1837 הציג יעקובי הוכחות.{{הערה|שם=L200}} ההוכחות הראשונות שפורסמו היו של פרדיננד גוטהולד אייזנשטיין (1844).
+
+== מספרים שלמים ==
+'''שארית ממעלה שלישית''' (מודולו <math>p</math>) היא כל מספר ששקול לחזקה השלישית של מספר שלם (מודולו <math>p</math>). אם ל-<math>x^3 \equiv a \pmod p</math> אין פתרון שלם, <math>a</math> הוא '''אי-שארית ממעלה שלישית''' (מודולו <math>p</math>).
+
+כמו לעיתים קרובות בתורת המספרים, קל יותר לעבוד מודולו מספרים ראשוניים, ולכן בסעיף הזה כל המודולים <math>p, q</math> וכו' הם ראשוניים אי-זוגיים חיוביים.
+
+ראשית, אם <math>q \equiv 2 \pmod 3</math> ראשוני, אז כל מספר הוא שארית ממעלה שלישית מודולו <math>q</math>. נכתוב <math>q = 3n + 2</math>; 0 הוא כמובן שארית ממעלה שלישית, ולכן נניח ש-<math>x</math> אינו מתחלק ב-<math>q</math>. לפי [[המשפט הקטן של פרמה]],
+:<math>x^q \equiv x \pmod{q}, \qquad x^{q - 1} \equiv 1 \pmod{q}.</math>
+כופלים את שתי הקונגרואנציות ומקבלים <math>x^{2q-1} \equiv x \pmod{q}</math>. אבל <math>x^{2q-1} = x^{6n + 3} = \left(x^{2n+1}\right)^3</math>. לדוגמה, מודולו 11 (<math>n = 3</math>), השורש השלישי של <math>x</math> הוא <math>x^7</math>: למשל <math>2^7 = 128 \equiv 7</math>, ואכן <math>7^3 = 343 = 31\cdot 11 + 2 \equiv 2 \pmod{11}</math>.
+
+לכן המקרה היחיד המעניין הוא כשהמודולוס <math>p \equiv 1 \pmod 3</math>. במקרה הזה אפשר לחלק את מחלקות השארית השונות מאפס מודולו <math>p</math> לשלוש קבוצות, שבכל אחת <math>(p-1)/3</math> מספרים. תהי <math>e</math> אי-שארית ממעלה שלישית. הקבוצה הראשונה היא השאריות ממעלה שלישית, השנייה היא <math>e</math> כפול המספרים בקבוצה הראשונה, והשלישית היא <math>e^2</math> כפול המספרים בקבוצה הראשונה. דרך אחרת לתאר את החלוקה היא לקחת את <math>e</math> להיות שורש פרימיטיבי מודולו <math>p</math>; אז הקבוצה הראשונה (בהתאמה השנייה, השלישית) היא המספרים שהאינדקס שלהם ביחס לשורש הזה שקול ל-0 (בהתאמה 1, 2) מודולו 3. בשפת [[חבורה (מבנה אלגברי)|תורת החבורות]], השאריות ממעלה שלישית הן תת-חבורה מאינדקס 3 בחבורה הכפלית <math>(\mathbb Z/p\mathbb Z)^{\times}</math>, ושלוש הקבוצות הן המחלקות שלה. לדוגמה, מודולו 7 השאריות ממעלה שלישית השונות מאפס הן <math>\{1, 6\}</math>, והמחלקות האחרות הן <math>\{3, 4\}</math> ו-<math>\{2, 5\}</math>.
+
+=== ראשוניים <math>\equiv 1 \pmod 3</math> ===
+לפי משפט של פרמה,{{הערה|1=C. F. Gauss, ''Disquisitiones Arithmeticae'', Art. 182; D. A. Cox, ''Primes of the Form x² + ny²'', Ex. 1.4–1.5|כיווון=שמאל}} כל ראשוני <math>p \equiv 1 \pmod 3</math> אפשר לכתוב כ-<math>p = a^2 + 3b^2</math>, וההצגה הזו יחידה (פרט לסימנים של <math>a</math> ו-<math>b</math>). אם נסמן <math>m = a + b</math> ו-<math>n = a - b</math>, רואים שזה שקול ל-<math>p = m^2 - mn + n^2</math>. לכן
+:<math>4p = (2m-n)^2 + 3n^2 = (2n-m)^2 + 3m^2 = (m+n)^2 + 3(m-n)^2,</math>
+וקל להראות שבדיוק אחד מ-<math>m</math>, <math>n</math> או <math>m - n</math> מתחלק ב-3, ולכן
+:<math>p = \tfrac14 (L^2+ 27M^2),</math>
+וההצגה הזו יחידה עד כדי הסימנים של <math>L</math> ו-<math>M</math>.{{הערה|שם=IR|1=K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990, Props. 8.3.1–8.3.2|כיווון=שמאל}} לדוגמה, <math>4\cdot7 = 1^2 + 27\cdot1^2</math>, <math>4\cdot13 = 5^2 + 27\cdot1^2</math> ו-<math>4\cdot 31 = 4^2 + 27\cdot 2^2</math>.
+
+לשלמים זרים <math>m</math> ו-<math>n</math> מגדירים את '''סימן השארית הרציונלי ממעלה שלישית''':
+:<math>\left[\frac{m}{n}\right]_3 = \begin{cases} 1 & m \text{ שארית ממעלה שלישית מודולו } n, \\ -1 & m \text{ אי-שארית ממעלה שלישית מודולו } n. \end{cases}</math>
+לסימן הזה ''אין'' את התכונות הכפליות של סימן לז'נדר; בשבילן צריך את הקרקטר האמיתי ממעלה שלישית, עם ערכים בשורשים השלישיים של 1, שמוגדר בהמשך.
+
+:'''ההשערות של אוילר (הוכחו).''' יהי <math>p = a^2 + 3b^2</math> ראשוני. אז:{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', pp. 222–223|כיווון=שמאל}}
+::<math>\begin{align}
+\left[\tfrac{2}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 3\mid b\\
+\left[\tfrac{3}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 9\mid b \text{ או } 9\mid(a\pm b)\\
+\left[\tfrac{5}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 15\mid b \text{ או } (3\mid b \text{ ו-} 5\mid a) \text{ או } 15\mid(a\pm b) \text{ או } 15\mid(2a\pm b)\\
+\left[\tfrac{6}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 9\mid b \text{ או } 9\mid(a\pm 2b)\\
+\left[\tfrac{7}{p}\right]_3 =1 \quad &\Longrightarrow \quad (3\mid b\text{ ו-}7\mid a) \text{ או } 21\mid (b\pm a) \text{ או } 7\mid(4b\pm a) \text{ או } 21\mid b \text{ או } 7\mid(b\pm 2a)
+\end{align}</math>
+(בדקנו את כל הטענות האלה במחשב לכל הראשוניים <math>p \equiv 1 \pmod 3</math> הקטנים מ-3000.)
+
+את שתי הראשונות אפשר לנסח מחדש כך. יהי <math>p</math> ראשוני ששקול ל-1 מודולו 3. אז:{{הערה|1=D. A. Cox, ''Primes of the Form x² + ny²'', p. 2, Thm. 4.15, Ex. 4.15; K. Ireland, M. Rosen, Prop. 9.6.2, Ex. 9.23; F. Lemmermeyer, Props. 7.1–7.2|כיווון=שמאל}}
+* 2 שארית ממעלה שלישית מודולו <math>p</math> אם ורק אם <math>p = a^2 + 27b^2</math>.
+* 3 שארית ממעלה שלישית מודולו <math>p</math> אם ורק אם <math>4p = a^2 + 243b^2</math>.
+לדוגמה, <math>31 = 2^2 + 27\cdot1^2</math>, ואכן <math>4^3 = 64 \equiv 2 \pmod{31}</math>; ואילו 7 אינו מהצורה <math>a^2 + 27b^2</math>, ואכן הקובים מודולו 7 הם רק 0, 1 ו-6.
+
+:'''המשפט של גאוס.''' יהי <math>p</math> ראשוני חיובי כך ש-
+::<math>p = 3n + 1= \tfrac14 \left(L^2+ 27M^2\right),</math>
+:כאשר הסימן של <math>L</math> נבחר כך ש-<math>L \equiv 1 \pmod 3</math>. אז <math>L\,(n!)^3\equiv 1 \pmod{p}</math>.{{הערה|1=C. F. Gauss, ''Disquisitiones Arithmeticae'', הערת שוליים לסעיף 358; F. Lemmermeyer, ''Reciprocity Laws'', Ex. 7.9. בערך האנגלי לא מצוין התנאי על הסימן של <math>L</math>; בדיקה מספרית מראה שהנוסחה מתקיימת כש-<math>L \equiv 1 \pmod 3</math>.|כיווון=שמאל}}
+'''דוגמה.''' עבור <math>p = 13</math>: <math>n = 4</math>, <math>4\cdot13 = 52 = (\pm5)^2 + 27</math>, ו-<math>L = -5 \equiv 1 \pmod 3</math>. אז <math>4! = 24 \equiv -2</math>, <math>(-2)^3 = -8 \equiv 5</math>, ו-<math>L\cdot 5 = -25 \equiv 1 \pmod{13}</math>.
+
+מהמשפט של גאוס נובע בקלות ש-<math>\left[\tfrac{L}{p}\right]_3 = \left[\tfrac{M}{p}\right]_3 =1</math>.
+
+:'''המשפט של למר.''' יהיו <math>q</math> ו-<math>p</math> ראשוניים, עם <math>p = \tfrac14 \left(L^2+ 27M^2\right)</math>. אמה למר נתנה קריטריון כללי מתי <math>q</math> שארית ממעלה שלישית מודולו <math>p</math>, במונחי <math>L</math> ו-<math>M</math> מודולו <math>q</math>.{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Prop. 7.4|כיווון=שמאל}} בפרט, כל מספר שמחלק את <math>L</math> או את <math>M</math> הוא שארית ממעלה שלישית מודולו <math>p</math>. המקרים הראשונים שקולים להשערות של אוילר:{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', pp. 209–212, Props. 7.1–7.3|כיווון=שמאל}}
+:<math>\begin{align}
+\left[\frac{2}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad M \equiv 0 \pmod{2} \\
+\left[\frac{3}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad M \equiv 0 \pmod{3} \\
+\left[\frac{5}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad LM \equiv 0 \pmod{5} \\
+\left[\frac{7}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad LM \equiv 0 \pmod{7}
+\end{align}</math>
+(במקרה של 2 הנוסחה המקורית היא <math>L \equiv M \equiv 0 \pmod 2</math>, אבל תמיד <math>L \equiv M \pmod 2</math>.) לדוגמה, עבור <math>p = 31</math>: <math>L = 4</math>, <math>M = 2</math> – זוגי, ולכן 2 שארית ממעלה שלישית מודולו 31.
+
+:'''המשפט של שריפי.''' יהי <math>p = 1 + 3x + 9x^2</math> ראשוני. אז כל מחלק של <math>x</math> הוא שארית ממעלה שלישית מודולו <math>p</math>.{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Ex. 7.12|כיווון=שמאל}} (למשל <math>x = 2</math> נותן <math>p = 43</math>, ואכן 2 שארית ממעלה שלישית מודולו 43: <math>43 = 4^2 + 27\cdot1^2</math>.)
+
+== השלמים של אייזנשטיין ==
+=== רקע ===
+במונוגרפיה השנייה שלו על הדדיות דו-ריבועית כתב גאוס שהמשפטים על שאריות דו-ריבועיות זוהרים בפשטות וביופי האמיתי רק כשמרחיבים את תחום האריתמטיקה למספרים '''מדומים''', כך שהמספרים מהצורה <math>a + bi</math> הם מושא המחקר. המספרים האלה נקראים היום חוג השלמים של גאוס, <math>\mathbb Z[i]</math>; <math>i</math> הוא שורש רביעי של 1. בהערת שוליים הוסיף גאוס שאת תורת השאריות ממעלה שלישית צריך לבסס באופן דומה על מספרים מהצורה <math>a + bh</math>, כאשר <math>h</math> שורש מדומה של המשוואה <math>h^3 = 1</math>, ושתורת השאריות של חזקות גבוהות יותר מובילה באופן דומה לגדלים מדומים אחרים.{{הערה|שם=Cox83}}
+
+במונוגרפיה הראשונה שלו על הדדיות ממעלה שלישית פיתח אייזנשטיין את התורה של המספרים שבנויים משורש יחידה שלישי; הם נקראים היום חוג השלמים של אייזנשטיין. אייזנשטיין כתב שכדי לחקור את תכונות החוג הזה די לעיין בעבודתו של גאוס על <math>\mathbb Z[i]</math> ולשנות את ההוכחות. זה לא מפתיע, משום ששני החוגים הם [[תחום פריקות יחידה|תחומי פריקות יחידה]]. ה"גדלים המדומים האחרים" שנדרשים ל"תורת השאריות של חזקות גבוהות יותר" הם חוגי השלמים של ה[[שדה ציקלוטומי|שדות הציקלוטומיים]]; השלמים של גאוס ושל אייזנשטיין הם הדוגמאות הפשוטות ביותר להם.
+
+=== עובדות ומונחים ===
+יהי
+:<math>\omega = \frac{-1 + i\sqrt 3}{2} = e^{2\pi i/3}, \qquad \omega^3 = 1,</math>
+ונתבונן בחוג השלמים של אייזנשטיין
+:<math>\mathbb Z[\omega] = \left \{ a + b \omega \ : \ a, b \in \mathbb Z \right \}.</math>
+זהו [[חוג אוקלידי]] ביחס לנורמה
+:<math>N(a + b \omega) = a^2 -ab + b^2.</math>
+הנורמה שקולה תמיד ל-0 או ל-1 מודולו 3. חבורת ה[[איבר הפיך|יחידות]] של <math>\mathbb Z[\omega]</math> היא החבורה הציקלית של שורשי היחידה מסדר שש, <math>\{ \pm 1, \pm \omega, \pm \omega^2\}</math>.
+
+<math>\mathbb Z[\omega]</math> הוא תחום פריקות יחידה, והראשוניים בו מתחלקים לשלושה סוגים (ראו [[פיצול של אידיאלים ראשוניים בהרחבות גלואה]]):{{הערה|1=K. Ireland, M. Rosen, Prop. 9.1.4|כיווון=שמאל}}
+* 3 הוא מקרה מיוחד: <math>3 = -\omega^2 (1-\omega)^2</math>. זהו הראשוני היחיד ב-<math>\mathbb Z</math> שמתחלק בריבוע של ראשוני ב-<math>\mathbb Z[\omega]</math>; אומרים ש-3 '''מסועף''' ב-<math>\mathbb Z[\omega]</math>.
+* ראשוניים חיוביים ב-<math>\mathbb Z</math> ששקולים ל-2 מודולו 3 הם ראשוניים גם ב-<math>\mathbb Z[\omega]</math>; אומרים שהם '''אינרטיים'''. לכל ראשוני אינרטי <math>q</math> מתקיים <math>N(q) = q^2 \equiv 1 \pmod{3}</math>.
+* ראשוניים חיוביים ב-<math>\mathbb Z</math> ששקולים ל-1 מודולו 3 הם מכפלה של שני ראשוניים צמודים ב-<math>\mathbb Z[\omega]</math>; אומרים שהם '''מתפצלים'''. הפירוק שלהם הוא <math>p = N(\pi) = N(\overline{\pi}) = \pi \overline{\pi}</math>; למשל <math>7 = (3 + \omega)(2 - \omega)</math>. (בדיקה: <math>(3+\omega)(2-\omega) = 6 - \omega - \omega^2 = 6 + 1 = 7</math>, משום ש-<math>\omega + \omega^2 = -1</math>.)
+
+מספר נקרא '''ראשי''' (primary) אם הוא זר ל-3 ושקול למספר שלם רגיל מודולו <math>(1-\omega)^2</math>, וזה אותו דבר כמו לומר שהוא שקול ל-<math>\pm 2</math> מודולו 3. אם <math>\gcd(N(\lambda), 3) = 1</math>, אחד מ-<math>\lambda, \omega \lambda, \omega^2 \lambda</math> ראשי. יתרה מזו, מכפלה של שני מספרים ראשיים היא ראשית, והצמוד של מספר ראשי הוא ראשי. משפט הפירוק היחיד ב-<math>\mathbb Z[\omega]</math>: אם <math>\lambda \neq 0</math>, אז
+:<math>\lambda = \pm\omega^\mu(1-\omega)^\nu\pi_1^{\alpha_1}\pi_2^{\alpha_2}\pi_3^{\alpha_3} \cdots, \qquad \mu \in \{0, 1, 2\}, \quad \nu, \alpha_1, \alpha_2, \ldots \geqslant 0,</math>
+כאשר כל <math>\pi_i</math> ראשוני ראשי, וההצגה הזו יחידה עד כדי סדר הגורמים.
+
+=== הקרקטר ממעלה שלישית ===
+מקבילה ל[[המשפט הקטן של פרמה]] מתקיימת ב-<math>\mathbb Z[\omega]</math>: אם <math>\alpha</math> אינו מתחלק בראשוני <math>\pi</math>, אז
+:<math>\alpha^{N (\pi) - 1} \equiv 1 \pmod{\pi}.</math>
+נניח עכשיו ש-<math>N(\pi) \neq 3</math>, כך ש-<math>N(\pi) \equiv 1 \pmod{3}</math>, כלומר <math>3\mid N(\pi) -1</math>. אז אפשר לכתוב
+:<math>\alpha^{\frac{N ( \pi )- 1}{3}}\equiv \omega^k \pmod{\pi}</math>
+עבור יחידה יחידה <math>\omega^k</math>. היחידה הזו נקראת '''הקרקטר ממעלה שלישית''' של <math>\alpha</math> מודולו <math>\pi</math>, ומסמנים אותה{{הערה|1=K. Ireland, M. Rosen, p. 112|כיווון=שמאל}}
+:<math>\left(\frac{\alpha}{\pi}\right)_3 = \omega^k \equiv \alpha^{\frac{N(\pi) - 1}{3}} \pmod{\pi}.</math>
+
+לקרקטר ממעלה שלישית יש תכונות פורמליות דומות לאלה של [[סימן לז'נדר]]:
+* אם <math>\alpha \equiv \beta \pmod{\pi}</math> אז <math>\left (\tfrac{\alpha}{\pi}\right )_3=\left (\tfrac{\beta}{\pi}\right )_3</math>.
+* <math>\left (\tfrac{\alpha\beta}{\pi}\right )_3=\left (\tfrac{\alpha}{\pi}\right )_3\left (\tfrac{\beta}{\pi}\right )_3</math>.
+* <math>\overline{\left (\tfrac{\alpha}{\pi}\right )_3}=\left (\tfrac{\overline{\alpha}}{\overline{\pi}}\right )_3</math>, כאשר הקו העליון מסמן הצמדה מרוכבת.
+* אם <math>\pi</math> ו-<math>\theta</math> חברים (נבדלים בכפל ביחידה), אז <math>\left (\tfrac{\alpha}{\pi}\right )_3=\left (\tfrac{\alpha}{\theta}\right )_3</math>.
+* לקונגרואנציה <math>x^3 \equiv \alpha \pmod{\pi}</math> יש פתרון ב-<math>\mathbb Z[\omega]</math> אם ורק אם <math>\left(\tfrac{\alpha}{\pi}\right)_3 = 1</math>.
+* אם <math>a, b \in \mathbb Z</math> מקיימים <math>\gcd(a, b) = \gcd(b, 3) = 1</math>, אז <math>\left(\tfrac{a}{b}\right)_3 = 1</math>.
+* אפשר להרחיב את הקרקטר באופן כפלי למכנים פריקים (זרים ל-3), כמו שסימן לז'נדר מוכלל ל[[סימן יעקובי]]. כמו בסימן יעקובי, ההרחבה הזו מוותרת על המשמעות "המונה הוא שארית ממעלה שלישית מודולו המכנה": הסימן עדיין שווה ל-1 כשהמונה שארית, אבל הכיוון ההפוך כבר לא נכון.
+
+=== ניסוח המשפט ===
+יהיו <math>\alpha</math> ו-<math>\beta</math> ראשיים. אז
+:<math>\Bigg(\frac{\alpha}{\beta}\Bigg)_3 = \Bigg(\frac{\beta}{\alpha}\Bigg)_3.</math>
+
+'''דוגמה.''' יהיו <math>\alpha = -1 - 3\omega</math> ו-<math>\beta = -4 - 3\omega</math>. שניהם ראשיים (המקדם החופשי שקול ל-2 והמקדם של <math>\omega</math> ל-0 מודולו 3), עם נורמות <math>N(\alpha) = 1 - 3 + 9 = 7</math> ו-<math>N(\beta) = 16 - 12 + 9 = 13</math>, ולכן הם ראשוניים.
+* '''<math>(\alpha/\beta)_3</math>:''' מודולו <math>\beta</math>, השדה <math>\mathbb Z[\omega]/(\beta)</math> הוא <math>\mathbb F_{13}</math>, ו-<math>\omega \mapsto 3</math> (כי <math>3^2 + 3 + 1 = 13 \equiv 0</math>, ו-<math>\beta \mapsto -4 - 9 = -13 \equiv 0</math>). אז <math>\alpha \mapsto -1 - 9 = -10 \equiv 3</math>, ו-<math>3^{(13-1)/3} = 3^4 = 81 \equiv 3 \pmod{13}</math>, שהוא התמונה של <math>\omega</math>. לכן <math>(\alpha/\beta)_3 = \omega</math>.
+* '''<math>(\beta/\alpha)_3</math>:''' מודולו <math>\alpha</math>, השדה הוא <math>\mathbb F_7</math> עם <math>\omega \mapsto 2</math> (<math>4 + 2 + 1 = 7</math>, ו-<math>\alpha \mapsto -1 - 6 = -7 \equiv 0</math>). אז <math>\beta \mapsto -4 - 6 = -10 \equiv 4</math>, ו-<math>4^{(7-1)/3} = 16 \equiv 2 \pmod 7</math>, שהוא התמונה של <math>\omega</math>. לכן <math>(\beta/\alpha)_3 = \omega</math>.
+שני הקרקטרים שווים, כפי שקובע המשפט. (בדקנו את המשפט במחשב לכל זוגות הראשוניים הראשיים עם נורמה קטנה מ-200.)
+
+יש משפטים משלימים ליחידות ולראשוני <math>1 - \omega</math>:{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Th. 6.9; K. Ireland, M. Rosen, Ex. 9.32–9.37|כיווון=שמאל}} יהי <math>\alpha = a + b\omega</math> ראשי, עם <math>a = 3m + 1</math> ו-<math>b = 3n</math> (אם <math>a \equiv 2 \pmod 3</math>, מחליפים את <math>\alpha</math> בחבר שלו <math>-\alpha</math>; זה לא משנה את ערכי הקרקטרים). אז
+:<math>\Bigg(\frac{\omega}{\alpha}\Bigg)_3 = \omega^{\frac{1-a-b}{3}}= \omega^{-m-n},\qquad \Bigg(\frac{1-\omega}{\alpha}\Bigg)_3 = \omega^{\frac{a-1}{3}}= \omega^m,\qquad \Bigg(\frac{3}{\alpha}\Bigg)_3 = \omega^{\frac{b}{3}}= \omega^n.</math>
+לדוגמה, עבור <math>\alpha = -1 - 3\omega</math> לוקחים <math>-\alpha = 1 + 3\omega</math>, כלומר <math>m = 0</math>, <math>n = 1</math>; ולכן <math>(3/\alpha)_3 = \omega</math>, כלומר 3 אינו שארית ממעלה שלישית מודולו <math>\alpha</math> – ובהתאם, 3 אינו קובייה מודולו 7.
+
+== ראו גם ==
+* [[משפט ההדדיות הריבועית]]
+* [[חוק הדדיות]]
+* [[תורת קומר]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. A. Cox, ''Primes of the Form x² + ny²'', Wiley, New York, 1989
+* F. G. Eisenstein, ''Beweis des Reciprocitätssatzes für die cubischen Reste…'', J. Reine Angew. Math. '''27''' (1844), pp. 289–310
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990
+* C. G. J. Jacobi, ''De residuis cubicis commentatio numerosa'', J. Reine Angew. Math. '''2''' (1827), pp. 66–69
+* F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:חשבון מודולרי]]
+[[קטגוריה:משפטים בתורת המספרים]]
