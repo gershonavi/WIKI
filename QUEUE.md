@@ -17,7 +17,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Dickman function
 - [x] Multiplicative number theory
 - [ ] Hardy–Ramanujan–Littlewood circle method
-- [ ] Landau's function
+- [x] Landau's function
 - [ ] Totient summatory function
 - [ ] Average order of an arithmetic function
 - [ ] Extremal orders of an arithmetic function
