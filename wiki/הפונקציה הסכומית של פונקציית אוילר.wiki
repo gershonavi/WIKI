@@ -1,0 +1,60 @@
+ב[[תורת המספרים]], '''הפונקציה הסכומית של פונקציית אוילר''' <math>\Phi(n)</math> היא הפונקציה הסכומית של [[פונקציית אוילר]], המוגדרת על ידי
+
+:<math>\Phi(n) = \sum_{k=1}^n \varphi(k), \qquad n\in \mathbb{N}.</math>
+
+זהו מספר הזוגות הסדורים <math>(p,q)</math> של מספרים שלמים [[מספרים זרים|זרים]] המקיימים <math>1 \le p \le q \le n</math>.
+
+הערכים הראשונים הם 0, 1, 2, 4, 6, 10, 12, 18, 22, 28, 32, ... (סדרה [https://oeis.org/A002088 A002088] ב-OEIS). הערכים בחזקות של 10 הם 1, 32, 3044, 304192, 30397486, 3039650754, ... (סדרה [https://oeis.org/A064018 A064018]).
+
+== תכונות ==
+לכל <math>n \geq 0</math> ממשי מתקיימת הזהות
+
+:<math>\sum_{d=1}^n \Phi\left(\frac{n}{d}\right)=\frac{1}{2}\lfloor n \rfloor \lfloor n+1 \rfloor,</math>
+
+הנותנת נוסחת נסיגה סתומה לפונקציה.{{הערה|שם=cmath|1=Ronald L. Graham, Donald E. Knuth and Oren Patashnik, ''Concrete Mathematics'', 2nd ed., Addison-Wesley, pp. 138, 462–463|כיווון=שמאל}}
+
+הפעלת [[נוסחת ההיפוך של מביוס]] על פונקציית אוילר או על הזהות שלעיל נותנת
+
+:<math>\Phi(n) = \sum_{k=1}^n k\sum _{d\mid k} \frac {\mu (d)}{d} = \frac{1}{2} \sum _{k=1}^n \mu(k) \left\lfloor \frac {n}{k} \right\rfloor \left(1 + \left\lfloor \frac {n}{k} \right\rfloor \right),</math>
+
+כאשר <math>\mu</math> היא [[פונקציית מביוס]]. מכאן אפשר להראות של-<math>\Phi(n)</math> יש הפיתוח האסימפטוטי
+
+:<math>\Phi(n) = \frac{1}{2\zeta(2)}n^{2}+O\left( n\log n \right ) = \frac{3}{\pi^2}n^2+O\left( n\log n \right),</math>
+
+כאשר <math>\zeta(2) = \pi^2/6</math> הוא ערך [[פונקציית זטא של רימן]] בנקודה 2.{{הערה|שם=cmath}}
+
+== הפונקציה הסכומית של ההופכי ==
+הפונקציה הסכומית של ההופכי של פונקציית אוילר היא
+
+:<math>S(n) = \sum _{k=1}^{n}{\frac {1}{\varphi (k)}}.</math>
+
+[[אדמונד לנדאו]] הראה בשנת 1900 שלפונקציה זו ההתנהגות האסימפטוטית{{הערה|1=E. Landau, ''Ueber die zahlentheoretische Funktion φ(n) und ihre Beziehung zum Goldbachschen Satz'', Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse (1900), pp. 177–186|כיווון=שמאל}}
+
+:<math>S(n) = A (\gamma+\log n)+ B +O\left(\frac{\log n} n\right),</math>
+
+כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]],
+
+:<math>A = \sum_{k=1}^\infty \frac{\mu (k)^2}{k \varphi(k)} = \frac{\zeta(2)\zeta(3)}{\zeta(6)} = \prod_{p} \left(1+\frac 1 {p(p-1)} \right)</math>
+
+ו-
+
+:<math>B = \sum_{k=1}^{\infty} \frac{\mu (k)^2\log k}{k \,\varphi(k)} = A \sum_{p}\frac {\log p}{p^2-p+1}.</math>
+
+הקבוע <math>A = 1.943596\ldots</math> נקרא לעיתים '''קבוע לנדאו לפונקציית אוילר'''. הטור <math>\sum_{k=1}^\infty 1 / (k \varphi (k))</math> מתכנס ל-
+
+:<math>\sum _{k=1}^\infty \frac 1 {k\varphi (k)} = \zeta(2) \prod_{p} \left(1 + \frac 1 {p^2(p-1)}\right) =2.20386\ldots</math>
+
+המכפלה על הראשוניים באגף ימין היא קבוע (סדרה [https://oeis.org/A065483 A065483] ב-OEIS) שערכו
+
+:<math>\prod_{p} \left(1+\frac 1 {p^2(p-1)} \right) = 1.339784\ldots</math>
+
+== ראו גם ==
+* [[פונקציה אריתמטית]]
+
+== קישורים חיצוניים ==
+* {{אנגלית}} Eric W. Weisstein, [https://mathworld.wolfram.com/TotientSummatoryFunction.html Totient Summatory Function], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]

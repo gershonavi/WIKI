@@ -1,0 +1,42 @@
+ב[[מתמטיקה]], '''טור בל''' הוא [[טור חזקות פורמלי]] המשמש לחקר תכונות של [[פונקציה אריתמטית|פונקציות אריתמטיות]]. טורי בל הוצגו ופותחו על ידי [[אריק טמפל בל]].
+
+בהינתן פונקציה אריתמטית <math>f</math> ו[[מספר ראשוני|ראשוני]] <math>p</math>, מגדירים את טור החזקות הפורמלי <math>f_p(x)</math>, הנקרא טור בל של <math>f</math> מודולו <math>p</math>:
+
+:<math>f_p(x)=\sum_{n=0}^\infty f(p^n)x^n.</math>
+
+אפשר להראות ששתי [[פונקציה כפלית|פונקציות כפליות]] זהות אם כל טורי בל שלהן שווים; טענה זו נקראת לעיתים '''משפט היחידות''': עבור פונקציות כפליות <math>f</math> ו-<math>g</math> מתקיים <math>f=g</math> [[אם ורק אם]] <math>f_p(x)=g_p(x)</math> לכל ראשוני <math>p</math>.
+
+אפשר לכפול שני טורים (טענה הנקראת לעיתים '''משפט הכפל'''): לכל שתי פונקציות אריתמטיות <math>f</math> ו-<math>g</math>, תהי <math>h=f*g</math> [[קונבולוציית דיריכלה]] שלהן. אז לכל ראשוני <math>p</math>
+
+:<math>h_p(x)=f_p(x) g_p(x).</math>
+
+בפרט, קל מאוד למצוא בעזרת זה את טור בל של ההופכי של פונקציה ביחס לקונבולוציית דיריכלה.
+
+אם <math>f</math> [[פונקציה כפלית לחלוטין|כפלית לחלוטין]], אז באופן פורמלי
+
+:<math>f_p(x)=\frac{1}{1-f(p)x}.</math>
+
+== דוגמאות ==
+להלן טורי בל של פונקציות אריתמטיות מוכרות:
+* ל[[פונקציית מביוס]] <math>\mu</math>: <math>\mu_p(x)=1-x</math>.
+* לריבוע של פונקציית מביוס: <math>\mu_p^2(x) = 1+x</math>.
+* ל[[פונקציית אוילר]] <math>\varphi</math>: <math>\varphi_p(x)=\frac{1-x}{1-px}</math>.
+* לאיבר היחידה של קונבולוציית דיריכלה <math>\delta</math>: <math>\delta_p(x)=1</math>.
+* ל[[פונקציית ליוביל]] <math>\lambda</math>: <math>\lambda_p(x)=\frac{1}{1+x}</math>.
+* לפונקציית החזקה <math>\operatorname{Id}_k(n)=n^k</math>, שהיא כפלית לחלוטין: <math>(\operatorname{Id}_k)_p(x)=\frac{1}{1-p^kx}</math>.
+* ל[[פונקציית המחלקים]] <math>\sigma_k</math>: <math>(\sigma_k)_p(x)=\frac{1}{(1-p^kx)(1-x)}</math>.
+* לפונקציה הקבועה 1: <math>1_p(x) = (1-x)^{-1}</math>, כלומר [[סדרה הנדסית|הטור ההנדסי]].
+* אם <math>f(n) = 2^{\omega(n)} = \sum_{d|n} \mu^2(d)</math>, כאשר <math>\omega</math> היא [[פונקציות אומגה ראשוניות|פונקציית אומגה הראשונית]], אז <math>f_p(x) = \frac{1+x}{1-x}</math>.
+* נניח ש-<math>f</math> כפלית ו-<math>g</math> פונקציה אריתמטית כלשהי המקיימת <math>f(p^{n+1}) = f(p) f(p^n) - g(p) f(p^{n-1})</math> לכל ראשוני <math>p</math> ולכל <math>n \geq 1</math>. אז <math>f_p(x) = \left(1-f(p)x + g(p)x^2\right)^{-1}</math>.
+* אם <math>\mu_k</math> היא פונקציית מביוס מסדר <math>k</math>, המוגדרת על ידי <math>\mu_k(n) = \sum_{d^k|n} \mu_{k-1}\left(\frac{n}{d^k}\right) \mu_{k-1}\left(\frac{n}{d}\right)</math>, אז <math>(\mu_k)_p(x) = \frac{1-2x^k+x^{k+1}}{1-x}</math>.
+
+== ראו גם ==
+* [[מספרי בל]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Tom M. Apostol, ''Introduction to Analytic Number Theory'', Undergraduate Texts in Mathematics, Springer-Verlag, New York, 1976
+</div>
+
+[[קטגוריה:פונקציות אריתמטיות]]
+[[קטגוריה:טורים מתמטיים]]
