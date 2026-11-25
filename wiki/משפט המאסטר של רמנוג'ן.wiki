@@ -1,0 +1,284 @@
+ב[[מתמטיקה]], '''משפט המאסטר של רמנוג'ן''' (ב[[אנגלית]]: Ramanujan's master theorem), הקרוי על שם [[סריניוואסה רמנוג'אן|סריניוואסה רמנוג'ן]],{{הערה|שם=berndt|1=B. Berndt, Ramanujan's Notebooks, Part I, Springer-Verlag, ניו יורק, 1985|כיווון=שמאל}} הוא טכניקה שנותנת ביטוי אנליטי ל[[התמרת מלין]] של [[פונקציה אנליטית]].
+
+התוצאה מנוסחת כך:
+
+אם לפונקציה מרוכבת <math>f(x)</math> יש פיתוח מהצורה
+:<math>f(x)=\sum_{k=0}^\infty \frac{\,\varphi(k)\,}{k!}(-x)^k </math>
+כאשר <math>\varphi(s)</math> פונקציה אנליטית, אז התמרת מלין של <math>f(x)</math> נתונה על ידי
+:<math> \int_0^\infty x^{s-1} f(x) \, dx = \Gamma(s)\,\varphi(-s) </math>
+כאשר <math>\Gamma(s)</math> היא [[פונקציית גמא]].
+
+רמנוג'ן השתמש בה רבות כדי לחשב [[אינטגרל מסוים|אינטגרלים מסוימים]] ו[[טור (מתמטיקה)|טורים אינסופיים]].
+
+גרסאות רב-ממדיות של המשפט מופיעות גם ב[[מכניקת הקוונטים|פיזיקה קוונטית]], דרך [[דיאגרמת פיינמן|דיאגרמות פיינמן]].{{הערה|שם=gms|1=I. González, V. H. Moll, I. Schmidt, A generalized Ramanujan Master Theorem applied to the evaluation of Feynman diagrams, arXiv:[https://arxiv.org/abs/1103.0588 1103.0588], 2011|כיווון=שמאל}}
+
+תוצאה דומה קיבל גם ג'יימס וויטבר לי גלישר.{{הערה|1=J. W. L. Glaisher, A new formula in definite integrals, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science 48 (315), 1874, עמ' 53–55, {{DOI|10.1080/14786447408641072}}|כיווון=שמאל}}
+
+== הדגמה ראשונה (נוסף בתרגום) ==
+'''הדוגמה הבסיסית.''' עבור <math>\varphi(k) = 1</math> מתקבל <math>f(x) = \sum_k (-x)^k/k! = e^{-x}</math>, והמשפט נותן <math>\int_0^\infty x^{s-1}e^{-x}\,dx = \Gamma(s)</math>, שהיא פשוט ההגדרה של פונקציית גמא.
+
+'''אינטגרל בטא.''' עבור <math>a > 0</math>, לפי [[הבינום של ניוטון|הבינום המוכלל]],
+:<math>(1+x)^{-a} = \sum_{k=0}^\infty \binom{-a}{k} x^k = \sum_{k=0}^\infty \frac{\Gamma(a+k)}{\Gamma(a)\,k!}(-x)^k,</math>
+כלומר <math>\varphi(k) = \Gamma(a+k)/\Gamma(a)</math>. המשפט נותן מיד
+:<math>\int_0^\infty \frac{x^{s-1}}{(1+x)^{a}}\,dx = \Gamma(s)\,\frac{\Gamma(a-s)}{\Gamma(a)}, \qquad 0 \lt \mathrm{Re}(s) \lt \mathrm{Re}(a),</math>
+שהיא נוסחת [[פונקציית בטא|אינטגרל בטא]] הידועה. (למשל עבור <math>a = 2.5</math>, <math>s = 0.7</math> שני האגפים שווים ל-<math>0.909464\ldots</math>; נבדק בחישוב.)
+
+שימו לב לאופי ה"פורמלי" של המשפט: הטור של <math>f</math> מתכנס רק עבור <math>|x| \lt 1</math>, ובכל זאת המשפט נותן את האינטגרל על כל <math>(0,\infty)</math>. הסיבה היא ש-<math>\varphi</math> היא פונקציה אנליטית של משתנה רציף, ולא רק סדרה של מקדמים; ההוכחה של הרדי (להלן) מבהירה את התנאים הנדרשים.
+
+== ניסוח חלופי ==
+ניסוח חלופי של משפט המאסטר של רמנוג'ן הוא:
+:<math> \int_0^\infty x^{s-1}\left(\,\lambda(0) - x\,\lambda(1) + x^2\,\lambda(2) -\,\cdots\,\right) dx = \frac{\pi}{\,\sin(\pi s)\,}\,\lambda(-s) </math>
+והוא הופך לצורה שלמעלה אחרי ההצבה <math>\lambda(n) \equiv \frac{\varphi(n)}{\,\Gamma(1+n)\,} </math> ושימוש במשוואה הפונקציונלית של פונקציית גמא.
+
+('''פירוט:''' לפי נוסחת ההשתקפות של אוילר, <math>\Gamma(s)\Gamma(1-s) = \pi/\sin(\pi s)</math>, ולכן <math>\Gamma(s)\varphi(-s) = \Gamma(s)\Gamma(1-s)\lambda(-s) = \frac{\pi}{\sin \pi s}\lambda(-s)</math>. למשל עבור <math>\lambda \equiv 1</math> מתקבל <math>\int_0^\infty \frac{x^{s-1}}{1+x}\,dx = \frac{\pi}{\sin \pi s}</math>.)
+
+האינטגרל שלמעלה מתכנס עבור <math> 0 \lt \mathrm{Re}(s) \lt 1 </math>, בכפוף לתנאי גידול על <math>\varphi</math>.{{הערה|שם=aghms|1=T. Amdeberhan, I. Gonzalez, M. Harrison, V. H. Moll, A. Straub, Ramanujan's Master Theorem, The Ramanujan Journal 29 (1–3), 2012, עמ' 103–120, {{DOI|10.1007/s11139-011-9333-y}}|כיווון=שמאל}}
+
+== הוכחה ==
+הוכחה בהנחות "טבעיות" (אף שאינן התנאים החלשים ביותר הנדרשים) של משפט המאסטר של רמנוג'ן נתן [[גודפרי הרולד הארדי|ג'. ה. הרדי]]{{הערה|שם=hardy|1=G. H. Hardy, Ramanujan: Twelve lectures on subjects suggested by his life and work, מהדורה 3, Chelsea, ניו יורק, 1978, {{ISBN|978-0-8284-0136-4}}|כיווון=שמאל}} (פרק XI), תוך שימוש ב[[משפט השאריות|משפט השאריות]] וב[[התמרת מלין|משפט ההיפוך של מלין]] הידוע.
+
+=== ההוכחה של רמנוג'ן{{הערה|שם=berndt}} ===
+נזכיר את ההצגה של אוילר לפונקציית גמא:
+:<math>\int_0^\infty x^{n-1}e^{-mx}\,dx=m^{-n}\Gamma(n).</math>
+בוחרים <math>m=r^k</math>, כופלים את שני האגפים ב-<math>\frac{f^{(k)}(a)h^k}{k!}</math> (כאן <math>f^{(k)}</math> היא הנגזרת ה-<math>k</math>-ית) ומסכמים על <math>k \ge 0</math>:
+:<math>\sum_{k=0}^\infty\frac{f^{(k)}(a)h^k}{k!}\int_0^\infty x^{n-1}e^{-r^kx}\,dx=\Gamma(n)\sum_{k=0}^\infty\frac{f^{(k)}(a)(hr^{-n})^k}{k!}.</math>
+הסכום באגף ימין הוא [[טור טיילור]], ושווה ל-<math>f(a + hr^{-n})</math>. כותבים את <math>e^{-r^kx}</math> כטור:
+:<math>\sum_{k=0}^\infty\frac{f^{(k)}(a)h^k}{k!}\int_0^\infty x^{n-1}\sum_{j=0}^\infty \frac{(-r^kx)^j}{j!}\,dx=\Gamma(n)f(hr^{-n}+a).</math>
+משנים את סדר הסכימה באגף שמאל:
+:<math>\sum_{j=0}^\infty \frac{(-1)^j}{j!}\int_0^\infty x^{n-1+j} \sum_{k=0}^\infty \frac{f^{(k)}(a)(hr^j)^k}{k!}\,dx=\Gamma(n)f(hr^{-n}+a).</math>
+שוב הסכום על <math>k</math> הוא טור טיילור, ושווה ל-<math>f(a + hr^j)</math>:
+:<math>\int_0^\infty x^{n-1}\sum_{j=0}^\infty \frac{f(hr^j+a)(-x)^j}{j!}\,dx=\Gamma(n)f(hr^{-n}+a).</math>
+(בערך האנגלי נכתב כאן בטעות <math>f^{k}(hr^j+a)</math>; אחרי סכימת טור טיילור לא נשארת נגזרת.)
+לבסוף מגדירים <math>\phi(N) = f(hr^{N}+a)</math> ו-<math>F(x)=\sum_{j=0}^\infty \frac{\phi(j)(-x)^j}{j!}</math>, ומקבלים את משפט המאסטר:
+:<math>\int_0^\infty x^{n-1}F(x)\,dx=\Gamma(n)\phi(-n).</math>
+(הטיעון הוא פורמלי: החלפות סדר הסכימה והאינטגרציה אינן מוצדקות בו. לכן נדרשת הוכחה קפדנית כמו זו של הרדי.)
+
+=== ההוכחה של הרדי{{הערה|שם=aghms}} ===
+תהי <math>\lambda(z)</math> פונקציה אנליטית חד-ערכית המוגדרת על חצי המישור
+:<math>H(\delta) = \left\{z\in \mathbb{C} : \mathrm{Re}(z)\ge - \delta \right\}</math>
+עבור <math>0 \lt \delta \lt 1</math> כלשהו. נניח שעבור <math>A \lt \pi</math> כלשהו, <math>\lambda</math> מקיימת את תנאי הגידול
+:<math>|\lambda(v+iw)| \lt Ce^{Pv+A|w|}</math>
+לכל <math>z=v+iw \in H(\delta)</math>. יהי <math>0 \lt x \lt e^{-P}</math>. מכאן שהטור <math>F(x)=\sum_{n=0}^\infty (-x)^n\lambda(n)</math> מתכנס. מכיוון של-<math>\frac{\pi}{\sin(\pi s)}</math> יש קטבים בנקודות <math>s = -n</math>, <math>n = 0, 1, 2, \ldots</math>, עם שארית <math>(-1)^n</math>, משפט השאריות נותן
+:<math>F(x)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}\frac{\pi}{\sin(\pi s)}\lambda(-s)x^{-s}\,ds</math>
+לכל <math>0 \lt c \lt \delta</math>. האינטגרל הזה מתכנס בהחלט ובמידה שווה עבור <math>c\in(a,b)</math>, לכל <math>0 \lt a \lt b \lt \delta</math>. הפעלת משפט ההיפוך של מלין נותנת
+:<math>\int_0^\infty x^{s-1}F(x)\,dx=\frac{\pi}{\sin(\pi s)}\lambda(-s).</math>
+('''למה התנאי <math>A \lt \pi</math>:''' על הישר <math>s = c + iw</math> מתקיים <math>|\pi/\sin(\pi s)| \approx 2\pi e^{-\pi|w|}</math>, ולכן הגורם <math>e^{A|w|}</math> מ-<math>\lambda</math> נבלע, והאינטגרנד דועך מעריכית.)
+
+== יישום לפולינומי ברנולי ==
+ה[[פונקציה יוצרת]] של פולינומי ברנולי <math>B_k(x)</math> נתונה על ידי:
+:<math> \frac{z\,e^{x\,z}}{\,e^z - 1\,}=\sum_{k=0}^\infty B_k(x)\,\frac{z^k}{k!}.</math>
+את הפולינומים האלה אפשר לבטא בעזרת [[פונקציית זטא של הורוויץ]]:
+:<math> \zeta(s,a) = \sum_{n=0}^\infty \frac{1}{\,(n+a)^s\,} </math>
+על ידי <math>\zeta(1-n,a) = -\frac{B_n(a)}{n}</math> עבור <math>n \geq 1 </math>. בעזרת משפט המאסטר של רמנוג'ן והפונקציה היוצרת של פולינומי ברנולי מקבלים את ההצגה האינטגרלית הבאה:{{הערה|1=O. Espinosa, V. H. Moll, On some integrals involving the Hurwitz zeta function. II, Ramanujan Journal 6 (4), 2002, עמ' 449–468, {{DOI|10.1023/A:1021171500736}}, arXiv:math/0107082|כיווון=שמאל}}
+:<math> \int_0^\infty x^{s-1}\left(\frac{e^{-ax}}{\,1 - e^{-x}\,}-\frac{1}{x}\right) dx = \Gamma(s)\,\zeta(s,a) </math>
+התקפה עבור <math> 0 \lt \mathrm{Re}(s) \lt 1</math>. (בדיקה מספרית: עבור <math>s = 1/2</math>, <math>a = 0.3</math> שני האגפים שווים ל-<math>0.0197677884\ldots</math>.)
+
+== יישום לפונקציית גמא ==
+ההגדרה של ויירשטראס לפונקציית גמא
+:<math> \Gamma(x) = \frac{\,e^{-\gamma\,x\,}}{x}\,\prod_{n=1}^\infty \left(\,1 + \frac{x}{n}\,\right)^{-1} e^{x/n} </math>
+שקולה לביטוי
+:<math> \log\Gamma(1+x) = -\gamma\,x + \sum_{k=2}^\infty \frac{\,\zeta(k)\,}{k}\,(-x)^k </math>
+כאשר <math>\zeta(k)</math> היא [[פונקציית זטא של רימן]] ו-<math>\gamma</math> [[קבוע אוילר-מסקרוני]].
+
+אם מפעילים את משפט המאסטר של רמנוג'ן (בניסוח החלופי, עם <math>\lambda(n) = \zeta(n+2)/(n+2)</math>), מקבלים:
+:<math> \int_0^\infty x^{s-1} \frac{\,\gamma\,x + \log\Gamma(1+x)\,}{x^2}\, dx = \frac{\pi}{\sin(\pi s)}\frac{\zeta(2-s)}{2-s}</math>
+התקף עבור <math> 0 \lt \mathrm{Re}(s) \lt 1 </math>.
+
+המקרים הפרטיים <math>s = \frac{1}{2}</math> ו-<math>s = \frac{3}{4}</math> הם
+:<math> \int_0^\infty \frac{\,\gamma x+\log\Gamma(1+x)\,}{x^{5/2}} \, dx = \frac{2\pi}{3}\,\zeta\left( \frac{3}{2} \right) \approx 5.4713461</math>
+:<math> \int_0^\infty \frac{\,\gamma\,x+\log\Gamma(1+x)\,}{x^{9/4}} \, dx = \sqrt{2}\, \frac{4\pi}{5} \zeta\left(\frac 5 4\right) \approx 16.332435</math>
+(הערכים המספריים נבדקו באינטגרציה נומרית.)
+
+== יישום לפונקציות בסל ==
+ל[[פונקציות בסל|פונקציית בסל]] מהסוג הראשון יש [[טור חזקות|טור החזקות]]
+:<math> J_\nu(z)=\sum_{k=0}^\infty \frac{(-1)^k}{\Gamma(k+\nu+1)k!}\bigg(\frac{z}{2}\bigg)^{2k+\nu}. </math>
+בעזרת משפט המאסטר של רמנוג'ן, יחד עם כמה זהויות של פונקציית גמא וסידור מחדש, אפשר לחשב את האינטגרל
+:<math> \frac{2^{\nu-2s}\pi}{\sin{(\pi(s-\nu))}} \int_0^\infty z^{s-1-\nu/2}J_\nu(\sqrt{z})\,dz = \Gamma(s)\Gamma(s-\nu)</math>
+התקף עבור <math>0 \lt 2\,\mathrm{Re}(s) \lt \mathrm{Re}(\nu)+\tfrac{3}{2} </math>.
+
+באופן שקול, אם מעדיפים את [[פונקציות בסל|פונקציית בסל הספרית]] <math>j_\nu(z)</math>, הנוסחה הופכת ל
+:<math> \frac{2^{\nu-2s}\sqrt{\pi}(1-2s+2\nu)}{\cos{(\pi(s-\nu))}} \int_0^\infty z^{s-1-\nu/2}j_\nu(\sqrt{z})\,dz = \Gamma(s)\Gamma\bigg(\frac{1}{2}+s-\nu\bigg)</math>
+התקפה עבור <math> 0 \lt 2\,\mathrm{Re}(s) \lt \mathrm{Re}(\nu)+2 </math>. (שתי הנוסחאות נבדקו מספרית, למשל עבור <math>\nu = 1, s = 0.8</math> ועבור <math>\nu = 0.5, s = 0.7</math>.)
+
+הפתרון מרשים בכך שהוא מצליח "לעבור" בין הזהויות העיקריות של פונקציית גמא. בפרט, הבחירה <math>J_{1/2}(\sqrt z)</math> נותנת את הריבוע של פונקציית גמא, <math>j_0(\sqrt{z})</math> נותנת את נוסחת ההכפלה, <math>z^{-1/2}J_{1}(\sqrt z)</math> נותנת את נוסחת ההשתקפות, וקיבוע לערך הניתן לחישוב <math>s=\frac{1}{2}</math> או <math>s=1</math> נותן את פונקציית גמא עצמה, עד כדי השתקפות ושינוי קנה מידה.
+
+== שיטת האינטגרציה בסוגריים ==
+'''שיטת האינטגרציה בסוגריים''' (method of brackets) מפעילה את משפט המאסטר של רמנוג'ן על מגוון רחב של אינטגרלים.{{הערה|1=I. Gonzalez, V. H. Moll, Definite integrals by the method of brackets. Part 1, Advances in Applied Mathematics 45 (1), 2010, עמ' 50–73, {{DOI|10.1016/j.aam.2009.11.003}}, arXiv:0812.3356|כיווון=שמאל}} השיטה מייצרת את [[טור חזקות|פיתוח הטור]] של האינטגרנד, בונה ממנו "טור סוגריים", מזהה את המקדם של הטור ואת הפרמטרים של הנוסחה, ומחשבת את האינטגרל.{{הערה|שם=gjm|1=I. Gonzalez, L. Jiu, V. H. Moll, An extension of the method of brackets. Part 2, Open Mathematics 18 (1), 2020, עמ' 983–995, {{DOI|10.1515/math-2020-0062}}, arXiv:1707.08942|כיווון=שמאל}}
+
+=== נוסחאות אינטגרציה ===
+הפרק הזה מציג את נוסחאות האינטגרציה עבור אינטגרנדים עם מעריכים שלמים עוקבים ובלעדיהם, ועבור אינטגרלים יחידים וכפולים. אפשר להכליל את נוסחת האינטגרציה לאינטגרלים כפולים לכל אינטגרל מרובה. בכל המקרים יש ערך פרמטר <math>n^{\ast}</math>, או מערך של ערכי פרמטרים <math>N^{\ast}</math>, שפותר [[משוואה ליניארית]] אחת או יותר הנגזרות מהמעריכים בפיתוח הטור של האינטגרנד.
+
+==== מעריכים שלמים עוקבים, משתנה אחד ====
+זהו פיתוח הטור, האינטגרל ונוסחת האינטגרציה עבור אינטגרל שפיתוח הטור של האינטגרנד שלו מכיל מעריכים שלמים עוקבים:{{הערה|שם=aghms117|1=Amdeberhan ואחרים (2012), עמ' 117, משוואה 9.5|כיווון=שמאל}}
+:<math> \begin{align}
+&f(y)=\sum_{n=0}^\infty \frac{(-1)^{n}}{n!} \ \varphi(n) \ y^{n} \\
+&\int_0^\infty y^{c-1} f(y) \, dy \\
+&= \int_0^\infty \sum_{n=0}^\infty \frac{(-1)^{n}}{n!} \ \varphi(n) \ y^{n+c-1} dy \\
+&=\Gamma(-n^{\ast})\,\varphi(n^{\ast}).
+\end{align}</math>
+הפרמטר <math>n^{\ast}</math> הוא פתרון של המשוואה הליניארית
+:<math> n^{\ast}+c=0, \quad n^{\ast}= -c.</math>
+(זהו בדיוק משפט המאסטר, עם <math>s = c</math>.)
+
+==== מעריכים כלליים, משתנה אחד ====
+ההצבה <math>y=x^{a}</math> נותנת את פיתוח הטור, האינטגרל ונוסחת האינטגרציה עבור אינטגרל שפיתוח הטור של האינטגרנד שלו עשוי שלא להכיל מעריכים שלמים עוקבים:{{הערה|שם=gjm}}
+:<math> \begin{align}
+&f(x)=\sum_{n=0}^\infty \frac{(-1)^{n}}{n!} \ \varphi(n) \ x^{an} \\
+&\int_0^\infty x^{c-1} f(x) \, dx \\
+&=\int_0^\infty \sum_{n=0}^\infty \frac{(-1)^{n}}{n!} \ \varphi(n) \ x^{an+c-1} dx \\
+&=a^{-1} \ \Gamma(-n^{\ast})\,\varphi(n^{\ast}).
+\end{align}</math>
+הפרמטר <math>n^{\ast}</math> הוא פתרון של המשוואה הליניארית
+:<math> a \, n^{\ast}+c=0, \quad n^{\ast}=-a^{-1} c. </math>
+
+==== מעריכים שלמים עוקבים, אינטגרל כפול ====
+זהו פיתוח הטור, האינטגרל ונוסחת האינטגרציה עבור אינטגרל כפול שפיתוח הטור של האינטגרנד שלו מכיל מעריכים שלמים עוקבים:{{הערה|שם=aghms118|1=Amdeberhan ואחרים (2012), עמ' 118|כיווון=שמאל}}
+:<math> \begin{align} &f(y_{1},y_{2})=\sum_{n_1=0}^\infty \sum_{n_2=0}^\infty \frac{(-1)^{n_{1}}}{n_{1}!} \frac{(-1)^{n_{2}}}{n_{2}!} \ \varphi(n_{1},n_{2}) \ y_{1}^{n_{1}} \ y_{2}^{n_{2}} \\
+&\int_0^\infty \int_0^\infty y^{c_{1}-1}_{1} y^{c_{2}-1}_{2} \ f(y_{1},y_{2}) \ dy_{1} \ dy_{2} \\
+&=\int_0^\infty \int_0^\infty \sum^\infty_{n_{1}=0} \sum^\infty_{n_{2}=0} \frac{(-1)^{n_{1}}}{n_{1}!} \frac{(-1)^{n_{2}}}{n_{2}!} \ \varphi(n_{1},n_{2}) \ y_{1}^{n_{1}+c_{1}-1} \ y_{2}^{n_{2}+c_{2}-1} \ dy_{1} \ dy_{2} \\
+&=\Gamma(-n^{\ast}_{1}) \ \Gamma(-n^{\ast}_{2}) \ \varphi(n^{\ast}_{1},n^{\ast}_{2}).
+\end{align}</math>
+הפרמטרים <math>n^{\ast}_{1}</math> ו-<math>n^{\ast}_{2}</math> הם פתרונות של המשוואות הליניאריות
+:<math> n^{\ast}_{1}+c_{1}=0, \quad n^{\ast}_{2}+c_{2}=0, \quad n^{\ast}_{1}=-c_{1}, \quad n^{\ast}_{2}=-c_{2}.</math>
+
+==== מעריכים כלליים, אינטגרל כפול ====
+הפרק הזה מתאר את נוסחת האינטגרציה עבור אינטגרל כפול שפיתוח הטור של האינטגרנד שלו עשוי שלא להכיל מעריכים שלמים עוקבים. ה[[מטריצה|מטריצות]] מכילות את הפרמטרים הדרושים כדי לבטא את המעריכים בפיתוח הטור של האינטגרנד, וה[[דטרמיננטה]] של ה[[מטריצה הפיכה|מטריצה ההפיכה]] <math>A</math> מסומנת <math>\det|A|</math>:{{הערה|שם=abfp|1=B. Ananthanarayan, S. Banik, S. Friot, T. Pathak, Method of Brackets: Revisiting a technique for calculating Feynman integrals and certain definite integrals, Physical Review D 108 (8), 2023, 085001, {{DOI|10.1103/PhysRevD.108.085001}}|כיווון=שמאל}}
+:<math> A= \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}, \quad C= \begin{pmatrix} c_{1} \\ c_{2} \end{pmatrix}, \quad N^{\ast}= \begin{pmatrix} n^{\ast}_{1} \\ n^{\ast}_{2} \end{pmatrix}.</math>
+ההצבה
+:<math> y_{1}=x^{a_{11}}_{1} x^{a_{21}}_{2}, \quad y_{2}=x^{a_{12}}_{1} x^{a_{22}}_{2}</math>
+נותנת את פיתוח הטור, האינטגרל ונוסחת האינטגרציה עבור אינטגרל כפול שפיתוח הטור של האינטגרנד שלו עשוי שלא להכיל מעריכים שלמים עוקבים.{{הערה|שם=aghms118}} האינטגרל ונוסחת האינטגרציה הם{{הערה|שם=abfp}}
+:<math> \begin{align}
+&\int_0^\infty \int_0^\infty \sum^\infty_{n_{1}=0} \sum^\infty_{n_{2}=0} \frac{(-1)^{n_{1}}}{n_{1}!} \frac{(-1)^{n_{2}}}{n_{2}!} \ \varphi(n_{1},n_{2}) \ x_{1}^{n_{1}a_{11}+n_{2}a_{12}+c_{1}-1} \ x_{2}^{n_{1}a_{21}+n_{2}a_{22}+c_{2}-1} \ dx_{1} \ dx_{2} \\
+&=\det|A|^{-1} \ \Gamma(-n^{\ast}_{1}) \ \Gamma(-n^{\ast}_{2}) \ \varphi(n^{\ast}_{1},n^{\ast}_{2}).
+\end{align} </math>
+מטריצת הפרמטרים <math>N^{\ast}</math> היא פתרון של המשוואה הליניארית{{הערה|שם=abfp}}
+:<math> AN^{\ast}+C=0, \quad N^{\ast}=-A^{-1} C. </math>
+
+==== מדד סיבוכיות חיובי ====
+במקרים מסוימים יש יותר סכומים ממשתנים. למשל, אם האינטגרנד הוא מכפלה של 3 פונקציות של אותו משתנה, וכל פונקציה מומרת לפיתוח טור, האינטגרנד הופך למכפלה של 3 סכומים, שכל אחד מהם מתאים לפיתוח טור אחר.
+* '''מספר הסוגריים''' הוא מספר המשוואות הליניאריות הקשורות לאינטגרל. המונח משקף את הנוהג המקובל לסמן כל משוואה ליניארית בסוגריים.{{הערה|שם=gkmr|1=I. Gonzalez, I. Kondrashuk, V. H. Moll, L. M. Recabarren, Mellin–Barnes integrals and the method of brackets, The European Physical Journal C 82 (1), 2022, 28, {{DOI|10.1140/epjc/s10052-021-09977-x}}, arXiv:2108.09421|כיווון=שמאל}}
+* '''מדד הסיבוכיות''' הוא מספר הסכומים באינטגרנד פחות מספר הסוגריים (המשוואות הליניאריות). כל פיתוח טור של האינטגרנד תורם סכום אחד.{{הערה|שם=gkmr}}
+* '''אינדקסי הסכימה''' הם האינדקסים שממספרים את האיברים בפיתוח טור. בדוגמה יש 3 אינדקסי סכימה <math>n_{1}, n_{2}</math> ו-<math>n_{3}</math>, כי האינטגרנד הוא מכפלה של 3 פיתוחי טור.{{הערה|שם=aghms117}}
+* '''אינדקסי הסכימה החופשיים''' הם אינדקסי הסכימה שנשארים אחרי שמסיימים את כל האינטגרציות. האינטגרציה מקטינה את מספר הסכומים באינטגרנד, כי היא מחליפה פיתוחי טור (סכומים) בנוסחת אינטגרציה. לכן אחרי האינטגרציה יש פחות אינדקסי סכימה. מספר אינדקסי הסכימה החופשיים שנבחרים שווה למדד הסיבוכיות.{{הערה|שם=aghms117}}
+
+==== אינטגרלים עם מדד סיבוכיות חיובי ====
+אינדקסי הסכימה החופשיים <math>\bar{n}_{1},\ldots, \bar{n}_{f}</math> הם איברי הקבוצה <math>F</math>. מטריצת אינדקסי הסכימה החופשיים היא <math>\bar{N}</math>, ומטריצת המקדמים שלהם היא <math>\bar{A}</math>:
+:<math> \bar{A}= \begin{pmatrix} \bar{a}_{11} & \ldots &\bar{a}_{1f}
+\\ \vdots & & \vdots \\
+\bar{a}_{b1} & \ldots & \bar{a}_{bf} \end{pmatrix}, \quad \bar{N}= \begin{pmatrix} \bar{n}_{1} \\ \vdots \\ \bar{n}_{f} \end{pmatrix}.</math>
+שאר האינדקסים הם הקבוצה <math>B</math>, המכילה את האינדקסים <math>n_{1},\ldots, n_{b}</math>. המטריצות <math>A, C</math> ו-<math>N^{\ast}</math> מכילות את האיברים שמוכפלים באינדקסים שאינם חופשיים או מתווספים להם. האינדקסים החופשיים שנבחרים צריכים להשאיר את המטריצה <math>A</math> הפיכה.
+:<math> A= \begin{pmatrix} a_{11} & \ldots &a_{1b} \\ \vdots & & \vdots \\
+a_{b1} & \ldots & a_{bb} \end{pmatrix}, \quad C= \begin{pmatrix} c_{1} \\ \vdots \\ c_{b} \end{pmatrix}, \quad N^{\ast}= \begin{pmatrix} n^{\ast}_{1} \\ \vdots \\ n^{\ast}_{b} \end{pmatrix}.</math>
+זהו פיתוח הטור של הפונקציה, האינטגרל ונוסחת האינטגרציה:{{הערה|שם=abfp}}
+:<math> \begin{align}
+&f(x_{1}, \ldots, x_{b})\\
+&=\sum_{n \in B} \sum_{\bar{n} \in F} \frac{(-1)^{n_{1}}}{n_{1}!} \frac{(-1)^{\bar{n}_{1}}}{\bar{n}_{1}!}
+\cdots
+\frac{(-1)^{n_{b}}}{n_{b}!} \frac{(-1)^{\bar{n}_{f}}}{\bar{n}_{f}!}\, \varphi(n_{1}, \ldots, n_{b}, \bar{n}_{1}, \dots, \bar{n}_{f})\prod_{k=1}^{b} x_{k}^{n_{1}a_{k1}+ \dots + \bar{n}_{1}\bar{a}_{k1}+ \dots + c_{k}-1} \\
+&\int^{\infty}_{0} \cdots \int^{\infty}_{0} f(x_{1}, \ldots, x_{b}) \ dx_{1} \cdots dx_{b} \\
+&=\det|A|^{-1} \sum_{\bar{n} \in F} \frac{(-1)^{\bar{n}_{1}}}{\bar{n}_{1}!}
+\cdots
+\frac{(-1)^{\bar{n}_{f}}}{\bar{n}_{f}!}
+\ \Gamma(-n^{\ast}_{1}) \cdots \Gamma(-n^{\ast}_{b}) \ \varphi(n^{\ast}_{1}, \ldots, n^{\ast}_{b}, \bar{n}_{1}, \dots, \bar{n}_{f}).
+\end{align} </math>
+הפרמטרים <math>n^{\ast}_{1}, \ldots, n^{\ast}_{b}</math> הם פונקציות ליניאריות של הפרמטרים <math>\bar{n}_{1}, \ldots, \bar{n}_{f}</math>:{{הערה|שם=abfp}}
+:<math> A \, N^{\ast}+\bar{A} \, \bar{N}+C=0, \quad N^{\ast}= -A^{-1}(\bar{A} \, \bar{N}+C).</math>
+(בערך האנגלי מופיע לפני האינטגרל גם הגורם <math>x^{c_1-1}\cdots x^{c_b-1}</math>, אבל הגורמים האלה כבר כלולים במעריכים של <math>f</math>; השמטנו את הכפילות.)
+
+=== טור סוגריים ===
+{| class="wikitable"
+|+ טבלה 1. סימוני טור סוגריים
+|-
+! סוג הסימון !! סימון טור חזקות !! סימון טור סוגריים
+|-
+| מציין || <math>\frac{(-1)^n}{n !}</math> || <math> \phi_{n} </math>
+|-
+| מציין מרובה || <math> \prod_{j=1}^N \left( \frac{(-1)^{n_{j}}}{n_{j}!} \right) </math> || <math> \phi_{n_1,\ldots ,n_N}</math>
+|-
+| סוגר || <math>\int^{\infty}_{0} dx \ x^{a_{1}n_{1}+ \ldots +a_{m}n_{m}+c-1} </math> || <math> \langle a_{1}n_{1}+ \ldots + a_{m}n_{m}+c \rangle </math>
+|}
+'''סימוני טור סוגריים''' הם סימונים שמחליפים סימונים מקובלים של טורי חזקות (טבלה 1).{{הערה|שם=gms8|1=González, Moll, Schmidt (2011), עמ' 8|כיווון=שמאל}} החלפת סימוני טור החזקות בסימוני טור סוגריים הופכת את טור החזקות לטור סוגריים. טור סוגריים מקל לזהות את הפרמטרים של הנוסחה הדרושים לאינטגרציה. מומלץ גם להחליף סכום המועלה בחזקה:{{הערה|שם=gms8}}
+:<math> \frac{1}{(x_{1}+ \ldots +x_{b})^{\alpha}}</math>
+בביטוי טור הסוגריים הבא:
+:<math>\sum^{\infty}_{m_{1}=0} \ldots \sum^{\infty}_{m_{b}=0} \ \phi_{m_1, \dots,m_b} \ x^{m_{1}}_{1} \dots x^{m_{b}}_{b}\frac{\langle \alpha+m_{1}+ \ldots +m_{b} \rangle}{\Gamma(\alpha)}.</math>
+('''מקור הנוסחה (הסבר נוסף):''' מתחילים מ-<math>\frac{1}{X^\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}e^{-tX}\,dt</math>, עם <math>X = x_1 + \cdots + x_b</math>; מפתחים כל <math>e^{-t x_j}</math> לטור, והאינטגרל על <math>t</math> הוא בדיוק הסוגר <math>\langle \alpha + m_1 + \cdots + m_b\rangle</math>.)
+
+=== אלגוריתם ===
+האלגוריתם הבא מתאר איך להפעיל את נוסחאות האינטגרציה.{{הערה|שם=gjm}}{{הערה|שם=aghms117}}{{הערה|שם=abfp}}
+
+{| class="wikitable"
+|+ טבלה 2. נוסחאות אינטגרציה
+|-
+! מדד סיבוכיות !! נוסחת אינטגרציה
+|-
+| אפס, אינטגרל יחיד || <math>a^{-1} \ \Gamma(-n^{\ast})\,\varphi(n^{\ast})</math>
+|-
+| אפס, אינטגרל מרובה || <math>\det |A|^{-1} \ \Gamma(-n^{\ast}_{1}) \cdots \Gamma(-n^{\ast}_{b}) \ \varphi(n^{\ast}_{1}, \ldots, n^{\ast}_{b})</math>
+|-
+| חיובי || <math>\det |A|^{-1} \sum_{\bar{n} \in F} \frac{(-1)^{\bar{n}_{1}}}{\bar{n}_{1}!} \cdots \frac{(-1)^{\bar{n}_{f}}}{\bar{n}_{f}!} \ \Gamma(-n^{\ast}_{1}) \cdots \Gamma(-n^{\ast}_{b}) \ \varphi(n^{\ast}_{1}, \ldots, n^{\ast}_{b}, \bar{n}_{1}, \dots, \bar{n}_{f})</math>
+|}
+:'''קלט:''' ביטוי של אינטגרל.
+:'''פלט:''' ערך האינטגרל, או הודעה שאי אפשר לייחס לאינטגרל ערך.
+:# מבטאים את האינטגרנד כטור חזקות.
+:# הופכים את טור החזקות של האינטגרנד לטור סוגריים.
+:# מוצאים את מדד הסיבוכיות, את הפרמטרים של הנוסחה ואת פונקציית המקדם של הטור.
+:## מדד הסיבוכיות הוא מספר הסכומים באינטגרנד פחות מספר הסוגריים.
+:## הפרמטרים <math>n^{\ast}</math> או המערך <math>N^{\ast}</math> הם פתרונות של המשוואות הליניאריות <math>an^{\ast}+c=0</math> (מדד סיבוכיות אפס, אינטגרל יחיד), <math>AN^{\ast}+C=0</math> (מדד סיבוכיות אפס, אינטגרל מרובה) או <math>AN^{\ast}+\bar{A} \bar{N}+C=0</math> (מדד סיבוכיות חיובי). (בערך האנגלי נכתב בטעות "אינטגרל יחיד" גם במקרה השני.)
+:## מזהים את הפרמטר <math>a</math> (מדד סיבוכיות אפס, אינטגרל יחיד) או מחשבים את <math>\det |A|</math> (בכל שאר המקרים) מהמשוואות הליניאריות המתאימות.
+:## מזהים את פונקציית המקדם <math>\varphi</math> של טור הסוגריים.
+:# אם מדד הסיבוכיות שלילי, מחזירים שאי אפשר לייחס לאינטגרל ערך.
+:# אם מדד הסיבוכיות אפס, בוחרים מטבלה 2 את הנוסחה למדד סיבוכיות אפס, אינטגרל יחיד או מרובה, מחשבים בעזרתה את ערך האינטגרל ומחזירים אותו.
+:# אם מדד הסיבוכיות חיובי, בוחרים מטבלה 2 את הנוסחה למדד סיבוכיות חיובי, ומחשבים בעזרתה את ערך האינטגרל כפיתוח טור, עבור כל הבחירות האפשריות של אינדקסי הסכימה החופשיים. בוחרים את פיתוחי הטור ה[[טור מתכנס|מתכנסים]] בעלי מדד הסיבוכיות הנמוך ביותר, ומחברים טורים שמתכנסים באותו תחום.
+:## אם כל פיתוחי הטור מתבדרים או אפסים (כל איברי הטור אפס), מחזירים שאי אפשר לייחס לאינטגרל ערך.
+:## אם פיתוח הטור אינו אפס ואינו מתבדר, מחזירים אותו כערך האינטגרל.
+
+=== דוגמאות ===
+==== מדד סיבוכיות אפס ====
+שיטת הסוגריים תחשב את האינטגרל
+:<math> \int_0^\infty x^{3/2} \ e^{-x^3/2} \ dx. </math>
+# מבטאים את האינטגרנד כטור חזקות: <math> \int_0^\infty \sum_{n=0}^\infty 2^{-n} \frac{(-1)^n}{n!} \ x^{(3 n+5/2)-1} \ dx. </math>
+# הופכים את טור החזקות לטור סוגריים: <math> \sum_{n=0}^\infty 2^{-n} \ \phi_n \cdot \left \langle 3 n+ \tfrac{5}{2} \right \rangle. </math>
+# מוצאים את מדד הסיבוכיות, את הפרמטרים ואת פונקציית המקדם: מדד הסיבוכיות הוא אפס (סכום אחד, סוגר אחד); <math> 3 n^{\ast}+ 5/2=0</math>, כלומר <math> n^{\ast}= -5/6</math> ו-<math>a=3</math>; ו-<math>\varphi(n)=2^{-n}</math>.
+# משתמשים בטבלה 2 כדי לחשב את האינטגרל:
+:<math> \int_0^\infty x^{3/2} \, e^{-x^3/2} \, dx = a^{-1} \ \Gamma(-n^{\ast}) \ \varphi(n^{\ast}) = \frac{\Gamma \left(\frac{5}{6} \right) \ 2^{5/6}}{3} \approx 0.6704233.</math>
+(בדיקה: הצבה <math>u = x^3/2</math> נותנת את אותה תוצאה ישירות, ואינטגרציה נומרית מאשרת את הערך.)
+
+==== מדד סיבוכיות חיובי ====
+שיטת הסוגריים תחשב את האינטגרל
+:<math> \int^{\infty}_{0} \frac{1}{(1+x^{3}+x^{5})^{1/2}} \ dx. </math>
+1. מבטאים את האינטגרנד כטור חזקות, בעזרת הנוסחה לסכום המועלה בחזקה (עם <math>x_1 = 1</math>, <math>x_2 = x^5</math>, <math>x_3 = x^3</math> ו-<math>\alpha = 1/2</math>):
+:<math>
+\int^{\infty}_{0} \sum_{n_1,n_2,n_3} \ \frac{1}{\Gamma(1/2)}\, \phi_{n_1,n_2,n_3}\, 1^{n_{1}} x^{5n_{2}+ 3n_{3}} \langle n_{1}+n_{2}+n_{3}+1/2 \rangle \ dx.
+</math>
+2. הופכים את טור החזקות לטור סוגריים:
+:<math> \sum_{n_1,n_2,n_3} \frac{1}{\Gamma(1/2)}\, \phi_{n_1,n_2,n_3} \langle 5 n_{2}+ 3 n_{3}+1 \rangle \langle n_{1}+n_{2}+n_{3}+1/2 \rangle. </math>
+3. מוצאים את מדד הסיבוכיות, את הפרמטרים ואת פונקציית המקדם. מדד הסיבוכיות הוא 1, כי יש 3 סכומים ו-2 סוגריים. בוחרים את <math>n_{3}</math> כאינדקס החופשי <math>\bar{n}_{3}</math>. המשוואות הליניאריות, הפתרונות, הדטרמיננטה ומקדם הטור הם:
+:<math> 5n^{\ast}_{2}+ 3 \bar{n}_{3}+1=0, \quad n^{\ast}_{1}+n^{\ast}_{2}+\bar{n}_{3}+1/2=0,</math>
+:<math> \begin{pmatrix} 1 & 1 \\ 0 & 5 \end{pmatrix} \begin{pmatrix} n^{\ast}_{1} \\ n^{\ast}_{2} \end{pmatrix}
++ \begin{pmatrix} 1 \\ 3 \end{pmatrix} \bar{n}_{3}+ \begin{pmatrix} 1/2 \\ 1 \end{pmatrix} =0, \quad\text{i.e.}\quad AN^{\ast} + \bar{A} \bar{N} + C =0,</math>
+:<math> \det |A|=5, \qquad n^{\ast}_{1}= -\frac{2}{5} \bar{n}_{3}-\frac{3}{10}, \quad n^{\ast}_{2}= -\frac{3}{5} \bar{n}_{3}-\frac{1}{5},</math>
+:<math> \varphi(n^{\ast}_{1},n^{\ast}_{2}, \bar{n}_{3})= \frac{1}{\Gamma(1/2)}=\frac{1}{\sqrt{\pi}}. </math>
+(בערך האנגלי נכתב בטעות <math>1/\sqrt{\Gamma(1/2)}</math> בשלבים 1–3; המקדם הנכון לפי נוסחת הסכום המועלה בחזקה הוא <math>1/\Gamma(1/2) = 1/\sqrt\pi</math>, וזה מה שמופיע בתוצאה הסופית.)
+
+4. משתמשים בטבלה 2 כדי לחשב את האינטגרל:
+:<math> \begin{align}
+\int^{\infty}_{0} \frac{dx}{(1+x^{3}+x^{5})^{1/2}}
+&=\sum^{\infty}_{\bar{n}_{3}=0} \frac{(-1)^{\bar{n}_{3}}}{\bar{n}_{3}!} \det |A|^{-1}\Gamma(-n^{\ast}_{1}) \Gamma(-n^{\ast}_{2})
+\varphi(n^{\ast}_{1},n^{\ast}_{2},\bar{n}_{3}) \\
+&=\sum^{\infty}_{\bar{n}_{3}=0}\frac{(-1)^{\bar{n}_{3}}}{\bar{n}_{3}!} \frac{\Gamma(\frac{2}{5} \bar{n}_{3}+\frac{3}{10})\,\Gamma(\frac{3}{5} \bar{n}_{3}+\frac{1}{5})}{5 \sqrt{\pi}} \approx 1.4147248.
+\end{align}
+</math>
+(בדיקה, נוסף בתרגום: הטור מתכנס, כי <math>\Gamma(\tfrac25 n)\Gamma(\tfrac35 n)/n!</math> דועך בערך כמו <math>\big((2/5)^{2/5}(3/5)^{3/5}\big)^n \approx 0.51^n</math> לפי [[נוסחת סטרלינג|נוסחת סטירלינג]]. סכום הטור שווה לערך האינטגרל המחושב נומרית, <math>1.414724796\ldots</math>, בכל הספרות שנבדקו.)
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+== לקריאה נוספת ==
+* I. Gonzalez, K. Kohl, L. Jiu, V. H. Moll, An extension of the method of brackets. Part 1, Open Mathematics 15 (1), 2017, עמ' 1181–1211, {{DOI|10.1515/math-2017-0100}}, arXiv:1707.08942
+* I. Gonzalez, K. Kohl, L. Jiu, V. H. Moll, The Method of Brackets in Experimental Mathematics, בתוך: Frontiers in Orthogonal Polynomials and q-Series, World Scientific, 2018, עמ' 307–318, {{DOI|10.1142/9789813228887_0016}}
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/RamanujansMasterTheorem.html Ramanujan's Master Theorem], MathWorld
+
+[[קטגוריה:סריניוואסה רמנוג'ן]]
+[[קטגוריה:משפטים בתורת המספרים האנליטית]]
