@@ -4980,6 +4980,109 @@ def _():
     save('T07-x4')
 
 
+def _omega_upto(N):
+    om = np.zeros(N + 1, dtype=np.int8)
+    s = np.ones(N + 1, bool); s[:2] = False
+    for i in range(2, int(N ** .5) + 1):
+        if s[i]:
+            s[i * i::i] = False
+    for q in np.nonzero(s)[0]:
+        om[q::q] += 1
+    return om[1:]
+
+
+@fig('T08-e1')
+def _():
+    fig_, ax = plt.subplots(figsize=(6.6, 2.2))
+    for n in range(1, 31):
+        r, c = divmod(n - 1, 10)
+        col = '#9467bd' if n % 6 == 0 else C1 if n % 2 == 0 else C2 if n % 3 == 0 else 'white'
+        ax.add_patch(plt.Rectangle((c, -r), .92, .92, fc=col, ec=GR, alpha=.85 if col != 'white' else 1))
+        ax.text(c + .46, -r + .46, str(n), ha='center', va='center', fontsize=9, color='white' if col != 'white' else 'black')
+    ax.set_xlim(-.1, 10); ax.set_ylim(-2.1, 1); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('blue: 2|n (15)   red: 3|n (10)   purple: 6|n (5) = 30·½·⅓', fontsize=9)
+    save('T08-e1')
+
+
+@fig('T08-e2')
+def _():
+    ax = plt.gca(); N = 200; d = np.zeros(N + 1)
+    for k in range(1, N + 1):
+        d[k::k] += 1
+    n = np.arange(1, N + 1)
+    ax.plot(n, d[1:], 'o', ms=2, color=GR, label='d(n)')
+    ax.plot(n, np.cumsum(d[1:]) / n, color=C1, lw=1.5, label='average of d up to N')
+    ax.plot(n, np.log(n) + 2 * 0.5772 - 1, color=C2, ls='--', label='log N + 2γ − 1')
+    ax.set_xlabel('n, N'); ax.legend(fontsize=8); ax.set_title('E[d(n)] for n ≤ N', fontsize=9)
+    save('T08-e2')
+
+
+@fig('T08-e3')
+def _():
+    ax = plt.gca(); from math import comb
+    k = np.arange(25, 76); p = np.array([comb(100, int(j)) / 2 ** 100 for j in k])
+    tail = np.abs(k - 50) >= 10
+    ax.bar(k[~tail], p[~tail], color=C1, width=.9); ax.bar(k[tail], p[tail], color=C2, width=.9, label='|X − 50| ≥ 10: 0.057')
+    ax.set_xlabel('number of heads in 100 tosses'); ax.legend(fontsize=8); ax.set_title('Chebyshev bound: 25/10² = 0.25', fontsize=9)
+    save('T08-e3')
+
+
+@fig('T08-e4')
+def _():
+    ax = plt.gca(); o = _omega_upto(10 ** 6).astype(float)
+    cnt = np.bincount(o.astype(int)) / len(o); mu, v = o.mean(), o.var()
+    ax.bar(np.arange(len(cnt)), cnt, color=C1, width=.8, label='fraction of n ≤ 10⁶')
+    z = np.linspace(-.5, 7.5, 300); ax.plot(z, np.exp(-(z - mu) ** 2 / (2 * v)) / np.sqrt(2 * np.pi * v), color=C2, label=f'normal, mean {mu:.2f}, var {v:.2f}')
+    ax.set_xlabel('ω(n)'); ax.legend(fontsize=8); ax.set_title('distribution of ω(n)', fontsize=9)
+    save('T08-e4')
+
+
+@fig('T08-x1')
+def _():
+    ax = plt.gca(); P = np.array(PR[:40])
+    ax.plot(np.arange(1, 41), np.cumprod(1 - 1 / P.astype(float) ** 2), 'o-', ms=3, color=C1, label='∏_{p ≤ p_k} (1 − 1/p²)')
+    ax.axhline(6 / np.pi ** 2, color=C2, ls='--', label='6/π² ≈ 0.6079')
+    ax.set_xlabel('k (number of primes)'); ax.legend(fontsize=8); ax.set_title('probability that two numbers are coprime', fontsize=9)
+    save('T08-x1')
+
+
+@fig('T08-x2')
+def _():
+    ax = plt.gca(); c = [8, 14, 7, 1]
+    ax.bar(range(4), c, color=C1, width=.6)
+    for i, v in enumerate(c):
+        ax.text(i, v + .3, str(v), ha='center', fontsize=9)
+    ax.axvline(31 / 30, color=C2, ls='--', label='E[X] = 31/30')
+    ax.set_xticks(range(4)); ax.set_xlabel('X = number of p in {2,3,5} dividing n'); ax.set_ylabel('count, n ≤ 30')
+    ax.legend(fontsize=8); ax.set_title('Var(X) = 569/900', fontsize=9)
+    save('T08-x2')
+
+
+@fig('T08-x3')
+def _():
+    ax = plt.gca(); N = 10 ** 6; d = np.zeros(N + 1, dtype=np.int32)
+    for k in range(1, N + 1):
+        d[k::k] += 1
+    dd = d[1:]; a = np.arange(1, 241); h = np.bincount(dd, minlength=242)
+    frac = 1 - np.cumsum(h)[a - 1] / N
+    ax.semilogy(a, frac, color=C1, label='fraction with d(n) ≥ a')
+    ax.semilogy(a, np.minimum(1, dd.mean() / a), color=C2, ls='--', label='Markov: E[d]/a')
+    ax.axvline(100, color=GR, lw=.8); ax.set_xlabel('a'); ax.legend(fontsize=8); ax.set_title('n ≤ 10⁶', fontsize=9)
+    save('T08-x3')
+
+
+@fig('T08-x4')
+def _():
+    ax = plt.gca(); from math import comb
+    k = np.arange(30, 71); p = np.array([comb(100, int(j)) / 2 ** 100 for j in k])
+    inside = np.abs(k - 50) <= 10
+    ax.bar(k[inside], p[inside], color=C1, width=.9, label='40 ≤ X ≤ 60: 0.9648')
+    ax.bar(k[~inside], p[~inside], color=GR, width=.9)
+    z = np.linspace(30, 70, 300); ax.plot(z, np.exp(-(z - 50) ** 2 / 50) / np.sqrt(50 * np.pi), color=C2, label='normal, μ = 50, σ = 5')
+    ax.set_xlabel('number of heads'); ax.legend(fontsize=8); ax.set_title('central limit theorem', fontsize=9)
+    save('T08-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
