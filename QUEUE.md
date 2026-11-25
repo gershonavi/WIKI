@@ -149,7 +149,7 @@ Additive number theory:
 - [x] Supersingular elliptic curve
 - [x] Counting points on elliptic curves
 - [ ] Schoof's algorithm
-- [ ] Modular elliptic curve
+- [x] Modular elliptic curve
 - [x] Frey curve
 - [ ] Sato–Tate conjecture
 - [ ] Conductor of an elliptic curve
