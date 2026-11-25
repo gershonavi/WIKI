@@ -104,7 +104,7 @@ Additive number theory:
 - [x] Hilbert's ninth problem
 - [ ] Height function
 - [x] Newton polygon
-- [ ] Skolem–Mahler–Lech theorem
+- [x] Skolem–Mahler–Lech theorem
 - [ ] Arithmetic dynamics
 - [ ] Drinfeld module
 - [ ] Formal group law
