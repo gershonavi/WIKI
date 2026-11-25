@@ -5433,6 +5433,204 @@ def _():
     save('T12-x4')
 
 
+def _periodic_flow(g0, ts):
+    from scipy.integrate import solve_ivp
+    g0 = np.array(g0); L = g0.sum(); x0 = np.concatenate([[0], np.cumsum(g0)[:-1]])
+    def f(t, x):
+        d = x[:, None] - x[None, :]; np.fill_diagonal(d, 1.0)
+        c = 1 / np.tan(np.pi * d / L); np.fill_diagonal(c, 0)
+        return (2 * np.pi / L) * c.sum(1)
+    sol = solve_ivp(f, [0, ts[-1]], x0, t_eval=ts, rtol=1e-10, atol=1e-12)
+    return sol.t, sol.y, L
+
+
+@fig('T13-e1')
+def _():
+    ax = plt.gca(); from scipy.special import erf
+    x = np.linspace(-4, 4, 400)
+    ax.plot(x, (x > 0).astype(float), color='k', lw=1, label='t = 0')
+    for t, col in ((.01, C1), (.1, C3), (1, C2)):
+        ax.plot(x, .5 * (1 + erf(x / (2 * np.sqrt(t)))), color=col, label=f't = {t}')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('heat flow smooths a step', fontsize=9)
+    save('T13-e1')
+
+
+@fig('T13-e2')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.8, 4.2)); t = np.linspace(0, .5, 100); t2 = np.linspace(.5, 1.5, 100)
+    ax.plot(0 * t, np.sqrt(1 - 2 * t), color=C1, lw=2); ax.plot(0 * t, -np.sqrt(1 - 2 * t), color=C1, lw=2, label='t < ½: ±i√(1 − 2t)')
+    ax.plot(np.sqrt(2 * t2 - 1), 0 * t2, color=C2, lw=2); ax.plot(-np.sqrt(2 * t2 - 1), 0 * t2, color=C2, lw=2, label='t > ½: ±√(2t − 1)')
+    ax.plot([0, 0], [1, -1], 'o', color=C1); ax.plot(0, 0, 'k*', ms=10, label='collision at t = ½')
+    ax.annotate('', xy=(0, .5), xytext=(0, .85), arrowprops=dict(arrowstyle='->', color=C1, lw=1.5))
+    ax.annotate('', xy=(1.2, 0), xytext=(.8, 0), arrowprops=dict(arrowstyle='->', color=C2, lw=1.5))
+    ax.set_aspect('equal'); ax.set_xlim(-1.6, 1.6); ax.set_ylim(-1.3, 1.5); ax.legend(fontsize=7, loc='upper right')
+    ax.set_xlabel('Re z'); ax.set_ylabel('Im z'); ax.set_title('zeros of z² + 1 − 2t', fontsize=9)
+    save('T13-e2')
+
+
+@fig('T13-e3')
+def _():
+    ax = plt.gca(); t = np.linspace(-.5, 1.5, 300)
+    ax.plot(t, np.sqrt(3 + 6 * t), color=C1, label='√(3 + 6t)'); ax.plot(t, -np.sqrt(3 + 6 * t), color=C1)
+    ax.plot(t, 0 * t, color=C2, label='0 (stays)')
+    ax.set_xlabel('t'); ax.set_ylabel('zero'); ax.legend(fontsize=8); ax.set_title('zeros of z³ − (3 + 6t)z', fontsize=9)
+    save('T13-e3')
+
+
+@fig('T13-e4')
+def _():
+    ts = np.linspace(0, .3, 151); t, X, L = _periodic_flow([.4, 1.6, .7, 1.3, .5, 1.5, 1., 1.], ts)
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.3))
+    for k in range(X.shape[0]):
+        a1.plot(X[k], t, color=C1, lw=1)
+    a1.set_xlabel('position (period 8)'); a1.set_ylabel('t'); a1.set_title('zero trajectories', fontsize=9)
+    G = np.diff(np.vstack([X, X[:1] + L]), axis=0)
+    a2.plot(t, G.std(axis=0), color=C2); a2.set_xlabel('t'); a2.set_title('std of gaps → 0', fontsize=9)
+    save('T13-e4')
+
+
+@fig('T13-x1')
+def _():
+    ax = plt.gca(); x = np.linspace(-5, 5, 400)
+    for t, col in ((.05, C1), (.25, C3), (1, C2)):
+        ax.plot(x, np.exp(-x ** 2 / (4 * t)) / np.sqrt(4 * np.pi * t), color=col, label=f't = {t}')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('heat kernel K_t(x), area 1', fontsize=9)
+    save('T13-x1')
+
+
+@fig('T13-x2')
+def _():
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.2)); u = np.linspace(0, 1.2, 300)
+    n = np.arange(1, 6)[:, None]
+    P = ((2 * np.pi ** 2 * n ** 4 * np.exp(9 * u) - 3 * np.pi * n ** 2 * np.exp(5 * u)) * np.exp(-np.pi * n ** 2 * np.exp(4 * u))).sum(0)
+    a1.plot(u[u <= .6], P[u <= .6], color=C1); a1.set_xlabel('u'); a1.set_title('Φ(u)', fontsize=9)
+    lp = np.log(2 * np.pi ** 2) + 9 * u - np.pi * np.exp(4 * u)
+    a2.plot(u, lp, color=C1, label='log Φ(u) ≈ log 2π² + 9u − πe^(4u)'); a2.plot(u, -np.pi * np.exp(4 * u), color=C2, ls='--', label='−π e^(4u)')
+    a2.set_xlabel('u'); a2.legend(fontsize=7); a2.set_title('super-exponential decay', fontsize=9)
+    save('T13-x2')
+
+
+@fig('T13-x3')
+def _():
+    fig_, ax = plt.subplots(figsize=(4.8, 4.2)); t = np.linspace(0, .5, 100); t2 = np.linspace(.5, 1.5, 100)
+    ax.plot(np.sqrt(1 - 2 * t), 0 * t, color=C1, lw=2); ax.plot(-np.sqrt(1 - 2 * t), 0 * t, color=C1, lw=2, label='t < ½: ±√(1 − 2t)')
+    ax.plot(0 * t2, np.sqrt(2 * t2 - 1), color=C2, lw=2); ax.plot(0 * t2, -np.sqrt(2 * t2 - 1), color=C2, lw=2, label='t > ½: ±i√(2t − 1)')
+    ax.plot([1, -1], [0, 0], 'o', color=C1); ax.plot(0, 0, 'k*', ms=10)
+    ax.set_aspect('equal'); ax.set_xlim(-1.5, 1.5); ax.set_ylim(-1.5, 1.6); ax.legend(fontsize=7, loc='upper right')
+    ax.set_xlabel('Re z'); ax.set_ylabel('Im z'); ax.set_title('forward heat flow: z² − 1 + 2t', fontsize=9)
+    save('T13-x3')
+
+
+@fig('T13-x4')
+def _():
+    ax = plt.gca()
+    for d0, col in ((.1, C1), (.2, C3), (.4, C2)):
+        t = np.linspace(-d0 ** 2 / 8, .02, 300); ax.plot(t, np.sqrt(np.maximum(d0 ** 2 + 8 * t, 0)), color=col, label=f'δ₀ = {d0}: collide at t = {-d0 ** 2 / 8:.5f}')
+    ax.axvline(0, color=GR, lw=.6); ax.set_xlabel('t'); ax.set_ylabel('δ(t)'); ax.legend(fontsize=7); ax.set_title('a close pair, backwards in time', fontsize=9)
+    save('T13-x4')
+
+
+def _H0(x):
+    import mpmath as mpm
+    s = mpm.mpf(.5) + 1j * mpm.mpf(x) / 2
+    return float(mpm.re(s * (s - 1) / 2 * mpm.pi ** (-s / 2) * mpm.gamma(s / 2) * mpm.zeta(s))) / 8
+
+
+def _zz():
+    return np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'zeta_zeros_1000.npy'))
+
+
+@fig('18-1')
+def _():
+    ax = plt.gca(); x = np.linspace(0, 70, 700)
+    y = np.array([_H0(t) for t in x]) * np.exp(np.pi * x / 8)
+    ax.plot(x, y, color=C1); ax.axhline(0, color=GR, lw=.6)
+    z = 2 * _zz()[:5]; ax.plot(z, 0 * z, 'o', color=C2, ms=5, label='2γ (zeta zeros)')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('H₀(x)·e^(πx/8)', fontsize=9)
+    save('18-1')
+
+
+@fig('18-2')
+def _():
+    ax = plt.gca(); t = np.array([-.4, -.2, 0, .2, .4])
+    X = np.array([[28.5017, 42.3473, 50.2555], [28.3855, 42.1954, 50.1387], [28.2695, 42.0441, 50.0217], [28.1536, 41.8934, 49.9044], [28.038, 41.7433, 49.7868]])
+    for k, col in zip(range(3), (C1, C3, C2)):
+        ax.plot(X[:, k], t, 'o-', color=col, label=f'x_{k + 1}(t)')
+    ax.set_xlabel('x'); ax.set_ylabel('t'); ax.legend(fontsize=8); ax.set_title('first zeros of H_t', fontsize=9)
+    save('18-2')
+
+
+@fig('18-3')
+def _():
+    ax = plt.gca(); g = 2 * _zz(); T = np.linspace(20, g[-1], 400)
+    ax.step(g, np.arange(1, len(g) + 1), where='post', color=C1, label='N₀(T): zeros of H₀ in [0, T]')
+    ax.plot(T, T / (4 * np.pi) * np.log(T / (4 * np.pi)) - T / (4 * np.pi), color=C2, ls='--', label='(T/4π) log(T/4π) − T/4π')
+    ax.set_xlabel('T'); ax.legend(fontsize=8); ax.set_title('counting zeros', fontsize=9)
+    save('18-3')
+
+
+@fig('18-4')
+def _():
+    ax = plt.gca(); g = _zz(); gaps = np.diff(g) * np.log(g[:-1] / (2 * np.pi)) / (2 * np.pi)
+    ax.hist(gaps, bins=40, density=True, color=C1, alpha=.8, label='normalized gaps of ζ zeros')
+    ax.axvline(1, color=C2, lw=2, label='arithmetic progression: all gaps = 1')
+    s = np.linspace(0, 3, 300); ax.plot(s, 32 / np.pi ** 2 * s ** 2 * np.exp(-4 * s ** 2 / np.pi), color='k', ls=':', label='GUE (Wigner surmise)')
+    ax.set_xlabel('normalized gap'); ax.legend(fontsize=7); ax.set_title('zeta zeros are not in equilibrium', fontsize=9)
+    save('18-4')
+
+
+@fig('18-5')
+def _():
+    ax = plt.gca(); x = np.linspace(-70, 70, 1001)
+    y = np.array([_H0(abs(t)) for t in x]) * np.exp(np.pi * np.abs(x) / 8)
+    ax.plot(x, y, color=C1); ax.axhline(0, color=GR, lw=.6); ax.axvline(0, color=GR, lw=.6)
+    z = 2 * _zz()[:5]; ax.plot(np.concatenate([z, -z]), 0 * np.concatenate([z, z]), 'o', color=C2, ms=4)
+    ax.set_xlabel('x'); ax.set_title('H₀ is even: zeros at ±2γ', fontsize=9)
+    save('18-5')
+
+
+@fig('18-6')
+def _():
+    fig_, ax = plt.subplots(figsize=(6.6, 3.2))
+    yrs = [1988, 1991, 1991, 1992, 1993, 1994, 2000, 2011]; lb = [-50, -5, -.0991, -.385, -5.895e-9, -4.379e-6, -2.63e-9, -1.15e-11]
+    ax.semilogy(yrs, -np.array(lb), 'o', color=C1, label='|lower bound| (Lehmer pairs)')
+    ax.semilogy([1950, 2019, 2021], [.5, .22, .2], 's', color=C2, label='upper bounds: ½, 0.22, 0.2')
+    ax.axvline(2018, color=C3, ls='--', label='2018: Λ ≥ 0 (Rodgers–Tao)')
+    ax.set_xlabel('year'); ax.legend(fontsize=7, loc='lower left'); ax.set_title('bounds on Λ', fontsize=9)
+    save('18-6')
+
+
+@fig('18-7')
+def _():
+    fig_, ax = plt.subplots(figsize=(6.6, 3.0)); ax.axis('off'); ax.set_xlim(0, 10); ax.set_ylim(0, 4.4)
+    box = dict(boxstyle='round,pad=0.35', fc='#eef3fb', ec=C1)
+    def B(x, y, t, ec=C1):
+        ax.text(x, y, t, ha='center', va='center', fontsize=8, bbox=dict(boxstyle='round,pad=0.35', fc='white', ec=ec))
+    B(1.1, 2.2, 'assume\nΛ < 0', C2)
+    B(3.6, 3.5, 'RH holds\n(t = 0)'); B(6.4, 3.5, 'Montgomery\n(assumes RH)'); B(8.9, 3.5, 'many small\ngaps')
+    B(3.6, .9, 'real zeros\nfor Λ < t ≤ 0'); B(6.4, .9, 'flow + energy\n→ equilibrium'); B(8.9, .9, 'gaps ≈ average\n(no small gaps)')
+    B(8.9, 2.2, 'CONTRADICTION', C2)
+    for (a, b), (c, d) in [((1.7, 2.5), (2.9, 3.4)), ((1.7, 1.9), (2.9, 1.0)), ((4.3, 3.5), (5.6, 3.5)), ((7.2, 3.5), (8.1, 3.5)),
+                           ((4.3, .9), (5.5, .9)), ((7.3, .9), (8.0, .9)), ((8.9, 3.0), (8.9, 2.5)), ((8.9, 1.4), (8.9, 1.9))]:
+        ax.annotate('', xy=(c, d), xytext=(a, b), arrowprops=dict(arrowstyle='->', color=GR, lw=1.3))
+    save('18-7')
+
+
+@fig('18-8')
+def _():
+    fig_, ax = plt.subplots(figsize=(5.4, 3.8)); p0 = np.poly1d(np.poly([1, -1, 3, 3.1]))
+    ts = np.linspace(-.003, .002, 300); P = []
+    for t in ts:
+        r = np.roots((p0 - t * p0.deriv(2) + t * t / 2 * p0.deriv(4)).coeffs); P.append(r[r.real > 2])
+    P = np.array(P)
+    sc = ax.scatter(P.real.ravel(), P.imag.ravel(), c=np.repeat(ts, 2), cmap='coolwarm', s=6)
+    plt.colorbar(sc, ax=ax, label='t')
+    ax.plot([3, 3.1], [0, 0], 'ko', ms=5); ax.text(3.0, .004, 't = 0', fontsize=8)
+    ax.axhline(0, color=GR, lw=.6); ax.set_xlabel('Re z'); ax.set_ylabel('Im z')
+    ax.set_title('the pair 3, 3.1 collides at t ≈ −0.00125 and leaves the real axis', fontsize=9)
+    save('18-8')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
