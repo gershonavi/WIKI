@@ -320,7 +320,7 @@
 * [הרחבה אבלית](pages/%D7%94%D7%A8%D7%97%D7%91%D7%94%20%D7%90%D7%91%D7%9C%D7%99%D7%AA.md) – Abelian extension
 * [השדה הזהוב](pages/%D7%94%D7%A9%D7%93%D7%94%20%D7%94%D7%96%D7%94%D7%95%D7%91.md) – Golden field
 * [חבורת האידלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%9C%D7%99%D7%9D.md) – Idele group
-* [חבורת המחלקות הצרה](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%95%D7%AA%20%D7%94%D7%A6%D7%A8%D7%94.md)
+* [חבורת המחלקות הצרה](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%95%D7%AA%20%D7%94%D7%A6%D7%A8%D7%94.md) – Narrow class group
 * [חבורת מחלקות האידיאלים](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%9E%D7%97%D7%9C%D7%A7%D7%95%D7%AA%20%D7%94%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D.md) – Ideal class group
 * [חבורת סיעוף](pages/%D7%97%D7%91%D7%95%D7%A8%D7%AA%20%D7%A1%D7%99%D7%A2%D7%95%D7%A3.md) – Ramification group
 * [חוק הדדיות](pages/%D7%97%D7%95%D7%A7%20%D7%94%D7%93%D7%93%D7%99%D7%95%D7%AA.md) – Reciprocity law

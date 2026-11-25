@@ -96,7 +96,7 @@ Additive number theory:
 - [x] Monogenic field
 - [x] Golden field
 - [x] S-unit
-- [ ] Narrow class group
+- [x] Narrow class group
 - [ ] Conductor–discriminant formula
 - [ ] Galois representation
 - [ ] Kummer–Vandiver conjecture
