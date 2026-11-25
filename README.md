@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (166)
+## ערכים (170)
 
 ### אנליזה מרוכבת
 
@@ -75,6 +75,7 @@
 * [משפט ארבעת הריבועים של לגראנז'](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%91%D7%A2%D7%AA%20%D7%94%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%9C%D7%92%D7%A8%D7%90%D7%A0%D7%96%27.md) – Lagrange's four-square theorem
 * [משפט ארדש-טטלי](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%93%D7%A9-%D7%98%D7%98%D7%9C%D7%99.md) – Erdős–Tetali theorem
 * [משפט ארדש-קאץ](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%93%D7%A9-%D7%A7%D7%90%D7%A5.md) – Erdős–Kac theorem
+* [משפט ארדש–דלאנז'](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%93%D7%A9%E2%80%93%D7%93%D7%9C%D7%90%D7%A0%D7%96%27.md)
 * [משפט בומביירי-וינוגרדוב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%95%D7%9E%D7%91%D7%99%D7%99%D7%A8%D7%99-%D7%95%D7%99%D7%A0%D7%95%D7%92%D7%A8%D7%93%D7%95%D7%91.md) – Bombieri–Vinogradov theorem
 * [משפט ברון-טיצ'מרש](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%95%D7%9F-%D7%98%D7%99%D7%A6%27%D7%9E%D7%A8%D7%A9.md) – Brun–Titchmarsh theorem
 * [משפט גרין-טאו](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%92%D7%A8%D7%99%D7%9F-%D7%98%D7%90%D7%95.md) – Green–Tao theorem
@@ -128,6 +129,8 @@
 ### פונקציות אריתמטיות
 
 * [בעיית המחלקים של דיריכלה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Divisor summatory function
+* [הכפולה המשותפת הגדולה ביותר](pages/%D7%94%D7%9B%D7%A4%D7%95%D7%9C%D7%94%20%D7%94%D7%9E%D7%A9%D7%95%D7%AA%D7%A4%D7%AA%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94%20%D7%91%D7%99%D7%95%D7%AA%D7%A8.md)
+* [המחלק המשותף הקטן ביותר](pages/%D7%94%D7%9E%D7%97%D7%9C%D7%A7%20%D7%94%D7%9E%D7%A9%D7%95%D7%AA%D7%A3%20%D7%94%D7%A7%D7%98%D7%9F%20%D7%91%D7%99%D7%95%D7%AA%D7%A8.md)
 * [הפונקציה האריתמטית של פילאי](pages/%D7%94%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%94%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA%20%D7%A9%D7%9C%20%D7%A4%D7%99%D7%9C%D7%90%D7%99.md) – Pillai's arithmetical function
 * [הפונקציה הסכומית של פונקציית אוילר](pages/%D7%94%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%94%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%AA%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8.md) – Totient summatory function
 * [השערת קרמייקל על פונקציית אוילר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%9E%D7%99%D7%99%D7%A7%D7%9C%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8.md) – Carmichael's totient function conjecture
@@ -227,6 +230,7 @@
 * [השערת קרמר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%9E%D7%A8.md) – Cramér's conjecture
 * [זוג להמר](pages/%D7%96%D7%95%D7%92%20%D7%9C%D7%94%D7%9E%D7%A8.md) – Lehmer pair
 * [יחס לנדסברג-שאר](pages/%D7%99%D7%97%D7%A1%20%D7%9C%D7%A0%D7%93%D7%A1%D7%91%D7%A8%D7%92-%D7%A9%D7%90%D7%A8.md) – Landsberg–Schaar relation
+* [מכפלת אוילר חלקית](pages/%D7%9E%D7%9B%D7%A4%D7%9C%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8%20%D7%97%D7%9C%D7%A7%D7%99%D7%AA.md) – Partial Euler Product
 * [מספר חלק](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%9C%D7%A7.md) – Smooth number
 * [מספר רייזל](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A8%D7%99%D7%99%D7%96%D7%9C.md) – Riesel number
 * [משפט בראואר-זיגל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%90%D7%95%D7%90%D7%A8-%D7%96%D7%99%D7%92%D7%9C.md) – Brauer–Siegel theorem
