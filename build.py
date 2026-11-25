@@ -162,7 +162,11 @@ def fix_math(md):
     parts = re.split(r'(```math\n.*?\n```)', md, flags=re.S)
     for i in range(0, len(parts), 2):
         parts[i] = re.sub(r'(?<![\\$])\$(?!\$)([^$\n]+?)(?<!\\)\$', lambda m: '$`' + m.group(1) + '`$', parts[i])
-    return ''.join(parts)
+    md = ''.join(parts)
+    # GitHub reads '<' followed by a letter or backslash as the start of an HTML tag
+    lt = re.compile(r'<(?=[A-Za-z\\])')
+    md = re.sub(r'(```math\n)(.*?)(\n```)', lambda m: m.group(1) + lt.sub(r'\\lt ', m.group(2)) + m.group(3), md, flags=re.S)
+    return re.sub(r'(\$`)(.+?)(`\$)', lambda m: m.group(1) + lt.sub(r'\\lt ', m.group(2)) + m.group(3), md)
 
 
 def fix_links(md, local):
