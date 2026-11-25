@@ -73,7 +73,7 @@ Additive number theory:
 - [x] Different ideal
 - [x] Fundamental unit (number theory)
 - [x] Quadratic integer
-- [ ] Cubic field
+- [x] Cubic field
 - [ ] Biquadratic field
 - [ ] Dedekind–Kummer theorem
 - [ ] Splitting of prime ideals in Galois extensions
