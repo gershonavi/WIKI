@@ -119,7 +119,7 @@ Additive number theory:
 - [x] Hasse norm theorem
 - [x] Local class field theory
 - [x] Hilbert symbol
-- [ ] Ray class field
+- [x] Ray class field
 - [ ] Complex multiplication
 - [ ] Conductor (class field theory)
 - [ ] Weil group
