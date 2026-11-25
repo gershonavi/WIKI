@@ -9,7 +9,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 ## עדיפות ראשונה
 - [x] Chebyshev's bias
 - [x] Vaughan's identity
-- [ ] Exponential sum
+- [x] Exponential sum
 - [ ] Character sum
 - [ ] Pólya-Vinogradov inequality
 - [ ] Burgess inequality
