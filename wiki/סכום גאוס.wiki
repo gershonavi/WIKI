@@ -1,0 +1,64 @@
+ב[[תורת המספרים האלגברית]], '''סכום גאוס''' הוא סוג מסוים של [[טור (מתמטיקה)|סכום]] סופי של [[שורש יחידה|שורשי יחידה]], בדרך כלל מהצורה
+:<math>G(\chi) := G(\chi, \psi) = \sum \chi(r)\cdot\psi(r),</math>
+כאשר הסכום הוא על האיברים <math>r</math> של [[חוג חילופי]] סופי <math>R</math>, <math>\psi</math> הוא [[הומומורפיזם של חבורות]] מהחבורה החיבורית <math>R^+</math> ל[[מעגל היחידה]], ו-<math>\chi</math> הוא הומומורפיזם של חבורות מ[[חבורת היחידות]] <math>R^\times</math> למעגל היחידה, שמורחב לאיברים <math>r</math> שאינם יחידות על ידי הערך 0. סכומי גאוס הם המקבילות לשדות סופיים של [[פונקציית גמא]].{{הערה|1=B. H. Gross, N. Koblitz, ''Gauss sums and the p-adic Γ-function'', Annals of Mathematics '''109''' (1979), pp. 569–581|כיווון=שמאל}}
+
+סכומים כאלה נפוצים מאוד ב[[תורת המספרים]]. הם מופיעים, למשל, במשוואות הפונקציונליות של [[פונקציית L של דיריכלה|פונקציות L של דיריכלה]]: עבור [[קרקטר דיריכלה]] <math>\chi</math>, המשוואה שמקשרת בין <math>L(s, \chi)</math> לבין <math>L(1 - s, \bar\chi)</math> (כאשר <math>\bar\chi</math> הקרקטר הצמוד המרוכב של <math>\chi</math>) מכילה את הגורם
+:<math>\frac{G(\chi)}{|G(\chi)|}</math>
+(שנקרא "מספר השורש" של המשוואה הפונקציונלית).
+
+== היסטוריה ==
+המקרה שבו עסק במקור [[קרל פרידריך גאוס]] הוא [[סכום גאוס ריבועי|סכום גאוס הריבועי]], שבו <math>R</math> הוא שדה השאריות מודולו [[מספר ראשוני]] <math>p</math> ו-<math>\chi</math> הוא [[סמל לז'נדר]]. במקרה הזה גאוס הוכיח ש-<math>G(\chi) = \sqrt p</math> או <math>i\sqrt p</math>, לפי ש-<math>p</math> שקול ל-1 או ל-3 מודולו 4 (את סכום גאוס הריבועי אפשר לחשב גם בעזרת [[אנליזת פורייה]] וגם בעזרת אינטגרציה קווית).
+
+צורה חלופית של סכום גאוס הזה היא
+:<math>\sum_{r=0}^{p-1} e^{2\pi i r^2/p}.</math>
+(השוויון נובע מכך שכל שארית ריבועית שונה מאפס מופיעה בדיוק פעמיים כ-<math>r^2</math>, ו-<math>\sum_{a} e^{2\pi i a/p} = 0</math>.)
+
+'''בדיקה מספרית.''' חישוב ישיר נותן <math>G = 2.2360\ldots = \sqrt5</math> ל-<math>p = 5</math>, <math>G = 3.6055\ldots = \sqrt{13}</math> ל-<math>p = 13</math> (שניהם <math>\equiv 1 \pmod 4</math>), ו-<math>G = 2.6457\ldots\, i = i\sqrt7</math> ל-<math>p = 7</math>, <math>G = 3.3166\ldots\, i = i\sqrt{11}</math> ל-<math>p = 11</math> (שניהם <math>\equiv 3 \pmod 4</math>).
+
+סכומי גאוס ריבועיים קשורים הדוקות לתורת [[פונקציית תטא|פונקציות התטא]].
+
+התורה הכללית של סכומי גאוס פותחה בתחילת המאה ה-19, בעזרת [[סכום יעקובי|סכומי יעקובי]] והפירוק שלהם לראשוניים ב[[שדה ציקלוטומי|שדות ציקלוטומיים]]. סכומי גאוס מעל חוג השאריות של השלמים מודולו <math>N</math> הם צירופים לינאריים של סכומים קרובים שנקראים [[מחזור גאוסי|מחזורי גאוס]].
+
+את הערך המוחלט של סכומי גאוס מוצאים בדרך כלל כיישום של [[משפט פלנשרל]] על חבורות סופיות. במקרה ש-<math>R</math> שדה בן <math>p</math> איברים ו-<math>\chi</math> אינו טריוויאלי, הערך המוחלט הוא <math>\sqrt p</math>. קביעת הערך המדויק של סכומי גאוס כלליים, בעקבות התוצאה של גאוס במקרה הריבועי, היא בעיה ותיקה. (למקרים מסוימים ראו '''סכום קומר''': כבר לסכומי גאוס של קרקטר מסדר 3, ידוע ש-<math>G(\chi)^3 = pJ(\chi, \chi)</math>, אבל בחירת השורש השלישי הנכון היא בעיה עמוקה.)
+
+== תכונות של סכומי גאוס של קרקטרי דיריכלה ==
+סכום גאוס של [[קרקטר דיריכלה]] מודולו <math>N</math> הוא
+:<math>G(\chi) = \sum_{a=1}^N \chi(a)e^{2\pi ia/N}.</math>
+אם <math>\chi</math> גם [[קרקטר דיריכלה|פרימיטיבי]], אז
+:<math>|G(\chi)| = \sqrt N,</math>
+ובפרט הוא שונה מאפס. באופן כללי יותר, אם <math>N_0</math> הוא המוליך של <math>\chi</math> ו-<math>\chi_0</math> הקרקטר הפרימיטיבי מודולו <math>N_0</math> שמשרה את <math>\chi</math>, אז סכום הגאוס של <math>\chi</math> קשור לזה של <math>\chi_0</math> על ידי
+:<math>G(\chi) = \mu\left(\frac{N}{N_0}\right)\chi_0\left(\frac{N}{N_0}\right)G(\chi_0),</math>
+כאשר <math>\mu</math> [[פונקציית מביוס]]. כתוצאה, <math>G(\chi)</math> שונה מאפס בדיוק כאשר <math>N/N_0</math> [[מספר חופשי מריבועים|חופשי מריבועים]] וזר ל-<math>N_0</math>.{{הערה|1=H. L. Montgomery, R. C. Vaughan, ''Multiplicative Number Theory I: Classical Theory'', Cambridge Studies in Advanced Mathematics '''97''', 2006, Theorem 9.10|כיווון=שמאל}}
+
+'''דוגמה.''' יהי <math>\chi_{-4}</math> הקרקטר הפרימיטיבי מודולו 4 (<math>\chi_{-4}(1) = 1</math>, <math>\chi_{-4}(3) = -1</math>), כך ש-<math>G(\chi_{-4}) = i - (-i) = 2i</math>, עם <math>|G| = 2 = \sqrt4</math>. יהי <math>\chi</math> הקרקטר מודולו 12 שהוא משרה. כאן <math>N/N_0 = 3</math>, <math>\mu(3) = -1</math> ו-<math>\chi_{-4}(3) = -1</math>, ולכן <math>G(\chi) = (-1)(-1)\cdot 2i = 2i</math> – וחישוב ישיר של <math>\sum_{a \in \{1, 5, 7, 11\}}\chi(a)e^{2\pi ia/12}</math> אכן נותן <math>2i</math>. כאן <math>|G(\chi)| = 2 \ne \sqrt{12}</math>, כי <math>\chi</math> אינו פרימיטיבי.
+
+יחסים נוספים בין <math>G(\chi)</math> לבין סכומי גאוס של קרקטרים אחרים:
+:<math>G(\bar\chi) = \chi(-1)\overline{G(\chi)},</math>
+כאשר <math>\bar\chi</math> קרקטר הדיריכלה הצמוד; ואם <math>\chi'</math> קרקטר דיריכלה מודולו <math>N'</math> כך ש-<math>N</math> ו-<math>N'</math> זרים, אז
+:<math>G(\chi\chi') = \chi(N')\chi'(N)G(\chi)G(\chi').</math>
+היחס בין <math>G(\chi\chi')</math>, <math>G(\chi)</math> ו-<math>G(\chi')</math> כש-<math>\chi</math> ו-<math>\chi'</math> מאותו מודולוס (ו-<math>\chi\chi'</math> פרימיטיבי) נמדד על ידי [[סכום יעקובי]] <math>J(\chi, \chi')</math>:
+:<math>G(\chi\chi') = \frac{G(\chi)G(\chi')}{J(\chi, \chi')}.</math>
+
+== תכונות נוספות ==
+* אפשר להשתמש בסכומי גאוס כדי להוכיח את [[חוק ההדדיות הריבועית]], [[הדדיות ממעלה שלישית|ההדדיות ממעלה שלישית]] ו[[הדדיות ממעלה רביעית|ההדדיות ממעלה רביעית]]. (הרעיון בהדדיות הריבועית: <math>G^2 = \left(\tfrac{-1}{p}\right)p = p^*</math>, ולכן <math>\sqrt{p^*} \in \mathbb Q(\zeta_p)</math>; מחשבים את <math>G^q</math> מודולו <math>q</math> בשתי דרכים.)
+* אפשר להשתמש בסכומי גאוס כדי לחשב את מספר הפתרונות של משוואות פולינומיות מעל שדות סופיים, ולכן גם כדי לחשב פונקציות זטא מסוימות (ראו [[סכום יעקובי]] ו[[יחס האסה–דבנפורט]]).
+
+== ראו גם ==
+* [[סכום גאוס ריבועי]]
+* [[סכום יעקובי]]
+* [[סכום קלוסטרמן]]
+* [[מחזור גאוסי]]
+* [[משפט שטיקלברגר]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* T. M. Apostol, ''Introduction to Analytic Number Theory'', Springer, 1976
+* B. C. Berndt, R. J. Evans, K. S. Williams, ''Gauss and Jacobi Sums'', Wiley, 1998
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Graduate Texts in Mathematics '''84''', Springer, 1990
+* H. Iwaniec, E. Kowalski, ''Analytic Number Theory'', AMS Colloquium Publications '''53''', 2004, section 3.4
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:שדות ציקלוטומיים]]

@@ -128,7 +128,7 @@ Additive number theory:
 - [ ] Albert–Brauer–Hasse–Noether theorem
 - [ ] Langlands dual group
 - [ ] Teichmüller character
-- [ ] Gauss sum
+- [x] Gauss sum
 - [ ] Jacobi sum
 - [ ] Stickelberger's theorem
 - [ ] Hasse–Davenport relation
