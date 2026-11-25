@@ -116,7 +116,7 @@ Additive number theory:
 
 - [x] Artin reciprocity
 - [x] Takagi existence theorem
-- [ ] Hasse norm theorem
+- [x] Hasse norm theorem
 - [ ] Local class field theory
 - [ ] Hilbert symbol
 - [ ] Ray class field
