@@ -1,0 +1,47 @@
+ב[[תורת המספרים]], '''השערת פירוזבח''' (ב[[אנגלית]]: Firoozbakht's conjecture){{הערה|שם=rib|1=P. Ribenboim, The Little Book of Bigger Primes, מהדורה שנייה, Springer, 2004, עמ' 185|כיווון=שמאל}}{{הערה|שם=pp30|1=C. Rivera, [http://www.primepuzzles.net/conjectures/conj_030.htm Conjecture 30. The Firoozbakht Conjecture]|כיווון=שמאל}} היא השערה על התפלגות ה[[מספר ראשוני|מספרים הראשוניים]]. היא קרויה על שם המתמטיקאית האיראנית פרידה פירוזבח, שניסחה אותה ב-1982.
+
+ההשערה קובעת ש-<math>\sqrt[n]{p_n}</math> (כאשר <math>p_n</math> הוא הראשוני ה-<math>n</math>-י) היא פונקציה יורדת ממש של <math>n</math>, כלומר
+:<math>\sqrt[n+1]{p_{n+1}} < \sqrt[n]{p_n}</math>
+לכל <math>n\geq 1</math>. באופן שקול, <math>p_{n+1} < p_n^{1+1/n}</math>. ראו {{OEIS|A182134}}, {{OEIS|A246782}}.
+
+לדוגמה: <math>\sqrt[1]{2} = 2</math>, <math>\sqrt{3} \approx 1.732</math>, <math>\sqrt[3]{5} \approx 1.710</math>, <math>\sqrt[4]{7} \approx 1.627</math>, <math>\sqrt[5]{11} \approx 1.615</math>.
+
+בעזרת טבלה של פערים מקסימליים בין ראשוניים, פירוזבח בדקה את השערתה עד <math>4.444 \cdot 10^{12}</math>.{{הערה|שם=pp30}} כיום, עם טבלאות נרחבות יותר של פערים מקסימליים, ההשערה נבדקה לכל הראשוניים הקטנים מ-<math>2^{64} \approx 1.84 \cdot 10^{19}</math>.{{הערה|1=T. Oliveira e Silva, [https://sweet.ua.pt/tos/gaps.html Gaps between consecutive primes], 30 בדצמבר 2015|כיווון=שמאל}}{{הערה|שם=kou|1=A. Kourbatov, [http://www.kourbatov.com/math/primes/firoozbakhtconjecture.htm Prime Gaps: Firoozbakht Conjecture], 4 במרץ 2019|כיווון=שמאל}}{{הערה|שם=visser|1=M. Visser, Verifying the Firoozbakht, Nicholson, and Farhadian conjectures up to the 81st maximal prime gap, Mathematics 7 (8), 2019, מאמר 691, {{DOI|10.3390/math7080691}}|כיווון=שמאל}}
+
+== השלכות על פערים בין ראשוניים ==
+אילו ההשערה הייתה נכונה, אז הפער בין ראשוניים עוקבים <math>g_n = p_{n+1} - p_n</math> היה מקיים{{הערה|1=N. K. Sinha, On a new property of primes that leads to a generalization of Cramer's conjecture, 2010, [https://arxiv.org/abs/1010.1399 arXiv:1010.1399]|כיווון=שמאל}}
+:<math> g_n < (\log p_n)^2 - \log p_n</math>
+לכל <math>n\geq5</math>, וגם{{הערה|1=A. Kourbatov, Upper bounds for prime gaps related to Firoozbakht's conjecture, Journal of Integer Sequences 18, 2015, מאמר 15.11.2, [https://arxiv.org/abs/1506.03042 arXiv:1506.03042]|כיווון=שמאל}}
+:<math> g_n < (\log p_n)^2 - \log p_n - 1</math>
+לכל <math>n\geq10</math>. ראו גם {{OEIS|A111943}}. זה אחד החסמים העליונים החזקים ביותר שהושערו על פערים בין ראשוניים, והוא אף חזק מעט מ[[השערת קרמר|השערות קרמר ושנקס]].{{הערה|שם=kou}} הוא גורר צורה חזקה של השערת קרמר, ולכן אינו מתיישב עם הטיעונים ההיוריסטיים של גרנוויל ופינץ{{הערה|1=A. Granville, Harald Cramér and the distribution of prime numbers, Scandinavian Actuarial Journal 1, 1995, עמ' 12–28, {{DOI|10.1080/03461238.1995.10413946}}|כיווון=שמאל}}{{הערה|1=A. Granville, Unexpected irregularities in the distribution of prime numbers, Proceedings of the International Congress of Mathematicians 1, 1995, עמ' 388–399, {{DOI|10.1007/978-3-0348-9078-6_32}}|כיווון=שמאל}}{{הערה|1=J. Pintz, Cramér vs. Cramér: On Cramér's probabilistic model for primes, Funct. Approx. Comment. Math. 37 (2), 2007, {{DOI|10.7169/facm/1229619660}}|כיווון=שמאל}} ושל מאייר,{{הערה|1=L. M. Adleman, K. S. McCurley, Open problems in number-theoretic complexity. II, Algorithmic Number Theory (ANTS-I), Lecture Notes in Computer Science 877, Springer, 1994, עמ' 291–322, {{DOI|10.1007/3-540-58691-1_70}}|כיווון=שמאל}}{{הערה|1=H. Maier, Primes in short intervals, The Michigan Mathematical Journal 32 (2), 1985, עמ' 221–225, {{DOI|10.1307/mmj/1029003189}}|כיווון=שמאל}} שלפיהם
+:<math> g_n > \frac{2-\varepsilon}{e^\gamma}(\log p_n)^2 \approx 1.1229(\log p_n)^2</math>
+מתקיים אינסוף פעמים לכל <math>\varepsilon>0</math>, כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]].
+
+== השערות קשורות ==
+שלוש השערות קשורות (ראו את ההערות ב-{{OEIS|A182514}}) הן גרסאות של השערת פירוזבח. פורג מציין שאפשר לכתוב את השערת פירוזבח כך:
+:<math>\left(\frac{\log p_{n+1}}{\log p_n}\right)^n < \left(1 + \frac 1n\right)^n,</math>
+כאשר אגף ימין הוא הביטוי המוכר ששואף ל[[E (קבוע מתמטי)|מספר e]] כאשר <math>n\to\infty</math>. זה מרמז על ההשערה החלשה מעט
+:<math>\left(\frac{\log p_{n+1}}{\log p_n}\right)^n < e.</math>
+
+ניקולסון ופרהדיאן{{הערה|1=C. Rivera, [https://www.primepuzzles.net/conjectures/conj_078.htm Conjecture 78], PrimePuzzles.net, 2016|כיווון=שמאל}}{{הערה|1=R. Farhadian, On a New Inequality Related to Consecutive Primes, Acta Universitatis Danubius. Œconomica 13 (5), 2017, עמ' 236–242|כיווון=שמאל}} נתנו שתי גרסאות חזקות יותר של השערת פירוזבח, שאפשר לסכם כך:
+:<math>\underbrace{\left(\frac{p_{n+1}}{p_n}\right)^n}_A < \underbrace{\frac{p_n\log n}{\log p_n}}_B < \underbrace{n\log n}_C < \underbrace{p_n}_D \qquad \text{ for all } n \geq 6,</math>
+כאשר <math>A < B</math> היא ההשערה של פרהדיאן, <math>B < C</math> היא ההשערה של ניקולסון, <math>C < D</math> הוא משפט רוסר,{{הערה|1=J. B. Rosser, The n-th Prime is Greater than n log n, Proceedings of the London Mathematical Society 45, 1939, עמ' 21–44, {{DOI|10.1112/plms/s2-45.1.21}}|כיווון=שמאל}} ו-<math>A < D</math> היא השערת פירוזבח. כולן נבדקו עד <math>2^{64}</math>.{{הערה|שם=visser}}
+
+יישום השיטות האלה על הפער המקסימלי ה-85 הידוע מראה שהשערת ניקולסון (ולכן גם השערת פירוזבח) נכונה עד ערך זה (<math>1.014 \cdot 10^{20}</math>, או <math>1.274 \cdot 2^{66}</math>), וכל הפרה שלה תדרוש פער גדול מ-2070; באופן דומה, הפרה של השערת פרהדיאן תדרוש פער גדול מ-2066.
+
+== ראו גם ==
+* [[משפט המספרים הראשוניים]]
+* [[השערת אנדריקה]]
+* [[השערת לז'נדר]]
+* [[השערת אופרמן]]
+* [[השערת קרמר]]
+
+== לקריאה נוספת ==
+* Paulo Ribenboim, The Little Book of Bigger Primes, מהדורה שנייה, Springer, 2004
+* Hans Riesel, Prime Numbers and Computer Methods for Factorization, מהדורה שנייה, Birkhäuser, 1985
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
