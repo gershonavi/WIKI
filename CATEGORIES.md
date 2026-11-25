@@ -415,7 +415,7 @@
 * [שיטת המעגל של הארדי וליטלווד](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%A2%D7%92%D7%9C%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A8%D7%93%D7%99%20%D7%95%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93.md) – Hardy–Ramanujan–Littlewood circle method · בקורס: [שיעור 15](course/15-%D7%A1%D7%9B%D7%95%D7%9E%D7%99%D7%9D-%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99%D7%99%D7%9D.md)
 * [שיטת הפירוק של דיקסון](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%A4%D7%99%D7%A8%D7%95%D7%A7%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A7%D7%A1%D7%95%D7%9F.md) – Dixon's factorization method · בקורס: [שיעור 3](course/03-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [שיטת רנקין–סלברג](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%A8%D7%A0%D7%A7%D7%99%D7%9F%E2%80%93%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Rankin–Selberg method · בקורס: [שיעור 23](COURSE.md)
-* [שלם פרו-סופי](pages/%D7%A9%D7%9C%D7%9D%20%D7%A4%D7%A8%D7%95-%D7%A1%D7%95%D7%A4%D7%99.md)
+* [שלם פרו-סופי](pages/%D7%A9%D7%9C%D7%9D%20%D7%A4%D7%A8%D7%95-%D7%A1%D7%95%D7%A4%D7%99.md) – Profinite integer · בקורס: [שיעור 19](course/19-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%90%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%AA.md)
 * [שלם ריבועי](pages/%D7%A9%D7%9C%D7%9D%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99.md) – Quadratic integer · בקורס: [שיעור כלים כ14](course/T14-%D7%97%D7%95%D7%92%D7%99%D7%9D-%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D-%D7%95%D7%A9%D7%93%D7%95%D7%AA.md), [שיעור 19](course/19-%D7%AA%D7%95%D7%A8%D7%AA-%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-%D7%94%D7%90%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%AA.md)
 
 ### ת

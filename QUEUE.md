@@ -110,7 +110,7 @@ Additive number theory:
 - [ ] Formal group law
 - [ ] Galois cohomology
 - [ ] Tamagawa number
-- [ ] Profinite integer
+- [x] Profinite integer
 
 ### תורת שדות המחלקה והתחום הציקלוטומי (24)
 

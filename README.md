@@ -345,7 +345,7 @@
 * [שדה מונוגני](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%95%D7%A0%D7%95%D7%92%D7%A0%D7%99.md) – Monogenic field
 * [שדה ממעלה שלישית](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%9E%D7%A2%D7%9C%D7%94%20%D7%A9%D7%9C%D7%99%D7%A9%D7%99%D7%AA.md) – Cubic field
 * [שדה ממשי לחלוטין](pages/%D7%A9%D7%93%D7%94%20%D7%9E%D7%9E%D7%A9%D7%99%20%D7%9C%D7%97%D7%9C%D7%95%D7%98%D7%99%D7%9F.md) – Totally real number field
-* [שלם פרו-סופי](pages/%D7%A9%D7%9C%D7%9D%20%D7%A4%D7%A8%D7%95-%D7%A1%D7%95%D7%A4%D7%99.md)
+* [שלם פרו-סופי](pages/%D7%A9%D7%9C%D7%9D%20%D7%A4%D7%A8%D7%95-%D7%A1%D7%95%D7%A4%D7%99.md) – Profinite integer
 * [שלם ריבועי](pages/%D7%A9%D7%9C%D7%9D%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99.md) – Quadratic integer
 * [תורת המספרים האנליטית המופשטת](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA%20%D7%94%D7%9E%D7%95%D7%A4%D7%A9%D7%98%D7%AA.md) – Abstract analytic number theory
 * [תורת קומר](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%A7%D7%95%D7%9E%D7%A8.md) – Kummer theory
