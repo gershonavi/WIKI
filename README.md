@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (175)
+## ערכים (179)
 
 ### אנליזה מרוכבת
 
@@ -225,6 +225,7 @@
 * [היפוך טורי דיריכלה](pages/%D7%94%D7%99%D7%A4%D7%95%D7%9A%20%D7%98%D7%95%D7%A8%D7%99%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Dirichlet series inversion
 * [הלמה של הואה](pages/%D7%94%D7%9C%D7%9E%D7%94%20%D7%A9%D7%9C%20%D7%94%D7%95%D7%90%D7%94.md) – Hua's lemma
 * [הנפה הגדולה](pages/%D7%94%D7%A0%D7%A4%D7%94%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94.md) – Large sieve
+* [השיטה של ואן דר קורפוט](pages/%D7%94%D7%A9%D7%99%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%95%D7%90%D7%9F%20%D7%93%D7%A8%20%D7%A7%D7%95%D7%A8%D7%A4%D7%95%D7%98.md) – Van der Corput's method
 * [השיטה של טוראן](pages/%D7%94%D7%A9%D7%99%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%98%D7%95%D7%A8%D7%90%D7%9F.md) – Turán's method
 * [השערה H של שינצל](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%94%20H%20%D7%A9%D7%9C%20%D7%A9%D7%99%D7%A0%D7%A6%D7%9C.md) – Schinzel's hypothesis H
 * [השערת אליוט-הלברשטם](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%9C%D7%99%D7%95%D7%98-%D7%94%D7%9C%D7%91%D7%A8%D7%A9%D7%98%D7%9D.md) – Elliott–Halberstam conjecture
@@ -235,6 +236,7 @@
 * [השערת קרמר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%A8%D7%9E%D7%A8.md) – Cramér's conjecture
 * [זוג להמר](pages/%D7%96%D7%95%D7%92%20%D7%9C%D7%94%D7%9E%D7%A8.md) – Lehmer pair
 * [יחס לנדסברג-שאר](pages/%D7%99%D7%97%D7%A1%20%D7%9C%D7%A0%D7%93%D7%A1%D7%91%D7%A8%D7%92-%D7%A9%D7%90%D7%A8.md) – Landsberg–Schaar relation
+* [מידת מאהלר](pages/%D7%9E%D7%99%D7%93%D7%AA%20%D7%9E%D7%90%D7%94%D7%9C%D7%A8.md)
 * [מכפלת אוילר חלקית](pages/%D7%9E%D7%9B%D7%A4%D7%9C%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8%20%D7%97%D7%9C%D7%A7%D7%99%D7%AA.md) – Partial Euler Product
 * [מספר חלק](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%9C%D7%A7.md) – Smooth number
 * [מספר רייזל](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A8%D7%99%D7%99%D7%96%D7%9C.md) – Riesel number
@@ -245,6 +247,7 @@
 * [משפט מאייר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9E%D7%90%D7%99%D7%99%D7%A8.md) – Maier's theorem
 * [משפט פרידלנדר-איוואניץ](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%A8%D7%99%D7%93%D7%9C%D7%A0%D7%93%D7%A8-%D7%90%D7%99%D7%95%D7%95%D7%90%D7%A0%D7%99%D7%A5.md) – Friedlander–Iwaniec theorem
 * [נוסחת פרון](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A4%D7%A8%D7%95%D7%9F.md) – Perron's formula
+* [נורמת בומביירי](pages/%D7%A0%D7%95%D7%A8%D7%9E%D7%AA%20%D7%91%D7%95%D7%9E%D7%91%D7%99%D7%99%D7%A8%D7%99.md)
 * [נפת ברון](pages/%D7%A0%D7%A4%D7%AA%20%D7%91%D7%A8%D7%95%D7%9F.md) – Brun sieve
 * [נפת לז'נדר](pages/%D7%A0%D7%A4%D7%AA%20%D7%9C%D7%96%27%D7%A0%D7%93%D7%A8.md) – Legendre sieve
 * [נפת סלברג](pages/%D7%A0%D7%A4%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg sieve
@@ -256,6 +259,7 @@
 * [קבוצת היילברון](pages/%D7%A7%D7%91%D7%95%D7%A6%D7%AA%20%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Heilbronn set
 * [שיטת המעגל של הארדי וליטלווד](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%A2%D7%92%D7%9C%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A8%D7%93%D7%99%20%D7%95%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93.md) – Hardy–Ramanujan–Littlewood circle method
 * [תופעת דויירינג-היילברון](pages/%D7%AA%D7%95%D7%A4%D7%A2%D7%AA%20%D7%93%D7%95%D7%99%D7%99%D7%A8%D7%99%D7%A0%D7%92-%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Deuring–Heilbronn phenomenon
+* [תוצאות אפקטיביות בתורת המספרים](pages/%D7%AA%D7%95%D7%A6%D7%90%D7%95%D7%AA%20%D7%90%D7%A4%D7%A7%D7%98%D7%99%D7%91%D7%99%D7%95%D7%AA%20%D7%91%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md)
 * [תורת המספרים האנליטית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA.md) – Analytic number theory
 * [תורת המספרים הכפלית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%9B%D7%A4%D7%9C%D7%99%D7%AA.md) – Multiplicative number theory
 * [תורת הנפה](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md) – Sieve theory

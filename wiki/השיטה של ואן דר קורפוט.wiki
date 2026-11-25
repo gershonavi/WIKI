@@ -1,0 +1,54 @@
+ב[[מתמטיקה]], '''השיטה של ואן דר קורפוט''' (ב[[אנגלית]]: van der Corput's method) מייצרת הערכות ל[[סכום אקספוננציאלי|סכומים אקספוננציאליים]]. השיטה מפעילה שני תהליכים, '''תהליכי ואן דר קורפוט A ו-B''', שמקשרים את הסכומים לסכומים פשוטים יותר שקל יותר להעריך.
+
+התהליכים חלים על סכומים אקספוננציאליים מהצורה
+:<math>\sum_{n=a}^b e(f(n)),</math>
+כאשר <math>f</math> היא [[פונקציה חלקה]] מספיק, ו-<math>e(x)</math> מסמן את <math>\exp(2\pi i x)</math>.
+
+== תהליך A ==
+כדי להפעיל את תהליך A, כותבים <math>f_h(x) = f(x+h)-f(x)</math> (ההפרש הראשון), ומניחים שיש <math>H \le b-a</math> כך ש-
+:<math>\sum_{h=1}^H \left| \sum_{n=a}^{b-h} e(f_h(n)) \right| \le b-a.</math>
+אז
+:<math>\left| \sum_{n=a}^b e(f(n)) \right| \ll \frac{b-a}{\sqrt H}.</math>
+
+'''הרעיון (נוסף בתרגום).''' תהליך A מבוסס על אי-השוויון של ואן דר קורפוט (גרסה של [[אי-שוויון קושי-שוורץ]]): מעלים את הסכום בריבוע ומתבוננים בהפרשים <math>f(n+h) - f(n)</math>. ההפרש מוריד את "המעלה" של <math>f</math> באחד; למשל, אם <math>f</math> פולינום ממעלה 2, אז <math>f_h</math> ליניארית, וסכום מהצורה <math>\sum_n e(\alpha n + \beta)</math> הוא [[סדרה הנדסית|טור הנדסי]] שקל לחסום. זה אותו רעיון כמו ב"הפרשי ויל" (Weyl differencing).
+
+== תהליך B ==
+תהליך B הופך את הסכום על <math>f</math> לסכום על פונקציה <math>g</math> המוגדרת בעזרת הנגזרת של <math>f</math>. נניח ש-<math>f'</math> עולה מונוטונית, עם <math>f'(a) = \alpha</math> ו-<math>f'(b) = \beta</math>. אז <math>f'</math> הפיכה על <math>[\alpha,\beta]</math>; תהי <math>u</math> ההופכית שלה. נניח עוד ש-<math>f'' \ge \lambda > 0</math>. נכתוב
+:<math>g(y) = f(u(y)) - y\, u(y).</math>
+אז
+:<math>\left| \sum_{n=a}^b e(f(n)) \right| \ll \frac{1}{\sqrt \lambda} \max_{\alpha \le \gamma \le \beta} \left| \sum_{\nu=\alpha}^\gamma e(g(\nu)) \right|.</math>
+הפעלת תהליך B שוב על הסכום עם <math>g</math> מחזירה לסכום על <math>f</math>, ולכן אינה נותנת מידע נוסף.
+
+(תהליך B הוא בעצם נוסחת הסכימה של פואסון יחד עם שיטת הפאזה הסטציונרית: <math>g</math> היא [[התמרת לז'נדר]] של <math>f</math>, ובאופן גס סכום ארוך עם פאזה <math>f</math> שווה לסכום קצר יותר עם פאזה <math>g</math>.)
+
+== זוגות מעריכים ==
+שיטת '''זוגות המעריכים''' נותנת מחלקה של הערכות לפונקציות בעלות תכונת חלקות מסוימת. נקבע פרמטרים <math>N, R, T, s, \delta</math>. נתבונן בפונקציות <math>f</math> המוגדרות בקטע <math>[N, 2N]</math>, שהן גזירות ברציפות <math>R</math> פעמים, ומקיימות
+:<math>\left| f^{(r+1)}(x) - (-1)^r s(s+1)\cdots(s+r)T x^{-s-r} \right| \le \delta\, s(s+1)\cdots(s+r)T x^{-s-r}</math>
+באופן אחיד ב-<math>[a, b]</math>, עבור <math>0 \le r \lt R</math>.
+
+אומרים שזוג מספרים ממשיים <math>(k, l)</math> עם <math>0 \le k \le 1/2 \le l \le 1</math> הוא '''זוג מעריכים''' אם לכל <math>\sigma > 0</math> יש <math>\delta</math> ו-<math>R</math>, התלויים ב-<math>k, l, \sigma</math>, כך ש-
+:<math>\left| \sum_{n=a}^b e(f(n)) \right| \ll \left(\frac{T}{N^\sigma}\right)^k N^l</math>
+באופן אחיד ב-<math>f</math>.
+
+לפי תהליך A, אם <math>(k, l)</math> זוג מעריכים, אז גם <math>\left(\frac{k}{2k+2},\frac{k+l+1}{2k+2}\right)</math> זוג מעריכים. לפי תהליך B, גם <math>\left(l-1/2,\ k+1/2\right)</math> זוג מעריכים.
+
+חסם טריוויאלי מראה ש-<math>(0, 1)</math> הוא זוג מעריכים.
+
+קבוצת זוגות המעריכים קמורה.
+
+ידוע שאם <math>(k, l)</math> זוג מעריכים, אז [[פונקציית זטא של רימן]] על הישר הקריטי מקיימת
+:<math>\zeta(1/2+i t) \ll t^\theta \log t,</math>
+כאשר <math>\theta = (k+l-1/2)/2</math>.
+
+'''דוגמה (נוספה בתרגום).''' מתחילים מהזוג הטריוויאלי <math>(0, 1)</math>. תהליך B נותן <math>(1/2, 1/2)</math>, ואחריו תהליך A נותן
+:<math>\left(\frac{1/2}{3},\ \frac{1/2 + 1/2 + 1}{3}\right) = \left(\frac16, \frac23\right).</math>
+עבור הזוג הזה <math>\theta = (1/6 + 2/3 - 1/2)/2 = 1/6</math>, כלומר <math>\zeta(1/2+it) \ll t^{1/6}\log t</math>, החסם הקלאסי של ויל–הארדי–ליטלווד. (הזוג הטריוויאלי עצמו נותן <math>\theta = 1/4</math>.)
+
+'''השערת זוגות המעריכים''' קובעת שלכל <math>\varepsilon > 0</math>, הזוג <math>(\varepsilon, 1/2+\varepsilon)</math> הוא זוג מעריכים. השערה זו גוררת את [[השערת לינדלף]] (כי היא נותנת <math>\theta = \varepsilon</math>).
+
+== לקריאה נוספת ==
+* A. Ivić, The Riemann zeta-function. The theory of the Riemann zeta-function with applications, John Wiley & Sons, 1985
+* H. L. Montgomery, Ten lectures on the interface between analytic number theory and harmonic analysis, Regional Conference Series in Mathematics 84, American Mathematical Society, 1994
+* J. Sándor, D. S. Mitrinović, B. Crstici (עורכים), Handbook of number theory I, Springer, 2006
+
+[[קטגוריה:תורת המספרים האנליטית]]

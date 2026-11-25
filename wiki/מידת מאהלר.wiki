@@ -1,0 +1,88 @@
+ב[[מתמטיקה]], '''מידת מאהלר''' <math>M(p)</math> של [[פולינום]] <math>p(z)</math> עם [[מספר מרוכב|מקדמים מרוכבים]] (ב[[אנגלית]]: Mahler measure) מוגדרת כ-
+:<math>M(p) = |a|\prod_{|\alpha_i| \ge 1} |\alpha_i| = |a| \prod_{i=1}^n \max\{1,|\alpha_i|\},</math>
+כאשר <math>p(z)</math> מתפרק מעל המספרים המרוכבים <math>\mathbb{C}</math> כ-
+:<math>p(z) = a(z-\alpha_1)(z-\alpha_2)\cdots(z-\alpha_n).</math>
+
+אפשר לראות במידת מאהלר סוג של פונקציית גובה. בעזרת נוסחת ינסן אפשר להוכיח שהמידה הזו שווה גם ל[[ממוצע הנדסי|ממוצע ההנדסי]] של <math>|p(z)|</math> עבור <math>z</math> על [[מעגל היחידה]] (כלומר <math>|z| = 1</math>):
+:<math>M(p) = \exp\left(\int_{0}^{1} \ln\left|p(e^{2\pi i\theta})\right|\, d\theta \right).</math>
+
+בהרחבה, '''מידת מאהלר של [[מספר אלגברי]]''' <math>\alpha</math> מוגדרת כמידת מאהלר של ה[[פולינום מינימלי|פולינום המינימלי]] של <math>\alpha</math> מעל <math>\mathbb{Q}</math>. בפרט, אם <math>\alpha</math> הוא מספר פיזו או מספר סאלם, אז מידת מאהלר שלו היא פשוט <math>\alpha</math>.
+
+מידת מאהלר קרויה על שם המתמטיקאי האוסטרלי יליד גרמניה [[קורט מאהלר]].
+
+'''דוגמאות (נוספו בתרגום, ונבדקו בחישוב).'''
+* עבור <math>p(z) = z^2 - z - 1</math>, השורשים הם <math>\varphi = \tfrac{1+\sqrt5}{2} \approx 1.618</math> ו-<math>-1/\varphi \approx -0.618</math>, ולכן <math>M(p) = \varphi</math>. גם האינטגרל של נוסחת ינסן נותן בחישוב נומרי <math>1.618034\ldots</math>.
+* לפולינום של להמר <math>z^{10}+z^9-z^7-z^6-z^5-z^4-z^3+z+1</math> יש מידת מאהלר <math>1.17628\ldots</math>, הקטנה ביותר הידועה שגדולה מ-1 (ראו השערת להמר).
+
+== תכונות ==
+* מידת מאהלר כפלית: <math>M(p \cdot q) = M(p) \cdot M(q)</math> לכל <math>p, q</math>.
+* <math>M(p) = \lim_{\tau \to 0} \|p\|_{\tau}</math>, כאשר <math>\|p\|_\tau =\left(\int_0^{1} |p(e^{2\pi i\theta})|^\tau d\theta \right)^{1/\tau}</math> היא נורמת <math>L_\tau</math> של <math>p</math> (אף שעבור <math>\tau \lt 1</math> זו אינה נורמה של ממש).
+* '''משפט קרונקר:''' אם <math>p</math> פולינום שלם, מתוקן ואי-פריק עם <math>M(p) = 1</math>, אז <math>p(z) = z</math> או ש-<math>p</math> הוא [[פולינום ציקלוטומי]].
+* (השערת להמר) יש קבוע <math>\mu>1</math> כך שאם <math>p</math> פולינום שלם אי-פריק, אז <math>M(p)=1</math> או <math>M(p)>\mu</math>.
+* מידת מאהלר של פולינום שלם מתוקן היא מספר פרון.
+
+== מידת מאהלר בממדים גבוהים ==
+מידת מאהלר <math>M(p)</math> של פולינום בכמה משתנים <math>p(x_1,\ldots,x_n) \in \mathbb{C}[x_1,\ldots,x_n]</math> מוגדרת בדומה על ידי הנוסחה{{הערה|שם=sch|1=A. Schinzel, Polynomials with special regard to reducibility, Encyclopedia of Mathematics and Its Applications 77, Cambridge University Press, 2000, עמ' 224|כיווון=שמאל}}
+:<math>M(p) = \exp\left(\int_0^{1} \cdots \int_0^{1} \log \left|p(e^{2\pi i\theta_1}, \ldots, e^{2\pi i\theta_n})\right| \, d\theta_1 \cdots d\theta_n \right).</math>
+היא יורשת את שלוש התכונות הראשונות שלמעלה של מידת מאהלר לפולינום במשתנה אחד.
+
+הוכח שבמקרים מסוימים, מידת מאהלר בכמה משתנים קשורה לערכים מיוחדים של [[פונקציית זטא|פונקציות זטא]] ושל [[פונקציית L|פונקציות L]]. למשל, ב-1981 הוכיח סמית'{{הערה|שם=smyth|1=C. Smyth, The Mahler measure of algebraic numbers: a survey, בתוך: J. McKee, C. Smyth (עורכים), Number Theory and Polynomials, London Mathematical Society Lecture Note Series 352, Cambridge University Press, 2008, עמ' 322–349|כיווון=שמאל}} את הנוסחאות
+:<math>m(1+x+y)=\frac{3\sqrt{3}}{4\pi}L(\chi_{-3},2),</math>
+כאשר <math>L(\chi_{-3},s)</math> היא [[פונקציית L של דיריכלה]], ו-
+:<math>m(1+x+y+z)=\frac{7}{2\pi^2}\zeta(3),</math>
+כאשר <math>\zeta</math> היא [[פונקציית זטא של רימן]]. כאן <math>m(P)=\log M(P)</math> נקראת ''מידת מאהלר הלוגריתמית''. (בחישוב נומרי: <math>m(1+x+y) = 0.3230659\ldots</math>, בהתאמה מלאה לאגף ימין; ו-<math>m(1+x+y+z) \approx 0.42628</math>, לעומת <math>\tfrac{7\zeta(3)}{2\pi^2} = 0.426278\ldots</math>.)
+
+=== תוצאות של לוטון ובויד ===
+מההגדרה, מידת מאהלר היא אינטגרל של ערכי פולינומים על הטורוס (ראו גם השערת להמר). אם <math>p</math> מתאפס על הטורוס <math>(S^1)^n</math>, ההתכנסות של האינטגרל המגדיר את <math>M(p)</math> אינה מובנת מאליה, אבל ידוע ש-<math>M(p)</math> אכן מתכנס ושווה לגבול של מידות מאהלר במשתנה אחד,{{הערה|שם=law|1=W. M. Lawton, A problem of Boyd concerning geometric means of polynomials, Journal of Number Theory 16 (3), 1983, עמ' 356–362, {{DOI|10.1016/0022-314X(83)90063-X}}|כיווון=שמאל}} כפי ששיער בויד.{{הערה|שם=b81a|1=D. Boyd, Speculations concerning the range of Mahler's measure, Canadian Mathematical Bulletin 24 (4), 1981, עמ' 453–469, {{DOI|10.4153/cmb-1981-069-5}}|כיווון=שמאל}}{{הערה|שם=b81b|1=D. Boyd, Kronecker's Theorem and Lehmer's Problem for Polynomials in Several Variables, Journal of Number Theory 13, 1981, עמ' 116–121, {{DOI|10.1016/0022-314x(81)90033-0}}|כיווון=שמאל}}
+
+הניסוח הוא כך: נסמן ב-<math>\mathbb{Z}</math> את השלמים, ונגדיר <math>\mathbb{Z}^N_+=\{r=(r_1,\dots,r_N)\in\mathbb{Z}^N:\ r_j\ge0,\ 1\le j\le N\}</math>. אם <math>Q(z_1,\dots,z_N)</math> פולינום ב-<math>N</math> משתנים ו-<math>r \in\mathbb{Z}^N_+</math>, נגדיר את הפולינום במשתנה אחד
+:<math>Q_r(z):=Q(z^{r_1},\dots,z^{r_N}),</math>
+ונגדיר
+:<math>q(r) := \min \left\{H(s):\ s\in\mathbb{Z}^N,\ s\ne 0,\ \sum_{j=1}^N s_j r_j = 0 \right\},</math>
+כאשר <math>H(s)=\max_j |s_j|</math>.
+
+'''משפט (לוטון).''' יהי <math>Q(z_1,\dots,z_N)</math> פולינום ב-<math>N</math> משתנים עם מקדמים מרוכבים. אז מתקיים הגבול הבא (גם אם מוותרים על התנאי <math>r_i \geq 0</math>):
+:<math>\lim_{q(r)\to\infty}M(Q_r)=M(Q).</math>
+
+=== ההצעה של בויד ===
+בויד נתן טענות כלליות יותר מהמשפט שלמעלה. הוא ציין שמשפט קרונקר הקלאסי, המאפיין פולינומים מתוקנים עם מקדמים שלמים שכל שורשיהם בתוך עיגול היחידה, יכול להיחשב כאפיון של הפולינומים במשתנה אחד שהמידה שלהם בדיוק 1, ושהתוצאה הזו מתרחבת לפולינומים בכמה משתנים.{{הערה|שם=b81b}}
+
+נגדיר ''פולינום ציקלוטומי מורחב'' כפולינום מהצורה
+:<math>\Psi(z)=z_1^{b_1} \cdots z_n^{b_n}\Phi_m(z_1^{v_1}\cdots z_n^{v_n}),</math>
+כאשר <math>\Phi_m(z)</math> הוא הפולינום הציקלוטומי ה-<math>m</math>-י, ה-<math>v_i</math> שלמים, וה-<math>b_i = \max(0, -v_i\deg\Phi_m)</math> נבחרים מינימליים כך ש-<math>\Psi(z)</math> יהיה פולינום ב-<math>z_i</math>. תהי <math>K_n</math> קבוצת הפולינומים שהם מכפלות של מונומים <math>\pm z_1^{c_1}\cdots z_n^{c_n}</math> ושל פולינומים ציקלוטומיים מורחבים.
+
+'''משפט (בויד).''' יהי <math>F(z_1,\dots,z_n)\in\mathbb{Z}[z_1,\ldots,z_n]</math> פולינום עם מקדמים שלמים. אז <math>M(F)=1</math> אם ורק אם <math>F \in K_n</math>.
+
+זה הוביל את בויד להתבונן בקבוצת הערכים
+:<math>L_n:=\bigl\{m(P(z_1,\dots,z_n)):\ P\in\mathbb{Z}[z_1,\dots,z_n]\bigr\},</math>
+ובאיחוד <math>L_\infty = \bigcup_{n=1}^\infty L_n</math>. הוא העלה את ההשערה מרחיקת הלכת{{הערה|שם=b81a}} שהקבוצה <math>L_\infty</math> היא תת-קבוצה סגורה של <math>\mathbb R</math>. תוצאה מיידית של ההשערה הייתה נכונות השערת להמר, אם כי בלי חסם תחתון מפורש. מכיוון שהתוצאה של סמית' מרמזת ש-<math>L_1\subsetneq L_2</math>, בויד משער עוד ש-
+:<math>L_1\subsetneq L_2\subsetneq L_3\subsetneq\ \cdots .</math>
+
+=== מידת מאהלר ואנטרופיה ===
+פעולה <math>\alpha_M</math> של <math>\mathbb{Z}^n</math> על ידי [[אוטומורפיזם|אוטומורפיזמים]] של [[חבורה אבלית]] קומפקטית מטריזבילית אפשר לשייך, דרך דואליות, לכל [[מודול (מבנה אלגברי)|מודול]] בן מניה <math>N</math> מעל ה[[חוג (מבנה אלגברי)|חוג]] <math>R=\mathbb{Z}[z_1^{\pm1},\dots,z_n^{\pm1}]</math>.{{הערה|1=B. Kitchens, K. Schmidt, Automorphisms of compact groups, Ergodic Theory and Dynamical Systems 9 (4), 1989, עמ' 691–735, {{DOI|10.1017/S0143385700005290}}|כיווון=שמאל}} האנטרופיה הטופולוגית (השווה לאנטרופיה במובן תורת המידה) של הפעולה הזו, <math>h(\alpha_N)</math>, נתונה על ידי מידת מאהלר (או שהיא אינסופית).{{הערה|1=D. Lind, K. Schmidt, T. Ward, Mahler measure and entropy for commuting automorphisms of compact groups, Inventiones Mathematicae 101, 1990, עמ' 593–629, {{DOI|10.1007/BF01231517}}|כיווון=שמאל}} במקרה של מודול ציקלי <math>M=R/\langle F\rangle</math>, עבור פולינום שונה מאפס <math>F(z_1,\dots,z_n)\in\mathbb{Z}[z_1,\ldots,z_n]</math>, הנוסחה שהוכיחו לינד, קלאוס שמידט ותומאס וורד נותנת <math>h(\alpha_N)=\log M(F)</math>, מידת מאהלר הלוגריתמית של <math>F</math>. במקרה הכללי, האנטרופיה של הפעולה מתבטאת כסכום של מידות מאהלר לוגריתמיות על פני היוצרים של האידיאלים הראשוניים המשויכים (שהם ראשיים) של המודול. כפי שציין לינד קודם לכן, במקרה <math>n=1</math> של אוטומורפיזם יחיד של חבורה קומפקטית, פירוש הדבר שקבוצת הערכים האפשריים של האנטרופיה של פעולות כאלה היא כל <math>[0,\infty]</math>, או קבוצה בת מניה, בהתאם לפתרון של בעיית להמר. לינד הראה גם שלטורוס האינסוף-ממדי <math>\mathbb{T}^{\infty}</math> יש אוטומורפיזמים ארגודיים בעלי אנטרופיה חיובית סופית, או שיש לו רק אוטומורפיזמים בעלי אנטרופיה אינסופית, בהתאם לפתרון של בעיית להמר.{{הערה|1=D. Lind, The structure of skew products with ergodic group automorphisms, Israel Journal of Mathematics 28 (3), 1977, עמ' 205–248, {{DOI|10.1007/BF02759810}}|כיווון=שמאל}}
+
+== ראו גם ==
+* [[נורמת בומביירי]]
+* גובה של פולינום
+
+== לקריאה נוספת ==
+* P. Borwein, Computational Excursions in Analysis and Number Theory, CMS Books in Mathematics 10, Springer, 2002, עמ' 3, 15
+* D. Boyd, Mahler's measure and invariants of hyperbolic manifolds, בתוך: M. A. Bennett (עורך), Number theory for the Millenium, A. K. Peters, 2002, עמ' 127–143
+* D. Boyd, Mahler's measure, hyperbolic manifolds and the dilogarithm, Canadian Mathematical Society Notes 34 (2), 2002, עמ' 3–4, 26–28
+* D. Boyd, F. Rodriguez Villegas, Mahler's measure and the dilogarithm, part 1, Canadian Journal of Mathematics 54 (3), 2002, עמ' 468–492, {{DOI|10.4153/cjm-2002-016-9}}
+* F. Brunault, W. Zudilin, Many variations of Mahler measures: a lasting symphony, Cambridge University Press, 2020
+* G. Everest, T. Ward, Heights of polynomials and entropy in algebraic dynamics, Springer, 1999
+* [https://encyclopediaofmath.org/wiki/Mahler_measure Mahler measure], Encyclopedia of Mathematics
+* J. L. Jensen, Sur un nouvel et important théorème de la théorie des fonctions, Acta Mathematica 22, 1899, עמ' 359–364, {{DOI|10.1007/BF02417878}}
+* D. E. Knuth, 4.6.2 Factorization of Polynomials, בתוך: Seminumerical Algorithms, The Art of Computer Programming 2, מהדורה שלישית, Addison-Wesley, 1997, עמ' 439–461, 678–691
+* M. J. Mossinghoff, Polynomials with Small Mahler Measure, Mathematics of Computation 67 (224), 1998, עמ' 1697–1706, {{DOI|10.1090/S0025-5718-98-01006-0}}
+* A. Schinzel, Polynomials with special regard to reducibility, Cambridge University Press, 2000
+
+== קישורים חיצוניים ==
+* [http://mathworld.wolfram.com/MahlerMeasure.html Mahler Measure], ב-MathWorld
+* [http://mathworld.wolfram.com/JensensFormula.html Jensen's Formula], ב-MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]

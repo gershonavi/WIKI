@@ -1,0 +1,51 @@
+ב[[מתמטיקה]], '''נורמת בומביירי''' (ב[[אנגלית]]: Bombieri norm), הקרויה על שם [[אנריקו בומביירי]], היא [[מרחב נורמי|נורמה]] על [[פולינום הומוגני|פולינומים הומוגניים]] עם מקדמים ב-<math>\mathbb R</math> או ב-<math>\mathbb C</math> (יש גם גרסה לפולינומים לא הומוגניים במשתנה אחד). לנורמה הזו תכונות מרשימות רבות, והחשובות שבהן מפורטות בערך.
+
+== המכפלה הסקלרית של בומביירי לפולינומים הומוגניים ==
+''המכפלה הסקלרית של בומביירי'' לפולינומים הומוגניים ב-<math>N</math> משתנים אפשר להגדיר כך, בסימון רב-אינדקס: לכל <math>\alpha,\beta \in \mathbb{N}^N</math>, מונומים שונים מוגדרים כאורתוגונליים, כלומר
+:<math>\langle X^\alpha \,\vert\, X^\beta \rangle = 0 \qquad (\alpha \neq \beta),</math>
+ואילו לכל <math>\alpha \in \mathbb{N}^N</math> מגדירים
+:<math>\|X^\alpha\|^2 = \frac{\alpha!}{|\alpha|!}.</math>
+בהגדרה שלמעלה ובהמשך הערך משתמשים בסימונים הבאים: אם <math>\alpha = (\alpha_1,\dots,\alpha_N) \in \mathbb{N}^N</math>, כותבים
+:<math>|\alpha| = \sum_{i=1}^N \alpha_i, \qquad \alpha! = \prod_{i=1}^N \alpha_i!, \qquad X^\alpha = \prod_{i=1}^N X_i^{\alpha_i}.</math>
+
+'''דוגמה (נוספה בתרגום).''' עבור <math>P = (X_1 + X_2)^2 = X_1^2 + 2X_1X_2 + X_2^2</math>:
+:<math>\|P\|^2 = 1\cdot\frac{2!}{2!} + 4\cdot\frac{1!\,1!}{2!} + 1\cdot\frac{2!}{2!} = 1 + 2 + 1 = 4,</math>
+וזה <math>\|X_1 + X_2\|^4 = (1 + 1)^2</math>, כפי שצפוי מנורמה כפלית על חזקות של צורות ליניאריות. (המשקל <math>\alpha!/|\alpha|!</math> הוא ההופכי של המקדם המולטינומי.)
+
+== אי-השוויון של בומביירי ==
+התכונה היסודית של הנורמה הזו היא אי-השוויון של בומביירי: יהיו <math>P, Q</math> שני פולינומים הומוגניים ב-<math>N</math> משתנים, ממעלות <math>d^\circ(P)</math> ו-<math>d^\circ(Q)</math> בהתאמה. אז מתקיים
+:<math>\frac{d^\circ(P)!\,d^\circ(Q)!}{(d^\circ(P)+d^\circ(Q))!}\|P\|^2 \, \|Q\|^2 \leq \|P\cdot Q\|^2 \leq \|P\|^2 \, \|Q\|^2.</math>
+כאן אי-השוויון של בומביירי הוא החלק השמאלי של הטענה, ואילו החלק הימני אומר שנורמת בומביירי היא נורמת אלגברה. אין טעם לתת את החלק השמאלי בלי האילוץ הזה, כי במקרה כזה אפשר להשיג את אותה תוצאה עם כל נורמה, על ידי הכפלת הנורמה בגורם שנבחר היטב.
+
+אי-השוויון הכפלי הזה אומר שהמכפלה של שני פולינומים חסומה מלמטה על ידי גודל התלוי בפולינומים הנכפלים. לכן המכפלה הזו אינה יכולה להיות קטנה כרצוננו. אי-השוויון הכפלי שימושי ב[[גאומטריה אלגברית]] מטרית וב[[תורת המספרים]]. (שני האגפים נבדקו בחישוב על 300 זוגות אקראיים של פולינומים הומוגניים.)
+
+== אינווריאנטיות תחת איזומטריות ==
+תכונה חשובה נוספת היא שנורמת בומביירי אינווריאנטית תחת הרכבה עם [[איזומטריה]]: יהיו <math>P, Q</math> שני פולינומים הומוגניים ממעלה <math>d</math> ב-<math>N</math> משתנים, ותהי <math>h</math> איזומטריה של <math>\mathbb R^N</math> (או של <math>\mathbb C^N</math>). אז <math>\langle P\circ h \,\vert\, Q\circ h\rangle = \langle P \,\vert\, Q\rangle</math>. כאשר <math>P=Q</math> זה גורר <math>\|P\circ h\|=\|P\|</math>.
+
+התוצאה הזו נובעת מניסוח אינטגרלי יפה של המכפלה הסקלרית:
+:<math>\langle P \,\vert\, Q\rangle = {d+N-1 \choose N-1} \int_{S^N} P(Z)\overline{Q(Z)}\,d\sigma(Z),</math>
+כאשר <math>S^N</math> היא ספירת היחידה של <math>\mathbb C^N</math> עם המידה הקנונית שלה <math>d\sigma(Z)</math>.
+
+== אי-שוויונים נוספים ==
+יהי <math>P</math> פולינום הומוגני ממעלה <math>d</math> ב-<math>N</math> משתנים, ויהי <math>Z \in \mathbb C^N</math>. אז:
+* <math>|P(Z)| \leq \|P\| \, \|Z\|_E^d</math>
+* <math>\|\nabla P(Z)\|_E \leq d\, \|P\| \, \|Z\|_E^{d-1}</math>
+כאשר <math>\|\cdot\|_E</math> היא הנורמה האוקלידית. (בערך האנגלי נכתב באי-השוויון השני המעריך <math>d</math> במקום <math>d - 1</math>; הגרדיאנט הומוגני ממעלה <math>d - 1</math>, והגרסה עם <math>d</math> נכשלת כאשר <math>\|Z\|_E \lt 1</math>. שני אי-השוויונים בגרסה המתוקנת נבדקו בחישוב.)
+
+לפי קנות', נורמת בומביירי שימושית בפירוק פולינומים לגורמים, ויש לה כמה יתרונות על פני [[מידת מאהלר]].{{הערה|1=D. E. Knuth, The Art of Computer Programming, מהדורה שלישית, Addison-Wesley, 1997, עמ' 457–458, 682–684|כיווון=שמאל}}
+
+== ראו גם ==
+* [[יריעת גרסמן]]
+* מרחב הרדי
+* [[פולינום הומוגני]]
+* שיכון פליקר
+
+== לקריאה נוספת ==
+* B. Beauzamy, E. Bombieri, P. Enflo, H. L. Montgomery, [http://deepblue.lib.umich.edu/bitstream/2027.42/28840/1/0000675.pdf Products of polynomials in many variables], Journal of Number Theory 36 (2), 1990, עמ' 219–245, {{DOI|10.1016/0022-314X(90)90075-3}}
+* B. Beauzamy, P. Enflo, P. Wang, [http://www.scmsa.eu/archives/ART_quantitative_estimates_1992.pdf Quantitative estimates for polynomials in one or several variables: From analysis and number theory to symbolic and massively parallel computation], Mathematics Magazine 67 (4), 1994, עמ' 243–257, {{DOI|10.2307/2690843}}
+* E. Bombieri, W. Gubler, Heights in Diophantine geometry, Cambridge University Press, 2006
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
