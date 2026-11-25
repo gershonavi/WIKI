@@ -1,0 +1,50 @@
+ב[[מתמטיקה]], '''פונקציית זטא של איגוסה''' היא סוג של [[פונקציה יוצרת]] שסופרת את מספר הפתרונות של משוואה מודולו <math>p</math>, <math>p^2</math>, <math>p^3</math>, וכן הלאה.
+
+== הגדרה ==
+יהי <math>p</math> [[מספר ראשוני]], ויהי <math>K</math> שדה <math>p</math>-אדי, כלומר <math>[K: \mathbb{Q}_p]<\infty</math>, עם [[חוג הערכה|חוג ההערכה]] <math>R</math> והאידיאל המקסימלי <math>P</math>, ונסמן ב-<math>q</math> את מספר האיברים בשדה השאריות <math>R/P</math>. עבור <math>z \in K</math> נסמן ב-<math>\mathrm{ord}(z)</math> את ה[[הערכה (אלגברה)|הערכה]] של <math>z</math>, <math>| z | = q^{-\mathrm{ord}(z)}</math>, ו-<math>ac(z)=z \pi^{-\mathrm{ord}(z)}</math>, כאשר <math>\pi</math> הוא פרמטר מקומי (יוצר של <math>P</math>).
+
+בנוסף, תהי <math>\phi : K^n \to \mathbb{C}</math> פונקציית שוורץ–ברואה, כלומר פונקציה קבועה מקומית עם תומך קומפקטי, ויהי <math>\chi</math> [[קרקטר (מתמטיקה)|קרקטר]] של <math>R^\times</math>.
+
+במצב הזה מתאימים ל[[פולינום]] לא קבוע <math>f(x_1, \ldots, x_n) \in K[x_1,\ldots,x_n]</math> את פונקציית הזטא של איגוסה
+
+:<math> Z_\phi(s,\chi) = \int_{K^n} \phi(x_1,\ldots,x_n)\, \chi\bigl(ac(f(x_1,\ldots,x_n))\bigr)\, |f(x_1,\ldots,x_n)|^s \, dx, </math>
+
+כאשר <math>s \in \mathbb{C}</math>, <math>\mathrm{Re}(s)>0</math>, ו-<math>dx</math> היא [[מידת האר]], מנורמלת כך שהמידה של <math>R^n</math> היא 1.
+
+== המשפט של איגוסה ==
+ג'ון-איצ'י איגוסה (1974) הראה ש-<math>Z_\phi (s,\chi)</math> היא [[פונקציה רציונלית]] ב-<math>t=q^{-s}</math>. ההוכחה משתמשת במשפט של הייסוקה הירונקה על פתרון סינגולריות. מאוחר יותר נתן יאן דנף הוכחה שונה לגמרי, בעזרת פירוק תאים <math>p</math>-אדי. עם זאת, מעט ידוע על נוסחאות מפורשות. (יש כמה תוצאות על פונקציות הזטא של איגוסה של יריעות פרמה.)
+
+== קונגרואנציות מודולו חזקות של P ==
+מעתה ניקח את <math>\phi</math> כ[[פונקציה מציינת|פונקציה המציינת]] של <math>R^n</math>, ואת <math>\chi</math> כקרקטר הטריוויאלי. נסמן ב-<math>N_i</math> את מספר הפתרונות של ה[[קונגרואנציה]]
+
+:<math>f(x_1,\ldots,x_n) \equiv 0 \pmod{P^i}</math>
+
+(עם <math>x_j \in R/P^i</math>). אז פונקציית הזטא של איגוסה
+
+:<math>Z(t)= \int_{R^n} |f(x_1,\ldots,x_n)|^s \, dx, \qquad t = q^{-s},</math>
+
+קשורה קשר הדוק לטור פואנקרה
+
+:<math>P(t)= \sum_{i=0}^{\infty} q^{-in}N_i\, t^i</math>
+
+על ידי
+
+:<math>P(t)= \frac{1-t\, Z(t)}{1-t}.</math>
+
+בפרט, מהמשפט של איגוסה נובע שגם <math>P(t)</math> היא פונקציה רציונלית – כלומר שהמספרים <math>N_i</math> מקיימים נוסחת נסיגה ליניארית. השאלה אם זה נכון הועלתה על ידי בורביץ' ושפרביץ' בספרם ''תורת המספרים'', ואיגוסה פתר אותה.
+
+=== דוגמה ===
+נתבונן ב-<math>f(x) = x</math> מעל <math>\mathbb Z_p</math> (<math>n = 1</math>, <math>q = p</math>). למשוואה <math>x \equiv 0 \pmod{p^i}</math> יש פתרון יחיד מודולו <math>p^i</math>, ולכן <math>N_i = 1</math> ו-<math>P(t) = \sum_i p^{-i}t^i = \frac{1}{1 - t/p}</math>. מצד שני, הקבוצה של <math>x \in \mathbb Z_p</math> עם <math>\mathrm{ord}(x) = k</math> היא בעלת מידה <math>p^{-k}(1 - p^{-1})</math>, ולכן
+
+:<math>Z(t) = \sum_{k\ge0} p^{-k}\left(1 - \tfrac1p\right) t^k = \frac{1 - 1/p}{1 - t/p}.</math>
+
+אכן <math>\frac{1 - tZ(t)}{1-t} = \frac{(1 - t/p) - t(1 - 1/p)}{(1-t)(1-t/p)} = \frac{1}{1-t/p} = P(t)</math>.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J.-I. Igusa, ''Complex powers and asymptotic expansions. I. Functions of certain types'', Journal für die reine und angewandte Mathematik '''268–269''' (1974), pp. 110–130
+* J. Denef, ''[http://www.numdam.org/item/SB_1990-1991__33__359_0 Report on Igusa's local zeta function]'', Séminaire Bourbaki 43 (1990–1991), exp. 741; Astérisque '''201–203''' (1991), pp. 359–386
+</div>
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:גאומטריה דיופנטית]]

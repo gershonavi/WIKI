@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (245)
+## ערכים (248)
 
 ### אנליזה מרוכבת
 
@@ -194,6 +194,7 @@
 * [הוכחת נוסחת מכפלת אוילר לפונקציית זטא של רימן](pages/%D7%94%D7%95%D7%9B%D7%97%D7%AA%20%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%9E%D7%9B%D7%A4%D7%9C%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8%20%D7%9C%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%99%D7%9E%D7%9F.md) – Proof of the Euler product formula for the Riemann zeta function
 * [הטרנסצנדנט של לרך](pages/%D7%94%D7%98%D7%A8%D7%A0%D7%A1%D7%A6%D7%A0%D7%93%D7%A0%D7%98%20%D7%A9%D7%9C%20%D7%9C%D7%A8%D7%9A.md) – Lerch transcendent
 * [הקריטריון של וייל](pages/%D7%94%D7%A7%D7%A8%D7%99%D7%98%D7%A8%D7%99%D7%95%D7%9F%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%99%D7%9C.md) – Weil's criterion
+* [השערת דווארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%93%D7%95%D7%95%D7%90%D7%A8%D7%A7.md) – Dwork conjecture
 * [השערת הילברט-פוליה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%99%D7%9C%D7%91%D7%A8%D7%98-%D7%A4%D7%95%D7%9C%D7%99%D7%94.md) – Hilbert–Pólya conjecture
 * [השערת סלברג על פונקציית זטא](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90.md) – Selberg's zeta function conjecture
 * [השערת רימן הגדולה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94.md) – Grand Riemann hypothesis
@@ -212,9 +213,11 @@
 * [פונקציית זטא (אופרטור)](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%28%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8%29.md) – Zeta function (operator)
 * [פונקציית זטא אריתמטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic zeta function
 * [פונקציית זטא הראשונית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%AA.md) – Prime zeta function
+* [פונקציית זטא של איגוסה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%92%D7%95%D7%A1%D7%94.md) – Igusa zeta function
 * [פונקציית זטא של איהרה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%94%D7%A8%D7%94.md) – Ihara zeta function
 * [פונקציית זטא של ארטין–מאזור](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%A8%D7%98%D7%99%D7%9F%E2%80%93%D7%9E%D7%90%D7%96%D7%95%D7%A8.md) – Artin–Mazur zeta function
 * [פונקציית זטא של בירלינג](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%91%D7%99%D7%A8%D7%9C%D7%99%D7%A0%D7%92.md) – Beurling zeta function
+* [פונקציית זטא של גוס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%92%D7%95%D7%A1.md) – Goss zeta function
 * [פונקציית זטא של האסה–וייל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A1%D7%94%E2%80%93%D7%95%D7%99%D7%99%D7%9C.md) – Hasse–Weil zeta function
 * [פונקציית זטא של הורוויץ](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%95%D7%A8%D7%95%D7%95%D7%99%D7%A5.md) – Hurwitz zeta function
 * [פונקציית זטא של לפשץ](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9C%D7%A4%D7%A9%D7%A5.md) – Lefschetz zeta function
