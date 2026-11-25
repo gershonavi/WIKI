@@ -1,0 +1,77 @@
+'''נפת גולדסטון–פינץ–ילדירים''' (ב[[אנגלית]]: Goldston–Pintz–Yıldırım sieve), הנקראת גם '''נפת GPY''' או '''שיטת GPY''', היא [[תורת הנפה|שיטת נפה]] וגרסה של [[נפת סלברג]] עם משקלות נפה מוכללים ורב-ממדיים. הנפה הובילה לסדרה של פריצות דרך חשובות ב[[תורת המספרים האנליטית]].
+
+היא קרויה על שם המתמטיקאים דן גולדסטון, יאנוש פינץ וג'ם ילדירים.{{הערה|שם=GPY2005|1=D. A. Goldston, J. Pintz, C. Y. Yıldırım, Primes in Tuples I, Annals of Mathematics 170 (2), 2009, עמ' 819–862, {{DOI|10.4007/annals.2009.170.819}}, arXiv:math/0508185|כיווון=שמאל}} הם השתמשו בה ב-2005 כדי להראות שיש אינסוף זוגות של ראשוניים שהמרחקים ביניהם קטנים כרצוננו ביחס למרחק הממוצע הנובע מ[[משפט המספרים הראשוניים]]. בנוסחה:
+:<math>\liminf_{n\to\infty}\frac{p_{n+1}-p_n}{\log p_n} = 0.</math>
+(לפי משפט המספרים הראשוניים, המרחק הממוצע בין ראשוניים עוקבים סביב <math>p_n</math> הוא בערך <math>\log p_n</math>.)
+
+הנפה שונתה אחר כך בידי ג'אנג יי-טאנג כדי להוכיח חסם סופי על המרווח הקטן ביותר בין שני [[מספר ראשוני|ראשוניים]] עוקבים שמתקבל אינסוף פעמים (החסם של ג'אנג היה 70 מיליון).{{הערה|1=Y. Zhang, Bounded gaps between primes, Annals of Mathematics 179 (3), 2014, עמ' 1121–1174, {{DOI|10.4007/annals.2014.179.3.7}}|כיווון=שמאל}} מאוחר יותר שונתה הנפה שוב בידי [[ג'יימס מיינרד]] (שהוריד את החסם ל-600{{הערה|1=J. Maynard, Small gaps between primes, Annals of Mathematics 181 (1), 2015, עמ' 383–413, {{DOI|10.4007/annals.2015.181.1.7}}, arXiv:1311.4600|כיווון=שמאל}}) ובידי [[טרנס טאו]]. (פרויקט Polymath8b הוריד בהמשך את החסם ל-246.)
+
+== נפת גולדסטון–פינץ–ילדירים ==
+=== סימונים ===
+מקבעים <math>k\in \mathbb{N}</math> ואת הסימונים הבאים:
+*<math>\mathbb{P}</math> היא קבוצת המספרים הראשוניים, ו-<math>1_{\mathbb{P}}(n)</math> ה[[פונקציה מציינת|פונקציה המציינת]] של הקבוצה הזו.
+*<math>\Lambda(n)</math> היא פונקציית פון מנגולדט.
+*<math>\omega(n)</math> היא [[פונקציות אומגה ראשוניות|פונקציית אומגה הקטנה]] (שסופרת את הגורמים הראשוניים השונים של <math>n</math>).
+*<math>\mathcal{H}=\{h_1,\dots,h_k\}</math> היא קבוצה של שלמים אי-שליליים שונים, <math>h_i\in\mathbb{Z}_+\cup \{0\}</math>.
+*<math>\theta(n)</math> היא פונקציה מציינת נוספת של הראשוניים, המוגדרת כך:
+::<math>\theta(n)=\begin{cases} \log(n) & n\in \mathbb{P}\\ 0 & n \notin \mathbb{P}.\end{cases}</math>
+:שימו לב ש-<math>\theta(n)=\log\big((n-1)1_{\mathbb{P}}(n)+1\big)</math>.
+עבור <math>\mathcal{H}</math> מגדירים גם:
+*<math>\mathcal{H}(n):=(n+h_1,\dots,n+h_k)</math>,
+*<math>P_{\mathcal{H}}(n):=(n+h_1)(n+h_2)\cdots (n+h_k)</math>,
+*<math>\nu_p(\mathcal{H})</math> הוא מספר מחלקות השאריות השונות של <math>\mathcal{H}</math> מודולו <math>p</math>. למשל <math>\nu_3(\{0,2,4\})=3</math> ו-<math>\nu_3(\{0,2\})=2</math>, כי <math>\{0,2,4\} \equiv \{0,1,2\} \pmod{3}</math> ו-<math>\{0,2\} \equiv \{0,2\} \pmod{3}</math>.
+אם <math>\nu_p(\mathcal{H}) \lt p</math> לכל <math>p\in \mathbb{P}</math>, אומרים ש-<math>\mathcal{H}</math> '''קבילה''' (admissible). (בערך האנגלי נכתב בטעות התנאי <math>\nu_p(\mathcal{H}) \lt k</math>; התנאי הנכון, כמו במאמר המקורי, הוא <math>\nu_p(\mathcal{H}) \lt p</math>. מכיוון ש-<math>\nu_p(\mathcal H) \le k</math> תמיד, מספיק לבדוק ראשוניים <math>p \le k</math>.)
+
+'''משמעות הקבילות (הסבר נוסף).''' אם <math>\nu_p(\mathcal{H}) = p</math> עבור ראשוני כלשהו, אז ה-<math>h_i</math> מכסים את כל השאריות מודולו <math>p</math>, ולכן לכל <math>n</math> אחד המספרים <math>n + h_i</math> מתחלק ב-<math>p</math>; אם כך, רק מספר סופי של <math>n</math> יכולים לתת <math>k</math>-יה שכולה ראשוניים. למשל <math>\{0,2,4\}</math> אינה קבילה: מבין <math>n, n+2, n+4</math> אחד תמיד מתחלק ב-3, ולכן <math>(3,5,7)</math> היא השלשה היחידה כזו. לעומת זאת <math>\{0,2,6\}</math> קבילה (<math>\nu_2 = 1</math>, <math>\nu_3 = 2</math>), ואכן יש שלשות ראשוניים רבות מהצורה <math>(n, n+2, n+6)</math>: עבור <math>n = 5, 11, 17, 41, 101, 107, 191, \ldots</math> (נבדק בחישוב). [[השערת הארדי-ליטלווד הראשונה|השערת ה-k-יות הראשוניות]] (השערת הארדי–ליטלווד הראשונה) גורסת שלכל קבוצה קבילה יש אינסוף <math>n</math> כאלה.
+
+=== בנייה ===
+תהי <math>\mathcal{H}=\{h_1,\dots,h_k\}</math> קבילה, ונתבונן בפונקציית הניפוי הבאה:
+:<math>\mathcal{S}(N,c;\mathcal{H}):=\sum\limits_{n=N+1}^{2N}\left(\sum\limits_{h_i\in \mathcal {H}}1_{\mathbb{P}}(n+h_i)-c\right)w(n)^2,\quad w(n)\in \mathbb{R},\quad c>0,</math>
+כאשר <math>w(n)</math> היא פונקציית משקל שנגזור בהמשך.
+
+לכל <math>n\in [N+1,2N]</math>, פונקציית הניפוי הזו סופרת את הראשוניים מהצורה <math>n+h_i</math> פחות סף <math>c</math>. לכן אם <math>\mathcal{S}>0</math>, אז יש <math>n</math> כלשהו שעבורו לפחות <math>\lfloor c \rfloor +1</math> מהמספרים ב-<math>\mathcal{H}(n)</math> ראשוניים. ('''למה:''' אם לכל <math>n</math> מספר הראשוניים הוא לכל היותר <math>\lfloor c\rfloor</math>, כל מחובר בסכום הוא אי-חיובי, כי <math>w(n)^2 \ge 0</math>, ולכן <math>\mathcal{S} \le 0</math>.)
+
+מכיוון של-<math>1_{\mathbb{P}}(n)</math> אין תכונות אנליטיות נוחות, בוחרים במקום זאת את פונקציית הניפוי הבאה:
+:<math>\mathcal{S}(N;\mathcal{H}):=\sum\limits_{n=N+1}^{2N}\left(\sum\limits_{h_i\in \mathcal{H}}\theta(n+h_i)-\log(3N)\right)w(n)^2.</math>
+עבור ראשוני <math>n + h_i</math> מתקיים <math>\log(N) \lt \theta(n+h_i) \lt \log(3N)</math> (עבור <math>N</math> גדול ביחס ל-<math>h_i</math>), ולכן מחובר הוא חיובי רק אם יש לפחות שני ראשוניים <math>n+h_i</math> ו-<math>n+h_j</math>: ראשוני אחד תורם פחות מ-<math>\log 3N</math>, ושניים תורמים יותר מ-<math>2\log N \gt \log 3N</math>. (בערך האנגלי נכתב <math>c=\log(3n)</math> במקום <math>\log(3N)</math>.) כעת צריך לבחור את פונקציית המשקל <math>w(n)</math> כך שנוכל לזהות k-יות ראשוניות.
+
+==== גזירת המשקלות ====
+מועמדת לפונקציית המשקל היא פונקציית פון מנגולדט המוכללת
+:<math>\Lambda_k(n)=\sum\limits_{d\mid n}\mu(d)\left(\log\left(\frac{n}{d}\right)\right)^k,</math>
+שיש לה התכונה הבאה: אם <math>\omega(n)>k</math>, אז <math>\Lambda_k(n)=0</math>. הפונקציה הזו מזהה גם גורמים שהם חזקות ממש של ראשוניים, אבל ביישומים אפשר לסלק אותם בשגיאה זניחה.{{הערה|שם=GPY2005}}{{rp|826}}
+
+'''דוגמאות (נוסף בתרגום, נבדקו בחישוב).''' עבור <math>k = 2</math>: <math>\Lambda_2(p) = \log^2 p</math>, <math>\Lambda_2(p^2) = 3\log^2 p</math>, <math>\Lambda_2(6) = 2\log 2\log 3 \approx 1.523</math>, אבל <math>\Lambda_2(30) = \Lambda_2(60) = \Lambda_2(210) = 0</math>, כי ל-30 ול-60 יש שלושה גורמים ראשוניים שונים ול-210 ארבעה.
+
+לכן אם <math>\mathcal{H}(n)</math> היא <math>k</math>-יה ראשונית, הפונקציה
+:<math>\Lambda_k(n;\mathcal{H})=\frac{1}{k!}\Lambda_k(P_{\mathcal{H}}(n))</math>
+לא תתאפס. הגורם <math>1/k!</math> נועד רק לנוחות החישוב. את פונקציית פון מנגולדט (הקלאסית) אפשר לקרב בעזרת '''פונקציית פון מנגולדט הקטומה'''
+:<math>\Lambda(n)\approx \Lambda_R(n):=\sum\limits_{d\mid n,\ d\leq R}\mu(d)\log\left(\frac{R}{d}\right),</math>
+כאשר <math>R</math> אינו מציין כאן את אורך <math>\mathcal{H}</math> אלא את נקודת הקטימה. ('''הסבר:''' <math>\Lambda(n)=\sum_{d\mid n}\mu(d)\log(n/d)</math>, ובקירוב מחליפים את <math>n</math> ב-<math>R</math> וקוטמים את הסכום ב-<math>d \le R</math>. היתרון הוא ששגיאות ההתפלגות של מחלקים קטנים מ-<math>R</math> בסדרות חשבוניות נשלטות בעזרת [[משפט בומביירי-וינוגרדוב]].) באופן דומה מקרבים את <math>\Lambda_k(n;\mathcal{H})</math> על ידי
+:<math>\Lambda_R(n;\mathcal{H})=\frac{1}{k!}\sum\limits_{d\mid P_{\mathcal{H}}(n),\ d\leq R}\mu(d)\left(\log\left(\frac{R}{d}\right)\right)^k.</math>
+
+מסיבות טכניות רוצים לקרב <math>k</math>-יות שבהן כמה רכיבים ראשוניים, ולא רק <math>k</math>-יות שכולן ראשוניות, ולכן מכניסים פרמטר נוסף <math>0\leq \ell \leq k</math>, כך שאפשר לבחור שיהיו <math>k+\ell</math> גורמים ראשוניים שונים או פחות. זה מוביל לצורה הסופית
+:<math>\Lambda_R(n;\mathcal{H},\ell)=\frac{1}{(k+\ell)!}\sum\limits_{d\mid P_{\mathcal{H}}(n),\ d\leq R}\mu(d)\left(\log\left(\frac{R}{d}\right)\right)^{k+\ell}.</math>
+בלי הפרמטר הנוסף <math>\ell</math>, עבור <math>d=d_1d_2\cdots d_k</math> (כאשר <math>d_i \mid n + h_i</math>) יש את ההגבלה <math>d_1\leq R, d_2\leq R, \dots ,d_k\leq R</math>, אבל הכנסת הפרמטר נותנת את ההגבלה הרופפת יותר <math>d_1d_2\cdots d_k\leq R</math>.{{הערה|שם=GPY2005}}{{rp|827}} כך מתקבלת נפה <math>(k+\ell)</math>-ממדית עבור בעיית נפה <math>k</math>-ממדית.{{הערה|1=D. A. Goldston, J. Pintz, C. Y. Yıldırım, S. W. Graham, Small gaps between primes or almost primes, Transactions of the American Mathematical Society 361 (10), 2009, {{DOI|10.1090/S0002-9947-09-04788-6}}, arXiv:math/0506067|כיווון=שמאל}}
+
+=== הנפה ===
+לנפת GPY יש הצורה
+:<math>\mathcal{S}(N;\mathcal{H},\ell):=\sum\limits_{n=N+1}^{2N}\left(\sum\limits_{h_i\in \mathcal{H}}\theta(n+h_i)-\log(3N)\right)\Lambda_R(n;\mathcal{H},\ell)^2,\qquad |\mathcal{H}|=k</math>
+עם
+:<math>\Lambda_R(n;\mathcal{H},\ell)=\frac{1}{(k+\ell)!}\sum\limits_{d\mid P_{\mathcal{H}}(n),\ d\leq R}\mu(d)\left(\log\left(\frac{R}{d}\right)\right)^{k+\ell},\quad 0\leq \ell\leq k.</math>{{הערה|שם=GPY2005}}{{rp|827-829}}
+
+=== הוכחת המשפט המרכזי של גולדסטון, פינץ וילדירים ===
+נתבונן ב-<math>(\mathcal{H}_1,\ell_1, k_1)</math> וב-<math>(\mathcal{H}_2,\ell_2, k_2)</math>, וב-<math>1\leq h_0\leq R</math>, ונגדיר <math>M:=k_1+k_2+\ell_1+\ell_2</math>. במאמרם הוכיחו גולדסטון, פינץ וילדירים בשתי טענות שבתנאים מתאימים מתקיימות שתי נוסחאות אסימפטוטיות מהצורה
+:<math>\sum\limits_{n\leq N}\Lambda_R(n;\mathcal{H}_1,\ell_1)\Lambda_R(n;\mathcal{H}_2,\ell_2) = C_1\left(\mathfrak{S}(\mathcal{H}^{i})+o_M(1)\right)N</math>
+ו-
+:<math>\sum\limits_{n\leq N}\Lambda_R(n;\mathcal{H}_1,\ell_1)\Lambda_R(n;\mathcal{H}_2,\ell_2)\theta(n+h_0)
+= C_2\left(\mathfrak{S}(\mathcal{H}^j)+o_M(1)\right)N,</math>
+כאשר <math>C_1,C_2</math> שני קבועים, ו-<math>\mathfrak{S}(\mathcal{H}^{i})</math> ו-<math>\mathfrak{S}(\mathcal{H}^{j})</math> הם שני טורים סינגולריים שלא נתאר כאן.
+
+לבסוף אפשר להפעיל את התוצאות האלה על <math>\mathcal{S}</math> ולגזור את המשפט של גולדסטון, פינץ וילדירים על אינסוף זוגות ראשוניים שהמרחקים ביניהם קטנים כרצוננו ביחס למרחק הממוצע.{{הערה|שם=GPY2005}}{{rp|827-829}}
+
+'''הקשר לרמת ההתפלגות (נוסף בתרגום).''' השיטה דורשת שליטה בהתפלגות הראשוניים בסדרות חשבוניות עד מודולו <math>R^2 \approx N^{\vartheta}</math>. משפט בומביירי–וינוגרדוב נותן כל <math>\vartheta \lt 1/2</math>, וזה בדיוק מספיק כדי לקבל את <math>\liminf (p_{n+1}-p_n)/\log p_n = 0</math> אבל לא מרווחים חסומים. גולדסטון, פינץ וילדירים הראו שאם [[השערת אליוט-הלברשטם|השערת אליוט–הלברשטם]] נכונה עם <math>\vartheta \gt 1/2</math> כלשהו, אז יש אינסוף מרווחים חסומים בין ראשוניים (ועם <math>\vartheta</math> קרוב ל-1, מרווחים של לכל היותר 16). ההתקדמות של ג'אנג הייתה להוכיח גרסה חלשה של רמת התפלגות מעל <math>1/2</math> למודולים חלקים, וזה הספיק למרווחים חסומים ללא הנחות.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת הנפה]]
