@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (172)
+## ערכים (175)
 
 ### אנליזה מרוכבת
 
@@ -154,10 +154,13 @@
 
 ### פונקציות זטא
 
+* [הוכחת נוסחת מכפלת אוילר לפונקציית זטא של רימן](pages/%D7%94%D7%95%D7%9B%D7%97%D7%AA%20%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%9E%D7%9B%D7%A4%D7%9C%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8%20%D7%9C%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%99%D7%9E%D7%9F.md) – Proof of the Euler product formula for the Riemann zeta function
 * [הטרנסצנדנט של לרך](pages/%D7%94%D7%98%D7%A8%D7%A0%D7%A1%D7%A6%D7%A0%D7%93%D7%A0%D7%98%20%D7%A9%D7%9C%20%D7%9C%D7%A8%D7%9A.md) – Lerch transcendent
+* [הקריטריון של וייל](pages/%D7%94%D7%A7%D7%A8%D7%99%D7%98%D7%A8%D7%99%D7%95%D7%9F%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%99%D7%9C.md)
 * [השערת הילברט-פוליה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%99%D7%9C%D7%91%D7%A8%D7%98-%D7%A4%D7%95%D7%9C%D7%99%D7%94.md) – Hilbert–Pólya conjecture
 * [השערת רימן המוכללת](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%9E%D7%95%D7%9B%D7%9C%D7%9C%D7%AA.md) – Generalized Riemann hypothesis
 * [מחלקת סלברג](pages/%D7%9E%D7%97%D7%9C%D7%A7%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg class
+* [ממוצע ריס](pages/%D7%9E%D7%9E%D7%95%D7%A6%D7%A2%20%D7%A8%D7%99%D7%A1.md)
 * [נוסחאות מפורשות לפונקציות L](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%90%D7%95%D7%AA%20%D7%9E%D7%A4%D7%95%D7%A8%D7%A9%D7%95%D7%AA%20%D7%9C%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20L.md) – Explicit formulae for L-functions
 * [נוסחת רימן-זיגל](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%96%D7%99%D7%92%D7%9C.md) – Riemann–Siegel formula
 * [ערכים מיוחדים של פונקציית זטא של רימן](pages/%D7%A2%D7%A8%D7%9B%D7%99%D7%9D%20%D7%9E%D7%99%D7%95%D7%97%D7%93%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%99%D7%9E%D7%9F.md) – Particular values of the Riemann zeta function

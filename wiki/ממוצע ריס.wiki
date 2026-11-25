@@ -1,0 +1,37 @@
+ב[[מתמטיקה]], '''ממוצע ריס''' (ב[[אנגלית]]: Riesz mean) הוא [[ממוצע]] מסוים של איברי [[טור (מתמטיקה)|טור]]. את ממוצעי ריס הציג [[מרסל ריס]] ב-1911, כשיפור של ממוצע צזארו.{{הערה|שם=r11|1=M. Riesz, Comptes Rendus, 12 ביוני 1911|כיווון=שמאל}}{{הערה|שם=hl16|1=G. H. Hardy, J. E. Littlewood, Contributions to the Theory of the Riemann Zeta-Function and the Theory of the Distribution of Primes, Acta Mathematica 41, 1916, עמ' 119–196, {{DOI|10.1007/BF02422942}}|כיווון=שמאל}} אין לבלבל את ממוצע ריס עם ממוצע בוכנר–ריס או עם ממוצע ריס החזק.
+
+== הגדרה ==
+בהינתן טור <math>\sum a_n</math>, ממוצע ריס של הטור מוגדר על ידי
+:<math>s^\delta(\lambda) = \sum_{n\le \lambda} \left(1-\frac{n}{\lambda}\right)^\delta a_n.</math>
+(בערך האנגלי ההגדרה נכתבת עם <math>s_n</math> במקום <math>a_n</math>, אבל המקרים הפרטיים שלהלן משתמשים ב-<math>a_n</math>.)
+
+לפעמים מגדירים ממוצע ריס מוכלל:
+:<math>R_n = \frac{1}{\lambda_n} \sum_{k=0}^n (\lambda_k-\lambda_{k-1})^\delta s_k.</math>
+כאן <math>\lambda_n</math> היא סדרה עם <math>\lambda_n\to\infty</math> ו-<math>\lambda_{n+1}/\lambda_n\to 1</math> כאשר <math>n\to\infty</math>. מעבר לכך, הסדרה <math>\lambda_n</math> שרירותית.
+
+משתמשים בממוצעי ריס לעיתים קרובות לחקר סכימות של סדרות; משפטי סכימות טיפוסיים עוסקים במקרה <math>s_n = \sum_{k=0}^n a_k</math> עבור סדרה <math>\{a_k\}</math>. בדרך כלל, סדרה ניתנת לסכימה כאשר הגבול <math>\lim_{n\to\infty} R_n</math> קיים, או כאשר הגבול <math>\lim_{\delta\to 1,\lambda\to\infty}s^\delta(\lambda)</math> קיים, אם כי משפטי הסכימות המדויקים מטילים לעיתים קרובות תנאים נוספים.
+
+'''למה המשקל עוזר (הסבר נוסף).''' המשקל <math>(1 - n/\lambda)^\delta</math> שווה ל-1 עבור <math>n</math> קטן, ויורד בהדרגה ל-0 כש-<math>n</math> מתקרב ל-<math>\lambda</math>. במקום "לחתוך" את הסכום בבת אחת ב-<math>\lambda</math>, כמו בסכום חלקי רגיל, הוא נחתך בהדרגה, וככל ש-<math>\delta</math> גדול יותר החיתוך חלק יותר. חיתוך חלק מקטין תנודות, ולכן ממוצעים כאלה מתכנסים לעיתים קרובות גם כשהסכומים החלקיים עצמם אינם מתכנסים.
+
+== מקרים פרטיים ==
+יהי <math>a_n=1</math> לכל <math>n</math>. אז
+:<math>\sum_{n\le \lambda} \left(1-\frac{n}{\lambda}\right)^\delta = \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \frac{\Gamma(1+\delta)\Gamma(s)}{\Gamma(1+\delta+s)} \zeta(s) \lambda^s \, ds = \frac{\lambda}{1+\delta} + \sum_n b_n \lambda^{-n}.</math>
+כאן יש לקחת <math>c>1</math>; <math>\Gamma(s)</math> היא [[פונקציית גמא]] ו-<math>\zeta(s)</math> היא [[פונקציית זטא של רימן]]. אפשר להראות שה[[טור חזקות]] <math>\sum_n b_n \lambda^{-n}</math> מתכנס עבור <math>\lambda > 1</math>. שימו לב שהאינטגרל הוא מהצורה של [[התמרת מלין]] הפוכה.
+
+'''הערה (נוספה בתרגום).''' את השוויון האחרון יש להבין כפיתוח אסימפטוטי (המתקבל מהזזת קו האינטגרציה שמאלה ואיסוף שארים בקטבים <math>s = 1, 0, -1, \dots</math>), ולא כשוויון מדויק: איברי <math>b_n</math> נותנים את החלק החלק של הפונקציה, אבל יש גם רכיב מתנודד קטן, בגודל <math>O(\lambda^{-\delta})</math> בערך. למשל, עבור <math>\delta = 1</math> ו-<math>\lambda = N + \theta</math> (עם <math>N</math> שלם ו-<math>0 \le \theta \lt 1</math>), חישוב ישיר נותן בדיוק
+:<math>\sum_{n\le \lambda} \left(1-\frac{n}{\lambda}\right) = \frac{\lambda}{2} - \frac12 + \frac{\theta(1-\theta)}{2\lambda},</math>
+ואילו השארים בקטבים נותנים <math>\frac{\lambda}{2} - \frac12 + \frac{1}{12\lambda}</math>, שהוא בדיוק הממוצע של הביטוי המדויק על פני <math>\theta</math>. (האיבר הקבוע <math>-\tfrac12 = \zeta(0)</math> בא מהקוטב של <math>\Gamma(s)</math> ב-<math>s = 0</math>.)
+
+מקרה מעניין אחר, הקשור ל[[תורת המספרים]], מתקבל כשלוקחים <math>a_n=\Lambda(n)</math>, כאשר <math>\Lambda(n)</math> היא פונקציית פון מנגולדט. אז
+:<math>\sum_{n\le \lambda} \left(1-\frac{n}{\lambda}\right)^\delta \Lambda(n) = - \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \frac{\Gamma(1+\delta)\Gamma(s)}{\Gamma(1+\delta+s)} \frac{\zeta'(s)}{\zeta(s)} \lambda^s \, ds = \frac{\lambda}{1+\delta} + \sum_\rho \frac {\Gamma(1+\delta)\Gamma(\rho)}{\Gamma(1+\delta+\rho)}\lambda^\rho +\sum_n c_n \lambda^{-n}.</math>
+שוב יש לקחת <math>c > 1</math>. הסכום על <math>\rho</math> הוא סכום על האפסים של פונקציית זטא של רימן, והטור <math>\sum_n c_n \lambda^{-n}</math> מתכנס עבור <math>\lambda > 1</math>. (בערך האנגלי חסר הגורם <math>\lambda^\rho</math> בסכום על האפסים; הוא נובע מהשארית של <math>\lambda^s</math> ב-<math>s = \rho</math>.)
+
+האינטגרלים שמופיעים כאן דומים לאינטגרל נרלונד–רייס; באופן גס מאוד, אפשר לקשר ביניהם דרך [[נוסחת פרון]].
+
+== לקריאה נוספת ==
+* I. I. Volkov, [https://encyclopediaofmath.org/wiki/Riesz_summation_method Riesz summation method], Encyclopedia of Mathematics, 2001
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
