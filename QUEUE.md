@@ -57,4 +57,4 @@ Sieve theory and theorems: Sieve of Pritchard; Goldston–Pintz–Yıldırım si
 
 
 
-Additive number theory: Restricted sumset; Cameron–Erdős conjecture; Arithmetic combinatorics; Folkman's theorem; Minimum overlap problem; Square-difference-free set
+Additive number theory: Cameron–Erdős conjecture; Arithmetic combinatorics

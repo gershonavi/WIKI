@@ -1,0 +1,51 @@
+ב[[תורת המספרים האדיטיבית]] וב[[קומבינטוריקה]], '''סכום קבוצות מוגבל''' (ב[[אנגלית]]: restricted sumset) הוא קבוצה מהצורה
+:<math>S=\{a_1+\cdots+a_n:\ a_1\in A_1,\ldots,a_n\in A_n,\ P(a_1,\ldots,a_n)\not=0\},</math>
+כאשר <math>A_1,\ldots,A_n</math> תת-קבוצות סופיות לא ריקות של [[שדה (מבנה אלגברי)|שדה]] <math>F</math>, ו-<math>P(x_1,\ldots,x_n)</math> [[פולינום]] מעל <math>F</math>.
+
+אם <math>P</math> פונקציה קבועה שונה מאפס, למשל <math>P(x_1,\ldots,x_n)=1</math> לכל <math>x_1,\ldots,x_n</math>, אז <math>S</math> הוא סכום הקבוצות הרגיל <math>A_1+\cdots+A_n</math>, המסומן <math>nA</math> אם <math>A_1=\cdots=A_n=A</math>.
+
+כאשר
+:<math>P(x_1,\ldots,x_n) = \prod_{1 \le i \lt j \le n} (x_j-x_i),</math>
+מסמנים את <math>S</math> ב-<math>A_1\dotplus\cdots\dotplus A_n</math>, וב-<math>n^{\wedge} A</math> אם <math>A_1=\cdots=A_n=A</math>. (כלומר, סכומים של <math>n</math> איברים '''שונים''' זה מזה.)
+
+שימו לב ש-<math>|S| > 0</math> אם ורק אם יש <math>a_1\in A_1,\ldots,a_n\in A_n</math> עם <math>P(a_1,\ldots,a_n)\not=0</math>.
+
+'''דוגמה (נוספה בתרגום).''' ב-<math>\mathbb Z/7\mathbb Z</math> ניקח <math>A = \{0, 1, 2\}</math>. אז <math>2A = A + A = \{0, 1, 2, 3, 4\}</math> (5 איברים), ואילו <math>2^\wedge A</math>, הסכומים של שני איברים שונים, הוא <math>\{1, 2, 3\}</math> (3 איברים).
+
+== משפט קושי–דבנפורט ==
+'''משפט קושי–דבנפורט''', הקרוי על שם [[אוגוסטן לואי קושי]] והרולד דבנפורט, קובע שלכל [[מספר ראשוני|ראשוני]] <math>p</math> ולכל תת-קבוצות לא ריקות <math>A</math> ו-<math>B</math> של ה[[חבורה ציקלית|חבורה הציקלית]] <math>\mathbb{Z}/p\mathbb{Z}</math>, שסדרה ראשוני, מתקיים אי-השוויון{{הערה|שם=nat|1=M. B. Nathanson, Additive Number Theory: Inverse Problems and the Geometry of Sumsets, Graduate Texts in Mathematics 165, Springer, 1996, עמ' 44|כיווון=שמאל}}{{הערה|שם=gr|1=A. Geroldinger, I. Z. Ruzsa (עורכים), Combinatorial number theory and additive group theory, Advanced Courses in Mathematics CRM Barcelona, Birkhäuser, 2009, עמ' 141–142|כיווון=שמאל}}{{הערה|1=J. P. Wheeler, The Cauchy-Davenport Theorem for Finite Groups, arXiv:[https://arxiv.org/abs/1202.1816 1202.1816], 2012|כיווון=שמאל}}
+:<math>|A+B| \ge \min\{p,\, |A|+|B|-1\},</math>
+כאשר <math>A+B := \{a+b \bmod p:\ a \in A, b \in B\}</math>, כלומר ב[[חשבון מודולרי]]. אפשר להכליל אותו לחבורות כלליות (לא בהכרח אבליות) בעזרת התמרת דייסון. אם <math>A, B</math> תת-קבוצות של חבורה <math>G</math>, אז{{הערה|1=M. DeVos, [http://math.colgate.edu/~integers/q7/q7.Abstract.html On a Generalization of the Cauchy-Davenport Theorem], Integers 16, 2016|כיווון=שמאל}}
+:<math>|AB| \ge \min\{p(G),\, |A|+|B|-1\},</math>
+כאשר <math>p(G)</math> הוא גודל תת-החבורה הלא טריוויאלית הקטנה ביותר של <math>G</math> (ומגדירים אותו כ-<math>\infty</math> אם אין תת-חבורה כזו).
+
+'''דוגמה (נוספה בתרגום).''' אם <math>A = B = \{0, 1, \dots, k-1\}</math> ב-<math>\mathbb Z/p\mathbb Z</math> עם <math>2k - 1 \le p</math>, אז <math>A + B = \{0, \dots, 2k-2\}</math>, שיש בו בדיוק <math>2k - 1 = |A| + |B| - 1</math> איברים. כלומר החסם הדוק עבור סדרות חשבוניות. (המשפט, וגם המשפט של דיאס דה סילבה והמידון להלן עבור <math>n = 2</math>, נבדקו בחישוב על אלפי זוגות קבוצות אקראיות.)
+
+אפשר להשתמש במשפט כדי להסיק את משפט ארדש–גינזבורג–זיו: בכל סדרה של <math>2n-1</math> איברים בחבורה הציקלית <math>\mathbb{Z}/n\mathbb{Z}</math> יש <math>n</math> איברים שסכומם אפס מודולו <math>n</math>. (כאן <math>n</math> אינו חייב להיות ראשוני.){{הערה|1=Nathanson (1996), עמ' 48|כיווון=שמאל}}{{הערה|1=Geroldinger & Ruzsa (2009), עמ' 53|כיווון=שמאל}} (למשל, הסדרה <math>0, 0, 1, 1</math> באורך <math>2\cdot3 - 2 = 4</math> ב-<math>\mathbb Z/3\mathbb Z</math> מראה ש-<math>2n-1</math> הכרחי: אין בה שלושה איברים שסכומם מתחלק ב-3.)
+
+מסקנה ישירה של משפט קושי–דבנפורט: בהינתן סדרה <math>S</math> של <math>p-1</math> איברים או יותר של <math>\mathbb{Z}/p\mathbb{Z}</math>, השונים מאפס ולא בהכרח שונים זה מזה, כל איבר של <math>\mathbb{Z}/p\mathbb{Z}</math> אפשר לכתוב כסכום של איברי תת-סדרה כלשהי (אולי ריקה) של <math>S</math>.{{הערה|1=[http://mathworld.wolfram.com/Cauchy-DavenportTheorem.html Cauchy-Davenport Theorem], MathWorld|כיווון=שמאל}}
+
+משפט קנזר מכליל זאת לחבורות אבליות כלליות.{{הערה|1=Geroldinger & Ruzsa (2009), עמ' 143|כיווון=שמאל}}
+
+== השערת ארדש–היילברון ==
+'''השערת ארדש–היילברון''', שהעלו [[פאול ארדש]] והנס היילברון ב-1964, קובעת ש-<math>|2^\wedge A| \ge \min\{p,\, 2|A|-3\}</math> אם <math>p</math> ראשוני ו-<math>A</math> תת-קבוצה לא ריקה של השדה <math>\mathbb Z/p\mathbb Z</math>.{{הערה|1=Nathanson (1996), עמ' 77|כיווון=שמאל}} את ההשערה אישרו לראשונה ג'. א. דיאס דה סילבה וי. או. המידון ב-1994,{{הערה|1=J. A. Dias da Silva, Y. O. Hamidoune, Cyclic spaces for Grassmann derivatives and additive theory, Bulletin of the London Mathematical Society 26 (2), 1994, עמ' 140–146, {{DOI|10.1112/blms/26.2.140}}|כיווון=שמאל}} שהראו ש-
+:<math>|n^\wedge A| \ge \min\{p(F),\ n|A|-n^2+1\},</math>
+כאשר <math>A</math> תת-קבוצה סופית לא ריקה של שדה <math>F</math>, ו-<math>p(F)</math> הוא הראשוני <math>p</math> אם ה[[מאפיין (אלגברה)|מאפיין]] של <math>F</math> הוא <math>p</math>, ו-<math>p(F) = \infty</math> אם המאפיין של <math>F</math> הוא 0. (עבור <math>n = 2</math> זה בדיוק <math>2|A| - 3</math>.) הרחבות שונות של התוצאה נתנו [[נוגה אלון|נגה אלון]], מ. ב. נתנזון וא. רוז'ה ב-1996,{{הערה|שם=anr}} צ'. ה. הו וז'י-ויי סון ב-2002,{{הערה|1=Q.-H. Hou, Z.-W. Sun, Restricted sums in a field, Acta Arithmetica 102 (3), 2002, עמ' 239–249, {{DOI|10.4064/aa102-3-3}}|כיווון=שמאל}} וג'. קארוֹיי ב-2004.{{הערה|1=G. Károlyi, The Erdős–Heilbronn problem in abelian groups, Israel Journal of Mathematics 139, 2004, עמ' 349–359, {{DOI|10.1007/BF02787556}}|כיווון=שמאל}}
+
+== הנולשטלנזץ הקומבינטורי ==
+כלי לחקר חסמים תחתונים ל[[עוצמה (מתמטיקה)|עוצמות]] של סכומי קבוצות מוגבלים שונים הוא העיקרון הבא: '''הנולשטלנזץ הקומבינטורי'''.{{הערה|שם=alon99|1=N. Alon, [http://www.math.tau.ac.il/~nogaa/PDFS/null2.pdf Combinatorial Nullstellensatz], Combinatorics, Probability and Computing 8 (1–2), 1999, עמ' 7–29, {{DOI|10.1017/S0963548398003411}}|כיווון=שמאל}} יהי <math>f(x_1,\ldots,x_n)</math> פולינום מעל שדה <math>F</math>. נניח שהמקדם של המונום <math>x_1^{k_1}\cdots x_n^{k_n}</math> ב-<math>f(x_1,\ldots,x_n)</math> שונה מאפס, ו-<math>k_1+\cdots+k_n</math> היא המעלה הכוללת של <math>f(x_1,\ldots,x_n)</math>. אם <math>A_1,\ldots,A_n</math> תת-קבוצות סופיות של <math>F</math> עם <math>|A_i|>k_i</math> לכל <math>i=1,\ldots,n</math>, אז יש <math>a_1\in A_1,\ldots,a_n\in A_n</math> כך ש-<math>f(a_1,\ldots,a_n) \neq 0</math>.
+
+'''דוגמה לשימוש (נוספה בתרגום): הוכחת קושי–דבנפורט.''' נניח בשלילה ש-<math>|A + B| \le |A| + |B| - 2</math> וש-<math>|A| + |B| - 1 \le p</math>. נבחר קבוצה <math>C \supseteq A + B</math> בגודל <math>|A| + |B| - 2</math>, ונגדיר <math>f(x, y) = \prod_{c \in C}(x + y - c)</math>. אז <math>f</math> מתאפס על כל <math>A \times B</math>. מעלתו <math>|A| + |B| - 2</math>, והמקדם של <math>x^{|A|-1}y^{|B|-1}</math> הוא המקדם הבינומי <math>\binom{|A|+|B|-2}{|A|-1}</math>, שאינו מתחלק ב-<math>p</math> (כי <math>|A| + |B| - 2 \lt p</math>). לפי הנולשטלנזץ יש <math>a \in A, b \in B</math> עם <math>f(a, b) \ne 0</math> – סתירה.
+
+התוצאה נבעה ממאמר של נגה אלון ומ. טרסי מ-1989,{{הערה|1=N. Alon, M. Tarsi, A nowhere-zero point in linear mappings, Combinatorica 9 (4), 1989, עמ' 393–395, {{DOI|10.1007/BF02125351}}|כיווון=שמאל}} פותחה בידי אלון, נתנזון ורוז'ה ב-1995–1996,{{הערה|שם=anr|1=N. Alon, M. B. Nathanson, I. Ruzsa, [http://www.math.tau.ac.il/~nogaa/PDFS/anrf3.pdf The polynomial method and restricted sums of congruence classes], Journal of Number Theory 56 (2), 1996, עמ' 404–417, {{DOI|10.1006/jnth.1996.0029}}|כיווון=שמאל}} ונוסחה מחדש בידי אלון ב-1999.{{הערה|שם=alon99}}
+
+== ראו גם ==
+* שיטת הפולינום בקומבינטוריקה
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/Erdos-HeilbronnConjecture.html Erdős-Heilbronn Conjecture], ב-MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האדיטיבית]]
