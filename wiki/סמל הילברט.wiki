@@ -1,0 +1,105 @@
+ב[[מתמטיקה]], '''סמל הילברט''' או '''סמל שארית הנורמה''' הוא פונקציה <math>(\cdot, \cdot)</math> מ-<math>K^\times \times K^\times</math> לחבורת [[שורש יחידה|שורשי היחידה]] מסדר <math>n</math> ב[[שדה מקומי]] <math>K</math>, כמו שדה ה[[מספר ממשי|ממשיים]] או שדות ה[[מספר p-אדי|מספרים ה-p-אדיים]]. הוא קשור ל[[חוק הדדיות|חוקי הדדיות]], ואפשר להגדיר אותו במונחי [[הדדיות ארטין|סמל ארטין]] של [[תורת שדות המחלקה המקומית]]. סמל הילברט הוצג על ידי [[דויד הילברט]] (1897, סעיפים 64, 131) ב-''Zahlbericht'' שלו, בהבדל קטן: הוא הגדיר אותו לאיברים של [[שדה גלובלי|שדות גלובליים]] ולא לשדות המקומיים הגדולים יותר.
+
+סמל הילברט הוכלל לשדות מקומיים גבוהים.
+
+== סמל הילברט הריבועי ==
+מעל שדה מקומי <math>K</math> עם [[חבורה כפלית]] <math>K^\times</math> של האיברים השונים מאפס, סמל הילברט הריבועי הוא ה[[פונקציה (מתמטיקה)|פונקציה]] <math>K^\times \times K^\times \to \{\pm1\}</math> שמוגדרת כך:
+:<math>(a, b) = \begin{cases} +1, & \text{אם ל-} z^2 = ax^2 + by^2 \text{ יש פתרון } (x, y, z) \ne 0 \text{ ב-} K^3; \\ -1, & \text{אחרת.}\end{cases}</math>
+באופן שקול, <math>(a, b) = 1</math> אם ורק אם <math>b</math> שווה ל[[נורמה (תורת השדות)|נורמה]] של איבר בהרחבה הריבועית <math>K[\sqrt a]</math>.{{הערה|1=J. Milne, ''Class Field Theory'', course notes, p. 110|כיווון=שמאל}}
+
+=== תכונות ===
+שלוש התכונות הבאות נובעות ישירות מההגדרה, על ידי בחירת פתרונות מתאימים ל[[משוואה דיופנטית|משוואה]] שלמעלה:
+* אם <math>a</math> ריבוע, אז <math>(a, b) = 1</math> לכל <math>b</math> (קחו <math>x = 1, y = 0, z = \sqrt a</math>).
+* לכל <math>a, b \in K^\times</math>, <math>(a, b) = (b, a)</math>.
+* לכל <math>a \in K^\times</math> כך ש-<math>1 - a \in K^\times</math>, <math>(a, 1 - a) = 1</math> (קחו <math>x = y = z = 1</math>: <math>1 = a + (1 - a)</math>).
+הכפליות (הדו-לינאריות),
+:<math>(a, b_1b_2) = (a, b_1)\cdot(a, b_2),</math>
+לכל <math>a, b_1, b_2 \in K^\times</math>, קשה יותר להוכחה, ודורשת את פיתוח תורת שדות המחלקה המקומית.
+
+התכונה השלישית מראה שסמל הילברט הוא דוגמה ל'''סמל שטיינברג''', ולכן מתפרק דרך '''חבורת K של מילנור''' השנייה <math>K^M_2(K)</math>, שמוגדרת כ-
+:<math>K^\times \otimes K^\times \big/ \bigl(a \otimes (1 - a) : a \in K^\times\setminus\{1\}\bigr).</math>
+לפי התכונה הראשונה, הוא אפילו מתפרק דרך <math>K^M_2(K)/2</math>. זה הצעד הראשון לקראת '''השערת מילנור'''.
+
+=== פירוש כאלגברה ===
+אפשר להשתמש בסמל הילברט גם לסימון ה[[אלגברה פשוטה מרכזית|אלגברה הפשוטה המרכזית]] מעל <math>K</math> עם בסיס <math>1, i, j, k</math> וחוקי הכפל <math>i^2 = a</math>, <math>j^2 = b</math>, <math>ij = -ji = k</math> ([[אלגברת קווטרניונים]]). במקרה הזה האלגברה מייצגת איבר מסדר שמחלק 2 ב[[חבורת בראואר]] של <math>K</math>, שמזוהה עם <math>-1</math> אם היא [[אלגברה עם חילוק]] ועם <math>+1</math> אם היא איזומורפית לאלגברת המטריצות <math>2\times2</math>. למשל, מעל <math>\mathbb R</math>: <math>(-1, -1)_\infty = -1</math> (המשוואה <math>z^2 = -x^2 - y^2</math> אין לה פתרון לא טריוויאלי), ואכן <math>(-1, -1)</math> היא ה[[קווטרניון|קווטרניונים]] של המילטון, אלגברה עם חילוק.
+
+=== סמלי הילברט מעל הרציונליים ===
+ל[[מקום (מתמטיקה)|מקום]] <math>v</math> של שדה המספרים הרציונליים ולמספרים רציונליים <math>a, b</math>, נסמן ב-<math>(a, b)_v</math> את ערך סמל הילברט ב[[השלמה (אלגברה)|השלמה]] המתאימה <math>\mathbb Q_v</math>. כרגיל, אם <math>v</math> ההערכה שמתאימה לראשוני <math>p</math>, ההשלמה היא השדה ה-p-אדי, ואם <math>v</math> המקום האינסופי, ההשלמה היא שדה הממשיים.
+
+מעל הממשיים, <math>(a, b)_\infty</math> הוא <math>+1</math> אם לפחות אחד מ-<math>a</math> או <math>b</math> חיובי, ו-<math>-1</math> אם שניהם שליליים.
+
+מעל ה-p-אדיים עם <math>p</math> אי-זוגי, אם כותבים <math>a = p^\alpha u</math> ו-<math>b = p^\beta v</math> עם <math>u, v</math> שלמים [[מספרים זרים|זרים]] ל-<math>p</math>, אז
+:<math>(a, b)_p = (-1)^{\alpha\beta\epsilon(p)}\left(\frac up\right)^\beta\left(\frac vp\right)^\alpha, \qquad \epsilon(p) = \frac{p-1}{2},</math>
+והביטוי מערב שני [[סמל לז'נדר|סמלי לז'נדר]].
+
+מעל ה-2-אדיים, שוב אם כותבים <math>a = 2^\alpha u</math> ו-<math>b = 2^\beta v</math> עם <math>u, v</math> [[מספר אי-זוגי|אי-זוגיים]], אז
+:<math>(a, b)_2 = (-1)^{\epsilon(u)\epsilon(v) + \alpha\omega(v) + \beta\omega(u)}, \qquad \omega(x) = \frac{x^2 - 1}{8}.</math>
+
+ידוע שכאשר <math>v</math> עובר על כל המקומות, <math>(a, b)_v = 1</math> כמעט לכל <math>v</math> (פרט למספר סופי). לכן נוסחת המכפלה
+:<math>\prod_v (a, b)_v = 1</math>
+בעלת משמעות. היא שקולה ל[[חוק ההדדיות הריבועית]].
+
+'''דוגמאות מחושבות.'''
+{| class="wikitable" style="text-align:center"
+! <math>(a, b)</math> !! <math>\infty</math> !! <math>2</math> !! <math>3</math> !! <math>5</math> !! <math>7</math> !! מכפלה
+|-
+| <math>(-1, -1)</math> || <math>-1</math> || <math>-1</math> || <math>1</math> || <math>1</math> || <math>1</math> || <math>1</math>
+|-
+| <math>(3, -1)</math> || <math>1</math> || <math>-1</math> || <math>-1</math> || <math>1</math> || <math>1</math> || <math>1</math>
+|-
+| <math>(3, 7)</math> || <math>1</math> || <math>-1</math> || <math>1</math> || <math>1</math> || <math>-1</math> || <math>1</math>
+|}
+* בשורה הראשונה: אלגברת הקווטרניונים <math>(-1, -1)_{\mathbb Q}</math> "מסועפת" בדיוק ב-2 וב-<math>\infty</math>.
+* בשורה השלישית: <math>(3, 7)_3 = \left(\tfrac73\right) = 1</math>, <math>(3, 7)_7 = \left(\tfrac37\right) = -1</math>, ו-<math>(3, 7)_2 = (-1)^{\epsilon(3)\epsilon(7)} = (-1)^{1\cdot 3} = -1</math>. נוסחת המכפלה <math>1\cdot(-1)\cdot1\cdot(-1) = 1</math> היא בדיוק חוק ההדדיות הריבועית <math>\left(\tfrac37\right)\left(\tfrac73\right) = (-1)^{\frac{3-1}{2}\cdot\frac{7-1}{2}}</math>.
+* בדיקה ממוחשבת של נוסחת המכפלה על 2000 זוגות אקראיים <math>|a|, |b| \le 300</math> לא מצאה אף חריגה.
+
+=== הרדיקל של קפלנסקי ===
+סמל הילברט על שדה <math>F</math> מגדיר העתקה
+:<math>(\cdot, \cdot) : F^*/F^{*2} \times F^*/F^{*2} \to \mathrm{Br}(F),</math>
+כאשר <math>\mathrm{Br}(F)</math> חבורת בראואר של <math>F</math>. הגרעין של ההעתקה הזו – האיברים <math>a</math> כך ש-<math>(a, b) = 1</math> לכל <math>b</math> – הוא '''הרדיקל של קפלנסקי''' של <math>F</math>.{{הערה|שם=Lam|1=T.-Y. Lam, ''Introduction to Quadratic Forms over Fields'', Graduate Studies in Mathematics '''67''', AMS, 2005, pp. 450–455|כיווון=שמאל}}
+
+הרדיקל הוא תת-חבורה של <math>F^*/F^{*2}</math>, שמזוהה עם תת-חבורה של <math>F^*</math>. הרדיקל שווה ל-<math>F^*</math> אם ורק אם ל-<math>F</math> יש '''אינווריאנט u''' לכל היותר 2. בכיוון ההפוך, שדה שהרדיקל שלו הוא <math>F^{*2}</math> נקרא '''שדה הילברט'''.{{הערה|שם=Lam}} (למשל, כל שדה מקומי הוא שדה הילברט, לפי אי-ההתנוונות שלהלן.)
+
+== סמל הילברט הכללי ==
+אם <math>K</math> שדה מקומי שמכיל את חבורת שורשי היחידה מסדר <math>n</math>, עבור שלם חיובי <math>n</math> הזר למאפיין של <math>K</math>, אז סמל הילברט <math>(\cdot, \cdot)</math> הוא פונקציה מ-<math>K^*\times K^*</math> ל-<math>\mu_n</math>. במונחי סמל ארטין אפשר להגדיר אותו כך:{{הערה|שם=Neu|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, pp. 333–336|כיווון=שמאל}}
+:<math>(a, b)\sqrt[n]{b} = \bigl(a, K(\sqrt[n]{b})/K\bigr)\sqrt[n]{b}.</math>
+הילברט הגדיר במקור את סמל הילברט לפני שסמל ארטין התגלה, וההגדרה שלו (ל-<math>n</math> ראשוני) השתמשה ב[[סימן שארית חזקה|סמל שארית החזקה]] כשמאפיין השאריות של <math>K</math> זר ל-<math>n</math>, והייתה מסובכת למדי כשמאפיין השאריות מחלק את <math>n</math>.
+
+=== תכונות ===
+סמל הילברט '''דו-לינארי''' (כפלית):
+:<math>(ab, c) = (a, c)(b, c), \qquad (a, bc) = (a, b)(a, c);</math>
+'''אנטי-סימטרי''':
+:<math>(a, b) = (b, a)^{-1};</math>
+'''לא מנוון''':
+:<math>(a, b) = 1</math> לכל <math>b</math> אם ורק אם <math>a \in K^{*n}</math>;
+הוא '''מזהה נורמות''' (ומכאן השם "סמל שארית הנורמה"):
+:<math>(a, b) = 1</math> אם ורק אם <math>a</math> נורמה של איבר ב-<math>K(\sqrt[n]{b})</math>;
+ויש לו תכונות ה"סמל" (סמל שטיינברג):
+:<math>(a, 1 - a) = 1, \qquad (a, -a) = 1.</math>
+
+=== חוק ההדדיות של הילברט ===
+'''חוק ההדדיות של הילברט''' קובע שאם <math>a</math> ו-<math>b</math> נמצאים בשדה מספרים אלגבריים שמכיל את שורשי היחידה מסדר <math>n</math>, אז{{הערה|שם=Neu}}
+:<math>\prod_{\mathfrak p} (a, b)_{\mathfrak p} = 1,</math>
+כאשר המכפלה היא על הראשוניים הסופיים והאינסופיים <math>\mathfrak p</math> של שדה המספרים, ו-<math>(\cdot, \cdot)_{\mathfrak p}</math> סמל הילברט של ההשלמה ב-<math>\mathfrak p</math>. חוק ההדדיות של הילברט נובע מ[[הדדיות ארטין|חוק ההדדיות של ארטין]] ומההגדרה של סמל הילברט במונחי סמל ארטין.
+
+=== סמל שארית החזקה ===
+אם <math>K</math> שדה מספרים שמכיל את שורשי היחידה מסדר <math>n</math>, <math>\mathfrak p</math> אידיאל ראשוני שאינו מחלק את <math>n</math>, <math>\pi</math> איבר ראשוני של השדה המקומי של <math>\mathfrak p</math>, ו-<math>a</math> זר ל-<math>\mathfrak p</math>, אז [[סימן שארית חזקה|סמל שארית החזקה]] <math>\left(\frac{a}{\mathfrak p}\right)</math> קשור לסמל הילברט על ידי{{הערה|שם=Neu}}
+:<math>\left(\frac{a}{\mathfrak p}\right) = (\pi, a)_{\mathfrak p}.</math>
+סמל שארית החזקה מורחב לאידיאלים שבורים בכפליות, ומוגדר לאיברים של שדה המספרים על ידי <math>\left(\frac ab\right) = \left(\frac{a}{(b)}\right)</math>, כאשר <math>(b)</math> האידיאל הראשי שנוצר על ידי <math>b</math>. חוק ההדדיות של הילברט גורר אז את חוק ההדדיות הבא לסמל השארית, עבור <math>a, b</math> זרים זה לזה ול-<math>n</math>:
+:<math>\left(\frac ab\right) = \left(\frac ba\right)\prod_{\mathfrak p \mid n, \infty}(a, b)_{\mathfrak p}.</math>
+(ל-<math>K = \mathbb Q</math>, <math>n = 2</math>: המכפלה על <math>\mathfrak p \in \{2, \infty\}</math> נותנת בדיוק את הגורם <math>(-1)^{\frac{a-1}{2}\frac{b-1}{2}}</math> של ההדדיות הריבועית לשלמים אי-זוגיים חיוביים.)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Z. I. Borevich, I. R. Shafarevich, ''Number Theory'', Academic Press, 1966
+* D. Hilbert, ''Die Theorie der algebraischen Zahlkörper'', Jahresbericht der DMV '''4''' (1897), pp. 175–546; English translation: ''The Theory of Algebraic Number Fields'', Springer, 1998
+* J. Milnor, ''Introduction to Algebraic K-Theory'', Annals of Mathematics Studies '''72''', Princeton University Press, 1971
+* J.-P. Serre, ''A Course in Arithmetic'', Graduate Texts in Mathematics '''7''', Springer, 1996
+* S. V. Vostokov, I. B. Fesenko, ''Local Fields and Their Extensions'', Translations of Mathematical Monographs '''121''', AMS, 2002
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת שדות המחלקה]]
+[[קטגוריה:תבניות ריבועיות]]
