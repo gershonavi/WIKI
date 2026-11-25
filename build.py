@@ -156,6 +156,8 @@ def preprocess(text):
 def fix_math(md):
     """Use GitHub's robust math syntax: ```math blocks and $`...`$ inline."""
     md = re.sub(r'\\operatorname\s*\{', r'\\mathrm{', md)  # GitHub's MathJax rejects \operatorname
+    for mw, tex in (('R', 'mathbb{R}'), ('N', 'mathbb{N}'), ('Z', 'mathbb{Z}'), ('Q', 'mathbb{Q}'), ('C', 'mathbb{C}'), ('Complex', 'mathbb{C}'), ('infin', 'infty')):
+        md = re.sub(r'\\' + mw + r'(?![A-Za-z])', lambda m, t=tex: '\\' + t, md)  # MediaWiki-only macros
     md = re.sub(r'\$\$(.+?)\$\$', lambda m: '\n\n```math\n' + m.group(1).strip() + '\n```\n\n', md, flags=re.S)
     parts = re.split(r'(```math\n.*?\n```)', md, flags=re.S)
     for i in range(0, len(parts), 2):
