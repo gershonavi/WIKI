@@ -28,7 +28,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Selberg class
 - [ ] Lerch transcendent
 - [ ] Clausen function
-- [ ] Landau prime ideal theorem
+- [x] Landau prime ideal theorem
 - [x] Rosser's theorem
 - [ ] Wolstenholme's theorem
 - [ ] Proof of Bertrand's postulate
