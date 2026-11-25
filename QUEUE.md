@@ -78,7 +78,7 @@ Additive number theory:
 - [x] Dedekind–Kummer theorem
 - [x] Splitting of prime ideals in Galois extensions
 - [x] Ramification (mathematics)
-- [ ] Ramification group
+- [x] Ramification group
 - [ ] P-adic valuation
 - [ ] Adele ring
 - [ ] Idele group

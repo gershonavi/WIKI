@@ -1,0 +1,108 @@
+ב[[תורת המספרים]], ובפרט בתורת שדות המחלקה המקומית, '''חבורות הסיעוף''' הן סינון (filtration) של [[חבורת גלואה|חבורת הגלואה]] של הרחבה של [[שדה מקומי|שדות מקומיים]], שנותן מידע מפורט על תופעות ה[[סיעוף (מתמטיקה)|סיעוף]] של ההרחבה.
+
+== תורת הסיעוף של הערכות ==
+במתמטיקה, '''תורת הסיעוף של הערכות''' חוקרת את קבוצת ההרחבות של [[הערכה (אלגברה)|הערכה]] <math>v</math> של שדה <math>K</math> ל[[הרחבת שדות|הרחבה]] <math>L</math> של <math>K</math>. זוהי הכללה של תורת הסיעוף של [[חוג דדקינד|חוגי דדקינד]].{{הערה|שם=FT|1=A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', Cambridge Studies in Advanced Mathematics '''27''', Cambridge University Press, 1991|כיווון=שמאל}}{{הערה|1=O. Zariski, P. Samuel, ''Commutative Algebra, Volume II'', Graduate Texts in Mathematics '''29''', Springer, 1976 (1960), chapter VI|כיווון=שמאל}} המבנה של קבוצת ההרחבות ידוע טוב יותר כאשר <math>L/K</math> היא [[הרחבת גלואה]].
+
+=== חבורת הפירוק וחבורת האינרציה ===
+יהי <math>(K, v)</math> שדה עם הערכה, ותהי <math>L</math> הרחבת גלואה סופית של <math>K</math>. נסמן ב-<math>S_v</math> את קבוצת מחלקות השקילות של ההרחבות של <math>v</math> ל-<math>L</math>, וב-<math>G</math> את חבורת הגלואה של <math>L</math> מעל <math>K</math>. אז <math>G</math> פועלת על <math>S_v</math> לפי <math>\sigma[w] = [w \circ \sigma]</math> (כלומר <math>w</math> נציג של מחלקת השקילות <math>[w] \in S_v</math>, ו-<math>[w]</math> נשלחת למחלקת השקילות של ההרכבה של <math>w</math> עם האוטומורפיזם <math>\sigma: L \to L</math>; זה אינו תלוי בבחירת הנציג). למעשה, ה[[פעולת חבורה|פעולה]] הזו טרנזיטיבית.
+
+בהינתן הרחבה קבועה <math>w</math> של <math>v</math> ל-<math>L</math>, '''חבורת הפירוק של <math>w</math>''' היא המייצב <math>G_w</math> של <math>[w]</math>, כלומר תת-החבורה של <math>G</math> שמורכבת מכל האיברים שמקבעים את <math>[w] \in S_v</math>.
+
+נסמן ב-<math>m_w</math> את האידיאל המקסימלי של <math>w</math> בחוג ההערכה <math>R_w</math> של <math>w</math>. '''חבורת האינרציה של <math>w</math>''' היא תת-החבורה <math>I_w</math> של <math>G_w</math> שמורכבת מהאיברים <math>\sigma</math> שמקיימים <math>\sigma x \equiv x \pmod{m_w}</math> לכל <math>x \in R_w</math>. במילים אחרות, <math>I_w</math> מורכבת מהאיברים של חבורת הפירוק שפועלים באופן טריוויאלי על שדה השארית של <math>w</math>. זוהי [[תת-חבורה נורמלית]] של <math>G_w</math>.
+
+מדד הסיעוף המצומצם <math>e(w/v)</math> אינו תלוי ב-<math>w</math>, ומסמנים אותו <math>e(v)</math>. באופן דומה, המעלה היחסית <math>f(w/v)</math> אינה תלויה ב-<math>w</math>, ומסמנים אותה <math>f(v)</math>. (לדוגמאות בשדות מספרים ראו [[פיצול של אידיאלים ראשוניים בהרחבות גלואה]].)
+
+== חבורות סיעוף במספור התחתון ==
+חבורות הסיעוף הן עידון של חבורת הגלואה <math>G</math> של הרחבת גלואה סופית <math>L/K</math> של שדות מקומיים. נסמן ב-<math>w</math>, <math>\mathcal O_L</math> ו-<math>\mathfrak p</math> את ההערכה, חוג השלמים והאידיאל המקסימלי שלו עבור <math>L</math>. כתוצאה מ[[למת הנזל]], אפשר לכתוב <math>\mathcal O_L = \mathcal O_K[\alpha]</math> עבור <math>\alpha \in L</math> כלשהו, כאשר <math>\mathcal O_K</math> הוא חוג השלמים של <math>K</math>.{{הערה|שם=N178|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, p. 178|כיווון=שמאל}} (זה חזק יותר מ[[משפט האיבר הפרימיטיבי]].) לכל מספר שלם <math>i \ge -1</math> נגדיר את <math>G_i</math> כקבוצת כל ה-<math>s \in G</math> שמקיימים את התנאים השקולים הבאים:
+* (i) <math>s</math> פועל באופן טריוויאלי על <math>\mathcal O_L / \mathfrak p^{i+1}</math>;
+* (ii) <math>w(s(x) - x) \ge i+1</math> לכל <math>x \in \mathcal O_L</math>;
+* (iii) <math>w(s(\alpha) - \alpha) \ge i+1</math>.
+
+החבורה <math>G_i</math> נקראת '''חבורת הסיעוף ה-<math>i</math>-ית'''. החבורות יוצרות סינון יורד
+:<math>G_{-1} = G \supseteq G_0 \supseteq G_1 \supseteq \cdots \supseteq \{1\}.</math>
+למעשה, החבורות <math>G_i</math> נורמליות לפי (i), וטריוויאליות עבור <math>i</math> גדול מספיק לפי (iii). עבור המדדים הנמוכים נהוג לקרוא ל-<math>G_0</math> '''תת-חבורת האינרציה''' של <math>G</math>, בגלל הקשר שלה לפיצול של אידיאלים ראשוניים, ול-<math>G_1</math> '''תת-חבורת האינרציה הפראית''' של <math>G</math>. המנה <math>G_0 / G_1</math> נקראת '''המנה המתונה'''.
+
+חוקרים את חבורת הגלואה <math>G</math> ואת תת-החבורות <math>G_i</math> בעזרת הסינון הזה, ובפרט בעזרת המנות המתאימות:
+* <math>G/G_0 = \mathrm{Gal}(l/k)</math>, כאשר <math>l, k</math> הם שדות השארית (הסופיים) של <math>L, K</math>.
+* <math>G_0 = 1</math> אם ורק אם <math>L/K</math> לא מסועפת.
+* <math>G_1 = 1</math> אם ורק אם <math>L/K</math> מסועפת במתינות (כלומר מדד הסיעוף זר למאפיין השארית).
+
+חקר חבורות הסיעוף מצטמצם למקרה המסועף לחלוטין, משום ש-<math>G_i = (G_0)_i</math> עבור <math>i \ge 0</math>.
+
+מגדירים גם את הפונקציה <math>i_G(s) = w(s(\alpha) - \alpha)</math>, <math>s \in G</math>. מתנאי (ii) נובע ש-<math>i_G</math> אינה תלויה בבחירת <math>\alpha</math>, ובנוסף, חקר הסינון <math>G_i</math> שקול בעיקרו לחקר <math>i_G</math>.{{הערה|1=J.-P. Serre, ''Local Fields'', Graduate Texts in Mathematics '''67''', Springer, 1979, p. 62|כיווון=שמאל}} הפונקציה <math>i_G</math> מקיימת, לכל <math>s, t \in G</math>:
+* <math>i_G(s) \ge i + 1 \iff s \in G_i</math>;
+* <math>i_G(t s t^{-1}) = i_G(s)</math>;
+* <math>i_G(st) \ge \min\{ i_G(s), i_G(t) \}</math>.
+
+נקבע איבר מקומי (uniformizer) <math>\pi</math> של <math>L</math>. אז <math>s \mapsto s(\pi)/\pi</math> משרה שיכון <math>G_i/G_{i+1} \to U_{L, i}/U_{L, i+1}</math> עבור <math>i \ge 0</math>, כאשר <math>U_{L, 0} = \mathcal{O}_L^\times</math> ו-<math>U_{L, i} = 1 + \mathfrak{p}^i</math>. (ההעתקה למעשה אינה תלויה בבחירת <math>\pi</math>.{{הערה|1=B. Conrad, ''Math 248A. Higher ramification groups'', handout|כיווון=שמאל}}) מאחר ש-<math>U_{L, 0}/U_{L, 1} \cong l^\times</math> ו-<math>U_{L, i}/U_{L, i+1} \cong l</math> (כחבורה חיבורית) עבור <math>i \ge 1</math>, נובע ש-
+* <math>G_0/G_1</math> ציקלית מסדר זר ל-<math>p</math>;
+* <math>G_i/G_{i+1}</math> (עבור <math>i \ge 1</math>) היא מכפלה של חבורות ציקליות מסדר <math>p</math>.
+בפרט, <math>G_1</math> היא <math>p</math>-חבורה, ו-<math>G_0</math> [[חבורה פתירה|פתירה]].
+
+בעזרת חבורות הסיעוף אפשר לחשב את [[אידיאל השונה|השונה]] <math>\mathfrak{D}_{L/K}</math> של ההרחבה <math>L/K</math> ושל תת-הרחבות שלה:{{הערה|שם=S64|1=J.-P. Serre, ''Local Fields'', §IV.1, Proposition 4, p. 64|כיווון=שמאל}}
+:<math>w(\mathfrak{D}_{L/K}) = \sum_{s \ne 1} i_G(s) = \sum_{i=0}^\infty (|G_i| - 1).</math>
+אם <math>H</math> תת-חבורה נורמלית של <math>G</math>, אז לכל <math>\sigma \in G/H</math> מתקיים <math>i_{G/H}(\sigma) = {1 \over e_{L/F}} \sum_{s \mapsto \sigma} i_G(s)</math>, כאשר <math>F</math> השדה הקבוע של <math>H</math>.{{הערה|1=J.-P. Serre, ''Local Fields'', §IV.1, Proposition 3, p. 63|כיווון=שמאל}} מכאן, עבור תת-ההרחבה <math>F/K</math> שמתאימה ל-<math>H</math>,
+:<math>v_F(\mathfrak{D}_{F/K}) = {1 \over e_{L/F}} \sum_{s \not\in H} i_G(s).</math>
+
+אם <math>s \in G_i</math>, <math>t \in G_j</math> עם <math>i, j \ge 1</math>, אז <math>sts^{-1}t^{-1} \in G_{i+j+1}</math>.{{הערה|1=J.-P. Serre, ''Local Fields'', §IV.2, Proposition 10|כיווון=שמאל}} במונחים של מישל לזאר, אפשר לפרש זאת כך ש[[אלגברת לי|אלגברת הלי]] <math>\mathrm{gr}(G_1) = \sum_{i \ge 1} G_i/G_{i+1}</math> אבלית.
+
+=== דוגמה: ההרחבה הציקלוטומית ===
+אפשר לתאר במפורש את חבורות הסיעוף של ההרחבה הציקלוטומית <math>K_n := \mathbb Q_p(\zeta)/\mathbb Q_p</math>, כאשר <math>\zeta</math> הוא [[שורש יחידה]] פרימיטיבי מסדר <math>p^n</math>:{{הערה|1=J.-P. Serre, ''Corps locaux'', ch. IV, §4, Proposition 18|כיווון=שמאל}}
+:<math>G_s = \mathrm{Gal}(K_n / K_e),</math>
+כאשר <math>e</math> נבחר כך ש-<math>p^{e-1} \le s \lt p^e</math>.
+
+'''חישוב מלא עבור <math>p = 3</math>, <math>n = 2</math>.''' כאן <math>G = \mathrm{Gal}(\mathbb Q_3(\zeta_9)/\mathbb Q_3) \cong (\mathbb Z/9\mathbb Z)^\times</math>, מסדר 6. ההרחבה מסועפת לחלוטין, ולכן <math>G_0 = G</math>. עבור <math>s = 1, 2</math> מתקיים <math>3^0 \le s \lt 3^1</math>, ולכן <math>G_1 = G_2 = \mathrm{Gal}(K_2/K_1)</math>, מסדר 3. עבור <math>3 \le s \lt 9</math> מקבלים <math>G_s = \mathrm{Gal}(K_2/K_2) = 1</math>. לכן
+:<math>w(\mathfrak D) = (6 - 1) + (3 - 1) + (3 - 1) = 9,</math>
+ומאחר שדרגת השארית היא 1, החזקה של 3 בדיסקרימיננטה של <math>\mathbb Q(\zeta_9)</math> היא 9. זה מתאים לנוסחה לדיסקרימיננטה של שדה ציקלוטומי: <math>9^6/3^{6/2} = 3^{12}/3^3 = 3^9</math> (ראו [[דיסקרימיננטה של שדה מספרים]]).
+
+=== דוגמה: הרחבה ממעלה ארבע ===
+תהי <math>K</math> ההרחבה של <math>\mathbb Q_2</math> שנוצרת על ידי <math>x_1=\sqrt{2+\sqrt{2}}</math>. הצמודים של <math>x_1</math> הם <math>x_2 = \sqrt{2-\sqrt{2}}</math>, <math>x_3 = -x_1</math> ו-<math>x_4 = -x_2</math>.
+
+חישוב קצר מראה שהמנה של כל שניים מהם היא יחידה. לכן כולם יוצרים אותו אידיאל; נסמן אותו <math>\pi</math>. האיבר <math>\sqrt{2}</math> יוצר את <math>\pi^2</math>, ו-<math>(2)=\pi^4</math>. (למשל, <math>x_1x_2 = \sqrt{(2+\sqrt2)(2-\sqrt2)} = \sqrt2</math>.)
+
+עכשיו <math>x_1-x_3=2x_1</math>, ששייך ל-<math>\pi^5</math> (כי <math>w(2) = 4</math> ו-<math>w(x_1) = 1</math>), ו-
+:<math>(x_1 - x_2)^2 = x_1^2 + x_2^2 - 2x_1x_2 = 4 - 2\sqrt{2} = 2\sqrt2(\sqrt2 - 1),</math>
+שהערכתו <math>4 + 2 + 0 = 6</math> (כי <math>\sqrt2 - 1</math> יחידה), ולכן <math>x_1 - x_2</math> שייך ל-<math>\pi^3</math> ולא ל-<math>\pi^4</math>. באותו אופן <math>(x_1 + x_2)^2 = 4 + 2\sqrt2</math>, ולכן גם <math>w(x_1 + x_2) = 3</math>.
+
+בשיטות שונות אפשר להראות שחבורת הגלואה של <math>K</math> היא <math>C_4</math>, הציקלית מסדר 4, שנוצרת על ידי <math>\sigma: x_1 \mapsto x_2 \mapsto x_3 \mapsto x_4 \mapsto x_1</math>. מהחישובים למעלה:
+:<math>i_G(\sigma) = w(x_2 - x_1) = 3,\qquad i_G(\sigma^2) = w(x_3 - x_1) = 5,\qquad i_G(\sigma^3) = w(x_4 - x_1) = w(x_1 + x_2) = 3.</math>
+לכן
+:<math>G_0 = G_1 = G_2 = C_4,\qquad G_3 = G_4 = \{1, \sigma^2\},\qquad G_5 = \{1\},</math>
+כאשר <math>\sigma^2</math> הוא התמורה <math>(13)(24)</math> של השורשים. מכאן
+:<math>w(\mathfrak{D}_{K/\mathbb Q_2}) = 3+3+3+1+1 = 11 = i_G(\sigma) + i_G(\sigma^2) + i_G(\sigma^3),</math>
+כלומר השונה הוא <math>\mathfrak{D}_{K/\mathbb Q_2} = \pi^{11}</math>. בהתאם לכך, <math>x_1</math> מקיים את הפולינום <math>X^4 - 4X^2 + 2</math> (פולינום אייזנשטיין, ולכן <math>\mathcal O_K = \mathbb Z_2[x_1]</math>), שהדיסקרימיננטה שלו היא <math>2048 = 2^{11}</math>.
+
+== חבורות סיעוף במספור העליון ==
+אם <math>u</math> מספר ממשי <math>\ge -1</math>, נסמן ב-<math>G_u</math> את <math>G_i</math>, כאשר <math>i</math> השלם הקטן ביותר שגדול או שווה ל-<math>u</math>. במילים אחרות, <math>s \in G_u \iff i_G(s) \ge u+1</math>. נגדיר את <math>\phi</math> על ידי{{הערה|שם=S67|1=J.-P. Serre, ''Local class field theory'', in: J. W. S. Cassels, A. Fröhlich (eds.), Algebraic Number Theory, Academic Press, London, 1967, pp. 128–161, p. 156|כיווון=שמאל}}
+:<math>\phi(u) = \int_0^u {dt \over (G_0 : G_t)},</math>
+כאשר לפי מוסכמה <math>(G_0 : G_t)</math> שווה ל-<math>(G_{-1} : G_0)^{-1}</math> אם <math>t = -1</math>, ול-1 עבור <math>-1 \lt t \le 0</math>.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', p. 179|כיווון=שמאל}} אז <math>\phi(u) = u</math> עבור <math>-1 \le u \le 0</math>. מיד רואים ש-<math>\phi</math> רציפה ועולה ממש, ולכן יש לה פונקציה הפוכה רציפה <math>\psi</math>, המוגדרת על <math>[-1, \infty)</math>. נגדיר
+:<math>G^v = G_{\psi(v)}.</math>
+<math>G^v</math> נקראת '''חבורת הסיעוף ה-<math>v</math>-ית במספור העליון'''. במילים אחרות, <math>G^{\phi(u)} = G_u</math>. שימו לב ש-<math>G^{-1} = G</math> ו-<math>G^0 = G_0</math>. המספור העליון מוגדר כך שיתיישב עם מעבר למנות:{{הערה|1=J.-P. Serre, ''Local class field theory'', p. 155|כיווון=שמאל}} אם <math>H</math> נורמלית ב-<math>G</math>, אז
+:<math>(G/H)^v = G^v H / H</math> לכל <math>v</math>
+(ואילו המספור התחתון מתיישב עם מעבר לתת-חבורות).
+
+'''דוגמה.''' בהרחבה ממעלה ארבע שלמעלה, <math>(G_0 : G_t) = 1</math> עבור <math>0 \lt t \le 2</math> ו-<math>(G_0 : G_t) = 2</math> עבור <math>2 \lt t \le 4</math>. לכן <math>\phi(2) = 2</math> ו-<math>\phi(4) = 2 + \tfrac{2}{2} = 3</math>: הקפיצות במספור התחתון, ב-2 וב-4, הופכות לקפיצות ב-2 וב-3 במספור העליון. אלה מספרים שלמים, כפי שמנבא משפט האסה–ארף שבהמשך (חבורת הגלואה <math>C_4</math> אבלית).
+
+=== משפט הרבראן ===
+'''משפט הרבראן''' קובע שחבורות הסיעוף במספור התחתון מקיימות <math>G_u H/H = (G/H)_v</math> (עבור <math>v = \phi_{L/F}(u)</math>, כאשר <math>L/F</math> תת-ההרחבה שמתאימה ל-<math>H</math>), ושחבורות הסיעוף במספור העליון מקיימות <math>G^u H/H = (G/H)^u</math>.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', p. 180|כיווון=שמאל}}{{הערה|1=J.-P. Serre, ''Local Fields'', p. 75|כיווון=שמאל}} זה מאפשר להגדיר חבורות סיעוף במספור העליון גם להרחבות גלואה אינסופיות (כמו חבורת הגלואה המוחלטת של שדה מקומי), מתוך המערכת ההפוכה של חבורות הסיעוף של תת-ההרחבות הסופיות.
+
+המספור העליון חשוב עבור הרחבה אבלית בגלל '''משפט האסה–ארף''', שקובע שאם <math>G</math> אבלית, הקפיצות בסינון <math>G^v</math> הן מספרים שלמים; כלומר, <math>G_i = G_{i+1}</math> בכל פעם ש-<math>\phi(i)</math> אינו שלם.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', p. 355|כיווון=שמאל}}
+
+המספור העליון מתיישב עם הסינון של חבורת שאריות הנורמה על ידי חבורות היחידות, דרך איזומורפיזם ארטין. התמונה של <math>G^n(L/K)</math> תחת האיזומורפיזם
+:<math>G(L/K)^{\mathrm{ab}} \leftrightarrow K^\times/N_{L/K}(L^\times)</math>
+היא בדיוק{{הערה|1=V. P. Snaith, ''Galois Module Structure'', Fields Institute Monographs, American Mathematical Society, 1994, pp. 30–31|כיווון=שמאל}}
+:<math>U^n_K / (U^n_K \cap N_{L/K}(L^\times)).</math>
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* B. Conrad, ''Math 248A. Higher ramification groups''
+* A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', Cambridge University Press, 1991
+* J. Neukirch, ''Algebraic Number Theory'', Springer, 1999
+* J.-P. Serre, ''Local Fields'', Graduate Texts in Mathematics '''67''', Springer, 1979
+* V. P. Snaith, ''Galois Module Structure'', American Mathematical Society, 1994
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
