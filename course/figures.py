@@ -2632,6 +2632,21 @@ def _():
     save('08-lr')
 
 
+@fig('16-op')
+def _():
+    ns = np.arange(2, 61)
+    lo = [sum(isp(k) for k in range(n * n - n + 1, n * n)) for n in ns]
+    hi = [sum(isp(k) for k in range(n * n + 1, n * n + n)) for n in ns]
+    ax = plt.gca()
+    ax.bar(ns - .2, lo, .4, color=C1, label='primes in (n²−n, n²)')
+    ax.bar(ns + .2, hi, .4, color=C3, label='primes in (n², n²+n)')
+    ax.axhline(1, color=C2, ls='--', lw=1)
+    ax.set_xlabel('n'); ax.set_ylabel('count'); ax.legend()
+    ax.set_title("Oppermann: neither bar ever drops to 0")
+    save('16-op')
+
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
