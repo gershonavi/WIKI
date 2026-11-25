@@ -134,7 +134,7 @@ Additive number theory:
 - [x] Hasse–Davenport relation
 - [x] Herbrand–Ribet theorem
 - [ ] Main conjecture of Iwasawa theory
-- [ ] Cyclotomic unit
+- [x] Cyclotomic unit
 - [ ] Cyclotomic character
 - [ ] Hilbert–Speiser theorem
 - [ ] Thaine's theorem
