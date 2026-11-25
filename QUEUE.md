@@ -41,7 +41,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Legendre's three-square theorem
 - [x] Sum of two squares theorem (קיים בוויקיפדיה העברית: סכום של שני ריבועים)
 - [x] Multiplicative function (קיים בוויקיפדיה העברית: פונקציה אריתמטית)
-- [ ] Completely multiplicative function
+- [x] Completely multiplicative function
 - [x] Deuring–Heilbronn phenomenon
 - [x] Semiprime
 - [x] Ernst Meissel

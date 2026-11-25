@@ -1,0 +1,60 @@
+ב[[תורת המספרים]], פונקציות של [[מספר טבעי|מספרים שלמים חיוביים]] ששומרות על מכפלות הן חשובות, והן נקראות '''פונקציות כפליות לחלוטין''' (ב[[אנגלית]]: completely multiplicative functions או totally multiplicative functions). גם תנאי חלש יותר הוא חשוב: שמירה רק על מכפלות של מספרים [[מספרים זרים|זרים]]. פונקציות כאלה נקראות [[פונקציה אריתמטית|פונקציות כפליות]]. מחוץ לתורת המספרים, המונח "פונקציה כפלית" משמש לעיתים קרובות כמילה נרדפת ל"פונקציה כפלית לחלוטין" במובן של ערך זה.
+
+== הגדרה ==
+פונקציה כפלית לחלוטין היא [[פונקציה אריתמטית]] (כלומר, פונקציה שה[[תחום של פונקציה|תחום]] שלה הוא המספרים השלמים החיוביים) כך ש-<math>f(1) = 1</math>, ולכל שני מספרים שלמים חיוביים <math>a, b</math> מתקיים <math>f(ab) = f(a)f(b)</math>.{{הערה|1=T. M. Apostol, Introduction to Analytic Number Theory, Springer, 1976, עמ' 30|כיווון=שמאל}}
+
+הדרישה <math>f(1) = 1</math> חשובה, כי אחרת אפשר היה להניח <math>f(1) = x</math> עבור <math>x \ne 1</math> כלשהו, ולקבל <math>f(a) = f(1 \cdot a) = f(1)f(a) = xf(a)</math> לכל מספר שלם חיובי <math>a</math>.
+
+את ההגדרה אפשר לנסח גם בשפה של [[אלגברה]]: פונקציה כפלית לחלוטין היא [[הומומורפיזם]] מה[[מונואיד]] <math>(\mathbb Z_{>0},\cdot)</math> (המספרים השלמים החיוביים עם פעולת הכפל) למונואיד אחר.
+
+== דוגמאות ==
+הדוגמה הפשוטה ביותר לפונקציה כפלית לחלוטין היא [[מונום]] עם מקדם מוביל 1: עבור מספר שלם חיובי קבוע <math>n</math>, נגדיר <math>f(a) = a^n</math>. אז <math>f(bc) = (bc)^n = b^n \cdot c^n = f(b)f(c)</math>, ו-<math>f(1) = 1^n = 1</math>.
+
+[[פונקציית ליוביל]] היא דוגמה לא טריוויאלית לפונקציה כפלית לחלוטין, וכך גם [[קרקטר דיריכלה|הקרקטרים של דיריכלה]], [[סימן יעקובי]] ו[[סימן לז'נדר]].
+
+== תכונות ==
+פונקציה כפלית לחלוטין נקבעת לגמרי על ידי ערכיה על ה[[מספר ראשוני|מספרים הראשוניים]], כתוצאה מ[[המשפט היסודי של האריתמטיקה]]. לכן, אם <math>n</math> הוא מכפלה של חזקות של ראשוניים שונים, <math>n = p_1^{\alpha_1} \cdot p_2^{\alpha_2} \cdot \dots</math>, אז <math>f(n) = f(p_1)^{\alpha_1} \cdot f(p_2)^{\alpha_2} \cdot \dots</math>.
+
+[[קונבולוציית דיריכלה]] של שתי פונקציות כפליות היא כפלית, אבל קונבולוציית דיריכלה של שתי פונקציות כפליות לחלוטין אינה בהכרח כפלית לחלוטין. פונקציות אריתמטיות שאפשר לכתוב כקונבולוציית דיריכלה של שתי פונקציות כפליות לחלוטין נקראות פונקציות כפליות "ריבועיות" או "כפליות במיוחד" (specially multiplicative). אלה פונקציות אריתמטיות רציונליות מסדר <math>(2, 0)</math>, והן מקיימות את הזהות של בושה–רמנוג'אן.
+
+יש טענות רבות על פונקציה שקולות לכך שהיא כפלית לחלוטין. לדוגמה, אם <math>f</math> כפלית, אז היא כפלית לחלוטין [[אם ורק אם]] ההופכי שלה ביחס לקונבולוציית דיריכלה הוא <math>\mu \cdot f</math>, כאשר <math>\mu</math> היא [[פונקציית מביוס]].{{הערה|1=Apostol, 1976, עמ' 36|כיווון=שמאל}}
+
+פונקציות כפליות לחלוטין מקיימות גם חוק פילוג. אם <math>f</math> כפלית לחלוטין, אז
+:<math>f \cdot (g*h)=(f \cdot g)*(f \cdot h) ,</math>
+כאשר <math>*</math> מסמן את קונבולוציית דיריכלה ו-<math>\cdot</math> מסמן כפל נקודתי.{{הערה|1=Apostol, 1976, עמ' 49|כיווון=שמאל}} אחת המסקנות מכך היא שלכל פונקציה כפלית לחלוטין <math>f</math> מתקיים
+:<math>f*f = \tau \cdot f,</math>
+מה שמתקבל מהזהות הקודמת על ידי הצבת <math>g = h = 1</math>, כאשר <math>1(n) = 1</math> היא הפונקציה הקבועה. כאן <math>\tau</math> היא [[פונקציית מחלקים|פונקציית מספר המחלקים]].
+
+=== הוכחת חוק הפילוג ===
+:<math>
+\begin{align}
+f \cdot \left(g*h \right)(n) &= f(n) \cdot \sum_{d|n} g(d) h \left( \frac{n}{d} \right) \\
+& = \sum_{d|n} f(n) \cdot \left(g(d) h \left( \frac{n}{d} \right)\right) \\
+& = \sum_{d|n} \left(f(d) f \left( \frac{n}{d} \right)\right) \cdot \left(g(d) h \left( \frac{n}{d} \right)\right) \\
+& = \sum_{d|n} (f(d) g(d)) \cdot \left(f \left( \frac{n}{d} \right) h \left( \frac{n}{d} \right)\right) \\
+& = (f \cdot g)*(f \cdot h).
+\end{align}
+</math>
+
+=== טורי דיריכלה ===
+[[טור דיריכלה]] של פונקציה כפלית לחלוטין <math>a(n)</math> מקיים
+:<math>L(s,a)=\sum^\infty_{n=1}\frac{a(n)}{n^s}=\prod_p\left(1-\frac{a(p)}{p^s}\right)^{-1},</math>
+כלומר, הסכום על כל המספרים הטבעיים שווה למכפלה על כל המספרים הראשוניים (ראו [[מכפלת אוילר]]).
+
+== ראו גם ==
+* [[פונקציה אריתמטית]]
+* [[פונקציית L של דיריכלה]]
+* [[טור דיריכלה]]
+
+== לקריאה נוספת ==
+* T. M. Apostol, Some properties of completely multiplicative arithmetical functions, Amer. Math. Monthly 78, 1971, עמ' 266–271
+* T. M. Apostol, Introduction to Analytic Number Theory, Springer, 1976
+* P. Haukkanen, On characterizations of completely multiplicative arithmetical functions, Number theory (Turku), de Gruyter, 2001, עמ' 115–123
+* E. Langford, Distributivity over the Dirichlet product and completely multiplicative arithmetical functions, Amer. Math. Monthly 80, 1973, עמ' 411–414
+* V. Laohakosol, Logarithmic operators and characterizations of completely multiplicative functions, Southeast Asian Bull. Math. 25 (2), 2001, עמ' 273–281
+* K. L. Yocom, Totally multiplicative functions in regular convolution rings, Canad. Math. Bull. 16, 1973, עמ' 119–128
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]
