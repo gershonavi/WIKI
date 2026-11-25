@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (160)
+## ערכים (163)
 
 ### אנליזה מרוכבת
 
@@ -48,6 +48,7 @@
 * [ההשערה הסינית](pages/%D7%94%D7%94%D7%A9%D7%A2%D7%A8%D7%94%20%D7%94%D7%A1%D7%99%D7%A0%D7%99%D7%AA.md) – Chinese hypothesis
 * [הוכחת השערת ברטראן](pages/%D7%94%D7%95%D7%9B%D7%97%D7%AA%20%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%98%D7%A8%D7%90%D7%9F.md) – Proof of Bertrand's postulate
 * [השערת אגו-ג'וגה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%92%D7%95-%D7%92%27%D7%95%D7%92%D7%94.md) – Agoh–Giuga conjecture
+* [השערת אגרוול](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%92%D7%A8%D7%95%D7%95%D7%9C.md)
 * [השערת אופרמן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%95%D7%A4%D7%A8%D7%9E%D7%9F.md) – Oppermann's conjecture
 * [השערת ברוקאר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%95%D7%A7%D7%90%D7%A8.md) – Brocard's conjecture
 * [השערת גרים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%A8%D7%99%D7%9D.md) – Grimm's conjecture
@@ -77,6 +78,7 @@
 * [משפט גרין-טאו](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%92%D7%A8%D7%99%D7%9F-%D7%98%D7%90%D7%95.md) – Green–Tao theorem
 * [משפט הארדי-רמנוג'אן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%A8%D7%93%D7%99-%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md) – Hardy–Ramanujan theorem
 * [משפט וולסטנהולם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%95%D7%9C%D7%A1%D7%98%D7%A0%D7%94%D7%95%D7%9C%D7%9D.md) – Wolstenholme's theorem
+* [משפט ונטיגם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%A0%D7%98%D7%99%D7%92%D7%9D.md) – Vantieghems theorem
 * [משפט זיגל-ולפיש](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%96%D7%99%D7%92%D7%9C-%D7%95%D7%9C%D7%A4%D7%99%D7%A9.md) – Siegel–Walfisz theorem
 * [משפט יורקט-ריכרט](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%99%D7%95%D7%A8%D7%A7%D7%98-%D7%A8%D7%99%D7%9B%D7%A8%D7%98.md) – Jurkat–Richert theorem
 * [משפט לוקאס](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9C%D7%95%D7%A7%D7%90%D7%A1.md) – Lucas's theorem
@@ -193,6 +195,7 @@
 * [בסיס אדיטיבי](pages/%D7%91%D7%A1%D7%99%D7%A1%20%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99.md) – Additive basis
 * [בעיית בולי הדואר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%91%D7%95%D7%9C%D7%99%20%D7%94%D7%93%D7%95%D7%90%D7%A8.md) – Postage stamp problem
 * [השערת ארדש-טוראן על בסיסים אדיטיביים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%A8%D7%93%D7%A9-%D7%98%D7%95%D7%A8%D7%90%D7%9F%20%D7%A2%D7%9C%20%D7%91%D7%A1%D7%99%D7%A1%D7%99%D7%9D%20%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99%D7%99%D7%9D.md) – Erdős–Turán conjecture on additive bases
+* [השערת וורינג על מספרים ראשוניים](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%95%D7%95%D7%A8%D7%99%D7%A0%D7%92%20%D7%A2%D7%9C%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 * [מספר מנומס](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A0%D7%95%D7%9E%D7%A1.md) – Polite number
 * [משפט המספרים המצולעים הממורכזים](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%9E%D7%A6%D7%95%D7%9C%D7%A2%D7%99%D7%9D%20%D7%94%D7%9E%D7%9E%D7%95%D7%A8%D7%9B%D7%96%D7%99%D7%9D.md) – Centered polygonal number theorem
 

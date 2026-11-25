@@ -1,0 +1,26 @@
+ב[[תורת המספרים]], '''משפט ונטיגם''' (ב[[אנגלית]]: Vantieghem's theorem) הוא קריטריון [[מבחן ראשוניות|ראשוניות]]. הוא קובע ש[[מספר טבעי]] <math>n \ge 3</math> הוא [[מספר ראשוני|ראשוני]] אם ורק אם
+:<math>\prod_{1 \leq k \leq n-1} \left( 2^k - 1 \right) \equiv n \pmod{2^n - 1}.</math>
+
+באופן דומה, <math>n</math> ראשוני אם ורק אם החפיפה הבאה של [[פולינום|פולינומים]] ב-<math>X</math> מתקיימת:
+:<math>\prod_{1 \leq k \leq n-1} \left( X^k - 1 \right) \equiv n - \frac{X^n - 1}{X - 1} \pmod{X^n - 1},</math>
+או:
+:<math>\prod_{1 \leq k \leq n-1} \left( X^k - 1 \right) \equiv n \pmod{\frac{X^n - 1}{X - 1}}.</math>
+
+== דוגמה ==
+עבור <math>n = 7</math> המכפלה היא <math>1\cdot3\cdot7\cdot15\cdot31\cdot63 = 615195</math>, ו-<math>615195 \equiv 7 \pmod{127}</math>, ולכן 7 ראשוני.
+
+עבור <math>n = 9</math> המכפלה היא <math>1\cdot3\cdot7\cdot15\cdot31\cdot63\cdot127\cdot255 = 19923090075</math>, ו-<math>19923090075 \equiv 301 \pmod{511}</math>, ולכן 9 פריק.
+
+(הנוסחה המספרית והגרסה הפולינומית הראשונה נבדקו בחישוב: הראשונה לכל <math>3 \le n \lt 200</math>, והשנייה לכל <math>3 \le n \le 15</math>.)
+
+== הסבר: הקשר לגרסה הפולינומית (נוסף בתרגום) ==
+הגרסה המספרית מתקבלת מהגרסה הפולינומית הראשונה בהצבה <math>X = 2</math>: מודולו <math>2^n - 1</math> מתקיים <math>\frac{2^n - 1}{2 - 1} = 2^n - 1 \equiv 0</math>, ולכן אגף ימין הופך ל-<math>n</math>.
+
+לגבי הכיוון הקל של הגרסה הפולינומית: אם <math>n = p</math> ראשוני, נסמן ב-<math>\zeta</math> שורש יחידה פרימיטיבי מסדר <math>p</math>. השורשים של <math>\frac{X^p - 1}{X - 1}</math> הם <math>\zeta, \zeta^2, \dots, \zeta^{p-1}</math>, וכל <math>\zeta^j</math> הוא גם פרימיטיבי. לכן ערך המכפלה בכל אחד מהם הוא <math>\prod_{k=1}^{p-1}(\zeta^{jk} - 1) = \prod_{m=1}^{p-1}(\zeta^m - 1)</math>, שהוא <math>(-1)^{p-1}\prod_{m=1}^{p-1}(1-\zeta^m) = \Phi_p(1) = p</math> (עבור <math>p</math> אי-זוגי). פולינום ששווה ל-<math>p</math> בכל השורשים של <math>\frac{X^p-1}{X-1}</math> חופף ל-<math>p</math> מודולו הפולינום הזה, וזו בדיוק הגרסה השלישית.
+
+== לקריאה נוספת ==
+* L. J. P. Kilford, A generalization of a necessary and sufficient condition for primality due to Vantieghem, Int. J. Math. Math. Sci. 2004 (69–72), עמ' 3889–3892, {{DOI|10.1155/S0161171204403226}}. מאמר עם הוכחה והכללות.
+* E. Vantieghem, On a congruence only holding for primes, Indag. Math. (New Series) 2 (2), 1991, עמ' 253–255, {{DOI|10.1016/0019-3577(91)90013-W}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:מספרים ראשוניים]]

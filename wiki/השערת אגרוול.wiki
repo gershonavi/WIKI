@@ -1,0 +1,35 @@
+ב[[תורת המספרים]], '''השערת אגרוול''' (ב[[אנגלית]]: Agrawal's conjecture), של [[מנינדרה אגרוול]] מ-2002,{{הערה|שם=aks|1=M. Agrawal, N. Kayal, N. Saxena, [http://www.cse.iitk.ac.in/users/manindra/algebra/primality_v6.pdf PRIMES is in P], Annals of Mathematics 160 (2), 2004, עמ' 781–793, {{DOI|10.4007/annals.2004.160.781}}|כיווון=שמאל}} היא הבסיס למבחן AKS הציקלוטומי. השערת אגרוול קובעת באופן פורמלי:
+
+יהיו <math>n</math> ו-<math>r</math> שני [[מספרים זרים|שלמים חיוביים זרים]]. אם
+:<math>(X - 1)^n \equiv X^n - 1 \pmod{n,\, X^r - 1},</math>
+אז או ש-<math>n</math> ראשוני, או ש-<math>n^2 \equiv 1 \pmod r</math>.
+
+'''פירוש החפיפה (נוסף בתרגום).''' "מודולו <math>n</math> ו-<math>X^r - 1</math>" פירושו שמחשבים את מקדמי הפולינומים מודולו <math>n</math>, ומחליפים כל <math>X^r</math> ב-1 (כלומר המעריכים מחושבים מודולו <math>r</math>). אם <math>n</math> ראשוני, החפיפה תמיד מתקיימת: לפי [[הבינום של ניוטון]], <math>\binom{n}{k} \equiv 0 \pmod n</math> לכל <math>0 \lt k \lt n</math>, ולכן <math>(X-1)^n \equiv X^n + (-1)^n</math>, שזה <math>X^n - 1</math> עבור <math>n</math> אי-זוגי. ההשערה אומרת שהכיוון ההפוך כמעט נכון: חפיפה זו, אפילו עבור <math>r</math> קטן אחד, "חושפת" כל מספר פריק, פרט למקרים שבהם <math>n^2 \equiv 1 \pmod r</math>.
+
+== השלכות ==
+אילו השערת אגרוול הייתה נכונה, היא הייתה מקטינה את סיבוכיות זמן הריצה של [[מבחן AKS]] מ-<math>\tilde O\left(\log^{6} n\right)</math> ל-<math>\tilde O\left(\log^3 n\right)</math>.
+
+== נכונות או הפרכה ==
+את ההשערה ניסחו ראג'את בהטצ'רג'י ופרשנט פנדיי בעבודת הגמר שלהם מ-2001.{{הערה|1=R. Bhattacharjee, P. Pandey, [https://cs.stanford.edu/people/rajatb/primality.ps.gz Primality Testing], Technical Report, IIT Kanpur, אפריל 2001|כיווון=שמאל}} היא אומתה בחישוב עבור <math>r \lt 100</math> ו-<math>n \lt 10^{10}</math>,{{הערה|1=N. Kayal, N. Saxena, Towards a deterministic polynomial-time Primality Test, Technical Report, IIT Kanpur, 2002|כיווון=שמאל}} ועבור <math>r = 5</math>, <math>n \lt 10^{11}</math>.{{הערה|1=N. Saxena, [https://www.cse.iitk.ac.in/users/nitin/talks/Dec2014-3Paris.pdf Primality & Prime Number Generation], UPMC Paris, דצמבר 2014|כיווון=שמאל}} (בדיקה קטנה שנעשתה לצורך התרגום, לכל <math>2 \le r \le 12</math> ולכל <math>n \lt 3000</math>, גם היא לא מצאה דוגמה נגדית.)
+
+אבל טיעון היוריסטי של קרל פומרנס והנדריק לנסטרה מרמז שיש אינסוף דוגמאות נגדיות.{{הערה|1=H. W. Lenstra, C. Pomerance, [http://www.aimath.org/WWN/primesinp/primesinp.pdf Remarks on Agrawal's conjecture], American Institute of Mathematics, 2003|כיווון=שמאל}} בפרט, הטיעון ההיוריסטי מראה שלדוגמאות נגדיות כאלה יש צפיפות אסימפטוטית גדולה מ-<math>\tfrac{1}{n^{\varepsilon}}</math> לכל <math>\varepsilon > 0</math>.
+
+בהנחה שהשערת אגרוול שגויה לפי הטיעון שלמעלה, רומן ב. פופוביץ' משער שגרסה מתוקנת עדיין עשויה להיות נכונה:
+
+יהיו <math>n</math> ו-<math>r</math> שני שלמים חיוביים זרים. אם
+:<math>(X - 1)^n \equiv X^n - 1 \pmod{n,\, X^r - 1}</math>
+וגם
+:<math>(X + 2)^n \equiv X^n + 2 \pmod{n,\, X^r - 1},</math>
+אז או ש-<math>n</math> ראשוני, או ש-<math>n^2 \equiv 1 \pmod{r}</math>.{{הערה|1=R. Popovych, [https://eprint.iacr.org/2009/008.pdf A note on Agrawal conjecture], 2008|כיווון=שמאל}}
+
+== חישוב מבוזר ==
+גם השערת אגרוול וגם השערת פופוביץ' נבדקו בפרויקט ה[[חישוב מבוזר|חישוב המבוזר]] Primaboinca, שפעל מ-2010 עד 2020 על בסיס [[BOINC]]. הפרויקט לא מצא דוגמה נגדית, בחיפוש בתחום <math>10^{10} \lt n \lt 10^{17}</math>.
+
+== קישורים חיצוניים ==
+* [http://www.primaboinca.com/ פרויקט Primaboinca]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:השערות מתמטיות]]
