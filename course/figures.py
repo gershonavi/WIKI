@@ -4639,6 +4639,176 @@ def _():
     save('T03-x4')
 
 
+@fig('T04-e1')
+def _():
+    ax = plt.gca(); t = np.linspace(.7, 10.5, 400)
+    for k in range(1, 10):
+        ax.add_patch(plt.Rectangle((k, 0), 1, 1 / k, fc='#dde8f3', ec=C1, lw=.8))
+    for k in range(2, 11):
+        ax.add_patch(plt.Rectangle((k - 1, 0), 1, 1 / k, fc=C2, alpha=.35, ec=C2, lw=.8))
+    ax.plot(t, 1 / t, color='k', lw=1.5, label='1/t')
+    ax.set_xlim(.5, 10.8); ax.set_ylim(0, 1.15); ax.set_xlabel('t'); ax.legend(fontsize=8)
+    ax.set_title('Σ_{k=2}^{10} 1/k  <  log 10 = ∫₁¹⁰ dt/t  <  Σ_{k=1}^{9} 1/k', fontsize=9)
+    save('T04-e1')
+
+
+@fig('T04-e2')
+def _():
+    ax = plt.gca(); t = np.linspace(1, 10.6, 300)
+    for k in range(2, 11):
+        ax.add_patch(plt.Rectangle((k - .5, 0), 1, np.log(k), fc='#dde8f3', ec=C1, lw=.8))
+    ax.plot(t, np.log(t), color=C2, lw=1.5, label='log t')
+    ax.set_xlabel('t'); ax.legend(fontsize=8)
+    ax.set_title('log 10! = Σ log k = 15.10 (bars)  vs  ∫₁¹⁰ log t dt = 14.03', fontsize=9)
+    save('T04-e2')
+
+
+@fig('T04-e3')
+def _():
+    ax = plt.gca(); u = np.linspace(0, 40, 600)
+    ax.plot(u, u, color=C1, label='log x  (= u)')
+    ax.plot(u, np.exp(.1 * u), color=C2, label='x^0.1  (= e^{0.1u})')
+    for r in (1.118, 35.77):
+        ax.axvline(r, color=GR, ls='--', lw=.8)
+    ax.set_ylim(0, 45); ax.set_xlabel('u = log x'); ax.legend(fontsize=8)
+    ax.set_title('crossings at x ≈ 3.06 and x ≈ 3.4·10^15', fontsize=9)
+    save('T04-e3')
+
+
+@fig('T04-e4')
+def _():
+    ax = plt.gca(); x = np.linspace(0, 2, 300)
+    ax.plot(x, x, color=C1, label='x'); ax.plot(x, np.log1p(x), color='k', lw=2, label='log(1+x)')
+    ax.plot(x, x - x ** 2 / 2, color=C2, label='x − x²/2')
+    ax.set_xlabel('x'); ax.legend(fontsize=8)
+    ax.set_title('x − x²/2 ≤ log(1+x) ≤ x for x ≥ 0', fontsize=9)
+    save('T04-e4')
+
+
+@fig('T04-x1')
+def _():
+    ax = plt.gca(); x = np.linspace(.02, 1.6, 300)
+    ax.plot(x, x ** x, color=C1)
+    ax.scatter([1 / np.e], [np.exp(-1 / np.e)], color=C2, zorder=3)
+    ax.annotate('x = 1/e, value e^(−1/e) ≈ 0.692', (1 / np.e, np.exp(-1 / np.e)), xytext=(.6, .9), arrowprops=dict(arrowstyle='->'), fontsize=8)
+    ax.set_xlabel('x'); ax.set_title('y = x^x', fontsize=9)
+    save('T04-x1')
+
+
+@fig('T04-x2')
+def _():
+    ax = plt.gca(); t = np.linspace(2.2, 16, 400); f = 1 / (t * np.log(t))
+    ax.plot(t, f, color=C1); tt = np.linspace(np.e, np.e ** np.e, 300)
+    ax.fill_between(tt, 1 / (tt * np.log(tt)), color=C2, alpha=.3)
+    ax.text(6.5, .1, 'area = 1', color=C2)
+    ax.set_xlabel('t'); ax.set_title('∫ from e to e^e of dt/(t log t) = log log t |  = 1', fontsize=9)
+    save('T04-x2')
+
+
+@fig('T04-x3')
+def _():
+    ax = plt.gca(); n = np.unique(np.logspace(0, 4, 40).astype(int))
+    ax.semilogx(n, (1 + 1 / n) ** n, 'o-', color=C1, ms=3)
+    ax.axhline(np.e, color=C2, ls='--', label='e'); ax.legend(fontsize=8); ax.set_xlabel('n')
+    ax.set_title('(1 + 1/n)^n increases to e', fontsize=9)
+    save('T04-x3')
+
+
+@fig('T04-x4')
+def _():
+    ax = plt.gca(); n = np.arange(2, 80)
+    ax.plot(n, n * np.log(2), color=C1, label='n·log 2  (log of 2^n)')
+    ax.plot(n, 10 * np.log(n), color=C2, label='10·log n  (log of n^10)')
+    ax.axvline(59, color=GR, ls='--'); ax.text(60, 15, 'n = 59', fontsize=8)
+    ax.set_xlabel('n'); ax.legend(fontsize=8); ax.set_title('2^n overtakes n^10 at n = 59', fontsize=9)
+    save('T04-x4')
+
+
+@fig('T05-e1')
+def _():
+    ax = plt.gca(); ks = np.arange(0, 13); ns = 2 ** ks
+    H = np.cumsum(1 / np.arange(1, ns[-1] + 1))
+    ax.plot(ks, H[ns - 1], 'o-', color=C1, label='S(2^k)')
+    ax.plot(ks, 1 + ks / 2, '--', color=C2, label='1 + k/2 (lower bound)')
+    ax.plot(ks, ks * np.log(2) + 0.5772, ':', color=GR, label='k·log 2 + γ')
+    ax.set_xlabel('k  (n = 2^k)'); ax.legend(fontsize=8)
+    ax.set_title('harmonic partial sums grow without bound, but only like log n', fontsize=9)
+    save('T05-e1')
+
+
+@fig('T05-e2')
+def _():
+    ax = plt.gca(); n = np.arange(2, 13)
+    ax.bar(n - .2, 1 / n ** 2, width=.4, color=C1, label='1/n²')
+    ax.bar(n + .2, 1 / (n * (n - 1)), width=.4, color=C2, alpha=.7, label='1/(n(n−1)) = 1/(n−1) − 1/n')
+    ax.set_xlabel('n'); ax.legend(fontsize=8)
+    ax.set_title('Σ_{n≥2} 1/n² < Σ_{n≥2} 1/(n(n−1)) = 1, so ζ(2) < 2 (true value 1.645)', fontsize=9)
+    save('T05-e2')
+
+
+@fig('T05-e3')
+def _():
+    ax = plt.gca(); N = 60
+    a = np.cumsum([(-1) ** (n + 1) / n for n in range(1, N + 1)])
+    terms = []
+    for j in range(1, N // 3 + 1):
+        terms += [1 / (2 * j - 1), -1 / (4 * j - 2), -1 / (4 * j)]
+    b = np.cumsum(terms)
+    ax.plot(range(1, N + 1), a, '.-', color=C1, lw=.7, label='1 − 1/2 + 1/3 − ...')
+    ax.plot(range(1, len(b) + 1), b, '.-', color=C2, lw=.7, label='1 − 1/2 − 1/4 + 1/3 − ...')
+    ax.axhline(np.log(2), color=C1, ls='--', lw=.8); ax.axhline(np.log(2) / 2, color=C2, ls='--', lw=.8)
+    ax.set_xlabel('number of terms'); ax.legend(fontsize=8)
+    ax.set_title('same terms, different order: log 2 ≈ 0.693 vs ½ log 2 ≈ 0.347', fontsize=9)
+    save('T05-e3')
+
+
+@fig('T05-e4')
+def _():
+    ax = plt.gca(); N = 10 ** 6; n = np.arange(2, N, dtype=float)
+    s1 = np.cumsum(1 / (n * np.log(n))); s2 = np.cumsum(1 / (n * np.log(n) ** 2))
+    idx = np.unique(np.logspace(0, np.log10(N - 3), 200).astype(int))
+    ax.semilogx(n[idx], s1[idx], color=C1, label='Σ 1/(n log n)  (diverges)')
+    ax.semilogx(n[idx], s2[idx], color=C2, label='Σ 1/(n log² n)  (→ 2.11)')
+    ax.axhline(2.1097, color=C2, ls='--', lw=.8)
+    ax.set_xlabel('N'); ax.legend(fontsize=8); ax.set_title('partial sums up to N = 10^6', fontsize=9)
+    save('T05-e4')
+
+
+@fig('T05-x1')
+def _():
+    ax = plt.gca(); N = np.arange(1, 21)
+    ax.plot(N, np.cumsum(N / 2.0 ** N), 'o-', color=C1); ax.axhline(2, color=C2, ls='--')
+    ax.set_xlabel('N'); ax.set_title('Σ_{n≤N} n/2^n = 2 − (N+2)/2^N → 2', fontsize=9)
+    save('T05-x1')
+
+
+@fig('T05-x2')
+def _():
+    ax = plt.gca(); N = np.arange(1, 31)
+    tail = [np.pi ** 2 / 6 - sum(1 / k ** 2 for k in range(1, m + 1)) for m in N]
+    ax.plot(N, tail, 'o', color=C1, ms=4, label='Σ_{n>N} 1/n²'); ax.plot(N, 1 / N, '-', color=C2, label='1/N')
+    ax.plot(N, 1 / (N + 1), ':', color=GR, label='1/(N+1)')
+    ax.set_xlabel('N'); ax.legend(fontsize=8); ax.set_title('the tail is squeezed between 1/(N+1) and 1/N', fontsize=9)
+    save('T05-x2')
+
+
+@fig('T05-x3')
+def _():
+    ax = plt.gca(); N = np.arange(2, 41)
+    ax.plot(N, (N + 1) / (2 * N), 'o-', color=C1, ms=3); ax.axhline(.5, color=C2, ls='--')
+    ax.set_xlabel('N'); ax.set_title('∏_{n=2}^N (1 − 1/n²) = (N+1)/(2N) → 1/2', fontsize=9)
+    save('T05-x3')
+
+
+@fig('T05-x4')
+def _():
+    ax = plt.gca(); n = np.arange(1, 41)
+    ax.plot(n, n ** (1 / n), 'o-', color=C1, ms=3); ax.axhline(1, color=GR, ls='--'); ax.axhline(3 ** (1 / 3), color=C2, ls=':')
+    ax.text(25, 3 ** (1 / 3) + .01, 'max ∛3 ≈ 1.442 at n = 3', color=C2, fontsize=8)
+    ax.set_xlabel('n'); ax.set_title('n^(1/n) stays below 1.45, so 1/n^(1+1/n) > 1/(1.45 n)', fontsize=9)
+    save('T05-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
