@@ -84,7 +84,7 @@ Additive number theory:
 - [x] Idele group
 - [x] Heegner number
 - [x] Kummer theory
-- [ ] Reciprocity law
+- [x] Reciprocity law
 - [ ] Proofs of quadratic reciprocity
 - [ ] Cubic reciprocity
 - [ ] Quartic reciprocity
