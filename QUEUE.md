@@ -103,7 +103,7 @@ Additive number theory:
 - [x] Leopoldt's conjecture
 - [x] Hilbert's ninth problem
 - [ ] Height function
-- [ ] Newton polygon
+- [x] Newton polygon
 - [ ] Skolem–Mahler–Lech theorem
 - [ ] Arithmetic dynamics
 - [ ] Drinfeld module

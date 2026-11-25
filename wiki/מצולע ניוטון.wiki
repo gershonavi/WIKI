@@ -49,7 +49,7 @@
 
 באופן כללי יותר, מתקיים משפט הפירוק הבא:
 * ''נניח ש-<math>(K, v_K)</math> הנזלי. אז <math>f = A\,f_1f_2\cdots f_r</math>, כאשר <math>A \in K</math>, כל <math>f_i \in K[X]</math> מתוקן, השורשים של <math>f_i</math> הם מהערכה <math>-\mu_i</math>, ו-<math>\deg f_i = \lambda_i</math>.''{{הערה|1=J. W. S. Cassels, ''Local Fields'', LMS Student Texts '''3''', Cambridge University Press, 1986, chapter 6, theorem 3.1|כיווון=שמאל}}
-:''יתרה מזו, <math>\mu_i = -v_K(f_i(0))/\lambda_i</math>, ואם <math>v_K(f_i(0))</math> זר ל-<math>\lambda_i</math>, אז <math>f_i</math> אי-פריק מעל <math>K</math>.''
+:''יתרה מזו, <math>\mu_i = -v_K(f_i(0))/\lambda_i</math>, ואם <math>v_K(f_i(0))</math> זר ל-<math>\lambda_i</math>, אז <math>f_i</math> אי-פריק מעל <math>K</math>.''{{הערה|1=בערך האנגלי נכתב <math>\mu_i = v_K(f_i(0))/\lambda_i</math>, בלי סימן המינוס. אבל <math>f_i(0)</math> הוא, עד כדי סימן, מכפלת <math>\lambda_i</math> השורשים של <math>f_i</math>, שלכל אחד מהם הערכה <math>-\mu_i</math>; לכן <math>v_K(f_i(0)) = -\mu_i\lambda_i</math>.|כיווון=שמאל}}
 
 מכאן מבחן לפריקות של פולינומים מעל שדות הנזליים:
 * ''נניח ש-<math>(K, v_K)</math> הנזלי. אם מצולע ניוטון אינו מצטמצם לקטע יחיד <math>(\mu, \lambda)</math>, אז <math>f</math> פריק מעל <math>K</math>.''
