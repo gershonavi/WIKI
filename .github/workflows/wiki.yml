@@ -1,0 +1,29 @@
+name: Sync GitHub wiki
+
+on:
+  push:
+    branches: [main]
+    paths: ['pages/**', 'README.md', 'sync_wiki.py', '.github/workflows/wiki.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Clone the wiki
+        run: git clone "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git" wiki-checkout
+      - name: Copy pages into the wiki
+        run: python3 sync_wiki.py wiki-checkout
+      - name: Commit and push
+        working-directory: wiki-checkout
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Sync from ${{ github.sha }}"
+          git push
