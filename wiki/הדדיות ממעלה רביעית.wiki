@@ -1,0 +1,139 @@
+'''הדדיות ממעלה רביעית''' או '''הדדיות דו-ריבועית''' (biquadratic reciprocity) היא אוסף של משפטים ב[[תורת המספרים]] האלמנטרית וב[[תורת המספרים האלגברית|אלגברית]], שקובעים תנאים לפתירות של ה[[חשבון מודולרי|קונגרואנציה]] <math>x^4 \equiv p \pmod q</math>. המילה "הדדיות" באה מהצורה של חלק מהמשפטים האלה, שקושרים את הפתירות של <math>x^4 \equiv p \pmod q</math> לזו של <math>x^4 \equiv q \pmod p</math>. (ראו גם [[הדדיות ממעלה שלישית]] ו[[חוק הדדיות]].)
+
+== היסטוריה ==
+[[לאונרד אוילר|אוילר]] ניסח את ההשערות הראשונות על הדדיות דו-ריבועית. [[קרל פרידריך גאוס|גאוס]] פרסם שתי מונוגרפיות על הדדיות דו-ריבועית. בראשונה (1828) הוא הוכיח את ההשערה של אוילר על הקרקטר הדו-ריבועי של 2. בשנייה (1832) הוא ניסח את חוק ההדדיות הדו-ריבועית לשלמים של גאוס, והוכיח את הנוסחאות המשלימות. הוא כתב שמונוגרפיה שלישית, עם הוכחת המשפט הכללי, תופיע בקרוב, אבל היא לא הופיעה מעולם. [[קרל גוסטב יעקב יעקובי|יעקובי]] הציג הוכחות בהרצאותיו בקניגסברג ב-1836–1837.{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000, p. 200|כיווון=שמאל}} ההוכחות הראשונות שפורסמו היו של אייזנשטיין.
+
+מאז נמצאו הוכחות רבות נוספות לגרסה הקלאסית (של גאוס), וגם ניסוחים חלופיים. לפי למרמאייר, מאז שנות ה-70 יש התעניינות רבה מאוד ב'''חוקי הדדיות רציונליים''' – חוקים שמנוסחים במונחי מספרים שלמים רגילים, ולא במונחי השלמים של שדה מספרים כלשהו.{{הערה|שם=L172|1=F. Lemmermeyer, ''Reciprocity Laws'', p. 172|כיווון=שמאל}}
+
+== מספרים שלמים ==
+'''שארית ממעלה רביעית''' או '''שארית דו-ריבועית''' (מודולו <math>p</math>) היא כל מספר ששקול לחזקה רביעית של מספר שלם (מודולו <math>p</math>). אם ל-<math>x^4 \equiv a \pmod p</math> אין פתרון שלם, <math>a</math> הוא '''אי-שארית דו-ריבועית'''. בסעיף הזה כל המודולים <math>p, q</math> וכו' הם ראשוניים אי-זוגיים חיוביים.
+
+=== גאוס ===
+הדבר הראשון שכדאי לשים לב אליו הוא שאם הראשוני <math>q \equiv 3 \pmod 4</math>, אז שארית <math>r</math> היא [[שארית ריבועית]] (מודולו <math>q</math>) [[אם ורק אם]] היא שארית דו-ריבועית. אכן, ההשלמה הראשונה לחוק ההדדיות הריבועית קובעת ש-<math>-1</math> אינו שארית ריבועית מודולו <math>q</math>, ולכן לכל מספר שלם <math>x</math>, אחד מ-<math>x</math> ו-<math>-x</math> הוא שארית ריבועית והשני אינו. לכן, אם <math>r \equiv a^2</math> שארית ריבועית, אז אם <math>a \equiv b^2</math> שארית, <math>r \equiv b^4</math> שארית דו-ריבועית; ואם <math>a</math> אינו שארית, <math>-a</math> שארית, <math>-a \equiv b^2</math>, ושוב <math>r \equiv (-a)^2 \equiv b^4</math> שארית דו-ריבועית.
+
+לכן המקרה המעניין היחיד הוא כשהמודולוס <math>p \equiv 1 \pmod 4</math>. גאוס הוכיח שבמקרה הזה אפשר לחלק את מחלקות השארית השונות מאפס מודולו <math>p</math> לארבע קבוצות, שבכל אחת <math>(p-1)/4</math> מספרים. דרך אחת לתאר את החלוקה היא לקחת שורש פרימיטיבי <math>g</math> מודולו <math>p</math>; אז הקבוצה הראשונה היא כל המספרים שהאינדקס שלהם ביחס לשורש הזה שקול ל-0 מודולו 4, השנייה – אלה שהאינדקס שלהם שקול ל-1, וכן הלאה. בשפת תורת החבורות, הקבוצה הראשונה היא תת-חבורה מאינדקס 4 של החבורה הכפלית <math>(\mathbb Z/p\mathbb Z)^\times</math>, והאחרות הן המחלקות שלה. הקבוצה הראשונה היא השאריות הדו-ריבועיות, השלישית היא השאריות הריבועיות שאינן דו-ריבועיות, והשנייה והרביעית הן האי-שאריות הריבועיות. גאוס הוכיח ש-<math>-1</math> הוא שארית דו-ריבועית אם <math>p \equiv 1 \pmod 8</math>, ושארית ריבועית אבל לא דו-ריבועית כאשר <math>p \equiv 5 \pmod 8</math>.
+
+2 הוא שארית ריבועית מודולו <math>p</math> אם ורק אם <math>p \equiv \pm1 \pmod 8</math>; מאחר ש-<math>p \equiv 1 \pmod 4</math>, זה אומר ש-<math>p \equiv 1 \pmod 8</math>. כל ראשוני כזה הוא סכום של ריבוע ושל פעמיים ריבוע. גאוס הוכיח:
+:'''יהי <math>q = a^2 + 2b^2 \equiv 1 \pmod 8</math> ראשוני. אז 2 שארית דו-ריבועית מודולו <math>q</math> אם ורק אם <math>a \equiv \pm1 \pmod 8</math>, ו-2 שארית ריבועית אבל לא דו-ריבועית אם ורק אם <math>a \equiv \pm3 \pmod 8</math>.'''
+
+כל ראשוני <math>p \equiv 1 \pmod 4</math> הוא [[סכום של שני ריבועים]]. אם <math>p = a^2 + b^2</math>, כאשר <math>a</math> אי-זוגי ו-<math>b</math> זוגי, גאוס הוכיח (בעבור חלוקה מתאימה למחלקות) ש-2 שייך למחלקה הראשונה (בהתאמה השנייה, השלישית, הרביעית) אם ורק אם <math>b \equiv 0</math> (בהתאמה 2, 4, 6) מודולו 8. המקרה הראשון הוא אחת ההשערות של אוילר:
+:'''2 הוא שארית דו-ריבועית מודולו ראשוני <math>p \equiv 1 \pmod 4</math> אם ורק אם <math>p = a^2 + 64b^2</math>.'''
+
+'''דוגמאות.''' <math>73 = 3^2 + 64\cdot1^2</math>, ואכן <math>2^{(73-1)/4} = 2^{18} \equiv 1 \pmod{73}</math>: 2 שארית דו-ריבועית מודולו 73. לעומת זאת <math>17 = 1^2 + 4^2</math>, עם <math>b = 4 \equiv 4 \pmod 8</math>: 2 שארית ריבועית (<math>6^2 = 36 \equiv 2</math>) אבל לא דו-ריבועית (<math>2^4 = 16 \equiv -1 \pmod{17}</math>).
+
+=== דיריכלה ===
+עבור ראשוני אי-זוגי <math>p</math> ושארית ריבועית <math>a</math> (מודולו <math>p</math>), קריטריון אוילר קובע ש-<math>a^{(p-1)/2} \equiv 1 \pmod{p}</math>; לכן אם <math>p \equiv 1 \pmod 4</math>, אז <math>a^{(p-1)/4}\equiv\pm 1 \pmod{p}</math>. מגדירים את '''סימן השארית הרציונלי ממעלה רביעית''' עבור ראשוני <math>p \equiv 1 \pmod 4</math> ושארית ריבועית <math>a</math> כ-
+:<math>\Bigg(\frac{a}{p}\Bigg)_4= \pm 1 \equiv a^{\frac{p-1}{4}} \pmod{p}.</math>
+קל להוכיח ש-<math>a</math> שארית דו-ריבועית מודולו <math>p</math> אם ורק אם <math>(a/p)_4 = 1</math>.
+
+דיריכלה פישט את ההוכחה של גאוס לקרקטר הדו-ריבועי של 2 (ההוכחה שלו דורשת רק את ההדדיות הריבועית לשלמים), ונתן לתוצאה את הצורה הבאה: יהי <math>p = a^2 + b^2 \equiv 1 \pmod 4</math> ראשוני, ויהי <math>i \equiv b/a \pmod p</math> (שימו לב ש-<math>i^2 \equiv -1 \pmod p</math>). אז
+:<math>\Bigg(\frac{2}{p}\Bigg)_4 \equiv i^{\frac{a b}{2}}\pmod{p}.</math>
+למעשה,{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Prop. 5.4|כיווון=שמאל}} אם <math>p = a^2 + b^2 = c^2 + 2d^2 = e^2 - 2f^2 \equiv 1 \pmod 8</math> ראשוני, ו-<math>a</math> אי-זוגי, אז
+:<math>\Bigg(\frac{2}{p}\Bigg)_4 =(-1)^{b/4} =\Bigg(\frac{2}{c}\Bigg) =\Bigg(\frac{-2}{e}\Bigg),</math>
+כאשר <math>(\tfrac{x}{q})</math> הוא [[סימן לז'נדר]] (או סימן יעקובי) הרגיל.
+
+מעבר לקרקטר של 2: יהי <math>p = a^2 + b^2</math> ראשוני כאשר <math>b</math> זוגי, ויהי <math>q</math> ראשוני כך ש-<math>(\tfrac pq) = 1</math>. נסמן <math>q^*=(-1)^{(q-1)/2}q</math>. אז הקרקטר הדו-ריבועי <math>(q^*/p)_4</math> נקבע על ידי תנאים על <math>a</math> ו-<math>b</math> מודולו <math>q</math>.{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Prop. 5.5, Ex. 5.6|כיווון=שמאל}} הדוגמאות הראשונות הן:{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', pp. 159, 190|כיווון=שמאל}}
+:<math>\begin{align}
+\left(\frac{-3}{p}\right)_4= 1 &\iff b\equiv 0 \pmod{3}\\
+\left(\frac{5}{p}\right)_4= 1 &\iff b\equiv 0 \pmod{5}\\
+\left(\frac{-7}{p}\right)_4= 1 &\iff ab\equiv 0 \pmod{7}\\
+\left(\frac{-11}{p}\right)_4= 1 &\iff b(b^2-3a^2)\equiv 0 \pmod{11}\\
+\left(\frac{13}{p}\right)_4= 1 &\iff b(b^2-3a^2)\equiv 0\pmod{13}\\
+\left(\frac{17}{p}\right)_4= 1 &\iff ab(b^2-a^2)\equiv 0\pmod{17}.
+\end{align}</math>
+(בדקנו את כל הנוסחאות בסעיף הזה במחשב, לכל הראשוניים המתאימים הקטנים מ-4000.) אוילר שיער את הכללים ל-2, ל-<math>-3</math> ול-5, אבל לא הוכיח אף אחד מהם.
+
+דיריכלה הוכיח גם שאם <math>p \equiv 1 \pmod 4</math> ראשוני ו-<math>(\tfrac{17}{p})=1</math>, אז
+:<math>\Bigg(\frac{17}{p}\Bigg)_4\Bigg(\frac{p}{17}\Bigg)_4=
+\begin{cases}
++1 & \iff p=x^2+17y^2, \\
+-1 & \iff 2p=x^2+17y^2.
+\end{cases}</math>
+בראון ולמר הרחיבו זאת מ-17 ל-17, 73, 97 ו-193.
+
+=== בורדה ===
+יש כמה ניסוחים שקולים לחוק ההדדיות הדו-ריבועי הרציונלי של בורדה. כולם מניחים ש-<math>p = a^2 + b^2</math> ו-<math>q = c^2 + d^2</math> ראשוניים, כאשר <math>b</math> ו-<math>d</math> זוגיים, וש-<math>(\tfrac{p}{q})=1</math>. בורדה ניסח את החוק כך:{{הערה|1=K. Burde, ''Ein rationales biquadratisches Reziprozitätsgesetz'', J. Reine Angew. Math. '''235''' (1969), pp. 175–184; F. Lemmermeyer, ''Reciprocity Laws'', p. 167; K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', pp. 128–130|כיווון=שמאל}}
+:<math>\Bigg(\frac{q}{p}\Bigg)_4 \Bigg(\frac{p}{q}\Bigg)_4 =\Bigg(\frac{ac-bd}{q}\Bigg).</math>
+שימו לב ש-<math>\Bigg(\frac{ac+bd}{p}\Bigg)=\Bigg(\frac{p}{q}\Bigg)\Bigg(\frac{ac-bd}{p}\Bigg)</math>.
+
+'''דוגמה.''' <math>p = 5 = 1^2 + 2^2</math> ו-<math>q = 29 = 5^2 + 2^2</math>; <math>(\tfrac{5}{29}) = (\tfrac{29}{5}) = (\tfrac45) = 1</math>. אגף שמאל: <math>(29/5)_4 = 4^{1} \equiv -1</math> ו-<math>(5/29)_4 = 5^7 \bmod 29</math>; ואגף ימין: <math>ac - bd = 5 - 4 = 1</math>, ו-<math>(\tfrac{1}{29}) = 1</math>. מכאן <math>(5/29)_4 = -1</math>, ואכן <math>5^7 = 78125 \equiv 28 \equiv -1 \pmod{29}</math>.
+
+=== תוצאות נוספות ===
+* יהיו <math>p \equiv q \equiv 1 \pmod 4</math> ראשוניים, ונניח ש-<math>p = r^2 + q s^2</math>. אז <math>\Bigg(\frac{p}{q}\Bigg)_4 \Bigg(\frac{q}{p}\Bigg)_4 =\left(\frac{2}{q}\right)^s</math> (לפי בראון).
+* יהי <math>p = 1 + 4x^2</math> ראשוני, יהי <math>a</math> מספר אי-זוגי שמחלק את <math>x</math>, ונגדיר <math>a^*=(-1)^{(a-1)/2}a</math>. אז <math>a^*</math> שארית דו-ריבועית מודולו <math>p</math> (לפי שריפי).
+* יהי <math>p = a^2 + 4b^2 = c^2 + 2d^2 \equiv 1 \pmod 8</math> ראשוני. אז כל המחלקים ה'''אי-זוגיים''' של <math>c^4 - pa^2</math> הם שאריות דו-ריבועיות מודולו <math>p</math>, וכך גם המחלקים האי-זוגיים של <math>d^4 - pb^2</math> (לפי אמה למר).{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Ex. 6.11. בערך האנגלי נכתב "כל המחלקים"; אבל המחלק 2 אינו בהכרח שארית דו-ריבועית: עבור <math>p = 17 = 1^2 + 4\cdot2^2 = 3^2 + 2\cdot2^2</math> מתקיים <math>c^4 - pa^2 = 81 - 17 = 64</math>, ו-2 אינו שארית דו-ריבועית מודולו 17.}}
+
+== השלמים של גאוס ==
+=== רקע ===
+במונוגרפיה השנייה שלו על הדדיות דו-ריבועית מציג גאוס דוגמאות ומנסח השערות שגוררות את המשפטים שלמעלה על הקרקטר הדו-ריבועי של ראשוניים קטנים. הוא מודה שאין כלל כללי ברור, וכותב שהמשפטים על שאריות דו-ריבועיות זוהרים בפשטות וביופי האמיתי רק כשמרחיבים את תחום האריתמטיקה למספרים '''מדומים''', כך שהמספרים מהצורה <math>a + bi</math> הם מושא המחקר. המספרים האלה נקראים היום חוג השלמים של גאוס, <math>\mathbb Z[i]</math>.
+
+=== עובדות ומונחים ===
+גאוס פיתח את התורה האריתמטית של "המספרים המרוכבים השלמים", והראה שהיא דומה מאוד לאריתמטיקה של המספרים השלמים הרגילים. שם הוכנסו למתמטיקה המונחים יחידה, חבר, נורמה ו"ראשי".
+* ה'''יחידות''' הן המספרים שמחלקים את 1: <math>1, i, -1, -i</math> – החזקות של <math>i</math>.
+* ל-<math>\lambda = a + bi</math> יש '''צמוד''' <math>a - bi</math> ו'''חברים''' <math>\lambda,\ i\lambda = -b + ai,\ -\lambda,\ -i\lambda = b - ai</math>.
+* ה'''נורמה''' היא <math>N\lambda = a^2 + b^2</math>, והיא כפלית.
+
+גאוס הוכיח ש-<math>\mathbb Z[i]</math> הוא [[תחום פריקות יחידה]], והראה שהראשוניים מתחלקים לשלושה סוגים:
+* 2 הוא מקרה מיוחד: <math>2 = i^3 (1 + i)^2</math>. זהו הראשוני היחיד ב-<math>\mathbb Z</math> שמתחלק בריבוע של ראשוני ב-<math>\mathbb Z[i]</math>; ב[[תורת המספרים האלגברית]] אומרים ש-2 '''מסועף''' ב-<math>\mathbb Z[i]</math>.
+* ראשוניים חיוביים <math>\equiv 3 \pmod 4</math> ב-<math>\mathbb Z</math> הם ראשוניים גם ב-<math>\mathbb Z[i]</math> ('''אינרטיים''').
+* ראשוניים חיוביים <math>\equiv 1 \pmod 4</math> ב-<math>\mathbb Z</math> הם מכפלה של שני ראשוניים צמודים ב-<math>\mathbb Z[i]</math> ('''מתפצלים'''): <math>5 = (2 + i)(2 - i)</math>, <math>13 = (2 + 3i)(2 - 3i)</math>, <math>17 = (4 + i)(4 - i)</math>, <math>29 = (2 + 5i)(2 - 5i)</math>, ...
+
+הנורמה של ראשוני אינרטי <math>q</math> היא <math>Nq = q^2 \equiv 1 \pmod 4</math>; לכן הנורמה של כל ראשוני פרט ל-<math>1 + i</math> ולחברים שלו שקולה ל-1 מודולו 4. גאוס קרא למספר ב-<math>\mathbb Z[i]</math> '''אי-זוגי''' אם הנורמה שלו אי-זוגית, והגדיר מספר אי-זוגי כ'''ראשי''' (primary) אם הוא שקול ל-1 מודולו <math>(1 + i)^3</math>. לכל מספר אי-זוגי יש בדיוק חבר ראשי אחד. מספר אי-זוגי <math>\lambda = a + bi</math> הוא ראשי אם <math>a + b \equiv a - b \equiv 1 \pmod 4</math>, כלומר <math>a \equiv 1</math> ו-<math>b \equiv 0</math>, או <math>a \equiv 3</math> ו-<math>b \equiv 2</math> (מודולו 4). מכפלה של שני מספרים ראשיים היא ראשית, והצמוד של מספר ראשי הוא ראשי. משפט הפירוק היחיד: אם <math>\lambda \ne 0</math>, אז
+:<math>\lambda = i^\mu(1+i)^\nu\pi_1^{\alpha_1}\pi_2^{\alpha_2}\pi_3^{\alpha_3} \cdots,</math>
+כאשר <math>0 \le \mu \le 3</math>, <math>\nu \ge 0</math>, <math>\pi_j</math> ראשוניים ראשיים ו-<math>\alpha_j \ge 1</math>, וההצגה הזו יחידה עד כדי סדר הגורמים.
+
+=== הקרקטר הדו-ריבועי ===
+גאוס הוכיח את המקבילה למשפט של פרמה: אם <math>\alpha</math> אינו מתחלק בראשוני אי-זוגי <math>\pi</math>, אז <math>\alpha^{N \pi - 1} \equiv 1 \pmod{\pi}</math>. מאחר ש-<math>N\pi \equiv 1 \pmod 4</math>, לביטוי <math>\alpha^{(N\pi - 1)/4}</math> יש משמעות, ו-<math>\alpha^{(N\pi - 1)/4}\equiv i^k \pmod{\pi}</math> עבור יחידה יחידה <math>i^k</math>. היחידה הזו נקראת '''הקרקטר הדו-ריבועי''' של <math>\alpha</math> מודולו <math>\pi</math>, ומסמנים אותה
+:<math>\left[\frac{\alpha}{\pi}\right] = i^k \equiv \alpha^{\frac{N\pi - 1}{4}} \pmod{\pi}.</math>
+יש לה תכונות פורמליות דומות לאלה של סימן לז'נדר:
+* לקונגרואנציה <math>x^4 \equiv \alpha \pmod{\pi}</math> יש פתרון ב-<math>\mathbb Z[i]</math> אם ורק אם <math>[\alpha/\pi] = 1</math>.
+* <math>[\alpha\beta/\pi]=[\alpha/\pi][\beta/\pi]</math>; <math>\overline{[\alpha/\pi]}=[\overline{\alpha}/\overline{\pi}]</math>.
+* אם <math>\pi</math> ו-<math>\theta</math> חברים, <math>[\alpha/\pi]=[\alpha/\theta]</math>; אם <math>\alpha \equiv \beta \pmod\pi</math>, <math>[\alpha/\pi]=[\beta/\pi]</math>.
+* אפשר להרחיב את הקרקטר למכנים אי-זוגיים פריקים, כמו סימן יעקובי. אם <math>a</math> ו-<math>b</math> שלמים רגילים, <math>a \ne 0</math>, <math>|b| \gt 1</math> ו-<math>\gcd(a, b) = 1</math>, אז <math>[a/b] = 1</math>.
+
+=== ניסוחי המשפט ===
+גאוס ניסח את חוק ההדדיות הדו-ריבועי כך: יהיו <math>\pi</math> ו-<math>\theta</math> ראשוניים ראשיים שונים של <math>\mathbb Z[i]</math>. אז
+* אם <math>\pi</math> או <math>\theta</math> (או שניהם) שקולים ל-1 מודולו 4, אז <math>[\pi/\theta] =[\theta/\pi]</math>; אבל
+* אם שניהם שקולים ל-<math>3 + 2i</math> מודולו 4, אז <math>[\pi/\theta] =-[\theta/\pi]</math>.
+
+כמו שחוק ההדדיות הריבועי לסימן לז'נדר נכון גם לסימן יעקובי, הדרישה שהמספרים יהיו ראשוניים אינה נחוצה; די שיהיו מספרים אי-זוגיים זרים שאינם יחידות. כנראה הניסוח המוכר ביותר הוא: יהיו <math>\pi</math> ו-<math>\theta</math> מספרים ראשיים זרים שאינם יחידות. אז
+:<math>\Bigg[\frac{\pi}{\theta}\Bigg]\left[\frac{\theta}{\pi}\right]^{-1}= (-1)^{\frac{N\pi - 1}{4}\frac{N\theta-1}{4}}.</math>
+
+'''דוגמאות.''' כדי לחשב <math>[\alpha/\pi]</math> עבור <math>\pi</math> עם נורמה ראשונית <math>p</math>, משתמשים באיזומורפיזם <math>\mathbb Z[i]/(\pi) \cong \mathbb F_p</math>, שבו <math>i</math> עובר לשורש <math>r</math> של <math>r^2 \equiv -1</math> שמאפס את <math>\pi</math>.
+* <math>\pi = 3 + 2i</math> (<math>N = 13</math>, שקול ל-<math>3 + 2i</math> מודולו 4) ו-<math>\theta = 1 + 4i</math> (<math>N = 17</math>, שקול ל-1 מודולו 4). מודולו <math>\theta</math>: <math>i \mapsto 4</math> (כי <math>1 + 16 = 17</math>), <math>\pi \mapsto 3 + 8 = 11</math>, ו-<math>11^{4} = 14641 \equiv 4 \pmod{17}</math>, ולכן <math>[\pi/\theta] = i</math>. מודולו <math>\pi</math>: <math>i \mapsto 5</math> (כי <math>3 + 10 = 13</math>), <math>\theta \mapsto 1 + 20 = 21 \equiv 8</math>, ו-<math>8^3 = 512 \equiv 5 \pmod{13}</math>, ולכן <math>[\theta/\pi] = i</math>. שווים – כצפוי, כי <math>\theta \equiv 1 \pmod 4</math>.
+* <math>\pi = 3 + 2i</math> ו-<math>\theta' = -1 + 2i</math> (<math>N = 5</math>, שקול ל-<math>3 + 2i</math> מודולו 4). מודולו <math>\theta'</math>: <math>i \mapsto 3</math>, <math>\pi \mapsto 3 + 6 = 9 \equiv 4 \equiv -1</math>, ולכן <math>[\pi/\theta'] = -1</math>. מודולו <math>\pi</math>: <math>\theta' \mapsto -1 + 10 = 9</math>, ו-<math>9^3 = 729 \equiv 1 \pmod{13}</math>, ולכן <math>[\theta'/\pi] = 1</math>. הפוכים בסימן – כצפוי, כי שניהם שקולים ל-<math>3 + 2i</math>, ובהתאם <math>\tfrac{13-1}{4}\cdot\tfrac{5-1}{4} = 3</math> אי-זוגי.
+
+יש משפטים משלימים ליחידות ולראשוני ה"חצי-זוגי" <math>1 + i</math>.{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Th. 6.9; K. Ireland, M. Rosen, Ex. 9.32–9.37|כיווון=שמאל}} אם <math>\pi = a + bi</math> ראשוני ראשי, אז
+:<math>\Bigg[\frac{i}{\pi}\Bigg]=i^{-\frac{a-1}{2}},\qquad \Bigg[\frac{1+i}{\pi}\Bigg]=i^{\frac{a-b-1-b^2}{4}},</math>
+ולכן
+:<math>\Bigg[\frac{-1}{\pi}\Bigg]=(-1)^{\frac{a-1}{2}},\qquad \Bigg[\frac{2}{\pi}\Bigg]=i^{-\frac{b}{2}}.</math>
+בנוסף, אם <math>\pi = a + bi</math> ראשוני ראשי ו-<math>b \ne 0</math>, אז{{הערה|1=K. Ireland, M. Rosen, Ex. 9.30; F. Lemmermeyer, Ex. 6.6, where Jacobi is credited|כיווון=שמאל}}
+:<math>\Bigg[\frac{\overline{\pi}}{\pi}\Bigg]=\Bigg[\frac{-2}{\pi}\Bigg](-1)^{\frac{a^2-1}{8}}.</math>
+(בדקנו את חוק ההדדיות ואת כל הנוסחאות המשלימות במחשב, לכל הראשוניים הראשיים עם נורמה קטנה מ-260.)
+
+יעקובי הגדיר את <math>\pi = a + bi</math> כראשי אם <math>a \equiv 1 \pmod 4</math>. עם הנרמול הזה החוק מקבל את הצורה: יהיו <math>\alpha = a + bi</math> ו-<math>\beta = c + di</math>, כאשר <math>a \equiv c \equiv 1 \pmod 4</math> ו-<math>b, d</math> זוגיים, מספרים זרים שאינם יחידות. אז
+:<math>\left[\frac{\alpha}{\beta}\right]\left[\frac{\beta}{\alpha}\right]^{-1}= (-1)^{\frac{bd}{4}}.</math>
+יש ניסוחים נוספים: אחד נמצא בכתבי היד של גאוס שלא פורסמו, אחר מנוסח בלי המושג "ראשי", ואייזנשטיין הוכיח ניסוח שבו מופיע <math>\lambda^*=(-1)^{(N\lambda-1)/4}\lambda</math>.{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', Ex. 6.17, Ex. 6.18, ch. 8.4|כיווון=שמאל}}
+
+== ראו גם ==
+* [[הדדיות ממעלה שלישית]]
+* [[חוק הדדיות]]
+* [[משפט ההדדיות הריבועית]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. A. Cox, ''Primes of the Form x² + ny²'', Wiley, New York, 1989
+* P. G. L. Dirichlet, ''Démonstration d'une propriété analogue à la loi de Réciprocité…'', J. Reine Angew. Math. '''9''' (1832), pp. 379–389
+* F. G. Eisenstein, ''Lois de réciprocité'', J. Reine Angew. Math. '''28''' (1844), pp. 53–67
+* C. F. Gauss, ''Theoria residuorum biquadraticorum'', Commentatio prima (1828) and secunda (1832)
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990
+* F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer, 2000
+* F. Lemmermeyer, ''Rational Quartic Reciprocity'', Acta Arithmetica '''67''' (1994)
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:חשבון מודולרי]]
+[[קטגוריה:משפטים בתורת המספרים]]

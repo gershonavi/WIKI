@@ -87,7 +87,7 @@ Additive number theory:
 - [x] Reciprocity law
 - [ ] Proofs of quadratic reciprocity
 - [x] Cubic reciprocity
-- [ ] Quartic reciprocity
+- [x] Quartic reciprocity
 - [ ] Eisenstein reciprocity
 - [ ] Power residue symbol
 - [ ] CM-field
