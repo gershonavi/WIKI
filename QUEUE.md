@@ -105,7 +105,7 @@ Additive number theory:
 - [x] Height function
 - [x] Newton polygon
 - [x] Skolem–Mahler–Lech theorem
-- [ ] Arithmetic dynamics
+- [x] Arithmetic dynamics
 - [ ] Drinfeld module
 - [ ] Formal group law
 - [ ] Galois cohomology
