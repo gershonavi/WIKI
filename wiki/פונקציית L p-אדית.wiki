@@ -1,0 +1,67 @@
+ב[[מתמטיקה]], '''פונקציית זטא <math>p</math>-אדית''', או באופן כללי יותר '''פונקציית L <math>p</math>-אדית''', היא פונקציה המקבילה ל[[פונקציית זטא של רימן]] או ל[[פונקציית L|פונקציות L]] כלליות יותר, אבל שהתחום והטווח שלה הם <math>p</math>-אדיים (כאשר <math>p</math> הוא [[מספר ראשוני]]). למשל, התחום יכול להיות השלמים ה-<math>p</math>-אדיים <math>\mathbb Z_p</math>, חבורת <math>p</math> פרו-סופית, או משפחה <math>p</math>-אדית של הצגות גלואה, והטווח יכול להיות המספרים ה-<math>p</math>-אדיים <math>\mathbb Q_p</math> או הסגור האלגברי שלהם.
+
+למקור של פונקציית L <math>p</math>-אדית יש בדרך כלל אחד משני סוגים:
+* '''פונקציות L <math>p</math>-אדיות אנליטיות''' מתקבלות מאינטרפולציה <math>p</math>-אדית של [[ערכים מיוחדים של פונקציות L]]. כך נתנו טומיו קובוטה והיינריך-וולפגנג לאופולדט (1964) את הבנייה הראשונה של פונקציית L <math>p</math>-אדית: הם השתמשו ב'''קונגרואנציות של קומר''' עבור מספרי ברנולי כדי לבנות את פונקציית הזטא של רימן ה-<math>p</math>-אדית <math>\zeta_p(s)</math>, שערכיה בשלמים השליליים האי-זוגיים הם (עד כדי גורם תיקון מפורש) הערכים של פונקציית זטא של רימן בנקודות האלה.
+* '''פונקציות L <math>p</math>-אדיות אריתמטיות''' באות מהאריתמטיקה של [[שדה ציקלוטומי|שדות ציקלוטומיים]], או באופן כללי יותר ממודולי גלואה מעל מגדלים של שדות ציקלוטומיים או מגדלים כלליים יותר. את הסוג הזה גילה לראשונה קנקיצ'י איוואסאווה.
+
+במצבים שבהם נבנות (או משוערות) פונקציות L <math>p</math>-אדיות משני הסוגים, הטענה שהן מתלכדות נקראת '''ההשערה הראשית של תורת איוואסאווה''' עבור המצב הזה. השערות כאלה משקפות את העיקרון שערכים מיוחדים של פונקציות L מכילים מידע אריתמטי. במקרה הציקלוטומי ההשערה הראשית היא משפט, שהוכיחו בארי מאזור ואנדרו ויילס (1984).
+
+== פונקציות L של דיריכלה ==
+פונקציית L של דיריכלה בשלמים השליליים נתונה על ידי
+
+:<math>L(1-n, \chi) = -\frac{B_{n,\chi}}{n}\qquad (n \ge 1),</math>
+
+כאשר <math>B_{n,\chi}</math> הוא מספר ברנולי מוכלל, המוגדר על ידי
+
+:<math>\sum_{a=1}^{f}\chi(a)\frac{t\,e^{at}}{e^{ft} - 1} = \sum_{n\ge0}B_{n,\chi}\frac{t^n}{n!}</math>
+
+עבור קרקטר דיריכלה <math>\chi</math> עם מוליך <math>f</math>. בפרט, עבור הקרקטר הטריוויאלי, <math>\zeta(1-n) = -B_n/n</math>. הערכים האלה רציונליים.
+
+=== פונקציית ה-L של קובוטה–לאופולדט ===
+פונקציית ה-L ה-<math>p</math>-אדית של קובוטה–לאופולדט <math>L_p(s, \chi)</math> מבצעת אינטרפולציה לפונקציית L של דיריכלה '''אחרי השמטת גורם אוילר ב-<math>p</math>''' (הגורם הזה היה שובר את הרציפות ה-<math>p</math>-אדית). במדויק, <math>L_p(s, \chi)</math> היא הפונקציה המרומורפית ה-<math>p</math>-אדית היחידה של <math>s \in \mathbb Z_p</math> (עבור <math>p</math> אי-זוגי, ועבור <math>\chi</math> זוגי) שמקיימת
+
+:<math>L_p(1-n,\chi) = \left(1-\chi\omega^{-n}(p)\,p^{n-1}\right)L(1-n,\chi\omega^{-n})</math>
+
+לכל שלם <math>n \ge 1</math>, כאשר <math>\omega</math> הוא '''קרקטר טייכמילר''' (הקרקטר מודולו <math>p</math> שערכיו הם שורשי היחידה מסדר <math>p-1</math> ב-<math>\mathbb Z_p</math>). כאשר <math>n</math> מתחלק ב-<math>p-1</math>, <math>\omega^{-n}</math> טריוויאלי, ונוסחת האינטרפולציה מתפשטת ל-<math>L_p(1-n, \chi) = (1 - \chi(p)p^{n-1})L(1-n, \chi)</math>. כש-<math>n</math> אינו מתחלק ב-<math>p-1</math>, האינטרפולציה מקבלת צורה "מעוותת" על ידי <math>\omega</math>. עבור <math>\chi = 1</math>, <math>L_p(s, 1) = \zeta_p(s)</math> היא פונקציית הזטא ה-<math>p</math>-אדית, ויש לה קוטב פשוט יחיד ב-<math>s = 1</math>.
+
+=== הקונגרואנציות של קומר ===
+הסיבה שהאינטרפולציה אפשרית היא '''הקונגרואנציות של קומר''': אם <math>m \equiv n \pmod{(p-1)p^{k-1}}</math>, ו-<math>n</math> אינו מתחלק ב-<math>p-1</math>, אז
+
+:<math>\left(1 - p^{m-1}\right)\frac{B_m}{m} \equiv \left(1 - p^{n-1}\right)\frac{B_n}{n} \pmod{p^k}.</math>
+
+כלומר, הפונקציה <math>n \mapsto (1-p^{n-1})\zeta(1-n)</math> רציפה <math>p</math>-אדית על כל מחלקת שאריות מודולו <math>p - 1</math>. למשל, עבור <math>p = 5</math> ו-<math>n \equiv 2 \pmod 4</math>:
+
+{| class="wikitable" style="text-align:center"
+! <math>n</math> !! <math>-B_n/n</math> !! מודולו 5 !! מודולו 25 !! מודולו 125
+|-
+| 2 || <math>-1/12</math> || 2 || 17 || 42
+|-
+| 6 || <math>-1/252</math> || 2 || 12 || 62
+|-
+| 22 || <math>-77683/276</math> || 2 || 17 || 17
+|-
+| 102 || (שבר גדול) || 2 || 17 || 42
+|}
+
+(הערכים בטבלה הם של <math>(1-5^{n-1})(-B_n/n)</math>, כמספרים 5-אדיים.) כל הערכים שקולים מודולו 5; <math>n = 2, 22, 102</math>, ששקולים מודולו <math>4\cdot5 = 20</math>, שקולים מודולו 25; ו-<math>n = 2, 102</math>, ששקולים מודולו <math>4\cdot25 = 100</math>, שקולים מודולו 125. בדיוק כך פונקציית הזטא ה-5-אדית "מחברת" את הערכים האלה לפונקציה רציפה.
+
+== מידות <math>p</math>-אדיות ==
+אפשר לראות פונקציות L <math>p</math>-אדיות גם כ'''מידות''' (או התפלגויות) <math>p</math>-אדיות על חבורות גלואה פרו-סופיות מסוג <math>p</math>. התרגום בין נקודת המבט הזו לבין נקודת המבט המקורית של קובוטה–לאופולדט (פונקציות אנליטיות <math>\mathbb Z_p</math>-ערכיות על <math>\mathbb Z_p</math>) נעשה בעזרת '''התמרת מזור–מלין''' (מקבילה <math>p</math>-אדית של [[התמרת מלין]]) ו[[תורת שדות המחלקה]].
+
+== שדות ממשיים לחלוטין ==
+פייר דלין וקנת ריבה (1980), בהמשך לעבודה קודמת של [[ז'אן-פייר סר]] (1973), בנו פונקציות L <math>p</math>-אדיות אנליטיות עבור שדות ממשיים לחלוטין. באופן בלתי תלוי עשו זאת גם דניאל בארסקי (1978) ופייר קסו-נוגס (1979), שהתבססו על הגישה של שינטני לחקר ערכים של פונקציות L (ראו [[פונקציית זטא של שינטני]]). פונקציות אלה מופיעות בהשערת גרוס–סטארק (ראו [[השערות סטארק]]).
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* T. Kubota, H.-W. Leopoldt, ''Eine p-adische Theorie der Zetawerte. I. Einführung der p-adischen Dirichletschen L-Funktionen'', Journal für die reine und angewandte Mathematik '''214/215''' (1964), pp. 328–339
+* K. Iwasawa, ''On p-adic L-functions'', Annals of Mathematics '''89''' (1969), no. 1, pp. 198–205
+* K. Iwasawa, ''Lectures on p-adic L-functions'', Annals of Mathematics Studies '''74''', Princeton University Press, 1972
+* J.-P. Serre, ''Formes modulaires et fonctions zêta p-adiques'', in: Modular Functions of One Variable III, Lecture Notes in Mathematics '''350''', Springer, 1973, pp. 191–268
+* P. Deligne, K. A. Ribet, ''Values of abelian L-functions at negative integers over totally real fields'', Inventiones Mathematicae '''59''' (1980), no. 3, pp. 227–286
+* P. Cassou-Noguès, ''Valeurs aux entiers négatifs des fonctions zêta et fonctions zêta p-adiques'', Inventiones Mathematicae '''51''' (1979), no. 1, pp. 29–59
+* B. Mazur, A. Wiles, ''Class fields of abelian extensions of Q'', Inventiones Mathematicae '''76''' (1984), no. 2, pp. 179–330
+* N. Koblitz, ''p-adic Numbers, p-adic Analysis, and Zeta-Functions'', Graduate Texts in Mathematics '''58''', 2nd ed., Springer, 1984
+* L. C. Washington, ''Introduction to Cyclotomic Fields'', Graduate Texts in Mathematics '''83''', 2nd ed., Springer, 1997
+</div>
+
+[[קטגוריה:פונקציות זטא]]
