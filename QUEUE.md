@@ -125,7 +125,7 @@ Additive number theory:
 - [ ] Weil group
 - [x] Genus field
 - [x] Golod–Shafarevich theorem
-- [ ] Albert–Brauer–Hasse–Noether theorem
+- [x] Albert–Brauer–Hasse–Noether theorem
 - [ ] Langlands dual group
 - [x] Teichmüller character
 - [x] Gauss sum
