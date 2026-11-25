@@ -260,7 +260,7 @@
 ### [שדות ציקלוטומיים](categories/%D7%A9%D7%93%D7%95%D7%AA%20%D7%A6%D7%99%D7%A7%D7%9C%D7%95%D7%98%D7%95%D7%9E%D7%99%D7%99%D7%9D.md)
 
 * [השערת קומר–ונדיבר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A7%D7%95%D7%9E%D7%A8%E2%80%93%D7%95%D7%A0%D7%93%D7%99%D7%91%D7%A8.md) – Kummer–Vandiver conjecture
-* [יחס האסה–דבנפורט](pages/%D7%99%D7%97%D7%A1%20%D7%94%D7%90%D7%A1%D7%94%E2%80%93%D7%93%D7%91%D7%A0%D7%A4%D7%95%D7%A8%D7%98.md)
+* [יחס האסה–דבנפורט](pages/%D7%99%D7%97%D7%A1%20%D7%94%D7%90%D7%A1%D7%94%E2%80%93%D7%93%D7%91%D7%A0%D7%A4%D7%95%D7%A8%D7%98.md) – Hasse–Davenport relation
 * [משפט צ'אולה–מורדל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A6%27%D7%90%D7%95%D7%9C%D7%94%E2%80%93%D7%9E%D7%95%D7%A8%D7%93%D7%9C.md) – Chowla–Mordell theorem
 * [משפט שטיקלברגר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A9%D7%98%D7%99%D7%A7%D7%9C%D7%91%D7%A8%D7%92%D7%A8.md) – Stickelberger's theorem
 * [סכום גאוס](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%92%D7%90%D7%95%D7%A1.md) – Gauss sum
