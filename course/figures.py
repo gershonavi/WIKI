@@ -2972,6 +2972,64 @@ def _():
     save('16-fi')
 
 
+@fig('14-jr')
+def _():
+    g = 0.5772156649015329
+    h = 1e-3
+    s = np.arange(1, 8 + h / 2, h)
+    F = np.zeros_like(s); f = np.zeros_like(s)
+    for i, t in enumerate(s):
+        if t <= 3:
+            F[i] = 2 * np.exp(g) / t
+        if t <= 2:
+            f[i] = 0
+        elif t <= 4:
+            f[i] = 2 * np.exp(g) * np.log(t - 1) / t
+    k = int(round(1 / h))
+    # (sF)' = f(s-1) for s > 3 ; (sf)' = F(s-1) for s > 4
+    sF = s * F; sf = s * f
+    for i in range(len(s)):
+        t = s[i]
+        if t > 3 + h / 2:
+            sF[i] = sF[i - 1] + h * f[i - k]
+            F[i] = sF[i] / t
+        if t > 4 + h / 2:
+            sf[i] = sf[i - 1] + h * F[i - k]
+            f[i] = sf[i] / t
+    ax = plt.gca()
+    ax.plot(s, F, color=C2, label='F(s): upper bound factor')
+    ax.plot(s, f, color=C1, label='f(s): lower bound factor')
+    ax.axhline(1, color='k', lw=.6, ls=':')
+    ax.axvline(2, color=GR, lw=.8, ls='--')
+    ax.set_xlabel('s = log y / log z'); ax.set_ylim(0, 2.5); ax.legend(fontsize=8)
+    ax.set_title('Linear sieve: f(s) ≤ 1 ≤ F(s); the lower bound is 0 until s = 2', fontsize=9)
+    save('14-jr')
+
+
+@fig('14-bdh')
+def _():
+    x = 10 ** 6
+    P = np.array([p for p in PR if p <= x]); L = np.log(P)
+    Qmax = 2000
+    ph = list(range(Qmax + 1))
+    for p in range(2, Qmax + 1):
+        if ph[p] == p:
+            for k in range(p, Qmax + 1, p):
+                ph[k] -= ph[k] // p
+    V = 0.0; qs = []; rat = []
+    for q in range(1, Qmax + 1):
+        th = np.bincount(P % q, weights=L, minlength=q)
+        a = np.array([gcd(r, q) == 1 for r in range(q)])
+        V += ((th[a] - x / ph[q]) ** 2).sum()
+        qs.append(q); rat.append(V / (q * x * np.log(x)))
+    ax = plt.gca()
+    ax.semilogx(qs, rat, color=C1)
+    ax.axhline(1, color=C2, ls='--', lw=1, label='Q·x·log x')
+    ax.set_xlabel('Q'); ax.set_ylabel('V(x, Q) / (Q x log x)'); ax.set_ylim(0, 1.2); ax.legend(fontsize=8)
+    ax.set_title('Barban–Davenport–Halberstam at x = 10⁶: the variance stays below Q x log x', fontsize=9)
+    save('14-bdh')
+
+
 
 if __name__ == '__main__':
     import sys
