@@ -99,7 +99,7 @@ Additive number theory:
 - [x] Narrow class group
 - [x] Conductor–discriminant formula
 - [ ] Galois representation
-- [ ] Kummer–Vandiver conjecture
+- [x] Kummer–Vandiver conjecture
 - [ ] Leopoldt's conjecture
 - [ ] Hilbert's ninth problem
 - [ ] Height function
