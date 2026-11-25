@@ -7,7 +7,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 ערכים שתורגמו מסומנים ב-[x].
 
 ## עדיפות ראשונה
-- [ ] Chebyshev's bias
+- [x] Chebyshev's bias
 - [ ] Vaughan's identity
 - [ ] Exponential sum
 - [ ] Character sum

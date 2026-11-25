@@ -1,0 +1,37 @@
+[[קובץ:Chebyshev bias.svg|ממוזער|גרף הפונקציה <math>\pi(x;4,3)-\pi(x;4,1)</math> עבור <math>x \le 30000</math>]]
+ב[[תורת המספרים]], '''ההטיה של צ'בישב''' היא התופעה שלפיה ברוב המקרים יש יותר [[מספר ראשוני|מספרים ראשוניים]] מהצורה <math>4k+3</math> מאשר מהצורה <math>4k+1</math>, עד אותו גבול. את התופעה הבחין לראשונה המתמטיקאי הרוסי [[פפנוטי צ'בישב]] בשנת 1853.{{הערה|שם=cheb|1=P. L. Chebyshev, ''Lettre de M. le Professeur Tchébychev à M. Fuss sur un nouveaux théorème relatif aux nombres premiers contenus dans les formes 4n + 1 et 4n + 3'', Bull. Classe Phys. Acad. Imp. Sci. St. Petersburg '''11''' (1853), 208|כיווון=שמאל}}
+
+== תיאור ==
+נסמן ב-<math>\pi(x;n,m)</math> את מספר הראשוניים מהצורה <math>nk+m</math> שאינם גדולים מ-<math>x</math>. לפי [[משפט המספרים הראשוניים]], בהרחבתו לסדרות חשבוניות,
+
+:<math>\pi(x;4,1) \sim \pi(x;4,3) \sim \frac{1}{2}\frac{x}{\log x},</math>
+
+כאשר <math>\log x</math> הוא ה[[לוגריתם טבעי|לוגריתם הטבעי]]. כלומר, מחצית מהראשוניים הם מהצורה <math>4k+1</math> ומחציתם מהצורה <math>4k+3</math>. ניחוש סביר הוא שכל אחד מאי-השוויונות <math>\pi(x;4,1) > \pi(x;4,3)</math> ו-<math>\pi(x;4,1) < \pi(x;4,3)</math> מתקיים בכמחצית מהמקרים. הנתונים המספריים אינם תומכים בכך: אי-השוויון <math>\pi(x;4,3) > \pi(x;4,1)</math> מתקיים לעיתים קרובות הרבה יותר. למשל, הוא מתקיים לכל ראשוני <math>x < 26833</math>, פרט ל-5, 17, 41 ו-461, שעבורם יש שוויון. ה-<math>x</math> הראשון שעבורו <math>\pi(x;4,1) > \pi(x;4,3)</math> הוא 26861, כלומר <math>\pi(x;4,3) \ge \pi(x;4,1)</math> לכל <math>x < 26861</math>.
+
+באופן כללי, אם <math>0 < a, b < n</math> שלמים, <math>\gcd(a,n) = \gcd(b,n) = 1</math>, <math>a</math> הוא [[שארית ריבועית]] מודולו <math>n</math> ו-<math>b</math> אינו שארית ריבועית מודולו <math>n</math>, אז אי-השוויון <math>\pi(x;n,b) > \pi(x;n,a)</math> מתקיים ברוב המקרים. טענה זו הוכחה רק בהנחת צורות חזקות של [[השערת רימן]]. ההשערה החזקה יותר של סטניסלב קנפובסקי ו[[פאל טוראן]], שלפיה ה[[צפיפות טבעית|צפיפות]] של המספרים <math>x</math> שעבורם <math>\pi(x;4,3) > \pi(x;4,1)</math> היא 1 (כלומר שאי-השוויון מתקיים כמעט לכל <math>x</math>), התבררה כשגויה.{{הערה|1=S. Knapowski and P. Turán, ''Comparative prime number theory, I'', Acta Mathematica Academiae Scientiarum Hungaricae '''13''' (1962), pp. 299–314|כיווון=שמאל}} עם זאת, לקבוצה זו יש צפיפות לוגריתמית, שערכה בערך 0.9959.{{הערה|שם=rs|1=M. Rubinstein and P. Sarnak, ''Chebyshev's bias'', Experimental Mathematics '''3''' (1994), no. 3, pp. 173–197, {{DOI|10.1080/10586458.1994.10504289}}|כיווון=שמאל}}
+
+== הכללות ==
+ניתן לנסח את התופעה גם באמצעות [[סימן קרונקר]] <math>\left(\frac{k}{q}\right)</math>: ההטיה המקורית מתאימה ל-<math>k=-4</math>, והשאלה היא מהו הראשוני הקטן ביותר <math>p</math> שעבורו
+
+:<math>\sum_{q \le p,\ q\ \text{ראשוני}}\left(\frac{k}{q}\right)>0.</math>
+
+לפי משפט המספרים הראשוניים, לכל שלם <math>k \ne 0</math> יש אינסוף ראשוניים <math>p</math> המקיימים תנאי זה. עבור <math>k = 1, 2, 3, \ldots</math> הראשוניים הקטנים ביותר הם 2, 11100143, 61981, 3, 2082927221, 5, 2, ... (סדרה [https://oeis.org/A326615 A326615] ב-OEIS), ועבור <math>k = -1, -2, -3, \ldots</math> הם 2, 3, 608981813029, 26861, 7, 5, 2, ... ערכים דומים חושבו גם עבור הדיסקרימיננטות היסודיות של [[שדה ריבועי|שדות ריבועיים]] ממשיים (סדרה [https://oeis.org/A306499 A306499]) ומדומים (סדרה [https://oeis.org/A306500 A306500]).
+
+לכל שלם <math>k</math> שאינו [[מספר ריבועי|ריבוע]], חיובי או שלילי, יש ברוב המקרים יותר ראשוניים <math>p</math> שעבורם <math>\left(\frac{k}{p}\right)=-1</math> מאשר ראשוניים שעבורם <math>\left(\frac{k}{p}\right)=1</math>, עד אותו גבול.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Andrew Granville and Greg Martin, ''Prime number races'', American Mathematical Monthly '''113''' (2006), no. 1, pp. 1–33, doi:10.1080/00029890.2006.11920275
+* J. Kaczorowski, ''On the distribution of primes (mod 4)'', Analysis '''15''' (1995), pp. 159–171
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} Eric W. Weisstein, [https://mathworld.wolfram.com/ChebyshevBias.html Chebyshev Bias], באתר MathWorld
+* {{אנגלית}} [https://oeis.org/A007350 סדרה A007350] ב-OEIS: הנקודות שבהן מתחלף המוביל במרוץ בין <math>4n+1</math> ל-<math>4n+3</math>
+* {{אנגלית}} [https://oeis.org/A007352 סדרה A007352] ב-OEIS: הנקודות שבהן מתחלף המוביל במרוץ בין <math>3n+1</math> ל-<math>3n+2</math>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים האנליטית]]
+[[קטגוריה:מספרים ראשוניים]]
