@@ -102,7 +102,7 @@ Additive number theory:
 - [x] Kummer–Vandiver conjecture
 - [x] Leopoldt's conjecture
 - [x] Hilbert's ninth problem
-- [ ] Height function
+- [x] Height function
 - [x] Newton polygon
 - [x] Skolem–Mahler–Lech theorem
 - [ ] Arithmetic dynamics
