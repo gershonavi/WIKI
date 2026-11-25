@@ -4,7 +4,7 @@
 Usage: python3 sync_wiki.py PATH_TO_WIKI_CHECKOUT
 Run build.py first. Links are rewritten for the wiki's flat page names.
 """
-import os, re, sys, urllib.parse
+import os, re, shutil, sys, urllib.parse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(ROOT, 'pages')
@@ -52,6 +52,11 @@ def main(dest):
     open(os.path.join(dest, 'Home.md'), 'w', encoding='utf-8').write(home)
     course_dir = os.path.join(ROOT, 'course')
     lessons = sorted(f[:-3] for f in os.listdir(course_dir) if f.endswith('.md')) if os.path.isdir(course_dir) else []
+    img_src = os.path.join(course_dir, 'img')
+    if os.path.isdir(img_src):  # figures of the exercises
+        os.makedirs(os.path.join(dest, 'img'), exist_ok=True)
+        for f in os.listdir(img_src):
+            shutil.copyfile(os.path.join(img_src, f), os.path.join(dest, 'img', f))
     for l in lessons:
         md = open(os.path.join(course_dir, l + '.md'), encoding='utf-8').read()
         open(os.path.join(dest, l + '.md'), 'w', encoding='utf-8').write(convert(md))
