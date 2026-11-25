@@ -1,0 +1,28 @@
+ב[[מתמטיקה]], '''השיטה של טיורינג''' (ב[[אנגלית]]: Turing's method) משמשת לאמת שעבור נקודת גרם נתונה <math>g_m</math> יש בדיוק <math>m + 1</math> אפסים של <math>\zeta(s)</math> באזור <math>0 \lt \mathrm{Im}(s) \lt \mathrm{Im}(g_m)</math>, כאשר <math>\zeta(s)</math> היא [[פונקציית זטא של רימן]].{{הערה|1=H. M. Edwards, Riemann's zeta function, Pure and Applied Mathematics 58, Academic Press, ניו יורק–לונדון, 1974, {{ISBN|0-12-232750-0}}|כיווון=שמאל}} את השיטה גילה [[אלן טיורינג]] והיא פורסמה ב-1953,{{הערה|1=A. M. Turing, Some Calculations of the Riemann Zeta-Function, Proceedings of the London Mathematical Society s3-3 (1), 1953, עמ' 99–117, {{DOI|10.1112/plms/s3-3.1.99}}|כיווון=שמאל}} אף שההוכחה ההיא הכילה שגיאות, ותיקון פורסם ב-1970 בידי ר. שרמן להמן.{{הערה|1=R. S. Lehman, On the Distribution of Zeros of the Riemann Zeta-Function, Proceedings of the London Mathematical Society s3-20 (2), 1970, עמ' 303–320, {{DOI|10.1112/plms/s3-20.2.303}}|כיווון=שמאל}}
+
+== הרקע (נוסף בתרגום) ==
+[[פונקציית Z|פונקציית Z של הארדי]] <math>Z(t) = e^{i\theta(t)}\zeta(\tfrac12 + it)</math>, כאשר <math>\theta</math> היא [[פונקציית התטא של רימן-זיגל|פונקציית התטא של רימן–זיגל]], ממשית עבור <math>t</math> ממשי, והאפסים שלה הם בדיוק האפסים של <math>\zeta</math> על הישר הקריטי. '''נקודות גרם''' <math>g_n</math> מוגדרות על ידי <math>\theta(g_n) = n\pi</math>; הראשונות הן
+:<math>g_{-1} \approx 9.667,\quad g_0 \approx 17.846,\quad g_1 \approx 23.170,\quad g_2 \approx 27.670,\quad g_3 \approx 31.718.</math>
+בנקודת גרם מתקיים <math>Z(g_n) = (-1)^n\,\mathrm{Re}\,\zeta(\tfrac12 + ig_n)</math>, ו"חוק גרם" הוא ההבחנה האמפירית ש-<math>(-1)^n Z(g_n) > 0</math> לרוב. כאשר זה מתקיים לשתי נקודות גרם עוקבות, יש ביניהן מספר אי-זוגי של חילופי סימן של <math>Z</math>, ולכן לפחות אפס אחד על הישר הקריטי.
+
+בעיה: חילופי הסימן מראים רק ''חסם תחתון'' למספר האפסים על הישר הקריטי. כדי לאמת את [[השערת רימן]] עד גובה מסוים, צריך גם ''חסם עליון'' למספר הכולל של האפסים ברצועה הקריטית עד אותו גובה. השיטה של טיורינג נותנת חסם עליון כזה, בעזרת חישוב של <math>Z</math> בלבד, בלי אינטגרציה קווית של <math>\zeta'/\zeta</math>.
+
+== השיטה ==
+מוצאים רשימה של נקודות גרם <math>\{g_i \mid 0\leqslant i \leqslant m \}</math> ורשימה משלימה <math>\{h_i \mid 0\leqslant i \leqslant m \}</math>, כאשר <math>h_i</math> הוא המספר הקטן ביותר (בערכו המוחלט) כך ש
+:<math>(-1)^i Z(g_i + h_i) > 0,</math>
+כאשר <math>Z(t)</math> היא פונקציית Z של הארדי. שימו לב ש-<math>h_i</math> יכול להיות שלילי או אפס. (בערך האנגלי נכתב בטעות ש-<math>g_i</math>, ולא <math>h_i</math>, הוא המספר הקטן ביותר המקיים את התנאי.) בהנחה ש-<math>h_m = 0</math>, ושיש שלם <math>k</math> כלשהו כך ש-<math>h_k = 0</math>, אם
+:<math> 1 + \frac{1.91 + 0.114\log(g_{m+k}/2\pi) + \sum_{j=m+1}^{m+k-1}h_j}{g_{m+k} - g_m} \lt 2, </math>
+ו
+:<math> -1 - \frac{1.91 + 0.114\log(g_m/2\pi) + \sum_{j=1}^{k-1}h_{m-j}}{g_m - g_{m-k}} > -2, </math>
+אז החסם מושג, ויש בדיוק <math>m + 1</math> אפסים של <math>\zeta(s)</math> באזור <math>0 \lt \mathrm{Im}(s) \lt \mathrm{Im}(g_m)</math>.
+
+('''מקור הקבועים, נוסף בתרגום:''' המספר <math>N(T)</math> של האפסים עד גובה <math>T</math> הוא <math>\frac{\theta(T)}{\pi} + 1 + S(T)</math>, כאשר <math>S(T) = \frac1\pi\arg\zeta(\tfrac12 + iT)</math>. בנקודת גרם, <math>\theta(g_m)/\pi + 1 = m + 1</math>, ולכן צריך להראות ש-<math>S(g_m) = 0</math>. <math>S</math> מקבל ערכים שלמים בנקודות גרם "טובות", והתנאים שלמעלה נובעים מהחסם של להמן <math>\left|\int_{t_1}^{t_2}S(t)\,dt\right| \le 1.91 + 0.114\log(t_2/2\pi)</math> (בערך), שאינו מאפשר ל-<math>S</math> להיות 1 או −1 לאורך קטע ארוך.)
+
+== דוגמה (נוסף בתרגום) ==
+עבור <math>n = 0, 1, \ldots, 125</math> חוק גרם מתקיים בלי תיקון (<math>h_n = 0</math>). הכישלון הראשון הוא ב-<math>n = 126</math> (<math>g_{126} \approx 282.455</math>): שם <math>Z(g_{126}) \lt 0</math>, אבל כבר <math>Z(g_{126} + 0.1) > 0</math>, כלומר אפשר לקחת <math>h_{126} \approx 0.1</math>. בהתאם, מספר האפסים מתחת ל-<math>g_{126}</math> הוא 126 ולא 127 (אפס אחד "גלש" אל מעבר לנקודת גרם), ומתחת ל-<math>g_{127}</math> יש שוב 128 אפסים, כצפוי. (החישובים נעשו בעזרת mpmath.)
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא ופונקציות L]]
+[[קטגוריה:אלן טיורינג]]
