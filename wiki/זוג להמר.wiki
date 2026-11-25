@@ -1,0 +1,22 @@
+בחקר [[השערת רימן]], '''זוג להמר''' (ב[[אנגלית]]: Lehmer pair) הוא זוג של [[שורש (של פונקציה)|אפסים]] של [[פונקציית זטא של רימן]] הקרובים זה לזה באופן חריג{{הערה|שם=csv|1=George Csordas, Wayne Smith, Richard S. Varga, [https://doi.org/10.1007/BF01205170 Lehmer pairs of zeros, the de Bruijn-Newman constant Λ, and the Riemann hypothesis], Constructive Approximation 10 (1), 1994, עמ' 107–129|כיווון=שמאל}}. הזוגות קרויים על שם [[דריק הנרי להמר]], שגילה את זוג האפסים
+:<math>\begin{align}
+& \tfrac 1 2 + i\,7005.06266\dots \\[4pt]
+& \tfrac 1 2 + i\,7005.10056\dots
+\end{align}</math>
+(האפסים ה-6709 וה-6710 של פונקציית זטא){{הערה|1=D. H. Lehmer, [https://doi.org/10.1007/BF02401102 On the roots of the Riemann zeta-function], Acta Mathematica 95, 1956, עמ' 291–298|כיווון=שמאל}}.
+
+באופן מדויק יותר, אפשר להגדיר זוג להמר כזוג אפסים שהקואורדינטות המדומות שלהם, <math>\gamma_n</math> ו-<math>\gamma_{n+1}</math>, מקיימות את אי-השוויון
+:<math>\frac{1}{(\gamma_n-\gamma_{n+1})^2} \ge C\sum_{m\notin\{n,n+1\}} \left(\frac{1}{(\gamma_m-\gamma_n)^2}+\frac{1}{(\gamma_m-\gamma_{n+1})^2}\right)</math>
+עבור קבוע <math>C>5/4</math>{{הערה|שם=tao|1=Terence Tao, [https://terrytao.wordpress.com/2018/01/20/lehmer-pairs-and-gue/ Lehmer pairs and GUE], What's New, 20 בינואר 2018|כיווון=שמאל}}.
+
+השאלה אם קיימים אינסוף זוגות להמר היא בעיה פתוחה{{הערה|שם=tao}}. אם התשובה חיובית, נובע מכך ש[[קבוע דה ברויין-ניומן]] אינו שלילי; עובדה זו הוכיחו בראד רוג'רס ו[[טרנס טאו]] ללא תנאי{{הערה|1=Brad Rodgers, Terence Tao, [https://doi.org/10.1017/fmp.2020.6 The De Bruijn–Newman constant is non-negative], Forum Math. Pi 8, 2020, e6, [https://arxiv.org/abs/1801.05914 arXiv:1801.05914]|כיווון=שמאל}}.
+
+== ראו גם ==
+* [[השערת המתאם הזוגי של מונטגומרי]]
+* [[פונקציית Z]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:השערת רימן]]

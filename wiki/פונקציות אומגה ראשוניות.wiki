@@ -1,0 +1,97 @@
+ב[[תורת המספרים]], '''פונקציות אומגה ראשוניות''' (ב[[אנגלית]]: Prime omega functions), <math>\omega(n)</math> ו-<math>\Omega(n)</math>, סופרות את הגורמים הראשוניים של [[מספר טבעי]] <math>n</math>. הפונקציה <math>\omega(n)</math> ("אומגה קטנה", סדרה [https://oeis.org/A001221 A001221] ב-OEIS) סופרת את הגורמים הראשוניים ''השונים'', ואילו <math>\Omega(n)</math> ("אומגה גדולה", סדרה [https://oeis.org/A001222 A001222] ב-OEIS) סופרת את המספר ''הכולל'' של הגורמים הראשוניים, עם ריבוי. כלומר, אם [[פירוק לגורמים של מספר שלם|הפירוק לגורמים ראשוניים]] של <math>n</math> הוא <math>n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}</math>, עבור ראשוניים שונים <math>p_i</math> (<math>1 \leq i \leq k</math>), אז <math>\omega(n) = k</math> ו-<math>\Omega(n) = \alpha_1 + \alpha_2 + \cdots + \alpha_k</math>. לפונקציות אלה קשרים חשובים רבים בתורת המספרים.
+
+== תכונות וקשרים ==
+הפונקציה <math>\omega(n)</math> היא [[פונקציה אריתמטית|אדיטיבית]], והפונקציה <math>\Omega(n)</math> היא אדיטיבית לחלוטין. לאומגה הקטנה יש הנוסחה
+:<math>\omega(n)=\sum_{p\mid n} 1,</math>
+כאשר הסכום הוא על פני כל הראשוניים <math>p</math> המחלקים את <math>n</math>, בלי ריבוי. לדוגמה, <math>\omega(12)=\omega(2^2 \cdot 3)=2</math>.
+
+לאומגה הגדולה יש הנוסחאות
+:<math>\Omega(n) =\sum_{p^\alpha\mid n} 1 =\sum_{p^\alpha\parallel n}\alpha.</math>
+הסימון <math>p^\alpha\mid n</math> מציין שהסכום הוא על פני כל חזקות הראשוניים <math>p^\alpha</math> המחלקות את <math>n</math>, והסימון <math>p^\alpha\parallel n</math> מציין שהסכום הוא על פני חזקות הראשוניים <math>p^\alpha</math> המחלקות את <math>n</math> כך ש-<math>n/p^\alpha</math> זר ל-<math>p^\alpha</math>. לדוגמה, <math>\Omega(12)=\Omega(2^2 \cdot 3^1)=3</math>.
+
+בין שתי הפונקציות מתקיימים אי-השוויונים <math>\omega(n) \le \Omega(n)</math> ו-<math>2^{\omega(n)} \le d(n) \le 2^{\Omega(n)}</math>, כאשר <math>d(n)</math> היא [[פונקציית מחלקים|פונקציית מספר המחלקים]]{{הערה|שם=HW2213|1=אי-שוויון זה מופיע בסעיף 22.13 אצל Hardy and Wright.|כיווון=שמאל}}. אם <math>\Omega(n) = \omega(n)</math>, אז <math>n</math> [[חופשי מריבועים]], ומתקיים קשר ל[[פונקציית מביוס]]:
+:<math>\mu(n) = (-1)^{\omega(n)} = (-1)^{\Omega(n)}.</math>
+אם <math>\omega(n) = 1</math>, אז <math>n</math> הוא חזקה של ראשוני, ואם <math>\Omega(n)=1</math>, אז <math>n</math> [[מספר ראשוני|ראשוני]].
+
+טור אסימפטוטי לסדר הממוצע של <math>\omega(n)</math> הוא{{הערה|1=S. R. Finch, Two asymptotic series, ''Mathematical Constants II'', Cambridge Univ. Press, עמ' 21–32, [https://web.archive.org/web/20160419150604/http://www.people.fas.harvard.edu/~sfinch/csolve/asym.pdf קישור]|כיווון=שמאל}}
+:<math>\frac{1}{n} \sum\limits_{k = 1}^n \omega(k) \sim \log\log n + B_1 + \sum_{k \geq 1} \left(\sum_{j=0}^{k-1} \frac{\gamma_j}{j!} - 1\right) \frac{(k-1)!}{(\log n)^k},</math>
+כאשר <math>B_1 \approx 0.26149721</math> הוא קבוע מרטנס ו-<math>\gamma_j</math> הם קבועי סטילטיֶס.
+
+הפונקציה <math>\omega(n)</math> קשורה לסכומי מחלקים של פונקציית מביוס ושל פונקציית המחלקים, ובהם{{הערה|1=הזהות הראשונה היא שילוב של שני סכומי מחלקים ידועים, המופיעים בסעיף 27.6 של [https://dlmf.nist.gov/27.6 NIST Handbook of Mathematical Functions].|כיווון=שמאל}}:
+:<math>\sum_{d\mid n} |\mu(d)| = 2^{\omega(n)}</math> (מספר המחלקים האוניטריים של <math>n</math>),
+:<math>\sum_{d\mid n} |\mu(d)| k^{\omega(d)} = (k+1)^{\omega(n)},</math>
+:<math>\sum_{r\mid n} 2^{\omega(r)} = d(n^2),</math>
+:<math>\sum_{r\mid n} 2^{\omega(r)} d\left(\frac{n}{r}\right) = d^2(n),</math>
+:<math>\sum_{d\mid n} (-1)^{\omega(d)} = \prod\limits_{p^{\alpha}\parallel n} (1-\alpha),</math>
+:<math>\sum_{\substack{1\le k\le n \\ \gcd(k,m)=1}} 1 = n \frac {\varphi(m)}{m} + O \left ( 2^{\omega(m)} \right ).</math>
+
+את ה[[פונקציה מציינת|פונקציה המציינת]] של קבוצת הראשוניים אפשר לבטא כ[[קונבולוציית דיריכלה|קונבולוציה]] עם פונקציית מביוס{{הערה|1=הזהות מוצעת כתרגיל בספרו של Apostol. נכתוב <math>f = \mu \ast \omega</math>; טור הדיריכלה של <math>f</math> הוא פונקציית זטא הראשונית <math>P(s)=\sum_p p^{-s}</math>, ולכן <math>f</math> היא הפונקציה המציינת של הראשוניים.|כיווון=שמאל}}:
+:<math>\chi_{\mathbb{P}}(n) = (\mu \ast \omega)(n) = \sum_{d|n} \omega(d) \mu(n/d).</math>
+
+== סדר ממוצע ופונקציות סכום ==
+הסדר הממוצע של <math>\omega(n)</math> ושל <math>\Omega(n)</math> הוא <math>\log\log n</math>. כאשר <math>n</math> ראשוני, הפונקציה מקבלת את הערך המינימלי <math>\omega(n) = 1</math>. כאשר <math>n</math> הוא פרימוריאל (מכפלת הראשוניים הראשונים), הפונקציה גדולה עד כדי
+:<math>\omega(n) \sim \frac{\log n}{\log\log n}.</math>
+כאשר <math>n</math> הוא [[חזקה של שתיים]], <math>\Omega(n) = \log_2 n</math>{{הערה|1=ראו סעיפים 22.10–22.11 אצל Hardy and Wright.|כיווון=שמאל}}.
+
+ההתנהגות האסימפטוטית של פונקציות הסכום של <math>\omega(n)</math>, של <math>\Omega(n)</math> ושל חזקות של <math>\omega(n)</math> היא, בהתאמה{{הערה|1=ראו סעיפים 22.10 ו-22.11 אצל Hardy and Wright להוכחות של הערכות אלה.|כיווון=שמאל}}:
+:<math>\begin{align}
+\sum_{n \leq x} \omega(n) & = x \log\log x + B_1 x + o(x) \\
+\sum_{n \leq x} \Omega(n) & = x \log\log x + B_2 x + o(x) \\
+\sum_{n \leq x} \omega(n)^2 & = x (\log\log x)^2 + O(x \log\log x) \\
+\sum_{n \leq x} \omega(n)^k & = x (\log\log x)^k + O(x (\log\log x)^{k-1}), \quad k \in \mathbb{Z}^{+},
+\end{align}</math>
+כאשר <math>B_1 \approx 0.2614972128</math> הוא קבוע מרטנס, והקבוע <math>B_2</math> מוגדר על ידי
+:<math>B_2 = B_1 + \sum_{p} \frac{1}{p(p-1)} \approx 1.0345061758.</math>
+
+סכום מספרי המחלקים האוניטריים הוא{{הערה|1=Eckford Cohen, [https://doi.org/10.2307/2309455 The Number of Unitary Divisors of an Integer], The American Mathematical Monthly 67 (9), 1960, עמ' 879–880|כיווון=שמאל}}
+:<math>\sum_{n \le x} 2^{\omega(n)} =\frac{x \log x}{\zeta(2)} + O(x).</math>
+
+סכומים נוספים הקושרים בין שתי הפונקציות הם{{הערה|1=Hardy and Wright, סעיף 22.11.|כיווון=שמאל}}
+:<math>\sum_{n \leq x} \left\{\Omega(n) - \omega(n)\right\} = O(x),</math>
+ו-
+:<math>\#\left\{n \leq x : \Omega(n) - \omega(n) > \sqrt{\log\log x}\right\} = O\left(\frac{x}{(\log\log x)^{1/2}}\right).</math>
+
+== טורי דיריכלה ==
+[[טור דיריכלה]] ידוע הקשור ל-<math>\omega(n)</math> ול[[פונקציית זטא של רימן]] הוא{{הערה|1=זהות זו מופיעה בסעיף 27.4 של [https://dlmf.nist.gov/27.4 NIST Handbook of Mathematical Functions].|כיווון=שמאל}}
+:<math>\sum_{n \geq 1} \frac{2^{\omega(n)}}{n^s} = \frac{\zeta^2(s)}{\zeta(2s)}, \quad \Re(s) > 1.</math>
+כמו כן,
+:<math>\sum_{n \geq 1} \frac{z^{\omega(n)}}{n^s} = \prod_p \left(1 + \frac{z}{p^s-1}\right), \quad |z| < 2,\ \Re(s) > 1,</math>
+:<math>\sum_{n \geq 1} \frac{z^{\Omega(n)}}{n^s} = \prod_p \left(1 - \frac{z}{p^s}\right)^{-1}, \quad |z| < 2,\ \Re(s) > 1.</math>
+
+לכל פונקציה אריתמטית <math>f</math> שהיא אדיטיבית במובן החזק, כלומר <math>f(p_1^{\alpha_1} \cdots p_k^{\alpha_k}) = f_0(p_1, \alpha_1) + \cdots + f_0(p_k, \alpha_k)</math> עבור ראשוניים שונים <math>p_i</math>, מתקיים
+:<math>\sum_{n \geq 1} \frac{f(n)}{n^s} = \zeta(s) \times \sum_{p} (1-p^{-s}) \cdot \sum_{n \geq 1} f_0(p, n) p^{-ns},</math>
+בכל מקום שבו הטורים והמכפלות מתכנסים. הדבר נובע מגזירה לפי <math>u</math> בנקודה <math>u=1</math> של הזהות <math>\sum_{n \geq 1} u^{f(n)} n^{-s} = \prod_{p} \left(1+\sum_{n \geq 1} u^{f_0(p, n)} p^{-ns}\right)</math>, ומשימוש ב[[מכפלת אוילר]] של פונקציית זטא של רימן. מכאן, עבור <math>\Re(s) > 1</math>:
+:<math>\begin{align}
+D_{\omega}(s) & := \sum_{n \geq 1} \frac{\omega(n)}{n^s} = \zeta(s) P(s) = \zeta(s) \times \sum_{n \geq 1} \frac{\mu(n)}{n} \log \zeta(ns) \\
+D_{\Omega}(s) & := \sum_{n \geq 1} \frac{\Omega(n)}{n^s} = \zeta(s) \times \sum_{n \geq 1} P(ns) = \zeta(s) \times \sum_{n \geq 1} \frac{\varphi(n)}{n} \log\zeta(ns),
+\end{align}</math>
+כאשר <math>P(s)=\sum_p p^{-s}</math> היא פונקציית זטא הראשונית.
+
+== התפלגות ההפרש בין פונקציות האומגה ==
+ההתפלגות של ערכי ההפרש <math>\Omega(n) - \omega(n)</math> סדירה, בניגוד לתכונות האקראיות-למחצה של כל אחת מהפונקציות. עבור <math>k \geq 0</math> נגדיר
+:<math>N_k(x) := \#\{n \le x : \Omega(n) - \omega(n) = k\}.</math>
+לגדלים אלה יש סדרה מתאימה של צפיפויות גבוליות <math>d_k</math>, כך שעבור <math>x \geq 2</math>
+:<math>N_k(x) = d_k \cdot x + O\left(\left(\frac{3}{4}\right)^k \sqrt{x} (\log x)^{\frac{4}{3}}\right).</math>
+הצפיפויות נוצרות על ידי המכפלה
+:<math>\sum_{k \geq 0} d_k \cdot z^k = \prod_p \left(1 - \frac{1}{p}\right) \left(1 + \frac{1}{p-z}\right).</math>
+עם הקבוע <math>\hat{c} := \frac{1}{4} \times \prod_{p > 2} \left(1 - \frac{1}{(p-1)^2}\right)^{-1}</math>, הצפיפויות מקיימות
+:<math>d_k = \hat{c} \cdot 2^{-k} + O(5^{-k}).</math>
+השוו להגדרת המכפלות בסעיף האחרון של מאמרם של אלפרד רניי ו[[פאל טוראן]] על משפט ארדש-קאץ{{הערה|1=A. Rényi, P. Turán, [https://doi.org/10.4064/aa-4-1-71-84 On a theorem of Erdös-Kac], Acta Arithmetica 4 (1), 1958, עמ' 71–84|כיווון=שמאל}}.
+
+== ראו גם ==
+* [[פונקציה אריתמטית]]
+* [[מספר כמעט ראשוני]]
+* [[חופשי מריבועים]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. H. Hardy, E. M. Wright, ''An Introduction to the Theory of Numbers'', 6th ed., Oxford University Press, 2006
+* H. L. Montgomery, R. C. Vaughan, ''Multiplicative number theory I. Classical theory'', Cambridge University Press, 2007
+* Eric Weisstein, [http://mathworld.wolfram.com/DistinctPrimeFactors.html Distinct Prime Factors], MathWorld
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:פונקציות אריתמטיות]]

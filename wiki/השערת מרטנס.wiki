@@ -1,0 +1,54 @@
+[[קובץ:Congettura Mertens.png|ממוזער|הגרף מציג את [[פונקציית מרטנס]] <math>M(n)</math> ואת השורשים <math>\pm \sqrt{n}</math> עבור <math>n \le 10{,}000</math>. לאחר שחישב ערכים אלה שיער מרטנס שהערך המוחלט של <math>M(n)</math> חסום תמיד על ידי <math>\sqrt{n}</math>.]]
+ב[[מתמטיקה]], '''השערת מרטנס''' היא הטענה ש[[פונקציית מרטנס]] <math>M(n)</math> חסומה בין <math>-\sqrt{n}</math> ל-<math>\sqrt{n}</math>. ההשערה הופרכה, אך עוד קודם לכן הוכח שנכונותה הייתה גוררת את [[השערת רימן]]. את ההשערה העלה תומאס סטילטיס במכתב ששלח אל [[שארל הרמיט]] בשנת 1885 (ושנדפס בשנת 1905), ולאחר מכן העלה אותה בדפוס [[פרנץ מרטנס]] בשנת 1897. [[אנדרו אודליצקו]] ו[[הרמן טה רילה]] הפריכו אותה בשנת 1985. זוהי דוגמה בולטת להשערה מתמטית שהופרכה למרות ראיות חישוביות רבות שתמכו בה.
+
+== הגדרה ==
+ב[[תורת המספרים]], פונקציית מרטנס מוגדרת על ידי
+:<math>M(n) = \sum_{1 \le k \le n} \mu(k),</math>
+כאשר <math>\mu(k)</math> היא [[פונקציית מביוס]]. השערת מרטנס קובעת שלכל <math>n > 1</math> מתקיים
+:<math>|M(n)| < \sqrt{n}.</math>
+
+== הפרכת ההשערה ==
+סטילטיס טען ב-1885 שהוכיח תוצאה חלשה יותר, שלפיה <math>m(n) := M(n)/\sqrt{n}</math> היא [[פונקציה חסומה]], אך לא פרסם הוכחה.{{הערה|שם=Borwein|1=Borwein, Peter; Choi, Stephen; Rooney, Brendan; Weirathmueller, Andrea, eds. (2007). ''The Riemann hypothesis. A resource for the aficionado and virtuoso alike''. CMS Books in Mathematics. New York: Springer-Verlag. p. 69. ISBN 978-0-387-72125-5.|כיוון=שמאל}} במונחי <math>m(n)</math>, השערת מרטנס היא ש-<math>-1 < m(n) < 1</math>.
+
+ב-1985 הוכיחו אודליצקו וטה רילה שהשערת מרטנס שגויה, בעזרת אלגוריתם LLL (לנסטרה–לנסטרה–לובאס) לצמצום בסיס של סריג:{{הערה|שם=disproof|1=Odlyzko, A. M.; te Riele, H. J. J. (1985). "Disproof of the Mertens conjecture". ''Journal für die reine und angewandte Mathematik''. '''1985''' (357): 138–160. [https://doi.org/10.1515/crll.1985.357.138 doi:10.1515/crll.1985.357.138].|כיוון=שמאל}}{{הערה|שם=Sandor|1=Sándor et al. (2006), pp. 188–189.|כיוון=שמאל}}
+:<math>\liminf m(n) < -1.009 \qquad \text{and} \qquad \limsup m(n) > 1.06.</math>
+מאוחר יותר הוכח שה[[דוגמה נגדית|דוגמה הנגדית]] הראשונה נמצאת מתחת ל-<math>e^{3.21\times10^{64}} \approx 10^{1.39\times10^{64}}</math>{{הערה|שם=Pintz|1=Pintz, J. (1987). "An effective disproof of the Mertens conjecture". ''Astérisque''. '''147–148''': 325–333.|כיוון=שמאל}} אך מעל <math>10^{16}</math>.{{הערה|שם=Hurst|1=Hurst, Greg (2016). "Computations of the Mertens function and improved bounds on the Mertens conjecture". [https://arxiv.org/abs/1610.08551 arXiv:1610.08551].|כיוון=שמאל}} החסם העליון הורד מאז ל-<math>e^{1.59\times10^{40}}</math>,{{הערה|שם=KtR|1=Kotnik and te Riele (2006).|כיוון=שמאל}} כלומר בערך <math>10^{6.91\times10^{39}}</math>, ולאחר מכן ל-<math>e^{1.017\times10^{29}} \approx 10^{4.416\times10^{28}}</math>.{{הערה|שם=RK|1=Rozmarynowycz, John; Kim, Seungki (2023). "A New Upper Bound On the Smallest Counterexample To The Mertens Conjecture". [https://arxiv.org/abs/2305.00345 arXiv:2305.00345].|כיוון=שמאל}} ב-2024 הורידו סונגקי קים ופונג נגויאן את החסם ל-<math>e^{1.96\times10^{19}} \approx 10^{8.512\times10^{18}}</math>,{{הערה|שם=KN|1=Kim, Seungki; Nguyen, Phong (2024). [https://antsmath.org/ANTSXVI/papers/KimNguyen.pdf "On counterexamples to the Mertens conjecture"].|כיוון=שמאל}} אך לא ידועה אף דוגמה נגדית מפורשת.
+
+לפי חוק הלוגריתם האיטרטיבי, אם מחליפים את <math>\mu</math> בסדרה אקראית של הערכים <math>+1</math> ו-<math>-1</math>, סדר הגודל של [[טור (מתמטיקה)|הסכום החלקי]] של <math>n</math> האיברים הראשונים הוא (בהסתברות 1) בערך <math>\sqrt{n \log\log n}</math>. מכאן עולה שסדר הגודל של <math>m(n)</math> עשוי להיות בסביבות <math>\sqrt{\log\log n}</math>. ייתכן שסדר הגודל האמיתי קטן מעט יותר: בתחילת שנות ה-90 שיער סטיב גונק שסדר הגודל של <math>m(n)</math> הוא <math>(\log\log\log n)^{5/4}</math>. נייתן אנג (Nathan Ng) תמך בכך ב-2004 בטיעון היוריסטי, המניח את השערת רימן והשערות מסוימות על ההתנהגות הממוצעת של אפסי [[פונקציית זטא של רימן]].{{הערה|שם=Ng|1=Ng, Nathan (2004). "The distribution of the summatory function of the Möbius function". ''Proceedings of the London Mathematical Society''. (3) '''89''': 361–389. [https://arxiv.org/abs/math/0310381 arXiv:math/0310381].|כיוון=שמאל}}
+
+ב-1979 מצאו כהן ודרס{{הערה|שם=CD|1=Cohen, H.; Dress, F. (1979). "Calcul numérique de M(x)". Rapport de l'ATP A12311 «Informatique 1975»: 11–13.|כיוון=שמאל}} את הערך הגדול ביותר הידוע של <math>m(n)</math>, בערך 0.570591, עבור <math>M(7766842813) = 50286</math>. ב-2011 מצא קוזנצוב את הערך השלילי הגדול ביותר הידוע (ב[[ערך מוחלט]]), <math>m(n) \approx -0.585768</math>, עבור <math>M(11609864264058592345) = -1995900927</math>.{{הערה|שם=Kuznetsov|1=Kuznetsov, Eugene (2011). "Computing the Mertens function on a GPU". [https://arxiv.org/abs/1108.0135 arXiv:1108.0135].|כיוון=שמאל}} ב-2016 חישב הרסט את <math>M(n)</math> לכל <math>n \le 10^{16}</math>, ולא מצא ערכים גדולים יותר של <math>m(n)</math>.{{הערה|שם=Hurst}}
+
+ב-2006 שיפרו קוטניק וטה רילה את החסם העליון והראו שיש אינסוף ערכים של <math>n</math> שעבורם <math>m(n) > 1.2184</math>, אך בלי לתת ערך מסוים של <math>n</math> כזה.{{הערה|שם=KtR}} ב-2016 השיג הרסט שיפור נוסף והראה שמתקיים
+:<math>\liminf m(n) < -1.837625 \qquad \text{and} \qquad \limsup m(n) > 1.826054.</math>
+
+== הקשר להשערת רימן ==
+הקשר להשערת רימן מבוסס על [[טור דיריכלה]] של ההופכי של פונקציית זטא של רימן,
+:<math>\frac{1}{\zeta(s)} = \sum_{n=1}^\infty \frac{\mu(n)}{n^s},</math>
+התקף בתחום <math>\operatorname{Re}(s) > 1</math>. אפשר לכתוב אותו כ[[אינטגרל רימן-סטילטיס|אינטגרל סטילטיס]]
+:<math>\frac{1}{\zeta(s)} = \int_0^\infty x^{-s}\, dM(x),</math>
+ולאחר [[אינטגרציה בחלקים]] מתקבל ההופכי של פונקציית זטא כ[[התמרת מלין]]:
+:<math>\frac{1}{s \zeta(s)} = \left\{ \mathcal{M} M \right\}(-s) = \int_0^\infty x^{-s} M(x)\, \frac{dx}{x}.</math>
+בעזרת משפט ההיפוך של מלין אפשר לבטא את <math>M</math> באמצעות <math>1/\zeta</math>:
+:<math>M(x) = \frac{1}{2 \pi i} \int_{\sigma-i\infty}^{\sigma+i\infty} \frac{x^s}{s \zeta(s)}\,ds.</math>
+ביטוי זה תקף עבור <math>1 < \sigma < 2</math>, ובהנחת השערת רימן גם עבור <math>\tfrac{1}{2} < \sigma < 2</math>. מכאן שאינטגרל התמרת מלין חייב להתכנס, ולכן <math>M(x)</math> היא <math>O(x^e)</math> לכל מעריך <math>e</math> הגדול מ-<math>\tfrac{1}{2}</math>. מכאן נובע שהטענה
+:<math>M(x) = O\Big(x^{\tfrac{1}{2} + \epsilon}\Big)</math>
+לכל <math>\epsilon</math> חיובי שקולה להשערת רימן. לכן השערת רימן הייתה נובעת מהשערת מרטנס החזקה יותר, והיא נובעת גם מהשערתו של סטילטיס, שלפיה
+:<math>M(x) = O\Big(x^\tfrac{1}{2}\Big).</math>
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Kotnik, Tadej; te Riele, Herman (2006). "The Mertens Conjecture Revisited". ''Algorithmic Number Theory (ANTS-VII)''. Lecture Notes in Computer Science. Vol. 4076. Berlin: Springer-Verlag. pp. 156–167. [https://doi.org/10.1007/11792086_12 doi:10.1007/11792086_12].
+* Kotnik, T.; van de Lune, J. (2004). "On the order of the Mertens function". ''Experimental Mathematics''. '''13''' (4): 473–481. [https://doi.org/10.1080/10586458.2004.10504556 doi:10.1080/10586458.2004.10504556].
+* Mertens, F. (1897). "Über eine zahlentheoretische Funktion". ''Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften, Mathematisch-Naturwissenschaftliche Klasse, Abteilung 2a''. '''106''': 761–830.
+* Sándor, József; Mitrinović, Dragoslav S.; Crstici, Borislav, eds. (2006). ''Handbook of number theory I''. Dordrecht: Springer-Verlag. pp. 187–189. ISBN 1-4020-4215-9.
+* Stieltjes, T. J. (1905). "Lettre à Hermite de 11 juillet 1885, Lettre #79". In Baillaud, B.; Bourget, H. (eds.). ''Correspondance d'Hermite et Stieltjes''. Paris: Gauthier-Villars. pp. 160–164.
+</div>
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/MertensConjecture.html השערת מרטנס], באתר [[MathWorld]] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:השערות מתמטיות שהופרכו]]

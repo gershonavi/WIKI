@@ -1,0 +1,47 @@
+ב[[תורת המספרים]], '''פונקציית פסי של דדקינד''' (ב[[אנגלית]]: Dedekind psi function) היא ה[[פונקציה כפלית|פונקציה הכפלית]] על המספרים השלמים החיוביים המוגדרת על ידי
+:<math>\psi(n) = n \prod_{p|n}\left(1+\frac{1}{p}\right),</math>
+כאשר המכפלה היא על פני כל הראשוניים <math>p</math> המחלקים את <math>n</math>. (לפי המוסכמה, <math>\psi(1)</math>, שהוא [[מכפלה ריקה]], שווה ל-1.) את הפונקציה הציג [[ריכרד דדקינד]] בהקשר של פונקציות מודולריות (ראו [[תבנית מודולרית]]).
+
+ערכי <math>\psi(n)</math> עבור המספרים השלמים החיוביים הראשונים הם:
+: 1, 3, 4, 6, 6, 12, 8, 12, 12, 18, 12, 24, ...{{הערה|1=סדרה [https://oeis.org/A001615 A001615] ב-OEIS|כיווון=שמאל}}
+
+לכל <math>n</math> גדול מ-1 מתקיים <math>\psi(n) > n</math>, ולכל <math>n</math> גדול מ-2 הערך <math>\psi(n)</math> זוגי. אם <math>n</math> [[חופשי מריבועים]], אז <math>\psi(n) = \sigma(n)</math>, כאשר <math>\sigma(n)</math> היא [[פונקציית מחלקים|פונקציית סכום המחלקים]].
+
+אפשר להגדיר את <math>\psi</math> גם על ידי <math>\psi(p^n) = (p+1)p^{n-1}</math> לכל חזקה של ראשוני <math>p</math>, ולהרחיב את ההגדרה לכל השלמים בעזרת הכפליות. מכאן נובעת גם [[פונקציה יוצרת|הפונקציה היוצרת]] במונחי [[פונקציית זטא של רימן]]:
+:<math>\sum_{n \ge 1} \frac{\psi(n)}{n^s} = \frac{\zeta(s) \zeta(s-1)}{\zeta(2s)}.</math>
+זוהי גם מסקנה מכך שאפשר לכתוב את הפונקציה כ[[קונבולוציית דיריכלה]] <math>\psi= \mathrm{Id} * |\mu|</math>.
+
+לפונקציה יש גם הגדרה חיבורית. לפי לאונרד יוג'ין דיקסון{{הערה|1=Leonard Eugene Dickson, ''History of the Theory of Numbers'', Vol. 1, Chelsea Publishing, 1952, עמ' 123|כיווון=שמאל}}, דדקינד הוכיח{{הערה|1=Journal für die reine und angewandte Mathematik 83, 1877, עמ' 288. ראו גם H. Weber, ''Elliptische Functionen'', 1901, עמ' 244–245|כיווון=שמאל}} שאם מפרקים את <math>n</math> בכל הדרכים האפשריות למכפלה <math>ab</math>, ומסמנים ב-<math>e</math> את המחלק המשותף המקסימלי של <math>a</math> ו-<math>b</math>, אז
+:<math>\sum_{a} (a/e) \varphi(e) = n \prod_{p|n}\left(1+\frac{1}{p}\right),</math>
+כאשר <math>a</math> עובר על כל המחלקים של <math>n</math>, ‏<math>p</math> עובר על המחלקים הראשוניים של <math>n</math>, ו-<math>\varphi</math> היא [[פונקציית אוילר]].
+
+== סדרים גבוהים ==
+ההכללה לסדרים גבוהים, בעזרת מנות של [[פונקציית ז'ורדן]], היא
+:<math>\psi_k(n)=\frac{J_{2k}(n)}{J_k(n)},</math>
+עם טור הדיריכלה
+:<math>\sum_{n\ge 1}\frac{\psi_k(n)}{n^s} = \frac{\zeta(s)\zeta(s-k)}{\zeta(2s)}.</math>
+זוהי גם קונבולוציית הדיריכלה של חזקה ושל ריבוע [[פונקציית מביוס]]:
+:<math>\psi_k(n) = n^k * \mu^2(n).</math>
+אם
+:<math>\epsilon_2 = 1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,\ldots</math>
+היא ה[[פונקציה מציינת|פונקציה המציינת]] של הריבועים, קונבולוציית דיריכלה נוספת נותנת את פונקציית <math>\sigma</math> המוכללת:
+:<math>\epsilon_2(n) * \psi_k(n) = \sigma_k(n).</math>
+
+== ראו גם ==
+* [[פונקציית ז'ורדן]]
+* [[פונקציית אוילר]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Goro Shimura, ''Introduction to the Arithmetic Theory of Automorphic Functions'', Princeton, 1971 (page 25, equation (1))
+* Richard J. Mathar, ''Survey of Dirichlet series of multiplicative arithmetic functions'', 2011, [https://arxiv.org/abs/1106.4038 arXiv:1106.4038], Section 3.13.2
+* <math>\psi_2</math>, <math>\psi_3</math>, <math>\psi_4</math>: OEIS [https://oeis.org/A065958 A065958], [https://oeis.org/A065959 A065959], [https://oeis.org/A065960 A065960]
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://mathworld.wolfram.com/DedekindFunction.html Dedekind Function], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]

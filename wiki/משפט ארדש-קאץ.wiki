@@ -1,0 +1,77 @@
+[[קובץ:EKT plot.svg|ממוזער|300px|התפלגות גאוסית הולכת ומתרחבת של מספר הגורמים הראשוניים השונים, הממחישה את משפט ארדש-קאץ.]]
+ב[[תורת המספרים]], '''משפט ארדש-קאץ''' (ב[[אנגלית]]: Erdős–Kac theorem), הקרוי על שם [[פאול ארדש]] ומרק קאץ ומכונה גם המשפט היסודי של [[תורת המספרים ההסתברותית]], קובע שאם <math>\omega(n)</math> הוא מספר הגורמים הראשוניים השונים של <math>n</math>, אז, באופן לא פורמלי, ה[[התפלגות]] של
+:<math>\frac{\omega(n) - \log\log n}{\sqrt{\log\log n}}</math>
+היא ה[[התפלגות נורמלית|התפלגות הנורמלית]] הסטנדרטית. (<math>\omega(n)</math> היא סדרה [https://oeis.org/A001221 A001221] ב-OEIS; ראו [[פונקציות אומגה ראשוניות]].) זוהי הרחבה של משפט הארדי-רמנוג'אן, הקובע שהסדר הנורמלי של <math>\omega(n)</math> הוא <math>\log\log n</math>, עם שגיאה טיפוסית בגודל <math>\sqrt{\log\log n}</math>.
+
+== ניסוח מדויק ==
+לכל <math>a < b</math> קבועים:
+:<math>\lim_{x \rightarrow \infty} \left ( \frac {1}{x} \cdot \#\left\{ n \leq x : a \le \frac{\omega(n) - \log \log n}{\sqrt{\log \log n}} \le b \right\} \right ) = \Phi(a,b),</math>
+כאשר <math>\Phi(a,b)</math> היא ההתפלגות הנורמלית (או "הגאוסית"), המוגדרת כ-
+:<math>\Phi(a,b)= \frac{1}{\sqrt{2\pi}}\int_a^b e^{-t^2/2} \, dt.</math>
+
+באופן כללי יותר, אם <math>f(n)</math> היא פונקציה אדיטיבית במובן החזק (כלומר <math>f(p_1^{a_1}\cdots p_k^{a_k})=f(p_1)+\cdots+f(p_k)</math>) עם <math>|f(p)|\le1</math> לכל ראשוני <math>p</math>, אז
+:<math>\lim_{x \rightarrow \infty} \left ( \frac {1}{x} \cdot \#\left\{ n \leq x : a \le \frac{f(n) - A(n)}{B(n)} \le b \right\} \right ) = \Phi(a,b),</math>
+עם
+:<math>A(n)=\sum_{p\le n}\frac{f(p)}{p},\qquad B(n)=\sqrt{\sum_{p\le n}\frac{f(p)^2}{p}}.</math>
+
+== הטיעון ההיוריסטי המקורי של קאץ ==
+באופן אינטואיטיבי, הטיעון ההיוריסטי של קאץ אומר שאם <math>n</math> הוא מספר שלם גדול שנבחר באקראי, אז מספר הגורמים הראשוניים השונים של <math>n</math> מתפלג בקירוב נורמלית, עם [[תוחלת]] ו[[שונות]] <math>\log\log n</math>. הסיבה היא שעבור מספר טבעי אקראי <math>n</math>, המאורעות "<math>n</math> מתחלק בראשוני <math>p</math>", עבור הראשוניים השונים, [[אי-תלות (הסתברות)|בלתי תלויים]].
+
+נסמן ב-<math>n_{p}</math> את המאורע "<math>n</math> מתחלק ב-<math>p</math>", ונתבונן בסכום משתני האינדיקטור
+:<math>I_{n_{2}} + I_{n_{3}} + I_{n_{5}} + I_{n_{7}} + \ldots</math>
+סכום זה סופר כמה גורמים ראשוניים שונים יש למספר האקראי <math>n</math>. אפשר להראות שהסכום מקיים את תנאי לינדברג, ולכן גרסת לינדברג של [[משפט הגבול המרכזי]] מבטיחה שלאחר נרמול מתאים הביטוי יהיה גאוסי.
+
+ההוכחה עצמה של המשפט, שנתן ארדש, משתמשת ב[[תורת הנפה]] כדי להפוך את האינטואיציה הזו לטיעון ריגורוזי.
+
+== דוגמאות מספריות ==
+לפי משפט ארדש-קאץ, מספר בסביבות מיליארד בנוי בממוצע משלושה ראשוניים. לדוגמה, <math>1{,}000{,}000{,}003 = 23 \times 307 \times 141623</math>. הטבלה הבאה מסכמת את הגידול של מספר הגורמים הראשוניים השונים הממוצע של מספר טבעי <math>n</math> כאשר <math>n</math> גדל.
+
+{| class="wikitable" style="text-align:center"
+! <math>n</math> !! מספר הספרות של <math>n</math> !! מספר ממוצע של ראשוניים שונים !! סטיית תקן
+|-
+| 1,000 || 4 || 2 || 1.4
+|-
+| 1,000,000,000 || 10 || 3 || 1.7
+|-
+| 1,000,000,000,000,000,000,000,000 || 25 || 4 || 2
+|-
+| <math>10^{65}</math> || 66 || 5 || 2.2
+|-
+| <math>10^{9{,}566}</math> || 9,567 || 10 || 3.2
+|-
+| <math>10^{210{,}704{,}568}</math> || 210,704,569 || 20 || 4.5
+|-
+| <math>10^{10^{22}}</math> || <math>10^{22} + 1</math> || 50 || 7.1
+|-
+| <math>10^{10^{44}}</math> || <math>10^{44} + 1</math> || 100 || 10
+|-
+| <math>10^{10^{434}}</math> || <math>10^{434} + 1</math> || 1000 || 31.6
+|}
+
+כ-12.6% מהמספרים בני 10,000 ספרות בנויים מ-10 ראשוניים שונים, וכ-68% בנויים מ-7 עד 13 ראשוניים.
+
+קשה מאוד, אם לא בלתי אפשרי, לגלות את משפט ארדש-קאץ באופן אמפירי, משום שההתפלגות הגאוסית מתחילה להופיע רק כאשר <math>n</math> מגיע לסביבות <math>10^{100}</math>. ליתר דיוק, [[אלפרד רניי]] ו[[פאל טוראן]] הראו שהחסם האסימפטוטי האחיד הטוב ביותר האפשרי לשגיאה בקירוב לגאוסיאן הוא{{הערה|1=A. Rényi, P. Turán, [https://doi.org/10.4064/aa-4-1-71-84 On a theorem of Erdös-Kac], Acta Arithmetica 4 (1), 1958, עמ' 71–84|כיווון=שמאל}}
+:<math>O\left(\frac{1}{\sqrt{\log \log n}}\right).</math>
+
+== ראו גם ==
+* [[פונקציות אומגה ראשוניות]]
+* [[נפת טוראן]]
+* [[תורת המספרים ההסתברותית]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Paul Erdős, Mark Kac, [https://doi.org/10.2307/2371483 The Gaussian Law of Errors in the Theory of Additive Number Theoretic Functions], American Journal of Mathematics 62 (1/4), 1940, pp. 738–742
+* Wentang Kuo, Yu-Ru Liu, The Erdős–Kac theorem and its generalizations, in: J.-M. De Koninck, A. Granville, F. Luca (eds.), ''Anatomy of integers'', CRM Proceedings and Lecture Notes 46, American Mathematical Society, 2008, pp. 209–216
+* Mark Kac, ''Statistical Independence in Probability, Analysis and Number Theory'', John Wiley and Sons, 1959
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://mathworld.wolfram.com/Erdos-KacTheorem.html Erdős–Kac Theorem], באתר MathWorld
+* {{אנגלית}} [[טימותי גוורס]], [https://www.youtube.com/watch?v=4ivoaFLQ4vM The Importance of Mathematics] (חלק 6, החל מהדקה הרביעית, וחלק 7)
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:פאול ארדש]]

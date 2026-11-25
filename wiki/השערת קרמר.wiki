@@ -1,0 +1,78 @@
+ב[[תורת המספרים]], '''השערת קרמר''', שניסח המתמטיקאי השוודי הראלד קרמר ב-1936,{{הערה|שם=Cramer1936|1=Cramér, Harald (1936). [https://web.archive.org/web/20180723035707/http://matwbn.icm.edu.pl/ksiazki/aa/aa2/aa212.pdf "On the order of magnitude of the difference between consecutive prime numbers"]. ''Acta Arithmetica''. '''2''': 23–46. [https://doi.org/10.4064/aa-2-1-23-46 doi:10.4064/aa-2-1-23-46].|כיוון=שמאל}} היא הערכה לגודלם של הרווחים בין מספרים ראשוניים עוקבים. באופן אינטואיטיבי, הרווחים בין ראשוניים עוקבים תמיד קטנים, וההשערה קובעת באופן אסימפטוטי עד כמה קטנים הם חייבים להיות. ההשערה קובעת ש
+:<math>p_{n+1}-p_n=O((\log p_n)^2),</math>
+כאשר <math>p_n</math> הוא ה[[מספר ראשוני|מספר הראשוני]] ה-<math>n</math>, <math>O</math> הוא [[סימון אסימפטוטי|סימון O גדולה]], ו-<math>\log</math> הוא הלוגריתם הטבעי. זו הטענה שקרמר שיער במפורש, אך הנימוק ההיוריסטי שלו תומך למעשה בטענה החזקה יותר
+:<math>\limsup_{n\rightarrow\infty} \frac{p_{n+1}-p_n}{(\log p_n)^2} = 1,</math>
+או באופן שקול: לכל <math>\epsilon > 0</math> קיים חסם <math>B(\epsilon)</math> כך שלכל <math>p_n \geq B(\epsilon)</math> מתקיים
+:<math>p_{n+1}-p_n < (1+\epsilon) (\log p_n)^2.</math>
+לעיתים גם הניסוח הזה מכונה השערת קרמר. אולם מודלים היוריסטיים מדויקים יותר אינם תומכים בגרסה החזקה הזו, אך הם כן תומכים בגרסה הראשונה.
+
+הצורה החזקה מכולן, שקרמר מעולם לא טען אותה אך היא המשמשת בבדיקות חישוביות, היא פשוט
+:<math>p_{n+1}-p_n < (\log p_n)^2.</math>
+
+אף אחת משלוש הצורות לא הוכחה ולא הופרכה עד כה.
+
+== תוצאות מוכחות על רווחים בין ראשוניים ==
+קרמר הוכיח, בהנחת [[השערת רימן]], את הטענה החלשה בהרבה
+:<math>p_{n+1}-p_n = O(\sqrt{p_n}\,\log p_n).</math>{{הערה|שם=Cramer1936}}
+החסם העליון הבלתי מותנה הטוב ביותר הידוע הוא
+:<math>p_{n+1}-p_n = O(p_n^{0.525}),</math>
+שהוכיחו בייקר, הרמן ופינץ.{{הערה|שם=BHP|1=Baker, R. C.; Harman, G.; Pintz, J. (2001). "The Difference Between Consecutive Primes, II". ''Proceedings of the London Mathematical Society''. '''83''' (3): 532–562. [https://doi.org/10.1112/plms/83.3.532 doi:10.1112/plms/83.3.532].|כיוון=שמאל}}
+
+בכיוון ההפוך, א' וסטסינתיוס הוכיח ב-1931 שהרווחים בין ראשוניים גדלים מהר יותר מאשר לוגריתמית, כלומר{{הערה|שם=West|1=Westzynthius, E. (1931). "Über die Verteilung der Zahlen die zu den ''n'' ersten Primzahlen teilerfremd sind". ''Commentationes Physico-Mathematicae Helsingsfors''. '''5''' (5): 1–37.|כיוון=שמאל}}
+:<math>\limsup_{n\to\infty}\frac{p_{n+1}-p_n}{\log p_n}=\infty.</math>
+
+את התוצאה הזו שיפר רוברט רנקין,{{הערה|שם=Rankin|1=Rankin, R. A. (1938). "The difference between consecutive prime numbers". ''J. London Math. Soc.'' '''13''' (4): 242–247. [https://doi.org/10.1017/S0013091500025633 doi:10.1017/S0013091500025633].|כיוון=שמאל}} שהוכיח כי
+:<math>\limsup_{n\to\infty}\frac{p_{n+1}-p_n}{\log p_n}\cdot\frac{\left(\log^{\circ 3} p_n\right)^2}{\log^{\circ 2} p_n\,\log^{\circ 4} p_n}>0,</math>
+כאשר <math>\log^{\circ k}</math> הוא הלוגריתם המופעל <math>k</math> פעמים ברציפות, למשל <math>\log^{\circ 3}p_n = \log\log\log p_n</math>.
+
+פאול ארדש שיער שאגף שמאל בנוסחה האחרונה הוא אינסופי. את ההשערה הזו הוכיחו ב-2014 קווין פורד, בן גרין, סרגיי קוניאגין וטרנס טאו,{{הערה|שם=FGKT|1=Ford, Kevin; Green, Ben; Konyagin, Sergei; Tao, Terence (2016). "Large gaps between consecutive prime numbers". ''Annals of Mathematics''. '''183''' (3): 935–974. [https://arxiv.org/abs/1408.4505 arXiv:1408.4505]. [https://doi.org/10.4007/annals.2016.183.3.4 doi:10.4007/annals.2016.183.3.4].|כיוון=שמאל}} ובאופן בלתי תלוי ג'יימס מיינרד.{{הערה|שם=Maynard|1=Maynard, James (2016). "Large gaps between primes". ''Annals of Mathematics''. '''183''' (3): 915–933. [https://arxiv.org/abs/1408.5110 arXiv:1408.5110]. [https://doi.org/10.4007/annals.2016.183.3.3 doi:10.4007/annals.2016.183.3.3].|כיוון=שמאל}} בהמשך שילבו פורד, גרין, קוניאגין, מיינרד וטאו את שתי הגישות,{{הערה|שם=FGKMT|1=Ford, Kevin; Green, Ben; Konyagin, Sergei; Maynard, James; Tao, Terence (2018). "Long gaps between primes". ''Journal of the American Mathematical Society''. '''31''': 65–105. [https://arxiv.org/abs/1412.5029 arXiv:1412.5029]. [https://doi.org/10.1090/jams/876 doi:10.1090/jams/876].|כיוון=שמאל}} והראו שעבור אינסוף ערכי <math>n</math> מתקיים
+:<math>p_{n+1}-p_n>\frac{c\,\log p_n\,\log^{\circ 2} p_n\,\log^{\circ 4} p_n}{\log^{\circ3} p_n},</math>
+כאשר <math>c>0</math> הוא קבוע מוחלט.
+
+== ההצדקה ההיוריסטית ==
+השערת קרמר מבוססת על מודל הסתברותי – במהותו היוריסטיקה – שבו ההסתברות שמספר בגודל <math>x</math> הוא ראשוני היא <math>1/\log x</math>. המודל ידוע בשם '''המודל האקראי של קרמר''' או מודל קרמר לראשוניים.{{הערה|שם=TaoBlog|1=Tao, Terence (ינואר 2015). [https://terrytao.wordpress.com/2015/01/04/254a-supplement-4-probabilistic-models-and-heuristics-for-the-primes-optional/ "254A, Supplement 4: Probabilistic models and heuristics for the primes"].|כיוון=שמאל}}
+
+במודל האקראי של קרמר מתקיים
+:<math>\limsup_{n\rightarrow\infty} \frac{p_{n+1}-p_n}{\log^2 p_n} = 1</math>
+בהסתברות 1.{{הערה|שם=Cramer1936}} אולם, כפי שהעיר אנדרו גרנוויל,{{הערה|שם=Granville|1=Granville, A. (1995). [https://web.archive.org/web/20150923212842/http://www.dartmouth.edu/~chance/chance_news/for_chance_news/Riemann/cramer.pdf "Harald Cramér and the distribution of prime numbers"]. ''Scandinavian Actuarial Journal''. '''1''': 12–28. [https://doi.org/10.1080/03461238.1995.10413946 doi:10.1080/03461238.1995.10413946].|כיוון=שמאל}} משפט מאייר מראה שהמודל האקראי של קרמר אינו מתאר כראוי את התפלגות הראשוניים בקטעים קצרים. עידון של המודל, המביא בחשבון התחלקות בראשוניים קטנים, מרמז שהגבול אינו 1 אלא קבוע <math>c \ge 2e^{-\gamma}\approx1.1229\ldots</math>, כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]]. יאנוש פינץ העלה את האפשרות שהגבול העליון אינסופי.{{הערה|שם=Pintz97|1=Pintz, János (1997). [https://core.ac.uk/download/pdf/81196811.pdf "Very large gaps between consecutive primes"]. ''Journal of Number Theory''. '''63''' (2): 286–301. [https://doi.org/10.1006/jnth.1997.2081 doi:10.1006/jnth.1997.2081].|כיוון=שמאל}}
+
+בדומה לכך, לאונרד אדלמן וקווין מקרלי כתבו שבעקבות עבודתו של הלמוט מאייר הוטל ספק בניסוח המדויק של השערת קרמר, אך כנראה עדיין נכון שלכל קבוע <math>c>2</math> קיים קבוע <math>d>0</math> כך שיש מספר ראשוני בין <math>x</math> ל-<math>x+d(\log x)^c</math>.{{הערה|שם=AM|1=Adleman, Leonard; McCurley, Kevin (1994). "Open Problems in Number Theoretic Complexity, II". ''ANTS-I: Proceedings of the First International Symposium on Algorithmic Number Theory''. Lecture Notes in Computer Science. Vol. 877. Springer. pp. 291–322. [https://doi.org/10.1007/3-540-58691-1_70 doi:10.1007/3-540-58691-1_70].|כיוון=שמאל}}
+
+== השערות קשורות ==
+דניאל שנקס שיער את השוויון האסימפטוטי הבא, החזק מהשערת קרמר, עבור הרווח המרבי <math>G(x)</math> בין ראשוניים עוקבים עד <math>x</math>:{{הערה|שם=Shanks|1=Shanks, Daniel (1964). "On Maximal Gaps between Successive Primes". ''Mathematics of Computation''. '''18''' (88): 646–651. [https://doi.org/10.2307/2002951 doi:10.2307/2002951].|כיוון=שמאל}}
+:<math>G(x)\sim \log^2 x.</math>
+
+ג'יי אייץ' קדוול הציע עבור הרווחים המרביים את הנוסחה{{הערה|שם=Cadwell|1=Cadwell, J. H. (1971). "Large Intervals Between Consecutive Primes". ''Mathematics of Computation''. '''25''' (116): 909–913. [https://doi.org/10.2307/2004355 doi:10.2307/2004355].|כיוון=שמאל}}
+:<math>G(x)\sim \log^2 x - \log x\log\log x,</math>
+הזהה פורמלית להשערת שנקס אך מציעה איבר מסדר נמוך יותר.
+
+מרק וולף הציע נוסחה לרווחים המרביים במונחי [[פונקציית המספרים הראשוניים]] <math>\pi(x)</math>:{{הערה|שם=Wolf|1=Wolf, Marek (2014). "Nearest-neighbor-spacing distribution of prime numbers and quantum chaos". ''Phys. Rev. E''. '''89''' (2): 022922. [https://arxiv.org/abs/1212.3841 arXiv:1212.3841]. [https://doi.org/10.1103/physreve.89.022922 doi:10.1103/physreve.89.022922].|כיוון=שמאל}}
+:<math>G(x)\sim \frac{x}{\pi(x)}(2\log\pi(x)-\log x+c),</math>
+כאשר <math>c=\log(2C_2)=0.2778769\ldots</math> ו-<math>C_2=0.6601618\ldots</math> הוא קבוע הראשוניים התאומים. גם נוסחה זו שקולה פורמלית להשערת שנקס, אך מציעה איברים מסדר נמוך יותר:
+:<math>G(x) \sim \log^2 x - 2\log x\log\log x - (1-c)\log x.</math>
+
+תומאס נייסלי חישב רווחים גדולים רבים בין ראשוניים.{{הערה|שם=Nicely|1=Nicely, Thomas R. (1999). "New maximal prime gaps and first occurrences". ''Mathematics of Computation''. '''68''' (227): 1311–1315. [https://doi.org/10.1090/S0025-5718-99-01065-0 doi:10.1090/S0025-5718-99-01065-0].|כיוון=שמאל}} את איכות ההתאמה להשערת קרמר הוא מודד באמצעות היחס
+:<math>R = \frac{\log p_n}{\sqrt{p_{n+1}-p_n}},</math>
+ולדבריו, עבור הרווחים המרביים הגדולים ביותר הידועים נשאר <math>R</math> קרוב ל-1.13.
+
+== ראו גם ==
+* [[משפט המספרים הראשוניים]]
+* השערת לז'נדר – חסם עליון חלש בהרבה על רווחים בין ראשוניים, שאף הוא טרם הוכח
+* [[קבוע לז'נדר]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Guy, Richard K. (2004). ''Unsolved problems in number theory'' (3rd ed.). Springer-Verlag. A8. ISBN 978-0-387-20860-2.
+* Pintz, János (2007). "Cramér vs. Cramér. On Cramér's probabilistic model for primes". ''Functiones et Approximatio Commentarii Mathematici''. '''37''' (2): 361–376. [https://doi.org/10.7169/facm/1229619660 doi:10.7169/facm/1229619660].
+* Soundararajan, K. (2007). "The distribution of prime numbers". In Granville, Andrew; Rudnick, Zeév (eds.). ''Equidistribution in number theory, an introduction''. NATO Science Series II. Vol. 237. Dordrecht: Springer-Verlag. pp. 59–83. ISBN 978-1-4020-5403-7.
+</div>
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/CramerConjecture.html השערת קרמר], באתר [[MathWorld]] {{אנגלית}}
+* [https://mathworld.wolfram.com/Cramer-GranvilleConjecture.html השערת קרמר-גרנוויל], באתר [[MathWorld]] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]

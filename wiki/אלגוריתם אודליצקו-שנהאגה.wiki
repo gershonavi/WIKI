@@ -1,0 +1,21 @@
+ב[[מתמטיקה]], '''אלגוריתם אודליצקו-שנהאגה''' (ב[[אנגלית]]: Odlyzko–Schönhage algorithm) הוא [[אלגוריתם]] מהיר לחישוב [[פונקציית זטא של רימן]] בנקודות רבות, שהציגו [[אנדרו אודליצקו]] וארנולד שנהאגה ב-1988{{הערה|שם=os|1=A. M. Odlyzko, A. Schönhage, [https://doi.org/10.2307/2000939 Fast algorithms for multiple evaluations of the Riemann zeta function], Trans. Amer. Math. Soc. 309 (2), 1988, עמ' 797–809|כיווון=שמאל}}. הרעיון המרכזי הוא שימוש ב[[התמרת פורייה מהירה]] כדי להאיץ את חישוב ה[[טור דיריכלה]] הסופי באורך <math>N</math> ב-<math>O(N)</math> נקודות במרווחים שווים, מ-<math>O(N^2)</math> צעדים ל-<math>O(N^{1+\varepsilon})</math> צעדים (במחיר שמירה של <math>O(N^{1+\varepsilon})</math> ערכי ביניים). [[נוסחת רימן-זיגל]], המשמשת לחישוב פונקציית זטא בנקודות שהחלק המדומה שלהן הוא <math>T</math>, משתמשת בטור דיריכלה סופי בן כ-<math>N = T^{1/2}</math> איברים, ולכן כשמחשבים כ-<math>N</math> ערכים של פונקציית זטא, החישוב מואץ בגורם של כ-<math>T^{1/2}</math>. כך יורד הזמן הדרוש למציאת האפסים של פונקציית זטא שהחלק המדומה שלהם לכל היותר <math>T</math> מכ-<math>T^{3/2+\varepsilon}</math> צעדים לכ-<math>T^{1+\varepsilon}</math> צעדים.
+
+אפשר להשתמש באלגוריתם לא רק עבור פונקציית זטא של רימן, אלא גם עבור פונקציות רבות אחרות הנתונות על ידי טורי דיריכלה.
+
+גורדון (Gourdon) השתמש באלגוריתם ב-2004 כדי לאמת את [[השערת רימן]] עבור <math>10^{13}</math> האפסים הראשונים של פונקציית זטא{{הערה|1=X. Gourdon, [http://numbers.computation.free.fr/Constants/Miscellaneous/zetazeroscompute.html The 10<sup>13</sup> first zeros of the Riemann Zeta function, and zeros computation at very large height], 2004|כיווון=שמאל}}.
+
+== ראו גם ==
+* [[נוסחת רימן-זיגל]]
+* [[השערת המתאם הזוגי של מונטגומרי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* X. Gourdon, [http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.html Numerical evaluation of the Riemann Zeta-function]
+* A. Odlyzko, [http://www.dtc.umn.edu/~odlyzko/unpublished/index.html The 10<sup>20</sup>-th zero of the Riemann zeta function and 175 million of its neighbors], 1992 (unpublished book describing the implementation of the algorithm)
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:פונקציות זטא]]

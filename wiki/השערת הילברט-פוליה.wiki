@@ -1,0 +1,49 @@
+ב[[מתמטיקה]], '''השערת הילברט-פוליה''' קובעת שהאפסים הלא טריוויאליים של [[פונקציית זטא של רימן]] מתאימים לערכים עצמיים של אופרטור צמוד לעצמו. ההשערה מציעה גישה אפשרית ל[[השערת רימן]] באמצעות התורה הספקטרלית.
+
+== היסטוריה ==
+במכתב ל[[אנדרו אודליצקו]] מ-3 בינואר 1982 סיפר ג'ורג' פוליה שכאשר שהה בגטינגן, בשנים 1912–1914 בקירוב, שאל אותו אדמונד לנדאו אם יש סיבה פיזיקלית לכך שהשערת רימן תהיה נכונה. פוליה השיב שכך יהיה אם החלקים המדומים <math>t</math> של האפסים
+:<math> \tfrac12 + it </math>
+של פונקציית זטא של רימן מתאימים לערכים עצמיים של אופרטור צמוד לעצמו.{{הערה|שם=odlyzko|1=Odlyzko, Andrew. [http://www.dtc.umn.edu/~odlyzko/polya/index.html "Correspondence about the origins of the Hilbert–Polya Conjecture"].|כיוון=שמאל}} נראה שהניסוח המוקדם ביותר של ההשערה בדפוס מופיע במאמר של מונטגומרי מ-1973.{{הערה|שם=odlyzko}}{{הערה|שם=montgomery|1=Montgomery, Hugh L. (1973). "The pair correlation of zeros of the zeta function". ''Analytic number theory''. Proc. Sympos. Pure Math. Vol. XXIV. Providence, R.I.: American Mathematical Society. pp. 181–193.|כיוון=שמאל}}
+
+דוד הילברט לא עסק בתחומים המרכזיים של תורת המספרים האנליטית, אך שמו נקשר בהשערה בשל סיפור שסיפר תלמידו ארנסט הלינגר לאנדרה ויי. לדברי הלינגר, הילברט הכריז בסמינר שלו בראשית המאה ה-20 שהוא מצפה שהשערת רימן תנבע מעבודתו של פרדהולם על משוואות אינטגרליות עם גרעין סימטרי.{{הערה|שם=broughan|1=Broughan, K. (2017). ''Equivalents of the Riemann Hypothesis, Volume 2: Analytic Equivalents''. Cambridge University Press. p. 192. ISBN 978-1-107-19712-1.|כיוון=שמאל}}{{הערה|שם=dieudonne|1=Dieudonné, J. (1981). ''History of Functional Analysis''. p. 106. ISBN 978-0-444-86148-1.|כיוון=שמאל}}{{הערה|שם=simon|1=Simon, B. (2015). ''Operator Theory: A Comprehensive Course in Analysis, Part 4''. American Mathematical Society. p. 42. ISBN 978-1-4704-1103-9.|כיוון=שמאל}}
+
+=== שנות ה-50 ונוסחת העקבה של סלברג ===
+בזמן השיחה בין פוליה ללנדאו כמעט לא היה בסיס להשערה כזו. אולם בראשית שנות ה-50 הוכיח אטלה סלברג דואליות בין ספקטרום האורכים של משטח רימן ובין הערכים העצמיים של הלפלסיאן שלו. נוסחה זו, הקרויה נוסחת העקבה של סלברג, דומה באופן מובהק לנוסחאות המפורשות של תורת המספרים, והדמיון הזה חיזק את האמון בהשערת הילברט-פוליה.
+
+=== שנות ה-70 ומטריצות אקראיות ===
+יו מונטגומרי חקר את ההתפלגות הסטטיסטית של האפסים על הישר הקריטי ומצא שיש לה תכונה מסוימת, הקרויה כיום השערת מתאם הזוגות של מונטגומרי: האפסים אינם נוטים להצטופף קרוב מדי זה לזה, אלא לדחות זה את זה.{{הערה|שם=montgomery}} בביקור במכון למחקר מתקדם בפרינסטון ב-1972 הוא הראה את התוצאה לפרימן דייסון, ממייסדי התורה של מטריצות אקראיות.
+
+דייסון הבחין שההתפלגות שמצא מונטגומרי נראית זהה להתפלגות מתאם הזוגות של הערכים העצמיים של מטריצה הרמיטית אקראית. להתפלגויות אלה יש חשיבות בפיזיקה: המצבים העצמיים של המילטוניאן, למשל רמות האנרגיה של גרעין האטום, מקיימים סטטיסטיקה כזו. עבודות מאוחרות יותר איששו במידה רבה את הקשר בין התפלגות האפסים של פונקציית זטא של רימן לבין הערכים העצמיים של מטריצה הרמיטית אקראית מתוך האנסמבל האוניטרי הגאוסי (GUE), וכיום מקובל לשער ששתיהן מצייתות לאותה סטטיסטיקה. לפיכך יש כיום להשערת הילברט-פוליה בסיס מוצק יותר, אך היא טרם הובילה להוכחת השערת רימן.{{הערה|שם=RS|1=Rudnick, Zeev; Sarnak, Peter (1996). "Zeros of Principal ''L''-functions and Random Matrix Theory". ''Duke Mathematical Journal''. '''81''' (2): 269–322. [https://doi.org/10.1215/s0012-7094-96-08115-6 doi:10.1215/s0012-7094-96-08115-6].|כיוון=שמאל}}
+
+=== התפתחויות מאוחרות ===
+ב-1998 ניסח אלן קון נוסחת עקבה השקולה להשערת רימן. בכך התחזקה האנלוגיה לנוסחת העקבה של סלברג עד כדי טענות מדויקות. קון נותן פירוש גאומטרי לנוסחה המפורשת של תורת המספרים כנוסחת עקבה בגאומטריה לא קומוטטיבית של מחלקות אדלים.{{הערה|שם=Connes|1=Connes, Alain (1999). "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function". ''Selecta Mathematica''. '''5''': 29–106. [https://arxiv.org/abs/math/9811068 arXiv:math/9811068]. [https://doi.org/10.1007/s000290050042 doi:10.1007/s000290050042].|כיוון=שמאל}}
+
+== קשר אפשרי למכניקת הקוונטים ==
+קשר אפשרי בין אופרטור הילברט-פוליה למכניקת הקוונטים הציע פוליה עצמו. האופרטור הוא מהצורה <math>\tfrac{1}{2}+iH</math>, כאשר <math>H</math> הוא ההמילטוניאן של חלקיק בעל מסה <math>m</math> הנע בהשפעת פוטנציאל <math>V(x)</math>. השערת רימן שקולה לטענה שההמילטוניאן הרמיטי, או באופן שקול ש-<math>V</math> ממשי.
+
+מייקל ברי וג'ונתן קיטינג שיערו שההמילטוניאן <math>H</math> הוא קוונטיזציה כלשהי של ההמילטוניאן הקלאסי <math>xp</math>, כאשר <math>p</math> הוא התנע הצמוד ל-<math>x</math>.{{הערה|שם=bk99a|1=Berry, Michael V.; Keating, Jonathan P. (1999). "H = xp and the Riemann zeros". In ''Supersymmetry and Trace Formulae: Chaos and Disorder''. New York: Plenum. pp. 355–367. ISBN 978-0-306-45933-7.|כיוון=שמאל}} האופרטור ההרמיטי הפשוט ביותר המתאים ל-<math>xp</math> הוא
+:<math>\hat{H} = \tfrac1{2} (\hat{x}\hat{p}+\hat{p}\hat{x}) = - i \left( x \frac{\mathrm{d}}{\mathrm{d} x} + \frac1{2} \right).</math>
+עידון זה של השערת הילברט-פוליה ידוע בשם '''השערת ברי''' (או '''השערת ברי-קיטינג'''). ההשערה עדיין רחוקה מלהיות מוחשית: לא ברור על איזה מרחב צריך האופרטור לפעול כדי לקבל את הדינמיקה הנכונה, ולא כיצד לבצע בו רגולריזציה כדי לקבל את התיקונים הלוגריתמיים הצפויים. ברי וקיטינג שיערו שמכיוון שהאופרטור אינווריאנטי למתיחות, ייתכן שתנאי השפה <math>f(nx) = f(x)</math> עבור <math>n</math> שלם יסייע לקבל את התוצאות האסימפטוטיות הנכונות עבור <math>n</math> גדול:
+:<math> \frac{1}{2} + i \frac{ 2\pi n}{\log n}. </math>{{הערה|שם=bk99b|1=Berry, Michael V.; Keating, Jonathan P. (1999). "The Riemann zeros and eigenvalue asymptotics". ''SIAM Review''. '''41''' (2): 236–266. [https://doi.org/10.1137/s0036144598347497 doi:10.1137/s0036144598347497].|כיוון=שמאל}}
+
+במרץ 2017 פורסם מאמר של קרל בנדר, דורג'ה ברודי ומרקוס מילר, הבונה על גישתו של ברי.{{הערה|שם=BBM|1=Bender, Carl M.; Brody, Dorje C.; Müller, Markus P. (2017). "Hamiltonian for the Zeros of the Riemann Zeta Function". ''Physical Review Letters''. '''118''' (13): 130201. [https://arxiv.org/abs/1608.03679 arXiv:1608.03679]. [https://doi.org/10.1103/PhysRevLett.118.130201 doi:10.1103/PhysRevLett.118.130201].|כיוון=שמאל}} במאמר הוצג האופרטור
+:<math>\hat{H} = \frac{1}{1-e^{-i\hat{p}}} \left (\hat{x}\hat{p}+\hat{p}\hat{x} \right ) \left (1-e^{-i\hat{p}} \right ),</math>
+שלטענת המחברים מקיים גרסה מותאמת של תנאי השערת הילברט-פוליה. ז'אן בליסאר מתח ביקורת על המאמר,{{הערה|שם=Bellissard|1=Bellissard, Jean (2017). "Comment on 'Hamiltonian for the Zeros of the Riemann Zeta Function'". [https://arxiv.org/abs/1704.02644 arXiv:1704.02644].|כיוון=שמאל}} והמחברים השיבו בהבהרות.{{הערה|שם=BBM2|1=Bender, Carl M.; Brody, Dorje C.; Müller, Markus P. (2017). "Comment on 'Comment on "Hamiltonian for the zeros of the Riemann zeta function"'". [https://arxiv.org/abs/1705.06767 arXiv:1705.06767].|כיוון=שמאל}}
+
+== ראו גם ==
+* [[השערת רימן]]
+* [[השערת לינדלף]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Aneva, B. (1999). "Symmetry of the Riemann operator". ''Physics Letters B''. '''450''' (4): 388–396. [https://arxiv.org/abs/0804.1618 arXiv:0804.1618].
+* Wolf, M. (2020). "Will a physicist prove the Riemann hypothesis?". ''Reports on Progress in Physics''. '''83''' (4): 036001. [https://arxiv.org/abs/1410.1214 arXiv:1410.1214].
+* Elizalde, Emilio (1994). ''Zeta regularization techniques with applications''. World Scientific. ISBN 978-981-02-1441-8.
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]

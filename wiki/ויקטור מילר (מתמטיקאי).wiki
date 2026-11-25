@@ -1,0 +1,35 @@
+{{מדען}}
+'''ויקטור שאול מילר''' (ב[[אנגלית]]: '''Victor Saul Miller'''; נולד ב-[[3 במרץ]] [[1947]]) הוא [[מתמטיקאי]] ו[[קריפטוגרפיה|קריפטוגרף]] [[ארצות הברית|אמריקאי]], מממציאי ה[[הצפנה מבוססת עקום אליפטי|הצפנה המבוססת על עקומים אליפטיים]].
+
+== ביוגרפיה ==
+מילר נולד ב[[ברוקלין]] שב[[ניו יורק]]. ב-1968 קיבל תואר ראשון במתמטיקה מ[[אוניברסיטת קולומביה]], וב-1975 קיבל תואר דוקטור במתמטיקה מ[[אוניברסיטת הרווארד]]. בשנים 1973–1978 היה פרופסור חבר (assistant professor) במחלקה למתמטיקה של אוניברסיטת מסצ'וסטס בבוסטון. ב-1978 הצטרף לפרויקט IBM 801 במחלקה למדעי המחשב של מרכז המחקר על שם תומאס ג'יי ווטסון של [[IBM]], וב-1984 עבר למחלקה למתמטיקה של המרכז. בשנים 1993–2022 היה חבר סגל המחקר במרכז לחקר תקשורת (CCR) של המכון לאנליזות ביטחוניות (IDA) בפרינסטון.
+
+בשנים 1984–1987 היה העורך של כתב העת SIGACT News.{{הערה|שם=sigact|1=[https://dl.acm.org/doi/pdf/10.1145/235666.571628 The History of SIGACT News] {{אנגלית}}}}
+
+== מחקר ==
+תחומי העניין העיקריים של מילר הם [[תורת המספרים החישובית]], [[קומבינטוריקה]], [[דחיסת נתונים]] ו[[קריפטוגרפיה]].
+* הוא אחד מממציאי ה[[הצפנה מבוססת עקום אליפטי]].{{הערה|שם=ecc|1=Miller, V. (1985). "Use of elliptic curves in cryptography". ''Advances in Cryptology – CRYPTO '85''. Lecture Notes in Computer Science, vol. 218. Springer.|כיוון=שמאל}}
+* יחד עם מרק ווגמן הוא מממציאי אלגוריתם הדחיסה LZW (ראו [[אלגוריתם למפל-זיו]]) ושל הרחבות שונות שלו,{{הערה|שם=patent|1=פטנט אמריקאי מספר 4814746.}} שאחת מהן משמשת בתקן המודמים הבין-לאומי V.42bis.{{הערה|שם=mw|1=Miller, V.; Wegman, M. "Variations on a theme by Ziv and Lempel". In ''Combinatorial Algorithms on Words'', ed. A. Apostolico and Z. Galil. NATO ASI Series F, Computer and Systems Sciences, vol. 12.|כיוון=שמאל}} על המצאה זו קיבל את מדליית המילניום של [[IEEE]].
+* הוא הממציא של "אלגוריתם מילר",{{הערה|שם=short|1=Miller, V. (1986). [http://crypto.stanford.edu/miller/miller.pdf "Short Programs for functions on curves"], כתב יד שלא פורסם.|כיוון=שמאל}}{{הערה|שם=weil|1=Miller, V. (2004). "The Weil Pairing, and its efficient calculation". ''Journal of Cryptology''. '''17''': 235–261.|כיוון=שמאל}} שהוא כלי יסודי בקריפטוגרפיה מבוססת שידוכים (pairing-based cryptography).
+* יחד עם [[ג'פרי לגריאס]] ו[[אנדרו אודליצקו]] הוא ממפתחי אלגוריתם לגריאס-מילר-אודליצקו לחישוב [[פונקציית המספרים הראשוניים]] (ראו [[אלגוריתם מייסל-להמר]]).{{הערה|שם=LMO|1=Lagarias, J.; Miller, V.; Odlyzko, A. (1985). [http://www.dtc.umn.edu/~odlyzko/doc/arch/meissel.lehmer.pdf "Computing π(''x''): the Meissel–Lehmer method"]. ''Mathematics of Computation''. '''44''': 537–560.|כיוון=שמאל}}
+
+== פרסים והוקרה ==
+על המצאת ההצפנה המבוססת על עקומים אליפטיים זכה מילר בפרס ההוקרה של Certicom,{{הערה|שם=certicom|1=[https://web.archive.org/web/20041103222008/http://www.certicom.com/index.php?action=company,press_archive&view=345 הודעה לעיתונות של Certicom] (בארכיון האינטרנט) {{אנגלית}}}} בפרס RSA למצוינות במתמטיקה, שהוענק בכנס RSA בשנת 2009,{{הערה|שם=rsa|1=[http://www.emc.com/microsites/rsa-conference/about-rsa-conference/rsa-conference-awards.htm RSA Conference Awards] {{אנגלית}}}} בפרס הטכנולוגיה של קרן אדוארד ריין לשנת 2020{{הערה|שם=rhein|1=[https://www.eduard-rhein-stiftung.de/for-the-invention-of-cryptography-based-on-elliptical-curves/ Eduard Rhein Foundation Technology Award] {{אנגלית}}}} ובפרס לבצ'ין.{{הערה|שם=levchin|1=[https://rwc.iacr.org/LevchinPrize/#Winners Levchin Prize] {{אנגלית}}}}
+
+מילר הוא עמית לכל החיים (Life Fellow) של IEEE, ועמית של [[האגודה הבין-לאומית למחקר קריפטוגרפי]]{{הערה|שם=iacr|1=[https://www.iacr.org/fellows/2013/miller.html IACR Fellow Citation] {{אנגלית}}}} ושל [[ACM]].{{הערה|שם=acm|1=[http://awards.acm.org/award_winners/miller_2751441.cfm ACM Fellow Citation] {{אנגלית}}}} הוא גם חבר בהיכל התהילה של האגודה לאבטחת מערכות מידע (ISSA).{{הערה|שם=issa|1=[https://www.issa.org/issa-international-awards-winners/ ISSA International Awards] {{אנגלית}}}}
+
+== קישורים חיצוניים ==
+* [http://crypto.stanford.edu/miller/ אלגוריתם מילר לחישוב שידוך ויי] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+{{מיון רגיל:מילר, ויקטור}}
+[[קטגוריה:מתמטיקאים אמריקאים]]
+[[קטגוריה:קריפטוגרפים אמריקאים]]
+[[קטגוריה:עובדי IBM]]
+[[קטגוריה:עמיתי IEEE]]
+[[קטגוריה:עמיתי ACM]]
+[[קטגוריה:בוגרי אוניברסיטת קולומביה]]
+[[קטגוריה:בוגרי אוניברסיטת הרווארד]]
+[[קטגוריה:ילידי 1947]]

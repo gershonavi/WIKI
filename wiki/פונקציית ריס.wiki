@@ -1,0 +1,66 @@
+ב[[מתמטיקה]], '''פונקציית ריס''' (ב[[אנגלית]]: Riesz function) היא [[פונקציה שלמה]] שהגדיר [[מרסל ריס]] בהקשר של [[השערת רימן]], באמצעות [[טור חזקות|טור החזקות]]
+:<math>{\rm Riesz}(x) = \sum_{k=1}^\infty \frac{(-1)^{k-1}x^k}{(k-1)! \zeta(2k)}=x \sum_{n=1}^\infty \frac{\mu(n)}{n^2} \exp\left(\frac{-x}{n^2}\right).</math>
+אם נגדיר <math>F(x) = \tfrac12 {\rm Riesz}(4 \pi^2 x)</math>, אפשר להגדיר אותה בעזרת המקדמים של פיתוח [[טור לורן]] של הקוטנגנס ה[[פונקציות היפרבוליות|היפרבולי]] (או, באופן שקול, הרגיל) סביב אפס. אם
+:<math>\frac{x}{2} \coth \frac{x}{2} = \sum_{n=0}^\infty c_n x^n = 1 + \frac{1}{12} x^2 - \frac{1}{720}x^4 + \cdots</math>
+אז אפשר להגדיר את <math>F</math> כ-
+:<math>F(x) = \sum_{k=1}^\infty \frac{x^k}{c_{2k}(k-1)!} = 12x - 720x^2 + 15120x^3 - \cdots</math>
+
+הערכים <math>\zeta(2k)</math> שואפים ל-1 כאשר <math>k</math> גדל, והשוואת הטור של פונקציית ריס לטור של <math>x\exp(-x)</math> מראה שזו פונקציה שלמה. לחלופין, אפשר להגדיר את <math>F</math> כ-
+:<math>F(x) = \sum_{k=1}^{\infty}\frac{k^{\overline{k+1}}x^{k}}{B_{2k}},</math>
+כאשר <math>n^{\overline{k}}</math> מסמן את העצרת העולה בסימון של [[דונלד קנות']], ו-<math>B_n</math> הם [[מספרי ברנולי]]. הטור הוא טור מתחלף, והפונקציה שואפת במהירות למינוס אינסוף עבור ערכים שליליים של <math>x</math>. הערכים החיוביים של <math>x</math> מעניינים ועדינים יותר.
+
+פונקציית ריס מקיימת את המשוואה האינטגרלית
+:<math>1-\exp(-x)= \int_{0}^{\infty}\frac {\lfloor\sqrt{x/t}\rfloor}{t} \operatorname{Riesz}(t)\, dt.</math>
+
+== קריטריון ריס ==
+אפשר להראות ש-
+:<math>\operatorname{Riesz}(x) = O(x^e)\qquad (x\to\infty)</math>
+לכל מעריך <math>e</math> הגדול מ-<math>1/2</math> (ב[[סימון אסימפטוטי|סימון O גדולה]]), כאשר הפונקציה מקבלת ערכים חיוביים ושליליים כאחד. ריס הראה שהשערת רימן שקולה לטענה שהאמור לעיל נכון לכל <math>e</math> הגדול מ-<math>1/4</math>{{הערה|1=M. Riesz, Sur l'hypothèse de Riemann, Acta Mathematica 40, 1916, עמ' 185–190. [http://pracownicy.uksw.edu.pl/mwolf//Riesz_translation.pdf תרגום לאנגלית]|כיווון=שמאל}}. באותו מאמר הוסיף הערה פסימית מעט: הוא כתב שעדיין אינו יודע אם תנאי זה יקל על אימות ההשערה.
+
+== התמרת מלין של פונקציית ריס ==
+פונקציית ריס קשורה ל[[פונקציית זטא של רימן]] דרך [[התמרת מלין]] שלה. אם ניקח
+:<math>{\mathcal M}({\rm Riesz}(z)) = \int_0^\infty {\rm Riesz}(z) z^s \frac{dz}{z},</math>
+נראה שאם <math>\Re(s)>-1</math> אז האינטגרל <math>\int_0^1 {\rm Riesz}(z) z^s \frac{dz}{z}</math> מתכנס, ואילו מתנאי הגידול נובע שאם <math>\Re(s) < -\tfrac{1}{2}</math> אז <math>\int_1^\infty {\rm Riesz}(z) z^s \frac{dz}{z}</math> מתכנס. מכאן שהתמרת מלין של פונקציית ריס מוגדרת ברצועה <math>-1 < \Re(s) < -\tfrac12</math>, ובה
+:<math>{\mathcal M}({\rm Riesz}(z)) = \frac{\Gamma(s+1)}{\zeta(-2s)}.</math>
+מהתמרת מלין ההפוכה מתקבל ביטוי לפונקציית ריס:
+:<math>{\rm Riesz}(z) = \frac{1}{2\pi i}\int_{c - i \infty}^{c+i \infty} \frac{\Gamma(s+1)}{\zeta(-2s)} z^{-s} ds,</math>
+כאשר <math>c</math> בין <math>-1</math> ל-<math>-\tfrac12</math>. אם השערת רימן נכונה, אפשר להזיז את קו האינטגרציה לכל ערך הקטן מ-<math>-\tfrac14</math>, וכך מתקבלת השקילות בין קצב הגידול כשורש רביעי של פונקציית ריס לבין השערת רימן.
+
+== חישוב פונקציית ריס ==
+המקדמים בטור מקלורן של <math>F</math> גדלים בערכם המוחלט עד שהם מגיעים למקסימום באיבר ה-40, <math>-1.753\times 10^{17}</math>. עד האיבר ה-109 הם יורדים מתחת ל-1 בערכם המוחלט. 1000 האיברים הראשונים מספיקים לחישוב מדויק מאוד של <math>F(z)</math> עבור <math>|z| < 9</math>, אך לשם כך יש לחשב פולינום ממעלה 1000, באריתמטיקה רציונלית עם מקדמים בעלי מונים ומכנים גדולים, או בחישובי נקודה צפה של יותר מ-100 ספרות. אפשרות אחרת היא להשתמש בהתמרת מלין ההפוכה ולבצע אינטגרציה נומרית. אף אחת מהגישות אינה קלה חישובית.
+
+גישה נוספת היא האצת התכנסות. מאחר ש-<math>\zeta(2k)</math> שואף ל-1 כאשר <math>k</math> גדל, איברי הטור שואפים לאיברי
+:<math>\sum_{k=1}^\infty \frac{(-1)^{k+1}x^k}{(k-1)!} = x \exp(-x).</math>
+ואכן, ריס ציין ש-<math>\sum_{n=1}^\infty {\rm Riesz}(x/n^2) = x \exp(-x)</math>. שיטת קומר להאצת התכנסות נותנת
+:<math>{\rm Riesz}(x) = x \exp(-x) - \sum_{k=1}^\infty \left(\zeta(2k) -1\right) \left(\frac{(-1)^{k+1}}{(k-1)! \zeta(2k)}\right)x^k,</math>
+עם [[סדר התכנסות]] משופר. המשך התהליך נותן טור חדש לפונקציית ריס עם תכונות התכנסות טובות בהרבה:
+:<math>{\rm Riesz}(x) = \sum_{k=1}^\infty \frac{(-1)^{k+1}x^k}{(k-1)!} \left(\sum_{n=1}^\infty \mu(n)n^{-2k}\right) = x \sum_{n=1}^\infty \frac{\mu(n)}{n^2} \exp\left(-\frac{x}{n^2}\right),</math>
+כאשר <math>\mu</math> היא [[פונקציית מביוס]], ושינוי סדר האיברים מוצדק בזכות [[התכנסות בהחלט]]. הפעלה נוספת של שיטת קומר נותנת
+:<math>{\rm Riesz}(x) = x \left(\frac{6}{\pi^2} + \sum_{n=1}^\infty \frac{\mu(n)}{n^2}\left(\exp\left(-\frac{x}{n^2}\right) - 1\right)\right),</math>
+שאיבריו יורדים לבסוף כמו <math>n^{-4}</math>.
+
+הטורים שלעיל מתכנסים בהחלט בכל מקום, ולכן אפשר לגזור אותם איבר-איבר, וכך מתקבל ביטוי לנגזרת של פונקציית ריס:
+:<math>{\rm Riesz}'(x) = \frac{\text{Riesz}(x)}{x} + x\left(-\frac{90}{\pi^4} + \sum_{n=1}^\infty \frac{\mu(n)}{n^4} \left(1-\exp\left(-\frac{x}{n^2}\right)\right)\right).</math>
+
+מרק וולף הראה, בהנחת השערת רימן, שעבור <math>x</math> גדול{{הערה|1=M. Wolf, [https://web.archive.org/web/20110607143146/http://www.man.poznan.pl/cmst/2008/v_14_1/cmst_47-54a.pdf Evidence in favor of the Baez-Duarte criterion for the Riemann Hypothesis], Computational Methods in Science and Technology 14, 2008, עמ' 47–54|כיווון=שמאל}}
+:<math>{\rm Riesz}(x) \sim K x^{1/4} \sin\left(\phi-\frac{1}{2}\gamma_1\log(x)\right),</math>
+כאשר <math>\gamma_1=14.13472514\ldots</math> הוא החלק המדומה של האפס הלא טריוויאלי הראשון של פונקציית זטא, <math>K = 7.7750627\ldots\times 10^{-5}</math> ו-<math>\phi=-0.54916\ldots</math>. הדבר מתיישב עם המשפטים הכלליים על אפסי פונקציית ריס שהוכיח הרברט וילף ב-1964{{הערה|1=H. Wilf, [https://www2.math.upenn.edu/~wilf/website/RieszFunction.pdf On the zeros of Riesz' function in the analytic theory of numbers], Illinois J. Math. 8, 1964, עמ' 639–641|כיווון=שמאל}}.
+
+== קריטריון הארדי-ליטלווד ==
+[[גודפרי הרולד הארדי]] ו[[ג'ון אדנזור ליטלווד]]{{הערה|1=G. H. Hardy, J. E. Littlewood, [https://doi.org/10.1007/BF02422942 Contributions to the theory of the riemann zeta-function and the theory of the distribution of primes], Acta Mathematica 41, 1916, עמ' 119–196|כיווון=שמאל}}{{הערה|1=Atul Dixit, Arindam Roy, Alexandru Zaharescu, [https://doi.org/10.1016/j.jnt.2015.08.005 Riesz-type criteria and theta transformation analogues], Journal of Number Theory 160, 2016, עמ' 385–408|כיווון=שמאל}} הוכיחו, בשיטות דומות, שהשערת רימן שקולה לטענה שלכל מעריך <math>e</math> הגדול מ-<math>-1/4</math>
+:<math>\sum_{k=1}^\infty \frac{(-x)^k}{k! \zeta(2k+1)} = O(x^{e})\qquad (x\to\infty).</math>
+
+== ראו גם ==
+* [[השערת רימן]]
+* [[פונקציית מרטנס]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* E. C. Titchmarsh, ''The Theory of the Riemann Zeta Function'', 2nd ed. (Heath-Brown), Oxford University Press, 1986, Section 14.32
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:השערת רימן]]

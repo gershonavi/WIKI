@@ -1,0 +1,155 @@
+ב[[תורת המספרים]], '''סכום רמנוג'אן''' (ב[[אנגלית]]: Ramanujan's sum), המסומן בדרך כלל <math>c_q(n)</math>, הוא פונקציה של שני משתנים שלמים חיוביים <math>q</math> ו-<math>n</math>, המוגדרת על ידי
+:<math>c_q(n) = \sum_{1 \le a \leq q \atop (a,q)=1} e^{2 \pi i \tfrac{a}{q} n},</math>
+כאשר התנאי <math>(a, q) = 1</math> פירושו ש-<math>a</math> מקבל רק ערכים [[מספרים זרים|זרים]] ל-<math>q</math>.
+
+[[סריניוואסה רמנוג'אן]] עסק בסכומים אלה במאמר משנת 1918, שבו ציין שאף שתכונות אחדות שלהם כבר נדונו, לדעתו לא נחקרו עד אז מנקודת המבט שבה הוא נקט{{הערה|1=Ramanujan, ''On Certain Trigonometric Sums and their Applications in the Theory of Numbers'' (''Collected Papers'', עמ' 179).|כיווון=שמאל}}. מלבד הפיתוחים המתוארים בערך זה, סכומי רמנוג'אן משמשים בהוכחת [[השערת גולדבך החלשה|משפט וינוגרדוב]], שלפיו כל מספר אי-זוגי גדול דיו הוא סכום של שלושה [[מספר ראשוני|מספרים ראשוניים]]{{הערה|1=Nathanson, פרק 8.|כיווון=שמאל}}.
+
+הערך <math>c_q(n)</math> הוא תמיד מספר שלם.
+
+== סימונים ==
+* עבור שלמים <math>a</math> ו-<math>b</math>, הסימון <math>a\mid b</math> פירושו "<math>a</math> מחלק את <math>b</math>", והסימון <math>a\nmid b</math> פירושו "<math>a</math> אינו מחלק את <math>b</math>". הסכום <math>\sum_{d\mid m}f(d)</math> עובר על כל המחלקים החיוביים <math>d</math> של <math>m</math>.
+* <math>(a,b)</math> הוא ה[[מחלק משותף מקסימלי|מחלק המשותף המקסימלי]].
+* <math>\phi(n)</math> היא [[פונקציית אוילר]], <math>\mu(n)</math> היא [[פונקציית מביוס]], ו-<math>\zeta(s)</math> היא [[פונקציית זטא של רימן]].
+
+== נוסחאות ל-c<sub>q</sub>(n) ==
+=== טריגונומטריה ===
+מההגדרה, מ[[נוסחת אוילר (אנליזה מרוכבת)|נוסחת אוילר]] <math>e^{ix}= \cos x + i \sin x</math> ומזהויות טריגונומטריות פשוטות מתקבל:
+:<math>\begin{align}
+c_1(n) &= 1 \\
+c_2(n) &= \cos n\pi \\
+c_3(n) &= 2\cos \tfrac23 n\pi \\
+c_4(n) &= 2\cos \tfrac12 n\pi \\
+c_5(n) &= 2\cos \tfrac25 n\pi + 2\cos \tfrac45 n\pi \\
+c_6(n) &= 2\cos \tfrac13 n\pi \\
+c_7(n) &= 2\cos \tfrac27 n\pi + 2\cos \tfrac47 n\pi + 2\cos \tfrac67 n\pi \\
+c_8(n) &= 2\cos \tfrac14 n\pi + 2\cos \tfrac34 n\pi \\
+c_9(n) &= 2\cos \tfrac29 n\pi + 2\cos \tfrac49 n\pi + 2\cos \tfrac89 n\pi \\
+c_{10}(n)&= 2\cos \tfrac15 n\pi + 2\cos \tfrac35 n\pi
+\end{align}</math>
+וכן הלאה.
+
+=== נוסחת קלויבר ===
+יהי <math>\zeta_q=e^{\frac{2\pi i}{q}}</math>. זהו שורש של המשוואה <math>x^q - 1 = 0</math>, וגם כל אחת מחזקותיו <math>\zeta_q, \zeta_q^2, \ldots, \zeta_q^{q-1}, \zeta_q^q =1</math> היא שורש שלה; מאחר שיש <math>q</math> חזקות כאלה, הן כל השורשים. המספרים <math>\zeta_q^n</math>, ‏<math>1 \le n \le q</math>, הם [[שורש יחידה|שורשי היחידה]] מסדר <math>q</math>. השורש <math>\zeta_q</math> נקרא שורש יחידה '''פרימיטיבי''' מסדר <math>q</math>, משום שהערך הקטן ביותר של <math>n</math> שעבורו <math>\zeta_q^n =1</math> הוא <math>q</math>. שאר שורשי היחידה הפרימיטיביים מסדר <math>q</math> הם המספרים <math>\zeta_q^a</math> עם <math>(a, q) = 1</math>, ולכן יש <math>\phi(q)</math> כאלה.
+
+לפיכך סכום רמנוג'אן <math>c_q(n)</math> הוא סכום החזקות ה-<math>n</math>-יות של שורשי היחידה הפרימיטיביים מסדר <math>q</math>.
+
+חזקות <math>\zeta_q</math> הן בדיוק השורשים הפרימיטיביים מכל הסדרים <math>d</math> המחלקים את <math>q</math>{{הערה|1=Hardy & Wright, משפטים 65, 66.|כיווון=שמאל}}. לכן, אם
+:<math>\eta_q(n) = \sum_{k=1}^q \zeta_q^{kn}</math>
+הוא סכום החזקות ה-<math>n</math>-יות של כל השורשים, פרימיטיביים ושאינם פרימיטיביים, אז
+:<math>\eta_q(n) = \sum_{d\mid q} c_d(n),</math>
+ולפי [[נוסחת ההיפוך של מביוס]]
+:<math>c_q(n) = \sum_{d\mid q} \mu\left(\frac{q}d\right)\eta_d(n).</math>
+מהזהות <math>x^q - 1 = (x - 1)(x^{q-1} + x^{q-2} + \cdots + x + 1)</math> נובע ש-
+:<math>\eta_q(n) = \begin{cases} 0 & q\nmid n\\ q & q\mid n \end{cases}</math>
+ומכאן הנוסחה
+:<math>c_q(n)=\sum_{d\mid (q,n)} \mu\left(\frac{q}{d}\right) d,</math>
+שפרסם קלויבר (Kluyver) ב-1906{{הערה|1=G. H. Hardy, P. V. Seshu Aiyar, B. M. Wilson, הערות ל-''On certain trigonometrical sums'', אצל Ramanujan, ''Collected Papers'', עמ' 343.|כיווון=שמאל}}. נוסחה זו מראה ש-<math>c_q(n)</math> הוא תמיד מספר שלם. השוו לנוסחה
+:<math>\phi(q)=\sum_{d \mid q}\mu\left(\frac{q}{d}\right) d.</math>
+
+=== נוסחת פון שטרנק ===
+מההגדרה קל להראות ש-<math>c_q(n)</math>, כפונקציה של <math>q</math> עבור <math>n</math> קבוע, היא [[פונקציה כפלית]]{{הערה|1=Schwarz & Spilker (1994), עמ' 16.|כיווון=שמאל}}:
+:<math>(q,r) = 1 \implies c_q(n)c_r(n)=c_{qr}(n).</math>
+מההגדרה (או מנוסחת קלויבר) נובע בקלות שאם <math>p</math> ראשוני, אז
+:<math>c_p(n) = \begin{cases} -1 & p\nmid n\\ \phi(p)& p\mid n \end{cases}</math>
+ואם <math>p^k</math> היא חזקה של ראשוני עם <math>k > 1</math>, אז
+:<math>c_{p^k}(n) = \begin{cases} 0 & p^{k-1}\nmid n\\ -p^{k-1} & p^{k-1}\mid n,\ p^k\nmid n\\ \phi(p^k) & p^k\mid n. \end{cases}</math>
+בעזרת תוצאה זו והכפליות אפשר להוכיח ש-
+:<math>c_q(n)= \mu\left(\frac{q}{(q, n)}\right)\frac{\phi(q)}{\phi\left(\frac{q}{(q, n)}\right)}.</math>
+זוהי הפונקציה האריתמטית של פון שטרנק (von Sterneck){{הערה|1=B. Berndt, פרשנות ל-''On certain trigonometrical sums'', אצל Ramanujan, ''Collected Papers'', עמ' 371.|כיווון=שמאל}}. את השקילות בינה לבין סכום רמנוג'אן הראה הלדר{{הערה|1=Knopfmacher, עמ' 196; Hardy & Wright, עמ' 243.|כיווון=שמאל}}.
+
+=== תכונות נוספות ===
+לכל מספר שלם חיובי <math>q</math>:
+:<math>\begin{align}
+c_1(q) &= 1 \\
+c_q(1) &= \mu(q) \\
+c_q(q) &= \phi(q) \\
+c_q(m) &= c_q(n) && m \equiv n \pmod q
+\end{align}</math>
+עבור <math>q</math> קבוע, ה[[ערך מוחלט|ערכים המוחלטים]] של הסדרה <math>c_q(1), c_q(2), \ldots</math> חסומים על ידי <math>\phi(q)</math>, ועבור <math>n</math> קבוע, הערכים המוחלטים של הסדרה <math>c_1(n), c_2(n), \ldots</math> חסומים על ידי <math>n</math>.
+
+אם <math>q > 1</math>, אז <math>\sum_{n=a}^{a+q-1} c_q(n)=0</math>.
+
+יהיו <math>m_1, m_2 > 0</math> ו-<math>m = \operatorname{lcm}(m_1, m_2)</math>. סכומי רמנוג'אן מקיימים תכונת [[אורתוגונליות]]{{הערה|שם=toth|1=László Tóth, Sums of products of Ramanujan sums, Annali dell'Università di Ferrara 58, 2011, עמ' 183–197, [https://arxiv.org/abs/1104.1906 arXiv:1104.1906]|כיווון=שמאל}}:
+:<math>\frac{1}{m}\sum_{k=1}^m c_{m_1}(k) c_{m_2}(k) = \begin{cases} \phi(m) & m_1=m_2=m,\\ 0 & \text{otherwise.} \end{cases}</math>
+עבור <math>n, k > 0</math> מתקיימת זהות בראואר-רדמאכר{{הערה|שם=toth}}:
+:<math>\sum_{\stackrel{d\mid n}{\gcd(d,k)=1}} d\;\frac{\mu(n/d)}{\phi(d)} =\frac{\mu(n) c_n(k)}{\phi(n)}.</math>
+אם <math>n > 0</math> ו-<math>a</math> שלם כלשהו, מתקיימת גם זהותו של כהן{{הערה|שם=toth}}:
+:<math>\sum_{\stackrel{1\le k\le n}{\gcd(k,n)=1}} c_n(k-a) = \mu(n)c_n(a).</math>
+
+== פיתוחי רמנוג'אן ==
+אם <math>f(n)</math> היא [[פונקציה אריתמטית]], טור אינסופי מתכנס מהצורה
+:<math>f(n)=\sum_{q=1}^\infty a_q c_q(n)</math>
+או מהצורה
+:<math>f(q)=\sum_{n=1}^\infty a_n c_q(n),</math>
+כאשר <math>a_k</math> מספרים מרוכבים, נקרא '''פיתוח רמנוג'אן''' של <math>f(n)</math>{{הערה|1=B. Berndt, פרשנות ל-''On certain trigonometrical sums'', אצל Ramanujan, ''Collected Papers'', עמ' 369–371.|כיווון=שמאל}}.
+
+רמנוג'אן מצא פיתוחים של כמה מהפונקציות הידועות של תורת המספרים. את כל התוצאות הוא הוכיח באופן "אלמנטרי", כלומר רק בעזרת מניפולציות פורמליות בטורים ותוצאות פשוטות על התכנסות. הפיתוח של '''פונקציית האפס''' מסתמך על תוצאה מהתורה האנליטית של המספרים הראשוניים, שלפיה הטור <math>\sum_{n=1}^\infty\frac{\mu(n)}{n}</math> מתכנס ל-0. כל הנוסחאות בפרק זה לקוחות ממאמרו של רמנוג'אן משנת 1918.
+
+=== פונקציות יוצרות ===
+הפונקציות היוצרות של סכומי רמנוג'אן הן [[טור דיריכלה|טורי דיריכלה]]:
+:<math>\zeta(s) \sum_{\delta\mid q} \mu\left(\frac{q}{\delta}\right) \delta^{1-s} = \sum_{n=1}^\infty \frac{c_q(n)}{n^s}</math>
+היא פונקציה יוצרת של הסדרה <math>c_q(1), c_q(2), \ldots</math> עבור <math>q</math> קבוע, ו-
+:<math>\frac{\sigma_{r-1}(n)}{n^{r-1}\zeta(r)}= \sum_{q=1}^\infty \frac{c_q(n)}{q^{r}}</math>
+היא פונקציה יוצרת של הסדרה <math>c_1(n), c_2(n), \ldots</math> עבור <math>n</math> קבוע. קיים גם טור הדיריכלה הכפול
+:<math>\frac{\zeta(s) \zeta(r+s-1)}{\zeta(r)}= \sum_{q=1}^\infty \sum_{n=1}^\infty \frac{c_q(n)}{q^r n^s}.</math>
+את הפולינום שמקדמיו הם סכומי רמנוג'אן אפשר לבטא בעזרת [[פולינום ציקלוטומי|פולינומים ציקלוטומיים]]{{הערה|1=C. A. Nicol, [https://doi.org/10.4153/CJM-1962-019-8 Some formulas involving Ramanujan sums], Can. J. Math. 14, 1962, עמ' 284–286|כיווון=שמאל}}:
+:<math>\sum_{n=1}^q c_q(n) x^{n-1} = (x^q - 1) \frac{\Phi_q'(x)}{\Phi_q(x)} = \Phi_q'(x) \prod_{d \mid q,\ d \neq q} \Phi_d(x).</math>
+
+=== פונקציות המחלקים ===
+<math>\sigma_k(n)</math> היא [[פונקציית מחלקים|פונקציית המחלקים]], כלומר סכום החזקות ה-<math>k</math>-יות של המחלקים של <math>n</math>. אם <math>s > 0</math>:
+:<math>\begin{align}
+\sigma_s(n) &= n^s \zeta(s+1) \left(\frac{c_1(n)}{1^{s+1}}+ \frac{c_2(n)}{2^{s+1}}+ \frac{c_3(n)}{3^{s+1}}+\cdots\right) \\
+\sigma_{-s}(n) &=\zeta(s+1)\left(\frac{c_1(n)}{1^{s+1}}+\frac{c_2(n)}{2^{s+1}}+\frac{c_3(n)}{3^{s+1}}+\cdots\right)
+\end{align}</math>
+עבור <math>s = 1</math> מתקבל
+:<math>\sigma(n)= \frac{\pi^2}{6}n \left(\frac{c_1(n)}{1}+ \frac{c_2(n)}{4}+ \frac{c_3(n)}{9}+ \cdots \right).</math>
+עבור <math>d(n)=\sigma_0(n)</math>, מספר המחלקים של <math>n</math>:
+:<math>\begin{align}
+-d(n) &= \frac{\log 1}{1}c_1(n)+ \frac{\log 2}{2}c_2(n)+ \frac{\log 3}{3}c_3(n)+ \cdots \\
+-d(n)(2\gamma+\log n) &= \frac{\log^2 1}{1}c_1(n)+ \frac{\log^2 2}{2}c_2(n)+ \frac{\log^2 3}{3}c_3(n)+ \cdots
+\end{align}</math>
+כאשר <math>\gamma = 0.5772\ldots</math> הוא [[קבוע אוילר-מסקרוני]].
+
+=== פונקציית אוילר ===
+רמנוג'אן הגדיר הכללה של פונקציית אוילר: אם <math>n=p_1^{a_1}p_2^{a_2}\cdots</math> ו-<math>s</math> מספר מרוכב,
+:<math>\varphi_s(n)=n^s(1-p_1^{-s})(1-p_2^{-s})\cdots,</math>
+כך ש-<math>\varphi_1(n) = \varphi(n)</math> (זוהי [[פונקציית ז'ורדן]] <math>J_s(n)</math>). הוא הראה ש-
+:<math>\frac{\varphi_s(n)\zeta(s+1)}{n^s}=\frac{\mu(1)c_1(n)}{\varphi_{s+1}(1)}+\frac{\mu(2)c_2(n)}{\varphi_{s+1}(2)}+\frac{\mu(3)c_3(n)}{\varphi_{s+1}(3)}+\cdots,</math>
+ועבור <math>s = 1</math>:
+:<math>\varphi(n) = \frac{6}{\pi^2}n \left(c_1(n) -\frac{c_2(n)}{2^2-1} -\frac{c_3(n)}{3^2-1} -\frac{c_5(n)}{5^2-1}+\frac{c_6(n)}{(2^2-1)(3^2-1)} - \cdots \right).</math>
+הקבוע כאן הוא ההופכי של הקבוע שבנוסחה ל-<math>\sigma(n)</math>.
+
+=== פונקציית פון מנגולדט ואפס ===
+פונקציית פון מנגולדט <math>\Lambda(n)</math> שווה ל-0, אלא אם <math>n = p^k</math> הוא חזקה של ראשוני, ואז היא שווה ל[[לוגריתם טבעי|לוגריתם הטבעי]] <math>\log p</math>. עבור <math>m > 1</math>:
+:<math>-\Lambda(m) = c_m(1)+ \frac{1}{2} c_m(2)+ \frac13c_m(3)+\cdots</math>
+לכל <math>n > 0</math>:
+:<math>0= c_1(n)+ \frac12c_2(n)+ \frac13c_3(n)+ \cdots.</math>
+טענה זו שקולה ל[[משפט המספרים הראשוניים]]{{הערה|1=Hardy, ''Ramanujan'', עמ' 141.|כיווון=שמאל}}.
+
+=== סכומי ריבועים ===
+<math>r_{2s}(n)</math> הוא מספר הדרכים להציג את <math>n</math> כסכום של <math>2s</math> [[מספר ריבועי|ריבועים]], כאשר סדר שונה וסימנים שונים נחשבים שונים (לדוגמה, <math>r_2(13) = 8</math>). רמנוג'אן הוכיח, במאמר קודם{{הערה|1=Ramanujan, ''On Certain Arithmetical Functions'', 1916.|כיווון=שמאל}}, נוסחאות שמהן נובע:
+:<math>\begin{align}
+r_2(n) &= \pi \left(\frac{c_1(n)}{1}- \frac{c_3(n)}{3}+ \frac{c_5(n)}{5}- \frac{c_7(n)}{7}+ \cdots \right) \\
+r_4(n) &= \pi^2 n \left( \frac{c_1(n)}{1}- \frac{c_4(n)}{4}+ \frac{c_3(n)}{9}- \frac{c_8(n)}{16}+ \frac{c_5(n)}{25}- \cdots \right) \\
+r_6(n) &= \frac{\pi^3 n^2}{2} \left( \frac{c_1(n)}{1}- \frac{c_4(n)}{8}- \frac{c_3(n)}{27}- \frac{c_8(n)}{64}+ \frac{c_5(n)}{125}- \cdots \right) \\
+r_8(n) &= \frac{\pi^4 n^3}{6} \left(\frac{c_1(n)}{1}+ \frac{c_4(n)}{16}+ \frac{c_3(n)}{81}+ \frac{c_8(n)}{256}+ \frac{c_5(n)}{625}+ \cdots \right)
+\end{align}</math>
+עבור <math>2s > 8</math> הוא הראה שביטויים דומים נותנים קירוב טוב ל-<math>r_{2s}(n)</math>. ניתוח דומה קיים גם למספר ההצגות של <math>n</math> כסכום של <math>2s</math> [[מספר משולשי|מספרים משולשיים]].
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. H. Hardy, ''Ramanujan: Twelve Lectures on Subjects Suggested by his Life and Work'', AMS / Chelsea, Providence RI, 1999
+* G. H. Hardy, E. M. Wright, ''An Introduction to the Theory of Numbers'', 5th ed.
+* John Knopfmacher, ''Abstract Analytic Number Theory'', 2nd ed., Dover, New York, 1990
+* Melvyn B. Nathanson, ''Additive Number Theory: the Classical Bases'', Graduate Texts in Mathematics 164, Springer-Verlag, 1996, Section A.7
+* Srinivasa Ramanujan, On Certain Trigonometric Sums and their Applications in the Theory of Numbers, Transactions of the Cambridge Philosophical Society 22 (15), 1918, pp. 259–276
+* Srinivasa Ramanujan, On Certain Arithmetical Functions, Transactions of the Cambridge Philosophical Society 22 (9), 1916, pp. 159–184
+* Srinivasa Ramanujan, ''Collected Papers'', AMS / Chelsea, Providence RI, 2000
+* Wolfgang Schwarz, Jürgen Spilker, ''Arithmetical Functions'', London Mathematical Society Lecture Note Series 184, Cambridge University Press, 1994
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]
+[[קטגוריה:סריניוואסה רמנוג'אן]]

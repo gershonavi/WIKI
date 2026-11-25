@@ -1,0 +1,73 @@
+'''משפט ליניק''' (ב[[אנגלית]]: Linnik's theorem) ב[[תורת המספרים האנליטית]] עונה על שאלה טבעית העולה מ[[משפט דיריכלה]] על סדרות חשבוניות. המשפט קובע שקיימים קבועים חיוביים <math>c</math> ו-<math>L</math> כך שאם נסמן ב-<math>p(a,d)</math> את הראשוני הקטן ביותר בסדרה החשבונית
+:<math>a + nd,</math>
+כאשר <math>n</math> עובר על המספרים השלמים החיוביים, ו-<math>a</math> ו-<math>d</math> הם מספרים שלמים חיוביים [[מספרים זרים|זרים]] כלשהם עם <math>1 \le a \le d - 1</math>, אז:
+:<math>p(a,d) < c\, d^{L}.</math>
+
+המשפט קרוי על שם [[יורי ליניק]], ש[[הוכחה|הוכיח]] אותו ב-1944{{הערה|1=Yu. V. Linnik, On the least prime in an arithmetic progression I. The basic theorem, Rec. Math. (Mat. Sbornik), Nouvelle Série 15 (57), 1944, עמ' 139–178|כיווון=שמאל}}{{הערה|1=Yu. V. Linnik, On the least prime in an arithmetic progression II. The Deuring-Heilbronn phenomenon, Rec. Math. (Mat. Sbornik), Nouvelle Série 15 (57), 1944, עמ' 347–368|כיווון=שמאל}}. אף שההוכחה של ליניק הראתה שאפשר לחשב את <math>c</math> ואת <math>L</math> באופן אפקטיבי, הוא לא נתן להם ערכים מספריים.
+
+ממשפט ז'יגמונדי נובע ש-<math>p(1,d) \le 2^d - 1</math> לכל <math>d \ge 3</math>. ידוע גם ש-<math>p(1,p) \le L_p</math> לכל ראשוני <math>p \ge 5</math>, משום ש-<math>L_p</math> [[חשבון מודולרי|שקול]] ל-1 מודולו <math>p</math> לכל ראשוני <math>p</math>, כאשר <math>L_p</math> הוא מספר לוקאס ה-<math>p</math>-י (ראו [[סדרת לוקאס]]). בדומה ל[[מספר מרסן|מספרי מרסן]], למספרי לוקאס עם אינדקס ראשוני יש [[מחלק|מחלקים]] מהצורה <math>2kp+1</math>.
+
+== תכונות ==
+ידוע ש-<math>L \le 2</math> עבור [[כמעט כל (מתמטיקה)|כמעט כל]] המספרים השלמים <math>d</math>{{הערה|1=Enrico Bombieri, John B. Friedlander, Henryk Iwaniec, [https://doi.org/10.2307/1990976 Primes in Arithmetic Progressions to Large Moduli. III], Journal of the American Mathematical Society 2 (2), 1989, עמ' 215–224|כיווון=שמאל}}.
+
+בהנחת [[השערת רימן המוכללת]] אפשר להראות ש-
+:<math>p(a,d) \leq (1+o(1))\varphi(d)^2 (\log d)^2,</math>
+כאשר <math>\varphi</math> היא [[פונקציית אוילר]]{{הערה|שם=hb}}, והוכח גם החסם החזק יותר{{הערה|1=Y. Lamzouri, X. Li, K. Soundararajan, [https://doi.org/10.1090/S0025-5718-2015-02925-1 Conditional bounds for the least quadratic non-residue and related problems], Math. Comp. 84 (295), 2015, עמ' 2391–2412|כיווון=שמאל}}
+:<math>p(a,d) \leq \varphi(d)^2 (\log d)^2.</math>
+משערים גם ש-
+:<math>p(a,d) < d^2.</math>{{הערה|שם=hb}}
+
+== חסמים ל-L ==
+הקבוע <math>L</math> נקרא '''קבוע ליניק'''{{הערה|1=Richard K. Guy, ''Unsolved problems in number theory'', Vol. 1, 3rd ed., Springer-Verlag, New York, 2004, עמ' 22|כיווון=שמאל}}, והטבלה הבאה מציגה את ההתקדמות בקביעת גודלו.
+
+{| class="wikitable" style="text-align:center"
+! <math>L \le</math> !! שנת פרסום !! מחבר
+|-
+| 10000 || 1957 || פאן צ'נגדונג{{הערה|1=Cheng Dong Pan, On the least prime in an arithmetical progression, Sci. Record, New Series 1, 1957, עמ' 311–313|כיווון=שמאל}}
+|-
+| 5448 || 1958 || פאן
+|-
+| 777 || 1965 || [[צ'ן ג'ינגרון]]{{הערה|1=Jingrun Chen, On the least prime in an arithmetical progression, Sci. Sinica 14, 1965, עמ' 1868–1871|כיווון=שמאל}}
+|-
+| 630 || 1971 || מאטי יוטילה
+|-
+| 550 || 1970 || יוטילה{{הערה|1=Matti Jutila, A new estimate for Linnik's constant, Ann. Acad. Sci. Fenn. Ser. A 471, 1970|כיווון=שמאל}}
+|-
+| 168 || 1977 || צ'ן{{הערה|1=Jingrun Chen, On the least prime in an arithmetical progression and two theorems concerning the zeros of Dirichlet's L-functions, Sci. Sinica 20 (5), 1977, עמ' 529–562|כיווון=שמאל}}
+|-
+| 80 || 1977 || יוטילה{{הערה|1=Matti Jutila, [https://doi.org/10.7146/math.scand.a-11701 On Linnik's constant], Math. Scand. 41 (1), 1977, עמ' 45–62|כיווון=שמאל}}
+|-
+| 36 || 1977 || סידני גרהם{{הערה|1=Sidney West Graham, ''Applications of sieve methods'', Ph.D. thesis, Univ. Michigan, Ann Arbor, 1977|כיווון=שמאל}}
+|-
+| 20 || 1981 || גרהם{{הערה|1=S. W. Graham, [https://doi.org/10.4064/aa-39-2-163-179 On Linnik's constant], Acta Arith. 39 (2), 1981, עמ' 163–179|כיווון=שמאל}} (הוגש לפני מאמרו של צ'ן מ-1979)
+|-
+| 17 || 1979 || צ'ן{{הערה|1=Jingrun Chen, On the least prime in an arithmetical progression and theorems concerning the zeros of Dirichlet's L-functions. II, Sci. Sinica 22 (8), 1979, עמ' 859–889|כיווון=שמאל}}
+|-
+| 16 || 1986 || ואנג
+|-
+| 13.5 || 1989 || צ'ן וליו ג'יאן-מין{{הערה|1=Jingrun Chen, Jian Min Liu, On the least prime in an arithmetical progression. III, Science in China Series A 32 (6), 1989, עמ' 654–673; IV, שם, 32 (7), 1989, עמ' 792–807|כיווון=שמאל}}
+|-
+| 8 || 1990 || ואנג{{הערה|1=Wei Wang, [https://doi.org/10.1007/BF02583005 On the least prime in an arithmetical progression], Acta Mathematica Sinica, New Series 7 (3), 1991, עמ' 279–288|כיווון=שמאל}}
+|-
+| 5.5 || 1992 || רוג'ר הית'-בראון{{הערה|שם=hb|1=Roger Heath-Brown, [https://doi.org/10.1112/plms/s3-64.2.265 Zero-free regions for Dirichlet L-functions, and the least prime in an arithmetic progression], Proc. London Math. Soc. 64 (3), 1992, עמ' 265–338|כיווון=שמאל}}
+|-
+| 5.18 || 2009 || קסילוריס{{הערה|1=Triantafyllos Xylouris, [https://doi.org/10.4064/aa150-1-4 On Linnik's constant], Acta Arith. 150 (1), 2011, עמ' 65–91|כיווון=שמאל}}
+|-
+| 5 || 2011 || קסילוריס{{הערה|1=Triantafyllos Xylouris, ''Über die Nullstellen der Dirichletschen L-Funktionen und die kleinste Primzahl in einer arithmetischen Progression'', Dissertation, Universität Bonn, 2011|כיווון=שמאל}}
+|-
+| <math>5 - \varepsilon</math> || 2018 || קסילוריס{{הערה|1=[https://www.chebsbornik.ru/jour/article/view/507 Linniks Konstante ist kleiner als 5]|כיווון=שמאל}}
+|}
+
+בתוצאה של הית'-בראון גם הקבוע <math>c</math> ניתן לחישוב אפקטיבי.
+
+== ראו גם ==
+* [[משפט דיריכלה]]
+* [[אפס זיגל]]
+* [[משפט זיגל-ולפיש]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:מספרים ראשוניים]]

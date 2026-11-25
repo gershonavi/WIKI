@@ -1,0 +1,29 @@
+ב[[תורת המספרים]], '''סדר נורמלי של פונקציה אריתמטית''' (ב[[אנגלית]]: Normal order of an arithmetic function) הוא פונקציה פשוטה יותר, או מובנת יותר, שמקבלת "בדרך כלל" ערכים זהים או קרובים לערכי ה[[פונקציה אריתמטית|פונקציה האריתמטית]].
+
+תהי <math>f</math> פונקציה על ה[[מספר טבעי|מספרים הטבעיים]]. אומרים ש-<math>g</math> היא '''סדר נורמלי''' של <math>f</math> אם לכל <math>\varepsilon > 0</math> אי-השוויונים
+:<math>(1-\varepsilon) g(n) \le f(n) \le (1+\varepsilon) g(n)</math>
+מתקיימים עבור [[כמעט כל (מתמטיקה)|כמעט כל]] <math>n</math>: כלומר, היחס של המספרים <math>n \le x</math> שעבורם הם אינם מתקיימים שואף ל-0 כאשר <math>x</math> שואף לאינסוף.
+
+מקובל להניח שהפונקציה המקרבת <math>g</math> [[פונקציה רציפה|רציפה]] ו[[פונקציה מונוטונית|מונוטונית]].
+
+== דוגמאות ==
+* [[משפט הארדי-רמנוג'אן]]: הסדר הנורמלי של <math>\omega(n)</math>, מספר הגורמים הראשוניים השונים של <math>n</math>, הוא <math>\log\log n</math>.
+* הסדר הנורמלי של <math>\Omega(n)</math>, מספר הגורמים הראשוניים של <math>n</math> כשהם נספרים עם ריבוי, הוא <math>\log\log n</math> (ראו [[פונקציות אומגה ראשוניות]]).
+* הסדר הנורמלי של <math>\log d(n)</math>, כאשר <math>d(n)</math> הוא מספר המחלקים של <math>n</math>, הוא <math>\log 2 \cdot \log\log n</math>.
+
+== ראו גם ==
+* [[פונקציית מחלקים]]
+* [[משפט ארדש-קאץ]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. H. Hardy, S. Ramanujan, [http://www.imsc.res.in/~rao/ramanujan/CamUnivCpapers/Cpaper35/page1.htm The normal number of prime factors of a number n], Quart. J. Math. 48, 1917, pp. 76–92
+* G. H. Hardy, E. M. Wright, ''An Introduction to the Theory of Numbers'', p. 473
+* Jozsef Sándor, Borislav Crstici, ''Handbook of number theory II'', Kluwer Academic, Dordrecht, 2004, p. 332
+* Gérald Tenenbaum, ''Introduction to Analytic and Probabilistic Number Theory'', Cambridge studies in advanced mathematics 46, Cambridge University Press, 1995, pp. 299–324
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://mathworld.wolfram.com/NormalOrder.html Normal Order], באתר MathWorld
+
+[[קטגוריה:פונקציות אריתמטיות]]

@@ -1,0 +1,89 @@
+ב[[מתמטיקה]], '''השערת לינדלף''' היא השערה של המתמטיקאי הפיני ארנסט לינדלף{{הערה|שם=Lindelof|1=Lindelöf, Ernst (1908). "Quelques remarques sur la croissance de la fonction ζ(''s'')". ''Bull. Sci. Math.'' '''32''': 341–356.|כיוון=שמאל}} על קצב הגידול של [[פונקציית זטא של רימן]] על הישר הקריטי. ההשערה נובעת מ[[השערת רימן]]. היא קובעת שלכל <math>\varepsilon > 0</math>,
+:<math>\zeta\!\left(\frac{1}{2} + it\right) = O(t^\varepsilon)</math>
+כאשר <math>t</math> שואף לאינסוף (ראו [[סימון אסימפטוטי]]). מכיוון שאפשר להחליף את <math>\varepsilon</math> בערך קטן יותר, אפשר לנסח את ההשערה גם כך: לכל <math>\varepsilon</math> חיובי,
+:<math>\zeta\!\left(\frac{1}{2} + it\right) = o(t^\varepsilon).</math>
+
+== הפונקציה μ ==
+עבור <math>\sigma</math> ממשי, מגדירים את <math>\mu(\sigma)</math> כ[[אינפימום וסופרמום|אינפימום]] של כל המספרים הממשיים <math>a</math> שעבורם <math>\zeta(\sigma + iT) = O(T^a)</math>. קל לבדוק ש-<math>\mu(\sigma) = 0</math> עבור <math>\sigma > 1</math>, ומהמשוואה הפונקציונלית של פונקציית זטא נובע ש-<math>\mu(\sigma) = \mu(1-\sigma) - \sigma + 1/2</math>. ממשפט פראגמן-לינדלף נובע ש-<math>\mu</math> היא פונקציה קמורה. השערת לינדלף קובעת ש-<math>\mu(1/2) = 0</math>, ויחד עם התכונות הקודמות נובע מכך ש-<math>\mu(\sigma)</math> שווה ל-0 עבור <math>\sigma \ge 1/2</math> ול-<math>1/2 - \sigma</math> עבור <math>\sigma \le 1/2</math>.
+
+תוצאת הקמירות של לינדלף, יחד עם <math>\mu(1) = 0</math> ו-<math>\mu(0) = 1/2</math>, גוררת ש-<math>0 \le \mu(1/2) \le 1/4</math>. את החסם העליון 1/4 הורידו הארדי וליטלווד ל-1/6, כשהפעילו את שיטתו של הרמן וייל להערכת סכומים אקספוננציאליים על המשוואה הפונקציונלית המקורבת. מאז הורידו כמה חוקרים את החסם למעט פחות מ-1/6, בהוכחות ארוכות וטכניות, כמפורט בטבלה:
+{| class="wikitable"
+! חסם עליון ל-<math>\mu(1/2)</math> !! ערך עשרוני !! החוקרים והשנה
+|-
+| 1/4 || 0.25 || לינדלף 1908{{הערה|שם=Lindelof}} (חסם הקמירות)
+|-
+| 1/6 || 0.1667 || הארדי וליטלווד 1916, 1923{{הערה|שם=HL1916|1=Hardy, G. H.; Littlewood, J. E. (1916). "Contributions to the theory of the Riemann zeta-function and the theory of the distribution of primes". ''Acta Mathematica''. '''41''': 119–196. [https://doi.org/10.1007/BF02422942 doi:10.1007/BF02422942].|כיוון=שמאל}}
+|-
+| 163/988 || 0.1650 || ולפיש 1924
+|-
+| 27/164 || 0.1647 || טיצ'מרש 1932
+|-
+| 229/1392 || 0.164512 || פיליפס 1933
+|-
+| || 0.164511 || רנקין 1955
+|-
+| 19/116 || 0.1638 || טיצ'מרש 1942
+|-
+| 15/92 || 0.1631 || מין 1949
+|-
+| 6/37 || 0.16217 || הנקה 1962
+|-
+| 173/1067 || 0.16214 || קולסניק 1973
+|-
+| 35/216 || 0.16204 || קולסניק 1982
+|-
+| 139/858 || 0.16201 || קולסניק 1985
+|-
+| 9/56 || 0.1608 || בומביירי ואיוונייץ 1986{{הערה|שם=BI|1=Bombieri, E.; Iwaniec, H. (1986). "On the order of ζ(1/2 + ''it'')". ''Annali della Scuola Normale Superiore di Pisa – Classe di Scienze''. '''13''' (3): 449–472.|כיוון=שמאל}}
+|-
+| 32/205 || 0.1561 || הקסלי 2002, 2005{{הערה|שם=Huxley|1=Huxley, M. N. (2005). "Exponential sums and the Riemann zeta function. V". ''Proceedings of the London Mathematical Society''. '''90''' (1): 1–41. [https://doi.org/10.1112/S0024611504014959 doi:10.1112/S0024611504014959].|כיוון=שמאל}}
+|-
+| 53/342 || 0.1550 || בורגן 2017{{הערה|שם=Bourgain|1=Bourgain, Jean (2017). "Decoupling, exponential sums and the Riemann zeta function". ''Journal of the American Mathematical Society''. '''30''' (1): 205–224. [https://arxiv.org/abs/1408.5794 arXiv:1408.5794]. [https://doi.org/10.1090/jams/860 doi:10.1090/jams/860].|כיוון=שמאל}}
+|-
+| 13/84 || 0.1548 || בורגן 2017{{הערה|שם=Bourgain}}
+|}
+
+== הקשר להשערת רימן ==
+בקלונד הראה (1918–1919){{הערה|שם=Backlund|1=Backlund, R. (1918–1919). [https://www.biodiversitylibrary.org/item/51075#page/359/mode/1up "Über die Beziehung zwischen Anwachsen und Nullstellen der Zeta-Funktion"]. ''Ofversigt Finska Vetensk. Soc.'' '''61''' (9).|כיוון=שמאל}} שהשערת לינדלף שקולה לטענה הבאה על האפסים של פונקציית זטא: לכל <math>\varepsilon > 0</math>, מספר האפסים שחלקם הממשי לפחות <math>1/2 + \varepsilon</math> וחלקם המדומה בין <math>T</math> ל-<math>T+1</math> הוא <math>o(\log T)</math> כאשר <math>T</math> שואף לאינסוף. מהשערת רימן נובע שאין כלל אפסים בתחום הזה, ולכן היא גוררת את השערת לינדלף. ידוע שמספר האפסים שחלקם המדומה בין <math>T</math> ל-<math>T+1</math> הוא <math>O(\log T)</math>, כך שהשערת לינדלף נראית חזקה רק במעט ממה שכבר הוכח; ובכל זאת כל הניסיונות להוכיח אותה נכשלו עד כה.
+
+== ממוצעי חזקות (מומנטים) של פונקציית זטא ==
+השערת לינדלף שקולה לטענה ש
+:<math>\frac{1}{T} \int_0^T|\zeta(1/2+it)|^{2k}\,dt = O(T^{\varepsilon})</math>
+לכל שלם חיובי <math>k</math> ולכל <math>\varepsilon</math> ממשי חיובי. הטענה הוכחה עבור <math>k = 1</math> ו-<math>k = 2</math>, אך המקרה <math>k = 3</math> נראה קשה בהרבה והוא עדיין בעיה פתוחה.
+
+קיימת השערה מדויקת בהרבה על ההתנהגות האסימפטוטית של האינטגרל: משערים ש
+:<math> \int_0^T|\zeta(1/2+it)|^{2k} \, dt = T\sum_{j=0}^{k^2}c_{k,j}\log(T)^{k^2-j} + o(T)</math>
+עבור קבועים כלשהם <math>c_{k,j}</math>. את הטענה הוכיח ליטלווד עבור <math>k = 1</math>, והית עבור <math>k = 2</math>{{הערה|שם=HB|1=Heath-Brown, D. R. (1979). "The fourth power moment of the Riemann zeta function". ''Proceedings of the London Mathematical Society''. '''38''' (3): 385–422. [https://doi.org/10.1112/plms/s3-38.3.385 doi:10.1112/plms/s3-38.3.385].|כיוון=שמאל}} (בהרחבה של תוצאה של אינגהם, שמצא את האיבר המוביל{{הערה|שם=Ingham28|1=Ingham, A. E. (1928). "Mean-Value Theorems in the Theory of the Riemann Zeta-Function". ''Proc. London Math. Soc.'' '''s2-27''' (1): 273–300. [https://doi.org/10.1112/plms/s2-27.1.273 doi:10.1112/plms/s2-27.1.273].|כיוון=שמאל}}).
+
+קונרי וגוש הציעו את הערך{{הערה|שם=CG|1=Conrey, J. B.; Ghosh, A. (1998). "A conjecture for the sixth power moment of the Riemann zeta-function". ''International Mathematics Research Notices''. '''1998''' (15): 775–780. [https://arxiv.org/abs/math/9807187 arXiv:math/9807187]. [https://doi.org/10.1155/S1073792898000476 doi:10.1155/S1073792898000476].|כיוון=שמאל}}
+:<math>\frac{42}{9!}\prod_ p \left((1-p^{-1})^4(1+4p^{-1}+p^{-2})\right)</math>
+למקדם המוביל כאשר <math>k = 3</math>, וקיטינג וסניית' השתמשו בתורת המטריצות האקראיות כדי להציע השערות לערכי המקדמים עבור <math>k</math> גבוה יותר.{{הערה|שם=KS|1=Keating, Jonathan P.; Snaith, N. C. (2000). "Random matrix theory and ζ(1/2+''it'')". ''Communications in Mathematical Physics''. '''214''' (1): 57–89. [https://doi.org/10.1007/s002200000261 doi:10.1007/s002200000261].|כיוון=שמאל}} לפי ההשערה, המקדמים המובילים הם מכפלה של גורם אלמנטרי, מכפלה מסוימת על פני הראשוניים, ומספר טבלאות יאנג מסדר <math>n \times n</math>, הנתון בסדרה
+:1, 1, 2, 42, 24024, 701149020, ... (סדרה [https://oeis.org/A039622 A039622] ב-[[האנציקלופדיה המקוונת לסדרות של מספרים שלמים|OEIS]]).
+
+== מסקנות נוספות ==
+נסמן ב-<math>p_n</math> את המספר הראשוני ה-<math>n</math>, וב-<math>g_n = p_{n + 1} - p_n</math> את הרווח שאחריו. תוצאה של אלברט אינגהם מראה שמהשערת לינדלף נובע שלכל <math>\varepsilon > 0</math>,
+:<math>g_n\ll p_n^{1/2+\varepsilon}</math>
+עבור <math>n</math> גדול דיו. השערה חזקה יותר על הרווחים בין ראשוניים היא [[השערת קרמר]], הקובעת ש
+:<math> g_n = O\!\left((\log p_n)^2\right).</math>
+
+=== השערת הצפיפות ===
+נסמן ב-<math>N(\sigma,T)</math> את מספר האפסים <math>\rho</math> של <math>\zeta(s)</math> שחלקם הממשי לפחות <math>\sigma</math> והערך המוחלט של חלקם המדומה לכל היותר <math>T</math>. '''השערת הצפיפות''' קובעת ש-<math>N(\sigma,T)\le T^{2(1-\sigma)+\epsilon}</math>, והיא נובעת מהשערת לינדלף.{{הערה|שם=EoM|1=[https://encyclopediaofmath.org/wiki/Density_hypothesis Density hypothesis], באתר Encyclopedia of Mathematics {{אנגלית}}}}
+
+באופן כללי יותר, אם <math>N(\sigma,T)\le T^{A(\sigma)(1-\sigma)+\epsilon}</math>, הרי שהחסם הזה מתאים, בקירוב, לאסימפטוטיקה של ראשוניים בקטעים קצרים שאורכם <math>x^{1-1/A(\sigma)}</math>. אינגהם הראה ב-1940 שאפשר לקחת <math>A(\sigma)=\frac{3}{2-\sigma}</math>,{{הערה|שם=Ingham40|1=Ingham, A. E. (1940). "On the estimation of ''N''(σ, ''T'')". ''The Quarterly Journal of Mathematics''. '''os-11''' (1): 201–202. [https://doi.org/10.1093/qmath/os-11.1.201 doi:10.1093/qmath/os-11.1.201].|כיוון=שמאל}} הקסלי הראה ב-1971 שאפשר לקחת <math>A(\sigma)=\frac{3}{3\sigma-1}</math>,{{הערה|שם=Huxley71|1=Huxley, M. N. (1971). "On the Difference between Consecutive Primes". ''Inventiones Mathematicae''. '''15''' (2): 164–170. [https://doi.org/10.1007/BF01418933 doi:10.1007/BF01418933].|כיוון=שמאל}} ולארי גות' וג'יימס מיינרד הראו ב-2024 (בגרסה מוקדמת) שאפשר לקחת <math>A(\sigma)=\frac{15}{5\sigma+3}</math>.{{הערה|שם=GM|1=Guth, Larry; Maynard, James (2024). "New large value estimates for Dirichlet polynomials". [https://arxiv.org/abs/2405.20552 arXiv:2405.20552].|כיוון=שמאל}} עבודתם של גות' ומיינרד משפרת את החסם ל-<math>N(\sigma,T)\le T^{\frac{30}{13}(1-\sigma)+\epsilon}</math>, או באופן שקול את אורך הקטעים ל-<math>x^{17/30}</math>.
+
+== פונקציות L ==
+פונקציית זטא של רימן שייכת למשפחה כללית יותר של פונקציות הקרויות פונקציות L. ב-2010 הציגו יוסף ברנשטיין ואנדרי רזניקוב שיטות חדשות לקבלת הערכות תת-קמירות לפונקציות L במקרה של PGL(2),{{הערה|שם=BR|1=Bernstein, Joseph; Reznikov, Andre (2010). "Subconvexity bounds for triple ''L''-functions and representation theory". ''Annals of Mathematics''. '''172''' (3): 1679–1718. [https://arxiv.org/abs/math/0608555 arXiv:math/0608555]. [https://doi.org/10.4007/annals.2010.172.1679 doi:10.4007/annals.2010.172.1679].|כיוון=שמאל}} אקשיי ונקטש ופיליפ מישל טיפלו במקרים GL(1) ו-GL(2),{{הערה|שם=MV|1=Michel, Philippe; Venkatesh, Akshay (2010). "The subconvexity problem for GL<sub>2</sub>". ''Publications Mathématiques de l'IHÉS''. '''111''' (1): 171–271. [https://arxiv.org/abs/0903.3591 arXiv:0903.3591]. [https://doi.org/10.1007/s10240-010-0025-8 doi:10.1007/s10240-010-0025-8].|כיוון=שמאל}} וב-2021 טיפל פול נלסון במקרה GL(''n'').{{הערה|שם=Nelson|1=Nelson, Paul D. (2021). "Bounds for standard ''L''-functions". [https://arxiv.org/abs/2109.15230 arXiv:2109.15230].|כיוון=שמאל}}
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Edwards, H. M. (1974). ''Riemann's Zeta Function''. New York: Dover Publications. ISBN 978-0-486-41740-0.
+* Karatsuba, Anatoly; Voronin, Sergei (1992). ''The Riemann zeta-function''. de Gruyter Expositions in Mathematics. Vol. 5. Berlin: Walter de Gruyter. ISBN 978-3-11-013170-3.
+* Titchmarsh, Edward Charles (1986). ''The theory of the Riemann zeta-function'' (2nd ed.). Oxford University Press. ISBN 978-0-19-853369-6.
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]

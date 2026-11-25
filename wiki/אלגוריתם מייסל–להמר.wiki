@@ -1,0 +1,54 @@
+'''אלגוריתם מייסל–להמר''' (על שם [[ארנסט מייסל]] ו[[דריק הנרי להמר]]) הוא [[אלגוריתם]] המחשב ערכים מדויקים של [[פונקציית המספרים הראשוניים]] <math>\pi(x)</math>.{{הערה|שם=lehmer|1=Lehmer, Derrick Henry (1959). [https://projecteuclid.org/download/pdf_1/euclid.ijm/1255455259 "On the exact number of primes less than a given limit"]. ''Illinois Journal of Mathematics''. '''3''' (3): 381–388.|כיוון=שמאל}}{{הערה|שם=LMO|1=Lagarias, Jeffrey; Miller, Victor; Odlyzko, Andrew (1985). "Computing π(x): The Meissel–Lehmer method". ''Mathematics of Computation''. '''44''' (170): 537–560. [https://doi.org/10.1090/S0025-5718-1985-0777285-5 doi:10.1090/S0025-5718-1985-0777285-5].|כיוון=שמאל}}
+
+== תיאור ==
+הבעיה של ספירת המספרים הראשוניים שאינם גדולים מ-<math>x</math>, בלי למנות את כולם אחד אחד, נחקרה כבר על ידי [[אדריאן-מארי לז'נדר|לז'נדר]]. מתוך [[הנפה של ארטוסתנס]] הוא הסיק ש
+:<math>\pi (x) - \pi (x^{1/2}) + 1 = \lfloor x \rfloor - \sum_{i} \lfloor x/p_i \rfloor + \sum_{i<j} \lfloor x/(p_ip_j) \rfloor - \ldots</math>
+כאשר <math>\lfloor x \rfloor</math> הוא [[פונקציית הערך השלם|הערך השלם]] של <math>x</math> (ה[[מספר שלם|שלם]] הגדול ביותר שאינו עולה על <math>x</math>), וה-<math>p_i</math> עוברים על כל הראשוניים שאינם גדולים מ-<math>\sqrt{x}</math>.{{הערה|שם=lehmer}}{{הערה|שם=LMO}}
+
+נוסחה זו אינה מעשית לחישוב עבור <math>x</math> גדול, משום שמספר האיברים השונים מאפס בסכום גדל ביחס ישר ל-<math>x</math>.{{הערה|שם=LMO}}{{הערה|שם=Oliveira|1=Oliveira e Silva, Tomas (2006). [https://sweet.ua.pt/tos/bib/5.4.pdf "Computing π(x): the combinatorial method"]. ''Revista do Detua''. '''4''' (6): 759–768.|כיוון=שמאל}} בשנות ה-70 של המאה ה-19 מצא מייסל שיטה יעילה יותר, המבוססת על [[נוסחת נסיגה|נוסחאות נסיגה]] לפונקציות נפה חלקיות ומקטינה את מספר האיברים בסכום של לז'נדר. להמר הרחיב ופישט אותה בשנת 1959.{{הערה|שם=LMO}}{{הערה|שם=Oliveira}}
+
+=== פונקציות המפתח ===
+יהיו <math>p_1 = 2, p_2 = 3, p_3 = 5, \ldots</math> המספרים הראשוניים בסדר עולה, ונסמן <math>p_0 = 1</math>. עבור שלם <math>a \ge 0</math> מגדירים
+:<math>\varphi(x, a) := \left| \left \{ n \le x : p|n \implies p > p_a \right \} \right|,</math>
+כלומר מספר הטבעיים שאינם גדולים מ-<math>x</math> שכל גורמיהם הראשוניים גדולים מ-<math>p_a</math>.{{הערה|שם=Oliveira}} כמו כן, עבור שלם <math>k \ge 0</math> מגדירים
+:<math>P_k(x, a) := \left| \left \{ n \le x : n = q_1 q_2 \cdots q_k,\ q_1, \ldots, q_k > p_a \right \} \right|,</math>
+כאשר <math>q_1, \ldots, q_k</math> ראשוניים. זהו מספר הטבעיים שאינם גדולים מ-<math>x</math> שיש להם בדיוק <math>k</math> גורמים ראשוניים (כולל ריבוי), כולם גדולים מ-<math>p_a</math>. מכאן
+:<math>\varphi(x, a) = \sum_{k=0}^\infty P_k(x, a),</math>
+ובסכום יש רק מספר סופי של איברים שונים מאפס, משום ש-<math>P_k(x, a) = 0</math> כאשר <math>p_{a+1}^k > x</math>.{{הערה|שם=Oliveira}} מכיוון ש-<math>P_0(x, a) = 1</math> ו-<math>P_1(x, a) = \pi(x) - a</math>, מתקבל
+:<math>\pi(x) = \varphi(x,a) + a - 1 - \sum_{k=2}^\infty P_k(x,a).</math>
+לכן אפשר לחשב את <math>\pi(x)</math> באמצעות חישוב של <math>\varphi(x,a)</math> ושל <math>P_k(x, a)</math> עבור <math>k \ge 2</math>, וזה מה שאלגוריתם מייסל–להמר עושה.
+
+=== נוסחה עבור P<sub>k</sub>(x, a) ===
+עבור <math>k = 2</math> מתקבלת הנוסחה הבאה:
+:<math>\begin{align}
+P_2(x, a) & =\left| \left\{ n : n \le x,~ n = p_b p_c,~ a < b \le c \right\} \right| \\
+& = \sum_{b = a+1}^{\pi(x^{1/2})} \left| \left\{ n : n \le x,~ n = p_b p_c,~ b \le c \le \pi \left( \frac{x}{p_b} \right) \right\} \right| \\
+& = \sum_{b = a+1}^{\pi(x^{1/2})} \left( \pi\left( \frac{x}{p_b} \right) - (b-1) \right) \\
+& = \binom{a}{2} - \binom{\pi(x^{1/2})}{2} + \sum_{b = a+1}^{\pi(x^{1/2})} \pi\left( \frac{x}{p_b} \right).
+\end{align}</math>
+עבור <math>k \ge 3</math> אפשר לפתח זהויות דומות ל-<math>P_k(x, a)</math>.{{הערה|שם=lehmer}}
+
+=== חישוב φ(x, a) ===
+מתנאי ההתחלה
+:<math>\varphi(x, 0) = \lfloor x \rfloor</math>
+ומנוסחת הנסיגה
+:<math>\varphi(x, a) = \varphi(x, a-1) - \varphi\left(\frac x {p_a}, a-1 \right)</math>
+אפשר לחשב ברקורסיה כל ערך של <math>\varphi(x,a)</math>.
+
+=== שילוב האיברים ===
+כל שנותר הוא לחשב את <math>\varphi(x,a)</math> ואת <math>P_k(x, a)</math> עבור <math>k \ge 2</math>, לערכים מסוימים של <math>x</math> ושל <math>a</math>. את זה אפשר לעשות בעזרת נפה ישירה והנוסחאות שלעיל.
+
+== היסטוריה ==
+כבר מייסל מצא שעבור <math>k \ge 3</math> מתקיים <math>P_k(x, a) = 0</math> אם <math>a = \pi(x^{1/3})</math>. הוא השתמש במשוואה המתקבלת לחישוב <math>\pi(x)</math> עבור ערכים גדולים של <math>x</math>.{{הערה|שם=lehmer}}
+
+מייסל חישב את <math>\pi(x)</math> עבור ערכי <math>x</math> עד <math>10^9</math>, אך בערך הגדול ביותר החטיא במעט את התוצאה הנכונה.{{הערה|שם=lehmer}} בעזרת שיטתו ובעזרת מחשב IBM 701 חישב להמר את הערך הנכון של <math>\pi(10^9)</math>, והחטיא ב-1 את הערך הנכון של <math>\pi(10^{10})</math>.{{הערה|שם=lehmer}}
+
+== האלגוריתם המורחב ==
+ג'פרי לגריאס, ויקטור מילר ו[[אנדרו אודליצקו]] פרסמו מימוש של האלגוריתם המחשב את <math>\pi(x)</math> בזמן <math>O(x^{2/3+\varepsilon})</math> ובזיכרון <math>O(x^{1/3+\varepsilon})</math> לכל <math>\varepsilon > 0</math>.{{הערה|שם=LMO}} כאשר בוחרים <math>a = \pi(x^{1/3})</math>, לעץ החישוב של <math>\varphi(x,a)</math> יש <math>O(x^{2/3})</math> עלים.{{הערה|שם=LMO}}
+
+אלגוריתם מייסל–להמר המורחב דורש פחות זמן חישוב מהאלגוריתם שפיתחו מייסל ולהמר, בייחוד עבור ערכים גדולים של <math>x</math>. שיפורים נוספים ניתנו על ידי דלגליז וריבה ב-1996 ועל ידי גורדון ב-2001 (לא פורסם).{{הערה|שם=deleglise|1=Deleglise, Marc; Rivat, Joël (1996). "Computing π(x): The Meissel, Lehmer, Lagarias, Miller, Odlyzko method". ''Mathematics of Computation''. '''65''' (213): 235–245. [https://doi.org/10.1090/S0025-5718-96-00674-6 doi:10.1090/S0025-5718-96-00674-6].|כיוון=שמאל}}{{הערה|שם=Oliveira}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים]]

@@ -1,0 +1,51 @@
+ב[[תורת המספרים]], '''הלמה היסודית של תורת הנפה''' (ב[[אנגלית]]: Fundamental lemma of sieve theory) היא שם כולל לכמה תוצאות, שמטרתן להפוך לשיטתי את תהליך היישום של [[תורת הנפה|שיטות נפה]] לבעיות מסוימות. היני הלברשטם והנס-אגון ריכרט העירו שבספרות על נפות נעשה שימוש תכוף ב"שיטה" של [[נפת ברון|ברון]], אך היו מעט ניסיונות לנסח "משפט" כללי של ברון, ולכן מאמרים רבים חוזרים בפירוט רב על שלבי הטיעון של ברון{{הערה|שם=HR|1=Heini Halberstam, Hans-Egon Richert, ''Sieve Methods'', London Mathematical Society Monographs 4, Academic Press, London, 1974, עמ' 92–93|כיווון=שמאל}}. לפי הרולד דיימונד והלברשטם, את המונח "הלמה היסודית" טבע יונאס קוביליוס{{הערה|שם=DH|1=Harold G. Diamond, Heini Halberstam (with William F. Galway), ''A Higher-Dimensional Sieve Method: with Procedures for Computing Sieve Functions'', Cambridge Tracts in Mathematics 177, Cambridge University Press, Cambridge, 2008, עמ' 42|כיווון=שמאל}}.
+
+== סימונים ==
+נשתמש בסימונים הבאים:
+* <math>A</math> היא קבוצה של <math>X</math> מספרים שלמים חיוביים, ו-<math>A_d</math> היא תת-הקבוצה שלה של המספרים המתחלקים ב-<math>d</math>.
+* <math>w(d)</math> ו-<math>R_d</math> הן פונקציות של <math>A</math> ושל <math>d</math>, המעריכות את מספר האיברים של <math>A</math> המתחלקים ב-<math>d</math> לפי הנוסחה
+:<math>\left\vert A_d \right\vert = \frac{w(d)}{d} X + R_d .</math>
+:לפיכך <math>w(d)/d</math> מייצג צפיפות משוערת של האיברים המתחלקים ב-<math>d</math>, ו-<math>R_d</math> מייצג איבר שגיאה, או שארית.
+* <math>P</math> היא קבוצה של [[מספר ראשוני|מספרים ראשוניים]], ו-<math>P(z)</math> היא מכפלת הראשוניים ב-<math>P</math> שאינם גדולים מ-<math>z</math>.
+* <math>S(A, P, z)</math> הוא מספר האיברים של <math>A</math> שאינם מתחלקים באף ראשוני ב-<math>P</math> שאינו גדול מ-<math>z</math>.
+* <math>\kappa</math> הוא קבוע, הנקרא '''צפיפות הניפוי'''{{הערה|שם=Greaves|1=George Greaves, ''Sieves in Number Theory'', Springer, Berlin, 2001|כיווון=שמאל}}, המופיע בהנחות שלהלן. זהו [[ממוצע משוקלל]] של מספר [[חשבון מודולרי|מחלקות השאריות]] שכל ראשוני מנפה.
+
+== הלמה היסודית של הנפה הקומבינטורית ==
+הניסוח כאן לקוח מספרו של ז'ראר טננבאום{{הערה|1=Gérald Tenenbaum, ''Introduction to Analytic and Probabilistic Number Theory'', Cambridge University Press, Cambridge, 1995, עמ' 60|כיווון=שמאל}}. ניסוחים אחרים מופיעים אצל הלברשטם וריכרט{{הערה|שם=HR}}, אצל גריבס{{הערה|שם=Greaves}} ואצל ג'ון פרידלנדר והנריק איוואניץ{{הערה|1=John Friedlander, Henryk Iwaniec, [http://www.numdam.org/item?id=ASNSP_1978_4_5_4_719_0 On Bombieri's asymptotic sieve], Annali della Scuola Normale Superiore di Pisa, Classe di Scienze, 4e série, 5 (4), 1978, עמ' 719–756|כיווון=שמאל}}.
+
+נניח ש:
+* <math>w(d)</math> היא [[פונקציה כפלית]].
+* צפיפות הניפוי <math>\kappa</math> מקיימת, עבור קבוע כלשהו <math>C</math> ולכל מספרים ממשיים <math>\eta</math> ו-<math>\xi</math> עם <math>2\leq \eta\leq \xi</math>:
+:<math>\prod_{\eta \le p \le \xi} \left( 1 - \frac{w(p)}{p} \right) ^{-1} < \left( \frac{\ln \xi}{\ln \eta} \right) ^\kappa \left( 1 + \frac{C}{\ln \eta} \right).</math>
+
+יש פרמטר <math>u\geq 1</math> שאפשר לבחור כרצוננו. מתקיים, באופן אחיד ב-<math>A</math>, ב-<math>X</math>, ב-<math>z</math> וב-<math>u</math>:
+:<math>S(A,P,z) = X \prod_{p \le z, p \in P} \left( 1 - \frac{w(p)}{p} \right) \{1 + O(u^{-u/2})\} + O\left(\sum_{d \le z^u, d|P(z)} |R_d| \right).</math>
+ביישומים בוחרים את <math>u</math> כך שאיבר השגיאה יהיה הטוב ביותר. בנפה, <math>u</math> קשור למספר הרמות של [[עקרון ההכלה וההפרדה]].
+
+== הלמה היסודית של נפת סלברג ==
+הניסוח כאן לקוח מספרם של הלברשטם וריכרט{{הערה|1=Halberstam & Richert (1974), עמ' 208–209|כיווון=שמאל}}. ניסוח אחר מופיע אצל דיימונד והלברשטם{{הערה|1=Diamond & Halberstam (2008), עמ' 29|כיווון=שמאל}}.
+
+נניח ש:
+* <math>w(d)</math> היא פונקציה כפלית.
+* צפיפות הניפוי <math>\kappa</math> מקיימת, עבור קבוע כלשהו <math>C</math> ולכל מספרים ממשיים <math>\eta</math> ו-<math>\xi</math> עם <math>2\leq \eta\leq \xi</math>:
+:<math>\sum_{\eta \le p \le \xi} \frac{w(p) \ln p}{p} < \kappa \ln \frac{\xi}{\eta} + C.</math>
+* <math>\frac{w(p)}{p} < 1-c</math> עבור קבוע קטן <math>c</math> ולכל <math>p</math>.
+* <math>|R(d)|\leq w(d)</math> לכל <math>d</math> [[חופשי מריבועים]] שכל גורמיו הראשוניים שייכים ל-<math>P</math>.
+
+ללמה היסודית כאן כמעט אותה צורה כמו בנפה הקומבינטורית. נכתוב <math>u = \ln{X} /\ln{z}</math>. המסקנה היא:
+:<math>S(A,P,z) = X \prod_{p \le z,\ p \in P} \left( 1 - \frac{w(p)}{p} \right) \{1 + O(e^{-u/2})\}.</math>
+
+כאן <math>u</math> כבר אינו פרמטר חופשי, והוא נקבע על ידי בחירת <math>z</math>.
+
+איבר השגיאה כאן חלש יותר מזה שבלמה היסודית של הנפה הקומבינטורית. הלברשטם וריכרט מעירים שלכן אין זה נכון לומר, כפי שנטען לעיתים בספרות, ש[[נפת סלברג]] טובה תמיד מנפת ברון{{הערה|1=Halberstam & Richert (1974), עמ' 221|כיווון=שמאל}}.
+
+== ראו גם ==
+* [[תורת הנפה]]
+* [[נפת ברון]]
+* [[נפת סלברג]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]

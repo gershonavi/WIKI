@@ -1,0 +1,51 @@
+ב[[תורת המספרים]], '''נפת ברון''' (נקראת גם '''הנפה הטהורה של ברון''') היא טכניקה להערכת גודלן של "קבוצות מנופות" של מספרים שלמים חיוביים, המקיימים מערכת תנאים המבוטאים באמצעות [[קונגרואנציה|קונגרואנציות]]. את השיטה פיתח [[ויגו ברון]] ב-1915, ואחרים הכלילו אותה מאוחר יותר ללמה היסודית של תורת הנפה.
+
+== תיאור ==
+במונחי [[תורת הנפה]], נפת ברון היא נפה מ'''הסוג הקומבינטורי''', כלומר היא נשענת על שימוש זהיר ב[[עקרון ההכלה וההפרדה]].
+
+תהי <math>A</math> [[קבוצה סופית]] של שלמים חיוביים, ותהי <math>P</math> קבוצה כלשהי של [[מספר ראשוני|מספרים ראשוניים]]. לכל ראשוני <math>p</math> ב-<math>P</math> נסמן ב-<math>A_p</math> את קבוצת האיברים של <math>A</math> המתחלקים ב-<math>p</math>. אפשר להרחיב סימון זה לשלמים אחרים <math>d</math> שהם מכפלות של ראשוניים שונים מ-<math>P</math>: במקרה זה מגדירים את <math>A_d</math> כחיתוך הקבוצות <math>A_p</math> עבור הגורמים הראשוניים <math>p</math> של <math>d</math>. לבסוף מגדירים <math>A_1 = A</math>. יהי <math>z</math> מספר ממשי חיובי כלשהו. מטרת הנפה היא להעריך את
+:<math>S(A,P,z) = \biggl\vert A \setminus \bigcup_{p \in P \atop p \le z} A_p \biggr\vert ,</math>
+כאשר <math>|X|</math> מסמן את [[עוצמה (מתמטיקה)|העוצמה]] של קבוצה <math>X</math>, כלומר כאן פשוט את מספר איבריה.
+
+נניח בנוסף שאפשר להעריך את <math>|A_d|</math> על ידי
+:<math> \left\vert A_d \right\vert = \frac{w(d)}{d} |A| + R_d,</math>
+כאשר <math>w</math> היא פונקציה כפלית כלשהי ו-<math>R_d</math> הוא איבר שגיאה. נסמן
+:<math> W(z) = \prod_{p \in P \atop p \le z} \left(1 - \frac{w(p)}{p} \right) . </math>
+
+=== הנפה הטהורה של ברון ===
+הניסוח שלהלן לקוח מספרם של קוז'וקארו ומרטי (משפט 6.1.2).{{הערה|שם=CM|1=Cojocaru, Alina Carmen; Murty, M. Ram (2005). ''An introduction to sieve methods and their applications''. London Mathematical Society Student Texts. Vol. 66. Cambridge University Press. pp. 80–112. ISBN 0-521-61275-6.|כיווון=שמאל}} בסימונים שלעיל, נניח ש:
+* <math>| R_d | \leq w(d)</math> לכל <math>d</math> [[חופשי מריבועים]] המורכב מראשוניים ב-<math>P</math>;
+* <math>w(p) < C</math> לכל <math>p</math> ב-<math>P</math>;
+* קיימים קבועים <math>C, D, E</math> כך שלכל מספר ממשי חיובי <math>z</math>
+:<math> \sum_{p \in P \atop p \le z} \frac{w(p)}{p} < D \log\log z + E.</math>
+אז
+:<math> S(A,P,z) = X \cdot W(z) \cdot \left(1 + O\left((\log z)^{-b \log b}\right)\right) + O\left(z^{b \log\log z}\right),</math>
+כאשר <math>X</math> הוא מספר האיברים של <math>A</math>, <math>b</math> הוא שלם חיובי כלשהו, ו-<math>O</math> הוא [[סימון אסימפטוטי|סימון O גדולה]]. בפרט, אם <math>x</math> הוא האיבר הגדול ביותר ב-<math>A</math> ו-<math>\log z< c\log x/\log\log x</math> עבור <math>c</math> קטן דיו, אז
+:<math> S(A,P,z) = X \cdot W(z) (1+o(1)) .</math>
+
+== יישומים ==
+* משפט ברון: סכום ההופכיים של ה[[ראשוניים תאומים|ראשוניים התאומים]] מתכנס (ראו [[קבוע ברון]]);
+* משפט שנירלמן: כל מספר זוגי הוא סכום של לכל היותר <math>C</math> ראשוניים (כאשר אפשר לקחת <math>C=6</math>; ראו [[צפיפות שנירלמן]]);
+* יש אינסוף זוגות של שלמים שההפרש ביניהם 2, כך שכל אחד מאיברי הזוג הוא מכפלה של לכל היותר 9 ראשוניים;
+* כל מספר זוגי הוא סכום של שני מספרים, שכל אחד מהם הוא מכפלה של לכל היותר 9 ראשוניים.
+שתי התוצאות האחרונות נעקפו על ידי משפט צ'ן, והשנייה נעקפה על ידי [[השערת גולדבך החלשה]] (<math>C=3</math>).
+
+== ראו גם ==
+* [[תורת הנפה]]
+* [[נפת לז'נדר]]
+* [[הנפה הגדולה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Brun, Viggo (1915). "Über das Goldbachsche Gesetz und die Anzahl der Primzahlpaare". ''Archiv for Mathematik og Naturvidenskab''. '''B34''' (8).
+* Brun, Viggo (1919). "La série 1/5 + 1/7 + 1/11 + 1/13 + 1/17 + 1/19 + 1/29 + 1/31 + 1/41 + 1/43 + 1/59 + 1/61 + ... où les dénominateurs sont 'nombres premiers jumeaux' est convergente ou finie". ''Bulletin des Sciences Mathématiques''. '''43''': 100–104, 124–128.
+* Greaves, George (2001). ''Sieves in number theory''. Ergebnisse der Mathematik und ihrer Grenzgebiete (3. Folge). Vol. 43. Springer-Verlag. pp. 71–101. ISBN 3-540-41647-1.
+* Halberstam, Heini; Richert, H. E. (1974). ''Sieve Methods''. Academic Press. ISBN 0-12-318250-6.
+* Hooley, Christopher (1976). ''Applications of sieve methods to the theory of numbers''. Cambridge University Press. ISBN 0-521-20915-3.
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:תורת המספרים]]

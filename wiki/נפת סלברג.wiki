@@ -1,0 +1,41 @@
+ב[[תורת המספרים]], '''נפת סלברג''' היא טכניקה להערכת גודלן של "קבוצות מנופות" של מספרים שלמים חיוביים, המקיימים מערכת תנאים המבוטאים באמצעות קונגרואנציות. את השיטה פיתח [[אטלה סלברג]] בשנות ה-40 של המאה ה-20.{{הערה|שם=Selberg|1=Selberg, Atle (1947). "On an elementary method in the theory of primes". ''Norske Vid. Selsk. Forh. Trondheim''. '''19''': 64–67.|כיווון=שמאל}}
+
+== תיאור ==
+במונחי [[תורת הנפה]], נפת סלברג היא נפה מהסוג הקומבינטורי, כלומר היא נשענת על שימוש זהיר ב[[עקרון ההכלה וההפרדה]]. סלברג החליף את ערכי [[פונקציית מביוס]] המופיעים בעקרון זה במערכת של משקלים, שאותם מבצעים אופטימיזציה כדי שיתאימו לבעיה הנתונה. התוצאה היא '''חסם עליון''' לגודל הקבוצה המנופה.
+
+תהי <math>A</math> קבוצה של שלמים חיוביים <math>\le x</math>, ותהי <math>P</math> קבוצה של ראשוניים. כאשר <math>d</math> הוא מכפלה של ראשוניים שונים מ-<math>P</math>, נסמן ב-<math>A_d</math> את קבוצת האיברים של <math>A</math> המתחלקים ב-<math>d</math>, ונגדיר <math>A_1 = A</math>. יהי <math>z</math> מספר ממשי חיובי, ונסמן ב-<math>P(z)</math> את מכפלת הראשוניים ב-<math>P</math> שהם <math>\le z</math>. מטרת הנפה היא להעריך את
+:<math>S(A,P,z) = \left\vert A \setminus \bigcup_{p \mid P(z)} A_p \right\vert .</math>
+נניח שאפשר להעריך את <math>|A_d|</math> על ידי
+:<math> \left\vert A_d \right\vert = \frac{1}{f(d)} X + R_d ,</math>
+כאשר <math>f</math> היא פונקציה כפלית ו-<math>X = |A|</math>. תהי <math>g</math> הפונקציה המתקבלת מ-<math>f</math> באמצעות [[נוסחת ההיפוך של מביוס|היפוך מביוס]], כלומר
+:<math> g(n) = \sum_{d \mid n} \mu(d) f(n/d), \qquad f(n) = \sum_{d \mid n} g(d),</math>
+כאשר <math>\mu</math> היא פונקציית מביוס. נסמן
+:<math> V(z) = \sum_{d < z,\ d \mid P(z)} \frac{1}{g(d)}.</math>
+אז
+:<math> S(A,P,z) \le \frac{X}{V(z)} + O\left(\sum_{d_1,d_2 < z,\ d_1,d_2 \mid P(z)} \left\vert R_{[d_1,d_2]} \right\vert \right),</math>
+כאשר <math>[d_1,d_2]</math> היא ה[[כפולה משותפת מינימלית|כפולה המשותפת המינימלית]] של <math>d_1</math> ו-<math>d_2</math>. לעיתים קרובות מועיל להעריך את <math>V(z)</math> באמצעות החסם
+:<math> V(z) \ge \sum_{d \le z} \frac{1}{f(d)} .</math>
+
+== יישומים ==
+* משפט ברון-טיצ'מרש על מספר הראשוניים בסדרה חשבונית;
+* מספר השלמים <math>n \le x</math> כך ש-<math>n</math> [[מספרים זרים|זר]] ל-<math>\varphi(n)</math> (כאשר <math>\varphi</math> היא [[פונקציית אוילר]]) שקול אסימפטוטית ל-<math>e^{-\gamma} x / \log\log\log x</math>.
+
+== ראו גם ==
+* [[תורת הנפה]]
+* [[נפת ברון]]
+* [[הנפה הגדולה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Cojocaru, Alina Carmen; Murty, M. Ram (2005). ''An introduction to sieve methods and their applications''. London Mathematical Society Student Texts. Vol. 66. Cambridge University Press. pp. 113–134. ISBN 0-521-61275-6.
+* Diamond, Harold G.; Halberstam, Heini (2008). ''A Higher-Dimensional Sieve Method: with Procedures for Computing Sieve Functions''. Cambridge Tracts in Mathematics. Vol. 177. Cambridge University Press. ISBN 978-0-521-89487-6.
+* Greaves, George (2001). ''Sieves in number theory''. Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge. Vol. 43. Berlin: Springer-Verlag. ISBN 3-540-41647-1.
+* Halberstam, Heini; Richert, H. E. (1974). ''Sieve Methods''. London Mathematical Society Monographs. Vol. 4. Academic Press. ISBN 0-12-318250-6.
+* Hooley, Christopher (1976). ''Applications of sieve methods to the theory of numbers''. Cambridge Tracts in Mathematics. Vol. 70. Cambridge University Press. pp. 7–12. ISBN 0-521-20915-3.
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:תורת המספרים]]

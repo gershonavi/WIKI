@@ -1,0 +1,28 @@
+ב[[תורת המספרים האנליטית]], '''משפט זיגל-ולפיש''' הוא תוצאה שהשיג ארנולד ולפיש{{הערה|שם=Walfisz|1=Walfisz, Arnold (1936). "Zur additiven Zahlentheorie. II". ''Mathematische Zeitschrift''. '''40''' (1): 592–607. [https://doi.org/10.1007/BF01218882 doi:10.1007/BF01218882].|כיווון=שמאל}} כיישום של משפט של [[קרל לודוויג זיגל]]{{הערה|שם=Siegel|1=Siegel, Carl Ludwig (1935). "Über die Classenzahl quadratischer Zahlkörper". ''Acta Arithmetica''. '''1''' (1): 83–86.|כיווון=שמאל}} לבעיית ה[[מספר ראשוני|ראשוניים]] ב[[סדרה חשבונית|סדרות חשבוניות]]. המשפט מעדן הן את [[משפט המספרים הראשוניים]] והן את [[משפט דיריכלה|משפט דיריכלה על ראשוניים בסדרות חשבוניות]].
+
+== ניסוח ==
+נגדיר
+:<math>\psi(x;q,a) = \sum_{n \leq x \atop n \equiv a \pmod{q}}\Lambda(n),</math>
+כאשר <math>\Lambda</math> היא [[פונקציית פון מנגולד]], ותהי <math>\varphi</math> [[פונקציית אוילר]].
+
+המשפט קובע שלכל [[מספר ממשי]] <math>N</math> קיים קבוע חיובי <math>C_N</math>, התלוי רק ב-<math>N</math>, כך ש
+:<math>\psi(x;q,a)=\frac{x}{\varphi(q)}+O\left(x\exp\left(-C_N(\log x)^{1/2}\right)\right)</math>
+בכל פעם ש-<math>(a,q) = 1</math> ו-
+:<math>q\le(\log x)^N.</math>
+
+== הערות ==
+הקבוע <math>C_N</math> אינו ניתן לחישוב אפקטיבי, משום שמשפט זיגל אינו אפקטיבי.
+
+מהמשפט אפשר להסיק את החסם הבא על משפט המספרים הראשוניים לסדרות חשבוניות: אם, עבור <math>(a,q) = 1</math>, נסמן ב-<math>\pi(x;q,a)</math> את מספר הראשוניים הקטנים מ-<math>x</math> או שווים לו והשקולים ל-<math>a</math> מודולו <math>q</math>, אז
+:<math>\pi(x;q,a) = \frac{\operatorname{Li}(x)}{\varphi(q)}+O\left(x\exp\left(-\frac{C_N}{2}(\log x)^{1/2}\right)\right),</math>
+כאשר <math>N</math>, <math>a</math>, <math>q</math>, <math>C_N</math> ו-<math>\varphi</math> הם כמו במשפט, ו-<math>\operatorname{Li}</math> היא [[פונקציית האינטגרל הלוגריתמי]].
+
+== ראו גם ==
+* [[משפט בומביירי-וינוגרדוב]]
+* [[משפט ברון-טיצ'מרש]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]

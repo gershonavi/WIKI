@@ -1,0 +1,100 @@
+ב[[מתמטיקה]], '''מטריצת רדהפר''', הקרויה על שמו של ריימונד רדהפר ומסומנת לרוב <math>A_n</math>, היא [[מטריצה ריבועית]] שכל איבריה 0 או 1, ובה <math>a_{ij}</math> שווה ל-1 אם <math>i</math> [[מחלק]] את <math>j</math> או אם <math>j=1</math>, ושווה ל-0 בכל מקרה אחר. ה[[דטרמיננטה]] של מטריצת רדהפר מסדר <math>n</math> שווה לערך [[פונקציית מרטנס]] <math>M(n)</math>, ומכאן הקשר שלה ל[[השערת רימן]]. בהקשרים מסוימים המטריצה שימושית גם לביטוי של [[קונבולוציית דיריכלה]] ושל סכומים על מחלקים כמכפלות של מטריצות, בעזרת [[שחלוף (מתמטיקה)|המטריצה המשוחלפת]] של מטריצת רדהפר.
+
+== הגדרות ורכיבים ==
+העמודה הראשונה, שכולה אחדות, מסבכת את שאלת ההפיכות של מטריצות רדהפר, ולכן נוח לכתוב <math>A_n = C_n + D_n</math>, כאשר <math>C_n = [c_{ij}]</math> היא מטריצת 0–1 שאיבריה שווים ל-1 אם ורק אם <math>j=1</math> ו-<math>i \neq 1</math>. שאר האחדות ב-<math>A_n</math> מתאימות לתנאי החלוקה, המיוצג על ידי המטריצה <math>D_n</math>. מ[[נוסחת ההיפוך של מביוס]] נובע ש-<math>D_n</math> תמיד [[מטריצה הפיכה|הפיכה]], וההופכית שלה היא <math>D_n^{-1} = \left[\mu(j/i) M_i(j)\right]</math>. מכאן מתקבל אפיון של הסינגולריות של <math>A_n</math>:
+:<math>\det\left(A_n\right) = \det\left(D_n^{-1}C_n+I_n\right).</math>
+
+אם מגדירים
+:<math>M_j(i) := \begin{cases} 1, & j \mid i \\ 0, & j \nmid i \end{cases}</math>
+אפשר להגדיר את מטריצת רדהפר המשוחלפת מסדר <math>n</math> כמטריצה הריבועית <math>R_n = [M_j(i)]_{1 \leq i,j \leq n}</math>.
+
+== דוגמה ==
+זוהי מטריצת רדהפר מסדר 12×12. האיברים של העמודה הראשונה השייכים ל-<math>C_{12}</math> מסומנים בכחול.
+:<math>\left(\begin{matrix}
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+{\color{blue}\mathbf{1}} & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 \\
+{\color{blue}\mathbf{1}} & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+{\color{blue}\mathbf{1}} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
+\end{matrix}\right)</math>
+
+נוסחת ההיפוך של מביוס מראה שהמטריצה המשוחלפת <math>R_n</math> תמיד הפיכה, ואיברי ההופכית שלה הם
+:<math>R_n^{-1} = \left[M_j(i) \cdot \mu\left(\frac{i}{j}\right)\right]_{1 \leq i,j \leq n},</math>
+כאשר <math>\mu</math> היא [[פונקציית מביוס]]. למשל, עבור <math>n = 12</math>:
+:<math>R_{12}^{-1} = \left(\begin{matrix}
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & -1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & -1 & -1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & -1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & -1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & -1 & 0 & 0 & -1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+-1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 1 & 0 & -1 & 0 & -1 & 0 & 0 & 0 & 0 & 0 & 1
+\end{matrix}\right)</math>
+
+== תכונות ==
+=== דטרמיננטה והקשר לפונקציית מרטנס ===
+הדטרמיננטה של מטריצת רדהפר מסדר <math>n \times n</math> שווה לפונקציית מרטנס <math>M(n)</math>. בפרט, <math>A_n</math> אינה הפיכה בדיוק כאשר פונקציית מרטנס מתאפסת. מהפרכת [[השערת מרטנס]]{{הערה|שם=disproof|1=Odlyzko, A. M.; te Riele, H. J. J. (1985). "Disproof of the Mertens conjecture". ''Journal für die reine und angewandte Mathematik''. '''1985''' (357): 138–160. [https://doi.org/10.1515/crll.1985.357.138 doi:10.1515/crll.1985.357.138].|כיוון=שמאל}} נובע שפונקציית מרטנס מחליפה סימן, ולכן מתאפסת, אינסוף פעמים. לפיכך מטריצת רדהפר <math>A_n</math> סינגולרית עבור אינסוף [[מספר טבעי|מספרים טבעיים]] <math>n</math>.
+
+דרך הקשר לפונקציית מרטנס, הדטרמיננטות של מטריצות רדהפר קשורות ישירות להשערת רימן, שכן ההשערה שקולה לטענה <math>M(x) = O\left(x^{1/2+\varepsilon}\right)</math> לכל <math>\varepsilon > 0</math>.
+
+=== רדיוס ספקטרלי ומרחבים עצמיים ===
+* אם <math>\rho_n</math> הוא הרדיוס הספקטרלי של <math>A_n</math>, כלומר הערך המוחלט הגדול ביותר של [[ערך עצמי]] שלה, אז <math>\lim_{n \rightarrow \infty} \frac{\rho_n}{\sqrt{n}} = 1</math>. כמו כן <math>1+\sqrt{n-1} \leq \rho_n < \sqrt{n}+O(\log n)</math>, ובניתוח זהיר יותר <math>\rho_n = \sqrt{n} + \log\sqrt{n} + O(1)</math>.
+* למטריצה <math>A_n</math> יש ערך עצמי 1 בריבוי <math>n - \left\lfloor \log_2(n) \right\rfloor - 1</math>.
+* ממד המרחב העצמי המתאים לערך העצמי 1 הוא <math>\left\lfloor \frac{n}{2} \right\rfloor - 1</math>. מכאן ש-<math>A_n</math> אינה [[מטריצה לכסינה|לכסינה]] כאשר <math>n \geq 5</math>.
+* לכל ערך עצמי אחר <math>\lambda \neq 1</math> של <math>A_n</math>, ממד המרחב העצמי המתאים הוא 1.
+
+=== אפיון הווקטורים העצמיים ===
+הווקטור <math>[a_1,a_2,\ldots,a_n]</math> הוא וקטור עצמי של <math>A_n^{T}</math> המתאים לערך עצמי <math>\lambda</math> אם ורק אם לכל <math>n \geq 2</math> מתקיימים שני התנאים
+:<math>\lambda a_n = \sum_{d|n} a_d, \qquad \lambda a_1 = \sum_{k=1}^n a_k.</math>
+במקרים ה"לא טריוויאליים", שבהם <math>\lambda \neq 1</math>, אפשר לחשב את שאר הרכיבים ברקורסיה מתוך הרכיב הראשון <math>a_1</math>:
+:<math>a_j = \frac{1}{\lambda-1} \sum_{d|j \atop d < j} a_d.</math>
+בהתאם לכך מגדירים עבור <math>\lambda \neq 1</math> את הסדרה
+:<math>v_{\lambda}(n) := \begin{cases} 1, & n = 1 \\ \frac{1}{\lambda-1} \sum_{d|n \atop d \neq n} v_{\lambda}(d), & n \geq 2 \end{cases}</math>
+אז <math>\lambda</math> הוא ערך עצמי של <math>A_n</math> אם ורק אם
+:<math>\sum_{k=1}^n v_{\lambda}(k) = \lambda.</math>
+כמו כן, [[טור דיריכלה]] של הסדרה, עבור <math>\lambda \neq 1</math> קבוע ועבור <math>\Re(s) > 1</math>, הוא
+:<math>\sum_{n \geq 1} \frac{v_{\lambda}(n)}{n^s} = \frac{\lambda-1}{\lambda-\zeta(s)},</math>
+כאשר <math>\zeta(s)</math> היא [[פונקציית זטא של רימן]].
+
+=== חסמים על הערכים העצמיים הלא טריוויאליים ===
+פירוש במונחי [[תורת הגרפים]] לחישוב השורשים של ה[[פולינום אופייני|פולינום האופייני]] של <math>A_n</math> ולחסימת מקדמיו ניתן אצל דנה,{{הערה|שם=Dana|1=Dana, Will. [https://sites.math.washington.edu/~morrow/336_15/papers/will.pdf "Eigenvalues of the Redheffer matrix and their relation to the Mertens function"].|כיוון=שמאל}} והערכות לגודלם של בלוקי [[צורת ז'ורדן|ז'ורדן]] המתאימים לערך העצמי 1 ניתנו אצל רובינסון ובארט.{{הערה|שם=RB|1=Robinson, D. W.; Barrett, W. W. [https://core.ac.uk/download/pdf/82767433.pdf "The Jordan l-Structure of a Matrix of Redheffer"].|כיוון=שמאל}} נסמן <math>s := \lfloor \log_2(n) \rfloor</math> ונגדיר, בעזרת הפולינום האופייני <math>p_{A_n}(x)</math>,
+:<math>f_n(t) := \frac{p_{A_n}(t+1)}{t^{n-s-1}} = t^{s+1} - \sum_{k=1}^s v_{nk} t^{s-k}.</math>
+ל-<math>f_n(t)</math> יש שני שורשים ממשיים <math>t_n^{\pm}</math>, המקיימים
+:<math>t_n^{\pm} = \pm \sqrt{n} + \log\sqrt{n} + \gamma - \frac{3}{2} + O\left(\frac{\log^2(n)}{\sqrt{n}}\right),</math>
+כאשר <math>\gamma \approx 0.577216</math> הוא [[קבוע אוילר-מסקרוני]], ושאר מקדמי הפולינום חסומים על ידי
+:<math>|v_{nk}| \leq \frac{n \cdot \log^{k-1}(n)}{(k-1)!}.</math>
+
+== הכללות ושימושים ==
+אפשר לפרש את איברי מטריצת רדהפר כמציינים שייכות לסדרה עולה של קבוצות אינדקסים, ובדרך זו לקשור את המטריצות לפירוקים של [[טור למברט|טורי למברט]] ולייצג סכומים על מחלקים. לכל [[פונקציה אריתמטית]] <math>f</math> מתקיים
+:<math>\sum_{d|n} f(d) = \sum_{k=1}^n M_k(n) \cdot f(k).</math>
+בעזרת המטריצה <math>R_n</math> אפשר לייצג גם את קונבולוציית דיריכלה של שתי פונקציות אריתמטיות,
+:<math>(f \ast g)(n) = \sum_{d|n} f(d) g(n/d),</math>
+כמכפלה של מטריצות, ולחשב את ההופכי של פונקציה ביחס לקונבולוציית דיריכלה בעזרת היפוך מטריצות. הכללות של מטריצות רדהפר לפונקציות אריתמטיות כלליות, לסכומים על המספרים הזרים ל-<math>n</math> ולסכומי רמנוג'ן נחקרו בכמה עבודות.{{הערה|שם=Gillespie|1=Gillespie, B. R. [https://honors.libraries.psu.edu/files/final_submissions/152 "Extending Redheffer's Matrix to Arbitrary Arithmetic Functions"].|כיוון=שמאל}}{{הערה|שם=LiTan|1=Li, Mao; Tan, Qianrong (2011). "Divisibility of matrices associated with multiplicative functions". ''Discrete Mathematics''. '''311''' (20): 2276–2282. [https://doi.org/10.1016/j.disc.2011.07.015 doi:10.1016/j.disc.2011.07.015].|כיוון=שמאל}}{{הערה|שם=MS|1=Mousavi, H.; Schmidt, M. D. (2018). "Factorization Theorems for Relatively Prime Divisor Sums, GCD Sums and Generalized Ramanujan Sums". [https://arxiv.org/abs/1810.08373 arXiv:1810.08373].|כיוון=שמאל}}
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Redheffer, Ray (1977). "Eine explizit lösbare Optimierungsaufgabe". ''Numerische Methoden bei Optimierungsaufgaben, Band 3''. Birkhäuser. pp. 213–216. [https://doi.org/10.1007/978-3-0348-5936-3_13 doi:10.1007/978-3-0348-5936-3_13].
+* Barrett, W.; Jarvis, T. (1992). "Spectral properties of a matrix of Redheffer". ''Linear Algebra and Its Applications''. '''162–164''': 673–683. [https://doi.org/10.1016/0024-3795(92)90401-U doi:10.1016/0024-3795(92)90401-U].
+* Cardon, David A. (2010). "Matrices related to Dirichlet series". ''Journal of Number Theory''. '''130''': 27–39. [https://doi.org/10.1016/j.jnt.2009.05.013 doi:10.1016/j.jnt.2009.05.013].
+</div>
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/RedhefferMatrix.html מטריצת רדהפר], באתר [[MathWorld]] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מטריצות]]
+[[קטגוריה:תורת המספרים]]

@@ -1,0 +1,76 @@
+:''ערך זה עוסק בפונקציות אדיטיביות בתורת המספרים. לפונקציה השומרת על פעולת החיבור, ראו [[פונקציה אדיטיבית]].''
+ב[[תורת המספרים]], '''פונקציה אדיטיבית''' (ב[[אנגלית]]: Additive function) היא [[פונקציה אריתמטית]] <math>f</math> על ה[[מספר טבעי|מספרים הטבעיים]], כך שלכל <math>a</math> ו-<math>b</math> [[מספרים זרים|זרים]]{{הערה|1=P. Erdős, M. Kac, [https://doi.org/10.1073/pnas.25.4.206 On the Gaussian law of errors in the theory of additive functions], Proceedings of the National Academy of Sciences of the United States of America 25 (4), 1939, עמ' 206–207|כיווון=שמאל}}
+:<math>f(a b) = f(a) + f(b).</math>
+מכאן שלכל פונקציה אדיטיבית <math>f(1)=0</math>.
+
+פונקציה אדיטיבית נקראת '''אדיטיבית לחלוטין''' אם <math>f(a b) = f(a) + f(b)</math> מתקיים ''לכל'' <math>a</math> ו-<math>b</math>, גם כשאינם זרים, באנלוגיה לפונקציות [[פונקציה אריתמטית#כפליות|כפליות לחלוטין]].
+
+== דוגמאות ==
+=== פונקציות אדיטיביות לחלוטין ===
+* הצמצום של פונקציית ה[[לוגריתם]] למספרים הטבעיים.
+* '''הריבוי''' של גורם ראשוני <math>p</math> ב-<math>n</math>, כלומר המעריך הגדול ביותר <math>m</math> שעבורו <math>p^m</math> מחלק את <math>n</math>.
+* <math>a_0(n)</math>, סכום הראשוניים המחלקים את <math>n</math> כשהם נספרים עם ריבוי, המכונה לעיתים sopfr(''n'') או "הלוגריתם השלם" של <math>n</math> (סדרה [https://oeis.org/A001414 A001414] ב-OEIS). לדוגמה:
+:: <math>a_0(4) = 2 + 2 = 4</math>
+:: <math>a_0(20) = a_0(2^2 \cdot 5) = 2 + 2 + 5 = 9</math>
+:: <math>a_0(144) = a_0(2^4 \cdot 3^2) = a_0(2^4) + a_0(3^2) = 8 + 6 = 14</math>
+:: <math>a_0(2003) = 2003</math>
+* הפונקציה <math>\Omega(n)</math>, המספר הכולל של [[פונקציות אומגה ראשוניות|הגורמים הראשוניים]] של <math>n</math>, כשגורמים החוזרים כמה פעמים נספרים כמה פעמים (סדרה [https://oeis.org/A001222 A001222] ב-OEIS). לדוגמה:
+:: <math>\Omega(1) = 0</math>, משום שלמספר 1 אין גורמים ראשוניים
+:: <math>\Omega(16) = \Omega(2\cdot2\cdot2\cdot2) = 4</math>
+:: <math>\Omega(144) = \Omega(2^4 \cdot 3^2) = \Omega(2^4) + \Omega(3^2) = 4 + 2 = 6</math>
+:: <math>\Omega(2000) = \Omega(2^4 \cdot 5^3) = 4 + 3 = 7</math>
+
+=== פונקציות אדיטיביות שאינן אדיטיביות לחלוטין ===
+* <math>\omega(n)</math>, מספר הגורמים הראשוניים השונים של <math>n</math> (סדרה [https://oeis.org/A001221 A001221] ב-OEIS). לדוגמה:
+:: <math>\omega(16) = \omega(2^4) = 1</math>
+:: <math>\omega(144) = \omega(2^4) + \omega(3^2) = 1 + 1 = 2</math>
+:: <math>\omega(2002) = 4</math>
+* <math>a_1(n)</math>, סכום הראשוניים השונים המחלקים את <math>n</math>, המכונה לעיתים sopf(''n'') (סדרה [https://oeis.org/A008472 A008472] ב-OEIS). לדוגמה:
+:: <math>a_1(1) = 0</math>
+:: <math>a_1(20) = 2 + 5 = 7</math>
+:: <math>a_1(144) = a_1(2^4) + a_1(3^2) = 2 + 3 = 5</math>
+:: <math>a_1(2001) = 55</math>
+
+== פונקציות כפליות ==
+מכל פונקציה אדיטיבית <math>f(n)</math> אפשר לבנות [[פונקציה כפלית]] קשורה <math>g(n)</math>, כלומר פונקציה שעבורה, כאשר <math>a</math> ו-<math>b</math> זרים,
+:<math>g(a b) = g(a) \times g(b).</math>
+דוגמה אחת היא <math>g(n) = 2^{f(n)}</math>. באופן דומה, אם <math>f(n)</math> אדיטיבית לחלוטין, אז <math>g(n) = 2^{f(n)}</math> כפלית לחלוטין. באופן כללי יותר, אפשר לבחור <math>g(n) = c^{f(n)}</math>, כאשר <math>c</math> קבוע ממשי שונה מאפס.
+
+== פונקציות סכום ==
+לפונקציה אדיטיבית <math>f</math> נגדיר את פונקציית הסכום <math>\mathcal{M}_f(x) := \sum_{n \leq x} f(n)</math>. מתקיים במדויק
+:<math>\mathcal{M}_f(x) = \sum_{p^{\alpha} \leq x} f(p^{\alpha}) \left(\left\lfloor \frac{x}{p^{\alpha}} \right\rfloor - \left\lfloor \frac{x}{p^{\alpha+1}} \right\rfloor\right).</math>
+אפשר לפתח את פונקציות הסכום כ-<math>\mathcal{M}_f(x) = x E(x) + O(\sqrt{x} \cdot D(x))</math>, כאשר
+:<math>\begin{align}
+E(x) & = \sum_{p^{\alpha} \leq x} f(p^{\alpha}) p^{-\alpha} (1-p^{-1}) \\
+D^2(x) & = \sum_{p^{\alpha} \leq x} |f(p^{\alpha})|^2 p^{-\alpha}.
+\end{align}</math>
+גם הממוצע של <math>f^2</math> מתבטא בעזרת פונקציות אלה:
+:<math>\mathcal{M}_{f^2}(x) = x E^2(x) + O(x D^2(x)).</math>
+תמיד קיים קבוע מוחלט <math>C_f > 0</math> כך שלכל מספר טבעי <math>x \geq 1</math>
+:<math>\sum_{n \leq x} |f(n) - E(x)|^2 \leq C_f \cdot x D^2(x).</math>
+
+נגדיר
+:<math>\nu(x; z) := \frac{1}{x} \#\!\left\{n \leq x: \frac{f(n)-A(x)}{B(x)} \leq z\right\}\!.</math>
+נניח ש-<math>f</math> פונקציה אדיטיבית עם <math>-1 \leq f(p^{\alpha}) = f(p) \leq 1</math>, כך שכאשר <math>x \rightarrow \infty</math>
+:<math>B(x) = \sum_{p \leq x} f^2(p) / p \rightarrow \infty.</math>
+אז <math>\nu(x; z) \sim G(z)</math>, כאשר <math>G(z)</math> היא פונקציית ההתפלגות של ה[[התפלגות נורמלית|התפלגות הנורמלית]]
+:<math>G(z) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{z} e^{-t^2/2} dt</math>
+(ראו [[משפט ארדש-קאץ]]). דוגמאות לתוצאה זו, הקשורות ל[[פונקציות אומגה ראשוניות|פונקציית אומגה]] ולמספר המחלקים הראשוניים של ראשוניים מוזזים, הן, עבור <math>z \in \mathbb{R}</math> קבוע ו-<math>x</math> גדול:
+:<math>\#\{n \leq x: \omega(n) - \log\log x \leq z (\log\log x)^{1/2}\} \sim x G(z),</math>
+:<math>\#\{p \leq x: \omega(p+1) - \log\log x \leq z (\log\log x)^{1/2}\} \sim \pi(x) G(z).</math>
+
+== ראו גם ==
+* [[פונקציה אריתמטית]]
+* [[פונקציות אומגה ראשוניות]]
+* [[משפט ארדש-קאץ]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Janko Bračič, ''Kolobar aritmetičnih funkcij'' (Ring of arithmetical functions), Obzornik mat. fiz. 49 (4), 2002, pp. 97–108
+* H. Iwaniec, E. Kowalski, ''Analytic number theory'', AMS, 2004
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]

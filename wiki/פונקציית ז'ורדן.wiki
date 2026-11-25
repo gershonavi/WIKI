@@ -1,0 +1,35 @@
+ב[[תורת המספרים]], '''פונקציית ז'ורדן''' או '''פונקציית הטוטיינט של ז'ורדן''' (ב[[אנגלית]]: Jordan's totient function), המסומנת <math>J_k(n)</math>, כאשר <math>k</math> מספר שלם חיובי, היא פונקציה של מספר שלם חיובי <math>n</math>, השווה למספר ה-<math>k</math>-[[N-יה סדורה|יות]] של מספרים שלמים חיוביים שאינם גדולים מ-<math>n</math>, שיחד עם <math>n</math> יוצרות קבוצה של <math>k+1</math> [[מספרים זרים|מספרים זרים]] (כלומר, המחלק המשותף המקסימלי של כולם הוא 1).
+
+פונקציית ז'ורדן היא הכללה של [[פונקציית אוילר]], השווה ל-<math>J_1(n)</math>. הפונקציה קרויה על שם [[קאמי ז'ורדן]].
+
+== הגדרה ==
+לכל מספר שלם חיובי <math>k</math>, פונקציית ז'ורדן <math>J_k</math> היא [[פונקציה כפלית]], ואפשר לחשב אותה לפי הנוסחה
+:<math>J_k(n)=n^k \prod_{p|n}\left(1-\frac{1}{p^k}\right),</math>
+כאשר <math>p</math> עובר על המחלקים הראשוניים של <math>n</math>.
+
+== תכונות ==
+* <math>\sum_{d | n } J_k(d) = n^k.</math>
+:בשפת [[קונבולוציית דיריכלה]] אפשר לכתוב זאת כ{{הערה|שם=SC|1=Jozsef Sándor, Borislav Crstici, ''Handbook of number theory II'', Kluwer Academic, Dordrecht, 2004, עמ' 106|כיווון=שמאל}}
+::<math>J_k \star 1 = n^k,</math>
+:ובעזרת [[נוסחת ההיפוך של מביוס]]
+::<math>J_k = \mu \star n^k.</math>
+:מאחר ש[[טור דיריכלה]] של <math>\mu</math> הוא <math>1/\zeta(s)</math> וטור דיריכלה של <math>n^k</math> הוא <math>\zeta(s-k)</math>, טור דיריכלה של <math>J_k</math> הוא
+::<math>\sum_{n\ge 1}\frac{J_k(n)}{n^s} = \frac{\zeta(s-k)}{\zeta(s)}.</math>
+* הסדר הממוצע של <math>J_k(n)</math> הוא
+::<math>J_k(n) \sim \frac{n^k}{\zeta(k+1)}.</math>
+* פונקציית פסי של דדקינד היא
+::<math>\psi(n) = \frac{J_2(n)}{J_1(n)}.</math>
+:מתוך ההגדרה (כל גורם במכפלה על הראשוניים הוא [[פולינום ציקלוטומי]] ב-<math>p^{-k}</math>) אפשר להראות שגם הפונקציות האריתמטיות <math>\frac{J_k(n)}{J_1(n)}</math> ו-<math>\frac{J_{2k}(n)}{J_k(n)}</math> הן פונקציות כפליות שערכיהן שלמים.
+* <math>\sum_{\delta\mid n}\delta^sJ_r(\delta)J_s\left(\frac{n}{\delta}\right) = J_{r+s}(n)</math> (נוסחה של גגנבאואר){{הערה|1=Matthew Holden, Michael Orrison, Michael Vrable, [https://web.archive.org/web/20160305132124/https://www.math.hmc.edu/~orrison/research/papers/totient.pdf Yet Another Generalization of Euler's Totient Function]|כיווון=שמאל}}.
+
+== סדרים של חבורות מטריצות ==
+* [[החבורה הליניארית הכללית]] של מטריצות מסדר <math>m</math> מעל <math>\mathbf{Z}/n</math> היא מסדר{{הערה|שם=AP|1=Dorin Andrica, Mihai Piticari, [https://eudml.org/doc/126410 On some extensions of Jordan's arithmetic functions], Acta Universitatis Apulensis 7, 2004, עמ' 13–22|כיווון=שמאל}}
+:<math>|\operatorname{GL}(m,\mathbf{Z}/n)|=n^{\frac{m(m-1)}{2}}\prod_{k=1}^m J_k(n).</math>
+* החבורה הליניארית המיוחדת של מטריצות מסדר <math>m</math> מעל <math>\mathbf{Z}/n</math> היא מסדר{{הערה|שם=AP}}
+:<math>|\operatorname{SL}(m,\mathbf{Z}/n)|=n^{\frac{m(m-1)}{2}}\prod_{k=2}^m J_k(n).</math>
+* החבורה הסימפלקטית של מטריצות מסדר <math>2m</math> מעל <math>\mathbf{Z}/n</math> היא מסדר{{הערה|שם=AP}}
+:<math>|\operatorname{Sp}(2m,\mathbf{Z}/n)|=n^{m^2}\prod_{k=1}^m J_{2k}(n).</math>
+את שתי הנוסחאות הראשונות גילה ז'ורדן.
+
+== דוגמאות ==
+* רשימות מפורשות ב-OEIS: <math>J_2</math> בסדרה

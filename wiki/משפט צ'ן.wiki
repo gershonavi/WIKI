@@ -1,0 +1,42 @@
+ב[[תורת המספרים]], '''משפט צ'ן''' קובע שכל מספר [[זוגיות (מתמטיקה)|זוגי]] גדול דיו אפשר לכתוב כסכום של שני [[מספר ראשוני|ראשוניים]], או כסכום של ראשוני ושל מכפלה של שני ראשוניים.
+
+זוהי גרסה מוחלשת של [[השערת גולדבך]], הקובעת שכל מספר זוגי (גדול מ-2) הוא סכום של שני ראשוניים.
+
+== היסטוריה ==
+את המשפט ניסח לראשונה המתמטיקאי הסיני [[צ'ן ג'ינגרון]] ב-1966,{{הערה|שם=Chen1966|1=Chen, J. R. (1966). "On the representation of a large even integer as the sum of a prime and the product of at most two primes". ''Kexue Tongbao''. '''11''' (9): 385–386.|כיווון=שמאל}} ופרטים נוספים של ההוכחה פרסם ב-1973.{{הערה|שם=Chen1973|1=Chen, J. R. (1973). "On the representation of a larger even integer as the sum of a prime and the product of at most two primes". ''Sci. Sinica''. '''16''': 157–176.|כיווון=שמאל}} פ' מ' רוס פישט מאוד את ההוכחה המקורית ב-1975.{{הערה|שם=Ross|1=Ross, P. M. (1975). "On Chen's theorem that each large even number has the form (p<sub>1</sub>+p<sub>2</sub>) or (p<sub>1</sub>+p<sub>2</sub>p<sub>3</sub>)". ''J. London Math. Soc.'' Series 2. '''10''' (4): 500–506. [https://doi.org/10.1112/jlms/s2-10.4.500 doi:10.1112/jlms/s2-10.4.500].|כיווון=שמאל}} משפט צ'ן הוא צעד משמעותי לקראת השערת גולדבך, ויישום מפורסם של שיטות [[תורת הנפה]].
+
+משפט צ'ן מחזק תוצאה קודמת של [[אלפרד רניי]], שהראה ב-1947 שקיים <math>K</math> סופי כך שכל מספר זוגי אפשר לכתוב כסכום של ראשוני ושל מכפלה של לכל היותר <math>K</math> ראשוניים.{{הערה|שם=Renyi|1=Rényi, A. A. (1948). "On the representation of an even number as the sum of a prime and an almost prime". ''Izvestiya Akademii Nauk SSSR. Seriya Matematicheskaya''. '''12''': 57–78 (ברוסית).|כיווון=שמאל}}
+
+== גרסאות ==
+המאמר של צ'ן מ-1973 הציג שתי תוצאות שהוכחותיהן כמעט זהות.{{הערה|שם=Chen1973}} משפט I שלו, על השערת גולדבך, הוא המשפט שהובא לעיל. משפט II שלו הוא תוצאה על השערת ה[[ראשוניים תאומים|ראשוניים התאומים]]: אם <math>h</math> הוא שלם חיובי זוגי, אז יש אינסוף ראשוניים <math>p</math> כך ש-<math>p + h</math> הוא ראשוני או מכפלה של שני ראשוניים.
+
+ב-2002 הוכיח יינג צ'ון קאי את התוצאה הבאה:{{הערה|שם=Cai|1=Cai, Y. C. (2002). "Chen's Theorem with Small Primes". ''Acta Mathematica Sinica''. '''18''' (3): 597–604. [https://doi.org/10.1007/s101140200168 doi:10.1007/s101140200168].|כיווון=שמאל}}
+: ''קיים מספר טבעי <math>N</math> כך שכל שלם זוגי <math>n</math> הגדול מ-<math>N</math> הוא סכום של ראשוני הקטן מ-<math>n^{0.95}</math> או שווה לו, ושל מספר שיש לו לכל היותר שני גורמים ראשוניים.''
+
+ב-2022 הציגו דניאל ג'ונסטון, מתאו בורדיניון ו-ולריה סטאריצ'קובה גרסה מפורשת של משפט צ'ן:{{הערה|שם=JBS|1=Johnston, Daniel R.; Bordignon, Matteo; Starichkova, Valeriia. "An explicit version of Chen's theorem". [https://arxiv.org/abs/2207.09452 arXiv:2207.09452].|כיווון=שמאל}}
+: ''כל מספר זוגי הגדול מ-<math>e^{e^{32.7}} \approx 1.4 \cdot 10^{69057979807814}</math> אפשר להציג כסכום של ראשוני ושל מספר [[חופשי מריבועים]] שיש לו לכל היותר שני גורמים ראשוניים.''
+תוצאה זו שיפרה תוצאה מוקדמת יותר של טומוהירו ימדה.{{הערה|שם=Yamada|1=Yamada, Tomohiro (2015). "Explicit Chen's theorem". [https://arxiv.org/abs/1511.03409 arXiv:1511.03409].|כיווון=שמאל}} ב-2024 הראו בורדיניון וסטאריצ'קובה שבהנחת השערת רימן המוכללת עבור [[פונקציית L של דיריכלה|פונקציות L של דיריכלה]] אפשר להוריד את החסם ל-<math>e^{e^{15.85}} \approx 3.6\cdot10^{3321634}</math>.{{הערה|שם=BS|1=Bordignon, Matteo; Starichkova, Valeriia (2024). "An explicit version of Chen's theorem assuming the Generalized Riemann Hypothesis". ''The Ramanujan Journal''. '''64''' (4): 1213–1242. [https://doi.org/10.1007/s11139-024-00866-x doi:10.1007/s11139-024-00866-x].|כיווון=שמאל}}
+
+ב-2019 הציגה הויקסי לי גרסה של משפט צ'ן למספרים אי-זוגיים: כל שלם אי-זוגי גדול דיו <math>N</math> אפשר להציג בצורה{{הערה|שם=Li|1=Li, H. (2019). "On the representation of a large integer as the sum of a prime and a square-free number with at most three prime divisors". ''Ramanujan J.'' '''49''': 141–158. [https://doi.org/10.1007/s11139-018-0010-2 doi:10.1007/s11139-018-0010-2].|כיווון=שמאל}}
+:<math> N=p+2a, </math>
+כאשר <math>p</math> ראשוני ול-<math>a</math> יש לכל היותר שני גורמים ראשוניים. הגורם 2 הכרחי משום שכל ראשוני (פרט ל-2) הוא אי-זוגי, ולכן <math>N-p</math> זוגי. אפשר לראות בתוצאה זו קירוב להשערת למואן.
+
+== ראו גם ==
+* [[השערת גולדבך]]
+* [[השערה H של שינצל]]
+* [[נפת ברון]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Nathanson, Melvyn B. (1996). ''Additive Number Theory: the Classical Bases''. Graduate Texts in Mathematics. Vol. 164. Springer-Verlag. Chapter 10. ISBN 0-387-94656-X.
+* Wang, Yuan (1984). ''Goldbach conjecture''. World Scientific. ISBN 9971-966-09-3.
+</div>
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/ChensTheorem.html משפט צ'ן], באתר [[MathWorld]] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]

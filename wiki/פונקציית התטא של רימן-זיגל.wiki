@@ -1,0 +1,33 @@
+
+
+בחירת האינדקס <math>n</math> מעט שרירותית. מבחינה היסטורית הוא נבחר כך שהאינדקס יהיה 0 בערך הראשון הגדול מהאפס החיובי הקטן ביותר (שהחלק המדומה שלו <math>14.13472514\ldots</math>) של פונקציית זטא על הישר הקריטי. פונקציית תטא מתנודדת עבור ארגומנטים ממשיים קטנים בערכם המוחלט, ולכן אינה הפיכה באופן יחיד בקטע <math>[-24,24]</math>; לכן לפונקציה האי-זוגית יש את נקודת הגרם הסימטרית עם הערך 0 באינדקס <math>-3</math>.
+
+נקודות גרם שימושיות בחישוב האפסים של <math>Z(t)</math>. בנקודת גרם <math>g_n</math>
+:<math>\zeta\left(\frac{1}{2}+ig_n\right) = \cos(\theta(g_n))Z(g_n) = (-1)^n Z(g_n),</math>
+ואם ביטוי זה ''חיובי'' בשתי נקודות גרם עוקבות, ל-<math>Z(t)</math> חייב להיות אפס בקטע שביניהן.
+
+לפי '''חוק גרם''', החלק הממשי ''בדרך כלל'' חיובי, ואילו החלק המדומה מתחלף בנקודות הגרם בין ערכים חיוביים לשליליים במרווחים סדירים למדי:
+:<math>(-1)^n Z(g_n) > 0.</math>
+את מספר השורשים <math>N(T)</math> ברצועה מ-0 עד <math>T</math> אפשר למצוא בעזרת
+:<math>N(T) = \frac{\theta(T)}{\pi} + 1+S(T),</math>
+כאשר <math>S(T)</math> הוא איבר שגיאה הגדל אסימפטוטית כמו <math>\log T</math> (ראו [[נוסחת רימן-פון מנגולדט]]). אילו <math>g_n</math> היו מקיימים את חוק גרם, מציאת מספר השורשים ברצועה הייתה מסתכמת ב-
+:<math>N(g_n) = n + 1.</math>
+כיום ידוע שבטווח הארוך, חוק גרם נכשל בכרבע מקטעי גרם, כלומר הם אינם מכילים בדיוק אפס אחד של פונקציית זטא. גרם חשש שהחוק עלול להיכשל עבור אינדקסים גדולים (הכישלון הראשון הוא באינדקס 126, לפני האפס ה-127), ולכן טען אותו רק עבור אינדקסים לא גבוהים מדי. מאוחר יותר טבע האצ'ינסון את הביטוי "חוק גרם" לטענה (השגויה) שכל האפסים על הישר הקריטי מופרדים על ידי נקודות גרם.
+
+== ראו גם ==
+* [[פונקציית Z]]
+* [[נוסחת רימן-זיגל]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. M. Edwards, ''Riemann's Zeta Function'', Dover Publications, New York, 1974
+* W. Gabcke, ''Neue Herleitung und explizierte Restabschätzung der Riemann-Siegel-Formel'', Thesis, University of Göttingen, 1979; [https://doi.org/10.53846/goediss-5113 revised version 2015]
+* J. P. Gram, [https://doi.org/10.1007/BF02421310 Note sur les zéros de la fonction ζ(s) de Riemann], Acta Mathematica 27 (1), 1903, pp. 289–304
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://mathworld.wolfram.com/Riemann-SiegelFunctions.html Riemann–Siegel Functions], באתר MathWorld
+* {{אנגלית}} [https://functions.wolfram.com/ZetaFunctionsandPolylogarithms/RiemannSiegelTheta/ Riemann-Siegel Theta function], Wolfram Research
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:ברנהרד רימן]]

@@ -1,0 +1,69 @@
+ב[[מתמטיקה]], [[מספר טבעי]] <math>a</math> הוא '''מחלק אוניטרי''' (ב[[אנגלית]]: Unitary divisor), או '''מחלק הול''', של מספר <math>b</math>, אם <math>a</math> הוא [[מחלק]] של <math>b</math>, ו-<math>a</math> ו-<math>b/a</math> [[מספרים זרים|זרים]], כלומר אין להם גורם משותף מלבד 1. באופן שקול, מחלק <math>a</math> של <math>b</math> הוא מחלק אוניטרי [[אם ורק אם]] לכל גורם [[מספר ראשוני|ראשוני]] של <math>a</math> יש ב-<math>a</math> אותו ריבוי כמו ב-<math>b</math>.
+
+המושג מקורו אצל ר. ויידיאנאתאסוואמי (1931), שהשתמש במונח '''מחלק בלוק''' (block divisor){{הערה|1=R. Vaidyanathaswamy, [https://doi.org/10.1090/S0002-9947-1931-1501607-1 The theory of multiplicative arithmetic functions], Transactions of the American Mathematical Society 33 (2), 1931, עמ' 579–662|כיווון=שמאל}}.
+
+== דוגמה ==
+המספר 5 הוא מחלק אוניטרי של 60, משום שלמספרים 5 ו-<math>\frac{60}{5}=12</math> הגורם המשותף היחיד הוא 1.
+
+לעומת זאת, 6 הוא מחלק של 60 אך אינו מחלק אוניטרי שלו, משום שלמספרים 6 ו-<math>\frac{60}{6}=10</math> יש גורם משותף שונה מ-1, והוא 2.
+
+== סכום המחלקים האוניטריים ==
+פונקציית סכום המחלקים האוניטריים מסומנת <math>\sigma^*(n)</math>. סכום ה[[חזקה (מתמטיקה)|חזקות]] ה-<math>k</math>-יות של המחלקים האוניטריים מסומן <math>\sigma_k^*(n)</math>:
+:<math>\sigma_k^*(n) = \sum_{d \,\mid\, n \atop \gcd(d,\,n/d)=1} \!\! d^k.</math>
+זוהי [[פונקציה כפלית]]. אם סכום המחלקים האוניטריים העצמיים של מספר שווה למספר עצמו, המספר נקרא מספר משוכלל אוניטרי (ראו [[מספר משוכלל]]).
+
+== תכונות ==
+המספר 1 הוא מחלק אוניטרי של כל מספר טבעי.
+
+מספר המחלקים האוניטריים של <math>n</math> הוא <math>2^k</math>, כאשר <math>k</math> הוא מספר הגורמים הראשוניים השונים של <math>n</math> (ראו [[פונקציות אומגה ראשוניות]]). הסיבה היא שכל מספר שלם <math>N > 1</math> הוא מכפלה של חזקות חיוביות <math>p^{r_p}</math> של ראשוניים שונים <math>p</math>, ולכן כל מחלק אוניטרי של <math>N</math> הוא מכפלת החזקות <math>p^{r_p}</math> עבור <math>p</math> בתת-קבוצה <math>S</math> כלשהי של המחלקים הראשוניים של <math>N</math>. אם יש <math>k</math> גורמים ראשוניים, יש בדיוק <math>2^k</math> תת-קבוצות כאלה.
+
+סכום המחלקים האוניטריים של <math>n</math> [[זוגיות (מתמטיקה)|אי-זוגי]] אם <math>n</math> הוא [[חזקה של שתיים]] (כולל 1), וזוגי אחרת.
+
+גם מספר המחלקים האוניטריים של <math>n</math> וגם סכומם הם פונקציות כפליות של <math>n</math> שאינן כפליות לחלוטין. [[טור דיריכלה|טור הדיריכלה]] היוצר הוא
+:<math>\frac{\zeta(s)\zeta(s-k)}{\zeta(2s-k)} = \sum_{n\ge 1}\frac{\sigma_k^*(n)}{n^s}.</math>
+
+כל מחלק של <math>n</math> הוא אוניטרי אם ורק אם <math>n</math> [[חופשי מריבועים]].
+
+קבוצת כל המחלקים האוניטריים של <math>n</math> היא [[אלגברה בוליאנית (מבנה אלגברי)|אלגברה בוליאנית]], שבה פעולת ה"פגישה" היא ה[[מחלק משותף מקסימלי|מחלק המשותף המקסימלי]] ופעולת ה"הצטרפות" היא ה[[כפולה משותפת מינימלית|כפולה המשותפת המינימלית]]. באופן שקול, קבוצת המחלקים האוניטריים של <math>n</math> היא [[חוג בוליאני]], שבו החיבור והכפל נתונים על ידי
+:<math>a\oplus b = \frac{ab}{(a,b)^2},\qquad a\odot b=(a,b),</math>
+כאשר <math>(a,b)</math> הוא המחלק המשותף המקסימלי של <math>a</math> ו-<math>b</math>{{הערה|1=J. H. Conway, S. P. Norton, [https://doi.org/10.1112/blms/11.3.308 Monstrous Moonshine], Bulletin of the London Mathematical Society 11 (3), 1979, עמ' 308–339|כיווון=שמאל}}.
+
+== מחלקים אוניטריים אי-זוגיים ==
+סכום החזקות ה-<math>k</math>-יות של המחלקים האוניטריים האי-זוגיים הוא
+:<math>\sigma_k^{(o)*}(n) = \sum_{{d \,\mid\, n \atop d \equiv 1 \pmod 2} \atop \gcd(d,n/d)=1} \!\! d^k.</math>
+גם הוא פונקציה כפלית, וטור הדיריכלה היוצר שלו הוא
+:<math>\frac{\zeta(s)\zeta(s-k)(1-2^{k-s})}{\zeta(2s-k)(1-2^{k-2s})} = \sum_{n\ge 1}\frac{\sigma_k^{(o)*}(n)}{n^s}.</math>
+
+== מחלקים דו-אוניטריים ==
+מחלק <math>d</math> של <math>n</math> הוא '''מחלק דו-אוניטרי''' אם המחלק האוניטרי המשותף הגדול ביותר של <math>d</math> ושל <math>n/d</math> הוא 1. המושג מקורו אצל ד. סוריאנאראיאנה (1972){{הערה|1=D. Suryanarayana, The number of bi-unitary divisors of an integer, in: ''The Theory of Arithmetic Functions'', Lecture Notes in Mathematics 251, Springer–Verlag, New York, 1972, עמ' 273–282|כיווון=שמאל}}.
+
+מספר המחלקים הדו-אוניטריים של <math>n</math> הוא פונקציה כפלית של <math>n</math>, שהסדר הממוצע שלה הוא <math>A \log x</math>, כאשר{{הערה|1=Ivić (1985), עמ' 395.|כיווון=שמאל}}
+:<math>A = \prod_p\left({1 - \frac{p-1}{p^2(p+1)} }\right) = 0.8073308216\ldots</math>
+
+'''מספר משוכלל דו-אוניטרי''' הוא מספר השווה לסכום מחלקיו הדו-אוניטריים העצמיים. המספרים היחידים כאלה הם 6, ‏60 ו-90{{הערה|1=Sándor et al (2006), עמ' 115.|כיווון=שמאל}}.
+
+== סדרות ב-OEIS ==
+* [https://oeis.org/A034444 A034444]: ‏<math>\sigma^*_0(n)=2^{\omega(n)}</math>, מספר המחלקים האוניטריים
+* [https://oeis.org/A034448 A034448]: ‏<math>\sigma^*_1(n)</math>
+* [https://oeis.org/A068068 A068068]: ‏<math>\sigma^{(o)*}_0(n)</math>
+* [https://oeis.org/A192066 A192066]: ‏<math>\sigma^{(o)*}_1(n)</math>
+* [https://oeis.org/A064609 A064609]: ‏<math>\sum_{i=1}^{n}\sigma^*_{1}(i)</math>
+* [https://oeis.org/A306071 A306071]: הקבוע <math>A</math>
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Richard K. Guy, ''Unsolved Problems in Number Theory'', Springer-Verlag, 2004, p. 84, Section B3
+* Paulo Ribenboim, ''My Numbers, My Friends: Popular Lectures on Number Theory'', Springer-Verlag, 2000, p. 352
+* Eckford Cohen, [https://doi.org/10.1007/BF01180473 Arithmetical functions associated with the unitary divisors of an integer], Mathematische Zeitschrift 74, 1960, pp. 66–80
+* Eckford Cohen, [https://doi.org/10.2307/2309455 The number of unitary divisors of an integer], American Mathematical Monthly 67 (9), 1960, pp. 879–880
+* Aleksandar Ivić, ''The Riemann zeta-function'', John Wiley & Sons, New York, 1985, p. 395
+* J. Sándor, D. S. Mitrinović, B. Crstici (eds.), ''Handbook of number theory I'', Springer-Verlag, Dordrecht, 2006
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://mathworld.wolfram.com/UnitaryDivisor.html Unitary Divisor], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אריתמטיות]]

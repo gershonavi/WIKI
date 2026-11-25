@@ -1,0 +1,41 @@
+ב[[מתמטיקה]], '''נוסחת רימן-זיגל''' (ב[[אנגלית]]: Riemann–Siegel formula) היא נוסחה אסימפטוטית לשגיאה של '''המשוואה הפונקציונלית המקורבת''' של [[פונקציית זטא של רימן]], כלומר של קירוב פונקציית זטא על ידי סכום של שני [[טור דיריכלה|טורי דיריכלה]] סופיים. את הנוסחה מצא [[קרל לודוויג זיגל]] (Siegel‏, 1932) בכתבי יד שלא פורסמו של [[ברנהרד רימן]] משנות ה-50 של המאה ה-19. זיגל גזר אותה מ'''נוסחת האינטגרל של רימן-זיגל''', ביטוי לפונקציית זטא הכולל אינטגרלים מסילתיים. הנוסחה משמשת לעיתים קרובות לחישוב ערכים של פונקציית זטא, לפעמים יחד עם אלגוריתם אודליצקו-שנהאגה, המאיץ אותה מאוד. לאורך הישר הקריטי נוח לעיתים קרובות להשתמש בה בצורה שבה היא הופכת לנוסחה ל[[פונקציית Z]].
+
+אם <math>M</math> ו-<math>N</math> מספרים שלמים אי-שליליים, אז פונקציית זטא שווה ל-
+:<math>\zeta(s) = \sum_{n=1}^N n^{-s} + \gamma(1-s)\sum_{n=1}^M n^{s-1} + R(s),</math>
+כאשר
+:<math>\gamma(s) = \pi^{\tfrac{1}{2}-s} \frac{\Gamma \left (\tfrac{s}{2} \right)}{\Gamma \left(\tfrac{1-s}{2}\right)}</math>
+הוא הגורם המופיע במשוואה הפונקציונלית <math>\zeta(s) = \gamma(1 - s)\,\zeta(1 - s)</math>, ו-
+:<math>R(s) = -\frac{\Gamma(1-s)}{2\pi i}\int \frac{(-x)^{s-1}e^{-Nx}}{e^x-1}dx</math>
+הוא אינטגרל מסילתי, שהמסילה שלו מתחילה ומסתיימת ב-<math>+\infty</math> ומקיפה את הסינגולריות שערכן המוחלט הוא לכל היותר <math>2\pi M</math>. המשוואה הפונקציונלית המקורבת נותנת הערכה לגודל איבר השגיאה. זיגל{{הערה|1=ראו את התרגום לאנגלית: Eric Barkan, David Sklar, ''On Riemanns Nachlass for Analytic Number Theory: A translation of Siegel's Uber'', 2018, [https://arxiv.org/abs/1810.05198 arXiv:1810.05198]|כיווון=שמאל}} ו[[הרולד אדוארדס|אדוארדס]] (1974) גוזרים ממנה את נוסחת רימן-זיגל על ידי הפעלת שיטת הירידה התלולה ביותר על האינטגרל, וכך מתקבל פיתוח אסימפטוטי לאיבר השגיאה <math>R(s)</math> כטור של חזקות שליליות של <math>\operatorname{Im}(s)</math>. ביישומים <math>s</math> נמצא בדרך כלל על הישר הקריטי, והמספרים השלמים החיוביים <math>M</math> ו-<math>N</math> נבחרים בסביבות <math>(2\pi \operatorname{Im}(s))^{1/2}</math>. גבקה (Gabcke‏, 1979) מצא חסמים טובים לשגיאה של נוסחת רימן-זיגל.
+
+== נוסחת האינטגרל של רימן ==
+רימן הראה ש-
+:<math>\int_{0\,\searrow\,1} \frac{e^{-i\pi u^2+2\pi i pu}}{e^{\pi i u}-e^{-\pi i u}} \, du = \frac{e^{i\pi p^2}-e^{i\pi p}}{e^{i\pi p} - e^{-i \pi p}},</math>
+כאשר מסילת האינטגרציה היא ישר בשיפוע <math>-1</math> העובר בין 0 ל-1 (Edwards‏, 1974, סעיף 7.9).
+
+בעזרת זאת הוא נתן את נוסחת האינטגרל הבאה לפונקציית זטא:
+:<math>\pi^{-\tfrac{s}{2}}\Gamma\left (\tfrac{s}{2} \right)\zeta(s)= \pi^{-\tfrac{s}{2}} \Gamma \left (\tfrac{s}{2} \right) \int_{0\,\swarrow\,1}\frac{x^{-s}e^{\pi i x^2}}{e^{\pi i x}-e^{-\pi i x}}\,dx +\pi^{-\frac{1-s}{2}}\Gamma \left (\tfrac{1-s}{2} \right)\int_{0\,\searrow\,1}\frac{x^{s-1}e^{-\pi i x^2}}{e^{\pi i x}-e^{-\pi i x}}\,dx</math>
+
+== ראו גם ==
+* [[פונקציית Z]]
+* [[פונקציית זטא של רימן]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Michael V. Berry, [https://doi.org/10.1098/rspa.1995.0093 The Riemann–Siegel expansion for the zeta function: high orders and remainders], Proceedings of the Royal Society of London A 450 (1939), 1995, pp. 439–462
+* H. M. Edwards, ''Riemann's zeta function'', Pure and Applied Mathematics 58, Academic Press, New York-London, 1974
+* Wolfgang Gabcke, [https://doi.org/10.53846/goediss-5113 Neue Herleitung und Explizite Restabschätzung der Riemann-Siegel-Formel], Georg-August-Universität Göttingen, 1979
+* S. J. Patterson, ''An introduction to the theory of the Riemann zeta-function'', Cambridge Studies in Advanced Mathematics 14, Cambridge University Press, 1988
+* C. L. Siegel, Über Riemanns Nachlaß zur analytischen Zahlentheorie, Quellen Studien zur Geschichte der Math. Astron. und Phys. Abt. B: Studien 2, 1932, pp. 45–80. Reprinted in Gesammelte Abhandlungen, Vol. 1, Springer-Verlag, 1966
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} X. Gourdon, [http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.html Numerical evaluation of the Riemann Zeta-function]
+* {{אנגלית}} [https://mathworld.wolfram.com/Riemann-SiegelFormula.html Riemann–Siegel Formula], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:ברנהרד רימן]]

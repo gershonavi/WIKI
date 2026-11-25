@@ -1,0 +1,35 @@
+ב[[מתמטיקה]], '''משפט הארדי-רמנוג'אן''' (ב[[אנגלית]]: Hardy–Ramanujan theorem), שהוכיח [[סריניוואסה רמנוג'אן|רמנוג'אן]] ובדק [[גודפרי הרולד הארדי|הארדי]]{{הערה|1=G. H. Hardy, S. Ramanujan, [http://www.imsc.res.in/~rao/ramanujan/CamUnivCpapers/Cpaper35/page1.htm The normal number of prime factors of a number n], Quarterly Journal of Mathematics 48, 1917, עמ' 76–92|כיווון=שמאל}}, קובע שהסדר הנורמלי של מספר הגורמים הראשוניים השונים <math>\omega(n)</math> של מספר <math>n</math> הוא <math>\log\log n</math>.
+
+באופן גס, פירוש הדבר הוא שלרוב המספרים יש בערך מספר כזה של גורמים ראשוניים שונים.
+
+== ניסוח מדויק ==
+גרסה מדויקת יותר{{הערה|1=D. R. Heath-Brown, [https://doi.org/10.46298/hrj.2007.156 Carmichael numbers with three prime factors], Hardy–Ramanujan Journal 30, 2007, עמ' 6–12|כיווון=שמאל}} קובעת שלכל פונקציה ממשית <math>\psi(n)</math> השואפת לאינסוף כאשר <math>n</math> שואף לאינסוף, מתקיים
+:<math>|\omega(n)-\log\log n|<\psi(n)\sqrt{\log\log n}</math>
+או, בניסוח המסורתי יותר,
+:<math>|\omega(n)-\log\log n|<{(\log\log n)}^{\frac12 +\varepsilon}</math>
+עבור [[כמעט כל (מתמטיקה)|כמעט כל]] המספרים השלמים (כולם פרט לחלק שצפיפותו אפס). כלומר, אם <math>g(x)</math> הוא מספר המספרים השלמים החיוביים <math>n</math> הקטנים מ-<math>x</math> שעבורם אי-השוויון אינו מתקיים, אז <math>g(x)/x</math> שואף לאפס כאשר <math>x</math> שואף לאינסוף.
+
+== היסטוריה ==
+הוכחה פשוטה של התוצאה נתן [[פאל טוראן]], שהשתמש ב[[נפת טוראן]] כדי להוכיח ש-{{הערה|1=Pál Turán, [https://doi.org/10.1112/jlms/s1-9.4.274 On a theorem of Hardy and Ramanujan], Journal of the London Mathematical Society 9 (4), 1934, עמ' 274–276|כיווון=שמאל}}
+:<math>\sum_{n \le x} | \omega(n) - \log\log x|^2 \ll x \log\log x .</math>
+
+== הכללות ==
+אותן תוצאות נכונות גם עבור <math>\Omega(n)</math>, מספר הגורמים הראשוניים של <math>n</math> כשהם נספרים עם ריבוי (ראו [[פונקציות אומגה ראשוניות]]). את המשפט מכליל [[משפט ארדש-קאץ]], המראה ש-<math>\omega(n)</math> מתפלג למעשה [[התפלגות נורמלית|נורמלית]]. יש לכך הוכחות רבות, ובהן שיטת המומנטים (אנדרו גרנוויל וקנן סאונדרארג'ן){{הערה|1=Andrew Granville, K. Soundararajan, Sieving and the Erdős-Kac theorem, in: A. Granville, Z. Rudnick (eds.), ''Equidistribution in number theory, an introduction'', NATO Science Series II 237, Springer, Dordrecht, 2007, עמ' 15–27, [https://arxiv.org/abs/math/0606039 arXiv:math/0606039]|כיווון=שמאל}} ושיטת שטיין (אדם הרפר){{הערה|1=Adam J. Harper, [https://doi.org/10.1017/S0305004109002412 Two new proofs of the Erdős-Kac theorem, with bound on the rate of convergence, by Stein's method for distributional approximations], Mathematical Proceedings of the Cambridge Philosophical Society 147 (1), 2009, עמ' 95–114|כיווון=שמאל}}. בנג'מין דורקן הראה שגרסה מותאמת של התוצאה של טוראן מאפשרת להוכיח את משפט הארדי-רמנוג'אן עם כל מומנט זוגי{{הערה|1=Benjamin Durkan, ''On the Hardy–Ramanujan Theorem'', 2023, [https://arxiv.org/abs/2310.14760 arXiv:2310.14760]|כיווון=שמאל}}.
+
+== ראו גם ==
+* [[מספר כמעט ראשוני]]
+* [[משפט ארדש-קאץ]]
+* [[פונקציות אומגה ראשוניות]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Wentang Kuo, Yu-Ru Liu, The Erdős–Kac theorem and its generalizations, in: J.-M. De Koninck, A. Granville, F. Luca (eds.), ''Anatomy of integers'', CRM Proceedings and Lecture Notes 46, American Mathematical Society, 2008, pp. 209–216
+* A. Hildebrand, [https://encyclopediaofmath.org/wiki/Hardy-Ramanujan_theorem Hardy-Ramanujan theorem], Encyclopedia of Mathematics
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:מספרים ראשוניים]]

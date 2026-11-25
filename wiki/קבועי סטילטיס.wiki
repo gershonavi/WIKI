@@ -1,0 +1,181 @@
+[[קובץ:Gamma-area.svg|ממוזער|שטח האזור הכחול שואף ל[[קבוע אוילר-מסקרוני]], שהוא קבוע סטילטיס ה-0.]]
+ב[[מתמטיקה]], '''קבועי סטילטיס''' הם המספרים <math>\gamma_k</math> המופיעים כמקדמים בפיתוח [[טור לורן]] של [[פונקציית זטא של רימן]] סביב ה[[קוטב (אנליזה מרוכבת)|קוטב]] שלה בנקודה 1:
+
+:<math>\zeta(1+s)=\frac{1}{s}+\sum_{n=0}^\infty \frac{(-1)^n}{n!} \gamma_n s^n.</math>
+
+הקבוע הראשון, <math>\gamma_0 = \gamma = 0.5772\dots</math>, הוא [[קבוע אוילר-מסקרוני]]. הקבועים קרויים על שם המתמטיקאי תומאס יואנס סטילטיס.
+
+== ייצוגים ==
+קבועי סטילטיס ניתנים על ידי ה[[גבול (מתמטיקה)|גבול]]
+
+:<math> \gamma_n = \lim_{m\to\infty} \left\{\sum_{k=1}^m \frac{(\ln k)^n}{k} - \int_1^m\frac{(\ln x)^n}{x}\,dx\right\} = \lim_{m \rightarrow \infty} {\left\{\sum_{k = 1}^m \frac{(\ln k)^n}{k} - \frac{(\ln m)^{n+1}}{n+1}\right\}}. </math>
+
+(במקרה <math>n=0</math> המחובר הראשון כולל את הביטוי <math>0^0</math>, שערכו נלקח כאן כ-1.) עבור <math>n=0</math> זוהי ההגדרה המוכרת של קבוע אוילר-מסקרוני כגבול ההפרש בין [[הסדרה ההרמונית|המספר ההרמוני]] ה-<math>m</math>-י לבין <math>\ln m</math>.
+
+מ[[נוסחת האינטגרל של קושי]] לנגזרות מתקבל הייצוג האינטגרלי
+
+:<math>\gamma_n = \frac{(-1)^n n!}{2\pi} \int_0^{2\pi} e^{-nix} \zeta\left(e^{ix}+1\right) dx.</math>
+
+ייצוגים רבים נוספים של הקבועים באמצעות אינטגרלים ו[[טור (מתמטיקה)|טורים אינסופיים]] הופיעו בעבודותיהם של [[יוהאן ינסן|ינסן]], פרנל, [[שארל הרמיט|הרמיט]], [[גודפרי הרולד הארדי|הארדי]], [[סריניוואסה רמנוג'אן|רמנוג'אן]] ומתמטיקאים נוספים.{{הערה|שם=cpo|1=Marc-Antoine Coppo, ''Nouvelles expressions des constantes de Stieltjes'', Expositiones Mathematicae '''17''' (1999), pp. 349–358|כיווון=שמאל}}{{הערה|שם=blg_02|1=Iaroslav V. Blagouchine, ''A theorem for the closed-form evaluation of the first generalized Stieltjes constant at rational arguments and some related summations'', Journal of Number Theory '''148''' (2015), pp. 537–592, {{DOI|10.1016/j.jnt.2014.08.009}}|כיווון=שמאל}}{{הערה|שם=blg_03|1=Iaroslav V. Blagouchine, ''Expansions of generalized Euler's constants into the series of polynomials in π<sup>−2</sup> and into the formal enveloping series with rational coefficients only'', Journal of Number Theory '''158''' (2016), pp. 365–396, {{DOI|10.1016/j.jnt.2015.06.012}}|כיווון=שמאל}} בפרט, נוסחת האינטגרל של ינסן ופרנל (המיוחסת לעיתים בטעות לאיינסוורת' ולהאוול) קובעת כי
+
+:<math>\gamma_n = \frac{1}{2}\delta_{n,0}+\frac{1}{i}\int_0^\infty \frac{dx}{e^{2\pi x}-1} \left\{ \frac{(\ln(1-ix))^n}{1-ix} - \frac{(\ln(1+ix))^n}{1+ix} \right\}, \qquad n=0, 1, 2,\ldots</math>
+
+כאשר <math>\delta_{n,k}</math> היא [[הדלתא של קרונקר]].{{הערה|שם=blg_02}}{{הערה|שם=blg_03}} בין הנוסחאות האחרות מצויות גם
+
+:<math>\gamma_n = -\frac{\pi}{2(n+1)} \int_{-\infty}^\infty \frac{\left(\ln\left(\frac{1}{2}\pm ix\right)\right)^{n+1}}{\cosh^2 \pi x}\, dx, \qquad n=0, 1, 2,\ldots</math>
+
+ו־
+
+:<math>\gamma_1 = -\gamma^2 - \int_0^\infty \left[\frac{1}{1-e^{-x}}-\frac{1}{x}\right] e^{-x}\ln x \, dx.</math>{{הערה|שם=cpo}}{{הערה|שם=blg_02}}
+
+בכל הנוגע לייצוגים כטורים, הארדי נתן בשנת 1912 טור המשתמש בחלק השלם של [[לוגריתם]]:{{הערה|1=G. H. Hardy, ''Note on Dr. Vacca's series for γ'', Quarterly Journal of Pure and Applied Mathematics '''43''' (1912), pp. 215–216|כיווון=שמאל}}
+
+:<math>\gamma_1 = \frac{\ln2}{2}\sum_{k=2}^\infty \frac{(-1)^k}{k} \lfloor \log_2{k}\rfloor\cdot \left(2\log_2{k} - \lfloor \log_2{2k}\rfloor\right).</math>
+
+איסראילוב נתן טורים חצי-מתכנסים (אסימפטוטיים) באמצעות [[מספרי ברנולי]].{{הערה|שם=isrl|1=M. I. Israilov, ''On the Laurent decomposition of Riemann's zeta function'' (ברוסית), Trudy Mat. Inst. Akad. Nauk SSSR '''158''' (1981), pp. 98–103|כיווון=שמאל}} קונון, בלגושין וקופו מצאו טורים הכוללים [[מקדם בינומי|מקדמים בינומיים]], למשל
+
+:<math>\gamma_m = -\frac{1}{m+1}\sum_{n=0}^\infty\frac{1}{n+1} \sum_{k=0}^n (-1)^k \binom{n}{k}(\ln(k+1))^{m+1}</math>
+
+ו־
+
+:<math>\gamma_m = \sum_{n=0}^\infty\left|G_{n+1}\right| \sum_{k=0}^n (-1)^k \binom{n}{k}\frac{(\ln(k+1))^m}{k+1},</math>
+
+כאשר <math>G_n</math> הם מקדמי גרגורי (<math>G_1=\tfrac12,\ G_2=-\tfrac1{12},\ G_3=\tfrac1{24},\ G_4=-\tfrac{19}{720},\ldots</math>).{{הערה|שם=cpo}}{{הערה|שם=blg_03}}{{הערה|שם=blg_04|1=Iaroslav V. Blagouchine, ''Three notes on Ser's and Hasse's representations for the zeta-functions'', INTEGERS: The Electronic Journal of Combinatorial Number Theory '''18A''' (2018), #A3, pp. 1–45, [https://arxiv.org/abs/1606.02044 arXiv:1606.02044]|כיווון=שמאל}}
+
+בלגושין מצא גם טורים המתכנסים לאט הכוללים [[מספר סטרלינג|מספרי סטירלינג]] מהסוג הראשון, וכן טורים חצי-מתכנסים בעלי איברים רציונליים בלבד. בפרט, לקבוע הראשון יש ייצוג פשוט במיוחד:
+
+:<math>\gamma_1 = -\frac{1}{2}\sum_{k=1}^{N}\frac{B_{2k}\cdot H_{2k-1}}{k} + \theta\cdot\frac{B_{2N+2}\cdot H_{2N+1}}{2N+2},\qquad 0<\theta<1,</math>
+
+כאשר <math>B_n</math> הם מספרי ברנולי ו-<math>H_n</math> הוא [[הסדרה ההרמונית|המספר ההרמוני]] ה-<math>n</math>-י.{{הערה|שם=blg_03}} טורים מסובכים יותר הופיעו בעבודותיהם של להמר, ליאנג, טוד, לבריק, איסראילוב, קייפר, ויליאמס, קופי ואחרים.
+
+== חסמים וקצב גידול ==
+ברנדט הוכיח בשנת 1972 את החסם{{הערה|1=Bruce C. Berndt, ''On the Hurwitz zeta-function'', Rocky Mountain Journal of Mathematics '''2''' (1972), no. 1, pp. 151–157|כיווון=שמאל}}
+
+:<math>|\gamma_n| \leq \begin{cases} \dfrac{2(n-1)!}{\pi^n}, & n=1, 3, 5,\ldots \\[3mm] \dfrac{4(n-1)!}{\pi^n}, & n=2, 4, 6,\ldots \end{cases}</math>
+
+חסמים טובים יותר באמצעות [[פונקציה אלמנטרית|פונקציות אלמנטריות]] הושגו בהמשך. לבריק הראה כי <math>|\gamma_n| \leq \frac{n!}{2^{n+1}}</math>,{{הערה|1=A. F. Lavrik, ''On the main term of the divisor problem and the power series of the Riemann zeta function in a neighbourhood of its pole'' (ברוסית), Trudy Mat. Inst. Akad. Nauk SSSR '''142''' (1976), pp. 165–173|כיווון=שמאל}} ומצוקה הראה כי{{הערה|1=Y. Matsuoka, ''On the power series coefficients of the Riemann zeta function'', Tokyo Journal of Mathematics '''12''' (1989), no. 1, pp. 49–58|כיווון=שמאל}}
+
+:<math>|\gamma_n| < 10^{-4} e^{n \ln \ln n}, \qquad n\ge 5.</math>
+
+בלגושין נתן חסמים עליונים ותחתונים מפורשים באמצעות מספרי ברנולי.{{הערה|שם=blg_03}}
+
+קנסל וקופי מצאו נוסחה אסימפטוטית יעילה המקרבת היטב את הקבועים עבור <math>n</math> גדול.{{הערה|שם=kns|1=Charles Knessl and Mark W. Coffey, ''An effective asymptotic formula for the Stieltjes constants'', Mathematics of Computation '''80''' (2011), no. 273, pp. 379–386|כיווון=שמאל}} אם <math>v</math> הוא הפתרון היחיד של המשוואה
+
+:<math>2 \pi \exp(v \tan v) = n \frac{\cos(v)}{v}</math>
+
+בתחום <math>0 < v < \pi/2</math>, ו-<math>u = v \tan v</math>, אז
+
+:<math>\gamma_n \sim \frac{B}{\sqrt{n}} e^{nA} \cos(an+b),</math>
+
+כאשר
+
+:<math>A = \frac{1}{2} \ln(u^2+v^2) - \frac{u}{u^2+v^2}, \qquad B = \frac{2 \sqrt{2\pi} \sqrt{u^2+v^2}}{[(u+1)^2+v^2]^{1/4}},</math>
+
+:<math>a = \tan^{-1}\left(\frac{v}{u}\right) + \frac{v}{u^2+v^2}, \qquad b = \tan^{-1}\left(\frac{v}{u}\right) - \frac{1}{2} \left(\frac{v}{u+1}\right).</math>
+
+עד <math>n=100000</math> הקירוב של קנסל וקופי חוזה נכונה את הסימן של <math>\gamma_n</math>, למעט מקרה יחיד: <math>n=137</math>.{{הערה|שם=kns}}
+
+בשנת 2022 נתן קז'ישטוף מאשלנקה ביטוי אסימפטוטי פשוט ומדויק יותר, המשחזר בשגיאה קטנה יחסית גם את הערך הבעייתי <math>n=137</math>.{{הערה|1=Krzysztof Maślanka, ''Asymptotic Properties of Stieltjes Constants'', Computational Methods in Science and Technology '''28''' (2022), pp. 123–131, [https://arxiv.org/abs/2210.07244 arXiv:2210.07244]|כיווון=שמאל}} עבור <math>n \gg 1</math>:
+
+:<math>\gamma_{n} \sim \sqrt{\frac{2}{\pi}}\, n!\, \operatorname{Re} \frac{\Gamma \left(s_{n}\right) e^{-cs_{n}}}{\left( s_{n}\right) ^{n}\sqrt{n+s_{n}+\frac{3}{2}}},</math>
+
+כאשר <math>s_n</math> הן נקודות האוכף
+
+:<math>s_{n}=\frac{n+\frac{3}{2}}{W\left( \pm \frac{n+\frac{3}{2}}{2\pi i}\right) },</math>
+
+<math>W</math> היא [[פונקציית W של למברט]] ו-<math>c=\log (2\pi )+\frac{\pi }{2}i</math>.
+
+== ערכים מספריים ==
+הערכים הראשונים של הקבועים הם:{{הערה|1=B. K. Choudhury, ''The Riemann zeta-function and its derivatives'', Proceedings of the Royal Society A '''450''' (1995), no. 1940, pp. 477–499, {{DOI|10.1098/rspa.1995.0096}}|כיווון=שמאל}}
+
+{| class="wikitable" style="direction:ltr"
+! ''n'' !! approximate value of γ<sub>''n''</sub>
+|-
+| 0 || +0.5772156649015328606065120900824024310421593359
+|-
+| 1 || −0.0728158454836767248605863758749013191377363383
+|-
+| 2 || −0.0096903631928723184845303860352125293590658061
+|-
+| 3 || +0.0020538344203033458661600465427533842857158044
+|-
+| 4 || +0.0023253700654673000574681701775260680009044694
+|-
+| 5 || +0.0007933238173010627017533348774444448307315394
+|-
+| 6 || −0.0002387693454301996098724218419080042777837151
+|-
+| 7 || −0.0005272895670577510460740975054788582819962534
+|-
+| 8 || −0.0003521233538030395096020521650012087417291805
+|-
+| 9 || −0.0000343947744180880481779146237982273906207895
+|-
+| 10 || +0.0002053328149090647946837222892370653029598537
+|-
+| 100 || −4.2534015717080269623144385197278358247028931053 × 10<sup>17</sup>
+|-
+| 1000 || −1.5709538442047449345494023425120825242380299554 × 10<sup>486</sup>
+|-
+| 10000 || −2.2104970567221060862971082857536501900234397174 × 10<sup>6883</sup>
+|-
+| 100000 || +1.9919273063125410956582272431568589205211659777 × 10<sup>83432</sup>
+|}
+
+קבוע סטילטיס ה-<math>n</math>-י חיובי עבור
+: <math>n</math> = 0, 3, 4, 5, 10, 11, 12, 17, 18, 19, 20, 21, 26, 27, 28, 29, 30, ...
+ושלילי עבור
+: <math>n</math> = 1, 2, 6, 7, 8, 9, 13, 14, 15, 16, 22, 23, 24, 25, 31, 32, 33, 34, 35, ...
+
+עבור <math>n</math> גדול, הערך המוחלט של הקבועים גדל במהירות, וסימנם מתחלף בתבנית מורכבת.
+
+חישובים נומריים של הקבועים בוצעו בין השאר על ידי קייפר, קרמינסקי, פלוף, יוהנסון ובלגושין. יוהנסון חישב את הקבועים עד <math>n=100000</math>, כל אחד מהם ביותר מ-10,000 ספרות. מאוחר יותר פיתחו יוהנסון ובלגושין אלגוריתם יעיל במיוחד לחישוב קבועי סטילטיס המוכללים (ראו להלן) עבור <math>n</math> גדול ו-<math>a</math> מרוכב, המאפשר לחשב את <math>\gamma_n</math> ב-1,000 ספרות בתוך כדקה, עבור כל <math>n</math> עד <math>10^{100}</math>.{{הערה|שם=johansson1|1=Fredrik Johansson and Iaroslav Blagouchine, ''Computing Stieltjes constants using complex integration'', Mathematics of Computation '''88''' (2019), no. 318, pp. 1829–1850, {{DOI|10.1090/mcom/3401}}|כיווון=שמאל}}
+
+== קבועי סטילטיס מוכללים ==
+=== מידע כללי ===
+באופן כללי יותר, ניתן להגדיר את קבועי סטילטיס <math>\gamma_n(a)</math> המופיעים בפיתוח טור לורן של פונקציית זטא של הורוויץ:
+
+:<math>\zeta(s,a)=\frac{1}{s-1}+\sum_{n=0}^\infty \frac{(-1)^n}{n!} \gamma_n(a) (s-1)^n,</math>
+
+כאשר <math>a</math> הוא [[מספר מרוכב]] עם <math>\operatorname{Re}(a)>0</math>. מאחר שפונקציית זטא של הורוויץ מכלילה את פונקציית זטא של רימן, מתקיים <math>\gamma_n(1)=\gamma_n</math>. הקבוע ה-0 הוא פשוט <math>\gamma_0(a)=-\psi(a)</math>, כאשר <math>\psi</math> היא [[פונקציית דיגמא|פונקציית הדיגמא]], ואילו הקבועים האחרים אינם ידועים כניתנים לביטוי באמצעות פונקציות אלמנטריות או פונקציות קלאסיות אחרות של האנליזה. עם זאת, ידועים עבורם ייצוגים רבים. למשל, ברנדט ווילטון נתנו את הייצוג
+
+:<math>\gamma_n(a) = \lim_{m\to\infty}\left\{ \sum_{k=0}^m \frac{(\ln (k+a))^n}{k+a} - \frac{(\ln (m+a))^{n+1}}{n+1} \right\}, \qquad n=0, 1, 2,\ldots,\quad a\neq0, -1, -2, \ldots</math>
+
+המקבילה של נוסחת ינסן-פרנל עבור הקבועים המוכללים היא נוסחת הרמיט:{{הערה|שם=blg_02}}
+
+:<math>\gamma_n(a) =\left[\frac{1}{2a}-\frac{\ln{a}}{n+1} \right](\ln a)^n -i\int_0^\infty \frac{dx}{e^{2\pi x}-1} \left\{ \frac{(\ln(a-ix))^n}{a-ix} - \frac{(\ln(a+ix))^n}{a+ix} \right\}, \qquad \operatorname{Re}(a)>0.</math>
+
+קבועי סטילטיס המוכללים מקיימים את [[נוסחת נסיגה|נוסחת הנסיגה]]
+
+:<math>\gamma_n(a+1) = \gamma_n(a) - \frac{(\ln a)^n}{a}, \qquad a\neq0, -1, -2, \ldots</math>
+
+וכן את משפט הכפל
+
+:<math>\sum_{l=0}^{n-1} \gamma_p \left(a+\frac{l}{n} \right) = (-1)^p n \left[\frac{\ln n}{p+1} - \psi(an) \right](\ln n)^p + n\sum_{r=0}^{p-1}(-1)^r \binom{p}{r} \gamma_{p-r}(an) \cdot (\ln n)^r, \qquad n=2, 3, 4,\ldots</math>{{הערה|שם=blg_01|1=Iaroslav V. Blagouchine, ''Rediscovery of Malmsten's integrals, their evaluation by contour integration methods and some related results'', The Ramanujan Journal '''35''' (2014), no. 1, pp. 21–110, {{DOI|10.1007/s11139-013-9528-5}}|כיווון=שמאל}}
+
+=== קבוע סטילטיס המוכלל הראשון ===
+לקבוע המוכלל הראשון <math>\gamma_1(a)</math> יש מספר תכונות בולטות:
+* '''זהות מלמסטן (נוסחת השיקוף):''' עבור מספרים שלמים חיוביים <math>m<n</math> מתקיים
+:<math>\gamma_1 \left(\frac{m}{n}\right)- \gamma_1 \left(1-\frac{m}{n}\right) =2\pi\sum_{l=1}^{n-1} \sin\frac{2\pi m l}{n} \cdot\ln\Gamma \left(\frac{l}{n} \right) -\pi(\gamma+\ln2\pi n)\cot\frac{m\pi}{n}.</math>
+:נוסחה זו יוחסה זמן רב לאלמקוויסט ולמאורמן, שפיתחו אותה בשנות ה-90 של המאה ה-20, אך מאוחר יותר התברר שקרל מלמסטן מצא אותה, בצורה מעט שונה, כבר בשנת 1846.{{הערה|שם=blg_02}}
+* '''ערכים בנקודות רציונליות:''' את <math>\gamma_1(r/m)</math> ניתן לבטא בצורה כמעט סגורה באמצעות <math>\gamma_1</math>, <math>\gamma</math>, פונקציית הדיגמא, הלוגריתם של [[פונקציית גמא|פונקציית הגמא]] והנגזרת השנייה של פונקציית זטא של הורוויץ בנקודה 0:{{הערה|שם=blg_02}}
+:<math>\begin{align}\gamma_1 \left(\frac{r}{m} \right) =\ & \gamma_1 +\gamma^2 + \gamma\ln2\pi m + \ln2\pi\cdot\ln{m}+\frac{1}{2}(\ln m)^2 + (\gamma+\ln2\pi m)\cdot\psi\left(\frac{r}{m}\right) \\ & +\pi\sum_{l=1}^{m-1} \sin\frac{2\pi r l}{m} \cdot\ln\Gamma \left(\frac{l}{m} \right) + \sum_{l=1}^{m-1} \cos\frac{2\pi rl}{m}\cdot\zeta''\left(0,\frac{l}{m}\right), \qquad r=1, 2, \ldots, m-1.\end{align}</math>
+:הוכחה חלופית ניתנה מאוחר יותר על ידי קופי.{{הערה|שם=coff|1=Mark W. Coffey, ''Functional equations for the Stieltjes constants'', [https://arxiv.org/abs/1402.3746 arXiv:1402.3746]|כיווון=שמאל}}
+* '''סכומים סופיים:''' ידועות נוסחאות סכימה רבות, למשל
+:<math>\sum_{r=0}^{m-1} \gamma_1\left( a+\frac{r}{m} \right) = m\ln{m}\cdot\psi(am) - \frac{m}{2}(\ln m)^2 + m\gamma_1(am), \qquad \sum_{r=1}^{m-1} \gamma_1\left(\frac{r}{m} \right) = (m-1)\gamma_1 - m\gamma\ln{m} - \frac{m}{2}(\ln m)^2.</math>{{הערה|שם=blg_02}}{{הערה|שם=blg_01}}
+* '''ערכים מיוחדים:''' חלק מהערכים בנקודות רציונליות ניתנים לביטוי באמצעות פונקציית הגמא, <math>\gamma_1</math> ופונקציות אלמנטריות. למשל:
+:<math>\gamma_1\left(\frac{1}{2}\right) = - 2\gamma\ln 2 - (\ln 2)^2 + \gamma_1 = -1.353459680\ldots</math>
+:ערכים בנקודות 1/4, 3/4 ו-1/3 חושבו באופן בלתי תלוי על ידי קונון ובלגושין,{{הערה|שם=blg_01}} למשל
+:<math>\gamma_1\left(\frac{1}{4}\right) = 2\pi\ln\Gamma\left(\frac{1}{4} \right) - \frac{3\pi}{2}\ln\pi - \frac{7}{2}(\ln 2)^2 - (3\gamma+2\pi)\ln2 - \frac{\gamma\pi}{2}+\gamma_1 = -5.518076350\ldots</math>
+:<math>\gamma_1\left(\frac{1}{3} \right) = -\frac{3\gamma}{2}\ln3 - \frac{3}{4}(\ln 3)^2 + \frac{\pi}{4\sqrt{3}}\left\{\ln3 - 8\ln2\pi -2\gamma +12 \ln\Gamma\left(\frac{1}{3} \right) \right\} + \gamma_1 = -3.259557515\ldots</math>
+:בלגושין חישב ערכים דומים גם בנקודות 2/3, 1/5, 1/6, 5/6, 1/8 ו-1/12.{{הערה|שם=blg_01}}
+
+=== קבוע סטילטיס המוכלל השני ===
+הקבוע המוכלל השני נחקר הרבה פחות מהראשון. בדומה לקבוע הראשון, גם את <math>\gamma_2(r/m)</math> בנקודות רציונליות ניתן לבטא בצורה כמעט סגורה, באמצעות <math>\gamma_1</math>, <math>\gamma_2</math>, פונקציית הדיגמא, הלוגריתם של פונקציית הגמא והנגזרות השנייה והשלישית של פונקציית זטא של הורוויץ בנקודה 0. נוסחה זו נמצאה על ידי בלגושין,{{הערה|שם=blg_02}} ותוצאה שקולה הושגה מאוחר יותר בשיטה אחרת על ידי קופי.{{הערה|שם=coff}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:קבועים מתמטיים]]
+[[קטגוריה:תורת המספרים האנליטית]]

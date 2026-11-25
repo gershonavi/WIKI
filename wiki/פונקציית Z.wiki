@@ -1,0 +1,75 @@
+[[קובץ:Z function in the complex plane, -5, 5.svg|ממוזער|פונקציית Z במישור המרוכב, בשיטת צביעת תחום.]]
+[[קובץ:Z function in the complex plane, -40 -- 40.svg|ממוזער|פונקציית Z במישור המרוכב, בתחום רחב יותר.]]
+ב[[מתמטיקה]], '''פונקציית Z''' (ב[[אנגלית]]: Z function) היא [[פונקציה]] המשמשת לחקר [[פונקציית זטא של רימן]] לאורך הישר הקריטי, שבו החלק הממשי של הארגומנט הוא חצי. היא נקראת גם '''פונקציית Z של רימן-זיגל''', '''פונקציית הזטא של רימן-זיגל''', '''פונקציית הארדי''' ו'''פונקציית Z של הארדי''', על שם [[גודפרי הרולד הארדי]]. אפשר להגדיר אותה בעזרת פונקציית התטא של רימן-זיגל <math>\theta(t)</math> ופונקציית זטא של רימן:
+:<math>Z(t) = e^{i \theta(t)} \zeta(\tfrac{1}{2} + it).</math>
+
+מהמשוואה הפונקציונלית של פונקציית זטא של רימן נובע שפונקציית Z [[מספר ממשי|ממשית]] עבור ערכים ממשיים של <math>t</math>. היא [[פונקציות זוגיות ואי-זוגיות|פונקציה זוגית]], ו[[פונקציה אנליטית|אנליטית]] ממשית עבור ערכים ממשיים. מאחר שפונקציית התטא של רימן-זיגל ופונקציית זטא של רימן [[פונקציה הולומורפית|הולומורפיות]] ברצועה הקריטית, שבה החלק המדומה של <math>t</math> נמצא בין <math>-1/2</math> ל-<math>1/2</math>, גם פונקציית Z הולומורפית ברצועה זו. יתרה מזו, האפסים הממשיים של <math>Z(t)</math> הם בדיוק האפסים של פונקציית זטא על הישר הקריטי, ואפסים מרוכבים של פונקציית Z ברצועה הקריטית שלה מתאימים לאפסים של פונקציית זטא של רימן שאינם על הישר הקריטי.
+
+== נוסחת רימן-זיגל ==
+את חישוב הערך <math>Z(t)</math> עבור <math>t</math> ממשי, ולכן גם של פונקציית זטא על הישר הקריטי, מזרזת מאוד נוסחת רימן-זיגל:
+:<math>Z(t) = 2 \sum_{n^2 < t/2\pi} n^{-1/2}\cos(\theta(t)-t \log n) +R(t),</math>
+כאשר לאיבר השגיאה <math>R(t)</math> יש ביטוי אסימפטוטי מסובך במונחי הפונקציה
+:<math>\Psi(z) = \frac{\cos 2\pi(z^2-z-1/16)}{\cos 2\pi z}</math>
+ונגזרותיה. אם <math>u = (\tfrac t {2\pi})^{1/4}</math>, ‏<math>N=\lfloor u^2 \rfloor</math> ו-<math>p = u^2 - N</math>, אז
+:<math>R(t) \sim (-1)^{N-1} \left( \Psi(p)u^{-1} - \frac{1}{96 \pi^2}\Psi^{(3)}(p)u^{-3} + \cdots\right),</math>
+כאשר שלוש הנקודות מציינות שאפשר להמשיך לאיברים מסדר גבוה יותר, המסובכים יותר ויותר.
+
+ידועים טורים יעילים נוספים ל-<math>Z(t)</math>, ובפרט כמה טורים המשתמשים ב[[פונקציית גמא הלא שלמה]]. אם
+:<math>Q(a, z) = \frac{\Gamma(a,z)}{\Gamma(a)} = \frac 1 {\Gamma(a)} \int_z^\infty u^{a-1} e^{-u} \, du,</math>
+אז דוגמה נאה במיוחד היא
+:<math>Z(t) =2 \Re \left(e^{i \theta(t)} \left(\sum_{n=1}^\infty Q\left(\frac{s}{2},\pi i n^2 \right) - \frac{\pi^{s/2} e^{\pi i s/4}} {s \Gamma\left(\frac{s}{2}\right)} \right) \right).</math>
+
+== התנהגות פונקציית Z ==
+ממשפט הישר הקריטי נובע שצפיפות האפסים הממשיים של פונקציית Z היא
+:<math>\frac{c}{2\pi} \log \frac{t}{2\pi}</math>
+עבור קבוע <math>c > 5/12</math>{{הערה|1=Kyle Pratt, Nicolas Robles, Alexandru Zaharescu, Dirk Zeindler, ''More than five-twelfths of the zeros of ζ are on the critical line'', 2018, [https://arxiv.org/abs/1802.10521 arXiv:1802.10521]|כיווון=שמאל}}. לכן מספר האפסים בקטע בגודל נתון גדל לאט. אם [[השערת רימן]] נכונה, כל האפסים ברצועה הקריטית הם אפסים ממשיים, והקבוע <math>c</math> שווה ל-1. משערים גם שכל האפסים האלה פשוטים.
+
+=== משפט אומגה ===
+בגלל האפסים שלה, פונקציית Z מתנהגת באופן תנודתי. היא גם גדלה לאט, הן בממוצע והן בערכי השיא. לדוגמה, גם בלי השערת רימן מתקיים "משפט האומגה"
+:<math>Z(t) = \Omega\left( \exp\left(\frac{3}{4}\sqrt{\frac{\log t}{\log \log t}}\right) \right),</math>
+כאשר הסימון פירושו שהמנה של <math>Z(t)</math> בפונקציה שבתוך <math>\Omega</math> אינה שואפת לאפס כאשר <math>t</math> גדל.
+
+=== גידול ממוצע ===
+גם הגידול הממוצע של פונקציית Z נחקר רבות. את [[שורש ממוצע הריבועים]] אפשר לקבל מ-
+:<math>\frac{1}{T} \int_0^T Z(t)^2 dt \sim \log T</math>
+או מ-
+:<math>\frac{1}{T} \int_T^{2T} Z(t)^2 dt \sim \log T,</math>
+ומכאן ששורש ממוצע הריבועים של <math>Z(t)</math> גדל כמו <math>\sqrt{\log t}</math>. אפשר לשפר הערכה זו ל-
+:<math>\frac{1}{T} \int_0^T Z(t)^2 dt = \log T + (2\gamma - 2 \log(2 \pi) -1) + O(T^{-15/22}).</math>
+אם מגדילים את המעריך, מקבלים ממוצע התלוי יותר בערכי השיא של <math>Z</math>. עבור חזקה רביעית:
+:<math>\frac{1}{T} \int_0^T Z(t)^4 dt \sim \frac{1}{2\pi^2}(\log T)^4,</math>
+ומכאן שהשורש הרביעי של ממוצע החזקה הרביעית גדל כמו <math>\tfrac{1}{2^{1/4} \sqrt{\pi}} \log t</math>.
+
+=== השערת לינדלף ===
+{{ערך מורחב|השערת לינדלף}}
+חזקות זוגיות גבוהות יותר נחקרו רבות, אך ידוע פחות על הממוצעים המתאימים. משערים, וזה נובע מהשערת רימן, ש-
+:<math>\frac{1}{T} \int_0^T Z(t)^{2k} \, dt = o(T^\varepsilon)</math>
+לכל <math>\varepsilon</math> חיובי. כאן הסימון <math>o</math> הקטן פירושו שהמנה של האגף השמאלי באגף הימני ''כן'' שואפת לאפס; כלומר, <math>o</math> הקטן הוא השלילה של <math>\Omega</math>. השערה זו נקראת [[השערת לינדלף]], והיא חלשה יותר מהשערת רימן. בדרך כלל מנסחים אותה בצורה השקולה
+:<math>Z(t) = o(t^\varepsilon);</math>
+בשתי הצורות היא קובעת שקצב הגידול של ערכי השיא אינו יכול להיות גבוה מדי. החסם הידוע הטוב ביותר על קצב גידול זה אינו חזק: ידוע רק שהוא מתקיים עבור <math>\varepsilon</math> הגדול מכ-0.155 (ראו בערך השערת לינדלף). יהיה מפתיע מאוד לגלות שפונקציית Z גדלה בקצב הקרוב לכך. [[ג'ון אדנזור ליטלווד|ליטלווד]] הוכיח שבהנחת השערת רימן
+:<math>Z(t) = o\left(\exp\left(\frac{10 \log t}{\log \log t}\right)\right),</math>
+וזה נראה סביר הרבה יותר.
+
+== ראו גם ==
+* [[פונקציית זטא של רימן]]
+* [[השערת לינדלף]]
+* [[השערת רימן]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. M. Edwards, ''Riemann's zeta function'', Pure and Applied Mathematics 58, Academic Press, New York-London, 1974
+* Aleksandar Ivić, ''The theory of Hardy's Z-function'', Cambridge Tracts in Mathematics 196, Cambridge University Press, 2013
+* R. B. Paris, D. Kaminski, ''Asymptotics and Mellin-Barnes Integrals'', Encyclopedia of Mathematics and Its Applications 85, Cambridge University Press, 2001
+* K. Ramachandra, ''Lectures on the mean-value and Omega-theorems for the Riemann Zeta-function'', Tata Institute of Fundamental Research, Springer-Verlag, 1996
+* E. C. Titchmarsh, ''The Theory of the Riemann Zeta-Function'', 2nd ed., ed. D. R. Heath-Brown, Oxford University Press, 1986
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://mathworld.wolfram.com/Riemann-SiegelFunctions.html Riemann–Siegel Functions], באתר MathWorld
+* {{אנגלית}} [http://functions.wolfram.com/ZetaFunctionsandPolylogarithms/RiemannSiegelZ/ Riemann-Siegel function Z], Wolfram Research
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]

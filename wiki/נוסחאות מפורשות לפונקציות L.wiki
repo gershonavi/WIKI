@@ -1,0 +1,102 @@
+ב[[מתמטיקה]], ובפרט ב[[תורת המספרים האנליטית]], '''הנוסחאות המפורשות לפונקציות L''' הן קשרים בין סכומים על פני האפסים המרוכבים של [[פונקציית L]] לבין סכומים על פני חזקות של [[מספר ראשוני|מספרים ראשוניים]]. הנוסחה הראשונה מסוג זה הוצגה על ידי [[ברנהרד רימן]] בשנת 1859 עבור [[פונקציית זטא של רימן]].{{הערה|שם=riemann|1=Bernhard Riemann, ''Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse'', Monatsberichte der Berliner Akademie, 1859|כיווון=שמאל}} נוסחאות מפורשות שימשו גם לקבלת חסמים על הדיסקרימיננטה ועל המוליך של [[שדה מספרים|שדות מספרים]].
+
+== הנוסחה המפורשת של רימן ==
+{{ערך מורחב|הנוסחה המפורשת של רימן פון מנגולד}}
+במאמרו משנת 1859, "[[על מספר הראשוניים מתחת לגודל נתון]]", שרטט רימן נוסחה מפורשת עבור [[פונקציית המספרים הראשוניים]] המנורמלת <math>\pi_0(x)</math>. הנוסחה הוכחה במלואה רק בשנת 1895, על ידי הנס פון מנגולד. הפונקציה המנורמלת קשורה לפונקציית המספרים הראשוניים <math>\pi(x)</math> על ידי
+
+:<math>\pi_0(x) = \frac{1}{2} \lim_{h\to 0} \left[\,\pi(x+h) + \pi(x-h)\,\right],</math>
+
+כלומר בנקודות אי-הרציפות היא מקבלת את ה[[ממוצע חשבוני|ממוצע]] של הגבול משמאל והגבול מימין.{{הערה|1=David R. Wilkins (translator), [https://www.claymath.org/wp-content/uploads/2023/04/Wilkins-translation.pdf On the Number of Prime Numbers less than a Given Quantity], Clay Mathematics Institute, 1998|כיווון=שמאל}} רימן ניסח את הנוסחה באמצעות הפונקציה הקשורה
+
+:<math>f(x) = \pi_0(x) + \frac{1}{2}\,\pi_0(x^{1/2}) + \frac{1}{3}\,\pi_0(x^{1/3}) + \cdots,</math>
+
+שבה חזקה <math>p^n</math> של ראשוני נספרת כ-<math>1/n</math> של ראשוני. את <math>\pi_0</math> ניתן לשחזר מ-<math>f</math> באמצעות [[פונקציית מביוס]] <math>\mu(n)</math>:{{הערה|1=Xian-Jin Li, ''Explicit formulas for Dirichlet and Hecke L-functions'', Illinois Journal of Mathematics '''48''' (2004), no. 2, pp. 491–503, {{DOI|10.1215/ijm/1258138394}}|כיווון=שמאל}}
+
+:<math>\pi_0(x) = \sum_n\frac{1}{n}\,\mu(n)\,f(x^{1/n}) = f(x) - \frac{1}{2}\,f(x^{1/2}) - \frac{1}{3}\,f(x^{1/3}) - \frac{1}{5}\,f(x^{1/5}) + \frac{1}{6}\,f(x^{1/6}) - \cdots</math>
+
+הנוסחה של רימן היא
+
+:<math>f(x) = \operatorname{li}(x) - \sum_\rho \operatorname{li}(x^\rho) - \log(2) + \int_x^\infty \frac{dt}{t\,(t^2-1)\log(t)},</math>
+
+כאשר הסכום עובר על האפסים הלא-טריוויאליים <math>\rho</math> של פונקציית זטא של רימן. הסכום אינו מתכנס בהחלט, אך ניתן לחשב אותו כאשר מסדרים את האפסים לפי הערך המוחלט של החלק המדומה שלהם. <math>\operatorname{li}</math> היא [[פונקציית האינטגרל הלוגריתמי]], המוגדרת כערך העיקרי של קושי של האינטגרל המתבדר
+
+:<math>\operatorname{li}(x) = \int_0^x \frac{dt}{\log(t)}.</math>
+
+האיברים <math>\operatorname{li}(x^\rho)</math> דורשים הגדרה זהירה, מאחר של-<math>\operatorname{li}</math> יש [[נקודת הסתעפות|נקודות הסתעפות]] ב-0 וב-1; הם מוגדרים באמצעות [[המשכה אנליטית]] במשתנה המרוכב <math>\rho</math> בתחום <math>x>1</math>, <math>\operatorname{Re}(\rho)>0</math>. גם האיברים האחרים מתאימים לאפסים: האיבר הדומיננטי <math>\operatorname{li}(x)</math> נובע מהקוטב ב-<math>s=1</math>, הנחשב כאפס מריבוי <math>-1</math>, והאיברים הקטנים הנותרים נובעים מהאפסים הטריוויאליים. הנוסחה מראה שאפסי פונקציית זטא של רימן שולטים בתנודות של הראשוניים סביב מיקומם ה"צפוי".{{הערה|1=Don Zagier, ''The first 50 million prime numbers'', The Mathematical Intelligencer '''1''' (1977), suppl. 2, pp. 7–19, {{DOI|10.1007/bf03351556}}|כיווון=שמאל}}
+
+ההוכחה המלאה הראשונה של פון מנגולד, משנת 1895, החלה בהוכחת הנוסחה הבאה עבור [[פונקציית צ'בישב]] <math>\psi</math>:{{הערה|1=Hans von Mangoldt, ''Zu Riemanns Abhandlung "Über die Anzahl der Primzahlen unter einer gegebenen Grösse"'', Journal für die reine und angewandte Mathematik '''114''' (1895), pp. 255–305|כיווון=שמאל}}
+
+:<math>\psi_0(x) = \dfrac{1}{2\pi i} \int_{\sigma-i \infty}^{\sigma+i \infty}\left(-\dfrac{\zeta'(s)}{\zeta(s)}\right)\dfrac{x^s}{s}\, ds = x - \sum_\rho\frac{x^\rho}{\rho} - \log(2\pi) -\dfrac{1}{2}\log(1-x^{-2}),</math>
+
+כאשר <math>\sigma > 1</math>, <math>\psi(x) = \sum_{p^k \le x} \log p</math> ו-<math>\psi_0</math> היא הגרסה המנורמלת שלה (ממוצע הגבולות משני הצדדים). אגף שמאל הוא [[התמרת מלין]] הפוכה, ואגף ימין מתקבל מ[[משפט השאריות]]; מנוסחה זו עבר פון מנגולד לנוסחה ששרטט רימן. גם טור זה מתכנס בתנאי, והסכום על האפסים נלקח שוב לפי סדר עולה של החלק המדומה:{{הערה|1=A. E. Ingham, ''The Distribution of Prime Numbers'', 2nd ed., Cambridge Tracts in Mathematics and Mathematical Physics 30, Cambridge University Press, 1990, p. 77|כיווון=שמאל}}
+
+:<math>\sum_\rho\frac{x^\rho}{\rho} = \lim_{T \to \infty} \sum_{\rho:\,|\operatorname{Im} \rho| \le T} \frac{x^\rho}{\rho}.</math>
+
+== הנוסחה המפורשת של וייל ==
+ישנן כמה דרכים, השונות זו מזו במעט, לנסח את הנוסחה המפורשת. הגרסה של [[אנדרה וייל]] קובעת כי{{הערה|שם=weil|1=André Weil, ''Sur les "formules explicites" de la théorie des nombres premiers'', Comm. Sém. Math. Univ. Lund, Tome Supplémentaire (1952), pp. 252–265|כיווון=שמאל}}
+
+:<math>\Phi(1)+\Phi(0)-\sum_\rho\Phi(\rho) = \sum_{p,m} \frac{\log(p)}{p^{m/2}} \Big( F(\log(p^m)) + F(-\log(p^m)) \Big) - \frac{1}{2\pi} \int_{-\infty}^\infty \varphi(t)\Psi(t)\,dt,</math>
+
+כאשר:
+* <math>\rho</math> עובר על האפסים הלא-טריוויאליים של פונקציית זטא;
+* <math>p</math> עובר על הראשוניים החיוביים ו-<math>m</math> על השלמים החיוביים;
+* <math>F</math> היא [[פונקציה חלקה]] שכל נגזרותיה דועכות במהירות;
+* <math>\varphi</math> היא [[התמרת פורייה]] של <math>F</math>: <math>\varphi(t) = \int_{-\infty}^\infty F(x)e^{itx}\,dx</math>;
+* <math>\Phi(1/2 + it) = \varphi(t)</math>;
+* <math>\Psi(t) = - \log( \pi ) + \operatorname{Re}(\psi(1/4 + it/2))</math>, כאשר <math>\psi = \Gamma'/\Gamma</math> היא [[פונקציית דיגמא|פונקציית הדיגמא]].
+
+באופן גס, הנוסחה המפורשת אומרת שהתמרת פורייה של אפסי פונקציית זטא היא קבוצת חזקות הראשוניים, בתוספת כמה גורמים אלמנטריים. מרגע שמנסחים זאת כך, הנוסחה נובעת מכך שהתמרת פורייה היא [[אופרטור אוניטרי]], ולכן מכפלה סקלרית במרחב הזמן שווה למכפלה הסקלרית של ההתמרות במרחב התדירות.
+
+האיברים בנוסחה נוצרים באופן הבא:
+* האיברים באגף ימין באים מהנגזרת הלוגריתמית של <math>\zeta^*(s)= \Gamma(s/2)\pi^{-s/2}\prod_p \frac{1}{1-p^{-s}}</math>: האיברים המתאימים לראשוני <math>p</math> באים מגורם אוילר של <math>p</math> ב[[מכפלת אוילר]], והאיבר האחרון, הכולל את <math>\Psi</math>, בא מגורם הגמא (גורם אוילר "באינסוף").
+* אגף שמאל הוא סכום על כל האפסים של <math>\zeta^*</math>, הנספרים עם ריבוי, כך שהקטבים ב-0 וב-1 נספרים כאפסים מסדר <math>-1</math>.
+
+ניתן להבין את הנוסחה של וייל כך. המטרה היא לכתוב
+
+:<math>\frac{d}{du} \left[ \sum_{n \le e^{|u|}} \Lambda(n) + \frac{1}{2} \ln(1-e^{-2|u|})\right] = \sum_{n=1}^\infty \Lambda(n) \left[ \delta(u+\ln n) + \delta(u-\ln n) \right] + \frac{1}{2}\frac{d\ln(1-e^{-2|u|})}{du} = e^u - \sum_\rho e^{\rho u},</math>
+
+כאשר <math>\Lambda</math> היא [[פונקציית פון מנגולד]] ו-<math>\delta</math> היא [[פונקציית דלתא של דיראק]]. כלומר, התמרת פורייה של האפסים הלא-טריוויאליים שווה לחזקות הראשוניים, בגרסה סימטרית, בתוספת איבר קטן. הסכומים המעורבים אינם מתכנסים, אך ניתן להשתמש בכך שהתמרת פורייה שומרת על מכפלה סקלרית:
+
+:<math>\int_{-\infty}^\infty f(u) g^*(u) \, du = \int_{-\infty}^\infty F(t) G^*(t) \, dt,</math>
+
+כאשר <math>F,G</math> הן התמרות פורייה של <math>f,g</math>. זהות זו נכונה במקרים רבים גם כאשר <math>g</math> היא התפלגות (פונקציה מוכללת). לכן, אם בוחרים
+
+:<math>g(u) = \sum_{n=1}^\infty \Lambda(n) \left[ \delta(u+\ln n) + \delta(u-\ln n) \right]</math>
+
+ובוחרים בזהירות את הפונקציה <math>f</math> ואת התמרת פורייה שלה, מתקבלת הנוסחה שלעיל.
+
+== הכללות ==
+ניתן להחליף את פונקציית זטא של רימן ב[[פונקציית L של דיריכלה]] של [[קרקטר דיריכלה]] <math>\chi</math>. במקרה זה מופיעים בסכום על חזקות הראשוניים גורמים נוספים <math>\chi(p^m)</math>, והאיברים <math>\Phi(1)</math> ו-<math>\Phi(0)</math> נעלמים, משום שלטור L אין קטבים.
+
+באופן כללי יותר, ניתן להחליף את פונקציית זטא ואת טורי L ב[[פונקציית זטא של דדקינד]] של שדה מספרים אלגבריים או בטור L של הקה. במקרה זה הסכום על הראשוניים מוחלף בסכום על [[אידיאל ראשוני|אידיאלים ראשוניים]].
+
+== שימושים ==
+השימוש המקורי של רימן בנוסחה המפורשת היה לתת נוסחה מדויקת למספר הראשוניים הקטנים ממספר נתון. לשם כך בוחרים <math>F(\log y) = y^{1/2}/\log y</math> עבור <math>0 \le y \le x</math> ו-0 מחוץ לתחום זה. אז האיבר העיקרי של הסכום באגף ימין הוא מספר הראשוניים הקטנים מ-<math>x</math>. האיבר העיקרי באגף שמאל הוא <math>\Phi(1)</math>, שמתברר כי הוא האיבר הדומיננטי ב[[משפט המספרים הראשוניים]], והתיקון העיקרי הוא הסכום על האפסים הלא-טריוויאליים של פונקציית זטא. (יש בכך בעיה טכנית קלה, משום שהפונקציה <math>F</math> במקרה זה אינה מקיימת את תנאי החלקות.)
+
+== השערת הילברט-פוליה ==
+לפי [[השערת הילברט-פוליה]], האפסים המרוכבים <math>\rho</math> אמורים להיות ה[[ערך עצמי|ערכים העצמיים]] של [[אופרטור]] ליניארי מסוים <math>T</math>. במקרה זה הסכום על האפסים בנוסחה המפורשת ניתן, לפחות באופן פורמלי, כ[[עקבה (אלגברה)|עקבה]]:
+
+:<math>\sum_\rho F(\rho) = \operatorname{Tr}(F(\widehat T )).</math>
+
+וייל פיתח בשנת 1952 נוסחאות מפורשות עבור משפחה רחבה של פונקציות L.{{הערה|שם=weil}} הוא הרחיב תחילה את הרעיון לפונקציות זטא מקומיות, וניסח בהקשר זה גרסה של [[השערת רימן|השערת רימן המוכללת]] כטענת חיוביות על פונקציה מוכללת על [[חבורה טופולוגית]]. עבודות מאוחרות יותר של [[אלאן קון]] העמיקו ברקע של האנליזה הפונקציונלית, וסיפקו נוסחת עקבה שתקפותה שקולה להשערת רימן מוכללת מסוג זה.{{הערה|1=Alain Connes, ''Trace formula in noncommutative geometry and the zeros of the Riemann zeta function'', Selecta Mathematica '''5''' (1999), no. 1, pp. 29–106, {{DOI|10.1007/s000290050042}}|כיווון=שמאל}} נקודת מבט שונה במעט הציג ראלף מאייר, שגזר את הנוסחה המפורשת של וייל באמצעות [[אנליזה הרמונית]] על מרחבי אדלים.{{הערה|1=Ralf Meyer, ''On a representation of the idele class group related to primes and zeros of L-functions'', Duke Mathematical Journal '''127''' (2005), no. 3, pp. 519–595, {{DOI|10.1215/s0012-7094-04-12734-4}}|כיווון=שמאל}}
+
+== ראו גם ==
+* [[הנוסחה המפורשת של רימן פון מנגולד]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. M. Edwards, ''Riemann's Zeta Function'', Pure and Applied Mathematics 58, Academic Press, New York–London, 1974
+* A. E. Ingham, ''The Distribution of Prime Numbers'', 2nd ed., Cambridge University Press, 1990
+* Serge Lang, ''Algebraic Number Theory'', 2nd ed., Graduate Texts in Mathematics 110, Springer-Verlag, 1994
+* Hans Riesel, ''Prime Numbers and Computer Methods for Factorization'', 2nd ed., Progress in Mathematics 126, Birkhäuser, 1994
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} Eric W. Weisstein, [https://mathworld.wolfram.com/ExplicitFormula.html Explicit Formula], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:מספרים ראשוניים]]

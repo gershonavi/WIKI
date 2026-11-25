@@ -1,0 +1,305 @@
+ב[[מתמטיקה]], '''התמרת מלין''' היא התמרה אינטגרלית שאפשר לראות בה את הגרסה הכפלית של [[התמרת לפלס]] הדו-צדדית. ההתמרה קשורה קשר הדוק לתורת [[טור דיריכלה|טורי דיריכלה]], ומשמשת לעיתים קרובות ב[[תורת המספרים]], בסטטיסטיקה מתמטית ובתורת הפיתוחים האסימפטוטיים. היא קרובה ל[[התמרת פורייה]] ולתורה של [[פונקציית גמא]] ושל פונקציות מיוחדות דומות.
+
+התמרת מלין של פונקציה מרוכבת <math>f</math> המוגדרת על <math>\R^{\times}_+= (0,\infty)</math> היא הפונקציה <math>\mathcal{M}f</math> של משתנה מרוכב <math>s</math>, המוגדרת על ידי
+:<math>\mathcal{M}\left\{f\right\}(s) = \varphi(s)=\int_0^\infty x^{s-1} f(x) \, dx = \int_{\R^{\times}_+}f(x) x^s \frac{dx}{x}.</math>
+כאן <math>dx/x</math> היא [[מידת האר]] על החבורה הכפלית <math>\R^{\times}_+</math>, ו-<math>x\mapsto x^s</math> הוא כרקטר כפלי (שבדרך כלל אינו אוניטרי). ההתמרה ההפוכה היא
+:<math>\mathcal{M}^{-1}\left\{\varphi\right\}(x) = f(x)=\frac{1}{2 \pi i} \int_{c-i \infty}^{c+i \infty} x^{-s} \varphi(s)\, ds.</math>
+זהו [[אינטגרל קווי]] לאורך ישר אנכי ב[[המישור המרוכב|מישור המרוכב]], שהחלק הממשי שלו <math>c</math> צריך לקיים רק חסם תחתון מתון. התנאים שבהם ההיפוך תקף ניתנים במשפט ההיפוך של מלין.
+
+את ההתמרה הציג [[ברנהרד רימן]] בשנת 1859.{{הערה|שם=T7|1=Titchmarsh, E. C. (1948). ''Introduction to the Theory of Fourier Integrals'' (2nd ed.). p. 7.|כיוון=שמאל}} היא קרויה על שמו של המתמטיקאי ה[[פינלנד|פיני]] יאלמר מלין (Hjalmar Mellin), שפיתח בשנת 1897 את הטיפול הריגורוזי הראשון בה.{{הערה|שם=Mellin|1=Mellin, Hj. "Zur Theorie zweier allgemeinen Klassen bestimmter Integrale". ''Acta Societatis Scientiarum Fennicae''. '''XXII''' (2).|כיוון=שמאל}}
+
+== הקשר להתמרות אחרות ==
+את התמרת לפלס הדו-צדדית אפשר להגדיר באמצעות התמרת מלין:
+:<math>\mathcal{B} \left\{f\right\}(s) = \mathcal{M} \left\{f(-\ln x) \right\}(s),</math>
+ולהפך, את התמרת מלין אפשר לקבל מהתמרת לפלס הדו-צדדית:
+:<math>\mathcal{M} \left\{f\right\}(s) = \mathcal{B}\left\{ f(e^{-x})\right\}(s).</math>
+
+אפשר לחשוב על התמרת מלין כעל אינטגרציה עם הגרעין <math>x^s</math> ביחס למידת האר הכפלית <math>dx/x</math>, שאינה משתנה תחת מתיחה <math>x \mapsto ax</math>, כלומר
+:<math>\frac{d(ax)}{ax} = \frac{dx}{x}.</math>
+התמרת לפלס הדו-צדדית, לעומתה, מבצעת אינטגרציה ביחס למידת האר החיבורית <math>dx</math>, שאינה משתנה תחת הזזה: <math>d(x+a) = dx</math>.
+
+אפשר גם להגדיר את התמרת פורייה באמצעות התמרת מלין, ולהפך. במונחי התמרת מלין והתמרת לפלס הדו-צדדית שהוגדרו לעיל,
+:<math>\left\{\mathcal{F} f\right\}(-s) = \left\{\mathcal{B} f\right\}(-is) = \left\{\mathcal{M} f(-\ln x)\right\}(-is),</math>
+ובכיוון ההפוך
+:<math>\left\{\mathcal{M} f\right\}(s) = \left\{\mathcal{B} f(e^{-x}) \right\}(s) = \left\{\mathcal{F} f(e^{-x})\right\}(-is).</math>
+
+התמרת מלין קושרת גם בין טורי ניוטון (או ההתמרה הבינומית) לבין הפונקציה היוצרת של פואסון, באמצעות מחזור פואסון–מלין–ניוטון. אפשר לראות בה גם את התמרת גלפנד של אלגברת ה[[קונבולוציה]] של החבורה האבלית הקומפקטית מקומית של המספרים הממשיים החיוביים עם כפל.
+
+== דוגמאות ==
+=== אינטגרל קאהן–מלין ===
+התמרת מלין של הפונקציה <math>f(x) = e^{-x}</math> היא
+:<math>\Gamma(s) = \int_0^\infty x^{s-1}e^{-x} dx,</math>
+כאשר <math>\Gamma</math> היא פונקציית גמא, [[פונקציה מרומורפית]] עם [[קוטב (אנליזה מרוכבת)|קטבים]] פשוטים בנקודות <math>z = 0, -1, -2, \dots</math>.{{הערה|שם=WW|1=Whittaker, E. T.; Watson, G. N. (1996). ''A Course of Modern Analysis''. Cambridge University Press.|כיוון=שמאל}} לכן <math>\Gamma</math> אנליטית עבור <math>\Re(s)>0</math>. עבור <math>c>0</math>, וכאשר <math>z^{-s}</math> מחושב בענף הראשי, ההתמרה ההפוכה נותנת
+:<math>e^{-z} = \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \Gamma(s) z^{-s} \; ds.</math>
+אינטגרל זה ידוע בשם אינטגרל קאהן–מלין.{{הערה|שם=HL|1=Hardy, G. H.; Littlewood, J. E. (1916). "Contributions to the Theory of the Riemann Zeta-Function and the Theory of the Distribution of Primes". ''Acta Mathematica''. '''41''' (1): 119–196. [https://doi.org/10.1007/BF02422942 doi:10.1007/BF02422942].|כיוון=שמאל}}
+
+=== פונקציות חזקה ===
+האינטגרל <math>\textstyle\int_0^\infty x^a dx</math> אינו מתכנס לאף ערך של <math>a\in\mathbb{R}</math>, ולכן התמרת מלין אינה מוגדרת לפונקציות חזקה המוגדרות על כל הציר הממשי החיובי. עם זאת, אם מגדירים את הפונקציה כאפס על חלק מהציר, אפשר לחשב את ההתמרה. למשל, אם
+:<math>f(x) = \begin{cases} x^a & x < 1, \\ 0 & x > 1, \end{cases}</math>
+אז
+:<math>\mathcal M f (s)= \int_0^1 x^{s-1}x^adx = \int_0^1 x^{s+a-1}dx = \frac 1 {s+a}.</math>
+לכן ל-<math>\mathcal M f (s)</math> יש קוטב פשוט ב-<math>s=-a</math>, והיא מוגדרת עבור <math>\Re(s) > -a</math>. באופן דומה, אם
+:<math>f(x)=\begin{cases} 0 & x < 1, \\ x^b & x > 1, \end{cases}</math>
+אז
+:<math>\mathcal M f (s)= \int_1^\infty x^{s-1}x^bdx = \int_1^\infty x^{s+b-1}dx = - \frac 1 {s+b}.</math>
+לכן ל-<math>\mathcal M f (s)</math> יש קוטב פשוט ב-<math>s=-b</math>, והיא מוגדרת עבור <math>\Re (s) < -b</math>.
+
+=== פונקציות מעריכיות ===
+עבור <math>p > 0</math>, תהי <math>f(x)=e^{-px}</math>. אז
+:<math>\mathcal M f (s) = \int_0^\infty x^{s} e^{-px}\frac{dx}{x} = \int_0^\infty \left(\frac{u}{p} \right)^{s}e^{-u} \frac{du}{u} = \frac{1}{p^s}\int_0^\infty u^{s}e^{-u} \frac{du}{u} = \frac{1}{p^{s}}\Gamma(s).</math>
+
+=== פונקציית זטא ===
+בעזרת התמרת מלין אפשר לקבל אחת מהנוסחאות היסודיות של [[פונקציית זטא של רימן]] <math>\zeta(s)</math>. תהי <math>f(x)=\tfrac{1}{e^x-1}</math>. אז
+:<math>\begin{alignat}{3}
+\mathcal M f (s) &= \int_0^\infty x^{s-1}\frac{1}{e^x-1}dx &&= \int_0^\infty x^{s-1}\frac{e^{-x}}{1-e^{-x}}dx \\
+&= \int_0^\infty x^{s-1}\sum_{n=1}^\infty e^{-nx}dx &&= \sum_{n=1}^\infty \int_0^\infty x^{s}e^{-nx}\frac{dx}{x} \\
+&= \sum_{n=1}^\infty \frac{1}{n^s}\Gamma(s)=\Gamma(s)\zeta(s) .
+\end{alignat}</math>
+לכן
+:<math>\zeta(s) = \frac{1}{\Gamma(s)}\int_0^\infty x^{s-1}\frac{1}{e^x-1} dx.</math>
+
+=== גאוסיאן מוכלל ===
+עבור <math>p > 0</math>, תהי <math>f(x)=e^{-x^p}</math> (כלומר <math>f</math> היא התפלגות גאוסית מוכללת בלי גורם הנרמול). אז
+:<math>\mathcal M f (s) = \int_0^\infty x^{s-1}e^{-x^p}dx = \int_0^\infty x^{p-1}(x^p)^{(s/p)-1}e^{-x^p}dx = \frac{1}{p}\int_0^\infty u^{(s/p)-1}e^{-u}du= \frac{\Gamma(s/p)}{p}.</math>
+בפרט, הצבת <math>s=1</math> נותנת את הצורה הבאה של פונקציית גמא:
+:<math>\Gamma\left(1+\frac{1}{p}\right) = \int_0^\infty e^{-x^p}dx.</math>
+
+=== טורי חזקות וטורי דיריכלה ===
+באופן כללי, ובהנחת ההתכנסות הנדרשת, אפשר לקשור בין טור דיריכלה ל[[טור חזקות]]
+:<math>F(s)=\sum\limits_{n=1}^{\infty}\frac {a_n}{n^s}, \quad f(z)=\sum\limits_{n=1}^{\infty}a_nz^n</math>
+באמצעות הזהות הפורמלית הבאה, הכוללת את התמרת מלין:{{הערה|שם=Wintner|1=Wintner, Aurel (1947). "On Riemann's Reduction of Dirichlet Series to Power Series". ''American Journal of Mathematics''. '''69''' (4): 769–789. [https://doi.org/10.2307/2371798 doi:10.2307/2371798].|כיוון=שמאל}}
+:<math>\Gamma(s)F(s)=\int_{0}^{\infty}x^{s-1}f(e^{-x})dx.</math>
+
+== הרצועה היסודית ==
+עבור <math>\alpha,\beta\in\mathbb{R}</math>, הרצועה הפתוחה <math>\langle\alpha,\beta\rangle</math> היא קבוצת כל ה-<math>s\in\mathbb{C}</math> מהצורה <math>s=\sigma + it</math> עם <math>\alpha < \sigma < \beta</math>. '''הרצועה היסודית''' של <math>\mathcal{M} f(s)</math> היא הרצועה הפתוחה הגדולה ביותר שבה היא מוגדרת. למשל, עבור <math>a > b</math> הרצועה היסודית של
+:<math>f(x)=\begin{cases} x^a & x < 1, \\ x^b & x > 1, \end{cases}</math>
+היא <math>\langle -a,-b \rangle</math>. כפי שרואים בדוגמה זו, ההתנהגות האסימפטוטית של הפונקציה כאשר <math>x\to 0^+</math> קובעת את הקצה השמאלי של הרצועה היסודית, וההתנהגות כאשר <math>x\to +\infty</math> קובעת את הקצה הימני. ב[[סימון אסימפטוטי|סימון O גדולה]]: אם <math>f</math> היא <math>O(x^a)</math> כאשר <math>x\to 0^+</math> ו-<math>O(x^b)</math> כאשר <math>x\to +\infty</math>, אז <math>\mathcal{M} f(s)</math> מוגדרת ברצועה <math>\langle -a,-b \rangle</math>.{{הערה|שם=FGD|1=Flajolet, P.; Gourdon, X.; Dumas, P. (1995). "Mellin transforms and asymptotics: Harmonic sums". ''Theoretical Computer Science''. '''144''' (1–2): 3–58. [https://doi.org/10.1016/0304-3975(95)00002-e doi:10.1016/0304-3975(95)00002-e].|כיוון=שמאל}}
+
+יישום של עיקרון זה נראה בפונקציית גמא <math>\Gamma(s)</math>. הפונקציה <math>f(x)=e^{-x}</math> היא <math>O(x^0)</math> כאשר <math>x\to 0^+</math> ו-<math>O(x^{k})</math> לכל <math>k</math> כאשר <math>x\to +\infty</math>, ולכן <math>\Gamma(s) = \mathcal{M} f(s)</math> מוגדרת ברצועה <math>\langle 0,+\infty \rangle</math>. הדבר מאשר ש-<math>\Gamma(s)</math> אנליטית עבור <math>\Re(s) > 0</math>.
+
+== תכונות ==
+התכונות שבטבלה מופיעות אצל ברייסוול (2000) ואצל ארדיי (1954).
+
+{| class="wikitable"
+|+ תכונות של התמרת מלין
+|-
+! פונקציה !! התמרת מלין !! הרצועה היסודית !! הערות
+|-
+| <math> f(x) </math>
+| <math> \tilde{f}(s)=\{\mathcal{M}f\}(s)=\int_0^{\infty} f(x) x^s \frac{dx}{x} </math>
+| <math> \alpha < \Re s < \beta </math>
+| הגדרה
+|-
+| <math> x^{\nu}\,f(x) </math>
+| <math> \tilde{f}(s+\nu) </math>
+| <math> \alpha - \Re \nu < \Re s < \beta - \Re \nu </math>
+|
+|-
+| <math> f(x^{\nu}) </math>
+| <math> \frac{1}{|\nu|}\,\tilde{f}\left(\frac{s}{\nu}\right) </math>
+| <math> \alpha < \nu^{-1} \, \Re s < \beta </math>
+| <math> \nu\in\mathbb{R},\;\nu\neq 0 </math>
+|-
+| <math> f(x^{-1}) </math>
+| <math> \tilde{f}(-s) </math>
+| <math> -\beta < \Re s < -\alpha </math>
+|
+|-
+| <math> x^{-1}\,f(x^{-1}) </math>
+| <math> \tilde{f}(1-s) </math>
+| <math> 1-\beta < \Re s < 1-\alpha </math>
+| אינוולוציה
+|-
+| <math> \overline{f(x)} </math>
+| <math> \overline{\tilde{f}(\overline{s})} </math>
+| <math> \alpha < \Re s < \beta </math>
+| <math> \overline{z} </math> הוא ה[[צמוד מרוכב|צמוד המרוכב]] של <math>z</math>
+|-
+| <math> f(\nu x) </math>
+| <math> \nu^{-s} \tilde{f}(s) </math>
+| <math> \alpha < \Re s < \beta </math>
+| <math> \nu > 0 </math>, שינוי קנה מידה
+|-
+| <math> f(x)\,\ln x </math>
+| <math> \tilde{f}'(s) </math>
+| <math> \alpha < \Re s < \beta </math>
+|
+|-
+| <math> f'(x) </math>
+| <math> -(s-1)\, \tilde{f}(s-1) </math>
+| <math> \alpha+1 < \Re s < \beta+1 </math>
+| הזזת התחום מותנית ודורשת בדיקה של התנהגות ההתכנסות
+|-
+| <math> \left( \frac{d}{dx} \right)^n \, f(x) </math>
+| <math> (-1)^n \, \frac{\Gamma(s)}{\Gamma(s-n)} \tilde{f}(s-n) </math>
+| <math> \alpha+n < \Re s < \beta+n </math>
+|
+|-
+| <math> x\,f'(x) </math>
+| <math> - s \,\tilde{f}(s) </math>
+| <math> \alpha < \Re s < \beta </math>
+|
+|-
+| <math> \left( x\, \frac{d}{dx} \right)^n \, f(x) </math>
+| <math> (-s)^n \tilde{f}(s) </math>
+| <math> \alpha < \Re s < \beta </math>
+|
+|-
+| <math> \left( \frac{d}{dx} \, x\right)^n \, f(x) </math>
+| <math> (1-s)^n \tilde{f}(s) </math>
+| <math> \alpha < \Re s < \beta </math>
+|
+|-
+| <math> \int_0^x f(y) \, dy </math>
+| <math> - s^{-1} \,\tilde{f}(s+1) </math>
+| <math> \alpha-1 < \Re s < \min(\beta-1,0) </math>
+| תקף רק אם האינטגרל קיים
+|-
+| <math> \int_x^{\infty} f(y) \, dy </math>
+| <math> s^{-1} \,\tilde{f}(s+1) </math>
+| <math> \max(\alpha-1,0) < \Re s < \beta-1 </math>
+| תקף רק אם האינטגרל קיים
+|-
+| <math> \int_0^{\infty} f_1\left(\frac{x}{y}\right) \, f_2(y) \, \frac{dy}{y} </math>
+| <math> \tilde{f}_1(s) \,\tilde{f}_2(s) </math>
+| <math> \max(\alpha_1,\alpha_2) < \Re s < \min(\beta_1,\beta_2) </math>
+| קונבולוציה כפלית
+|-
+| <math> x^{\mu} \int_0^{\infty} y^{\nu} \, f_1\left(\frac{x}{y}\right) \, f_2(y) \, dy </math>
+| <math> \tilde{f}_1(s+\mu) \,\tilde{f}_2(s+\mu+\nu+1) </math>
+|
+| קונבולוציה כפלית (מוכללת)
+|-
+| <math> x^{\mu} \int_0^{\infty} y^{\nu} \, f_1(x\,y) \, f_2(y) \, dy </math>
+| <math> \tilde{f}_1(s+\mu) \,\tilde{f}_2(1-s-\mu+\nu) </math>
+|
+| קונבולוציה כפלית (מוכללת)
+|-
+| <math> f_1(x) \, f_2(x) </math>
+| <math> \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \tilde{f}_1(r)\,\tilde{f}_2(s-r)\,dr </math>
+| <math> \begin{aligned} \alpha_2+c&<\Re s<\beta_2+c \\ \alpha_1&<c<\beta_1 \end{aligned} </math>
+| כפל. תקף רק אם האינטגרל קיים; ראו משפט פרסבל להלן
+|}
+
+=== משפט פרסבל ומשפט פלנשרל ===
+יהיו <math>f_1(x)</math> ו-<math>f_2(x)</math> פונקציות שהתמרות מלין שלהן <math>\tilde{f}_{1,2}(s)=\mathcal{M}\{f_{1,2}\}(s)</math> מוגדרות היטב ברצועות היסודיות <math>\alpha_{1,2}<\Re s<\beta_{1,2}</math>, ויהי <math>c\in\mathbb{R}</math> המקיים <math>\max(\alpha_1,1-\beta_2)<c<\min(\beta_1,1-\alpha_2)</math>. אם הפונקציות <math>x^{c-1/2}\,f_1(x)</math> ו-<math>x^{1/2-c}\,f_2(x)</math> אינטגרביליות בריבוע בקטע <math>(0,\infty)</math>, מתקיימת נוסחת פרסבל:{{הערה|שם=T95|1=Titchmarsh (1948), p. 95.|כיוון=שמאל}}
+:<math>\int_0^{\infty} f_1(x)\,f_2(x)\,dx = \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \tilde{f_1}(s)\,\tilde{f_2}(1-s)\,ds.</math>
+האינטגרציה באגף ימין נעשית לאורך הישר האנכי <math>\Re s = c</math>, הנמצא כולו בחיתוך הרצועות היסודיות (לאחר ההתמרה המתאימה).
+
+אם מחליפים את <math>f_2(x)</math> ב-<math>\overline{f_1(x)}</math> מתקבל המשפט הבא. תהי <math>f(x)</math> פונקציה שהתמרת מלין שלה <math>\tilde{f}(s) = \mathcal{M}\{f\}(s)</math> מוגדרת היטב ברצועה היסודית <math>\alpha<\Re s<\beta</math>, ויהי <math>c\in\mathbb{R}</math> המקיים <math>\alpha<c<\beta</math>. אם הפונקציה <math>x^{c-1/2}\,f(x)</math> אינטגרבילית בריבוע בקטע <math>(0,\infty)</math>, מתקיים משפט פלנשרל:{{הערה|שם=T94|1=Titchmarsh (1948), p. 94.|כיוון=שמאל}}
+:<math>\int_0^{\infty} |f(x)|^2\,x^{2c-1}dx = \frac{1}{2\pi} \int_{-\infty}^{\infty} | \tilde{f}(c+it) |^2 \,dt.</math>
+
+== כאיזומטריה על מרחבי L<sup>2</sup> ==
+בחקר [[מרחב הילברט|מרחבי הילברט]] מציגים לעיתים קרובות את התמרת מלין בצורה מעט שונה. עבור פונקציות ב-<math>L^2(0,\infty)</math> (ראו [[מרחב Lp]]) הרצועה היסודית כוללת תמיד את הישר <math>\tfrac{1}{2}+i\mathbb{R}</math>, ולכן אפשר להגדיר [[העתקה ליניארית|אופרטור ליניארי]] <math>\tilde{\mathcal{M}}</math> על ידי
+:<math>\tilde{\mathcal{M}}\colon L^2(0,\infty)\to L^2(-\infty,\infty),</math>
+:<math>\{\tilde{\mathcal{M}}f\}(s) := \frac{1}{\sqrt{2\pi}}\int_0^{\infty} x^{-\frac{1}{2} + is} f(x)\,dx.</math>
+במילים אחרות,
+:<math>\{\tilde{\mathcal{M}}f\}(s):=\tfrac{1}{\sqrt{2\pi}}\{\mathcal{M}f\}(\tfrac{1}{2} + is).</math>
+אופרטור זה מסומן בדרך כלל פשוט <math>\mathcal{M}</math> ונקרא "התמרת מלין", אך כאן משמש הסימון <math>\tilde{\mathcal{M}}</math> כדי להבחין בינו לבין ההגדרה שבשאר הערך. משפט ההיפוך של מלין מראה ש-<math>\tilde{\mathcal{M}}</math> הפיך, וההופכי שלו הוא
+:<math>\tilde{\mathcal{M}}^{-1}\colon L^2(-\infty,\infty) \to L^2(0,\infty),</math>
+:<math>\{\tilde{\mathcal{M}}^{-1}\varphi\}(x) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} x^{-\frac{1}{2}-is} \varphi(s)\,ds.</math>
+יתרה מזו, האופרטור הוא [[איזומטריה]], כלומר <math>\|\tilde{\mathcal{M}} f\|_{L^2(-\infty,\infty)}=\|f\|_{L^2(0,\infty)}</math> לכל <math>f\in L^2(0,\infty)</math> (וזו הסיבה לגורם <math>1/\sqrt{2\pi}</math>).
+
+== בתורת ההסתברות ==
+ב[[תורת ההסתברות]], התמרת מלין היא כלי חיוני בחקר ההתפלגויות של מכפלות של משתנים מקריים.{{הערה|שם=GS15|1=Galambos, Janos; Simonelli, Italo (2004). ''Products of random variables: applications to problems of physics and to arithmetical functions''. Marcel Dekker. p. 15. ISBN 0-8247-5402-6.|כיוון=שמאל}} אם <math>X</math> הוא [[משתנה מקרי]], <math>X^+ = \max\{X,0\}</math> הוא החלק החיובי שלו ו-<math>X^- = \max\{-X,0\}</math> הוא החלק השלילי שלו, אז התמרת מלין של <math>X</math> מוגדרת על ידי{{הערה|שם=GS16|1=Galambos & Simonelli (2004), p. 16.|כיוון=שמאל}}
+:<math>\mathcal{M}_X(s) = \int_0^\infty x^s dF_{X^+}(x) + \gamma\int_0^\infty x^s dF_{X^-}(x),</math>
+כאשר <math>\gamma</math> הוא משתנה פורמלי המקיים <math>\gamma^2 = 1</math>. ההתמרה קיימת לכל <math>s</math> ברצועה מרוכבת כלשהי <math>D = \{s : a \le \Re(s) \le b\}</math>, כאשר <math>a \le 0 \le b</math>.{{הערה|שם=GS16}}
+
+התמרת מלין <math>\mathcal{M}_X(it)</math> של משתנה מקרי <math>X</math> קובעת באופן יחיד את [[פונקציית התפלגות|פונקציית ההתפלגות]] שלו <math>F_X</math>.{{הערה|שם=GS16}} חשיבותה בתורת ההסתברות נובעת מכך שאם <math>X</math> ו-<math>Y</math> הם משתנים מקריים [[אי-תלות (הסתברות)|בלתי תלויים]], התמרת מלין של מכפלתם שווה למכפלת התמרות מלין שלהם:{{הערה|שם=GS23|1=Galambos & Simonelli (2004), p. 23.|כיוון=שמאל}}
+:<math>\mathcal{M}_{XY}(s) = \mathcal{M}_X(s)\mathcal{M}_Y(s).</math>
+
+== שימושים ==
+התמרת מלין נמצאת בשימוש נרחב במדעי המחשב לצורך [[אנליזה של אלגוריתמים]],{{הערה|שם=FS|1=Flajolet, Philippe; Sedgewick, Robert (1996). ''The Average Case Analysis of Algorithms: Mellin Transform Asymptotics''. Research Report 2956. Institut National de Recherche en Informatique et en Automatique (INRIA).|כיוון=שמאל}} בזכות האינווריאנטיות שלה לשינוי קנה מידה: הערך המוחלט של התמרת מלין של פונקציה שעברה שינוי קנה מידה זהה לזה של הפונקציה המקורית, עבור קלטים מדומים טהורים. תכונה זו דומה לאינווריאנטיות של התמרת פורייה להזזה: הערך המוחלט של התמרת פורייה של פונקציה שהוזזה בזמן זהה לזה של הפונקציה המקורית.
+
+תכונה זו שימושית בזיהוי תמונות, שכן תמונה של עצם משתנה בקנה המידה שלה כאשר העצם מתקרב למצלמה או מתרחק ממנה.
+
+ב[[מכניקת הקוונטים]], ובייחוד ב[[תורת השדות הקוונטית]], מרחב פורייה שימושי מאוד, משום שה[[תנע]] והמקום הם התמרות פורייה זה של זה (למשל, קל הרבה יותר לחשב [[דיאגרמת פיינמן|דיאגרמות פיינמן]] במרחב התנע). בשנת 2011 הראו פיצפטריק, קפלן, פנדונס, ראג'ו וואן ריס שמרחב מלין ממלא תפקיד דומה בהקשר של התאמת AdS/CFT.{{הערה|שם=AdS|1=Fitzpatrick, A. Liam; Kaplan, Jared; Penedones, Joao; Raju, Suvrat; van Rees, Balt C. "A Natural Language for AdS/CFT Correlators". [https://arxiv.org/abs/1107.1499 arXiv:1107.1499].|כיוון=שמאל}}
+
+שימושים נוספים:
+* [[נוסחת פרון]] מתארת את התמרת מלין ההפוכה המופעלת על טור דיריכלה.
+* התמרת מלין משמשת בחקר [[פונקציית המספרים הראשוניים]], ומופיעה בדיונים על פונקציית זטא של רימן.
+* התמרות מלין הפוכות מופיעות לעיתים קרובות בממוצעי ריס.
+
+== טבלת התמרות מלין נבחרות ==
+{| class="wikitable"
+|-
+! הפונקציה <math>f(x)</math> !! התמרת מלין <math>\tilde{f}(s) = \mathcal{M}\{f\}(s)</math> !! תחום ההתכנסות !! הערות
+|-
+| <math> e^{-x} </math> || <math> \Gamma(s) </math> || <math> 0 < \Re s < \infty </math> ||
+|-
+| <math> e^{-x}-1 </math> || <math> \Gamma(s) </math> || <math> -1 < \Re s < 0 </math> ||
+|-
+| <math> e^{-x}-1 +x </math> || <math> \Gamma(s) </math> || <math> -2 < \Re s < -1 </math> ||
+|-
+| <math> e^{-x^2} </math> || <math> \tfrac{1}{2}\Gamma(\tfrac{1}{2}s) </math> || <math> 0 < \Re s < \infty </math> ||
+|-
+| <math> \mathrm{erfc}(x) </math> || <math> \frac{\Gamma(\tfrac{1}{2}(1+s))}{\sqrt{\pi}\;s} </math> || <math> 0 < \Re s < \infty </math> || [[פונקציית השגיאה]] המשלימה
+|-
+| <math> e^{-(\ln x)^2} </math> || <math> \sqrt{\pi} \, e^{\tfrac{1}{4}s^2} </math> || <math> -\infty < \Re s < \infty </math> ||
+|-
+| <math> \delta(x-a) </math> || <math> a^{s-1} </math> || <math> -\infty < \Re s < \infty </math> || <math> a>0</math>; <math>\delta(x)</math> היא [[פונקציית דלתא של דיראק]]
+|-
+| <math> u(1-x) </math> || <math> \frac{1}{s} </math> || <math> 0 < \Re s < \infty </math> || <math>u(x)</math> היא [[פונקציית מדרגה|פונקציית המדרגה של הביסייד]]
+|-
+| <math> -u(x-1) </math> || <math> \frac{1}{s} </math> || <math> -\infty < \Re s < 0 </math> ||
+|-
+| <math> u(1-x)\,x^a </math> || <math> \frac{1}{s+a} </math> || <math> -\Re a < \Re s < \infty </math> ||
+|-
+| <math> -u(x-1)\,x^a </math> || <math> \frac{1}{s+a} </math> || <math> -\infty < \Re s < -\Re a </math> ||
+|-
+| <math> u(1-x)\,x^a \ln x </math> || <math> \frac{1}{(s+a)^2} </math> || <math> -\Re a < \Re s < \infty </math> ||
+|-
+| <math> -u(x-1)\,x^a \ln x </math> || <math> \frac{1}{(s+a)^2} </math> || <math> -\infty < \Re s < -\Re a </math> ||
+|-
+| <math> \frac{1}{1+x} </math> || <math> \frac{\pi}{\sin(\pi s)} </math> || <math> 0 < \Re s < 1 </math> ||
+|-
+| <math> \frac{1}{1-x} </math> || <math> \frac{\pi}{\tan(\pi s)} </math> || <math> 0 < \Re s < 1 </math> || האינטגרל מחושב כערך הראשי של קושי
+|-
+| <math> \frac{1}{1+x^2} </math> || <math> \frac{\pi}{2\sin(\tfrac{1}{2}\pi s)} </math> || <math> 0 < \Re s < 2 </math> ||
+|-
+| <math> \frac{1}{(1+x)^{a}} </math> || <math> \frac{\Gamma(s)\,\Gamma(a-s)}{\Gamma(a)} </math> || <math> 0 < \Re s < \Re a </math> || הטור הבינומי
+|-
+| <math> u(1-x)\;(1-x)^{a-1} </math> || <math> \frac{\Gamma(s)\,\Gamma(a)}{\Gamma(s+a)} </math> || <math> 0 < \Re s < \infty </math> || <math> \Re a > 0 </math>
+|-
+| <math> u(x-1)\;(1-x)^{-a} </math> || <math> \frac{\Gamma(a-s)\,\Gamma(1-a)}{\Gamma(1-s)} </math> || <math> -\infty < \Re s < \Re a </math> || <math> \Re a < 1 </math>
+|-
+| <math> \ln(1+x) </math> || <math> \frac{\pi}{s\,\sin(\pi s)} </math> || <math> -1 < \Re s < 0 </math> ||
+|-
+| <math> \ln \vert 1-x \vert </math> || <math> \frac{\pi}{s}\,\cot(\pi s) </math> || <math> -1 < \Re s < 0 </math> ||
+|-
+| <math> \operatorname{acot} x = \frac{\pi}{2} - \operatorname{atan} x </math> || <math> \frac{\pi}{2s\,\cos(\pi s/2)} </math> || <math> 0 < \Re s < 1 </math> ||
+|-
+| <math> \sin(x) </math> || <math> \sin(\tfrac{1}{2}\pi s) \, \Gamma(s) </math> || <math> -1 < \Re s < 1 </math> ||
+|-
+| <math> \cos(x) </math> || <math> \cos(\tfrac{1}{2}\pi s) \, \Gamma(s) </math> || <math> 0 < \Re s < 1 </math> ||
+|-
+| <math> e^{ix} </math> || <math> e^{i\pi s/2} \, \Gamma(s) </math> || <math> 0 < \Re s < 1 </math> ||
+|-
+| <math> J_0(x) </math> || <math> \frac{2^{s-1}}{\pi} \, \sin(\pi s/2) \, \left[\Gamma(s/2)\right]^2 </math> || <math> 0 < \Re s < \tfrac{3}{2} </math> || <math> J_0(x) </math> היא [[פונקציית בסל]] מהסוג הראשון
+|-
+| <math> Y_0(x) </math> || <math> -\frac{2^{s-1}}{\pi} \, \cos(\pi s/2) \, \left[\Gamma(s/2)\right]^2 </math> || <math> 0 < \Re s < \tfrac{3}{2} </math> || <math> Y_0(x) </math> היא פונקציית בסל מהסוג השני
+|-
+| <math> K_0(x) </math> || <math> 2^{s-2} \, \left[\Gamma(s/2)\right]^2 </math> || <math> 0 < \Re s < \infty </math> || <math> K_0(x) </math> היא פונקציית בסל המותאמת מהסוג השני
+|}
+
+== ראו גם ==
+* [[נוסחת פרון]]
+* [[התמרת לפלס]]
+* [[התמרת פורייה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Bracewell, Ronald N. (2000). ''The Fourier Transform and Its Applications'' (3rd ed.).
+* Erdélyi, Arthur (1954). ''Tables of Integral Transforms''. Vol. 1. McGraw-Hill.
+* Paris, R. B.; Kaminski, D. (2001). ''Asymptotics and Mellin-Barnes Integrals''. Cambridge University Press. ISBN 9780521790017.
+* Titchmarsh, E. C. (1948). ''Introduction to the Theory of Fourier Integrals'' (2nd ed.).
+</div>
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/MellinTransform.html התמרת מלין], באתר [[MathWorld]] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:אנליזה מרוכבת]]
+[[קטגוריה:אנליזה מתמטית]]

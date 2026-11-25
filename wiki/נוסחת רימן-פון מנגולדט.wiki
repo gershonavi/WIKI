@@ -1,0 +1,39 @@
+ב[[מתמטיקה]], '''נוסחת רימן-פון מנגולדט''' (ב[[אנגלית]]: Riemann–von Mangoldt formula), הקרויה על שם [[ברנהרד רימן]] והנס פון מנגולדט, מתארת את התפלגות האפסים של [[פונקציית זטא של רימן]].
+
+לפי הנוסחה, המספר <math>N(T)</math> של אפסי פונקציית זטא שהחלק המדומה שלהם גדול מ-0 וקטן או שווה ל-<math>T</math> מקיים
+:<math>N(T)=\frac{T}{2\pi}\log{\frac{T}{2\pi}}-\frac{T}{2\pi}+O(\log{T}).</math>
+
+את הנוסחה ניסח רימן במאמרו הנודע "[[על מספר הראשוניים מתחת לגודל נתון]]" (1859), ופון מנגולדט הוכיח אותה לבסוף ב-1905.
+
+בקלונד (Backlund) נתן צורה מפורשת לשגיאה, לכל <math>T > 2</math>:
+:<math>\left\vert{ N(T) - \left({\frac{T}{2\pi}\log{\frac{T}{2\pi}}-\frac{T}{2\pi} } - \frac{7}{8}\right)}\right\vert < 0.137 \log T + 0.443 \log\log T + 4.350 .</math>
+מאז שופרה תוצאה זו, בין השאר על ידי חסנעליזדה, שן ו-וונג{{הערה|1=E. Hasanalizade, Q. Shen, P.-J. Wong, [https://doi.org/10.1016/j.jnt.2021.06.032 Counting zeros of the Riemann zeta function], Journal of Number Theory 235, 2022, עמ' 219–241, Corollary 1.2|כיווון=שמאל}}:
+:<math>\left|N(T)-\left(\frac T{2\pi}\log\frac T{2\pi}-\frac T{2\pi}\right)\right|\leq0.1038\log T+0.2573\log\log T+9.3675</math>
+לכל <math>T \ge e</math>.
+
+בהנחת [[השערת לינדלף]] או [[השערת רימן]], אפשר לשפר את איבר השגיאה ל-<math>o(\log{T})</math> ול-<math>O(\log{T}/\log{\log{T}})</math>, בהתאמה{{הערה|1=Titchmarsh (1986), משפטים 13.6(A) ו-14.13.|כיווון=שמאל}}.
+
+נוסחה מדויקת יותר נתנו אנטולי קרצובה ומ. א. קורולב{{הערה|1=A. A. Karatsuba, M. A. Korolev, [https://doi.org/10.1070/RM2005v060n03ABEH000848 The argument of the Riemann zeta function], Russian Mathematical Surveys 60 (3), 2005, עמ' 433–488, Theorem 1|כיווון=שמאל}}.
+
+באופן דומה, לכל [[קרקטר דיריכלה]] פרימיטיבי <math>\chi</math> מודולו <math>q</math> מתקיים
+:<math>N(T,\chi)=\frac{T}{\pi}\log{\frac{qT}{2\pi e}}+O(\log{qT}),</math>
+כאשר <math>N(T,\chi)</math> הוא מספר האפסים של <math>L(s,\chi)</math> שהחלק המדומה שלהם בין <math>-T</math> ל-<math>T</math> (ראו [[פונקציית L של דיריכלה]]).
+
+== ראו גם ==
+* [[פונקציית Z]]
+* [[השערת המתאם הזוגי של מונטגומרי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. M. Edwards, ''Riemann's zeta function'', Pure and Applied Mathematics 58, Academic Press, New York-London, 1974
+* Aleksandar Ivić, ''The theory of Hardy's Z-function'', Cambridge Tracts in Mathematics 196, Cambridge University Press, 2013
+* S. J. Patterson, ''An introduction to the theory of the Riemann zeta-function'', Cambridge Studies in Advanced Mathematics 14, Cambridge University Press, 1988
+* E. C. Titchmarsh, ''The theory of the Riemann zeta-function'', 2nd ed., Clarendon Press, Oxford University Press, 1986
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:ברנהרד רימן]]

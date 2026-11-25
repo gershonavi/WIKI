@@ -1,0 +1,70 @@
+[[קובץ:Montgomery-Odlyzko law.png|ממוזער|הקו הרציף מתאר את פונקציית המתאם של שתי נקודות עבור מטריצה אקראית מטיפוס GUE. הנקודות הכחולות מתארות את המרווחים המנורמלים בין <math>10^5</math> האפסים הלא טריוויאליים הראשונים של פונקציית זטא של רימן.]]
+ב[[מתמטיקה]], '''השערת המתאם הזוגי של מונטגומרי''' (ב[[אנגלית]]: Montgomery's pair correlation conjecture) היא [[השערה (מתמטיקה)|השערה]] שהעלה יו מונטגומרי ב-1973, ולפיה המתאם הזוגי בין זוגות של [[שורש (של פונקציה)|אפסים]] של [[פונקציית זטא של רימן]] (לאחר נרמול כך שהמרווח הממוצע ביניהם הוא 1) הוא
+:<math>1-\left(\frac{\sin(\pi u)}{\pi u}\right)^{\!2},</math>
+וכפי ש[[פרימן דייסון]] העיר לו, זוהי בדיוק פונקציית המתאם הזוגי של [[מטריצה אקראית|מטריצות אקראיות]] [[אופרטור הרמיטי|הרמיטיות]] (האנסמבל האוניטרי הגאוסי, GUE).
+
+== ההשערה ==
+''בהנחה ש[[השערת רימן]] נכונה''{{הערה|1=לאחרונה הראו דניאל גולדסטון, ג'ונגהון לי, ג'ורדן שטלר ואדה אירמה סוריאג'איה שאפשר לנסח את השערת המתאם הזוגי של מונטגומרי גם בלי הנחה זו, אך התוצאה טרם עברה ביקורת עמיתים: D. A. Goldston, J. Lee, J. Schettler, A. I. Suriajaya, [https://arxiv.org/abs/2507.06823 Pair Correlation Conjecture for the zeros of the Riemann zeta-function II: The Alternative Hypothesis], 2025.}}.
+
+יהיו <math>\alpha\leq \beta</math> קבועים. ההשערה קובעת ש-
+:<math>
+\begin{align}
+\lim_{T \to \infty} \frac{\#\{(\gamma,\gamma') :0 < \gamma,\gamma' \leq T \text{ and }2\pi\alpha/\log(T)\leq \gamma -\gamma' \leq 2\pi\beta/\log(T)\}}{\frac{T}{2\pi}\log{T}}
+\\
+= \int\limits_\alpha^\beta 1-\left(\frac{\sin(\pi u)}{\pi u}\right)^2 \mathrm{d}u + \delta(\alpha, \beta),
+\end{align}
+</math>
+כאשר כל אחד מ-<math>\gamma, \gamma'</math> הוא החלק המדומה של אפס לא טריוויאלי של פונקציית זטא של רימן, כלומר האפס הוא <math>\tfrac{1}{2}+i\gamma</math>, ו-<math>\delta(\alpha, \beta) = 1</math> אם <math>0 \in [\alpha, \beta]</math> ו-<math>\delta(\alpha, \beta) = 0</math> אחרת.
+
+== הסבר ==
+באופן לא פורמלי, המשמעות היא שהסיכוי למצוא אפס ב[[קטע ממשי|קטע]] קצר מאוד באורך <math>2\pi L/\log T</math>, במרחק <math>2\pi u/\log T</math> מאפס <math>\tfrac{1}{2}+iT</math>, הוא בערך ''L'' כפול הביטוי שלעיל. (הגורם <math>2\pi/\log T</math> הוא גורם נרמול, שאפשר לחשוב עליו באופן לא פורמלי כמרווח הממוצע בין אפסים שה[[מספר מרוכב|חלק המדומה]] שלהם הוא בערך ''T''.) [[אנדרו אודליצקו]] הראה ב-1987 שחישובי מחשב רחבי היקף של האפסים תומכים בהשערה. ההשערה הורחבה למתאמים של יותר משני אפסים, וגם לפונקציות זטא של הצגות אוטומורפיות ([[זאב רודניק]] ו[[פיטר סרנק]], 1996). ב-1982 הוכיח עלי ארהאן אוזלוק (Ali Erhan Özlük), תלמידו של מונטגומרי, את השערת המתאם הזוגי עבור חלק מ[[פונקציית L של דיריכלה|פונקציות L של דיריכלה]] (Ozluk, 1982).
+
+הקשר למטריצות אוניטריות אקראיות עשוי להוביל להוכחה של השערת רימן. [[השערת הילברט-פוליה]] טוענת שהאפסים של פונקציית זטא של רימן מתאימים ל[[ערך עצמי|ערכים העצמיים]] של [[העתקה ליניארית|אופרטור ליניארי]], והיא גוררת את השערת רימן. יש הסבורים שזו גישה מבטיחה (Odlyzko, 1987).
+
+מונטגומרי חקר את [[התמרת פורייה]] <math>F(x)</math> של פונקציית המתאם הזוגי, והראה (בהנחת השערת רימן) שהיא שווה ל-<math>|x|</math> עבור <math>|x| < 1</math>. שיטותיו לא אפשרו לקבוע אותה עבור <math>|x| \ge 1</math>, אך הוא שיער שהיא שווה ל-1 עבור ערכים אלה, וזה גורר שפונקציית המתאם הזוגי היא כמתואר לעיל. מונטגומרי הונע גם מהרעיון שהשערת רימן אינה "קיר לבנים", ושאפשר להרשות לעצמו לנסח השערות ''חזקות'' יותר.
+
+== השערת F(α), או השערת המתאם הזוגי החזקה ==
+יהיו שוב <math>\tfrac{1}{2}+i\gamma</math> ו-<math>\tfrac{1}{2}+i\gamma'</math> אפסים לא טריוויאליים של פונקציית זטא של רימן. מונטגומרי הגדיר את הפונקציה
+:<math>F(\alpha):=F_T(\alpha)=\left(\frac{T}{2\pi}\log(T)\right)^{-1}\sum\limits_{0<\gamma,\gamma'\leq T}T^{i\alpha(\gamma-\gamma')}w(\gamma-\gamma')</math>
+עבור <math>T>2,\;\alpha\in \mathbb{R}</math>, עם פונקציית המשקל <math>w(u):=\tfrac{4}{4+u^2}</math>.
+
+מונטגומרי וגולדסטון{{הערה|1=D. A. Goldston, H. L. Montgomery, [https://doi.org/10.1007/978-1-4612-4816-3_10 Pair correlation of zeros and primes in short intervals], in: A. C. Adolphson, J. B. Conrey, A. Ghosh, R. I. Yager (eds.), ''Analytic number theory and Diophantine problems'', Progress in Mathematics 70, Birkhäuser Boston, 1987, pp. 183–203|כיווון=שמאל}} הוכיחו, בהנחת השערת רימן, שעבור <math>|\alpha|\leq 1</math> הפונקציה מתכנסת במידה שווה:
+:<math>F(\alpha)=T^{-2|\alpha|}\log (T)(1+o(1))+|\alpha|+o(1),\quad T\to \infty.</math>
+
+מונטגומרי שיער, בטענה המוכרת כיום בשם '''השערת F(α)''' או '''השערת המתאם הזוגי החזקה''', שעבור <math>|\alpha|> 1</math> מתקיימת [[התכנסות במידה שווה]]{{הערה|1=E. Carneiro, V. Chandee, A. Chirre, M. B. Milinovich, [https://doi.org/10.1515/crelle-2021-0084 On Montgomery's pair correlation conjecture: A tale of three integrals], Journal für die reine und angewandte Mathematik 786, 2022, pp. 205–243|כיווון=שמאל}}
+:<math>F(\alpha)=1+o(1),\quad T\to \infty</math>
+עבור <math>\alpha</math> בקטע חסום.
+
+== החישובים הנומריים של אודליצקו ==
+בשנות ה-80, בהשראת השערתו של מונטגומרי, החל אודליצקו במחקר נומרי אינטנסיבי של הסטטיסטיקה של אפסי <math>\zeta(s)</math>. בעזרת חישובים נומריים מפורטים על מחשב Cray X-MP הוא אישר את התפלגות המרווחים בין האפסים הלא טריוויאליים, והראה שהיא מתאימה להשערת מונטגומרי ולהתפלגות המרווחים בין הערכים העצמיים של מטריצות אקראיות מטיפוס GUE. את החישובים הציג ב-1987 (Odlyzko, 1987).
+
+עבור אפס לא טריוויאלי <math>\tfrac{1}{2} + i\gamma_n</math>, נגדיר את המרווחים המנורמלים
+:<math>\delta_n = \frac{\gamma_{n+1} - \gamma_{n}}{2 \pi}\, { \log{ \frac{\gamma_n}{2 \pi} }}.</math>
+אז הנוסחה הבאה צפויה להתקיים כגבול כאשר <math>M, N \to\infty</math>:
+:<math>\frac{1}{M} \{(n,k) \mid N \leq n \leq N+M, \,k \geq 0, \, \delta_{n} + \delta_{n+1} + \cdots +\delta_{n+k} \in [\alpha, \beta] \} \sim \int_{\alpha}^{\beta} \left(1- \biggl( \frac{\sin{\pi u}}{\pi u} \biggr)^2 \right) du</math>
+
+על סמך אלגוריתם חדש שפיתחו אודליצקו וארנולד שנהאגה (Arnold Schönhage), המאפשר לחשב ערך של <math>\zeta(1/2 + it)</math> בזמן ממוצע של <math>t^{\varepsilon}</math> צעדים, חישב אודליצקו מיליוני אפסים בגבהים של כ-<math>10^{20}</math>, וסיפק ראיות להשערת ה-GUE{{הערה|1=A. M. Odlyzko, "The 10<sup>20</sup>-th zero of the Riemann zeta function and 70 million of its neighbors", AT&T Bell Lab. preprint, 1989|כיווון=שמאל}}{{הערה|1=M. Mehta (1990), chap. 1|כיווון=שמאל}}.
+
+האיור מציג את <math>10^5</math> האפסים הלא טריוויאליים הראשונים של פונקציית זטא של רימן. ככל שדוגמים יותר אפסים, ההתפלגות שלהם קרובה יותר לצורה המתאימה למטריצות אקראיות מטיפוס GUE.
+
+== ראו גם ==
+* [[השערת רימן]]
+* [[השערת הילברט-פוליה]]
+* [[מטריצה אקראית]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. E. Ozluk, ''Pair Correlation of Zeros of Dirichlet L-functions'', Ph. D. Dissertation, Univ. of Michigan, Ann Arbor, 1982
+* Nicholas M. Katz, Peter Sarnak, [https://doi.org/10.1090/S0273-0979-99-00766-1 Zeroes of zeta functions and symmetry], Bulletin of the American Mathematical Society (New Series) 36 (1), 1999, pp. 1–26
+* Hugh L. Montgomery, The pair correlation of zeros of the zeta function, in: ''Analytic number theory'', Proc. Sympos. Pure Math. XXIV, American Mathematical Society, Providence, R.I., 1973, pp. 181–193
+* A. M. Odlyzko, [https://doi.org/10.2307/2007890 On the distribution of spacings between zeros of the zeta function], Mathematics of Computation 48 (177), 1987, pp. 273–308
+* Zeév Rudnick, Peter Sarnak, [https://doi.org/10.1215/S0012-7094-96-08115-6 Zeros of principal L-functions and random matrix theory], Duke Mathematical Journal 81 (2), 1996, pp. 269–322
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
+[[קטגוריה:השערות מתמטיות]]
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]

@@ -1,0 +1,180 @@
+[[קובץ:Hurwitza1ov3v2.png|ממוזער|פונקציית זטא של הורוויץ עבור <math>a=1/3</math>, בהצגה בשיטת צביעת תחום.]]
+ב[[מתמטיקה]], '''פונקציית זטא של הורוויץ''' היא אחת מ[[פונקציית זטא|פונקציות הזטא]] הרבות. היא מוגדרת עבור משתנים [[מספר מרוכב|מרוכבים]] <math>s</math> עם <math>\operatorname{Re}(s) > 1</math> ו-<math>a \ne 0, -1, -2, \ldots</math> על ידי
+
+:<math>\zeta(s,a) = \sum_{n=0}^\infty \frac{1}{(n+a)^{s}}.</math>
+
+עבור ערכים אלה של <math>s</math> ו-<math>a</math> ה[[טור (מתמטיקה)|טור]] מתכנס בהחלט, וניתן להמשיך אותו ל[[פונקציה מרומורפית]] המוגדרת לכל <math>s \ne 1</math>. [[פונקציית זטא של רימן]] היא המקרה הפרטי <math>\zeta(s,1)</math>. הפונקציה קרויה על שם [[אדולף הורוויץ]], שהציג אותה בשנת 1882.{{הערה|1=Adolf Hurwitz, ''Einige Eigenschaften der Dirichlet'schen Functionen, die bei der Bestimmung der Classenanzahlen binärer quadratischer Formen auftreten'', Zeitschrift für Mathematik und Physik '''27''' (1882), pp. 86–101|כיווון=שמאל}}
+
+== ייצוג אינטגרלי ==
+לפונקציית זטא של הורוויץ יש הייצוג האינטגרלי
+
+:<math>\zeta(s,a) = \frac{1}{\Gamma(s)} \int_0^\infty \frac{x^{s-1}e^{-ax}}{1-e^{-x}}\, dx</math>
+
+עבור <math>\operatorname{Re}(s)>1</math> ו-<math>\operatorname{Re}(a)>0</math>, כאשר <math>\Gamma</math> היא [[פונקציית גמא]] (ניתן לראות באינטגרל זה [[התמרת מלין]]). את הנוסחה ניתן לקבל, באופן גס, על ידי הכתיבה
+
+:<math>\zeta(s,a)\Gamma(s) = \sum_{n=0}^\infty \frac{1}{(n+a)^s} \int_0^\infty x^s e^{-x} \frac{dx}{x} = \sum_{n=0}^\infty \int_0^\infty y^s e^{-(n+a)y} \frac{dy}{y}</math>
+
+והחלפת סדר הסכימה והאינטגרציה.{{הערה|1=Tom M. Apostol, ''Introduction to Analytic Number Theory'', Springer-Verlag, 1976, Theorem 12.2, p. 251|כיווון=שמאל}}
+
+את הייצוג הזה אפשר להפוך לייצוג כאינטגרל מסילתי
+
+:<math>\zeta(s,a) = -\Gamma(1-s)\frac{1}{2 \pi i} \int_C \frac{(-z)^{s-1}e^{-az}}{1-e^{-z}}\, dz,</math>
+
+כאשר <math>C</math> היא מסילת הנקל המקיפה את הציר הממשי החיובי נגד כיוון השעון, ובחזקה המרוכבת <math>(-z)^{s-1}</math> משתמשים בענף הראשי. בניגוד לאינטגרל הקודם, אינטגרל זה תקף לכל <math>s</math>, והוא [[פונקציה שלמה]] של <math>s</math>.{{הערה|1=E. T. Whittaker and G. N. Watson, ''A Course of Modern Analysis'', 4th ed., Cambridge University Press, 1927, Section 13.13, p. 266|כיווון=שמאל}}
+
+ייצוג זה נותן [[המשכה אנליטית]] של <math>\zeta(s,a)</math> לכל <math>s \ne 1</math>. בנקודה <math>s = 1</math> יש לפונקציה [[קוטב (אנליזה מרוכבת)|קוטב]] פשוט עם [[שארית (אנליזה מרוכבת)|שארית]] 1.{{הערה|1=Tom M. Apostol, ''Introduction to Analytic Number Theory'', Springer-Verlag, 1976, Theorem 12.4, p. 255|כיווון=שמאל}}
+
+== נוסחת הורוויץ ==
+פונקציית זטא של הורוויץ מקיימת זהות המכלילה את ה[[משוואה פונקציונלית|משוואה הפונקציונלית]] של פונקציית זטא של רימן:{{הערה|שם=ap126|1=Tom M. Apostol, ''Introduction to Analytic Number Theory'', Springer-Verlag, 1976, Theorem 12.6, p. 257|כיווון=שמאל}}
+
+:<math>\zeta(1-s,a) = \frac{\Gamma(s)}{(2\pi)^s} \left( e^{-\pi i s/2} \sum_{n=1}^\infty \frac{e^{2\pi ina}}{n^s} + e^{\pi i s/2} \sum_{n=1}^\infty \frac{e^{-2\pi ina}}{n^s} \right),</math>
+
+התקפה עבור <math>\operatorname{Re}(s) > 1</math> ו-<math>0 < a \le 1</math>. המשוואה הפונקציונלית של פונקציית זטא של רימן היא המקרה הפרטי <math>a = 1</math>:{{הערה|1=Tom M. Apostol, ''Introduction to Analytic Number Theory'', Springer-Verlag, 1976, Theorem 12.7, p. 259|כיווון=שמאל}}
+
+:<math>\zeta(1-s) = \frac{2\Gamma(s)}{(2\pi)^{s}} \cos\left(\frac{\pi s}{2}\right) \zeta(s).</math>
+
+ניתן לכתוב את נוסחת הורוויץ גם בצורה{{הערה|שם=ww1315|1=E. T. Whittaker and G. N. Watson, ''A Course of Modern Analysis'', 4th ed., Cambridge University Press, 1927, Section 13.15, pp. 268–269|כיווון=שמאל}}
+
+:<math>\zeta(s,a) = \frac{2\Gamma(1-s)}{(2\pi)^{1-s}} \left( \sin\left(\frac{\pi s}{2}\right) \sum_{n=1}^\infty \frac{\cos(2\pi na)}{n^{1-s}} + \cos\left(\frac{\pi s}{2}\right) \sum_{n=1}^\infty \frac{\sin(2\pi na)}{n^{1-s}} \right)</math>
+
+(עבור <math>\operatorname{Re}(s) < 0</math> ו-<math>0 < a \le 1</math>).
+
+לנוסחת הורוויץ הוכחות רבות.{{הערה|1=S. Kanemitsu, Y. Tanigawa, H. Tsukada and M. Yoshimoto, ''Contributions to the theory of the Hurwitz zeta-function'', Hardy-Ramanujan Journal '''30''' (2007), pp. 31–55, {{DOI|10.46298/hrj.2007.159}}|כיווון=שמאל}} הוכחה אחת משתמשת בייצוג כאינטגרל מסילתי וב[[משפט השאריות]].{{הערה|שם=ap126}}{{הערה|שם=ww1315}} הוכחה שנייה משתמשת בזהות של [[פונקציית תטא]], או באופן שקול בנוסחת הסכימה של פואסון.{{הערה|1=N. J. Fine, ''Note on the Hurwitz zeta-function'', Proceedings of the American Mathematical Society '''2''' (1951), no. 3, pp. 361–364, {{DOI|10.2307/2031757}}|כיווון=שמאל}} שתי ההוכחות מקבילות לשתי ההוכחות של המשוואה הפונקציונלית של פונקציית זטא של רימן ב[[על מספר הראשוניים מתחת לגודל נתון|מאמרו של רימן משנת 1859]]. הוכחה נוספת משתמשת ב[[נוסחת אוילר-מקלורן|נוסחת הסכימה של אוילר-מקלורן]] כדי לבטא את הפונקציה כאינטגרל
+
+:<math>\zeta(s,a) = s \int_{-a}^\infty \frac{\lfloor x \rfloor - x + \frac{1}{2}}{(x+a)^{s+1}}\, dx</math>
+
+(עבור <math>-1 < \operatorname{Re}(s) < 0</math> ו-<math>0 < a \le 1</math>), ולאחר מכן מפתחת את המונה ל[[טור פורייה]].{{הערה|1=Bruce C. Berndt, ''On the Hurwitz zeta-function'', Rocky Mountain Journal of Mathematics '''2''' (1972), no. 1, pp. 151–158, {{DOI|10.1216/RMJ-1972-2-1-151}}|כיווון=שמאל}}
+
+=== משוואה פונקציונלית עבור a רציונלי ===
+כאשר <math>a</math> הוא [[מספר רציונלי]], נובעת מנוסחת הורוויץ המשוואה הפונקציונלית הבאה: עבור שלמים <math>1\leq m \leq n</math>,
+
+:<math>\zeta\left(1-s, \frac{m}{n} \right) = \frac{2\Gamma(s)}{ \left(2\pi n\right)^s } \sum_{k=1}^n \cos \left( \frac {\pi s} {2} -\frac {2\pi k m} {n} \right) \zeta\left( s, \frac {k}{n} \right)</math>
+
+לכל ערך של <math>s</math>.{{הערה|1=Tom M. Apostol, ''Introduction to Analytic Number Theory'', Springer-Verlag, 1976, Theorem 12.8, p. 261|כיווון=שמאל}}
+
+== ייצוג כטור ==
+[[הלמוט הסה]] נתן בשנת 1930 ייצוג כטור ניוטון מתכנס, התקף עבור <math>a > 0</math> ממשי וכל <math>s \ne 1</math> מרוכב:{{הערה|1=Helmut Hasse, ''Ein Summierungsverfahren für die Riemannsche ζ-Reihe'', Mathematische Zeitschrift '''32''' (1930), no. 1, pp. 458–464, {{DOI|10.1007/BF01194645}}|כיווון=שמאל}}
+
+:<math>\zeta(s,a) = \frac{1}{s-1} \sum_{n=0}^\infty \frac{1}{n+1} \sum_{k=0}^n (-1)^k \binom{n}{k} (a+k)^{1-s}.</math>
+
+הטור מתכנס במידה שווה על [[קבוצה קומפקטית|קבוצות קומפקטיות]] של מישור ה-<math>s</math> לפונקציה שלמה. ניתן לפרש את הסכום הפנימי כהפרש הקדמי ה-<math>n</math>-י של <math>a^{1-s}</math>.
+
+== טור טיילור ==
+הנגזרת החלקית לפי הארגומנט השני היא הזזה:
+
+:<math>\frac {\partial} {\partial a} \zeta (s,a) = -s\zeta(s+1,a).</math>
+
+לכן ניתן לכתוב את [[טור טיילור]] בצורה
+
+:<math>\zeta(s,x+y) = \sum_{k=0}^\infty \frac{y^k}{k!} \frac {\partial^k} {\partial x^k} \zeta (s,x) = \sum_{k=0}^\infty \binom{s+k-1}{s-1} \left(-y\right)^k \zeta (s+k,x).</math>
+
+לחלופין, עבור <math>|q| < 1</math>,
+
+:<math>\zeta(s, q) = \frac{1}{q^s} + \sum_{n=0}^{\infty} (-q)^n \binom{s + n - 1}{n} \zeta(s + n).</math>{{הערה|1=Linas Vepstas, ''An efficient algorithm for accelerating the convergence of oscillatory series, useful for computing the polylogarithm and Hurwitz zeta functions'', Numerical Algorithms '''47''' (2008), no. 3, pp. 211–252, {{DOI|10.1007/s11075-007-9153-8}}|כיווון=שמאל}}
+
+קשורה לכך נוסחת סטארק-קייפר:
+
+:<math>\zeta(s,N) = \sum_{k=0}^\infty \left[ N+\frac {s-1}{k+1}\right] {s+k-1 \choose s-1} (-1)^k \zeta (s+k,N),</math>
+
+התקפה עבור <math>N</math> שלם ו-<math>s</math> כלשהו.
+
+== טור לורן ==
+פיתוח [[טור לורן]] של הפונקציה סביב <math>s=1</math> משמש להגדרת [[קבועי סטילטיס]] המוכללים:
+
+:<math>\zeta(s,a) = \frac{1}{s-1} + \sum_{n=0}^\infty \frac{(-1)^n}{n!} \gamma_n(a) (s-1)^n.</math>
+
+בפרט, האיבר הקבוע הוא
+
+:<math>\lim_{s\to 1} \left[ \zeta(s,a) - \frac{1}{s-1}\right] = \gamma_0(a) = \frac{-\Gamma'(a)}{\Gamma(a)} = -\psi(a),</math>
+
+כאשר <math>\psi = \Gamma' / \Gamma</math> היא [[פונקציית דיגמא|פונקציית הדיגמא]]. כמקרה פרטי, <math>\gamma_0(1) = -\psi(1) = \gamma</math>, [[קבוע אוילר-מסקרוני]].
+
+== ערכים מיוחדים ==
+=== מספרים שלמים שליליים ===
+הערכים של <math>\zeta(s,a)</math> בנקודות <math>s = 0, -1, -2, \ldots</math> קשורים לפולינומי ברנולי <math>B_n(x)</math>:{{הערה|1=Tom M. Apostol, ''Introduction to Analytic Number Theory'', Springer-Verlag, 1976, Theorem 12.13, p. 264|כיווון=שמאל}}
+
+:<math>\zeta(-n,a) = -\frac{B_{n+1}(a)}{n+1}.</math>
+
+למשל, עבור <math>n=0</math> מתקבל <math>\zeta(0,a) = \tfrac{1}{2} - a</math>.
+
+=== הנגזרת לפי s ===
+ה[[נגזרת חלקית|נגזרת החלקית]] לפי <math>s</math> בנקודה <math>s = 0</math> קשורה לפונקציית גמא:
+
+:<math>\left. \frac{\partial}{\partial s} \zeta(s,a) \right|_{s=0} = \log\Gamma(a) - \frac{1}{2} \log(2\pi).</math>
+
+בפרט, <math>\zeta'(0) = -\tfrac{1}{2} \log(2\pi)</math>. הנוסחה היא של מתיאס לרך.{{הערה|1=Bruce C. Berndt, ''The Gamma Function and the Hurwitz Zeta-Function'', The American Mathematical Monthly '''92''' (1985), no. 2, pp. 126–130, {{DOI|10.2307/2322640}}|כיווון=שמאל}}{{הערה|1=E. T. Whittaker and G. N. Watson, ''A Course of Modern Analysis'', 4th ed., Cambridge University Press, 1927, Section 13.21, p. 271|כיווון=שמאל}}
+
+== קשר לפונקציית תטא של יעקובי ==
+אם <math>\vartheta (z,\tau)</math> היא [[פונקציית תטא|פונקציית התטא]] של יעקובי, אז
+
+:<math>\int_0^\infty \left[\vartheta (z,it) -1 \right] t^{s/2} \frac{dt}{t} = \pi^{-(1-s)/2} \Gamma\left( \frac {1-s}{2} \right) \left[ \zeta(1-s, z) + \zeta(1-s, 1-z) \right]</math>
+
+עבור <math>\operatorname{Re}(s) > 0</math> ו-<math>z</math> מרוכב שאינו שלם. עבור <math>z = n</math> שלם, הביטוי מצטמצם ל־
+
+:<math>\int_0^\infty \left[\vartheta (n,it) -1 \right] t^{s/2} \frac{dt}{t} = 2 \pi^{-(1-s)/2} \Gamma\left( \frac {1-s}{2} \right) \zeta(1-s) = 2 \pi^{-s/2} \Gamma\left( \frac {s}{2} \right) \zeta(s),</math>
+
+וזוהי המשוואה הפונקציונלית של פונקציית זטא של רימן בצורה שבה נתן אותה רימן במקור. ההבחנה בין <math>z</math> שלם ללא שלם נובעת מכך שכאשר <math>t\to 0</math>, פונקציית התטא של יעקובי מתכנסת ל[[מסרק דיראק]] במשתנה <math>z</math>.
+
+== קשר לפונקציות L של דיריכלה ==
+בנקודות רציונליות ניתן לבטא את פונקציית זטא של הורוויץ כצירוף ליניארי של [[פונקציית L של דיריכלה|פונקציות L של דיריכלה]], ולהפך. עבור <math>a=1</math> היא מתלכדת עם פונקציית זטא של רימן, עבור <math>a=1/2</math> היא שווה ל-<math>(2^s-1)\zeta(s)</math>, ועבור <math>a = n/k</math> עם <math>k>2</math>, <math>\gcd(n,k)=1</math> ו-<math>0<n<k</math> מתקיים{{הערה|שם=dav|1=Harold Davenport, ''Multiplicative Number Theory'', Lectures in Advanced Mathematics 1, Markham, Chicago, 1967, p. 73|כיווון=שמאל}}
+
+:<math>\zeta(s,n/k) = \frac{k^s}{\varphi(k)} \sum_\chi \overline{\chi}(n)L(s,\chi),</math>
+
+כאשר הסכום עובר על כל [[קרקטר דיריכלה|קרקטרי דיריכלה]] מודולו <math>k</math> ו-<math>\varphi</math> היא [[פונקציית אוילר]]. בכיוון ההפוך מתקיים הצירוף הליניארי
+
+:<math>L(s,\chi) = \frac {1}{k^s} \sum_{n=1}^k \chi(n)\, \zeta\left(s,\frac{n}{k}\right).</math>
+
+כמו כן מתקיים משפט הכפל
+
+:<math>k^s\zeta(s) = \sum_{n=1}^k \zeta\left(s,\frac{n}{k}\right),</math>
+
+שהכללה שימושית שלו היא "יחס ההתפלגות"{{הערה|1=Daniel S. Kubert and Serge Lang, ''Modular Units'', Grundlehren der Mathematischen Wissenschaften 244, Springer-Verlag, 1981, p. 13|כיווון=שמאל}}
+
+:<math>\sum_{p=0}^{q-1}\zeta(s,a+p/q)=q^s\,\zeta(s,qa),</math>
+
+התקף כאשר <math>q</math> הוא [[מספר טבעי]] ו-<math>1-qa</math> אינו מספר טבעי.
+
+== אפסים ==
+כאשר <math>a=1</math> הפונקציה היא פונקציית זטא של רימן עצמה, וכאשר <math>a=1/2</math> היא פונקציית זטא של רימן כפול פונקציה פשוטה של <math>s</math>; בשני המקרים חקר האפסים מוביל לבעיה הקשה של אפסי פונקציית זטא של רימן, ובפרט אין אפסים שחלקם הממשי גדול או שווה ל-1. לעומת זאת, אם <math>0<a<1</math> ו-<math>a\ne 1/2</math>, יש לפונקציה אפסים ברצועה <math>1 < \operatorname{Re}(s) < 1 + \varepsilon</math> לכל <math>\varepsilon>0</math>. את זה הוכיחו [[הרולד דבנפורט|דבנפורט]] והנס היילברון עבור <math>a</math> רציונלי או אי-רציונלי [[מספר טרנסצנדנטי|טרנסצנדנטי]],{{הערה|1=H. Davenport and H. Heilbronn, ''On the zeros of certain Dirichlet series'', Journal of the London Mathematical Society '''11''' (1936), no. 3, pp. 181–185, {{DOI|10.1112/jlms/s1-11.3.181}}|כיווון=שמאל}} וקאסלס עבור <math>a</math> אי-רציונלי [[מספר אלגברי|אלגברי]].{{הערה|שם=dav}}{{הערה|1=J. W. S. Cassels, ''Footnote to a note of Davenport and Heilbronn'', Journal of the London Mathematical Society '''36''' (1961), no. 1, pp. 177–184, {{DOI|10.1112/jlms/s1-36.1.177}}|כיווון=שמאל}}
+
+== ערכים רציונליים ==
+פונקציית זטא של הורוויץ מופיעה במספר זהויות בולטות בנקודות רציונליות.{{הערה|1=Djurdje Cvijović and Jacek Klinowski, ''Values of the Legendre chi and Hurwitz zeta functions at rational arguments'', Mathematics of Computation '''68''' (1999), no. 228, pp. 1623–1630, {{DOI|10.1090/S0025-5718-99-01091-1}}|כיווון=שמאל}} בפרט, את ערכי פולינומי אוילר <math>E_n(x)</math> בנקודות רציונליות ניתן לבטא באמצעותה:
+
+:<math>E_{2n-1}\left(\frac{p}{q}\right) = \left(-1\right)^n \frac{4(2n-1)!}{(2\pi q)^{2n}} \sum_{k=1}^q \zeta\left(2n,\frac{2k-1}{2q}\right) \cos \frac{(2k-1)\pi p}{q}</math>
+
+:<math>E_{2n}\left(\frac{p}{q}\right) = \left(-1\right)^n \frac{4(2n)!}{(2\pi q)^{2n+1}} \sum_{k=1}^q \zeta\left(2n+1,\frac{2k-1}{2q}\right) \sin \frac{(2k-1)\pi p}{q}.</math>
+
+== שימושים ==
+פונקציית זטא של הורוויץ מופיעה בתחומים רבים. השכיח ביותר הוא [[תורת המספרים]], שבה התאוריה שלה העמוקה והמפותחת ביותר. היא מופיעה גם בחקר [[פרקטל]]ים ו[[מערכת דינמית|מערכות דינמיות]]. ב[[סטטיסטיקה]] שימושית היא מופיעה בחוק זיפף ובחוק זיפף-מנדלברוט. ב[[פיזיקת חלקיקים]] היא מופיעה בנוסחה של [[ג'וליאן שווינגר]] הנותנת תוצאה מדויקת לקצב [[יצירת זוג|יצירת הזוגות]] של [[אלקטרון|אלקטרוני]] דיראק בשדה חשמלי אחיד.{{הערה|1=J. Schwinger, ''On gauge invariance and vacuum polarization'', Physical Review '''82''' (1951), no. 5, pp. 664–679, {{DOI|10.1103/PhysRev.82.664}}|כיווון=שמאל}}
+
+== מקרים פרטיים והכללות ==
+עבור <math>m</math> שלם חיובי, פונקציית זטא של הורוויץ קשורה ל[[פונקציית פוליגמא|פונקציית הפוליגמא]]:
+
+:<math>\psi^{(m)}(z)= (-1)^{m+1} m!\, \zeta (m+1,z).</math>
+
+פונקציית זטא של בארנס מכלילה את פונקציית זטא של הורוויץ. גם הטרנסצנדנט של לרך מכליל אותה:
+
+:<math>\Phi(z, s, q) = \sum_{k=0}^\infty \frac{z^k}{(k+q)^s}, \qquad \zeta(s,a) = \Phi(1, s, a).</math>
+
+עבור <math>s</math> טבעי ו-<math>a</math> שאינו טבעי, ניתן לבטא אותה גם באמצעות [[פונקציה היפרגאומטרית]]:
+
+:<math>\zeta(s,a)=a^{-s}\cdot{}_{s+1}F_s(1,a,\ldots, a;a+1,\ldots, a+1;1).</math>
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Tom M. Apostol, ''Introduction to Analytic Number Theory'', Springer-Verlag, 1976, Chapter 12
+* T. M. Apostol, [https://dlmf.nist.gov/25.11 Hurwitz Zeta Function], NIST Digital Library of Mathematical Functions, §25.11
+* Milton Abramowitz and Irene A. Stegun, ''Handbook of Mathematical Functions'', Dover Publications, 1964, §6.4.10
+* Harold Davenport, ''Multiplicative Number Theory'', Markham, Chicago, 1967
+* Jeff Miller and Victor S. Adamchik, ''Derivatives of the Hurwitz Zeta Function for Rational Arguments'', Journal of Computational and Applied Mathematics '''100''' (1998), no. 2, pp. 201–206
+* E. T. Whittaker and G. N. Watson, ''A Course of Modern Analysis'', 4th ed., Cambridge University Press, 1927
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} Jonathan Sondow and Eric W. Weisstein, [https://mathworld.wolfram.com/HurwitzZetaFunction.html Hurwitz Zeta Function], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]

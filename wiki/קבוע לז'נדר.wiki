@@ -1,0 +1,69 @@
+[[קובץ:Legendre's constant.svg|ממוזער|100,000 האיברים הראשונים של הסדרה <math>a_n = \log n - n/\pi(n)</math> (באדום) נראים כמתכנסים לערך סביב 1.08366 (בכחול)]]
+[[קובץ:Legendre's constant 10 000 000.svg|ממוזער|איברים מאוחרים יותר של אותה סדרה, עד 10,000,000, קטנים באופן עקבי מ-1.08366]]
+'''קבוע לז'נדר''' הוא קבוע מתמטי המופיע בנוסחה שבנה אדריאן-מארי לז'נדר כדי לקרב את התנהגותה של [[פונקציית המספרים הראשוניים]] <math>\pi(x)</math>. כיום ידוע שהערך המתאים במדויק להתנהגות האסימפטוטית שלה הוא 1.
+
+== הנוסחה של לז'נדר ==
+עיון בנתונים המספריים שהיו בידיו על ערכי <math>\pi(x)</math> הוביל את לז'נדר לנוסחת קירוב. ב-1808 הוא הציע את הנוסחה
+:<math>y=\frac{x}{\log(x) - 1.08366}</math>
+כקירוב ל-<math>y=\pi(x)</math> ב"דיוק משביע רצון מאוד".{{הערה|שם=Legendre|1=Legendre, A.-M. (1808). [https://gallica.bnf.fr/ark:/12148/bpt6k62826k/f420.item ''Essai sur la théorie des nombres'']. Courcier. p. 394.|כיוון=שמאל}}{{הערה|שם=Ribenboim|1=Ribenboim, Paulo (2004). ''The Little Book of Bigger Primes''. New York: Springer-Verlag. p. 163. ISBN 0-387-20169-6.|כיוון=שמאל}}
+
+אם מגדירים פונקציה ממשית <math>B(x)</math> על ידי
+:<math>\pi(x)=\frac{x}{\log(x) - B(x)},</math>
+ואם <math>B(x)</math> מתכנסת לקבוע ממשי <math>B</math> כאשר <math>x</math> שואף לאינסוף, אז הקבוע הזה מקיים
+:<math>B = \lim_{x \to \infty } \left( \log(x) - {x \over \pi(x)} \right).</math>
+
+כיום ידוע לא רק שהגבול קיים, אלא גם שערכו 1 – מעט פחות מהערך 1.08366 של לז'נדר. בלי קשר לערכו המדויק, עצם קיומו של הגבול <math>B</math> גורר את [[משפט המספרים הראשוניים]].
+
+== הערך המדויק ==
+פפנוטי צ'בישב הוכיח ב-1849 שאם הגבול <math>B</math> קיים, הוא חייב להיות שווה ל-1.{{הערה|שם=Landau|1=Landau, Edmund (1974). ''Handbuch der Lehre von der Verteilung der Primzahlen''. Third (corrected) edition. Chelsea. p. 17.|כיוון=שמאל}} הוכחה פשוטה יותר נתן יאנוש פינץ ב-1980.{{הערה|שם=Pintz|1=Pintz, Janos (1980). "On Legendre's Prime Number Formula". ''The American Mathematical Monthly''. '''87''' (9): 733–735. [https://doi.org/10.2307/2321863 doi:10.2307/2321863].|כיוון=שמאל}}
+
+העובדה ש-<math>B</math> אכן שווה ל-1 היא מסקנה מיידית ממשפט המספרים הראשוניים בצורתו המדויקת, עם הערכה מפורשת של איבר השגיאה:
+:<math>\pi(x) = \operatorname{Li} (x) + O \left(x e^{-a\sqrt{\log x}}\right)</math>
+כאשר <math>x \to \infty</math>, עבור קבוע חיובי כלשהו <math>a</math> (וב[[סימון אסימפטוטי|סימון O גדולה]]). את הצורה הזו הוכיח ב-1899 שארל-ז'אן דה לה ואלה-פוסן.{{הערה|שם=VP1899|1=La Vallée Poussin, C. (1899). ''Mém. Couronnés Acad. Roy. Belgique'' '''59''': 1–74.|כיוון=שמאל}} משפט המספרים הראשוניים עצמו הוכח כבר ב-1896, באופן בלתי תלוי, על ידי ז'אק אדמר{{הערה|שם=Hadamard|1=Hadamard, Jacques (1896). "Sur la distribution des zéros de la fonction ζ(''s'') et ses conséquences arithmétiques". ''Bulletin de la Société Mathématique de France''. '''24''': 199–220. [https://doi.org/10.24033/bsmf.545 doi:10.24033/bsmf.545].|כיוון=שמאל}} ועל ידי דה לה ואלה-פוסן,{{הערה|שם=VP1896|1=de la Vallée Poussin, Charles Jean (1897). [https://archive.org/details/recherchesanaly00pousgoog ''Recherches analytiques sur la théorie des nombres premiers'']. Brussels: Hayez. pp. 183–256, 281–361.|כיוון=שמאל}} אך בלי הערכה של איבר השגיאה.
+
+מכיוון שערכו התברר כמספר פשוט כל כך, למונח "קבוע לז'נדר" יש כיום בעיקר ערך היסטורי, ולעיתים קרובות משתמשים בו (באופן לא מדויק) כדי לציין את הניחוש הראשון של לז'נדר, 1.08366.
+
+== ערכים מספריים ==
+בעזרת ערכים ידועים של <math>\pi(x)</math> אפשר לחשב את <math>B(x) = \log x - \frac{x}{\pi(x)}</math> עבור ערכי <math>x</math> גדולים בהרבה מאלה שהיו זמינים ללז'נדר. הערכים שואפים באיטיות ל-1:
+{| class="wikitable" style="text-align:left; direction:ltr;"
+! <math>x</math> !! <math>\pi(x)</math> !! <math>B(x)</math>
+|-
+| <math>10^{2}</math> || 25 || 0.605170
+|-
+| <math>10^{3}</math> || 168 || 0.955374
+|-
+| <math>10^{4}</math> || 1229 || 1.073644
+|-
+| <math>10^{5}</math> || 9592 || 1.087571
+|-
+| <math>10^{6}</math> || 78498 || 1.076332
+|-
+| <math>10^{7}</math> || 664579 || 1.070976
+|-
+| <math>10^{8}</math> || 5761455 || 1.063954
+|-
+| <math>10^{9}</math> || 50847534 || 1.056629
+|-
+| <math>10^{10}</math> || 455052511 || 1.050365
+|-
+| <math>10^{11}</math> || 4118054813 || 1.045126
+|-
+| <math>10^{12}</math> || 37607912018 || 1.040872
+|-
+| <math>10^{13}</math> || 346065536839 || 1.037345
+|-
+| <math>10^{14}</math> || 3204941750802 || 1.034376
+|-
+| <math>10^{15}</math> || 29844570422669 || 1.031844
+|-
+| <math>10^{16}</math> || 279238341033925 || 1.029660
+|}
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/LegendresConstant.html קבוע לז'נדר], באתר [[MathWorld]] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:קבועים מתמטיים]]
+[[קטגוריה:תורת המספרים האנליטית]]

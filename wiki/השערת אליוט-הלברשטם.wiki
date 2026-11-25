@@ -1,0 +1,27 @@
+ב[[תורת המספרים]], '''השערת אליוט-הלברשטם''' היא השערה על התפלגות ה[[מספר ראשוני|מספרים הראשוניים]] בסדרות חשבוניות. להשערה יישומים רבים ב[[תורת הנפה]]. היא קרויה על שם פיטר אליוט והייני הלברשטם, שניסחו גרסה מסוימת שלה ב-1968.{{הערה|שם=EH|1=Elliott, Peter D. T. A.; Halberstam, Heini (1970). "A conjecture in prime number theory". ''Symposia Mathematica, Vol. IV (INDAM, Rome, 1968/69)''. London: Academic Press. pp. 59–72.|כיוון=שמאל}}
+
+== ניסוח ==
+אחת הגרסאות של ההשערה היא כדלהלן. נסמן ב-<math>\pi(x)</math> את [[פונקציית המספרים הראשוניים]], כלומר מספר הראשוניים הקטנים מ-<math>x</math> או שווים לו. אם <math>q</math> שלם חיובי ו-<math>a</math> זר ל-<math>q</math>, נסמן ב-<math>\pi(x;q,a)</math> את מספר הראשוניים הקטנים מ-<math>x</math> או שווים לו ושקולים ל-<math>a</math> מודולו <math>q</math>. ממשפט דיריכלה על ראשוניים בסדרות חשבוניות נובע ש
+:<math> \pi(x;q,a) \sim \frac{\pi(x)}{\varphi(q)}\ \ (x\rightarrow\infty),</math>
+כאשר <math>\varphi</math> היא [[פונקציית אוילר]]. מגדירים את פונקציית השגיאה
+:<math> E(x;q) = \max_{\gcd(a,q) = 1} \left|\pi(x;q,a) - \frac{\pi(x)}{\varphi(q)}\right|,</math>
+כאשר המקסימום נלקח על כל ה-<math>a</math> הזרים ל-<math>q</math>. השערת אליוט-הלברשטם היא הטענה שלכל <math>\theta < 1</math> ולכל <math>A > 0</math> קיים קבוע <math>C > 0</math> כך ש
+:<math> \sum_{1 \leq q \leq x^\theta} E(x;q) \leq \frac{C x}{\log^A x}</math>
+לכל <math>x > 2</math>.
+
+== תוצאות ידועות ==
+את ההשערה הוכיחו לכל <math>\theta < 1/2</math> אנריקו בומביירי{{הערה|שם=Bombieri|1=Bombieri, Enrico (1965). "On the large sieve". ''Mathematika''. '''12''' (2): 201–225. [https://doi.org/10.1112/s0025579300005313 doi:10.1112/s0025579300005313].|כיוון=שמאל}} וא' א' וינוגרדוב{{הערה|שם=Vinogradov|1=Vinogradov, Askold Ivanovich (1965). "The density hypothesis for Dirichlet L-series". ''Izv. Akad. Nauk SSSR Ser. Mat.'' '''29''' (4): 903–934 (ברוסית).|כיוון=שמאל}} (משפט בומביירי-וינוגרדוב, המכונה לעיתים פשוט "משפט בומביירי"). כבר תוצאה זו שימושית למדי, שכן היא צורה ממוצעת של השערת רימן המוכללת. ידוע שההשערה אינה נכונה בנקודת הקצה <math>\theta = 1</math>.{{הערה|שם=FG|1=Friedlander, John; Granville, Andrew (1989). "Limitations to the equi-distribution of primes I". ''Annals of Mathematics''. '''129''' (2): 363–382. [https://doi.org/10.2307/1971450 doi:10.2307/1971450].|כיוון=שמאל}} ב-1986 הציגו בומביירי, פרידלנדר ואיוונייץ הכללה של ההשערה, המשתמשת ב[[קונבולוציית דיריכלה]] של פונקציות אריתמטיות הקשורות ל[[פונקציית פון מנגולד]].{{הערה|שם=BFI|1=Bombieri, E.; Friedlander, J. B.; Iwaniec, H. (1986). "Primes in arithmetic progressions to large moduli". ''Acta Mathematica''. '''156''' (1): 203–251. [https://doi.org/10.1007/bf02399204 doi:10.1007/bf02399204].|כיוון=שמאל}}
+
+== מסקנות ==
+להשערת אליוט-הלברשטם כמה מסקנות. אחת הבולטות בהן היא התוצאה של דן גולדסטון, יאנוש פינץ וג'ם יילדירים,{{הערה|שם=GPY|1=Goldston, D. A.; Pintz, J.; Yıldırım, C. Y. (2009). "Primes in Tuples I". ''Annals of Mathematics''. '''170''' (2): 819–862. [https://arxiv.org/abs/math/0508185 arXiv:math/0508185]. [https://doi.org/10.4007/annals.2009.170.819 doi:10.4007/annals.2009.170.819].|כיוון=שמאל}}{{הערה|שם=Sound|1=Soundararajan, Kannan (2007). "Small gaps between prime numbers: The work of Goldston–Pintz–Yıldırım". ''Bulletin of the American Mathematical Society''. '''44''' (1): 1–18. [https://arxiv.org/abs/math/0605696 arXiv:math/0605696]. [https://doi.org/10.1090/S0273-0979-06-01142-6 doi:10.1090/S0273-0979-06-01142-6].|כיוון=שמאל}} המראה (בהנחת ההשערה) שיש אינסוף זוגות של ראשוניים שההפרש ביניהם הוא 16 לכל היותר. בנובמבר 2013 הראה ג'יימס מיינרד שבהנחת השערת אליוט-הלברשטם יש אינסוף זוגות של ראשוניים עוקבים שההפרש ביניהם הוא 12 לכל היותר.{{הערה|שם=Maynard|1=Maynard, James (2015). "Small gaps between primes". ''Annals of Mathematics''. '''181''' (1): 383–413. [https://arxiv.org/abs/1311.4600 arXiv:1311.4600]. [https://doi.org/10.4007/annals.2015.181.1.7 doi:10.4007/annals.2015.181.1.7].|כיוון=שמאל}} באוגוסט 2014 הראתה קבוצת פולימאת שבהנחת השערת אליוט-הלברשטם המוכללת יש אינסוף זוגות של ראשוניים עוקבים שההפרש ביניהם הוא 6 לכל היותר.{{הערה|שם=Polymath|1=D.H.J. Polymath (2014). "Variants of the Selberg sieve, and bounded intervals containing many primes". ''Research in the Mathematical Sciences''. '''1''' (12). [https://arxiv.org/abs/1407.4897 arXiv:1407.4897]. [https://doi.org/10.1186/s40687-014-0012-7 doi:10.1186/s40687-014-0012-7].|כיוון=שמאל}} בלי להניח אף צורה של ההשערה, החסם הנמוך ביותר שהוכח הוא 246.{{הערה|שם=Maynard}}{{הערה|שם=Polymath}}
+
+== ראו גם ==
+* [[תורת הנפה]]
+* [[הרווח בין ראשוניים עוקבים]]
+* [[השערת קרמר]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]

@@ -1,0 +1,137 @@
+{{פירוש נוסף|נוכחי=פונקציית האטא של דיריכלה|פירוש=התבנית המודולרית|ראו=פונקציית אטא של דדקינד}}
+[[קובץ:Dirichlet eta function.png|ממוזער|הצגה צבעונית של פונקציית אטא של דיריכלה בשיטת צביעת תחום.]]
+ב[[מתמטיקה]], ב[[תורת המספרים האנליטית]], '''פונקציית אטא של דיריכלה''' היא הפונקציה המוגדרת על ידי [[טור דיריכלה]] הבא, המתכנס לכל [[מספר מרוכב]] שחלקו הממשי חיובי:
+
+:<math>\eta(s) = \sum_{n=1}^{\infty}{(-1)^{n-1} \over n^s} = \frac{1}{1^s} - \frac{1}{2^s} + \frac{1}{3^s} - \frac{1}{4^s} + \cdots.</math>
+
+טור זה הוא הסכום המתחלף המתאים לטור דיריכלה של [[פונקציית זטא של רימן]] <math>\zeta(s)</math>, ולכן הפונקציה נקראת גם '''פונקציית הזטא המתחלפת''' ומסומנת לעיתים <math>\zeta^*(s)</math>. מתקיים הקשר
+
+:<math>\eta(s) = \left(1-2^{1-s}\right) \zeta(s).</math>
+
+גם פונקציית אטא של דיריכלה וגם פונקציית זטא של רימן הן מקרים פרטיים של ה[[פולילוגריתם]].
+
+אף שטור דיריכלה של פונקציית האטא מתכנס רק עבור מספרים מרוכבים <math>s</math> שחלקם הממשי חיובי, הוא ניתן לסכימה בשיטת אבל לכל מספר מרוכב, וכך הוא מגדיר את פונקציית האטא כ[[פונקציה שלמה]].
+
+באופן שקול, ניתן להתחיל מההגדרה
+
+:<math>\eta(s) = \frac{1}{\Gamma(s)}\int_0^\infty \frac{x^{s-1}}{e^x+1}\,dx,</math>
+
+התקפה גם היא בתחום שבו החלק הממשי חיובי (<math>\Gamma(s)</math> היא [[פונקציית גמא]]). הגדרה זו מציגה את פונקציית האטא כ[[התמרת מלין]].
+
+[[גודפרי הרולד הארדי|הארדי]] נתן הוכחה פשוטה למשוואה הפונקציונלית של פונקציית האטא:{{הערה|1=G. H. Hardy, ''A new proof of the functional equation for the zeta-function'', Matematisk Tidsskrift B (1922), pp. 71–73|כיווון=שמאל}}
+
+:<math>\eta(-s) = 2 \frac{1-2^{-s-1}}{1-2^{-s}} \pi^{-s-1} s \sin\left({\pi s \over 2}\right) \Gamma(s)\eta(s+1).</math>
+
+ממנה נובעת מיד גם המשוואה הפונקציונלית של פונקציית הזטא, וכן דרך נוספת להרחיב את הגדרת פונקציית האטא לכל המישור המרוכב.
+
+== אפסים ==
+בין אפסי פונקציית האטא נמצאים כל האפסים של פונקציית הזטא: השלמים הזוגיים השליליים (האפסים הטריוויאליים) והאפסים הלא-טריוויאליים ברצועה הקריטית. בנוסף, הגורם <math>1-2^{1-s}</math> מוסיף אינסוף אפסים מרוכבים פשוטים, הממוקמים במרווחים שווים על הישר <math>\operatorname{Re}(s) = 1</math>, בנקודות <math>s_n=1+2n\pi i/\ln 2</math>, כאשר <math>n</math> הוא [[מספר שלם]] שונה מאפס.
+
+אפסי פונקציית האטא סימטריים ביחס לציר הממשי, ובהנחת [[השערת רימן]] הם נמצאים על שני הישרים המקבילים <math>\operatorname{Re}(s)=1/2</math> ו-<math>\operatorname{Re}(s)=1</math>, ועל חצי הישר הניצב שהוא הציר הממשי השלילי.
+
+=== הבעיה של לנדאו ===
+במשוואה <math>\eta(s) = (1-2^{1-s})\zeta(s)</math>, הקוטב של <math>\zeta(s)</math> בנקודה <math>s=1</math> מבוטל על ידי האפס של הגורם השני, ולכן <math>\eta(1)</math> אינו אינסופי ואינו אפס.{{הערה|שם=titch|1=E. C. Titchmarsh, ''The Theory of the Riemann Zeta Function'', 2nd ed. (revised by D. R. Heath-Brown), Oxford University Press, 1986, p. 17|כיווון=שמאל}} לעומת זאת, במשוואה
+
+:<math>\zeta(s)=\frac{\eta(s)}{1-2^{1-s}}</math>
+
+על <math>\eta</math> להתאפס בכל הנקודות <math>s_n</math> עם <math>n\ne 0</math>, שבהן המכנה מתאפס, אם פונקציית זטא של רימן אנליטית וסופית שם. הבעיה של הוכחת עובדה זו בלי להגדיר תחילה את פונקציית הזטא הוצגה והושארה פתוחה על ידי [[אדמונד לנדאו]] בחיבורו על תורת המספרים משנת 1909.{{הערה|1=Edmund Landau, ''Handbuch der Lehre von der Verteilung der Primzahlen'', Erster Band, Berlin, 1909, p. 160|כיווון=שמאל}}
+
+פתרון ראשון לבעיה פורסם כמעט 40 שנה מאוחר יותר על ידי דייוויד וידר בספרו על [[התמרת לפלס]].{{הערה|1=David Vernon Widder, ''The Laplace Transform'', Princeton University Press, 1946, p. 230|כיווון=שמאל}} וידר השתמש בראשוני הבא, 3, במקום 2, כדי להגדיר טור דיריכלה דומה
+
+:<math>\lambda(s) = \left(1-\frac{3}{3^s}\right)\zeta(s) = \left(1+\frac{1}{2^s}\right)-\frac{2}{3^s}+\left(\frac{1}{4^s}+\frac{1}{5^s}\right)-\frac{2}{6^s} + \cdots,</math>
+
+המתכנס ומגדיר פונקציה אנליטית עבור <math>\operatorname{Re}(s)>0</math>. מאחר ש-<math>\log 3/\log 2</math> הוא [[מספר אי-רציונלי]], המכנים בשתי ההגדרות <math>\zeta(s) = \eta(s)/(1-2^{1-s})</math> ו-<math>\zeta(s) = \lambda(s)/(1-3^{1-s})</math> אינם מתאפסים בו זמנית, מלבד בנקודה <math>s=1</math>. לכן <math>\zeta</math> מוגדרת היטב ואנליטית עבור <math>\operatorname{Re}(s)>0</math>, מלבד ב-<math>s=1</math>, ומכאן נובע בעקיפין ש-<math>\eta(s_n)=0</math> עבור <math>s_n\ne1</math>.
+
+הוכחה ישירה ואלמנטרית, שאינה תלויה בפונקציית הזטא, פרסם ג'ונתן סונדאו בשנת 2003.{{הערה|1=Jonathan Sondow, ''Zeros of the alternating zeta function on the line Re(s)=1'', American Mathematical Monthly '''110''' (2003), pp. 435–437, [https://arxiv.org/abs/math/0209393 arXiv:math/0209393]|כיווון=שמאל}} ההוכחה מבטאת את ערך פונקציית האטא כגבול של סכומי רימן מיוחדים של אינטגרל שערכו ידוע כאפס: אם <math>s=1+it</math> עם <math>t\ne 0</math> ו-<math>2^s=2</math>, אז
+
+:<math>|\eta(s)| = \left|\int_0^1 \frac{dx}{(1+x)^s}\right| = \left|\frac{2^{1-s}-1}{1-s}\right| = 0,</math>
+
+ועבור <math>s=1</math> מתקבל <math>\eta(1) = \int_0^1 \frac{dx}{1+x} = \ln 2 \ne 0</math>.
+
+== ייצוגים אינטגרליים ==
+ידועות נוסחאות אינטגרליות רבות לפונקציית האטא. הראשונה נובעת מהחלפת משתנה בייצוג האינטגרלי של פונקציית גמא (אבל, 1823), ונותנת התמרת מלין שניתן לכתוב גם כ[[אינטגרל רב-ממדי|אינטגרל כפול]] (סונדאו, 2005), עבור <math>\operatorname{Re}(s) > 0</math>:{{הערה|1=Jonathan Sondow, ''Double integrals for Euler's constant and ln 4/π and an analog of Hadjicostas's formula'', American Mathematical Monthly '''112''' (2005), pp. 61–65|כיווון=שמאל}}
+
+:<math>\Gamma(s)\eta(s) = \int_0^\infty \frac{x^{s-1}}{e^x+1} \, dx = \int_0^1 \int_0^1 \frac{\left(-\log(x y)\right)^{s-2}}{1 + x y} \, dx \, dy.</math>
+
+[[אינטגרציה בחלקים]] של האינטגרל הראשון נותנת ייצוג נוסף, התקף עבור <math>\operatorname{Re}(s) > -1</math>:{{הערה|1=T. Amdeberhan, M. L. Glasser, M. C. Jones, V. H. Moll, R. Posey and D. Varela, ''The Cauchy–Schlömilch Transformation'', 2010, [https://arxiv.org/abs/1004.2445 arXiv:1004.2445], p. 12|כיווון=שמאל}}
+
+:<math>2^{1-s}\,\Gamma(s+1)\,\eta(s) = \int_0^\infty \frac{t^s}{\cosh^2(t)} \, dt.</math>
+
+הנוסחה הבאה, של [[ארנסט לינדלף|לינדלף]] (1905), תקפה בכל המישור המרוכב, כאשר בלוגריתם הסמוי בחזקה לוקחים את הערך הראשי:{{הערה|1=Ernst Lindelöf, ''Le calcul des résidus et ses applications à la théorie des fonctions'', Gauthier-Villars, 1905, p. 103|כיווון=שמאל}}
+
+:<math>\eta(s) = \int_{-\infty}^\infty \frac{(1/2 + i t)^{-s}}{e^{\pi t}+e^{-\pi t}} \, dt.</math>
+
+היא מתאימה לנוסחה של [[יוהאן ינסן|ינסן]] (1895) עבור הפונקציה השלמה <math>(s-1)\zeta(s)</math>, התקפה גם היא בכל המישור המרוכב:
+
+:<math>(s-1)\zeta(s) = 2\pi\int_{-\infty}^\infty \frac{(1/2 + i t)^{1-s}}{(e^{\pi t}+e^{-\pi t})^2} \, dt.</math>
+
+באופן דומה מתקבלות נוסחאות נוספות, למשל ההכללה הבאה של מילגרם (2013), התקפה עבור <math>0 < c < 1</math> ולכל <math>s</math>:{{הערה|שם=milgram|1=Michael S. Milgram, ''Integral and Series Representations of Riemann's Zeta Function, Dirichlet's Eta Function and a Medley of Related Results'', Journal of Mathematics '''2013''', pp. 1–17, {{DOI|10.1155/2013/181724}}|כיווון=שמאל}}
+
+:<math>\eta(s) = \frac{1}{2} \int_{-\infty}^\infty \frac{(c + i t)^{-s}}{\sin(\pi(c+i t))} \, dt,</math>
+
+ובגבול <math>c\to 0^+</math> מתקבלת נוסחה התקפה עבור <math>\operatorname{Re}(s) < 0</math>:{{הערה|שם=milgram}}
+
+:<math>\eta(s) = - \sin\left(\frac{s\pi}{2}\right) \int_{0}^\infty \frac{t^{-s}}{\sinh(\pi t)} \, dt.</math>
+
+== אלגוריתמים נומריים ==
+את רוב טכניקות האצת ההתכנסות שפותחו עבור טורים מתחלפים ניתן ליישם בהצלחה לחישוב פונקציית האטא. שיטה פשוטה וסבירה במיוחד היא טרנספורמציית אוילר לטורים מתחלפים, הנותנת
+
+:<math>\eta(s)=\sum_{n=0}^\infty \frac{1}{2^{n+1}} \sum_{k=0}^n (-1)^{k} {n \choose k} \frac {1}{(k+1)^s}.</math>
+
+הסכום הפנימי הוא הפרש קדמי.
+
+=== שיטת בורווין ===
+פיטר בורווין השתמש בקירובים באמצעות [[פולינומי צ'בישב]] כדי לפתח שיטה יעילה לחישוב פונקציית האטא.{{הערה|1=Peter Borwein, ''An efficient algorithm for the Riemann zeta function'', in: Michel A. Théra (ed.), ''Constructive, Experimental, and Nonlinear Analysis'', CMS Conference Proceedings 27, American Mathematical Society, 2000, pp. 29–34|כיווון=שמאל}} אם
+
+:<math>d_k = n\sum_{\ell=0}^k \frac{(n+\ell-1)!\,4^\ell}{(n-\ell)!\,(2\ell)!},</math>
+
+אז
+
+:<math>\eta(s) = -\frac{1}{d_n} \sum_{k=0}^{n-1}\frac{(-1)^k(d_k-d_n)}{(k+1)^s}+\gamma_n(s),</math>
+
+כאשר עבור <math>\operatorname{Re}(s) \ge \tfrac{1}{2}</math> איבר השגיאה חסום על ידי
+
+:<math>|\gamma_n(s)| \le \frac{3}{(3+\sqrt{8})^n} (1+2|\operatorname{Im}(s)|)\exp\left(\frac{\pi}{2}|\operatorname{Im}(s)|\right).</math>
+
+הגורם <math>3+\sqrt{8}\approx 5.8</math> בחסם השגיאה מראה שהטור של בורווין מתכנס מהר מאוד כאשר <math>n</math> גדל.
+
+== ערכים מיוחדים ==
+* <math>\eta(0) = \tfrac{1}{2}</math>, סכום אבל של [[טור גרנדי]] <math>1 - 1 + 1 - 1 + \cdots</math>.
+* <math>\eta(-1) = \tfrac{1}{4}</math>, סכום אבל של הטור <math>1 - 2 + 3 - 4 + \cdots</math>.
+* עבור <math>k</math> שלם חיובי, <math>\eta(1-k) = \frac{2^k-1}{k} B^{+}_k</math>, כאשר <math>B^{+}_k</math> הוא [[מספרי ברנולי|מספר ברנולי]] ה-<math>k</math>-י.
+* <math>\eta(1) = \ln 2</math>; זהו סכום הטור ההרמוני המתחלף.
+* <math>\eta(2) = \frac{\pi^2}{12}</math>
+* <math>\eta(4) = \frac{7\pi^4}{720} \approx 0.94703283</math>
+* <math>\eta(6) = \frac{31\pi^6}{30240} \approx 0.98555109</math>
+* <math>\eta(8) = \frac{127\pi^8}{1209600} \approx 0.99623300</math>
+
+הצורה הכללית עבור שלמים זוגיים חיוביים היא
+
+:<math>\eta(2n) = (-1)^{n+1}\frac{B_{2n}\pi^{2n} \left(2^{2n-1} - 1\right)}{(2n)!},</math>
+
+ובגבול <math>n \to \infty</math> מתקבל <math>\eta(\infty) = 1</math>.
+
+== נגזרות ==
+הנגזרת לפי <math>s</math> היא, עבור <math>s\neq 1</math>,
+
+:<math>\eta'(s) = \sum_{n=1}^\infty \frac{(-1)^n\ln n}{n^s} = 2^{1-s}\ln(2)\,\zeta(s)+(1-2^{1-s})\,\zeta'(s),</math>
+
+ובנקודה 1
+
+:<math>\eta'(1) = \gamma\ln 2-\frac{(\ln 2)^2}{2},</math>
+
+כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]].
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. B. Conrey, ''More than two fifths of the zeros of the Riemann zeta function are on the critical line'', Journal für die reine und angewandte Mathematik '''399''' (1989), pp. 1–26
+* Konrad Knopp, ''Theory and Application of Infinite Series'', Dover, 1990 (original 1922)
+* Xavier Gourdon and Pascal Sebah, [http://numbers.computation.free.fr/Constants/Miscellaneous/zetaevaluations.pdf Numerical evaluation of the Riemann zeta-function], 2003
+* E. C. Titchmarsh, ''The Theory of the Riemann Zeta Function'', 2nd ed., Oxford University Press, 1986
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]

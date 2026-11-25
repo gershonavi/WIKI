@@ -1,0 +1,90 @@
+ב[[מתמטיקה]], '''סכום קלוסטרמן''' (ב[[אנגלית]]: Kloosterman sum) הוא סוג מסוים של סכום אקספוננציאלי. הסכומים קרויים על שם המתמטיקאי ההולנדי הנדריק קלוסטרמן, שהציג אותם ב-1926{{הערה|1=H. D. Kloosterman, On the representation of numbers in the form ax<sup>2</sup> + by<sup>2</sup> + cz<sup>2</sup> + dt<sup>2</sup>, Acta Mathematica 49, 1926, עמ' 407–464|כיווון=שמאל}}, כשהתאים את שיטת המעגל של הארדי וליטלווד לבעיה הנוגעת ל[[תבנית ריבועית|תבניות ריבועיות]] אלכסוניות חיוביות בארבעה משתנים, וכך חיזק את מחקר הדוקטורט שלו משנת 1924 על חמישה משתנים או יותר{{הערה|1=H. D. Kloosterman, ''Over het splitsen van geheele positieve getallen in een som van kwadraten'', Thesis, Universiteit Leiden, 1924|כיווון=שמאל}}.
+
+יהיו <math>a, b, m</math> [[מספר טבעי|מספרים טבעיים]]. אז
+:<math>K(a,b;m)=\sum_{\stackrel{0\leq x\leq m-1}{\gcd(x,m)=1}} e^{\frac{2\pi i}{m} (ax+bx^*)},</math>
+כאשר <math>x^*</math> הוא ההופכי של <math>x</math> [[חשבון מודולרי|מודולו]] <math>m</math>.
+
+== הקשר ==
+סכומי קלוסטרמן הם מקבילה, בחוג סופי, ל[[פונקציית בסל|פונקציות בסל]]. הם מופיעים, למשל, בפיתוח פורייה של [[תבנית מודולרית|תבניות מודולריות]]. יש להם שימושים בחקר ערכים ממוצעים הקשורים ל[[פונקציית זטא של רימן]], ראשוניים בקטעים קצרים, ראשוניים בסדרות חשבוניות, התורה הספקטרלית של פונקציות אוטומורפיות ונושאים קרובים.
+
+== תכונות ==
+* אם <math>a = 0</math> או <math>b = 0</math>, סכום קלוסטרמן הופך ל[[סכום רמנוג'אן]].
+* <math>K(a, b; m)</math> תלוי רק במחלקות השאריות של <math>a</math> ו-<math>b</math> מודולו <math>m</math>. בנוסף, <math>K(a, b; m) = K(b, a; m)</math>, ו-<math>K(ac, b; m) = K(a, bc; m)</math> אם <math>\gcd(c, m) = 1</math>.
+* יהי <math>m = m_1m_2</math>, כאשר <math>m_1</math> ו-<math>m_2</math> זרים, ונבחר <math>n_1</math> ו-<math>n_2</math> כך ש-<math>n_1m_1 \equiv 1 \pmod{m_2}</math> ו-<math>n_2m_2 \equiv 1 \pmod{m_1}</math>. אז
+::<math>K(a,b;m) = K \left (n_2 a, n_2 b; m_1 \right ) K \left (n_1 a, n_1 b; m_2 \right ).</math>
+:כך מצטמצם חישוב סכומי קלוסטרמן למקרה <math>m = p^k</math>, עבור ראשוני <math>p</math> ושלם <math>k \ge 1</math>.
+* הערך של <math>K(a, b; m)</math> הוא תמיד [[מספר אלגברי]] ממשי.
+* זהות סלברג:
+::<math>K(a,b;m) = \sum_{d\mid\gcd(a,b,m)} d\cdot K\left(\tfrac{ab}{d^2},1;\tfrac{m}{d}\right),</math>
+:שאותה ניסח [[אטלה סלברג]] והוכיח לראשונה קוזנצוב בעזרת התורה הספקטרלית של תבניות מודולריות. כיום ידועות הוכחות אלמנטריות לזהות זו{{הערה|1=R. Matthes, An elementary proof of a formula of Kuznecov for Kloosterman sums, Resultate Math. 18 (1–2), 1990, עמ' 120–124|כיווון=שמאל}}.
+* עבור <math>p</math> ראשוני אי-זוגי לא ידועה נוסחה פשוטה ל-<math>K(a, b; p)</math>, והשערת סאטו-טייט מרמזת שאין כזו. אם <math>\gcd(a, p) = 1</math>, יש גם את ההתמרה החשובה
+::<math>K(a,a;p) = \sum_{m=0}^{p-1} \left(\frac{m^2-4a^2}{p}\right) e^{\frac{2\pi i m}{p}},</math>
+:כאשר <math>\left(\tfrac{\ell}{m}\right)</math> הוא [[סימן יעקובי]].
+* יהי <math>m = p^k</math> עם <math>k > 1</math> ו-<math>p</math> ראשוני, ונניח <math>\gcd(p, 2ab) = 1</math>. אז
+::<math>K(a,b; m) = \begin{cases} 2 \left(\frac{\ell}{m}\right) \sqrt{m}\, \operatorname{Re}\left(\varepsilon_{m} e^{\frac{4 \pi i \ell}{m}} \right) & \left(\tfrac{a}{p}\right)=\left(\tfrac{b}{p}\right) \\ 0 & \text{otherwise} \end{cases}</math>
+:כאשר <math>\ell</math> נבחר כך ש-<math>\ell^2 \equiv ab \pmod m</math>, ו-<math>\varepsilon_m = 1</math> אם <math>m \equiv 1 \pmod 4</math> ו-<math>\varepsilon_m = i</math> אם <math>m \equiv 3 \pmod 4</math>. את הנוסחה מצא לראשונה הנס זאלייה{{הערה|שם=salie|1=Hans Salié, Über die Kloostermanschen Summen S(u,v; q), Math. Zeit. 34, 1931–32, עמ' 91–109|כיווון=שמאל}}.
+
+== הערכות ==
+מאחר שסכומי קלוסטרמן מופיעים בפיתוח פורייה של תבניות מודולריות, הערכות לסכומי קלוסטרמן נותנות גם הערכות למקדמי פורייה של תבניות מודולריות. ההערכה המפורסמת ביותר היא של [[אנדרה וייל]]:
+:<math>|K(a,b;m)|\leq \tau(m) \sqrt{\gcd(a,b,m)} \sqrt{m},</math>
+כאשר <math>\tau(m)</math> הוא מספר המחלקים החיוביים של <math>m</math>. בזכות התכונות הכפליות של סכומי קלוסטרמן, אפשר לצמצם הערכות אלה למקרה ש-<math>m</math> הוא ראשוני <math>p</math>. טכניקה יסודית של וייל מצמצמת את ההערכה
+:<math>|K(a,b;p)|\leq 2 \sqrt{p}</math>
+(כאשר <math>ab \neq 0</math>) לתוצאותיו על פונקציות זטא מקומיות. מבחינה גאומטרית, הסכום נלקח לאורך "היפרבולה" <math>XY = ab</math>, שאפשר לראות בה [[עקום אלגברי]] מעל ה[[שדה סופי|שדה הסופי]] בן <math>p</math> איברים. לעקום זה יש כיסוי ארטין-שרייר מסועף <math>C</math>, ווייל הראה שלפונקציית הזטא המקומית של <math>C</math> יש פירוק, שגורמיו מהצורה <math>1 - Kt</math>, כאשר <math>K</math> הוא סכום קלוסטרמן. ההערכה נובעת מעבודתו היסודית של וייל משנת 1940.
+
+טכניקה זו מראה, באופן כללי הרבה יותר, שלסכומים אקספוננציאליים שלמים "לאורך" יריעות אלגבריות יש הערכות טובות, בהסתמך על השערות וייל בממד גדול מ-1. היא פותחה הרבה מעבר לכך על ידי פייר דלין, ז'ראר לומון ו[[ניקולס כץ]].
+
+== סכומי קלוסטרמן קצרים ==
+סכומי קלוסטרמן קצרים הם סכומים טריגונומטריים מהצורה
+:<math>\sum_{n\in A}\exp \left (2\pi i \frac{an^*+bn}{m} \right),</math>
+כאשר <math>n</math> עובר על קבוצה <math>A</math> של מספרים זרים ל-<math>m</math>, שמספר איבריה קטן משמעותית מ-<math>m</math>, ו-<math>n^*</math> מסמן את ההופכי של <math>n</math> מודולו <math>m</math>.
+
+עד תחילת שנות ה-90 היו ידועות הערכות לסכומים כאלה בעיקר כשמספר המחוברים גדול מ-<math>\sqrt{m}</math>. הערכות כאלה נתנו קלוסטרמן, [[איוואן וינוגרדוב|וינוגרדוב]], זאלייה, קרליץ, אוצ'יאמה ווייל. החריגים היחידים היו מודולים מיוחדים מהצורה <math>m = p^{\alpha}</math>, עם <math>p</math> ראשוני קבוע ו-<math>\alpha</math> השואף לאינסוף, שאותם חקר פוסטניקוב בשיטת וינוגרדוב.
+
+בשנות ה-90 פיתח אנטולי קרצובה שיטה חדשה להערכת סכומי קלוסטרמן קצרים{{הערה|1=A. A. Karatsuba, Analogues of Kloostermans sums, Izv. Ross. Akad. Nauk, Ser. Math. 59 (5), 1995, עמ' 93–102|כיווון=שמאל}}{{הערה|1=A. A. Karatsuba, Kloosterman double sums, Mat. Zametki 66 (5), 1999, עמ' 682–687|כיווון=שמאל}}. שיטתו מאפשרת להעריך סכומי קלוסטרמן שמספר המחוברים בהם אינו עולה על <math>m^{\varepsilon}</math>, ובמקרים מסוימים אף על <math>\exp\{(\ln m)^{2/3+\varepsilon}\}</math>, כאשר <math>\varepsilon > 0</math> קטן כרצוננו. מאמרו האחרון בנושא פורסם לאחר מותו{{הערה|1=A. A. Karatsuba, New estimates of short Kloosterman sums, Mat. Zametki 88 (3–4), 2010, עמ' 347–359|כיווון=שמאל}}.
+
+היבטים שונים של שיטת קרצובה מצאו שימושים בבעיות הבאות של [[תורת המספרים האנליטית]]:
+* מציאת ההתנהגות האסימפטוטית של סכומי חלקים שבריים מהצורה <math>{\sum_{n\le x}}'\left\{\frac{an^*+bn}{m}\right\}</math> (קרצובה);
+* חסם תחתון למספר הפתרונות של אי-שוויונים מהצורה <math>\alpha<\left\{\frac{an^*+bn}{m}\right\}\le\beta</math> (קרצובה);
+* קבוע <math>c</math> מדויק יותר ב[[משפט ברון-טיצ'מרש]] (פרידלנדר ואיוואניץ);
+* חסם תחתון למחלק הראשוני הגדול ביותר של מכפלת מספרים מהצורה <math>n^3 + 2</math>, <math>N < n \le 2N</math> (הית'-בראון);
+* הוכחה שיש אינסוף ראשוניים מהצורה <math>a^2 + b^4</math> (פרידלנדר ואיוואניץ; ראו [[בעיית הזוגיות (תורת הנפה)]]).
+
+== הרמה של סכומי קלוסטרמן ==
+אף שבאופן כללי אי אפשר לחשב את סכומי קלוסטרמן במפורש, אפשר "להרים" אותם ל[[שדה מספרים|שדות מספרים]], וכך מתקבלות לעיתים קרובות נוסחאות נוחות יותר. יהי <math>\tau</math> מספר שלם [[חופשי מריבועים]] עם <math>\gcd(\tau,m)=1</math>, ונניח שלכל גורם ראשוני <math>p</math> של <math>m</math> מתקיים <math>\left(\tfrac{\tau}{p}\right)=-1</math>. אז לכל <math>a, b</math> זרים ל-<math>m</math>
+:<math>K(a,b; m) = (-1)^{\Omega(m)} \sum_{\stackrel{v, w \bmod m}{v^2-\tau w^2 \equiv ab\bmod m}} e^{\frac{4\pi i v}{m}},</math>
+כאשר <math>\Omega(m)</math> הוא מספר הגורמים הראשוניים של <math>m</math> עם ריבוי (ראו [[פונקציות אומגה ראשוניות]]). את הסכום באגף ימין אפשר לפרש כסכום על פני [[חוג השלמים האלגבריים|שלמים אלגבריים]] בשדה <math>\mathbb{Q}(\sqrt{\tau})</math>. הנוסחה היא של יאנגבו יה, בהשראת [[דון זאגייר]]{{הערה|1=Y. Ye, The lifting of Kloosterman sums, Journal of Number Theory 51, 1995, עמ' 275–287|כיווון=שמאל}}.
+
+== נוסחת העקבה של קוזנצוב ==
+נוסחת קוזנצוב, או נוסחת העקבה היחסית, קושרת באופן עמוק את סכומי קלוסטרמן לתורה הספקטרלית של [[תבנית מודולרית|תבניות אוטומורפיות]]. בניסוחה המקורי: תהי <math>g: \mathbb{R}\to \mathbb{R}</math> פונקציה "מתנהגת היטב" במידה מספקת. אז נוסחת העקבה של קוזנצוב היא זהות מהצורה
+:<math>\sum_{c\equiv 0 \bmod N} c^{-r} K(m,n,c)\, g\left(\frac{4\pi \sqrt{mn}}{c}\right) = \text{integral transform} + \text{spectral terms},</math>
+כאשר החלק האינטגרלי הוא התמרה אינטגרלית כלשהי של <math>g</math>, והחלק הספקטרלי הוא סכום של מקדמי פורייה על פני מרחבים של תבניות מודולריות הולומורפיות ולא הולומורפיות. קוזנצוב מצא את הנוסחה כשחקר את הגידול של פונקציות אוטומורפיות ממשקל אפס{{הערה|1=N. V. Kuznecov, Petersson's conjecture for forms of weight zero and Linnik's conjecture. Sums of Kloosterman sums, Mathematics of the USSR-Sbornik 39 (3), 1981|כיווון=שמאל}}. בעזרת הערכות לסכומי קלוסטרמן הוא קיבל הערכות למקדמי פורייה של תבניות מודולריות במקרים שבהם ההוכחה של פייר דלין להשערות וייל לא הייתה ישימה. מאוחר יותר העביר ז'אקה את הנוסחה למסגרת של [[הצגה ליניארית|תורת ההצגות]].
+
+== היסטוריה ==
+יש קשרים רבים בין סכומי קלוסטרמן לבין תבניות מודולריות. למעשה, הסכומים הופיעו לראשונה (בלי השם) במאמר של [[אנרי פואנקרה]] משנת 1912 על תבניות מודולריות. הנס זאלייה הציג צורה של סכום קלוסטרמן המפותלת על ידי [[קרקטר דיריכלה]]; ל"סכומי זאלייה" כאלה יש חישוב אלמנטרי{{הערה|שם=salie}}. את הערכת וייל אפשר ללמוד כיום בספרו של ו. מ. שמידט, והרעיונות שבבסיסה הם של ס. סטפנוב, בהשראת עבודתו של אקסל טואה על [[קירוב דיופנטי]].
+
+לאחר שקוזנצוב גילה ב-1979 נוסחאות חשובות הקושרות סכומי קלוסטרמן לתבניות מודולריות לא הולומורפיות, שכללו "חיסכון בממוצע" ביחס להערכת השורש הריבועי, באו התפתחויות נוספות של איוואניץ ודזואייה במאמר יסודי ב-Inventiones Mathematicae (1982). את השימושים בתורת המספרים האנליטית פיתחו מחברים רבים, ובמיוחד [[אנריקו בומביירי|בומביירי]], פוברי, פרידלנדר ואיוואניץ.
+
+ג'אנג יטאנג השתמש בסכומי קלוסטרמן בהוכחתו לקיום פערים חסומים בין ראשוניים{{הערה|1=Yitang Zhang, [https://doi.org/10.4007/annals.2014.179.3.7 Bounded gaps between primes], Annals of Mathematics 179 (3), 2014, עמ' 1121–1174|כיווון=שמאל}}.
+
+== ראו גם ==
+* [[סכום רמנוג'אן]]
+* [[מחזור גאוסי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. I. Arkhipov, V. N. Chubarikov, A. A. Karatsuba, ''Trigonometric sums in number theory and analysis'', de Gruyter Expositions in Mathematics 39, Walter de Gruyter, Berlin–New York, 2004
+* Henryk Iwaniec, Emmanuel Kowalski, ''Analytic number theory'', Colloquium Publications 53, American Mathematical Society, 2004
+* Rudolf Lidl, Harald Niederreiter, ''Finite fields'', 2nd ed., Encyclopedia of Mathematics and Its Applications 20, Cambridge University Press, 1997
+* André Weil, [https://doi.org/10.1073/pnas.34.5.204 On some exponential sums], Proc. Natl. Acad. Sci. 34 (5), 1948, pp. 204–207
+* R. C. Baker, ''Kloosterman Sums and Maass Forms'', vol. I, Kendrick Press, 2003
+* W. M. Schmidt, ''Equations over finite fields: an elementary approach'', 2nd ed., Kendrick Press, 2004
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://mathworld.wolfram.com/KloostermansSum.html Kloosterman's Sum], באתר MathWorld
+* {{אנגלית}} [https://encyclopediaofmath.org/wiki/Bombieri-Weil_bound Bombieri-Weil bound], Encyclopedia of Mathematics
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]

@@ -1,0 +1,137 @@
+ב[[מתמטיקה]], '''פונקציית זטא הראשונית''' היא פונקציה הדומה ל[[פונקציית זטא של רימן]], אלא שהסכום בה הוא על ה[[מספר ראשוני|מספרים הראשוניים]] בלבד. הפונקציה נחקרה על ידי ג'יימס גליישר בשנת 1891. היא מוגדרת על ידי ה[[טור (מתמטיקה)|טור האינסופי]] הבא, המתכנס עבור <math>\Re(s) > 1</math>:
+:<math>P(s)=\sum_{p} \frac{1}{p^s}=\frac{1}{2^s}+\frac{1}{3^s}+\frac{1}{5^s}+\frac{1}{7^s}+\frac{1}{11^s}+\dots,</math>
+כאשר הסכום הוא על כל הראשוניים <math>p</math>.
+
+== תכונות ==
+מ[[מכפלת אוילר]] של פונקציית זטא של רימן <math>\zeta(s)</math> נובע
+:<math>\log\zeta(s)=\sum_{n>0} \frac{P(ns)} n ,</math>
+ומ[[נוסחת ההיפוך של מביוס]] מתקבל
+:<math>P(s)=\sum_{n>0} \mu(n)\frac{\log\zeta(ns)} n.</math>
+
+כאשר <math>s</math> שואף ל-1 מתקיים <math>\textstyle P(s) \sim \log\zeta(s)\sim\log\left(\frac{1}{s-1} \right)</math>. עובדה זו משמשת בהגדרת [[צפיפות דיריכלה]].
+
+הנוסחה נותנת [[המשכה אנליטית]] של <math>P(s)</math> לתחום <math>\Re(s) > 0</math>, עם אינסוף סינגולריויות לוגריתמיות בנקודות <math>s</math> שבהן <math>ns</math> הוא קוטב של פונקציית זטא של רימן (כלומר <math>ns=1</math>, כאשר <math>n</math> [[חופשי מריבועים]]) או אפס שלה. הישר <math>\Re(s) = 0</math> הוא גבול טבעי, משום שהסינגולריויות מצטברות ליד כל נקודה שלו.
+
+אם מגדירים את הסדרה
+:<math>a_n=\prod_{p^k \mid n} \frac{1}{k}=\prod_{p^k \mid \mid n} \frac 1 {k!},</math>
+אז
+:<math>P(s)=\log\sum_{n=1}^\infty \frac{a_n}{n^s}.</math>
+
+פונקציית זטא הראשונית קשורה לקבוע ארטין (ראו [[השערת ארטין על שורשים פרימיטיביים]]) בנוסחה
+:<math>\ln C_{\mathrm{Artin}} = - \sum_{n=2}^{\infty} \frac{(L_n-1)P(n)}{n},</math>
+כאשר <math>L_n</math> הוא האיבר ה-<math>n</math> ב[[סדרת לוקאס]].{{הערה|שם=Artin|1=Weisstein, Eric W. [https://mathworld.wolfram.com/ArtinsConstant.html "Artin's Constant"]. MathWorld.|כיוון=שמאל}}
+
+ערכים מסוימים של הפונקציה:
+
+{| class="wikitable"
+! <math>s</math> !! ערך מקורב של <math>P(s)</math> !! סדרה ב-[[האנציקלופדיה המקוונת לסדרות של מספרים שלמים|OEIS]]
+|-
+| 1 || <math>\tfrac{1}{2} + \tfrac{1}{3} + \tfrac{1}{5} + \tfrac{1}{7} + \tfrac{1}{11} + \cdots \to \infty</math> (ראו [[טור ההופכיים של המספרים הראשוניים]]) ||
+|-
+| 2 || <math>0.45224\,74200\,41065\,49850 \ldots</math> || [https://oeis.org/A085548 A085548]
+|-
+| 3 || <math>0.17476\,26392\,99443\,53642 \ldots</math> || [https://oeis.org/A085541 A085541]
+|-
+| 4 || <math>0.07699\,31397\,64246\,84494 \ldots</math> || [https://oeis.org/A085964 A085964]
+|-
+| 5 || <math>0.03575\,50174\,83924\,25713 \ldots</math> || [https://oeis.org/A085965 A085965]
+|-
+| 6 || <math>0.01707\,00868\,50636\,51295 \ldots</math> || [https://oeis.org/A085966 A085966]
+|-
+| 7 || <math>0.00828\,38328\,56133\,59253 \ldots</math> || [https://oeis.org/A085967 A085967]
+|-
+| 8 || <math>0.00406\,14053\,66517\,83056 \ldots</math> || [https://oeis.org/A085968 A085968]
+|-
+| 9 || <math>0.00200\,44675\,74962\,45066 \ldots</math> || [https://oeis.org/A085969 A085969]
+|}
+
+== אנליזה ==
+=== אינטגרל ===
+את ה[[אינטגרל]] של פונקציית זטא הראשונית נהוג לחשב עד אינסוף, משום שהקוטב ב-<math>s=1</math> אינו מאפשר לבחור גבול תחתון סופי נוח בלי להידרש לחתכי ענף ב[[המישור המרוכב|מישור המרוכב]]:
+:<math>\int_s^\infty P(t) \, dt = \sum_p \frac 1 {p^s\log p}.</math>
+
+הערכים המעניינים הם אלה שבהם הסכום מתכנס לאט:
+
+{| class="wikitable"
+! <math>s</math> !! ערך מקורב של <math>\sum _p 1/(p^s\log p)</math> !! סדרה ב-OEIS
+|-
+| 1 || <math>1.63661632\ldots</math> || [https://oeis.org/A137245 A137245]
+|-
+| 2 || <math>0.50778218\ldots</math> || [https://oeis.org/A221711 A221711]
+|-
+| 3 || <math>0.22120334\ldots</math> ||
+|-
+| 4 || <math>0.10266547\ldots</math> ||
+|}
+
+=== נגזרת ===
+ה[[נגזרת]] הראשונה היא
+:<math>P'(s) = \frac{d}{ds} P(s) = - \sum_p \frac{\log p}{p^s}.</math>
+
+גם כאן הערכים המעניינים הם אלה שבהם הסכום מתכנס לאט:
+
+{| class="wikitable"
+! <math>s</math> !! ערך מקורב של <math>P'(s)</math> !! סדרה ב-OEIS
+|-
+| 2 || <math>-0.493091109\ldots</math> || [https://oeis.org/A136271 A136271]
+|-
+| 3 || <math>-0.150757555\ldots</math> || [https://oeis.org/A303493 A303493]
+|-
+| 4 || <math>-0.060607633\ldots</math> || [https://oeis.org/A303494 A303494]
+|-
+| 5 || <math>-0.026838601\ldots</math> || [https://oeis.org/A303495 A303495]
+|}
+
+== הכללות ==
+=== פונקציות זטא של מספרים כמעט ראשוניים ===
+פונקציית זטא של רימן היא סכום של חזקות הפוכות על כל השלמים, ופונקציית זטא הראשונית היא סכום כזה על הראשוניים. באופן דומה, ה[[מספר כמעט ראשוני|מספרים הכמעט ראשוניים]] מסדר <math>k</math> (שלמים שהם מכפלה של <math>k</math> ראשוניים, לא בהכרח שונים) מגדירים סכומי ביניים:
+:<math>P_k(s) = \sum_{n: \Omega(n)=k} \frac 1 {n^s},</math>
+כאשר <math>\Omega(n)</math> הוא מספר הגורמים הראשוניים של <math>n</math>, כולל ריבוי.
+
+{| class="wikitable"
+! <math>k</math> !! <math>s</math> !! ערך מקורב של <math>P_k(s)</math> !! סדרה ב-OEIS
+|-
+| 2 || 2 || <math>0.14076043434\ldots</math> || [https://oeis.org/A117543 A117543]
+|-
+| 2 || 3 || <math>0.02380603347\ldots</math> ||
+|-
+| 3 || 2 || <math>0.03851619298\ldots</math> || [https://oeis.org/A131653 A131653]
+|-
+| 3 || 3 || <math>0.00304936208\ldots</math> ||
+|}
+
+כל שלם במכנה של פונקציית זטא של רימן שייך לערך יחיד של <math>k</math>, ולכן פונקציית זטא מתפרקת לסכום אינסופי של ה-<math>P_k</math>:
+:<math>\zeta(s) = 1+\sum_{k=1,2,\ldots} P_k(s).</math>
+
+טור דיריכלה המתאים (במשתנה פורמלי <math>u</math>) מקיים
+:<math>P_{\Omega}(u, s) := \sum_{n \geq 1} \frac{u^{\Omega(n)}}{n^s} = \prod_{p} \left(1-up^{-s}\right)^{-1},</math>
+ומכאן, בעזרת [[זהויות ניוטון]] ו[[פונקציה יוצרת|פונקציות יוצרות]], מתקבלת נוסחה כללית לסכומים אלה:
+:<math>P_n(s) = \sum_{{k_1+2k_2+\cdots+nk_n=n} \atop {k_1,\ldots,k_n \geq 0}} \left[\prod_{i=1}^n \frac{P(is)^{k_i}}{k_i! \cdot i^{k_i}}\right].</math>
+
+מקרים פרטיים:
+:<math>\begin{align}P_1(s) & = P(s) \\ P_2(s) & = \frac{1}{2}\left(P(s)^2+P(2s)\right) \\ P_3(s) & = \frac{1}{6}\left(P(s)^3+3P(s)P(2s)+2P(3s)\right) \\ P_4(s) & = \frac{1}{24}\left(P(s)^4+6P(s)^2 P(2s)+3 P(2s)^2+8P(s)P(3s)+6P(4s)\right).\end{align}</math>
+
+=== פונקציות זטא ראשוניות מודולריות ===
+אם סוכמים לא על כל הראשוניים אלא רק על ראשוניים השייכים לאותה מחלקת שאריות, מתקבלים טורים אינסופיים נוספים, שהם צמצום של [[פונקציית L של דיריכלה]].
+
+== ראו גם ==
+* [[טור ההופכיים של המספרים הראשוניים]]
+* [[קבוע מייסל-מרטנס]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Merrifield, C. W. (1881). "The Sums of the Series of Reciprocals of the Prime Numbers and of Their Powers". ''Proceedings of the Royal Society''. '''33''' (216–219): 4–10. [https://doi.org/10.1098/rspl.1881.0063 doi:10.1098/rspl.1881.0063].
+* Glaisher, J. W. L. (1891). "On the Sums of Inverse Powers of the Prime Numbers". ''Quart. J. Math.'' '''25''': 347–362.
+* Fröberg, Carl-Erik (1968). "On the prime zeta function". ''Nordisk Tidskr. Informationsbehandling (BIT)''. '''8''' (3): 187–202. [https://doi.org/10.1007/BF01933420 doi:10.1007/BF01933420].
+* Mathar, Richard J. (2008). "Twenty digits of some integrals of the prime zeta function". [https://arxiv.org/abs/0811.4739 arXiv:0811.4739].
+* Li, Ji (2008). "Prime graphs and exponential composition of species". ''Journal of Combinatorial Theory, Series A''. '''115''' (8): 1374–1401. [https://doi.org/10.1016/j.jcta.2008.02.008 doi:10.1016/j.jcta.2008.02.008].
+</div>
+
+== קישורים חיצוניים ==
+* [https://mathworld.wolfram.com/PrimeZetaFunction.html פונקציית זטא הראשונית], באתר [[MathWorld]] {{אנגלית}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורת המספרים האנליטית]]

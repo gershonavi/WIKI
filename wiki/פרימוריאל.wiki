@@ -1,0 +1,68 @@
+ב[[מתמטיקה]], ובפרט ב[[תורת המספרים]], '''פרימוריאל''' (ב[[אנגלית]]: Primorial), המסומן <math>p_n\#</math>, היא פונקציה מהמספרים הטבעיים למספרים הטבעיים הדומה ל[[עצרת (מתמטיקה)|עצרת]], אלא שבמקום להכפיל מספרים שלמים חיוביים עוקבים, היא מכפילה רק [[מספר ראשוני|מספרים ראשוניים]].
+
+את השם "פרימוריאל" טבע הארווי דובנר, באנלוגיה בין ''primes'' (ראשוניים) לבין הקשר שבין "factorial" (עצרת) ל-''factors'' (גורמים).
+
+== הגדרה עבור מספרים ראשוניים ==
+[[קובץ:Primorial pn plot.png|ממוזער|300px|<math>p_n\#</math> כפונקציה של <math>n</math>, בסקאלה לוגריתמית.]]
+הפרימוריאל <math>p_n\#</math> מוגדר כמכפלת <math>n</math> הראשוניים הראשונים{{הערה|שם=mw|1=[https://mathworld.wolfram.com/Primorial.html Primorial], באתר MathWorld|כיווון=שמאל}}{{הערה|שם=a2110|1=סדרה [https://oeis.org/A002110 A002110] ב-OEIS|כיווון=שמאל}}:
+:<math>p_n\# = \prod_{k=1}^n p_k,</math>
+כאשר <math>p_k</math> הוא הראשוני ה-<math>k</math>-י. לדוגמה, <math>p_5\#</math> הוא מכפלת חמשת הראשוניים הראשונים:
+:<math>p_5\# = 2 \times 3 \times 5 \times 7 \times 11= 2310.</math>
+הפרימוריאלים הראשונים הם:
+: 1, 2, 6, 30, 210, 2310, 30030, 510510, 9699690, ...{{הערה|שם=a2110}}
+מבחינה אסימפטוטית, הפרימוריאלים גדלים לפי
+:<math>p_n\# = e^{(1 + o(1)) n \log n}.</math>
+
+== הגדרה עבור מספרים טבעיים ==
+[[קובץ:Primorial n plot.png|ממוזער|300px|<math>n!</math> (בצהוב) כפונקציה של <math>n</math>, בהשוואה ל-<math>n\#</math> (באדום), בסקאלה לוגריתמית.]]
+באופן כללי, עבור מספר שלם חיובי <math>n</math>, הפרימוריאל <math>n\#</math> הוא מכפלת כל הראשוניים שאינם גדולים מ-<math>n</math>{{הערה|שם=mw}}{{הערה|1=סדרה [https://oeis.org/A034386 A034386] ב-OEIS|כיווון=שמאל}}:
+:<math>n\# = \prod_{p\,\leq\, n\atop p\,\text{prime}} p = \prod_{i=1}^{\pi(n)} p_i = p_{\pi(n)}\#,</math>
+כאשר <math>\pi(n)</math> היא [[פונקציית המספרים הראשוניים]]. באופן שקול:
+:<math>n\# = \begin{cases} 1 & n = 0,\ 1 \\ (n-1)\# \times n & n \text{ prime} \\ (n-1)\# & n \text{ composite}. \end{cases}</math>
+לדוגמה, <math>12\#</math> הוא מכפלת כל הראשוניים שאינם גדולים מ-12:
+:<math>12\# = 2 \times 3 \times 5 \times 7 \times 11= 2310.</math>
+מאחר ש-<math>\pi(12)=5</math>, אפשר לחשב זאת גם כ-<math>12\# = p_{\pi(12)}\# = p_5\# = 2310</math>.
+
+12 הערכים הראשונים של הסדרה <math>n\#</math> הם:
+:<math>1, 2, 6, 6, 30, 30, 210, 210, 210, 210, 2310, 2310.</math>
+עבור <math>n</math> [[מספר פריק|פריק]], כל איבר <math>n\#</math> שווה לאיבר הקודם <math>(n-1)\#</math>.
+
+הפרימוריאלים קשורים לפונקציית צ'בישב הראשונה <math>\vartheta(n)</math> (ראו [[פונקציית צ'בישב]]) על ידי{{הערה|1=[https://mathworld.wolfram.com/ChebyshevFunctions.html Chebyshev Functions], באתר MathWorld|כיווון=שמאל}}
+:<math>\ln (n\#) = \vartheta(n).</math>
+מאחר ש-<math>\vartheta(n)</math> שואפת אסימפטוטית ל-<math>n</math>, הפרימוריאלים גדלים לפי
+:<math>n\# = e^{(1+o(1))n}.</math>
+
+== תכונות ==
+* לכל <math>n, p \in \mathbb{N}</math>, מתקיים <math>n\#=p\#</math> [[אם ורק אם]] <math>p</math> הוא הראשוני הגדול ביותר המקיים <math>p\leq n</math>.
+* יהי <math>p_k</math> הראשוני ה-<math>k</math>-י. למספר <math>p_k\#</math> יש בדיוק <math>2^k</math> מחלקים.
+* סכום ההופכיים של הפרימוריאלים [[טור מתכנס|מתכנס]] לקבוע:
+:<math>\sum_{p\,\text{prime}} {1 \over p\#} = {1 \over 2} + {1 \over 6} + {1 \over 30} + \ldots = 0.7052301717918\ldots</math>
+:פיתוח אנגל של מספר זה נותן את סדרת המספרים הראשוניים. גריפית'ס הוכיח ב-2015 שהוא [[מספר אי-רציונלי|אי-רציונלי]]{{הערה|1=Martin Griffiths, [https://doi.org/10.1017/mag.2015.91 99.29 On the sum of the reciprocals of the primorials], The Mathematical Gazette 99 (546), 2015, עמ' 522–523|כיווון=שמאל}}.
+* את הוכחתו של אוקלידס ל[[קיומם של אינסוף מספרים ראשוניים]] אפשר לנסח כך: לכל ראשוני <math>p</math>, למספר <math>p\# +1</math> יש מחלק ראשוני שאינו שייך לקבוצת הראשוניים שאינם גדולים מ-<math>p</math>.
+* <math>\lim_{n \to \infty}\sqrt[n]{n\#} = e</math>. עבור <math>n<10^{11}</math> הערכים קטנים מ-<math>e</math>{{הערה|1=L. Schoenfeld, Sharper bounds for the Chebyshev functions θ(x) and ψ(x). II, Math. Comp. 34 (134), 1976, עמ' 337–360; עמ' 359. מצוטט אצל G. Robin, Acta Arithm. XLII, 1983, עמ' 367–389; עמ' 371|כיווון=שמאל}}, אך עבור <math>n</math> גדולים יותר ערכי הפונקציה עולים על <math>e</math> ומתנודדים סביבו אינסוף פעמים.
+* מאחר ש[[מקדם בינומי|המקדם הבינומי]] <math>\tbinom{2n}{n}</math> מתחלק בכל ראשוני בין <math>n+1</math> ל-<math>2n</math>, ומאחר ש-<math>\tbinom{2n}{n} \leq 4^{n}</math>, מתקיים החסם העליון <math>n\#\leq 4^n</math>{{הערה|1=G. H. Hardy, E. M. Wright, ''An Introduction to the Theory of Numbers'', 4th ed., Oxford University Press, 1975, משפט 415, עמ' 341|כיווון=שמאל}}.
+** בשיטות אלמנטריות הראה דניס הנסון ש-<math>n\#\leq 3^n</math>{{הערה|1=Denis Hanson, [https://doi.org/10.4153/cmb-1972-007-7 On the Product of the Primes], Canadian Mathematical Bulletin 15 (1), 1972, עמ' 33–37|כיווון=שמאל}}.
+** בשיטות מתקדמות יותר הראו רוסר ושנפלד ש-<math>n\#\leq (2.763)^n</math>, ושעבור <math>n \ge 563</math> מתקיים <math>n\#\geq (2.22)^n</math>{{הערה|1=J. Barkley Rosser, Lowell Schoenfeld, [https://doi.org/10.1215/ijm/1255631807 Approximate formulas for some functions of prime numbers], Illinois Journal of Mathematics 6 (1), 1962|כיווון=שמאל}}.
+
+== שימושים ==
+פרימוריאלים ממלאים תפקיד בחיפוש אחר מספרים ראשוניים ב[[משפט דיריכלה|סדרות חשבוניות]]. לדוגמה, <math>2236133941+23\#</math> הוא ראשוני, והוא פותח סדרה של שלושה עשר ראשוניים המתקבלים מהוספה חוזרת של <math>23\#</math>, המסתיימת ב-5136341251. <math>23\#</math> הוא גם ההפרש המשותף בסדרות חשבוניות של חמישה עשר ושישה עשר ראשוניים.
+
+כל [[מספר פריק במיוחד]] הוא מכפלה של פרימוריאלים{{הערה|1=סדרה [https://oeis.org/A002182 A002182] ב-OEIS|כיווון=שמאל}}.
+
+כל הפרימוריאלים הם מספרים [[חופשי מריבועים|חופשיים מריבועים]], ולכל אחד מהם יש יותר גורמים ראשוניים שונים מלכל מספר קטן ממנו. לכל פרימוריאל <math>n</math>, המנה <math>\varphi(n)/n</math> קטנה יותר מאשר לכל מספר שלם חיובי הקטן מ-<math>n</math>, כאשר <math>\varphi</math> היא [[פונקציית אוילר]].
+
+כל פונקציה כפלית לחלוטין נקבעת על ידי ערכיה בפרימוריאלים, משום שהיא נקבעת על ידי ערכיה בראשוניים, ואת אלה אפשר לשחזר על ידי חלוקה של ערכים סמוכים.
+
+לבסיסי ספירה המתאימים לפרימוריאלים (כמו בסיס 30) יש שיעור נמוך יותר של [[שבר מחזורי|שברים מחזוריים]] מאשר לכל בסיס קטן יותר.
+
+כל פרימוריאל הוא מספר "דליל-טוטיינט" (sparsely totient){{הערה|1=D. W. Masser, P. Shiu, [https://doi.org/10.2140/pjm.1986.121.407 On sparsely totient numbers], Pacific Journal of Mathematics 121 (2), 1986, עמ' 407–426|כיווון=שמאל}}.
+
+== קומפוזיטוריאל ==
+ה-<math>n</math>-קומפוזיטוריאל של מספר פריק <math>n</math> הוא מכפלת כל המספרים הפריקים עד <math>n</math> ועד בכלל{{הערה|1=David Wells, ''Prime Numbers: The Most Mysterious Figures in Math'', John Wiley & Sons, 2011, עמ' 29|כיווון=שמאל}}. הוא שווה ל-<math>n!</math> חלקי הפרימוריאל <math>n\#</math>. הקומפוזיטוריאלים הם
+: 1, 4, 24, 192, 1728, 17280, 207360, 2903040, 43545600, 696729600, ...{{הערה|1=סדרה [https://oeis.org/A036691 A036691] ב-OEIS|כיווון=שמאל}}
+
+== פונקציית זטא של רימן ==
+את [[פונקציית זטא של רימן]] במספרים שלמים הגדולים מ-1 אפשר לבטא בעזרת הפרימוריאל ו[[פונקציית ז'ורדן]] <math>J_k</math>{{הערה|1=István Mező, The Primorial and the Riemann zeta function, The American Mathematical Monthly 120 (4), 2013, עמ' 321|כיווון=שמאל}}:
+:<math>\zeta(k)=\frac{2^k}{2^k-1}+\sum_{r=2}^\infty\frac{(p_{r-1}\#)^k}{J_k(p_r\#)},\quad k\in\mathbb{Z}_{>1}.</math>
+
+== טבלת פרימוריאלים ==

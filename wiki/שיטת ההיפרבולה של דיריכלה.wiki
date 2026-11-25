@@ -1,0 +1,42 @@
+[[קובץ:Dirichlet hyperbola example_4.svg|ממוזער|דוגמה לשיטת ההיפרבולה של דיריכלה עם <math>n = 10</math>, ‏<math>a \approx 2.7</math> ו-<math>b \approx 3.7</math>.]]
+ב[[תורת המספרים]], '''שיטת ההיפרבולה של דיריכלה''' (ב[[אנגלית]]: Dirichlet hyperbola method) היא טכניקה לחישוב הסכום
+:<math>F(n) = \sum_{k=1}^n f(k).</math>
+
+השלב הראשון הוא למצוא זוג פונקציות <math>g</math> ו-<math>h</math> כך ש-<math>f = g * h</math>, כאשר <math>*</math> היא [[קונבולוציית דיריכלה]]. אז הסכום הופך ל-
+:<math>F(n) = \sum_{k=1}^n \sum_{xy=k} g(x) h(y),</math>
+כאשר הסכום הפנימי עובר על כל הזוגות הסדורים <math>(x,y)</math> של [[מספר שלם|מספרים שלמים]] חיוביים המקיימים <math>xy = k</math>. ב[[מערכת צירים קרטזית|מישור הקרטזי]] זוגות אלה נמצאים על [[היפרבולה]]. כשפותחים את הסכום הכפול במלואו, מתקבלת [[פונקציה חד-חד-ערכית ועל|התאמה חד-חד-ערכית ועל]] בין איברי הסכום לבין נקודות הסריג ברביע הראשון שעל ההיפרבולות <math>xy = k</math>, כאשר <math>k</math> עובר על השלמים <math>1 \le k \le n</math>: לכל נקודה <math>(x,y)</math> כזו יש בסכום איבר <math>g(x)h(y)</math>, ולהפך.
+
+יהי <math>a</math> מספר ממשי, לא בהכרח שלם, המקיים <math>1 < a < n</math>, ויהי <math>b = n/a</math>. אפשר לחלק את נקודות הסריג לשלושה תחומים חופפים: התחום הראשון מוגדר על ידי <math>1 \le x \le a</math> ו-<math>1 \le y \le n/x</math>, השני על ידי <math>1 \le y \le b</math> ו-<math>1 \le x \le n/y</math>, והשלישי על ידי <math>1 \le x \le a</math> ו-<math>1 \le y \le b</math>. באיור, התחום הראשון הוא [[איחוד (מתמטיקה)|האיחוד]] של האזורים הכחול והאדום, השני הוא איחוד האזורים האדום והירוק, והשלישי הוא האזור האדום. התחום השלישי הוא החיתוך של שני הראשונים. לכן, לפי [[עקרון ההכלה וההפרדה]], הסכום המלא שווה לסכום על התחום הראשון, ועוד הסכום על התחום השני, פחות הסכום על התחום השלישי. מכאן מתקבלת הנוסחה{{הערה|1=Tom M. Apostol, ''Introduction to analytic number theory'', Springer-Verlag, New York, 1976, עמ' 69|כיווון=שמאל}}
+{{משוואה|<math>
+\begin{align}
+F(n) &= \sum_{k=1}^n f(k) \\
+&= \sum_{k=1}^n \sum_{xy=k} g(x)h(y) \\
+&= \sum_{x=1}^a \sum_{y=1}^{n/x} g(x)h(y) + \sum_{y=1}^b \sum_{x=1}^{n/y} g(x)h(y) - \sum_{x=1}^a \sum_{y=1}^b g(x)h(y) .\end{align}
+</math>|1}}
+
+== דוגמאות ==
+תהי <math>\sigma_0(n)</math> [[פונקציית מחלקים|פונקציית מספר המחלקים]], ותהי <math>D(n)</math> [[בעיית המחלקים של דיריכלה|פונקציית הסכום שלה]]:
+:<math>D(n) = \sum_{k=1}^n \sigma_0(k).</math>
+
+חישוב נאיבי של <math>D(n)</math> מחייב [[פירוק לגורמים של מספר שלם|פירוק לגורמים]] של כל מספר שלם בקטע <math>[1, n]</math>. אפשר לשפר זאת בעזרת גרסה מותאמת של [[הנפה של ארטוסתנס]], אך גם אז נדרש זמן <math>\tilde{O}(n)</math>. מאחר ש-<math>\sigma_0 = 1 * 1</math>, הצבת <math>a = b = \sqrt{n}</math> בנוסחה (1) נותנת
+:<math>D(n) = \sum_{x=1}^{\sqrt{n}} \sum_{y=1}^{n/x} 1 \cdot 1 + \sum_{y=1}^{\sqrt{n}} \sum_{x=1}^{n/y} 1 \cdot 1 - \sum_{x=1}^{\sqrt{n}} \sum_{y=1}^{\sqrt{n}} 1 \cdot 1,</math>
+ולאחר פישוט
+:<math>D(n) = 2 \cdot \sum_{x=1}^{\sqrt{n}} \left\lfloor \frac{n}{x} \right\rfloor - \left\lfloor \sqrt{n} \right\rfloor^2,</math>
+ביטוי שאפשר לחשב ב-<math>O(\sqrt{n})</math> פעולות.
+
+לשיטה יש גם שימושים תאורטיים. לדוגמה, [[יוהאן פטר גוסטב לז'ן דיריכלה|דיריכלה]] הציג אותה ב-1849 כדי לקבל את ההערכה{{הערה|1=Peter Gustav Lejeune Dirichlet, [https://gallica.bnf.fr/ark:/12148/bpt6k994363/f59.item Über die Bestimmung der mittleren Werthe in der Zahlentheorie], Abhandlungen der Königlich Preussischen Akademie der Wissenchaften, 1849, עמ' 49–66|כיווון=שמאל}}{{הערה|1=Gérald Tenenbaum, ''Introduction to Analytic and Probabilistic Number Theory'', American Mathematical Society, 2015, עמ' 44|כיווון=שמאל}}
+:<math>D(n) = n \log n + (2\gamma - 1)n + O(\sqrt{n}),</math>
+כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]].
+
+== ראו גם ==
+* [[נוסחת פרון]]
+* [[בעיית המחלקים של דיריכלה]]
+
+== קישורים חיצוניים ==
+* {{אנגלית}} [https://gbroxey.github.io/blog/2023/04/30/mult-sum-1.html דיון בשיטת ההיפרבולה של דיריכלה לצורכי חישוב]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]
