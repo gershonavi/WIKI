@@ -2825,6 +2825,31 @@ def _():
     save('08-7')
 
 
+@fig('15-6')
+def _():
+    rng = np.random.default_rng(7)
+    N = 200000
+    m = np.arange(N + 1, dtype=float)
+    pr = np.zeros(N + 1)
+    pr[3:] = np.minimum(1, 1.2 * m[3:] ** -0.5 * np.sqrt(np.log(m[3:])))
+    pr[:3] = 1
+    B = rng.random(N + 1) < pr
+    ind = B.astype(float)
+    r = np.rint(np.fft.irfft(np.fft.rfft(ind, 2 * N + 2) ** 2, 2 * N + 2)[:N + 1])
+    sq = np.zeros(N + 1); sq[np.arange(int(np.sqrt(N)) + 1) ** 2] = 1
+    rs = np.rint(np.fft.irfft(np.fft.rfft(sq, 2 * N + 2) ** 2, 2 * N + 2)[:N + 1])
+    ns = np.arange(1000, N + 1, 997)
+    ax = plt.gca()
+    ax.scatter(ns, r[ns], s=4, color=C1, label='random basis B (|B∩[1,x]| ≈ √x·√log x)')
+    cst = float(np.mean(r[ns] / np.log(ns)))
+    ax.plot(ns, cst * np.log(ns), color=C2, lw=1.5, label=f'{cst:.1f} · log n (fit)')
+    ax.scatter(ns, rs[ns], s=4, color=GR, label='squares: often 0')
+    ax.set_xlabel('n'); ax.set_ylabel('r(n) = #{(a,b): a+b=n}')
+    ax.set_title('An Erdős-type random basis of order 2: r(n) ≍ log n', fontsize=10)
+    ax.legend(fontsize=7)
+    save('15-6')
+
+
 
 if __name__ == '__main__':
     import sys
