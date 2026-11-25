@@ -72,7 +72,7 @@ Additive number theory:
 - [x] Discriminant of an algebraic number field
 - [x] Different ideal
 - [x] Fundamental unit (number theory)
-- [ ] Quadratic integer
+- [x] Quadratic integer
 - [ ] Cubic field
 - [ ] Biquadratic field
 - [ ] Dedekind–Kummer theorem
