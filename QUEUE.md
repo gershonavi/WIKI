@@ -12,7 +12,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Exponential sum
 - [x] Character sum
 - [x] Pólya-Vinogradov inequality (redirect; covered in סכום קרקטרים)
-- [ ] Burgess inequality
+- [x] Burgess inequality
 - [ ] Smooth number
 - [ ] Dickman function
 - [ ] Multiplicative number theory

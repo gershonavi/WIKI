@@ -1,0 +1,107 @@
+[[קובץ:Mplwp Dickman function log.svg|ממוזער|400px|פונקציית דיקמן-דה בראון <math>\rho(u)</math> בסקלה לוגריתמית. הגרף כמעט ישר, כלומר הלוגריתם של הפונקציה כמעט ליניארי.]]
+ב[[תורת המספרים האנליטית]], '''פונקציית דיקמן''' או '''פונקציית דיקמן-דה בראון''' <math>\rho</math> היא [[פונקציה מיוחדת]] המשמשת להערכת השיעור של [[מספר חלק|המספרים החלקים]] עד גבול נתון. ראשון שחקר אותה היה האקטואר קרל דיקמן, שהגדיר אותה בפרסום המתמטי היחיד שלו.{{הערה|1=K. Dickman, ''On the frequency of numbers containing prime factors of a certain relative magnitude'', Arkiv för Matematik, Astronomi och Fysik '''22A''' (1930), no. 10, pp. 1–14|כיווון=שמאל}} מאוחר יותר חקר אותה המתמטיקאי ההולנדי ניקולאס חוברט דה בראון.{{הערה|1=N. G. de Bruijn, ''On the number of positive integers ≤ x and free of prime factors > y'', Indagationes Mathematicae '''13''' (1951), pp. 50–60|כיווון=שמאל}}{{הערה|1=N. G. de Bruijn, ''On the number of positive integers ≤ x and free of prime factors > y, II'', Indagationes Mathematicae '''28''' (1966), pp. 239–247|כיווון=שמאל}}
+
+== הגדרה ==
+פונקציית דיקמן-דה בראון <math>\rho(u)</math> היא [[פונקציה רציפה]] המקיימת את המשוואה הדיפרנציאלית עם השהיה
+
+:<math>u\rho'(u) + \rho(u-1) = 0</math>
+
+עם תנאי ההתחלה <math>\rho(u) = 1</math> עבור <math>0 \le u \le 1</math>.
+
+== תכונות ==
+דיקמן הוכיח שעבור <math>a</math> קבוע מתקיים
+
+:<math>\Psi(x, x^{1/a})\sim x\rho(a),</math>
+
+כאשר <math>\Psi(x,y)</math> הוא מספר המספרים השלמים ה-<math>y</math>-חלקים (כלומר שכל גורמיהם הראשוניים אינם גדולים מ-<math>y</math>) שאינם גדולים מ-<math>x</math>. באופן שקול, מספר המספרים ה-<math>B</math>-חלקים הקטנים מ-<math>N</math> הוא בערך
+
+:<math>\Psi(N,B) \approx N \rho\left(\frac{\log N}{\log B}\right).</math>
+
+רמאסוואמי נתן מאוחר יותר הוכחה מדויקת לכך שעבור <math>a</math> קבוע, <math>\Psi(x,x^{1/a})</math> אסימפטוטי ל-<math>x \rho(a)</math>, עם חסם השגיאה{{הערה|1=V. Ramaswami, ''On the number of positive integers less than x and free of prime divisors greater than x<sup>c</sup>'', Bulletin of the American Mathematical Society '''55''' (1949), no. 12, pp. 1122–1127, {{DOI|10.1090/s0002-9904-1949-09337-0}}|כיווון=שמאל}}
+
+:<math>\Psi(x,x^{1/a})=x\rho(a)+O(x/\log x).</math>
+
+ידוע גם חסם הדוק יותר:{{הערה|שם=kruppa|1=Alexander Kruppa, ''Speeding up Integer Multiplication and Factorization'', PhD thesis, Henri Poincaré University, 2010, pp. 98–100|כיווון=שמאל}}
+
+:<math>\Psi(x,x^{1/a})=x\rho(a)+(1-\gamma)\rho(a-1)\frac{x}{\log x}+O\left(\frac{x}{(\log x)^2}\right),</math>
+
+כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]].
+
+== שימושים ==
+[[קובץ:Dickman prob factor size.svg|ממוזער|400px|שימוש בפונקציית דיקמן-דה בראון לחישוב ההסתברות שהגורם הראשוני הגדול ביותר והשני בגודלו של <math>x</math> קטנים מ-<math>x^a</math>]]
+עיקר השימוש בפונקציית דיקמן-דה בראון הוא הערכת השכיחות של מספרים חלקים בגודל נתון. הערכה זו משמשת לאופטימיזציה של אלגוריתמים שונים בתורת המספרים, כמו [[אלגוריתם p-1 של פולארד|שיטת P–1 לפירוק לגורמים]], והיא מעניינת גם כשלעצמה.{{הערה|שם=kruppa}}
+
+אפשר להראות ש-{{הערה|1=A. Hildebrand and G. Tenenbaum, ''Integers without large prime factors'', Journal de théorie des nombres de Bordeaux '''5''' (1993), no. 2, pp. 411–484, {{DOI|10.5802/jtnb.101}}|כיווון=שמאל}}
+
+:<math>\Psi(x,y)=xu^{O(-u)},</math>
+
+והדבר קשור להערכה <math>\rho(u)\approx u^{-u}</math> שלהלן. גם לקבוע גולומב-דיקמן יש הגדרה חלופית באמצעות פונקציית דיקמן-דה בראון.
+
+== הערכה ==
+קירוב ראשון הוא <math>\rho(u)\approx u^{-u}</math>. הערכה טובה יותר היא{{הערה|שם=lw|1=J. van de Lune and E. Wattel, ''On the numerical solution of a differential-difference equation arising in analytic number theory'', Mathematics of Computation '''23''' (1969), no. 106, pp. 417–421, {{DOI|10.1090/S0025-5718-1969-0247789-3}}|כיווון=שמאל}}
+
+:<math>\rho(u)\sim \frac{1}{\xi\sqrt{2\pi u}} \exp(-u\xi+\operatorname{Ei}(\xi)),</math>
+
+כאשר <math>\operatorname{Ei}</math> הוא [[אינטגרל מעריכי|האינטגרל המעריכי]] ו-<math>\xi</math> הוא השורש החיובי של
+
+:<math>e^\xi-1=u\xi.</math>
+
+חסם עליון פשוט הוא <math>\rho(x)\le1/x!</math>.
+
+{| class="wikitable" style="direction:ltr"
+! <math>u</math> !! <math>\rho(u)</math>
+|-
+| 1 || 1
+|-
+| 2 || 3.0685282×10<sup>−1</sup>
+|-
+| 3 || 4.8608388×10<sup>−2</sup>
+|-
+| 4 || 4.9109256×10<sup>−3</sup>
+|-
+| 5 || 3.5472470×10<sup>−4</sup>
+|-
+| 6 || 1.9649696×10<sup>−5</sup>
+|-
+| 7 || 8.7456700×10<sup>−7</sup>
+|-
+| 8 || 3.2320693×10<sup>−8</sup>
+|-
+| 9 || 1.0162483×10<sup>−9</sup>
+|-
+| 10 || 2.7701718×10<sup>−11</sup>
+|}
+
+== חישוב ==
+לכל קטע <math>[n-1, n]</math>, כאשר <math>n</math> [[מספר שלם|שלם]], קיימת [[פונקציה אנליטית]] <math>\rho_n</math> כך ש-<math>\rho_n(u)=\rho(u)</math> בקטע. עבור <math>0 \le u \le 1</math> מתקיים <math>\rho(u) = 1</math>; עבור <math>1 \le u \le 2</math> מתקיים <math>\rho(u) = 1-\log u</math>; ועבור <math>2 \le u \le 3</math>
+
+:<math>\rho(u) = 1-(1-\log(u-1))\log(u) + \operatorname{Li}_2(1 - u) + \frac{\pi^2}{12},</math>
+
+כאשר <math>\operatorname{Li}_2</math> הוא הדילוגריתם (ראו [[פולילוגריתם]]). את שאר הפונקציות <math>\rho_n</math> אפשר לחשב באמצעות טורים אינסופיים.{{הערה|1=Eric Bach and René Peralta, ''Asymptotic semismoothness probabilities'', Mathematics of Computation '''65''' (1996), no. 216, pp. 1701–1715, {{DOI|10.1090/S0025-5718-96-00775-2}}|כיווון=שמאל}}
+
+שיטה חלופית היא חישוב חסמים עליונים ותחתונים בעזרת [[כלל הטרפז]];{{הערה|שם=lw}} רשת שהולכת ומתעדנת מאפשרת דיוק שרירותי. לחישובים בדיוק גבוה (מאות ספרות) עדיף פיתוח טור רקורסיבי סביב נקודות האמצע של הקטעים.{{הערה|1=George Marsaglia, Arif Zaman and John C. W. Marsaglia, ''Numerical solution of some classical differential-difference equations'', Mathematics of Computation '''53''' (1989), no. 187, pp. 191–201, {{DOI|10.1090/S0025-5718-1989-0969490-3}}|כיווון=שמאל}} את הערכים עבור <math>u \le 7</math> אפשר לחשב היטב ב[[אינטגרציה נומרית]] בדיוק כפול רגיל.{{הערה|שם=kruppa}}
+
+== הרחבה ==
+פרידלנדר הגדיר מקבילה דו-ממדית <math>\sigma(u,v)</math> של <math>\rho(u)</math>.{{הערה|1=John B. Friedlander, ''Integers free from large and small primes'', Proceedings of the London Mathematical Society '''33''' (1976), no. 3, pp. 565–576, {{DOI|10.1112/plms/s3-33.3.565}}|כיווון=שמאל}} הפונקציה משמשת להערכת פונקציה <math>\Psi(x,y,z)</math> הדומה לזו של דה בראון, אך סופרת את השלמים ה-<math>y</math>-חלקים שיש להם לכל היותר גורם ראשוני אחד הגדול מ-<math>z</math>. אז
+
+:<math>\Psi(x,x^{1/a},x^{1/b})\sim x\sigma(b,a).</math>
+
+מספרים מסוג זה מופיעים בגרסה הדו-שלבית של שיטת P–1 לפירוק לגורמים.{{הערה|שם=kruppa}}
+
+== ראו גם ==
+* [[מספר חלק]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* David Broadhurst, ''Dickman polylogarithms and their constants'', 2010, arXiv:1004.0519
+* Kannan Soundararajan, ''An asymptotic expansion related to the Dickman function'', Ramanujan Journal '''29''' (2012), no. 1–3, pp. 25–30, doi:10.1007/s11139-011-9304-3
+</div>
+
+== קישורים חיצוניים ==
+* {{אנגלית}} Eric W. Weisstein, [https://mathworld.wolfram.com/DickmanFunction.html Dickman Function], באתר MathWorld
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:פונקציות מיוחדות]]
