@@ -10,8 +10,8 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Chebyshev's bias
 - [x] Vaughan's identity
 - [x] Exponential sum
-- [ ] Character sum
-- [ ] Pólya-Vinogradov inequality
+- [x] Character sum
+- [x] Pólya-Vinogradov inequality (redirect; covered in סכום קרקטרים)
 - [ ] Burgess inequality
 - [ ] Smooth number
 - [ ] Dickman function

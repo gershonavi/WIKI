@@ -7,7 +7,7 @@
 
 **הערה:** התרגומים נעשו בעזרת מכונה. כדאי לבדוק ולהגיה כל ערך לפני שמפרסמים אותו.
 
-## ערכים (73)
+## ערכים (74)
 
 ### אנליזה מרוכבת
 
@@ -132,6 +132,7 @@
 * [נפת סלברג](pages/%D7%A0%D7%A4%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg sieve
 * [סכום אקספוננציאלי](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%90%D7%A7%D7%A1%D7%A4%D7%95%D7%A0%D7%A0%D7%A6%D7%99%D7%90%D7%9C%D7%99.md) – Exponential sum
 * [סכום קלוסטרמן](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A7%D7%9C%D7%95%D7%A1%D7%98%D7%A8%D7%9E%D7%9F.md) – Kloosterman sum
+* [סכום קרקטרים](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A7%D7%A8%D7%A7%D7%98%D7%A8%D7%99%D7%9D.md) – Character sum
 * [קבוע מייסל-מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
 * [תורת המספרים האנליטית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA.md) – Analytic number theory
 * [תורת הנפה](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md) – Sieve theory
