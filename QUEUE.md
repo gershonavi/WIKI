@@ -43,7 +43,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Multiplicative function
 - [ ] Completely multiplicative function
 - [ ] Deuring–Heilbronn phenomenon
-- [ ] Semiprime
+- [x] Semiprime
 - [ ] Ernst Meissel
 
 ## שאר הרשימה
