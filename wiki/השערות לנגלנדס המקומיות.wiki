@@ -1,0 +1,64 @@
+ב[[מתמטיקה]], '''השערות לנגלנדס המקומיות''', שהציג [[רוברט לנגלנדס]] (1967, 1970), הן חלק מ[[תוכנית לנגלנדס]]. הן מתארות התאמה בין ההצגות המרוכבות של חבורה אלגברית רדוקטיבית <math>G</math> מעל שדה מקומי <math>F</math>, לבין הצגות של "חבורת לנגלנדס" של <math>F</math> בחבורת ה-L של <math>G</math>. ההתאמה הזו אינה חד-חד-ערכית באופן כללי. אפשר לראות בהשערות הכללה של [[תורת שדות המחלקה|תורת שדות המחלקה]] המקומית מחבורות גלואה אבליות לחבורות גלואה לא אבליות.
+
+== GL(1) ותורת שדות המחלקה ==
+השערות לנגלנדס המקומיות עבור <math>\mathrm{GL}_1(K)</math> נובעות מתורת שדות המחלקה המקומית, ולמעשה שקולות לה. העתקת ארטין נותנת איזומורפיזם מ-<math>K^\times</math> לאבליזציה של '''חבורת וייל''' <math>W_K</math>. ההצגות החלקות האי-פריקות של <math>\mathrm{GL}_1(K) = K^\times</math> הן חד-ממדיות, כלומר קרקטרים של <math>K^\times</math>, ולכן הן מתאימות להומומורפיזמים מחבורת וייל ל-<math>\mathrm{GL}_1(\mathbb C)</math>.
+
+== הצגות וייל–דלין וגורמי L ואפסילון ==
+הצגות של חבורת וייל אינן מתאימות ישירות להצגות החלקות האי-פריקות של <math>\mathrm{GL}_n</math>. התיקון הוא '''הצגת וייל–דלין''': הצגה <math>\rho</math> של חבורת וייל על מרחב <math>V</math>, יחד עם אנדומורפיזם נילפוטנטי <math>N</math> של <math>V</math> המקיים
+
+:<math>\rho(w)\,N\,\rho(w)^{-1} = \|w\|\,N\qquad (w \in W_F).</math>
+
+ההצגה של חבורת וייל צריכה להיות בעלת גרעין פתוח ולהיות "פשוטה למחצה ביחס לפרובניוס". לכל הצגה כזו <math>\rho</math> יש פונקציית L <math>L(s,\rho)</math> וגורם אפסילון <math>\varepsilon(s,\rho,\psi)</math> (ראו [[הקבוע המקומי של לנגלנדס–דלין]]), כאשר <math>\psi</math> הוא קרקטר של <math>F</math>.
+
+בצד השני: הצגה של <math>\mathrm{GL}_n(F)</math> היא '''חלקה''' אם כל וקטור נשמר על ידי תת-חבורה פתוחה כלשהי, ו'''אי-פריקה''' אם אינה אפס ואין לה תת-הצגות פרט ל-0 ולעצמה. הצגות מרוכבות חלקות ואי-פריקות הן אוטומטית קבילות (admissible). סיווג ברנשטיין–זלווינסקי מחזיר את סיווג ההצגות החלקות האי-פריקות להצגות החודיות. לכל הצגה קבילה אי-פריקה <math>\pi</math> יש פונקציית L <math>L(s,\pi)</math> וגורם אפסילון <math>\varepsilon(s,\pi,\psi)</math>, ולכל שתי הצגות כאלה <math>\pi, \pi'</math> יש פונקציית L של [[שיטת רנקין–סלברג|רנקין–סלברג]] <math>L(s,\pi\times\pi')</math> וגורם אפסילון <math>\varepsilon(s,\pi\times\pi',\psi)</math>. בושנל וקוצקו (1993) תיארו את ההצגות הקבילות האי-פריקות של החבורות הליניאריות הכלליות.
+
+== המקרה של GL(2) ==
+ההשערה עבור <math>\mathrm{GL}_2</math> טוענת שיש התאמה חד-חד-ערכית ועל יחידה מהצגות וייל–דלין פשוטות למחצה דו-ממדיות להצגות חלקות אי-פריקות של <math>\mathrm{GL}_2(F)</math>, ששומרת על פונקציות L ועל גורמי אפסילון, ומתחלפת עם עיוות בקרקטרים של <math>F^\times</math>.
+
+ז'אקה ולנגלנדס (1970) אימתו את ההשערה עבור <math>\mathrm{GL}_2</math> כשמאפיין שדה השאריות אינו 2. במקרה הזה ההצגות של חבורת וייל הן ציקליות או דיהדרליות. גלפנד וגרייב (1962) סיווגו את ההצגות החלקות האי-פריקות של <math>\mathrm{GL}_2(F)</math> כשמאפיין השאריות אי-זוגי (ראו גם גלפנד, גרייב ופיאטצקי-שפירו, 1969), וטענו בטעות שהמקרה הזוגי שונה רק במעט. וייל (1974) הבחין שכאשר מאפיין השאריות הוא 2 יש הצגות דו-ממדיות "חריגות" של חבורת וייל, שהתמונה שלהן ב-<math>\mathrm{PGL}_2(\mathbb C)</math> היא מסוג טטרהדרלי או אוקטהדרלי. טיפוס איקוסהדרלי אינו יכול להופיע מקומית, כי חבורות גלואה מקומיות פתירות.
+
+טאנל (1978) הוכיח את ההשערה עבור <math>\mathrm{GL}_2(K)</math> עבור שדות 2-אדיים ועבור שדות שמכילים שורש יחידה שלישי. קוצקו (1980) הוכיח אותה עבור <math>\mathrm{GL}_2</math> מעל כל השדות המקומיים. קרטייה (1981) ובושנל והניאר (2006) כתבו הצגות של ההוכחה.
+
+== החבורות הליניאריות הכלליות ==
+השערת לנגלנדס המקומית עבור <math>\mathrm{GL}_n</math> אומרת שיש התאמות חד-חד-ערכיות ועל יחידות <math>\pi \leftrightarrow \rho_\pi</math> בין מחלקות השקילות של הצגות קבילות אי-פריקות של <math>\mathrm{GL}_n(F)</math> לבין מחלקות השקילות של הצגות וייל–דלין רציפות, פשוטות למחצה ביחס לפרובניוס, <math>n</math>-ממדיות, כך שבממד 1 ההתאמה מתלכדת עם העתקת ארטין, וכך שהיא שומרת על פונקציות L ועל גורמי אפסילון של זוגות:
+
+:<math>L(s, \rho_\pi\otimes\rho_{\pi'}) = L(s, \pi\times\pi'),\qquad \varepsilon(s, \rho_\pi\otimes\rho_{\pi'}, \psi) = \varepsilon(s, \pi\times\pi', \psi).</math>
+
+לומון, רפופורט ושטולר (1993) הוכיחו את ההשערה עבור שדות מקומיים ממאפיין חיובי (קראיול, 1992, כתב הצגה של ההוכחה). הריס וטיילור (2001) הוכיחו אותה עבור שדות מקומיים ממאפיין 0, והניאר (2000) נתן הוכחה פשוטה יותר; קראיול (2000) וודהורן (2008) כתבו הצגות של ההוכחות. שתי ההוכחות האלה השתמשו באופן מהותי ב"השערת לנגלנדס המקומית המספרית" של הניאר. פטר שולצה נתן מאוחר יותר הוכחה חדשה ופשוטה הרבה יותר, שעוקפת אותה, בעזרת טיעון גאומטרי על מרחבי מודולי של חבורות <math>p</math>-חליקות.
+
+== חבורות רדוקטיביות אחרות ==
+בורל (1979) ווגן (1993) דנים בהשערות עבור חבורות כלליות. עבור חבורה רדוקטיבית כללית <math>G</math> הניסוח מסובך יותר: ההצגות הקבילות מקובצות לקבוצות סופיות זרות, שנקראות '''חבילות L''', והחבילות צריכות להתאים ל'''פרמטרי L''' – הומומורפיזמים מחבורת לנגלנדס המקומית לחבורת ה-L של <math>G</math>. בגרסאות מוקדמות יותר השתמשו בחבורת וייל–דלין או בחבורת וייל במקום חבורת לנגלנדס המקומית, וזה נותן צורה חלשה במעט של ההשערה. (ראו גם [[השערת גאן–גרוס–פרסאד]], שמשתמשת בחבילות L.)
+
+=== שדות ארכימדיים ===
+לנגלנדס (1989, נכתב ב-1973) הוכיח את ההשערות עבור השדות <math>\mathbb R</math> ו-<math>\mathbb C</math>, בעזרת '''סיווג לנגלנדס''' של ההצגות הקבילות האי-פריקות של חבורות אלגבריות ממשיות, עד כדי שקילות אינפיניטסימלית (או, באופן שקול, של מודולי <math>(\mathfrak g, K)</math> אי-פריקים).
+
+=== חבורות סימפלקטיות ===
+גאן וטקדה (2011) הוכיחו את השערות לנגלנדס המקומיות עבור <math>\mathrm{GSp}(4)</math>, והשתמשו בכך (2010) כדי להסיק אותן עבור <math>\mathrm{Sp}(4)</math>.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. Borel, ''Automorphic L-functions'', in: Automorphic Forms, Representations and L-functions, Proc. Sympos. Pure Math. '''33''', part 2, AMS, 1979, pp. 27–61
+* C. J. Bushnell, G. Henniart, ''The Local Langlands Conjecture for GL(2)'', Grundlehren der Mathematischen Wissenschaften '''335''', Springer, 2006
+* C. J. Bushnell, P. C. Kutzko, ''The Admissible Dual of GL(N) via Compact Open Subgroups'', Annals of Mathematics Studies '''129''', Princeton University Press, 1993
+* H. Carayol, ''Variétés de Drinfeld compactes, d'après Laumon, Rapoport et Stuhler'', Séminaire Bourbaki, Astérisque '''206''' (1992)
+* H. Carayol, ''Preuve de la conjecture de Langlands locale pour GLn: travaux de Harris–Taylor et Henniart'', Séminaire Bourbaki, Astérisque '''266''' (2000)
+* P. Cartier, ''La conjecture locale de Langlands pour GL(2) et la démonstration de Ph. Kutzko'', Séminaire Bourbaki 1979/80, Lecture Notes in Mathematics '''842''', Springer, 1981
+* W. T. Gan, S. Takeda, ''The local Langlands conjecture for Sp(4)'', IMRN (2010)
+* W. T. Gan, S. Takeda, ''The local Langlands conjecture for GSp(4)'', Annals of Mathematics '''173''' (2011)
+* I. M. Gelfand, M. I. Graev, I. I. Pyatetskii-Shapiro, ''Representation Theory and Automorphic Functions'', Generalized Functions '''6''', 1969
+* M. Harris, R. Taylor, ''The Geometry and Cohomology of Some Simple Shimura Varieties'', Annals of Mathematics Studies '''151''', Princeton University Press, 2001
+* G. Henniart, ''Une preuve simple des conjectures de Langlands pour GL(n) sur un corps p-adique'', Inventiones Mathematicae '''139''' (2000), no. 2, pp. 439–455
+* H. Jacquet, R. P. Langlands, ''Automorphic Forms on GL(2)'', Lecture Notes in Mathematics '''114''', Springer, 1970
+* S. S. Kudla, ''The local Langlands correspondence: the non-Archimedean case'', in: Motives, Proc. Sympos. Pure Math. '''55''', part 2, AMS, 1994
+* P. Kutzko, ''The Langlands conjecture for GL2 of a local field'', Annals of Mathematics '''112''' (1980)
+* R. P. Langlands, ''On the classification of irreducible representations of real algebraic groups'', in: Representation Theory and Harmonic Analysis on Semisimple Lie Groups, AMS, 1989
+* G. Laumon, M. Rapoport, U. Stuhler, ''D-elliptic sheaves and the Langlands correspondence'', Inventiones Mathematicae '''113''' (1993)
+* J. B. Tunnell, ''On the local Langlands conjecture for GL(2)'', Inventiones Mathematicae '''46''' (1978)
+* D. A. Vogan, ''The local Langlands conjecture'', Contemporary Mathematics '''145''', AMS, 1993
+* T. Wedhorn, ''The local Langlands correspondence for GL(n) over p-adic fields'', ICTP Lecture Notes '''21''', 2008
+* A. Weil, ''Exercices dyadiques'', Inventiones Mathematicae '''27''' (1974)
+</div>
+
+[[קטגוריה:תוכנית לנגלנדס]]
+[[קטגוריה:השערות במתמטיקה]]
+[[קטגוריה:פונקציות זטא]]
