@@ -107,7 +107,7 @@ Additive number theory:
 - [x] Skolem–Mahler–Lech theorem
 - [x] Arithmetic dynamics
 - [ ] Drinfeld module
-- [ ] Formal group law
+- [x] Formal group law
 - [ ] Galois cohomology
 - [x] Tamagawa number
 - [x] Profinite integer
