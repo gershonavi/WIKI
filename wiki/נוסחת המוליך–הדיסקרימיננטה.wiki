@@ -1,0 +1,55 @@
+ב[[מתמטיקה]], '''נוסחת המוליך–הדיסקרימיננטה''' (בגרמנית: '''Führerdiskriminantenproduktformel'''), שהציג [[הלמוט האסה]] (1926, 1930) עבור [[הרחבה אבלית|הרחבות אבליות]] ו[[אמיל ארטין]] (1931) עבור [[הרחבת גלואה|הרחבות גלואה]], היא נוסחה שמחשבת את ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] היחסית של הרחבת גלואה סופית <math>L/K</math> של [[שדה מקומי|שדות מקומיים]] או גלובליים, מתוך '''מוליכי ארטין''' של ה[[תורת הקרקטרים|קרקטרים האי-פריקים]] <math>\mathrm{Irr}(G)</math> של [[חבורת גלואה|חבורת הגלואה]] <math>G = G(L/K)</math>.
+
+== הניסוח ==
+תהי <math>L/K</math> הרחבת גלואה סופית של שדות גלובליים עם חבורת גלואה <math>G</math>. אז הדיסקרימיננטה שווה ל-
+:<math>\mathfrak d_{L/K} = \prod_{\chi \in \mathrm{Irr}(G)}\mathfrak f(\chi)^{\chi(1)},</math>
+כאשר <math>\mathfrak f(\chi)</math> הוא מוליך ארטין הגלובלי של <math>\chi</math>, ו-<math>\chi(1)</math> המימד של הקרקטר.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, VII.11.9|כיווון=שמאל}}
+
+'''המקרה האבלי מעל <math>\mathbb Q</math>.''' כשההרחבה <math>L/\mathbb Q</math> אבלית, כל הקרקטרים האי-פריקים ממימד 1, ולפי [[משפט קרונקר–ובר]] אפשר לזהות אותם עם [[קרקטר דיריכלה|קרקטרי דיריכלה]] פרימיטיביים; המוליך של ארטין הוא אז פשוט המוליך הרגיל של קרקטר דיריכלה. הנוסחה מקבלת את הצורה
+:<math>|d_L| = \prod_{\chi} f_\chi,</math>
+כאשר המכפלה היא על <math>[L:\mathbb Q]</math> קרקטרי הדיריכלה שמתאימים ל-<math>L</math> (כולל הקרקטר הטריוויאלי, שהמוליך שלו 1).
+
+== דוגמאות פשוטות ==
+* '''[[שדה ריבועי]].''' ל-<math>L = \mathbb Q(\sqrt d)</math> יש שני קרקטרים: הטריוויאלי, והקרקטר הריבועי <math>\chi_D = \left(\tfrac{D}{\cdot}\right)</math>, שהמוליך שלו <math>|D|</math>, כאשר <math>D</math> ה[[דיסקרימיננטה יסודית|דיסקרימיננטה היסודית]]. הנוסחה נותנת <math>|d_L| = 1 \cdot |D|</math> – כלומר הדיסקרימיננטה של שדה ריבועי היא המוליך של הקרקטר שלו.
+* '''[[שדה דו-ריבועי]] <math>\mathbb Q(\sqrt2, \sqrt3)</math>.''' לחבורה <math>(\mathbb Z/2)^2</math> יש ארבעה קרקטרים, שמתאימים לשלושת תת-השדות הריבועיים <math>\mathbb Q(\sqrt2), \mathbb Q(\sqrt3), \mathbb Q(\sqrt6)</math> ולקרקטר הטריוויאלי. המוליכים הם הדיסקרימיננטות <math>8, 12, 24</math>, ולכן
+::<math>d_L = 1\cdot 8\cdot 12\cdot 24 = 2304 = 2^8\cdot 3^2.</math>
+* '''תת-השדה ממעלה שלישית של <math>\mathbb Q(\zeta_7)</math>.''' לשדה <math>\mathbb Q(\zeta_7 + \zeta_7^{-1})</math> מתאימים הקרקטר הטריוויאלי ושני הקרקטרים מסדר 3 מודולו 7, שהמוליך של כל אחד מהם 7. לכן <math>d = 7\cdot 7 = 49</math> – וזו אכן הדיסקרימיננטה של <math>x^3 + x^2 - 2x - 1</math>.
+
+== דוגמה: שדות ציקלוטומיים ==
+תהי <math>L = \mathbb Q(\zeta_{p^n})/\mathbb Q</math> [[שדה ציקלוטומי|הרחבה ציקלוטומית]] של הרציונליים. חבורת הגלואה <math>G</math> היא <math>(\mathbb Z/p^n)^\times</math>. כיוון ש-<math>(p)</math> הוא הראשוני הסופי היחיד שמסתעף, מוליך ארטין הגלובלי <math>\mathfrak f(\chi)</math> שווה למקומי <math>\mathfrak f_{(p)}(\chi)</math>. כיוון ש-<math>G</math> אבלית, כל קרקטר אי-פריק <math>\chi</math> ממימד <math>\chi(1) = 1</math>. המוליך המקומי של <math>\chi</math> שווה למוליך של ההשלמה ה-<math>\mathfrak p</math>-אדית של <math>L^\chi = L^{\ker\chi}/\mathbb Q</math>, כלומר <math>(p)^{n_p}</math>, כאשר <math>n_p</math> המספר הטבעי הקטן ביותר כך ש-<math>U^{(n_p)}_{\mathbb Q_p} \subseteq N_{L^\chi_{\mathfrak p}/\mathbb Q_p}(U_{L^\chi_{\mathfrak p}})</math>. אם <math>p \gt 2</math>, חבורת הגלואה <math>G(L_{\mathfrak p}/\mathbb Q_p) = G(L/\mathbb Q) = (\mathbb Z/p^n)^\times</math> ציקלית מסדר <math>\varphi(p^n)</math>, ובעזרת [[תורת שדות המחלקה|תורת שדות המחלקה]] המקומית והעובדה ש-<math>U_{\mathbb Q_p}/U^{(k)}_{\mathbb Q_p} = (\mathbb Z/p^k)^\times</math> רואים בקלות שאם <math>\chi</math> מתפרק דרך קרקטר פרימיטיבי של <math>(\mathbb Z/p^i)^\times</math>, אז <math>\mathfrak f_{(p)}(\chi) = p^i</math>.
+
+מספר הקרקטרים הפרימיטיביים מודולו <math>p^i</math> הוא <math>\varphi(p^i) - \varphi(p^{i-1})</math> ל-<math>i \ge 2</math>, ו-<math>\varphi(p) - 1 = p - 2</math> ל-<math>i = 1</math> (כל הקרקטרים הלא טריוויאליים מודולו <math>p</math>). מהנוסחה מתקבל <math>\mathfrak d_{L/\mathbb Q} = \bigl(p^{\varphi(p^n)(n - 1/(p-1))}\bigr)</math>, כשהמעריך הוא
+:<math>\sum_{i=1}^{n} \#\{\chi \text{ פרימיטיבי מודולו } p^i\}\cdot i = n\varphi(p^n) - 1 - (p-1)\sum_{i=0}^{n-2}p^i = n\varphi(p^n) - p^{n-1}.</math>
+(השוויון האחרון: <math>(p-1)\sum_{i=0}^{n-2}p^i = p^{n-1} - 1</math>.)
+
+'''בדיקה מספרית.'''
+{| class="wikitable" style="text-align:center"
+! <math>p^n</math> !! <math>n\varphi(p^n) - p^{n-1}</math> !! <math>|d_L|</math> (מחושב ישירות מהפולינום הציקלוטומי)
+|-
+| <math>5</math> || <math>4 - 1 = 3</math> || <math>125 = 5^3</math>
+|-
+| <math>7</math> || <math>6 - 1 = 5</math> || <math>16807 = 7^5</math>
+|-
+| <math>9 = 3^2</math> || <math>12 - 3 = 9</math> || <math>19683 = 3^9</math>
+|-
+| <math>25 = 5^2</math> || <math>40 - 5 = 35</math> || <math>5^{35}</math>
+|-
+| <math>8 = 2^3</math> || <math>12 - 4 = 8</math> || <math>256 = 2^8</math>
+|-
+| <math>16 = 2^4</math> || <math>32 - 8 = 24</math> || <math>2^{24}</math>
+|}
+למשל ל-<math>\mathbb Q(\zeta_9)</math>: הקרקטרים הם הטריוויאלי (מוליך 1), הקרקטר הלא טריוויאלי היחיד מודולו 3 (מוליך 3), וארבעת הקרקטרים הפרימיטיביים מודולו 9 (מוליך 9); המכפלה <math>1\cdot 3\cdot 9^4 = 3^9</math>. (הניתוח שלמעלה הניח <math>p \gt 2</math>, אבל הנוסחה הסופית נכונה גם ל-<math>p = 2</math>, כפי שמראות השורות האחרונות בטבלה.)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* E. Artin, ''Die gruppentheoretische Struktur der Diskriminanten algebraischer Zahlkörper'', J. Reine Angew. Math. '''164''' (1931), pp. 1–11
+* H. Hasse, ''Bericht über neuere Untersuchungen und Probleme aus der Theorie der algebraischen Zahlkörper. I: Klassenkörpertheorie'', Jahresbericht der DMV '''35''' (1926), pp. 1–55
+* H. Hasse, ''Führer, Diskriminante und Verzweigungskörper relativ-Abelscher Zahlkörper'', J. Reine Angew. Math. '''162''' (1930), pp. 169–184
+* J. Neukirch, ''Algebraic Number Theory'', Grundlehren '''322''', Springer, 1999
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:שדות ציקלוטומיים]]

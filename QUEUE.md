@@ -97,7 +97,7 @@ Additive number theory:
 - [x] Golden field
 - [x] S-unit
 - [x] Narrow class group
-- [ ] Conductor–discriminant formula
+- [x] Conductor–discriminant formula
 - [ ] Galois representation
 - [ ] Kummer–Vandiver conjecture
 - [ ] Leopoldt's conjecture
