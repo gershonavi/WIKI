@@ -1,0 +1,54 @@
+'''פונקציית זטא של סלברג''' הוצגה על ידי [[אטלה סלברג]] ב-1956. היא מקבילה ל[[פונקציית זטא של רימן]] המפורסמת
+
+:<math> \zeta(s) = \prod_{p\in\mathbb{P}} \frac{1}{1-p^{-s}}, </math>
+
+כאשר <math> \mathbb{P} </math> היא קבוצת ה[[מספר ראשוני|מספרים הראשוניים]]. במקום המספרים הראשוניים, פונקציית זטא של סלברג משתמשת באורכים של [[גאודזה|גאודזות]] סגורות פשוטות. אם <math>\Gamma</math> היא תת-חבורה של <math>\mathrm{SL}(2, \mathbb{R})</math>, פונקציית זטא של סלברג המתאימה מוגדרת כך:
+
+:<math>\zeta_\Gamma(s)=\prod_p(1-N(p)^{-s})^{-1},</math>
+
+או
+
+:<math>Z_\Gamma(s)=\prod_p\prod^\infty_{n=0}(1-N(p)^{-s-n}),</math>
+
+כאשר <math>p</math> עובר על [[מחלקת צמידות|מחלקות הצמידות]] של הגאודזות הראשוניות (ובאופן שקול, על מחלקות הצמידות של האיברים ההיפרבוליים הפרימיטיביים של <math>\Gamma</math>), ו-<math>N(p)</math> מסמן את <math>\exp(\ell(p))</math>, כאשר <math>\ell(p)</math> הוא האורך של <math>p</math> (ובאופן שקול, הריבוע של הערך העצמי הגדול יותר של <math>p</math>).
+
+לכל משטח היפרבולי בעל שטח סופי מתאימה '''פונקציית זטא של סלברג'''. זוהי [[פונקציה מרומורפית]] המוגדרת בכל [[המישור המרוכב]], והיא מוגדרת בעזרת הגאודזות הסגורות של המשטח.
+
+את ה[[אפס של פונקציה|אפסים]] וה[[קוטב (אנליזה מרוכבת)|קטבים]] של פונקציית זטא של סלברג <math>Z(s)</math> אפשר לתאר בעזרת הנתונים הספקטרליים של המשטח.
+
+האפסים נמצאים בנקודות הבאות:
+# לכל תבנית חוד עם ערך עצמי <math>s_0(1-s_0)</math> יש אפס בנקודה <math>s_0</math>. הסדר של האפס שווה למימד של המרחב העצמי המתאים. (תבנית חוד כאן היא [[פונקציה עצמית]] של אופרטור לפלס–בלטרמי שבפיתוח ה[[טור פורייה|פורייה]] שלה האיבר הקבוע הוא אפס.)
+# לפונקציית הזטא יש אפס גם בכל קוטב של הדטרמיננטה של מטריצת הפיזור, <math>\varphi(s)</math>. הסדר של האפס שווה לסדר של הקוטב המתאים של מטריצת הפיזור.
+
+לפונקציית הזטא יש גם קטבים בנקודות <math>1/2 - \mathbb{N}</math>, ויכולים להיות לה אפסים או קטבים בנקודות <math>- \mathbb{N}</math>.
+
+פונקציית זטא של איהרה נחשבת למקבילה ה-<math>p</math>-אדית (ולמקבילה בתורת הגרפים) של פונקציית זטא של סלברג.
+
+הדמיון לפונקציית זטא של רימן עמוק: כפי שהנוסחה המפורשת קושרת את הראשוניים לאפסים של זטא, נוסחת העקבה של סלברג קושרת את אורכי הגאודזות הסגורות לערכים העצמיים של אופרטור לפלס, ומתוכה נובע ש<math>Z(s)</math> מקיימת "השערת רימן": למעט מספר סופי של אפסים בקטע הממשי <math>(0,1)</math>, האפסים שמתאימים לתבניות חוד נמצאים על הישר <math>\mathrm{Re}\,s = 1/2</math>. זאת כיוון שהערכים העצמיים <math>\lambda = s_0(1-s_0)</math> של אופרטור לפלס הם ממשיים ואי-שליליים, ואם <math>\lambda \ge 1/4</math> אז <math>s_0 = \tfrac12 \pm i\sqrt{\lambda - 1/4}</math>.
+
+== פונקציית זטא של סלברג עבור החבורה המודולרית ==
+במקרה שהמשטח הוא <math> \Gamma \backslash \mathbb{H}^2 </math>, כאשר <math> \Gamma </math> היא [[החבורה המודולרית]], לפונקציית זטא של סלברג יש עניין מיוחד. במקרה הזה היא קשורה קשר הדוק לפונקציית זטא של רימן.
+
+במקרה הזה הדטרמיננטה של מטריצת הפיזור (שהיא כאן מטריצה מסדר <math>1 \times 1</math>, כי יש חוד אחד) נתונה על ידי
+
+:<math> \varphi(s) = \pi^{1/2} \frac{ \Gamma(s-1/2)\, \zeta(2s-1) }{ \Gamma(s)\, \zeta(2s) }, </math>
+
+כאשר <math>\Gamma(\cdot)</math> כאן היא [[פונקציית גמא]]. בפרט, אם לפונקציית זטא של רימן יש אפס בנקודה <math>s_0</math>, אז לדטרמיננטה של מטריצת הפיזור יש קוטב בנקודה <math>s_0/2</math>, ולכן לפונקציית זטא של סלברג יש אפס בנקודה <math>s_0/2</math>.
+
+== ראו גם ==
+* נוסחת העקבה של סלברג
+* [[משפט האוניברסליות של וורונין]] – האוניברסליות הוכחה גם עבור פונקציית זטא של סלברג של החבורה המודולרית
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. Fischer, ''An Approach to the Selberg Trace Formula via the Selberg Zeta-Function'', Lecture Notes in Mathematics '''1253''', Springer, 1987
+* D. A. Hejhal, ''The Selberg Trace Formula for PSL(2,R)'', Vol. I, Lecture Notes in Mathematics '''548''', Springer, 1976
+* D. A. Hejhal, ''The Selberg Trace Formula for PSL(2,R)'', Vol. 2, Lecture Notes in Mathematics '''1001''', Springer, 1983
+* H. Iwaniec, ''Spectral Methods of Automorphic Forms'', 2nd ed., American Mathematical Society, 2002
+* A. Selberg, ''Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces with applications to Dirichlet series'', J. Indian Math. Soc. (N.S.) '''20''' (1956), pp. 47–87
+* A. B. Venkov, ''Spectral theory of automorphic functions'', Proc. Steklov Inst. Math., 1982
+* T. Sunada, ''L-functions in geometry and some applications'', in: Curvature and Topology of Riemannian Manifolds (Proc. Taniguchi Symp. 1985), Lecture Notes in Mathematics '''1201''', Springer, 1986, pp. 266–284
+</div>
+
+[[קטגוריה:פונקציות זטא]]
+[[קטגוריה:תורה ספקטרלית]]
