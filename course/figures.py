@@ -2736,6 +2736,55 @@ def _():
     save('09-6')
 
 
+@fig('01-7')
+def _():
+    fig_, axs = plt.subplots(1, 3, figsize=(6.8, 2.6))
+    for ax, run in zip(axs, ([4, 5, 6], [1, 2, 3, 4, 5], [7, 8])):
+        for i, v in enumerate(run):
+            for j in range(v):
+                ax.add_patch(plt.Rectangle((i, j), .9, .9, color=C1 if len(run) % 2 else C3))
+        ax.set_xlim(-.2, 5.2); ax.set_ylim(-.2, 8.4); ax.set_aspect('equal'); ax.axis('off')
+        ax.set_title(' + '.join(map(str, run)) + ' = 15', fontsize=9)
+    save('01-7')
+
+
+@fig('08-15')
+def _():
+    v = set()
+    for w in range(0, 9):
+        for x in range(0, 6):
+            for y in range(0, 4):
+                for z in range(0, 4):
+                    v.add(w * w + 2 * x * x + 5 * y * y + 5 * z * z)
+    ns = np.arange(1, 61)
+    ax = plt.gca()
+    ax.bar(ns, [1] * len(ns), color=[C3 if n in v else C2 for n in ns], width=.85)
+    ax.annotate('15', (15, 1.05), ha='center', color=C2)
+    ax.set_yticks([]); ax.set_ylim(0, 1.3); ax.set_xlabel('n')
+    ax.set_title('w² + 2x² + 5y² + 5z² takes every value except 15 (red)')
+    save('08-15')
+
+
+@fig('15-ro')
+def _():
+    N = 10 ** 6
+    S = np.zeros(N + 1, bool)
+    S[[p for p in PR if p <= N]] = True
+    rep = np.zeros(N + 1, bool)
+    k = 1
+    while 2 ** k < N:
+        rep[2 ** k:] |= S[:N + 1 - 2 ** k]; k += 1
+    xs = np.unique(np.logspace(2, 6, 60).astype(int))
+    c = np.cumsum(rep)
+    ax = plt.gca()
+    ax.semilogx(xs, c[xs] / xs, color=C1, label='share of n ≤ x of the form p + 2^k')
+    ax.axhline(0.5, color='k', ls=':', lw=1, label='0.5 (all odd numbers)')
+    ax.axhline(0.107648, color=C2, ls='--', lw=1, label='proven lower bound 0.1076')
+    ax.set_xlabel('x'); ax.set_ylim(0, 0.6); ax.legend(fontsize=7)
+    ax.set_title('Romanov: a positive proportion of integers are p + 2^k')
+    save('15-ro')
+
+
 
 if __name__ == '__main__':
     import sys
