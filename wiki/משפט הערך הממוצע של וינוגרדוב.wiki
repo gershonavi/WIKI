@@ -1,0 +1,76 @@
+ב[[מתמטיקה]], '''משפט הערך הממוצע של וינוגרדוב''' (ב[[אנגלית]]: Vinogradov's mean value theorem) הוא הערכה למספר השוויונות בין סכומי חזקות. זהו אי-שוויון חשוב ב[[תורת המספרים האנליטית]], הקרוי על שם [[איוואן וינוגרדוב]].
+
+ליתר דיוק, יהי <math>J_{s,k}(X)</math> מספר הפתרונות של מערכת של <math>k</math> [[משוואה דיופנטית|משוואות דיופנטיות]] בו-זמניות ב-<math>2s</math> משתנים:
+:<math>x_1^j+x_2^j+\cdots+x_s^j=y_1^j+y_2^j+\cdots+y_s^j\quad (1\le j\le k),</math>
+עם
+:<math>1\le x_i,y_i\le X \quad (1\le i\le s).</math>
+כלומר, <math>J_{s,k}(X)</math> סופר את השוויונות בין סכומים של חזקות עם אותו מספר איברים (<math>s</math>) ואותם מעריכים (<math>j</math>), עד חזקות <math>k</math>-יות ועד <math>X</math>. ביטוי אנליטי חלופי ל-<math>J_{s,k}(X)</math> הוא
+:<math>J_{s,k}(X)=\int_{[0,1)^k}|f_k(\boldsymbol\alpha;X)|^{2s}\,d\boldsymbol\alpha,</math>
+כאשר
+:<math>f_k(\boldsymbol\alpha;X)=\sum_{1\le x\le X}\exp(2\pi i(\alpha_1x+\cdots+\alpha_kx^k)).</math>
+(השוויון נובע מאורתוגונליות: פותחים את <math>|f_k|^{2s} = f_k^s \overline{f_k}^s</math>, והאינטגרל של <math>e^{2\pi i(\alpha_1 m_1 + \dots + \alpha_k m_k)}</math> הוא 1 רק כאשר כל ה-<math>m_j</math> מתאפסים, כלומר כאשר כל <math>k</math> המשוואות מתקיימות.) משפט הערך הממוצע של וינוגרדוב נותן חסם עליון לערך <math>J_{s,k}(X)</math>.
+
+הערכה חזקה ל-<math>J_{s,k}(X)</math> היא רכיב חשוב ב[[שיטת המעגל של הארדי וליטלווד]] לטיפול ב[[בעיית וארינג]], וגם בהוכחת קיומו של תחום ללא אפסים ל[[פונקציית זטא של רימן]] ברצועה הקריטית.{{הערה|1=E. C. Titchmarsh, The theory of the Riemann Zeta-function, מהדורה שנייה (עורך: D. R. Heath-Brown), Oxford University Press, 1986|כיווון=שמאל}} הוכחו חסמים שונים ל-<math>J_{s,k}(X)</math>, התקפים בתחומים יחסיים שונים של <math>s</math> ו-<math>k</math>. הצורה הקלאסית של המשפט חלה כאשר <math>s</math> גדול מאוד ביחס ל-<math>k</math>.
+
+ניתוח של ההוכחות של השערת הערך הממוצע של וינוגרדוב אפשר למצוא בהרצאה בסמינר בורבקי של ליליאן פירס.{{הערה|1=L. B. Pierce, The Vinogradov mean-value theorem [after Wooley, and Bourgain, Demeter and Guth], Séminaire Bourbaki 69 (1134), 2017, עמ' 1–80, [https://arxiv.org/abs/1707.00119 arXiv:1707.00119]|כיווון=שמאל}}
+
+== חסמים תחתונים ==
+אם מתבוננים ב-<math>X^s</math> הפתרונות שבהם
+:<math>x_i=y_i \quad (1\le i\le s),</math>
+רואים ש-<math>J_{s,k}(X)\gg X^s</math>.
+
+ניתוח זהיר יותר (ראו ווהן,{{הערה|1=R. C. Vaughan, The Hardy–Littlewood method, מהדורה שנייה, Cambridge Tracts in Mathematics 125, Cambridge University Press, 1997|כיווון=שמאל}} משוואה 7.4) נותן את החסם התחתון
+:<math>J_{s,k}\gg X^s+X^{2s-\frac12k(k+1)}.</math>
+(האיבר השני: יש <math>X^{2s}</math> בחירות של <math>\mathbf x, \mathbf y</math>, ולכל <math>j</math> ההפרש <math>\sum x_i^j - \sum y_i^j</math> נע בתחום באורך מסדר <math>X^j</math>; לכן אחד מכל <math>X^{1 + 2 + \dots + k} = X^{k(k+1)/2}</math> בערך מקיים את כל המשוואות.)
+
+== הוכחת ההשערה המרכזית ==
+ההשערה המרכזית של משפט הערך הממוצע של וינוגרדוב הייתה שהחסם העליון קרוב לחסם התחתון הזה. ליתר דיוק, שלכל <math>\epsilon>0</math> מתקיים
+:<math>J_{s,k}(X)\ll X^{s+\epsilon}+X^{2s-\frac12k(k+1)+\epsilon}.</math>
+את ההשערה הוכיחו ז'אן בורגן, צ'יפריאן דמטר ולארי גות'{{הערה|1=J. Bourgain, C. Demeter, L. Guth, Proof of the main conjecture in Vinogradov's Mean Value Theorem for degrees higher than three, Annals of Mathematics 184 (2), 2016, עמ' 633–682, {{DOI|10.4007/annals.2016.184.2.7}}|כיווון=שמאל}} (בשיטת ה-decoupling מאנליזה הרמונית), ובשיטה אחרת טרבור וולי.{{הערה|1=T. D. Wooley, Nested efficient congruencing and relatives of Vinogradov's mean value theorem, Proceedings of the London Mathematical Society 118 (4), 2019, עמ' 942–1016, {{DOI|10.1112/plms.12204}}|כיווון=שמאל}}
+
+אם
+:<math>s\ge \tfrac12k(k+1),</math>
+זה שקול לחסם
+:<math>J_{s,k}(X)\ll X^{2s-\frac12k(k+1)+\epsilon}.</math>
+באופן דומה, אם <math>s\le \tfrac12k(k+1)</math>, הצורה המשוערת שקולה לחסם
+:<math>J_{s,k}(X)\ll X^{s+\epsilon}.</math>
+
+צורות חזקות יותר של המשפט מובילות לביטוי אסימפטוטי ל-<math>J_{s,k}</math>, ובפרט, עבור <math>s</math> גדול ביחס ל-<math>k</math>, מתקיים
+:<math>J_{s,k}\sim \mathcal C(s,k)X^{2s-\frac12k(k+1)},</math>
+כאשר <math>\mathcal C(s,k)</math> מספר חיובי קבוע התלוי לכל היותר ב-<math>s</math> וב-<math>k</math>; ראו משפט 1.2 אצל וולי (2012).{{הערה|שם=w12|1=T. D. Wooley, Vinogradov's mean value theorem via efficient congruencing, Annals of Mathematics 175 (3), 2012, עמ' 1575–1627, {{DOI|10.4007/annals.2012.175.3.12}}|כיווון=שמאל}}
+
+== היסטוריה ==
+המשפט המקורי של וינוגרדוב מ-1935{{הערה|1=I. M. Vinogradov, New estimates for Weyl sums, Dokl. Akad. Nauk SSSR 8, 1935, עמ' 195–198|כיווון=שמאל}} הראה שעבור <math>s,k</math> קבועים המקיימים
+:<math>s\ge k^2\log (k^2+k)+\tfrac14k^2+\tfrac54 k+1</math>
+יש קבוע חיובי <math>D(s,k)</math> כך ש-
+:<math>J_{s,k}(X)\le D(s,k)(\log X)^{2s}X^{2s-\frac12k(k+1)+\frac12}.</math>
+אף שזו הייתה תוצאה פורצת דרך, היא אינה מגיעה לצורה המשוערת המלאה. היא מוכיחה את הצורה המשוערת רק כאשר <math>\epsilon>\tfrac12</math>.
+
+הגישה של וינוגרדוב שופרה על ידי קרצובה{{הערה|1=A. Karatsuba, Mean value of the modulus of a trigonometric sum, Izv. Akad. Nauk SSSR Ser. Mat. 37 (6), 1973, עמ' 1203–1227, {{DOI|10.1070/IM1973v007n06ABEH002080}} (ברוסית)|כיווון=שמאל}} וסטצ'קין,{{הערה|1=S. B. Stečkin, Mean values of the modulus of a trigonometric sum, Trudy Mat. Inst. Steklov 134, 1975, עמ' 283–309 (ברוסית)|כיווון=שמאל}} שהראו שעבור <math>s\ge k</math> יש קבוע חיובי <math>D(s,k)</math> כך ש-
+:<math>J_{s,k}(X)\le D(s,k)X^{2s-\frac12k(k+1)+\eta_{s,k}},</math>
+כאשר
+:<math>\eta_{s,k}=\frac12 k^2\left(1-\frac1k\right)^{\left[\frac sk\right]}\le k^2e^{-s/k^2}.</math>
+מכיוון שעבור
+:<math>s>k^2(2\log k-\log\epsilon)</math>
+מתקיים
+:<math>\eta_{s,k}<\epsilon,</math>
+הדבר מוכיח שהצורה המשוערת נכונה עבור <math>s</math> בגודל זה.
+
+אפשר לחדד את השיטה עוד ולהוכיח את ההערכה האסימפטוטית
+:<math>J_{s,k}\sim \mathcal C(s,k)X^{2s-\frac12k(k+1)}</math>
+עבור <math>s</math> גדול ביחס ל-<math>k</math>.
+
+ב-2012 הרחיב וולי{{הערה|שם=w12}} את תחום ה-<math>s</math> שבו הצורה המשוערת נכונה. הוא הוכיח שעבור
+:<math>k\ge 2</math> ו-<math>s\ge k(k+1)</math>
+ולכל <math>\epsilon>0</math> מתקיים
+:<math>J_{s,k}(X)\ll X^{2s-\frac12k(k+1)+\epsilon}.</math>
+
+פורד ווולי{{הערה|1=K. Ford, T. D. Wooley, On Vinogradov's mean value theorem: strong diagonal behaviour via efficient congruencing, Acta Mathematica 213 (2), 2014, עמ' 199–236, {{DOI|10.1007/s11511-014-0119-0}}|כיווון=שמאל}} הראו שהצורה המשוערת מוכחת עבור <math>s</math> קטן ביחס ל-<math>k</math>. במפורש, הם הראו שעבור
+:<math>k\ge 4</math> ו-<math>1\le s\le \tfrac14(k+1)^2</math>
+ולכל <math>\epsilon>0</math> מתקיים
+:<math>J_{s,k}(X)\ll X^{s+\epsilon}.</math>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
