@@ -67,7 +67,7 @@ Additive number theory:
 
 - [ ] Abelian extension
 - [x] Ideal class group
-- [ ] Fractional ideal
+- [x] Fractional ideal
 - [ ] Ideal norm
 - [ ] Discriminant of an algebraic number field
 - [ ] Different ideal

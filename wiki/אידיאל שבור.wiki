@@ -1,0 +1,94 @@
+ב[[מתמטיקה]], ובפרט ב[[אלגברה קומוטטיבית]], המושג '''אידיאל שבור''' (fractional ideal) מוגדר עבור [[תחום שלמות|תחומי שלמות]], והוא שימושי במיוחד בחקר [[חוג דדקינד|חוגי דדקינד]]. במובן מסוים, אידיאלים שבורים של תחום שלמות הם כמו [[אידיאל (אלגברה)|אידיאלים]] שמותר להופיע בהם מכנים. כשדנים גם באידיאלים שבורים וגם באידיאלים רגילים של החוג, קוראים לפעמים לאידיאלים הרגילים '''אידיאלים שלמים''', כדי להבחין ביניהם.
+
+== הגדרה ותוצאות בסיסיות ==
+יהי <math>R</math> תחום שלמות, ויהי <math>K = \mathrm{Frac}\,R</math> [[שדה שברים|שדה השברים]] שלו.
+
+'''אידיאל שבור''' של <math>R</math> הוא תת-[[מודול (מבנה אלגברי)|מודול]] <math>I</math> של <math>K</math> (כמודול מעל <math>R</math>), שעבורו קיים <math>r \in R</math> שונה מאפס כך ש-<math>rI\subseteq R</math>. באופן שקול, <math>I \subseteq K</math> הוא אידיאל שבור של <math>R</math> אם <math>I = r^{-1}J</math>, כאשר <math>r</math> איבר של <math>R</math> שונה מאפס ו-<math>J</math> אידיאל של <math>R</math>. אפשר לחשוב על <math>r</math> כעל "מכנה משותף" שמנקה את המכנים ב-<math>I</math>; מכאן השם אידיאל שבור.
+
+'''אידיאלים שבורים ראשיים''' הם תת-המודולים של <math>K</math> שנוצרים על ידי איבר יחיד של <math>K</math> השונה מאפס. אידיאל שבור <math>I</math> מוכל ב-<math>R</math> [[אם ורק אם]] הוא אידיאל (שלם) של <math>R</math>.
+
+אידיאל שבור <math>I</math> נקרא '''הפיך''' אם יש אידיאל שבור <math>J</math> כך ש-
+:<math>IJ = R,</math>
+כאשר
+:<math>IJ = \{ a_1 b_1 + a_2 b_2 + \cdots + a_n b_n : a_i \in I,\ b_i \in J,\ n \ge 1 \}</math>
+היא '''המכפלה''' של שני האידיאלים השבורים.
+
+במקרה כזה האידיאל השבור <math>J</math> נקבע באופן יחיד, והוא שווה למנה
+:<math>(R :_{K} I) = \{ x \in K : xI \subseteq R \}.</math>
+קבוצת האידיאלים השבורים ההפיכים היא [[חבורה אבלית]] ביחס למכפלה הזו, ואיבר היחידה שלה הוא האידיאל <math>(1) = R</math> עצמו. החבורה הזו נקראת '''חבורת האידיאלים השבורים''' של <math>R</math>, והאידיאלים השבורים הראשיים הם תת-חבורה שלה. אידיאל שבור שונה מאפס הפיך אם ורק אם הוא [[מודול פרויקטיבי]] מעל <math>R</math>. מבחינה גאומטרית, פירוש הדבר שאפשר לראות באידיאל שבור הפיך אגד וקטורי מדרגה 1 מעל ה[[ספקטרום של חוג|ספקטרום]] <math>\mathrm{Spec}(R)</math>.
+
+כל תת-מודול [[נוצר סופית]] של <math>K</math> הוא אידיאל שבור, ואם <math>R</math> [[חוג נתרי|נתרי]], אלה כל האידיאלים השבורים של <math>R</math>.
+
+=== דוגמה: אידיאלים שבורים של <math>\mathbb Z</math> ===
+שדה השברים של <math>\mathbb Z</math> הוא <math>\mathbb Q</math>. הקבוצה <math>\tfrac54\mathbb Z = \{\ldots, -\tfrac{5}{2}, -\tfrac54, 0, \tfrac54, \tfrac52, \ldots\}</math> היא אידיאל שבור: היא סגורה לחיבור ולכפל במספרים שלמים, ו-<math>4\cdot\tfrac54\mathbb Z = 5\mathbb Z \subseteq \mathbb Z</math>. מאחר ש-<math>\mathbb Z</math> תחום ראשי, כל אידיאל שבור שונה מאפס של <math>\mathbb Z</math> הוא מהצורה <math>q\mathbb Z</math> עבור מספר רציונלי חיובי <math>q</math>, וההופכי שלו הוא <math>q^{-1}\mathbb Z</math>. לכן חבורת האידיאלים השבורים של <math>\mathbb Z</math> איזומורפית לחבורה הכפלית <math>\mathbb Q_{>0}</math>, ובזכות [[המשפט היסודי של האריתמטיקה]] היא החבורה האבלית החופשית שנוצרת על ידי המספרים הראשוניים: לדוגמה, <math>\tfrac54\mathbb Z = (5)\,(2)^{-2}</math>. לעומת זאת, הקבוצה <math>\mathbb Z[\tfrac12]</math> של כל השברים שהמכנה שלהם חזקה של 2 היא תת-מודול של <math>\mathbb Q</math> שאינו אידיאל שבור, כי שום מספר שלם שונה מאפס אינו מנקה את כל המכנים שלה.
+
+== חוגי דדקינד ==
+בחוגי דדקינד המצב פשוט הרבה יותר. בפרט, כל אידיאל שבור שונה מאפס הוא הפיך. למעשה התכונה הזו מאפיינת את חוגי דדקינד:
+:תחום שלמות הוא חוג דדקינד אם ורק אם כל אידיאל שבור שונה מאפס שלו הפיך.
+את קבוצת האידיאלים השבורים של חוג דדקינד <math>R</math> מסמנים <math>\mathrm{Div}(R)</math>.
+
+חבורת המנה של האידיאלים השבורים מודולו תת-החבורה של האידיאלים השבורים הראשיים היא אינווריאנטה חשובה של חוג דדקינד, שנקראת [[חבורת מחלקות האידיאלים]].
+
+== שדות מספרים ==
+במקרה הפרטי של [[שדה מספרים]] <math>K</math> (למשל [[שדה ציקלוטומי]]) יש [[חוג (מבנה אלגברי)|חוג]] מתאים, שמסומן <math>\mathcal{O}_K</math> ונקרא [[חוג השלמים האלגבריים|חוג השלמים]] של <math>K</math>. לדוגמה, <math>\mathcal{O}_{\mathbb{Q}(\sqrt{d}\,)} = \mathbb{Z}[\sqrt{d}\,]</math> כאשר <math>d</math> [[קבוצה ללא הפרשים ריבועיים|חופשי מריבועים]] ו-<math>d \equiv 2, 3 \pmod 4</math>, ואילו כאשר <math>d \equiv 1 \pmod 4</math> חוג השלמים הוא <math>\mathbb Z[\tfrac{1+\sqrt d}{2}]</math>. התכונה המרכזית של החוגים <math>\mathcal{O}_K</math> היא שהם חוגי דדקינד, ולכן אפשר לתאר את תורת האידיאלים השבורים עבור חוגי השלמים של שדות מספרים. [[תורת שדות המחלקה]] עוסקת במידה רבה בחבורות כאלה ובמנות שלהן.
+
+=== מבנים קשורים ===
+עבור חוג השלמים <math>\mathcal{O}_K</math> של שדה מספרים, חבורת האידיאלים השבורים מסומנת <math>\mathcal{I}_K</math>, ותת-החבורה של האידיאלים השבורים הראשיים מסומנת <math>\mathcal{P}_K</math>.{{הערה|1=N. Childress, ''Class Field Theory'', Springer, New York, 2009, p. 2|כיווון=שמאל}} [[חבורת מחלקות האידיאלים]] היא חבורת האידיאלים השבורים מודולו האידיאלים השבורים הראשיים,
+:<math>\mathcal{C}_K := \mathcal{I}_K/\mathcal{P}_K,</math>
+ומספר המחלקה <math>h_K</math> הוא הסדר של החבורה, <math>h_K = |\mathcal{C}_K|</math>. במובן מסוים, מספר המחלקה מודד כמה "רחוק" חוג השלמים <math>\mathcal{O}_K</math> מלהיות [[תחום פריקות יחידה]]: <math>h_K = 1</math> אם ורק אם <math>\mathcal{O}_K</math> הוא תחום פריקות יחידה.
+
+==== סדרה מדויקת לחבורות מחלקות ====
+לכל שדה מספרים יש [[סדרה מדויקת]]
+:<math>1 \to \mathcal{O}_K^\times \to K^\times \to \mathcal{I}_K \to \mathcal{C}_K \to 1,</math>
+שבה ההעתקה <math>K^\times \to \mathcal{I}_K</math> שולחת איבר <math>x</math> לאידיאל השבור הראשי <math>x\mathcal{O}_K</math>.
+
+=== משפט המבנה לאידיאלים שבורים ===
+אחד ממשפטי המבנה החשובים לאידיאלים שבורים של שדה מספרים קובע שכל אידיאל שבור <math>I</math> שונה מאפס מתפרק באופן יחיד (עד כדי סדר הגורמים) כ-
+:<math>I = (\mathfrak{p}_1\cdots\mathfrak{p}_n)(\mathfrak{q}_1\cdots\mathfrak{q}_m)^{-1},</math>
+כאשר <math>\mathfrak{p}_i, \mathfrak{q}_j</math> הם [[אידיאל ראשוני|אידיאלים ראשוניים]] של <math>\mathcal{O}_K</math> (ואפשר לדרוש שאף <math>\mathfrak p_i</math> לא יהיה שווה לאף <math>\mathfrak q_j</math>). כלומר, <math>\mathcal I_K</math> היא החבורה האבלית החופשית שנוצרת על ידי האידיאלים הראשוניים השונים מאפס. לדוגמה, ב-<math>\mathbb Z[i]</math> מתקיים
+:<math>\tfrac{2}{5}\mathbb Z[i] = (1+i)^2\,\bigl((1+2i)(1-2i)\bigr)^{-1},</math>
+משום ש-<math>2 = -i(1+i)^2</math> ו-<math>5 = (1+2i)(1-2i)</math>, והאידיאלים <math>(1+i)</math>, <math>(1+2i)</math> ו-<math>(1-2i)</math> ראשוניים ושונים זה מזה.{{הערה|1=בערך האנגלי נכתב <math>(1+i)(1-i)</math> במקום <math>(1+i)^2</math>. זה אותו אידיאל, משום ש-<math>1-i = -i(1+i)</math> ולכן <math>(1-i) = (1+i)</math>.}}
+
+משפט מבנה שימושי נוסף הוא שכל אידיאל שבור שלם (כלומר אידיאל שבור שמוכל ב-<math>\mathcal O_K</math>) נוצר על ידי שני איברים לכל היותר.
+
+== דוגמאות ==
+* <math>\tfrac{5}{4}\mathbb{Z}</math> הוא אידיאל שבור של <math>\mathbb{Z}</math> (ראו למעלה).
+* עבור <math>K = \mathbb{Q}(i)</math>, האידיאל <math>(5)</math> מתפצל ב-<math>\mathcal{O}_{\mathbb{Q}(i)} = \mathbb{Z}[i]</math> כמכפלה <math>(2-i)(2+i)</math>: אכן <math>(2-i)(2+i) = 4 - i^2 = 5</math>. (זהו אותו פירוק כמו <math>(1+2i)(1-2i)</math>, משום ש-<math>2-i = -i(1+2i)</math>.)
+* עבור <math>K=\mathbb{Q}(\zeta_3)</math>, כאשר <math>\zeta_3 = e^{2\pi i/3}</math>, מתקיים הפירוק <math>(3) = (2\zeta_3 + 1)^2</math>. כדי לראות זאת, מחשבים
+:<math>(2\zeta_3 + 1)^2 = 4\zeta_3^2 + 4\zeta_3 + 1 = 4(\zeta_3^2 + \zeta_3) + 1 = -3,</math>
+:משום ש-<math>\zeta_3</math> מקיים <math>\zeta_3^2 + \zeta_3 + 1 = 0</math>. מאחר ש-<math>-1</math> הפיך, <math>(-3) = (3)</math>. כאן הראשוני 3 '''מסועף''': הוא הופך לריבוע של אידיאל ראשוני.
+* עבור <math>K=\mathbb{Q}(\sqrt{-23})</math>, חוג השלמים הוא <math>\mathbb Z[\omega]</math> עם <math>\omega = \tfrac{1+\sqrt{-23}}{2}</math>, שמקיים <math>\omega^2 = \omega - 6</math>. נכפול את האידיאלים
+:<math>I = \left(2, \tfrac12\sqrt{-23} - \tfrac12\right) = (2, \omega - 1), \qquad J=\left(4,\tfrac12\sqrt{-23} + \tfrac32\right) = (4, \omega+1).</math>
+:המכפלה נוצרת על ידי ארבע המכפלות של היוצרים:
+:<math>8,\qquad 2(\omega+1),\qquad 4(\omega-1),\qquad (\omega-1)(\omega+1) = \omega^2 - 1 = \omega - 7.</math>
+:כל ארבעתן כפולות של <math>\omega + 1</math>:
+:<math>8 = (\omega+1)(2-\omega),\qquad 2(\omega+1),\qquad 4(\omega-1) = (\omega+1)(\omega+2),\qquad \omega - 7 = (\omega+1)(\omega-1).</math>
+:(למשל <math>(\omega+1)(2-\omega) = 2 + \omega - \omega^2 = 2 + \omega - (\omega - 6) = 8</math>, ו-<math>(\omega+1)(\omega+2) = \omega^2 + 3\omega + 2 = 4\omega - 4</math>.) לכן <math>IJ \subseteq (\omega+1)</math>. מצד שני, <math>\omega+1 = 2(\omega+1) - (\omega-7) - 8</math> הוא צירוף של יוצרים של <math>IJ</math>, ולכן <math>(\omega+1) \subseteq IJ</math>. בסך הכול
+:<math>IJ=\left(\tfrac12\sqrt{-23}+\tfrac32\right) = (\omega + 1).</math>
+:בדיקת נורמות: <math>N(I) = 2</math>, <math>N(J) = 4</math> ו-<math>N(\omega+1) = (\omega+1)(\bar\omega+1) = 6 + 1 + 1 = 8 = 2\cdot 4</math>.
+
+== אידיאלים דיביזוריאליים ==
+יהי <math>I</math> אידיאל שבור שונה מאפס, ונסמן ב-<math>\tilde I</math> את ה[[חיתוך (מתמטיקה)|חיתוך]] של כל האידיאלים השבורים הראשיים שמכילים את <math>I</math>. באופן שקול,
+:<math>\tilde I = (R : (R : I)),</math>
+כאשר כמו למעלה
+:<math>(R : I) = \{ x \in K : xI \subseteq R \}.</math>
+אם <math>\tilde I = I</math>, אומרים ש-<math>I</math> '''דיביזוריאלי'''.{{הערה|שם=B|1=N. Bourbaki, ''Commutative Algebra'', 2nd ed., Springer, 1998, §VII.1|כיווון=שמאל}} במילים אחרות, אידיאל דיביזוריאלי הוא חיתוך שונה מאפס של קבוצה לא ריקה של אידיאלים שבורים ראשיים.
+
+אם <math>I</math> דיביזוריאלי ו-<math>J</math> אידיאל שבור שונה מאפס, אז גם <math>(I : J)</math> דיביזוריאלי.
+
+יהי <math>R</math> [[חוג מקומי]] שהוא תחום קרול (למשל תחום נתרי מקומי וסגור שלמותית). אז <math>R</math> הוא [[תחום הערכה דיסקרטית]] אם ורק אם ה[[אידיאל מקסימלי|אידיאל המקסימלי]] שלו דיביזוריאלי.{{הערה|שם=B2|1=N. Bourbaki, ''Commutative Algebra'', Ch. VII, §1, no. 7, Proposition 11|כיווון=שמאל}}
+
+תחום שלמות שמקיים את [[תנאי שרשרת (מתמטיקה)|תנאי השרשרת העולה]] על אידיאלים דיביזוריאליים נקרא '''תחום מורי'''.{{הערה|1=V. Barucci, ''Mori domains'', in: S. Glaz, S. T. Chapman (eds.), Non-Noetherian Commutative Ring Theory, Mathematics and its Applications '''520''', Kluwer, 2000, pp. 57–73|כיווון=שמאל}}
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* M. F. Atiyah, I. G. Macdonald, ''Introduction to Commutative Algebra'', Westview Press, 1994, chapter 9
+* N. Bourbaki, ''Commutative Algebra'', 2nd ed., Springer, 1998, chapter VII.1
+* H. Matsumura, ''Commutative Ring Theory'', 2nd ed., Cambridge Studies in Advanced Mathematics '''8''', Cambridge University Press, 1989, chapter 11
+* W. Stein, ''A Computational Introduction to Algebraic Number Theory''
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
