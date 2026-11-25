@@ -3030,6 +3030,47 @@ def _():
     save('14-bdh')
 
 
+@fig('15-7')
+def _():
+    def J(X):
+        x = np.arange(1, X + 1)
+        a, b, c = np.meshgrid(x, x, x, indexing='ij')
+        key = (a + b + c) * (3 * X * X + 1) + (a * a + b * b + c * c)
+        _, cnt = np.unique(key.ravel(), return_counts=True)
+        return float((cnt.astype(np.int64) ** 2).sum())
+    Xs = [5, 8, 12, 16, 24, 32, 48, 64, 80]
+    vals = [J(X) / X ** 3 for X in Xs]
+    ax = plt.gca()
+    ax.semilogx(Xs, vals, 'o-', color=C1, label='J_{3,2}(X) / X³')
+    sl = np.polyfit(np.log(Xs[3:]), vals[3:], 1)
+    ax.semilogx(Xs, np.polyval(sl, np.log(Xs)), '--', color=C2, lw=1, label=f'≈ {sl[0]:.2f}·log X + {sl[1]:.2f}')
+    ax.set_xlabel('X'); ax.legend(fontsize=8)
+    ax.set_title('Critical case s = k(k+1)/2 = 3, k = 2: J grows like X³ log X', fontsize=9)
+    save('15-7')
+
+
+@fig('09-8')
+def _():
+    N = 100000
+    ts = np.linspace(0, 1, 101)
+    divs = [[] for _ in range(N + 1)]
+    for d in range(1, N + 1):
+        for m in range(d, N + 1, d):
+            divs[m].append(d)
+    acc = np.zeros_like(ts)
+    for n in range(2, N + 1):
+        L = np.log(np.array(divs[n])) / np.log(n)
+        acc += np.searchsorted(np.sort(L), ts + 1e-12, side='right') / len(L)
+    acc /= N
+    ax = plt.gca()
+    ax.plot(ts, acc, color=C1, label='average of P(D_n ≤ t), n ≤ 10⁵')
+    ax.plot(ts, 2 / np.pi * np.arcsin(np.sqrt(ts)), '--', color=C2, label='(2/π) arcsin √t')
+    ax.plot(ts, ts, ':', color=GR, lw=1, label='uniform')
+    ax.set_xlabel('t'); ax.legend(fontsize=8)
+    ax.set_title('Deshouillers–Dress–Tenenbaum: log d / log n follows the arcsine law', fontsize=9)
+    save('09-8')
+
+
 
 if __name__ == '__main__':
     import sys
