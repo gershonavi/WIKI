@@ -35,7 +35,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Brun's theorem
 - [ ] Green–Tao theorem
 - [ ] Twin prime conjecture
-- [ ] Polignac's conjecture
+- [x] Polignac's conjecture
 - [ ] First Hardy–Littlewood conjecture
 - [x] Andrica's conjecture
 - [ ] Legendre's three-square theorem
