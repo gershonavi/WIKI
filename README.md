@@ -293,7 +293,7 @@
 * [פונקציית דיקמן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%93%D7%99%D7%A7%D7%9E%D7%9F.md) – Dickman function
 * [קבוע מייסל-מרטנס](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Meissel–Mertens constant
 * [קבוצת היילברון](pages/%D7%A7%D7%91%D7%95%D7%A6%D7%AA%20%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Heilbronn set
-* [שיטת הדטרמיננטה](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%93%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%A0%D7%98%D7%94.md)
+* [שיטת הדטרמיננטה](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%93%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%A0%D7%98%D7%94.md) – Determinant method
 * [שיטת המטריצה של מאייר](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%94%20%D7%A9%D7%9C%20%D7%9E%D7%90%D7%99%D7%99%D7%A8.md) – Maier's matrix method
 * [שיטת המעגל של הארדי וליטלווד](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%9E%D7%A2%D7%92%D7%9C%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A8%D7%93%D7%99%20%D7%95%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93.md) – Hardy–Ramanujan–Littlewood circle method
 * [תופעת דויירינג-היילברון](pages/%D7%AA%D7%95%D7%A4%D7%A2%D7%AA%20%D7%93%D7%95%D7%99%D7%99%D7%A8%D7%99%D7%A0%D7%92-%D7%94%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%95%D7%9F.md) – Deuring–Heilbronn phenomenon
