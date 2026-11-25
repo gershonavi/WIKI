@@ -14,13 +14,17 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
+**[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
+
 ## ערכים (262)
 
-### אנליזה מרוכבת
+כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
+
+### [אנליזה מרוכבת](categories/%D7%90%D7%A0%D7%9C%D7%99%D7%96%D7%94%20%D7%9E%D7%A8%D7%95%D7%9B%D7%91%D7%AA.md)
 
 * [התמרת מלין](pages/%D7%94%D7%AA%D7%9E%D7%A8%D7%AA%20%D7%9E%D7%9C%D7%99%D7%9F.md) – Mellin transform
 
-### בעיות פתוחות בתורת המספרים
+### [בעיות פתוחות בתורת המספרים](categories/%D7%91%D7%A2%D7%99%D7%95%D7%AA%20%D7%A4%D7%AA%D7%95%D7%97%D7%95%D7%AA%20%D7%91%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md)
 
 * [השערות מרסן](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%9E%D7%A8%D7%A1%D7%9F.md) – Mersenne conjectures
 * [השערת אנדריקה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%A0%D7%93%D7%A8%D7%99%D7%A7%D7%94.md) – Andrica's conjecture
@@ -32,36 +36,43 @@
 * [השערת פוליניאק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A4%D7%95%D7%9C%D7%99%D7%A0%D7%99%D7%90%D7%A7.md) – Polignac's conjecture
 * [מספר אידוניאלי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%90%D7%99%D7%93%D7%95%D7%A0%D7%99%D7%90%D7%9C%D7%99.md) – Idoneal number
 
-### גאומטריה אלגברית
+### [גאומטריה אלגברית](categories/%D7%92%D7%90%D7%95%D7%9E%D7%98%D7%A8%D7%99%D7%94%20%D7%90%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%AA.md)
 
 * [יריעת שימורה](pages/%D7%99%D7%A8%D7%99%D7%A2%D7%AA%20%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Shimura variety
 * [פונקציית זטא מקומית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%AA.md) – Local zeta function
 
-### השערות במתמטיקה
-
-* [השערות הארדי–ליטלווד על פונקציית זטא](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%90%D7%A8%D7%93%D7%99%E2%80%93%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90.md) – Hardy–Littlewood zeta function conjectures
-* [השערות סטארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%A1%D7%98%D7%90%D7%A8%D7%A7.md) – Stark conjectures
-* [השערת ברומר–סטארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%95%D7%9E%D7%A8%E2%80%93%D7%A1%D7%98%D7%90%D7%A8%D7%A7.md) – Brumer–Stark conjecture
-
-### השערות מתמטיות
+### [השערות מתמטיות](categories/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%95%D7%AA.md)
 
 * [בעיית פונקציית אוילר של להמר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8%20%D7%A9%D7%9C%20%D7%9C%D7%94%D7%9E%D7%A8.md) – Lehmer's totient problem
+* [השערות הארדי–ליטלווד על פונקציית זטא](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%94%D7%90%D7%A8%D7%93%D7%99%E2%80%93%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90.md) – Hardy–Littlewood zeta function conjectures
 * [השערות וייל](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%95%D7%99%D7%99%D7%9C.md) – Weil conjectures
+* [השערות סטארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%A1%D7%98%D7%90%D7%A8%D7%A7.md) – Stark conjectures
 * [השערות פולוק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%A4%D7%95%D7%9C%D7%95%D7%A7.md) – Pollock's conjectures
+* [השערת ברומר–סטארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%A8%D7%95%D7%9E%D7%A8%E2%80%93%D7%A1%D7%98%D7%90%D7%A8%D7%A7.md) – Brumer–Stark conjecture
 
-### חשבון מודולרי
+### [חוקרי תורת המספרים](categories/%D7%97%D7%95%D7%A7%D7%A8%D7%99%20%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md)
+
+* [ארנסט מייסל](pages/%D7%90%D7%A8%D7%A0%D7%A1%D7%98%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C.md) – Ernst Meissel
+* [ג'פרי לגריאס](pages/%D7%92%27%D7%A4%D7%A8%D7%99%20%D7%9C%D7%92%D7%A8%D7%99%D7%90%D7%A1.md) – Jeffrey Lagarias
+* [הרולד אדוארדס](pages/%D7%94%D7%A8%D7%95%D7%9C%D7%93%20%D7%90%D7%93%D7%95%D7%90%D7%A8%D7%93%D7%A1.md) – Harold Edwards (mathematician)
+* [הרולד דבנפורט](pages/%D7%94%D7%A8%D7%95%D7%9C%D7%93%20%D7%93%D7%91%D7%A0%D7%A4%D7%95%D7%A8%D7%98.md) – Harold Davenport
+* [הרמן טה רילה](pages/%D7%94%D7%A8%D7%9E%D7%9F%20%D7%98%D7%94%20%D7%A8%D7%99%D7%9C%D7%94.md) – Herman te Riele
+* [ויקטור מילר (מתמטיקאי)](pages/%D7%95%D7%99%D7%A7%D7%98%D7%95%D7%A8%20%D7%9E%D7%99%D7%9C%D7%A8%20%28%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%A7%D7%90%D7%99%29.md) – Victor S. Miller
+* [פרנץ מרטנס](pages/%D7%A4%D7%A8%D7%A0%D7%A5%20%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Franz Mertens
+
+### [חשבון מודולרי](categories/%D7%97%D7%A9%D7%91%D7%95%D7%9F%20%D7%9E%D7%95%D7%93%D7%95%D7%9C%D7%A8%D7%99.md)
 
 * [משפט הניפוי של רוג'רס](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%A0%D7%99%D7%A4%D7%95%D7%99%20%D7%A9%D7%9C%20%D7%A8%D7%95%D7%92%27%D7%A8%D7%A1.md) – Rogers sieving theorem
 
-### מטריצות
+### [מטריצות](categories/%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%95%D7%AA.md)
 
 * [מטריצת רדהפר](pages/%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%AA%20%D7%A8%D7%93%D7%94%D7%A4%D7%A8.md) – Redheffer matrix
 
-### מספרים טרנסצנדנטיים
+### [מספרים טרנסצנדנטיים](categories/%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%98%D7%A8%D7%A0%D7%A1%D7%A6%D7%A0%D7%93%D7%A0%D7%98%D7%99%D7%99%D7%9D.md)
 
 * [פונקציית E](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20E.md) – E-function
 
-### מספרים ראשוניים
+### [מספרים ראשוניים](categories/%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D.md)
 
 * [אי-שוויון בונזה](pages/%D7%90%D7%99-%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F%20%D7%91%D7%95%D7%A0%D7%96%D7%94.md) – Bonse's inequality
 * [ההשערה הסינית](pages/%D7%94%D7%94%D7%A9%D7%A2%D7%A8%D7%94%20%D7%94%D7%A1%D7%99%D7%A0%D7%99%D7%AA.md) – Chinese hypothesis
@@ -78,18 +89,20 @@
 * [משפט פרות](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%A8%D7%95%D7%AA.md) – Proth's theorem
 * [פונקציות אומגה ראשוניות](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20%D7%90%D7%95%D7%9E%D7%92%D7%94%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%95%D7%AA.md) – Prime omega function
 
-### משוואות דיופנטיות
+### [משוואות דיופנטיות](categories/%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%95%D7%AA%20%D7%93%D7%99%D7%95%D7%A4%D7%A0%D7%98%D7%99%D7%95%D7%AA.md)
 
 * [משפט בירץ'](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%99%D7%A8%D7%A5%27.md) – Birch's theorem
 * [סכום של שלושה מעוקבים](pages/%D7%A1%D7%9B%D7%95%D7%9D%20%D7%A9%D7%9C%20%D7%A9%D7%9C%D7%95%D7%A9%D7%94%20%D7%9E%D7%A2%D7%95%D7%A7%D7%91%D7%99%D7%9D.md) – Sums of three cubes
 * [רביעייה פיתגורית](pages/%D7%A8%D7%91%D7%99%D7%A2%D7%99%D7%99%D7%94%20%D7%A4%D7%99%D7%AA%D7%92%D7%95%D7%A8%D7%99%D7%AA.md) – Pythagorean quadruple
 
-### משפטים באנליזה מרוכבת
+### [משפטים באנליזה מרוכבת](categories/%D7%9E%D7%A9%D7%A4%D7%98%D7%99%D7%9D%20%D7%91%D7%90%D7%A0%D7%9C%D7%99%D7%96%D7%94%20%D7%9E%D7%A8%D7%95%D7%9B%D7%91%D7%AA.md)
 
 * [משפט ההיפוך של מלין](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%94%D7%99%D7%A4%D7%95%D7%9A%20%D7%A9%D7%9C%20%D7%9E%D7%9C%D7%99%D7%9F.md) – Mellin inversion theorem
 
-### משפטים בתורת המספרים
+### [משפטים בתורת המספרים](categories/%D7%9E%D7%A9%D7%A4%D7%98%D7%99%D7%9D%20%D7%91%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md)
 
+* [הזהות של ווהן](pages/%D7%94%D7%96%D7%94%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%95%D7%95%D7%94%D7%9F.md) – Vaughan's identity
+* [הטיה של צ'בישב](pages/%D7%94%D7%98%D7%99%D7%94%20%D7%A9%D7%9C%20%D7%A6%27%D7%91%D7%99%D7%A9%D7%91.md) – Chebyshev's bias
 * [משפט אפרי](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A4%D7%A8%D7%99.md) – Apéry's theorem
 * [משפט ארבעת הריבועים של לגראנז'](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%91%D7%A2%D7%AA%20%D7%94%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%9C%D7%92%D7%A8%D7%90%D7%A0%D7%96%27.md) – Lagrange's four-square theorem
 * [משפט ארדש-טטלי](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%90%D7%A8%D7%93%D7%A9-%D7%98%D7%98%D7%9C%D7%99.md) – Erdős–Tetali theorem
@@ -98,6 +111,7 @@
 * [משפט בומביירי-וינוגרדוב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%95%D7%9E%D7%91%D7%99%D7%99%D7%A8%D7%99-%D7%95%D7%99%D7%A0%D7%95%D7%92%D7%A8%D7%93%D7%95%D7%91.md) – Bombieri–Vinogradov theorem
 * [משפט ברון-טיצ'מרש](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%95%D7%9F-%D7%98%D7%99%D7%A6%27%D7%9E%D7%A8%D7%A9.md) – Brun–Titchmarsh theorem
 * [משפט גרין-טאו](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%92%D7%A8%D7%99%D7%9F-%D7%98%D7%90%D7%95.md) – Green–Tao theorem
+* [משפט האידיאלים הראשוניים של לנדאו](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%9C%D7%A0%D7%93%D7%90%D7%95.md) – Landau prime ideal theorem
 * [משפט הארדי-רמנוג'אן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%A8%D7%93%D7%99-%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md) – Hardy–Ramanujan theorem
 * [משפט וולסטנהולם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%95%D7%9C%D7%A1%D7%98%D7%A0%D7%94%D7%95%D7%9C%D7%9D.md) – Wolstenholme's theorem
 * [משפט ונטיגם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%A0%D7%98%D7%99%D7%92%D7%9D.md) – Vantieghems theorem
@@ -110,60 +124,29 @@
 * [משפט רוסר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A8%D7%95%D7%A1%D7%A8.md) – Rosser's theorem
 * [משפט שלושת הריבועים של לז'נדר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A9%D7%9C%D7%95%D7%A9%D7%AA%20%D7%94%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%9C%D7%96%27%D7%A0%D7%93%D7%A8.md) – Legendre's three-square theorem
 * [משפטי 15 ו-290](pages/%D7%9E%D7%A9%D7%A4%D7%98%D7%99%2015%20%D7%95-290.md) – 15 and 290 theorems
-* [נוסחת רימן-פון מנגולדט](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%A4%D7%95%D7%9F%20%D7%9E%D7%A0%D7%92%D7%95%D7%9C%D7%93%D7%98.md) – Riemann–von Mangoldt formula
-
-### משפטים בתורת המספרים האנליטית
-
-* [הזהות של ווהן](pages/%D7%94%D7%96%D7%94%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%95%D7%95%D7%94%D7%9F.md) – Vaughan's identity
-* [הטיה של צ'בישב](pages/%D7%94%D7%98%D7%99%D7%94%20%D7%A9%D7%9C%20%D7%A6%27%D7%91%D7%99%D7%A9%D7%91.md) – Chebyshev's bias
-* [משפט האידיאלים הראשוניים של לנדאו](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%99%D7%93%D7%99%D7%90%D7%9C%D7%99%D7%9D%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%9C%D7%A0%D7%93%D7%90%D7%95.md) – Landau prime ideal theorem
 * [נוסחת הגבול של קרונקר](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%92%D7%91%D7%95%D7%9C%20%D7%A9%D7%9C%20%D7%A7%D7%A8%D7%95%D7%A0%D7%A7%D7%A8.md) – Kronecker limit formula
 * [נוסחת העקבה של פטרסון](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%A2%D7%A7%D7%91%D7%94%20%D7%A9%D7%9C%20%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F.md) – Petersson trace formula
+* [נוסחת רימן-פון מנגולדט](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%A4%D7%95%D7%9F%20%D7%9E%D7%A0%D7%92%D7%95%D7%9C%D7%93%D7%98.md) – Riemann–von Mangoldt formula
 
-### מתמטיקאים אמריקאים
-
-* [ג'פרי לגריאס](pages/%D7%92%27%D7%A4%D7%A8%D7%99%20%D7%9C%D7%92%D7%A8%D7%99%D7%90%D7%A1.md) – Jeffrey Lagarias
-* [הרולד אדוארדס](pages/%D7%94%D7%A8%D7%95%D7%9C%D7%93%20%D7%90%D7%93%D7%95%D7%90%D7%A8%D7%93%D7%A1.md) – Harold Edwards (mathematician)
-* [ויקטור מילר (מתמטיקאי)](pages/%D7%95%D7%99%D7%A7%D7%98%D7%95%D7%A8%20%D7%9E%D7%99%D7%9C%D7%A8%20%28%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%A7%D7%90%D7%99%29.md) – Victor S. Miller
-
-### מתמטיקאים אנגלים
-
-* [הרולד דבנפורט](pages/%D7%94%D7%A8%D7%95%D7%9C%D7%93%20%D7%93%D7%91%D7%A0%D7%A4%D7%95%D7%A8%D7%98.md) – Harold Davenport
-
-### מתמטיקאים גרמנים
-
-* [ארנסט מייסל](pages/%D7%90%D7%A8%D7%A0%D7%A1%D7%98%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C.md) – Ernst Meissel
-
-### מתמטיקאים הולנדים
-
-* [הרמן טה רילה](pages/%D7%94%D7%A8%D7%9E%D7%9F%20%D7%98%D7%94%20%D7%A8%D7%99%D7%9C%D7%94.md) – Herman te Riele
-
-### מתמטיקאים פולנים
-
-* [פרנץ מרטנס](pages/%D7%A4%D7%A8%D7%A0%D7%A5%20%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Franz Mertens
-
-### סדרות של מספרים שלמים
-
-* [סדרת מספרים שלמים](pages/%D7%A1%D7%93%D7%A8%D7%AA%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9E%D7%99%D7%9D.md) – Integer sequence
-
-### סדרות של שלמים
+### [סדרות של שלמים](categories/%D7%A1%D7%93%D7%A8%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%A9%D7%9C%D7%9E%D7%99%D7%9D.md)
 
 * [מספר חצי-ראשוני](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%A6%D7%99-%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99.md) – Semiprime
 * [סדרת התחלקות](pages/%D7%A1%D7%93%D7%A8%D7%AA%20%D7%94%D7%AA%D7%97%D7%9C%D7%A7%D7%95%D7%AA.md) – Divisibility sequence
+* [סדרת מספרים שלמים](pages/%D7%A1%D7%93%D7%A8%D7%AA%20%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9E%D7%99%D7%9D.md) – Integer sequence
 
-### סריניוואסה רמנוג'ן
+### [סריניוואסה רמנוג'אן](categories/%D7%A1%D7%A8%D7%99%D7%A0%D7%99%D7%95%D7%95%D7%90%D7%A1%D7%94%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md)
 
 * [משפט המאסטר של רמנוג'ן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%9E%D7%90%D7%A1%D7%98%D7%A8%20%D7%A9%D7%9C%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%9F.md) – Ramanujan's master theorem
 
-### עקומים אלגבריים מישוריים
+### [עקומים אלגבריים מישוריים](categories/%D7%A2%D7%A7%D7%95%D7%9E%D7%99%D7%9D%20%D7%90%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%99%D7%9D%20%D7%9E%D7%99%D7%A9%D7%95%D7%A8%D7%99%D7%99%D7%9D.md)
 
 * [העקום המודולרי הקלאסי](pages/%D7%94%D7%A2%D7%A7%D7%95%D7%9D%20%D7%94%D7%9E%D7%95%D7%93%D7%95%D7%9C%D7%A8%D7%99%20%D7%94%D7%A7%D7%9C%D7%90%D7%A1%D7%99.md) – Classical modular curve
 
-### עקומים אליפטיים
+### [עקומים אליפטיים](categories/%D7%A2%D7%A7%D7%95%D7%9E%D7%99%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99%D7%99%D7%9D.md)
 
 * [דרגה של עקום אליפטי](pages/%D7%93%D7%A8%D7%92%D7%94%20%D7%A9%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99.md) – Rank of an elliptic curve
 
-### פונקציות אריתמטיות
+### [פונקציות אריתמטיות](categories/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%95%D7%AA.md)
 
 * [בעיית המחלקים של דיריכלה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Divisor summatory function
 * [דרגה של חלוקה](pages/%D7%93%D7%A8%D7%92%D7%94%20%D7%A9%D7%9C%20%D7%97%D7%9C%D7%95%D7%A7%D7%94.md) – Rank of a partition
@@ -184,22 +167,27 @@
 * [פונקציה כפלית לחלוטין](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%D7%9B%D7%A4%D7%9C%D7%99%D7%AA%20%D7%9C%D7%97%D7%9C%D7%95%D7%98%D7%99%D7%9F.md) – Completely multiplicative function
 * [פונקציית הדלתא של הולי](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%94%D7%93%D7%9C%D7%AA%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%95%D7%9C%D7%99.md) – Hooley's delta function
 * [פונקציית הטאו של רמנוג'אן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%94%D7%98%D7%90%D7%95%20%D7%A9%D7%9C%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md) – Ramanujan tau function
+* [פונקציית ז'ורדן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%27%D7%95%D7%A8%D7%93%D7%9F.md) – Jordan's totient function
 * [פונקציית מרטנס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%9E%D7%A8%D7%98%D7%A0%D7%A1.md) – Mertens function
 * [פונקציית פסי של דדקינד](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%A4%D7%A1%D7%99%20%D7%A9%D7%9C%20%D7%93%D7%93%D7%A7%D7%99%D7%A0%D7%93.md) – Dedekind psi function
 * [פונקציית צ'בישב](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%A6%27%D7%91%D7%99%D7%A9%D7%91.md) – Chebyshev function
+* [פרימוריאל](pages/%D7%A4%D7%A8%D7%99%D7%9E%D7%95%D7%A8%D7%99%D7%90%D7%9C.md) – Primorial
 * [קרנק של חלוקה](pages/%D7%A7%D7%A8%D7%A0%D7%A7%20%D7%A9%D7%9C%20%D7%97%D7%9C%D7%95%D7%A7%D7%94.md) – Crank of a partition
 
-### פונקציות זטא
+### [פונקציות זטא](categories/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20%D7%96%D7%98%D7%90.md)
 
 * [ZetaGrid](pages/ZetaGrid.md) – ZetaGrid
 * [הוכחת נוסחת מכפלת אוילר לפונקציית זטא של רימן](pages/%D7%94%D7%95%D7%9B%D7%97%D7%AA%20%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%9E%D7%9B%D7%A4%D7%9C%D7%AA%20%D7%90%D7%95%D7%99%D7%9C%D7%A8%20%D7%9C%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%99%D7%9E%D7%9F.md) – Proof of the Euler product formula for the Riemann zeta function
 * [הטרנסצנדנט של לרך](pages/%D7%94%D7%98%D7%A8%D7%A0%D7%A1%D7%A6%D7%A0%D7%93%D7%A0%D7%98%20%D7%A9%D7%9C%20%D7%9C%D7%A8%D7%9A.md) – Lerch transcendent
+* [הנוסחה של חג'יקוסטס](pages/%D7%94%D7%A0%D7%95%D7%A1%D7%97%D7%94%20%D7%A9%D7%9C%20%D7%97%D7%92%27%D7%99%D7%A7%D7%95%D7%A1%D7%98%D7%A1.md) – Hadjicostas's formula
 * [הקריטריון של וייל](pages/%D7%94%D7%A7%D7%A8%D7%99%D7%98%D7%A8%D7%99%D7%95%D7%9F%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%99%D7%9C.md) – Weil's criterion
+* [השיטה של טיורינג](pages/%D7%94%D7%A9%D7%99%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%98%D7%99%D7%95%D7%A8%D7%99%D7%A0%D7%92.md) – Turing's method
 * [השערת דווארק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%93%D7%95%D7%95%D7%90%D7%A8%D7%A7.md) – Dwork conjecture
 * [השערת הילברט-פוליה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%99%D7%9C%D7%91%D7%A8%D7%98-%D7%A4%D7%95%D7%9C%D7%99%D7%94.md) – Hilbert–Pólya conjecture
 * [השערת סלברג על פונקציית זטא](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92%20%D7%A2%D7%9C%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90.md) – Selberg's zeta function conjecture
 * [השערת רימן הגדולה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94.md) – Grand Riemann hypothesis
 * [השערת רימן המוכללת](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%9E%D7%95%D7%9B%D7%9C%D7%9C%D7%AA.md) – Generalized Riemann hypothesis
+* [טור זטא רציונלי](pages/%D7%98%D7%95%D7%A8%20%D7%96%D7%98%D7%90%20%D7%A8%D7%A6%D7%99%D7%95%D7%A0%D7%9C%D7%99.md) – Rational zeta series
 * [מחלקת סלברג](pages/%D7%9E%D7%97%D7%9C%D7%A7%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg class
 * [ממוצע ריס](pages/%D7%9E%D7%9E%D7%95%D7%A6%D7%A2%20%D7%A8%D7%99%D7%A1.md) – Riesz mean
 * [משוואת הפונקציה (פונקציית L)](pages/%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%AA%20%D7%94%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%28%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%29.md) – Functional equation (L-function)
@@ -218,13 +206,18 @@
 * [פונקציית זטא (אופרטור)](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%28%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8%29.md) – Zeta function (operator)
 * [פונקציית זטא אריתמטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic zeta function
 * [פונקציית זטא הראשונית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%AA.md) – Prime zeta function
+* [פונקציית זטא מרובה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%9E%D7%A8%D7%95%D7%91%D7%94.md) – Multiple zeta function
 * [פונקציית זטא של איגוסה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%92%D7%95%D7%A1%D7%94.md) – Igusa zeta function
 * [פונקציית זטא של איהרה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%94%D7%A8%D7%94.md) – Ihara zeta function
+* [פונקציית זטא של איירי](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%A8%D7%99.md) – Airy zeta function
 * [פונקציית זטא של ארטין–מאזור](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%A8%D7%98%D7%99%D7%9F%E2%80%93%D7%9E%D7%90%D7%96%D7%95%D7%A8.md) – Artin–Mazur zeta function
+* [פונקציית זטא של ארקאווה–קאנקו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%A8%D7%A7%D7%90%D7%95%D7%95%D7%94%E2%80%93%D7%A7%D7%90%D7%A0%D7%A7%D7%95.md) – Arakawa–Kaneko zeta function
+* [פונקציית זטא של בארנס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%91%D7%90%D7%A8%D7%A0%D7%A1.md) – Barnes zeta function
 * [פונקציית זטא של בירלינג](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%91%D7%99%D7%A8%D7%9C%D7%99%D7%A0%D7%92.md) – Beurling zeta function
 * [פונקציית זטא של גוס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%92%D7%95%D7%A1.md) – Goss zeta function
 * [פונקציית זטא של האסה–וייל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%90%D7%A1%D7%94%E2%80%93%D7%95%D7%99%D7%99%D7%9C.md) – Hasse–Weil zeta function
 * [פונקציית זטא של הורוויץ](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%94%D7%95%D7%A8%D7%95%D7%95%D7%99%D7%A5.md) – Hurwitz zeta function
+* [פונקציית זטא של ויטן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%98%D7%9F.md) – Witten zeta function
 * [פונקציית זטא של לפשץ](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9C%D7%A4%D7%A9%D7%A5.md) – Lefschetz zeta function
 * [פונקציית זטא של מטסומוטו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9E%D7%98%D7%A1%D7%95%D7%9E%D7%95%D7%98%D7%95.md) – Matsumoto zeta function
 * [פונקציית זטא של מינאקשיסונדרם–פליז'ל](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%9E%D7%99%D7%A0%D7%90%D7%A7%D7%A9%D7%99%D7%A1%D7%95%D7%A0%D7%93%D7%A8%D7%9D%E2%80%93%D7%A4%D7%9C%D7%99%D7%96%27%D7%9C.md) – Minakshisundaram–Pleijel zeta function
@@ -239,70 +232,54 @@
 * [רשימת פונקציות זטא](pages/%D7%A8%D7%A9%D7%99%D7%9E%D7%AA%20%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20%D7%96%D7%98%D7%90.md) – List of zeta functions
 * [שיטת רנקין–סלברג](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%A8%D7%A0%D7%A7%D7%99%D7%9F%E2%80%93%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Rankin–Selberg method
 
-### פונקציות זטא ופונקציות L
-
-* [הנוסחה של חג'יקוסטס](pages/%D7%94%D7%A0%D7%95%D7%A1%D7%97%D7%94%20%D7%A9%D7%9C%20%D7%97%D7%92%27%D7%99%D7%A7%D7%95%D7%A1%D7%98%D7%A1.md) – Hadjicostas's formula
-* [השיטה של טיורינג](pages/%D7%94%D7%A9%D7%99%D7%98%D7%94%20%D7%A9%D7%9C%20%D7%98%D7%99%D7%95%D7%A8%D7%99%D7%A0%D7%92.md) – Turing's method
-* [טור זטא רציונלי](pages/%D7%98%D7%95%D7%A8%20%D7%96%D7%98%D7%90%20%D7%A8%D7%A6%D7%99%D7%95%D7%A0%D7%9C%D7%99.md) – Rational zeta series
-* [פונקציית זטא מרובה](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%9E%D7%A8%D7%95%D7%91%D7%94.md) – Multiple zeta function
-* [פונקציית זטא של איירי](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%A8%D7%99.md) – Airy zeta function
-* [פונקציית זטא של ארקאווה–קאנקו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%90%D7%A8%D7%A7%D7%90%D7%95%D7%95%D7%94%E2%80%93%D7%A7%D7%90%D7%A0%D7%A7%D7%95.md) – Arakawa–Kaneko zeta function
-* [פונקציית זטא של בארנס](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%91%D7%90%D7%A8%D7%A0%D7%A1.md) – Barnes zeta function
-* [פונקציית זטא של ויטן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%95%D7%99%D7%98%D7%9F.md) – Witten zeta function
-
-### פונקציות מיוחדות
+### [פונקציות מיוחדות](categories/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20%D7%9E%D7%99%D7%95%D7%97%D7%93%D7%95%D7%AA.md)
 
 * [משפט הכפל (פונקציות מיוחדות)](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%9B%D7%A4%D7%9C%20%28%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20%D7%9E%D7%99%D7%95%D7%97%D7%93%D7%95%D7%AA%29.md) – Multiplication theorem
 * [פונקציית הרגלוץ–זגייר](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%94%D7%A8%D7%92%D7%9C%D7%95%D7%A5%E2%80%93%D7%96%D7%92%D7%99%D7%99%D7%A8.md) – Herglotz–Zagier function
 
-### קבועים מתמטיים
+### [קבועים מתמטיים](categories/%D7%A7%D7%91%D7%95%D7%A2%D7%99%D7%9D%20%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%99%D7%9D.md)
 
 * [קבוע לז'נדר](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9C%D7%96%27%D7%A0%D7%93%D7%A8.md) – Legendre's constant
 * [קבוע לנדאו-רמנוג'אן](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%9C%D7%A0%D7%93%D7%90%D7%95-%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md) – Landau–Ramanujan constant
 * [קבוע פורטר](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%A4%D7%95%D7%A8%D7%98%D7%A8.md) – Porter's constant
 * [קבוע פלר-טורנייר](pages/%D7%A7%D7%91%D7%95%D7%A2%20%D7%A4%D7%9C%D7%A8-%D7%98%D7%95%D7%A8%D7%A0%D7%99%D7%99%D7%A8.md) – Feller–Tornier constant
 
-### שדות ציקלוטומיים
+### [שדות ציקלוטומיים](categories/%D7%A9%D7%93%D7%95%D7%AA%20%D7%A6%D7%99%D7%A7%D7%9C%D7%95%D7%98%D7%95%D7%9E%D7%99%D7%99%D7%9D.md)
 
 * [משפט צ'אולה–מורדל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A6%27%D7%90%D7%95%D7%9C%D7%94%E2%80%93%D7%9E%D7%95%D7%A8%D7%93%D7%9C.md) – Chowla–Mordell theorem
 
-### שונות
-
-* [פונקציית ז'ורדן](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%27%D7%95%D7%A8%D7%93%D7%9F.md) – Jordan's totient function
-* [פרימוריאל](pages/%D7%A4%D7%A8%D7%99%D7%9E%D7%95%D7%A8%D7%99%D7%90%D7%9C.md) – Primorial
-
-### תבניות אוטומורפיות
+### [תבניות אוטומורפיות](categories/%D7%AA%D7%91%D7%A0%D7%99%D7%95%D7%AA%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%95%D7%A8%D7%A4%D7%99%D7%95%D7%AA.md)
 
 * [השערת גאן–גרוס–פרסאד](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%92%D7%90%D7%9F%E2%80%93%D7%92%D7%A8%D7%95%D7%A1%E2%80%93%D7%A4%D7%A8%D7%A1%D7%90%D7%93.md) – Gan–Gross–Prasad conjecture
 * [נוסחת העקבה של קוזנצוב](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%94%D7%A2%D7%A7%D7%91%D7%94%20%D7%A9%D7%9C%20%D7%A7%D7%95%D7%96%D7%A0%D7%A6%D7%95%D7%91.md) – Kuznetsov trace formula
 * [נוסחת וורונוי](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%95%D7%95%D7%A8%D7%95%D7%A0%D7%95%D7%99.md) – Voronoi formula
 * [פונקציית L אוטומורפית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%95%D7%A8%D7%A4%D7%99%D7%AA.md) – Automorphic L-function
 
-### תבניות מודולריות
+### [תבניות מודולריות](categories/%D7%AA%D7%91%D7%A0%D7%99%D7%95%D7%AA%20%D7%9E%D7%95%D7%93%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA.md)
 
 * [השערת רמנוג'אן–פטרסון](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F%E2%80%93%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F.md) – Ramanujan–Petersson conjecture
 * [טור אייזנשטיין ממשי-אנליטי](pages/%D7%98%D7%95%D7%A8%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F%20%D7%9E%D7%9E%D7%A9%D7%99-%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99.md) – Real analytic Eisenstein series
 * [יחס הקונגרואנציה של אייכלר–שימורה](pages/%D7%99%D7%97%D7%A1%20%D7%94%D7%A7%D7%95%D7%A0%D7%92%D7%A8%D7%95%D7%90%D7%A0%D7%A6%D7%99%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%9B%D7%9C%D7%A8%E2%80%93%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Eichler–Shimura congruence relation
 * [משפט ולדספורגר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%9C%D7%93%D7%A1%D7%A4%D7%95%D7%A8%D7%92%D7%A8.md) – Waldspurger's theorem
 
-### תוכנית לנגלנדס
+### [תוכנית לנגלנדס](categories/%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1.md)
 
 * [השערות לנגלנדס המקומיות](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%95%D7%AA%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1%20%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%95%D7%AA.md) – Local Langlands conjectures
 
-### תורת ההסתברות
+### [תורת ההסתברות](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%94%D7%A1%D7%AA%D7%91%D7%A8%D7%95%D7%AA.md)
 
 * [תנועה בראונית ופונקציית זטא של רימן](pages/%D7%AA%D7%A0%D7%95%D7%A2%D7%94%20%D7%91%D7%A8%D7%90%D7%95%D7%A0%D7%99%D7%AA%20%D7%95%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%96%D7%98%D7%90%20%D7%A9%D7%9C%20%D7%A8%D7%99%D7%9E%D7%9F.md) – Brownian motion and Riemann zeta function
 
-### תורת ההצגות
+### [תורת ההצגות](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%94%D7%A6%D7%92%D7%95%D7%AA.md)
 
 * [הקבוע המקומי של לנגלנדס–דלין](pages/%D7%94%D7%A7%D7%91%D7%95%D7%A2%20%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%20%D7%A9%D7%9C%20%D7%9C%D7%A0%D7%92%D7%9C%D7%A0%D7%93%D7%A1%E2%80%93%D7%93%D7%9C%D7%99%D7%9F.md) – Langlands–Deligne local constant
 
-### תורת החבורות
+### [תורת החבורות](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%97%D7%91%D7%95%D7%A8%D7%95%D7%AA.md)
 
 * [גידול תת-חבורות](pages/%D7%92%D7%99%D7%93%D7%95%D7%9C%20%D7%AA%D7%AA-%D7%97%D7%91%D7%95%D7%A8%D7%95%D7%AA.md) – Subgroup growth
 * [פונקציית לנדאו](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%9C%D7%A0%D7%93%D7%90%D7%95.md) – Landau's function
 
-### תורת המספרים
+### [תורת המספרים](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D.md)
 
 * [אלגוריתם מייסל-להמר](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9E%D7%99%D7%99%D7%A1%D7%9C-%D7%9C%D7%94%D7%9E%D7%A8.md) – Meissel–Lehmer algorithm
 * [בעיית הזוגיות (תורת הנפה)](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%94%D7%96%D7%95%D7%92%D7%99%D7%95%D7%AA%20%28%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94%29.md) – Parity problem
@@ -313,7 +290,7 @@
 * [נפת טוראן](pages/%D7%A0%D7%A4%D7%AA%20%D7%98%D7%95%D7%A8%D7%90%D7%9F.md) – Turán sieve
 * [שיטת ההיפרבולה של דיריכלה](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%94%D7%99%D7%A4%D7%A8%D7%91%D7%95%D7%9C%D7%94%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A8%D7%99%D7%9B%D7%9C%D7%94.md) – Dirichlet hyperbola method
 
-### תורת המספרים האדיטיבית
+### [תורת המספרים האדיטיבית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99%D7%AA.md)
 
 * [בסיס אדיטיבי](pages/%D7%91%D7%A1%D7%99%D7%A1%20%D7%90%D7%93%D7%99%D7%98%D7%99%D7%91%D7%99.md) – Additive basis
 * [בעיית בולי הדואר](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%91%D7%95%D7%9C%D7%99%20%D7%94%D7%93%D7%95%D7%90%D7%A8.md) – Postage stamp problem
@@ -329,14 +306,14 @@
 * [קבוצה ללא הפרשים ריבועיים](pages/%D7%A7%D7%91%D7%95%D7%A6%D7%94%20%D7%9C%D7%9C%D7%90%20%D7%94%D7%A4%D7%A8%D7%A9%D7%99%D7%9D%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%99%D7%9D.md) – Square-difference-free set
 * [קומבינטוריקה אריתמטית](pages/%D7%A7%D7%95%D7%9E%D7%91%D7%99%D7%A0%D7%98%D7%95%D7%A8%D7%99%D7%A7%D7%94%20%D7%90%D7%A8%D7%99%D7%AA%D7%9E%D7%98%D7%99%D7%AA.md) – Arithmetic combinatorics
 
-### תורת המספרים האלגברית
+### [תורת המספרים האלגברית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%9C%D7%92%D7%91%D7%A8%D7%99%D7%AA.md)
 
 * [בעיית מספר המחלקה](pages/%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%94.md) – Class number problem
 * [עבודת הדוקטורט של טייט](pages/%D7%A2%D7%91%D7%95%D7%93%D7%AA%20%D7%94%D7%93%D7%95%D7%A7%D7%98%D7%95%D7%A8%D7%98%20%D7%A9%D7%9C%20%D7%98%D7%99%D7%99%D7%98.md) – Tate's thesis
 * [פונקציית L אקוויווריאנטית](pages/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%20%D7%90%D7%A7%D7%95%D7%95%D7%99%D7%95%D7%95%D7%A8%D7%99%D7%90%D7%A0%D7%98%D7%99%D7%AA.md) – Equivariant L-function
 * [תורת המספרים האנליטית המופשטת](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA%20%D7%94%D7%9E%D7%95%D7%A4%D7%A9%D7%98%D7%AA.md) – Abstract analytic number theory
 
-### תורת המספרים האנליטית
+### [תורת המספרים האנליטית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99%D7%AA.md)
 
 * [אופרטור הקה](pages/%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8%20%D7%94%D7%A7%D7%94.md) – Hecke operator
 * [אי-שוויון ברג'ס](pages/%D7%90%D7%99-%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F%20%D7%91%D7%A8%D7%92%27%D7%A1.md) – Burgess inequality
@@ -393,13 +370,13 @@
 * [תורת המספרים הכפלית](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%9B%D7%A4%D7%9C%D7%99%D7%AA.md) – Multiplicative number theory
 * [תורת הנפה](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md) – Sieve theory
 
-### תורת המספרים החישובית
+### [תורת המספרים החישובית](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%9E%D7%A1%D7%A4%D7%A8%D7%99%D7%9D%20%D7%94%D7%97%D7%99%D7%A9%D7%95%D7%91%D7%99%D7%AA.md)
 
 * [אלגוריתם p-1 של פולארד](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20p-1%20%D7%A9%D7%9C%20%D7%A4%D7%95%D7%9C%D7%90%D7%A8%D7%93.md) – Pollard's p − 1 algorithm
 * [אלגוריתם לנסטרה לפירוק בעקומים אליפטיים](pages/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D%20%D7%9C%D7%A0%D7%A1%D7%98%D7%A8%D7%94%20%D7%9C%D7%A4%D7%99%D7%A8%D7%95%D7%A7%20%D7%91%D7%A2%D7%A7%D7%95%D7%9E%D7%99%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99%D7%99%D7%9D.md) – Lenstra elliptic-curve factorization
 * [שיטת הפירוק של דיקסון](pages/%D7%A9%D7%99%D7%98%D7%AA%20%D7%94%D7%A4%D7%99%D7%A8%D7%95%D7%A7%20%D7%A9%D7%9C%20%D7%93%D7%99%D7%A7%D7%A1%D7%95%D7%9F.md) – Dixon's factorization method
 
-### תורת הנפה
+### [תורת הנפה](categories/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%A0%D7%A4%D7%94.md)
 
 * [הנפה של פריצ'רד](pages/%D7%94%D7%A0%D7%A4%D7%94%20%D7%A9%D7%9C%20%D7%A4%D7%A8%D7%99%D7%A6%27%D7%A8%D7%93.md) – Sieve of Pritchard
 * [נפת גולדסטון–פינץ–ילדירים](pages/%D7%A0%D7%A4%D7%AA%20%D7%92%D7%95%D7%9C%D7%93%D7%A1%D7%98%D7%95%D7%9F%E2%80%93%D7%A4%D7%99%D7%A0%D7%A5%E2%80%93%D7%99%D7%9C%D7%93%D7%99%D7%A8%D7%99%D7%9D.md) – Goldston–Pintz–Yıldırım sieve

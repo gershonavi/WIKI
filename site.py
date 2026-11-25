@@ -38,10 +38,10 @@ MATHJAX = """<script>window.MathJax={tex:{inlineMath:[['\\\\(','\\\\)']],display
 
 def sources():
     out = [('README.md', 'index.html')]
-    for f in ['COURSE.md', 'PROOFS.md', 'LICENSE-CONTENT.md']:
+    for f in ['COURSE.md', 'PROOFS.md', 'CATEGORIES.md', 'LICENSE-CONTENT.md']:
         if os.path.exists(os.path.join(ROOT, f)):
             out.append((f, f[:-3] + '.html'))
-    for d in ['pages', 'course']:
+    for d in ['pages', 'course', 'categories']:
         for f in sorted(os.listdir(os.path.join(ROOT, d))):
             if f.endswith('.md'):
                 out.append((f'{d}/{f}', f'{d}/{f[:-3]}.html'))

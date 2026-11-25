@@ -6,6 +6,6 @@ L = open(f).read().split('\n')
 i = max(k for k, l in enumerate(L) if l.startswith('**להעמקה:**'))
 for t in titles:
     if f'[{t}]' not in L[i]:
-        L[i] += f' · [{t}](../pages/{t.replace(" ", "%20")}.md)'
+        L[i] += f' · [{t}](../pages/{urllib.parse.quote(t)}.md)'
 open(f, 'w').write('\n'.join(L))
 print(f, 'ok')

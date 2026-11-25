@@ -10,6 +10,8 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.path.join(ROOT, 'pages')
 REPO = 'https://github.com/gershonavi/WIKI'
 PROOFS_PAGE = urllib.parse.quote('שיטות-הוכחה')
+CATS_PAGE = urllib.parse.quote('קטגוריות')
+CAT_PREFIX = 'קטגוריה '
 
 
 def wiki_name(title):
@@ -31,6 +33,9 @@ def footnotes_to_list(md):
 
 def convert(md):
     md = footnotes_to_list(md)
+    md = re.sub(r'\]\((?:\.\./)?categories/([^)\s]+)\.md\)', lambda m: '](' + wiki_name(CAT_PREFIX + urllib.parse.unquote(m.group(1))) + ')', md)
+    md = md.replace('](../CATEGORIES.md)', '](' + CATS_PAGE + ')').replace('](CATEGORIES.md)', '](' + CATS_PAGE + ')')
+    md = md.replace('](../README.md)', '](Home)')
     md = re.sub(r'\]\((?:\.\./)?(?:pages|course)/([^)\s]+)\.md\)', lambda m: '](' + wiki_name(urllib.parse.unquote(m.group(1))) + ')', md)
     md = md.replace('](../COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)').replace('](COURSE.md)', '](%D7%A7%D7%95%D7%A8%D7%A1)')
     md = md.replace('](../PROOFS.md)', '](' + PROOFS_PAGE + ')').replace('](PROOFS.md)', '](' + PROOFS_PAGE + ')')
@@ -70,6 +75,21 @@ def main(dest):
         md = open(os.path.join(ROOT, 'PROOFS.md'), encoding='utf-8').read()
         md = re.sub(r'^# .*\n', '', md, count=1)
         open(os.path.join(dest, 'שיטות-הוכחה.md'), 'w', encoding='utf-8').write(convert(md))
+    cat_dir = os.path.join(ROOT, 'categories')
+    cat_titles = sorted(f[:-3] for f in os.listdir(cat_dir) if f.endswith('.md')) if os.path.isdir(cat_dir) else []
+    for f in os.listdir(dest):  # category pages that no longer exist
+        if f.startswith(CAT_PREFIX) and f.endswith('.md') and f[len(CAT_PREFIX):-3] not in cat_titles:
+            os.remove(os.path.join(dest, f))
+    cat_size = {}
+    for c in cat_titles:
+        md = open(os.path.join(cat_dir, c + '.md'), encoding='utf-8').read()
+        cat_size[c] = len(re.findall(r'^\* ', md, flags=re.M))
+        md = re.sub(r'^# .*\n', '', md, count=1)
+        open(os.path.join(dest, CAT_PREFIX + c + '.md'), 'w', encoding='utf-8').write(convert(md))
+    if os.path.exists(os.path.join(ROOT, 'CATEGORIES.md')):
+        md = open(os.path.join(ROOT, 'CATEGORIES.md'), encoding='utf-8').read()
+        md = re.sub(r'^# .*\n', '', md, count=1)
+        open(os.path.join(dest, 'קטגוריות.md'), 'w', encoding='utf-8').write(convert(md))
     side = ['**[דף הבית](Home)**', '', '**[הקורס](%D7%A7%D7%95%D7%A8%D7%A1)**', '']
     titles = {}
     up = os.path.join(course_dir, 'units.tsv')
@@ -94,8 +114,11 @@ def main(dest):
                 ptitles[parts[2][:-3]] = (parts[0], parts[1])
         side += ['', f'**[שיטות הוכחה]({PROOFS_PAGE})**', '']
         side += [f'* {ptitles[l][0]}. [{ptitles[l][1]}]({wiki_name(l)})' for l in lessons if l in ptitles]
-    side += ['', f'**[הריפו]({REPO})**', '', '**ערכים**', '']
-    side += [f'* [{t}]({wiki_name(t)})' for t in page_titles]
+    side += ['', f'**[ערכים לפי קטגוריה]({CATS_PAGE})** ({len(page_titles)})', '']
+    main_cats = sorted((c for c in cat_titles if cat_size[c] >= 3), key=lambda c: (-cat_size[c], c))
+    side += [f'* [{c}]({wiki_name(CAT_PREFIX + c)}) ({cat_size[c]})' for c in main_cats]
+    side += [f'* [כל הקטגוריות והאינדקס א–ת]({CATS_PAGE})']
+    side += ['', f'**[הריפו]({REPO})** · [האתר](https://gershonavi.github.io/WIKI/)']
     open(os.path.join(dest, '_Sidebar.md'), 'w', encoding='utf-8').write('\n'.join(side) + '\n')
     open(os.path.join(dest, '_Footer.md'), 'w', encoding='utf-8').write(
         f'התוכן מתורגם מוויקיפדיה האנגלית ומופץ ברישיון [CC BY-SA 4.0]({REPO}/blob/main/LICENSE-CONTENT.md). '

@@ -3,7 +3,7 @@ name: Publish website (GitHub Pages)
 on:
   push:
     branches: [main]
-    paths: ['pages/**', 'course/**', 'COURSE.md', 'PROOFS.md', 'README.md', 'LICENSE-CONTENT.md', 'site.py', 'site-static/**', '.github/workflows/pages.yml']
+    paths: ['pages/**', 'course/**', 'COURSE.md', 'PROOFS.md', 'README.md', 'CATEGORIES.md', 'categories/**', 'LICENSE-CONTENT.md', 'site.py', 'site-static/**', '.github/workflows/pages.yml']
   workflow_dispatch:
 
 permissions:

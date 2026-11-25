@@ -8,6 +8,87 @@ import os, re, subprocess, urllib.parse, sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC, OUT = os.path.join(ROOT, 'wiki'), os.path.join(ROOT, 'pages')
+CATDIR = os.path.join(ROOT, 'categories')
+# biographical categories copied from Hebrew Wikipedia; they get no index page of their own
+BIO = re.compile(r'^(ילידי|נפטרים|סגל |עמיתי|בוגרי|מתמטיקאים|עובדי|קריפטוגרפים|חברי|זוכי|פרופסורים|אמריקאים|ישראלים|היסטוריונים)')
+
+
+def topic_cats(cats):
+    return [c for c in cats if not BIO.match(c)]
+
+
+def lesson_backlinks():
+    """article title -> [(label, root-relative path)]: every lesson that links to the article or whose
+    syllabus unit lists it, in course order (a unit whose lesson is not written yet points to COURSE.md)."""
+    back = {}
+    def add(t, label, path):
+        lst = back.setdefault(t, [])
+        if (label, path) not in lst:
+            lst.append((label, path))
+    for tsv, prefix in (('units.tsv', 'שיעור'), ('proofs.tsv', 'שיטות הוכחה')):
+        p = os.path.join(ROOT, 'course', tsv)
+        if not os.path.exists(p):
+            continue
+        for row in open(p, encoding='utf-8').read().splitlines():
+            parts = row.split('\t')
+            if len(parts) < 3 or row.startswith('#') or not row.strip():
+                continue
+            num, title, lesson = parts[:3]
+            label = ('שיעור כלים' if num.startswith('כ') else prefix) + f' {num}: {title}'
+            lp = os.path.join(ROOT, 'course', lesson)
+            path = 'course/' + urllib.parse.quote(lesson) if os.path.exists(lp) else 'COURSE.md'
+            if not os.path.exists(lp):
+                label += ' (בכתיבה)'
+            if os.path.exists(lp):
+                text = open(lp, encoding='utf-8').read()
+                for t in re.findall(r'\]\(\.\./pages/([^)\s]+)\.md\)', text):
+                    add(urllib.parse.unquote(t), label, path)
+            if tsv == 'units.tsv' and len(parts) > 3:
+                for a in parts[3].split('|'):
+                    a = a.strip()
+                    if a and not a.startswith(('he:', 'en:')):
+                        add(a, label, path)
+    return back
+
+
+def write_categories(files, sources, back):
+    os.makedirs(CATDIR, exist_ok=True)
+    for f in os.listdir(CATDIR):
+        if f.endswith('.md'):
+            os.remove(os.path.join(CATDIR, f))
+    bycat, alltitles = {}, []
+    for f in files:
+        title = f[:-5]
+        alltitles.append(title)
+        text = open(os.path.join(SRC, f), encoding='utf-8').read()
+        cats = topic_cats([c.strip() for c in re.findall(r'\[\[קטגוריה:([^\]|]+)', text)]) or ['שונות']
+        for c in cats:
+            bycat.setdefault(c, []).append(title)
+    def item(t, up):
+        en = sources.get(t)
+        s = f'* [{t}]({up}pages/{urllib.parse.quote(t)}.md)' + (f' – {en}' if en else '')
+        if back.get(t):
+            s += ' · בקורס: ' + ', '.join(f'[{l.split(":")[0]}]({up}{ls})' for l, ls in back[t])
+        return s
+    for c, ts in bycat.items():
+        lines = [f'# קטגוריה: {c}', '', f'{len(ts)} ערכים בוויקי. לצד כל ערך מופיעים השיעורים בקורס שמפנים אליו.', '']
+        lines += [item(t, '../') for t in sorted(ts)]
+        lines += ['', '---', '[כל הקטגוריות](../CATEGORIES.md) · [הקורס](../COURSE.md) · [דף הבית](../README.md)', '']
+        open(os.path.join(CATDIR, c + '.md'), 'w', encoding='utf-8').write('\n'.join(lines))
+    big = sorted(bycat, key=lambda c: (-len(bycat[c]), c))
+    lines = ['# קטגוריות ואינדקס ערכים', '', '## קטגוריות', '']
+    lines += [f'* [{c}](categories/{urllib.parse.quote(c)}.md) ({len(bycat[c])})' for c in big]
+    lines += ['', f'## כל הערכים לפי סדר האלף-בית ({len(alltitles)})', '']
+    letter = None
+    for t in sorted(alltitles, key=lambda x: (not ('\u05d0' <= x[0] <= '\u05ea'), x)):
+        L = t[0] if '\u05d0' <= t[0] <= '\u05ea' else 'A–Z'
+        if L != letter:
+            letter = L
+            lines += ['', f'### {L}', '']
+        lines.append(item(t, ''))
+    lines.append('')
+    open(os.path.join(ROOT, 'CATEGORIES.md'), 'w', encoding='utf-8').write('\n'.join(lines))
+    return bycat
 
 
 def split_template(s, i):
@@ -210,8 +291,8 @@ def write_index(files, sources):
     for f in files:
         title = f[:-5]
         text = open(os.path.join(SRC, f), encoding='utf-8').read()
-        cats = re.findall(r'\[\[קטגוריה:([^\]|]+)', text) or ['שונות']
-        bycat.setdefault(cats[0].strip(), []).append(title)
+        cats = topic_cats([c.strip() for c in re.findall(r'\[\[קטגוריה:([^\]|]+)', text)]) or ['שונות']
+        bycat.setdefault(cats[0], []).append(title)
     lines = ['# ויקי תורת המספרים בעברית', '',
              'אוסף ערכים בתורת המספרים, מתורגמים לעברית מוויקיפדיה האנגלית, וקורס מסודר המבוסס עליהם.', '',
              '**[לקורס: תורת המספרים בעברית, לפי סדר הלימוד](COURSE.md)**', '',
@@ -221,9 +302,10 @@ def write_index(files, sources):
              '**רישיון:** התוכן ברישיון [CC BY-SA 4.0](LICENSE-CONTENT.md), כמו ויקיפדיה, כך שכל אחד רשאי להעתיק אותו בחזרה לוויקיפדיה עם ציון המקור. '
              'הקוד (סקריפט ההמרה) ברישיון [MIT](LICENSE).', '',
              '**הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.', '',
-             f'## ערכים ({len(files)})', '']
+             '**[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**', '',
+             f'## ערכים ({len(files)})', '', 'כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.', '']
     for cat in sorted(bycat):
-        lines += [f'### {cat}', '']
+        lines += [f'### [{cat}](categories/{urllib.parse.quote(cat)}.md)', '']
         for t in sorted(bycat[cat]):
             en = sources.get(t)
             lines.append(f'* [{t}](pages/{urllib.parse.quote(t)}.md)' + (f' – {en}' if en else ''))
@@ -314,6 +396,7 @@ def main():
             he, en = (line.split('\t') + [''])[:2]
             sources[he] = en.strip()
     local = {f[:-5] for f in files}
+    back = lesson_backlinks()
     failed = []
     for f in files:
         title = f[:-5]
@@ -326,8 +409,11 @@ def main():
         md = fix_math(fix_links(r.stdout.replace('<references/>', ''), local))
         head = f'# {title}\n\n'
         foot = ''
+        if back.get(title):
+            foot += '\n\n---\n**בקורס:** ' + ' · '.join(f'[{l}](../{ls})' for l, ls in back[title]) + '\n'
         if cats:
-            foot += '\n\n---\nקטגוריות: ' + ' · '.join(cats) + '\n'
+            foot += '\n\n---\nקטגוריות: ' + ' · '.join(
+                f'[{c}](../categories/{urllib.parse.quote(c)}.md)' if not BIO.match(c) else c for c in cats) + '\n'
         en = sources.get(title)
         src = (f'מבוסס על הערך [{en}](https://en.wikipedia.org/wiki/{urllib.parse.quote(en.replace(" ", "_"))}) '
                f'בוויקיפדיה האנגלית ([היסטוריית העריכות ומחברים](https://en.wikipedia.org/w/index.php?title={urllib.parse.quote(en.replace(" ", "_"))}&action=history)). ') if en else ''
@@ -336,6 +422,7 @@ def main():
                  f'[קוד הוויקי של הדף](../wiki/{urllib.parse.quote(f)})</sub>\n')
         open(os.path.join(OUT, title + '.md'), 'w', encoding='utf-8').write(head + md + foot)
     write_index(files, sources)
+    write_categories(files, sources, back)
     write_course(local)
     write_proofs()
     print(f'built {len(files) - len(failed)} / {len(files)}')
