@@ -14,7 +14,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (233)
+## ערכים (234)
 
 ### אנליזה מרוכבת
 
@@ -198,6 +198,7 @@
 * [השערת רימן המוכללת](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F%20%D7%94%D7%9E%D7%95%D7%9B%D7%9C%D7%9C%D7%AA.md) – Generalized Riemann hypothesis
 * [מחלקת סלברג](pages/%D7%9E%D7%97%D7%9C%D7%A7%D7%AA%20%D7%A1%D7%9C%D7%91%D7%A8%D7%92.md) – Selberg class
 * [ממוצע ריס](pages/%D7%9E%D7%9E%D7%95%D7%A6%D7%A2%20%D7%A8%D7%99%D7%A1.md) – Riesz mean
+* [משוואת הפונקציה (פונקציית L)](pages/%D7%9E%D7%A9%D7%95%D7%95%D7%90%D7%AA%20%D7%94%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%94%20%28%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20L%29.md) – Functional equation (L-function)
 * [משפט האוניברסליות של וורונין](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%9C%D7%99%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%95%D7%95%D7%A8%D7%95%D7%A0%D7%99%D7%9F.md) – Zeta function universality
 * [נוסחאות מפורשות לפונקציות L](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%90%D7%95%D7%AA%20%D7%9E%D7%A4%D7%95%D7%A8%D7%A9%D7%95%D7%AA%20%D7%9C%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA%20L.md) – Explicit formulae for L-functions
 * [נוסחת רימן-זיגל](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%96%D7%99%D7%92%D7%9C.md) – Riemann–Siegel formula
