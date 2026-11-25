@@ -19,7 +19,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [ ] Hardy–Ramanujan–Littlewood circle method
 - [x] Landau's function
 - [x] Totient summatory function
-- [ ] Average order of an arithmetic function
+- [x] Average order of an arithmetic function
 - [ ] Extremal orders of an arithmetic function
 - [x] Bell series
 - [ ] Generalized Riemann hypothesis
