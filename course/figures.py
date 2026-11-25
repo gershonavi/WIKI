@@ -2646,6 +2646,43 @@ def _():
     save('16-op')
 
 
+@fig('06-7')
+def _():
+    n = 12
+    ks = np.arange(1, n + 1)
+    g = [gcd(int(k), n) for k in ks]
+    fig_, axs = plt.subplots(1, 2, figsize=(6.8, 3.0))
+    cols = {1: GR, 2: C1, 3: C3, 4: C4, 6: C2, 12: 'k'}
+    axs[0].bar(ks, g, color=[cols[v] for v in g])
+    axs[0].set_xticks(ks); axs[0].set_xlabel('k'); axs[0].set_title('gcd(k, 12): sum = P(12) = 40', fontsize=9)
+    ns = np.arange(1, 301)
+    P = [sum(gcd(int(k), int(m)) for k in range(1, m + 1)) for m in ns]
+    pr = [isp(int(m)) for m in ns]
+    axs[1].scatter(ns, np.array(P) / ns, s=6, c=[C2 if q else C1 for q in pr])
+    axs[1].set_xlabel('n'); axs[1].set_title('P(n)/n (red: primes, = 2 − 1/n)', fontsize=9)
+    save('06-7')
+
+
+@fig('05-cm')
+def _():
+    N = 4000
+    ph = list(range(N + 1))
+    for p in range(2, N + 1):
+        if ph[p] == p:
+            for k in range(p, N + 1, p):
+                ph[k] -= ph[k] // p
+    A = {}
+    for m in range(1, N + 1):
+        A[ph[m]] = A.get(ph[m], 0) + 1
+    ks = [k for k in range(1, 201) if k in A]
+    ax = plt.gca()
+    ax.bar(ks, [A[k] for k in ks], color=C1, width=1.6)
+    ax.axhline(1, color=C2, ls='--', lw=1)
+    ax.set_xlabel('k'); ax.set_ylabel('A(k) = #{n : φ(n) = k}')
+    ax.set_title('Carmichael: A(k) is never exactly 1 (dashed line)')
+    save('05-cm')
+
+
 
 if __name__ == '__main__':
     import sys

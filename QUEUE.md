@@ -52,7 +52,6 @@ Zeta and L-functions: List of zeta functions; Weil conjectures; Local zeta funct
 
 Sieve theory and theorems: Jurkat–Richert theorem; Sieve of Pritchard; Goldston–Pintz–Yıldırım sieve; Rogers sieving theorem; Kronecker limit formula; Friedlander–Iwaniec theorem; Landsberg–Schaar relation; Kuznetsov trace formula; Petersson trace formula; Maier's theorem; Ramanujan's master theorem; Barban–Davenport–Halberstam theorem; Vinogradov's mean-value theorem; Deshouillers–Dress–Tenenbaum theorem
 
-Arithmetic functions: Integer sequence; Arithmetic derivative; Divisibility sequence; Rank of a partition; Crank of a partition; Pillai's arithmetical function; Hooley's delta function; Erdős–Wintner theorem; Lowest common divisor; Carmichael's totient function conjecture; Lehmer's totient problem; Greatest common multiple
 
 
 Additive number theory: Polite number; Postage stamp problem; 15 and 290 theorems; Additive basis; Pythagorean quadruple; Restricted sumset; Cameron–Erdős conjecture; Arithmetic combinatorics; Folkman's theorem; Erdős–Turán conjecture on additive bases; Minimum overlap problem; Pollock's conjectures; Square-difference-free set; Erdős–Tetali theorem; Sums of three cubes; Romanov's theorem
