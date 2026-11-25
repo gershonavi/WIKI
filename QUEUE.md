@@ -47,7 +47,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Ernst Meissel
 
 ## שאר הרשימה
-Analytic number theory: Transcendental number theory; Abstract analytic number theory; Classical modular curve
+Analytic number theory: Transcendental number theory
 Arithmetic functions: Integer sequence
 
 Zeta and L-functions: List of zeta functions; Local zeta function; Functional equation (L-function); Chowla–Mordell theorem; Grand Riemann hypothesis; Ramanujan–Petersson conjecture; Hasse–Weil zeta function; Subgroup growth; Artin–Mazur zeta function; Ihara zeta function; Rational zeta series; Zeta function universality; ZetaGrid; Lefschetz zeta function; Zeta function regularization; Tate's thesis; Selberg zeta function; Minakshisundaram–Pleijel zeta function; Stark conjectures; Local Langlands conjectures; Igusa zeta function; Multiplication theorem; Shimura variety; Multiple zeta function; Hadjicostas's formula; Brumer–Stark conjecture; Equivariant L-function; P-adic L-function; Goss zeta function; Special values of L-functions; Zeta function (operator); Shintani zeta function; Barnes zeta function; Witten zeta function; Matsumoto zeta function; Airy zeta function; Rankin–Selberg method; Eichler–Shimura congruence relation; Selberg's zeta function conjecture; Hardy–Littlewood zeta function conjectures; Beurling zeta function; Motivic L-function; Langlands–Deligne local constant; Automorphic L-function; Standard L-function; Artin conductor; Arithmetic zeta function; Shimizu L-function; Waldspurger's theorem; Ruelle zeta function; Arakawa–Kaneko zeta function; Dwork conjecture; Turing's method; Gan–Gross–Prasad conjecture; Brownian motion and Riemann zeta function; Grosswald–Schnitzer theorem
