@@ -2700,6 +2700,42 @@ def _():
     save('07-7')
 
 
+@fig('09-ew')
+def _():
+    N = 200000
+    ph = np.arange(N + 1, dtype=float)
+    for p in range(2, N + 1):
+        if ph[p] == p:
+            ph[p::p] *= (1 - 1 / p)
+    r = np.sort(ph[1:] / np.arange(1, N + 1))
+    ax = plt.gca()
+    ax.plot(r, np.arange(1, N + 1) / N, color=C1)
+    ax.axvline(6 / pi ** 2, color=C2, ls='--', lw=1, label='mean 6/π² ≈ 0.608')
+    ax.set_xlabel('y'); ax.set_ylabel('share of n ≤ 200000 with φ(n)/n ≤ y')
+    ax.set_title('Erdős–Wintner: φ(n)/n has a continuous limiting distribution'); ax.legend()
+    save('09-ew')
+
+
+@fig('09-6')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(6.8, 3.0))
+    ds = divisors(24)
+    ax = axs[0]
+    ax.scatter(np.log(ds), [0] * len(ds), color=C1, zorder=3)
+    for d in ds:
+        ax.annotate(str(d), (log(d), 0.05), ha='center', fontsize=8)
+    ax.axvspan(log(3), log(3) + 1, color=C3, alpha=.3, label='[3, 3e]: 4 divisors')
+    ax.set_yticks([]); ax.set_ylim(-.3, .4); ax.set_xlabel('log d'); ax.legend(fontsize=7, loc='lower right')
+    ax.set_title('divisors of 24 on a log scale; window of width 1', fontsize=9)
+    def D(n):
+        dd = divisors(n)
+        return max(sum(1 for x in dd if u <= x <= math.e * u) for u in dd)
+    ns = np.arange(1, 241)
+    axs[1].bar(ns, [D(int(n)) for n in ns], color=C1, width=1)
+    axs[1].set_xlabel('n'); axs[1].set_title('Δ(n) for n ≤ 240', fontsize=9)
+    save('09-6')
+
+
 
 if __name__ == '__main__':
     import sys
