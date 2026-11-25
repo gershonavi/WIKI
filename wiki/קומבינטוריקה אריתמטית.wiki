@@ -1,0 +1,77 @@
+ב[[מתמטיקה]], '''קומבינטוריקה [[אריתמטיקה|אריתמטית]]''' (ב[[אנגלית]]: arithmetic combinatorics) היא תחום בצומת של [[תורת המספרים]], [[קומבינטוריקה]], [[תורת הארגודיות]] ו[[אנליזה הרמונית]].
+
+== היקף ==
+קומבינטוריקה אריתמטית עוסקת בהערכות קומבינטוריות הקשורות לפעולות אריתמטיות (חיבור, חיסור, כפל וחילוק). [[קומבינטוריקה אדיטיבית]] היא המקרה הפרטי שבו מעורבות רק פעולות החיבור והחיסור.
+
+[[בן גרין]] מסביר מהי קומבינטוריקה אריתמטית בביקורת שכתב על הספר "Additive Combinatorics" של [[טרנס טאו|טאו]] ו-ואן וו.{{הערה|1=B. Green, [https://www.ams.org/journals/bull/2009-46-03/S0273-0979-09-01231-2/S0273-0979-09-01231-2.pdf Book Reviews: Additive combinatorics, by Terence C. Tao and Van H. Vu], Bulletin of the American Mathematical Society 46 (3), 2009, עמ' 489–497, {{DOI|10.1090/s0273-0979-09-01231-2}}|כיווון=שמאל}}
+
+== תוצאות חשובות ==
+=== משפט סמרדי ===
+משפט סמרדי הוא תוצאה בקומבינטוריקה אריתמטית העוסקת ב[[סדרה חשבונית|סדרות חשבוניות]] בתת-קבוצות של המספרים השלמים. ב-1936 שיערו [[פאול ארדש|ארדש]] ו[[פאל טוראן|טוראן]]{{הערה|1=P. Erdős, P. Turán, [http://www.renyi.hu/~p_erdos/1936-05.pdf On some sequences of integers], Journal of the London Mathematical Society 11 (4), 1936, עמ' 261–264, {{DOI|10.1112/jlms/s1-11.4.261}}|כיווון=שמאל}} שכל קבוצה של שלמים <math>A</math> בעלת [[צפיפות (תורת המספרים)|צפיפות טבעית]] חיובית מכילה סדרה חשבונית בת <math>k</math> איברים לכל <math>k</math>. השערה זו, שהפכה למשפט סמרדי, מכלילה את הטענה של משפט ואן דר ורדן.
+
+=== משפט גרין-טאו והרחבותיו ===
+{{ערך מורחב|משפט גרין-טאו}}
+[[משפט גרין-טאו]], שהוכיחו [[בן גרין]] ו[[טרנס טאו]] ב-2004,{{הערה|1=B. Green, T. Tao, The primes contain arbitrarily long arithmetic progressions, Annals of Mathematics 167 (2), 2008, עמ' 481–547, {{DOI|10.4007/annals.2008.167.481}}, arXiv:math.NT/0404188|כיווון=שמאל}} קובע שסדרת ה[[מספר ראשוני|מספרים הראשוניים]] מכילה [[סדרה חשבונית|סדרות חשבוניות]] ארוכות כרצוננו. במילים אחרות, יש סדרות חשבוניות של ראשוניים בנות <math>k</math> איברים, כאשר <math>k</math> יכול להיות כל [[מספר טבעי]]. ההוכחה היא הרחבה של משפט סמרדי.
+
+(דוגמה, נוסף בתרגום: <math>5, 11, 17, 23, 29</math> היא סדרה חשבונית של חמישה ראשוניים עם הפרש 6, ו-<math>7, 37, 67, 97, 127, 157</math> היא סדרה של שישה ראשוניים עם הפרש 30.)
+
+ב-2006 הרחיבו טרנס טאו ו[[תמר ציגלר]] את התוצאה לסדרות פולינומיות.{{הערה|1=T. Tao, T. Ziegler, The primes contain arbitrarily long polynomial progressions, Acta Mathematica 201 (2), 2008, עמ' 213–305, {{DOI|10.1007/s11511-008-0032-5}}, arXiv:math/0610050|כיווון=שמאל}} ליתר דיוק, בהינתן [[פולינום|פולינומים]] בעלי ערכים שלמים <math>P_1, \ldots, P_k</math> במשתנה <math>m</math>, כולם עם מקדם חופשי 0, יש אינסוף שלמים <math>x, m</math> כך ש-<math>x + P_1(m), \ldots, x + P_k(m)</math> ראשוניים כולם בו-זמנית. המקרה הפרטי שבו הפולינומים הם <math>m, 2m, \ldots, km</math> נותן את התוצאה הקודמת, שיש סדרות חשבוניות של ראשוניים באורך <math>k</math>.
+
+=== משפט ברויאר–גרין–טאו ===
+משפט ברויאר–גרין–טאו, שהוכיחו עמנואל ברויאר, בן גרין וטרנס טאו ב-2011,{{הערה|1=E. Breuillard, B. Green, T. Tao, The structure of approximate groups, Publications Mathématiques de l'IHÉS 116, 2012, עמ' 115–221, {{DOI|10.1007/s10240-012-0043-9}}, arXiv:1110.5008|כיווון=שמאל}} נותן סיווג מלא של '''חבורות מקורבות'''. אפשר לראות בתוצאה גרסה לא-אבלית של משפט פריימן, והכללה של משפט גרומוב על חבורות בעלות גידול פולינומי.
+
+== דוגמה ==
+אם <math>A</math> קבוצה של <math>N</math> שלמים, כמה גדולות או קטנות יכולות להיות קבוצת הסכומים
+:<math>A+A := \{x+y: x,y \in A\},</math>
+קבוצת ההפרשים
+:<math>A-A := \{x-y: x,y \in A\},</math>
+וקבוצת המכפלות
+:<math>A\cdot A := \{xy: x,y \in A\},</math>
+ואיך הגדלים של הקבוצות האלה קשורים זה לזה? (אין לבלבל: למונחים "קבוצת הפרשים" ו"קבוצת מכפלות" יכולות להיות גם משמעויות אחרות.)
+
+=== שתי דוגמאות קיצון (נוסף בתרגום) ===
+'''סדרה חשבונית.''' עבור <math>A = \{1, 2, \ldots, N\}</math>:
+* <math>A + A = \{2, \ldots, 2N\}</math>, ולכן <math>|A+A| = 2N - 1</math>, הקטן ביותר האפשרי לקבוצה בת <math>N</math> שלמים.
+* <math>|A - A| = 2N - 1</math> (ההפרשים מ-<math>-(N-1)</math> עד <math>N-1</math>).
+* קבוצת המכפלות גדולה: עבור <math>N = 10</math> יש 42 מכפלות שונות.
+
+'''סדרה הנדסית.''' עבור <math>A = \{1, 2, 4, \ldots, 2^{N-1}\}</math> המצב הפוך:
+* <math>A \cdot A = \{1, 2, \ldots, 2^{2N-2}\}</math> (חזקות של 2), ולכן <math>|A \cdot A| = 2N - 1</math>.
+* כל הסכומים <math>2^i + 2^j</math> עם <math>i \le j</math> שונים זה מזה (לפי ה[[בסיס בינארי|כתיב הבינארי]]), ולכן <math>|A+A| = N(N+1)/2</math>, הגדול ביותר האפשרי. עבור <math>N = 10</math> זה 55.
+* עבור <math>N = 10</math> יש 91 הפרשים שונים, כלומר <math>N(N-1) + 1</math>, גם זה המקסימום.
+
+(הערכים עבור <math>N = 10</math> נבדקו בחישוב.)
+
+הדוגמאות מראות שקבוצה יכולה להיות "מובנית" ביחס לחיבור או ביחס לכפל, אבל נראה שלא לשתי הפעולות יחד. זו התופעה שנקראת '''תופעת הסכום-מכפלה''': השערת ארדש–סמרדי גורסת שלכל <math>\varepsilon > 0</math>, לפחות אחת מהקבוצות <math>A+A</math>, <math>A \cdot A</math> היא בגודל <math>\gg N^{2-\varepsilon}</math>.
+
+== הרחבות ==
+הקבוצות הנחקרות יכולות להיות תת-קבוצות של [[מבנה אלגברי|מבנים אלגבריים]] אחרים מלבד השלמים, למשל [[חבורה (מבנה אלגברי)|חבורות]], [[חוג (מבנה אלגברי)|חוגים]] ו[[שדה (מבנה אלגברי)|שדות]].{{הערה|1=J. Bourgain, N. Katz, T. Tao, A sum-product estimate in finite fields, and applications, Geometric and Functional Analysis 14 (1), 2004, עמ' 27–57, {{DOI|10.1007/s00039-004-0451-1}}, arXiv:math/0301343|כיווון=שמאל}}
+
+== ראו גם ==
+* [[תורת המספרים האדיטיבית]]
+* [[קומבינטוריקה אדיטיבית]]
+* [[סכום קבוצות מוגבל]]
+* [[השערת קמרון–ארדש]]
+* [[קבוצה ללא הפרשים ריבועיים]]
+* [[משפט פולקמן]]
+
+== לקריאה נוספת ==
+* I. Łaba, From harmonic analysis to arithmetic combinatorics, Bull. Amer. Math. Soc. 45 (1), 2008, עמ' 77–115, {{DOI|10.1090/S0273-0979-07-01189-5}}
+* L. Trevisan, [https://web.archive.org/web/20160304030143/http://www.cs.berkeley.edu/~luca/pubs/addcomb-sigact.pdf Additive Combinatorics and Theoretical Computer Science], SIGACT News, יוני 2009
+* K. Bibak, Additive combinatorics with a view towards computer science and cryptography, בתוך: Number Theory and Related Fields: In Memory of Alf van der Poorten, Springer Proceedings in Mathematics & Statistics 43, ניו יורק, 2013, עמ' 99–128, {{DOI|10.1007/978-1-4614-6642-0_4}}, arXiv:1108.3790
+* E. Croot, V. Lev, [http://people.math.gatech.edu/~ecroot/E2S-01-11.pdf Open problems in additive combinatorics]
+* T. Tao, [https://www.ams.org/notices/200103/fea-tao.pdf From Rotating Needles to Stability of Waves: Emerging Connections between Combinatorics, Analysis, and PDE], AMS Notices, מרץ 2001
+* T. Tao, V. H. Vu, Additive combinatorics, Cambridge Studies in Advanced Mathematics 105, Cambridge University Press, 2006, {{ISBN|0-521-85386-9}}
+* A. Granville, M. B. Nathanson, J. Solymosi (עורכים), Additive Combinatorics, CRM Proceedings & Lecture Notes 43, American Mathematical Society, 2007, {{ISBN|978-0-8218-4351-2}}
+* H. Mann, Addition Theorems: The Addition Theorems of Group Theory and Number Theory, Robert E. Krieger Publishing Company, הנטינגטון, ניו יורק, 1976, {{ISBN|0-88275-418-1}}
+* M. B. Nathanson, Additive Number Theory: the Classical Bases, Graduate Texts in Mathematics 164, Springer-Verlag, ניו יורק, 1996, {{ISBN|0-387-94656-X}}
+* M. B. Nathanson, Additive Number Theory: Inverse Problems and the Geometry of Sumsets, Graduate Texts in Mathematics 165, Springer-Verlag, ניו יורק, 1996, {{ISBN|0-387-94655-1}}
+* T. Tao, [https://www.math.ucla.edu/~tao/254a.1.03w/ Some Highlights of Arithmetic Combinatorics]
+* K. Soundararajan, [http://math.stanford.edu/~ksound/Notes.pdf Additive Combinatorics: Winter 2007]
+* L. Trevisan, [http://lucatrevisan.wordpress.com/2009/04/17/earliest-connections-of-additive-combinatorics-and-computer-science/ Earliest Connections of Additive Combinatorics and Computer Science]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האדיטיבית]]
+[[קטגוריה:קומבינטוריקה]]
