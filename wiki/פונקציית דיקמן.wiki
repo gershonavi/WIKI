@@ -1,5 +1,5 @@
 [[קובץ:Mplwp Dickman function log.svg|ממוזער|400px|פונקציית דיקמן-דה בראון <math>\rho(u)</math> בסקלה לוגריתמית. הגרף כמעט ישר, כלומר הלוגריתם של הפונקציה כמעט ליניארי.]]
-ב[[תורת המספרים האנליטית]], '''פונקציית דיקמן''' או '''פונקציית דיקמן-דה בראון''' <math>\rho</math> היא [[פונקציה מיוחדת]] המשמשת להערכת השיעור של [[מספר חלק|המספרים החלקים]] עד גבול נתון. ראשון שחקר אותה היה האקטואר קרל דיקמן, שהגדיר אותה בפרסום המתמטי היחיד שלו.{{הערה|1=K. Dickman, ''On the frequency of numbers containing prime factors of a certain relative magnitude'', Arkiv för Matematik, Astronomi och Fysik '''22A''' (1930), no. 10, pp. 1–14|כיווון=שמאל}} מאוחר יותר חקר אותה המתמטיקאי ההולנדי ניקולאס חוברט דה בראון.{{הערה|1=N. G. de Bruijn, ''On the number of positive integers ≤ x and free of prime factors > y'', Indagationes Mathematicae '''13''' (1951), pp. 50–60|כיווון=שמאל}}{{הערה|1=N. G. de Bruijn, ''On the number of positive integers ≤ x and free of prime factors > y, II'', Indagationes Mathematicae '''28''' (1966), pp. 239–247|כיווון=שמאל}}
+ב[[תורת המספרים האנליטית]], '''פונקציית דיקמן''' או '''פונקציית דיקמן-דה בראון''' <math>\rho</math> היא פונקציה מיוחדת המשמשת להערכת השיעור של [[מספר חלק|המספרים החלקים]] עד גבול נתון. ראשון שחקר אותה היה האקטואר קרל דיקמן, שהגדיר אותה בפרסום המתמטי היחיד שלו.{{הערה|1=K. Dickman, ''On the frequency of numbers containing prime factors of a certain relative magnitude'', Arkiv för Matematik, Astronomi och Fysik '''22A''' (1930), no. 10, pp. 1–14|כיווון=שמאל}} מאוחר יותר חקר אותה המתמטיקאי ההולנדי ניקולאס חוברט דה בראון.{{הערה|1=N. G. de Bruijn, ''On the number of positive integers ≤ x and free of prime factors > y'', Indagationes Mathematicae '''13''' (1951), pp. 50–60|כיווון=שמאל}}{{הערה|1=N. G. de Bruijn, ''On the number of positive integers ≤ x and free of prime factors > y, II'', Indagationes Mathematicae '''28''' (1966), pp. 239–247|כיווון=שמאל}}
 
 == הגדרה ==
 פונקציית דיקמן-דה בראון <math>\rho(u)</math> היא [[פונקציה רציפה]] המקיימת את המשוואה הדיפרנציאלית עם השהיה
@@ -42,7 +42,7 @@
 
 :<math>\rho(u)\sim \frac{1}{\xi\sqrt{2\pi u}} \exp(-u\xi+\operatorname{Ei}(\xi)),</math>
 
-כאשר <math>\operatorname{Ei}</math> הוא [[אינטגרל מעריכי|האינטגרל המעריכי]] ו-<math>\xi</math> הוא השורש החיובי של
+כאשר <math>\operatorname{Ei}</math> הוא האינטגרל המעריכי ו-<math>\xi</math> הוא השורש החיובי של
 
 :<math>e^\xi-1=u\xi.</math>
 
@@ -79,7 +79,7 @@
 
 כאשר <math>\operatorname{Li}_2</math> הוא הדילוגריתם (ראו [[פולילוגריתם]]). את שאר הפונקציות <math>\rho_n</math> אפשר לחשב באמצעות טורים אינסופיים.{{הערה|1=Eric Bach and René Peralta, ''Asymptotic semismoothness probabilities'', Mathematics of Computation '''65''' (1996), no. 216, pp. 1701–1715, {{DOI|10.1090/S0025-5718-96-00775-2}}|כיווון=שמאל}}
 
-שיטה חלופית היא חישוב חסמים עליונים ותחתונים בעזרת [[כלל הטרפז]];{{הערה|שם=lw}} רשת שהולכת ומתעדנת מאפשרת דיוק שרירותי. לחישובים בדיוק גבוה (מאות ספרות) עדיף פיתוח טור רקורסיבי סביב נקודות האמצע של הקטעים.{{הערה|1=George Marsaglia, Arif Zaman and John C. W. Marsaglia, ''Numerical solution of some classical differential-difference equations'', Mathematics of Computation '''53''' (1989), no. 187, pp. 191–201, {{DOI|10.1090/S0025-5718-1989-0969490-3}}|כיווון=שמאל}} את הערכים עבור <math>u \le 7</math> אפשר לחשב היטב ב[[אינטגרציה נומרית]] בדיוק כפול רגיל.{{הערה|שם=kruppa}}
+שיטה חלופית היא חישוב חסמים עליונים ותחתונים בעזרת כלל הטרפז;{{הערה|שם=lw}} רשת שהולכת ומתעדנת מאפשרת דיוק שרירותי. לחישובים בדיוק גבוה (מאות ספרות) עדיף פיתוח טור רקורסיבי סביב נקודות האמצע של הקטעים.{{הערה|1=George Marsaglia, Arif Zaman and John C. W. Marsaglia, ''Numerical solution of some classical differential-difference equations'', Mathematics of Computation '''53''' (1989), no. 187, pp. 191–201, {{DOI|10.1090/S0025-5718-1989-0969490-3}}|כיווון=שמאל}} את הערכים עבור <math>u \le 7</math> אפשר לחשב היטב ב[[אינטגרציה נומרית]] בדיוק כפול רגיל.{{הערה|שם=kruppa}}
 
 == הרחבה ==
 פרידלנדר הגדיר מקבילה דו-ממדית <math>\sigma(u,v)</math> של <math>\rho(u)</math>.{{הערה|1=John B. Friedlander, ''Integers free from large and small primes'', Proceedings of the London Mathematical Society '''33''' (1976), no. 3, pp. 565–576, {{DOI|10.1112/plms/s3-33.3.565}}|כיווון=שמאל}} הפונקציה משמשת להערכת פונקציה <math>\Psi(x,y,z)</math> הדומה לזו של דה בראון, אך סופרת את השלמים ה-<math>y</math>-חלקים שיש להם לכל היותר גורם ראשוני אחד הגדול מ-<math>z</math>. אז

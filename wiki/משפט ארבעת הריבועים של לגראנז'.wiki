@@ -1,0 +1,132 @@
+'''משפט ארבעת הריבועים של לגראנז'''' (ב[[אנגלית]]: Lagrange's four-square theorem), הידוע גם בשם '''השערת באשה''', קובע שכל [[מספר טבעי|מספר שלם אי-שלילי]] אפשר להציג כסכום של ארבעה [[מספר ריבועי|ריבועים]] של מספרים שלמים אי-שליליים.{{הערה|שם=andrews|1=G. E. Andrews, Number Theory, Dover Publications, 1994, עמ' 144|כיווון=שמאל}} כלומר, הריבועים הם [[בסיס אדיטיבי]] מסדר ארבע:
+:<math>p = a^2 + b^2 + c^2 + d^2,</math>
+כאשר ארבעת המספרים <math>a, b, c, d</math> שלמים. לשם המחשה, את 3, 31 ו-310 אפשר להציג כסכום של ארבעה ריבועים כך:
+:<math>\begin{align} 3 & = 1^2+1^2+1^2+0^2 \\ 31 & = 5^2+2^2+1^2+1^2 \\ 310 & = 17^2+4^2+2^2+1^2 = 16^2 + 7^2 + 2^2 +1^2 = 15^2 + 9^2 + 2^2 +0^2 = 12^2 + 11^2 + 6^2 + 3^2. \end{align}</math>
+(ל-310 יש בסך הכול 16 הצגות כאלה, עד כדי סדר המחוברים.)
+
+את המשפט הוכיח [[ז'וזף-לואי לגראנז']] ב-1770. זהו מקרה פרטי של [[משפט המספרים המצולעים|משפט המספרים המצולעים של פרמה]].
+
+== התפתחות היסטורית ==
+מהדוגמאות שבספר "אריתמטיקה" ברור ש[[דיופנטוס]] הכיר את המשפט. הספר תורגם ב-1621 ללטינית על ידי קלוד גספר באשה דה מזיריאק, שניסח את המשפט בהערות לתרגומו. אבל המשפט הוכח רק ב-1770, על ידי לגראנז'.{{הערה|1=K. Ireland, M. Rosen, A Classical Introduction to Modern Number Theory, מהדורה שנייה, Springer, 1990, {{DOI|10.1007/978-1-4757-2103-4}}|כיווון=שמאל}}
+
+[[אדריאן-מארי לז'נדר]] הרחיב את המשפט ב-1797–1798 ב[[משפט שלושת הריבועים של לז'נדר|משפט שלושת הריבועים]] שלו, כשהוכיח שמספר שלם חיובי ניתן להצגה כסכום של שלושה ריבועים [[אם ורק אם]] אינו מהצורה <math>4^k(8m+7)</math> עבור מספרים שלמים <math>k</math> ו-<math>m</math>. מאוחר יותר, ב-1834, גילה [[קרל גוסטב יעקב יעקובי]] נוסחה פשוטה למספר ההצגות של מספר שלם כסכום של ארבעה ריבועים, במשפט ארבעת הריבועים שלו.
+
+הנוסחה קשורה גם למשפט דקארט על ארבעה "מעגלים נושקים", שבו מופיע סכום ריבועי העקמומיות של ארבעה מעגלים. זה קשור גם לסלסלות אפולוניוס, שלאחרונה נקשרו להשערת רמנוג'אן–פטרסון.{{הערה|1=P. Sarnak, [https://www.youtube.com/watch?v=1GtOMVcfjJ0 The Ramanujan Conjecture and some Diophantine Equations], הרצאה במכון טאטה למחקר יסודי, בנגלור, 2013|כיווון=שמאל}}
+
+== הוכחות ==
+=== ההוכחה הקלאסית ===
+יש כמה גרסאות מודרניות, דומות מאוד זו לזו, להוכחה של לגראנז'.{{הערה|1=E. Landau, Elementary Number Theory, מהדורה שנייה (תרגום: J. E. Goodman), AMS Chelsea Publishing, 1958, משפטים 166–169|כיווון=שמאל}}{{הערה|1=G. H. Hardy, E. M. Wright, An Introduction to the Theory of Numbers, מהדורה שישית, Oxford University Press, 2008, משפט 369|כיווון=שמאל}}{{הערה|1=I. Niven, H. S. Zuckerman, An introduction to the theory of numbers, Wiley, 1960, סעיף 5.7|כיווון=שמאל}} ההוכחה שלהלן היא גרסה מפושטת מעט, שבה המקרים של <math>m</math> זוגי ואי-זוגי אינם דורשים טיעונים נפרדים.
+
+לפי זהות ארבעת הריבועים של אוילר,
+:<math>(a_1^2+a_2^2+a_3^2+a_4^2)(b_1^2+b_2^2+b_3^2+b_4^2) = z_1^2 + z_2^2 + z_3^2 + z_4^2,</math>
+עם <math>z_1 = a_1b_1 + a_2b_2 + a_3b_3 + a_4b_4</math>, <math>z_2 = a_1b_2 - a_2b_1 + a_3b_4 - a_4b_3</math>, <math>z_3 = a_1b_3 - a_2b_4 - a_3b_1 + a_4b_2</math>, <math>z_4 = a_1b_4 + a_2b_3 - a_3b_2 - a_4b_1</math>, מכפלה של שני סכומים של ארבעה ריבועים היא שוב סכום של ארבעה ריבועים. מכיוון ש-1 ו-2 הם סכומים של ארבעה ריבועים, מספיק להוכיח את המשפט לכל [[מספר ראשוני]] <math>p > 2</math>.
+
+השאריות של <math>a^2</math> מודולו <math>p</math> שונות זו מזו לכל <math>a</math> בין 0 ל-<math>(p-1)/2</math> (כולל). אכן, אם <math>a</math> ו-<math>c</math> שני מספרים כאלה עם <math>a^2 \equiv c^2 \pmod p</math>, אז הראשוני <math>p</math> מחלק את <math>a^2 - c^2 = (a - c)(a + c)</math>, ולכן מחלק את <math>a - c</math> או את <math>a + c</math>. שניהם בין <math>-(p-1)</math> ל-<math>p - 1</math>, ולכן אחד מהם הוא 0, ומכיוון ש-<math>a</math> ו-<math>c</math> אי-שליליים, משמע ש-<math>a = c</math>.
+
+באופן דומה, כאשר <math>b</math> מקבל ערכים שלמים בין 0 ל-<math>(p-1)/2</math> (כולל), הערכים <math>-b^2 - 1</math> שונים זה מזה. לפי [[עקרון שובך היונים]], יש <math>a</math> ו-<math>b</math> בתחום זה שעבורם <math>a^2</math> ו-<math>-b^2 - 1</math> חופפים מודולו <math>p</math>, כלומר שעבורם
+:<math>a^2 + b^2 + 1^2 + 0^2 = np.</math>
+
+יהי עכשיו <math>m</math> המספר השלם החיובי הקטן ביותר כך ש-<math>mp</math> הוא סכום של ארבעה ריבועים, <math>x_1^2 + x_2^2 + x_3^2 + x_4^2</math>. <math>m</math> מזערי כזה קיים, כי זה עתה הראינו של-<math>n</math> יש תכונה זו; יתרה מזו, <math>m \le n < p</math>, כי <math>np = a^2 + b^2 + 1 \le 2\left(\tfrac{p - 1}{2}\right)^2 + 1 < p^2</math>. נראה [[הוכחה בדרך השלילה|בדרך השלילה]] ש-<math>m</math> שווה ל-1: נניח שלא כך, ונוכיח שיש מספר שלם חיובי <math>r</math> קטן מ-<math>m</math> שעבורו גם <math>rp</math> הוא סכום של ארבעה ריבועים (ברוח שיטת הירידה האינסופית של פרמה).{{הערה|1=כאן הטיעון הוא הוכחה ישירה בדרך השלילה. אם מתחילים בהנחה ש-<math>m</math>, עם <math>1 < m < p</math>, הוא ''מספר כלשהו'' כך ש-<math>mp</math> הוא סכום של ארבעה ריבועים (לא בהכרח הקטן ביותר), אפשר לשנות את הטיעון כך שיהיה טיעון ירידה אינסופית ברוחו של פרמה.|כיווון=ימין}}
+
+לשם כך נבחר לכל <math>x_i</math> את ה-<math>y_i</math> הנמצא באותה מחלקת שאריות מודולו <math>m</math> ומקיים <math>-m/2 < y_i \le m/2</math>. אז <math>y_1^2 + y_2^2 + y_3^2 + y_4^2</math> חופף מודולו <math>m</math> ל-<math>x_1^2 + x_2^2 + x_3^2 + x_4^2 = mp</math>, ולכן הוא שווה ל-<math>mr</math> עבור מספר שלם <math>r \ge 0</math>; ומכיוון שכל <math>y_i^2 \le m^2/4</math>, גם <math>r \le m</math>. שני המקרים הקיצוניים <math>r = 0</math> ו-<math>r = m</math> נשללים בסוף ההוכחה, ולכן <math>0 < r < m</math>.
+
+לבסוף, שימוש נוסף בזהות ארבעת הריבועים של אוילר מראה ש-<math>mp \cdot mr = z_1^2 + z_2^2 + z_3^2 + z_4^2</math>. אבל העובדה שכל <math>x_i</math> חופף ל-<math>y_i</math> המתאים לו גוררת שכל ה-<math>z_i</math> מתחלקים ב-<math>m</math>. אכן,
+:<math>\begin{align} z_1 &= x_1 y_1 + x_2 y_2 + x_3 y_3 + x_4 y_4 \equiv x_1^2 + x_2^2 + x_3^2 + x_4^2 = mp \equiv 0 \pmod{m}, \\ z_2 &= x_1 y_2 - x_2 y_1 + x_3 y_4 - x_4 y_3 \equiv x_1 x_2 - x_2 x_1 + x_3 x_4 - x_4 x_3 = 0 \pmod{m}, \\ z_3 &= x_1 y_3 - x_2 y_4 - x_3 y_1 + x_4 y_2 \equiv x_1 x_3 - x_2 x_4 - x_3 x_1 + x_4 x_2 = 0 \pmod{m}, \\ z_4 &= x_1 y_4 + x_2 y_3 - x_3 y_2 - x_4 y_1 \equiv x_1 x_4 + x_2 x_3 - x_3 x_2 - x_4 x_1 = 0 \pmod{m}. \end{align}</math>
+מכאן שעבור <math>w_i = z_i/m</math> מתקיים <math>w_1^2 + w_2^2 + w_3^2 + w_4^2 = rp</math>, וזה סותר את המזעריות של <math>m</math>.
+
+בירידה שלמעלה צריך לשלול גם את המקרה <math>y_1 = y_2 = y_3 = y_4 = m/2</math> (שנותן <math>r = m</math> ואין ירידה), וגם את המקרה <math>y_1 = y_2 = y_3 = y_4 = 0</math> (שנותן <math>r = 0</math> ולא ערך חיובי ממש). בשני המקרים בודקים ש-<math>mp = x_1^2 + x_2^2 + x_3^2 + x_4^2</math> היה מתחלק ב-<math>m^2</math>, בסתירה לכך ש-<math>p</math> ראשוני הגדול מ-<math>m</math>.
+
+=== הוכחה בעזרת שלמי הורביץ ===
+דרך אחרת להוכיח את המשפט נשענת על קווטרניוני הורביץ, המקבילים למספרים השלמים עבור [[אלגברת הקווטרניונים של המילטון|קווטרניונים]].{{הערה|שם=still|1=J. Stillwell, Elements of Number Theory, Undergraduate Texts in Mathematics, Springer, 2003, עמ' 138–157, {{DOI|10.1007/978-0-387-21735-2}}|כיווון=שמאל}}
+
+קווטרניוני הורביץ הם כל הקווטרניונים שרכיביהם שלמים וכל הקווטרניונים שרכיביהם חצאי שלמים. אפשר לאחד את שתי הקבוצות בנוסחה אחת:
+:<math>\alpha = \tfrac{1}{2} E_0 (1 + \mathbf{i} + \mathbf{j} + \mathbf{k}) +E_1\mathbf{i} +E_2\mathbf{j} + E_3\mathbf{k} = a_0 +a_1\mathbf{i} +a_2\mathbf{j} +a_3\mathbf{k},</math>
+כאשר <math>E_0, E_1, E_2, E_3</math> מספרים שלמים. לכן רכיבי הקווטרניון <math>a_0, a_1, a_2, a_3</math> כולם שלמים או כולם חצאי שלמים, בהתאם לזוגיות של <math>E_0</math>. קבוצת קווטרניוני הורביץ היא [[חוג (מבנה אלגברי)|חוג]]; כלומר, הסכום והמכפלה של כל שני קווטרניוני הורביץ הם גם קווטרניוני הורביץ.
+
+ה[[נורמה (אלגברה)|נורמה]] (האריתמטית) <math>\mathrm N(\alpha)</math> של קווטרניון רציונלי <math>\alpha</math> היא ה[[מספר רציונלי|מספר הרציונלי]] האי-שלילי
+:<math>\mathrm{N}(\alpha) = \alpha\bar\alpha = a_0^2 + a_1^2 + a_2^2 + a_3^2,</math>
+כאשר <math>\bar\alpha=a_0 -a_1\mathbf{i} -a_2\mathbf{j} -a_3\mathbf{k}</math> הוא הצמוד של <math>\alpha</math>. שימו לב שהנורמה של קווטרניון הורביץ היא תמיד מספר שלם. (אם המקדמים הם חצאי שלמים, הריבועים שלהם מהצורה <math>\tfrac{1}{4} + n</math> עם <math>n</math> שלם, וסכום של ארבעה מספרים כאלה הוא שלם.)
+
+מכיוון שכפל קווטרניונים קיבוצי, ומספרים ממשיים מתחלפים עם כל הקווטרניונים, הנורמה של מכפלת קווטרניונים שווה למכפלת הנורמות:
+:<math>\mathrm{N}(\alpha\beta)=\alpha\beta(\overline{\alpha\beta})=\alpha\beta\bar{\beta}\bar{\alpha}=\alpha \mathrm{N}(\beta)\bar\alpha=\alpha\bar\alpha \mathrm{N}(\beta)= \mathrm{N}(\alpha) \mathrm{N}(\beta).</math>
+
+לכל <math>\alpha\ne0</math> מתקיים <math>\alpha^{-1}=\bar\alpha\,\mathrm N(\alpha)^{-1}</math>. מכאן נובע בקלות ש-<math>\alpha</math> הפיך בחוג קווטרניוני הורביץ אם ורק אם <math>\mathrm N(\alpha)=1</math>.
+
+ההוכחה של המשפט העיקרי מתחילה ברדוקציה למקרה של מספרים ראשוניים. זהות ארבעת הריבועים של אוילר גוררת שאם משפט ארבעת הריבועים נכון לשני מספרים, הוא נכון גם למכפלתם. מכיוון שכל מספר טבעי מתפרק למכפלת חזקות של ראשוניים, מספיק להוכיח את המשפט לראשוניים. הוא נכון עבור <math>2 = 1^2 + 1^2 + 0^2 + 0^2</math>. כדי להראות אותו עבור ראשוני אי-זוגי <math>p</math>, נייצג אותו כקווטרניון <math>(p,0,0,0)</math> ונניח לעת עתה (נראה זאת בהמשך) שאינו אי-פריק בחוג הורביץ; כלומר, שאפשר לפרק אותו למכפלה של שני קווטרניוני הורביץ שאינם הפיכים:
+:<math>p = \alpha\beta.</math>
+הנורמות של <math>p,\alpha,\beta</math> הן מספרים שלמים כך ש-
+:<math>\mathrm N(p)=p^2=\mathrm N(\alpha\beta)=\mathrm N(\alpha)\mathrm N(\beta),</math>
+ו-<math>\mathrm N(\alpha),\mathrm N(\beta) > 1</math>. מכאן ששתי הנורמות שוות ל-<math>p</math> (כי הן מספרים שלמים), ו-<math>p</math> הוא סכום של ארבעה ריבועים:
+:<math>p=\mathrm N(\alpha)=a_0^2+a_1^2+a_2^2+a_3^2.</math>
+
+אם ל-<math>\alpha</math> שנבחר יש מקדמים שהם חצאי שלמים, אפשר להחליף אותו בקווטרניון הורביץ אחר. נבחר <math>\omega = (\pm 1\pm\mathbf{i}\pm\mathbf{j} \pm\mathbf{k})/2</math> כך של-<math>\gamma = \omega + \alpha</math> יהיו מקדמים שלמים זוגיים. אז
+:<math>p=(\bar\gamma-\bar\omega)\omega\bar\omega(\gamma-\omega)=(\bar\gamma\omega-1)(\bar\omega\gamma-1).</math>
+מכיוון של-<math>\gamma</math> מקדמים שלמים זוגיים, ל-<math>(\bar\omega\gamma-1)</math> יהיו מקדמים שלמים, ואפשר להשתמש בו במקום <math>\alpha</math> המקורי כדי לקבל הצגה של <math>p</math> כסכום של ארבעה ריבועים.
+
+כדי להראות ש-<math>p</math> אינו אי-פריק בחוג הורביץ: לגראנז' הוכיח שכל ראשוני אי-זוגי <math>p</math> מחלק לפחות מספר אחד מהצורה <math>u=1+l^2+m^2</math>, כאשר <math>l</math> ו-<math>m</math> שלמים.{{הערה|שם=still}} זה נובע מכך: מכיוון ש-<math>p</math> ראשוני, <math>a^2\equiv b^2\pmod p</math> יכול להתקיים עבור שלמים <math>a,b</math> רק כאשר <math>a\equiv\pm b\pmod p</math>. לכן קבוצת הריבועים <math>X=\{0^2,1^2,\dots,((p-1)/2)^2\}</math> מכילה <math>(p+1)/2</math> שאריות שונות מודולו <math>p</math>. באופן דומה, <math>Y=\{-(1+x):x\in X\}</math> מכילה <math>(p+1)/2</math> שאריות. מכיוון שיש בסך הכול רק <math>p</math> שאריות, ו-<math>|X|+|Y| = p+1>p</math>, הקבוצות <math>X</math> ו-<math>Y</math> חייבות להיחתך.
+
+את המספר <math>u</math> אפשר לפרק בקווטרניוני הורביץ:
+:<math>1+l^2+m^2=(1+l\,\mathbf{i}+m\,\mathbf{j})(1-l\,\mathbf{i}-m\,\mathbf{j}).</math>
+
+הנורמה על קווטרניוני הורביץ מקיימת צורה של התכונה ה[[תחום אוקלידי|אוקלידית]]: לכל קווטרניון <math>\alpha=a_0+a_1\mathbf{i}+a_2\mathbf{j}+a_3\mathbf{k}</math> עם מקדמים רציונליים אפשר לבחור קווטרניון הורביץ <math>\beta=b_0+b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k}</math> כך ש-<math>\mathrm{N}(\alpha-\beta)<1</math>: בוחרים קודם את <math>b_0</math> כך ש-<math>|a_0-b_0| \leq 1/4</math>, ואחר כך את <math>b_1, b_2, b_3</math> כך ש-<math>|a_i-b_i| \leq 1/2</math> עבור <math>i = 1,2,3</math>. אז
+:<math>\mathrm{N}(\alpha-\beta) =(a_0-b_0)^2+(a_1-b_1)^2+(a_2-b_2)^2+(a_3-b_3)^2 \leq \left(\tfrac{1}{4} \right)^2+\left(\tfrac{1}{2}\right)^2+\left(\tfrac{1}{2}\right)^2+\left(\tfrac{1}{2}\right)^2=\tfrac{13}{16} < 1.</math>
+מכאן שלכל שני קווטרניוני הורביץ <math>\alpha,\beta</math> עם <math>\alpha \neq 0</math> יש קווטרניון הורביץ <math>\gamma</math> כך ש-
+:<math>\mathrm N(\beta-\alpha\gamma)<\mathrm N(\alpha).</math>
+
+החוג <math>H</math> של קווטרניוני הורביץ אינו חילופי, ולכן אינו תחום אוקלידי של ממש, ואין בו פירוק יחיד במובן הרגיל. למרות זאת, התכונה שלמעלה גוררת שכל [[אידיאל (אלגברה)|אידיאל]] ימני הוא ראשי. לכן יש קווטרניון הורביץ <math>\alpha</math> כך ש-
+:<math>\alpha H = p H + (1-l\,\mathbf{i}-m\,\mathbf{j}) H.</math>
+בפרט <math>p=\alpha\beta</math> עבור קווטרניון הורביץ <math>\beta</math> כלשהו. אילו <math>\beta</math> היה הפיך, <math>1-l\,\mathbf{i}-m\,\mathbf{j}</math> היה כפולה של <math>p</math>, אבל זה בלתי אפשרי, כי <math>1/p-(l/p)\,\mathbf{i}-(m/p)\,\mathbf{j}</math> אינו קווטרניון הורביץ עבור <math>p>2</math>. באופן דומה, אילו <math>\alpha</math> היה הפיך, היה מתקיים
+:<math>(1+l\,\mathbf{i}+m\,\mathbf{j})H = (1+l\,\mathbf{i}+m\,\mathbf{j})p H+(1+l\,\mathbf{i}+m\,\mathbf{j})(1-l\,\mathbf{i}-m\,\mathbf{j})H \subseteq p H,</math>
+ולכן <math>p</math> היה מחלק את <math>1+l\,\mathbf{i}+m\,\mathbf{j}</math>, וזה שוב סותר את העובדה ש-<math>1/p-(l/p)\,\mathbf{i}-(m/p)\,\mathbf{j}</math> אינו קווטרניון הורביץ. לכן <math>p</math> אינו אי-פריק בחוג הורביץ, כפי שטענו.
+
+== הכללות ==
+משפט ארבעת הריבועים של לגראנז' הוא מקרה פרטי של משפט המספרים המצולעים של פרמה ושל [[בעיית וארינג]]. הכללה אפשרית נוספת היא הבעיה הבאה: בהינתן [[מספר טבעי|מספרים טבעיים]] <math>a,b,c,d</math>, האם אפשר לפתור
+:<math>n=ax_1^2+bx_2^2+cx_3^2+dx_4^2</math>
+במספרים שלמים <math>x_1,x_2,x_3,x_4</math> לכל מספר שלם חיובי <math>n</math>? המקרה <math>a=b=c=d=1</math> נענה בחיוב במשפט ארבעת הריבועים של לגראנז'. את הפתרון הכללי נתן [[סריניוואסה רמנוג'אן|רמנוג'אן]].{{הערה|1=S. Ramanujan, On the expression of a number in the form ax<sup>2</sup> + by<sup>2</sup> + cz<sup>2</sup> + du<sup>2</sup>, Mathematical Proceedings of the Cambridge Philosophical Society 19, 1916, עמ' 11–21|כיווון=שמאל}} הוא הוכיח שאם מניחים, בלי הגבלת הכלליות, ש-<math>a\leq b\leq c\leq d</math>, אז יש בדיוק 54 בחירות אפשריות של <math>a,b,c,d</math> שעבורן הבעיה פתירה במספרים שלמים <math>x_1,x_2,x_3,x_4</math> לכל <math>n</math>. (רמנוג'אן מנה אפשרות 55, <math>a=1,b=2,c=5,d=5</math>, אבל במקרה זה הבעיה אינה פתירה עבור <math>n=15</math>.{{הערה|1=B.-K. Oh, Representations of Binary Forms by Quinary Quadratic Forms, Trends in Mathematics 3 (1), 2000, עמ' 102–107|כיווון=שמאל}} ראו גם [[משפטי 15 ו-290]].)
+
+== אלגוריתמים ==
+ב-1986 הציעו מיכאל רבין וג'פרי שאליט{{הערה|1=M. O. Rabin, J. O. Shallit, Randomized Algorithms in Number Theory, Communications on Pure and Applied Mathematics 39 (S1), 1986, עמ' S239–S256, {{DOI|10.1002/cpa.3160390713}}|כיווון=שמאל}} [[אלגוריתם מונטה קרלו|אלגוריתמים אקראיים]] בזמן פולינומי לחישוב הצגה אחת <math>n=x_1^2+x_2^2+x_3^2+x_4^2</math> למספר שלם נתון <math>n</math>, בזמן ריצה ממוצע <math>O(\log^2 n)</math>. פול פולק ואנריקה טרבינו שיפרו זאת ב-2018 ל-<math>O(\log^2 n\,(\log\log n)^{-1})</math>.{{הערה|1=P. Pollack, E. Treviño, [https://math.colgate.edu/~integers/sjs15/sjs15.pdf Finding the four squares in Lagrange's theorem], Integers 18A, 2018, A15|כיווון=שמאל}}
+
+== מספר ההצגות ==
+מספר ההצגות של מספר טבעי <math>n</math> כסכום של ארבעה ריבועים של מספרים שלמים מסומן <math>r_4(n)</math>. לפי משפט ארבעת הריבועים של יעקובי, הוא שווה לפי שמונה מסכום ה[[מחלק|מחלקים]] של <math>n</math> אם <math>n</math> אי-זוגי, ולפי 24 מסכום המחלקים האי-זוגיים של <math>n</math> אם <math>n</math> זוגי (ראו [[פונקציית מחלקים]]), כלומר
+:<math>r_4(n)=\begin{cases}8\sum\limits_{m\mid n}m&\text{if }n\text{ is odd},\\ 24\sum\limits_{m\mid n,\ m\text{ odd}}m&\text{if }n\text{ is even}.\end{cases}</math>
+באופן שקול, זהו פי שמונה מסכום כל המחלקים של <math>n</math> שאינם מתחלקים ב-4:
+:<math>r_4(n)=8\sum_{m\,:\, 4\nmid m\mid n}m.</math>
+אפשר לכתוב זאת גם כך:
+:<math>r_4(n) = 8 \sigma(n) -32 \sigma(n/4),</math>
+כאשר האיבר השני נחשב לאפס אם <math>n</math> אינו מתחלק ב-4. בפרט, עבור מספר ראשוני <math>p</math> מתקבלת הנוסחה המפורשת <math>r_4(p) = 8(p + 1)</math>.{{הערה|שם=will|1=K. S. Williams, Number theory in the spirit of Liouville, London Mathematical Society Student Texts 76, Cambridge University Press, 2011, עמ' 119|כיווון=שמאל}} (לדוגמה, <math>r_4(1) = 8</math>: אחד מארבעת המספרים הוא <math>\pm 1</math> והשאר אפס.)
+
+ערכים מסוימים של <math>r_4(n)</math> מופיעים אינסוף פעמים, כי <math>r_4(n) = r_4(2^mn)</math> לכל <math>n</math> זוגי. הערכים של <math>r_4(n)/n</math> יכולים להיות גדולים כרצוננו: למעשה, <math>r_4(n)/n</math> גדול מ-<math>8\sqrt{\log n}</math> אינסוף פעמים.{{הערה|שם=will}}
+
+== יחידות ==
+סדרת המספרים השלמים החיוביים שיש להם הצגה אחת בלבד כסכום של ארבעה ריבועים של מספרים שלמים אי-שליליים (עד כדי סדר) היא:
+:1, 2, 3, 5, 6, 7, 8, 11, 14, 15, 23, 24, 32, 56, 96, 128, 224, 384, 512, 896, ... {{OEIS|A006431}}.
+מספרים אלה הם שבעת המספרים האי-זוגיים 1, 3, 5, 7, 11, 15, 23 וכל המספרים מהצורה <math>2\cdot 4^k</math>, <math>6\cdot 4^k</math> או <math>14\cdot 4^k</math>.
+
+סדרת המספרים השלמים החיוביים שאי אפשר להציג כסכום של ארבעה ריבועים ''שונים מאפס'' היא:
+:1, 2, 3, 5, 6, 8, 9, 11, 14, 17, 24, 29, 32, 41, 56, 96, 128, 224, 384, 512, 896, ... {{OEIS|A000534}}.
+מספרים אלה הם שמונת המספרים האי-זוגיים 1, 3, 5, 9, 11, 17, 29, 41 וכל המספרים מהצורה <math>2\cdot 4^k</math>, <math>6\cdot 4^k</math> או <math>14\cdot 4^k</math>.
+
+== עידונים נוספים ==
+אפשר לעדן את משפט ארבעת הריבועים של לגראנז' בדרכים שונות. לדוגמה, ז'י-ויי סון{{הערה|1=Z.-W. Sun, Refining Lagrange's four-square theorem, Journal of Number Theory 175, 2017, עמ' 167–190, {{DOI|10.1016/j.jnt.2016.11.008}}|כיווון=שמאל}} הוכיח שאפשר לכתוב כל מספר טבעי כסכום של ארבעה ריבועים עם דרישות מסוימות על בחירת ארבעת המספרים.
+
+אפשר גם לשאול אם יש צורך בכל קבוצת הריבועים כדי לכתוב כל מספר טבעי כסכום של ארבעה ריבועים. אדוארד וירזינג הוכיח שיש קבוצה של ריבועים <math>S</math> עם <math>|S| = O(n^{1/4}\log^{1/4} n)</math> כך שכל מספר שלם חיובי עד <math>n</math> אפשר לכתוב כסכום של 4 איברים של <math>S</math> לכל היותר.{{הערה|1=J. Spencer, Four Squares with Few Squares, בתוך: Number Theory: New York Seminar 1991–1995, Springer, 1996, עמ' 295–297, {{DOI|10.1007/978-1-4612-2418-1_22}}|כיווון=שמאל}}
+
+== ראו גם ==
+* [[סכום של שני ריבועים]]
+* [[משפט שלושת הריבועים של לז'נדר]]
+* [[משפט המספרים המצולעים]]
+* [[בעיית וארינג]]
+* [[משפטי 15 ו-290]]
+
+== קישורים חיצוניים ==
+* [http://planetmath.org/proofoflagrangesfoursquaretheorem הוכחה באתר PlanetMath]
+* [http://www.alpertron.com.ar/4SQUARES.HTM הוכחה נוספת]
+* [http://www.alpertron.com.ar/FSQUARES.HTM יישומון לפירוק מספרים לסכום של ארבעה ריבועים]
+* {{MathWorld|LagrangesFour-SquareTheorem|Lagrange's Four-Square Theorem}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האדיטיבית]]
