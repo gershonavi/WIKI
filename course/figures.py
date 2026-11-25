@@ -4887,6 +4887,99 @@ def _():
     save('T06-x4')
 
 
+@fig('T07-e1')
+def _():
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.2))
+    X = 3000; x = np.arange(1, X + 1); H = np.cumsum(1 / x); g = 0.5772156649
+    a1.semilogx(x, H - np.log(x), color=C1, label='H(x) − log x'); a1.axhline(g, color=C2, ls='--', label='γ ≈ 0.5772')
+    a1.set_xlabel('x'); a1.legend(fontsize=8); a1.set_title('H(x) − log x → γ', fontsize=9)
+    a2.semilogx(x, x * (H - np.log(x) - g), color=C1); a2.axhline(.5, color=C2, ls='--', label='½')
+    a2.set_ylim(0.3, 0.55); a2.set_xlabel('x (integer)'); a2.legend(fontsize=8); a2.set_title('x·(H(x) − log x − γ) → ½', fontsize=9)
+    save('T07-e1')
+
+
+@fig('T07-e2')
+def _():
+    ax = plt.gca(); n = np.arange(1, 301)
+    from math import lgamma
+    lf = np.array([lgamma(k + 1) for k in n])
+    ax.plot(n, lf - (n * np.log(n) - n), color=C1, label='log n! − (n log n − n)')
+    ax.plot(n, .5 * np.log(2 * np.pi * n), color=C2, ls='--', label='½ log(2πn)')
+    ax.plot(n, np.log(n + 1), color=GR, ls=':', label='log(n+1): bound from the proof')
+    ax.set_xlabel('n'); ax.legend(fontsize=8); ax.set_title('the difference grows only like ½ log n', fontsize=9)
+    save('T07-e2')
+
+
+@fig('T07-e3')
+def _():
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.2))
+    X = 100000; d = np.zeros(X + 1)
+    for k in range(1, X + 1):
+        d[k::k] += 1
+    x = np.arange(1, X + 1); S = np.cumsum(d[1:] / x); L = np.log(x)
+    idx = np.unique(np.logspace(0, 5, 400).astype(int)) - 1
+    a1.semilogx(x[idx], S[idx], color=C1, label='Σ d(n)/n'); a1.semilogx(x[idx], .5 * L[idx] ** 2, color=C2, ls='--', label='½ log² x')
+    a1.set_xlabel('x'); a1.legend(fontsize=8); a1.set_title('main term', fontsize=9)
+    j = idx[idx >= 9]
+    a2.semilogx(x[j], (S[j] - .5 * L[j] ** 2) / L[j], color=C1); a2.axhline(2 * 0.5772, color=C2, ls='--', label='2γ ≈ 1.154')
+    a2.set_ylim(0, 2.5); a2.set_xlabel('x'); a2.legend(fontsize=8); a2.set_title('(Σ − ½ log² x)/log x stays bounded', fontsize=9)
+    save('T07-e3')
+
+
+@fig('T07-e4')
+def _():
+    ax = plt.gca(); n = np.arange(1, 41)
+    from math import lgamma
+    r = np.exp(np.array([lgamma(k + 1) for k in n]) - (.5 * np.log(2 * np.pi * n) + n * np.log(n) - n))
+    ax.plot(n, r, 'o', ms=3, color=C1, label='n! / Stirling')
+    ax.plot(n, 1 + 1 / (12 * n), color=C2, ls='--', label='1 + 1/(12n)')
+    ax.axhline(1, color=GR, lw=.8); ax.set_xlabel('n'); ax.legend(fontsize=8); ax.set_title('Stirling: n! ~ √(2πn)(n/e)^n', fontsize=9)
+    save('T07-e4')
+
+
+@fig('T07-x1')
+def _():
+    ax = plt.gca(); X = 100000; x = np.arange(1, X + 1)
+    S = np.cumsum(1 / np.sqrt(x)); idx = np.unique(np.logspace(0, 5, 400).astype(int)) - 1
+    ax.semilogx(x[idx], S[idx] - 2 * np.sqrt(x[idx]), color=C1, label='Σ 1/√n − 2√x')
+    ax.axhline(-1.4603545, color=C2, ls='--', label='C = ζ(½) ≈ −1.4604')
+    ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('the constant C', fontsize=9)
+    save('T07-x1')
+
+
+@fig('T07-x2')
+def _():
+    ax = plt.gca(); X = 100000; x = np.arange(1, X + 1)
+    S = np.cumsum(np.log(x) / x); idx = np.unique(np.logspace(0, 5, 400).astype(int)) - 1
+    ax.semilogx(x[idx], S[idx] - .5 * np.log(x[idx]) ** 2, color=C1, label='Σ log n / n − ½ log² x')
+    ax.axhline(-0.0728158, color=C2, ls='--', label='γ₁ ≈ −0.0728')
+    ax.set_ylim(-0.4, 0.4); ax.set_xlabel('x'); ax.legend(fontsize=8); ax.set_title('Stieltjes constant γ₁', fontsize=9)
+    save('T07-x2')
+
+
+@fig('T07-x3')
+def _():
+    fig_, (a1, a2) = plt.subplots(1, 2, figsize=(6.6, 3.2))
+    n = np.arange(1, 41); a = (-1.0) ** n
+    a1.step(n, np.cumsum(a), where='post', color=C1); a1.set_ylim(-1.5, 0.5)
+    a1.set_xlabel('x'); a1.set_title('A(x) = Σ_{n≤x} (−1)^n is bounded', fontsize=9)
+    a2.plot(n, np.cumsum(a / n), 'o-', ms=3, lw=.7, color=C1, label='Σ_{n≤x} (−1)^n/n')
+    a2.axhline(-np.log(2), color=C2, ls='--', label='−log 2')
+    a2.set_xlabel('x'); a2.legend(fontsize=8); a2.set_title('converges', fontsize=9)
+    save('T07-x3')
+
+
+@fig('T07-x4')
+def _():
+    ax = plt.gca(); n = np.arange(1, 61)
+    from math import lgamma
+    lr = np.array([lgamma(2 * k + 1) - 2 * lgamma(k + 1) for k in n]) - (n * np.log(4) - .5 * np.log(np.pi * n))
+    ax.plot(n, np.exp(lr), 'o', ms=3, color=C1, label='C(2n,n) / (4^n/√(πn))')
+    ax.plot(n, 1 - 1 / (8 * n), color=C2, ls='--', label='1 − 1/(8n)')
+    ax.axhline(1, color=GR, lw=.8); ax.set_xlabel('n'); ax.legend(fontsize=8); ax.set_title('central binomial coefficient', fontsize=9)
+    save('T07-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
