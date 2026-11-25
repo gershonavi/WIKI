@@ -122,7 +122,7 @@ Additive number theory:
 - [x] Ray class field
 - [ ] Complex multiplication
 - [x] Conductor (class field theory)
-- [ ] Weil group
+- [x] Weil group
 - [x] Genus field
 - [x] Golod–Shafarevich theorem
 - [x] Albert–Brauer–Hasse–Noether theorem
