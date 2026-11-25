@@ -1,0 +1,31 @@
+ב[[מתמטיקה]], '''שדה דו-ריבועי''' הוא [[שדה מספרים]] <math>K</math> מסוג מסוים: [[הרחבת גלואה]] ממעלה 4 של שדה ה[[מספר רציונלי|מספרים הרציונליים]] <math>\mathbb Q</math>, ש[[חבורת גלואה|חבורת הגלואה]] שלה איזומורפית לחבורת ארבע של קליין <math>\mathbb Z/2 \times \mathbb Z/2</math>.
+
+== מבנה ותת-שדות ==
+שדות דו-ריבועיים מתקבלים מצירוף שני שורשים ריבועיים של מספרים רציונליים <math>a, b</math>:
+:<math>K = \mathbb{Q} \left( \sqrt{a}, \sqrt{b} \right).</math>
+בלי הגבלת הכלליות אפשר להניח ש-<math>a</math> ו-<math>b</math> מספרים שלמים שונים מאפס ו[[קבוצה ללא הפרשים ריבועיים|חופשיים מריבועים]] (ושונים זה מזה ומ-1, כדי שהמעלה תהיה 4).
+
+לחבורת הגלואה יש שלוש תת-חבורות מאינדקס 2, שמתאימות לשלושת תת-השדות ה[[שדה ריבועי|ריבועיים]]
+:<math>\mathbb Q(\sqrt a),\ \mathbb Q(\sqrt b),\ \mathbb Q(\sqrt{ab}) \subset K.</math>
+שדות דו-ריבועיים הם הדוגמאות הפשוטות ביותר ל[[הרחבה אבלית|הרחבות אבליות]] של <math>\mathbb Q</math> שאינן ציקליות. בנוסף, שדות דו-ריבועיים בדרך כלל אינם '''מונוגניים''': אף על פי שיש [[משפט האיבר הפרימיטיבי|איבר פרימיטיבי]] שיוצר את השדה <math>K</math> מעל <math>\mathbb Q</math>, ל[[חוג השלמים האלגבריים|חוג השלמים]] <math>\mathcal O_K</math> שלו ייתכן שאין יוצר יחיד מעל <math>\mathbb Z</math>.{{הערה|1=H. P. F. Swinnerton-Dyer, ''A Brief Guide to Algebraic Number Theory'', London Mathematical Society Student Texts '''50''', Cambridge University Press, 2001, section 12|כיווון=שמאל}}
+
+== דוגמה מלאה: <math>\mathbb Q(\sqrt2, \sqrt3)</math> ==
+* '''חבורת הגלואה.''' ארבעת האוטומורפיזמים נקבעים לפי הסימנים: <math>\sqrt2 \mapsto \pm\sqrt2</math>, <math>\sqrt3 \mapsto \pm\sqrt3</math>. כל אוטומורפיזם שאינו הזהות הוא מסדר 2, ולכן החבורה היא חבורת ארבע של קליין ולא החבורה הציקלית מסדר 4.
+* '''תת-השדות.''' שלושת תת-השדות הריבועיים הם <math>\mathbb Q(\sqrt2)</math> (שנשאר קבוע תחת <math>\sqrt3 \mapsto -\sqrt3</math>), <math>\mathbb Q(\sqrt3)</math>, ו-<math>\mathbb Q(\sqrt6)</math> (שנשאר קבוע תחת האוטומורפיזם שמחליף את הסימן של שניהם, כי <math>\sqrt6 = \sqrt2\sqrt3</math>).
+* '''איבר פרימיטיבי.''' <math>\alpha = \sqrt2 + \sqrt3</math> יוצר את <math>K</math>. אכן, <math>\alpha^2 = 5 + 2\sqrt6</math>, ולכן <math>(\alpha^2 - 5)^2 = 24</math>, כלומר <math>\alpha</math> הוא שורש של
+:<math>x^4 - 10x^2 + 1,</math>
+:ושורשיו הם ארבעת המספרים <math>\pm\sqrt2 \pm\sqrt3</math>. מאחר שהם שונים זה מזה, הפולינום הזה הוא ה[[פולינום מינימלי]] של <math>\alpha</math>.
+* '''הדיסקרימיננטה.''' לפי נוסחת המוליך–דיסקרימיננטה, ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] של שדה דו-ריבועי היא מכפלת הדיסקרימיננטות של שלושת תת-השדות הריבועיים. כאן הן <math>8</math>, <math>12</math> ו-<math>24</math>, ולכן <math>\Delta_K = 8\cdot 12\cdot 24 = 2304 = 2^8\cdot 3^2</math>. לעומת זאת, הדיסקרימיננטה של הפולינום <math>x^4 - 10x^2 + 1</math> היא <math>147456 = 2^{14}\cdot 3^2 = 8^2\cdot 2304</math>, ולכן <math>\mathbb Z[\sqrt2+\sqrt3]</math> הוא סדר מאינדקס 8 בחוג השלמים (כי הדיסקרימיננטה של סדר מאינדקס <math>m</math> היא <math>m^2</math> כפול הדיסקרימיננטה של השדה). (למשל, <math>\tfrac{\sqrt2+\sqrt6}{2}</math> הוא שלם אלגברי שאינו בסדר הזה: הריבוע שלו הוא <math>2 + \sqrt3</math>.)
+
+דוגמה נוספת היא <math>\mathbb Q(i, \sqrt2) = \mathbb Q(\zeta_8)</math>, השדה הציקלוטומי של שורשי היחידה מסדר 8. תת-השדות הריבועיים שלו הם <math>\mathbb Q(i)</math>, <math>\mathbb Q(\sqrt2)</math> ו-<math>\mathbb Q(\sqrt{-2})</math>, עם דיסקרימיננטות <math>-4, 8, -8</math>, ומכפלתן היא <math>256</math> – הדיסקרימיננטה של <math>\mathbb Q(\zeta_8)</math>. השדה הזה מונוגני: <math>\mathcal O_K = \mathbb Z[\zeta_8]</math>.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. P. F. Swinnerton-Dyer, ''A Brief Guide to Algebraic Number Theory'', London Mathematical Society Student Texts '''50''', Cambridge University Press, 2001
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:תורת גלואה]]
