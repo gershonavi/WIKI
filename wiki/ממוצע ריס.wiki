@@ -23,8 +23,8 @@
 ואילו השארים בקטבים נותנים <math>\frac{\lambda}{2} - \frac12 + \frac{1}{12\lambda}</math>, שהוא בדיוק הממוצע של הביטוי המדויק על פני <math>\theta</math>. (האיבר הקבוע <math>-\tfrac12 = \zeta(0)</math> בא מהקוטב של <math>\Gamma(s)</math> ב-<math>s = 0</math>.)
 
 מקרה מעניין אחר, הקשור ל[[תורת המספרים]], מתקבל כשלוקחים <math>a_n=\Lambda(n)</math>, כאשר <math>\Lambda(n)</math> היא פונקציית פון מנגולדט. אז
-:<math>\sum_{n\le \lambda} \left(1-\frac{n}{\lambda}\right)^\delta \Lambda(n) = - \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \frac{\Gamma(1+\delta)\Gamma(s)}{\Gamma(1+\delta+s)} \frac{\zeta'(s)}{\zeta(s)} \lambda^s \, ds = \frac{\lambda}{1+\delta} + \sum_\rho \frac {\Gamma(1+\delta)\Gamma(\rho)}{\Gamma(1+\delta+\rho)}\lambda^\rho +\sum_n c_n \lambda^{-n}.</math>
-שוב יש לקחת <math>c > 1</math>. הסכום על <math>\rho</math> הוא סכום על האפסים של פונקציית זטא של רימן, והטור <math>\sum_n c_n \lambda^{-n}</math> מתכנס עבור <math>\lambda > 1</math>. (בערך האנגלי חסר הגורם <math>\lambda^\rho</math> בסכום על האפסים; הוא נובע מהשארית של <math>\lambda^s</math> ב-<math>s = \rho</math>.)
+:<math>\sum_{n\le \lambda} \left(1-\frac{n}{\lambda}\right)^\delta \Lambda(n) = - \frac{1}{2\pi i} \int_{c-i\infty}^{c+i\infty} \frac{\Gamma(1+\delta)\Gamma(s)}{\Gamma(1+\delta+s)} \frac{\zeta'(s)}{\zeta(s)} \lambda^s \, ds = \frac{\lambda}{1+\delta} - \sum_\rho \frac {\Gamma(1+\delta)\Gamma(\rho)}{\Gamma(1+\delta+\rho)}\lambda^\rho +\sum_n c_n \lambda^{-n}.</math>
+שוב יש לקחת <math>c > 1</math>. הסכום על <math>\rho</math> הוא סכום על האפסים של פונקציית זטא של רימן, והטור <math>\sum_n c_n \lambda^{-n}</math> מתכנס עבור <math>\lambda > 1</math>. (בערך האנגלי חסרים בסכום על האפסים הגורם <math>\lambda^\rho</math> וסימן המינוס. שניהם נובעים מהשארית ב-<math>s = \rho</math>: לפונקציה <math>\zeta'/\zeta</math> יש שם קוטב עם שארית 1, והאינטגרל כולו מוכפל ב-<math>-1</math>. עבור <math>\delta = 0</math> מתקבל <math>-\sum_\rho \lambda^\rho/\rho</math>, כמו ב[[נוסחת רימן-פון מנגולדט|נוסחה המפורשת]] הקלאסית <math>\psi(x) = x - \sum_\rho x^\rho/\rho - \dots</math>.)
 
 האינטגרלים שמופיעים כאן דומים לאינטגרל נרלונד–רייס; באופן גס מאוד, אפשר לקשר ביניהם דרך [[נוסחת פרון]].
 
