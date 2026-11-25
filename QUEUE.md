@@ -36,7 +36,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 - [x] Green–Tao theorem
 - [x] Twin prime conjecture (קיים בוויקיפדיה העברית: השערת המספרים הראשוניים התאומים)
 - [x] Polignac's conjecture
-- [ ] First Hardy–Littlewood conjecture
+- [x] First Hardy–Littlewood conjecture
 - [x] Andrica's conjecture
 - [x] Legendre's three-square theorem
 - [x] Sum of two squares theorem (קיים בוויקיפדיה העברית: סכום של שני ריבועים)

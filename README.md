@@ -10,7 +10,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (98)
+## ערכים (99)
 
 ### אנליזה מרוכבת
 
@@ -21,6 +21,7 @@
 * [השערת אנדריקה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%90%D7%A0%D7%93%D7%A8%D7%99%D7%A7%D7%94.md) – Andrica's conjecture
 * [השערת בוניאקובסקי](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%91%D7%95%D7%A0%D7%99%D7%90%D7%A7%D7%95%D7%91%D7%A1%D7%A7%D7%99.md) – Bunyakovsky conjecture
 * [השערת דיקסון](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%93%D7%99%D7%A7%D7%A1%D7%95%D7%9F.md) – Dickson's conjecture
+* [השערת הארדי-ליטלווד הראשונה](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%90%D7%A8%D7%93%D7%99-%D7%9C%D7%99%D7%98%D7%9C%D7%95%D7%95%D7%93%20%D7%94%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%94.md) – First Hardy–Littlewood conjecture
 * [השערת המתאם הזוגי של מונטגומרי](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%9E%D7%AA%D7%90%D7%9D%20%D7%94%D7%96%D7%95%D7%92%D7%99%20%D7%A9%D7%9C%20%D7%9E%D7%95%D7%A0%D7%98%D7%92%D7%95%D7%9E%D7%A8%D7%99.md) – Montgomery's pair correlation conjecture
 * [השערת פוליניאק](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A4%D7%95%D7%9C%D7%99%D7%A0%D7%99%D7%90%D7%A7.md) – Polignac's conjecture
 * [מספר אידוניאלי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%90%D7%99%D7%93%D7%95%D7%A0%D7%99%D7%90%D7%9C%D7%99.md) – Idoneal number

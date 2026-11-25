@@ -1,0 +1,36 @@
+ב[[תורת המספרים]], '''השערת הארדי–ליטלווד הראשונה''' (ב[[אנגלית]]: first Hardy–Littlewood conjecture){{הערה|שם=AFG|1=S. L. Aletheia-Zomlefer, L. Fukshansky, S. R. Garcia, The Bateman–Horn conjecture: Heuristic, history, and applications, Expositiones Mathematicae 38 (4), 2020, עמ' 430–479, {{DOI|10.1016/j.exmath.2019.04.005}}, {{arXiv|1807.08899}}|כיווון=שמאל}} נותנת נוסחה אסימפטוטית למספר ה-<math>k</math>-יות של מספרים ראשוניים הקטנות מגודל נתון, ובכך מכלילה את [[משפט המספרים הראשוניים]]. את ההשערה הציעו לראשונה [[גודפרי הרולד הארדי]] ו[[ג'ון אדנזור ליטלווד]] ב-1923.{{הערה|שם=original|1=G. H. Hardy, J. E. Littlewood, Some Problems of 'Partitio Numerorum.' III. On the Expression of a Number as a Sum of Primes, Acta Mathematica 44, 1923, עמ' 1–70, {{DOI|10.1007/BF02403921}}|כיווון=שמאל}}
+
+== ניסוח ==
+יהיו <math>m_1, m_2, \ldots, m_k </math> מספרים שלמים חיוביים זוגיים, כך שהמספרים בסדרה <math>P = (p, p + m_1, p + m_2, \ldots , p + m_k)</math> אינם יוצרים מערכת שאריות שלמה מודולו אף ראשוני, ונסמן ב-<math>\pi_{P}(n)</math> את מספר הראשוניים <math>p</math> הקטנים מ-<math>n</math> שעבורם <math>p + m_1, p + m_2, \ldots , p + m_k</math> כולם ראשוניים. אז{{הערה|שם=AFG}}{{הערה|שם=toth|1=L. Tóth, On the Asymptotic Density of Prime k-tuples and a Conjecture of Hardy and Littlewood, Computational Methods in Science and Technology 25 (3), 2019, {{DOI|10.12921/cmst.2019.0000033}}, {{arXiv|1910.02636}}|כיווון=שמאל}}
+:<math>\pi_P(n)\sim C_P\int_2^n \frac{dt}{\log^{k+1}t},</math>
+כאשר
+:<math>C_P=2^k \prod_{q \text{ prime,} \atop q \ge 3}\frac{1-\frac{w(q; m_1, m_2, \ldots , m_k)}q}{\left(1-\frac{1}{q}\right)^{k+1}}</math>
+היא מכפלה על הראשוניים האי-זוגיים, ו-<math>w(q; m_1, m_2, \ldots , m_k)</math> הוא מספר השאריות השונות של <math>0, m_1, m_2, \ldots , m_k</math> מודולו <math>q</math>.
+
+המקרה <math>k=1</math>, <math>m_1=2</math> קשור ל[[השערת המספרים הראשוניים התאומים]]. ליתר דיוק, אם <math>\pi_2(n)</math> הוא מספר הראשוניים התאומים הקטנים מ-<math>n</math>, אז
+:<math>\pi_2(n)\sim C_2 \int_2^n \frac{dt}{\log^2 t},</math>
+כאשר
+:<math>C_2 = 2\prod_{\textstyle{q \text{ prime,}\atop q \ge 3}} \left(1 - \frac{1}{(q-1)^2} \right) \approx 1.320323632\ldots</math>
+הוא קבוע הראשוניים התאומים.{{הערה|שם=toth}}
+
+== מספרי סקיוז ==
+את [[מספר סקיוז|מספרי סקיוז]] אפשר להגדיר גם עבור <math>k</math>-יות של ראשוניים, על בסיס השערת הארדי–ליטלווד הראשונה. הראשוני הראשון <math>p</math> שמפר את אי-השוויון של הארדי–ליטלווד עבור ה-<math>k</math>-יה <math>P</math>, כלומר שמקיים
+:<math> \pi_P(p)>C_P \operatorname {li}_P(p), </math>
+(אם ראשוני כזה קיים), הוא מספר סקיוז של <math>P</math>. כאן <math>\operatorname{li}_P(x) = \int_2^x \frac{dt}{\log^{k+1}t}</math>.{{הערה|שם=toth}}
+
+== מסקנות ==
+הוכח שההשערה אינה עקבית עם '''השערת הארדי–ליטלווד השנייה''', שלפיה <math>\pi(x+y) \le \pi(x) + \pi(y)</math> לכל <math>x, y \ge 2</math>.{{הערה|1=I. Richards, On the Incompatibility of Two Conjectures Concerning Primes, Bull. Amer. Math. Soc. 80, 1974, עמ' 419–438, {{DOI|10.1090/S0002-9904-1974-13434-8}}|כיווון=שמאל}}
+
+== הכללות ==
+[[השערת בייטמן-הורן]] מכלילה את השערת הארדי–ליטלווד הראשונה ל[[פולינום|פולינומים]] ממעלה גבוהה מ-1.{{הערה|שם=AFG}}
+
+== ראו גם ==
+* [[השערת דיקסון]]
+* [[השערה H של שינצל]]
+* [[משפט גרין-טאו]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
+[[קטגוריה:מספרים ראשוניים]]
