@@ -4316,6 +4316,110 @@ def _():
     save('P12-x3')
 
 
+# ================= toolkit lessons (T01–T13) =================
+@fig('T01-e1')
+def _():
+    ax = plt.gca(); n = 10
+    for k in range(1, n + 1):
+        ax.text(k, 1, str(k), ha='center', va='center', color=C1)
+        ax.text(k, 0, str(n + 1 - k), ha='center', va='center', color=C2)
+        ax.text(k, -1, str(n + 1), ha='center', va='center', weight='bold')
+    ax.text(0, 1, 'S =', ha='right', va='center'); ax.text(0, 0, 'S =', ha='right', va='center'); ax.text(0, -1, '2S =', ha='right', va='center')
+    ax.plot([0.5, n + .5], [-.5, -.5], color=GR)
+    ax.set_xlim(-1, n + 1); ax.set_ylim(-1.6, 1.6); ax.axis('off')
+    ax.set_title('1+2+...+10 written twice (shown for n = 10): every column sums to 11, so 2S = 10·11', fontsize=9)
+    save('T01-e1')
+
+
+@fig('T01-e2')
+def _():
+    ax = plt.gca(); K = 8
+    for k in range(1, K + 1):
+        ax.bar(k, 1 / k, width=.8, color='#dde8f3', edgecolor=C1)
+        ax.bar(k, 1 / k - 1 / (k + 1), bottom=1 / (k + 1), width=.8, color=C2, alpha=.6)
+    ax.set_xlabel('k'); ax.set_ylabel('1/k')
+    ax.set_title('red part of bar k = 1/k − 1/(k+1) = 1/(k(k+1)); red parts stack to 1 − 1/(K+1)', fontsize=9)
+    save('T01-e2')
+
+
+@fig('T01-e3')
+def _():
+    ax = plt.gca()
+    x0, y0, w, h = 0, 0, 1, 1
+    cols = [C1, C2, C3, C4, '#9467bd', '#8c564b', '#e377c2']
+    for k in range(7):
+        if k % 2 == 0:
+            ax.add_patch(plt.Rectangle((x0, y0), w / 2, h, fc=cols[k], alpha=.55, ec='k'))
+            ax.text(x0 + w / 4, y0 + h / 2, f'1/{2**(k+1)}', ha='center', va='center', fontsize=max(6, 11 - k))
+            x0 += w / 2; w /= 2
+        else:
+            ax.add_patch(plt.Rectangle((x0, y0), w, h / 2, fc=cols[k], alpha=.55, ec='k'))
+            ax.text(x0 + w / 2, y0 + h / 4, f'1/{2**(k+1)}', ha='center', va='center', fontsize=max(6, 11 - k))
+            y0 += h / 2; h /= 2
+    ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('1/2 + 1/4 + 1/8 + ... fills the unit square but never all of it', fontsize=9)
+    save('T01-e3')
+
+
+def _divgrid(ax, x, weight=lambda d: 1, title=''):
+    for n in range(1, x + 1):
+        for d in range(1, x + 1):
+            if n % d == 0:
+                ax.scatter(n, d, s=30 + 8 * weight(d), color=C1)
+    ax.set_xticks(range(1, x + 1)); ax.set_yticks(range(1, x + 1))
+    ax.set_xlabel('n (columns: sum over d | n)'); ax.set_ylabel('d (rows: ⌊x/d⌋ points)')
+    ax.grid(alpha=.3); ax.set_title(title, fontsize=9)
+
+
+@fig('T01-e4')
+def _():
+    _divgrid(plt.gca(), 10, title='pairs (d, n) with d | n ≤ 10: 27 points counted by columns or by rows')
+    save('T01-e4')
+
+
+@fig('T01-x1')
+def _():
+    ax = plt.gca(); n = 6
+    cols = [C1, C2, C3, C4, '#9467bd', '#8c564b']
+    for k in range(1, n + 1):
+        for i in range(k):
+            for j in range(k):
+                if max(i, j) == k - 1:
+                    ax.add_patch(plt.Rectangle((i, j), 1, 1, fc=cols[k - 1], alpha=.6, ec='w'))
+        ax.text(k - .5, k - .5, str(2 * k - 1), ha='center', va='center', fontsize=8, weight='bold')
+    ax.set_xlim(0, n); ax.set_ylim(0, n); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('1 + 3 + 5 + ... + 11 = 6²: each L-shaped layer adds 2k − 1 squares', fontsize=9)
+    save('T01-x1')
+
+
+@fig('T01-x2')
+def _():
+    ax = plt.gca(); ns = np.arange(2, 31)
+    P = np.cumprod([1 - 1 / k ** 2 for k in ns])
+    ax.plot(ns, P, 'o', color=C1, ms=4, label='P(n) = ∏(1 − 1/k²)')
+    ax.plot(ns, (ns + 1) / (2 * ns), '-', color=C2, label='(n+1)/(2n)')
+    ax.axhline(.5, color=GR, ls='--'); ax.legend(fontsize=8); ax.set_xlabel('n')
+    ax.set_title('telescoping product: P(n) = (n+1)/(2n) → 1/2', fontsize=9)
+    save('T01-x2')
+
+
+@fig('T01-x3')
+def _():
+    _divgrid(plt.gca(), 6, weight=lambda d: 6 * d, title='x = 6: point in row d weighs d; total = Σ σ(n) = Σ d⌊6/d⌋ = 33')
+    save('T01-x3')
+
+
+@fig('T01-x4')
+def _():
+    ax = plt.gca(); ns = np.arange(1, 11)
+    S = np.cumsum([k * 2 ** k for k in ns])
+    ax.semilogy(ns, S, 'o', color=C1, label='S(n) = Σ k·2^k')
+    ax.semilogy(ns, (ns - 1) * 2.0 ** (ns + 1) + 2, '-', color=C2, label='(n−1)·2^(n+1) + 2')
+    ax.legend(fontsize=8); ax.set_xlabel('n')
+    ax.set_title('the closed form matches every partial sum', fontsize=9)
+    save('T01-x4')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)

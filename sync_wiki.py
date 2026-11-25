@@ -78,8 +78,13 @@ def main(dest):
             parts = row.split('\t')
             if len(parts) >= 3 and not row.startswith('#'):
                 titles[parts[2][:-3]] = parts[1]
-    main_lessons = [l for l in lessons if not l.startswith('P')]
-    side += [f'{i+1}. [{titles.get(l, l)}]({wiki_name(l)})' for i, l in enumerate(main_lessons)]
+    order = []
+    if os.path.exists(up):
+        for row in open(up, encoding='utf-8').read().splitlines():
+            parts = row.split('\t')
+            if len(parts) >= 3 and not row.startswith('#') and parts[2][:-3] in lessons:
+                order.append((parts[0], parts[2][:-3]))
+    side += [f'* {num}. [{titles.get(l, l)}]({wiki_name(l)})' for num, l in order]
     pp = os.path.join(course_dir, 'proofs.tsv')
     if os.path.exists(pp):
         ptitles = {}
