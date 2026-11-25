@@ -152,7 +152,7 @@ Additive number theory:
 - [x] Modular elliptic curve
 - [x] Frey curve
 - [x] Sato–Tate conjecture
-- [ ] Conductor of an elliptic curve
+- [x] Conductor of an elliptic curve
 - [ ] Tate's algorithm
 - [ ] Twists of elliptic curves
 - [ ] Mordell curve
