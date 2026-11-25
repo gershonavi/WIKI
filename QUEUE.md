@@ -50,7 +50,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 Analytic number theory:
 Arithmetic functions:
 
-Zeta and L-functions: Shimura variety
+Zeta and L-functions: (done)
 
 
 Sieve theory and theorems:
