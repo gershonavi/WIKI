@@ -1,0 +1,97 @@
+ב[[מתמטיקה]], '''טור זטא רציונלי''' (ב[[אנגלית]]: rational zeta series) הוא הצגה של [[מספר ממשי]] כלשהו כטור המורכב מ[[מספר רציונלי|מספרים רציונליים]] ומערכים של [[פונקציית זטא של רימן]] או של [[פונקציית זטא של הורוויץ]]. ליתר דיוק, בהינתן מספר ממשי <math>x</math>, טור הזטא הרציונלי של <math>x</math> נתון על ידי
+:<math>x=\sum_{n=2}^\infty q_n \zeta (n,m),</math>
+כאשר כל <math>q_n</math> מספר רציונלי, הערך <math>m</math> קבוע, ו-<math>\zeta(s, m)</math> היא פונקציית זטא של הורוויץ. לא קשה להראות שאפשר לפתח כל מספר ממשי <math>x</math> בצורה כזו. ('''רמז, נוסף בתרגום:''' <math>\zeta(n,m) \approx m^{-n}</math> קטן מאוד כש-<math>n</math> גדל, ולכן אפשר לבחור את <math>q_n</math> בזה אחר זה באלגוריתם חמדן, כך שהשארית תקטן לאפס.)
+
+כל הזהויות במאמר זה נבדקו מספרית בדיוק של 15 ספרות לפחות. בשלוש מהן נמצאו טעויות בערך האנגלי, והן מתוקנות כאן ומסומנות.
+
+== טורים אלמנטריים ==
+עבור שלם <math>m>1</math> מתקיים
+:<math>x=\sum_{n=2}^\infty q_n \left[\zeta(n)- \sum_{k=1}^{m-1} k^{-n}\right].</math>
+עבור <math>m=2</math>, לכמה מספרים מעניינים יש הצגה פשוטה כטור זטא רציונלי:
+:<math>1=\sum_{n=2}^\infty \left[\zeta(n)-1\right]</math>
+ו
+:<math>1-\gamma=\sum_{n=2}^\infty \frac{1}{n}\left[\zeta(n)-1\right],</math>
+כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני|קבוע אוילר–מסקרוני]].
+
+('''הוכחת הזהות הראשונה, נוסף בתרגום:''' <math>\zeta(n) - 1 = \sum_{k\ge2}k^{-n}</math>. מחליפים את סדר הסכימה: <math>\sum_{n\ge2}\sum_{k\ge2}k^{-n} = \sum_{k\ge2}\frac{k^{-2}}{1-k^{-1}} = \sum_{k\ge2}\frac{1}{k(k-1)} = \sum_{k\ge2}\Big(\frac{1}{k-1}-\frac1k\Big) = 1</math>, [[טור טלסקופי]].)
+
+הטור
+:<math>\log 2 =\sum_{n=1}^\infty \frac{1}{n}\left[\zeta(2n)-1\right]</math>
+נובע מסכימת התפלגות גאוס–קוזמין. יש גם טורים עבור <math>\pi</math>:
+:<math>\log \pi =\sum_{n=2}^\infty \frac{2(3/2)^n-3}{n}\left[\zeta(n)-1\right]</math>
+ו
+:<math>\frac{13}{30} - \frac{\pi}{8} =\sum_{n=1}^\infty \frac{1}{4^{2n}}\left[\zeta(2n)-1\right],</math>
+שבולט בזכות ההתכנסות המהירה שלו. הטור האחרון נובע מהזהות הכללית
+:<math>\sum_{n=1}^\infty (-1)^{n} t^{2n} \left[\zeta(2n)-1\right] =
+\frac{t^2}{1+t^2} + \frac{1-\pi t}{2} - \frac {\pi t}{e^{2\pi t} -1}, </math>
+שנובעת בתורה מה[[פונקציה יוצרת|פונקציה היוצרת]] של [[מספרי ברנולי]]
+:<math>\frac{t}{e^t-1} = \sum_{n=0}^\infty B_n \frac{t^n}{n!}.</math>
+אדמצ'יק וסריווסטבה נותנים טור דומה:
+:<math>\sum_{n=1}^\infty \frac{t^{2n}}{n} \zeta(2n) =
+\log \left(\frac{\pi t} {\sin (\pi t)}\right).</math>
+
+== טורים הקשורים לפונקציות פוליגמא ==
+אפשר לגזור כמה יחסים נוספים מ[[טור טיילור]] של [[פונקציית פוליגמא]] בנקודה <math>z=1</math>, שהוא
+:<math>\psi^{(m)}(z+1)= \sum_{k=0}^\infty
+(-1)^{m+k+1} (m+k)!\; \zeta (m+k+1)\; \frac {z^k}{k!}.</math>
+הטור מתכנס עבור <math>|z| \lt 1</math>. מקרה פרטי הוא
+:<math>\sum_{n=2}^\infty t^n \left[\zeta(n)-1\right] =
+-t\left[\gamma +\psi(1-t) +\frac{t}{1-t}\right],
+</math>
+שמתקיים עבור <math>|t| \lt 2</math>. כאן <math>\psi</math> היא [[פונקציית דיגמא|פונקציית הדיגמא]] ו-<math>\psi^{(m)}</math> היא פונקציית הפוליגמא. (בערך האנגלי מופיע בטעות הסימן <math>-\frac{t}{1-t}</math>. '''גזירה:''' <math>\sum_{n\ge2}t^n(\zeta(n)-1) = \sum_{k\ge2}\frac{t^2}{k(k-t)}</math>, ואילו מהטור <math>\psi(1-t) = -\gamma - \sum_{k\ge1}\frac{t}{k(k-t)}</math> מתקבל ש-<math>-t[\gamma + \psi(1-t)]</math> כולל גם את האיבר <math>k = 1</math>, <math>\frac{t^2}{1-t}</math>, שיש להחסיר. למשל עבור <math>t = 1/2</math> שני האגפים שווים ל-<math>0.1931472\ldots = \log 2 - \tfrac12</math>.)
+
+אפשר לגזור טורים רבים המערבים את ה[[מקדם בינומי|מקדם הבינומי]]:
+:<math>\sum_{k=0}^\infty {k+\nu+1 \choose k} \left[\zeta(k+\nu+2)-1\right]
+= \zeta(\nu+2),</math>
+כאשר <math>\nu</math> הוא [[מספר מרוכב]]. זה נובע מפיתוח הטור של פונקציית זטא של הורוויץ
+:<math>\zeta(s,x+y) =
+\sum_{k=0}^\infty {s+k-1 \choose s-1} (-y)^k \zeta (s+k,x)</math>
+בנקודה <math>y = -1</math>. טורים דומים אפשר לקבל באלגברה פשוטה:
+:<math>\sum_{k=0}^\infty {k+\nu+1 \choose k+1} \left[\zeta(k+\nu+2)-1\right]
+= 1,</math>
+:<math>\sum_{k=0}^\infty (-1)^k {k+\nu+1 \choose k+1} \left[\zeta(k+\nu+2)-1\right]
+= 2^{-(\nu+1)},</math>
+:<math>\sum_{k=0}^\infty (-1)^k {k+\nu+1 \choose k+2} \left[\zeta(k+\nu+2)-1\right]
+= \nu \left[\zeta(\nu+1)-1\right] - 2^{-\nu},</math>
+:<math>\sum_{k=0}^\infty (-1)^k {k+\nu+1 \choose k} \left[\zeta(k+\nu+2)-1\right]
+= \zeta(\nu+2)-1 - 2^{-(\nu+2)}.</math>
+
+עבור שלם <math>n \ge 0</math>, את הטור
+:<math>S_n = \sum_{k=0}^\infty {k+n \choose k} \left[\zeta(k+n+2)-1\right]</math>
+אפשר לכתוב כסכום סופי
+:<math>S_n=(-1)^n\left[1+\sum_{k=1}^n (-1)^k\zeta(k+1) \right].</math>
+זה נובע מיחס הנסיגה הפשוט <math>S_n + S_{n+1} = \zeta(n+2)</math>. (בערך האנגלי חסר הגורם <math>(-1)^k</math> בתוך הסכום. '''בדיקה:''' <math>S_0 = 1</math> ו-<math>S_1 = \zeta(2) - S_0 = \zeta(2) - 1</math>, ואילו הנוסחה בערך האנגלי נותנת <math>S_1 = -(1+\zeta(2))</math>, שהוא שלילי, בעוד שכל איברי הטור חיוביים.) בהמשך, את הטור
+:<math>T_n = \sum_{k=0}^\infty {k+n-1 \choose k} \left[\zeta(k+n+2)-1\right]</math>
+אפשר לכתוב כ
+:<math>T_n=(-1)^{n+1}\left[n+1-\zeta(2)+\sum_{k=1}^{n-1} (-1)^k (n-k) \zeta(k+1) \right]</math>
+עבור שלם <math>n \ge 1</math>. זה נובע מהזהות <math>T_n + T_{n+1} = S_n</math>. אפשר להפעיל את התהליך הזה באופן רקורסיבי כדי לקבל טורים סופיים עבור ביטויים כלליים מהצורה
+:<math>\sum_{k=0}^\infty {k+n-m \choose k} \left[\zeta(k+n+2)-1\right]</math>
+עבור שלמים חיוביים <math>m</math>.
+
+== טורי חזקות של חצאי שלמים ==
+טורים דומים אפשר לקבל בחקירת פונקציית זטא של הורוויץ בערכים של חצאי שלמים. כך, למשל, מתקיים
+:<math>\sum_{k=0}^\infty \frac {\zeta(k+n+2)-1}{2^k}
+{{n+k+1} \choose {n+1}}=\left(2^{n+2}-1\right)\left(\zeta(n+2)-1\right)-1.</math>
+
+== ביטויים בצורת טורי p ==
+אדמצ'יק וסריווסטבה נותנים
+:<math>\sum_{n=2}^\infty n^m \left[\zeta(n)-1\right] =
+1\, +
+\sum_{k=1}^m k!\; S(m+1,k+1) \zeta(k+1)</math>
+ו
+:<math>\sum_{n=2}^\infty (-1)^n n^m \left[\zeta(n)-1\right] =
+-1\, +\, \frac {2^{m+1}-1}{m+1} B_{m+1}
+\,- \sum_{k=1}^m (-1)^k k!\; S(m+1,k+1) \zeta(k+1),</math>
+כאשר <math>B_k</math> הם מספרי ברנולי ו-<math>S(m,k)</math> הם [[מספרי סטירלינג|מספרי סטירלינג מהסוג השני]]. (בערך האנגלי המקדם של <math>B_{m+1}</math> מופיע עם סימן הפוך, <math>\frac{1-2^{m+1}}{m+1}</math>; הסימן הנכון נבדק מספרית עבור <math>m = 1, \ldots, 5</math>. למשל עבור <math>m = 1</math>: אגף שמאל הוא <math>0.8949341\ldots = \zeta(2) - \tfrac34</math>.)
+
+== טורים אחרים ==
+קבועים נוספים שיש להם טורי זטא רציונליים בולטים:
+* קבוע חינצ'ין
+* [[קבוע אפרי]]
+
+== לקריאה נוספת ==
+* J. M. Borwein, D. M. Bradley, R. E. Crandall, [https://web.archive.org/web/20060925091659/http://www.maths.ex.ac.uk/~mwatkins/zeta/borwein1.pdf Computational Strategies for the Riemann Zeta Function], J. Comput. Appl. Math. 121 (1–2), 2000, עמ' 247–296, {{DOI|10.1016/s0377-0427(00)00336-8}}
+* V. S. Adamchik, H. M. Srivastava, [http://www.cybertester.com/data/zeta.pdf Some series of the zeta and related functions], Analysis 18 (2), 1998, עמ' 131–144, {{DOI|10.1524/anly.1998.18.2.131}}
+
+[[קטגוריה:פונקציות זטא ופונקציות L]]
+[[קטגוריה:מספרים ממשיים]]
