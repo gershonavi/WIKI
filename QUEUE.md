@@ -50,7 +50,7 @@ Multiplicative functions, Probabilistic number theory. הרשימה נבנתה �
 Analytic number theory:
 Arithmetic functions:
 
-Zeta and L-functions: List of zeta functions; Functional equation (L-function); Ramanujan–Petersson conjecture; Hasse–Weil zeta function; Subgroup growth; Ihara zeta function; ZetaGrid; Zeta function regularization; Tate's thesis; Minakshisundaram–Pleijel zeta function; Stark conjectures; Local Langlands conjectures; Igusa zeta function; Shimura variety; Brumer–Stark conjecture; Equivariant L-function; P-adic L-function; Goss zeta function; Special values of L-functions; Zeta function (operator); Rankin–Selberg method; Eichler–Shimura congruence relation; Motivic L-function; Langlands–Deligne local constant; Automorphic L-function; Standard L-function; Artin conductor; Arithmetic zeta function; Shimizu L-function; Waldspurger's theorem; Ruelle zeta function; Dwork conjecture; Gan–Gross–Prasad conjecture
+Zeta and L-functions: List of zeta functions; Functional equation (L-function); Ramanujan–Petersson conjecture; Subgroup growth; Ihara zeta function; ZetaGrid; Zeta function regularization; Tate's thesis; Minakshisundaram–Pleijel zeta function; Stark conjectures; Local Langlands conjectures; Igusa zeta function; Shimura variety; Brumer–Stark conjecture; Equivariant L-function; P-adic L-function; Goss zeta function; Special values of L-functions; Zeta function (operator); Rankin–Selberg method; Eichler–Shimura congruence relation; Motivic L-function; Langlands–Deligne local constant; Automorphic L-function; Standard L-function; Artin conductor; Arithmetic zeta function; Shimizu L-function; Waldspurger's theorem; Ruelle zeta function; Dwork conjecture; Gan–Gross–Prasad conjecture
 
 
 Sieve theory and theorems:
