@@ -10,7 +10,7 @@
 
 **הערה:** לפני העתקת ערך לוויקיפדיה, כדאי לעבור עליו ולוודא שהניסוח והעובדות תואמים את מקורותיו.
 
-## ערכים (135)
+## ערכים (137)
 
 ### אנליזה מרוכבת
 
@@ -68,6 +68,7 @@
 * [משפט הארדי-רמנוג'אן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%A8%D7%93%D7%99-%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F.md) – Hardy–Ramanujan theorem
 * [משפט וולסטנהולם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%95%D7%9C%D7%A1%D7%98%D7%A0%D7%94%D7%95%D7%9C%D7%9D.md) – Wolstenholme's theorem
 * [משפט זיגל-ולפיש](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%96%D7%99%D7%92%D7%9C-%D7%95%D7%9C%D7%A4%D7%99%D7%A9.md) – Siegel–Walfisz theorem
+* [משפט יורקט-ריכרט](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%99%D7%95%D7%A8%D7%A7%D7%98-%D7%A8%D7%99%D7%9B%D7%A8%D7%98.md) – Jurkat–Richert theorem
 * [משפט ליניק](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9C%D7%99%D7%A0%D7%99%D7%A7.md) – Linnik's theorem
 * [משפט צ'ן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A6%27%D7%9F.md) – Chen's theorem
 * [משפט רומנוב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A8%D7%95%D7%9E%D7%A0%D7%95%D7%91.md) – Romanov's theorem
@@ -202,6 +203,7 @@
 * [יחס לנדסברג-שאר](pages/%D7%99%D7%97%D7%A1%20%D7%9C%D7%A0%D7%93%D7%A1%D7%91%D7%A8%D7%92-%D7%A9%D7%90%D7%A8.md) – Landsberg–Schaar relation
 * [מספר חלק](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%9C%D7%A7.md) – Smooth number
 * [משפט בראואר-זיגל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%90%D7%95%D7%90%D7%A8-%D7%96%D7%99%D7%92%D7%9C.md) – Brauer–Siegel theorem
+* [משפט ברבן-דבנפורט-הלברשטם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%91%D7%A8%D7%91%D7%9F-%D7%93%D7%91%D7%A0%D7%A4%D7%95%D7%A8%D7%98-%D7%94%D7%9C%D7%91%D7%A8%D7%A9%D7%98%D7%9D.md)
 * [משפט מאייר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9E%D7%90%D7%99%D7%99%D7%A8.md) – Maier's theorem
 * [משפט פרידלנדר-איוואניץ](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%A8%D7%99%D7%93%D7%9C%D7%A0%D7%93%D7%A8-%D7%90%D7%99%D7%95%D7%95%D7%90%D7%A0%D7%99%D7%A5.md) – Friedlander–Iwaniec theorem
 * [נוסחת פרון](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A4%D7%A8%D7%95%D7%9F.md) – Perron's formula

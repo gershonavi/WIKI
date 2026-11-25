@@ -1,0 +1,28 @@
+'''משפט יורקט–ריכרט''' (ב[[אנגלית]]: Jurkat–Richert theorem) הוא [[משפט (מתמטיקה)|משפט מתמטי]] ב[[תורת הנפה]]. הוא רכיב מרכזי בהוכחות של [[משפט צ'ן]] על [[השערת גולדבך]].{{הערה|שם=nath|1=M. B. Nathanson, Additive Number Theory: The Classical Bases, Graduate Texts in Mathematics 164, Springer, 1996, עמ' 272|כיווון=שמאל}} את המשפט הוכיחו ב-1965 וולפגנג ב. יורקט והנס-אגון ריכרט.{{הערה|שם=jr|1=W. B. Jurkat, H.-E. Richert, [http://matwbn.icm.edu.pl/ksiazki/aa/aa11/aa11118.pdf An improvement of Selberg's sieve method I], Acta Arithmetica XI, 1965, עמ' 217–240|כיווון=שמאל}}
+
+== ניסוח המשפט ==
+הניסוח כאן לקוח מספרם של דיאמונד והלברשטם.{{הערה|שם=dh|1=H. G. Diamond, H. Halberstam (בהשתתפות W. F. Galway), A Higher-Dimensional Sieve Method: with Procedures for Computing Sieve Functions, Cambridge Tracts in Mathematics 177, Cambridge University Press, 2008, עמ' 81|כיווון=שמאל}} ניסוחים אחרים מופיעים אצל יורקט וריכרט,{{הערה|שם=jr}} אצל הלברשטם וריכרט{{הערה|1=H. Halberstam, H.-E. Richert, Sieve Methods, London Mathematical Society Monographs 4, Academic Press, 1974, עמ' 231|כיווון=שמאל}} ואצל נתנסון.{{הערה|1=Nathanson (1996), עמ' 257|כיווון=ימין}}
+
+תהי <math>A</math> סדרה סופית של מספרים שלמים ותהי <math>P</math> קבוצה של מספרים ראשוניים. נסמן ב-<math>A_d</math> את מספר האיברים של <math>A</math> המתחלקים ב-<math>d</math>, וב-<math>P(z)</math> את מכפלת האיברים של <math>P</math> הקטנים מ-<math>z</math>. נסמן ב-<math>\omega(d)</math> [[פונקציה כפלית]] כך ש-<math>\omega(p)/p</math> הוא בקירוב החלק של איברי <math>A</math> המתחלקים ב-<math>p</math>, ב-<math>X</math> קירוב נוח כלשהו ל-<math>|A|</math>, ונכתוב את השארית כ-
+:<math>r_A (d) = \left| A_d \right| - \frac{\omega(d)}{d} X.</math>
+נסמן ב-<math>S(A,P,z)</math> את מספר האיברים של <math>A</math> הזרים ל-<math>P(z)</math>, ונכתוב
+:<math>V(z) = \prod_{p \in P,\ p < z} \left( 1 - \frac{\omega(p)}{p} \right).</math>
+נסמן ב-<math>\nu(m)</math> את מספר המחלקים הראשוניים השונים של <math>m</math>, וב-<math>F_1</math> ו-<math>f_1</math> פונקציות המקיימות משוואות דיפרנציאליות-הפרשיות מסוימות (ראו דיאמונד והלברשטם, עמ' 67–68, להגדרה ולתכונות).
+
+נניח שהממד (צפיפות הנפה) הוא 1, כלומר יש קבוע <math>C</math> כך שעבור <math>2 \le z < w</math> מתקיים
+:<math>\prod_{z \le p < w} \left( 1 - \frac{\omega(p)}{p} \right)^{-1} \le \left( \frac{\log w}{\log z} \right) \left( 1 + \frac{C}{\log z} \right).</math>
+(הספר של דיאמונד והלברשטם מרחיב את המשפט לממדים גבוהים מ-1.) אז משפט יורקט–ריכרט קובע שלכל מספרים <math>y</math> ו-<math>z</math> עם <math>2 \le z \le y \le X</math> מתקיים
+:<math>S(A,P,z) \le XV(z) \left( F_1 \left(\frac{\log y}{\log z} \right) + O\left(\frac{(\log \log y)^{3/4}}{(\log y)^{1/4}}\right) \right) + \sum_{m\mid P(z),\ m < y} 4^{\nu(m)} \left| r_A(m) \right|</math>
+וגם
+:<math>S(A,P,z) \ge XV(z) \left( f_1 \left(\frac{\log y}{\log z} \right) - O\left(\frac{(\log \log y)^{3/4}}{(\log y)^{1/4}}\right) \right) - \sum_{m\mid P(z),\ m < y} 4^{\nu(m)} \left| r_A(m) \right|.</math>
+
+== פירוש ==
+המשפט אומר שאפשר לחסום את מספר האיברים "הנקיים" מראשוניים קטנים מלמעלה ומלמטה על ידי הערך הצפוי <math>XV(z)</math> כפול פונקציה של <math>s = \log y/\log z</math>, ועוד שגיאה שנשלטת על ידי השאריות <math>r_A(m)</math> עבור <math>m < y</math>. הפונקציות של הנפה הליניארית (ממד 1) נתונות במפורש בתחום ההתחלתי:
+:<math>F_1(s) = \frac{2e^\gamma}{s} \quad (1 \le s \le 3), \qquad f_1(s) = \frac{2e^\gamma \log(s-1)}{s} \quad (2 \le s \le 4),</math>
+כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני]], ו-<math>f_1(s) = 0</math> עבור <math>s \le 2</math>. החסם התחתון חיובי רק כאשר <math>s > 2</math>, כלומר <math>z < y^{1/2}</math>: זו אחת הסיבות לכך שבמשפט צ'ן אפשר לנפות רק עד בערך שורש ריבועי של רמת ההתפלגות, ומכאן שמתקבלים מספרים בעלי שני גורמים ראשוניים לכל היותר, ולא ראשוניים.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:תורת המספרים האנליטית]]

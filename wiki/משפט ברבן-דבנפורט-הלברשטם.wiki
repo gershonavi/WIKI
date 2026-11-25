@@ -1,0 +1,27 @@
+ב[[מתמטיקה]], '''משפט ברבן–דבנפורט–הלברשטם''' (ב[[אנגלית]]: Barban–Davenport–Halberstam theorem) הוא טענה על התפלגות ה[[מספר ראשוני|מספרים הראשוניים]] ב[[סדרה חשבונית|סדרות חשבוניות]]. ידוע שבטווח הארוך הראשוניים מתפלגים באופן שווה בין הסדרות האפשריות עם אותו הפרש ([[משפט דיריכלה]]). משפטים מטיפוס ברבן–דבנפורט–הלברשטם נותנים הערכות לאיבר השגיאה, וקובעים עד כמה ההתפלגויות קרובות להתפלגות אחידה.
+
+== ניסוח ==
+יהי <math>a</math> [[מספרים זרים|זר]] ל-<math>q</math>, ויהי
+:<math>\vartheta(x;q,a) = \sum_{p\leq x,\ p \equiv a \bmod q} \log p</math>
+מספר משוקלל של הראשוניים בסדרה החשבונית <math>a \bmod q</math>. מתקיים
+:<math>\vartheta(x;q,a) = \frac{x}{\varphi(q)} + E(x;q,a),</math>
+כאשר <math>\varphi</math> היא [[פונקציית אוילר]] ואיבר השגיאה <math>E</math> קטן לעומת <math>x</math>. ניקח את סכום ריבועי איברי השגיאה
+:<math>V(x,Q) = \sum_{q \leq Q}\ \sum_{\substack{a \bmod q\\ \gcd(a,q)=1}} |E(x;q,a)|^2.</math>
+אז
+:<math>V(x,Q) = O(Q x \log x) + O\left(x^2 (\log x)^{-A}\right)</math>
+עבור <math>1 \leq Q \leq x</math> ולכל <math>A</math> חיובי, כאשר <math>O</math> הוא [[סימון אסימפטוטי|סימון O גדולה]] של לנדאו.
+
+צורה זו של המשפט היא של גלגר. התוצאה של ברבן תקפה רק עבור <math>Q \leq x (\log x)^{-B}</math>, עבור <math>B</math> כלשהו התלוי ב-<math>A</math>, ובתוצאה של דבנפורט והלברשטם <math>B = A + 5</math>.
+
+== פירוש ==
+יש בערך <math>\sum_{q \le Q}\varphi(q) \approx \tfrac{3}{\pi^2}Q^2</math> זוגות <math>(q, a)</math>. אילו השגיאות היו "אקראיות" בגודל טיפוסי <math>\sqrt{x/\varphi(q)}</math> (כמו סטיית התקן של סכום של כ-<math>x/(\varphi(q)\log x)</math> ראשוניים, כשכל אחד תורם <math>\log p</math>), הסכום <math>V(x,Q)</math> היה בערך <math>\sum_{q \le Q}\varphi(q) \cdot \frac{x\log x}{\varphi(q)} = Q x \log x</math> — בדיוק האיבר הראשי במשפט. כלומר, בממוצע על כל המודולים עד <math>Q</math>, השגיאות אינן גדולות יותר ממה שמצפים מרעש אקראי, וזאת עד <math>Q</math> קרוב ל-<math>x</math>. זו תוצאה "בממוצע ריבועי", משלימה ל[[משפט בומביירי-וינוגרדוב]], שעוסק בשגיאה המרבית אך רק עד <math>Q \approx \sqrt x</math>.
+
+== ראו גם ==
+* [[משפט בומביירי-וינוגרדוב]]
+* [[השערת אליוט-הלברשטם]]
+
+== לקריאה נוספת ==
+* C. Hooley, On theorems of Barban–Davenport–Halberstam type, בתוך: M. A. Bennett ואחרים (עורכים), Surveys in number theory: Papers from the millennial conference on number theory, A K Peters, 2002, עמ' 75–108
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:מספרים ראשוניים]]
