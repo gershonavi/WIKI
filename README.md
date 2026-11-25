@@ -65,7 +65,7 @@
 * [משפט רומנוב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A8%D7%95%D7%9E%D7%A0%D7%95%D7%91.md) – Romanov's theorem
 * [משפט רוסר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A8%D7%95%D7%A1%D7%A8.md) – Rosser's theorem
 * [משפט שלושת הריבועים של לז'נדר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A9%D7%9C%D7%95%D7%A9%D7%AA%20%D7%94%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D%20%D7%A9%D7%9C%20%D7%9C%D7%96%27%D7%A0%D7%93%D7%A8.md) – Legendre's three-square theorem
-* [משפטי 15 ו-290](pages/%D7%9E%D7%A9%D7%A4%D7%98%D7%99%2015%20%D7%95-290.md)
+* [משפטי 15 ו-290](pages/%D7%9E%D7%A9%D7%A4%D7%98%D7%99%2015%20%D7%95-290.md) – 15 and 290 theorems
 * [נוסחת רימן-פון מנגולדט](pages/%D7%A0%D7%95%D7%A1%D7%97%D7%AA%20%D7%A8%D7%99%D7%9E%D7%9F-%D7%A4%D7%95%D7%9F%20%D7%9E%D7%A0%D7%92%D7%95%D7%9C%D7%93%D7%98.md) – Riemann–von Mangoldt formula
 
 ### משפטים בתורת המספרים האנליטית
