@@ -273,7 +273,7 @@ Additive number theory:
 - [x] Unimodular lattice
 - [x] E8 lattice
 - [x] Leech lattice
-- [ ] Niemeier lattice
+- [x] Niemeier lattice
 - [ ] Witt's theorem
 - [ ] Kaplansky's theorem on quadratic forms
 - [ ] Universal quadratic form
