@@ -372,7 +372,7 @@ Additive number theory:
 ### השלמות לשיעורים 19א–23 (6)
 
 - [x] Hilbert class field
-- [ ] Artin L-function
+- [x] Artin L-function
 - [ ] Cyclotomic field
 - [ ] Ramanujan graph
 - [ ] Ring class field
