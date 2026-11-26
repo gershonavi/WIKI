@@ -16,7 +16,7 @@
 :<math>\Delta(q) \equiv \sum_{m=0}^\infty q^{(2m+1)^2} = q + q^9 + q^{25} + q^{49} + \cdots \pmod 2,</math>
 כלומר טור ה-<math>q</math> של <math>\Delta</math> מודולו 2 מורכב מחזקות של <math>q</math> בריבועים אי-זוגיים.
 
-'''הוכחה.''' מודולו 2, <math>(1 - q^n)^{24} = \left((1 - q^n)^8\right)^3 \equiv (1 - q^{8n})^3</math>, כי העלאה בריבוע היא הומומורפיזם מודולו 2. לכן <math>\Delta \equiv q\prod(1 - q^{8n})^3</math>. לפי [[זהות יעקובי]] <math>\prod(1 - x^n)^3 = \sum_{m\ge0}(-1)^m(2m + 1)x^{m(m+1)/2}</math>, ומודולו 2 כל המקדמים <math>2m + 1</math> הם 1. עם <math>x = q^8</math> מקבלים <math>\Delta \equiv \sum_mq^{1 + 4m(m+1)} = \sum_mq^{(2m+1)^2}</math>. <math>\blacksquare</math>
+'''הוכחה.''' מודולו 2, <math>(1 - q^n)^{24} = \left((1 - q^n)^8\right)^3 \equiv (1 - q^{8n})^3</math>, כי העלאה בריבוע היא הומומורפיזם מודולו 2. לכן <math>\Delta \equiv q\prod(1 - q^{8n})^3</math>. לפי זהות יעקובי לחזקה השלישית של המכפלה (מקרה פרטי של [[מכפלה משולשת של יעקובי|המכפלה המשולשת של יעקובי]]), <math>\prod(1 - x^n)^3 = \sum_{m\ge0}(-1)^m(2m + 1)x^{m(m+1)/2}</math>, ומודולו 2 כל המקדמים <math>2m + 1</math> הם 1. עם <math>x = q^8</math> מקבלים <math>\Delta \equiv \sum_mq^{1 + 4m(m+1)} = \sum_mq^{(2m+1)^2}</math>. <math>\blacksquare</math>
 
 בדקנו את הקונגרואנציה ישירות מול <math>\tau(n)</math> לכל <math>n \le 2000</math>: למשל <math>\tau(9) = -113643</math> אי-זוגי, ו-<math>\tau(2) = -24</math>, <math>\tau(3) = 252</math>, <math>\tau(5) = 4830</math> זוגיים.
 
@@ -75,7 +75,7 @@
 |-
 | 31 || 7 || מסדר 4 (<math>T_3T_5^3 + T_3^3T_5</math>)
 |}
-המקרה <math>p = 31</math> מראה שהאיבר המוביל אינו נקבע רק לפי <math>p \bmod 8</math>: ל-7 ול-23 יש איבר מוביל <math>T_3T_5</math>, ול-31 (שגם הוא <math>\equiv 7 \pmod 8</math>) האיבר <math>T_3T_5</math> נעלם. ניקולא וסר תיארו את התופעה בעזרת "קוד" של <math>p</math>, שתלוי בפירוק של <math>p</math> בשדות מסוימים.
+המקרה <math>p = 31</math> מראה שהאיבר המוביל אינו נקבע רק לפי <math>p \bmod 8</math>: ל-7 ול-23 יש איבר מוביל <math>T_3T_5</math>, ול-31 (שגם הוא <math>\equiv 7 \pmod 8</math>) האיבר <math>T_3T_5</math> נעלם. ניקולא וסר הגדירו לכל ראשוני <math>p</math> "קוד" – זוג מספרים שלמים – שקובע את האיבר המוביל של <math>T_p</math>.
 
 == ראו גם ==
 * [[פונקציית טאו של רמנוג'אן]]
