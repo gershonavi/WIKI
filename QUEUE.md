@@ -222,7 +222,7 @@ Additive number theory:
 - [x] Erdős–Moser equation
 - [x] Cannonball problem
 - [x] Lander, Parkin, and Selfridge conjecture
-- [ ] Tijdeman's theorem
+- [x] Tijdeman's theorem
 - [ ] Brahmagupta's problem
 - [ ] Bhaskara's lemma
 - [ ] Congruum

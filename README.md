@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (405)
+## ערכים (406)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -162,6 +162,7 @@
 * [משפט ונטיגם](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%95%D7%A0%D7%98%D7%99%D7%92%D7%9D.md) – Vantieghems theorem
 * [משפט זיגל-ולפיש](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%96%D7%99%D7%92%D7%9C-%D7%95%D7%9C%D7%A4%D7%99%D7%A9.md) – Siegel–Walfisz theorem
 * [משפט טאנל](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%98%D7%90%D7%A0%D7%9C.md) – Tunnell's theorem
+* [משפט טיידמן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%98%D7%99%D7%99%D7%93%D7%9E%D7%9F.md) – Tijdeman's theorem
 * [משפט יורקט-ריכרט](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%99%D7%95%D7%A8%D7%A7%D7%98-%D7%A8%D7%99%D7%9B%D7%A8%D7%98.md) – Jurkat–Richert theorem
 * [משפט לוקאס](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9C%D7%95%D7%A7%D7%90%D7%A1.md) – Lucas's theorem
 * [משפט ליניק](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9C%D7%99%D7%A0%D7%99%D7%A7.md) – Linnik's theorem
