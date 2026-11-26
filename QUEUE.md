@@ -213,7 +213,7 @@ Additive number theory:
 - [x] Ramanujan–Nagell equation
 - [x] Markov number
 - [x] Coin problem
-- [ ] Chakravala method
+- [x] Chakravala method
 - [ ] Vieta jumping
 - [ ] Tree of primitive Pythagorean triples
 - [ ] Fermat–Catalan conjecture
