@@ -1,0 +1,65 @@
+ב[[תורת המספרים]], '''גובה נרון–טייט''' (Néron–Tate height), או '''הגובה הקנוני''', הוא [[תבנית ריבועית]] על [[חבורת מורדל–וייל]] של הנקודות הרציונליות של [[יריעה אבלית]] שמוגדרת מעל [[שדה גלובלי]]. הוא נקרא על שם אנדרה נרון וג'ון טייט.
+
+== הגדרה ותכונות ==
+נרון הגדיר את גובה נרון–טייט כסכום של גבהים מקומיים.{{הערה|שם=Neron|1=<span dir="ltr">A. Néron, "Quasi-fonctions et hauteurs sur les variétés abéliennes", ''Annals of Mathematics'' '''82''' (1965), no. 2, 249–331</span>|כיווון=שמאל}} אף שגובה נרון–טייט הגלובלי ריבועי, הגבהים המקומיים שמרכיבים אותו אינם ריבועיים לגמרי. טייט (בעבודה שלא פורסמה) הגדיר אותו באופן גלובלי: הוא הבחין שה[[פונקציית גובה|גובה הלוגריתמי]] <math>h_L</math> שמתאים ל[[אלומה הפיכה]] סימטרית <math>L</math> על יריעה אבלית <math>A</math> הוא "כמעט ריבועי", והשתמש בזה כדי להראות שהגבול
+:<math>\hat h_L(P) = \lim_{N\rightarrow\infty}\frac{h_L(NP)}{N^2}</math>
+קיים, מגדיר תבנית ריבועית על חבורת מורדל–וייל של הנקודות הרציונליות, ומקיים
+:<math>\hat h_L(P) = h_L(P) + O(1),</math>
+כאשר הקבוע ב-<math>O(1)</math> אינו תלוי ב-<math>P</math>.{{הערה|שם=L72|1=<span dir="ltr">S. Lang, ''Survey of Diophantine Geometry'', Springer, 1997, p. 72</span>|כיווון=שמאל}} אם <math>L</math> אנטי-סימטרית, כלומר <math>[-1]^*L=L^{-1}</math>, אז הגבול המקביל
+:<math>\hat h_L(P) = \lim_{N\rightarrow\infty}\frac{h_L(NP)}{N}</math>
+מתכנס ומקיים <math>\hat h_L(P) = h_L(P) + O(1)</math>, אבל במקרה זה <math>\hat h_L</math> היא פונקציה ליניארית על חבורת מורדל–וייל. לאלומות הפיכות כלליות כותבים <math>L^{\otimes2} = (L\otimes[-1]^*L)\otimes(L\otimes[-1]^*L^{-1})</math> כמכפלה של אלומה סימטרית ואלומה אנטי-סימטרית, ואז
+:<math>\hat h_L(P) = \frac12 \hat h_{L\otimes[-1]^*L}(P) + \frac12 \hat h_{L\otimes[-1]^*L^{-1}}(P)</math>
+היא הפונקציה הריבועית היחידה שמקיימת
+:<math>\hat h_L(P) = h_L(P) + O(1) \quad\text{ו-}\quad \hat h_L(0)=0.</math>
+
+גובה נרון–טייט תלוי בבחירת אלומה הפיכה על היריעה האבלית, אבל התבנית הבילינארית המתאימה תלויה רק בתמונה של <math>L</math> בחבורת נרון–סברי של <math>A</math>. אם היריעה האבלית <math>A</math> מוגדרת מעל [[שדה מספרים]] <math>K</math> והאלומה ההפיכה סימטרית ורחבה, אז גובה נרון–טייט חיובי במובן שהוא מתאפס רק על איברי פיתול של חבורת מורדל–וייל <math>A(K)</math>. באופן כללי יותר, <math>\hat h_L</math> משרה תבנית ריבועית חיובית ממש על המרחב הווקטורי הממשי <math>A(K)\otimes\mathbb{R}</math>.
+
+על [[עקום אליפטי]], לחבורת נרון–סברי יש דרגה 1 ויוצר רחב יחיד, ולכן בדרך כלל משתמשים ביוצר הזה כדי להגדיר את גובה נרון–טייט, שמסומן <math>\hat h</math> בלי התייחסות לאלומה מסוימת. (אבל הגובה שמופיע באופן טבעי בניסוח של [[השערת בירץ' וסווינרטון-דייר]] הוא פעמיים הגובה הזה.) ביריעות אבליות מממד גבוה יותר אין בהכרח בחירה מועדפת של אלומה רחבה מינימלית, והגובה בניסוח השערת בירץ'–סווינרטון-דייר הוא גובה נרון–טייט שמתאים לאלומת פואנקרה על <math>A\times\hat A</math>, המכפלה של <math>A</math> עם היריעה הדואלית שלה.
+
+=== דוגמה: <math>y^2 = x^3 - 2</math> ===
+לעקום <math>y^2 = x^3 - 2</math> ולנקודה <math>P = (3, 5)</math>, נגדיר <math>h_x(Q) = \log\max(|a|, |b|)</math> כאשר <math>x(Q) = a/b</math> בשבר מצומצם. אז <math>h_x(nP)/n^2</math> מתכנס (לאט, עם שגיאה <math>O(1/n^2)</math>): עבור <math>n = 10, 20, 40</math> מקבלים <math>1.3462</math>, <math>1.3485</math>, <math>1.3494</math>, והגבול הוא <math>1.34958\ldots</math>. זהו הגובה ב"נרמול של BSD"; הגובה <math>\hat h</math> שמוגדר בעזרת היוצר הרחב (הנקודה באינסוף, שעבורה <math>h = \tfrac12 h_x</math>) הוא חצי מזה, <math>0.67479\ldots</math> (בדקנו בחישוב).
+
+== הרגולטור האליפטי והאבלי ==
+התבנית הבילינארית שמתאימה לגובה הקנוני <math>\hat h</math> על עקום אליפטי <math>E</math> היא
+:<math> \langle P,Q\rangle = \frac{1}{2} \bigl( \hat h(P+Q) - \hat h(P) - \hat h(Q) \bigr).</math>
+'''הרגולטור האליפטי''' של <math>E/K</math> הוא
+:<math> \operatorname{Reg}(E/K) = \det\bigl( \langle P_i,P_j\rangle \bigr)_{1\le i,j\le r},</math>
+כאשר <math>P_1,\ldots,P_r</math> בסיס של חבורת מורדל–וייל <math>E(K)</math> מודולו פיתול (ראו מטריצת גראם). הרגולטור האליפטי אינו תלוי בבחירת הבסיס.
+
+באופן כללי יותר, תהי <math>A/K</math> יריעה אבלית, <math>B \cong \mathrm{Pic}^0(A)</math> היריעה האבלית הדואלית, ו-<math>\mathcal P</math> אלומת פואנקרה על <math>A \times B</math>. '''הרגולטור האבלי''' של <math>A/K</math> מוגדר על ידי בחירת בסיס <math>Q_1,\ldots,Q_r</math> של <math>A(K)</math> מודולו פיתול ובסיס <math>\eta_1,\ldots,\eta_r</math> של <math>B(K)</math> מודולו פיתול:
+:<math> \operatorname{Reg}(A/K) = \det\bigl( \langle Q_i,\eta_j\rangle_{\mathcal P} \bigr)_{1\le i,j\le r}.</math>
+(ההגדרות של הרגולטור האליפטי והאבלי אינן עקביות לגמרי: אם <math>A</math> עקום אליפטי, השני הוא <math>2^r</math> כפול הראשון.)
+
+הרגולטורים האליפטי והאבלי מופיעים בהשערת בירץ'–סווינרטון-דייר.
+
+=== דוגמה: BSD לעקום 37a ===
+לעקום <math>y^2 + y = x^3 - x</math> (מוליך 37) יש דרגה 1, ויוצר <math>P = (0, 0)</math>. בנרמול של BSD, <math>\hat h(P) = 0.0511114\ldots</math>, וזהו הרגולטור. ל-<math>E(\mathbb R)</math> יש שני רכיבים (כי <math>\Delta = 37 \gt 0</math>), ולכן המחזור הוא <math>\Omega = 2\cdot 2.9934586\ldots = 5.9869173\ldots</math>. השערת BSD (עם <math>|\text{Ш}| = 1</math>, <math>c_{37} = 1</math> ופיתול טריוויאלי) חוזה
+:<math>L'(E, 1) = \Omega\cdot\operatorname{Reg} = 5.9869173\ldots \times 0.0511114\ldots = 0.3059997\ldots,</math>
+ואכן <math>L'(E, 1) = 0.3059997738\ldots</math> (בדקנו בחישוב).
+
+== חסמים תחתונים לגובה נרון–טייט ==
+יש שתי השערות יסודיות שנותנות חסמים תחתונים לגובה נרון–טייט. בראשונה השדה <math>K</math> קבוע, והעקום האליפטי <math>E/K</math> והנקודה <math>P \in E(K)</math> משתנים; בשנייה, '''השערת להמר האליפטית''', העקום <math>E/K</math> קבוע, ושדה ההגדרה של הנקודה <math>P</math> משתנה.
+* (לנג){{הערה|שם=L734|1=<span dir="ltr">Lang, ''Survey of Diophantine Geometry'', pp. 73–74</span>|כיווון=שמאל}} <math> \hat h(P) \ge c(K) \log\max\bigl\{\operatorname{Norm}_{K/\mathbb{Q}}\operatorname{Disc}(E/K),h(j(E))\bigr\}</math> לכל <math>E/K</math> ולכל <math>P\in E(K)</math> שאינה פיתול.
+* (להמר){{הערה|1=<span dir="ltr">Lang, ''Survey of Diophantine Geometry'', p. 243</span>|כיווון=שמאל}} <math>\hat h(P) \ge \frac{c(E/K)}{[K(P):K]}</math> לכל <math>P\in E(\bar K)</math> שאינה פיתול.
+
+בשתי ההשערות הקבועים חיוביים ותלויים רק בגדלים המצוינים. (גרסה חזקה יותר של השערת לנג אומרת ש-<math>c</math> תלוי רק במעלה <math>[K:\mathbb Q]</math>.) ידוע ש[[השערת abc]] גוררת את השערת לנג, ושהאנלוג של השערת לנג מעל שדות פונקציות חד-ממדיים ממאפיין 0 נכון ללא תנאי.{{הערה|שם=L734}}{{הערה|1=<span dir="ltr">M. Hindry, J. H. Silverman, "The canonical height and integral points on elliptic curves", ''Inventiones Mathematicae'' '''93''' (1988), 419–450</span>|כיווון=שמאל}} התוצאה הכללית הטובה ביותר להשערת להמר היא החסם החלש יותר <math>\hat h(P)\ge c(E/K)/[K(P):K]^{3+\varepsilon}</math>, של מאסר.{{הערה|1=<span dir="ltr">D. W. Masser, "Counting points of small height on elliptic curves", ''Bull. Soc. Math. France'' '''117''' (1989), no. 2, 247–265</span>|כיווון=שמאל}} כשלעקום האליפטי יש [[כפל מרוכב]], לורן שיפר זאת ל-<math>\hat h(P)\ge c(E/K)/[K(P):K]^{1+\varepsilon}</math>.{{הערה|1=<span dir="ltr">M. Laurent, "Minoration de la hauteur de Néron–Tate", in M.-J. Bertin (ed.), ''Séminaire de théorie des nombres, Paris 1981–82'', Progress in Mathematics, Birkhäuser, 1983, 137–151</span>|כיווון=שמאל}} יש השערות מקבילות ליריעות אבליות, שבהן התנאי "אינה פיתול" מוחלף בתנאי שהכפולות של <math>P</math> יוצרות תת-קבוצה צפופה בטופולוגיית זריצקי של <math>A</math>, והחסם התחתון בהשערת לנג מוחלף ב-<math>\hat h(P)\ge c(K)h(A/K)</math>, כאשר <math>h(A/K)</math> גובה פלטינגס של <math>A/K</math>.
+
+== הגובה הקנוני של קול–סילברמן ==
+'''מערכת דינמית אלגברית מקוטבת''' (ראו [[דינמיקה אריתמטית]]) היא שלשה <math>(V,\varphi, L)</math> שמורכבת מ[[יריעה אלגברית]] (חלקה ופרויקטיבית) <math>V</math>, אנדומורפיזם <math>\varphi:V \to V</math> ואלומה הפיכה <math>L \to V</math>, כך ש-<math>\varphi^*L = L^{\otimes d}</math> עבור שלם כלשהו <math>d \gt 1</math>. גרגורי קול וג'וזף סילברמן הגדירו אנלוג של גובה נרון–טייט, שנקרא הגובה הקנוני, על ידי גבול בנוסח טייט:{{הערה|1=<span dir="ltr">G. S. Call, J. H. Silverman, "Canonical heights on varieties with morphisms", ''Compositio Mathematica'' '''89''' (1993), no. 2, 163–205</span>|כיווון=שמאל}}
+:<math> \hat h_{V,\varphi,L}(P) = \lim_{n\to\infty} \frac{h_{V,L}(\varphi^{(n)}(P))}{d^n}, </math>
+כאשר <math>\varphi^{(n)} = \varphi\circ \cdots \circ \varphi</math> ההרכבה ה-<math>n</math>-ית של <math>\varphi</math>. למשל, כל מורפיזם <math>\varphi: \mathbb{P}^n \to \mathbb{P}^n</math> ממעלה <math>d \gt 1</math> נותן גובה קנוני שמתאים ליחס <math>\varphi^*\mathcal{O}(1) = \mathcal{O}(d)</math>.{{הערה|1=בערך האנגלי היחס נכתב <math>\varphi^*\mathcal O(1) = \mathcal O(n)</math>. אבל <math>n</math> הוא הממד של המרחב הפרויקטיבי, והמשיכה של <math>\mathcal O(1)</math> במורפיזם ממעלה <math>d</math> (שניתן על ידי פולינומים הומוגניים ממעלה <math>d</math>) היא <math>\mathcal O(d)</math>. למשל ל-<math>\varphi(x) = x^2</math> על <math>\mathbb P^1</math>: <math>d = 2</math>, והגובה הקנוני הוא הגובה הלוגריתמי הרגיל, כי <math>h(x^2) = 2h(x)</math>.|כיווון=שמאל}} אם <math>V</math> מוגדרת מעל שדה מספרים ו-<math>L</math> רחבה, הגובה הקנוני אי-שלילי, ו-
+<math>\hat h_{V,\varphi,L}(P) = 0</math> אם ורק אם <math>P</math> '''קדם-מחזורית''' ביחס ל-<math>\varphi</math>: המסלול <math>P, \varphi(P), \varphi^2(P), \ldots</math> מכיל רק מספר סופי של נקודות שונות. (לעקום אליפטי עם <math>\varphi = [2]</math> זו בדיוק הטענה שהגובה מתאפס רק על נקודות פיתול.)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* E. Bombieri, W. Gubler, ''Heights in Diophantine Geometry'', New Mathematical Monographs 4, Cambridge University Press, 2006
+* M. Hindry, J. H. Silverman, ''Diophantine Geometry: An Introduction'', Graduate Texts in Mathematics 201, Springer, 2000
+* S. Lang, ''Survey of Diophantine Geometry'', Springer, 1997
+* J. H. Silverman, ''The Arithmetic of Elliptic Curves'', Graduate Texts in Mathematics 106, Springer
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים]]
+[[קטגוריה:עקומים אליפטיים]]

@@ -386,7 +386,7 @@ Additive number theory:
 - [x] Kummer's congruence
 - [x] Isogeny
 - [x] Division polynomials
-- [ ] Néron–Tate height
+- [x] Néron–Tate height
 - [ ] Supersingular isogeny graph
 - [ ] Weil–Châtelet group
 - [ ] Néron model
