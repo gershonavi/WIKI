@@ -409,6 +409,6 @@ Additive number theory:
 - [x] Hilbert modular form
 - [x] Jacquet–Langlands correspondence
 - [x] Cuspidal representation
-- [ ] Base change lifting
+- [x] Base change lifting
 - [ ] Adelic algebraic group
 - [ ] Elliptic curve primality
