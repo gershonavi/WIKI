@@ -367,4 +367,4 @@ Additive number theory:
 - [x] Moser–de Bruijn sequence
 - [x] Highly cototient number
 - [x] Sparsely totient number
-- [ ] Home prime
+- [x] Home prime
