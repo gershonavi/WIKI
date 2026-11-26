@@ -355,7 +355,7 @@ Additive number theory:
 - [x] Friendly number
 - [x] Betrothed numbers
 - [x] Descartes number
-- [ ] Refactorable number
+- [x] Refactorable number
 - [ ] Arithmetic number
 - [ ] Znám's problem
 - [ ] Primary pseudoperfect number
