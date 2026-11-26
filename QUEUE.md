@@ -236,7 +236,7 @@ Additive number theory:
 
 - [x] Dirichlet's approximation theorem
 - [x] Hurwitz's theorem (number theory)
-- [ ] Roth's theorem
+- [x] Roth's theorem
 - [ ] Irrationality measure
 - [ ] Equidistributed sequence
 - [ ] Equidistribution theorem
