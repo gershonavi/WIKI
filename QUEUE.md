@@ -383,7 +383,7 @@ Additive number theory:
 - [x] Principal ideal theorem
 - [x] Selmer group
 - [x] Ramanujan's congruences
-- [ ] Kummer's congruence
+- [x] Kummer's congruence
 - [ ] Isogeny
 - [ ] Division polynomials
 - [ ] Néron–Tate height

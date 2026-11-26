@@ -1,0 +1,35 @@
+ב[[מתמטיקה]], '''קונגרואנציות קומר''' (Kummer's congruences) הן [[חשבון מודולרי|קונגרואנציות]] שמערבות את [[מספרי ברנולי]], ושגילה [[ארנסט קומר|ארנסט אדוארד קומר]].{{הערה|שם=Kummer|1=<span dir="ltr">E. E. Kummer, "Über eine allgemeine Eigenschaft der rationalen Entwicklungscoëfficienten einer bestimmten Gattung analytischer Functionen", ''J. reine angew. Math.'' '''41''' (1851), 368–372</span>|כיווון=שמאל}}
+
+קובוטה ולאופולדט (1964) השתמשו בקונגרואנציות של קומר כדי להגדיר את '''פונקציית הזטא ה-<math>p</math>-אדית'''.{{הערה|שם=KL|1=<span dir="ltr">T. Kubota, H.-W. Leopoldt, "Eine p-adische Theorie der Zetawerte. I. Einführung der p-adischen Dirichletschen L-Funktionen", ''J. reine angew. Math.'' '''214/215''' (1964), 328–339</span>|כיווון=שמאל}}
+
+== ניסוח ==
+הצורה הפשוטה ביותר של קונגרואנציית קומר היא
+:<math> \frac{B_h}{h}\equiv \frac{B_k}{k} \pmod p</math>
+בכל פעם ש-<math>h\equiv k \pmod {p-1}</math>, כאשר <math>p</math> ראשוני, <math>h</math> ו-<math>k</math> שלמים חיוביים זוגיים שאינם מתחלקים ב-<math>p-1</math>, ו-<math>B_h</math> הם [[מספרי ברנולי]]. (התנאי ש-<math>p - 1 \nmid h</math> מבטיח ש-<math>B_h/h</math> הוא <math>p</math>-אינטגרלי: לפי משפט פון שטאודט–קלאוזן, <math>p</math> מופיע במכנה של <math>B_h</math> בדיוק כש-<math>p - 1 \mid h</math>.)
+
+באופן כללי יותר, אם <math>h</math> ו-<math>k</math> שלמים חיוביים זוגיים שאינם מתחלקים ב-<math>p-1</math>, אז
+:<math> (1-p^{h-1})\frac{B_h}{h}\equiv (1-p^{k-1})\frac{B_k}{k} \pmod {p^{a+1}}</math>
+בכל פעם ש-
+:<math> h\equiv k\pmod {\varphi(p^{a+1})},</math>
+כאשר <math>\varphi(p^{a+1})</math> היא [[פונקציית אוילר]] ב-<math>p^{a+1}</math>, ו-<math>a</math> שלם אי-שלילי. עבור <math>a = 0</math> הביטוי מקבל את הצורה הפשוטה שלמעלה (כי <math>p^{h-1} \equiv 0 \pmod p</math>). שני האגפים של קונגרואנציית קומר הם בעצם ערכים של פונקציית הזטא ה-<math>p</math>-אדית (כי <math>\zeta(1-h) = -B_h/h</math>, והגורם <math>1 - p^{h-1}</math> הוא הסרת גורם אוילר של <math>p</math>), והקונגרואנציות של קומר מראות שפונקציית הזטא ה-<math>p</math>-אדית רציפה על המספרים השליליים, ולכן אפשר להרחיב אותה ברציפות לכל השלמים ה-<math>p</math>-אדיים.
+
+== דוגמאות ==
+* <math>p = 5</math>: <math>\tfrac{B_2}{2} = \tfrac1{12}</math>, <math>\tfrac{B_6}{6} = \tfrac{1}{252}</math>, <math>\tfrac{B_{10}}{10} = \tfrac{5/66}{10} = \tfrac{1}{132}</math>. מודולו 5: <math>12 \equiv 252 \equiv 132 \equiv 2</math>, ולכן שלושתם <math>\equiv 2^{-1} \equiv 3 \pmod 5</math>.
+* <math>p = 37</math>: המונה של <math>B_{32}</math> מתחלק ב-37 (ולכן 37 [[מספר ראשוני רגולרי|אי-רגולרי]]). לפי קומר, <math>B_k/k \equiv 0 \pmod{37}</math> לכל <math>k \equiv 32 \pmod{36}</math>, למשל <math>k = 68</math>.
+
+בדקנו בחישוב את הקונגרואנציה הכללית עבור <math>p = 5, 7, 11, 13</math>, <math>a = 0, 1, 2</math> ולכל <math>h \lt 60</math>, <math>k \lt 90</math> המתאימים.
+
+== ראו גם ==
+* משפט פון שטאודט–קלאוזן, קונגרואנציה נוספת שמערבת את מספרי ברנולי
+* [[משפט הרברנד–ריבט]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* N. Koblitz, ''p-adic Numbers, p-adic Analysis, and Zeta-Functions'', Graduate Texts in Mathematics 58, Springer, 1984
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:חשבון מודולרי]]
