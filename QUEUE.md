@@ -343,7 +343,7 @@ Additive number theory:
 - [x] Lehmer sequence
 - [x] Elliptic divisibility sequence
 - [x] Somos sequence
-- [ ] Hilbert number
+- [x] Hilbert number
 - [ ] Rough number
 - [ ] Regular number
 - [ ] Mersenne number
