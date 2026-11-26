@@ -267,7 +267,7 @@ Additive number theory:
 - [x] Bhargava cube
 - [x] Genus of a quadratic form
 - [x] Definite quadratic form
-- [ ] Isotropic quadratic form
+- [x] Isotropic quadratic form
 - [ ] Hasse invariant of a quadratic form
 - [ ] Smith–Minkowski–Siegel mass formula
 - [ ] Unimodular lattice
