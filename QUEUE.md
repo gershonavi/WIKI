@@ -215,7 +215,7 @@ Additive number theory:
 - [x] Coin problem
 - [x] Chakravala method
 - [x] Vieta jumping
-- [ ] Tree of primitive Pythagorean triples
+- [x] Tree of primitive Pythagorean triples
 - [ ] Fermat–Catalan conjecture
 - [ ] Prouhet–Tarry–Escott problem
 - [ ] Tunnell's theorem
