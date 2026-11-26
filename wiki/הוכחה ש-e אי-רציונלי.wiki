@@ -1,0 +1,75 @@
+ה[[e (קבוע מתמטי)|מספר <math>e</math>]] הוצג על ידי [[יעקב ברנולי]] ב-1683. יותר מחצי מאה אחר כך הוכיח [[לאונרד אוילר]], שהיה תלמידו של יוהאן ברנולי, אחיו הצעיר של יעקב, ש-<math>e</math> הוא [[מספר אי-רציונלי|אי-רציונלי]], כלומר אי אפשר לכתוב אותו כמנה של שני שלמים.
+
+== ההוכחה של אוילר ==
+אוילר כתב את ההוכחה הראשונה לאי-הרציונליות של <math>e</math> ב-1737 (אבל הטקסט פורסם רק שבע שנים אחר כך).{{הערה|1=<span dir="ltr">L. Euler, De fractionibus continuis dissertatio, Commentarii Academiae Scientiarum Petropolitanae 9 (1744), pp. 98–137; English translation: An essay on continued fractions, Mathematical Systems Theory 18 (1985), pp. 295–398.</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">C. E. Sandifer, How Euler Did It, MAA, 2007, Chapter 32: Who proved e is irrational?, pp. 185–190.</span>|כיווון=שמאל}} הוא חישב את הייצוג של <math>e</math> כ[[שבר משולב]] פשוט:
+:<math>e = [2; 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, \ldots, 2n, 1, 1, \ldots].</math>
+כיוון שהשבר המשולב הזה אינסופי, ולכל מספר רציונלי יש שבר משולב סופי (זה בדיוק [[האלגוריתם של אוקלידס]]), <math>e</math> אי-רציונלי. ידועה הוכחה קצרה לשוויון הזה.{{הערה|1=<span dir="ltr">H. Cohn, A short proof of the simple continued fraction expansion of e, American Mathematical Monthly 113 (2006), pp. 57–62.</span>|כיווון=שמאל}} כיוון שהשבר המשולב של <math>e</math> אינו [[שבר משולב מחזורי|מחזורי]], זה מוכיח גם ש-<math>e</math> אינו שורש של פולינום ריבועי עם מקדמים רציונליים ([[משפט לגראנז' על שברים משולבים|משפט לגראנז']]); בפרט, <math>e^2</math> אי-רציונלי.
+
+'''דוגמה.''' בחישוב שלנו, 20 האיברים הראשונים של השבר המשולב הם <math>2, 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10, 1, 1, 12, 1, 1</math>, בהתאם לתבנית. המתכנסים הראשונים:
+:<math>3,\ \frac83,\ \frac{11}4,\ \frac{19}7,\ \frac{87}{32},\ \frac{106}{39},\ \frac{193}{71},\ \frac{1264}{465},\ \frac{1457}{536},\ \frac{2721}{1001},\ \frac{23225}{8544},\ \ldots</math>
+למשל <math>2721/1001 = 2.7182817\ldots</math>, לעומת <math>e = 2.7182818\ldots</math>.
+
+== ההוכחה של פורייה ==
+ההוכחה המוכרת ביותר היא [[הוכחה בדרך השלילה]] של [[ז'וזף פורייה]],{{הערה|1=<span dir="ltr">J. de Stainville, Mélanges d'Analyse Algébrique et de Géométrie, Veuve Courcier, 1815, pp. 340–341.</span>|כיווון=שמאל}} שמבוססת על השוויון
+:<math>e = \sum_{n=0}^\infty\frac1{n!}.</math>
+מניחים ש-<math>e</math> רציונלי, מהצורה <math>a/b</math>. הרעיון הוא לנתח את ההפרש המוגדל (נסמן אותו <math>x</math>) בין הטור של <math>e</math> לבין הסכום החלקי ה-<math>b</math>-י שלו, שהוא קטן ממש מ-<math>e</math>. כשבוחרים את מקדם ההגדלה להיות ה[[עצרת]] של <math>b</math>, השבר <math>a/b</math> והסכום החלקי הופכים ל[[מספר שלם|שלמים]], ולכן <math>x</math> חייב להיות שלם חיובי. אבל ההתכנסות המהירה של הטור גוררת ש-<math>x</math> קטן ממש מ-1. מהסתירה הזו נובע ש-<math>e</math> אי-רציונלי.
+
+ההוכחה המפורטת: אם <math>e</math> [[מספר רציונלי|רציונלי]], יש שלמים חיוביים <math>a</math> ו-<math>b</math> כך ש-<math>e = a/b</math>. נגדיר
+:<math>x = b!\left(e - \sum_{n=0}^b\frac1{n!}\right).</math>
+לפי ההנחה <math>e = a/b</math>,
+:<math>x = b!\left(\frac ab - \sum_{n=0}^b\frac1{n!}\right) = a(b - 1)! - \sum_{n=0}^b\frac{b!}{n!}.</math>
+האיבר הראשון שלם, וכל שבר בסכום הוא בעצם שלם, כי <math>n \le b</math> בכל איבר. לכן, תחת ההנחה ש-<math>e</math> רציונלי, <math>x</math> שלם.
+
+נוכיח ש-<math>0 \lt x \lt 1</math>. ראשית, כדי להראות ש-<math>x</math> חיובי ממש, נציב את הטור של <math>e</math> בהגדרה של <math>x</math>:
+:<math>x = b!\left(\sum_{n=0}^\infty\frac1{n!} - \sum_{n=0}^b\frac1{n!}\right) = \sum_{n=b+1}^\infty\frac{b!}{n!} \gt 0,</math>
+כי כל האיברים חיוביים ממש. עכשיו נוכיח ש-<math>x \lt 1</math>. לכל האיברים עם <math>n \ge b + 1</math> יש לנו את ההערכה
+:<math>\frac{b!}{n!} = \frac1{(b + 1)(b + 2)\cdots\big(b + (n - b)\big)} \le \frac1{(b + 1)^{n-b}},</math>
+ואי-השוויון חזק לכל <math>n \ge b + 2</math>. נחליף את אינדקס הסכימה ל-<math>k = n - b</math> ונשתמש בנוסחה ל[[טור הנדסי]] אינסופי:
+:<math>x = \sum_{n=b+1}^\infty\frac{b!}{n!} \lt \sum_{k=1}^\infty\frac1{(b + 1)^k} = \frac1{b + 1}\cdot\frac1{1 - \frac1{b+1}} = \frac1b \le 1.</math>
+כיוון שאין שלם בין 0 ל-1 (ממש), הגענו לסתירה, ולכן <math>e</math> אי-רציונלי. [[מ.ש.ל.]]
+
+=== דוגמה מספרית ===
+הערכים האמיתיים של <math>x_b = b!\left(e - \sum_{n\le b}1/n!\right)</math>, בחישוב שלנו:
+{| class="wikitable" style="text-align:center"
+! <math>b</math> !! 1 !! 2 !! 3 !! 4 !! 5 !! 6 !! 7 !! 8
+|-
+! הסכום החלקי
+| 2 || 5/2 || 8/3 || 65/24 || 163/60 || 1957/720 || 685/252 || 109601/40320
+|-
+! <math>x_b</math>
+| 0.7183 || 0.4366 || 0.3097 || 0.2388 || 0.1938 || 0.1629 || 0.1404 || 0.1233
+|-
+! <math>1/b</math>
+| 1 || 0.5 || 0.3333 || 0.25 || 0.2 || 0.1667 || 0.1429 || 0.125
+|}
+תמיד <math>\frac1{b+1} \lt x_b \lt \frac1b</math>, כך ש-<math>x_b</math> לעולם אינו שלם. כדי לראות את ההוכחה "בפעולה", נניח בטעות ש-<math>e = 19/7</math> (קירוב לא רע: <math>19/7 = 2.714\ldots</math>). עם <math>b = 7</math>, הביטוי <math>7!\left(\frac{19}7 - \sum_{n\le7}\frac1{n!}\right) = 6!\cdot19 - \sum_{n\le7}\frac{7!}{n!} = 13680 - 13700 = -20</math> הוא שלם, כצפוי – אבל הוא שלילי, בעוד ש-<math>x_7 \approx 0.1404</math>. לכן <math>e \ne 19/7</math>; ההוכחה הכללית מראה שאותו דבר קורה לכל <math>a/b</math>.
+
+== הוכחות אחרות ==
+אפשר לקבל הוכחה נוספת{{הערה|1=<span dir="ltr">A. R. G. MacDivitt, Y. Yanagisawa, An elementary proof that e is irrational, The Mathematical Gazette 71 (1987), p. 217.</span>|כיווון=שמאל}} מהקודמת, בעזרת ההבחנה
+:<math>(b + 1)x = 1 + \frac1{b + 2} + \frac1{(b + 2)(b + 3)} + \cdots \lt 1 + \frac1{b + 1} + \frac1{(b + 1)(b + 2)} + \cdots = 1 + x,</math>
+ואי-השוויון הזה שקול לטענה ש-<math>bx \lt 1</math>. זה כמובן בלתי אפשרי, כי <math>b</math> ו-<math>x</math> שלמים חיוביים.
+
+הוכחה נוספת{{הערה|1=<span dir="ltr">L. L. Penesi, Elementary proof that e is irrational, American Mathematical Monthly 60 (1953), p. 474.</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">T. Apostol, Mathematical Analysis, 2nd ed., Addison-Wesley, 1974.</span>|כיווון=שמאל}} מתקבלת מהעובדה ש-
+:<math>\frac1e = e^{-1} = \sum_{n=0}^\infty\frac{(-1)^n}{n!}.</math>
+נגדיר <math>s_n = \sum_{k=0}^n\frac{(-1)^k}{k!}</math>. כיוון שזה [[טור מתחלף]] עם איברים יורדים,
+:<math>0 \lt e^{-1} - s_{2n-1} \lt \frac1{(2n)!},</math>
+ולכן
+:<math>0 \lt (2n - 1)!\left(e^{-1} - s_{2n-1}\right) \lt \frac1{2n} \le \frac12</math>
+לכל שלם חיובי <math>n</math>. שימו לב ש-<math>(2n - 1)!\,s_{2n-1}</math> תמיד שלם. נניח ש-<math>e^{-1}</math> רציונלי, <math>e^{-1} = p/q</math> עם <math>p, q</math> זרים ו-<math>q \ne 0</math>. אפשר לבחור <math>n</math> כך ש-<math>(2n - 1)!\,e^{-1}</math> שלם, למשל <math>n \ge (q + 1)/2</math>. עבור בחירה כזו, ההפרש בין <math>(2n - 1)!\,e^{-1}</math> לבין <math>(2n - 1)!\,s_{2n-1}</math> צריך להיות שלם – אבל לפי אי-השוויון שלעיל זה בלתי אפשרי. לכן <math>e^{-1}</math> אי-רציונלי, ומכאן ש-<math>e</math> אי-רציונלי.
+
+== הכללות ==
+ב-1840 פרסם [[ז'וזף ליוביל]] הוכחה לכך ש-<math>e^2</math> אי-רציונלי,{{הערה|1=<span dir="ltr">J. Liouville, Sur l'irrationalité du nombre e = 2,718…, J. Math. Pures Appl. 5 (1840), p. 192.</span>|כיווון=שמאל}} ואחריה הוכחה ש-<math>e^2</math> אינו שורש של פולינום ממעלה שנייה עם מקדמים רציונליים.{{הערה|1=<span dir="ltr">J. Liouville, Addition à la note sur l'irrationnalité du nombre e, J. Math. Pures Appl. 5 (1840), pp. 193–194.</span>|כיווון=שמאל}} העובדה האחרונה גוררת ש-<math>e^4</math> אי-רציונלי. ההוכחות שלו דומות להוכחה של פורייה. ב-1891 הסביר [[אדולף הורוויץ]] איך אפשר להוכיח באותו קו רעיוני ש-<math>e</math> אינו שורש של פולינום ממעלה שלישית עם מקדמים רציונליים, ומכאן ש-<math>e^3</math> אי-רציונלי.{{הערה|1=<span dir="ltr">A. Hurwitz, Über die Kettenbruchentwicklung der Zahl e (1891), in: Mathematische Werke, vol. 2, Birkhäuser, 1933, pp. 129–133.</span>|כיווון=שמאל}} באופן כללי יותר, <math>e^q</math> אי-רציונלי לכל <math>q</math> רציונלי שונה מאפס.{{הערה|1=<span dir="ltr">M. Aigner, G. M. Ziegler, Proofs from THE BOOK, 4th ed., Springer, pp. 27–36.</span>|כיווון=שמאל}}
+
+[[שארל הרמיט]] הוכיח ב-1873 ש-<math>e</math> הוא [[מספר טרנסצנדנטי]], כלומר אינו שורש של שום פולינום עם מקדמים רציונליים; וכך גם <math>e^\alpha</math> לכל <math>\alpha</math> [[מספר אלגברי|אלגברי]] שונה מאפס ([[משפט לינדמן–ויירשטראס]]).{{הערה|1=<span dir="ltr">C. Hermite, Sur la fonction exponentielle, Comptes rendus de l'Académie des Sciences de Paris 77 (1873), pp. 18–24.</span>|כיווון=שמאל}}{{הערה|1=בערך האנגלי הניסוח מייחס להרמיט גם את הטענה על <math>e^\alpha</math> לכל <math>\alpha</math> אלגברי. הרמיט הוכיח את הטרנסצנדנטיות של <math>e</math>; המקרה הכללי הוא [[משפט לינדמן–ויירשטראס]] (לינדמן 1882, ויירשטראס 1885).|כיווון=שמאל}}
+
+== ראו גם ==
+* [[מספר טרנסצנדנטי]]
+* [[משפט לינדמן–ויירשטראס]]
+* [[מידת אי-רציונליות]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:קירובים דיופנטיים]]
+[[קטגוריה:הוכחות]]
+[[קטגוריה:מספרים אי-רציונליים]]

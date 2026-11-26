@@ -250,7 +250,7 @@ Additive number theory:
 - [x] Markov spectrum
 - [x] Lagrange number
 - [x] Duffin–Schaeffer theorem
-- [ ] Proof that e is irrational
+- [x] Proof that e is irrational
 - [ ] Oppenheim conjecture
 - [ ] Baker's theorem
 - [ ] Schanuel's conjecture
