@@ -263,7 +263,7 @@ Additive number theory:
 
 ### תבניות ריבועיות (19)
 
-- [ ] Gauss composition law
+- [x] Gauss composition law
 - [ ] Bhargava cube
 - [ ] Genus of a quadratic form
 - [ ] Definite quadratic form
