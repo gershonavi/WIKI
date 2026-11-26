@@ -208,7 +208,7 @@ Additive number theory:
 
 ### משוואות דיופנטיות (22)
 
-- [ ] Thue equation
+- [x] Thue equation
 - [ ] Siegel's theorem on integral points
 - [ ] Ramanujan–Nagell equation
 - [ ] Markov number
