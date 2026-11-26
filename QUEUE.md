@@ -405,7 +405,7 @@ Additive number theory:
 ### השלמות לשיעורים 21–23, חלק ד' (8)
 
 - [x] Selberg trace formula
-- [ ] Fuchsian group
+- [x] Fuchsian group
 - [ ] Hilbert modular form
 - [ ] Jacquet–Langlands correspondence
 - [ ] Cuspidal representation

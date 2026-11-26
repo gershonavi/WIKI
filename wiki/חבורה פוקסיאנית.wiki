@@ -1,0 +1,99 @@
+ב[[מתמטיקה]], '''חבורה פוקסיאנית''' היא תת-חבורה בדידה של <math>\mathrm{PSL}(2, \mathbb R)</math>. את החבורה <math>\mathrm{PSL}(2, \mathbb R)</math> אפשר לראות, באופן שקול, כחבורת ה[[איזומטריה|איזומטריות]] שומרות-הכיוון של [[גאומטריה היפרבולית|המישור ההיפרבולי]], או כחבורת ההעתקות הקונפורמיות של [[עיגול היחידה]], או כחבורת ההעתקות הקונפורמיות של [[חצי המישור העליון]]; לכן אפשר לראות חבורה פוקסיאנית כחבורה שפועלת על כל אחד מהמרחבים האלה. יש כמה גרסאות של ההגדרה: לפעמים מניחים שהחבורה הפוקסיאנית [[חבורה נוצרת סופית|נוצרת סופית]], לפעמים מרשים לה להיות תת-חבורה של <math>\mathrm{PGL}(2, \mathbb R)</math> (כך שהיא מכילה איברים הופכי-כיוון), ולפעמים מרשים לה להיות חבורה קלייניאנית (תת-חבורה בדידה של <math>\mathrm{PSL}(2, \mathbb C)</math>) שצמודה לתת-חבורה של <math>\mathrm{PSL}(2, \mathbb R)</math>.
+
+בחבורות פוקסיאניות משתמשים כדי לבנות '''מודלים פוקסיאניים''' של [[משטח רימן|משטחי רימן]]; במקרה הזה החבורה נקראת לפעמים '''החבורה הפוקסיאנית של המשטח'''. במובן מסוים, חבורות פוקסיאניות עושות ל[[גאומטריה לא אוקלידית|גאומטריה הלא-אוקלידית]] את מה שהחבורות הקריסטלוגרפיות עושות ל[[גאומטריה אוקלידית|גאומטריה האוקלידית]]. כמה מהיצירות הגרפיות של [[מוריץ קורנליס אשר|אשר]] מבוססות עליהן (במודל הדיסק של הגאומטריה ההיפרבולית).
+
+חבורות פוקסיאניות כלליות נחקרו לראשונה על ידי [[אנרי פואנקרה]] ב-1882,{{הערה|שם=Poi|1=<span dir="ltr">H. Poincaré, "Théorie des groupes fuchsiens", ''Acta Mathematica'' '''1''' (1882), 1–62</span>|כיווון=שמאל}} בהשראת מאמר של לזרוס פוקס משנת 1880,{{הערה|1=<span dir="ltr">L. Fuchs, "Ueber eine Klasse von Funktionen mehrerer Variablen, welche durch Umkehrung der Integrale von Lösungen der linearen Differentialgleichungen mit rationalen Coeffizienten entstehen", ''J. Reine Angew. Math.'' '''89''' (1880), 151–169</span>|כיווון=שמאל}} ולכן נקראו על שמו (ראו גם [[תבנית אוטומורפית#פואנקרה והגילוי של הפונקציות האוטומורפיות|פואנקרה והגילוי של הפונקציות האוטומורפיות]]).
+
+== חבורות פוקסיאניות על חצי המישור העליון ==
+יהי <math>\mathbb H=\{z\in\mathbb{C} : \operatorname{Im}{z} \gt 0\}</math> חצי המישור העליון. <math>\mathbb H</math> הוא מודל של המישור ההיפרבולי כשמציידים אותו במטריקה
+:<math>ds=\frac{1}{y}\sqrt{dx^2+dy^2}.</math>
+המרחק ההיפרבולי בין שתי נקודות נתון בנוסחה <math>\cosh d(z,w) = 1 + \frac{|z-w|^2}{2\,\operatorname{Im}z\,\operatorname{Im}w}</math>.
+החבורה <math>\mathrm{PSL}(2, \mathbb R)</math> [[פעולת חבורה|פועלת]] על <math>\mathbb H</math> ב[[העתקת מביוס|העתקות מביוס]]:
+:<math>\begin{pmatrix} a & b \\ c & d \end{pmatrix}\cdot z = \frac{az + b}{cz + d}.</math>
+הפעולה נאמנה, ולמעשה <math>\mathrm{PSL}(2, \mathbb R)</math> איזומורפית לחבורת כל האיזומטריות שומרות-הכיוון של <math>\mathbb H</math>.
+
+אפשר להגדיר חבורה פוקסיאנית <math>\Gamma</math> כתת-חבורה של <math>\mathrm{PSL}(2, \mathbb R)</math> שפועלת '''באופן לא רציף''' על <math>\mathbb H</math>. כלומר:
+* לכל <math>z</math> ב-<math>\mathbb H</math>, ל[[מסלול (תורת החבורות)|מסלול]] <math>\Gamma z =\{\gamma z:\gamma\in\Gamma\}</math> אין [[נקודת הצטברות]] ב-<math>\mathbb H</math>.
+
+הגדרה שקולה: <math>\Gamma</math> היא '''חבורה בדידה''', כלומר:
+* כל סדרה <math>\gamma_n</math> של איברים של <math>\Gamma</math> שמתכנסת ליחידה בטופולוגיה הרגילה (של התכנסות נקודתית של מקדמי המטריצות) קבועה החל ממקום מסוים, כלומר יש מספר שלם <math>N</math> כך שלכל <math>n \gt N</math> מתקיים <math>\gamma_n=I</math>, כאשר <math>I</math> מטריצת היחידה.
+
+אף שאי-רציפות ובדידות שקולות במקרה הזה, זה לא נכון באופן כללי לחבורה שרירותית של הומאומורפיזמים קונפורמיים שפועלת על כל [[ספירת רימן]] (בניגוד ל-<math>\mathbb H</math>). למעשה, החבורה הפוקסיאנית <math>\mathrm{PSL}(2, \mathbb Z)</math> בדידה, אבל יש לה נקודות הצטברות על הישר הממשי <math>\operatorname{Im}z=0</math>: איברים של <math>\mathrm{PSL}(2, \mathbb Z)</math> מעבירים את <math>z=0</math> לכל מספר רציונלי, והרציונליים צפופים ב-<math>\mathbb R</math>. לדוגמה, כדי להעביר את 0 ל-<math>\tfrac37</math> פותרים <math>7a - 3c = 1</math>, למשל <math>a = 1, c = 2</math>, ומקבלים את המטריצה <math>\begin{pmatrix}1 & 3\\ 2 & 7\end{pmatrix}</math> עם דטרמיננטה <math>7 - 6 = 1</math>, שאכן שולחת את 0 ל-<math>\tfrac{3}{7}</math>.
+
+== ההגדרה הכללית ==
+העתקת מביוס שמוגדרת על ידי מטריצה מ-<math>\mathrm{PSL}(2, \mathbb C)</math> שומרת על ספירת רימן <math>\mathbb P^1(\mathbb C) = \mathbb C \cup \{\infty\}</math>, אבל שולחת את חצי המישור העליון <math>\mathbb H</math> לדיסק פתוח כלשהו <math>\Delta</math>. הצמדה בהעתקה כזו שולחת תת-חבורה בדידה של <math>\mathrm{PSL}(2, \mathbb R)</math> לתת-חבורה בדידה של <math>\mathrm{PSL}(2, \mathbb C)</math> ששומרת על <math>\Delta</math>.
+
+זה מוביל להגדרה הבאה של '''חבורה פוקסיאנית'''. תהי <math>\Gamma \subset \mathrm{PSL}(2, \mathbb C)</math> חבורה ששומרת על דיסק פתוח אמיתי <math>\Delta \subset \mathbb C \cup \{\infty\}</math>, כלומר <math>\Gamma(\Delta) = \Delta</math>. אז <math>\Gamma</math> '''פוקסיאנית''' אם ורק אם מתקיימת אחת משלוש התכונות השקולות הבאות:
+# <math>\Gamma</math> היא חבורה בדידה (ביחס לטופולוגיה הסטנדרטית על <math>\mathrm{PSL}(2, \mathbb C)</math>).
+# <math>\Gamma</math> פועלת באופן לא רציף לחלוטין בכל נקודה <math>z \in \Delta</math>.
+# הקבוצה <math>\Delta</math> מוכלת בתחום אי-הרציפות <math>\Omega(\Gamma)</math> של <math>\Gamma</math>.
+כלומר, כל אחת מהשלוש יכולה לשמש כהגדרה של חבורה פוקסיאנית, והאחרות נובעות ממנה כמשפטים. המושג של תת-קבוצה אמיתית שמורה <math>\Delta</math> חשוב; '''חבורת פיקאר''' <math>\mathrm{PSL}(2, \mathbb Z[i])</math> בדידה, אבל אינה שומרת אף דיסק בספירת רימן. ואכן, אפילו [[החבורה המודולרית]] <math>\mathrm{PSL}(2, \mathbb Z)</math>, שהיא כן פוקסיאנית, אינה פועלת באופן לא רציף על הישר הממשי; יש לה נקודות הצטברות במספרים הרציונליים. באופן דומה, חשוב ש-<math>\Delta</math> תהיה תת-קבוצה אמיתית של תחום אי-הרציפות; כשזה לא כך, תת-החבורה נקראת חבורה קלייניאנית.
+
+בדרך כלל לוקחים את התחום השמור <math>\Delta</math> להיות עיגול היחידה הפתוח או חצי המישור העליון.
+
+== קבוצות גבול ==
+בגלל הפעולה הבדידה, למסלול <math>\Gamma z</math> של נקודה <math>z</math> בחצי המישור העליון אין נקודות הצטברות בחצי המישור העליון. אבל ייתכנו נקודות גבול על הציר הממשי. תהי <math>\Lambda(\Gamma)</math> '''קבוצת הגבול''' של <math>\Gamma</math>, כלומר קבוצת נקודות הגבול של <math>\Gamma z</math> עבור <math>z \in \mathbb H</math>. אז <math>\Lambda(\Gamma) \subseteq \mathbb R \cup \{\infty\}</math>. קבוצת הגבול יכולה להיות ריקה, להכיל נקודה אחת או שתיים, או להכיל אינסוף נקודות. במקרה האחרון יש שני סוגים:
+
+'''חבורה פוקסיאנית מהסוג הראשון''' היא חבורה שקבוצת הגבול שלה היא כל הישר הממשי הסגור <math>\mathbb R \cup \{\infty\}</math>. זה קורה אם למרחב המנה <math>\mathbb H/\Gamma</math> יש נפח סופי, אבל יש גם חבורות פוקסיאניות מהסוג הראשון עם נפח-מנה אינסופי.
+
+אחרת, החבורה הפוקסיאנית נקראת '''מהסוג השני'''. באופן שקול, זו חבורה שקבוצת הגבול שלה היא [[קבוצה מושלמת]] שדלילה בשום מקום ב-<math>\mathbb R \cup \{\infty\}</math>. מכיוון שהיא דלילה בשום מקום, כל נקודת גבול קרובה כרצוננו לקבוצה פתוחה שאינה בקבוצת הגבול. במילים אחרות, קבוצת הגבול היא [[קבוצת קנטור]] (מבחינה טופולוגית). דוגמה טיפוסית היא '''חבורת שוטקי''' שנוצרת על ידי שני איברים היפרבוליים "רחוקים" זה מזה.
+
+הסוג של חבורה פוקסיאנית אינו חייב להיות זהה לסוג שלה כחבורה קלייניאנית: למעשה, כל החבורות הפוקסיאניות הן חבורות קלייניאניות מהסוג השני, כי קבוצות הגבול שלהן (כחבורות קלייניאניות) הן תת-קבוצות אמיתיות של ספירת רימן, שמוכלות במעגל.
+
+== דוגמאות ==
+=== החבורה המודולרית ===
+דוגמה לחבורה פוקסיאנית היא [[החבורה המודולרית]] <math>\mathrm{PSL}(2, \mathbb Z)</math>: תת-החבורה של <math>\mathrm{PSL}(2, \mathbb R)</math> שמורכבת מהעתקות מביוס
+:<math>\begin{pmatrix} a & b \\ c & d \end{pmatrix}\cdot z = \frac{az + b}{cz + d}</math>
+שבהן <math>a, b, c, d</math> שלמים. מרחב המנה <math>\mathbb H/\mathrm{PSL}(2, \mathbb Z)</math> הוא המרחב המודולי של [[עקום אליפטי|עקומים אליפטיים]] (מעל <math>\mathbb C</math>), והפונקציה שמזהה אותו עם <math>\mathbb C</math> היא [[אינווריאנט j]]. לתחום היסודי הסטנדרטי, <math>\{|z| \ge 1,\ |\operatorname{Re} z| \le \tfrac12\}</math>, יש שטח היפרבולי <math>\tfrac{\pi}{3}</math>.
+
+=== תת-חבורות הקונגרואנציה ===
+חבורות פוקסיאניות נוספות הן החבורות <math>\Gamma(n)</math> לכל מספר שלם <math>n \gt 0</math>. <math>\Gamma(n)</math> מורכבת מהעתקות מביוס מהצורה שלמעלה, שבהן מקדמי המטריצה
+:<math>\begin{pmatrix} a & b \\ c & d \end{pmatrix}</math>
+שקולים למקדמי מטריצת היחידה מודולו <math>n</math> (ראו [[תת-חבורת קונגרואנציה]]).
+
+'''דוגמה: <math>\Gamma(2)</math>.''' ההעתקה <math>\mathrm{SL}(2,\mathbb Z) \to \mathrm{SL}(2, \mathbb Z/2)</math> על, והחבורה <math>\mathrm{SL}(2,\mathbb Z/2)</math> היא מסדר 6 (איזומורפית ל-<math>S_3</math>). מכיוון ש-<math>-I \equiv I \pmod 2</math>, גם ב-<math>\mathrm{PSL}</math> האינדקס של התמונה של <math>\Gamma(2)</math> הוא 6, ולכן השטח של <math>\mathbb H/\Gamma(2)</math> הוא <math>6 \cdot \tfrac{\pi}{3} = 2\pi</math>. המנה היא ספירה ששלוש נקודות (החודים <math>0, 1, \infty</math>) הוסרו ממנה, ו[[משפט גאוס-בונה|משפט גאוס–בונה]] בעקמומיות <math>-1</math> נותן שטח <math>2\pi(2\mathfrak g - 2 + n) = 2\pi(0 - 2 + 3) = 2\pi</math>, בהתאמה. (<math>\Gamma(2)</math> חופשית בשני יוצרים, והפונקציה האוטומורפית שלה היא [[פונקציית למבדא המודולרית]].)
+
+=== חבורות משולש ===
+דוגמה קו-קומפקטית היא חבורת המשולש (הרגילה, של הסיבובים) <math>(2,3,7)</math>, שמכילה את החבורות הפוקסיאניות של '''קוורטיקת קליין''' ושל '''משטח מקבת''', וכן של חבורות הורוויץ אחרות. באופן כללי יותר, כל '''חבורת פון דיק''' היפרבולית (תת-החבורה מאינדקס 2 של חבורת משולש, שמתאימה לאיזומטריות שומרות-הכיוון) היא חבורה פוקסיאנית.
+
+'''דוגמה: הספירה 168.''' התחום היסודי של חבורת פון דיק <math>(2,3,7)</math> מורכב משני משולשים היפרבוליים עם זוויות <math>\tfrac{\pi}{2}, \tfrac{\pi}{3}, \tfrac{\pi}{7}</math>, ולפי משפט גאוס–בונה שטחו
+:<math>2\pi\left(1 - \tfrac12 - \tfrac13 - \tfrac17\right) = \tfrac{2\pi}{42} = \tfrac{\pi}{21} \approx 0.1496.</math>
+קוורטיקת קליין היא משטח מגנוס 3, ולכן שטחה <math>4\pi(3-1) = 8\pi</math>. האינדקס של החבורה הפוקסיאנית שלה בחבורת המשולש הוא אפוא <math>8\pi/(\pi/21) = 168</math>, וזה בדיוק הסדר של חבורת האוטומורפיזמים שלה, <math>\mathrm{PSL}(2,7)</math>. זה מקרה השוויון בחסם של הורוויץ <math>84(\mathfrak g - 1)</math> על מספר האוטומורפיזמים של משטח מגנוס <math>\mathfrak g</math>. (בדקנו בחישוב.)
+
+כל הדוגמאות האלה הן '''חבורות פוקסיאניות מהסוג הראשון'''.
+
+=== עובדות כלליות ===
+* כל תת-החבורות הציקליות ה'''היפרבוליות''' וה'''פרבוליות''' של <math>\mathrm{PSL}(2, \mathbb R)</math> הן פוקסיאניות. (איבר לא טריוויאלי של <math>\mathrm{PSL}(2,\mathbb R)</math> הוא '''אליפטי''', '''פרבולי''' או '''היפרבולי''' לפי <math>|\mathrm{tr}| \lt 2</math>, <math>=2</math> או <math>\gt 2</math>.)
+* תת-חבורה ציקלית '''אליפטית''' היא פוקסיאנית אם ורק אם היא סופית. (סיבוב בזווית שאינה כפולה רציונלית של <math>\pi</math> יוצר חבורה שאינה בדידה.)
+* כל חבורה פוקסיאנית [[חבורה אבלית|אבלית]] היא ציקלית.
+* אף חבורה פוקסיאנית אינה איזומורפית ל-<math>\mathbb Z \times \mathbb Z</math>. (שני איברים היפרבוליים מתחלפים חולקים את אותו ציר, והם פועלים עליו כהזזות; תת-חבורה בדידה של ההזזות של ישר היא ציקלית. זה ההבדל מהמקרה האוקלידי, שבו <math>\mathbb Z^2</math> פועלת על המישור והמנה היא טורוס.)
+* אם <math>\Gamma</math> חבורה פוקסיאנית לא אבלית, אז ה[[מנרמל]] של <math>\Gamma</math> ב-<math>\mathrm{PSL}(2, \mathbb R)</math> הוא חבורה פוקסיאנית. (דוגמה: המנרמל <math>\Gamma_0(p)^+</math> של <math>\Gamma_0(p)</math>, שמופיע ב[[ראשוני על-סינגולרי (ירח מטורף)|בעיית הראשוניים העל-סינגולריים]].)
+
+== תכונות מטריות ==
+אם <math>h</math> איבר היפרבולי, אורך ההזזה <math>L</math> של הפעולה שלו בחצי המישור העליון קשור ל[[עקבה (אלגברה ליניארית)|עקבה]] של <math>h</math> כמטריצה <math>2\times2</math> לפי
+:<math>|\mathrm{tr}\; h| = 2\cosh \frac{L}{2}.</math>
+יחס דומה מתקיים עבור ה'''סיסטולה''' (אורך הגאודזה הסגורה הקצרה ביותר) של משטח רימן המתאים, אם החבורה הפוקסיאנית חסרת פיתול וקו-קומפקטית.
+
+'''דוגמה.''' עבור <math>h = \begin{pmatrix}2 & 1\\ 1 & 1\end{pmatrix} \in \mathrm{PSL}(2,\mathbb Z)</math>, העקבה היא 3, ולכן <math>h</math> היפרבולי עם
+:<math>L = 2\operatorname{arccosh}\tfrac32 = 2\log\tfrac{3+\sqrt5}{2} \approx 1.92485.</math>
+נקודות השבת של <math>z \mapsto \frac{2z+1}{z+1}</math> הן שורשי <math>z^2 - z - 1 = 0</math>, כלומר <math>\tfrac{1\pm\sqrt5}{2}</math>, והציר של <math>h</math> הוא חצי המעגל שמחבר ביניהן (מרכזו <math>\tfrac12</math> ורדיוסו <math>\tfrac{\sqrt5}{2}</math>). הנקודה <math>i</math> נמצאת על הציר הזה (כי <math>|i - \tfrac12|^2 = \tfrac54</math>), ואכן <math>h(i) = \frac{2i+1}{i+1} = \frac{3+i}{2}</math>, ונוסחת המרחק נותנת <math>|i - h(i)|^2 = \left|\tfrac{-3+i}{2}\right|^2 = \tfrac52</math> ולכן <math>\cosh d(i, h(i)) = 1 + \frac{5/2}{2\cdot 1\cdot \frac12} = \tfrac{7}{2}</math>, כלומר <math>d = \operatorname{arccosh}\tfrac72 \approx 1.92485 = L</math>. (בדקנו בחישוב.) הערכים העצמיים של <math>h</math> הם <math>\lambda^{\pm1}</math> עם <math>\lambda = \tfrac{3+\sqrt5}{2}</math>, ו-<math>L = \log \lambda^2</math> – זה ה"<math>\log N(T)</math>" של [[נוסחת העקבה של סלברג]].
+
+== ראו גם ==
+* [[תבנית אוטומורפית]]
+* [[נוסחת העקבה של סלברג]]
+* [[תת-חבורת קונגרואנציה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. M. Farkas, I. Kra, ''Theta Constants, Riemann Surfaces and the Modular Group'', American Mathematical Society (see section 1.6)
+* H. Iwaniec, ''Spectral Methods of Automorphic Forms'', 2nd ed., Graduate Studies in Mathematics 53, American Mathematical Society, 2002 (see chapter 2)
+* S. Katok, ''Fuchsian Groups'', University of Chicago Press, 1992
+* D. Mumford, C. Series, D. Wright, ''Indra's Pearls: The Vision of Felix Klein'', Cambridge University Press, 2002
+* P. J. Nicholls, ''The Ergodic Theory of Discrete Groups'', London Mathematical Society Lecture Note Series 143, Cambridge University Press, 1989
+* E. B. Vinberg, "Fuchsian group", ''Encyclopedia of Mathematics'', Springer
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות אוטומורפיות]]
