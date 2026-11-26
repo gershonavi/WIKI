@@ -329,7 +329,7 @@ Additive number theory:
 - [x] Cullen number
 - [x] Woodall number
 - [x] Thabit number
-- [ ] Giuga number
+- [x] Giuga number
 - [ ] Blum integer
 - [ ] Achilles number
 - [ ] Sphenic number
