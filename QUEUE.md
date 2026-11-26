@@ -362,7 +362,7 @@ Additive number theory:
 - [x] Erdős–Woods number
 - [x] Ulam number
 - [x] Stanley sequence
-- [ ] Mian–Chowla sequence
+- [x] Mian–Chowla sequence
 - [ ] Sum-free sequence
 - [ ] Moser–de Bruijn sequence
 - [ ] Highly cototient number
