@@ -9,7 +9,7 @@
 * ל-<math>\phi</math> יש פיתוח פורייה
 :: <math>\phi(\tau, z) = \sum_{n\ge0}\ \sum_{r^2\le4mn}C(n, r)q^n\zeta^r, \qquad q = e^{2\pi i\tau},\ \zeta = e^{2\pi iz}.</math>
 
-אם בתנאי השלישי דורשים <math>r^2 \lt 4mn</math>, <math>\phi</math> נקראת '''תבנית שפיץ של יעקובי'''. אם מוותרים על התנאי <math>r^2 \le 4mn</math> ודורשים רק <math>n \ge 0</math>, <math>\phi</math> נקראת '''תבנית יעקובי חלשה'''. נסמן ב-<math>J_{k,m}</math>, <math>J^{\text{cusp}}_{k,m}</math> ו-<math>\tilde J_{k,m}</math> את המרחבים המתאימים.
+אם בתנאי השלישי דורשים <math>r^2 \lt 4mn</math>, <math>\phi</math> נקראת '''[[תבנית שפיץ]] של יעקובי'''. אם מוותרים על התנאי <math>r^2 \le 4mn</math> ודורשים רק <math>n \ge 0</math>, <math>\phi</math> נקראת '''תבנית יעקובי חלשה'''. נסמן ב-<math>J_{k,m}</math>, <math>J^{\text{cusp}}_{k,m}</math> ו-<math>\tilde J_{k,m}</math> את המרחבים המתאימים.
 
 === תכונות בסיסיות ===
 * '''המקדמים תלויים רק ב"דיסקרימיננטה".''' מהחוק האליפטי נובע ש-<math>C(n, r)</math> תלוי רק ב-<math>D = 4mn - r^2</math> וב-<math>r \bmod 2m</math>. עבור אינדקס <math>m = 1</math>, השארית <math>r \bmod 2</math> נקבעת על ידי <math>D \bmod 4</math>, ולכן <math>C(n, r) = c(4n - r^2)</math> לפונקציה <math>c</math> של משתנה אחד.

@@ -60,7 +60,7 @@
 :<math>|\lambda(v+iw)| \lt Ce^{Pv+A|w|}</math>
 לכל <math>z=v+iw \in H(\delta)</math>. יהי <math>0 \lt x \lt e^{-P}</math>. מכאן שהטור <math>F(x)=\sum_{n=0}^\infty (-x)^n\lambda(n)</math> מתכנס. מכיוון של-<math>\frac{\pi}{\sin(\pi s)}</math> יש קטבים בנקודות <math>s = -n</math>, <math>n = 0, 1, 2, \ldots</math>, עם שארית <math>(-1)^n</math>, משפט השאריות נותן
 :<math>F(x)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}\frac{\pi}{\sin(\pi s)}\lambda(-s)x^{-s}\,ds</math>
-לכל <math>0 \lt c \lt \delta</math>. האינטגרל הזה מתכנס בהחלט ובמידה שווה עבור <math>c\in(a,b)</math>, לכל <math>0 \lt a \lt b \lt \delta</math>. הפעלת משפט ההיפוך של מלין נותנת
+לכל <math>0 \lt c \lt \delta</math>. האינטגרל הזה מתכנס בהחלט ובמידה שווה עבור <math>c\in(a,b)</math>, לכל <math>0 \lt a \lt b \lt \delta</math>. הפעלת [[משפט ההיפוך של מלין]] נותנת
 :<math>\int_0^\infty x^{s-1}F(x)\,dx=\frac{\pi}{\sin(\pi s)}\lambda(-s).</math>
 ('''למה התנאי <math>A \lt \pi</math>:''' על הישר <math>s = c + iw</math> מתקיים <math>|\pi/\sin(\pi s)| \approx 2\pi e^{-\pi|w|}</math>, ולכן הגורם <math>e^{A|w|}</math> מ-<math>\lambda</math> נבלע, והאינטגרנד דועך מעריכית.)
 

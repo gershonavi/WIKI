@@ -25,7 +25,7 @@
 
 ניקולסון ופרהדיאן{{הערה|1=C. Rivera, [https://www.primepuzzles.net/conjectures/conj_078.htm Conjecture 78], PrimePuzzles.net, 2016|כיווון=שמאל}}{{הערה|1=R. Farhadian, On a New Inequality Related to Consecutive Primes, Acta Universitatis Danubius. Œconomica 13 (5), 2017, עמ' 236–242|כיווון=שמאל}} נתנו שתי גרסאות חזקות יותר של השערת פירוזבח, שאפשר לסכם כך:
 :<math>\underbrace{\left(\frac{p_{n+1}}{p_n}\right)^n}_A < \underbrace{\frac{p_n\log n}{\log p_n}}_B < \underbrace{n\log n}_C < \underbrace{p_n}_D \qquad \text{ for all } n \geq 6,</math>
-כאשר <math>A < B</math> היא ההשערה של פרהדיאן, <math>B < C</math> היא ההשערה של ניקולסון, <math>C < D</math> הוא משפט רוסר,{{הערה|1=J. B. Rosser, The n-th Prime is Greater than n log n, Proceedings of the London Mathematical Society 45, 1939, עמ' 21–44, {{DOI|10.1112/plms/s2-45.1.21}}|כיווון=שמאל}} ו-<math>A < D</math> היא השערת פירוזבח. כולן נבדקו עד <math>2^{64}</math>.{{הערה|שם=visser}}
+כאשר <math>A < B</math> היא ההשערה של פרהדיאן, <math>B < C</math> היא ההשערה של ניקולסון, <math>C < D</math> הוא [[משפט רוסר]],{{הערה|1=J. B. Rosser, The n-th Prime is Greater than n log n, Proceedings of the London Mathematical Society 45, 1939, עמ' 21–44, {{DOI|10.1112/plms/s2-45.1.21}}|כיווון=שמאל}} ו-<math>A < D</math> היא השערת פירוזבח. כולן נבדקו עד <math>2^{64}</math>.{{הערה|שם=visser}}
 
 יישום השיטות האלה על הפער המקסימלי ה-85 הידוע מראה שהשערת ניקולסון (ולכן גם השערת פירוזבח) נכונה עד ערך זה (<math>1.014 \cdot 10^{20}</math>, או <math>1.274 \cdot 2^{66}</math>), וכל הפרה שלה תדרוש פער גדול מ-2070; באופן דומה, הפרה של השערת פרהדיאן תדרוש פער גדול מ-2066.
 

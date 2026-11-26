@@ -51,7 +51,7 @@ c_{10}(n)&= 2\cos \tfrac15 n\pi + 2\cos \tfrac35 n\pi
 :<math>(q,r) = 1 \implies c_q(n)c_r(n)=c_{qr}(n).</math>
 מההגדרה (או מנוסחת קלויבר) נובע בקלות שאם <math>p</math> ראשוני, אז
 :<math>c_p(n) = \begin{cases} -1 & p\nmid n\\ \phi(p)& p\mid n \end{cases}</math>
-ואם <math>p^k</math> היא חזקה של ראשוני עם <math>k > 1</math>, אז
+ואם <math>p^k</math> היא [[חזקה של ראשוני]] עם <math>k > 1</math>, אז
 :<math>c_{p^k}(n) = \begin{cases} 0 & p^{k-1}\nmid n\\ -p^{k-1} & p^{k-1}\mid n,\ p^k\nmid n\\ \phi(p^k) & p^k\mid n. \end{cases}</math>
 בעזרת תוצאה זו והכפליות אפשר להוכיח ש-
 :<math>c_q(n)= \mu\left(\frac{q}{(q, n)}\right)\frac{\phi(q)}{\phi\left(\frac{q}{(q, n)}\right)}.</math>

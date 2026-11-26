@@ -11,7 +11,7 @@
 
 בין שתי הפונקציות מתקיימים אי-השוויונים <math>\omega(n) \le \Omega(n)</math> ו-<math>2^{\omega(n)} \le d(n) \le 2^{\Omega(n)}</math>, כאשר <math>d(n)</math> היא [[פונקציית מחלקים|פונקציית מספר המחלקים]]{{הערה|שם=HW2213|1=אי-שוויון זה מופיע בסעיף 22.13 אצל Hardy and Wright.|כיווון=שמאל}}. אם <math>\Omega(n) = \omega(n)</math>, אז <math>n</math> [[חופשי מריבועים]], ומתקיים קשר ל[[פונקציית מביוס]]:
 :<math>\mu(n) = (-1)^{\omega(n)} = (-1)^{\Omega(n)}.</math>
-אם <math>\omega(n) = 1</math>, אז <math>n</math> הוא חזקה של ראשוני, ואם <math>\Omega(n)=1</math>, אז <math>n</math> [[מספר ראשוני|ראשוני]].
+אם <math>\omega(n) = 1</math>, אז <math>n</math> הוא [[חזקה של ראשוני]], ואם <math>\Omega(n)=1</math>, אז <math>n</math> [[מספר ראשוני|ראשוני]].
 
 טור אסימפטוטי לסדר הממוצע של <math>\omega(n)</math> הוא{{הערה|1=S. R. Finch, Two asymptotic series, ''Mathematical Constants II'', Cambridge Univ. Press, עמ' 21–32, [https://web.archive.org/web/20160419150604/http://www.people.fas.harvard.edu/~sfinch/csolve/asym.pdf קישור]|כיווון=שמאל}}
 :<math>\frac{1}{n} \sum\limits_{k = 1}^n \omega(k) \sim \log\log n + B_1 + \sum_{k \geq 1} \left(\sum_{j=0}^{k-1} \frac{\gamma_j}{j!} - 1\right) \frac{(k-1)!}{(\log n)^k},</math>
@@ -65,7 +65,7 @@
 D_{\omega}(s) & := \sum_{n \geq 1} \frac{\omega(n)}{n^s} = \zeta(s) P(s) = \zeta(s) \times \sum_{n \geq 1} \frac{\mu(n)}{n} \log \zeta(ns) \\
 D_{\Omega}(s) & := \sum_{n \geq 1} \frac{\Omega(n)}{n^s} = \zeta(s) \times \sum_{n \geq 1} P(ns) = \zeta(s) \times \sum_{n \geq 1} \frac{\varphi(n)}{n} \log\zeta(ns),
 \end{align}</math>
-כאשר <math>P(s)=\sum_p p^{-s}</math> היא פונקציית זטא הראשונית.
+כאשר <math>P(s)=\sum_p p^{-s}</math> היא [[פונקציית זטא הראשונית]].
 
 == התפלגות ההפרש בין פונקציות האומגה ==
 ההתפלגות של ערכי ההפרש <math>\Omega(n) - \omega(n)</math> סדירה, בניגוד לתכונות האקראיות-למחצה של כל אחת מהפונקציות. עבור <math>k \geq 0</math> נגדיר
@@ -76,7 +76,7 @@ D_{\Omega}(s) & := \sum_{n \geq 1} \frac{\Omega(n)}{n^s} = \zeta(s) \times \sum_
 :<math>\sum_{k \geq 0} d_k \cdot z^k = \prod_p \left(1 - \frac{1}{p}\right) \left(1 + \frac{1}{p-z}\right).</math>
 עם הקבוע <math>\hat{c} := \frac{1}{4} \times \prod_{p > 2} \left(1 - \frac{1}{(p-1)^2}\right)^{-1}</math>, הצפיפויות מקיימות
 :<math>d_k = \hat{c} \cdot 2^{-k} + O(5^{-k}).</math>
-השוו להגדרת המכפלות בסעיף האחרון של מאמרם של אלפרד רניי ו[[פאל טוראן]] על משפט ארדש-קאץ{{הערה|1=A. Rényi, P. Turán, [https://doi.org/10.4064/aa-4-1-71-84 On a theorem of Erdös-Kac], Acta Arithmetica 4 (1), 1958, עמ' 71–84|כיווון=שמאל}}.
+השוו להגדרת המכפלות בסעיף האחרון של מאמרם של אלפרד רניי ו[[פאל טוראן]] על [[משפט ארדש-קאץ]]{{הערה|1=A. Rényi, P. Turán, [https://doi.org/10.4064/aa-4-1-71-84 On a theorem of Erdös-Kac], Acta Arithmetica 4 (1), 1958, עמ' 71–84|כיווון=שמאל}}.
 
 == ראו גם ==
 * [[פונקציה אריתמטית]]

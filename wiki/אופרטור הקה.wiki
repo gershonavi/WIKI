@@ -14,7 +14,7 @@
 === נוסחה מפורשת ===
 תהי <math>M_m</math> קבוצת המטריצות השלמות <math>2\times 2</math> עם [[דטרמיננטה]] <math>m</math>, ותהי <math>\Gamma = M_1</math> החבורה המודולרית המלאה <math>\mathrm{SL}_2(\mathbb Z)</math>. בהינתן תבנית מודולרית <math>f(z)</math> ממשקל <math>k</math>, אופרטור הקה ה-<math>m</math>-י פועל לפי הנוסחה
 :<math> T_m f(z) = m^{k-1}\sum_{\left(\begin{smallmatrix}a & b\\ c & d\end{smallmatrix}\right)\in\Gamma\backslash M_m}(cz+d)^{-k}f\left(\frac{az+b}{cz+d}\right), </math>
-כאשר <math>z</math> נמצא בחצי המישור העליון, וקבוע הנרמול <math>m^{k-1}</math> מבטיח שהתמונה של תבנית עם מקדמי פורייה שלמים תהיה בעלת מקדמי פורייה שלמים. אפשר לכתוב זאת מחדש בצורה
+כאשר <math>z</math> נמצא ב[[חצי המישור העליון]], וקבוע הנרמול <math>m^{k-1}</math> מבטיח שהתמונה של תבנית עם מקדמי פורייה שלמים תהיה בעלת מקדמי פורייה שלמים. אפשר לכתוב זאת מחדש בצורה
 :<math>T_m f(z) = m^{k-1}\sum_{ad = m,\ a, d > 0}\frac{1}{d^k}\sum_{b \bmod d} f\left(\frac{az+b}{d}\right),</math>
 וזה מוביל לנוסחה של מקדמי פורייה של <math>T_m(f(z)) = \sum b(n) q^n</math> בעזרת מקדמי פורייה של <math>f(z) = \sum a(n) q^n</math>:
 :<math> b(n) = \sum_{d|(m,n)}d^{k-1}a\left(\frac{mn}{d^2}\right).</math>
@@ -25,7 +25,7 @@
 לכן עבור תבניות חוד עצמיות מנורמלות של הקה ממשקל שלם, מקדמי פורייה שלהן מתלכדים עם הערכים העצמיים שלהן.
 
 === דוגמאות (נוסף בתרגום) ===
-'''פונקציית הטאו של רמנוג'ן.''' התבנית <math>\Delta(z) = q\prod_{n\ge1}(1-q^n)^{24} = \sum \tau(n)q^n</math> ממשקל 12 היא תבנית עצמית מנורמלת, ולכן
+'''פונקציית הטאו של רמנוג'ן.''' התבנית <math>\Delta(z) = q\prod_{n\ge1}(1-q^n)^{24} = \sum \tau(n)q^n</math> ממשקל 12 היא [[תבנית עצמית]] מנורמלת, ולכן
 :<math>\tau(m)\tau(n) = \sum_{d \mid (m,n)} d^{11}\,\tau\!\left(\frac{mn}{d^2}\right).</math>
 עם <math>\tau(1), \ldots, \tau(6) = 1, -24, 252, -1472, 4830, -6048</math>:
 * <math>\tau(2)\tau(3) = -24 \cdot 252 = -6048 = \tau(6)</math> (כאן <math>(m,n) = 1</math>, ולכן <math>\tau</math> כפלית).

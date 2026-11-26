@@ -20,7 +20,7 @@
 
 '''דוגמה.''' עם הנגזרת <math>D = q\frac{d}{dq} = \frac1{2\pi i}\frac d{dz}</math>, הסוגר
 :<math>[E_4, E_6] = 4E_4\,DE_6 - 6\,DE_4\,E_6</math>
-הוא תבנית ממשקל 12. האיבר הקבוע שלו 0 (כי <math>D</math> מאפס קבועים), ולכן הוא תבנית שפיץ, כלומר כפולה של <math>\Delta</math>. המקדם של <math>q</math> הוא <math>4\cdot(-504) - 6\cdot240 = -3456</math>, ואכן <math>[E_4, E_6] = -3456\,\Delta</math> (בדקנו את השוויון ב-30 המקדמים הראשונים).
+הוא תבנית ממשקל 12. האיבר הקבוע שלו 0 (כי <math>D</math> מאפס קבועים), ולכן הוא [[תבנית שפיץ]], כלומר כפולה של <math>\Delta</math>. המקדם של <math>q</math> הוא <math>4\cdot(-504) - 6\cdot240 = -3456</math>, ואכן <math>[E_4, E_6] = -3456\,\Delta</math> (בדקנו את השוויון ב-30 המקדמים הראשונים).
 
 === תת-חבורות קונגרואנציה של SL(2, Z) ===
 ב-1973 הראו פייר דלין ו[[מיכאל רפופורט]] שחוג התבניות המודולריות <math>M(\Gamma)</math> נוצר סופית כאשר <math>\Gamma</math> היא [[תת-חבורת קונגרואנציה]] של <math>\mathrm{SL}(2, \mathbb Z)</math>.{{הערה|1=<span dir="ltr">P. Deligne, M. Rapoport, Les schémas de modules de courbes elliptiques, in: Modular Functions of One Variable II, Lecture Notes in Mathematics 349, Springer, 1973, pp. 143–316.</span>|כיווון=שמאל}}

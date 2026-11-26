@@ -51,7 +51,7 @@
 :<math>\min\{\beta,\beta'\} < 1- \frac{B}{\log|DD'|}.</math>
 כלומר, אם אפסי זיגל קיימים, הם אינם יכולים להיות רבים מדי. ההוכחה נעשית בטיעון "פיתול", המעביר את הבעיה ל[[פונקציית זטא של דדקינד]] של השדה הדו-ריבועי <math>\mathbb{Q}(\sqrt{D},\sqrt{D'})</math>. טכניקה זו נמצאת בשימוש נרחב גם בעבודות מודרניות.
 
-"אפקט הדחייה" הזה (תופעת דויירינג-היילברון), לאחר ניתוח זהיר יותר, הוביל את לנדאו למשפט שלו משנת 1936{{הערה|1=E. Landau, ''Bemerkungen zum Heilbronnschen Satz'', Acta Arithmetica, 1936, עמ' 1–18|כיווון=שמאל}}, הקובע שלכל <math>\varepsilon > 0</math> קיים <math>C(\varepsilon)\in\mathbb{R}_{+}</math> כך שאם <math>\beta</math> הוא אפס ממשי של <math>L(s,\chi_D)</math>, אז
+"אפקט הדחייה" הזה ([[תופעת דויירינג-היילברון]]), לאחר ניתוח זהיר יותר, הוביל את לנדאו למשפט שלו משנת 1936{{הערה|1=E. Landau, ''Bemerkungen zum Heilbronnschen Satz'', Acta Arithmetica, 1936, עמ' 1–18|כיווון=שמאל}}, הקובע שלכל <math>\varepsilon > 0</math> קיים <math>C(\varepsilon)\in\mathbb{R}_{+}</math> כך שאם <math>\beta</math> הוא אפס ממשי של <math>L(s,\chi_D)</math>, אז
 :<math>\beta < 1 - C(\varepsilon)|D|^{-\frac{3}{8} - \varepsilon}.</math>
 אולם באותה שנה, באותו גיליון של אותו כתב עת, שיפר זיגל{{הערה|1=C. L. Siegel, [https://doi.org/10.4064/aa-1-1-83-86 Über die Klassenzahl quadratischer Zahlkörper], Acta Arithmetica 1 (1), 1935, עמ' 83–86|כיווון=שמאל}} את ההערכה ישירות ל-
 :<math>\beta < 1 - C(\varepsilon)|D|^{-\varepsilon}.</math>
@@ -95,16 +95,16 @@
 :<math>h(j(\tau_D)) \ll \log|D|,</math>
 כאשר:
 * <math>h</math> הוא הגובה הנאיבי הלוגריתמי המוחלט לשדות מספרים;
-* <math>j</math> היא פונקציית האינווריאנט j;
+* <math>j</math> היא פונקציית ה[[אינווריאנט j]];
 * <math>\tau_D := (D+\sqrt{D})/2</math>.
 המספר <math>j(\tau_D)</math> יוצר את [[שדה המחלקה של הילברט]] של <math>\mathbb{Q}(\sqrt{D})</math>, שהוא ההרחבה האבלית הבלתי מסועפת המקסימלית שלו{{הערה|1=Theorem II.4.1 אצל Joseph H. Silverman, ''Advanced topics in the arithmetic of elliptic curves'', Graduate Texts in Mathematics 151, Springer-Verlag, New York, 1994|כיווון=שמאל}}. שקילות זו נובעת ישירות מהתוצאות של גרנוויל וסטארק (2000){{הערה|שם=grst}}, וניתן לראותה אצל C. Táfula (2019){{הערה|1=C. Táfula, [https://doi.org/10.4064/aa191118-18-5 On Landau–Siegel zeros and heights of singular moduli], Acta Arithmetica 201, 2021, עמ' 1–28|כיווון=שמאל}}.
 
-קשר מדויק בין גבהים לבין ערכים של פונקציות L השיג פייר קולמז (1993{{הערה|1=Pierre Colmez, Periodes des Variétés Abéliennes à Multiplication Complexe, Annals of Mathematics 138 (3), 1993, עמ' 625–683|כיווון=שמאל}}, 1998{{הערה|1=Pierre Colmez, Sur la hauteur de Faltings des variétés abéliennes à multiplication complexe, Compositio Mathematica 111 (3), 1998, עמ' 359–369|כיווון=שמאל}}), שהראה שעבור [[עקום אליפטי]] <math>E_D/\mathbb{C}</math> עם כפל מרוכב ב-<math>\mathbb{Z}[\tau_D]</math> מתקיים
+קשר מדויק בין גבהים לבין ערכים של פונקציות L השיג פייר קולמז (1993{{הערה|1=Pierre Colmez, Periodes des Variétés Abéliennes à Multiplication Complexe, Annals of Mathematics 138 (3), 1993, עמ' 625–683|כיווון=שמאל}}, 1998{{הערה|1=Pierre Colmez, Sur la hauteur de Faltings des variétés abéliennes à multiplication complexe, Compositio Mathematica 111 (3), 1998, עמ' 359–369|כיווון=שמאל}}), שהראה שעבור [[עקום אליפטי]] <math>E_D/\mathbb{C}</math> עם [[כפל מרוכב]] ב-<math>\mathbb{Z}[\tau_D]</math> מתקיים
 :<math>-2 h_{\mathrm{Fal}}(E_D) - \frac{1}{2} \log|D| = \frac{L'}{L}(0,\chi_D) + \log 2\pi,</math>
 כאשר <math>h_{\mathrm{Fal}}</math> מסמן את גובה פלטינגס{{הערה|1=ראו את התרשים בסעיף 0.6 אצל Colmez (1993). בפינה הימנית העליונה של התרשים יש טעות דפוס קטנה, ושם צריך להופיע <math>-2 h_{\mathrm{Fal}}(X) - \frac{1}{2}\log D</math>.}}. בעזרת הזהויות <math>h_{\mathrm{Fal}}(E_D) = \frac{1}{12}h(j(\tau_D)) + O(\log h(j(\tau_D)))</math>{{הערה|1=Proposition 2.1, Chapter X אצל G. Cornell, J. H. Silverman (עורכים), ''Arithmetic Geometry'', Springer-Verlag, New York, 1986|כיווון=שמאל}} ו-<math>\frac{L'}{L}(1,\chi_D) = -\frac{L'}{L}(0,\chi_D) - \log|D| + \log 2\pi + \gamma</math>{{הערה|1=מסקנה מהמשוואה הפונקציונלית, כאשר <math>\gamma = 0.57721\ldots</math> הוא [[קבוע אוילר-מסקרוני]].}}, משפטו של קולמז נותן גם הוכחה לשקילות שלעיל.
 
 == השלכות של קיום אפסי זיגל ==
-אף ש[[השערת רימן המוכללת]] צפויה להיות נכונה, ההשערה "אין אפסי זיגל" הייתה פתוחה עשרות שנים, ולכן יש עניין בחקר ההשלכות של דוגמאות נגדיות חמורות כאלה להשערה. סיבה נוספת לחקור אפשרות זו היא שההוכחה של משפטים מסוימים, שאינם תלויים בהנחות, מחייבת חלוקה לשני מקרים: תחילה הוכחה בהנחה שאין אפסי זיגל, ואחר כך הוכחה אחרת בהנחה שהם קיימים. משפט קלאסי מסוג זה הוא משפט ליניק על הראשוני הקטן ביותר ב[[משפט דיריכלה|סדרה חשבונית]].
+אף ש[[השערת רימן המוכללת]] צפויה להיות נכונה, ההשערה "אין אפסי זיגל" הייתה פתוחה עשרות שנים, ולכן יש עניין בחקר ההשלכות של דוגמאות נגדיות חמורות כאלה להשערה. סיבה נוספת לחקור אפשרות זו היא שההוכחה של משפטים מסוימים, שאינם תלויים בהנחות, מחייבת חלוקה לשני מקרים: תחילה הוכחה בהנחה שאין אפסי זיגל, ואחר כך הוכחה אחרת בהנחה שהם קיימים. משפט קלאסי מסוג זה הוא [[משפט ליניק]] על הראשוני הקטן ביותר ב[[משפט דיריכלה|סדרה חשבונית]].
 
 להלן כמה דוגמאות לעובדות הנובעות מקיום אפסי זיגל.
 

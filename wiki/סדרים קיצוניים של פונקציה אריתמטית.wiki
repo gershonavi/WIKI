@@ -22,7 +22,7 @@
 :<math>\liminf_{n \to \infty} \frac{\varphi(n) \ln \ln n}{n} = e^{-\gamma},</math>
 :כפי שהוכיח [[אדמונד לנדאו]] בשנת 1903.{{הערה|שם=ten}}{{הערה|שם=hw}}
 * עבור פונקציית מספר המחלקים <math>d(n)</math> יש החסם התחתון הטריוויאלי <math>2 \le d(n)</math> (עבור <math>n > 1</math>), שבו שוויון מתקיים כאשר <math>n</math> ראשוני, ולכן 2 הוא סדר מינימלי. ל-<math>\ln d(n)</math> יש הסדר המקסימלי <math>\ln 2 \cdot \ln n / \ln\ln n</math>, כפי שהוכיח ויגרט בשנת 1907.{{הערה|שם=ten}}{{הערה|שם=hw}}
-* עבור מספר הגורמים הראשוניים השונים <math>\omega(n)</math> יש החסם התחתון הטריוויאלי <math>1 \le \omega(n)</math>, שבו שוויון מתקיים כאשר <math>n</math> חזקה של ראשוני. סדר מקסימלי של <math>\omega(n)</math> הוא <math>\ln n / \ln\ln n</math>.{{הערה|שם=ten}}
+* עבור מספר הגורמים הראשוניים השונים <math>\omega(n)</math> יש החסם התחתון הטריוויאלי <math>1 \le \omega(n)</math>, שבו שוויון מתקיים כאשר <math>n</math> [[חזקה של ראשוני]]. סדר מקסימלי של <math>\omega(n)</math> הוא <math>\ln n / \ln\ln n</math>.{{הערה|שם=ten}}
 * עבור מספר הגורמים הראשוניים עם ריבוי <math>\Omega(n)</math> יש החסם התחתון הטריוויאלי <math>1 \le \Omega(n)</math>, שבו שוויון מתקיים כאשר <math>n</math> ראשוני. סדר מקסימלי של <math>\Omega(n)</math> הוא <math>\ln n / \ln 2</math>.{{הערה|שם=ten}}
 * משערים ש[[פונקציית מרטנס]] <math>M(x)</math>, הפונקציה הסכומית של [[פונקציית מביוס]], מקיימת
 :<math>\limsup_{x \to \infty} \frac{|M(x)|}{\sqrt{x}} = +\infty,</math>

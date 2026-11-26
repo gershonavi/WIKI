@@ -5,7 +5,7 @@
 העבודה פורסמה כפרק בספר ב-1967.{{הערה|שם=Tate|1=J. T. Tate, ''Fourier analysis in number fields and Hecke's zeta-functions'', in: J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967, pp. 305–347|כיווון=שמאל}}{{הערה|שם=Kudla|1=S. S. Kudla, ''Tate's thesis'', in: J. Bernstein, S. Gelbart (eds.), ''An Introduction to the Langlands Program'', Birkhäuser, 2003, pp. 109–131|כיווון=שמאל}}
 
 == הרעיון ==
-לכל שדה מספרים <math>K</math> יש '''חוג האדלים''' <math>\mathbb A_K</math>, שמשלב את כל ההשלמות של <math>K</math> (הממשיות, המרוכבות וה-<math>p</math>-אדיות) לחוג קומפקטי מקומית אחד, ו'''חבורת האידלים''' <math>\mathbb A_K^\times</math> של האיברים ההפיכים שלו. עבור פונקציה מתאימה <math>f</math> על <math>\mathbb A_K</math> ו"קרקטר" <math>\omega</math> של <math>\mathbb A_K^\times/K^\times</math> (למשל <math>\omega = \chi\,|\cdot|^s</math>), אינטגרל הזטא של טייט הוא
+לכל שדה מספרים <math>K</math> יש '''[[חוג האדלים]]''' <math>\mathbb A_K</math>, שמשלב את כל ההשלמות של <math>K</math> (הממשיות, המרוכבות וה-<math>p</math>-אדיות) לחוג קומפקטי מקומית אחד, ו'''[[חבורת האידלים]]''' <math>\mathbb A_K^\times</math> של האיברים ההפיכים שלו. עבור פונקציה מתאימה <math>f</math> על <math>\mathbb A_K</math> ו"קרקטר" <math>\omega</math> של <math>\mathbb A_K^\times/K^\times</math> (למשל <math>\omega = \chi\,|\cdot|^s</math>), אינטגרל הזטא של טייט הוא
 
 :<math>Z(f, \omega) = \int_{\mathbb A_K^\times} f(x)\,\omega(x)\,d^\times x.</math>
 

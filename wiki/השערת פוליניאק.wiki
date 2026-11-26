@@ -10,7 +10,7 @@
 בשנת 1966 הוכיח צ'ן ג'ינגרון גרסה מעט חלשה יותר של ההשערה: יש אינסוף ראשוניים <math>p</math> כך ש-<math>p+k</math> הוא ראשוני או מספר [[חופשי מריבועים|חופשי מריבועים]] בעל לכל היותר שני גורמים ראשוניים (ראו [[משפט צ'ן]] ו[[מספר חצי-ראשוני]]).{{הערה|1=J. R. Chen, ''On the representation of a large even integer as the sum of a prime and the product of at most two primes'', Kexue Tongbao '''11''' (1966), no. 9, pp. 385–386|כיווון=שמאל}}
 
 == צפיפות משוערת ==
-עבור <math>n</math> זוגי, נסמן ב-<math>\pi_n(x)</math> את מספר הראשוניים <math>p \le x</math> שעבורם גם <math>p + n</math> ראשוני. השערת הארדי-ליטלווד הראשונה אומרת שהצפיפות האסימפטוטית היא מהצורה
+עבור <math>n</math> זוגי, נסמן ב-<math>\pi_n(x)</math> את מספר הראשוניים <math>p \le x</math> שעבורם גם <math>p + n</math> ראשוני. [[השערת הארדי-ליטלווד הראשונה]] אומרת שהצפיפות האסימפטוטית היא מהצורה
 
 :<math>\pi_n(x) \sim 2 C_n \frac{x}{(\ln x)^2} \sim 2 C_n \int_2^x \frac{dt}{(\ln t)^2},</math>
 

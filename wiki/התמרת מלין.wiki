@@ -4,7 +4,7 @@
 :<math>\mathcal{M}\left\{f\right\}(s) = \varphi(s)=\int_0^\infty x^{s-1} f(x) \, dx = \int_{\R^{\times}_+}f(x) x^s \frac{dx}{x}.</math>
 כאן <math>dx/x</math> היא [[מידת האר]] על החבורה הכפלית <math>\R^{\times}_+</math>, ו-<math>x\mapsto x^s</math> הוא כרקטר כפלי (שבדרך כלל אינו אוניטרי). ההתמרה ההפוכה היא
 :<math>\mathcal{M}^{-1}\left\{\varphi\right\}(x) = f(x)=\frac{1}{2 \pi i} \int_{c-i \infty}^{c+i \infty} x^{-s} \varphi(s)\, ds.</math>
-זהו [[אינטגרל קווי]] לאורך ישר אנכי ב[[המישור המרוכב|מישור המרוכב]], שהחלק הממשי שלו <math>c</math> צריך לקיים רק חסם תחתון מתון. התנאים שבהם ההיפוך תקף ניתנים במשפט ההיפוך של מלין.
+זהו [[אינטגרל קווי]] לאורך ישר אנכי ב[[המישור המרוכב|מישור המרוכב]], שהחלק הממשי שלו <math>c</math> צריך לקיים רק חסם תחתון מתון. התנאים שבהם ההיפוך תקף ניתנים ב[[משפט ההיפוך של מלין]].
 
 את ההתמרה הציג [[ברנהרד רימן]] בשנת 1859.{{הערה|שם=T7|1=Titchmarsh, E. C. (1948). ''Introduction to the Theory of Fourier Integrals'' (2nd ed.). p. 7.|כיוון=שמאל}} היא קרויה על שמו של המתמטיקאי ה[[פינלנד|פיני]] יאלמר מלין (Hjalmar Mellin), שפיתח בשנת 1897 את הטיפול הריגורוזי הראשון בה.{{הערה|שם=Mellin|1=Mellin, Hj. "Zur Theorie zweier allgemeinen Klassen bestimmter Integrale". ''Acta Societatis Scientiarum Fennicae''. '''XXII''' (2).|כיוון=שמאל}}
 

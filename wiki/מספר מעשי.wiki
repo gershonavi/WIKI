@@ -82,7 +82,7 @@
 | <math>10^7</math> || 829157 || 828925.5 || 1.336
 |}
 
-כמו בראשוניים בסדרה חשבונית, בהינתן שני מספרים טבעיים <math>a</math> ו-<math>q</math>, מתקיים{{הערה|1=<span dir="ltr">A. Weingartner, An extension of the Siegel–Walfisz theorem, Proceedings of the American Mathematical Society 149 (2021), pp. 4699–4708.</span>|כיווון=שמאל}}
+כמו ב[[ראשוניים בסדרה חשבונית]], בהינתן שני מספרים טבעיים <math>a</math> ו-<math>q</math>, מתקיים{{הערה|1=<span dir="ltr">A. Weingartner, An extension of the Siegel–Walfisz theorem, Proceedings of the American Mathematical Society 149 (2021), pp. 4699–4708.</span>|כיווון=שמאל}}
 :<math>|\{ n \le x: n \text{ מעשי ו-} n\equiv a \bmod q \}|=\frac{c_{q,a} x}{\log x} +O_q\left(\frac{x}{(\log x)^2}\right).</math>
 הקבוע <math>c_{q,a}</math> חיובי אם ורק אם יש יותר ממספר מעשי אחד ששקול ל-<math>a \bmod q</math>. אם <math>\gcd(q,a)=\gcd(q,b)</math>, אז <math>c_{q,a}=c_{q,b}</math>. למשל, בערך 38.26% מהמספרים המעשיים מסתיימים בספרה 0, ואילו כל אחת מהספרות האחרונות 2, 4, 6, 8 מופיעה באותה שכיחות יחסית, 15.43%. (במספרים המעשיים עד <math>10^7</math> מצאנו 37.37% מסתיימים ב-0, ו-15.66% בכל אחת מהספרות 2, 4, 6, 8 – השוויון בין ארבע האחרונות כבר מדויק, וההתכנסות לערכים האסימפטוטיים איטית.)
 

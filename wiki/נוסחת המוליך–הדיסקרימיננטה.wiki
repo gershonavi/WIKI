@@ -3,7 +3,7 @@
 == הניסוח ==
 תהי <math>L/K</math> הרחבת גלואה סופית של שדות גלובליים עם חבורת גלואה <math>G</math>. אז הדיסקרימיננטה שווה ל-
 :<math>\mathfrak d_{L/K} = \prod_{\chi \in \mathrm{Irr}(G)}\mathfrak f(\chi)^{\chi(1)},</math>
-כאשר <math>\mathfrak f(\chi)</math> הוא מוליך ארטין הגלובלי של <math>\chi</math>, ו-<math>\chi(1)</math> המימד של הקרקטר.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, VII.11.9|כיווון=שמאל}}
+כאשר <math>\mathfrak f(\chi)</math> הוא [[מוליך ארטין]] הגלובלי של <math>\chi</math>, ו-<math>\chi(1)</math> המימד של הקרקטר.{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, VII.11.9|כיווון=שמאל}}
 
 '''המקרה האבלי מעל <math>\mathbb Q</math>.''' כשההרחבה <math>L/\mathbb Q</math> אבלית, כל הקרקטרים האי-פריקים ממימד 1, ולפי [[משפט קרונקר-ובר|משפט קרונקר–ובר]] אפשר לזהות אותם עם [[קרקטר דיריכלה|קרקטרי דיריכלה]] פרימיטיביים; המוליך של ארטין הוא אז פשוט המוליך הרגיל של קרקטר דיריכלה. הנוסחה מקבלת את הצורה
 :<math>|d_L| = \prod_{\chi} f_\chi,</math>
@@ -13,7 +13,7 @@
 * '''[[שדה ריבועי]].''' ל-<math>L = \mathbb Q(\sqrt d)</math> יש שני קרקטרים: הטריוויאלי, והקרקטר הריבועי <math>\chi_D = \left(\tfrac{D}{\cdot}\right)</math>, שהמוליך שלו <math>|D|</math>, כאשר <math>D</math> הדיסקרימיננטה היסודית. הנוסחה נותנת <math>|d_L| = 1 \cdot |D|</math> – כלומר הדיסקרימיננטה של שדה ריבועי היא המוליך של הקרקטר שלו.
 * '''[[שדה דו-ריבועי]] <math>\mathbb Q(\sqrt2, \sqrt3)</math>.''' לחבורה <math>(\mathbb Z/2)^2</math> יש ארבעה קרקטרים, שמתאימים לשלושת תת-השדות הריבועיים <math>\mathbb Q(\sqrt2), \mathbb Q(\sqrt3), \mathbb Q(\sqrt6)</math> ולקרקטר הטריוויאלי. המוליכים הם הדיסקרימיננטות <math>8, 12, 24</math>, ולכן
 ::<math>d_L = 1\cdot 8\cdot 12\cdot 24 = 2304 = 2^8\cdot 3^2.</math>
-* '''תת-השדה ממעלה שלישית של <math>\mathbb Q(\zeta_7)</math>.''' לשדה <math>\mathbb Q(\zeta_7 + \zeta_7^{-1})</math> מתאימים הקרקטר הטריוויאלי ושני הקרקטרים מסדר 3 מודולו 7, שהמוליך של כל אחד מהם 7. לכן <math>d = 7\cdot 7 = 49</math> – וזו אכן הדיסקרימיננטה של <math>x^3 + x^2 - 2x - 1</math>.
+* '''תת-ה[[שדה ממעלה שלישית]] של <math>\mathbb Q(\zeta_7)</math>.''' לשדה <math>\mathbb Q(\zeta_7 + \zeta_7^{-1})</math> מתאימים הקרקטר הטריוויאלי ושני הקרקטרים מסדר 3 מודולו 7, שהמוליך של כל אחד מהם 7. לכן <math>d = 7\cdot 7 = 49</math> – וזו אכן הדיסקרימיננטה של <math>x^3 + x^2 - 2x - 1</math>.
 
 == דוגמה: שדות ציקלוטומיים ==
 תהי <math>L = \mathbb Q(\zeta_{p^n})/\mathbb Q</math> [[שדה ציקלוטומי|הרחבה ציקלוטומית]] של הרציונליים. חבורת הגלואה <math>G</math> היא <math>(\mathbb Z/p^n)^\times</math>. כיוון ש-<math>(p)</math> הוא הראשוני הסופי היחיד שמסתעף, מוליך ארטין הגלובלי <math>\mathfrak f(\chi)</math> שווה למקומי <math>\mathfrak f_{(p)}(\chi)</math>. כיוון ש-<math>G</math> אבלית, כל קרקטר אי-פריק <math>\chi</math> ממימד <math>\chi(1) = 1</math>. המוליך המקומי של <math>\chi</math> שווה למוליך של ההשלמה ה-<math>\mathfrak p</math>-אדית של <math>L^\chi = L^{\ker\chi}/\mathbb Q</math>, כלומר <math>(p)^{n_p}</math>, כאשר <math>n_p</math> המספר הטבעי הקטן ביותר כך ש-<math>U^{(n_p)}_{\mathbb Q_p} \subseteq N_{L^\chi_{\mathfrak p}/\mathbb Q_p}(U_{L^\chi_{\mathfrak p}})</math>. אם <math>p \gt 2</math>, חבורת הגלואה <math>G(L_{\mathfrak p}/\mathbb Q_p) = G(L/\mathbb Q) = (\mathbb Z/p^n)^\times</math> ציקלית מסדר <math>\varphi(p^n)</math>, ובעזרת [[תורת שדות המחלקה|תורת שדות המחלקה]] המקומית והעובדה ש-<math>U_{\mathbb Q_p}/U^{(k)}_{\mathbb Q_p} = (\mathbb Z/p^k)^\times</math> רואים בקלות שאם <math>\chi</math> מתפרק דרך קרקטר פרימיטיבי של <math>(\mathbb Z/p^i)^\times</math>, אז <math>\mathfrak f_{(p)}(\chi) = p^i</math>.

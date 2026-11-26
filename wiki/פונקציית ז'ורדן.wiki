@@ -17,7 +17,7 @@
 ::<math>\sum_{n\ge 1}\frac{J_k(n)}{n^s} = \frac{\zeta(s-k)}{\zeta(s)}.</math>
 * הסדר הממוצע של <math>J_k(n)</math> הוא
 ::<math>J_k(n) \sim \frac{n^k}{\zeta(k+1)}.</math>
-* פונקציית פסי של דדקינד היא
+* [[פונקציית פסי של דדקינד]] היא
 ::<math>\psi(n) = \frac{J_2(n)}{J_1(n)}.</math>
 :מתוך ההגדרה (כל גורם במכפלה על הראשוניים הוא [[פולינום ציקלוטומי]] ב-<math>p^{-k}</math>) אפשר להראות שגם הפונקציות האריתמטיות <math>\frac{J_k(n)}{J_1(n)}</math> ו-<math>\frac{J_{2k}(n)}{J_k(n)}</math> הן פונקציות כפליות שערכיהן שלמים.
 * <math>\sum_{\delta\mid n}\delta^sJ_r(\delta)J_s\left(\frac{n}{\delta}\right) = J_{r+s}(n)</math> (נוסחה של גגנבאואר){{הערה|1=Matthew Holden, Michael Orrison, Michael Vrable, [https://web.archive.org/web/20160305132124/https://www.math.hmc.edu/~orrison/research/papers/totient.pdf Yet Another Generalization of Euler's Totient Function]|כיווון=שמאל}}.

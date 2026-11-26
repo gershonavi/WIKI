@@ -28,7 +28,7 @@
 :<math>\frac{1}{\zeta(s)} = \int_0^\infty x^{-s}\, dM(x),</math>
 ולאחר [[אינטגרציה בחלקים]] מתקבל ההופכי של פונקציית זטא כ[[התמרת מלין]]:
 :<math>\frac{1}{s \zeta(s)} = \left\{ \mathcal{M} M \right\}(-s) = \int_0^\infty x^{-s} M(x)\, \frac{dx}{x}.</math>
-בעזרת משפט ההיפוך של מלין אפשר לבטא את <math>M</math> באמצעות <math>1/\zeta</math>:
+בעזרת [[משפט ההיפוך של מלין]] אפשר לבטא את <math>M</math> באמצעות <math>1/\zeta</math>:
 :<math>M(x) = \frac{1}{2 \pi i} \int_{\sigma-i\infty}^{\sigma+i\infty} \frac{x^s}{s \zeta(s)}\,ds.</math>
 ביטוי זה תקף עבור <math>1 < \sigma < 2</math>, ובהנחת השערת רימן גם עבור <math>\tfrac{1}{2} < \sigma < 2</math>. מכאן שאינטגרל התמרת מלין חייב להתכנס, ולכן <math>M(x)</math> היא <math>O(x^e)</math> לכל מעריך <math>e</math> הגדול מ-<math>\tfrac{1}{2}</math>. מכאן נובע שהטענה
 :<math>M(x) = O\Big(x^{\tfrac{1}{2} + \epsilon}\Big)</math>

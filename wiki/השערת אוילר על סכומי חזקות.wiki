@@ -5,7 +5,7 @@
 ההשערה נכונה במקרה <math>k = 3</math> (מה שנובע מהמשפט האחרון של פרמה לחזקות שלישיות), אבל הופרכה עבור <math>k = 4</math> ו-<math>k = 5</math>. לא ידוע אם היא נכשלת או מתקיימת לאיזשהו <math>k \ge 6</math>.
 
 == רקע ==
-אוילר הכיר את השוויון <math>59^4 + 158^4 = 133^4 + 134^4</math>, שמערב סכומים של ארבע חזקות רביעיות;{{הערה|שם=Euler1778|1=<span dir="ltr">L. Euler, Resolutio formulae diophanteae ab(maa + nbb) = cd(mcc + ndd) per numeros rationales, Nova Acta Academiae Scientiarum Imperialis Petropolitanae 13, pp. 45–63; G. Ehlers, Solution of the Diophantine equation ab(maa + nbb) = cd(mcc + ndd) using rational numbers, Euleriana 3 (2023), pp. 81–123.</span>|כיווון=שמאל}} אבל זו אינה [[דוגמה נגדית]], כי אף איבר אינו מבודד בצד אחד של המשוואה. הוא גם נתן פתרון מלא לבעיית ארבע הקוביות, כמו במספר של אפלטון <math>3^3 + 4^3 + 5^3 = 6^3</math> או ב[[מספר מונית|מספר המונית]] 1729.{{הערה|1=<span dir="ltr">W. Dunham (ed.), The Genius of Euler: Reflections on His Life and Work, MAA, 2007, p. 220.</span>|כיווון=שמאל}} הפתרון הכללי של המשוואה <math>x_1^3 + x_2^3 = x_3^3 + x_4^3</math> הוא
+אוילר הכיר את השוויון <math>59^4 + 158^4 = 133^4 + 134^4</math>, שמערב סכומים של ארבע חזקות רביעיות;{{הערה|שם=Euler1778|1=<span dir="ltr">L. Euler, Resolutio formulae diophanteae ab(maa + nbb) = cd(mcc + ndd) per numeros rationales, Nova Acta Academiae Scientiarum Imperialis Petropolitanae 13, pp. 45–63; G. Ehlers, Solution of the Diophantine equation ab(maa + nbb) = cd(mcc + ndd) using rational numbers, Euleriana 3 (2023), pp. 81–123.</span>|כיווון=שמאל}} אבל זו אינה [[דוגמה נגדית]], כי אף איבר אינו מבודד בצד אחד של המשוואה. הוא גם נתן פתרון מלא ל[[בעיית ארבע הקוביות]], כמו במספר של אפלטון <math>3^3 + 4^3 + 5^3 = 6^3</math> או ב[[מספר מונית|מספר המונית]] 1729.{{הערה|1=<span dir="ltr">W. Dunham (ed.), The Genius of Euler: Reflections on His Life and Work, MAA, 2007, p. 220.</span>|כיווון=שמאל}} הפתרון הכללי של המשוואה <math>x_1^3 + x_2^3 = x_3^3 + x_4^3</math> הוא
 :<math>\begin{align}
 x_1 &= \lambda\left(1 - (a - 3b)(a^2 + 3b^2)\right), \\
 x_2 &= \lambda\left((a + 3b)(a^2 + 3b^2) - 1\right), \\
@@ -45,7 +45,7 @@ x_4 &= \lambda\left((a^2 + 3b^2)^2 - (a - 3b)\right),
 :<math>\sum_{i=1}^na_i^k = \sum_{j=1}^mb_j^k,</math>
 כאשר <math>a_i \ne b_j</math> שלמים חיוביים לכל <math>1 \le i \le n</math> ו-<math>1 \le j \le m</math>, אז <math>m + n \ge k</math> (ראו [[השערת לנדר, פרקין וסלפרידג']]). במקרה הפרטי <math>m = 1</math>, ההשערה אומרת שאם <math>\sum_{i=1}^na_i^k = b^k</math> (בתנאים שלמעלה), אז <math>n \ge k - 1</math>.
 
-את המקרה הפרטי אפשר לתאר כבעיה של [[חלוקה (תורת המספרים)|חלוקה]] של חזקה מושלמת למעט חזקות זהות. עבור <math>k = 4, 5, 7, 8</math> ו-<math>n = k</math> או <math>k - 1</math>, ידועים פתרונות רבים. הנה כמה מהם (את כולם בדקנו בחשבון שלמים מדויק).
+את המקרה הפרטי אפשר לתאר כבעיה של [[חלוקה (תורת המספרים)|חלוקה]] של [[חזקה מושלמת]] למעט חזקות זהות. עבור <math>k = 4, 5, 7, 8</math> ו-<math>n = k</math> או <math>k - 1</math>, ידועים פתרונות רבים. הנה כמה מהם (את כולם בדקנו בחשבון שלמים מדויק).
 
 === k = 3 ===
 מהמשפט האחרון של פרמה ידוע שאין פתרון ל-<math>a^3 + b^3 = c^3</math>. (סכום חיובי מינימלי של חזקות שלישיות הוא <math>9^3 - 8^3 - 6^3 = 1</math>, שנותן פתרון של המשוואה עם <math>a = (1, 6, 8)</math> ו-<math>b = 9</math>, אבל שם האיבר הקטן אינו גדול מ-1.)

@@ -22,7 +22,7 @@
 
 :<math>L_p(1-n,\chi) = \left(1-\chi\omega^{-n}(p)\,p^{n-1}\right)L(1-n,\chi\omega^{-n})</math>
 
-לכל שלם <math>n \ge 1</math>, כאשר <math>\omega</math> הוא '''קרקטר טייכמילר''' (הקרקטר מודולו <math>p</math> שערכיו הם שורשי היחידה מסדר <math>p-1</math> ב-<math>\mathbb Z_p</math>). כאשר <math>n</math> מתחלק ב-<math>p-1</math>, <math>\omega^{-n}</math> טריוויאלי, ונוסחת האינטרפולציה מתפשטת ל-<math>L_p(1-n, \chi) = (1 - \chi(p)p^{n-1})L(1-n, \chi)</math>. כש-<math>n</math> אינו מתחלק ב-<math>p-1</math>, האינטרפולציה מקבלת צורה "מעוותת" על ידי <math>\omega</math>. עבור <math>\chi = 1</math>, <math>L_p(s, 1) = \zeta_p(s)</math> היא פונקציית הזטא ה-<math>p</math>-אדית, ויש לה קוטב פשוט יחיד ב-<math>s = 1</math>.
+לכל שלם <math>n \ge 1</math>, כאשר <math>\omega</math> הוא '''[[קרקטר טייכמילר]]''' (הקרקטר מודולו <math>p</math> שערכיו הם שורשי היחידה מסדר <math>p-1</math> ב-<math>\mathbb Z_p</math>). כאשר <math>n</math> מתחלק ב-<math>p-1</math>, <math>\omega^{-n}</math> טריוויאלי, ונוסחת האינטרפולציה מתפשטת ל-<math>L_p(1-n, \chi) = (1 - \chi(p)p^{n-1})L(1-n, \chi)</math>. כש-<math>n</math> אינו מתחלק ב-<math>p-1</math>, האינטרפולציה מקבלת צורה "מעוותת" על ידי <math>\omega</math>. עבור <math>\chi = 1</math>, <math>L_p(s, 1) = \zeta_p(s)</math> היא פונקציית הזטא ה-<math>p</math>-אדית, ויש לה קוטב פשוט יחיד ב-<math>s = 1</math>.
 
 === הקונגרואנציות של קומר ===
 הסיבה שהאינטרפולציה אפשרית היא '''הקונגרואנציות של קומר''': אם <math>m \equiv n \pmod{(p-1)p^{k-1}}</math>, ו-<math>n</math> אינו מתחלק ב-<math>p-1</math>, אז

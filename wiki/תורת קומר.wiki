@@ -59,7 +59,7 @@
 :<math>0\to E[m]\to E \xrightarrow{P\mapsto m\cdot P} E \to 0,</math>
 שבה העתקת הכפל ב-<math>m</math> היא על, משום שהחבורה <math>E(\overline K)</math> ניתנת לחלוקה: כל נקודה בה היא <math>m</math> כפול נקודה אחרת. בוחרים הרחבה אלגברית <math>L/K</math> ולוקחים קוהומולוגיה; מקבלים את '''סדרת קומר''' של <math>E</math>:
 :<math>0\to E(L)/mE(L)\to H^1(L, E[m])\to H^1(L,E)[m]\to 0.</math>
-החישוב של '''חבורת מורדל–וייל החלשה''' <math>E(L)/mE(L)</math> הוא חלק מרכזי בהוכחה של משפט מורדל–וייל. העובדה ש-<math>H^1(L,E)</math> אינה מתאפסת מוסיפה לתורה סיבוך מהותי. (לדוגמה, עבור העקום <math>y^2 = x^3 - x</math> מעל <math>\mathbb Q</math>, החבורה <math>E(\mathbb Q)</math> מורכבת מארבע נקודות בלבד – נקודת האינסוף ו-<math>(0,0), (1,0), (-1,0)</math> – ולכן <math>E(\mathbb Q)/2E(\mathbb Q) \cong (\mathbb Z/2)^2</math>.)
+החישוב של '''[[חבורת מורדל–וייל]] החלשה''' <math>E(L)/mE(L)</math> הוא חלק מרכזי בהוכחה של [[משפט מורדל–וייל]]. העובדה ש-<math>H^1(L,E)</math> אינה מתאפסת מוסיפה לתורה סיבוך מהותי. (לדוגמה, עבור העקום <math>y^2 = x^3 - x</math> מעל <math>\mathbb Q</math>, החבורה <math>E(\mathbb Q)</math> מורכבת מארבע נקודות בלבד – נקודת האינסוף ו-<math>(0,0), (1,0), (-1,0)</math> – ולכן <math>E(\mathbb Q)/2E(\mathbb Q) \cong (\mathbb Z/2)^2</math>.)
 
 == הכללות ==
 נניח ש-<math>G</math> [[חבורה פרו-סופית]] שפועלת על מודול <math>A</math>, ושיש הומומורפיזם על <math>\pi</math> מה-<math>G</math>-מודול <math>A</math> לעצמו. נניח גם ש-<math>G</math> פועלת באופן טריוויאלי על הגרעין <math>C</math> של <math>\pi</math>, ושחבורת הקוהומולוגיה הראשונה <math>H^1(G,A)</math> טריוויאלית. אז הסדרה המדויקת של קוהומולוגיית חבורות מראה שיש איזומורפיזם בין <math>A^G/\pi(A^G)</math> לבין <math>\mathrm{Hom}(G,C)</math>.

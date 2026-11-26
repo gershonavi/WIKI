@@ -49,7 +49,7 @@
 כיוון שהחיבור רציף, <math>\widehat{\mathbb Z}</math> היא [[חבורה אבלית]] קומפקטית האוסדורף, ולכן [[דואליות פונטריאגין|הדואלית של פונטריאגין]] שלה היא חבורה אבלית בדידה. למעשה, הדואלית היא <math>\mathbb Q/\mathbb Z</math> עם הטופולוגיה הבדידה (ולא עם הטופולוגיה שמושרית מ-<math>\mathbb R/\mathbb Z</math>, שאינה בדידה): לכל <math>q = a/n \in \mathbb Q/\mathbb Z</math> מתאים הקרקטר <math>x \mapsto e^{2\pi i\, a x/n}</math>, שמוגדר היטב כי הוא תלוי רק ב-<math>x \bmod n</math>.
 
 === קשר לאדלים ===
-המכפלה הטנזורית <math>\widehat{\mathbb Z} \otimes_{\mathbb Z} \mathbb Q</math> היא חוג האדלים הסופיים
+המכפלה הטנזורית <math>\widehat{\mathbb Z} \otimes_{\mathbb Z} \mathbb Q</math> היא [[חוג האדלים]] הסופיים
 :<math>\mathbb A_{\mathbb Q, f} = {\prod_p}'\, \mathbb Q_p</math>
 של <math>\mathbb Q</math>, כאשר <math>'</math> מסמן מכפלה מצומצמת: איבר הוא סדרה שהיא שלמה בכל המקומות פרט למספר סופי. יש איזומורפיזם
 :<math>\mathbb A_{\mathbb Q} \cong \mathbb R \times (\widehat{\mathbb Z}\otimes_{\mathbb Z}\mathbb Q).</math>
