@@ -1,0 +1,71 @@
+ב[[מתמטיקה]], '''זוג מחזורים יסודי''' הוא [[זוג סדור]] של [[מספר מרוכב|מספרים מרוכבים]] שמגדיר [[סריג (חבורה)|סריג]] ב[[מישור המרוכב]]. סריג כזה הוא האובייקט הבסיסי שעליו מוגדרות [[פונקציה אליפטית|פונקציות אליפטיות]] ו[[תבנית מודולרית|תבניות מודולריות]].
+
+== הגדרה ==
+זוג מחזורים יסודי הוא זוג מספרים מרוכבים <math>\omega_1, \omega_2 \in \mathbb C</math> שהיחס ביניהם <math>\omega_2/\omega_1</math> אינו ממשי. אם מתייחסים אליהם כאל וקטורים ב-<math>\mathbb R^2</math>, הם [[תלות לינארית|בלתי תלויים לינארית]]. הסריג שנוצר על ידי <math>\omega_1</math> ו-<math>\omega_2</math> הוא
+:<math>\Lambda = \{m\omega_1 + n\omega_2 \mid m, n \in \mathbb Z\}.</math>
+לעיתים מסמנים את הסריג גם <math>\Lambda(\omega_1, \omega_2)</math>, כדי להדגיש שהוא תלוי ב-<math>\omega_1</math> וב-<math>\omega_2</math>, או <math>\Omega</math>, <math>\Omega(\omega_1, \omega_2)</math>, או פשוט <math>(\omega_1, \omega_2)</math>. שני היוצרים <math>\omega_1, \omega_2</math> נקראים '''בסיס הסריג'''. ה[[מקבילית]] שקודקודיה <math>0, \omega_1, \omega_1 + \omega_2, \omega_2</math> נקראת '''המקבילית היסודית'''.
+
+זוג יסודי יוצר סריג, אבל לסריג אין זוג יסודי יחיד; למעשה, אינסוף זוגות יסודיים מתאימים לאותו סריג.
+
+== תכונות אלגבריות ==
+=== שקילות ===
+שני זוגות של מספרים מרוכבים <math>(\omega_1, \omega_2)</math> ו-<math>(\alpha_1, \alpha_2)</math> נקראים [[יחס שקילות|שקולים]] אם הם יוצרים את אותו סריג, כלומר אם <math>\Lambda(\omega_1, \omega_2) = \Lambda(\alpha_1, \alpha_2)</math>.
+
+=== אין נקודות פנימיות ===
+המקבילית היסודית אינה מכילה נקודות סריג נוספות (מלבד ארבעת הקודקודים) לא בפנים ולא על השפה. להפך, כל זוג נקודות סריג עם התכונה הזו הוא זוג יסודי, והוא יוצר את אותו סריג.
+
+'''דוגמה.''' בסריג <math>\mathbb Z[i] = \mathbb Z + \mathbb Zi</math>, גם <math>(1, i)</math> וגם <math>(1, 1 + i)</math> הם זוגות יסודיים. לעומת זאת <math>(2, i)</math> אינו זוג יסודי של <math>\mathbb Z[i]</math>: המקבילית <math>0, 2, 2 + i, i</math> מכילה את נקודת הסריג <math>1</math> על השפה, והזוג יוצר תת-סריג מ[[אינדקס (תורת החבורות)|אינדקס]] 2 (שאינו מכיל את 1). אינדקס כזה מתבטא גם בשטח: שטח המקבילית היסודית, <math>|\operatorname{Im}(\bar\omega_1\omega_2)|</math>, זהה לכל הזוגות היסודיים של אותו סריג (כאן 1), ושטח המקבילית של תת-סריג מאינדקס <math>k</math> גדול פי <math>k</math> (כאן 2).
+
+=== סימטריה מודולרית ===
+שני זוגות <math>(\omega_1, \omega_2)</math> ו-<math>(\alpha_1, \alpha_2)</math> שקולים [[אם ורק אם]] יש מטריצה <math>2\times 2</math> <math>\begin{pmatrix} a & b \\ c & d\end{pmatrix}</math> עם מקדמים שלמים <math>a, b, c, d</math> ו[[דטרמיננטה]] <math>ad - bc = \pm1</math> כך ש-
+:<math>\begin{pmatrix}\alpha_1 \\ \alpha_2\end{pmatrix} = \begin{pmatrix} a & b \\ c & d\end{pmatrix}\begin{pmatrix}\omega_1 \\ \omega_2\end{pmatrix},</math>
+כלומר
+:<math>\alpha_1 = a\omega_1 + b\omega_2, \qquad \alpha_2 = c\omega_1 + d\omega_2.</math>
+המטריצה הזו שייכת לחבורה <math>\mathrm{GL}(2, \mathbb Z)</math>; אם מוסיפים את הדרישה ש-<math>\operatorname{Im}(\omega_2/\omega_1)</math> ו-<math>\operatorname{Im}(\alpha_2/\alpha_1)</math> יהיו שניהם חיוביים (כלומר ששני הבסיסים באותה מגמה), הדטרמיננטה היא <math>+1</math>, והמטריצה שייכת ל[[החבורה המודולרית|חבורה המודולרית]] <math>\mathrm{SL}(2, \mathbb Z)</math>.{{הערה|1=בערך האנגלי נכתב שמטריצה עם דטרמיננטה <math>\pm1</math> שייכת לחבורה המודולרית <math>\mathrm{SL}(2, \mathbb Z)</math>. מטריצות עם דטרמיננטה <math>-1</math> שייכות ל-<math>\mathrm{GL}(2, \mathbb Z)</math> בלבד; הן מחליפות את המגמה של הבסיס, ולכן הופכות את הסימן של <math>\operatorname{Im}(\omega_2/\omega_1)</math>.|כיווון=שמאל}} הכיוון "אם" קל: אם <math>\alpha_1, \alpha_2</math> צירופים שלמים של <math>\omega_1, \omega_2</math>, אז <math>\Lambda(\alpha_1, \alpha_2) \subseteq \Lambda(\omega_1, \omega_2)</math>, והמטריצה ההפוכה, שגם היא שלמה כי הדטרמיננטה <math>\pm1</math>, נותנת את ההכלה ההפוכה. השקילות הזו של סריגים עומדת ביסוד רבות מהתכונות של פונקציות אליפטיות (בייחוד [[הפונקציה האליפטית של ויירשטראס]]) ושל תבניות מודולריות.
+
+== תכונות טופולוגיות ==
+ה[[חבורה אבלית|חבורה האבלית]] <math>\mathbb Z^2</math> (דרך הסריג) מעבירה כל נקודה במישור המרוכב למקבילית היסודית. כלומר, כל נקודה <math>z \in \mathbb C</math> אפשר לכתוב כ-<math>z = p + m\omega_1 + n\omega_2</math> עם <math>m, n</math> שלמים ונקודה <math>p</math> במקבילית היסודית.
+
+כיוון שההעתקה הזו מזהה צלעות נגדיות של המקבילית, למקבילית היסודית יש ה[[טופולוגיה]] של [[טורוס]]. באופן שקול, אומרים שיריעת המנה <math>\mathbb C/\Lambda</math> היא טורוס.
+
+== התחום היסודי ==
+נגדיר <math>\tau = \omega_2/\omega_1</math> (יחס המחזורים). תמיד אפשר לבחור את בסיס הסריג כך ש-<math>\tau</math> יהיה באזור מיוחד, שנקרא [[תחום יסודי|התחום היסודי]]. באופן שקול, תמיד יש איבר של החבורה <math>\mathrm{PSL}(2, \mathbb Z)</math> שמעביר בסיס סריג לבסיס אחר שעבורו <math>\tau</math> בתחום היסודי.
+
+התחום היסודי הוא הקבוצה <math>D</math>, שמורכבת מקבוצה <math>U</math> ועוד חלק מהשפה של <math>U</math>:
+:<math>U = \left\{z \in \mathbb H : |z| \gt 1,\ |\operatorname{Re}z| \lt \tfrac12\right\},</math>
+כאשר <math>\mathbb H</math> הוא [[חצי המישור העליון]]. את התחום היסודי <math>D</math> בונים על ידי הוספת השפה השמאלית וחצי הקשת התחתונה:
+:<math>D = U \cup \left\{z \in \mathbb H : |z| \ge 1,\ \operatorname{Re}z = -\tfrac12\right\} \cup \left\{z \in \mathbb H : |z| = 1,\ \operatorname{Re}z \le 0\right\}.</math>
+(אפשר באותה מידה להוסיף את השפה הימנית ואת החצי הימני של הקשת; יש מחברים, למשל בערך [[אינווריאנט j]], שבוחרים כך.)
+
+יש שלושה מקרים:
+* אם <math>\tau \ne i</math> ו-<math>\tau \ne \rho := e^{2\pi i/3}</math>, יש בדיוק שני בסיסי סריג עם אותו <math>\tau</math> בתחום היסודי: <math>(\omega_1, \omega_2)</math> ו-<math>(-\omega_1, -\omega_2)</math>.
+* אם <math>\tau = i</math>, ארבעה בסיסי סריג נותנים את אותו <math>\tau</math>: שני הקודמים, <math>(\omega_1, \omega_2)</math> ו-<math>(-\omega_1, -\omega_2)</math>, וגם <math>(i\omega_1, i\omega_2)</math> ו-<math>(-i\omega_1, -i\omega_2)</math>.
+* אם <math>\tau = \rho = e^{2\pi i/3}</math>, יש שישה בסיסי סריג עם אותו <math>\tau</math>: <math>(\omega_1, \omega_2)</math>, <math>(\rho\omega_1, \rho\omega_2)</math>, <math>(\rho^2\omega_1, \rho^2\omega_2)</math> והנגדיים שלהם.
+{{הערה|1=בערך האנגלי המקרה השלישי מנוסח עבור <math>\tau = e^{i\pi/3}</math>. אבל <math>\operatorname{Re}e^{i\pi/3} = \tfrac12</math>, והנקודה הזו אינה שייכת לתחום <math>D</math> כפי שהוגדר (שמכיל את השפה השמאלית בלבד); הפינה ששייכת ל-<math>D</math> היא <math>e^{2\pi i/3}</math>. שתי הנקודות שקולות תחת <math>\tau \mapsto \tau - 1</math>, ולשתיהן אותה חבורת סימטריה מסדר 6.|כיווון=שמאל}}
+שתי הנקודות המיוחדות, <math>i</math> ו-<math>\rho</math>, נמצאות על שפת התחום היסודי. הסריגים המתאימים, <math>\mathbb Z[i]</math> ו-<math>\mathbb Z[\rho]</math>, הם היחידים שיש להם סימטריות סיבוביות נוספות (כפל ב-<math>i</math> או ב-<math>\rho</math> שומר עליהם), והם מתאימים לעקומים האליפטיים עם <math>j = 1728</math> ו-<math>j = 0</math>.
+
+'''דוגמה: רדוקציה לתחום היסודי.''' ניקח <math>\omega_1 = 1</math> ו-<math>\omega_2 = \tau = 2.4 + 0.3i</math>. האלגוריתם החמדני חוזר על שני צעדים: הזזה <math>\tau \mapsto \tau + n</math> שמביאה את <math>\operatorname{Re}\tau</math> לטווח <math>(-\tfrac12, \tfrac12]</math>, והיפוך <math>\tau \mapsto -1/\tau</math> אם <math>|\tau| \lt 1</math>:
+:<math>2.4 + 0.3i \;\xrightarrow{\ \tau - 2\ }\; 0.4 + 0.3i \;\xrightarrow{\ -1/\tau\ }\; -1.6 + 1.2i \;\xrightarrow{\ \tau + 2\ }\; 0.4 + 1.2i.</math>
+(בצעד האמצעי <math>|0.4 + 0.3i| = 0.5 \lt 1</math>, ו-<math>-1/(0.4 + 0.3i) = -(0.4 - 0.3i)/0.25</math>.) בסוף <math>|0.4 + 1.2i| = \sqrt{1.6} \gt 1</math>, ולכן הגענו לתחום היסודי. ההעתקה המורכבת היא <math>\tau \mapsto \frac{2\tau - 5}{\tau - 2}</math>, עם המטריצה <math>\left(\begin{smallmatrix} 2 & -5 \\ 1 & -2\end{smallmatrix}\right)</math> מדטרמיננטה 1, והבסיס החדש של אותו סריג הוא
+:<math>\alpha_1 = -2\omega_1 + \omega_2 = 0.4 + 0.3i, \qquad \alpha_2 = -5\omega_1 + 2\omega_2 = -0.2 + 0.6i,</math>
+עם <math>\alpha_2/\alpha_1 = 0.4 + 1.2i</math>.
+
+== ראו גם ==
+* יש כמה סימונים חלופיים לסריג ולזוג היסודי, ומשתמשים בהם לעיתים קרובות במקומו; ראו למשל [[נום (מתמטיקה)|נום]] ו[[מודולוס אליפטי]].
+* [[עקום אליפטי]]
+* [[תבנית מודולרית]]
+* [[טור אייזנשטיין]]
+* [[הפונקציה האליפטית של ויירשטראס]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* T. M. Apostol, ''Modular Functions and Dirichlet Series in Number Theory'', 2nd ed., Springer, 1990, chapters 1–2
+* J. Jost, ''Compact Riemann Surfaces'', Springer, 2002, chapter 2
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משטחי רימן]]
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:פונקציות אליפטיות]]

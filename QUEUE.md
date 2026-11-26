@@ -175,7 +175,7 @@ Additive number theory:
 - [x] Dedekind eta function
 - [x] Cusp form
 - [x] Weierstrass elliptic function
-- [ ] Fundamental pair of periods
+- [x] Fundamental pair of periods
 - [ ] Modular lambda function
 - [ ] Petersson inner product
 - [ ] Eigenform
