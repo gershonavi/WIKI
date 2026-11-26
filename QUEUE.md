@@ -280,7 +280,7 @@ Additive number theory:
 - [x] Spinor genus
 - [x] Ramanujan's ternary quadratic form
 - [x] Hermite reduction
-- [ ] Hilbert's eleventh problem
+- [x] Hilbert's eleventh problem
 - [ ] Hurwitz problem
 
 ### תורת המספרים האנליטית – השלמות (2)
