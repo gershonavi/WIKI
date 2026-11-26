@@ -373,7 +373,7 @@ Additive number theory:
 
 - [x] Hilbert class field
 - [x] Artin L-function
-- [ ] Cyclotomic field
+- [x] Cyclotomic field
 - [ ] Ramanujan graph
 - [ ] Ring class field
 - [ ] Tate–Shafarevich group

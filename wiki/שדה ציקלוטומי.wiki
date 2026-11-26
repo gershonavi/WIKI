@@ -1,0 +1,155 @@
+ב[[תורת המספרים האלגברית]], '''שדה ציקלוטומי''' (cyclotomic field, "שדה חלוקת המעגל") הוא [[שדה מספרים]] שמתקבל על ידי סיפוח [[שורש יחידה]] [[מספר מרוכב|מרוכב]] לשדה ה[[מספר רציונלי|מספרים הרציונליים]] <math>\mathbb Q</math>.{{הערה|שם=Washington|1=<span dir="ltr">L. C. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Graduate Texts in Mathematics 83, Springer, 1997</span>|כיווון=שמאל}}{{הערה|שם=Lang|1=<span dir="ltr">S. Lang, ''Cyclotomic Fields I and II'', Graduate Texts in Mathematics 121, Springer, 1990</span>|כיווון=שמאל}}
+
+לשדות הציקלוטומיים היה תפקיד מכריע בהתפתחות ה[[אלגברה מופשטת|אלגברה]] ותורת המספרים המודרניות, בגלל הקשר שלהם ל[[המשפט האחרון של פרמה|משפט האחרון של פרמה]]. במהלך המחקר העמוק שלו באריתמטיקה של השדות האלה (עבור <math>n</math> ראשוני) – ובמיוחד בגלל הכישלון של [[המשפט היסודי של האריתמטיקה|הפירוק היחיד]] ב[[חוג השלמים|חוגי השלמים]] שלהם – הציג [[ארנסט קומר]] לראשונה את מושג ה"מספר האידיאלי", שממנו צמח מושג ה[[אידיאל (אלגברה)|אידיאל]], והוכיח את הקונגרואנציות המפורסמות שלו.
+
+== הגדרה ==
+עבור <math>n \geq 1</math> נסמן
+:<math>\zeta_n=e^{2\pi i/n}\in\mathbb C.</math>
+זהו [[שורש יחידה פרימיטיבי]] מסדר <math>n</math>. השדה הציקלוטומי ה-<math>n</math>-י הוא [[הרחבת שדות|ההרחבה]] <math>\mathbb{Q}(\zeta_n)</math> של <math>\mathbb{Q}</math> שנוצרת על ידי <math>\zeta_n</math>.
+
+== תכונות ==
+* ה[[פולינום ציקלוטומי|פולינום הציקלוטומי]] ה-<math>n</math>-י
+:<math>\Phi_n(x) = \prod_{1\le k\le n,\ \gcd(k,n)=1} \left(x-\zeta_n^k\right)</math>
+:[[פולינום אי-פריק|אי-פריק]] מעל <math>\mathbb Q</math>, ולכן הוא הפולינום המינימלי של <math>\zeta_n</math>.
+* לכן הצמודים של <math>\zeta_n</math> ב-<math>\mathbb C</math> הם שאר שורשי היחידה הפרימיטיביים מסדר <math>n</math>: <math>\zeta_n^k</math> עם <math>1\leq k\leq n</math> ו-<math>\gcd(k,n)=1</math>.
+* המעלה של <math>\mathbb Q(\zeta_n)</math> היא <math>[\mathbb Q(\zeta_n):\mathbb Q]=\deg\Phi_n=\varphi(n)</math>, כאשר <math>\varphi</math> [[פונקציית אוילר]].
+* השורשים של <math>x^n-1</math> הם החזקות של <math>\zeta_n</math>, ולכן <math>\mathbb Q(\zeta_n)</math> הוא [[שדה פיצול|שדה הפיצול]] של <math>x^n-1</math> (או של <math>\Phi_n</math>) מעל <math>\mathbb Q</math>. בפרט <math>\mathbb Q(\zeta_n)</math> היא [[הרחבת גלואה]] של <math>\mathbb{Q}</math>.
+* [[חבורת גלואה|חבורת הגלואה]] <math>\operatorname{Gal}(\mathbb Q(\zeta_n)/\mathbb Q)</math> איזומורפית באופן טבעי לחבורה הכפלית <math>(\mathbb Z/n\mathbb Z)^\times</math> של השאריות ההפיכות מודולו <math>n</math>. האיזומורפיזם שולח את <math>\sigma</math> לשארית <math>a \bmod n</math> שמקיימת <math>\sigma(\zeta_n)=\zeta_n^a</math>.
+* [[חוג השלמים]] של <math>\mathbb Q(\zeta_n)</math> הוא <math>\mathbb Z[\zeta_n]</math>.
+* עבור <math>n \gt 2</math>, ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] של <math>\mathbb Q(\zeta_n)</math> היא{{הערה|שם=Washington}}
+::<math>(-1)^{\varphi(n)/2}\,\frac{n^{\varphi(n)}}{\displaystyle\prod_{p\mid n} p^{\varphi(n)/(p-1)}}.</math>
+:למשל ל-<math>n = 5</math>: <math>5^4/5 = 125</math>; ל-<math>n = 8</math>: <math>8^4/2^4 = 256</math>; ל-<math>n = 9</math>: <math>-9^6/3^3 = -19683</math> (בדקנו בחישוב).
+* בפרט, <math>\mathbb Q(\zeta_n)/\mathbb Q</math> [[סיעוף (מתמטיקה)|לא מסועפת]] מעל כל ראשוני שאינו מחלק את <math>n</math>.
+* אם <math>n</math> חזקה של ראשוני <math>p</math>, אז <math>\mathbb Q(\zeta_n)/\mathbb Q</math> מסועפת לחלוטין מעל <math>p</math>.
+* אם <math>q</math> ראשוני שאינו מחלק את <math>n</math>, [[איבר פרובניוס]] <math>\operatorname{Frob}_q</math> מתאים לשארית של <math>q</math> ב-<math>(\mathbb Z/n\mathbb Z)^\times</math>. לכן <math>q</math> מתפרק ל-<math>\varphi(n)/f</math> ראשוניים, כל אחד מדרגה <math>f</math>, כאשר <math>f</math> ה[[סדר (תורת החבורות)|סדר]] של <math>q</math> מודולו <math>n</math>.
+* חבורת שורשי היחידה ב-<math>\mathbb Q(\zeta_n)</math> היא מסדר <math>n</math> כש-<math>n</math> זוגי ומסדר <math>2n</math> כש-<math>n</math> אי-זוגי. (בפרט <math>\mathbb Q(\zeta_n) = \mathbb Q(\zeta_{2n})</math> ל-<math>n</math> אי-זוגי, ולכן מספיק להתבונן ב-<math>n \not\equiv 2 \pmod 4</math>.)
+* חבורת היחידות <math>\mathbb Z[\zeta_n]^\times</math> היא [[חבורה אבלית נוצרת סופית]] מדרגה <math>\varphi(n)/2-1</math> לכל <math>n \gt 2</math>, לפי [[משפט היחידות של דיריכלה]]. בפרט, <math>\mathbb Z[\zeta_n]^\times</math> סופית רק עבור <math>n\in\{1,2,3,4,6\}</math>. תת-חבורת הפיתול שלה היא חבורת שורשי היחידה שבסעיף הקודם. [[יחידה ציקלוטומית|היחידות הציקלוטומיות]] הן תת-חבורה מפורשת מאינדקס סופי ב-<math>\mathbb Z[\zeta_n]^\times</math>.
+* [[משפט קרונקר-ובר|משפט קרונקר–ובר]] אומר שכל [[הרחבה אבלית]] סופית של <math>\mathbb Q</math> בתוך <math>\mathbb C</math> מוכלת ב-<math>\mathbb Q(\zeta_n)</math> עבור <math>n</math> כלשהו. באופן שקול, האיחוד של כל השדות הציקלוטומיים הוא ההרחבה האבלית המקסימלית <math>\mathbb Q^{\mathrm{ab}}</math> של <math>\mathbb Q</math>.
+
+=== דוגמה: <math>\mathbb Q(\zeta_5)</math> ===
+<math>\Phi_5(x) = x^4 + x^3 + x^2 + x + 1</math>, ו-<math>\text{Gal}(\mathbb Q(\zeta_5)/\mathbb Q) \cong (\mathbb Z/5\mathbb Z)^\times</math>, ציקלית מסדר 4 שנוצרת על ידי <math>\sigma_2 : \zeta_5 \mapsto \zeta_5^2</math>. לתת-החבורה <math>\{1, 4\}</math> מתאים תת-השדה הריבועי היחיד, <math>\mathbb Q(\zeta_5 + \zeta_5^{-1}) = \mathbb Q(\sqrt5)</math>: אכן <math>\zeta_5 + \zeta_5^4 - \zeta_5^2 - \zeta_5^3 = \sqrt5</math> (זה [[סכום גאוס]]). ראשוני <math>q \ne 5</math> מתפצל לחלוטין ב-<math>\mathbb Q(\zeta_5)</math> אם ורק אם <math>q \equiv 1 \pmod 5</math> (למשל 11: <math>\Phi_5 \equiv (x-3)(x-4)(x-5)(x-9) \pmod{11}</math>); <math>q \equiv 4</math> מתפרק לשני ראשוניים מדרגה 2 (למשל <math>\Phi_5 \equiv (x^2+5x+1)(x^2-4x+1) \pmod{19}</math>); ו-<math>q \equiv 2, 3</math> נשאר ראשוני (בדקנו בחישוב).
+
+=== דוגמה: <math>\mathbb Q(\zeta_8)</math> ===
+<math>\zeta_8 = \tfrac{1 + i}{\sqrt2}</math>, ולכן <math>\mathbb Q(\zeta_8) = \mathbb Q(i, \sqrt2)</math>, עם שלושה תת-שדות ריבועיים: <math>\mathbb Q(i)</math>, <math>\mathbb Q(\sqrt2)</math> (נוצר על ידי <math>\zeta_8 + \zeta_8^{-1} = \sqrt2</math>) ו-<math>\mathbb Q(\sqrt{-2})</math>. מכאן מתקבל החוק המשלים להדדיות הריבועית: 2 שארית ריבועית מודולו <math>q</math> אם ורק אם <math>q \equiv \pm1 \pmod 8</math>.
+
+== הקשר למצולעים משוכללים ==
+[[קרל פרידריך גאוס|גאוס]] התקדם מוקדם בתורת השדות הציקלוטומיים, בקשר לבעיית [[מצולע בר-בנייה|בניית]] [[מצולע משוכלל]] בן <math>n</math> צלעות ב[[בנייה בסרגל ובמחוגה|סרגל ובמחוגה]]. התוצאה המפתיעה שלו, שנעלמה מקודמיו, הייתה שאפשר לבנות כך מצולע משוכלל בן 17 צלעות. באופן כללי, לכל <math>n\geq 3</math> הטענות הבאות שקולות:
+* מצולע משוכלל בן <math>n</math> צלעות בר-בנייה;
+* יש סדרת שדות שמתחילה ב-<math>\mathbb Q</math> ונגמרת ב-<math>\mathbb Q(\zeta_n)</math>, שבה כל שדה הוא הרחבה ריבועית של הקודם;
+* <math>\varphi(n)</math> היא [[חזקה של 2]];
+* <math>n=2^a p_1 \cdots p_r</math> עבור שלמים <math>a, r\geq 0</math> ו[[ראשוני פרמה|ראשוניי פרמה]] שונים <math>p_1,\ldots,p_r</math>. (ראשוני פרמה הוא ראשוני אי-זוגי <math>p</math> ש-<math>p-1</math> חזקה של 2. ראשוניי פרמה הידועים הם 3, 5, 17, 257, 65537, וכנראה שאין אחרים.)
+
+=== דוגמאות קטנות ===
+* <math>n=3</math> ו-<math>n=6</math>: מהשוויונות <math>\zeta_3 = \tfrac{1}{2}(-1+\sqrt{-3})</math> ו-<math>\zeta_6 = \tfrac{1}{2}(1+\sqrt{-3})</math> נובע ש-<math>\mathbb{Q}(\zeta_3) = \mathbb{Q}(\zeta_6)=\mathbb{Q}(\sqrt{-3})</math>, הרחבה ריבועית של <math>\mathbb Q</math>. בהתאם, משולש שווה צלעות ומשושה משוכלל ברי-בנייה.
+* <math>n=4</math>: באופן דומה <math>\zeta_4 = i</math>, ולכן <math>\mathbb{Q}(\zeta_4) = \mathbb Q(i)</math>, וריבוע בר-בנייה.
+* <math>n=5</math>: <math>\mathbb{Q}(\zeta_5)</math> אינו הרחבה ריבועית של <math>\mathbb Q</math>, אבל הוא הרחבה ריבועית של ההרחבה הריבועית <math>\mathbb{Q}(\sqrt{5})</math>, ולכן מחומש משוכלל בר-בנייה. במפורש, <math>\cos\tfrac{2\pi}{5} = \tfrac{\sqrt5 - 1}{4}</math>.
+* <math>n = 7</math>: <math>\varphi(7) = 6</math> אינו חזקה של 2, ולכן משובע משוכלל אינו בר-בנייה; <math>2\cos\tfrac{2\pi}7</math> הוא שורש של הפולינום הממעלה השלישית <math>x^3 + x^2 - 2x - 1</math>.
+
+== הקשר למשפט האחרון של פרמה ==
+גישה טבעית להוכחת [[המשפט האחרון של פרמה]] היא לפרק את <math>x^n + y^n</math>, עבור <math>n</math> ראשוני אי-זוגי, שמופיע באגף אחד של משוואת פרמה <math>x^n + y^n = z^n</math>:
+:<math>x^n + y^n = (x + y)(x + \zeta_n y)\cdots (x + \zeta_n^{n-1} y)</math>
+כאן <math>x</math> ו-<math>y</math> שלמים רגילים, והגורמים הם [[שלם אלגברי|שלמים אלגבריים]] בשדה הציקלוטומי <math>\mathbb Q(\zeta_n)</math>. אילו [[המשפט היסודי של האריתמטיקה|הפירוק היחיד]] היה מתקיים ב-<math>\mathbb Z[\zeta_n]</math>, אפשר היה להשתמש בו כדי לשלול פתרונות לא טריוויאליים.
+
+כמה ניסיונות לתקוף את המשפט התקדמו בכיוון הזה, וגם ההוכחה של פרמה ל-<math>n=4</math> וגם ההוכחה של אוילר ל-<math>n=3</math> אפשר לנסח כך. הרשימה המלאה של ה-<math>n</math> שעבורם יש ב-<math>\mathbb Z[\zeta_n]</math> פירוק יחיד היא{{הערה|1=<span dir="ltr">Washington, ''Introduction to Cyclotomic Fields'', Theorem 11.1 (Masley–Montgomery)</span>|כיווון=שמאל}}
+* 1 עד 22, 24, 25, 26, 27, 28, 30, 32, 33, 34, 35, 36, 38, 40, 42, 44, 45, 48, 50, 54, 60, 66, 70, 84, 90.
+(כש-<math>n</math> אי-זוגי, <math>n</math> ו-<math>2n</math> נותנים אותו שדה; בלי הכפילויות האלה אלה 30 שדות שונים.)
+
+[[ארנסט קומר|קומר]] מצא דרך להתמודד עם הכישלון של הפירוק היחיד. הוא הכניס תחליף לראשוניים בשלמים הציקלוטומיים <math>\mathbb Z[\zeta_n]</math>, מדד את הכישלון בעזרת [[חבורת מחלקות האידיאלים|מספר המחלקה]] <math>h_n</math>, והוכיח שאם הראשוני <math>p</math> אינו מחלק את <math>h_p</math> (ראשוני כזה נקרא [[ראשוני רגולרי]]), אז המשפט האחרון של פרמה נכון למעריך <math>p</math>. יתר על כן, הוא נתן קריטריון לקביעה אילו ראשוניים רגולריים (<math>p</math> אינו מחלק את המונה של אף אחד מ[[מספרי ברנולי]] <math>B_2, B_4, \ldots, B_{p-3}</math>), והוכיח את המשפט לכל המעריכים הראשוניים הקטנים מ-100, פרט ל[[ראשוני רגולרי|ראשוניים האי-רגולריים]] 37, 59 ו-67. העבודה של קומר על הקונגרואנציות של מספרי המחלקה של שדות ציקלוטומיים הוכללה במאה העשרים על ידי איוואסאווה בתורת איוואסאווה, ועל ידי קובוטה ולאופולדט בתורת פונקציות הזטא ה-p-אדיות.
+
+== טבלת מספרי המחלקה ==
+מספר המחלקה <math>h_n</math> של <math>\mathbb Q(\zeta_n)</math>, לפי {{OEIS|A061653}} (ול-<math>n</math> ראשוני: {{OEIS|A055513}}, וה"חלק המינוס" {{OEIS|A000927}}):{{הערה|1=בדקנו בחישוב את הערכים עבור n = 23, 29, 31, 35, 39, 40, 48, 51, 52, 56, 60, 64, 72, 84.|כיווון=שמאל}}
+<div style="column-width:14em">
+* 1–22: 1
+* 23: 3
+* 24–28: 1
+* 29: 8
+* 30: 1
+* 31: 9
+* 32–36: 1
+* 37: 37
+* 38: 1
+* 39: 2
+* 40: 1
+* 41: 121
+* 42: 1
+* 43: 211
+* 44: 1
+* 45: 1
+* 46: 3
+* 47: 695
+* 48: 1
+* 49: 43
+* 50: 1
+* 51: 5
+* 52: 3
+* 53: 4889
+* 54: 1
+* 55: 10
+* 56: 2
+* 57: 9
+* 58: 8
+* 59: 41241
+* 60: 1
+* 61: 76301
+* 62: 9
+* 63: 7
+* 64: 17
+* 65: 64
+* 66: 1
+* 67: 853513
+* 68: 8
+* 69: 69
+* 70: 1
+* 71: 3882809
+* 72: 3
+* 73: 11957417
+* 74: 37
+* 75: 11
+* 76: 19
+* 77: 1280
+* 78: 2
+* 79: 100146415
+* 80: 5
+* 81: 2593
+* 82: 121
+* 83: 838216959
+* 84: 1
+* 85: 6205
+* 86: 211
+* 87: 1536
+* 88: 55
+* 89: 13379363737
+* 90: 1
+* 91: 53872
+* 92: 201
+* 93: 6795
+* 94: 695
+* 95: 107692
+* 96: 9
+* 97: 411322824001
+* 98: 43
+* 99: 2883
+* 100: 55
+</div>
+המספרים גדלים במהירות: למשל <math>h_{127} = 2604529186263992195</math> ו-<math>h_{157} = 56234327700401832767069245</math>.
+
+== ראו גם ==
+* [[משפט קרונקר-ובר|משפט קרונקר–ובר]]
+* [[פולינום ציקלוטומי]]
+* [[יחידה ציקלוטומית]]
+* [[קרקטר ציקלוטומי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* B. Birch, "Cyclotomic fields and Kummer extensions", in J. W. S. Cassels and A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967, Chap. III, pp. 45–93
+* D. A. Marcus, ''Number Fields'', Springer, 1977
+* J. Coates, R. Sujatha, ''Cyclotomic Fields and Zeta Values'', Springer Monographs in Mathematics, 2006
+* K. Yamagata, M. Yamagishi, "On the ring of integers of real cyclotomic fields", ''Proc. Japan Acad. Ser. A'' '''92''' (2016), no. 6
+* {{MathWorld|CyclotomicField|Cyclotomic Field}}
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:שדות ציקלוטומיים]]
