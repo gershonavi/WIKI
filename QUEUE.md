@@ -387,6 +387,6 @@ Additive number theory:
 - [x] Isogeny
 - [x] Division polynomials
 - [x] Néron–Tate height
-- [ ] Supersingular isogeny graph
+- [x] Supersingular isogeny graph
 - [ ] Weil–Châtelet group
 - [ ] Néron model
