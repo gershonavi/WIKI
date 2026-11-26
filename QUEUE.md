@@ -249,7 +249,7 @@ Additive number theory:
 - [x] Siegel's lemma
 - [x] Markov spectrum
 - [x] Lagrange number
-- [ ] Duffin–Schaeffer theorem
+- [x] Duffin–Schaeffer theorem
 - [ ] Proof that e is irrational
 - [ ] Oppenheim conjecture
 - [ ] Baker's theorem
