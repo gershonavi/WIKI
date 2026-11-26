@@ -290,7 +290,7 @@ Additive number theory:
 
 ### פונקציות אריתמטיות (1)
 
-- [ ] Divisor sum identities
+- [x] Divisor sum identities
 
 ### מספרים ראשוניים ותורת המספרים האדיטיבית (17)
 
