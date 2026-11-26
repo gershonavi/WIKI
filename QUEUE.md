@@ -350,7 +350,7 @@ Additive number theory:
 - [x] Double Mersenne number
 - [x] Unitary perfect number
 - [x] Superperfect number
-- [ ] Erdős–Nicolas number
+- [x] Erdős–Nicolas number
 - [ ] Primitive abundant number
 - [ ] Friendly number
 - [ ] Betrothed numbers
