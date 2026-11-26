@@ -388,5 +388,5 @@ Additive number theory:
 - [x] Division polynomials
 - [x] Néron–Tate height
 - [x] Supersingular isogeny graph
-- [ ] Weil–Châtelet group
+- [x] Weil–Châtelet group
 - [ ] Néron model
