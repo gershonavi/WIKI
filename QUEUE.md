@@ -331,7 +331,7 @@ Additive number theory:
 - [x] Thabit number
 - [x] Giuga number
 - [x] Blum integer
-- [ ] Achilles number
+- [x] Achilles number
 - [ ] Sphenic number
 - [ ] Nontotient
 - [ ] Highly totient number
