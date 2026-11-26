@@ -170,7 +170,7 @@ Additive number theory:
 
 - [x] Upper half-plane
 - [x] Congruence subgroup
-- [ ] Modular curve
+- [x] Modular curve
 - [ ] J-invariant
 - [ ] Dedekind eta function
 - [ ] Cusp form
