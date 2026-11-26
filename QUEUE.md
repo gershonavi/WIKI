@@ -242,7 +242,7 @@ Additive number theory:
 - [x] Equidistribution theorem
 - [x] Kronecker's theorem
 - [x] Three-gap theorem
-- [ ] Beatty sequence
+- [x] Beatty sequence
 - [ ] Discrepancy theory
 - [ ] Low-discrepancy sequence
 - [ ] Subspace theorem

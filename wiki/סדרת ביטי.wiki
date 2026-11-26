@@ -1,0 +1,97 @@
+ב[[מתמטיקה]], '''סדרת ביטי''' (או '''סדרת ביטי הומוגנית''') היא [[סדרה (מתמטיקה)|סדרת]] ה[[מספר שלם|מספרים השלמים]] שמתקבלת מלקיחת ה[[פונקציית הערך השלם|ערך השלם התחתון]] של ה[[כפולה (מתמטיקה)|כפולות]] החיוביות של [[מספר אי-רציונלי]] גדול מ-1. סדרות ביטי נקראות על שם [[סמואל ביטי]], שכתב עליהן ב-1926.
+
+'''משפט ריילי''', שנקרא על שם [[ג'ון ויליאם סטראט, הברון ריילי השלישי|לורד ריילי]], קובע שה[[משלים (תורת הקבוצות)|משלים]] של סדרת ביטי – המספרים השלמים החיוביים שאינם בסדרה – הוא בעצמו סדרת ביטי, שנוצרת על ידי מספר אי-רציונלי אחר.
+
+אפשר להשתמש בסדרות ביטי גם כדי לייצר [[מילה שטורמית|מילים שטורמיות]].
+
+== הגדרה ==
+כל מספר אי-רציונלי <math>r \gt 1</math> יוצר את סדרת ביטי
+:<math>\mathcal B_r = \bigl\{\lfloor r\rfloor, \lfloor2r\rfloor, \lfloor3r\rfloor, \ldots\bigr\}.</math>
+שני המספרים האי-רציונליים <math>r</math> ו-<math>s = r/(r - 1)</math> מקיימים באופן טבעי את המשוואה <math>1/r + 1/s = 1</math>. שתי סדרות ביטי <math>\mathcal B_r</math> ו-<math>\mathcal B_s</math> שהם יוצרים הן '''זוג סדרות ביטי משלימות'''. "משלימות" כאן פירושו שכל מספר שלם חיובי שייך לבדיוק אחת משתי הסדרות.{{הערה|שם=Gardner|1=<span dir="ltr">M. Gardner, Mathematical Games: Cornering a queen leads unexpectedly into corners of the theory of numbers, Scientific American 236 (March 1977), pp. 131–141.</span>|כיווון=שמאל}}
+
+== דוגמאות ==
+כש-<math>r</math> הוא [[יחס הזהב]] <math>r = (1 + \sqrt5)/2 \approx 1.618</math>, לכפולות השלמות של <math>r</math> יש הערכים המקורבים
+:1.618, 3.236, 4.854, 6.472, 8.090, 9.708, …
+עיגול כלפי מטה נותן את הסדרה <math>(\lfloor nr\rfloor)</math>, שידועה כ'''סדרת ויתוף התחתונה''':
+:1, 3, 4, 6, 8, 9, 11, 12, 14, 16, 17, 19, 21, 22, 24, 25, 27, 29, … {{OEIS|A000201}}.
+במקרה הזה, סדרת ביטי המשלימה נוצרת על ידי
+:<math>s = \frac r{r - 1} = \frac{(1 + \sqrt5)/2}{(-1 + \sqrt5)/2} = \frac{3 + \sqrt5}2 \approx 2.618</math>
+(כלומר <math>s = r^2 = r + 1</math>). לכפולות השלמות שלו יש הערכים המקורבים 2.618, 5.236, 7.854, 10.472, 13.090, 15.708, …, ועיגול כלפי מטה נותן את '''סדרת ויתוף העליונה''':
+:2, 5, 7, 10, 13, 15, 18, 20, 23, 26, 28, 31, 34, 36, 39, 41, 44, 47, … {{OEIS|A001950}}.
+כל מספר שלם חיובי נמצא בדיוק באחת משתי הסדרות. הסדרות האלה מגדירות את האסטרטגיה האופטימלית ב[[משחק ויתוף]],{{הערה|שם=Gardner}} ומשמשות בהגדרת [[מערך ויתוף]]: עמדות ההפסד במשחק הן בדיוק הזוגות <math>(\lfloor nr\rfloor, \lfloor ns\rfloor)</math>, כמו <math>(1, 2), (3, 5), (4, 7), (6, 10), \ldots</math>.
+
+דוגמה נוספת: עבור [[שורש ריבועי של 2|שורש 2]], <math>r = \sqrt2 \approx 1.414</math> ו-<math>s = \sqrt2/(\sqrt2 - 1) = 2 + \sqrt2 \approx 3.414</math>. במקרה הזה הסדרות הן
+:1, 2, 4, 5, 7, 8, 9, 11, 12, 14, 15, 16, 18, 19, 21, 22, 24, … {{OEIS|A001951}}, ו-
+:3, 6, 10, 13, 17, 20, 23, 27, 30, 34, 37, 40, 44, 47, 51, 54, 58, … {{OEIS|A001952}}.
+עבור <math>r = \pi \approx 3.142</math> ו-<math>s = \pi/(\pi - 1) \approx 1.467</math>, הסדרות הן
+:3, 6, 9, 12, 15, 18, 21, 25, 28, 31, 34, 37, 40, 43, 47, 50, 53, … {{OEIS|A022844}}, ו-
+:1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20, 22, 23, 24, 26, … {{OEIS|A054386}}.
+כל מספר בסדרה הראשונה חסר בשנייה, ולהפך. (בדקנו את כל הסדרות האלה, ושכל זוג מחלק את השלמים עד בערך 5000.)
+
+== היסטוריה ==
+סדרות ביטי קיבלו את שמן מבעיה שפרסם [[סמואל ביטי]] ב-''[[American Mathematical Monthly]]'' ב-1926.{{הערה|1=<span dir="ltr">S. Beatty, Problem 3173, American Mathematical Monthly 33 (1926), p. 159; S. Beatty, A. Ostrowski, J. Hyslop, A. C. Aitken, Solutions to Problem 3173, ibid. 34 (1927), pp. 159–160.</span>|כיווון=שמאל}} אבל עוד קודם, ב-1894, סדרות כאלה הוזכרו בקצרה על ידי לורד ריילי במהדורה השנייה של ספרו ''The Theory of Sound''.{{הערה|שם=Rayleigh|1=<span dir="ltr">J. W. Strutt, 3rd Baron Rayleigh, The Theory of Sound, vol. 1, 2nd ed., Macmillan, 1894, p. 123.</span>|כיווון=שמאל}}
+
+== משפט ריילי ==
+'''משפט ריילי''' (שנקרא גם '''משפט ביטי''') קובע שבהינתן מספר אי-רציונלי <math>r \gt 1</math>, יש <math>s \gt 1</math> כך שסדרות ביטי <math>\mathcal B_r</math> ו-<math>\mathcal B_s</math> [[חלוקה של קבוצה|מחלקות]] את קבוצת המספרים השלמים החיוביים: כל שלם חיובי שייך לבדיוק אחת משתי הסדרות.{{הערה|שם=Rayleigh}}
+
+=== הוכחה ראשונה ===
+בהינתן <math>r \gt 1</math>, יהי <math>s = r/(r - 1)</math>. צריך להראות שכל שלם חיובי נמצא בדיוק באחת משתי הסדרות <math>\mathcal B_r</math> ו-<math>\mathcal B_s</math>. נעשה זאת על ידי בחינת המקומות הסידוריים שתופסים כל השברים <math>j/r</math> ו-<math>k/s</math>, כשמסדרים את כולם יחד בסדר לא יורד, עבור <math>j</math> ו-<math>k</math> שלמים חיוביים.
+
+ראשית, שני מספרים אינם יכולים לתפוס אותו מקום: נניח בשלילה ש-<math>j/r = k/s</math> עבור <math>j</math> ו-<math>k</math> כלשהם. אז <math>r/s = j/k</math>, מספר רציונלי; אבל גם <math>r/s = r(1 - 1/r) = r - 1</math>, שאינו רציונלי. לכן שני מספרים אינם תופסים אותו מקום.
+
+לכל <math>j/r</math> יש <math>j</math> שלמים חיוביים <math>i</math> עם <math>i/r \le j/r</math>, ו-<math>\lfloor js/r\rfloor</math> שלמים חיוביים <math>k</math> עם <math>k/s \le j/r</math>, כך שהמקום של <math>j/r</math> ברשימה הוא <math>j + \lfloor js/r\rfloor</math>. מהמשוואה <math>1/r + 1/s = 1</math> נובע <math>s/r = s - 1</math>, ולכן
+:<math>j + \lfloor js/r\rfloor = j + \lfloor j(s - 1)\rfloor = \lfloor js\rfloor.</math>
+באופן דומה, המקום של <math>k/s</math> ברשימה הוא <math>\lfloor kr\rfloor</math>.
+
+מסקנה: כל שלם חיובי (כלומר כל מקום ברשימה) הוא מהצורה <math>\lfloor nr\rfloor</math> או מהצורה <math>\lfloor ns\rfloor</math>, אבל לא משתיהן. גם הטענה ההפוכה נכונה: אם <math>p</math> ו-<math>q</math> שני [[מספר ממשי|מספרים ממשיים]] כך שכל שלם חיובי מופיע בדיוק פעם אחת ברשימה שלמעלה, אז <math>p</math> ו-<math>q</math> אי-רציונליים, וסכום ההופכיים שלהם הוא 1.
+
+=== הוכחה שנייה ===
+'''אין התנגשויות.''' נניח, בניגוד למשפט, שיש שלמים <math>j \gt 0</math>, <math>k</math> ו-<math>m</math> כך ש-<math>j = \lfloor k\cdot r\rfloor = \lfloor m\cdot s\rfloor</math>. זה שקול לאי-השוויונות <math>j \le k\cdot r \lt j + 1</math> ו-<math>j \le m\cdot s \lt j + 1</math>. עבור <math>j</math> שונה מאפס, האי-רציונליות של <math>r</math> ו-<math>s</math> אינה מתיישבת עם שוויון, ולכן <math>j \lt k\cdot r \lt j + 1</math> ו-<math>j \lt m\cdot s \lt j + 1</math>, ומכאן
+:<math>\frac jr \lt k \lt \frac{j + 1}r \quad\text{ו-}\quad \frac js \lt m \lt \frac{j + 1}s.</math>
+חיבור והשימוש בהנחה <math>1/r + 1/s = 1</math> נותנים <math>j \lt k + m \lt j + 1</math>, וזה בלתי אפשרי (אין שלם בין שני שלמים סמוכים). לכן ההנחה שגויה.
+
+'''אין "חורים".''' נניח, בניגוד למשפט, שיש שלמים <math>j \gt 0</math>, <math>k</math> ו-<math>m</math> כך ש-
+:<math>k\cdot r \lt j,\quad j + 1 \le (k + 1)\cdot r,\quad m\cdot s \lt j,\quad j + 1 \le (m + 1)\cdot s</math>
+(כלומר <math>j</math> "נופל בין" שני איברים עוקבים בשתי הסדרות). כיוון ש-<math>j + 1</math> שונה מאפס ו-<math>r</math> ו-<math>s</math> אי-רציונליים, אפשר לשלול שוויון, ולכן <math>k \lt \frac jr</math>, <math>\frac{j + 1}r \lt k + 1</math>, <math>m \lt \frac js</math> ו-<math>\frac{j + 1}s \lt m + 1</math>. חיבור אי-השוויונות המתאימים נותן <math>k + m \lt j</math> ו-<math>j + 1 \lt k + m + 2</math>, כלומר <math>k + m \lt j \lt k + m + 1</math> – שוב בלתי אפשרי. לכן ההנחה שגויה. <math>\blacksquare</math>
+
+== תכונות ==
+מספר <math>m</math> שייך לסדרת ביטי <math>\mathcal B_r</math> אם ורק אם
+:<math>1 - \frac1r \lt \left[\frac mr\right]_1,</math>
+כאשר <math>[x]_1 = x - \lfloor x\rfloor</math> מסמן את ה[[חלק שברי|חלק השברי]] של <math>x</math>.
+
+'''הוכחה.'''
+:<math>m \in \mathcal B_r \iff \exists n:\ m = \lfloor nr\rfloor \iff m \lt nr \lt m + 1 \iff \frac mr \lt n \lt \frac mr + \frac1r \iff n - \frac1r \lt \frac mr \lt n \iff 1 - \frac1r \lt \left[\frac mr\right]_1.</math>
+
+יתרה מזו, <math>m \in \mathcal B_r</math> אם ורק אם <math>m = \left\lfloor\left(\left\lfloor\frac mr\right\rfloor + 1\right)r\right\rfloor</math>; כלומר, אם <math>m</math> בסדרה, האינדקס שלו הוא <math>\lfloor m/r\rfloor + 1</math>.{{הערה|1=בערך האנגלי הנוסחה מוצגת כ"יתרה מזו, <math>m = \lfloor(\lfloor m/r\rfloor + 1)r\rfloor</math>", כאילו היא נכונה לכל <math>m</math>. ההוכחה שם מראה שהיא שקולה לתנאי <math>1 - 1/r \lt [m/r]_1</math>, כלומר היא נכונה בדיוק עבור <math>m \in \mathcal B_r</math>. (למשל עבור <math>r = \sqrt2</math> ו-<math>m = 3</math>: <math>\lfloor(\lfloor3/\sqrt2\rfloor + 1)\sqrt2\rfloor = \lfloor3\sqrt2\rfloor = 4 \ne 3</math>, ו-3 אכן אינו בסדרה.)|כיווון=שמאל}}
+
+'''הוכחה.'''
+:<math>m = \left\lfloor\left(\left\lfloor\tfrac mr\right\rfloor + 1\right)r\right\rfloor \iff m \lt \left(\left\lfloor\tfrac mr\right\rfloor + 1\right)r \lt m + 1 \iff \left\lfloor\tfrac mr\right\rfloor + 1 - \tfrac1r \lt \tfrac mr \lt \left\lfloor\tfrac mr\right\rfloor + 1 \iff 1 - \tfrac1r \lt \left[\tfrac mr\right]_1.</math>
+
+=== הקשר לסדרות שטורמיות ===
+ה[[אופרטור ההפרש|הפרש הראשון]]
+:<math>\lfloor(n + 1)r\rfloor - \lfloor nr\rfloor</math>
+של סדרת ביטי שמשויכת למספר האי-רציונלי <math>r</math> הוא [[מילה שטורמית]] אופיינית מעל האלפבית <math>\{\lfloor r\rfloor, \lfloor r\rfloor + 1\}</math>. למשל, עבור יחס הזהב מקבלים <math>2122121221221212212122122121\ldots</math> – [[מילת פיבונאצ'י]] (עם 1, 2 במקום 0, 1).
+
+== הכללות ==
+בשינוי קל, אפשר להכליל את משפט ריילי למספרים ממשיים חיוביים (לא בהכרח אי-רציונליים) ולשלמים שליליים: אם מספרים ממשיים חיוביים <math>r</math> ו-<math>s</math> מקיימים <math>1/r + 1/s = 1</math>, הסדרות <math>(\lfloor mr\rfloor)_{m\in\mathbb Z}</math> ו-<math>(\lceil ns\rceil - 1)_{n\in\mathbb Z}</math> מחלקות את השלמים. למשל, הקלידים הלבנים והשחורים של [[מקלדת (כלי נגינה)|מקלדת]] פסנתר מתפזרים כמו סדרות כאלה, עם <math>r = 12/7</math> ו-<math>s = 12/5</math>: מודולו 12 מתקבלים הלבנים <math>\{0, 1, 3, 5, 6, 8, 10\}</math> והשחורים <math>\{2, 4, 7, 9, 11\}</math> – עם המרווחים <math>1, 2, 2, 1, 2, 2, 2</math> בין הלבנים, כמו בסולם הלבנים של פסנתר שמתחיל ב-סי.
+
+[[משפט למבק–מוזר]] מכליל את משפט ריילי, ומראה שזוגות כלליים יותר של סדרות, שמוגדרות מפונקציה שלמה וההופכית שלה, מחלקים גם הם את השלמים.
+
+משפט של [[ג'יימס ויקטור אוספנסקי|אוספנסקי]] קובע שאם <math>\alpha_1, \ldots, \alpha_n</math> מספרים ממשיים חיוביים כך ש-<math>(\lfloor k\alpha_i\rfloor)_{k,i\ge1}</math> מכילה כל שלם חיובי בדיוק פעם אחת, אז <math>n \le 2</math>. כלומר, אין מקבילה של משפט ריילי לשלוש סדרות ביטי או יותר.{{הערה|1=<span dir="ltr">J. V. Uspensky, On a problem arising out of the theory of a certain game, American Mathematical Monthly 34 (1927), pp. 516–521; R. L. Graham, On a theorem of Uspensky, American Mathematical Monthly 70 (1963), pp. 407–409.</span>|כיווון=שמאל}}
+
+== ראו גם ==
+* [[מילה שטורמית]]
+* [[משפט ההתפלגות השווה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. Holshouser, H. Reiter, ''A generalization of Beatty's theorem'', Southwest Journal of Pure and Applied Mathematics '''2''' (2001), pp. 24–29
+* K. Stolarsky, ''Beatty sequences, continued fractions, and certain shift operators'', Canadian Mathematical Bulletin '''19''' (1976), pp. 473–482
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:סדרות של מספרים שלמים]]
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:קירובים דיופנטיים]]
