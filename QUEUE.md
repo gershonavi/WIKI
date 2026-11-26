@@ -187,7 +187,7 @@ Additive number theory:
 - [x] Rogers–Ramanujan continued fraction
 - [x] Ribet's theorem
 - [x] Serre's modularity conjecture
-- [ ] Siegel modular form
+- [x] Siegel modular form
 - [ ] Shimura correspondence
 - [ ] Hecke algebra
 - [ ] Modular symbol
