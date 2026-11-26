@@ -327,7 +327,7 @@ Additive number theory:
 - [x] Primorial prime
 - [x] Euclid number
 - [x] Cullen number
-- [ ] Woodall number
+- [x] Woodall number
 - [ ] Thabit number
 - [ ] Giuga number
 - [ ] Blum integer
