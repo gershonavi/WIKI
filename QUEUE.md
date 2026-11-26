@@ -185,7 +185,7 @@ Additive number theory:
 - [x] Harmonic Maass form
 - [x] Rogers–Ramanujan identities
 - [x] Rogers–Ramanujan continued fraction
-- [ ] Ribet's theorem
+- [x] Ribet's theorem
 - [ ] Serre's modularity conjecture
 - [ ] Siegel modular form
 - [ ] Shimura correspondence
