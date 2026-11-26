@@ -308,7 +308,7 @@ Additive number theory:
 - [x] Prime constant
 - [x] Wieferich pair
 - [x] Ruth–Aaron pair
-- [ ] Provable prime
+- [x] Provable prime
 - [ ] Fortune's conjecture
 - [ ] Near-square prime conjecture
 
