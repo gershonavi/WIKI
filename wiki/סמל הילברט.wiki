@@ -4,7 +4,7 @@
 
 == סמל הילברט הריבועי ==
 מעל שדה מקומי <math>K</math> עם חבורה כפלית <math>K^\times</math> של האיברים השונים מאפס, סמל הילברט הריבועי הוא ה[[פונקציה|פונקציה]] <math>K^\times \times K^\times \to \{\pm1\}</math> שמוגדרת כך:
-:<math>(a, b) = \begin{cases} +1, & \text{אם ל-} z^2 = ax^2 + by^2 \text{ יש פתרון } (x, y, z) \ne 0 \text{ ב-} K^3; \\ -1, & \text{אחרת.}\end{cases}</math>
+:<math>(a, b) = +1</math> אם למשוואה <math>z^2 = ax^2 + by^2</math> יש פתרון <math>(x, y, z) \ne 0</math> ב-<math>K^3</math>, ו-<math>(a, b) = -1</math> אחרת.
 באופן שקול, <math>(a, b) = 1</math> אם ורק אם <math>b</math> שווה לנורמה של איבר בהרחבה הריבועית <math>K[\sqrt a]</math>.{{הערה|1=J. Milne, ''Class Field Theory'', course notes, p. 110|כיווון=שמאל}}
 
 === תכונות ===

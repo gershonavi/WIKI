@@ -10,7 +10,8 @@
 
 == דוגמאות ==
 עבור <math>N</math> ראשוני, ל-<math>X_0(N)</math> יש שני חודים, <math>0</math> ו-<math>\infty</math>. אנדרו אוג חישב שהסדר של <math>(0) - (\infty)</math> הוא
-:<math>n = \text{המונה של } \frac{N - 1}{12}.</math>
+:<math>n = \operatorname{num}\frac{N - 1}{12}</math>
+(המונה של השבר <math>\frac{N - 1}{12}</math> אחרי צמצום).
 הפונקציה שמממשת זאת היא [[פונקציית אטא של דדקינד|מנת אטא]]: עבור <math>r</math> זוגי עם <math>24 \mid r(N - 1)</math>, הפונקציה
 :<math>F_r(\tau) = \left(\frac{\eta(\tau)}{\eta(N\tau)}\right)^r</math>
 אינווריאנטית תחת <math>\Gamma_0(N)</math>. הסדר שלה ב-<math>\infty</math> הוא <math>\frac{r(1 - N)}{24}</math> (מפיתוח <math>\eta(\tau) = q^{1/24}\prod(1 - q^m)</math>), וכיוון שאין לה אפסים או קטבים ב-<math>\mathcal H</math>, המחלק שלה הוא <math>\frac{r(N - 1)}{24}\big((0) - (\infty)\big)</math>.

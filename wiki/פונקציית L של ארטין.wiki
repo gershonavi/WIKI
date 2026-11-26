@@ -95,7 +95,7 @@
 למקום ממשי <math>v</math>, נבחר יוצר <math>\phi_v</math> של <math>\text{Gal}(L_w/K_v)</math> ("הצמדה מרוכבת"). אז <math>\rho(\phi_v)</math> [[אינוולוציה]] על <math>V</math>, עם מרחבים עצמיים לערכים <math>\pm1</math> ממימדים
 :<math> n_{+}=\frac{\chi_\rho(1)+\chi_\rho(\phi_v)}{2}, \qquad n_{-}=\frac{\chi_\rho(1)-\chi_\rho(\phi_v)}{2}.</math>
 הגורמים הארכימדיים:
-:<math>L_v(s,\rho)= \begin{cases} \Gamma_{\mathbb{R}}(s)^{n_{+}}\Gamma_{\mathbb{R}}(s+1)^{n_{-}} & v\text{ ממשי} \\ \Gamma_{\mathbb{C}}(s)^{\dim \rho} & v \text{ מרוכב} \end{cases}</math>
+:<math>L_v(s,\rho)= \begin{cases} \Gamma_{\mathbb{R}}(s)^{n_{+}}\Gamma_{\mathbb{R}}(s+1)^{n_{-}} & K_v \cong \mathbb{R} \\ \Gamma_{\mathbb{C}}(s)^{\dim \rho} & K_v \cong \mathbb{C} \end{cases}</math>
 ה[[מוליך ארטין|מוליך]] שמקודד את הסיעוף: <math>c(L/K, \rho) = |\Delta_K|^{\dim\rho} \cdot N(\mathfrak{f}(\rho))</math>, כאשר <math>\Delta_K</math> הדיסקרימיננטה של <math>K</math> ו-<math>\mathfrak{f}(\rho)</math> מוליך ארטין.{{הערה|1=בערך האנגלי נכתב <math>\Delta_K \cdot N(\mathfrak f(\rho))</math>, בלי החזקה <math>\dim\rho</math> של הדיסקרימיננטה. עם ההגדרה הזו האינדוקטיביות לא נשמרת: ל-<math>\rho = \mathbf 1</math> על <math>\text{Gal}(M/L)</math>, המוליך צריך להיות <math>|\Delta_L|</math>, ולפי נוסחת המוליך–דיסקרימיננטה <math>|\Delta_L| = |\Delta_K|^{[L:K]}N(\mathfrak d_{L/K})</math>, עם חזקה <math>[L:K] = \dim\text{Ind}\,\mathbf 1</math>. כש-<math>K = \mathbb Q</math> (המקרה הנפוץ) אין הבדל.|כיווון=שמאל}}
 
 פונקציית ה-L ה"שלמה" היא <math>\Lambda(s,\rho)=c(L/K, \rho)^{s/2}\prod_{v \mid \infty}L_v(s,\rho)\cdot L(s, \rho)</math>, והיא מקיימת:
@@ -129,7 +129,7 @@
 השערת ארטין הוכחה במקרים מסוימים:
 * להצגות חד-ממדיות היא נובעת מההולומורפיות של פונקציות L של הקה. באופן כללי יותר, ארטין הראה שההשערה נכונה לכל הצגה שמושרית מהצגה חד-ממדית (כמו בדוגמה של <math>S_3</math> מלמעלה).
 * הצגות דו-ממדיות מסווגים לפי התמונה ב-<math>\mathrm{PGL}_2(\mathbb C)</math>: ציקלית, דיהדרלית, טטרהדרלית, אוקטהדרלית או איקוסהדרלית.
-** להצגות דו-ממדיות אי-פריקות ו"אי-זוגיות" (<math>\det\rho(\text{הצמדה מרוכבת}) = -1</math>) ההשערה נובעת מההוכחה של [[השערת המודולריות של סר]], בלי קשר לתמונה.
+** להצגות דו-ממדיות אי-פריקות ו"אי-זוגיות" (<math>\det\rho(c) = -1</math>, כאשר <math>c</math> היא ההצמדה המרוכבת) ההשערה נובעת מההוכחה של [[השערת המודולריות של סר]], בלי קשר לתמונה.
 ** המקרה הציקלי והדיהדרלי נובע בקלות מעבודתו של אריך הקה.
 ** לנגלנדס (1980) השתמש בהחלפת בסיס כדי להוכיח את המקרה הטטרהדרלי.
 ** טאנל (1981) הרחיב את עבודתו של לנגלנדס למקרה האוקטהדרלי.

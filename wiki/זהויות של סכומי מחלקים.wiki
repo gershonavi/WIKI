@@ -20,7 +20,7 @@
 
 === שיטת הקונבולוציה ===
 '''שיטת הקונבולוציה''' היא טכניקה כללית להערכת סכומים ממוצעים מהצורה
-:<math>\sum_{n\le x}f(n) \qquad\text{או}\qquad \sum_{\substack{q\le x\\q\text{ חופשי מריבועים}}}f(q),</math>
+:<math>\sum_{n\le x}f(n)</math> או <math>\sum_{\substack{q\le x\\\mu(q) \ne 0}}f(q)</math>,
 כאשר את ה[[פונקציה כפלית|פונקציה הכפלית]] <math>f</math> אפשר לכתוב כקונבולוציה <math>f(n) = (g * h)(n)</math> של פונקציות אריתמטיות מתאימות <math>g</math> ו-<math>h</math>. טכניקה קשורה היא השימוש בנוסחה
 :<math>\sum_{k=1}^nf(k) = \sum_{k=1}^n\sum_{xy=k}g(x)h(y) = \sum_{x=1}^a\sum_{y=1}^{n/x}g(x)h(y) + \sum_{y=1}^b\sum_{x=1}^{n/y}g(x)h(y) - \sum_{x=1}^a\sum_{y=1}^bg(x)h(y)</math>
 (עם <math>ab = n</math>), שנקראת [[שיטת ההיפרבולה של דיריכלה]].
@@ -41,9 +41,9 @@
 
 == סכומים על מחלקים ראשוניים ==
 תהי <math>a(n)</math> ה[[פונקציה מציינת|פונקציה המציינת]] של הראשוניים. כמקרה פרטי של הזהות הראשונה בסעיף החלפת סדר הסכימה, אפשר לבטא את הסכומים הממוצעים
-:<math>\sum_{n=1}^x\sum_{\substack{p\mid n\\p\text{ ראשוני}}}f(p) = \sum_{p=1}^xa(p)f(p)\left\lfloor\frac xp\right\rfloor = \sum_{\substack{p\le x\\p\text{ ראשוני}}}f(p)\left\lfloor\frac xp\right\rfloor.</math>
+:<math>\sum_{n=1}^x\sum_{\substack{p\mid n\\p \in \mathbb P}}f(p) = \sum_{p=1}^xa(p)f(p)\left\lfloor\frac xp\right\rfloor = \sum_{\substack{p\le x\\p \in \mathbb P}}f(p)\left\lfloor\frac xp\right\rfloor.</math> (כאן <math>\mathbb P</math> היא קבוצת המספרים הראשוניים)
 יש גם נוסחה אינטגרלית, שמבוססת על סכימת אבל, לסכומים מהצורה{{הערה|1=ראו סעיף 2.2 ב-<span dir="ltr">M. B. Villarino, Mertens' proof of Mertens' theorem, arXiv:math/0504289, 2005.</span>|כיווון=שמאל}}
-:<math>\sum_{\substack{p\le x\\p\text{ ראשוני}}}f(p) = \pi(x)f(x) - \int_2^x\pi(t)f'(t)\,dt \approx \frac{xf(x)}{\log x} - \int_2^x\frac t{\log t}f'(t)\,dt,</math>
+:<math>\sum_{\substack{p\le x\\p \in \mathbb P}}f(p) = \pi(x)f(x) - \int_2^x\pi(t)f'(t)\,dt \approx \frac{xf(x)}{\log x} - \int_2^x\frac t{\log t}f'(t)\,dt,</math>
 כאשר <math>\pi(x) \sim \frac x{\log x}</math> היא פונקציית ספירת הראשוניים, ובדרך כלל מניחים ש-<math>f</math> [[פונקציה רציפה|רציפה]] ו[[פונקציה גזירה|גזירה]].
 
 == זהויות פחות מוכרות ==
@@ -52,7 +52,7 @@
 # לכל פונקציה '''כפלית''' <math>f</math>: <math>\sum_{d\mid n}\mu(d)f(d) = \prod_{p\mid n}(1 - f(p))</math>.{{הערה|1=בערך האנגלי נכתב שהזהויות בסעיף נכונות "ל-<math>f</math> כל פונקציה אריתמטית". הזהות הזו דורשת ש-<math>f</math> תהיה כפלית; עם פונקציה מקרית היא נכשלת (למשל עבור <math>n = 6</math>, אגף שמאל הוא <math>f(1) - f(2) - f(3) + f(6)</math>, ואגף ימין <math>1 - f(2) - f(3) + f(2)f(3)</math>).|כיווון=שמאל}} למשל עם <math>f(n) = 1/n</math>: <math>\sum_{d\mid n}\mu(d)/d = \prod_{p\mid n}(1 - 1/p) = \varphi(n)/n</math>.
 # אם <math>f</math> כפלית, <math>g</math> [[פונקציה כפלית לחלוטין|כפלית לחלוטין]], ו-<math>f(p^{n+1}) = f(p)f(p^n) - g(p)f(p^{n-1})</math> לכל ראשוני <math>p</math> ולכל <math>n \ge 1</math>, אז <math>f(m)f(n) = \sum_{d\mid(m,n)}g(d)f\left(\frac{mn}{d^2}\right)</math>. דוגמה: <math>f = \sigma_k</math> (סכום חזקות <math>k</math> של המחלקים) עם <math>g(n) = n^k</math>; בדקנו עבור <math>k = 2</math> ו-<math>m, n \lt 25</math>. זו הצורה של יחסי [[אופרטור הקה|הקה]].
 # אם <math>f</math> כפלית לחלוטין, אז הכפל הנקודתי <math>\cdot</math> מתחלף עם קונבולוציית דיריכלה: <math>f\cdot(g * h) = (f\cdot g) * (f\cdot h)</math>.
-# <math>\sum_{d^k\mid n}\mu(d) = \begin{cases}0 & \text{אם } m^k \mid n \text{ עבור } m \gt 1 \text{ כלשהו}, \\ 1 & \text{אחרת}\end{cases}</math> (הפונקציה המציינת של המספרים ה"חופשיים מחזקות <math>k</math>").
+# <math>\sum_{d^k\mid n}\mu(d) = \begin{cases}0 & \exists\, m \gt 1:\ m^k \mid n, \\ 1 & \nexists\, m \gt 1:\ m^k \mid n\end{cases}</math> (הפונקציה המציינת של המספרים ה"חופשיים מחזקות <math>k</math>").
 # אם <math>m \ge 1</math> ול-<math>n</math> יש יותר מ-<math>m</math> גורמים ראשוניים שונים, אז <math>\sum_{d\mid n}\mu(d)\log^m(d) = 0</math>.
 
 == ההפכי של דיריכלה של פונקציה אריתמטית ==
@@ -60,7 +60,7 @@
 :<math>f^{-1}(n) = \begin{cases}\dfrac1{f(1)}, & n = 1, \\[2mm] -\dfrac1{f(1)}\displaystyle\sum_{\substack{d\mid n\\d\gt1}}f(d)f^{-1}\left(\frac nd\right), & n \gt 1.\end{cases}</math>
 
 לפונקציה נתונה <math>f</math>, נגדיר <math>f_\pm(n) := (-1)^{\delta_{n,1}}f(n)</math>, כלומר <math>-f(1)</math> עבור <math>n = 1</math> ו-<math>f(n)</math> אחרת, ושתי גרסאות של קונבולוציות מקוננות:
-:<math>\widetilde{\operatorname{ds}}_{j,f}(n) := \underbrace{(f_\pm * f * \cdots * f)}_{j\text{ פעמים}}(n), \qquad \operatorname{ds}_{j,f}(n) := \begin{cases}f_\pm(n), & j = 1, \\ \sum_{d\mid n, d\gt1}f(d)\operatorname{ds}_{j-1,f}(n/d), & j \gt 1.\end{cases}</math>
+:<math>\widetilde{\operatorname{ds}}_{j,f}(n) := \underbrace{(f_\pm * f * \cdots * f)}_{j}(n), \qquad \operatorname{ds}_{j,f}(n) := \begin{cases}f_\pm(n), & j = 1, \\ \sum_{d\mid n, d\gt1}f(d)\operatorname{ds}_{j-1,f}(n/d), & j \gt 1.\end{cases}</math>
 הפונקציה <math>D_f(n)</math>, שמוגדרת על ידי זוג הנוסחאות השקולות
 :<math>D_f(n) := \sum_{j=1}^n\operatorname{ds}_{2j,f}(n) = \sum_{m=1}^{\lfloor n/2\rfloor}\sum_{i=0}^{2m-1}\binom{2m-1}i(-1)^{i+1}\widetilde{\operatorname{ds}}_{i+1,f}(n),</math>
 קשורה הדוקות להפכי של דיריכלה:{{הערה|שם=MS|1=<span dir="ltr">M. Merca, M. D. Schmidt, Factorization theorems for generalized Lambert series and applications, arXiv:1712.00611, 2017, pp. 13–20.</span>|כיווון=שמאל}} <math>f^{-1}(n) = \left(D_f + \frac\varepsilon{f(1)}\right)(n)</math>.{{הערה|1=בבדיקה שלנו, שתי ההגדרות של <math>D_f</math> שוות זו לזו, והזהות <math>f^{-1} = D_f + \varepsilon/f(1)</math> מתקיימת, בתנאי ש-<math>f(1) = 1</math>; עבור <math>f(1) \ne 1</math> ההגדרות כפי שהן כתובות נותנות ערכים אחרים (למשל <math>D_f(1) = 0</math> ו-<math>D_f(2) = -f(2)f(1)</math> במקום <math>-f(2)/f(1)^2</math>). הערכים בטבלה שלהלן, לעומת זאת, הם ערכי <math>f^{-1}(n)</math> הנכונים לכל <math>f(1) \ne 0</math>.|כיווון=שמאל}}

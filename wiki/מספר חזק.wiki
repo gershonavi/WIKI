@@ -33,7 +33,7 @@
 === ספירה ===
 יהי <math>k(x)</math> מספר המספרים החזקים בקטע <math>[1, x]</math>. אז <math>k(x)</math> פרופורציוני ל[[שורש ריבועי|שורש הריבועי]] של <math>x</math>. ליתר דיוק,{{הערה|שם=gol}}
 :<math>cx^{1/2}-3x^{1/3}\le k(x) \le cx^{1/2},\quad c = \zeta(3/2)/\zeta(3) = 2.173\ldots</math>
-הסיבה: כל מספר חזק נכתב באופן יחיד כ-<math>a^2b^3</math> עם <math>b</math> חופשי מריבועים, ולכן <math>k(x) = \sum_{b\text{ חופשי מריבועים}} \left\lfloor\sqrt{x/b^3}\right\rfloor</math>, ו-<math>\sum_b \mu^2(b) b^{-3/2} = \zeta(3/2)/\zeta(3)</math>. בחישוב לפי הנוסחה הזו:
+הסיבה: כל מספר חזק נכתב באופן יחיד כ-<math>a^2b^3</math> עם <math>b</math> חופשי מריבועים, ולכן <math>k(x) = \sum_{\mu(b) \ne 0} \left\lfloor\sqrt{x/b^3}\right\rfloor</math>, ו-<math>\sum_b \mu^2(b) b^{-3/2} = \zeta(3/2)/\zeta(3)</math>. בחישוב לפי הנוסחה הזו:
 {| class="wikitable" style="text-align:center"
 ! <math>x</math> !! <math>k(x)</math> !! <math>cx^{1/2} - 3x^{1/3}</math> !! <math>cx^{1/2}</math>
 |-

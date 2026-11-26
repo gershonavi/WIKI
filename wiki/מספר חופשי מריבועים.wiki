@@ -28,7 +28,7 @@
 לסיכום, יש שלושה גורמים חופשיים מריבועים שמותאמים באופן טבעי לכל שלם, וכל אחד מהם מחלק את הבא: הגורם <math>s</math>, הגורם <math>k</math> שהמנה בו היא ריבוע, והגורם החופשי מריבועים הגדול ביותר. אם
 :<math>n=\prod_{i=1}^h p_i^{e_i}=\prod_{i=1}^k q_i^i</math>
 הם הפירוק לגורמים ראשוניים והפירוק החופשי-מריבועים של <math>n</math>, אז
-:<math>s = \prod_{e_i=1} p_i =q_1,\qquad k = \prod_{e_i \text{ אי-זוגי}} p_i=\prod_{i \text{ אי-זוגי}} q_i,\qquad \operatorname{rad}(n) = \prod_{i=1}^h p_i=\prod_{i=1}^k q_i.</math>
+:<math>s = \prod_{e_i=1} p_i =q_1,\qquad k = \prod_{2 \nmid e_i} p_i=\prod_{2 \nmid i} q_i,\qquad \operatorname{rad}(n) = \prod_{i=1}^h p_i=\prod_{i=1}^k q_i.</math>
 {{הערה|1=בערך האנגלי <math>k</math> נקרא בתחילה "החלק החופשי מריבועים" (square-free part) של <math>n</math>, ובהמשך אותו שם ניתן ל-<math>q_1 = s</math> (כך גם בדוגמה שם, שבה "החלק החופשי מריבועים" של 75600 הוא 7). כדי להימנע מהסתירה, לא השתמשנו כאן בשם הזה. בספרות, "החלק החופשי מריבועים" מציין בדרך כלל את <math>k</math> (ה-core).|כיווון=ימין}}
 
 ''דוגמה:'' עבור <math>n=75600=2^4\cdot 3^3\cdot 5^2\cdot 7</math> יש <math>q_1=7,\; q_2=5,\;q_3=3,\;q_4=2</math>, כלומר <math>75600 = 7^1\cdot5^2\cdot3^3\cdot2^4</math>. לכן:

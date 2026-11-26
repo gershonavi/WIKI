@@ -53,13 +53,13 @@
 לכל גורם ראשוני <math>p</math> של <math>m - 1</math> יש קונגרואנציה מהצורה (1). הכפלת כולן נותנת
 :<math>\prod_{p\mid(m-1)}\left(1 + \frac{m - 1}p\right) \equiv 0 \pmod{m - 1}.</math>
 פתיחת המכפלה נותנת
-:<math>1 + \sum_{p\mid(m-1)}\frac{m - 1}p + (\text{איברים מסדר גבוה}) \equiv 0 \pmod{m - 1},</math>
+:<math>1 + \sum_{p\mid(m-1)}\frac{m - 1}p + \cdots \equiv 0 \pmod{m - 1},</math>
 כאשר האיברים מסדר גבוה הם מכפלות של כמה גורמים מהצורה <math>(m - 1)/p</math>, עם ערכים שונים של <math>p</math> בכל גורם. כל האיברים האלה מתחלקים ב-<math>m - 1</math> (כי <math>m - 1</math> חופשי מריבועים), ולכן הם נעלמים מהקונגרואנציה:
 :<math>1 + \sum_{p\mid(m-1)}\frac{m - 1}p \equiv 0 \pmod{m - 1}.</math>
 חלוקה במודולוס נותנת
 :<math>\frac1{m - 1} + \sum_{p\mid(m-1)}\frac1p \equiv 0 \pmod 1. \qquad (2)</math>
 נימוק דומה נותן את הקונגרואנציות
-:<math>\frac2{m + 1} + \sum_{p\mid(m+1)}\frac1p \equiv 0 \pmod 1 \quad (\text{אם } m + 1 \text{ זוגי}), \qquad (3)</math>
+:<math>\frac2{m + 1} + \sum_{p\mid(m+1)}\frac1p \equiv 0 \pmod 1 \quad (2 \mid m + 1), \qquad (3)</math>
 :<math>\frac2{2m - 1} + \sum_{p\mid(2m-1)}\frac1p \equiv 0 \pmod 1, \qquad (4)</math>
 :<math>\frac4{2m + 1} + \sum_{p\mid(2m+1)}\frac1p \equiv 0 \pmod 1. \qquad (5)</math>
 

@@ -57,7 +57,7 @@
 * '''משפט בריל''':{{הערה|שם=Koch|1=H. Koch, ''Algebraic Number Theory'', Encyclopaedia of Mathematical Sciences '''62''', Springer, 1997, p. 11|כיווון=שמאל}} הסימן של הדיסקרימיננטה הוא <math>(-1)^{r_2}</math>, כאשר <math>r_2</math> הוא מספר המקומות המרוכבים של <math>K</math>.{{הערה|1=L. Washington, ''Introduction to Cyclotomic Fields'', Lemma 2.2|כיווון=שמאל}} (למשל, ל-<math>\mathbb Q(\sqrt{-5})</math> יש מקום מרוכב אחד, והדיסקרימיננטה <math>-20</math> שלילית.)
 * ראשוני <math>p</math> מסועף ב-<math>K</math> אם ורק אם <math>p</math> מחלק את <math>\Delta_K</math>.{{הערה|שם=N3|1=J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, Corollary III.2.12|כיווון=שמאל}}
 * '''[[משפט שטיקלברגר]]''':{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Exercise I.2.7|כיווון=שמאל}}
-:<math>\Delta_K\equiv 0\ \text{או}\ 1 \pmod 4.</math>
+:<math>\Delta_K\equiv 0</math> או <math>1 \pmod 4</math>.
 :(בדוגמאות שלמעלה: <math>-20 \equiv 0</math>, <math>-503 \equiv 1</math>, <math>125 \equiv 1</math> ו-<math>3969 \equiv 1 \pmod 4</math>.)
 * '''חסם מינקובסקי''':{{הערה|1=J. Neukirch, ''Algebraic Number Theory'', Proposition III.2.14|כיווון=שמאל}} אם <math>n</math> היא המעלה של ההרחבה <math>K/\mathbb Q</math> ו-<math>r_2</math> מספר המקומות המרוכבים של <math>K</math>, אז
 :<math>|\Delta_K|^{1/2}\geq \frac{n^n}{n!}\left(\frac{\pi}{4}\right)^{r_2} \geq \frac{n^n}{n!}\left(\frac{\pi}{4}\right)^{n/2}.</math>

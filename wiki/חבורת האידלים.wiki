@@ -173,7 +173,7 @@
 :'''משפט.''' <math>K^\times</math> דיסקרטית וקו-קומפקטית ב-<math>I_K^1</math>.
 
 '''הוכחה.''' מאחר ש-<math>K^\times</math> דיסקרטית ב-<math>I_K</math>, היא דיסקרטית גם ב-<math>I_K^1</math>. כדי להוכיח ש-<math>I_K^1/K^\times</math> קומפקטית, יהי <math>C</math> הקבוע מהלמה, ונניח ש-<math>\alpha\in\mathbb A_K</math> מקיים <math>\prod_v|\alpha_v|_v>C</math>. נגדיר
-:<math>W_\alpha:= \left\{ \xi=(\xi_v)_v\in \mathbb A_K: |\xi_v|_v\leq |\alpha_v|_v \ \text{לכל}\ v \right\}.</math>
+:<math>W_\alpha:= \left\{ \xi=(\xi_v)_v\in \mathbb A_K: |\xi_v|_v\leq |\alpha_v|_v \ \forall\, v \right\}.</math>
 ברור ש-<math>W_\alpha</math> קומפקטית. נטען שההטלה הטבעית <math>W_\alpha\cap I_K^1\to I_K^1/K^\times</math> על. יהי <math>\beta=(\beta_v)_v\in I_K^1</math> כלשהו. אז <math>\prod_v|\beta_v^{-1}|_v=1</math>, ולכן <math>\prod_v|\beta_v^{-1}\alpha_v|_v = \prod_v|\alpha_v|_v >C</math>. לפי הלמה יש <math>\eta\in K^\times</math> כך ש-<math>|\eta|_v\leq |\beta_v^{-1}\alpha_v|_v</math> לכל <math>v</math>, ולכן <math>\eta\beta\in W_\alpha</math>. זה מוכיח שההטלה על; מאחר שהיא גם רציפה, הקומפקטיות נובעת.{{הערה|שם=WIV}}{{הערה|1=J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', p. 70|כיווון=שמאל}}
 
 === המספרים הרציונליים ===

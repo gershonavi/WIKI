@@ -14,7 +14,7 @@
 
 == ההשערה הכמותית ==
 השערת בייטמן–הורן (ולפניה השערה E של [[גודפרי הרולד הארדי|הארדי]] ו[[ג'ון אדנזור ליטלווד|ליטלווד]], 1923) צופה את הקצב המדויק:
-:<math>\#\{n \le N : n^2 + 1 \text{ ראשוני}\} \sim \frac C2\operatorname{Li}(N) \sim \frac{C}{2}\cdot\frac{N}{\ln N},</math>
+:<math>\#\{n \le N : n^2 + 1 \in \mathbb P\} \sim \frac C2\operatorname{Li}(N) \sim \frac{C}{2}\cdot\frac{N}{\ln N},</math> (כאן <math>\mathbb P</math> היא קבוצת המספרים הראשוניים)
 כאשר
 :<math>C = \prod_{p \gt 2}\left(1 - \frac{\left(\frac{-1}{p}\right)}{p - 1}\right) = \left(1+\tfrac12\right)\left(1-\tfrac14\right)\left(1+\tfrac16\right)\left(1+\tfrac1{10}\right)\left(1-\tfrac1{12}\right)\cdots \approx 1.3728,</math>
 ו-<math>\left(\frac{-1}{p}\right)</math> הוא [[סימן לז'נדר|סמל לז'נדר]]. כל גורם במכפלה מתקן את ההסתברות "הנאיבית" לפי מספר הפתרונות של <math>n^2 \equiv -1 \pmod p</math>: שניים כש-<math>p \equiv 1 \pmod 4</math>, ואפס כש-<math>p \equiv 3 \pmod 4</math>.

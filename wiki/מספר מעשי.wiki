@@ -66,7 +66,8 @@
 יהי <math>p(x)</math> מספר המספרים המעשיים שאינם עולים על <math>x</math>. מרגנשטרן (1991) שיער ש-<math>p(x)</math> שקול אסימפטוטית ל-<math>cx/\log x</math> עבור קבוע <math>c</math>, נוסחה שמזכירה את [[משפט המספרים הראשוניים]]; זה מחזק את הטענה המוקדמת יותר של ארדש ולוקסטון (1979) שלמספרים המעשיים יש צפיפות אפס בשלמים. בשיפור הערכה של טננבאום (1986), סאיאס (1997) מצא ש-<math>p(x)</math> הוא מסדר הגודל <math>x/\log x</math>. ויינגרטנר (2015) הוכיח את השערת מרגנשטרן:{{הערה|1=<span dir="ltr">A. Weingartner, Practical numbers and the distribution of divisors, The Quarterly Journal of Mathematics 66 (2015), pp. 743–758; and Remark 1 of C. Pomerance, A. Weingartner, On primes and practical numbers, Ramanujan Journal 57 (2021), pp. 981–1000.</span>|כיווון=שמאל}}
 :<math>p(x) = \frac{c x}{\log x}\left(1 + O\!\left(\frac{1}{\log x}\right)\right),</math>
 כאשר <math>c=1.33607\ldots</math>.{{הערה|1=<span dir="ltr">A. Weingartner, The constant factor in the asymptotic for practical numbers, International Journal of Number Theory 16 (2020), pp. 629–638.</span>|כיווון=שמאל}} לכן יש בערך 33.6% יותר מספרים מעשיים מראשוניים. הערך המדויק של <math>c</math> נתון על ידי{{הערה|1=<span dir="ltr">A. Weingartner, On the constant factor in several related asymptotic estimates, Mathematics of Computation 88 (2019), pp. 1883–1902.</span>|כיווון=שמאל}}
-:<math> c= \frac{1}{1-e^{-\gamma}} \sum_{n \text{ מעשי}} \frac{1}{n} \left( \sum_{p\le \sigma(n)+1}\frac{\log p}{p-1} - \log n\right) \prod_{p\le \sigma(n)+1} \left(1-\frac{1}{p}\right),</math>
+:<math> c= \frac{1}{1-e^{-\gamma}} \sum_{n \in \mathcal P} \frac{1}{n} \left( \sum_{p\le \sigma(n)+1}\frac{\log p}{p-1} - \log n\right) \prod_{p\le \sigma(n)+1} \left(1-\frac{1}{p}\right),</math>
+כאשר <math>\mathcal P</math> היא קבוצת המספרים המעשיים,
 כאשר <math>\gamma</math> הוא [[קבוע אוילר-מסקרוני|קבוע אוילר–מסקרוני]] ו-<math>p</math> רץ על ראשוניים.
 
 הספירה שלנו (לפי האפיון של סטיוארט–סרפינסקי):
@@ -83,7 +84,7 @@
 |}
 
 כמו ב[[ראשוניים בסדרה חשבונית]], בהינתן שני מספרים טבעיים <math>a</math> ו-<math>q</math>, מתקיים{{הערה|1=<span dir="ltr">A. Weingartner, An extension of the Siegel–Walfisz theorem, Proceedings of the American Mathematical Society 149 (2021), pp. 4699–4708.</span>|כיווון=שמאל}}
-:<math>|\{ n \le x: n \text{ מעשי ו-} n\equiv a \bmod q \}|=\frac{c_{q,a} x}{\log x} +O_q\left(\frac{x}{(\log x)^2}\right).</math>
+:<math>|\{ n \le x: n \in \mathcal P,\ n\equiv a \bmod q \}|=\frac{c_{q,a} x}{\log x} +O_q\left(\frac{x}{(\log x)^2}\right).</math>
 הקבוע <math>c_{q,a}</math> חיובי אם ורק אם יש יותר ממספר מעשי אחד ששקול ל-<math>a \bmod q</math>. אם <math>\gcd(q,a)=\gcd(q,b)</math>, אז <math>c_{q,a}=c_{q,b}</math>. למשל, בערך 38.26% מהמספרים המעשיים מסתיימים בספרה 0, ואילו כל אחת מהספרות האחרונות 2, 4, 6, 8 מופיעה באותה שכיחות יחסית, 15.43%. (במספרים המעשיים עד <math>10^7</math> מצאנו 37.37% מסתיימים ב-0, ו-15.66% בכל אחת מהספרות 2, 4, 6, 8 – השוויון בין ארבע האחרונות כבר מדויק, וההתכנסות לערכים האסימפטוטיים איטית.)
 
 == מספר הגורמים הראשוניים, מספר המחלקים וסכום המחלקים ==

@@ -18,7 +18,7 @@
 
 === סימן שארית החזקה ה-<math>m</math>-ית ===
 עבור <math>\alpha, \beta\in\mathcal{O}_m</math>, [[סימן שארית חזקה|סימן שארית החזקה ה-<math>m</math>-ית]] של <math>\mathcal{O}_m</math> הוא אפס או שורש יחידה מסדר <math>m</math>:
-:<math>\left(\frac{\alpha}{\beta }\right)_m = \begin{cases} \zeta,\ \zeta^m=1 & \alpha,\ \beta\ \text{זרים},\\ 0 & \text{אחרת}. \end{cases}</math>
+:<math>\left(\frac{\alpha}{\beta }\right)_m = \begin{cases} \zeta,\ \zeta^m=1 & (\alpha, \beta) = 1,\\ 0 & (\alpha, \beta) \ne 1. \end{cases}</math>
 זוהי הגרסה לחזקות <math>m</math>-יות של [[סימן יעקובי]] הקלאסי (הריבועי, <math>m = 2</math>). בהנחה ש-<math>\alpha</math> ו-<math>\beta</math> זרים:
 * אם <math>\eta\in\mathcal{O}_m</math> ו-<math>\alpha\equiv\eta^m \pmod{\beta}</math>, אז <math>\left(\frac{\alpha}{\beta }\right)_m = 1</math>.
 * אם <math>\left(\frac{\alpha}{\beta }\right)_m \neq1</math>, אז <math>\alpha</math> אינו חזקה <math>m</math>-ית מודולו <math>\beta</math>.

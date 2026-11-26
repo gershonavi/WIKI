@@ -28,16 +28,16 @@
 וההצגה הזו יחידה עד כדי הסימנים של <math>L</math> ו-<math>M</math>.{{הערה|שם=IR|1=K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Springer, 1990, Props. 8.3.1–8.3.2|כיווון=שמאל}} לדוגמה, <math>4\cdot7 = 1^2 + 27\cdot1^2</math>, <math>4\cdot13 = 5^2 + 27\cdot1^2</math> ו-<math>4\cdot 31 = 4^2 + 27\cdot 2^2</math>.
 
 לשלמים זרים <math>m</math> ו-<math>n</math> מגדירים את '''סימן השארית הרציונלי ממעלה שלישית''':
-:<math>\left[\frac{m}{n}\right]_3 = \begin{cases} 1 & m \text{ שארית ממעלה שלישית מודולו } n, \\ -1 & m \text{ אי-שארית ממעלה שלישית מודולו } n. \end{cases}</math>
+:<math>\left[\frac{m}{n}\right]_3 = 1</math> אם <math>m</math> שארית ממעלה שלישית מודולו <math>n</math>, ו-<math>\left[\frac{m}{n}\right]_3 = -1</math> אם <math>m</math> אי-שארית ממעלה שלישית מודולו <math>n</math>.
 לסימן הזה ''אין'' את התכונות הכפליות של סימן לז'נדר; בשבילן צריך את הקרקטר האמיתי ממעלה שלישית, עם ערכים בשורשים השלישיים של 1, שמוגדר בהמשך.
 
 :'''ההשערות של אוילר (הוכחו).''' יהי <math>p = a^2 + 3b^2</math> ראשוני. אז:{{הערה|1=F. Lemmermeyer, ''Reciprocity Laws'', pp. 222–223|כיווון=שמאל}}
 ::<math>\begin{align}
 \left[\tfrac{2}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 3\mid b\\
-\left[\tfrac{3}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 9\mid b \text{ או } 9\mid(a\pm b)\\
-\left[\tfrac{5}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 15\mid b \text{ או } (3\mid b \text{ ו-} 5\mid a) \text{ או } 15\mid(a\pm b) \text{ או } 15\mid(2a\pm b)\\
-\left[\tfrac{6}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 9\mid b \text{ או } 9\mid(a\pm 2b)\\
-\left[\tfrac{7}{p}\right]_3 =1 \quad &\Longrightarrow \quad (3\mid b\text{ ו-}7\mid a) \text{ או } 21\mid (b\pm a) \text{ או } 7\mid(4b\pm a) \text{ או } 21\mid b \text{ או } 7\mid(b\pm 2a)
+\left[\tfrac{3}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 9\mid b \;\lor\; 9\mid(a\pm b)\\
+\left[\tfrac{5}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 15\mid b \;\lor\; (3\mid b \;\land\; 5\mid a) \;\lor\; 15\mid(a\pm b) \;\lor\; 15\mid(2a\pm b)\\
+\left[\tfrac{6}{p}\right]_3 =1 \quad &\Longleftrightarrow \quad 9\mid b \;\lor\; 9\mid(a\pm 2b)\\
+\left[\tfrac{7}{p}\right]_3 =1 \quad &\Longrightarrow \quad (3\mid b\;\land\;7\mid a) \;\lor\; 21\mid (b\pm a) \;\lor\; 7\mid(4b\pm a) \;\lor\; 21\mid b \;\lor\; 7\mid(b\pm 2a)
 \end{align}</math>
 (בדקנו את כל הטענות האלה במחשב לכל הראשוניים <math>p \equiv 1 \pmod 3</math> הקטנים מ-3000.)
 

@@ -38,7 +38,7 @@
 === צפיפות המספרים החופשיים מחזקות k ===
 עבור שלם <math>k \geq 1</math>, קבוצת השלמים '''החופשיים מחזקות <math>k</math>''' היא
 
-:<math>Q_k =\{n \in \mathbb{Z} : n \text{ אינו מתחלק ב-} d^k \text{ לאף שלם } d\ge 2\}.</math>
+:<math>Q_k =\{n \in \mathbb{Z} : d^k \nmid n\ \ \forall d\ge 2\}.</math>
 
 נחשב את ה[[צפיפות טבעית|צפיפות הטבעית]] של מספרים אלה ב-<math>\mathbb{N}</math>, כלומר את הערך הממוצע של [[פונקציה מציינת|הפונקציה המציינת]] של <math>Q_k</math>, שנסמן ב-<math>\delta(n)</math>.
 
@@ -48,7 +48,7 @@
 
 לפי [[נוסחת ההיפוך של מביוס]],
 
-:<math>\frac{1}{\zeta(ks)} = \sum_{n}\mu(n)n^{-ks} = \sum_{n}f(n)n^{-s}, \qquad f(n)=\begin{cases} \mu(d) & n=d^{k}, \\ 0 & \text{אחרת}, \end{cases}</math>
+:<math>\frac{1}{\zeta(ks)} = \sum_{n}\mu(n)n^{-ks} = \sum_{n}f(n)n^{-s}, \qquad f(n)=\begin{cases} \mu(d) & n=d^{k}, \\ 0 & n \ne d^k\ \forall d, \end{cases}</math>
 
 ולכן
 
@@ -82,7 +82,7 @@
 
 מתקיים
 
-:<math>\sum_{n\le x}\sigma_{\alpha}(n)= \begin{cases} \frac{\zeta(\alpha+1)}{\alpha+1}x^{\alpha+1}+O(x^\beta) & \alpha>0,\ \alpha \ne 1, \\ \frac{\zeta(2)}{2}x^2+O(x \log x) & \alpha=1, \\ \zeta(2)x+O(\log x) & \alpha=-1, \\ \zeta(1-\alpha)x+O(x^{\max(0,1+\alpha)}) & \text{אחרת,} \end{cases}</math>
+:<math>\sum_{n\le x}\sigma_{\alpha}(n)= \begin{cases} \frac{\zeta(\alpha+1)}{\alpha+1}x^{\alpha+1}+O(x^\beta) & \alpha>0,\ \alpha \ne 1, \\ \frac{\zeta(2)}{2}x^2+O(x \log x) & \alpha=1, \\ \zeta(2)x+O(\log x) & \alpha=-1, \\ \zeta(1-\alpha)x+O(x^{\max(0,1+\alpha)}) & \alpha \lt 0,\ \alpha \ne -1, \end{cases}</math>
 
 כאשר <math>\beta=\max(1,\alpha)</math>.
 
@@ -105,18 +105,20 @@
 === הגדרה ===
 תהי <math>h</math> פונקציה על קבוצת ה[[פולינום מתוקן|פולינומים המתוקנים]] מעל [[שדה סופי|השדה הסופי]] <math>\mathbb{F}_q</math>. עבור <math>n\ge 1</math> מגדירים
 
-:<math>\operatorname{Ave}_n(h)=\frac{1}{q^n}\sum_{f \text{ מתוקן},\ \deg f= n}h(f),</math>
+:<math>\operatorname{Ave}_n(h)=\frac{1}{q^n}\sum_{f \in M_n}h(f),</math>
+כאשר <math>M_n</math> היא קבוצת הפולינומים המתוקנים ממעלה <math>n</math> (יש בה <math>q^n</math> פולינומים),
 
 הערך הממוצע של <math>h</math> על הפולינומים המתוקנים ממעלה <math>n</math>. אומרים ש-<math>g(n)</math> היא סדר ממוצע של <math>h</math> אם <math>\operatorname{Ave}_n(h) \sim g(n)</math> כאשר <math>n</math> שואף לאינסוף, ואם הגבול <math>\lim_{n\to\infty}\operatorname{Ave}_n(h) = c</math> קיים, אומרים של-<math>h</math> יש ערך ממוצע <math>c</math>.
 
 === פונקציית זטא וטורי דיריכלה ב-<math>\mathbb{F}_q[x]</math> ===
 יהי <math>A = \mathbb{F}_q[x]</math> [[חוג פולינומים|חוג הפולינומים]] מעל <math>\mathbb{F}_q</math>. עבור <math>g\in A</math> שונה מאפס מגדירים <math>|g|=q^{\deg g}</math>. לפונקציה אריתמטית פולינומית <math>h</math> מתאימים את טור הדיריכלה
 
-:<math>D_{h}(s)=\sum_{f\text{ מתוקן}} h(f)|f|^{-s},</math>
+:<math>D_{h}(s)=\sum_{f\in A^+} h(f)|f|^{-s},</math>
+כאשר <math>A^+</math> היא קבוצת הפולינומים המתוקנים ב-<math>A</math>,
 
 ופונקציית הזטא הפולינומית היא
 
-:<math>\zeta_{A}(s)=\sum_{f\text{ מתוקן}} |f|^{-s}.</math>
+:<math>\zeta_{A}(s)=\sum_{f\in A^+} |f|^{-s}.</math>
 
 בדומה למקרה של המספרים הטבעיים, לטור דיריכלה של כל פונקציה כפלית יש מכפלת אוילר על הפולינומים המתוקנים האי-פריקים <math>P</math>, ובפרט <math>\zeta_{A}(s) = \prod_{P} \left(1 - |P|^{-s}\right)^{-1}</math>. בניגוד לפונקציית הזטא הקלאסית, <math>\zeta_{A}(s)</math> היא [[פונקציה רציונלית]] פשוטה:
 

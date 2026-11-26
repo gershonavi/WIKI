@@ -16,7 +16,7 @@
 
 == דוגמה ==
 עבור <math>N = 61</math>: <math>61\cdot1^2 + 3 = 64 = 8^2</math>, כלומר <math>x = 1</math>, <math>y = 8</math>, <math>k = 3</math>. כדי ש-<math>\frac{mx + y}k = \frac{m + 8}3</math> יהיה שלם, צריך <math>m \equiv 1 \pmod 3</math>, ומבין הערכים האלה <math>m = 7</math> ממזער את <math>|m^2 - 61|</math>. הלמה נותנת
-:<math>61\left(\frac{7 + 8}3\right)^2 + \frac{49 - 61}3 = \left(\frac{7\cdot8 + 61}3\right)^2, \quad\text{כלומר}\quad 61\cdot5^2 - 4 = 39^2,</math>
+:<math>61\left(\frac{7 + 8}3\right)^2 + \frac{49 - 61}3 = \left(\frac{7\cdot8 + 61}3\right)^2,</math> כלומר <math>61\cdot5^2 - 4 = 39^2</math>,
 ואכן <math>1525 - 4 = 1521 = 39^2</math>. זה הצעד הראשון של שיטת צ'קרוואלה ל-<math>x^2 - 61y^2 = 1</math>.
 
 == מקורות ==

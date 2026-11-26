@@ -29,7 +29,7 @@
 :<math>\gamma(m) = \sum_{a\mid(n,m),\ a\ge1}a^{2k-1}c\left(\frac{mn}{a^2}\right).</math>
 {{הערה|1=בערך האנגלי נכתב <math>\gamma(z)</math> במקום <math>\gamma(m)</math>, ובהמשך "כאשר <math>m</math> ראשוני" במקום "כאשר <math>n</math> ראשוני" (כלומר עבור <math>T_p</math>).|כיווון=שמאל}}
 כיוון שהצמצום נעשה דרך טורי <math>q</math>, הגיוני להשתמש בהגדרה הזו. עבור <math>n = p</math> ראשוני הסכום מתפשט מאוד: יש בו לכל היותר שני מחוברים. ועבור <math>p</math> אי-זוגי, <math>p^{2k-1} \equiv 1 \pmod 2</math>. לכן, עבור <math>f(q) = \sum c(n)q^n</math> תבנית מודולו 2, אופרטור הקה <math>T_p</math> מוגדר על ידי <math>T_p|f(q) = \sum\gamma(n)q^n</math> עם
-:<math>\gamma(n) = \begin{cases} c(np) & p \nmid n, \\ c(np) + c(n/p) & p \mid n,\end{cases} \qquad p \text{ ראשוני אי-זוגי}.</math>
+:<math>\gamma(n) = \begin{cases} c(np) & p \nmid n, \\ c(np) + c(n/p) & p \mid n,\end{cases} \qquad p \in \mathbb P,\ p \gt 2.</math> (כאן <math>\mathbb P</math> היא קבוצת המספרים הראשוניים)
 
 === דוגמה: פעולת <math>T_3</math> ו-<math>T_5</math> ===
 נסמן <math>\mathcal F</math> את המרחב (מעל <math>\mathbb F_2</math>) שנפרש על ידי החזקות האי-זוגיות <math>\Delta, \Delta^3, \Delta^5, \ldots</math> (ראו להלן). כיוון ש-<math>\Delta^k = q^k + \cdots</math>, אפשר לזהות כל טור במרחב לפי המקדמים המובילים, ולחשב את <math>T_p(\Delta^k)</math> בבסיס הזה. חישוב ישיר (עם טורי <math>q</math> עד <math>q^{200000}</math>) נותן:
@@ -50,7 +50,7 @@
 אפשר לצמצם מודולו 2 גם את [[אלגברת הקה]]. היא מוגדרת כאלגברה מעל <math>\mathbb F_2</math> שנוצרת על ידי אופרטורי הקה מודולו 2.
 
 בהתאם לסימון של סר וניקולא,{{הערה|שם=NS2|1=<span dir="ltr">J.-L. Nicolas, J.-P. Serre, Formes modulaires modulo 2: structure de l'algèbre de Hecke, Comptes Rendus Mathématique 350 (2012), pp. 449–454.</span>|כיווון=שמאל}} נסמן
-:<math>\mathcal F = \left\langle\Delta^k \mid k \text{ אי-זוגי}\right\rangle = \left\langle\Delta, \Delta^3, \Delta^5, \Delta^7, \Delta^9, \ldots\right\rangle.</math>
+:<math>\mathcal F = \left\langle\Delta^k : 2 \nmid k\right\rangle = \left\langle\Delta, \Delta^3, \Delta^5, \Delta^7, \Delta^9, \ldots\right\rangle.</math>
 (החזקות הזוגיות אינן מעניינות: <math>\Delta^{2k}(q) = \Delta^k(q^2)</math> מודולו 2, ו-<math>T_p</math> מתחלף עם <math>q \mapsto q^2</math>.) נכתוב <math>\mathcal F(n) = \left\langle\Delta, \Delta^3, \Delta^5, \ldots, \Delta^{2n-1}\right\rangle</math>, כך ש-<math>\dim\mathcal F(n) = n</math>, ונגדיר את <math>A(n)</math> כתת-האלגברה מעל <math>\mathbb F_2</math> של <math>\mathrm{End}(\mathcal F(n))</math> שנוצרת על ידי <math>1</math> ועל ידי האופרטורים <math>T_p</math>. אם <math>\mathfrak m(n)</math> הוא תת-המרחב של <math>\mathrm{End}(\mathcal F(n))</math> שנפרש על ידי המכפלות <math>T_{p_1}T_{p_2}\cdots T_{p_k}</math> עם <math>k \ge 1</math> (זה האידיאל המקסימלי, שמורכב מאופרטורים נילפוטנטיים), אז <math>A(n) = \mathbb F_2 \oplus \mathfrak m(n)</math>.{{הערה|1=בערך האנגלי נכתב ש-<math>\mathfrak m(n)</math> הוא "קבוצת המכפלות" ו"תת-מרחב של <math>\mathcal F</math>". הכוונה לתת-המרחב שהמכפלות '''פורשות''', בתוך <math>\mathrm{End}(\mathcal F(n))</math>.|כיווון=שמאל}}
 
 לבסוף, מגדירים את אלגברת הקה <math>A</math>: כיוון ש-<math>\mathcal F(n) \subset \mathcal F(n + 1)</math> והמרחבים אינווריאנטיים תחת <math>T_p</math>, אפשר לצמצם איברים של <math>A(n + 1)</math> ל-<math>\mathcal F(n)</math> ולקבל איברים של <math>A(n)</math>. ההעתקה <math>\phi_n: A(n + 1) \to A(n)</math> היא הומומורפיזם. כיוון ש-<math>A(1)</math> מורכבת רק מהזהות ומאפס, <math>A(1) \cong \mathbb F_2</math>. מתקבלת השרשרת

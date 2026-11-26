@@ -32,7 +32,7 @@
 
 '''למה זה עובד.''' נסמן <math>t_m = \pm1</math> לפי זוגיות מספר האחדות של <math>m</math>. אז
 :<math>\sum_{m=0}^{2^{k+1}-1}t_mx^m = \prod_{j=0}^{k}\left(1 - x^{2^j}\right),</math>
-כי כל <math>m</math> מתקבל בדיוק פעם אחת כסכום של חזקות שונות של 2, והסימן הוא <math>(-1)^{(\text{מספר האחדות})}</math>. לכל גורם יש שורש ב-<math>x = 1</math>, ולכן למכפלה יש שורש מסדר <math>k + 1</math> ב-<math>x = 1</math>. מכאן שהנגזרות <math>\left(x\frac d{dx}\right)^i</math> של המכפלה מתאפסות ב-<math>x = 1</math> לכל <math>i \le k</math>, כלומר <math>\sum_mt_mm^i = 0</math> – בדיוק השוויון <math>\sum_{a\in A}a^i = \sum_{b\in B}b^i</math>.
+כי כל <math>m</math> מתקבל בדיוק פעם אחת כסכום של חזקות שונות של 2, והסימן הוא <math>(-1)^{s(m)}</math>, כאשר <math>s(m)</math> הוא מספר האחדות בהצגה הבינארית של <math>m</math>. לכל גורם יש שורש ב-<math>x = 1</math>, ולכן למכפלה יש שורש מסדר <math>k + 1</math> ב-<math>x = 1</math>. מכאן שהנגזרות <math>\left(x\frac d{dx}\right)^i</math> של המכפלה מתאפסות ב-<math>x = 1</math> לכל <math>i \le k</math>, כלומר <math>\sum_mt_mm^i = 0</math> – בדיוק השוויון <math>\sum_{a\in A}a^i = \sum_{b\in B}b^i</math>.
 
 == הכללות ==
 גרסה רב-ממדית של הבעיה הציגו וחקרו אנדראס אלפרס ורוברט טיידמן ב-2007:{{הערה|1=<span dir="ltr">A. Alpers, R. Tijdeman, The two-dimensional Prouhet–Tarry–Escott problem, Journal of Number Theory 123 (2007), pp. 403–412.</span>|כיווון=שמאל}} בהינתן פרמטרים <math>n, k \in \mathbb N</math>, מצאו שתי מולטי-קבוצות שונות <math>\{(x_1, y_1), \dots, (x_n, y_n)\}</math> ו-<math>\{(x_1', y_1'), \dots, (x_n', y_n')\}</math> של נקודות ב-<math>\mathbb Z^2</math> כך ש-

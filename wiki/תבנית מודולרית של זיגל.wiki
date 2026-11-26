@@ -7,7 +7,8 @@
 == הגדרה ==
 === הכנות ===
 יהיו <math>g, N \in \mathbb N</math>. '''חצי המרחב העליון של זיגל''' הוא
-:<math>\mathcal H_g = \left\{\tau \in M_{g\times g}(\mathbb C) \;\middle|\; \tau^{\mathsf T} = \tau,\ \operatorname{Im}(\tau) \text{ מוגדרת חיובית}\right\}.</math>
+:<math>\mathcal H_g = \left\{\tau \in M_{g\times g}(\mathbb C) \;\middle|\; \tau^{\mathsf T} = \tau,\ \operatorname{Im}(\tau) \gt 0\right\}.</math>
+(כאן <math>\operatorname{Im}(\tau) \gt 0</math> פירושו שהמטריצה <math>\operatorname{Im}(\tau)</math> מוגדרת חיובית.)
 עבור <math>g = 1</math> זהו חצי המישור העליון הרגיל. החבורה הסימפלקטית מרמה <math>N</math>, <math>\Gamma_g(N)</math>, מוגדרת כ-
 :<math>\Gamma_g(N) = \left\{\gamma \in \mathrm{GL}_{2g}(\mathbb Z) \;\middle|\; \gamma^{\mathsf T}\begin{pmatrix} 0 & I_g \\ -I_g & 0\end{pmatrix}\gamma = \begin{pmatrix} 0 & I_g \\ -I_g & 0\end{pmatrix},\ \gamma \equiv I_{2g} \bmod N\right\},</math>
 כאשר <math>I_g</math> [[מטריצת היחידה]] מסדר <math>g\times g</math>. לבסוף, תהי

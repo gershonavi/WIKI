@@ -30,7 +30,7 @@
 # יש <math>\lambda \in \mathbb C</math> כך ש-<math>\Delta(f) = \lambda f</math>;
 # יש <math>N \in \mathbb N</math> כך ש-<math>f(x + iy) = O(y^N)</math> עבור <math>y \ge 1</math>.
 אם
-:<math>\int_0^1f(z + t)\,dt = 0 \quad \text{לכל } z \in \mathcal H,</math>
+:<math>\int_0^1f(z + t)\,dt = 0 \quad \forall\, z \in \mathcal H,</math>
 קוראים ל-<math>f</math> '''תבנית שפיץ של מאס'''.
 
 === הקשר בין תבניות מאס לטורי דיריכלה ===
@@ -146,7 +146,7 @@ a_n(y, s) &= 2|n|^{s - \frac12}\sigma_{1-2s}(|n|)\sqrt y\,K_{s - \frac12}(2\pi|n
 צריך להבהיר מהו גידול מתון בחודים. <math>\infty</math> הוא חוד של <math>\Gamma</math>, ופונקציה <math>f \in C^\infty(\Gamma\backslash\mathcal H, k)</math> היא בעלת גידול מתון ב-<math>\infty</math> אם <math>f(x + iy)</math> חסומה על ידי פולינום ב-<math>y</math> כאשר <math>y \to \infty</math>. יהי <math>c \in \mathbb Q</math> חוד אחר; אז יש <math>\theta \in \mathrm{SL}_2(\mathbb Z)</math> עם <math>\theta(\infty) = c</math>. יהי <math>f' := f_{\|k}\theta</math>; אז <math>f' \in C^\infty(\Gamma'\backslash\mathcal H, k)</math>, כאשר <math>\Gamma' = \theta^{-1}\Gamma\theta</math>. אומרים ש-<math>f</math> בעלת גידול מתון בחוד <math>c</math> אם <math>f'</math> בעלת גידול מתון ב-<math>\infty</math>.
 
 '''הגדרה.''' אם <math>\Gamma</math> מכילה תת-חבורת קונגרואנציה ראשית מרמה <math>N</math>, אומרים ש-<math>f</math> '''קוספידלית''' באינסוף אם
-:<math>\int_0^Nf(z + u)\,du = 0 \quad \text{לכל } z \in \mathcal H.</math>
+:<math>\int_0^Nf(z + u)\,du = 0 \quad \forall\, z \in \mathcal H.</math>
 <math>f</math> קוספידלית בחוד <math>c</math> אם <math>f'</math> קוספידלית באינסוף, ו-<math>f</math> היא '''תבנית שפיץ''' אם היא קוספידלית בכל חוד.
 
 '''דוגמה.''' תהי <math>g: \mathcal H \to \mathbb C</math> תבנית מודולרית ממשקל זוגי <math>k</math> ביחס ל-<math>\Gamma(1)</math>. אז <math>f(z) := y^{k/2}g(z)</math> היא תבנית מאס ממשקל <math>k</math> ביחס ל-<math>\Gamma(1)</math>: אכן <math>\operatorname{Im}(\gamma z)^{k/2} = y^{k/2}|cz + d|^{-k}</math>, ולכן <math>f(\gamma z) = \left(\frac{cz + d}{|cz + d|}\right)^kf(z)</math>; והערך העצמי הוא <math>\Delta_kf = \frac k2\left(1 - \frac k2\right)f</math>. (בדקנו זאת בחישוב מספרי עבור <math>g = E_4</math>, שם הערך העצמי הוא <math>-2</math>.)

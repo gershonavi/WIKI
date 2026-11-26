@@ -70,7 +70,7 @@
 אז לוקחים <math>J</math> גדול מספיק כך ש-
 :<math>h^{1+\frac J{8n}} \gt (L + 1)^n</math>
 (<math>J</math> גדול מבערך <math>16n</math> מספיק אם <math>h^2 \gt L</math>), ולכן
-:<math>\Phi(l, \ldots, l) = 0 \quad\text{לכל}\quad l \in \left\{1, 2, \ldots, (L + 1)^n\right\}.</math>
+:<math>\Phi(l, \ldots, l) = 0 \quad\forall\, l \in \left\{1, 2, \ldots, (L + 1)^n\right\}.</math>
 
 === השלמת ההוכחה ===
 לפי ההגדרה, אפשר לכתוב את <math>\Phi(l, \ldots, l) = 0</math> כך:

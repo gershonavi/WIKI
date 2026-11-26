@@ -99,15 +99,15 @@
 (זה בדיוק התוכן של <math>g_p^2 = p^*</math> מהסעיף הקודם.)
 
 בשלב הזה מתחילים לראות רמז לחוק ההדדיות הריבועית. מצד אחד, התמונה של <math>H</math> ב-<math>(\mathbb Z/p\mathbb Z)^\times</math> מורכבת בדיוק מ''השאריות הריבועיות מודולו <math>p</math>'' (השונות מאפס). מצד שני, <math>H</math> קשורה לניסיון להוציא ''שורש ריבועי של <math>p</math>'' (או אולי של <math>-p</math>). במילים אחרות, אם עכשיו <math>q</math> ראשוני (שונה מ-<math>p</math>), הראינו ש-
-:<math>\left(\frac qp\right) =1 \quad \iff \quad \sigma_q \in H \quad \iff \quad \sigma_q \text{ משאיר את } \mathbb Q(\sqrt{p^*}) \text{ במקומו}.</math>
+:<math>\left(\frac qp\right) =1 \quad \iff \quad \sigma_q \in H \quad \iff \quad \sigma_q|_{\mathbb Q(\sqrt{p^*})} = \mathrm{id}.</math>
 
 === אוטומורפיזם פרובניוס ===
 ב[[חוג השלמים]] <math>\mathcal O_L=\mathbb Z[\zeta_p]</math>, נבחר [[אידיאל ראשוני]] לא מסועף <math>\beta</math> כלשהו שמעל <math>q</math>, ויהי <math>\phi \in \operatorname{Gal}(L/\mathbb Q)</math> [[אוטומורפיזם פרובניוס]] המשויך ל-<math>\beta</math>; התכונה המאפיינת של <math>\phi</math> היא ש-
-:<math>\phi(x) \equiv x^q \pmod{\beta}\quad \text{לכל } x\in \mathcal O_L.</math>
+:<math>\phi(x) \equiv x^q \pmod{\beta}\quad \forall\, x\in \mathcal O_L.</math>
 (קיומו של איבר פרובניוס כזה תלוי בלא מעט מהמנגנון של תורת המספרים האלגברית.)
 
 העובדה המרכזית על <math>\phi</math> שאנחנו צריכים היא שלכל תת-שדה <math>K</math> של <math>L</math>,
-:<math>\phi\text{ משאיר את } K \text{ במקומו} \quad \iff \quad q\text{ מתפצל לחלוטין ב-} K.</math>
+:<math>\phi|_K = \mathrm{id}</math> אם ורק אם <math>q</math> מתפצל לחלוטין ב-<math>K</math>.
 אכן, יהי <math>\delta</math> אידיאל כלשהו של <math>\mathcal O_K</math> מתחת ל-<math>\beta</math> (ולכן מעל <math>q</math>). אז, כיוון ש-<math>\phi(x) \equiv x^q \pmod{\delta}</math> לכל <math>x\in \mathcal O_K</math>, רואים ש-<math>\phi\vert_K \in \operatorname{Gal}(K/\mathbb Q)</math> הוא פרובניוס של <math>\delta</math>. תוצאה סטנדרטית על <math>\phi</math> היא שהסדר שלו שווה לדרגת האינרציה המתאימה; כלומר,
 :<math>\operatorname{ord}(\phi\vert_K) = [\mathcal O_K/\delta : \mathbb Z/q\mathbb Z].</math>
 אגף שמאל שווה 1 אם ורק אם <math>\phi</math> משאיר את <math>K</math> במקומו, ואגף ימין שווה 1 אם ורק אם <math>q</math> מתפצל לחלוטין ב-<math>K</math> (ב[[הרחבת גלואה]] כל דרגות האינרציה שוות), וסיימנו.
@@ -115,13 +115,13 @@
 עכשיו, כיוון ששורשי היחידה מסדר <math>p</math> שונים זה מזה מודולו <math>\beta</math> (כלומר, הפולינום <math>X^p - 1</math> [[פולינום ספרבילי|ספרבילי]] במאפיין <math>q</math>), חייב להתקיים
 :<math>\phi(\zeta_p) = \zeta_p^q;</math>
 כלומר, <math>\phi</math> מתלכד עם האוטומורפיזם <math>\sigma_q</math> שהוגדר קודם. כשלוקחים את <math>K</math> להיות השדה הריבועי שמעניין אותנו, מקבלים את השקילות
-:<math>\left(\frac qp\right) =1 \quad \iff \quad q\text{ מתפצל לחלוטין ב-} \mathbb Q(\sqrt{p^*}).</math>
+:<math>\left(\frac qp\right) =1</math> אם ורק אם <math>q</math> מתפצל לחלוטין ב-<math>\mathbb Q(\sqrt{p^*})</math>.
 
 === סיום ההוכחה ===
 לבסוף צריך להראות ש-
-:<math>q\text{ מתפצל לחלוטין ב-} \mathbb Q(\sqrt{p^*}) \quad \iff \quad \left(\frac{p^*}q\right) = 1.</math>
+:<math>q</math> מתפצל לחלוטין ב-<math>\mathbb Q(\sqrt{p^*})</math> אם ורק אם <math>\left(\frac{p^*}q\right) = 1</math>.
 אחרי שנעשה זאת, חוק ההדדיות הריבועית נובע מיד, כי
-:<math>\left(\frac{p^*}q\right) = \left(\frac pq\right)\quad \text{עבור } p\equiv 1 \pmod 4,</math>
+:<math>\left(\frac{p^*}q\right) = \left(\frac pq\right)\quad (p\equiv 1 \pmod 4),</math>
 ו-
 :<math>\left(\frac{p^*}q\right) = \left(\frac{-p}q\right) = \left(\frac{-1}q\right)\left(\frac pq\right) = \begin{cases} +\left(\frac pq \right) & q \equiv 1 \pmod{4}, \\ -\left(\frac pq\right) & q \equiv 3 \pmod{4}\end{cases}</math>
 עבור <math>p\equiv 3 \pmod 4</math>.

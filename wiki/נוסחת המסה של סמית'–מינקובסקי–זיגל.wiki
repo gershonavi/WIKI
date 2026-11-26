@@ -8,7 +8,7 @@
 אם <math>f</math> תבנית ריבועית אינטגרלית (או סריג) <math>n</math>-ממדית [[תבנית ריבועית מוגדרת|מוגדרת חיובית]], ה'''מסה''' של הגנוס שלה מוגדרת כ-
 :<math>m(f) = \sum_\Lambda\frac1{|\operatorname{Aut}(\Lambda)|},</math>
 כאשר הסכום הוא על כל התבניות הלא שקולות מעל השלמים באותו גנוס של <math>f</math>, ו-<math>\operatorname{Aut}(\Lambda)</math> חבורת האוטומורפיזמים של <math>\Lambda</math>. הגרסה של קונוויי וסלואן לנוסחת המסה קובעת שעבור <math>n \ge 2</math>
-:<math>m(f) = 2\pi^{-n(n+1)/4}\prod_{j=1}^n\Gamma(j/2)\prod_{p\text{ ראשוני}}2m_p(f),</math>
+:<math>m(f) = 2\pi^{-n(n+1)/4}\prod_{j=1}^n\Gamma(j/2)\prod_{p \in \mathbb P}2m_p(f),</math> (כאן <math>\mathbb P</math> היא קבוצת המספרים הראשוניים)
 כאשר <math>m_p(f)</math> היא ה-'''<math>p</math>-מסה''' של <math>f</math>, שנתונה על ידי
 :<math>m_p(f) = \frac{p^{(rn(n-1)+s(n+1))/2}}{N(p^r)}</math>
 עבור <math>r</math> גדול מספיק, כאשר <math>p^s</math> החזקה הגבוהה ביותר של <math>p</math> שמחלקת את ה[[דטרמיננטה]] של <math>f</math>. המספר <math>N(p^r)</math> הוא מספר המטריצות <math>X</math> מגודל <math>n\times n</math> עם מקדמים שלמים מודולו <math>p^r</math> כך ש-

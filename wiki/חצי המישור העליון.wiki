@@ -8,7 +8,7 @@
 # מתיחות <math>(x, y) \mapsto (\lambda x, \lambda y)</math>, <math>\lambda \gt 0</math>.
 
 '''טענה.''' יהיו <math>A</math> ו-<math>B</math> [[חצי מעגל|חצאי מעגלים]] בחצי המישור העליון שמרכזיהם על השפה (ציר ה-<math>x</math>). אז יש העתקה אפינית שמעבירה את <math>A</math> ל-<math>B</math>.
-:'''הוכחה.''' תחילה מזיזים את מרכז <math>A</math> ל-<math>(0, 0)</math>. אחר כך לוקחים <math>\lambda = (\text{קוטר } B)/(\text{קוטר } A)</math> ומותחים. לבסוף מזיזים את <math>(0, 0)</math> למרכז של <math>B</math>.
+:'''הוכחה.''' תחילה מזיזים את מרכז <math>A</math> ל-<math>(0, 0)</math>. אחר כך לוקחים <math>\lambda = \operatorname{diam} B/\operatorname{diam} A</math> (היחס בין הקטרים) ומותחים. לבסוף מזיזים את <math>(0, 0)</math> למרכז של <math>B</math>.
 
 == גאומטריה של היפוך ==
 '''הגדרה.''' <math>\mathcal Z := \left\{\left(\cos^2\theta, \tfrac12\sin 2\theta\right) \;\middle|\; 0 \lt \theta \lt \pi\right\}</math>.

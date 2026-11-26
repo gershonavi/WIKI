@@ -9,7 +9,7 @@
 
 '''בדיקה מספרית.''' בחישוב שלנו:
 {| class="wikitable" style="text-align:center"
-! <math>x</math> !! <math>\sum_{p\lt x}(\log p)^2</math> !! <math>\sum_{pq\lt x}\log p\log q</math> !! סכום !! <math>2x\log x</math> !! <math>(\text{סכום} - 2x\log x)/x</math>
+! <math>x</math> !! <math>\sum_{p\lt x}(\log p)^2</math> !! <math>\sum_{pq\lt x}\log p\log q</math> !! <math>S</math> (סכום) !! <math>2x\log x</math> !! <math>(S - 2x\log x)/x</math>
 |-
 | <math>10^4</math> || 81399 || 56378 || 137777 || 184207 || <math>-4.643</math>
 |-

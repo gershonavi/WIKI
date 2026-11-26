@@ -19,8 +19,8 @@
 לסימן החזקה ה-<math>n</math>-ית יש תכונות שמקבילות לגמרי לאלה של [[סימן יעקובי]] הריבועי הקלאסי (כאן <math>\zeta</math> שורש יחידה פרימיטיבי קבוע מסדר <math>n</math>):
 :<math>\left(\frac{\alpha}{\mathfrak{p} }\right)_n = \begin{cases}
 0 & \alpha\in\mathfrak{p},\\
-1 & \alpha\notin\mathfrak{p}\ \text{ויש}\ \eta \in\mathcal{O}_k\ \text{עם}\ \alpha \equiv \eta^n \pmod{\mathfrak{p}},\\
-\zeta^s \ne 1 & \alpha\notin\mathfrak{p}\ \text{ואין}\ \eta\ \text{כזה.}
+1 & \alpha\notin\mathfrak{p},\ \exists\, \eta \in\mathcal{O}_k:\ \alpha \equiv \eta^n \pmod{\mathfrak{p}},\\
+\zeta^s \ne 1 & \alpha\notin\mathfrak{p},\ \nexists\, \eta \in\mathcal{O}_k:\ \alpha \equiv \eta^n \pmod{\mathfrak{p}}.
 \end{cases}</math>
 בכל המקרים (אפס או לא),
 :<math>\left(\frac{\alpha}{\mathfrak{p}}\right)_n \equiv \alpha^{\frac{\mathrm{N} \mathfrak{p} -1}{n}}\pmod{\mathfrak{p}},\qquad \left(\frac{\alpha}{\mathfrak{p}}\right)_n \left(\frac{\beta}{\mathfrak{p}}\right)_n = \left(\frac{\alpha\beta}{\mathfrak{p} }\right)_n,\qquad \alpha \equiv\beta\pmod{\mathfrak{p}} \ \Rightarrow \ \left(\frac{\alpha}{\mathfrak{p} }\right)_n = \left(\frac{\beta}{\mathfrak{p} }\right)_n .</math>

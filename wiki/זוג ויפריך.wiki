@@ -1,5 +1,5 @@
 ב[[מתמטיקה]], '''זוג ויפריך''' הוא זוג [[מספר ראשוני|מספרים ראשוניים]] <math>p</math> ו-<math>q</math> שמקיימים
-:<math>p^{q - 1} \equiv 1 \pmod{q^2} \quad\text{וגם}\quad q^{p - 1} \equiv 1 \pmod{p^2}.</math>
+:<math>p^{q - 1} \equiv 1 \pmod{q^2}</math> ו-<math>q^{p - 1} \equiv 1 \pmod{p^2}</math>.
 במילים אחרות, <math>q</math> הוא ראשוני ויפריך בבסיס <math>p</math>, ו-<math>p</math> הוא ראשוני ויפריך בבסיס <math>q</math>; או, בלשון מנות פרמה, <math>q \mid q_q(p)</math> ו-<math>p \mid q_p(q)</math>.
 
 זוגות ויפריך נקראים על שם המתמטיקאי הגרמני ארתור ויפריך. יש להם תפקיד חשוב בהוכחה של פרדה מיהאילסקו מ-2002{{הערה|1=<span dir="ltr">P. Mihăilescu, Primary cyclotomic units and a proof of Catalan's conjecture, J. Reine Angew. Math. 572 (2004), pp. 167–195.</span>|כיווון=שמאל}} ל[[השערת קטלן|משפט מיהאילסקו]] (שנקרא קודם השערת קטלן).{{הערה|1=<span dir="ltr">J. Daems, A Cyclotomic Proof of Catalan's Conjecture, Leiden.</span>|כיווון=שמאל}} אחד הצעדים בהוכחה הוא שאם למשוואה <math>x^p - y^q = 1</math> יש פתרון עם <math>x, y \gt 0</math> ו-<math>p, q</math> ראשוניים אי-זוגיים, אז <math>(p, q)</math> חייב להיות זוג ויפריך (תוצאה שמיהאילסקו הוכיח ב-2000). כיוון שזוגות כאלה נדירים מאוד, זה היה צעד ראשון, אבל ההוכחה הסופית עוקפת את הצורך לחפש אותם.

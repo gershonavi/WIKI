@@ -8,7 +8,7 @@
 
 === שקילות של תבניות ===
 שתי תבניות <math>g(x, y)</math> ו-<math>h(x, y)</math> נקראות שקולות (או '''שקולות במובן הצר''') אם יש שלמים <math>\alpha, \beta, \gamma, \delta</math> כך ש-
-:<math>\alpha\delta - \beta\gamma = 1 \quad\text{ו-}\quad g(\alpha x + \beta y, \gamma x + \delta y) = h(x, y).</math>
+:<math>\alpha\delta - \beta\gamma = 1</math> ו-<math>g(\alpha x + \beta y, \gamma x + \delta y) = h(x, y)</math>.
 מסמנים זאת <math>g(x, y) \sim h(x, y)</math>. היחס <math>\sim</math> הוא [[יחס שקילות]] על קבוצת התבניות, ומחלקת השקילות של <math>g</math> מסומנת <math>[g(x, y)]</math>. שתי תבניות נקראות '''שקולות שלא במובן הצר''' אם מתקיים אותו דבר עם <math>\alpha\delta - \beta\gamma = -1</math>. קל לראות שלתבניות שקולות (בכל אחד מהמובנים) יש אותה דיסקרימיננטה.
 
 == הניסוח של גאוס לחוק ההרכבה ==

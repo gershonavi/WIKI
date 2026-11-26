@@ -21,7 +21,7 @@ W_{2n}W_2W_1^2 &= W_{n+2}W_n W_{n-1}^2 - W_n W_{n-2}W_{n+1}^2,\qquad n\ge 3.
 
 == נוסחת הנסיגה הכללית ==
 תכונה יסודית של סדרות התחלקות אליפטיות היא שהן מקיימות את נוסחת הנסיגה הכללית
-:<math>W_{n+m}W_{n-m}W_r^2 = W_{n+r}W_{n-r}W_m^2 - W_{m+r}W_{m-r}W_n^2\quad\text{לכל}\quad n \gt m \gt r.</math>
+:<math>W_{n+m}W_{n-m}W_r^2 = W_{n+r}W_{n-r}W_m^2 - W_{m+r}W_{m-r}W_n^2\quad\forall\, n \gt m \gt r.</math>
 (הנוסחה מופעלת לעיתים קרובות עם <math>r = 1</math> ו-<math>W_1 = 1</math>.)
 
 == סדרות לא סינגולריות ==
@@ -46,7 +46,7 @@ W_{2n}W_2W_1^2 &= W_{n+2}W_n W_{n-1}^2 - W_n W_{n-2}W_{n+1}^2,\qquad n\ge 3.
 
 == עקומים אליפטיים ונקודות ==
 וורד הוכיח שלכל סדרת התחלקות אליפטית לא סינגולרית <math>(W_n)</math> מתאימים עקום אליפטי <math>E/\mathbb Q</math> ונקודה <math>P \in E(\mathbb Q)</math> כך ש-
-:<math>W_n = \psi_n(P)\qquad\text{לכל}~n \ge 1.</math>
+:<math>W_n = \psi_n(P)\qquad\forall\, n \ge 1.</math>
 כאן <math>\psi_n</math> הוא פולינום החלוקה ה-<math>n</math>-י של <math>E</math>; השורשים של <math>\psi_n</math> הם הנקודות השונות מאפס מסדר <math>n</math> על <math>E</math>. יש נוסחה מסובכת{{הערה|1=הנוסחה היא של וורד; ראו את הנספח ל-<span dir="ltr">J. H. Silverman, N. Stephens, The sign of an elliptic divisibility sequence, J. Ramanujan Math. Soc. 21 (2006), pp. 1–17.</span>|כיווון=שמאל}} ל-<math>E</math> ול-<math>P</math> במונחי <math>W_1, W_2, W_3, W_4</math>.
 
 יש הגדרה חלופית שמשתמשת ישירות בעקומים אליפטיים, ונותנת סדרה שמקיימת, עד כדי סימן, כמעט את נוסחת הנסיגה. מתחילים בעקום אליפטי <math>E/\mathbb Q</math> הנתון במשוואת ויירשטראס ובנקודה <math>P \in E(\mathbb Q)</math> שאינה נקודת פיתול, וכותבים את קואורדינטות ה-<math>x</math> של הכפולות של <math>P</math> כ-
@@ -65,9 +65,9 @@ W_{2n}W_2W_1^2 &= W_{n+2}W_n W_{n-1}^2 - W_n W_{n-2}W_{n+1}^2,\qquad n\ge 3.
 
 == סדרות מעל שדות סופיים ==
 סדרת התחלקות אליפטית מעל [[שדה סופי]] <math>\mathbb F_q</math>, או באופן כללי מעל כל שדה, היא סדרה של איברי השדה שמקיימת את נוסחת הנסיגה. סדרה כזו מעל שדה סופי תמיד מחזורית, ולכן יש לה דרגת הופעה <math>r</math>. המחזור של סדרה מעל <math>\mathbb F_q</math> הוא אז מהצורה <math>rt</math>, כאשר <math>r</math> ו-<math>t</math> מקיימים
-:<math>r \le \left(\sqrt q+1\right)^2 \quad\text{ו-}\quad t \mid q-1.</math>
+:<math>r \le \left(\sqrt q+1\right)^2</math> ו-<math>t \mid q-1</math>.
 (החסם על <math>r</math> הוא חסם האסה על מספר הנקודות של העקום.) ליתר דיוק, יש איברים <math>A</math> ו-<math>B</math> ב-<math>\mathbb F_q^*</math> כך ש-
-:<math>W_{ri+j} = W_j\cdot A^{ij} \cdot B^{i^2}\quad\text{לכל}~i \ge 0~\text{ולכל}~j \ge 1.</math>
+:<math>W_{ri+j} = W_j\cdot A^{ij} \cdot B^{i^2}\quad\forall\, i \ge 0,\ \forall\, j \ge 1.</math>
 הערכים של <math>A</math> ו-<math>B</math> קשורים לזיווג טייט של הנקודה על העקום האליפטי המתאים.
 
 ''דוגמה:'' כשמצמצמים את A006769 מודולו 5, 7, 11, 13, האיבר הראשון שמתאפס הוא במקום <math>r = 8, 9, 17, 16</math> בהתאמה – ואכן <math>r \le (\sqrt p + 1)^2 \approx 10.5, 13.3, 18.6, 21.2</math>.

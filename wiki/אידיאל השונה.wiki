@@ -31,7 +31,7 @@
 '''השונה היחסי''' <math>\delta_{L/K}</math> מוגדר באופן דומה עבור הרחבה <math>L/K</math> של שדות מספרים. הנורמה היחסית של השונה היחסי שווה לדיסקרימיננטה היחסית <math>\Delta_{L/K}</math>.{{הערה|שם=N201|1=J. Neukirch, ''Algebraic Number Theory'', p. 201|כיווון=שמאל}} במגדל שדות <math>L/K/F</math> השונים היחסיים קשורים ביחס <math>\delta_{L/F} = \delta_{L/K}\,\delta_{K/F}</math>.{{הערה|שם=N195}}{{הערה|שם=FT126|1=A. Fröhlich, M. J. Taylor, ''Algebraic Number Theory'', p. 126|כיווון=שמאל}}
 
 השונה היחסי שווה למאפס (annihilator) של מודול הדיפרנציאלים של קהלר היחסי <math>\Omega^1_{\mathcal O_L/\mathcal O_K}</math>:{{הערה|שם=N201}}{{הערה|1=J.-P. Serre, ''Local Fields'', p. 59|כיווון=שמאל}}
-:<math>\delta_{L/K} = \{ x \in \mathcal O_L : x\, \mathrm{d} y = 0 \ \text{לכל}\ y \in \mathcal O_L \} .</math>
+:<math>\delta_{L/K} = \{ x \in \mathcal O_L : x\, \mathrm{d} y = 0 \ \forall\, y \in \mathcal O_L \} .</math>
 
 המחלקה של השונה היחסי <math>\delta_{L/K}</math> היא תמיד ריבוע ב[[חבורת מחלקות האידיאלים|חבורת המחלקות]] של <math>\mathcal O_L</math>.{{הערה|1=E. Hecke, ''Lectures on the Theory of Algebraic Numbers'', pp. 234–236|כיווון=שמאל}} מאחר שהדיסקרימיננטה היחסית היא הנורמה של השונה היחסי, היא ריבוע של מחלקה בחבורת המחלקות של <math>\mathcal O_K</math>;{{הערה|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', p. 304|כיווון=שמאל}} למעשה, היא הריבוע של '''מחלקת שטייניץ''' של <math>\mathcal O_L</math> כמודול מעל <math>\mathcal O_K</math>.{{הערה|1=W. Narkiewicz, ''Elementary and Analytic Theory of Algebraic Numbers'', p. 401|כיווון=שמאל}}
 

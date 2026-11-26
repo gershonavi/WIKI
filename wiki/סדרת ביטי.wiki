@@ -47,7 +47,7 @@
 
 === הוכחה שנייה ===
 '''אין התנגשויות.''' נניח, בניגוד למשפט, שיש שלמים <math>j \gt 0</math>, <math>k</math> ו-<math>m</math> כך ש-<math>j = \lfloor k\cdot r\rfloor = \lfloor m\cdot s\rfloor</math>. זה שקול לאי-השוויונות <math>j \le k\cdot r \lt j + 1</math> ו-<math>j \le m\cdot s \lt j + 1</math>. עבור <math>j</math> שונה מאפס, האי-רציונליות של <math>r</math> ו-<math>s</math> אינה מתיישבת עם שוויון, ולכן <math>j \lt k\cdot r \lt j + 1</math> ו-<math>j \lt m\cdot s \lt j + 1</math>, ומכאן
-:<math>\frac jr \lt k \lt \frac{j + 1}r \quad\text{ו-}\quad \frac js \lt m \lt \frac{j + 1}s.</math>
+:<math>\frac jr \lt k \lt \frac{j + 1}r</math> ו-<math>\frac js \lt m \lt \frac{j + 1}s</math>.
 חיבור והשימוש בהנחה <math>1/r + 1/s = 1</math> נותנים <math>j \lt k + m \lt j + 1</math>, וזה בלתי אפשרי (אין שלם בין שני שלמים סמוכים). לכן ההנחה שגויה.
 
 '''אין "חורים".''' נניח, בניגוד למשפט, שיש שלמים <math>j \gt 0</math>, <math>k</math> ו-<math>m</math> כך ש-

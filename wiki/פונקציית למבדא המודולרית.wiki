@@ -48,7 +48,7 @@
 (בדקנו את ארבע המשוואות המודולריות ואת שלושת הביטויים ל-<math>v</math> בחישוב מספרי, עבור <math>\tau = 1.1i</math>.)
 
 כיוון ש-<math>\lambda(i) = 1/2</math>, אפשר להשתמש במשוואות המודולריות כדי לקבל [[מספר אלגברי|ערכים אלגבריים]] של <math>\lambda(pi)</math> לכל ראשוני <math>p</math>. (לכל חזקת ראשוני אפשר לחזור על המשוואה המודולרית ממעלה <math>p</math>, ולכן התהליך נותן ערכים אלגבריים של <math>\lambda(ni)</math> לכל <math>n</math> טבעי.) למשל, עבור <math>p = 2</math>: <math>v^8 = \tfrac12</math> והמשוואה <math>(1 + u^4)^2 = 8u^4</math> נותנת <math>u^4 = 3 - 2\sqrt2 = (\sqrt2 - 1)^2</math>, ולכן <math>\lambda(2i) = u^8 = (\sqrt2 - 1)^4 \approx 0.02944</math>. הערכים האלגבריים של <math>\lambda(ni)</math> נתונים גם על ידי{{הערה|שם=Jac|1=<span dir="ltr">C. G. J. Jacobi, Fundamenta nova theoriae functionum ellipticarum, 1829, p. 42.</span>|כיווון=שמאל}}
-:<math>\lambda(ni) = \prod_{k=1}^{n/2}\operatorname{sl}^8\frac{(2k - 1)\varpi}{2n} \quad (n \text{ זוגי}), \qquad \lambda(ni) = \frac1{2^n}\prod_{k=1}^{n-1}\left(1 - \operatorname{sl}^2\frac{k\varpi}n\right)^2 \quad (n \text{ אי-זוגי}),</math>
+:<math>\lambda(ni) = \prod_{k=1}^{n/2}\operatorname{sl}^8\frac{(2k - 1)\varpi}{2n} \quad (2 \mid n), \qquad \lambda(ni) = \frac1{2^n}\prod_{k=1}^{n-1}\left(1 - \operatorname{sl}^2\frac{k\varpi}n\right)^2 \quad (2 \nmid n),</math>
 כאשר <math>\operatorname{sl}</math> הוא הסינוס הלמניסקטי ו-<math>\varpi \approx 2.62206</math> הוא קבוע הלמניסקטה (ו-<math>\operatorname{sl}(a\varpi)</math> אלגברי לכל <math>a</math> רציונלי). (בדקנו את שתי הנוסחאות עבור <math>n = 2, \dots, 7</math>.)
 
 == למבדא-כוכב ==

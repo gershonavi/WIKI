@@ -15,7 +15,7 @@
 החבורה <math>(\mathbb Z/N\mathbb Z)^\times</math> אבלית וסופית, ולכן המרחב <math>M_k(\Gamma_1(N))</math> מתפרק לסכום ישר של מרחבים עצמיים לפי ה[[קרקטר דיריכלה|קרקטרים]] שלה:
 :<math>M_k(\Gamma_1(N)) = \bigoplus_\chi M_k(N, \chi), \qquad M_k(N, \chi) = \{f : \langle d\rangle f = \chi(d)f\ \ \forall d\}.</math>
 באופן שקול, <math>f \in M_k(N, \chi)</math> אם ורק אם
-:<math>f\left(\frac{a\tau + b}{c\tau + d}\right) = \chi(d)(c\tau + d)^kf(\tau) \quad \text{לכל } \begin{pmatrix} a & b \\ c & d\end{pmatrix} \in \Gamma_0(N).</math>
+:<math>f\left(\frac{a\tau + b}{c\tau + d}\right) = \chi(d)(c\tau + d)^kf(\tau) \quad \forall\, \begin{pmatrix} a & b \\ c & d\end{pmatrix} \in \Gamma_0(N).</math>
 כיוון ש-<math>-I \in \Gamma_0(N)</math> פועלת כ-<math>(-1)^k</math>, המרחב <math>M_k(N, \chi)</math> הוא אפס אלא אם <math>\chi(-1) = (-1)^k</math>. המרחב של הקרקטר הטריוויאלי הוא <math>M_k(\Gamma_0(N))</math>.
 
 == הקשר לאופרטורי הקה ==

@@ -69,10 +69,10 @@ T_nf(z) = n^{2k-1}\sum_{a\ge1,\ ad=n,\ 0\le b\lt d}d^{-2k}f\left(\frac{az + b}d\
 
 
 ```math
-\gamma(n) = \begin{cases} c(np) & p \nmid n, \\ c(np) + c(n/p) & p \mid n,\end{cases} \qquad p \text{ ראשוני אי-זוגי}.
+\gamma(n) = \begin{cases} c(np) & p \nmid n, \\ c(np) + c(n/p) & p \mid n,\end{cases} \qquad p \in \mathbb P,\ p \gt 2.
 ```
 
-
+ (כאן $`\mathbb P`$ היא קבוצת המספרים הראשוניים)
 
 ### דוגמה: פעולת $`T_3`$ ו-$`T_5`$
 
@@ -97,7 +97,7 @@ T_nf(z) = n^{2k-1}\sum_{a\ge1,\ ad=n,\ 0\le b\lt d}d^{-2k}f\left(\frac{az + b}d\
 
 
 ```math
-\mathcal F = \left\langle\Delta^k \mid k \text{ אי-זוגי}\right\rangle = \left\langle\Delta, \Delta^3, \Delta^5, \Delta^7, \Delta^9, \ldots\right\rangle.
+\mathcal F = \left\langle\Delta^k : 2 \nmid k\right\rangle = \left\langle\Delta, \Delta^3, \Delta^5, \Delta^7, \Delta^9, \ldots\right\rangle.
 ```
 
  (החזקות הזוגיות אינן מעניינות: $`\Delta^{2k}(q) = \Delta^k(q^2)`$ מודולו 2, ו-$`T_p`$ מתחלף עם $`q \mapsto q^2`$.) נכתוב $`\mathcal F(n) = \left\langle\Delta, \Delta^3, \Delta^5, \ldots, \Delta^{2n-1}\right\rangle`$, כך ש-$`\dim\mathcal F(n) = n`$, ונגדיר את $`A(n)`$ כתת-האלגברה מעל $`\mathbb F_2`$ של $`\mathrm{End}(\mathcal F(n))`$ שנוצרת על ידי $`1`$ ועל ידי האופרטורים $`T_p`$. אם $`\mathfrak m(n)`$ הוא תת-המרחב של $`\mathrm{End}(\mathcal F(n))`$ שנפרש על ידי המכפלות $`T_{p_1}T_{p_2}\cdots T_{p_k}`$ עם $`k \ge 1`$ (זה האידיאל המקסימלי, שמורכב מאופרטורים נילפוטנטיים), אז $`A(n) = \mathbb F_2 \oplus \mathfrak m(n)`$.[^9]
