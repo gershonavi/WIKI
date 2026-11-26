@@ -1,0 +1,227 @@
+'''העלאה בחזקה מודולרית''' היא [[חזקה (מתמטיקה)|העלאה בחזקה]] שמתבצעת [[חשבון מודולרי|מודולו]] מספר נתון. היא שימושית ב[[מדעי המחשב]], ובמיוחד ב[[הצפנה אסימטרית|קריפטוגרפיה של מפתח ציבורי]], שבה משתמשים בה גם ב[[פרוטוקול דיפי-הלמן|החלפת מפתחות דיפי–הלמן]] וגם במפתחות הציבוריים והפרטיים של [[RSA]].
+
+תוצאת ההעלאה בחזקה המודולרית היא השארית <math>c</math> המתקבלת כשמעלים מספר שלם <math>b</math> (הבסיס) בחזקת <math>e</math> (המעריך) ומחלקים במספר שלם חיובי <math>m</math> (המודולוס), כלומר <math>c = b^e \bmod m</math>. מהגדרת [[חילוק עם שארית]] נובע ש-<math>0 \le c \lt m</math>.
+
+למשל, עבור <math>b = 5</math>, <math>e = 3</math> ו-<math>m = 13</math>, חלוקת <math>5^3 = 125</math> ב-13 משאירה שארית <math>c = 8</math> (כי <math>125 = 9\cdot 13 + 8</math>).
+
+כאשר <math>b</math> ו-<math>m</math> [[מספרים זרים|זרים]], אפשר לאפשר גם מעריך <math>e</math> שלילי, בעזרת ה[[הופכי כפלי מודולרי|הופכי הכפלי]] <math>d</math> של <math>b</math> מודולו <math>m</math> (שאותו מוצאים למשל ב[[אלגוריתם אוקלידס המורחב|אלגוריתם אוקלידס המורחב]]). ליתר דיוק,
+:<math>c = b^e \bmod m = d^{-e} \bmod m,</math>
+כאשר <math>e \lt 0</math> ו-<math>b \cdot d \equiv 1 \pmod m</math>. למשל, <math>4 \cdot 373 = 1492 = 3\cdot 497 + 1</math>, ולכן ההופכי של 4 מודולו 497 הוא 373, ו-<math>4^{-13} \equiv 373^{13} \equiv 86 \pmod{497}</math>. ואכן <math>445 \cdot 86 \equiv 1 \pmod{497}</math>, כפי שצריך, כי <math>4^{13} \equiv 445</math> (ראו להלן; בדקנו בחישוב).
+
+העלאה בחזקה מודולרית קלה לחישוב, גם עבור מספרים גדולים מאוד. לעומת זאת, חישוב ה[[בעיית הלוגריתם הבדיד|לוגריתם הבדיד]], כלומר מציאת המעריך <math>e</math> כשנתונים <math>b</math>, <math>c</math> ו-<math>m</math>, נחשב לקשה. התנהגות זו, של [[פונקציה חד-כיוונית]], הופכת את ההעלאה בחזקה המודולרית למועמדת טבעית לשימוש באלגוריתמים קריפטוגרפיים.
+
+== שיטה ישירה ==
+הדרך הישירה ביותר לחשב חזקה מודולרית היא לחשב את <math>b^e</math> במלואו, ואז לקחת את התוצאה מודולו <math>m</math>. נניח שרוצים לחשב את <math>c</math> עבור <math>b = 4</math>, <math>e = 13</math> ו-<math>m = 497</math>:
+:<math>c \equiv 4^{13} \pmod{497}.</math>
+מחשבון נותן <math>4^{13} = 67\,108\,864</math>, ולקיחת השארית מודולו 497 נותנת <math>c = 445</math>.
+
+שימו לב ש-<math>b</math> הוא מספר בן ספרה אחת ו-<math>e</math> בן שתי ספרות, אבל <math>b^e</math> הוא כבר בן שמונה ספרות.
+
+בקריפטוגרפיה חזקה <math>b</math> הוא לעיתים קרובות באורך 1024 [[סיבית|סיביות]] לפחות.{{הערה|1=<span dir="ltr">[https://weakdh.org/ Weak Diffie–Hellman and the Logjam Attack], weakdh.org.</span>|כיווון=שמאל}} נניח ש-<math>b = 5 \times 10^{76}</math> ו-<math>e = 17</math>, ערכים סבירים לגמרי. כאן <math>b</math> הוא בן 77 ספרות ו-<math>e</math> בן שתיים, אבל <math>b^e</math> הוא בן 1304 ספרות עשרוניות (בדקנו בחישוב). מחשבים מודרניים מסוגלים לחישובים כאלה, אבל גודל המספרים מאט מאוד את החישוב, וכשמגדילים את <math>b</math> ואת <math>e</math> כדי לשפר את האבטחה, <math>b^e</math> הופך לבלתי ניתן לטיפול. מעבר לכך, השיטה דורשת <math>\Theta(e)</math> כפלים.
+
+== שיטה חסכונית בזיכרון ==
+כדי לשמור על מספרים קטנים צריך לבצע פעולות צמצום מודולו <math>m</math> נוספות, אבל הגודל הקטן מאיץ כל פעולה, וכך חוסכים בסך הכול זמן וגם זיכרון. האלגוריתם מתבסס על הזהות
+:<math>(a \cdot b) \bmod m = \bigl[(a \bmod m) \cdot (b \bmod m)\bigr] \bmod m.</math>
+
+האלגוריתם המתוקן:
+:'''קלט:''' מספר שלם <math>b</math> (בסיס), מספר שלם <math>e</math> (מעריך) ומספר שלם חיובי <math>m</math> (מודולוס).
+:'''פלט:''' <math>c = b^e \bmod m</math>.
+:# מאתחלים <math>c = 1</math> ומשתנה לולאה <math>e' = 0</math>.
+:# כל עוד <math>e' \lt e</math>:
+:## מגדילים את <math>e'</math> ב-1;
+:## מחשבים <math>c = (b \cdot c) \bmod m</math>.
+:# מחזירים את <math>c</math>.
+
+בסוף כל סיבוב של הלולאה מתקיים <math>c \equiv b^{e'} \pmod m</math>. האלגוריתם מסתיים אחרי <math>e</math> סיבובים, ואז <math>c</math> מכיל את <math>b^e \bmod m</math>.
+
+נחזור לדוגמה <math>b = 4</math>, <math>e = 13</math>, <math>m = 497</math>. האלגוריתם מבצע שלושה-עשר סיבובים:
+
+{| class="wikitable" style="text-align:center"
+! <math>e'</math> !! חישוב !! <math>c</math>
+|-
+| 1 || <math>4\cdot 1 = 4</math> || 4
+|-
+| 2 || <math>4\cdot 4 = 16</math> || 16
+|-
+| 3 || <math>4\cdot 16 = 64</math> || 64
+|-
+| 4 || <math>4\cdot 64 = 256</math> || 256
+|-
+| 5 || <math>4\cdot 256 = 1024 = 2\cdot 497 + 30</math> || 30
+|-
+| 6 || <math>4\cdot 30 = 120</math> || 120
+|-
+| 7 || <math>4\cdot 120 = 480</math> || 480
+|-
+| 8 || <math>4\cdot 480 = 1920 = 3\cdot 497 + 429</math> || 429
+|-
+| 9 || <math>4\cdot 429 = 1716 = 3\cdot 497 + 225</math> || 225
+|-
+| 10 || <math>4\cdot 225 = 900 = 497 + 403</math> || 403
+|-
+| 11 || <math>4\cdot 403 = 1612 = 3\cdot 497 + 121</math> || 121
+|-
+| 12 || <math>4\cdot 121 = 484</math> || 484
+|-
+| 13 || <math>4\cdot 484 = 1936 = 3\cdot 497 + 445</math> || 445
+|}
+
+התשובה הסופית היא 445, כמו בשיטה הישירה.
+
+כמו בשיטה הראשונה, גם כאן נדרשים <math>O(e)</math> כפלים. אבל כל הכפלים הם של מספרים קטנים מ-<math>m</math>, ולכן כל כפל זול בהרבה מהכפלים של מספרים ענקיים בשיטה הישירה.
+
+בפסאודו-קוד:
+<div dir="ltr">
+<pre>
+function modular_pow(base, exponent, modulus) is
+    if modulus = 1 then
+        return 0
+    c := 1
+    for e_prime = 0 to exponent-1 do
+        c := (c * base) mod modulus
+    return c
+</pre>
+</div>
+
+== שיטה בינארית מימין לשמאל ==
+שיטה שלישית מקטינה מאוד את מספר הפעולות, תוך שמירה על אותה צריכת זיכרון כמו בשיטה הקודמת. היא משלבת את השיטה הקודמת עם עיקרון כללי יותר שנקרא [[העלאה בחזקה על ידי ריבוע חוזר]] (או "העלאה בחזקה בינארית").
+
+ראשית כותבים את המעריך <math>e</math> ב[[בסיס בינארי]]:
+:<math>e = \sum_{i=0}^{n-1} a_i 2^i.</math>
+בכתיב זה ה'''אורך''' של <math>e</math> הוא <math>n</math> סיביות. כל <math>a_i</math> הוא 0 או 1, ולפי ההגדרה <math>a_{n-1} = 1</math>. אז
+:<math>b^e = b^{\left( \sum_{i=0}^{n-1} a_i 2^i \right)} = \prod_{i=0}^{n-1} b^{a_i 2^i},</math>
+ולכן
+:<math>c \equiv \prod_{i=0}^{n-1} b^{a_i 2^i} \pmod m.</math>
+
+=== פסאודו-קוד ===
+הפסאודו-קוד הבא מבוסס על הספר ''Applied Cryptography'' של ברוס שנייר.{{הערה|שם=sch|1=<span dir="ltr">B. Schneier, Applied Cryptography: Protocols, Algorithms, and Source Code in C, 2nd ed., Wiley, 1996, p. 244.</span>|כיווון=שמאל}}
+<div dir="ltr">
+<pre>
+function modular_pow(base, exponent, modulus) is
+    if modulus = 1 then
+        return 0
+    Assert :: (modulus - 1) * (modulus - 1) does not overflow base
+    result := 1
+    base := base mod modulus
+    while exponent > 0 do
+        if (exponent mod 2 == 1) then
+            result := (result * base) mod modulus
+        exponent := exponent >> 1
+        base := (base * base) mod modulus
+    return result
+</pre>
+</div>
+בכניסה הראשונה ללולאה המשתנה <code>base</code> שווה ל-<math>b</math>. הריבוע החוזר בשורה <code>base := (base * base) mod modulus</code> מבטיח שבסוף כל סיבוב המשתנה <code>base</code> שווה ל-<math>b^{2^i} \bmod m</math>, כאשר <math>i</math> הוא מספר הסיבובים שבוצעו. השורה שבתוך ה-<code>if</code> מבצעת את הכפל במכפלה <math>\prod b^{a_i 2^i}</math>: אם הסיבית <math>a_i</math> היא 0 לא קורה דבר (זה כפל ב-1), ואם היא 1 מכפילים את התוצאה ב-<code>base</code>.
+
+=== דוגמה מלאה ===
+נחשב שוב את <math>4^{13} \bmod 497</math>. בבסיס 2, <math>13 = 1101_2</math>, כלומר <math>a_0 = 1</math>, <math>a_1 = 0</math>, <math>a_2 = 1</math>, <math>a_3 = 1</math>, ולכן הלולאה רצה ארבע פעמים. מאתחלים <math>R \leftarrow 1</math> ו-<math>x \leftarrow 4</math>:
+
+{| class="wikitable" style="text-align:center"
+! צעד !! סיבית !! עדכון <math>R</math> !! <math>R</math> !! עדכון <math>x</math> !! <math>x</math>
+|-
+| 1 || <math>a_0 = 1</math> || <math>1\cdot 4</math> || 4 <math>(=b^1)</math> || <math>4^2 = 16</math> || 16 <math>(=b^2)</math>
+|-
+| 2 || <math>a_1 = 0</math> || ללא שינוי || 4 || <math>16^2 = 256</math> || 256 <math>(=b^4)</math>
+|-
+| 3 || <math>a_2 = 1</math> || <math>4\cdot 256 = 1024 \equiv 30</math> || 30 <math>(=b^5)</math> || <math>256^2 = 65\,536 \equiv 429</math> || 429 <math>(=b^8)</math>
+|-
+| 4 || <math>a_3 = 1</math> || <math>30\cdot 429 = 12\,870 \equiv 445</math> || 445 <math>(=b^{13})</math> || (מיותר) ||
+|}
+
+קיבלנו <math>4^{13} \equiv 445 \pmod{497}</math>, כמו באלגוריתמים הקודמים (בדקנו בחישוב). למשל <math>65\,536 = 131 \cdot 497 + 429</math> ו-<math>12\,870 = 25\cdot 497 + 445</math>.
+
+זמן הריצה של האלגוריתם הוא <math>O(\log e)</math> כפלים. כשהמעריך גדול זה יתרון עצום על פני שני האלגוריתמים הקודמים, שדורשים <math>O(e)</math> כפלים. למשל, עבור המעריך <math>2^{20} = 1\,048\,576</math> האלגוריתם מבצע 20 צעדים במקום יותר ממיליון. עבור מעריך בן 2048 סיביות, כמו ב-RSA, מספר הכפלים הוא לכל היותר כ-4096, בעוד שהשיטה הקודמת הייתה דורשת בערך <math>2^{2048}</math> כפלים.
+
+=== מימוש בפייתון ===
+<div dir="ltr">
+<pre>
+def mod_pow(b, e, m):
+    if m == 1:
+        return 0
+    r = 1
+    b = b % m
+    while e > 0:
+        if e % 2 == 1:
+            r = (r * b) % m
+        b = (b * b) % m
+        e >>= 1
+    return r
+</pre>
+</div>
+בפועל, בפייתון אין צורך בכך: הפונקציה המובנית <code>pow(b, e, m)</code> עושה בדיוק את זה. למשל <code>pow(4, 13, 497)</code> מחזיר 445, ו-<code>pow(4, -13, 497)</code> (מגרסה 3.8) מחזיר 86.
+
+== שיטה בינארית משמאל לימין ==
+אפשר לעבור על סיביות המעריך גם בסדר ההפוך, מהסיבית המשמעותית ביותר. בכל צעד מעלים בריבוע את התוצאה, ואם הסיבית היא 1 מכפילים ב-<math>b</math>. כך מחשבים את <math>b^{13}</math> (<math>13 = 1101_2</math>, ארבעה צעדים), ובסוגריים הערכים עבור <math>b = 4</math> מודולו 497:
+
+:מאתחלים <math>r \leftarrow 1\ (= b^0)</math>.
+:צעד 1: <math>r \leftarrow r^2\ (= b^0)</math>; הסיבית היא 1, ולכן <math>r \leftarrow r\cdot b\ (= b^1;\ 4)</math>.
+:צעד 2: <math>r \leftarrow r^2\ (= b^2;\ 16)</math>; הסיבית היא 1, ולכן <math>r \leftarrow r\cdot b\ (= b^3;\ 64)</math>.
+:צעד 3: <math>r \leftarrow r^2\ (= b^6;\ 4096 \equiv 120)</math>; הסיבית היא 0, וסיימנו את הצעד.
+:צעד 4: <math>r \leftarrow r^2\ (= b^{12};\ 14\,400 \equiv 484)</math>; הסיבית היא 1, ולכן <math>r \leftarrow r\cdot b\ (= b^{13};\ 1936 \equiv 445)</math>.
+
+היתרון של הגרסה הזו הוא שהכפל הנוסף הוא תמיד ב-<math>b</math> עצמו, שהוא לעיתים קרובות מספר קטן (למשל 2 ב[[מבחן ראשוניות|מבחני ראשוניות]]), ולכן הכפל זול.
+
+=== מספר הכפלים המינימלי ===
+בכרך השני של ''אמנות תכנות המחשבים'' (''Seminumerical Algorithms''), בעמוד 463, מציין [[דונלד קנות']] שבניגוד לטענות מסוימות, השיטה הבינארית '''אינה''' נותנת תמיד את מספר הכפלים הקטן ביותר. הדוגמה הנגדית הקטנה ביותר היא החזקה 15: השיטה הבינארית צריכה שישה כפלים (שלוש העלאות בריבוע ושלושה כפלים ב-<math>x</math>). במקום זאת אפשר לחשב <math>x^3</math> בשני כפלים, את <math>x^6</math> בהעלאה בריבוע של <math>x^3</math>, את <math>x^{12}</math> בהעלאה בריבוע של <math>x^6</math>, ולבסוף את <math>x^{15}</math> כמכפלה של <math>x^{12}</math> ו-<math>x^3</math> – חמישה כפלים בלבד. בדקנו בחיפוש ממצה שעד 31 המעריכים שבהם השיטה הבינארית אינה אופטימלית הם 15, 23, 27, 30 ו-31. השאלה הכללית של מספר הכפלים המינימלי היא בעיית שרשראות החיבור.
+
+== הכללות ==
+=== מטריצות ===
+את האיבר ה-<math>m</math>-י של כל [[נוסחת נסיגה|סדרה ליניארית נסיגתית]] (כמו [[סדרת פיבונאצ'י|מספרי פיבונאצ'י]] או מספרי פרין), שבה כל איבר הוא פונקציה ליניארית של <math>k</math> האיברים הקודמים, אפשר לחשב ביעילות מודולו <math>n</math> על ידי חישוב <math>A^m \bmod n</math>, כאשר <math>A</math> היא [[מטריצה מלווה|מטריצת הליווי]] המתאימה מסדר <math>k\times k</math>. השיטות שלמעלה עוברות למקרה הזה בלי שינוי. אפשר להשתמש בזה למשל ל[[מבחן ראשוניות|מבחני ראשוניות]] של מספרים גדולים <math>n</math>.
+
+'''דוגמה.''' עבור מספרי פיבונאצ'י,
+:<math>\begin{pmatrix}1&1\\1&0\end{pmatrix}^n = \begin{pmatrix}F_{n+1}&F_n\\F_n&F_{n-1}\end{pmatrix}.</math>
+חישוב המטריצה בחזקת 100 מודולו 1000 בשיטת הריבוע החוזר (<math>100 = 1100100_2</math>, ולכן בשיטה משמאל לימין מספיקות שש העלאות בריבוע ושתי הכפלות) נותן
+:<math>\begin{pmatrix}101&75\\75&26\end{pmatrix},</math>
+ולכן <math>F_{100} \equiv 75 \pmod{1000}</math>. ואכן <math>F_{100} = 354\,224\,848\,179\,261\,915\,075</math> (בדקנו בחישוב).
+
+בפסאודו-קוד, אלגוריתם רקורסיבי (שאינו [[רקורסיית זנב]]) עבור <code>ModExp(A, b, c)</code> = <math>A^b \bmod c</math>, כאשר <math>A</math> מטריצה ריבועית:
+<div dir="ltr">
+<pre>
+function Matrix_ModExp(Matrix A, int b, int c) is
+    if b == 0 then
+        return I  // the identity matrix
+    if (b mod 2 == 1) then
+        return (A * Matrix_ModExp(A, b - 1, c)) mod c
+    Matrix D := Matrix_ModExp(A, b / 2, c)
+    return (D * D) mod c
+</pre>
+</div>
+
+=== חבורות ציקליות סופיות ===
+[[פרוטוקול דיפי-הלמן|החלפת מפתחות דיפי–הלמן]] משתמשת בהעלאה בחזקה ב[[חבורה ציקלית|חבורות ציקליות]] סופיות. השיטות שלמעלה עוברות גם להקשר הזה: פשוט מחליפים בכל מקום את הכפל המודולרי <math>C \equiv AB \pmod n</math> בפעולת החבורה <math>c = ab</math>. כך, למשל, מחשבים כפולות של נקודה על [[עקום אליפטי]] ("הכפלה סקלרית") בשיטת "הכפלה וחיבור", שהיא אותו אלגוריתם בכתיב חיבורי.
+
+=== העלאה בחזקה מודולרית הפיכה וקוונטית ===
+ב[[חישוב קוונטי]], העלאה בחזקה מודולרית היא צוואר הבקבוק של [[אלגוריתם שור|האלגוריתם של שור]]. שם צריך לחשב אותה במעגל שמורכב משערים הפיכים, שאותם אפשר לפרק עוד ל[[שער קוונטי|שערים קוונטיים]] המתאימים להתקן פיזיקלי מסוים. באלגוריתם של שור הבסיס והמודולוס ידועים בכל קריאה, וזה מאפשר אופטימיזציות שונות של המעגל.{{הערה|1=<span dir="ltr">I. L. Markov, M. Saeedi, Constant-optimized quantum circuits for modular multiplication and exponentiation, Quantum Information and Computation 12 (2012), pp. 361–394, arXiv:1202.6614.</span>|כיווון=שמאל}}
+
+== מימושים בתוכנה ==
+מכיוון שהעלאה בחזקה מודולרית היא פעולה חשובה במדעי המחשב, ויש לה אלגוריתמים יעילים בהרבה מהעלאה בחזקה ואחריה לקיחת שארית, בשפות תכנות רבות ובספריות של חשבון בדיוק שרירותי יש פונקציה ייעודית לכך:
+* ב[[פייתון]], לפונקציה המובנית <code>pow()</code> יש פרמטר שלישי אופציונלי, המודולוס.
+* במחלקה <code>BigInteger</code> של [[.NET]] יש מתודה <code>ModPow()</code>.
+* במחלקה <code>java.math.BigInteger</code> של [[ג'אווה (שפת תכנות)|ג'אווה]] יש מתודה <code>modPow()</code>.
+* ב-[[MATLAB]] יש פונקציה <code>powermod</code> בארגז הכלים Symbolic Math Toolbox.
+* ב-Wolfram Language יש פונקציה <code>PowerMod</code>.
+* במודול <code>Math::BigInt</code> של [[פרל]] יש מתודה <code>bmodpow()</code>.
+* בשפה Raku יש שגרה מובנית <code>expmod</code>.
+* בטיפוס <code>big.Int</code> של [[Go (שפת תכנות)|Go]] יש מתודה <code>Exp()</code>, שהפרמטר השלישי שלה, אם אינו nil, הוא המודולוס.
+* בספריית BC Math של [[PHP]] יש פונקציה <code>bcpowmod()</code>.
+* בספרייה GMP (GNU Multiple Precision Arithmetic Library) יש פונקציה <code>mpz_powm()</code>.
+* בחבילה <code>openssl</code> של [[Ruby|רובי]] יש מתודה <code>OpenSSL::BN#mod_exp</code>.
+* ב-[[PARI/GP]] כותבים <code>Mod(b, m)^e</code>.
+
+== ראו גם ==
+* [[כפל מונטגומרי]], לחישוב השארית כשהמודולוס גדול מאוד.
+* [[צמצום בארט]], אלגוריתם לחישוב השארית כשהמודולוס גדול מאוד.
+* [[סדר כפלי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Bruce Schneier, ''Applied Cryptography: Protocols, Algorithms, and Source Code in C'', 2nd ed., Wiley, 1996.
+* Daniel M. Gordon, A survey of fast exponentiation methods, ''Journal of Algorithms'' 27 (1998), pp. 129–146.
+* Donald E. Knuth, ''The Art of Computer Programming, Vol. 2: Seminumerical Algorithms'', 3rd ed., Addison-Wesley, 1997, Section 4.6.3.
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:חשבון מודולרי]]
+[[קטגוריה:אלגוריתמים בתורת המספרים]]

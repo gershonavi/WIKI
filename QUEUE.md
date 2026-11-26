@@ -434,7 +434,7 @@ Additive number theory:
 
 ### השלמות לשיעורים 4, 5, 7 (חשבון מודולרי ואלגוריתמים) (10)
 
-- [ ] Modular exponentiation
+- [x] Modular exponentiation
 - [ ] Exponentiation by squaring
 - [x] Multiplicative order
 - [ ] Reduced residue system
