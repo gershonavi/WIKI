@@ -201,7 +201,7 @@ Additive number theory:
 - [x] Fricke involution
 - [x] Diamond operator
 - [x] Poincaré series (modular form)
-- [ ] Ring of modular forms
+- [x] Ring of modular forms
 - [ ] Weakly holomorphic modular form
 - [ ] Modular forms modulo p
 - [ ] P-adic modular form
