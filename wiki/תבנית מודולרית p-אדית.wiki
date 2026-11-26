@@ -1,0 +1,56 @@
+ב[[מתמטיקה]], '''תבנית מודולרית <math>p</math>-אדית''' היא [[תבנית מודולרית]] שהמקדמים שלה הם [[מספר p-אדי|מספרים <math>p</math>-אדיים]] ולא [[מספר מרוכב|מספרים מרוכבים]]. [[ז'אן-פייר סר]] הציג תבניות מודולריות <math>p</math>-אדיות כגבולות של תבניות מודולריות רגילות,{{הערה|שם=Serre|1=<span dir="ltr">J.-P. Serre, Formes modulaires et fonctions zêta p-adiques, in: Modular Functions of One Variable III, Lecture Notes in Mathematics 350, Springer, 1973, pp. 191–268.</span>|כיווון=שמאל}} ו[[ניק כץ]] נתן זמן קצר אחר כך הגדרה גאומטרית וכללית יותר.{{הערה|שם=Katz|1=<span dir="ltr">N. M. Katz, p-adic properties of modular schemes and modular forms, in: Modular Functions of One Variable III, Lecture Notes in Mathematics 350, Springer, 1973, pp. 69–190.</span>|כיווון=שמאל}} התבניות המודולריות ה-<math>p</math>-אדיות של כץ כוללות כמקרים פרטיים את '''התבניות המודולריות ה-<math>p</math>-אדיות הקלאסיות''', שהן פחות או יותר צירופים לינאריים <math>p</math>-אדיים של תבניות מודולריות קלאסיות רגילות, ואת '''התבניות המודולריות ה-<math>p</math>-אדיות העל-מתכנסות''', שכוללות בתורן את '''התבניות המודולריות הרגילות''' (ordinary) של [[הרוזו הידה]] כמקרה פרטי.
+
+== הגדרה ==
+=== הבנייה של סר ===
+סר הגדיר תבנית מודולרית <math>p</math>-אדית כ[[טור חזקות פורמלי]] עם מקדמים <math>p</math>-אדיים, שהוא גבול <math>p</math>-אדי של תבניות מודולריות קלאסיות עם מקדמים [[מספר שלם|שלמים]] (או רציונליים). "גבול" כאן פירושו: לכל <math>N</math>, החל ממקום מסוים כל המקדמים של התבנית בסדרה קונגרואנטיים למקדמי הגבול מודולו <math>p^N</math>. המשקלים של התבניות הקלאסיות האלה אינם חייבים להיות שווים; למעשה, אם הם שווים, התבנית ה-<math>p</math>-אדית אינה אלא צירוף לינארי של תבניות קלאסיות. באופן כללי, המשקל של תבנית מודולרית <math>p</math>-אדית הוא מספר <math>p</math>-אדי, שנתון כגבול המשקלים של התבניות הקלאסיות; ליתר דיוק, עידון קל נותן משקל ב-<math>\mathbb Z_p \times \mathbb Z/(p - 1)\mathbb Z</math> – "מרחב המשקלים".
+
+הסיבה שזה עובד היא ש[[המשפט הקטן של פרמה|לפי פרמה ואוילר]], <math>d^{k} \equiv d^{k'} \pmod{p^{N}}</math> לכל <math>d</math> זר ל-<math>p</math> כאשר <math>k \equiv k' \pmod{(p - 1)p^{N-1}}</math>. לכן המחלקים בטורי אייזנשטיין "לא מבחינים" בין משקלים קרובים <math>p</math>-אדית.
+
+התבניות המודולריות ה-<math>p</math>-אדיות של סר הן מקרה פרטי של אלה שהגדיר כץ.
+
+=== דוגמה: גבולות של טורי אייזנשטיין ===
+יהי <math>p = 5</math>, ונתבונן בטורי אייזנשטיין המנורמלים
+:<math>E_k = 1 - \frac{2k}{B_k}\sum_{n\ge1}\sigma_{k-1}(n)q^n,</math>
+כאשר <math>B_k</math> הם [[מספרי ברנולי]].
+
+'''המשקלים <math>k_n = 4\cdot5^n</math>.''' חישוב מדויק (במספרים רציונליים) נותן ש-<math>E_{k_n} - 1</math> מתחלק ב-<math>5^{n+1}</math> בכל המקדמים (בדקנו ב-30 המקדמים הראשונים עבור <math>n = 0, 1, 2, 3</math>, כלומר <math>k = 4, 20, 100, 500</math>). לכן
+:<math>\lim_{n\to\infty}E_{4\cdot5^n} = 1</math>
+5-אדית – התבנית הקבועה 1, ממשקל 0. בפרט <math>E_4 \equiv 1 \pmod 5</math> (כי <math>240 = 5\cdot48</math>). זו דוגמה למשפט כללי: '''<math>E_{p-1} \equiv 1 \pmod p</math>''' לכל <math>p \ge 5</math>, ו-<math>E_{p-1}</math> הוא הרמה של [[אינווריאנט הסה]] – התנאי שמופיע בהגדרה של כץ למטה.
+
+'''המשקלים <math>k_n = 2 + 4\cdot5^n</math>.''' כאן מתקבל גבול לא טריוויאלי ממשקל 2:
+:<math>\lim_{n\to\infty}E_{2+4\cdot5^n} = \frac{E_2(\tau) - 5E_2(5\tau)}{1 - 5} = 1 + 6q + 18q^2 + 24q^3 + 42q^4 + 6q^5 + 72q^6 + \cdots</math>
+כלומר הגבול הוא <math>1 + 6\sum_n\sigma_1^{(5)}(n)q^n</math>, כאשר <math>\sigma_1^{(5)}(n)</math> הוא סכום המחלקים של <math>n</math> שאינם מתחלקים ב-5. בדקנו ש-<math>E_{k_n}</math> קונגרואנטי לגבול מודולו <math>5^{n+1}</math> עבור <math>k = 6, 22, 102, 502</math>. למשל עבור <math>k = 6</math>: המקדם של <math>q</math> ב-<math>E_6</math> הוא <math>-504</math>, ו-<math>-504 - 6 = -510 = -5\cdot102</math>. שני דברים קורים בגבול:
+* המחלקים <math>d</math> שמתחלקים ב-5 נעלמים, כי <math>d^{k_n - 1} \to 0</math> 5-אדית, בעוד שעבור <math>d</math> זר ל-5, <math>d^{k_n - 1} \to d</math>.
+* הקבוע <math>-2k/B_k</math> שואף ל-<math>-24/(1 - p) = 6</math>. זו בדיוק [[פונקציית זטא p-אדית|פונקציית הזטא ה-<math>p</math>-אדית]] של קובוטה–לאופולדט: <math>-B_k/k = \zeta(1 - k)</math>, והערכים <math>(1 - p^{k-1})\zeta(1 - k)</math> משתנים ברציפות <math>p</math>-אדית ב-<math>k</math> ([[קונגרואנציות קומר]]). כך סר בנה את פונקציית הזטא ה-<math>p</math>-אדית מתוך האיבר הקבוע של טורי אייזנשטיין <math>p</math>-אדיים.
+
+שימו לב ש-<math>E_2</math> עצמה אינה תבנית מודולרית קלאסית, אבל הגבול <math>p</math>-אדי של תבניות קלאסיות – ולכן תבנית מודולרית <math>p</math>-אדית.
+
+=== הבנייה של כץ ===
+אפשר לחשוב על תבנית מודולרית קלאסית ממשקל <math>k</math>, באופן גס, כעל פונקציה <math>f</math> מזוגות <math>(E, \omega)</math> של [[עקום אליפטי]] מרוכב <math>E</math> ו[[תבנית דיפרנציאלית הולומורפית|1-תבנית הולומורפית]] <math>\omega</math> עליו (שונה מאפס) למספרים המרוכבים, כך ש-<math>f(E, \lambda\omega) = \lambda^{-k}f(E, \omega)</math>, ושמקיימת עוד תנאים, כמו הולומורפיות במובן מסוים. הקשר לגרסה הרגילה: עבור <math>\tau</math> בחצי המישור העליון, לוקחים <math>E_\tau = \mathbb C/(\mathbb Z + \tau\mathbb Z)</math> ו-<math>\omega = dz</math>, ומגדירים <math>f(\tau) = f(E_\tau, dz)</math>; חוק ההתמרה <math>f(\gamma\tau) = (c\tau + d)^kf(\tau)</math> נובע מכך ש-<math>E_{\gamma\tau} \cong E_\tau</math> וההתאמה שולחת <math>dz</math> ל-<math>(c\tau + d)^{-1}dz</math>.
+
+ההגדרה של כץ לתבנית מודולרית <math>p</math>-אדית דומה, אלא ש-<math>E</math> הוא עכשיו עקום אליפטי מעל אלגברה <math>R</math> (שבה <math>p</math> נילפוטנטי) מעל [[חוג השלמים]] <math>R_0</math> של [[הרחבה סופית]] של המספרים ה-<math>p</math>-אדיים, כך ש-<math>E</math> אינו [[עקום אליפטי על-סינגולרי|על-סינגולרי]], במובן שטור אייזנשטיין <math>E_{p-1}</math> הפיך ב-<math>(E, \omega)</math>. התבנית המודולרית ה-<math>p</math>-אדית <math>f</math> מקבלת עכשיו ערכים ב-<math>R</math> ולא במספרים המרוכבים. היא צריכה לקיים גם תנאים נוספים, אנלוגיים לתנאי שתבנית מודולרית קלאסית תהיה הולומורפית.
+
+== תבניות על-מתכנסות ==
+תבניות מודולריות <math>p</math>-אדיות '''על-מתכנסות''' דומות לתבניות המודולריות שהגדיר כץ, אלא שהתבנית צריכה להיות מוגדרת על אוסף גדול יותר של עקומים אליפטיים. באופן גס, כבר לא דורשים שהערך של טור אייזנשטיין <math>E_{p-1}</math> יהיה הפיך, אלא מרשים לו להיות איבר "קטן" יותר של <math>R</math> (בעל ערך מוחלט <math>p</math>-אדי שאינו קטן מדי).{{הערה|1=בערך האנגלי נכתב כאן <math>E_{k-1}</math>. הטור הרלוונטי הוא <math>E_{p-1}</math>, הרמה של אינווריאנט הסה, כמו בהגדרה של כץ למעלה; התנאי "<math>|E_{p-1}| \gt r</math>" עבור <math>r \lt 1</math> מגדיר "שכונה" של המקום הלא-על-סינגולרי.|כיווון=שמאל}} באופן לא פורמלי, הטור של התבנית המודולרית מתכנס על האוסף הגדול הזה של עקומים אליפטיים, ומכאן השם "על-מתכנסת". משפט מרכזי של רוברט קולמן קובע שתבנית על-מתכנסת שהיא פונקציה עצמית של אופרטור <math>U_p</math> עם "שיפוע" (הערכה <math>p</math>-אדית של הערך העצמי) קטן מ-<math>k - 1</math> היא קלאסית.{{הערה|1=<span dir="ltr">R. F. Coleman, Classical and overconvergent modular forms, Inventiones Mathematicae 124 (1996), pp. 215–241.</span>|כיווון=שמאל}}
+
+== ראו גם ==
+* [[תבניות מודולריות מודולו p]]
+* [[טור אייזנשטיין]]
+* [[פונקציית זטא p-אדית]]
+* [[עקום אליפטי על-סינגולרי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* R. F. Coleman, ''Classical and overconvergent modular forms'', Inventiones Mathematicae '''124''' (1996), pp. 215–241
+* F. Q. Gouvêa, ''Arithmetic of p-adic Modular Forms'', Lecture Notes in Mathematics '''1304''', Springer, 1988
+* H. Hida, ''p-adic Automorphic Forms on Shimura Varieties'', Springer Monographs in Mathematics, Springer, 2004
+* N. M. Katz, ''p-adic properties of modular schemes and modular forms'', in: Modular Functions of One Variable III, Lecture Notes in Mathematics '''350''', Springer, 1973, pp. 69–190
+* J.-P. Serre, ''Formes modulaires et fonctions zêta p-adiques'', in: Modular Functions of One Variable III, Lecture Notes in Mathematics '''350''', Springer, 1973, pp. 191–268
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:מספרים p-אדיים]]

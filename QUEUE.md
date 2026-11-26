@@ -204,7 +204,7 @@ Additive number theory:
 - [x] Ring of modular forms
 - [x] Weakly holomorphic modular form
 - [x] Modular forms modulo p
-- [ ] P-adic modular form
+- [x] P-adic modular form
 
 ### משוואות דיופנטיות (22)
 
