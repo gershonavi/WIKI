@@ -272,7 +272,7 @@ Additive number theory:
 - [x] Smith–Minkowski–Siegel mass formula
 - [x] Unimodular lattice
 - [x] E8 lattice
-- [ ] Leech lattice
+- [x] Leech lattice
 - [ ] Niemeier lattice
 - [ ] Witt's theorem
 - [ ] Kaplansky's theorem on quadratic forms
