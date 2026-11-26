@@ -1,0 +1,133 @@
+ב[[תורת המספרים]], '''חוג האדלים''' (adele ring) הוא בנייה שמאחדת את כל הגרסאות ה[[שדה מקומי|מקומיות]] של [[שדה גלובלי]] לאובייקט אחד. עבור ה[[מספר רציונלי|מספרים הרציונליים]], הגרסאות המקומיות הן ה[[מספר ממשי|מספרים הממשיים]] ושדות ה[[מספר p-אדי|מספרים ה-<math>p</math>-אדיים]] לכל [[מספר ראשוני|ראשוני]] <math>p</math>. באופן כללי, אם <math>K</math> שדה גלובלי, חוג האדלים שלו, שמסומן בדרך כלל <math>\mathbb A_K</math>, הוא [[חוג טופולוגי]] שבנוי מההשלמות <math>K_v</math> של <math>K</math> בכל המקומות <math>v</math> שלו. פורמלית, זו '''מכפלה מוגבלת''' של השדות המקומיים <math>K_v</math> ביחס ל[[חוג הערכה|חוגי ההערכה]] במקומות הלא ארכימדיים. האיברים שלו נקראים '''אדלים'''.
+
+טופולוגיית המכפלה המוגבלת הופכת את <math>\mathbb A_K</math> לחוג טופולוגי [[מרחב קומפקטי מקומית|קומפקטי מקומית]]. השדה <math>K</math> משוכן באלכסון ב-<math>\mathbb A_K</math> כתת-חוג בדיד, והמנה <math>\mathbb A_K/K</math> קומפקטית. כחבורה אבלית קומפקטית מקומית ביחס לחיבור, חוג האדלים דואלי לעצמו, ולכן הוא מסגרת טבעית ל[[אנליזת פורייה]] על שדות גלובליים.
+
+חבורת ההפיכים של חוג האדלים, עם הטופולוגיה הטבעית שלה, היא [[חבורת האידלים]] <math>\mathbb A_K^\times</math>. המנה <math>\mathbb A_K^\times/K^\times</math>, שנקראת חבורת מחלקות האידלים, היא אובייקט מרכזי ב[[תורת שדות המחלקה]]. אדלים ואידלים משמשים גם בתזה של טייט, בתורת ה[[תבנית אוטומורפית|תבניות האוטומורפיות]], בעקרונות מקומי-גלובלי, ובתיאורים אדליים של מחלקות מחלקים, אגדים קוויים ואגדים ראשיים על [[עקום אלגברי|עקומים אלגבריים]].
+
+== הגדרה ==
+יהי <math>K</math> [[שדה גלובלי]], כלומר [[שדה מספרים]] או שדה פונקציות גלובלי. יהי <math>v</math> רץ על המקומות של <math>K</math>. לכל מקום <math>v</math> תהי <math>K_v</math> ההשלמה של <math>K</math> ב-<math>v</math>. אם <math>v</math> לא ארכימדי, יהי <math>\mathcal O_v</math> חוג ההערכה המתאים.{{הערה|שם=Weil|1=<span dir="ltr">A. Weil, ''Basic Number Theory'', Springer, 1995 (reprint of the 3rd ed.), chapter IV</span>|כיווון=שמאל}}{{הערה|שם=Neukirch|1=<span dir="ltr">J. Neukirch, ''Algebraic Number Theory'', Springer, 1999, chapter VI, §1</span>|כיווון=שמאל}}
+
+קבוצת '''האדלים הסופיים''' של <math>K</math>, <math>\mathbb A_{K,\mathrm{fin}}</math>, היא המכפלה המוגבלת של ההשלמות הלא ארכימדיות <math>K_v</math> ביחס לתת-החוגים <math>\mathcal O_v</math>:
+:<math>\mathbb A_{K,\mathrm{fin}} = {\prod_{v\,\nmid\,\infty}}' K_v = \Big\{ (x_v)_v\in \prod_{v\,\nmid\,\infty}K_v \Big\},</math>
+כאשר הדרישה היא ש-<math>x_v \in \mathcal O_v</math> לכל <math>v</math> פרט למספר סופי. היא מצוידת בטופולוגיית המכפלה המוגבלת, שבסיס הקבוצות הפתוחות שלה הוא המכפלות
+:<math>\prod_{v\,\in\,E}U_v\times \prod_{v\,\notin\,E}\mathcal O_v,</math>
+כאשר <math>E</math> קבוצה סופית של מקומות לא ארכימדיים ו-<math>U_v</math> פתוחה ב-<math>K_v</math>. עם חיבור וכפל לפי רכיבים, <math>\mathbb A_{K,\mathrm{fin}}</math> חוג טופולוגי.{{הערה|שם=Weil}}{{הערה|שם=CF|1=<span dir="ltr">J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967, chapter II</span>|כיווון=שמאל}}
+
+'''חוג האדלים''' <math>\mathbb A_K</math> מתקבל בהוספת ההשלמות במקומות הארכימדיים:
+:<math>\mathbb A_K = \mathbb A_{K,\mathrm{fin}} \times \prod_{v\mid\infty}K_v = {\prod_{v\nmid\infty}}'K_v \times \prod_{v\mid\infty}K_v.</math>
+מספר המקומות הארכימדיים סופי, וכל השלמה ארכימדית איזומורפית ל-<math>\mathbb R</math> או ל-<math>\mathbb C</math>. חיבור וכפל מוגדרים לפי רכיבים. בקיצור כותבים לעתים קרובות <math>\mathbb A_K=\prod_v'K_v</math>, כשמובן שתנאי המכפלה המוגבלת חל רק במקומות הלא ארכימדיים.{{הערה|שם=Neukirch}} אם <math>K</math> שדה פונקציות גלובלי, אין מקומות ארכימדיים, ו-<math>\mathbb A_K=\mathbb A_{K,\mathrm{fin}}</math>.
+
+יש שיכון אלכסוני טבעי
+:<math>K\hookrightarrow \mathbb A_K,\qquad a\mapsto (a,a,\ldots).</math>
+הוא מוגדר היטב כי איבר <math>a\in K</math> שייך ל-<math>\mathcal O_v</math> לכל המקומות הלא ארכימדיים <math>v</math> פרט למספר סופי. אחרי השיכון הזה רואים ב-<math>K</math> תת-חוג של <math>\mathbb A_K</math>, ואיבריו נקראים לפעמים '''אדלים ראשיים'''.{{הערה|שם=CF}}
+
+באופן כללי יותר, לקבוצת מקומות <math>S</math> של <math>K</math> מגדירים את חוג ה-<math>S</math>-אדלים <math>\mathbb A_{K,S}:=\prod_{v\in S}'K_v</math>; אם <math>\mathbb A_K^S:=\prod_{v\notin S}'K_v</math>, יש פירוק טבעי <math>\mathbb A_K\cong \mathbb A_{K,S}\times \mathbb A_K^S</math>.
+
+== מוטיבציה ==
+מטרת חוג האדלים היא להסתכל על כל ההשלמות של שדה גלובלי <math>K</math> בבת אחת. עבור הרציונליים, הערך המוחלט הרגיל נותן את ההשלמה <math>\mathbb R</math>, אבל [[משפט אוסטרובסקי]] מראה שיש גם ערכים מוחלטים <math>p</math>-אדיים, אחד לכל ראשוני <math>p</math>. חוג האדלים אורז את כל ההשלמות לאובייקט אחד, כך שאפשר להפעיל שיטות אנליטיות ובו בזמן לשמור על המידע האריתמטי מכל הראשוניים הסופיים.{{הערה|שם=Weil}}
+
+קודם לנקודת מבט זו היא הגאומטריה של המספרים של מינקובסקי. אם <math>K</math> שדה מספרים עם חוג שלמים <math>\mathcal O_K</math>, שיכון מינקובסקי הקלאסי מציב את <math>\mathcal O_K</math> כסריג במרחב הווקטורי הממשי הסוף-ממדי <math>K\otimes_{\mathbb Q}\mathbb R\cong\mathbb R^r\times\mathbb C^s</math>. זה מאפשר לחקור שאלות אריתמטיות בעזרת טיעוני נפח וקומפקטיות. חוג האדלים הוא הרחבה מקומית-גלובלית של הבנייה הזו: במקום ההשלמות הארכימדיות בלבד, הוא כולל את כל ההשלמות של <math>K</math>. בהקשר האדלי, <math>K</math> עצמו משוכן באלכסון כתת-חבורה בדידה של <math>\mathbb A_K</math>, והמנה <math>\mathbb A_K/K</math> קומפקטית.
+
+חוג האדלים מוגדר כמכפלה מוגבלת ולא כמכפלה קרטזית מלאה. התנאי של המכפלה המוגבלת – שאדל הוא שלם כמעט בכל המקומות הלא ארכימדיים – טבעי מנקודת המבט של השדה הגלובלי עצמו: אם <math>a\in K</math>, אז <math>a \in \mathcal O_v</math> לכל המקומות הסופיים פרט למספר סופי. המכפלה המוגבלת היא גם התנאי הטופולוגי שהופך את חוג האדלים לשימושי באנליזה: עם טופולוגיית המכפלה המוגבלת, <math>\mathbb A_K</math> קומפקטי מקומית, ולכן יש לחבורה החיבורית שלו [[מידת האר]], וזה מאפשר אנליזה הרמונית עליו.{{הערה|שם=RV|1=<span dir="ltr">D. Ramakrishnan, R. J. Valenza, ''Fourier Analysis on Number Fields'', Graduate Texts in Mathematics 186, Springer, 1999, chapter 5</span>|כיווון=שמאל}}
+
+ה'''תזה של טייט''', למשל, בונה אנליזת פורייה על חוג האדלים ואינטגרציה על חבורת האידלים, ונותנת טיפול אחיד ב[[קרקטר של הקה|פונקציות L של הקה]]. בגישה זו אינטגרלי זטא גלובליים מתפרקים לאינטגרלים מקומיים על ההשלמות <math>K_v</math>, והמבנה המקומי-גלובלי של חוג האדלים מסביר את מכפלת אוילר, את ההמשכה האנליטית ואת המשוואה הפונקציונלית של פונקציות ה-L האלה.{{הערה|שם=Tate|1=<span dir="ltr">J. Tate, "Fourier analysis in number fields and Hecke's zeta-functions", in Cassels–Fröhlich (eds.), ''Algebraic Number Theory'', 1967, 305–347</span>|כיווון=שמאל}}
+
+== דוגמאות ==
+=== האדלים הרציונליים ===
+עבור <math>K=\mathbb Q</math>, משפט אוסטרובסקי אומר שהמקומות של <math>\mathbb Q</math> ניתנים על ידי הערך המוחלט הרגיל ועל ידי הערכים המוחלטים ה-<math>p</math>-אדיים, אחד לכל ראשוני <math>p</math>. ההשלמה במקום האינסופי היא <math>\mathbb Q_\infty=\mathbb R</math>, וההשלמה במקום שמתאים ל-<math>p</math> היא שדה המספרים ה-<math>p</math>-אדיים <math>\mathbb Q_p</math>, עם חוג ההערכה <math>\mathbb Z_p</math>. לכן
+:<math>\mathbb A_{\mathbb Q} = \mathbb R\times \prod_p' \mathbb Q_p = \left\{ (x_\infty,x_2,x_3,x_5,\ldots):\ x_\infty\in\mathbb R,\ x_p\in\mathbb Q_p \right\}</math>, כאשר <math>x_p\in\mathbb Z_p</math> לכל <math>p</math> פרט למספר סופי.
+כלומר אדל של <math>\mathbb Q</math> הוא מספר ממשי יחד עם מספר <math>p</math>-אדי לכל ראשוני <math>p</math>, כך שכל הרכיבים ה-<math>p</math>-אדיים פרט למספר סופי הם שלמים <math>p</math>-אדיים.
+
+האדלים הסופיים השלמים הם <math>\widehat{\mathbb Z} = \prod_p \mathbb Z_p</math>, חוג [[שלם פרו-סופי|השלמים הפרו-סופיים]]. בסימון הזה <math>\mathbb A_{\mathbb Q} = \mathbb R\times\mathbb A_{\mathbb Q,\mathrm{fin}}</math> ו-<math>\widehat{\mathbb Z}\subset \mathbb A_{\mathbb Q,\mathrm{fin}}</math>. השיכון האלכסוני שולח מספר רציונלי <math>a</math> לאדל <math>(a,a,a,\ldots)</math>; למשל לאדל <math>\tfrac16</math> יש רכיבים לא שלמים רק ב-2 וב-3, כי רק לראשוניים האלה יש חזקה חיובית במכנה.
+
+=== שדות מספרים ===
+יהי <math>K</math> שדה מספרים עם חוג שלמים <math>\mathcal O_K</math>. בכל מקום סופי <math>v</math>, ההשלמה <math>K_v</math> היא הרחבה סופית של <math>\mathbb Q_p</math> כלשהו, עם חוג הערכה <math>\mathcal O_v</math>; בכל מקום אינסופי, ההשלמה איזומורפית ל-<math>\mathbb R</math> או ל-<math>\mathbb C</math>. אדל של <math>K</math> הוא משפחה <math>(x_v)_v</math> עם <math>x_v\in K_v</math> לכל <math>v</math>, כך ש-<math>x_v\in\mathcal O_v</math> לכל המקומות הסופיים פרט למספר סופי. למשל, אם <math>K</math> שדה ריבועי, הגורם הארכימדי הוא <math>\mathbb R^2</math> (שני שיכונים ממשיים) או <math>\mathbb C</math> (זוג שיכונים מרוכבים), והחלק הסופי הוא מכפלה מוגבלת על האידיאלים הראשוניים השונים מאפס של <math>\mathcal O_K</math>.
+
+אם <math>L/K</math> הרחבה סופית של שדות מספרים, הבנייה האדלית מתאימה להרחבת סקלרים: יש איזומורפיזם טבעי <math>\mathbb A_L\cong \mathbb A_K\otimes_K L</math>, ובפרט <math>\mathbb A_L\cong \mathbb A_{\mathbb Q}\otimes_{\mathbb Q}L</math>.{{הערה|שם=CF}}
+
+=== שדות פונקציות ועקומים ===
+נתבונן בשדה הפונקציות <math>K=\mathbb F_q(t)</math> של הישר הפרויקטיבי <math>X = \mathbb P^1</math> מעל שדה סופי. המקומות שלו מתאימים לנקודות הסגורות <math>x</math> של <math>X</math>; למשל יש <math>q+1</math> נקודות מעל <math>\mathbb F_q</math>. לכל נקודה <math>x</math>, החוג המקומי שמשמש במכפלה המוגבלת הוא החוג המקומי המושלם <math>\widehat{\mathcal O}_{X,x}</math>, והשדה המקומי הוא שדה השברים שלו <math>K_{X,x}</math>. לכן
+:<math>\mathbb A_{\mathbb F_q(t)} = \prod_{x\in X}' K_{X,x},</math>
+ביחס לחוגים <math>\widehat{\mathcal O}_{X,x}</math>. אותו תיאור נכון לכל עקום חלק ופרופר <math>X/\mathbb F_q</math> עם שדה הפונקציות שלו. בניגוד לשדות מספרים, לשדות פונקציות גלובליים אין מקומות ארכימדיים, ולכן חוג האדלים הסופיים וחוג האדלים המלא זהים.
+
+== טופולוגיה ותכונות עיקריות ==
+לקבוצה סופית של מקומות <math>P</math> שמכילה את המקומות הארכימדיים, נגדיר
+:<math>\mathbb A_K(P) := \prod_{v\in P}K_v \times \prod_{v\notin P}\mathcal O_v.</math>
+עם טופולוגיית המכפלה, <math>\mathbb A_K(P)</math> חוג טופולוגי קומפקטי מקומית (לפי [[משפט טיכונוף]]: מכפלה של מספר סופי של מרחבים קומפקטיים מקומית ושל מרחבים קומפקטיים). אם <math>P' \supseteq P</math>, אז <math>\mathbb A_K(P)</math> תת-חוג פתוח של <math>\mathbb A_K(P')</math>, ו-
+:<math>\mathbb A_K = \bigcup_{P} \mathbb A_K(P).</math>
+באופן שקול, <math>\mathbb A_K</math> הוא קבוצת כל ה-<math>x=(x_v)_v</math> שעבורם <math>|x_v|_v\leq 1</math> כמעט לכל <math>v</math> לא ארכימדי, והטופולוגיה נקבעת על ידי הדרישה שכל ה-<math>\mathbb A_K(P)</math> יהיו תת-חוגים פתוחים. לכן <math>\mathbb A_K</math> חוג טופולוגי קומפקטי מקומית.
+
+השיכון האלכסוני מזהה את <math>K</math> עם תת-חוג של <math>\mathbb A_K</math>. '''התמונה של <math>K</math> בדידה ב-<math>\mathbb A_K</math>, והמנה <math>\mathbb A_K/K</math> קומפקטית.''' בפרט <math>K</math> סגור ב-<math>\mathbb A_K</math>.
+
+=== הוכחה עבור <math>\mathbb Q</math> ===
+'''בדידות.''' מספיק למצוא סביבה של 0 שאינה מכילה אף מספר רציונלי אחר. נגדיר <math>U := \widehat{\mathbb Z}\times(-1,1)</math>, כלומר <math>|\alpha_p|_p \le 1</math> לכל <math>p</math> ו-<math>|\alpha_\infty| \lt 1</math>. זו סביבה פתוחה של 0. אם <math>\beta \in U \cap \mathbb Q</math>, אז <math>|\beta|_p\le 1</math> לכל <math>p</math>, ולכן <math>\beta\in\mathbb Z</math>; ובנוסף <math>|\beta| \lt 1</math>, ולכן <math>\beta=0</math>.
+
+'''קומפקטיות.''' נגדיר <math>W := \widehat{\mathbb Z}\times\left[-\tfrac12,\tfrac12\right]</math>, קבוצה קומפקטית. נראה שלכל אדל <math>\alpha</math> יש <math>\beta \in \mathbb Q</math> עם <math>\alpha - \beta \in W</math>. לכל אחד מהראשוניים (המעטים) <math>p</math> שבהם <math>|\alpha_p|_p \gt 1</math>, יש מספר רציונלי <math>r_p = z_p/p^{x_p}</math> (החלק ה"שברי" ה-<math>p</math>-אדי של <math>\alpha_p</math>) עם <math>|\alpha_p - r_p|_p \le 1</math>; ובכל ראשוני אחר <math>q</math>, <math>|r_p|_q \le 1</math>, ולכן החיסור של <math>r_p</math> לא מקלקל את השלמות ב-<math>q</math>. אחרי שמחסירים את כל ה-<math>r_p</math>, האדל שלם בכל ראשוני, ונשאר להחסיר את המספר השלם הקרוב ביותר לרכיב הממשי. המנה <math>\mathbb A_{\mathbb Q}/\mathbb Q</math> היא תמונה רציפה של <math>W</math>, ולכן קומפקטית.
+
+'''דוגמה.''' יהי <math>\alpha</math> האדל עם <math>\alpha_\infty = 0.7</math>, <math>\alpha_2 = \tfrac12</math>, <math>\alpha_3 = \tfrac13</math>, ו-<math>\alpha_p = 0</math> לכל <math>p \ge 5</math>. ניקח <math>r_2 = \tfrac12</math>, <math>r_3 = \tfrac13</math>, ו-<math>\beta = \tfrac12 + \tfrac13 = \tfrac56</math>. אז <math>(\alpha - \beta)_2 = \tfrac12 - \tfrac56 = -\tfrac13 \in \mathbb Z_2</math>, <math>(\alpha - \beta)_3 = \tfrac13 - \tfrac56 = -\tfrac12 \in \mathbb Z_3</math>, <math>(\alpha - \beta)_p = -\tfrac56 \in \mathbb Z_p</math> לכל <math>p \ge 5</math>, ו-<math>(\alpha - \beta)_\infty = 0.7 - 0.8\overline3 = -0.1\overline3 \in [-\tfrac12, \tfrac12]</math>. לכן <math>\alpha - \tfrac56 \in W</math>.
+
+=== טופולוגיה מוגבלת לעומת טופולוגיית המכפלה ===
+'''למה.''' נתבונן בסדרה ב-<math>\mathbb A_{\mathbb Q}</math> (בלי הרכיב הממשי, שבו כל האיברים 1):
+:<math>x_1=\left(\tfrac 1 2 ,1,1,\ldots\right),\quad x_2=\left(1,\tfrac 1 3 ,1,\ldots\right),\quad x_3=\left(1,1,\tfrac 1 5 ,1,\ldots\right),\ \ldots</math>
+בטופולוגיית המכפלה היא מתכנסת ל-<math>(1,1,\ldots)</math>, אבל בטופולוגיית המכפלה המוגבלת היא אינה מתכנסת כלל.
+
+'''הוכחה.''' בטופולוגיית המכפלה התכנסות היא התכנסות בכל רכיב, והסדרות בכל רכיב נעשות קבועות. בטופולוגיה המוגבלת: יהי <math>a=(a_p)_p \in \mathbb A_{\mathbb Q}</math> אדל כלשהו, ו-<math>U=\prod_{p \in E}U_p \times \prod_{p \notin E}\mathbb Z_p</math> "מלבן" פתוח בסיסי סביב 0 (<math>E</math> סופית). כמעט לכל <math>p</math> מתקיים <math>p \notin E</math> ו-<math>a_p \in \mathbb Z_p</math>, ואז <math>\tfrac1p - a_p \notin \mathbb Z_p</math>. לכן <math>x_n - a \notin U</math> כמעט לכל <math>n</math>, והסדרה אינה מתכנסת ל-<math>a</math>.{{הערה|1=בערך האנגלי ההוכחה של הלמה הזו מנוסחת באופן משובש (למשל "<math>\tfrac1p - a_p \notin \mathbb Z_p</math> for <math>a_p \in \mathbb Z_p</math> and therefore … for all <math>p \notin F</math>", עם קבוצה <math>F</math> שלא הוגדרה). כאן היא נוסחה מחדש; הרעיון זהה.|כיווון=שמאל}}
+
+=== תיאורים נוספים לשדות מספרים ===
+* '''למה.''' <math>\widehat{\mathbb Z} := \varprojlim_n \mathbb Z /n\mathbb Z \cong \prod_p \mathbb Z_p</math> (מ[[משפט השאריות הסיני]]).
+* '''למה.''' <math>\mathbb A_{\mathbb Q, \mathrm{fin}}= \widehat{\mathbb Z}\otimes_{\mathbb Z} \mathbb Q</math> (בעזרת התכונה האוניברסלית של מכפלה טנזורית: לכל אדל סופי יש <math>u \in \mathbb N</math> כך ש-<math>u\cdot x \in \widehat{\mathbb Z}</math>).
+* '''מסקנה.''' עם <math>\mathbb A_\mathbb Z := \widehat{\mathbb Z} \times \mathbb R</math>, <math>\mathbb A_\mathbb Q \cong \mathbb A_\mathbb Z\otimes_{\mathbb Z} \mathbb Q</math>.
+* '''למה.''' לשדה מספרים <math>K</math>, <math>\mathbb A_K=\mathbb A_\mathbb Q\otimes_\mathbb Q K \cong \mathbb A_\mathbb Q^{[K:\mathbb Q]}</math> (כחבורות חיבוריות, עם טופולוגיית המכפלה).
+* '''עקבה ונורמה.''' להרחבה סופית <math>L/K</math> מגדירים עקבה ונורמה <math>\mathbb A_L \to \mathbb A_K</math> כעקבה וכדטרמיננטה של הכפל ב-<math>\alpha</math>, ומתקיים <math>\operatorname{Tr}_{L/K}(\alpha) = \left(\sum_{w\mid v}\operatorname{Tr}_{L_w/K_v}(\alpha_w)\right)_v</math> ו-<math>N_{L/K}(\alpha) = \left(\prod_{w\mid v}N_{L_w/K_v}(\alpha_w)\right)_v</math>.{{הערה|1=<span dir="ltr">Weil, ''Basic Number Theory'', p. 64; Cassels–Fröhlich, ''Algebraic Number Theory'', p. 74</span>|כיווון=שמאל}}
+
+== מידת האר ואנליזת פורייה ==
+כיוון ש-<math>\mathbb A_K</math> קומפקטי מקומית כחבורה חיבורית, יש לו מידת האר חיבורית <math>dx</math>, שאפשר לנרמל כמכפלה של מידות האר מקומיות: במקום לא ארכימדי <math>v</math> מנרמלים כך שלחוג ההערכה <math>\mathcal O_v</math> מידה 1, ובמקומות הארכימדיים משתמשים במידת לבג הרגילה על <math>\mathbb R</math> או <math>\mathbb C</math>. פונקציה <math>f=\prod_v f_v</math> עם <math>f_v=\mathbf 1_{\mathcal O_v}</math> כמעט לכל <math>v</math> מקיימת <math>\int_{\mathbb A_K} f\,dx = \prod_v \int_{K_v} f_v\,dx_v</math> (כמעט כל הגורמים שווים ל-1).{{הערה|שם=Deitmar|1=<span dir="ltr">A. Deitmar, ''Automorphic Forms'', Springer, 2013 (German ed. 2010), p. 126</span>|כיווון=שמאל}}
+
+אנליזת פורייה על חוג האדלים מבוססת על הקרקטרים של החבורה החיבורית שלו. חוג האדלים '''דואלי לעצמו''' כחבורה אבלית קומפקטית מקומית: <math>\mathbb A_K\cong \widehat{\mathbb A_K}</math>. מוכיחים זאת ברדוקציה לטענה המקומית בכל השלמה <math>K_v</math>; למשל הקרקטר <math>e_\infty(t)=\exp(2\pi i t)</math> נותן איזומורפיזם <math>\mathbb R \to \widehat{\mathbb R}</math>, <math>s\mapsto \bigl(t\mapsto e_\infty(ts)\bigr)</math>. אחרי בחירת קרקטר חיבורי לא טריוויאלי <math>\chi:\mathbb A_K\to\mathbb T</math>, התמרת פורייה <math>\widehat f(y) = \int_{\mathbb A_K} f(x)\chi(xy)\,dx</math> מקיימת את נוסחאות ההיפוך ופלנשרל, ומתפרקת לאנליזת פורייה מקומית.
+
+'''דוגמה (זטא של רימן כאינטגרל אדלי).''' עבור <math>\operatorname{Re}(s) \gt 1</math>,
+:<math>\int_{\widehat{\mathbb Z}} |x|^s\,d^\times x = \zeta(s),</math>
+כאשר <math>d^\times x</math> מידת האר הכפלית על חבורת האידלים הסופיים, מנורמלת כך שלחבורה <math>\widehat{\mathbb Z}^{\times}</math> נפח 1. הסיבה: האינטגרל מתפרק למכפלה על <math>p</math>, ו-<math>\mathbb Z_p \setminus \{0\}</math> הוא איחוד זר של הקבוצות <math>p^k\mathbb Z_p^\times</math>, שבכל אחת <math>|x|_p^s = p^{-ks}</math> ונפחן 1; לכן הגורם ב-<math>p</math> הוא <math>\sum_{k\ge0}p^{-ks} = (1 - p^{-s})^{-1}</math>, ומכפלת הגורמים היא [[מכפלת אוילר]] של <math>\zeta(s)</math>.{{הערה|שם=Deitmar}}
+
+== שימושים ==
+=== תורת שדות המחלקה ===
+חוג האדלים נכנס ל[[תורת שדות המחלקה]] דרך חבורת ההפיכים שלו, [[חבורת האידלים]] <math>\mathbb A_K^\times</math>. המנה <math>C_K=\mathbb A_K^\times/K^\times</math> היא חבורת מחלקות האידלים של <math>K</math>. תורת שדות המחלקה הגלובלית מתארת את ההרחבות האבליות של <math>K</math> במונחי מנות טופולוגיות של <math>C_K</math>: [[הדדיות ארטין]] נותנת הומומורפיזם מחבורת מחלקות האידלים לחבורת הגלואה של ההרחבה האבלית המקסימלית של <math>K</math>, ולהרחבה אבלית סופית <math>L/K</math>, <math>C_K/N_{L/K}(C_L) \cong \text{Gal}(L/K)</math>.{{הערה|1=<span dir="ltr">Neukirch, ''Algebraic Number Theory'', chapter VI; Weil, ''Basic Number Theory'', chapter VII</span>|כיווון=שמאל}} הניסוח האדלי אורז את העתקות ההדדיות המקומיות של [[תורת שדות המחלקה המקומית]] לטענה גלובלית אחת, ומחליף את הניסוח הישן במונחי חבורות מחלקות של אידיאלים ו[[שדה מחלקת קרן|חבורות מחלקות קרן]].
+
+=== מחלקות אידיאלים ויחידות ===
+לשדה מספרים <math>K</math>, החלק הסופי של חבורת האידלים מועתק על חבורת ה[[אידיאל שבור|אידיאלים השבורים]] על ידי
+:<math>(x_{\mathfrak p})_{\mathfrak p} \longmapsto \prod_{\mathfrak p}\mathfrak p^{v_{\mathfrak p}(x_{\mathfrak p})}.</math>
+הגרעין הוא מכפלת חבורות היחידות המקומיות. לכן [[חבורת מחלקות האידיאלים]] הרגילה מתקבלת כמנה של חבורת מחלקות האידלים. מכאן פירוש אדלי לסופיות מספר המחלקה: הקומפקטיות של מחלקות האידלים מנורמה 1 גוררת שחבורת מחלקות האידיאלים קומפקטית, ומכיוון שהיא בדידה – היא סופית. באותו אופן מתקבל ניסוח אדלי ל[[משפט היחידות של דיריכלה]]: <math>\mathcal O_K^\times \cong \mu(K)\times \mathbb Z^{r+s-1}</math>, כאשר <math>\mu(K)</math> חבורת שורשי היחידה ב-<math>K</math>, <math>r</math> מספר השיכונים הממשיים ו-<math>s</math> מספר זוגות השיכונים המרוכבים.{{הערה|שם=CF}}
+
+=== תבניות אוטומורפיות ===
+אדלים הם גם השפה הטבעית ל[[תבנית אוטומורפית|תבניות אוטומורפיות]]. במקום לחקור פונקציות בנפרד על הנקודות הממשיות, המרוכבות וה-<math>p</math>-אדיות של חבורה אלגברית, חוקרים פונקציות על חבורות אדליות כמו <math>G(\mathbb A_K)</math>. למשל, תבניות אוטומורפיות ל-<math>\mathrm{GL}_2</math> מעל <math>\mathbb Q</math> הן פונקציות על <math>\mathrm{GL}_2(\mathbb Q)\backslash \mathrm{GL}_2(\mathbb A_{\mathbb Q})</math> שמקיימות תנאים אלגבריים, אנליטיים ותנאי גידול מתאימים, ו[[פונקציית L אוטומורפית|פונקציות L אוטומורפיות]] מתוארות לעתים קרובות כאינטגרלים על חבורות אדליות.{{הערה|שם=Bump|1=<span dir="ltr">D. Bump, ''Automorphic Forms and Representations'', Cambridge Studies in Advanced Mathematics 55, Cambridge University Press, 1997</span>|כיווון=שמאל}} השימוש בנקודות האדליות <math>G(\mathbb A_K)</math> של חבורות רדוקטיביות <math>G</math> הוא מרכזי בתורה המודרנית של הצגות אוטומורפיות, והוא אחת מנקודות המוצא של [[תוכנית לנגלנדס]].
+
+=== קירוב ועקרונות מקומי-גלובלי ===
+חוג האדלים נותן פירוש אחיד למשפטי קירוב. '''משפט הקירוב החלש''' אומר שלמספר סופי של הערכות לא שקולות של <math>K</math>, התמונה האלכסונית של <math>K</math> צפופה במכפלת ההשלמות המתאימות. '''משפט הקירוב החזק''' אומר שאחרי השמטת מקום אחד <math>v_0</math>, השדה <math>K</math> צפוף במכפלה המוגבלת על כל שאר המקומות. כלומר השדה הגלובלי בדיד בחוג האדלים המלא, אבל נעשה צפוף כשמשמיטים מקום אחד.{{הערה|שם=CF}} השפה האדלית משמשת גם לניסוח עקרונות מקומי-גלובלי, כמו [[עקרון הסה|עקרון האסה]]: משווים פתרונות מעל השדה הגלובלי <math>K</math> עם משפחות של פתרונות מעל כל ההשלמות <math>K_v</math>.
+
+=== עקומים, מחלקים ואגדים ===
+לעקום חלק ופרופר <math>X/\mathbb F_q</math> עם שדה פונקציות <math>K</math>, האידלים משחזרים את חבורת המחלקים ואת חבורת פיקאר של העקום:
+:<math>\operatorname{Div}(X)=\mathbb A_X^\times/\mathbb O_X^\times, \qquad \operatorname{Pic}(X) = K^\times\backslash \mathbb A_X^\times/\mathbb O_X^\times,</math>
+כאשר <math>\mathbb O_X = \prod_x \widehat{\mathcal O}_{X,x}</math>. באופן כללי יותר, לחבורה אלגברית <math>G</math> (חצי-פשוטה, או <math>\mathrm{GL}_n</math>), מנות כפולות אדליות מתארות מרחבי מודולים של אגדים על עקומים ("אוניפורמיזציה של וייל"):
+:<math>\operatorname{Bun}_G(X) = G(K)\backslash G(\mathbb A_X)/G(\mathbb O_X);</math>
+עבור <math>G=\mathbb G_m</math> זה משחזר את התיאור האדלי של חבורת פיקאר. טייט הראה גם שדואליות סר על עקום חלק ופרופר מעל <math>\mathbb C</math> נובעת מעבודה עם חוג האדלים של שדה הפונקציות שלו.{{הערה|1=<span dir="ltr">J. Tate, "Residues of differentials on curves", ''Ann. Sci. École Norm. Sup.'' (4) '''1''' (1968), 149–159</span>|כיווון=שמאל}}
+
+== חבורת האידלים ==
+{{ערך מורחב|חבורת האידלים}}
+חבורת האידלים של שדה גלובלי <math>K</math> היא חבורת האיברים ההפיכים של <math>\mathbb A_K</math>, שמסומנת <math>\mathbb A_K^\times</math> או <math>I_K</math>; באופן שקול, המכפלה הישרה המוגבלת <math>\prod_v' K_v^\times</math> ביחס לחבורות היחידות <math>\mathcal O_v^\times</math>. אף שהיא חבורת ההפיכים של חוג האדלים, היא אינה מקבלת את הטופולוגיה המושרית מ-<math>\mathbb A_K</math>, אלא את טופולוגיית המכפלה המוגבלת – שקול: הטופולוגיה שמושרית מהשיכון <math>x\mapsto (x,x^{-1})</math> ב-<math>\mathbb A_K\times\mathbb A_K</math>. עם הטופולוגיה הזו היא חבורה טופולוגית אבלית קומפקטית מקומית.
+
+לחבורת האידלים יש ערך מוחלט טבעי <math>|x|_{\mathbb A}=\prod_v |x_v|_v</math> (המכפלה סופית, כי כמעט כל הרכיבים יחידות). לפי נוסחת המכפלה, <math>K^\times</math> מוכלת בתת-החבורה <math>\mathbb A_K^1</math> של האידלים מנורמה 1, והמנה <math>\mathbb A_K^1/K^\times</math> קומפקטית. למשל, לאידל הראשי <math>\tfrac16</math>: <math>|\tfrac16|_\infty = \tfrac16</math>, <math>|\tfrac16|_2 = 2</math>, <math>|\tfrac16|_3 = 3</math>, ושאר הערכים 1 – המכפלה 1.
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory'', Academic Press, 1967
+* A. Deitmar, ''Automorphic Forms'', Universitext, Springer, 2013
+* J. Neukirch, ''Algebraic Number Theory'', Springer, 1999
+* D. Ramakrishnan, R. J. Valenza, ''Fourier Analysis on Number Fields'', Springer, 1999
+* A. Weil, ''Basic Number Theory'', Springer, 1995
+* D. Bump, ''Automorphic Forms and Representations'', Cambridge University Press, 1997
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]

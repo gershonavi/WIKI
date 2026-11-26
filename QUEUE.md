@@ -395,7 +395,7 @@ Additive number theory:
 
 - [x] Von Staudt–Clausen theorem
 - [x] Tate module
-- [ ] Adele ring
+- [x] Adele ring
 - [ ] Automorphic form
 - [ ] Monstrous moonshine
 - [ ] Chowla–Selberg formula
