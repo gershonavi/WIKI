@@ -303,7 +303,7 @@ Additive number theory:
 - [x] Gaussian moat
 - [x] Sierpiński number
 - [x] Prime k-tuple
-- [ ] Primes in arithmetic progression
+- [x] Primes in arithmetic progression
 - [ ] Reciprocals of primes
 - [ ] Prime constant
 - [ ] Wieferich pair
