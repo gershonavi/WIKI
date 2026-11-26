@@ -256,7 +256,7 @@ Additive number theory:
 - [x] Schanuel's conjecture
 - [x] Six exponentials theorem
 - [x] Four exponentials conjecture
-- [ ] Period (number theory)
+- [x] Period (number theory)
 - [ ] Schneider–Lang theorem
 - [ ] Analytic subgroup theorem
 - [ ] Auxiliary function
