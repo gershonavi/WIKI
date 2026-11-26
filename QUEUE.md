@@ -397,7 +397,7 @@ Additive number theory:
 - [x] Tate module
 - [x] Adele ring
 - [ ] Automorphic form
-- [ ] Monstrous moonshine
+- [x] Monstrous moonshine
 - [x] Chowla–Selberg formula
 - [x] Hecke L-function (דף פירושונים באנגלית; מכוסה ב-קרקטר של הקה ובתבנית מודולרית)
 - [x] Supersingular prime (moonshine theory)
