@@ -325,7 +325,7 @@ Additive number theory:
 - [x] Hyperperfect number
 - [x] Highly abundant number
 - [x] Primorial prime
-- [ ] Euclid number
+- [x] Euclid number
 - [ ] Cullen number
 - [ ] Woodall number
 - [ ] Thabit number
