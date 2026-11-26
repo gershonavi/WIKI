@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (565)
+## ערכים (566)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -323,6 +323,7 @@
 * [חסם מסטר](pages/%D7%97%D7%A1%D7%9D%20%D7%9E%D7%A1%D7%98%D7%A8.md) – Mestre bound
 * [כפל סקלרי על עקום אליפטי](pages/%D7%9B%D7%A4%D7%9C%20%D7%A1%D7%A7%D7%9C%D7%A8%D7%99%20%D7%A2%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99.md) – Elliptic curve point multiplication
 * [מוליך של עקום אליפטי](pages/%D7%9E%D7%95%D7%9C%D7%99%D7%9A%20%D7%A9%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99.md) – Conductor of an elliptic curve
+* [מטריצת האסה–ויט](pages/%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%AA%20%D7%94%D7%90%D7%A1%D7%94%E2%80%93%D7%95%D7%99%D7%98.md) – Hasse–Witt matrix
 * [משפט האסה על עקומים אליפטיים](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%94%D7%90%D7%A1%D7%94%20%D7%A2%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9E%D7%99%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99%D7%99%D7%9D.md) – Hasse's theorem on elliptic curves
 * [משפט נגל–לוץ](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A0%D7%92%D7%9C%E2%80%93%D7%9C%D7%95%D7%A5.md) – Nagell–Lutz theorem
 * [סיבוב של עקום אליפטי](pages/%D7%A1%D7%99%D7%91%D7%95%D7%91%20%D7%A9%D7%9C%20%D7%A2%D7%A7%D7%95%D7%9D%20%D7%90%D7%9C%D7%99%D7%A4%D7%98%D7%99.md) – Twists of elliptic curves

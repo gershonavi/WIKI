@@ -1,0 +1,65 @@
+ב[[מתמטיקה]], '''מטריצת האסה–ויט''' <math>H</math> של [[עקום אלגברי]] לא סינגולרי <math>C</math> מעל [[שדה סופי]] <math>F</math> היא ה[[מטריצה]] של העתקת פרובניוס (העלאה בחזקת <math>p</math>, כאשר ל-<math>F</math> יש <math>q</math> איברים ו-<math>q</math> חזקה של ה[[מספר ראשוני|ראשוני]] <math>p</math>) ביחס לבסיס של '''הדיפרנציאלים מהסוג הראשון'''. זו מטריצה <math>g \times g</math>, כאשר <math>g</math> הוא ה[[גנוס (מתמטיקה)|גנוס]] של <math>C</math>. הדרגה של מטריצת האסה–ויט נקראת '''אינווריאנט האסה''' או '''אינווריאנט האסה–ויט'''.
+
+== גישה להגדרה ==
+ההגדרה שבפתיחה טבעית במונחים קלאסיים, והיא של [[הלמוט הסה|הלמוט האסה]] ו[[ארנסט ויט]] (1936).{{הערה|שם=HW|1=<span dir="ltr">H. Hasse, E. Witt, "Zyklische unverzweigte Erweiterungskörper vom Primzahlgrad p über einem algebraischen Funktionenkörper der Charakteristik p", ''Monatsh. Math. Phys.'' '''43''' (1936), 477–492</span>|כיווון=שמאל}} היא נותנת פתרון לשאלת ה-<math>p</math>-דרגה של [[יריעת יעקובי]] <math>J</math> של <math>C</math>: ה-<math>p</math>-דרגה חסומה על ידי הדרגה של <math>H</math>, וליתר דיוק היא הדרגה של העתקת פרובניוס כשמרכיבים אותה עם עצמה <math>g</math> פעמים. ההגדרה גם אלגוריתמית, באופן עקרוני. בשנים האחרונות היה עניין רב בכך בגלל שימושים ב[[קריפטוגרפיה]], במקרה ש-<math>C</math> [[עקום היפר-אליפטי]]. העקום <math>C</math> נקרא '''על-מיוחד''' (superspecial) אם <math>H = 0</math>.
+
+להגדרה הזו צריך להוסיף לפחות שתי הסתייגויות. ראשית, יש מוסכמה לגבי העתקות פרובניוס, ולפי ההבנה המודרנית מה שנדרש עבור <math>H</math> הוא ה'''משוחלפת''' של פרובניוס (ההבדל בין פרובניוס אריתמטי לגאומטרי). שנית, העתקת פרובניוס אינה ליניארית מעל <math>F</math>; היא ליניארית מעל [[שדה ראשוני|השדה הראשוני]] <math>\mathbb Z/p\mathbb Z</math> שב-<math>F</math>. לכן אפשר לרשום את המטריצה, אבל היא אינה מייצגת העתקה ליניארית במובן הפשוט: היא '''ליניארית-למחצה''' (<math>p</math>-ליניארית), ובהרכבה צריך "לסובב" את המקדמים בפרובניוס.
+
+=== נוסחה מפורשת לעקומים היפר-אליפטיים ===
+עבור עקום היפר-אליפטי <math>y^2 = f(x)</math> מעל <math>\mathbb F_q</math>, עם <math>p</math> אי-זוגי ו-<math>\deg f = 2g+1</math>, בסיס לדיפרנציאלים מהסוג הראשון הוא <math>x^{j-1}\,dx/y</math>, <math>j = 1, \ldots, g</math>. אם <math>c_k</math> הוא המקדם של <math>x^k</math> ב-<math>f(x)^{(p-1)/2}</math>, אז (עד כדי שחלוף, לפי המוסכמה)
+:<math>H = \left(c_{ip - j}\right)_{1 \le i, j \le g}.</math>
+זו נוסחה של מנין.{{הערה|1=<span dir="ltr">Ju. I. Manin, "The Hasse–Witt matrix of an algebraic curve", ''Amer. Math. Soc. Transl. Ser. 2'' '''45''' (1965), 245–246 (translated from Russian)</span>|כיווון=שמאל}}
+
+== קוהומולוגיה ==
+בשפה של קוהומולוגיה של אלומות: העתקת החזקה ה-<math>p</math>-ית פועלת על
+:<math>H^1(C, \mathcal O_C),</math>
+כלומר על הקוהומולוגיה הראשונה של <math>C</math> עם מקדמים באלומת המבנה שלו. הפעולה הזו נקראת היום '''אופרטור קרטייה–מנין''' (או פשוט '''אופרטור קרטייה'''), על שם פייר קרטייה ו[[יורי מנין]]. הקשר להגדרה של האסה–ויט הוא דרך '''דואליות סר''', שעבור עקום מקשרת את החבורה הזו ל-
+:<math>H^0(C, \Omega_C),</math>
+כאשר <math>\Omega_C = \Omega^1_C</math> אלומת הדיפרנציאלים של קהלר על <math>C</math>.
+
+== יריעות אבליות וה-<math>p</math>-דרגה שלהן ==
+ה-<math>p</math>-דרגה של [[יריעה אבלית]] <math>A</math> מעל שדה <math>K</math> ממאפיין <math>p</math> היא המספר השלם <math>k</math> שעבורו לגרעין <math>A[p]</math> של הכפל ב-<math>p</math> יש <math>p^k</math> נקודות (מעל הסגור האלגברי). היא יכולה לקבל כל ערך מ-0 עד <math>d</math>, הממד של <math>A</math>; לעומת זאת, לכל ראשוני אחר <math>\ell</math> יש ב-<math>A[\ell]</math> בדיוק <math>\ell^{2d}</math> נקודות. ה-<math>p</math>-דרגה נמוכה יותר כי הכפל ב-<math>p</math> על <math>A</math> הוא [[איזוגניה]] '''לא ספרבילית''': הדיפרנציאל שלה הוא <math>p</math>, שהוא 0 ב-<math>K</math>. כשמסתכלים על הגרעין כ'''סכמה בחבורות''' מקבלים את המבנה המלא (ראו מאמפורד, ''Abelian Varieties'', עמ' 146–147); אבל, למשל, אם מצמצמים מודולו <math>p</math> [[פולינומי חלוקה|משוואת חלוקה]], מספר הפתרונות חייב לרדת.
+
+לכן הדרגה של אופרטור קרטייה–מנין, או של מטריצת האסה–ויט, היא חסם עליון ל-<math>p</math>-דרגה. ה-<math>p</math>-דרגה עצמה היא הדרגה של אופרטור פרובניוס כשמרכיבים אותו עם עצמו <math>g</math> פעמים, כלומר הדרגה של <math>H H^{(p)} \cdots H^{(p^{g-1})}</math>, כאשר <math>H^{(p^i)}</math> מתקבלת מ-<math>H</math> בהעלאת כל מקדם בחזקת <math>p^i</math>. במאמר המקורי של האסה וויט הבעיה מנוסחת במונחים פנימיים של <math>C</math>, בלי להסתמך על <math>J</math>: זו שאלה של סיווג '''הרחבות ארטין–שרייר''' האפשריות של שדה הפונקציות <math>F(C)</math> (האנלוג במקרה הזה של [[תורת קומר]]).
+
+== המקרה של גנוס 1 ==
+את המקרה של [[עקום אליפטי|עקומים אליפטיים]] פתר האסה ב-1934.{{הערה|1=<span dir="ltr">H. Hasse, "Existenz separabler zyklischer unverzweigter Erweiterungskörper vom Primzahlgrad p über elliptischen Funktionenkörpern der Charakteristik p", ''J. reine angew. Math.'' '''172''' (1934), 77–85</span>|כיווון=שמאל}} כיוון שהגנוס הוא 1, יש רק שתי אפשרויות למטריצה <math>H</math> (שהיא כאן מספר <math>A</math>): <math>A = 0</math> – אינווריאנט האסה 0, <math>p</math>-דרגה 0, המקרה ה[[עקום אליפטי על-סינגולרי|על-סינגולרי]]; או <math>A \ne 0</math> – אינווריאנט האסה 1, <math>p</math>-דרגה 1, המקרה ה'''רגיל''' (ordinary).{{הערה|שם=Hart|1=<span dir="ltr">R. Hartshorne, ''Algebraic Geometry'', Graduate Texts in Mathematics 52, Springer, 1977, p. 332</span>|כיווון=שמאל}}
+
+עבור <math>q = p</math> יש נוסחת קונגרואנציה: אם <math>N = |E(\mathbb F_p)|</math> (כולל הנקודה באינסוף), אז
+:<math>N \equiv 1 - A \pmod p,</math>
+כלומר <math>a_p = p + 1 - N \equiv A \pmod p</math>.{{הערה|1=בערך האנגלי נכתב ש-<math>H</math> "שקול מודולו <math>p</math> למספר הנקודות <math>N</math>". הנוסחה המדויקת היא <math>N \equiv 1 - A</math>, או באופן שקול <math>a_p \equiv A \pmod p</math>; ראו את הדוגמאות.|כיווון=שמאל}} לפי [[משפט האסה על עקומים אליפטיים|משפט האסה]], <math>N</math> נמצא בקטע <math>[p + 1 - 2\sqrt p,\ p + 1 + 2\sqrt p]</math> שאורכו <math>4\sqrt p</math>, ולכן כאשר <math>4\sqrt p \lt p</math>, כלומר <math>p \ge 17</math>, הערך של <math>N</math> מודולו <math>p</math> קובע את <math>N</math>.{{הערה|1=בערך האנגלי נכתב שזה נכון ל-<math>p \ge 5</math>. עבור ראשוניים קטנים הטענה אינה נכונה: למשל עבור <math>p = 5</math>, הקטע של האסה מכיל את <math>N = 2, \ldots, 10</math>, ויש בו זוגות שקולים מודולו 5, כמו 2 ו-7.|כיווון=שמאל}} הקשר הזה ל[[פונקציית זטא של האסה–וייל|פונקציות זטא מקומיות]] נחקר לעומק.
+
+עבור עקום מישורי שמוגדר על ידי פולינום ממעלה שלישית <math>f(X,Y,Z) = 0</math>, אינווריאנט האסה הוא 0 אם ורק אם המקדם של <math>(XYZ)^{p-1}</math> ב-<math>f^{p-1}</math> הוא 0.{{הערה|שם=Hart}} עבור עקום מהצורה <math>y^2 = f(x)</math> עם <math>\deg f = 3</math>, זה שקול לכך שהמקדם של <math>x^{p-1}</math> ב-<math>f(x)^{(p-1)/2}</math> הוא 0.
+
+== דוגמאות ==
+=== העקום <math>y^2 = x^3 + 1</math> ===
+כאן <math>A</math> הוא המקדם של <math>x^{p-1}</math> ב-<math>(x^3 + 1)^{(p-1)/2}</math>.
+* <math>p = 5</math>: <math>(x^3+1)^2 = x^6 + 2x^3 + 1</math>, ואין בו <math>x^4</math>, כלומר <math>A = 0</math> והעקום על-סינגולרי. ואכן <math>N = 6 \equiv 1 \pmod 5</math>.
+* <math>p = 7</math>: <math>(x^3+1)^3 = x^9 + 3x^6 + 3x^3 + 1</math>, והמקדם של <math>x^6</math> הוא <math>A = 3</math>: העקום רגיל. הנוסחה חוזה <math>N \equiv 1 - 3 \equiv 5 \pmod 7</math>, וספירה נותנת <math>N = 12 \equiv 5</math>.
+באופן כללי, <math>x^{p-1}</math> מופיע בפיתוח רק אם <math>3 \mid p - 1</math>, ואז <math>A \equiv \binom{(p-1)/2}{(p-1)/3} \not\equiv 0 \pmod p</math> (למשל <math>\binom{3}{2} = 3</math> עבור <math>p = 7</math>, ו-<math>\binom{6}{4} = 15 \equiv 2</math> עבור <math>p = 13</math>). לכן <math>A = 0</math> בדיוק כאשר <math>p \equiv 2 \pmod 3</math>, ואז <math>N = p + 1</math>; למשל <math>p = 11</math> נותן <math>A = 0</math> ו-<math>N = 12</math>.
+
+=== העקום <math>y^2 = x^3 - x</math> ===
+עבור <math>p = 7, 11</math> (שניהם <math>\equiv 3 \pmod 4</math>) מתקבל <math>A = 0</math> ו-<math>N = p + 1 = 8, 12</math>; עבור <math>p = 5</math> מתקבל <math>A = 3</math> ו-<math>N = 8 \equiv 3 = 1 - 3 \pmod 5</math>; עבור <math>p = 13</math>, <math>A = 6</math> ו-<math>N = 8 \equiv 1 - 6 \pmod{13}</math>.
+
+=== פולינום האסה בצורת לז'נדר ===
+עבור העקום <math>y^2 = x(x-1)(x-\lambda)</math>, אינווריאנט האסה הוא (עד כדי סימן) הערך של '''פולינום האסה'''
+:<math>H_p(\lambda) = \sum_{i=0}^{(p-1)/2}\binom{(p-1)/2}{i}^2\lambda^i.</math>
+עבור <math>p = 7</math>: <math>H_7(\lambda) = 1 + 9\lambda + 9\lambda^2 + \lambda^3 \equiv (\lambda+1)(\lambda+3)(\lambda-2) \pmod 7</math>, ולכן הערכים העל-סינגולריים הם <math>\lambda \in \{2, 4, 6\}</math>. לשלושתם <math>j = 2^8\frac{(\lambda^2 - \lambda + 1)^3}{\lambda^2(\lambda-1)^2} \equiv 6 \equiv 1728 \pmod 7</math>, בהתאם לכך שבמאפיין 7 האינווריאנט העל-סינגולרי היחיד הוא 1728 (ראו [[עקום אליפטי על-סינגולרי]]).
+
+=== גנוס 2: העקום <math>y^2 = x^5 + 1</math> ===
+לפי הנוסחה של מנין, <math>H = \begin{pmatrix} c_{p-1} & c_{p-2}\\ c_{2p-1} & c_{2p-2}\end{pmatrix}</math>, כאשר <math>c_k</math> המקדמים של <math>(x^5+1)^{(p-1)/2}</math>. מתקבל:
+* <math>p = 11, 31, 41</math> (<math>p \equiv 1 \pmod 5</math>): <math>H</math> אלכסונית והפיכה (למשל <math>\mathrm{diag}(10, 5)</math> עבור <math>p = 11</math>) – העקום '''רגיל''', <math>p</math>-דרגה 2.
+* <math>p = 19, 29</math> (<math>p \equiv 4 \pmod 5</math>): <math>H = 0</math> – העקום '''על-מיוחד'''.
+* <math>p = 7</math> (<math>p \equiv 2 \pmod 5</math>): <math>H = \begin{pmatrix}0 & 3\\ 0 & 0\end{pmatrix}</math>. הדרגה של <math>H</math> היא 1, אבל <math>H H^{(p)} = 0</math>, ולכן ה-<math>p</math>-דרגה היא 0. זו דוגמה לכך שאינווריאנט האסה–ויט הוא רק '''חסם עליון''' ל-<math>p</math>-דרגה.
+(בדקנו בחישוב את כל הדוגמאות.)
+
+== ראו גם ==
+* [[עקום אליפטי על-סינגולרי]]
+* [[גרף איזוגניות על-סינגולרי]]
+* [[פונקציית זטא של האסה–וייל]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:עקומים אליפטיים]]
+[[קטגוריה:שדות סופיים]]

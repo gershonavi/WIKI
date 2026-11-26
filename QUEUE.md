@@ -417,7 +417,7 @@ Additive number theory:
 
 - [x] Lehmer's conjecture
 - [x] Tate pairing
-- [ ] Hasse–Witt matrix
+- [x] Hasse–Witt matrix
 - [ ] Theta function of a lattice
 - [ ] Lemniscate elliptic functions
 - [ ] Monster group
