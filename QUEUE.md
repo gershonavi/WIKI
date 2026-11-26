@@ -229,7 +229,7 @@ Additive number theory:
 - [x] Euler's sum of powers conjecture
 - [x] Sums of three cubes
 - [x] Sum of four cubes problem
-- [ ] Goormaghtigh conjecture
+- [x] Goormaghtigh conjecture
 - [ ] Ljunggren's equation
 
 ### קירובים דיופנטיים ומספרים טרנסצנדנטיים (26)
