@@ -176,7 +176,7 @@ Additive number theory:
 - [x] Cusp form
 - [x] Weierstrass elliptic function
 - [x] Fundamental pair of periods
-- [ ] Modular lambda function
+- [x] Modular lambda function
 - [ ] Petersson inner product
 - [ ] Eigenform
 - [ ] Atkin–Lehner theory

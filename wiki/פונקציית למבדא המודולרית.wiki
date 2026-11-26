@@ -1,0 +1,200 @@
+ב[[מתמטיקה]], '''פונקציית למבדא המודולרית''' <math>\lambda(\tau)</math>{{הערה|1=<math>\lambda(\tau)</math> אינה [[פונקציה מודולרית]] ביחס ל-<math>\mathrm{SL}_2(\mathbb Z)</math> כולה (היא אינה אינווריאנטית תחת <math>\tau \mapsto \tau + 1</math>), אבל כל פונקציה מודולרית היא [[פונקציה רציונלית]] של <math>\lambda(\tau)</math>, כי [[אינווריאנט j]] הוא כזה. יש מחברים שמשתמשים בהגדרה אחרת, לא שקולה, של "פונקציות מודולריות".|כיווון=שמאל}} היא [[פונקציה הולומורפית]] בעלת סימטריה רבה על [[חצי המישור העליון]] המרוכב. היא אינווריאנטית תחת הפעולה ה[[העתקת מביוס|לינארית-שבורה]] של [[תת-חבורת קונגרואנציה|תת-חבורת הקונגרואנציה]] <math>\Gamma(2)</math> של <math>\mathrm{SL}_2(\mathbb Z)</math>, והיא יוצרת את [[שדה פונקציות|שדה הפונקציות]] של המנה המתאימה; כלומר, היא '''האופטמודול''' של [[עקום מודולרי|העקום המודולרי]] <math>X(2)</math>. בכל נקודה <math>\tau</math> אפשר לתאר את ערכה כ[[יחס כפול]] של נקודות ההסתעפות של הכיסוי הכפול המסועף של [[ישר פרויקטיבי|הישר הפרויקטיבי]] על ידי ה[[עקום אליפטי]] <math>\mathbb C/\langle 1, \tau\rangle</math>, כאשר ההעתקה היא המנה ביחס לאינוולוציה <math>[-1]</math>.
+
+פיתוח ה-<math>q</math>, עם <math>q = e^{\pi i\tau}</math> ה[[נום (מתמטיקה)|נום]], הוא
+:<math>\lambda(\tau) = 16q - 128q^2 + 704q^3 - 3072q^4 + 11488q^5 - 38400q^6 + \cdots</math>
+(סדרה A115977 ב-[[OEIS]]). אם מסמטרים את פונקציית למבדא תחת הפעולה הקנונית של ה[[החבורה הסימטרית|חבורה הסימטרית]] <math>S_3</math> על <math>X(2)</math>, ומנרמלים בצורה מתאימה, מתקבלת פונקציה על חצי המישור העליון שאינווריאנטית תחת כל החבורה המודולרית <math>\mathrm{SL}_2(\mathbb Z)</math>, ולמעשה זו [[אינווריאנט j|פונקציית <math>j</math>]] המודולרית של קליין.
+
+== תכונות מודולריות ==
+הפונקציה <math>\lambda(\tau)</math> אינווריאנטית תחת החבורה שנוצרת על ידי{{הערה|שם=Ch|1=<span dir="ltr">K. Chandrasekharan, Elliptic Functions, Grundlehren der mathematischen Wissenschaften 281, Springer, 1985, pp. 108–121.</span>|כיווון=שמאל}}
+:<math>\tau \mapsto \tau + 2, \qquad \tau \mapsto \frac\tau{1 - 2\tau}.</math>
+היוצרים של החבורה המודולרית פועלים כך:{{הערה|שם=Ch}}
+:<math>\tau \mapsto \tau + 1:\quad \lambda \mapsto \frac\lambda{\lambda - 1}; \qquad \tau \mapsto -\frac1\tau:\quad \lambda \mapsto 1 - \lambda.</math>
+לכן הפעולה של החבורה המודולרית על <math>\lambda(\tau)</math> היא הפעולה של '''החבורה האנהרמונית''', שנותנת את ששת הערכים של היחס הכפול:{{הערה|שם=Ch}}
+:<math>\left\{\lambda,\ \frac1{1 - \lambda},\ \frac{\lambda - 1}\lambda,\ \frac1\lambda,\ \frac\lambda{\lambda - 1},\ 1 - \lambda\right\}.</math>
+החבורה <math>\mathrm{SL}_2(\mathbb Z)/\Gamma(2) \cong \mathrm{SL}_2(\mathbb F_2) \cong S_3</math> פועלת על ששת הערכים האלה בדיוק כמו <math>S_3</math> על סידורי שלוש נקודות ההסתעפות.
+
+== קשר לפונקציות אחרות ==
+<math>\lambda</math> היא ה[[ריבוע (אלגברה)|ריבוע]] של המודולוס האליפטי,{{הערה|שם=Ch}} כלומר <math>\lambda(\tau) = k^2(\tau)</math>. בעזרת [[פונקציית אטא של דדקינד]] <math>\eta(\tau)</math> ו[[פונקציית תטא|פונקציות התטא]]:{{הערה|שם=Ch}}
+:<math>\lambda(\tau) = \left(\frac{\sqrt2\,\eta\left(\frac\tau2\right)\eta^2(2\tau)}{\eta^3(\tau)}\right)^8 = \frac{16}{\left(\frac{\eta(\tau/2)}{\eta(2\tau)}\right)^8 + 16} = \frac{\theta_2^4(\tau)}{\theta_3^4(\tau)},</math>
+וכן
+:<math>\frac1{\lambda(\tau)^{1/4}} - \lambda(\tau)^{1/4} = \frac12\left(\frac{\eta\left(\frac\tau4\right)}{\eta(\tau)}\right)^4 = 2\,\frac{\theta_4^2\left(\frac\tau2\right)}{\theta_2^2\left(\frac\tau2\right)},</math>
+כאשר
+:<math>\theta_2(\tau) = \sum_{n=-\infty}^\infty e^{\pi i\tau(n + 1/2)^2}, \qquad \theta_3(\tau) = \sum_{n=-\infty}^\infty e^{\pi i\tau n^2}, \qquad \theta_4(\tau) = \sum_{n=-\infty}^\infty(-1)^ne^{\pi i\tau n^2}.</math>
+
+בעזרת חצאי המחזורים של [[הפונקציה האליפטית של ויירשטראס|הפונקציות האליפטיות של ויירשטראס]]: יהי <math>[\omega_1, \omega_2]</math> [[זוג מחזורים יסודי]] עם <math>\tau = \omega_2/\omega_1</math>, ו-
+:<math>e_1 = \wp\left(\frac{\omega_1}2\right), \qquad e_2 = \wp\left(\frac{\omega_2}2\right), \qquad e_3 = \wp\left(\frac{\omega_1 + \omega_2}2\right).</math>
+אז{{הערה|שם=Ch}}
+:<math>\lambda = \frac{e_3 - e_2}{e_1 - e_2}.</math>
+כיוון ששלושת הערכים בחצאי המחזורים שונים זה מזה, מכאן ש-<math>\lambda</math> אינה מקבלת את הערכים 0 ו-1.{{הערה|שם=Ch}}
+
+הקשר ל[[אינווריאנט j]] הוא{{הערה|שם=Ch}}{{הערה|1=<span dir="ltr">R. A. Rankin, Modular Forms and Functions, Cambridge University Press, 1977, pp. 226–228.</span>|כיווון=שמאל}}
+:<math>j(\tau) = \frac{256\bigl(1 - \lambda(1 - \lambda)\bigr)^3}{\bigl(\lambda(1 - \lambda)\bigr)^2} = \frac{256(1 - \lambda + \lambda^2)^3}{\lambda^2(1 - \lambda)^2},</math>
+וזה אינווריאנט <math>j</math> של העקום האליפטי ב[[צורת לז'נדר]] <math>y^2 = x(x - 1)(x - \lambda)</math>. למשל, <math>\lambda(i) = \tfrac12</math> נותן <math>j(i) = 256\cdot(3/4)^3/(1/16) = 1728</math>.
+
+בהינתן <math>m \in \mathbb C\setminus\{0, 1\}</math>, יהי
+:<math>\tau = i\frac{K\{1 - m\}}{K\{m\}},</math>
+כאשר <math>K</math> הוא [[אינטגרל אליפטי#אינטגרל אליפטי שלם מהסוג הראשון|האינטגרל האליפטי השלם מהסוג הראשון]] עם פרמטר <math>m = k^2</math>. אז <math>\lambda(\tau) = m</math>. (בדקנו זאת בחישוב מספרי עבור <math>m = 0.3</math>.)
+
+== משוואות מודולריות ==
+'''המשוואה המודולרית ממעלה <math>p</math>''' (כאשר <math>p</math> [[מספר ראשוני]]) היא [[משוואה אלגברית]] ב-<math>\lambda(p\tau)</math> וב-<math>\lambda(\tau)</math>. אם <math>\lambda(p\tau) = u^8</math> ו-<math>\lambda(\tau) = v^8</math>, המשוואות המודולריות ממעלות <math>p = 2, 3, 5, 7</math> הן, בהתאמה,{{הערה|שם=BB|1=<span dir="ltr">J. M. Borwein, P. B. Borwein, Pi and the AGM: A Study in Analytic Number Theory and Computational Complexity, Wiley-Interscience, 1987, pp. 103–109, 134, 152.</span>|כיווון=שמאל}}
+:<math>\begin{align}
+&(1 + u^4)^2v^8 - 4u^4 = 0, \\
+&u^4 - v^4 + 2uv(1 - u^2v^2) = 0, \\
+&u^6 - v^6 + 5u^2v^2(u^2 - v^2) + 4uv(1 - u^4v^4) = 0, \\
+&(1 - u^8)(1 - v^8) - (1 - uv)^8 = 0.
+\end{align}</math>
+את הגודל <math>v</math> (ולכן גם את <math>u</math>) אפשר לראות כפונקציה הולומורפית בחצי המישור העליון <math>\operatorname{Im}\tau \gt 0</math>:
+:<math>v = \prod_{k=1}^\infty\tanh\frac{(k - 1/2)\pi i}\tau = \sqrt2e^{\pi i\tau/8}\frac{\sum_{k\in\mathbb Z}e^{(2k^2 + k)\pi i\tau}}{\sum_{k\in\mathbb Z}e^{k^2\pi i\tau}} = \cfrac{\sqrt2e^{\pi i\tau/8}}{1 + \cfrac{e^{\pi i\tau}}{1 + e^{\pi i\tau} + \cfrac{e^{2\pi i\tau}}{1 + e^{2\pi i\tau} + \cfrac{e^{3\pi i\tau}}{1 + e^{3\pi i\tau} + \ddots}}}}</math>
+(בדקנו את ארבע המשוואות המודולריות ואת שלושת הביטויים ל-<math>v</math> בחישוב מספרי, עבור <math>\tau = 1.1i</math>.)
+
+כיוון ש-<math>\lambda(i) = 1/2</math>, אפשר להשתמש במשוואות המודולריות כדי לקבל [[מספר אלגברי|ערכים אלגבריים]] של <math>\lambda(pi)</math> לכל ראשוני <math>p</math>. (לכל [[חזקת ראשוני]] אפשר לחזור על המשוואה המודולרית ממעלה <math>p</math>, ולכן התהליך נותן ערכים אלגבריים של <math>\lambda(ni)</math> לכל <math>n</math> טבעי.) למשל, עבור <math>p = 2</math>: <math>v^8 = \tfrac12</math> והמשוואה <math>(1 + u^4)^2 = 8u^4</math> נותנת <math>u^4 = 3 - 2\sqrt2 = (\sqrt2 - 1)^2</math>, ולכן <math>\lambda(2i) = u^8 = (\sqrt2 - 1)^4 \approx 0.02944</math>. הערכים האלגבריים של <math>\lambda(ni)</math> נתונים גם על ידי{{הערה|שם=Jac|1=<span dir="ltr">C. G. J. Jacobi, Fundamenta nova theoriae functionum ellipticarum, 1829, p. 42.</span>|כיווון=שמאל}}
+:<math>\lambda(ni) = \prod_{k=1}^{n/2}\operatorname{sl}^8\frac{(2k - 1)\varpi}{2n} \quad (n \text{ זוגי}), \qquad \lambda(ni) = \frac1{2^n}\prod_{k=1}^{n-1}\left(1 - \operatorname{sl}^2\frac{k\varpi}n\right)^2 \quad (n \text{ אי-זוגי}),</math>
+כאשר <math>\operatorname{sl}</math> הוא [[הסינוס הלמניסקטי]] ו-<math>\varpi \approx 2.62206</math> הוא [[קבוע הלמניסקטה]] (ו-<math>\operatorname{sl}(a\varpi)</math> אלגברי לכל <math>a</math> רציונלי). (בדקנו את שתי הנוסחאות עבור <math>n = 2, \dots, 7</math>.)
+
+== למבדא-כוכב ==
+=== הגדרה וחישוב ===
+הפונקציה <math>\lambda^*(x)</math>{{הערה|שם=BB}} (עבור <math>x \in \mathbb R^+</math>) נותנת את המודולוס האליפטי <math>k</math> שעבורו [[אינטגרל אליפטי|האינטגרל האליפטי השלם מהסוג הראשון]] <math>K(k)</math> והאינטגרל המשלים <math>K\left(\sqrt{1 - k^2}\right)</math> מקיימים
+:<math>\frac{K\left[\sqrt{1 - \lambda^*(x)^2}\right]}{K[\lambda^*(x)]} = \sqrt x.</math>
+את ערכי <math>\lambda^*(x)</math> אפשר לחשב כך:
+:<math>\lambda^*(x) = \frac{\theta_2^2(i\sqrt x)}{\theta_3^2(i\sqrt x)} = \left[\sum_{a=-\infty}^\infty\exp\left(-(a + 1/2)^2\pi\sqrt x\right)\right]^2\left[\sum_{a=-\infty}^\infty\exp\left(-a^2\pi\sqrt x\right)\right]^{-2} = \frac{\sum_{a=-\infty}^\infty\operatorname{sech}\left[(a + 1/2)\pi\sqrt x\right]}{\sum_{a=-\infty}^\infty\operatorname{sech}\left(a\pi\sqrt x\right)}.</math>
+הקשר בין <math>\lambda^*</math> ל-<math>\lambda</math> הוא
+:<math>\lambda^*(x) = \sqrt{\lambda\left(i\sqrt x\right)}.</math>
+
+=== תכונות ===
+כל ערך של <math>\lambda^*</math> ב[[מספר רציונלי]] חיובי הוא [[מספר אלגברי]] חיובי:
+:<math>\lambda^*(x) \in \overline{\mathbb Q}_+ \quad \forall x \in \mathbb Q^+.</math>
+את <math>K(\lambda^*(x))</math> ואת <math>E(\lambda^*(x))</math> ([[אינטגרל אליפטי|האינטגרל האליפטי השלם מהסוג השני]]) אפשר לבטא בצורה סגורה בעזרת [[פונקציית גמא]] לכל <math>x \in \mathbb Q^+</math>, כפי שהוכיחו סלברג וצ'אולה ב-1949.{{הערה|1=<span dir="ltr">S. Chowla, A. Selberg, On Epstein's Zeta Function (I), Proceedings of the National Academy of Sciences 35 (1949), no. 7, pp. 371–374; On Epstein's Zeta-Function, J. reine angew. Math. 227 (1967), pp. 86–110.</span>|כיווון=שמאל}}
+
+הביטוי הבא נכון לכל <math>n \in \mathbb N</math>:
+:<math>\sqrt n = \sum_{a=1}^n\operatorname{dn}\left[\frac{2a}nK\left[\lambda^*\left(\frac1n\right)\right];\lambda^*\left(\frac1n\right)\right],</math>
+כאשר <math>\operatorname{dn}</math> היא [[הפונקציות האליפטיות של יעקובי|פונקציית יעקובי]] delta amplitudinis עם מודולוס <math>k</math>.
+
+כשיודעים ערך אחד של <math>\lambda^*</math>, אפשר להשתמש בנוסחה הבאה כדי לחשב ערכים קשורים:{{הערה|שם=Jac}}
+:<math>\lambda^*(n^2x) = \lambda^*(x)^n\prod_{a=1}^n\operatorname{sn}\left\{\frac{2a - 1}nK[\lambda^*(x)];\lambda^*(x)\right\}^2,</math>
+כאשר <math>n \in \mathbb N</math> ו-<math>\operatorname{sn}</math> היא פונקציית יעקובי sinus amplitudinis עם מודולוס <math>k</math>.
+
+קשרים נוספים:
+:<math>\lambda^*(x)^2 + \lambda^*(1/x)^2 = 1,</math>
+:<math>[\lambda^*(x) + 1][\lambda^*(4/x) + 1] = 2,</math>
+:<math>\lambda^*(4x) = \frac{1 - \sqrt{1 - \lambda^*(x)^2}}{1 + \sqrt{1 - \lambda^*(x)^2}} = \tan\left\{\frac12\arcsin[\lambda^*(x)]\right\}^2,</math>
+:<math>\lambda^*(x) - \lambda^*(9x) = 2[\lambda^*(x)\lambda^*(9x)]^{1/4} - 2[\lambda^*(x)\lambda^*(9x)]^{3/4}.</math>
+ועוד, עם <math>a = \left[\frac{2\lambda^*(x)}{1 - \lambda^*(x)^2}\right]^{1/12}</math> ועם <math>f, b, c, d</math> שמוגדרים באותו אופן מ-<math>\lambda^*(25x)</math>, <math>\lambda^*(49x)</math>, <math>\lambda^*(121x)</math>, <math>\lambda^*(169x)</math> בהתאמה:
+:<math>\begin{align}
+&a^6 - f^6 = 2af + 2a^5f^5, \\
+&a^8 + b^8 - 7a^4b^4 = 2\sqrt2ab + 2\sqrt2a^7b^7, \\
+&a^{12} - c^{12} = 2\sqrt2(ac + a^3c^3)(1 + 3a^2c^2 + a^4c^4)(2 + 3a^2c^2 + 2a^4c^4), \\
+&(a^2 - d^2)(a^4 + d^4 - 7a^2d^2)\left[(a^2 - d^2)^4 - a^2d^2(a^2 + d^2)^2\right] = 8ad + 8a^{13}d^{13}.
+\end{align}</math>
+(את כל הקשרים בסעיף הזה בדקנו בחישוב מספרי בדיוק של 40 ספרות.)
+
+=== ערכים מיוחדים ===
+את כל הערכים שלהלן בדקנו בחישוב מספרי בדיוק של 40 ספרות, מול <math>\lambda^*(x) = \theta_2^2/\theta_3^2</math>.
+
+'''ערכים במספרים שלמים מהצורה <math>4n - 3</math>:'''
+:<math>\lambda^*(1) = \frac1{\sqrt2}</math>
+:<math>\lambda^*(5) = \sin\left[\frac12\arcsin\left(\sqrt5 - 2\right)\right]</math>
+:<math>\lambda^*(9) = \frac12(\sqrt3 - 1)\left(\sqrt2 - \sqrt[4]3\right)</math>
+:<math>\lambda^*(13) = \sin\left[\frac12\arcsin\left(5\sqrt{13} - 18\right)\right]</math>
+:<math>\lambda^*(17) = \sin\left\{\frac12\arcsin\left[\frac1{64}\left(5 + \sqrt{17} - \sqrt{10\sqrt{17} + 26}\right)^3\right]\right\}</math>
+:<math>\lambda^*(21) = \sin\left\{\frac12\arcsin\left[\left(8 - 3\sqrt7\right)\left(2\sqrt7 - 3\sqrt3\right)\right]\right\}</math>
+:<math>\lambda^*(25) = \frac1{\sqrt2}\left(\sqrt5 - 2\right)\left(3 - 2\sqrt[4]5\right)</math>
+:<math>\lambda^*(33) = \sin\left\{\frac12\arcsin\left[\left(10 - 3\sqrt{11}\right)\left(2 - \sqrt3\right)^3\right]\right\}</math>
+:<math>\lambda^*(37) = \sin\left\{\frac12\arcsin\left[\left(\sqrt{37} - 6\right)^3\right]\right\}</math>
+:<math>\lambda^*(45) = \sin\left\{\frac12\arcsin\left[\left(4 - \sqrt{15}\right)^2\left(\sqrt5 - 2\right)^3\right]\right\}</math>
+:<math>\lambda^*(49) = \frac14\left(8 + 3\sqrt7\right)\left(5 - \sqrt7 - \sqrt[4]{28}\right)\left(\sqrt{14} - \sqrt2 - \sqrt[8]{28}\sqrt{5 - \sqrt7}\right)</math>
+:<math>\lambda^*(57) = \sin\left\{\frac12\arcsin\left[\left(170 - 39\sqrt{19}\right)\left(2 - \sqrt3\right)^3\right]\right\}</math>
+:<math>\lambda^*(73) = \sin\left\{\frac12\arcsin\left[\frac1{64}\left(45 + 5\sqrt{73} - 3\sqrt{50\sqrt{73} + 426}\right)^3\right]\right\}</math>
+
+'''ערכים במספרים שלמים מהצורה <math>4n - 2</math>:'''
+:<math>\lambda^*(2) = \sqrt2 - 1</math>
+:<math>\lambda^*(6) = \left(2 - \sqrt3\right)\left(\sqrt3 - \sqrt2\right)</math>
+:<math>\lambda^*(10) = \left(\sqrt{10} - 3\right)\left(\sqrt2 - 1\right)^2</math>
+:<math>\lambda^*(14) = \tan\left\{\frac12\arctan\left[\frac18\left(2\sqrt2 + 1 - \sqrt{4\sqrt2 + 5}\right)^3\right]\right\}</math>
+:<math>\lambda^*(18) = \left(\sqrt2 - 1\right)^3\left(2 - \sqrt3\right)^2</math>
+:<math>\lambda^*(22) = \left(10 - 3\sqrt{11}\right)\left(3\sqrt{11} - 7\sqrt2\right)</math>
+:<math>\lambda^*(30) = \tan\left\{\frac12\arctan\left[\left(\sqrt{10} - 3\right)^2\left(\sqrt5 - 2\right)^2\right]\right\}</math>
+:<math>\lambda^*(34) = \tan\left\{\frac14\arcsin\left[\frac19\left(\sqrt{17} - 4\right)^2\right]\right\}</math>
+:<math>\lambda^*(42) = \tan\left\{\frac12\arctan\left[\left(2\sqrt7 - 3\sqrt3\right)^2\left(2\sqrt2 - \sqrt7\right)^2\right]\right\}</math>
+:<math>\lambda^*(46) = \tan\left\{\frac12\arctan\left[\frac1{64}\left(3 + \sqrt2 - \sqrt{6\sqrt2 + 7}\right)^6\right]\right\}</math>
+:<math>\lambda^*(58) = \left(13\sqrt{58} - 99\right)\left(\sqrt2 - 1\right)^6</math>
+:<math>\lambda^*(70) = \tan\left\{\frac12\arctan\left[\left(\sqrt5 - 2\right)^4\left(\sqrt2 - 1\right)^6\right]\right\}</math>
+:<math>\lambda^*(78) = \tan\left\{\frac12\arctan\left[\left(5\sqrt{13} - 18\right)^2\left(\sqrt{26} - 5\right)^2\right]\right\}</math>
+:<math>\lambda^*(82) = \tan\left\{\frac14\arcsin\left[\frac1{4761}\left(8\sqrt{41} - 51\right)^2\right]\right\}</math>
+
+'''ערכים במספרים שלמים מהצורה <math>4n - 1</math>:'''
+:<math>\lambda^*(3) = \frac1{2\sqrt2}\left(\sqrt3 - 1\right)</math>
+:<math>\lambda^*(7) = \frac1{4\sqrt2}\left(3 - \sqrt7\right)</math>
+:<math>\lambda^*(11) = \frac1{8\sqrt2}\left(\sqrt{11} + 3\right)\left(\frac13\sqrt[3]{6\sqrt3 + 2\sqrt{11}} - \frac13\sqrt[3]{6\sqrt3 - 2\sqrt{11}} + \frac13\sqrt{11} - 1\right)^4</math>
+:<math>\lambda^*(15) = \frac1{8\sqrt2}\left(3 - \sqrt5\right)\left(\sqrt5 - \sqrt3\right)\left(2 - \sqrt3\right)</math>
+:<math>\lambda^*(19) = \frac1{8\sqrt2}\left(3\sqrt{19} + 13\right)\left[\frac16\left(\sqrt{19} - 2 + \sqrt3\right)\sqrt[3]{3\sqrt3 - \sqrt{19}} - \frac16\left(\sqrt{19} - 2 - \sqrt3\right)\sqrt[3]{3\sqrt3 + \sqrt{19}} - \frac13\left(5 - \sqrt{19}\right)\right]^4</math>
+:<math>\lambda^*(23) = \frac1{16\sqrt2}\left(5 + \sqrt{23}\right)\left[\frac16\left(\sqrt3 + 1\right)\sqrt[3]{100 - 12\sqrt{69}} - \frac16\left(\sqrt3 - 1\right)\sqrt[3]{100 + 12\sqrt{69}} + \frac23\right]^4</math>
+:<math>\lambda^*(27) = \frac1{16\sqrt2}\left(\sqrt3 - 1\right)^3\left[\frac13\sqrt3\left(\sqrt[3]4 - \sqrt[3]2 + 1\right) - \sqrt[3]2 + 1\right]^4</math>
+:<math>\lambda^*(39) = \sin\left\{\frac12\arcsin\left[\frac1{16}\left(6 - \sqrt{13} - 3\sqrt{6\sqrt{13} - 21}\right)\right]\right\}</math>
+:<math>\lambda^*(55) = \sin\left\{\frac12\arcsin\left[\frac1{512}\left(3\sqrt5 - 3 - \sqrt{6\sqrt5 - 2}\right)^3\right]\right\}</math>
+
+'''ערכים במספרים שלמים מהצורה <math>4n</math>:'''
+:<math>\lambda^*(4) = \left(\sqrt2 - 1\right)^2</math>
+:<math>\lambda^*(8) = \left(\sqrt2 + 1 - \sqrt{2\sqrt2 + 2}\right)^2</math>
+:<math>\lambda^*(12) = \left(\sqrt3 - \sqrt2\right)^2\left(\sqrt2 - 1\right)^2</math>
+:<math>\lambda^*(16) = \left(\sqrt2 + 1\right)^2\left(\sqrt[4]2 - 1\right)^4</math>
+:<math>\lambda^*(20) = \tan\left[\frac14\arcsin\left(\sqrt5 - 2\right)\right]^2</math>
+:<math>\lambda^*(24) = \tan\left\{\frac12\arcsin\left[\left(2 - \sqrt3\right)\left(\sqrt3 - \sqrt2\right)\right]\right\}^2</math>
+:<math>\lambda^*(28) = \left(2\sqrt2 - \sqrt7\right)^2\left(\sqrt2 - 1\right)^4</math>
+:<math>\lambda^*(32) = \tan\left\{\frac12\arcsin\left[\left(\sqrt2 + 1 - \sqrt{2\sqrt2 + 2}\right)^2\right]\right\}^2</math>
+
+'''ערכים בשברים רציונליים:'''
+:<math>\lambda^*\left(\tfrac12\right) = \sqrt{2\sqrt2 - 2}</math>
+:<math>\lambda^*\left(\tfrac13\right) = \frac1{2\sqrt2}\left(\sqrt3 + 1\right)</math>
+:<math>\lambda^*\left(\tfrac23\right) = \left(2 - \sqrt3\right)\left(\sqrt3 + \sqrt2\right)</math>
+:<math>\lambda^*\left(\tfrac14\right) = 2\sqrt[4]2\left(\sqrt2 - 1\right)</math>
+:<math>\lambda^*\left(\tfrac34\right) = \sqrt[4]8\left(\sqrt3 - \sqrt2\right)\left(\sqrt2 + 1\right)\sqrt{\left(\sqrt3 - 1\right)^3}</math>
+:<math>\lambda^*\left(\tfrac15\right) = \frac1{2\sqrt2}\left(\sqrt{2\sqrt5 - 2} + \sqrt5 - 1\right)</math>
+:<math>\lambda^*\left(\tfrac25\right) = \left(\sqrt{10} - 3\right)\left(\sqrt2 + 1\right)^2</math>
+:<math>\lambda^*\left(\tfrac35\right) = \frac1{8\sqrt2}\left(3 + \sqrt5\right)\left(\sqrt5 - \sqrt3\right)\left(2 + \sqrt3\right)</math>
+:<math>\lambda^*\left(\tfrac45\right) = \tan\left[\frac\pi4 - \frac14\arcsin\left(\sqrt5 - 2\right)\right]^2</math>
+
+לדוגמה, <math>\lambda^*(4) = (\sqrt2 - 1)^2</math> מתאים ל-<math>\lambda(2i) = \lambda^*(4)^2 = (\sqrt2 - 1)^4</math>, בהתאם לחישוב מהמשוואה המודולרית ממעלה 2 שלמעלה; ו-<math>\lambda^*(4) = \tan\left(\tfrac12\arcsin\tfrac1{\sqrt2}\right)^2 = \tan^2\tfrac\pi8</math>, בהתאם לנוסחה ל-<math>\lambda^*(4x)</math> עם <math>x = 1</math>.
+
+=== אינווריאנטי המחלקה של רמנוג'אן ===
+אינווריאנטי המחלקה של [[סריניוואסה רמנוג'אן|רמנוג'אן]] <math>G_n</math> ו-<math>g_n</math> מוגדרים על ידי{{הערה|1=<span dir="ltr">B. C. Berndt, H. H. Chan, L.-C. Zhang, Ramanujan's class invariants, Kronecker's limit formula, and modular equations, Transactions of the AMS 349 (1997), no. 6, pp. 2125–2173.</span>|כיווון=שמאל}}
+:<math>G_n = 2^{-1/4}e^{\pi\sqrt n/24}\prod_{k=0}^\infty\left(1 + e^{-(2k+1)\pi\sqrt n}\right), \qquad g_n = 2^{-1/4}e^{\pi\sqrt n/24}\prod_{k=0}^\infty\left(1 - e^{-(2k+1)\pi\sqrt n}\right),</math>
+כאשר <math>n \in \mathbb Q^+</math>. עבור <math>n</math> כאלה, אינווריאנטי המחלקה הם מספרים אלגבריים. למשל
+:<math>g_{58} = \sqrt{\frac{5 + \sqrt{29}}2}, \qquad g_{190} = \sqrt{\left(\sqrt5 + 2\right)\left(\sqrt{10} + 3\right)}.</math>
+בין הזהויות שמקיימים אינווריאנטי המחלקה:{{הערה|1=<span dir="ltr">P. Eymard, J.-P. Lafon, Autour du nombre π, Hermann, 1999, p. 240.</span>|כיווון=שמאל}}
+:<math>G_n = G_{1/n}, \qquad g_n = \frac1{g_{4/n}}, \qquad g_{4n} = 2^{1/4}g_nG_n.</math>
+אינווריאנטי המחלקה קשורים הדוק ל[[פונקציית ובר המודולרית|פונקציות ובר המודולריות]] <math>\mathfrak f</math> ו-<math>\mathfrak f_1</math>. אלה הקשרים בין למבדא-כוכב לאינווריאנטי המחלקה:
+:<math>G_n = \sin\{2\arcsin[\lambda^*(n)]\}^{-1/12} = 1\Big/\left[\sqrt[12]{2\lambda^*(n)}\sqrt[24]{1 - \lambda^*(n)^2}\right],</math>
+:<math>g_n = \tan\{2\arctan[\lambda^*(n)]\}^{-1/12} = \sqrt[12]{[1 - \lambda^*(n)^2]/[2\lambda^*(n)]},</math>
+:<math>\lambda^*(n) = \tan\left\{\frac12\arctan[g_n^{-12}]\right\} = \sqrt{g_n^{24} + 1} - g_n^{12}.</math>
+
+== הופעות נוספות ==
+=== משפט פיקאר הקטן ===
+פונקציית למבדא שימשה בהוכחה המקורית של [[משפט פיקאר הקטן]], שלפיו [[פונקציה שלמה]] לא קבועה על [[המישור המרוכב]] אינה יכולה להחמיץ יותר מערך אחד. פיקאר הוכיח את המשפט ב-1879.{{הערה|שם=Ch}} נניח, בדרך השלילה, ש-<math>f</math> שלמה ואינה מקבלת את הערכים 0 ו-1. כיוון ש-<math>\lambda</math> הולומורפית, יש לה הופכית הולומורפית מקומית <math>\omega</math> שמוגדרת מחוץ ל-<math>0, 1, \infty</math>. נתבונן בפונקציה <math>z \mapsto \omega(f(z))</math>. לפי [[משפט המונודרומיה]] היא הולומורפית (ומוגדרת היטב, כי <math>\mathbb C</math> פשוט קשר), ומעתיקה את המישור המרוכב לחצי המישור העליון. מכאן קל לבנות פונקציה הולומורפית מ-<math>\mathbb C</math> לעיגול היחידה (למשל על ידי הרכבה עם <math>w \mapsto \frac{w - i}{w + i}</math>), שלפי [[משפט ליוביל (אנליזה מרוכבת)|משפט ליוביל]] חייבת להיות קבועה; לכן גם <math>f</math> קבועה.{{הערה|שם=Ch}}
+
+=== ירח ===
+הפונקציה <math>\tau \mapsto 16/\lambda(2\tau) - 8</math> היא [[עקום מודולרי#גנוס אפס|האופטמודול]] המנורמל של החבורה <math>\Gamma_0(4)</math>, ופיתוח ה-<math>q</math> שלה
+:<math>q^{-1} + 20q - 62q^3 + 216q^5 - 641q^7 + \cdots</math>
+(סדרה A007248 ב-OEIS), עם <math>q = e^{2\pi i\tau}</math>, הוא הקרקטר המדורג של כל איבר במחלקת הצמידות 4C של [[חבורת המפלצת]] כשהיא פועלת על [[אלגברת הקודקודים של המפלצת]]. (את המקדמים שכאן בדקנו בחישוב מספרי.)
+
+== ראו גם ==
+* [[אינווריאנט j]]
+* [[עקום מודולרי]]
+* [[פונקציית ובר המודולרית]]
+* [[הפונקציות האליפטיות של יעקובי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* M. Abramowitz, I. A. Stegun (eds.), ''Handbook of Mathematical Functions'', Dover, 1972
+* K. Chandrasekharan, ''Elliptic Functions'', Springer, 1985, pp. 108–121
+* J. H. Conway, S. P. Norton, ''Monstrous moonshine'', Bulletin of the London Mathematical Society '''11''' (1979), pp. 308–339
+* R. A. Rankin, ''Modular Forms and Functions'', Cambridge University Press, 1977
+* W. P. Reinhardt, P. L. Walker, ''Elliptic Modular Function'', NIST Digital Library of Mathematical Functions, eq. 23.15.6
+* J. M. Borwein, P. B. Borwein, ''Pi and the AGM'', Wiley, 1987
+* [https://fungrim.org/topic/Modular_lambda_function/ Modular lambda function] ב-Fungrim
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:פונקציות אליפטיות]]
