@@ -1,0 +1,71 @@
+ב[[מתמטיקה]], '''תנועה בראונית של דייסון''' היא [[תהליך סטוכסטי]] ממשי בזמן רציף, שנקרא על שם [[פרימן דייסון]].{{הערה|1=<span dir="ltr">F. J. Dyson, "A Brownian-motion model for the eigenvalues of a random matrix", ''J. Math. Phys.'' '''3''' (1962), no. 6, 1191–1198</span>|כיווון=שמאל}} דייסון חקר את התהליך בהקשר של [[מטריצה אקראית|תורת המטריצות האקראיות]]: זו התנועה של הערכים העצמיים של מטריצה הרמיטית שמבצעת [[תנועה בראונית]]. לבעיה יש אנלוג דטרמיניסטי שעומד בלב המאמר של רוג'רס וטאו על [[קבוע דה ברויין-ניומן|קבוע דה ברויין–ניומן]] (ראו למטה).
+
+יש כמה הגדרות שקולות:{{הערה|שם=Tao|1=<span dir="ltr">T. Tao, "254A, Notes 3b: Brownian motion and Dyson Brownian motion", ''What's new'' (blog), 18 January 2010; T. Tao, ''Topics in Random Matrix Theory'', American Mathematical Society, 2012</span>|כיווון=שמאל}}
+* '''על ידי משוואה דיפרנציאלית סטוכסטית''':
+:<math>d \lambda_i=d B_i+\sum_{j \neq i} \frac{d t}{\lambda_i-\lambda_j},</math>
+:כאשר <math>B_1, \ldots, B_n</math> [[תהליך וינר|תהליכי וינר]] בלתי תלויים. התהליך מוגדר ב'''תא וייל''' <math>W_n = \{x_1 \lt \cdots \lt x_n\}</math> (או בכל תמורה של הקואורדינטות שלו).
+* '''על ידי מטריצות''': מתחילים ממטריצה הרמיטית עם ערכים עצמיים <math>\lambda_1(0), \ldots, \lambda_n(0)</math>, ומניחים לה לבצע תנועה בראונית במרחב המטריצות ההרמיטיות. הערכים העצמיים שלה הם תנועה בראונית של דייסון.
+* '''על ידי התניה''': מתחילים מ-<math>n</math> תהליכי וינר בלתי תלויים שמתחילים בנקודות שונות <math>\lambda_1(0), \ldots, \lambda_n(0)</math>, ומתנים על כך שלעולם לא ייפגשו. התהליך שמתקבל הוא תנועה בראונית של דייסון שמתחילה באותן נקודות.{{הערה|1=<span dir="ltr">D. J. Grabiner, "Brownian motion in a Weyl chamber, non-colliding particles, and random matrices", ''Ann. Inst. H. Poincaré Probab. Statist.'' '''35''' (1999), no. 2, 177–204</span>|כיווון=שמאל}}
+
+האיבר <math>\sum_{j\ne i}\frac{dt}{\lambda_i - \lambda_j}</math> הוא '''דחייה''' בין הערכים העצמיים: ככל ששני ערכים קרובים יותר, כך הם נדחפים זה מזה חזק יותר. זה המקור הדינמי של "דחיית הרמות" ב[[אנסמבל גאוסי|אנסמבלים הגאוסיים]].
+
+== תורת המטריצות האקראיות ==
+[[אנסמבל גאוסי|האנסמבל האוניטרי הגאוסי]] GUE הוא התפלגות על המטריצות ההרמיטיות <math>A \in \mathbb C^{n\times n}</math> עם צפיפות <math>\rho(A) \propto e^{-\frac12\mathrm{tr}(A^2)}</math>.{{הערה|1=בערך האנגלי נכתב <math>A \in \mathbb R^{n\times n}</math>; מטריצות הרמיטיות כלליות הן מרוכבות, <math>A \in \mathbb C^{n\times n}</math>.|כיווון=שמאל}}
+
+את מרחב המטריצות ההרמיטיות <math>n \times n</math> אפשר לזהות עם <math>\mathbb R^{n^2}</math> על ידי
+:<math>A \mapsto \bigl(A_{11}, \dots, A_{nn}, \sqrt{2}\,\mathrm{Re}(A_{12}), \dots, \sqrt{2}\,\mathrm{Re}(A_{n-1, n}), \sqrt{2}\,\mathrm{Im}(A_{12}), \dots, \sqrt{2}\,\mathrm{Im}(A_{n-1, n})\bigr).</math>
+זו איזומטריה ביחס לנורמת פרובניוס. תנועה בראונית סטנדרטית ב-<math>\mathbb R^{n^2}</math> הופכת כך לתנועה בראונית במרחב המטריצות ההרמיטיות: <math>dA_{ii} = dB_{ii}</math> על האלכסון, ו-<math>dA_{ij} = \frac{1}{\sqrt2}(dB_{ij} + i\,dB'_{ij})</math> מעליו. הטענה היא שהערכים העצמיים של <math>A</math> מתפתחים לפי המשוואה <math>d \lambda_i=d B_i+\sum_{j \neq i} \frac{d t}{\lambda_i-\lambda_j}</math>.
+
+'''רעיון ההוכחה.''' כל <math>dB</math> הוא מסדר גודל <math>\sqrt{dt}</math>, ולכן אפשר לכתוב <math>dA = \sqrt{dt}\,G</math>, כאשר <math>G</math> מטריצה מ-GUE שבלתי תלויה ב-<math>A</math>. לפי נוסחאות הוריאציה של הדמר (תורת ההפרעות מסדר ראשון ושני) ו[[הלמה של איטו]],
+:<math>\lambda_i(t+dt) = \lambda_i(t) + \sqrt{dt}\; u_i^* G u_i + dt \sum_{j\neq i} \frac{\mathbb E\left[|u_i^* G u_j|^2\right]}{\lambda_i - \lambda_j},</math>
+כאשר <math>u_i</math> הווקטורים העצמיים. כיוון ש-GUE שמור תחת סיבובים אוניטריים ו-<math>u_i</math> וקטורי יחידה, <math>u_i^* G u_i</math> מתפלג כמו <math>e_1^*Ge_1</math>, כלומר <math>\sqrt{dt}\,u_i^*Gu_i</math> מתפלג כמו <math>dB_i</math>; ובאותו אופן <math>\mathbb E\left[|u_i^* G u_j|^2\right] = 1</math>.
+
+=== המחולל האינפיניטסימלי ===
+נגדיר את '''אופרטור דייסון הצמוד''':
+:<math>D^* F=\frac{1}{2} \sum_{i=1}^n \partial_{\lambda_i}^2 F+\sum_{i \neq j} \frac{\partial_{\lambda_i} F}{\lambda_i-\lambda_j}.</math>
+לכל פונקציה חלקה <math>F</math> עם נגזרות חסומות מתקיימת '''משוואת קולמוגורוב האחורית''' <math>\partial_t \mathbb E[F] = \mathbb E[D^* F]</math>. לכן '''משוואת קולמוגורוב הקדמית''' לצפיפות הערכים העצמיים היא <math>\partial_t\rho = D\rho</math>, כאשר <math>D</math> הוא '''אופרטור דייסון'''
+:<math>D \rho=\frac{1}{2} \sum_{i=1}^n \partial_{\lambda_i}^2 \rho-\sum_{i \neq j} \partial_{\lambda_i}\left(\frac{\rho}{\lambda_i-\lambda_j}\right).</math>
+נכתוב <math>\rho(t, \lambda) = \Delta_n(\lambda)\, u(t, \lambda)</math>, כאשר <math>\Delta_n = \prod_{i \lt j}(\lambda_j - \lambda_i)</math> [[דטרמיננטת ונדרמונד]]. אז <math>u</math> מקיימת את [[משוואת החום]] <math>\partial_t u = \frac 12 \sum_i \partial^2_i u</math>. ההוכחה משתמשת בזהות <math>\partial_{\lambda_i} \Delta_n= \Delta_n \sum_{j\ne i} \frac{1}{\lambda_i-\lambda_j}</math> ובכך שדטרמיננטת ונדרמונד היא [[פונקציה הרמונית]]: <math>\sum_i \partial_i^2 \Delta_n = 0</math>.
+
+=== נוסחת יוהנסון ===
+'''משפט (יוהנסון).'''{{הערה|1=<span dir="ltr">K. Johansson, "Universality of the local spacing distribution in certain ensembles of Hermitian Wigner matrices", ''Comm. Math. Phys.'' '''215''' (2001), 683–705</span>|כיווון=שמאל}} תהי <math>A_0</math> מטריצה הרמיטית עם ספקטרום פשוט <math>\nu=(\nu_1, \ldots, \nu_n)</math>, יהי <math>t\gt 0</math>, ותהי <math>A_t = A_0 + t^{1 / 2} G</math> עם <math>G</math> מ-GUE. אז לספקטרום <math>\lambda</math> של <math>A_t</math> יש, על תא וייל, הצפיפות
+:<math>\rho(t, \lambda)=\frac{1}{(2 \pi t)^{n / 2}} \frac{\Delta_n(\lambda)}{\Delta_n(\nu)} \det\left(e^{-(\lambda_i-\nu_j)^2 / 2 t}\right)_{1 \leq i, j \leq n}.</math>
+ההוכחה: לפי ספירת ממדים, <math>\rho</math> מתאפסת מסדר גבוה מספיק על השפה של תא וייל, ולכן אפשר להרחיב את <math>u</math> לכל <math>\mathbb R^n</math> כפונקציה אנטי-סימטרית שעדיין מקיימת את משוואת החום. תנאי ההתחלה הוא <math>u(0, \lambda) = \frac{1}{\Delta_n(\nu)} \sum_{\sigma \in S_n} \mathrm{sgn}(\sigma)\, \delta(\lambda - \sigma(\nu))</math>, ופתרון משוואת החום יחד עם נוסחת לייבניץ לדטרמיננטה נותן את הנוסחה. (ספירת הממדים: מטריצה הרמיטית עם בדיוק שני ערכים עצמיים שווים מיוצבת על ידי <math>U(2)\times U(1)^{n-2}</math>, ולכן המסלול שלה הוא מממד <math>n^2 - n - 2</math>, ויחד עם <math>n - 1</math> הערכים העצמיים השונים מתקבל ממד <math>n^2 - 3</math> – קו-ממד 3 ולא 1.)
+
+'''דוגמה.''' עבור <math>n = 2</math>, <math>t = 1</math> ו-<math>\nu = (0, 1)</math>, האינטגרל של <math>\rho(1, \lambda)</math> על <math>\lambda_1 \lt \lambda_2</math> שווה 1 (חישבנו נומרית: <math>0.99999999999999</math>), כנדרש מצפיפות הסתברות.
+
+== נוסחת האריש-צ'נדרה–איציקסון–זובר ==
+תנועה בראונית של דייסון נותנת הוכחה קצרה ל'''נוסחת האינטגרל של האריש-צ'נדרה–איציקסון–זובר''' (HCIZ):{{הערה|1=<span dir="ltr">Harish-Chandra, "Differential operators on a semisimple Lie algebra", ''Amer. J. Math.'' '''79''' (1957), 87–120; C. Itzykson, J.-B. Zuber, "The planar approximation. II", ''J. Math. Phys.'' '''21''' (1980), 411–421; T. Tao, "The Harish-Chandra–Itzykson–Zuber integral formula", ''What's new'' (blog), 2013</span>|כיווון=שמאל}} אם ל-<math>A, B</math> אין ערכים עצמיים חוזרים, ו-<math>t</math> מספר מרוכב שונה מאפס, אז
+:<math>\int_{U(n)} \exp \left(t \,\mathrm{tr}\left(A U B U^*\right)\right) dU = c_n\,\frac{\det\left[\exp \left(t\, \lambda_i(A) \lambda_j(B)\right)\right]_{1 \leq i, j \leq n}}{t^{(n^2-n)/2}\, \Delta_n(\lambda(A))\, \Delta_n(\lambda(B))},</math>
+כאשר האינטגרל לפי מידת ההסתברות של הַאר על <math>U(n)</math>, ו-<math>c_n = \prod_{p=1}^{n-1} p!</math>.{{הערה|1=בערך האנגלי נכתב <math>c_n = \prod_{i=1}^{n} i!</math>. הקבוע הנכון בנוסחת HCIZ הוא <math>\prod_{p=1}^{n-1} p!</math>. בדקנו בסימולציית מונטה קרלו על <math>U(2)</math> ועל <math>U(3)</math>: עבור <math>n = 2</math>, <math>A = \mathrm{diag}(0.3, 1.1)</math>, <math>B = \mathrm{diag}(-0.5, 0.8)</math>, <math>t = 0.7</math>, הנוסחה עם <math>c_2 = 1</math> נותנת <math>1.18410</math> והסימולציה (400,000 דגימות) נותנת <math>1.18384</math>; עבור <math>n = 3</math> הנוסחה עם <math>c_3 = 2</math> נותנת <math>1.12908</math> והסימולציה <math>1.12943</math>. אותו הפרש של גורם <math>n!</math> מופיע שם גם בנוסחת ז'יניבר.|כיווון=שמאל}}
+
+רעיון ההוכחה: מחשבים בשתי דרכים את "קונבולוציית החום" <math>X = \iint f(A)\,\frac{C_n}{t^{n^2/2}}e^{-\mathrm{tr}(A-B)^2/2t}\,g(B)\,dA\,dB</math> של שתי פונקציות <math>f, g</math> שמורות תחת הצמדה אוניטרית: פעם אחת על ידי פתיחת <math>\mathrm{tr}(A-B)^2</math> ושימוש בשמורוּת (ומתקבל האינטגרל על <math>U(n)</math>), ופעם שנייה בעזרת נוסחת יוהנסון. השוואת שני הביטויים נותנת את הנוסחה.
+
+== נוסחת ז'יניבר ==
+הצפיפות של הערכים העצמיים של GUE(n) על תא וייל היא
+:<math>\rho(\lambda)=\frac{1}{(2 \pi)^{n / 2}\, 1!\,2!\cdots (n-1)!}\, e^{-|\lambda|^2 / 2}\left|\Delta_n(\lambda)\right|^2.</math>
+(על כל <math>\mathbb R^n</math>, בלי סידור הקואורדינטות, הקבוע הוא <math>(2\pi)^{n/2}\,1!\cdots n!</math>; ראו [[אנסמבל גאוסי]].) ההוכחה: GUE הוא ההתפלגות בזמן <math>t = 1</math> כשמתחילים מ-<math>A_0 = 0</math>, ולכן מציבים <math>t = 1</math> ו-<math>\nu \to 0</math> בנוסחת יוהנסון. מתקיים <math>e^{-(\lambda_i-\nu_j)^2 / 2} = e^{-\lambda_i^2/2}e^{-\nu_j^2/2}e^{\lambda_i \nu_j}</math>, ובגבול <math>\nu \to 0</math> מתקיים <math>\det\left(e^{\lambda_i \nu_j}\right)=\frac{\Delta_n(\lambda) \Delta_n(\nu)}{1!\cdots (n-1)!}+o\left(\Delta_n(\nu)\right)</math>.
+
+== הגרסה הדטרמיניסטית: זרימת החום של פונקציית קסי ==
+במאמר של רוג'רס וטאו על [[השערת ניומן]], התפקיד של תנועה בראונית של דייסון ממלאת גרסה '''דטרמיניסטית''' שלה (בלי האיבר <math>dB_i</math>). המשפחה <math>H_t</math> שמגדירה את קבוע דה ברויין–ניומן מקיימת את '''משוואת החום ההפוכה''' <math>\partial_t H_t = -\partial_z^2 H_t</math>. אם <math>P(t, z)</math> פתרון של המשוואה הזו ו-<math>z_k(t)</math> אפס פשוט שלו, אז גזירה של <math>P(t, z_k(t)) = 0</math> נותנת
+:<math>\frac{dz_k}{dt} = -\frac{\partial_t P}{\partial_z P} = \frac{P''(z_k)}{P'(z_k)} = 2\sum_{j\ne k}\frac{1}{z_k - z_j},</math>
+כלומר האפסים דוחים זה את זה בדיוק כמו בתנועה בראונית של דייסון (עם מקדם 2 ובלי רעש). ככל ש-<math>t</math> גדל האפסים מתרחקים זה מזה ונעשים "ממשיים יותר" (זה הכיוון של משפט דה ברויין), וכשהולכים אחורה בזמן, זוגות של אפסים קרובים מתנגשים ויוצאים מהציר הממשי. רוג'רס וטאו מראים שאם <math>\Lambda \lt 0</math>, אז אפסי <math>H_0</math> (כלומר של זטא) היו צריכים להיות מסודרים "סדירות מדי" לאורך הדינמיקה הזו, בסתירה לידוע על המתאם הזוגי שלהם.
+
+'''דוגמה מספרית.''' ניקח <math>P(0, z) = (z+1)(z-0.2)(z-0.5)(z-2)</math> ונפתור את משוואת החום ההפוכה במדויק, <math>P(t) = \sum_k \frac{(-t)^k}{k!}P^{(2k)}</math>. הנוסחה חוזה מהירויות <math>-3.667, -6.111, 6.667, 3.111</math> לאפסים <math>-1, 0.2, 0.5, 2</math>, והפרש סופי עם <math>t = 10^{-6}</math> נותן <math>-3.667, -6.111, 6.667, 3.111</math>. בזמנים חיוביים האפסים מתרחקים: ב-<math>t = 0.3</math> הם <math>-1.870, -0.287, 1.070, 2.787</math>. בזמנים שליליים שני האפסים הקרובים <math>0.2, 0.5</math> מתנגשים, וכבר ב-<math>t = -0.02</math> הם <math>0.344 \pm 0.132i</math> – לא ממשיים. (בדקנו בחישוב.) זו בדיוק התמונה שבבסיס ההגדרה של <math>\Lambda</math>.
+
+== ראו גם ==
+* [[אנסמבל גאוסי]]
+* [[השערת ניומן]]
+* [[קבוע דה ברויין-ניומן]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J.-P. Bouchaud, M. Potters, ''A First Course in Random Matrix Theory'', Cambridge University Press, 2020, chapter "Dyson Brownian motion"
+* B. Rodgers, T. Tao, "The de Bruijn–Newman constant is non-negative", ''Forum of Mathematics, Pi'' '''8''' (2020), e6
+* G. Csordas, W. Smith, R. S. Varga, "Lehmer pairs of zeros, the de Bruijn–Newman constant Λ, and the Riemann hypothesis", ''Constr. Approx.'' '''10''' (1994), 107–129
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:השערת רימן]]
