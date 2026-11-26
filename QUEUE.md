@@ -278,7 +278,7 @@ Additive number theory:
 - [x] Kaplansky's theorem on quadratic forms
 - [x] Universal quadratic form
 - [x] Spinor genus
-- [ ] Ramanujan's ternary quadratic form
+- [x] Ramanujan's ternary quadratic form
 - [ ] Hermite reduction
 - [ ] Hilbert's eleventh problem
 - [ ] Hurwitz problem
