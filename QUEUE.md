@@ -304,7 +304,7 @@ Additive number theory:
 - [x] Sierpiński number
 - [x] Prime k-tuple
 - [x] Primes in arithmetic progression
-- [ ] Reciprocals of primes
+- [x] Reciprocals of primes
 - [ ] Prime constant
 - [ ] Wieferich pair
 - [ ] Ruth–Aaron pair

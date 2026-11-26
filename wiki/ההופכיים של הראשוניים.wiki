@@ -1,0 +1,96 @@
+ה[[איבר הופכי|הופכיים]] של ה[[מספר ראשוני|מספרים הראשוניים]] עניינו מתמטיקאים מסיבות שונות. [[התבדרות סכום ההופכיים של הראשוניים|אין להם סכום סופי]], כפי ש[[לאונרד אוילר]] הוכיח ב-1737.
+
+כ[[מספר רציונלי|מספרים רציונליים]], להופכיים של הראשוניים יש ייצוגים כ[[שבר עשרוני מחזורי|שברים עשרוניים מחזוריים]]. בשנותיו המאוחרות עסק ג'ורג' סלמון (1819–1904) במחזורים של הייצוגים העשרוניים האלה; לפי הספד עליו, ענף החישוב שריתק אותו במיוחד היה קביעת מספר הספרות במחזורים החוזרים של ההופכיים של המספרים הראשוניים.{{הערה|1=<span dir="ltr">Obituary Notices – George Salmon, Proceedings of the London Mathematical Society, Second Series, 1 (1904), pp. xxii–xxviii.</span>|כיווון=שמאל}}
+
+באותה תקופה חישב ויליאם שנקס (1812–1882) הופכיים רבים של ראשוניים ואת המחזורים שלהם, ופרסם שני מאמרים בשם "On Periods in the Reciprocals of Primes", ב-1873{{הערה|1=<span dir="ltr">W. Shanks, On periods in the reciprocals of primes, The Messenger of Mathematics II (1873), pp. 41–43.</span>|כיווון=שמאל}} וב-1874.{{הערה|1=<span dir="ltr">W. Shanks, On periods in the reciprocals of primes, The Messenger of Mathematics III (1874), pp. 52–55.</span>|כיווון=שמאל}} ב-1874 פרסם גם טבלה של הראשוניים ושל אורכי המחזורים של ההופכיים שלהם עד 20,000 (בעזרת הכומר ג'ורג' סלמון), והצביע על טעויות בטבלאות קודמות של שלושה מחברים אחרים.{{הערה|שם=sh|1=<span dir="ltr">W. Shanks, On the number of figures in the period of the reciprocal of every prime number below 20,000, Proceedings of the Royal Society of London 22 (1874), pp. 200–210.</span>|כיווון=שמאל}} גם בטבלה שלו יש טעויות: בחלק האחרון שלה מופיע 6952 במקום 6592 (את הטעות קל למצוא, כי המחזור של ראשוני <math>p</math> חייב לחלק את <math>p - 1</math>; הראשוני הוא 19777, שהמחזור שלו 6592); בדוח שהרחיב את הטבלה עד 30,000 באותה שנה, שנקס לא דיווח על הטעות הזו, אבל דיווח שבאותה עמודה, ליד 19841, צריך להיות 64 במקום 1984; וטעות נוספת, ליד 19423: ההופכי חוזר כל 6474 ספרות, לא כל 3237. (את שלושת הערכים בדקנו בחישוב.)
+
+כללים לחישוב המחזורים של שברים עשרוניים מחזוריים של שברים רציונליים נתן ג'יימס גלישר ב-1878.{{הערה|1=<span dir="ltr">J. W. L. Glaisher, On circulating decimals with special reference to Henry Goodwin's 'Table of circles' and 'Tabular series of decimal quotients', Proceedings of the Cambridge Philosophical Society 3 (1878), pp. 185–206.</span>|כיווון=שמאל}} עבור ראשוני <math>p</math> (שאינו 2 או 5), אורך המחזור של ההופכי שלו הוא ה[[סדר (תורת החבורות)|סדר]] של 10 מודולו <math>p</math>, כלומר השלם החיובי הקטן ביותר <math>\ell</math> כך ש-<math>p \mid 10^\ell - 1</math>; לפי [[המשפט הקטן של פרמה]], הוא מחלק את <math>p - 1</math>.{{הערה|1=<span dir="ltr">J. D. Cook, Reciprocals of primes, johndcook.com, 2018.</span>|כיווון=שמאל}} (למשל <math>10^6 - 1 = 999999 = 7\cdot142857</math>, ולכן <math>1/7 = 0.\overline{142857}</math>.) סדרת אורכי המחזורים של ההופכיים של הראשוניים ({{OEIS|A002371}}) מופיעה ב-Handbook of Integer Sequences מ-1973.
+
+== רשימת ההופכיים של הראשוניים ==
+(את אורכי המחזורים בדקנו בחישוב.)
+{| class="wikitable" style="text-align:right;"
+! ראשוני<br />(<math>p</math>) !! אורך<br />המחזור !! ההופכי (<math>1/p</math>)
+|-
+| 2 || 0 || style="text-align:left;" dir="ltr" | 0.5
+|-
+| 3 || † 1 || style="text-align:left;" dir="ltr" | <math>0.\overline{3}</math>
+|-
+| 5 || 0 || style="text-align:left;" dir="ltr" | 0.2
+|-
+| 7 || * 6 || style="text-align:left;" dir="ltr" | <math>0.\overline{142857}</math>
+|-
+| 11 || † 2 || style="text-align:left;" dir="ltr" | <math>0.\overline{09}</math>
+|-
+| 13 || 6 || style="text-align:left;" dir="ltr" | <math>0.\overline{076923}</math>
+|-
+| 17 || * 16 || style="text-align:left;" dir="ltr" | <math>0.\overline{0588235294117647}</math>
+|-
+| 19 || * 18 || style="text-align:left;" dir="ltr" | <math>0.\overline{052631578947368421}</math>
+|-
+| 23 || * 22 || style="text-align:left;" dir="ltr" | <math>0.\overline{0434782608695652173913}</math>
+|-
+| 29 || * 28 || style="text-align:left;" dir="ltr" | <math>0.\overline{0344827586206896551724137931}</math>
+|-
+| 31 || 15 || style="text-align:left;" dir="ltr" | <math>0.\overline{032258064516129}</math>
+|-
+| 37 || † 3 || style="text-align:left;" dir="ltr" | <math>0.\overline{027}</math>
+|-
+| 41 || 5 || style="text-align:left;" dir="ltr" | <math>0.\overline{02439}</math>
+|-
+| 43 || 21 || style="text-align:left;" dir="ltr" | <math>0.\overline{023255813953488372093}</math>
+|-
+| 47 || * 46 || style="text-align:left;" dir="ltr" | <math>0.\overline{0212765957446808510638297872340425531914893617}</math>
+|-
+| 53 || 13 || style="text-align:left;" dir="ltr" | <math>0.\overline{0188679245283}</math>
+|-
+| 59 || * 58 || style="text-align:left;" dir="ltr" | <math>0.\overline{0169491525423728813559322033898305084745762711864406779661}</math>
+|-
+| 61 || * 60 || style="text-align:left;" dir="ltr" | <math>0.\overline{016393442622950819672131147540983606557377049180327868852459}</math>
+|-
+| 67 || 33 || style="text-align:left;" dir="ltr" | <math>0.\overline{014925373134328358208955223880597}</math>
+|-
+| 71 || 35 || style="text-align:left;" dir="ltr" | <math>0.\overline{01408450704225352112676056338028169}</math>
+|-
+| 73 || 8 || style="text-align:left;" dir="ltr" | <math>0.\overline{01369863}</math>
+|-
+| 79 || 13 || style="text-align:left;" dir="ltr" | <math>0.\overline{0126582278481}</math>
+|-
+| 83 || 41 || style="text-align:left;" dir="ltr" | <math>0.\overline{01204819277108433734939759036144578313253}</math>
+|-
+| 89 || 44 || style="text-align:left;" dir="ltr" | <math>0.\overline{01123595505617977528089887640449438202247191}</math>
+|-
+| 97 || * 96 || style="text-align:left;" dir="ltr" | <math>0.\overline{010309278350515463917525773195876288659793814432989690721649484536082474226804123711340206185567}</math>
+|-
+| 101 || † 4 || style="text-align:left;" dir="ltr" | <math>0.\overline{0099}</math>
+|-
+| 103 || 34 || style="text-align:left;" dir="ltr" | <math>0.\overline{0097087378640776699029126213592233}</math>
+|-
+| 107 || 53 || style="text-align:left;" dir="ltr" | <math>0.\overline{00934579439252336448598130841121495327102803738317757}</math>
+|-
+| 127 || 42 || style="text-align:left;" dir="ltr" | <math>0.\overline{007874015748031496062992125984251968503937}</math>
+|}
+'''*''' [[ראשוני מחזור מלא|ראשוניים במחזור מלא]]; '''†''' ראשוניים ייחודיים. (את ההופכיים של 109 ו-113, שאורכי המחזור שלהם 108 ו-112 – שניהם במחזור מלא – השמטנו בגלל אורכם.)
+
+== ראשוניים במחזור מלא ==
+{{ערך מורחב|ראשוני מחזור מלא}}
+'''ראשוני מחזור מלא''' (או "ראשוני ארוך") ב[[בסיס ספירה|בסיס]] <math>b</math> הוא [[מספר ראשוני]] [[מספר אי-זוגי|אי-זוגי]] <math>p</math> כך ש[[מנת פרמה]]
+:<math>q_p(b) = \frac{b^{p-1} - 1}p</math>
+(כאשר <math>p</math> אינו מחלק את <math>b</math>) נותנת [[מספר ציקלי]] בן <math>p - 1</math> ספרות. לכן הייצוג בבסיס <math>b</math> של <math>1/p</math> חוזר על ספרות המספר הציקלי המתאים עד אינסוף. באופן שקול: 10 הוא [[שורש פרימיטיבי]] מודולו <math>p</math>. למשל עבור <math>p = 7</math>: <math>(10^6 - 1)/7 = 142857</math>, ו-<math>2\times142857 = 285714</math>, <math>3\times142857 = 428571</math>, וכן הלאה – סיבובים של אותן ספרות.
+
+== ראשוניים ייחודיים ==
+ראשוני <math>p</math> (שאינו 2 או 5, כשעובדים בבסיס 10) נקרא '''ייחודי''' אם אין ראשוני אחר <math>q</math> שאורך המחזור של הייצוג העשרוני של <math>1/q</math> שווה לאורך המחזור של <math>1/p</math>.{{הערה|1=<span dir="ltr">C. Caldwell, Unique prime, The Prime Pages.</span>|כיווון=שמאל}} למשל, 3 הוא הראשוני היחיד עם מחזור 1, 11 הוא היחיד עם מחזור 2, 37 הוא היחיד עם מחזור 3, ו-101 הוא היחיד עם מחזור 4, ולכן הם ראשוניים ייחודיים. הראשוני הייחודי הבא בגודלו הוא 9091, עם מחזור 10, אף שהמחזור הבא בגודלו הוא 9 (הראשוני שלו הוא 333667). ראשוניים ייחודיים תוארו על ידי סמואל ייטס ב-1980.{{הערה|1=<span dir="ltr">S. Yates, Periods of unique primes, Mathematics Magazine 53 (1980), p. 314.</span>|כיווון=שמאל}} ראשוני <math>p</math> ייחודי אם ורק אם יש <math>n</math> כך ש-
+:<math>\frac{\Phi_n(10)}{\gcd(\Phi_n(10), n)}</math>
+היא חזקה של <math>p</math>, כאשר <math>\Phi_n(b)</math> הוא ה[[פולינום ציקלוטומי|פולינום הציקלוטומי]] ה-<math>n</math>-י, מוצב ב-<math>b</math>. ה-<math>n</math> הוא אז אורך המחזור של הייצוג העשרוני של <math>1/p</math>.{{הערה|1=<span dir="ltr">Generalized Unique, The Prime Pages.</span>|כיווון=שמאל}} (הסיבה: הראשוניים שמחזורם בדיוק <math>n</math> הם הגורמים הראשוניים של <math>\Phi_n(10)</math> שאינם מחלקים את <math>n</math>.) למשל, <math>\Phi_3(10) = 111 = 3\cdot37</math> ו-<math>\gcd(111, 3) = 3</math>, ולכן <math>111/3 = 37</math>; ו-<math>\Phi_{10}(10) = 10^4 - 10^3 + 10^2 - 10 + 1 = 9091</math>.
+
+כיום ידועים יותר מחמישים ראשוניים ייחודיים עשרוניים או [[ראשוני הסתברותי|ראשוניים הסתברותיים]] ייחודיים. אבל יש רק 23 ראשוניים ייחודיים מתחת ל-<math>10^{100}</math> (מספר שבדקנו בחישוב, בעזרת הקריטריון הציקלוטומי). הראשוניים הייחודיים העשרוניים הם
+:<math>3, 11, 37, 101, 9091, 9901, 333667, 909091, \ldots</math> ({{OEIS|A040017}}),
+עם המחזורים <math>1, 2, 3, 4, 10, 12, 9, 14</math> בהתאמה. הבאים בתור הם ה[[רפיוניט|רפיוניטים]] הראשוניים <math>R_{19} = 1111111111111111111</math> ו-<math>R_{23}</math>, עם מחזורים 19 ו-23.
+
+== קישורים חיצוניים ==
+* <span dir="ltr">M. Parker, [https://www.youtube.com/watch?v=DmfxIhmGPP4 The Reciprocals of Primes], Numberphile, 2022</span>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:מספרים רציונליים]]
