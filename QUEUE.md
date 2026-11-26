@@ -276,7 +276,7 @@ Additive number theory:
 - [x] Niemeier lattice
 - [x] Witt's theorem
 - [x] Kaplansky's theorem on quadratic forms
-- [ ] Universal quadratic form
+- [x] Universal quadratic form
 - [ ] Spinor genus
 - [ ] Ramanujan's ternary quadratic form
 - [ ] Hermite reduction
