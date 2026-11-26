@@ -19,7 +19,7 @@
 {{הערה|שם=Schmidt|1=<span dir="ltr">W. M. Schmidt, Diophantine Approximation, Lecture Notes in Mathematics 785, Springer, 1980, p. 27, Theorem 1B.</span>|כיווון=שמאל}}
 כלומר, אפשר לקרב כמה מספרים בבת אחת בעזרת מכנה משותף, אבל במחיר: המעריך יורד מ-2 ל-<math>1 + 1/d</math>.
 
-'''דוגמה.''' עבור <math>\alpha_1 = \sqrt2</math>, <math>\alpha_2 = \sqrt3</math> ו-<math>N = 100</math> (כך ש-<math>N^{1/2} = 10</math>), המכנה הקטן ביותר שעובד הוא <math>q = 41</math>: <math>\frac{58}{41}</math> ו-<math>\frac{71}{41}</math>, עם <math>|41\sqrt2 - 58| = 0.0042</math> ו-<math>|41\sqrt3 - 71| = 0.0034</math>, שניהם קטנים מ-<math>\frac1{10}</math>.
+'''דוגמה.''' עבור <math>\alpha_1 = \sqrt2</math>, <math>\alpha_2 = \sqrt3</math> ו-<math>N = 100</math> (כך ש-<math>N^{1/2} = 10</math>), המכנה הקטן ביותר שעובד הוא <math>q = 41</math>: <math>\frac{58}{41}</math> ו-<math>\frac{71}{41}</math>, עם <math>|41\sqrt2 - 58| = 0.0172</math> ו-<math>|41\sqrt3 - 71| = 0.0141</math>, שניהם קטנים מ-<math>\frac1{10}</math>.
 
 == שיטות הוכחה ==
 === הוכחה בעקרון שובך היונים ===
