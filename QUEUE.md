@@ -259,7 +259,7 @@ Additive number theory:
 - [x] Period (number theory)
 - [x] Schneider–Lang theorem
 - [x] Analytic subgroup theorem
-- [ ] Auxiliary function
+- [x] Auxiliary function
 
 ### תבניות ריבועיות (19)
 
