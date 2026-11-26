@@ -320,7 +320,7 @@ Additive number theory:
 - [x] Prime power
 - [x] Perfect power
 - [x] Colossally abundant number
-- [ ] Superabundant number
+- [x] Superabundant number
 - [ ] Superior highly composite number
 - [ ] Hyperperfect number
 - [ ] Highly abundant number
