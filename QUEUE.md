@@ -254,7 +254,7 @@ Additive number theory:
 - [x] Oppenheim conjecture
 - [x] Baker's theorem
 - [x] Schanuel's conjecture
-- [ ] Six exponentials theorem
+- [x] Six exponentials theorem
 - [ ] Four exponentials conjecture
 - [ ] Period (number theory)
 - [ ] Schneider–Lang theorem
