@@ -352,7 +352,7 @@ Additive number theory:
 - [x] Superperfect number
 - [x] Erdős–Nicolas number
 - [x] Primitive abundant number
-- [ ] Friendly number
+- [x] Friendly number
 - [ ] Betrothed numbers
 - [ ] Descartes number
 - [ ] Refactorable number

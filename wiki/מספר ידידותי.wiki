@@ -1,0 +1,352 @@
+{{אין לבלבל|[[מספרים ידידים]]}}
+ב[[תורת המספרים]], '''מספרים ידידותיים''' הם שני [[מספר טבעי|מספרים טבעיים]] או יותר בעלי '''מדד שפע''' משותף – היחס בין סכום ה[[מחלק]]ים של מספר לבין המספר עצמו. שני מספרים עם אותו "מדד שפע" יוצרים '''זוג ידידותי'''; <math>n</math> מספרים עם אותו מדד שפע יוצרים '''<math>n</math>-יה ידידותית'''.
+
+היחס "ידידותיים זה לזה" הוא [[יחס שקילות]], ולכן הוא משרה [[חלוקה (תורת הקבוצות)|חלוקה]] של הטבעיים החיוביים ל'''מועדונים''' ([[מחלקת שקילות|מחלקות שקילות]]) של מספרים ידידותיים זה לזה.
+
+מספר שאינו חלק מאף זוג ידידותי נקרא '''בודד'''.
+
+מדד השפע של <math>n</math> הוא ה[[מספר רציונלי]] <math>\sigma(n) / n</math>, כאשר <math>\sigma</math> היא [[פונקציית סכום המחלקים]]. מספר <math>n</math> הוא ידידותי אם יש <math>m \ne n</math> כך ש-<math>\sigma(m) / m = \sigma(n) / n</math>. מדד השפע אינו זהה ל"שפע" ([[מספר שופע|abundance]]), שמוגדר כ-<math>\sigma(n) - 2n</math>. אפשר לבטא את מדד השפע גם כ-<math>\sigma_{-1}(n) = \sum_{d\mid n}1/d</math>, כאשר <math>\sigma_k(n)</math> הוא סכום החזקות ה-<math>k</math>-יות של המחלקים של <math>n</math>.
+
+המספרים 1 עד 5 כולם בודדים. המספר הידידותי הקטן ביותר הוא 6, שיוצר למשל את הזוג הידידותי 6 ו-28, עם מדד השפע <math>\sigma(6) / 6 = (1+2+3+6) / 6 = 2</math>, כמו <math>\sigma(28) / 28 = (1+2+4+7+14+28) / 28 = 2</math>. הערך המשותף 2 הוא שלם במקרה הזה, אבל לא במקרים רבים אחרים. מספרים עם מדד שפע 2 הם ה[[מספר משוכלל|מספרים המשוכללים]]. יש כמה בעיות פתוחות הקשורות למספרים ידידותיים.
+
+למרות הדמיון בשם, אין קשר מיוחד בין המספרים הידידותיים לבין ה[[מספרים ידידים|מספרים הידידים]] או ה[[מספרים חברותיים|מספרים החברותיים]], אף שגם הגדרותיהם מערבות את פונקציית סכום המחלקים.
+
+== דוגמאות ==
+כדוגמה נוספת, 30 ו-140 יוצרים זוג ידידותי, כי יש להם אותו מדד שפע:
+:<math> \frac{\sigma(30)}{30} = \frac{1+2+3+5+6+10+15+30}{30} =\frac{72}{30} = \frac{12}{5},</math>
+:<math> \frac{\sigma(140)}{140} = \frac{1+2+4+5+7+10+14+20+28+35+70+140}{140} = \frac{336}{140} = \frac{12}{5}.</math>
+גם המספרים 2480, 6200 ו-40640 שייכים למועדון הזה, כי לכל אחד מהם מדד שפע <math>12/5</math>.
+
+כדוגמה למספרים [[מספר אי-זוגי|אי-זוגיים]] ידידותיים, נתבונן ב-135 וב-819 (מדד שפע <math>16/9</math>, כלומר [[מספר חסר|חסרים]]). יש גם מקרים של מספרים זוגיים שידידותיים למספרים אי-זוגיים, כמו 42, 3472, 56896, ... ({{OEIS|A347169}}) ו-544635 (מדד שפע <math>16/7</math>). הידיד האי-זוגי יכול להיות קטן מהזוגי, כמו ב-84729645 ו-155315394 (מדד שפע <math>896/351</math>), או ב-6517665, 14705145 ו-2746713837618 (מדד שפע <math>64/27</math>).
+
+גם [[מספר ריבועי]] יכול להיות ידידותי; למשל, ל-693479556 (הריבוע של 26334) ול-8640 יש מדד שפע <math>127/36</math> (הדוגמה מיוחסת לדין היקרסון). (את כל הדוגמאות בסעיף בדקנו בחישוב.)
+
+=== המצב עבור <math>n</math> קטנים ===
+בטבלה הבאה מצוין לכל <math>n \le 144</math> אם הוא ידידותי (הוכח; {{OEIS|A074902}}), בודד (הוכח; {{OEIS|A095739}}), בודד משום ש-<math>n</math> ו-<math>\sigma(n)</math> [[מספרים זרים|זרים]] ({{OEIS|A014567}}), או שמצבו לא ידוע. למספרים שמצבם לא ידוע שייכים למשל 10, 14, 15 ו-20 (ראו להלן).{{הערה|שם=mandal|1=<span dir="ltr">S. Mandal, A note on solitary numbers, Notes on Number Theory and Discrete Mathematics 31 (2025), pp. 617–623; N. Terry, Friends of 15 live far away, International Journal of Mathematics and Computer Science 14 (2019), pp. 177–186; T. Chatterjee, S. Mandal, S. Mandal, On characterizing potential friends of 20, Annals of West University of Timisoara 61 (2025), pp. 205–229.</span>|כיווון=שמאל}} (בדקנו בחישוב את ערכי <math>\sigma(n)</math> והיחסים; שבשורות "בודד (<math>\gcd=1</math>)" אכן <math>\gcd(n, \sigma(n)) = 1</math> ובכל השאר לא; ולכל המספרים המסומנים כ"ידידותי", מלבד 24 ו-96, מצאנו ידיד מתחת ל-<math>2\cdot10^6</math>.)
+{| class="wikitable" style="text-align:center"
+! <math>n</math> !! <math>\sigma(n)</math> !! <math>\sigma(n)/n</math> !! מצב
+|-
+| 1 || 1 || 1 || בודד (<math>\gcd = 1</math>)
+|-
+| 2 || 3 || 3/2 || בודד (<math>\gcd = 1</math>)
+|-
+| 3 || 4 || 4/3 || בודד (<math>\gcd = 1</math>)
+|-
+| 4 || 7 || 7/4 || בודד (<math>\gcd = 1</math>)
+|-
+| 5 || 6 || 6/5 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 6 || 12 || 2 || ידידותי
+|-
+| 7 || 8 || 8/7 || בודד (<math>\gcd = 1</math>)
+|-
+| 8 || 15 || 15/8 || בודד (<math>\gcd = 1</math>)
+|-
+| 9 || 13 || 13/9 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 10 || 18 || 9/5 || לא ידוע
+|-
+| 11 || 12 || 12/11 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 12 || 28 || 7/3 || ידידותי
+|-
+| 13 || 14 || 14/13 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 14 || 24 || 12/7 || לא ידוע
+|- style="background:#fff3b0"
+| 15 || 24 || 8/5 || לא ידוע
+|-
+| 16 || 31 || 31/16 || בודד (<math>\gcd = 1</math>)
+|-
+| 17 || 18 || 18/17 || בודד (<math>\gcd = 1</math>)
+|- style="background:#f8d0d0"
+| 18 || 39 || 13/6 || בודד (הוכח)
+|-
+| 19 || 20 || 20/19 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 20 || 42 || 21/10 || לא ידוע
+|-
+| 21 || 32 || 32/21 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 22 || 36 || 18/11 || לא ידוע
+|-
+| 23 || 24 || 24/23 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 24 || 60 || 5/2 || ידידותי
+|-
+| 25 || 31 || 31/25 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 26 || 42 || 21/13 || לא ידוע
+|-
+| 27 || 40 || 40/27 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 28 || 56 || 2 || ידידותי
+|-
+| 29 || 30 || 30/29 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 30 || 72 || 12/5 || ידידותי
+|-
+| 31 || 32 || 32/31 || בודד (<math>\gcd = 1</math>)
+|-
+| 32 || 63 || 63/32 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 33 || 48 || 16/11 || לא ידוע
+|- style="background:#fff3b0"
+| 34 || 54 || 27/17 || לא ידוע
+|-
+| 35 || 48 || 48/35 || בודד (<math>\gcd = 1</math>)
+|-
+| 36 || 91 || 91/36 || בודד (<math>\gcd = 1</math>)
+|-
+| 37 || 38 || 38/37 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 38 || 60 || 30/19 || לא ידוע
+|-
+| 39 || 56 || 56/39 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 40 || 90 || 9/4 || ידידותי
+|-
+| 41 || 42 || 42/41 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 42 || 96 || 16/7 || ידידותי
+|-
+| 43 || 44 || 44/43 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 44 || 84 || 21/11 || לא ידוע
+|- style="background:#f8d0d0"
+| 45 || 78 || 26/15 || בודד (הוכח)
+|- style="background:#fff3b0"
+| 46 || 72 || 36/23 || לא ידוע
+|-
+| 47 || 48 || 48/47 || בודד (<math>\gcd = 1</math>)
+|- style="background:#f8d0d0"
+| 48 || 124 || 31/12 || בודד (הוכח)
+|-
+| 49 || 57 || 57/49 || בודד (<math>\gcd = 1</math>)
+|-
+| 50 || 93 || 93/50 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 51 || 72 || 24/17 || לא ידוע
+|- style="background:#f8d0d0"
+| 52 || 98 || 49/26 || בודד (הוכח)
+|-
+| 53 || 54 || 54/53 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 54 || 120 || 20/9 || לא ידוע
+|-
+| 55 || 72 || 72/55 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 56 || 120 || 15/7 || ידידותי
+|-
+| 57 || 80 || 80/57 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 58 || 90 || 45/29 || לא ידוע
+|-
+| 59 || 60 || 60/59 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 60 || 168 || 14/5 || ידידותי
+|-
+| 61 || 62 || 62/61 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 62 || 96 || 48/31 || לא ידוע
+|-
+| 63 || 104 || 104/63 || בודד (<math>\gcd = 1</math>)
+|-
+| 64 || 127 || 127/64 || בודד (<math>\gcd = 1</math>)
+|-
+| 65 || 84 || 84/65 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 66 || 144 || 24/11 || ידידותי
+|-
+| 67 || 68 || 68/67 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 68 || 126 || 63/34 || לא ידוע
+|- style="background:#fff3b0"
+| 69 || 96 || 32/23 || לא ידוע
+|- style="background:#fff3b0"
+| 70 || 144 || 72/35 || לא ידוע
+|-
+| 71 || 72 || 72/71 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 72 || 195 || 65/24 || לא ידוע
+|-
+| 73 || 74 || 74/73 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 74 || 114 || 57/37 || לא ידוע
+|-
+| 75 || 124 || 124/75 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 76 || 140 || 35/19 || לא ידוע
+|-
+| 77 || 96 || 96/77 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 78 || 168 || 28/13 || ידידותי
+|-
+| 79 || 80 || 80/79 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 80 || 186 || 93/40 || ידידותי
+|-
+| 81 || 121 || 121/81 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 82 || 126 || 63/41 || לא ידוע
+|-
+| 83 || 84 || 84/83 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 84 || 224 || 8/3 || ידידותי
+|-
+| 85 || 108 || 108/85 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 86 || 132 || 66/43 || לא ידוע
+|- style="background:#fff3b0"
+| 87 || 120 || 40/29 || לא ידוע
+|- style="background:#fff3b0"
+| 88 || 180 || 45/22 || לא ידוע
+|-
+| 89 || 90 || 90/89 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 90 || 234 || 13/5 || לא ידוע
+|- style="background:#fff3b0"
+| 91 || 112 || 16/13 || לא ידוע
+|- style="background:#fff3b0"
+| 92 || 168 || 42/23 || לא ידוע
+|-
+| 93 || 128 || 128/93 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 94 || 144 || 72/47 || לא ידוע
+|- style="background:#fff3b0"
+| 95 || 120 || 24/19 || לא ידוע
+|- style="background:#cce5ff"
+| 96 || 252 || 21/8 || ידידותי
+|-
+| 97 || 98 || 98/97 || בודד (<math>\gcd = 1</math>)
+|-
+| 98 || 171 || 171/98 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 99 || 156 || 52/33 || לא ידוע
+|-
+| 100 || 217 || 217/100 || בודד (<math>\gcd = 1</math>)
+|-
+| 101 || 102 || 102/101 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 102 || 216 || 36/17 || ידידותי
+|-
+| 103 || 104 || 104/103 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 104 || 210 || 105/52 || לא ידוע
+|- style="background:#fff3b0"
+| 105 || 192 || 64/35 || לא ידוע
+|- style="background:#fff3b0"
+| 106 || 162 || 81/53 || לא ידוע
+|-
+| 107 || 108 || 108/107 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 108 || 280 || 70/27 || ידידותי
+|-
+| 109 || 110 || 110/109 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 110 || 216 || 108/55 || לא ידוע
+|-
+| 111 || 152 || 152/111 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 112 || 248 || 31/14 || לא ידוע
+|-
+| 113 || 114 || 114/113 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 114 || 240 || 40/19 || ידידותי
+|-
+| 115 || 144 || 144/115 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 116 || 210 || 105/58 || לא ידוע
+|- style="background:#fff3b0"
+| 117 || 182 || 14/9 || לא ידוע
+|- style="background:#fff3b0"
+| 118 || 180 || 90/59 || לא ידוע
+|-
+| 119 || 144 || 144/119 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 120 || 360 || 3 || ידידותי
+|-
+| 121 || 133 || 133/121 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 122 || 186 || 93/61 || לא ידוע
+|- style="background:#fff3b0"
+| 123 || 168 || 56/41 || לא ידוע
+|- style="background:#fff3b0"
+| 124 || 224 || 56/31 || לא ידוע
+|-
+| 125 || 156 || 156/125 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 126 || 312 || 52/21 || לא ידוע
+|-
+| 127 || 128 || 128/127 || בודד (<math>\gcd = 1</math>)
+|-
+| 128 || 255 || 255/128 || בודד (<math>\gcd = 1</math>)
+|-
+| 129 || 176 || 176/129 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 130 || 252 || 126/65 || לא ידוע
+|-
+| 131 || 132 || 132/131 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 132 || 336 || 28/11 || ידידותי
+|-
+| 133 || 160 || 160/133 || בודד (<math>\gcd = 1</math>)
+|- style="background:#fff3b0"
+| 134 || 204 || 102/67 || לא ידוע
+|- style="background:#cce5ff"
+| 135 || 240 || 16/9 || ידידותי
+|- style="background:#f8d0d0"
+| 136 || 270 || 135/68 || בודד (הוכח)
+|-
+| 137 || 138 || 138/137 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 138 || 288 || 48/23 || ידידותי
+|-
+| 139 || 140 || 140/139 || בודד (<math>\gcd = 1</math>)
+|- style="background:#cce5ff"
+| 140 || 336 || 12/5 || ידידותי
+|- style="background:#fff3b0"
+| 141 || 192 || 64/47 || לא ידוע
+|- style="background:#fff3b0"
+| 142 || 216 || 108/71 || לא ידוע
+|-
+| 143 || 168 || 168/143 || בודד (<math>\gcd = 1</math>)
+|-
+| 144 || 403 || 403/144 || בודד (<math>\gcd = 1</math>)
+|}
+
+== מספרים בודדים ==
+מספר ששייך למועדון בן איבר אחד, כי אין מספר אחר ידידותי לו, הוא מספר בודד. כל המספרים הראשוניים בודדים, וכך גם חזקות של ראשוניים. באופן כללי יותר, אם <math>n</math> ו-<math>\sigma(n)</math> [[מספרים זרים|זרים]] – כלומר ה[[מחלק משותף מקסימלי|מחלק המשותף המקסימלי]] שלהם הוא 1, כך ש-<math>\sigma(n)/n</math> הוא שבר מצומצם – אז <math>n</math> בודד ({{OEIS|A014567}}). (אם <math>\sigma(m)/m = \sigma(n)/n</math> והשבר מצומצם, אז <math>n \mid m</math>, ו-<math>\sigma(m)/m \gt \sigma(n)/n</math> כש-<math>m</math> כפולה אמיתית של <math>n</math>.) עבור ראשוני <math>p</math> יש <math>\sigma(p) = p + 1</math>, שזר ל-<math>p</math>.
+
+לא ידועה שיטה כללית לקבוע אם מספר ידידותי או בודד.
+
+== האם 10 בודד? ==
+המספר הקטן ביותר שמצבו לא ידוע הוא 10; משערים שהוא בודד. אם לא, הידיד הקטן ביותר שלו הוא לפחות <math>10^{30}</math>.{{הערה|שם=cemra|1=<span dir="ltr">J. Cemra, 10 Solitary Check, GitHub, 2022; OEIS A074902.</span>|כיווון=שמאל}} ג'. וורד{{הערה|1=<span dir="ltr">J. Ward, Does ten have a friend?, International Journal of Mathematics and Computer Science 3 (2008), pp. 153–158.</span>|כיווון=שמאל}} הוכיח שכל שלם חיובי <math>n</math> שונה מ-10 עם מדד שפע <math>\tfrac{9}{5}</math> חייב להיות ריבוע עם לפחות שישה גורמים ראשוניים שונים, שהקטן בהם 5. יתרה מזו, לפחות אחד הגורמים הראשוניים חייב להיות שקול ל-1 מודולו 3 ולהופיע עם מעריך ששקול ל-2 מודולו 6 בפירוק של <math>n</math>. ה"ר (מאיה) ת'קרי{{הערה|1=<span dir="ltr">H. R. Thackeray, Each friend of 10 has at least 10 nonidentical prime factors, Indagationes Mathematicae 35 (2024), pp. 595–607.</span>|כיווון=שמאל}} השתמשה בשיטות של נילסן (מהמחקר על [[מספר משוכלל|מספרים משוכללים אי-זוגיים]]) כדי להראות שלכל ידיד של 10 יש לפחות 10 גורמים ראשוניים שונים. ס. מנדל וס. מנדל{{הערה|1=<span dir="ltr">S. Mandal, S. Mandal, Upper bounds for the prime divisors of friends of 10, Resonance 30 (2025), pp. 263–275.</span>|כיווון=שמאל}} הוכיחו שאם <math>n</math> ידיד של 10, ו-<math>q_2, q_3, q_4</math> הם המחלקים הראשוניים השני, השלישי והרביעי בגודלם של <math>n</math>, אז
+:<math>7\leq q_2\lt\left \lceil \tfrac{7\omega( n )}{3} \right \rceil\left(\log\left \lceil \tfrac{7\omega( n )}{3} \right \rceil+2\log \log \left \lceil \tfrac{7\omega(n)}{ 3 } \right \rceil\right),</math>
+:<math>11\leq q_3\lt\left \lceil \tfrac{180\omega( n )}{41} \right \rceil\left(\log\left \lceil \tfrac{180\omega( n )}{41} \right \rceil+2\log \log \left \lceil \tfrac{180\omega(n)}{ 41 } \right \rceil\right),</math>
+:<math>13\leq q_4\lt\left \lceil \tfrac{390\omega( n )}{47} \right \rceil\left(\log\left \lceil \tfrac{390\omega( n )}{47} \right \rceil+2\log \log \left \lceil \tfrac{390\omega(n)}{47} \right \rceil\right),</math>
+כאשר <math>\omega(n)</math> הוא מספר המחלקים הראשוניים השונים של <math>n</math> ו-<math>\lceil\cdot\rceil</math> היא [[פונקציית הערך השלם|פונקציית התקרה]]. מאוחר יותר הכליל ס. מנדל את החסמים האלה למחלק הראשוני ה-<math>r</math>-י בגודלו, <math>q_r</math>, עבור כל <math>r \ge 2</math>.{{הערה|1=<span dir="ltr">S. Mandal, Prime divisors of 10's friends: a generalization of prior bounds, Annals of Oradea University – Mathematics Fascicola 33 (2026), pp. 5–12.</span>|כיווון=שמאל}} עוד הוכיח{{הערה|1=<span dir="ltr">S. Mandal, Exploring the relationships between the divisors of friends of 10, News Bulletin of Calcutta Mathematical Society 48 (2025), pp. 21–32.</span>|כיווון=שמאל}} שלא כל חצאי המעריכים של המחלקים הראשוניים של ידיד של 10 שקולים ל-1 מודולו 3; שאם <math>n= 5^{2a}\cdot Q^2</math> (עם <math>Q</math> אי-זוגי וזר ל-15) הוא ידיד של 10, אז <math>\sigma(5^{2a})+\sigma(Q^{2})</math> שקול ל-6 מודולו 8 אם ורק אם <math>a</math> זוגי, ול-2 מודולו 8 אם ורק אם <math>a</math> אי-זוגי; ושמתקיים <math>n \gt \tfrac{25}{81}\cdot \prod_{i=1}^{\omega(n)} (2a_i+1)^2</math>, ובפרט <math>n\gt 625\cdot 9^{\omega(n)-3}</math>, כאשר <math>a_i</math> הם חצאי המעריכים.
+
+''מדוע ידיד של 10 חייב להיות ריבוע אי-זוגי (חלק מהטיעון של וורד):'' אם <math>\sigma(n)/n = 9/5</math>, אז <math>5\sigma(n) = 9n</math>, ולכן <math>5 \mid n</math>. אם <math>n</math> היה זוגי, <math>\sigma(n)/n \ge \sigma(10)/10 = 9/5</math>, עם שוויון רק עבור <math>n = 10</math>. לכן <math>n</math> אי-זוגי, ומ-<math>5\sigma(n) = 9n</math> נובע ש-<math>\sigma(n)</math> אי-זוגי – וזה קורה למספר אי-זוגי רק כשהוא ריבוע.
+
+יש מספרים קטנים שהידיד הקטן ביותר שלהם גדול יחסית: למשל, 24 ידידותי, והידיד הקטן ביותר שלו הוא 91,963,648 (מדד השפע של שניהם <math>5/2</math>).{{הערה|שם=cemra}}
+
+== מועדונים גדולים ==
+זו בעיה פתוחה אם יש מועדונים אינסופיים של מספרים ידידותיים זה לזה. המספרים המשוכללים יוצרים מועדון, ומשערים שיש אינסוף מספרים משוכללים (לפחות כמספר [[ראשוני מרסן]]), אבל אין הוכחה. יש מועדונים עם יותר חברים ידועים: בפרט, אלה שנוצרים על ידי [[מספר רב משוכלל|מספרים רב משוכללים]], שמדד השפע שלהם שלם. אף שידוע שחלקם גדולים למדי, משערים שהמועדונים של מספרים רב משוכללים (מלבד המספרים המשוכללים עצמם) סופיים.
+
+== צפיפות אסימפטוטית ==
+כל זוג <math>a, b</math> של מספרים ידידותיים יוצר חלק חיובי מכל הטבעיים שהם ידידותיים (אבל במועדונים שונים), כשמתבוננים בזוגות <math>na, nb</math> עבור כופלים <math>n</math> עם <math>\gcd(n, ab) = 1</math> (כי אז <math>\sigma(na)/na = \sigma(n)/n\cdot\sigma(a)/a</math>). למשל, הזוג הידידותי ה"פרימיטיבי" 6 ו-28 יוצר את הזוגות הידידותיים <math>6n</math> ו-<math>28n</math> לכל <math>n</math> ששקול ל-1, 5, 11, 13, 17, 19, 23, 25, 29, 31, 37 או 41 מודולו 42 (אלה בדיוק השאריות הזרות ל-42).{{הערה|שם=AH|1=<span dir="ltr">C. W. Anderson, D. Hickerson, M. G. Greening, Problem 6020, American Mathematical Monthly 84 (1977), pp. 65–66.</span>|כיווון=שמאל}}
+
+זה מראה שה[[צפיפות טבעית|צפיפות הטבעית]] של המספרים הידידותיים (אם היא קיימת) חיובית. אנדרסון והיקרסון הציעו שהצפיפות היא למעשה 1 (או באופן שקול, שהצפיפות של המספרים הבודדים היא 0).{{הערה|שם=AH}} לפי הערך "Solitary Number" ב-MathWorld, ההשערה לא הוכרעה, אף ש[[קרל פומרנס|פומרנס]] חשב בשלב מסוים שהפריך אותה.
+
+== קישורים חיצוניים ==
+* <span dir="ltr">J. Grime, A video about the number 10, Numberphile</span>
+* {{MathWorld|FriendlyNumber|Friendly Number}}
+* {{MathWorld|SolitaryNumber|Solitary Number}}
+* {{MathWorld|Abundancy|Abundancy}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציית סכום המחלקים]]
+[[קטגוריה:סדרות של מספרים שלמים]]
