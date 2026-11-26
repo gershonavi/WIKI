@@ -210,7 +210,7 @@ Additive number theory:
 
 - [x] Thue equation
 - [x] Siegel's theorem on integral points
-- [ ] Ramanujan–Nagell equation
+- [x] Ramanujan–Nagell equation
 - [ ] Markov number
 - [ ] Coin problem
 - [ ] Chakravala method
