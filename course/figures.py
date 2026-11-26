@@ -6147,6 +6147,186 @@ def _():
     save('19a-6')
 
 
+
+# ---------- lesson 20: elliptic curves ----------
+def _ec_ap_short(f, p):
+    """a_p = -sum_x (f(x)/p) for y^2 = f(x), p odd, via a table of squares."""
+    x = np.arange(p, dtype=np.int64)
+    v = f(x) % p
+    sq = np.zeros(p, dtype=np.int8); sq[(x * x) % p] = 1
+    chi = np.where(v == 0, 0, np.where(sq[v] == 1, 1, -1))
+    return -int(chi.sum())
+
+
+def _f11a(x):
+    # (2y+1)^2 = 4x^3 - 4x^2 - 40x - 79  for  y^2 + y = x^3 - x^2 - 10x - 20
+    return 4 * x ** 3 - 4 * x ** 2 - 40 * x - 79
+
+
+def _real_branch(ax, a, b, xmin, xmax, color=C1):
+    xs = np.linspace(xmin, xmax, 4000); v = xs ** 3 + a * xs + b
+    m = v >= 0; xs, v = xs[m], np.sqrt(v[m])
+    brk = np.where(np.diff(xs) > (xmax - xmin) / 3000)[0] + 1
+    for seg in np.split(np.arange(len(xs)), brk):
+        ax.plot(xs[seg], v[seg], color=color); ax.plot(xs[seg], -v[seg], color=color)
+
+
+@fig('20-e1')
+def _():
+    ax = plt.gca(); _real_branch(ax, 0, -2, 1.2, 6.2)
+    P = (3, 5); l = 27 / 10; x2, y2 = 129 / 100, 383 / 1000
+    xs = np.linspace(0.8, 5.5, 50); ax.plot(xs, 5 + l * (xs - 3), color=C4, lw=1)
+    ax.plot(*P, 'o', color=C2); ax.text(3.1, 4.4, 'P = (3, 5)', fontsize=8)
+    ax.plot(x2, y2, 'o', color=C4); ax.text(1.35, 1.0, '−2P (third intersection)', fontsize=8)
+    ax.plot(x2, -y2, 'o', color=C3); ax.text(1.35, -1.8, '2P = (129/100, −383/1000)', fontsize=8)
+    ax.plot([x2, x2], [-y2, y2], ':', color=GR)
+    ax.set_title('y² = x³ − 2: tangent at P meets the curve again at −2P', fontsize=9)
+    ax.set_xlim(0.8, 6.2); ax.set_ylim(-14, 14)
+    save('20-e1')
+
+
+@fig('20-e2')
+def _():
+    ax = plt.gca(); _real_branch(ax, 0, 1, -1.0, 3.2)
+    pts = {'O': None, 'P = (2, 3)': (2, 3), '2P = (0, 1)': (0, 1), '3P = (−1, 0)': (-1, 0),
+           '4P = (0, −1)': (0, -1), '5P = (2, −3)': (2, -3)}
+    for k, (lab, Q) in enumerate(pts.items()):
+        if Q: ax.plot(*Q, 'o', color=C2); ax.text(Q[0] + 0.08, Q[1] + 0.25, lab, fontsize=8)
+    ax.set_title('y² = x³ + 1: the torsion group is cyclic of order 6', fontsize=9)
+    save('20-e2')
+
+
+@fig('20-e3')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(7.2, 3.0))
+    ax = axs[0]; _real_branch(ax, -36, 0, -6.0, 9.0)
+    ax.plot(-3, 9, 'o', color=C2); ax.text(-2.8, 10, '(−3, 9)', fontsize=8)
+    ax.plot(25 / 4, -35 / 8, 'o', color=C3); ax.text(6.4, -6, '(25/4, −35/8)', fontsize=8)
+    ax.set_title('y² = x³ − 36x', fontsize=9)
+    ax = axs[1]
+    for (a, b, c), col in (((3, 4, 5), C2), ((0.7, 120 / 7, 1201 / 70), C3)):
+        ax.plot([0, a, 0, 0], [0, 0, b, 0], color=col)
+    ax.text(1.0, 1.0, '3, 4, 5', color=C2, fontsize=8); ax.text(0.9, 9, '7/10, 120/7, 1201/70', color=C3, fontsize=8)
+    ax.set_aspect('equal'); ax.set_title('two right triangles of area 6', fontsize=9)
+    save('20-e3')
+
+
+@fig('20-e4')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 3000 and p != 11]
+    ap = [_ec_ap_short(_f11a, p) for p in ps]
+    ax.scatter(ps, ap, s=4, color=C1)
+    xs = np.linspace(3, 3000, 300); ax.plot(xs, 2 * np.sqrt(xs), color=C2); ax.plot(xs, -2 * np.sqrt(xs), color=C2)
+    ax.set_xlabel('p'); ax.set_ylabel('a_p = p + 1 − #E(F_p)')
+    ax.set_title('Hasse: |a_p| ≤ 2√p  (curve 11a: y² + y = x³ − x² − 10x − 20)', fontsize=9)
+    save('20-e4')
+
+
+@fig('20-e5')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 400]
+    ap = [_ec_ap_short(lambda x: x ** 3 - x, p) for p in ps]
+    ax.scatter(ps, ap, s=10, c=[C2 if p % 4 == 3 else C3 for p in ps])
+    xs = np.linspace(3, 400, 200); ax.plot(xs, 2 * np.sqrt(xs), color=GR, lw=0.8); ax.plot(xs, -2 * np.sqrt(xs), color=GR, lw=0.8)
+    ax.set_xlabel('p'); ax.set_ylabel('a_p')
+    ax.set_title('y² = x³ − x (CM by ℤ[i]): a_p = 0 for p ≡ 3 (mod 4) (red), ±2a when p = a² + b² (green)', fontsize=8)
+    save('20-e5')
+
+
+@fig('20-e6')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(7.2, 3.0)); ps = [p for p in PR if 2 < p < 20000 and p != 11]
+    for ax, f, name in ((axs[0], _f11a, '11a (no CM)'), (axs[1], lambda x: x ** 3 - x, 'y² = x³ − x (CM)')):
+        th = [math.acos(max(-1, min(1, _ec_ap_short(f, p) / (2 * sqrt(p))))) for p in ps if not (name.startswith('y') and p == 2)]
+        ax.hist(th, bins=30, density=True, color=C1, alpha=0.7)
+        t = np.linspace(0, pi, 200); ax.plot(t, 2 / pi * np.sin(t) ** 2, color=C2)
+        ax.set_xlabel('θ_p,  a_p = 2√p cos θ_p'); ax.set_title(name + ', p < 20000', fontsize=9)
+    save('20-e6')
+
+
+@fig('20-e7')
+def _():
+    ax = plt.gca(); ks = range(1, 41)
+    def first_k(m):
+        f = 1
+        for k in ks:
+            f *= k
+            if f % m == 0: return k
+    k1, k2 = first_k(640), first_k(777)
+    ax.plot(list(ks), [1 if math.factorial(k) % 640 == 0 else 0 for k in ks], 'o-', color=C3, ms=3, label='640 | k!  (mod 599)')
+    ax.plot(list(ks), [1.1 if math.factorial(k) % 777 == 0 else 0.1 for k in ks], 's-', color=C1, ms=3, label='777 | k!  (mod 761)')
+    ax.axvline(k1, color=C3, ls=':'); ax.axvline(k2, color=C1, ls=':')
+    ax.set_yticks([]); ax.set_xlabel('k'); ax.legend(fontsize=8)
+    ax.set_title(f'ECM on 455839 = 599·761: k!·P vanishes mod 599 from k = {k1}, mod 761 only from k = {k2}', fontsize=8)
+    save('20-e7')
+
+
+@fig('20-1')
+def _():
+    ax = plt.gca(); _real_branch(ax, -36, 0, -6.0, 26.0)
+    for (x, y), lab in (((-3, 9), 'P'), ((25 / 4, -35 / 8), '2P')):
+        ax.plot(x, y, 'o', color=C2); ax.text(x + 0.4, y + 3, lab, fontsize=9)
+    ax.set_title('2P on y² = x³ − 36x is not integral ⇒ P has infinite order (Nagell–Lutz)', fontsize=9)
+    save('20-1')
+
+
+@fig('20-2')
+def _():
+    ax = plt.gca(); _real_branch(ax, -1, 0, -1.2, 2.6)
+    for Q in ((-1, 0), (0, 0), (1, 0)): ax.plot(*Q, 'o', color=C2)
+    ax.set_title('y² = x³ − x: E(ℚ)_tors = {O, (−1,0), (0,0), (1,0)} ≅ ℤ/2 × ℤ/2', fontsize=9)
+    save('20-2')
+
+
+@fig('20-3')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(7.0, 3.2))
+    for ax, p in zip(axs, (7, 13)):
+        pts = [(x, y) for x in range(p) for y in range(p) if (y * y - x ** 3 + 2) % p == 0]
+        ax.scatter([q[0] for q in pts], [q[1] for q in pts], color=C1, s=20)
+        ax.set_xlim(-0.5, p - 0.5); ax.set_ylim(-0.5, p - 0.5); ax.set_aspect('equal')
+        ax.set_title(f'y² = x³ − 2 over F_{p}: {len(pts)} + O = {len(pts) + 1} points', fontsize=9)
+    save('20-3')
+
+
+@fig('20-4')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if p % 4 == 1 and p < 400]
+    ap = [_ec_ap_short(lambda x: x ** 3 - x, p) for p in ps]
+    a = [next(u for u in range(1, 30, 2) if any(u * u + v * v == p for v in range(0, 30, 2))) for p in ps]
+    ax.scatter(ps, [abs(t) for t in ap], color=C1, s=14, label='|a_p|')
+    ax.scatter(ps, [2 * u for u in a], marker='x', color=C2, s=20, label='2a  (p = a² + b², a odd)')
+    ax.legend(fontsize=8); ax.set_xlabel('p ≡ 1 (mod 4)'); ax.set_title('y² = x³ − x: |a_p| = 2a', fontsize=9)
+    save('20-4')
+
+
+@fig('20-5')
+def _():
+    ax = plt.gca(); ns = [n for n in range(1, 60) if all(n % (k * k) for k in range(2, 8))]
+    from itertools import product
+    def cnt(A, B, C, n):
+        L = int(math.isqrt(n)) + 1
+        return sum(1 for x, y, z in product(range(-L, L + 1), repeat=3) if A * x * x + B * y * y + C * z * z == n)
+    col = []
+    for n in ns:
+        if n % 2: A, B = cnt(2, 1, 32, n), cnt(2, 1, 8, n)
+        else: A, B = cnt(4, 1, 32, n // 2), cnt(4, 1, 8, n // 2)
+        col.append(C3 if B == 2 * A else GR)
+    ax.bar(ns, [1] * len(ns), color=col); ax.set_yticks([]); ax.set_xlabel('square-free n')
+    ax.set_title("Tunnell's criterion: green = predicted congruent (proved, assuming BSD)", fontsize=9)
+    save('20-5')
+
+
+@fig('20-6')
+def _():
+    ax = plt.gca(); n = 455839
+    ax.bar(['599', '761'], [640, 777], color=[C3, C1])
+    ax.text(0, 660, '640 = 2⁷·5', ha='center', fontsize=9); ax.text(1, 797, '777 = 3·7·37', ha='center', fontsize=9)
+    ax.set_ylabel('#E(F_p)'); ax.set_ylim(0, 900)
+    ax.set_title('y² = x³ + 5x − 5: smooth group order mod 599, not mod 761', fontsize=9)
+    save('20-6')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
