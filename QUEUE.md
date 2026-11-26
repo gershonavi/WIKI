@@ -160,7 +160,7 @@ Additive number theory:
 - [x] Tate curve
 - [x] Néron–Ogg–Shafarevich criterion
 - [x] Heegner point
-- [ ] Elliptic curve point multiplication
+- [x] Elliptic curve point multiplication
 - [ ] Edwards curve
 - [ ] Montgomery curve
 - [x] Brumer bound
