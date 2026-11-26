@@ -1,0 +1,63 @@
+ב[[מתמטיקה]], '''סדרת סומוס''' היא סדרת מספרים שמוגדרת על ידי [[נוסחת נסיגה]] מסוימת, המתוארת להלן. הסדרות התגלו על ידי המתמטיקאי מייקל סומוס. לפי צורת נוסחת הנסיגה שמגדירה אותן (שכוללת חילוק), אפשר היה לצפות שהאיברים יהיו שברים; אבל באופן מפתיע, לכמה סדרות סומוס יש התכונה שכל האיברים שלהן שלמים.
+
+== נוסחאות הנסיגה ==
+לשלם <math>k \gt 1</math>, סדרת '''סומוס-<math>k</math>''' <math>\{a_n\}_{n \in \mathbb{Z}}</math> היא פתרון של המשוואה
+:<math>a_n a_{n-k} = \sum_{i=1}^{\lfloor k/2 \rfloor} \alpha_i a_{n-i} a_{n-k+i},</math>
+כאשר <math>\alpha_1, \alpha_2, \ldots, \alpha_{\lfloor k/2 \rfloor}</math> פרמטרים קבועים. אפשר לסדר אותה מחדש כנוסחת נסיגה מסדר <math>k</math>:
+:<math>a_n = \frac{\sum_{i=1}^{\lfloor k/2 \rfloor} \alpha_i a_{n-i} a_{n-k+i}}{a_{n-k}}.</math>
+לכן פתרון לא מנוון נקבע על ידי בחירה של <math>k</math> ערכים התחלתיים <math>a_0, a_1, \ldots, a_{k - 1}</math>. הסדרה שמתקבלת מהבחירה <math>\alpha_1 = \alpha_2 = \dots = \alpha_{\lfloor k/2 \rfloor} = 1</math> ו-<math>a_0 = a_1 = \dots = a_{k - 1} = 1</math> נקראת '''סדרת''' סומוס-<math>k</math> (בה' הידיעה). סדרת סומוס-<math>k</math> סימטרית, כלומר <math>s_{-n} = s_{n + k - 1}</math>.
+
+עבור <math>k = 2</math> או <math>3</math> היחסים המגדירים פשוטים מאוד (אין חיבור באגף ימין). במקרה הלא טריוויאלי הראשון, <math>k = 4</math>, היחס הוא
+:<math>a_n = \frac{\alpha a_{n-1} a_{n-3} + \beta a_{n-2}^2}{a_{n-4}},</math>
+כאשר <math>\alpha</math> ו-<math>\beta</math> פרמטרים קבועים. במקרה <math>k = 5</math> היחס הוא
+:<math>a_n = \frac{\alpha a_{n-1} a_{n-4} + \beta a_{n-2} a_{n-3}}{a_{n-5}}.</math>
+
+== ערכי הסדרות ==
+סדרות סומוס-2 וסומוס-3 הן סדרות האחדות (..., 1, 1, 1, 1, 1, ...).
+
+ערכי סדרת סומוס-4 הם
+:1, 1, 1, 1, 2, 3, 7, 23, 59, 314, 1529, 8209, 83313, 620297, 7869898, ... ({{OEIS|A006720}}).
+ערכי סדרת סומוס-5 הם
+:1, 1, 1, 1, 1, 2, 3, 5, 11, 37, 83, 274, 1217, 6161, 22833, 165713, ... ({{OEIS|A006721}}).
+ערכי סדרת סומוס-6 הם
+:1, 1, 1, 1, 1, 1, 3, 5, 9, 23, 75, 421, 1103, 5047, 41783, 281527, ... ({{OEIS|A006722}}).
+ערכי סדרת סומוס-7 הם
+:1, 1, 1, 1, 1, 1, 1, 3, 5, 9, 17, 41, 137, 769, 1925, 7203, 34081, ... ({{OEIS|A006723}}).
+17 הערכים הראשונים של סדרת סומוס-8 הם
+:1, 1, 1, 1, 1, 1, 1, 1, 4, 7, 13, 25, 61, 187, 775, 5827, 14815 [והערך הבא אינו שלם].{{הערה|1=<span dir="ltr">T. Mase, The Laurent phenomenon and discrete integrable systems, RIMS Kôkyûroku Bessatsu B41 (2013), pp. 43–64.</span>|כיווון=שמאל}}
+(את כל הרשימות חישבנו מחדש בחשבון שברים מדויק.)
+
+''חישוב של כמה איברי סומוס-4:'' <math>a_4 = \tfrac{a_3a_1 + a_2^2}{a_0} = \tfrac{1 + 1}{1} = 2</math>; <math>a_5 = \tfrac{a_4a_2 + a_3^2}{a_1} = \tfrac{2 + 1}{1} = 3</math>; <math>a_6 = \tfrac{3\cdot1 + 2^2}{1} = 7</math>; <math>a_7 = \tfrac{7\cdot2 + 3^2}{1} = 23</math>; <math>a_8 = \tfrac{23\cdot3 + 7^2}{2} = \tfrac{118}{2} = 59</math> – כאן כבר יש חילוק לא טריוויאלי, והוא "מצליח"; <math>a_9 = \tfrac{59\cdot7 + 23^2}{3} = \tfrac{942}{3} = 314</math>.
+
+== שלמות ותופעת לורן ==
+צורת נוסחאות הנסיגה שמתארות את סדרות סומוס כוללת חילוק, ולכן נראה סביר שהסדרות יכילו ערכים שאינם שלמים. ובכל זאת, עבור <math>k \le 7</math> סדרות סומוס מכילות רק ערכים שלמים.{{הערה|1=<span dir="ltr">J. L. Malouf, An integer sequence from a rational recursion, Discrete Mathematics 110 (1992), pp. 257–261.</span>|כיווון=שמאל}}{{הערה|שם=CS|1=<span dir="ltr">G. D. Carroll, D. E. Speyer, The cube recurrence, Electronic Journal of Combinatorics 11 (2004), R73.</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">J. Propp, A Bare-Bones Chronology of Somos Sequences.</span>|כיווון=שמאל}} באופן כללי, עבור <math>k \le 7</math>, סדרת סומוס-<math>k</math> מקיימת את מה שנקרא '''תכונת לורן''': כפונקציה של האיברים ההתחלתיים <math>a_0, \ldots, a_{k-1}</math>, כל איבר <math>a_n</math> הוא [[פולינום לורן]] בכמה משתנים, עם מקדמים ב-<math>\mathbb{Z}[\alpha_1, \dots, \alpha_{\lfloor k/2 \rfloor}]</math>. (למשל, בסומוס-4 הכללית עם <math>\alpha = \beta = 1</math>: <math>a_4 = \tfrac{a_1a_3 + a_2^2}{a_0}</math>, <math>a_5 = \tfrac{a_1a_2a_3 + a_2^3 + a_0a_3^2}{a_0a_1}</math>, ו-<math>a_6</math> הוא שוב שבר שהמכנה שלו מונום, <math>a_0^2a_1a_2</math> – אף שבחישוב הישיר <math>a_6 = (a_5a_3 + a_4^2)/a_2</math> נראה כאילו יכולים להופיע מכנים מסובכים. כשכל האיברים ההתחלתיים שווים ל-1, המכנים הם 1 וכל האיברים שלמים.)
+
+כמה מתמטיקאים חקרו את בעיית ההוכחה וההסבר של התכונה הזו בסדרות סומוס; היא קשורה קשר הדוק לקומבינטוריקה של [[אלגברת אשכולות|אלגברות אשכולות]].{{הערה|1=<span dir="ltr">S. Fomin, A. Zelevinsky, The Laurent phenomenon, Advances in Applied Mathematics 28 (2002), pp. 119–144.</span>|כיווון=שמאל}}{{הערה|שם=CS}}{{הערה|1=<span dir="ltr">A. N. W. Hone, Casting light on shadow Somos sequences, Glasgow Mathematical Journal 65 (2023), pp. S87–S101; A. Stone, The astonishing behavior of recursive sequences, Quanta Magazine, 18 November 2023.</span>|כיווון=שמאל}}
+
+עבור <math>k \ge 8</math>, סדרות סומוס-<math>k</math> מכילות בסופו של דבר ערכים שאינם שלמים. בסומוס-8, הערך הלא שלם הראשון הוא האיבר ה-18, שערכו <math>420514/7</math> (בדקנו).
+
+== נוסחה סגורה ==
+נתבונן ביחס סומוס-4
+:<math>a_n a_{n-4} = \alpha a_{n-1} a_{n-3} + \beta a_{n-2}^2</math>
+עם <math>\alpha \ne 0</math>. אז סדרת סומוס-4 בערכים [[מספר מרוכב|מרוכבים]] מתאימה לסדרה חשבונית של נקודות <math>Q + nP</math> על [[עקום אליפטי]] <math>E</math>. האיבר הכללי נתון בנוסחה{{הערה|1=<span dir="ltr">A. N. W. Hone, Elliptic curves and quadratic recurrence sequences, Bulletin of the London Mathematical Society 37 (2005), pp. 161–171.</span>|כיווון=שמאל}}
+:<math>a_n = A B^n \frac{\sigma(z_0 + n \kappa)}{\sigma(\kappa)^{n^2}},</math>
+כאשר <math>\sigma(z) = \sigma(z; g_2, g_3)</math> היא [[פונקציית סיגמא של ויירשטראס]] המשויכת לעקום <math>E</math> הכתוב בצורה הקנונית
+:<math>E: \quad y^2 = 4 x^3 - g_2 x - g_3.</math>
+ששת הפרמטרים <math>g_2, g_3, A, B, z_0, \kappa \in \mathbb{C}</math> נקבעים ביחידות (עד כדי בחירת סימן) על ידי המקדמים <math>\alpha, \beta</math> והאיברים ההתחלתיים <math>a_0, a_1, a_2, a_3</math>. קואורדינטות <math>(x, y)</math> של הסדרה <math>Q + n P</math> נתונות על ידי <math>(\wp(z_0 + n \kappa), \wp'(z_0 + n \kappa))</math>, כאשר <math>\wp(z) = \wp(z; g_2, g_3)</math> היא [[פונקציית ויירשטראס]]. המקדמים <math>\alpha</math> ו-<math>\beta</math> נתונים כ[[פונקציה אליפטית|פונקציות אליפטיות]] של <math>\kappa</math>:
+:<math>\alpha = \wp(\kappa)^2, \quad \beta =\wp'(\kappa)^2 (\wp(2 \kappa) - \wp(\kappa)).</math>
+
+''קשר מפורש לדוגמה:'' סדרת סומוס-4 היא (בערך מוחלט) תת-הסדרה של האיברים במקומות האי-זוגיים ב[[סדרת התחלקות אליפטית|סדרת ההתחלקות האליפטית]] של העקום <math>y^2 + y = x^3 - x</math> עם הנקודה <math>(0, 0)</math>: אם <math>W_n</math> היא הסדרה <math>1, 1, -1, 1, 2, -1, -3, -5, 7, \ldots</math> ({{OEIS|A006769}}), אז <math>|W_{2n+1}| = a_{n+2}</math> (בדקנו עבור <math>n \lt 20</math>). כך הגידול של סומוס-4, <math>\log a_n \approx c\,n^2</math>, נובע מהגידול ה"אקספוננציאלי-ריבועי" של סדרות התחלקות אליפטיות.
+
+== ראו גם ==
+* [[סדרת התחלקות אליפטית]]
+
+== קישורים חיצוניים ==
+* <span dir="ltr">J. Propp, Somos Sequence Site</span>
+* {{MathWorld|SomosSequence|Somos Sequence}}
+* <span dir="ltr">Numberphile, The Troublemaker Number</span>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:סדרות של מספרים שלמים]]
+[[קטגוריה:נוסחאות נסיגה]]

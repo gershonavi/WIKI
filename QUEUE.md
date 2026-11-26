@@ -342,7 +342,7 @@ Additive number theory:
 - [x] Lucas–Carmichael number
 - [x] Lehmer sequence
 - [x] Elliptic divisibility sequence
-- [ ] Somos sequence
+- [x] Somos sequence
 - [ ] Hilbert number
 - [ ] Rough number
 - [ ] Regular number
