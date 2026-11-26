@@ -359,7 +359,7 @@ Additive number theory:
 - [x] Arithmetic number
 - [x] Znám's problem
 - [x] Primary pseudoperfect number
-- [ ] Erdős–Woods number
+- [x] Erdős–Woods number
 - [ ] Ulam number
 - [ ] Stanley sequence
 - [ ] Mian–Chowla sequence
