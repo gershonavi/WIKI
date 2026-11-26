@@ -169,7 +169,7 @@ Additive number theory:
 ### תבניות מודולריות (37)
 
 - [x] Upper half-plane
-- [ ] Congruence subgroup
+- [x] Congruence subgroup
 - [ ] Modular curve
 - [ ] J-invariant
 - [ ] Dedekind eta function
