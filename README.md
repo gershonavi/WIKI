@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (485)
+## ערכים (486)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -240,6 +240,7 @@
 * [מספר חופשי מריבועים](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%95%D7%A4%D7%A9%D7%99%20%D7%9E%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D.md) – Square-free integer
 * [מספר חזק](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%96%D7%A7.md) – Powerful number
 * [מספר מעשי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A2%D7%A9%D7%99.md) – Practical number
+* [מספר פריק עליון](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A4%D7%A8%D7%99%D7%A7%20%D7%A2%D7%9C%D7%99%D7%95%D7%9F.md) – Superior highly composite number
 * [סדרת ביטי](pages/%D7%A1%D7%93%D7%A8%D7%AA%20%D7%91%D7%99%D7%98%D7%99.md) – Beatty sequence
 
 ### [סדרות של שלמים](categories/%D7%A1%D7%93%D7%A8%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%A9%D7%9C%D7%9E%D7%99%D7%9D.md)

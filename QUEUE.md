@@ -321,7 +321,7 @@ Additive number theory:
 - [x] Perfect power
 - [x] Colossally abundant number
 - [x] Superabundant number
-- [ ] Superior highly composite number
+- [x] Superior highly composite number
 - [ ] Hyperperfect number
 - [ ] Highly abundant number
 - [ ] Primorial prime
