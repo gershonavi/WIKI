@@ -382,7 +382,7 @@ Additive number theory:
 
 - [x] Principal ideal theorem
 - [x] Selmer group
-- [ ] Ramanujan's congruences
+- [x] Ramanujan's congruences
 - [ ] Kummer's congruence
 - [ ] Isogeny
 - [ ] Division polynomials

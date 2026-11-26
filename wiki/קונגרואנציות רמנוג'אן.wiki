@@ -1,0 +1,62 @@
+ב[[מתמטיקה]], '''קונגרואנציות רמנוג'אן''' הן ה[[חשבון מודולרי|קונגרואנציות]] של [[פונקציית החלוקה (תורת המספרים)|פונקציית החלוקה]] <math>p(n)</math> שגילה [[סריניוואסה רמנוג'אן]]:
+:<math>
+\begin{align}
+p(5k+4) & \equiv 0 \pmod 5, \\
+p(7k+5) & \equiv 0 \pmod 7, \\
+p(11k+6) & \equiv 0 \pmod {11}.
+\end{align}
+</math>
+במילים פשוטות, הקונגרואנציה הראשונה אומרת שאם מספר גדול ב-4 מכפולה של 5, כלומר הוא בסדרה
+: 4, 9, 14, 19, 24, 29, ...
+אז מספר החלוקות שלו הוא כפולה של 5. ואכן <math>p(4) = 5</math>, <math>p(9) = 30</math>, <math>p(14) = 135</math>, <math>p(19) = 490</math>, <math>p(24) = 1575</math>, <math>p(29) = 4565</math>. באותו אופן <math>p(5) = 7</math>, <math>p(12) = 77 = 7\cdot 11</math>, <math>p(19) = 490 = 7\cdot 70</math>; ו-<math>p(6) = 11</math>, <math>p(17) = 297 = 11\cdot 27</math>, <math>p(28) = 3718 = 11\cdot 338</math> (בדקנו בחישוב).
+
+מאוחר יותר התגלו קונגרואנציות נוספות מהסוג הזה, גם למספרים אחרים וגם ל[[פונקציית הטאו של רמנוג'אן]].
+
+== רקע ==
+במאמר שלו מ-1919{{הערה|שם=R1919|1=<span dir="ltr">S. Ramanujan, "Some properties of p(n), the number of partitions of n", ''Proceedings of the Cambridge Philosophical Society'' '''19''' (1919), 207–210</span>|כיווון=שמאל}} הוכיח רמנוג'אן את שתי הקונגרואנציות הראשונות בעזרת הזהויות הבאות (בסימון סמל פוכהמר <math>(q)_\infty = \prod_{n \ge 1}(1 - q^n)</math>):
+:<math>
+\begin{align}
+& \sum_{k=0}^\infty p(5k+4)q^k=5\frac{(q^5)_\infty^5}{(q)_\infty^6}, \\[4pt]
+& \sum_{k=0}^\infty p(7k+5)q^k=7\frac{(q^7)_\infty^3}{(q)_\infty^4}+49q\frac{(q^7)_\infty^7}{(q)_\infty^8}.
+\end{align}
+</math>
+(הצדדים הימניים הם כפולות של 5 ושל 7 בכל מקדם, כי <math>1/(q)_\infty^m</math> הוא טור עם מקדמים שלמים; מכאן הקונגרואנציות. בדקנו בחישוב את שתי הזהויות עד <math>q^{59}</math>.) הוא כתב שנראה שאין תכונות פשוטות באותה מידה למודולים שמערבים ראשוניים אחרים.
+
+אחרי מותו של רמנוג'אן ב-1920, [[גודפרי הרולד הארדי|ג' ה' הארדי]] חילץ הוכחות של שלוש הקונגרואנציות מכתב יד שלא פורסם של רמנוג'אן על <math>p(n)</math>.{{הערה|1=<span dir="ltr">S. Ramanujan, "Congruence properties of partitions", ''Mathematische Zeitschrift'' '''9''' (1921), 147–153</span>|כיווון=שמאל}} ההוכחה בכתב היד משתמשת ב[[טור אייזנשטיין|טורי אייזנשטיין]].
+
+ב-1944 הגדיר [[פרימן דייסון]] את ה[[דרגה של חלוקה|דרגה של חלוקה]], ושיער שקיימת פונקציית "[[קרנק של חלוקה|קרנק]]" לחלוקות שתיתן הוכחה קומבינטורית לקונגרואנציה של רמנוג'אן מודולו 11 (הדרגה עצמה מסבירה את הקונגרואנציות מודולו 5 ו-7: היא מחלקת את החלוקות של <math>5k + 4</math> לחמש מחלקות שוות בגודלן, ואת אלה של <math>7k + 5</math> לשבע). ארבעים שנה מאוחר יותר מצאו ג'ורג' אנדרוז ופרנק גרבן פונקציה כזו, והוכיחו את התוצאה המפורסמת שהקרנק "מסביר" בבת אחת את שלוש הקונגרואנציות של רמנוג'אן, מודולו 5, 7 ו-11.
+
+בשנות ה-60 גילה ארתור אטקין קונגרואנציות נוספות למודולים ראשוניים קטנים. למשל:
+:<math>p(11^3 \cdot 13k + 237)\equiv 0 \pmod {13}.</math>
+בהרחבת התוצאות של אטקין, קן אונו הוכיח ב-2000 שיש קונגרואנציות רמנוג'אן כאלה מודולו כל שלם זר ל-6.{{הערה|שם=Ono2000|1=<span dir="ltr">K. Ono, "Distribution of the partition function modulo m", ''Annals of Mathematics'' (2) '''151''' (2000), no. 1, 293–307</span>|כיווון=שמאל}} למשל, מהתוצאות שלו נובע
+:<math>p(107^4\cdot 31k + 30064597)\equiv 0\pmod{31}.</math>
+(בדקנו בחישוב את <math>k = 0, 1</math> בקונגרואנציה של אונו, ואת <math>k = 0, 1</math> בזו של אטקין.) מאוחר יותר שיער אונו שגם הקרנק מקיים בדיוק אותם סוגים של קונגרואנציות כלליות. זה הוכח על ידי תלמיד הדוקטורט שלו קרל מלבורג במאמר "Partition Congruences and the Andrews–Garvan–Dyson Crank" מ-2005,{{הערה|1=<span dir="ltr">K. Mahlburg, "Partition congruences and the Andrews–Garvan–Dyson crank", ''Proc. Natl. Acad. Sci. USA'' '''102''' (2005), no. 43, 15373–15376</span>|כיווון=שמאל}} שזכה בפרס המאמר של השנה הראשון של כתב העת ''Proceedings of the National Academy of Sciences''.
+
+הסבר מושגי להבחנה של רמנוג'אן התגלה בינואר 2011,{{הערה|1=<span dir="ltr">A. Folsom, Z. A. Kent, K. Ono, "ℓ-adic properties of the partition function", ''Advances in Mathematics'' '''229''' (2012), no. 3, 1586–1609</span>|כיווון=שמאל}} בהתבוננות ב[[ממד האוסדורף]] של הפונקציות הבאות בטופולוגיה ה-<math>\ell</math>-אדית:
+:<math>P_\ell(b;z) := \sum_{n=0}^\infty p\left(\frac{\ell^bn+1}{24}\right)q^{n/24}.</math>
+מתברר שהממד הוא 0 רק כאשר <math>\ell = 5, 7, 11</math>. כיוון שאפשר לכתוב את פונקציית החלוקה כ[[צירוף ליניארי]] של הפונקציות האלה,{{הערה|1=<span dir="ltr">J. H. Bruinier, K. Ono, "Algebraic formulas for the coefficients of half-integral weight harmonic weak Maass forms", ''Advances in Mathematics'' '''246''' (2013), 198–219</span>|כיווון=שמאל}} אפשר לראות בזה ניסוח פורמלי והוכחה של ההבחנה של רמנוג'אן.
+
+ב-2001 נתנה ריאנון ויבר אלגוריתם אפקטיבי למציאת קונגרואנציות של פונקציית החלוקה, וטבלה 76,065 קונגרואנציות.{{הערה|1=<span dir="ltr">R. L. Weaver, "New congruences for the partition function", ''The Ramanujan Journal'' '''5''' (2001), 53–63</span>|כיווון=שמאל}} פרדריק יוהנסון הרחיב את זה ב-2012 ל-22,474,608,014 קונגרואנציות,{{הערה|1=<span dir="ltr">F. Johansson, "Efficient implementation of the Hardy–Ramanujan–Rademacher formula", ''LMS Journal of Computation and Mathematics'' '''15''' (2012), 341–359</span>|כיווון=שמאל}} ואחת הדוגמאות הגדולות היא
+:<math>p(999959^4\cdot29k+ 28995221336976431135321047) \equiv 0 \pmod{29}.</math>
+
+== הקשר לתבניות מודולריות ==
+הקונגרואנציות של רמנוג'אן הן תופעה של [[תבנית מודולרית|תבניות מודולריות]] מודולו <math>\ell</math>. הפונקציה היוצרת <math>\sum p(n)q^{24n - 1} = 1/\eta(24\tau)</math> היא (עד גורם) תבנית מודולרית ממשקל <math>-\tfrac12</math>, כאשר <math>\eta</math> [[פונקציית אטא של דדקינד|פונקציית האטא של דדקינד]]. למשל, הזהות הראשונה של רמנוג'אן נובעת מכך ש-<math>(q)_\infty^5 \equiv (q^5)_\infty \pmod 5</math> (מהבינום של ניוטון מודולו ראשוני), ולכן
+:<math>\sum_{n \ge 0}p(n)q^{n+1} = \frac{q\,(q)_\infty^{24}}{(q)_\infty^{25}} \equiv \frac{\Delta(\tau)}{(q^{25};q^{25})_\infty} \pmod 5,</math>
+כאשר <math>\Delta = q\prod(1 - q^n)^{24}</math>; וכל המקדמים של <math>\Delta</math> שהמעריך שלהם מתחלק ב-5 מתחלקים ב-5, כי <math>\tau(5n) \equiv 0 \pmod 5</math>. (זו ההוכחה הקלאסית; בדקנו בחישוב את שתי הקונגרואנציות של <math>\tau</math> עד 200. את <math>\tau(5n) \equiv 0 \pmod 5</math> אפשר לבדוק בעזרת הקונגרואנציה <math>\tau(n) \equiv n\sigma_1(n) \pmod 5</math>.)
+
+== ראו גם ==
+* [[קרנק של חלוקה]]
+* [[דרגה של חלוקה]]
+* [[פונקציית הטאו של רמנוג'אן]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* K. Ono, ''The Web of Modularity: Arithmetic of the Coefficients of Modular Forms and q-Series'', CBMS Regional Conference Series in Mathematics 102, American Mathematical Society, 2004
+* I. Pak, "Dyson's rank, crank and adjoint", a list of references, https://www.math.ucla.edu/~pak/papers/dyson.htm
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:סריניוואסה רמנוג'אן]]
