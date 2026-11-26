@@ -426,7 +426,7 @@ Additive number theory:
 
 - [x] Laguerre–Pólya class
 - [x] Turán's inequalities
-- [ ] Polymath Project
+- [x] Polymath Project
 - [x] Riemann–Siegel theta function (קיים: פונקציית התטא של רימן-זיגל)
 - [ ] Gaussian ensemble
 - [ ] Dyson Brownian motion
