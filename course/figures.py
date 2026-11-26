@@ -6509,6 +6509,168 @@ def _():
     save('21-6')
 
 
+
+# ---------- lesson 22: geometric zeta functions ----------
+def _ihara_poles(A, q):
+    """poles of the Ihara zeta of a (q+1)-regular graph: roots of 1 - lam u + q u^2, plus u = ±1."""
+    lam = np.linalg.eigvalsh(A)
+    out = []
+    for l in lam:
+        out += list(np.roots([q, -l, 1]))
+    return np.array(out)
+
+
+def _draw_graph(ax, n, edges, r=1.0, color=C1):
+    pos = [(r * math.cos(2 * pi * k / n + pi / 2), r * math.sin(2 * pi * k / n + pi / 2)) for k in range(n)]
+    for a, b in edges: ax.plot([pos[a][0], pos[b][0]], [pos[a][1], pos[b][1]], color=GR, lw=1)
+    for x, y in pos: ax.plot(x, y, 'o', color=color, ms=6)
+    ax.set_aspect('equal'); ax.axis('off')
+
+
+@fig('22-e1')
+def _():
+    ax = plt.gca(); q, a = 7, 1
+    s = [2, a]
+    for n in range(2, 13): s.append(a * s[-1] - q * s[-2])
+    ns = np.arange(1, 13)
+    ax.plot(ns, [s[n] / q ** (n / 2) for n in ns], 'o-', color=C1, label='(αⁿ + ᾱⁿ) / 7^(n/2)')
+    ax.axhline(2, color=C2, ls=':'); ax.axhline(-2, color=C2, ls=':')
+    ax.set_xlabel('n'); ax.legend(fontsize=8)
+    ax.set_title('y² = x³ − 2 over F_{7ⁿ}: N_n = 7ⁿ + 1 − (αⁿ + ᾱⁿ), |α| = √7', fontsize=9)
+    save('22-e1')
+
+
+@fig('22-e2')
+def _():
+    ax = plt.gca(); t = np.linspace(0, 2 * pi, 300); ax.plot(np.cos(t), np.sin(t), color=GR)
+    for p in [p for p in PR if 2 < p < 400 and p != 11]:
+        ap = _ec_ap_short(_f11a, p)
+        al = complex(ap, math.sqrt(max(0, 4 * p - ap * ap))) / 2 / math.sqrt(p)
+        ax.plot(al.real, al.imag, '.', color=C1, ms=4); ax.plot(al.real, -al.imag, '.', color=C1, ms=4)
+    ax.set_aspect('equal'); ax.set_title('α_p / √p for 11a, p < 400: all on the unit circle (RH for curves)', fontsize=9)
+    save('22-e2')
+
+
+@fig('22-e3')
+def _():
+    fig_, axs = plt.subplots(1, 2, figsize=(7.0, 2.8))
+    ax = axs[0]; ax.axis('off')
+    ax.add_patch(plt.Circle((0, 0), 0.25, fill=False, ec=C1)); ax.add_patch(plt.Circle((1.2, 0), 0.25, fill=False, ec=C1))
+    ax.text(0, 0, '0', ha='center', va='center'); ax.text(1.2, 0, '1', ha='center', va='center')
+    ax.annotate('', xy=(0.95, 0.08), xytext=(0.25, 0.08), arrowprops=dict(arrowstyle='->'))
+    ax.annotate('', xy=(0.25, -0.08), xytext=(0.95, -0.08), arrowprops=dict(arrowstyle='->'))
+    ax.annotate('', xy=(-0.18, 0.18), xytext=(-0.25, -0.05), arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=-2.5'))
+    ax.set_xlim(-0.8, 1.6); ax.set_ylim(-0.6, 0.6); ax.set_title('golden mean shift: no "11"', fontsize=9)
+    ax = axs[1]; ns = range(1, 13); A = np.array([[1, 1], [1, 0]])
+    fx = [int(np.trace(np.linalg.matrix_power(A, n))) for n in ns]
+    ax.semilogy(list(ns), fx, 'o-', color=C1, label='#Fix(σⁿ) = Lucas Lₙ'); ax.semilogy(list(ns), [((1 + sqrt(5)) / 2) ** n for n in ns], ':', color=C2, label='φⁿ')
+    ax.legend(fontsize=8); ax.set_xlabel('n')
+    save('22-e3')
+
+
+@fig('22-e4')
+def _():
+    fig_, axs = plt.subplots(1, 3, figsize=(7.6, 2.7))
+    K4 = [(i, j) for i in range(4) for j in range(i + 1, 4)]
+    _draw_graph(axs[0], 4, K4); axs[0].set_title('K₄ (3-regular, q = 2)', fontsize=9)
+    P = [(i, (i + 1) % 5) for i in range(5)] + [(i, i + 5) for i in range(5)] + [(5 + i, 5 + (i + 2) % 5) for i in range(5)]
+    pos = [(math.cos(2 * pi * k / 5 + pi / 2), math.sin(2 * pi * k / 5 + pi / 2)) for k in range(5)] + \
+          [(0.45 * math.cos(2 * pi * k / 5 + pi / 2), 0.45 * math.sin(2 * pi * k / 5 + pi / 2)) for k in range(5)]
+    ax = axs[1]
+    for a, b in P: ax.plot([pos[a][0], pos[b][0]], [pos[a][1], pos[b][1]], color=GR, lw=1)
+    for x, y in pos: ax.plot(x, y, 'o', color=C1, ms=5)
+    ax.set_aspect('equal'); ax.axis('off'); ax.set_title('Petersen graph', fontsize=9)
+    ax = axs[2]; t = np.linspace(0, 2 * pi, 200); r = 1 / sqrt(2)
+    ax.plot(r * np.cos(t), r * np.sin(t), color=GR, lw=0.8)
+    for edges, n, col, lab in ((K4, 4, C2, 'K₄'), (P, 10, C3, 'Petersen')):
+        A = np.zeros((n, n))
+        for a, b in edges: A[a, b] = A[b, a] = 1
+        z = _ihara_poles(A, 2)
+        ax.plot(z.real, z.imag, 'o', mfc='none', mec=col, ms=7 if col == C2 else 4, label=lab)
+    ax.set_aspect('equal'); ax.legend(fontsize=7, loc='lower left'); ax.set_title('Ihara poles; circle |u| = 1/√2', fontsize=9)
+    save('22-e4')
+
+
+@fig('22-e5')
+def _():
+    ax = plt.gca(); ns = list(range(1, 41))
+    ax.bar(ns, [sum(d for d in range(1, n + 1) if n % d == 0) for n in ns], color=C1)
+    ax.plot(ns, [pi ** 2 / 6 * n for n in ns], color=C2, label='mean size ≈ (π²/6)·n'); ax.legend(fontsize=8)
+    ax.set_xlabel('index n'); ax.set_ylabel('# subgroups of ℤ² of index n')
+    ax.set_title('subgroup growth of ℤ²: a_n = σ(n), ζ_{ℤ²}(s) = ζ(s)ζ(s−1)', fontsize=9)
+    save('22-e5')
+
+
+@fig('22-1')
+def _():
+    ax = plt.gca(); qs = [2, 3, 4, 5, 7, 8, 9]
+    ax.plot(qs, [q + 1 for q in qs], 'o-', color=C1, label='#P¹(F_q) = q + 1')
+    ax.plot(qs, [q * q for q in qs], 's-', color=C2, label='#A²(F_q) = q²')
+    ax.legend(fontsize=8); ax.set_xlabel('q'); ax.set_title('point counts of the simplest varieties', fontsize=9)
+    save('22-1')
+
+
+@fig('22-2')
+def _():
+    ax = plt.gca(); q, a = 7, 1; s = [2, a]
+    for n in range(2, 8): s.append(a * s[-1] - q * s[-2])
+    ns = range(1, 8)
+    ax.bar(list(ns), [q ** n + 1 - s[n] for n in ns], color=C1); ax.set_yscale('log')
+    for n in ns: ax.text(n, (q ** n + 1 - s[n]) * 1.15, str(q ** n + 1 - s[n]), ha='center', fontsize=7)
+    ax.set_xlabel('n'); ax.set_title('#E(F_{7ⁿ}) for y² = x³ − 2', fontsize=9)
+    save('22-2')
+
+
+@fig('22-3')
+def _():
+    ax = plt.gca(); ns = list(range(1, 13)); A = np.array([[1, 1], [1, 0]])
+    fx = [int(np.trace(np.linalg.matrix_power(A, n))) for n in ns]
+    prim = {}
+    for n in ns: prim[n] = (fx[n - 1] - sum(d * prim[d] for d in range(1, n) if n % d == 0)) // n
+    ax.bar(ns, [prim[n] for n in ns], color=C3); ax.set_yscale('log')
+    ax.set_xlabel('n'); ax.set_ylabel('# primitive orbits of length n'); ax.set_title('golden mean shift: "prime" orbits', fontsize=9)
+    save('22-3')
+
+
+@fig('22-4')
+def _():
+    ax = plt.gca()
+    for n, col in ((5, C1), (8, C2)):
+        t = np.linspace(0, 2 * pi, 200)
+        z = np.roots([1] + [0] * (n - 1) + [-1])
+        ax.plot(z.real, z.imag, 'o', color=col, label=f'C_{n}: u = ζ_{n}^k (double)')
+    ax.plot(np.cos(t), np.sin(t), color=GR, lw=0.8); ax.set_aspect('equal'); ax.legend(fontsize=8)
+    ax.set_title('poles of the Ihara zeta of a cycle: (1 − uⁿ)^(−2)', fontsize=9)
+    save('22-4')
+
+
+@fig('22-5')
+def _():
+    ax = plt.gca()
+    for (a, b, d), k in zip([(1, b, 4) for b in range(4)] + [(2, 0, 2), (2, 1, 2), (4, 0, 1)], range(7)):
+        x0 = (k % 4) * 3.0; y0 = -(k // 4) * 3.0
+        for i in range(-2, 3):
+            for j in range(-2, 3):
+                ax.plot(x0 + 0.25 * i, y0 + 0.25 * j, '.', color='#dddddd', ms=2)
+        for i in range(-2, 3):
+            for j in range(-1, 2):
+                X, Y = i * a + j * b, j * d
+                if abs(X) <= 2 and abs(Y) <= 2: ax.plot(x0 + 0.25 * X, y0 + 0.25 * Y, 'o', color=C1, ms=3)
+        ax.text(x0, y0 - 0.85, f'[[{a},{b}],[0,{d}]]', ha='center', fontsize=7)
+    ax.set_aspect('equal'); ax.axis('off'); ax.set_title('the 7 subgroups of index 4 in ℤ² (Hermite normal form)', fontsize=9)
+    save('22-5')
+
+
+@fig('22-6')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if p % 3 == 1 and p < 300]
+    N = [sum(1 for x in range(p) for y in range(p) if (x ** 3 + y ** 3 - 1) % p == 0) + 3 for p in ps]
+    ax.scatter(ps, [(n - p - 1) / (2 * sqrt(p)) for n, p in zip(N, ps)], color=C1, s=12)
+    ax.axhline(1, color=C2, ls=':'); ax.axhline(-1, color=C2, ls=':')
+    ax.set_xlabel('p ≡ 1 (mod 3)'); ax.set_ylabel('(N − p − 1)/(2√p)'); ax.set_title('projective x³ + y³ = z³ over F_p', fontsize=9)
+    save('22-6')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
