@@ -1,0 +1,144 @@
+ב[[מתמטיקה]], '''נוסחת העקבה של סלברג''', שהציג [[אטלה סלברג]] ב-1956,{{הערה|שם=Sel|1=<span dir="ltr">A. Selberg, "Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces with applications to Dirichlet series", ''J. Indian Math. Soc. (N.S.)'' '''20''' (1956), 47–87</span>|כיווון=שמאל}} היא ביטוי לקרקטר של ההצגה האוניטרית של [[חבורת לי]] <math>G</math> על המרחב <math>L^2(\Gamma\backslash G)</math> של הפונקציות שריבוען אינטגרבילי, כאשר <math>\Gamma</math> היא חבורה בדידה עם מנה בעלת נפח סופי. הקרקטר ניתן על ידי העקבה של פונקציות מסוימות על <math>G</math>.
+
+המקרה הפשוט ביותר הוא כאשר <math>\Gamma</math> '''קו-קומפקטית''' (כלומר <math>\Gamma\backslash G</math> קומפקטי); אז ההצגה מתפרקת לסכום של רכיבים בדידים. במקרה הזה נוסחת העקבה היא הרחבה של נוסחת פרובניוס לקרקטר של הצגה מושרית של חבורות סופיות. כאשר <math>\Gamma</math> היא תת-החבורה הקו-קומפקטית <math>\mathbb Z</math> של המספרים הממשיים <math>G = \mathbb R</math>, נוסחת העקבה של סלברג היא בעיקרה נוסחת הסכימה של פואסון.
+
+המקרה שבו <math>\Gamma\backslash G</math> אינו קומפקטי קשה יותר, כי יש בו [[ספקטרום (מתמטיקה)|ספקטרום]] רציף, שמתואר בעזרת [[טור אייזנשטיין ממשי-אנליטי|טורי אייזנשטיין]]. סלברג טיפל במקרה הלא-קומפקטי כאשר <math>G = \mathrm{SL}(2, \mathbb R)</math>; ההכללה לחבורות מדרגה גבוהה יותר היא '''נוסחת העקבה של ארתור–סלברג'''.
+
+כאשר <math>\Gamma</math> היא ה[[חבורה יסודית|חבורה היסודית]] של [[משטח רימן]], נוסחת העקבה של סלברג מתארת את הספקטרום של אופרטורים דיפרנציאליים כמו ה[[אופרטור לפלס|לפלסיאן]] במונחים של נתונים גאומטריים: האורכים של ה[[גאודזה|גאודזות]] הסגורות על משטח רימן. במקרה הזה הנוסחה דומה מבחינה צורנית ל[[נוסחאות מפורשות לפונקציות L|נוסחאות המפורשות]] שמקשרות בין האפסים של [[פונקציית זטא של רימן|פונקציית זטא של רימן]] לבין המספרים הראשוניים: אפסי הזטא מתאימים לערכים העצמיים של הלפלסיאן, והראשוניים מתאימים לגאודזות. מתוך האנלוגיה הזו הגדיר סלברג את [[פונקציית זטא של סלברג]] של משטח רימן, שהתכונות האנליטיות שלה מקודדות בנוסחת העקבה.
+
+== היסטוריה מוקדמת ==
+מקרים בעלי עניין מיוחד הם אלה שבהם המרחב הוא משטח רימן קומפקטי <math>S</math>. הפרסום המקורי של סלברג ב-1956 עסק במקרה הזה, באופרטור הלפלס שלו ובחזקותיו. בעקבות של חזקות הלפלסיאן אפשר להשתמש כדי להגדיר את פונקציית זטא של סלברג. העניין במקרה הזה נבע מהאנלוגיה בין הנוסחה שהתקבלה לבין הנוסחאות המפורשות של תורת ה[[מספר ראשוני|מספרים הראשוניים]]: הגאודזות הסגורות על <math>S</math> משחקות את תפקיד הראשוניים.
+
+באותו זמן, העניין בעקבות של [[אופרטור הקה|אופרטורי הקה]] הוביל ל'''נוסחת העקבה של אייכלר–סלברג''', של סלברג ושל מרטין אייכלר, לאופרטור הקה שפועל על מרחב וקטורי של [[תבנית שפיץ|תבניות חוד]] ממשקל נתון, עבור [[תת-חבורת קונגרואנציה]] נתונה של [[החבורה המודולרית]]. כאן העקבה של אופרטור הזהות היא ממד המרחב, כלומר הממד של מרחב התבניות המודולריות מסוג נתון – גודל שבאופן מסורתי חישבו בעזרת [[משפט רימן-רוך|משפט רימן–רוך]].
+
+== שימושים ==
+לנוסחת העקבה יש שימושים בגאומטריה אריתמטית, ב[[תורת המספרים האנליטית]], בגאומטריה ספקטרלית ובתורת ה[[תבנית אוטומורפית|תבניות האוטומורפיות]]. במקרה של משטחים היפרבוליים, היא מתרגמת מידע על הספקטרום של [[לפלסיאן|אופרטור לפלס–בלטרמי]] למידע גאומטרי על גאודזות סגורות, ולהפך.{{הערה|שם=Buser|1=<span dir="ltr">P. Buser, ''Geometry and Spectra of Compact Riemann Surfaces'', Progress in Mathematics 106, Birkhäuser, 1992</span>|כיווון=שמאל}}{{הערה|שם=CR|1=<span dir="ltr">I. Chavel, B. Randol, ''Eigenvalues in Riemannian Geometry'', Pure and Applied Mathematics 115, Academic Press, 1984, ch. XI</span>|כיווון=שמאל}}
+
+בבחירה מתאימה של פונקציית המבחן, נוסחת העקבה נותנת מידע אסימפטוטי על הערכים העצמיים של הלפלסיאן, כולל אסימפטוטיקה מסוג חוק וייל. במשטחים היפרבוליים קומפקטיים היא גם מראה שספקטרום הלפלס קובע את ספקטרום האורכים של הגאודזות הסגורות, כך שהאורכים של הגאודזות הסגורות הפרימיטיביות הם אינווריאנטים ספקטרליים.{{הערה|שם=Buser}}{{הערה|שם=CR}}
+
+האנלוגיה בין נוסחת העקבה של סלברג לבין הנוסחאות המפורשות מובילה ל'''משפט הגאודזות הראשוניות''', שסופר גאודזות סגורות פרימיטיביות, או באופן שקול מחלקות צמידות היפרבוליות פרימיטיביות, לפי אורך או נורמה. נוסחת העקבה ופונקציית זטא של סלברג הם כלים סטנדרטיים בהוכחת המשפט הזה ובשיפור איבר השגיאה שלו.{{הערה|שם=Hej|1=<span dir="ltr">D. A. Hejhal, "The Selberg trace formula and the Riemann zeta function", ''Duke Math. J.'' '''43''' (1976), 441–482</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">H. Iwaniec, "Prime geodesic theorem", ''J. reine angew. Math.'' '''349''' (1984), 136–159</span>|כיווון=שמאל}}
+
+עבור תת-חבורות קונגרואנציה, משתמשים בנוסחאות עקבה כדי לחקור תבניות אוטומורפיות ועקבות של אופרטורי הקה. במסגרת הקלאסית זה כולל את נוסחת העקבה של אייכלר–סלברג, שנותנת נוסחאות לעקבות של אופרטורי הקה על מרחבי תבניות חוד ובמקרים מסוימים נוסחאות ממד למרחבי תבניות מודולריות (ראו את הדוגמה המלאה למטה). באופן כללי יותר, נוסחת העקבה היא אחד הכלים הבסיסיים בתורה הספקטרלית של תבניות אוטומורפיות ובתורת המספרים האנליטית.{{הערה|1=<span dir="ltr">A. Borel, ''Automorphic Forms on SL<sub>2</sub>(R)'', Cambridge Tracts in Mathematics 130, Cambridge University Press, 1997; H. Iwaniec, ''Spectral Methods of Automorphic Forms'', 2nd ed., American Mathematical Society, 2002</span>|כיווון=שמאל}}
+
+נוסחת העקבה מרכזית גם בתורה האנליטית של פונקציית זטא של סלברג. אפשר להשתמש בה כדי להוכיח את ההמשכה המרומורפית ואת המשוואה הפונקציונלית של פונקציית הזטא, ולקשר את האפסים שלה לערכים העצמיים של הלפלסיאן ולגאומטריה של הגאודזות הסגורות.{{הערה|1=<span dir="ltr">J. Fischer, ''An Approach to the Selberg Trace Formula via the Selberg Zeta-Function'', Lecture Notes in Mathematics 1253, Springer, 1987</span>|כיווון=שמאל}}
+
+== שתי דוגמאות צעצוע ==
+=== חבורה סופית: נוסחת פרובניוס ===
+כש-<math>G</math> סופית ו-<math>\Gamma \le G</math> תת-חבורה, המרחב <math>L^2(\Gamma\backslash G)</math> הוא מרחב הפונקציות על הקוסטים <math>\Gamma g</math>, ו-<math>G</math> פועלת עליו בהזזות מימין. זו בדיוק ההצגה המושרית <math>\mathrm{Ind}_\Gamma^G \mathbf 1</math>, והקרקטר שלה הוא מספר נקודות השבת:
+:<math>\chi(g) = \#\{\Gamma x : \Gamma x g = \Gamma x\} = \frac{1}{|\Gamma|}\#\{x\in G : xgx^{-1}\in\Gamma\}.</math>
+זה ה"צד הגאומטרי" – סכימה על איברים של <math>\Gamma</math> שצמודים ל-<math>g</math>. ה"צד הספקטרלי" הוא הפירוק להצגות אי-פריקות.
+
+לדוגמה, עבור <math>G = S_3</math> ו-<math>\Gamma = \{e, (1\,2)\}</math> יש שלושה קוסטים. היחידה משבתת את שלושתם; חילוף, למשל <math>(1\,2)</math>, משבת קוסט אחד בדיוק; ומחזור מסדר 3 אינו משבת אף קוסט. לכן <math>\chi = (3, 1, 0)</math> על מחלקות הצמידות (יחידה, חילופים, מחזורים מסדר 3). מצד שני, הקרקטר הטריוויאלי הוא <math>(1,1,1)</math> והקרקטר של ההצגה הסטנדרטית הדו-ממדית הוא <math>(2, 0, -1)</math>, וסכומם הוא <math>(3,1,0)</math>. כלומר <math>L^2(\Gamma\backslash S_3) = \mathbf 1 \oplus \mathrm{std}</math>, וכל הצגה אי-פריקה מופיעה בריבוי שמתאים להדדיות פרובניוס.
+
+=== החבורה <math>\mathbb R</math> ונוסחת פואסון ===
+עבור <math>G = \mathbb R</math> ו-<math>\Gamma = \mathbb Z</math>, המנה <math>\mathbb Z\backslash\mathbb R</math> היא מעגל. הפונקציות העצמיות של <math>-\frac{d^2}{dx^2}</math> על המעגל הן <math>e^{2\pi i n x}</math>, עם ערכים עצמיים <math>(2\pi n)^2</math>. אם <math>h(r) = \int g(u)e^{iru}\,du</math>, נוסחת העקבה היא
+:<math>\sum_{n\in\mathbb Z} h(2\pi n) = \sum_{m\in\mathbb Z} g(m).</math>
+בצד שמאל עומד הספקטרום, ובצד ימין "הגאודזות הסגורות" של המעגל: לולאות שמתפתלות <math>m</math> פעמים, באורך <math>|m|</math>. זו נוסחת הסכימה של פואסון. עם <math>h(r) = e^{-tr^2}</math> מתקבל <math>g(u) = \frac{1}{\sqrt{4\pi t}}e^{-u^2/(4t)}</math>, ועבור <math>t = 0.05</math> שני הצדדים שווים ל-<math>1.27856699941568\ldots</math> (בדקנו בחישוב).
+
+== נוסחת העקבה של סלברג למשטחים היפרבוליים קומפקטיים ==
+משטח היפרבולי קומפקטי <math>X</math> אפשר לכתוב כמרחב המסלולים
+:<math>\Gamma \backslash \mathbb{H},</math>
+כאשר <math>\Gamma</math> תת-חבורה של <math>\mathrm{PSL}(2, \mathbb R)</math>, <math>\mathbb H</math> הוא [[חצי המישור העליון]], ו-<math>\Gamma</math> פועלת על <math>\mathbb H</math> ב[[העתקת מביוס|העתקות מביוס]].
+
+נוסחת העקבה של סלברג במקרה הזה פשוטה יותר מהמקרה הכללי, כי המשטח קומפקטי ולכן אין ספקטרום רציף, ולחבורה <math>\Gamma</math> אין איברים פרבוליים או אליפטיים (פרט ליחידה).
+
+אז הספקטרום של אופרטור לפלס–בלטרמי על <math>X</math> בדיד וממשי, כי אופרטור הלפלס צמוד לעצמו ובעל רזולבנטה קומפקטית; כלומר
+:<math>0 = \mu_0 \lt \mu_1 \leq \mu_2 \leq \cdots</math>
+כאשר הערכים העצמיים <math>\mu_n</math> מתאימים לפונקציות עצמיות <math>u \in C^\infty(\mathbb H)</math> של הלפלסיאן שהן שמורות תחת <math>\Gamma</math>; במילים אחרות
+:<math>\begin{cases}
+u(\gamma z) = u(z), \qquad \forall \gamma \in \Gamma \\
+y^2 \left(u_{xx} + u_{yy} \right) + \mu_{n} u = 0.
+\end{cases}</math>
+בעזרת ההצבה
+:<math>\mu = s(1-s), \qquad s=\tfrac{1}{2}+ir</math>
+מסמנים את הערכים העצמיים ב-<math>r_n</math>, <math>n \geq 0</math>. אז '''נוסחת העקבה של סלברג''' היא
+:<math>\sum_{n=0}^\infty h(r_n) = \frac{\mu(X)}{4 \pi } \int_{-\infty}^\infty r \, h(r) \tanh(\pi r)\,dr + \sum_{ \{T\} } \frac{ \log N(T_0) }{ N(T)^{1/2} - N(T)^{-1/2} }\, g(\log N(T)).</math>
+כאן <math>\mu(X)</math> הוא השטח של <math>X</math>. צד ימין הוא סכום על מחלקות הצמידות של <math>\Gamma</math>: האיבר הראשון מתאים לאיבר היחידה, ושאר האיברים הם סכום על מחלקות הצמידות האחרות <math>\{T\}</math> (שכולן היפרבוליות במקרה הזה). <math>N(T)</math> היא הנורמה של <math>T</math>: אם <math>T</math> צמוד ל-<math>z \mapsto N z</math> עם <math>N \gt 1</math>, אז <math>\log N(T)</math> הוא האורך של הגאודזה הסגורה המתאימה, ו-<math>T_0</math> הוא האיבר הפרימיטיבי ש-<math>T</math> הוא חזקה שלו. הפונקציה <math>h</math> צריכה לקיים:
+* היא אנליטית ברצועה <math>|\mathrm{Im}(r)| \le \tfrac12 + \delta</math>;
+* <math>h(-r) = h(r)</math>;
+* קיימים קבועים חיוביים <math>\delta</math> ו-<math>M</math> כך ש-<math>|h(r)| \leq M \left(1+|\mathrm{Re}(r)|\right)^{-2-\delta}</math>.
+הפונקציה <math>g</math> היא התמרת פורייה של <math>h</math>, כלומר
+:<math>h(r) = \int_{-\infty}^\infty g(u) e^{iru} \, du.</math>
+
+'''דוגמה: חוק וייל.''' לפי [[משפט גאוס-בונה|משפט גאוס–בונה]], השטח של משטח היפרבולי קומפקטי מגנוס <math>\mathfrak g \ge 2</math> (עקמומיות <math>-1</math>) הוא <math>\mu(X) = 4\pi(\mathfrak g-1)</math>; עבור גנוס 2 השטח הוא <math>4\pi</math>. אם בוחרים ב-<math>h</math> שמקרבת את הפונקציה המציינת של <math>|r| \le R</math>, האיבר של היחידה הוא בערך <math>\frac{\mu(X)}{4\pi}\int_{-R}^{R}|r|\,dr = \frac{\mu(X)}{4\pi}R^2</math>, ואיברי הגאודזות זניחים לעומתו. מכיוון ש-<math>\mu = \frac14 + r^2</math>, זה נותן את חוק וייל: מספר הערכים העצמיים <math>\mu_n \le \lambda</math> הוא בערך <math>\frac{\mu(X)}{4\pi}\lambda = (\mathfrak g - 1)\lambda</math>. למשטח מגנוס 2 יש אפוא בערך <math>\lambda</math> ערכים עצמיים עד <math>\lambda</math>.
+
+== דוגמה מלאה: נוסחת העקבה של אייכלר–סלברג ==
+עבור <math>\Gamma = \mathrm{SL}_2(\mathbb Z)</math>, משקל זוגי <math>k \ge 4</math> ו-<math>n \ge 1</math>, העקבה של אופרטור הקה <math>T_n</math> על מרחב תבניות החוד <math>S_k</math> נתונה בנוסחה (בצורה של זגייר)
+:<math>\mathrm{tr}\,(T_n \mid S_k) = -\frac12\sum_{t^2 \le 4n} P_k(t,n)\,H(4n-t^2) \;-\; \frac12\sum_{dd' = n}\min(d,d')^{k-1},</math>
+כאשר:
+* <math>P_k(t,n) = \frac{\rho^{k-1}-\bar\rho^{k-1}}{\rho-\bar\rho}</math>, ו-<math>\rho, \bar\rho</math> הם שורשי <math>X^2 - tX + n</math>. בפועל <math>P_k</math> מחושב בנסיגה <math>u_0 = 0,\ u_1 = 1,\ u_{m} = t\,u_{m-1} - n\,u_{m-2}</math>, ו-<math>P_k(t,n) = u_{k-1}</math>.
+* <math>H(N)</math> הוא '''מספר המחלקה של הורוויץ''': מספר ה[[תבנית ריבועית|תבניות הריבועיות]] הבינאריות החיוביות המצומצמות בעלות דיסקרימיננטה <math>-N</math>, כשהתבנית <math>a(x^2+y^2)</math> נספרת במשקל <math>\tfrac12</math> והתבנית <math>a(x^2+xy+y^2)</math> במשקל <math>\tfrac13</math>; ובנוסף <math>H(0) = -\tfrac1{12}</math>. הערכים הראשונים: <math>H(3) = \tfrac13</math>, <math>H(4) = \tfrac12</math>, <math>H(7) = H(8) = H(11) = 1</math>, <math>H(12) = \tfrac43</math>.
+
+האיבר עם <math>H</math> הוא ה"צד הגאומטרי": כל <math>t</math> עם <math>t^2 \lt 4n</math> מתאים למחלקות צמידות של מטריצות אליפטיות עם עקבה <math>t</math> ודטרמיננטה <math>n</math>, ומספר המחלקות האלה נספר על ידי <math>H(4n-t^2)</math>.
+
+'''חישוב <math>\mathrm{tr}(T_2 \mid S_{12})</math>.''' כאן <math>t \in \{0, \pm1, \pm2\}</math> (כי <math>t^2 \lt 8</math>). הנסיגה נותנת <math>P_{12}(0,2) = -32</math>, <math>P_{12}(\pm1,2) = 23</math>, <math>P_{12}(\pm2,2) = 32</math>, ומספרי המחלקה הם <math>H(8) = 1</math>, <math>H(7) = 1</math>, <math>H(4) = \tfrac12</math>. לכן
+:<math>\sum_t P_{12}(t,2)H(8-t^2) = 16 + 23 - 32 + 23 + 16 = 46.</math>
+האיבר השני: המחלקים של 2 נותנים <math>\min(1,2)^{11} + \min(2,1)^{11} = 2</math>. בסך הכול
+:<math>\mathrm{tr}(T_2 \mid S_{12}) = -\tfrac12\cdot 46 - \tfrac12 \cdot 2 = -24.</math>
+מכיוון ש-<math>S_{12}</math> חד-ממדי ונפרש על ידי <math>\Delta</math>, העקבה היא הערך העצמי <math>\tau(2) = -24</math>, כמו ב[[פונקציית הטאו של רמנוג'אן]].
+
+באותו אופן הנוסחה נותנת <math>\tau(3) = 252</math>, <math>\tau(5) = 4830</math>, <math>\tau(7) = -16744</math>. עבור <math>n = 1</math> מתקבל ממד המרחב: <math>\dim S_k = 0</math> עבור <math>k = 4, \ldots, 10</math> ועבור <math>k = 14</math>, <math>\dim S_{12} = \dim S_{16} = 1</math>, ו-<math>\dim S_{24} = 2</math>. במשקל 24 הנוסחה נותנת <math>\mathrm{tr}(T_2\mid S_{24}) = 1080</math>: יש שתי תבניות עצמיות, עם ערכים עצמיים <math>540 \pm 12\sqrt{144169}</math>, שסכומם 1080. (בדקנו בחישוב את כל הערכים האלה.)
+
+== נוסחת העקבה הכללית למנות קו-קומפקטיות ==
+=== הניסוח הכללי ===
+תהי <math>G</math> חבורה [[חבורה קומפקטית מקומית|קומפקטית מקומית]] אונימודולרית, <math>\Gamma</math> תת-חבורה בדידה קו-קומפקטית של <math>G</math>, ו-<math>\phi</math> פונקציה רציפה עם תומך קומפקטי על <math>G</math>. נוסחת העקבה במסגרת הזו היא השוויון
+:<math>\sum_{\gamma\in\{\Gamma\}} a_\Gamma^G(\gamma)\int_{G^\gamma\backslash G}\phi(x^{-1}\gamma x)\,dx = \sum_{\pi\in\widehat G}a_\Gamma^G(\pi)\operatorname{tr}\pi(\phi)</math>
+כאשר <math>\{\Gamma\}</math> קבוצת מחלקות הצמידות ב-<math>\Gamma</math>, <math>\widehat G</math> היא הדואלי האוניטרי של <math>G</math>, ו:
+* לאיבר <math>\gamma \in \Gamma</math>, <math>a_\Gamma^G(\gamma) = \mathrm{vol}(\Gamma^\gamma\backslash G^\gamma)</math>, כאשר <math>G^\gamma, \Gamma^\gamma</math> הם המרכזים של <math>\gamma</math> ב-<math>G</math> וב-<math>\Gamma</math>;
+* להצגה אוניטרית אי-פריקה <math>\pi</math> של <math>G</math>, <math>a_\Gamma^G(\pi)</math> הוא הריבוי של <math>\pi</math> בהצגה הימנית על <math>L^2(\Gamma\backslash G)</math>, ו-<math>\pi(\phi)</math> הוא האופרטור <math>\int_G \phi(g)\pi(g)\, dg</math>;
+* כל האינטגרלים והנפחים נלקחים ביחס ל[[מידת האר]] על <math>G</math> או על המנות שלה.
+צד שמאל של הנוסחה נקרא '''הצד הגאומטרי''', וצד ימין '''הצד הספקטרלי'''. האיברים <math>\int_{G^\gamma\backslash G}\phi(x^{-1}\gamma x)\,dx</math> נקראים '''אינטגרלי מסלול'''.
+
+בדוגמה של <math>S_3</math> מלמעלה (עם מידת המנייה, ו-<math>\phi</math> הפונקציה המציינת של איבר <math>g</math>) זו בדיוק נוסחת פרובניוס.
+
+=== הוכחה ===
+נגדיר את האופרטור הבא על פונקציות עם תומך קומפקטי על <math>\Gamma\backslash G</math>:
+:<math>R(\phi) = \int_G \phi(x)R(x)\,dx.</math>
+הוא מתרחב באופן רציף ל-<math>L^2(\Gamma\backslash G)</math>, ולכל <math>f\in L^2(\Gamma\backslash G)</math>
+:<math>(R(\phi)f)(x) = \int_G\phi(y)f(xy)\,dy = \int_{\Gamma\backslash G}\left(\sum_{\gamma\in\Gamma}\phi(x^{-1}\gamma y)\right)f(y)\,dy</math>
+אחרי החלפת משתנים. בהנחה ש-<math>\Gamma\backslash G</math> קומפקטי, האופרטור <math>R(\phi)</math> הוא בעל עקבה, ונוסחת העקבה היא התוצאה של חישוב העקבה שלו בשתי דרכים.{{הערה|1=ההצגה כאן לקוחה מ-<span dir="ltr">J. Arthur, "The trace formula and Hecke operators", in ''Number Theory, Trace Formulas and Discrete Groups'', Academic Press, 1989</span>|כיווון=שמאל}}
+
+את העקבה של <math>R(\phi)</math> אפשר לבטא כאינטגרל של הגרעין <math>K(x,y)=\sum_{\gamma\in\Gamma}\phi(x^{-1}\gamma y)</math> לאורך האלכסון:
+:<math>\operatorname{tr}R(\phi) = \int_{\Gamma\backslash G}\sum_{\gamma\in\Gamma}\phi(x^{-1}\gamma x)\,dx.</math>
+אם מקבצים את האיברים לפי מחלקות צמידות, האינטגרל הזה נהיה, אחרי כמה מניפולציות,
+:<math>\operatorname{tr}R(\phi) = \sum_{\gamma\in\{\Gamma\}} a_\Gamma^G(\gamma)\int_{G^\gamma\backslash G}\phi(x^{-1}\gamma x)\,dx.</math>
+זה הצד הגאומטרי של נוסחת העקבה.
+
+הצד הספקטרלי מתקבל מחישוב העקבה של <math>R(\phi)</math> בעזרת הפירוק של ההצגה הרגולרית לרכיבים אי-פריקים:
+:<math>\operatorname{tr}R(\phi) = \sum_{\pi\in\widehat G}a_\Gamma^G(\pi)\operatorname{tr}\pi(\phi),</math>
+כאשר <math>a_\Gamma^G(\pi)</math> הוא, כאמור, הריבוי (מספר שלם חיובי) של <math>\pi</math> בהצגה האוניטרית <math>R</math> על <math>L^2(\Gamma\backslash G)</math>.
+
+=== המקרה של חבורות לי פשוטות-למחצה ומרחבים סימטריים ===
+כאשר <math>G</math> חבורת לי פשוטה-למחצה עם תת-חבורה קומפקטית מקסימלית <math>K</math>, ו-<math>X = G/K</math> הוא המרחב הסימטרי המתאים, אפשר לתאר את מחלקות הצמידות ב-<math>\Gamma</math> במונחים גאומטריים בעזרת ה[[יריעה רימנית|יריעה הרימנית]] הקומפקטית (ובאופן כללי יותר האורביפולד) <math>\Gamma\backslash X</math>. אז אפשר לחשב הלאה את אינטגרלי המסלול ואת העקבות ברכיבים האי-פריקים, ובפרט לשחזר כך את נוסחת העקבה למשטחים היפרבוליים: עבור <math>G = \mathrm{PSL}_2(\mathbb R)</math> ו-<math>K = \mathrm{SO}(2)</math> מתקבל <math>X = \mathbb H</math>.
+
+== עבודה מאוחרת ==
+התורה הכללית של טורי אייזנשטיין נבעה במידה רבה מהצורך להפריד את הספקטרום הרציף, שאופייני למקרה הלא-קומפקטי.{{הערה|1=<span dir="ltr">P. D. Lax, R. S. Phillips, "Scattering theory for automorphic functions", ''Bull. Amer. Math. Soc.'' '''2''' (1980), 261–295</span>|כיווון=שמאל}}
+
+לעתים קרובות מנסחים את נוסחת העקבה עבור חבורות אלגבריות מעל ה[[חוג האדלים|אדלים]] ולא עבור חבורות לי, כי כך תת-החבורה הבדידה המתאימה <math>\Gamma</math> הופכת לחבורה אלגברית מעל שדה, ועם זו קל יותר לעבוד מבחינה טכנית. המקרה של <math>\mathrm{SL}_2(\mathbb C)</math> נדון אצל גלפנד, גראייב ופיאטצקי-שפירו (1990) ואצל אלשטרודט, גרונוולד ומניקה (1998). גלפנד ושותפיו מטפלים גם ב-<math>\mathrm{SL}_2(F)</math> כאשר <math>F</math> שדה טופולוגי קומפקטי מקומית עם נורמה אולטרה-מטרית, כלומר הרחבה סופית של ה[[מספר p-אדי|מספרים ה-p-אדיים]] <math>\mathbb Q_p</math> או של שדה טורי לורן הפורמליים <math>\mathbb F_q((T))</math>; הם מטפלים גם במקרה האדלי במאפיין 0, שמשלב את כל ההשלמות <math>\mathbb R</math> ו-<math>\mathbb Q_p</math> של <math>\mathbb Q</math>.
+
+הממשיכים בני זמננו של התורה הם נוסחת העקבה של ארתור–סלברג, שחלה על <math>G</math> פשוטה-למחצה כללית, והמחקרים הרבים על נוסחת העקבה ב[[תוכנית לנגלנדס]] (שעוסקים בבעיות טכניות כמו '''אנדוסקופיה'''). את נוסחת העקבה של סלברג אפשר לגזור מנוסחת העקבה של ארתור–סלברג, במאמץ מסוים.
+
+== ראו גם ==
+* [[פונקציית זטא של סלברג]]
+* [[נוסחת העקבה של פטרסון]]
+* [[נוסחת העקבה של קוזנצוב]]
+* [[פונקציית זטא של איהרה]] – אנלוג של פונקציית זטא של סלברג לגרפים
+* [[תבנית אוטומורפית]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. Elstrodt, "Die Selbergsche Spurformel für kompakte Riemannsche Flächen", ''Jahresber. Deutsch. Math.-Verein.'' '''83''' (1981), 45–77
+* J. Elstrodt, F. Grunewald, J. Mennicke, ''Groups Acting on Hyperbolic Space: Harmonic Analysis and Number Theory'', Springer, 1998
+* I. M. Gel'fand, M. I. Graev, I. I. Pyatetskii-Shapiro, ''Representation Theory and Automorphic Functions'', Generalized Functions 6, Academic Press, 1990
+* R. Godement, "The decomposition of L<sup>2</sup>(G/Γ) for Γ=SL(2,Z)", in ''Algebraic Groups and Discontinuous Subgroups'', Proc. Sympos. Pure Math., American Mathematical Society, 1966, 211–224
+* D. A. Hejhal, ''The Selberg Trace Formula for PSL(2,R)'', Vol. I, Lecture Notes in Mathematics 548, Springer, 1976; Vol. 2, Lecture Notes in Mathematics 1001, Springer, 1983
+* H. P. McKean, "Selberg's trace formula as applied to a compact Riemann surface", ''Comm. Pure Appl. Math.'' '''25''' (1972), 225–246
+* T. Sunada, "Trace formulae in spectral geometry", ''Proc. ICM Kyoto 1990'', Springer, 1991, 577–585
+* D. Zagier, "The Eichler–Selberg trace formula on SL<sub>2</sub>(Z)", appendix in S. Lang, ''Introduction to Modular Forms'', Springer, 1976
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות אוטומורפיות]]
+[[קטגוריה:תורה ספקטרלית]]

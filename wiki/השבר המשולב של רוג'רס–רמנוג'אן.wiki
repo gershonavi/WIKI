@@ -77,7 +77,7 @@ H(q) &= \sum_{n=0}^\infty\frac{q^{n^2+n}}{(q; q)_n} = \frac1{(q^2; q^5)_\infty(q
 :<math>S(e^{-\pi}) = \tan\left[\tfrac12\arctan(\Phi)\right] = \tan\left[\tfrac14\pi - \tfrac14\arctan(2)\right].</math>
 באותו אופן, <math>R(e^{-2\pi}) \oplus R(e^{-2\pi}) = \Phi^{-1}</math>, ולכן
 :<math>R(e^{-2\pi}) = \tan\left[\tfrac12\arctan(\Phi^{-1})\right] = \tan\left[\tfrac14\arctan(2)\right].</math>
-את אותו קשר מקבלים גם מהמשפט על פונקציות התטא: ב-<math>q = e^{-\pi}</math> מתקיים <math>\vartheta_{00}(q^{1/5})^2 = 5\,\vartheta_{00}(q^5)^2</math> (לפי [[נוסחת הסכימה של פואסון]], כי <math>\vartheta_{00}(e^{-\pi t}) = t^{-1/2}\vartheta_{00}(e^{-\pi/t})</math>; כאן <math>t = 1/5</math>), ולכן
+את אותו קשר מקבלים גם מהמשפט על פונקציות התטא: ב-<math>q = e^{-\pi}</math> מתקיים <math>\vartheta_{00}(q^{1/5})^2 = 5\,\vartheta_{00}(q^5)^2</math> (לפי נוסחת הסכימה של פואסון, כי <math>\vartheta_{00}(e^{-\pi t}) = t^{-1/2}\vartheta_{00}(e^{-\pi/t})</math>; כאן <math>t = 1/5</math>), ולכן
 :<math>S(e^{-\pi}) \oplus R(e^{-2\pi}) = 1,</math>
 ומכאן <math>R(e^{-2\pi}) = 1 \ominus S(e^{-\pi}) = 1 \ominus \tan\left[\tfrac14\pi - \tfrac14\arctan(2)\right] = \tan\left[\tfrac14\arctan(2)\right]</math>.
 

@@ -404,7 +404,7 @@ Additive number theory:
 
 ### השלמות לשיעורים 21–23, חלק ד' (8)
 
-- [ ] Selberg trace formula
+- [x] Selberg trace formula
 - [ ] Fuchsian group
 - [ ] Hilbert modular form
 - [ ] Jacquet–Langlands correspondence
