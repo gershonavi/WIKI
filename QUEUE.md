@@ -223,7 +223,7 @@ Additive number theory:
 - [x] Cannonball problem
 - [x] Lander, Parkin, and Selfridge conjecture
 - [x] Tijdeman's theorem
-- [ ] Brahmagupta's problem
+- [x] Brahmagupta's problem
 - [ ] Bhaskara's lemma
 - [ ] Congruum
 - [ ] Euler's sum of powers conjecture
