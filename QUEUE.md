@@ -339,7 +339,7 @@ Additive number theory:
 - [x] Euclid–Mullin sequence
 - [x] Wilson quotient
 - [x] Wolstenholme number
-- [ ] Lucas–Carmichael number
+- [x] Lucas–Carmichael number
 - [ ] Lehmer sequence
 - [ ] Elliptic divisibility sequence
 - [ ] Somos sequence
