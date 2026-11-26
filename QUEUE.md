@@ -164,7 +164,7 @@ Additive number theory:
 - [ ] Edwards curve
 - [ ] Montgomery curve
 - [x] Brumer bound
-- [ ] Mestre bound
+- [x] Mestre bound
 
 ### תבניות מודולריות (37)
 
