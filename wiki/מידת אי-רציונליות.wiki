@@ -1,0 +1,172 @@
+ב[[מתמטיקה]], '''מידת אי-רציונליות''' של [[מספר ממשי]] <math>x</math> היא מדד לכמה טוב אפשר [[קירוב דיופנטי|לקרב]] אותו על ידי [[מספר רציונלי|מספרים רציונליים]].
+
+אם [[פונקציה (מתמטיקה)|פונקציה]] <math>f(t, \lambda)</math>, המוגדרת עבור <math>t, \lambda \gt 0</math>, מקבלת ערכים ממשיים חיוביים ויורדת ממש בשני המשתנים, נתבונן ב[[אי-שוויון]]
+:<math>0 \lt \left|x - \frac pq\right| \lt f(q, \lambda)</math>
+עבור מספר ממשי נתון <math>x \in \mathbb R</math> ומספרים רציונליים <math>\frac pq</math> עם <math>p \in \mathbb Z</math>, <math>q \in \mathbb Z^+</math>. עבור <math>x \in \mathbb R</math>, נגדיר את <math>R</math> כקבוצת כל ה-<math>\lambda \in \mathbb R^+</math> שעבורם הקבוצה <math>\left\{\frac pq \in \mathbb Q : \left|x - \frac pq\right| \lt f(q, \lambda)\right\}</math> סופית. אז <math>\lambda(x) = \inf R</math> נקרא '''מידת האי-רציונליות''' של <math>x</math> ביחס ל-<math>f</math>. אם הקבוצה <math>R</math> ריקה, אומרים של-<math>x</math> יש מידת אי-רציונליות אינסופית, <math>\lambda(x) = \infty</math>.
+
+מההגדרה, יש סדרה <math>(\varepsilon_n)</math> ששואפת ל-0, כך שלכל <math>n</math>, לאי-השוויון <math>0 \lt \left|x - \frac pq\right| \lt f(q, \lambda(x) + \varepsilon_n)</math> יש לכל היותר מספר סופי של פתרונות <math>\frac pq</math>. כיוון ש-<math>f</math> יורדת במשתנה השני, מסיקים שלאי-השוויון <math>0 \lt \left|x - \frac pq\right| \lt f(q, \lambda(x) + \varepsilon)</math> יש לכל היותר מספר סופי של פתרונות לכל <math>\varepsilon \gt 0</math>.{{הערה|שם=Sondow|1=<span dir="ltr">J. Sondow, Irrationality measures, irrationality bases, and a theorem of Jarník, arXiv:math/0406300 (2004).</span>|כיווון=שמאל}}{{הערה|1=בערך האנגלי נכתב כאן "תכונת האי-ירידה של <math>f</math> במשתנה השני", אבל בהגדרה <math>f</math> יורדת ממש בשני המשתנים, ובשלב הזה משתמשים בדיוק בכך שהיא אינה עולה.|כיווון=שמאל}}
+
+== מעריך האי-רציונליות ==
+'''מעריך האי-רציונליות''', או '''מידת האי-רציונליות של ליוביל–רות''', מתקבל כשבוחרים <math>f(q, \mu) = q^{-\mu}</math>, בהגדרה שמבוססת על זו של [[מספר ליוביל|מספרי ליוביל]]: מעריך האי-רציונליות <math>\mu(x)</math> של מספר ממשי <math>x</math> הוא ה[[חסם עליון|חסם העליון]] של קבוצת ה-<math>\mu</math>-ים שעבורם <math>0 \lt \left|x - \frac pq\right| \lt \frac1{q^\mu}</math> מתקיים עבור אינסוף זוגות של שלמים [[מספרים זרים|זרים]] <math>(p, q)</math> עם <math>q \gt 0</math>.{{הערה|שם=Bugeaud|1=<span dir="ltr">Y. Bugeaud, Distribution Modulo One and Diophantine Approximation, Cambridge Tracts in Mathematics 193, Cambridge University Press, 2012, pp. 246–248.</span>|כיווון=שמאל}}
+
+לכל ערך <math>n \lt \mu(x)</math>, הקבוצה האינסופית של השברים <math>p/q</math> שמקיימים את אי-השוויון נותנת קירובים טובים של <math>x</math>. להפך, אם <math>n \gt \mu(x)</math>, יש לכל היותר מספר סופי של זוגות זרים <math>(p, q)</math> עם <math>q \gt 0</math> שמקיימים את אי-השוויון. למשל, בכל פעם שקירוב רציונלי <math>\frac pq \approx x</math> נותן <math>n + 1</math> ספרות עשרוניות מדויקות, מתקיים
+:<math>\frac1{10^n} \ge \left|x - \frac pq\right| \ge \frac1{q^{\mu(x)+\varepsilon}}</math>
+לכל <math>\varepsilon \gt 0</math>, פרט לאולי מספר סופי של זוגות "בני מזל" <math>(p, q)</math>. כלומר, לקירוב עם מכנה בן <math>d</math> ספרות אפשר לצפות לכל היותר לכ-<math>(\mu + \varepsilon)d</math> ספרות נכונות.
+
+מספר <math>x</math> עם מעריך אי-רציונליות <math>\mu(x) \le 2</math> נקרא ''מספר דיופנטי'', ומספרים עם <math>\mu(x) = \infty</math> נקראים [[מספר ליוביל|מספרי ליוביל]].
+
+=== מסקנות ===
+למספרים רציונליים יש מעריך אי-רציונליות 1 (אם <math>x = a/b</math> ו-<math>p/q \ne x</math>, אז <math>|x - p/q| \ge 1/(bq)</math>), ואילו (כתוצאה מ[[משפט הקירוב של דיריכלה]]) לכל מספר אי-רציונלי יש מעריך אי-רציונליות לפחות 2. מצד שני, הפעלה של [[הלמה של בורל–קנטלי]] מראה שלכמעט כל המספרים, כולל כל ה[[מספר אלגברי|מספרים האלגבריים]] האי-רציונליים (לפי [[משפט רות]]), יש מעריך אי-רציונליות 2 בדיוק.{{הערה|שם=Bugeaud}} (הנימוק: הקבוצה של <math>x \in [0, 1]</math> שקרובים ל-<math>p/q</math> במרחק <math>q^{-\mu}</math> היא בעלת מידה לכל היותר <math>2q\cdot q^{-\mu}</math>, והטור <math>\sum_qq^{1-\mu}</math> מתכנס כש-<math>\mu \gt 2</math>.)
+
+מתקיים <math>\mu(x) = \mu(rx + s)</math> לכל <math>x</math> ממשי ולכל רציונליים <math>r \ne 0</math> ו-<math>s</math>. אם עבור <math>x</math> כלשהו <math>\mu(x) \le \mu</math>, אז <math>\mu(x^{1/2}) \le 2\mu</math>.{{הערה|שם=BB|1=<span dir="ltr">J. M. Borwein, P. B. Borwein, Pi and the AGM, Wiley, 1987, pp. 368, 371.</span>|כיווון=שמאל}}
+
+עבור מספר ממשי <math>x</math> שנתון על ידי [[שבר משולב|השבר המשולב הפשוט]] שלו <math>x = [a_0; a_1, a_2, \ldots]</math>, עם מנות מתקרבות <math>p_i/q_i</math>, מתקיים:{{הערה|שם=Sondow}}
+:<math>\mu(x) = 1 + \limsup_{n\to\infty}\frac{\ln q_{n+1}}{\ln q_n} = 2 + \limsup_{n\to\infty}\frac{\ln a_{n+1}}{\ln q_n}.</math>
+(זה נובע מכך ש-<math>|x - p_n/q_n| \approx \frac1{q_nq_{n+1}} \approx \frac1{a_{n+1}q_n^2}</math>, ושהמנות המתקרבות הן הקירובים הטובים ביותר.) בפרט, אם המנות החלקיות <math>a_n</math> חסומות על ידי פולינום ב-<math>n</math>, אז <math>\mu(x) = 2</math>, כי <math>q_n</math> גדל לפחות מעריכית.
+
+אם <math>\limsup_{n\to\infty}\frac1n\ln|q_n| \le \sigma</math> ו-<math>\lim_{n\to\infty}\frac1n\ln|q_nx - p_n| = -\tau</math> עבור מספרים ממשיים חיוביים <math>\sigma, \tau</math> – כאשר <math>p_n/q_n</math> היא סדרה כלשהי של קירובים רציונליים (לא בהכרח המנות המתקרבות) – אז אפשר לחסום מלמעלה את מעריך האי-רציונליות של <math>x</math> על ידי{{הערה|1=<span dir="ltr">G. V. Chudnovsky, Hermite–Padé approximations to exponential functions and elementary estimates of the measure of irrationality of π, in: The Riemann Problem, Complete Integrability and Arithmetic Applications, Lecture Notes in Mathematics 925, Springer, 1982, pp. 299–322.</span>|כיווון=שמאל}}
+:<math>\mu(x) \le 1 + \frac\sigma\tau.</math>
+זה הכלי שבו מוכיחים חסמים עליונים למספרים כמו <math>\pi</math> ו-<math>\zeta(3)</math>: בונים סדרות מפורשות של קירובים רציונליים ("קירובי פאדה" או אינטגרלים מסוג אפרי) עם קצבי גידול ידועים.
+
+=== חסמים ידועים ===
+עבור רוב [[מספר טרנסצנדנטי|המספרים הטרנסצנדנטיים]], הערך המדויק של מעריך האי-רציונליות אינו ידוע.{{הערה|שם=BB}} הטבלה הבאה מציגה חסמים עליונים ותחתונים ידועים.
+{| class="wikitable"
+! rowspan="2" | מספר <math>x</math>
+! colspan="2" | מעריך האי-רציונליות <math>\mu(x)</math>
+! rowspan="2" | הערות
+|-
+! חסם תחתון !! חסם עליון
+|-
+| מספר רציונלי <math>p/q</math> || colspan="2" style="text-align:center" | 1 || לכל מספר רציונלי מעריך אי-רציונליות 1 בדיוק.
+|-
+| מספר אלגברי אי-רציונלי <math>\alpha</math> || colspan="2" style="text-align:center" | 2 || לפי משפט רות. דוגמאות: שורשים ריבועיים ו[[יחס הזהב]] <math>\varphi</math>.
+|-
+| <math>e^{2/k}</math>, <math>\tan(1/k)</math>, <math>\tanh(1/k)</math> (<math>k \in \mathbb Z^+</math>) || colspan="2" style="text-align:center" | 2 || המנות החלקיות חסומות על ידי פולינום. דוגמאות: <math>e = [2; 1, 2, 1, 1, 4, 1, 1, 6, 1, \ldots]</math> ו-<math>I_0(2)/I_1(2) = [1; 2, 3, 4, 5, 6, \ldots]</math>.
+|-
+| <math>S(b) = \sum_{k=0}^\infty b^{-2^k}</math>, <math>b \ge 2</math> || colspan="2" style="text-align:center" | 2 || המנות החלקיות חסומות על ידי קבוע (שליט).
+|-
+| <math>T(b) = \sum_{k=0}^\infty t_kb^{-k}</math>, <math>b \ge 2</math> || colspan="2" style="text-align:center" | 2 || <math>t_k</math> [[סדרת תואה–מורס]] (ביז'ו, 2011).
+|-
+| <math>\ln 2</math> || 2 || 3.57455… || (נסטרנקו, 2010). ידועים חסמים גם למספרים נוספים מהצורה <math>\ln(a/b)</math>.
+|-
+| <math>\ln 3</math> || 2 || 5.11620… ||
+|-
+| <math>5\ln(3/2)</math> || 2 || 3.43506… || מקרה פרטי (<math>k = 12</math>) של משפחה <math>\sqrt{2k + 1}\ln\frac{\sqrt{2k+1} + 1}{\sqrt{2k+1} - 1}</math> (פוליאנסקי).
+|-
+| <math>\pi/\sqrt3</math> || 2 || 4.60105… || מקרה פרטי (<math>k = 2</math>) של משפחה <math>\sqrt{2k - 1}\arctan\frac{\sqrt{2k-1}}{k - 1}</math>.
+|-
+| <math>\pi</math> || 2 || 7.10320… || (זילברגר וזודילין, 2020). הוכח ש-<math>\mu(\pi) \le 5/2</math> אם [[טור פלינט הילס]] <math>\sum_{n=1}^\infty\frac{\csc^2n}{n^3}</math> מתכנס, ושהוא מתבדר אם <math>\mu(\pi) \gt 5/2</math>. ב-2026 פרסמה [[OpenAI]] הוכחה, שטרם נבדקה, לטענה ש-<math>\mu(\pi) = 2</math>.
+|-
+| <math>\pi^2</math> || 2 || 5.09541… || (זודילין, 2014). <math>\pi^2</math> ו-<math>\zeta(2) = \pi^2/6</math> תלויים לינארית מעל <math>\mathbb Q</math>, כך שלשניהם אותו מעריך.
+|-
+| <math>\arctan(1/2)</math> || 2 || 9.27204… || ידועים חסמים גם למספרים נוספים מהצורה <math>\arctan(1/k)</math>.
+|-
+| <math>\arctan(1/3)</math> || 2 || 5.94202… ||
+|-
+| [[קבוע אפרי]] <math>\zeta(3)</math> || 2 || 5.51389… ||
+|-
+| <math>\Gamma(1/4)</math> || 2 || <math>10^{143}</math> ||
+|-
+| [[קבוע כהן]] <math>C</math> || colspan="2" style="text-align:center" | 3 ||
+|-
+| [[קבוע שמפרנון]] <math>C_b</math> בבסיס <math>b \ge 2</math> || colspan="2" style="text-align:center" | <math>b</math> || למשל <math>C_{10} = 0.1234567891011\ldots = [0; 8, 9, 1, 149083, 1, 1, \ldots]</math> (בדקנו את תחילת השבר המשולב בחישוב מדויק).
+|-
+| מספרי ליוביל <math>L</math> || colspan="2" style="text-align:center" | <math>\infty</math> || מספרי ליוביל הם בדיוק המספרים עם מעריך אי-רציונליות אינסופי.
+|}
+
+== בסיס האי-רציונליות ==
+'''בסיס האי-רציונליות''', או '''מידת האי-רציונליות של סונדאו''', מתקבל כשבוחרים <math>f(q, \beta) = \beta^{-q}</math>.{{הערה|שם=Sondow}}{{הערה|שם=Sondow03|1=<span dir="ltr">J. Sondow, An irrationality measure for Liouville numbers and conditional measures for Euler's constant, arXiv:math/0307308 (2003).</span>|כיווון=שמאל}} זו מידת אי-רציונליות חלשה יותר: היא מבחינה בין רמות הקירוב של מספרי ליוביל שונים, אבל נותנת <math>\beta(x) = 1</math> לכל שאר המספרים הממשיים.
+
+יהי <math>x</math> מספר אי-רציונלי. אם יש מספרים ממשיים <math>\beta \ge 1</math> עם התכונה שלכל <math>\varepsilon \gt 0</math> יש שלם חיובי <math>q(\varepsilon)</math> כך ש-
+:<math>\left|x - \frac pq\right| \gt \frac1{(\beta + \varepsilon)^q}</math>
+לכל השלמים <math>p, q</math> עם <math>q \ge q(\varepsilon)</math>, אז ה-<math>\beta</math> הקטן ביותר כזה נקרא '''בסיס האי-רציונליות''' של <math>x</math> ומסומן <math>\beta(x)</math>. אם אין <math>\beta</math> כזה, אז <math>\beta(x) = \infty</math>, ו-<math>x</math> נקרא '''מספר על-ליוביל'''.
+
+אם מספר ממשי <math>x</math> נתון על ידי השבר המשולב הפשוט שלו <math>x = [a_0; a_1, a_2, \ldots]</math>, עם מנות מתקרבות <math>p_i/q_i</math>, אז
+:<math>\beta(x) = \limsup_{n\to\infty}q_{n+1}^{1/q_n} = \limsup_{n\to\infty}a_{n+1}^{1/q_n}.</math>
+{{הערה|1=בערך האנגלי הנוסחה מופיעה כ-<math>\beta(x) = \limsup\frac{\ln q_{n+1}}{q_n}</math>, כלומר בלי האקספוננט. בגרסה הזו הערך יוצא <math>\ln\beta</math> ולא <math>\beta</math>: למשל עבור <math>\tau_2 = 1 + \frac12 + \frac14 + \frac1{16} + \frac1{65536} + \cdots</math> (להלן), הסכומים החלקיים הם מנות מתקרבות עם מכנה <math>q</math> ושגיאה בערך <math>2^{-q}</math>, כך ש-<math>\frac{\ln q_{n+1}}{q_n} \to \ln 2</math>, בעוד ש-<math>\beta(\tau_2) = 2</math>. הנוסחה הנכונה היא אם כן <math>\ln\beta(x) = \limsup\frac{\ln q_{n+1}}{q_n}</math>, כפי שכתוב כאן.|כיווון=שמאל}}
+
+=== דוגמאות ===
+לכל מספר ממשי <math>x</math> עם מעריך אי-רציונליות סופי <math>\mu(x) \lt \infty</math> יש בסיס אי-רציונליות <math>\beta(x) = 1</math>, ולכל מספר עם בסיס אי-רציונליות <math>\beta(x) \gt 1</math> יש מעריך אי-רציונליות <math>\mu(x) = \infty</math>, והוא מספר ליוביל.
+
+למספר <math>L = [1; 2, 2^2, 2^{2^2}, \ldots]</math> (שבו כל מנה חלקית היא 2 בחזקת הקודמת) יש מעריך אי-רציונליות <math>\mu(L) = \infty</math> ובסיס אי-רציונליות <math>\beta(L) = 1</math>.
+
+למספרים
+:<math>\tau_a = \sum_{n=0}^\infty\frac1{{}^na} = 1 + \frac1a + \frac1{a^a} + \frac1{a^{a^a}} + \frac1{a^{a^{a^a}}} + \cdots</math>
+(<math>{}^na</math> מסמן [[טטרציה]], <math>a = 2, 3, 4, \ldots</math>) יש בסיס אי-רציונליות <math>\beta(\tau_a) = a</math>.
+
+למספר
+:<math>S = 1 + \frac1{2^1} + \frac1{4^{2^1}} + \frac1{8^{4^{2^1}}} + \frac1{16^{8^{4^{2^1}}}} + \cdots</math>
+יש בסיס אי-רציונליות <math>\beta(S) = \infty</math>, ולכן הוא מספר על-ליוביל.
+
+אף שלא ידוע אם <math>e^\pi</math> הוא מספר ליוביל, ידוע ש-<math>\beta(e^\pi) = 1</math>.{{הערה|שם=BB}}
+
+== מידות אי-רציונליות אחרות ==
+=== קבוע מרקוב ===
+בחירה של <math>f(q, M) = (Mq^2)^{-1}</math> נותנת מידת אי-רציונליות חזקה יותר: [[קבוע מרקוב]] <math>M(x)</math>. עבור מספר אי-רציונלי <math>x</math>, זה הגורם שבו אפשר לשפר את משפט הקירוב של דיריכלה עבור <math>x</math>. כלומר, אם <math>c \lt M(x)</math> מספר ממשי חיובי, לאי-השוויון
+:<math>0 \lt \left|x - \frac pq\right| \lt \frac1{cq^2}</math>
+יש אינסוף פתרונות <math>\frac pq \in \mathbb Q</math>, ואם <math>c \gt M(x)</math> יש לכל היותר מספר סופי של פתרונות.
+
+משפט הקירוב של דיריכלה גורר <math>M(x) \ge 1</math>, ו[[משפט הורוויץ (תורת המספרים)|משפט הורוויץ]] נותן <math>M(x) \ge \sqrt5</math>, לכל <math>x</math> אי-רציונלי. זה החסם התחתון הכללי הטוב ביותר, כי ליחס הזהב <math>M(\varphi) = \sqrt5</math>. כמו כן <math>M(\sqrt2) = 2\sqrt2</math>.
+
+בהינתן <math>x = [a_0; a_1, a_2, \ldots]</math> על ידי השבר המשולב הפשוט שלו, מתקיים:{{הערה|1=<span dir="ltr">W. J. LeVeque, Fundamentals of Number Theory, Addison-Wesley, 1977, pp. 251–254.</span>|כיווון=שמאל}}
+:<math>M(x) = \limsup_{n\to\infty}\left([a_{n+1}; a_{n+2}, a_{n+3}, \ldots] + [0; a_n, a_{n-1}, \ldots, a_2, a_1]\right).</math>
+(למשל, עבור יחס הזהב כל המנות החלקיות הן 1, והביטוי שואף ל-<math>\varphi + (\varphi - 1) = \sqrt5</math>.) אפשר גם לחסום את קבוע מרקוב של <math>x = [a_0; a_1, a_2, \ldots]</math> על ידי <math>\sqrt{p^2 + 4} \le M(x) \lt p + 2</math>, כאשר <math>p = \limsup_{n\to\infty}a_n</math>. מכאן ש-<math>M(x) = \infty</math> [[אם ורק אם]] הסדרה <math>(a_k)</math> אינה חסומה. המספרים עם <math>M(x)</math> סופי נקראים [[מספר קשה לקירוב|קשים לקירוב]]. בפרט, כל [[אי-רציונלי ריבועי]] קשה לקירוב.
+
+לכל מספר עם <math>\mu(x) \gt 2</math> או <math>\beta(x) \gt 1</math> יש שבר משולב פשוט לא חסום, ולכן <math>M(x) = \infty</math>. מסקנה נוספת היא <math>M(e) = \infty</math> (כי במנות החלקיות של <math>e</math> מופיעים <math>2, 4, 6, \ldots</math>). עבור מספרים רציונליים <math>r</math> אפשר להגדיר <math>M(r) = 0</math>.
+
+=== תוצאות נוספות ===
+הערכים <math>M(e) = \infty</math> ו-<math>\mu(e) = 2</math> גוררים שלאי-השוויון <math>0 \lt \left|e - \frac pq\right| \lt \frac1{cq^2}</math> יש אינסוף פתרונות לכל <math>c \gt 0</math>, ואילו לאי-השוויון <math>0 \lt \left|e - \frac pq\right| \lt \frac1{q^{2+\varepsilon}}</math> יש לכל היותר מספר סופי של פתרונות לכל <math>\varepsilon \gt 0</math>. זה מעורר את השאלה מהו החסם העליון הטוב ביותר. התשובה ניתנת על ידי:{{הערה|1=<span dir="ltr">C. S. Davis, Rational approximations to e, Journal of the Australian Mathematical Society 25 (1978), pp. 497–502.</span>|כיווון=שמאל}}
+:<math>0 \lt \left|e - \frac pq\right| \lt \frac{c\ln\ln q}{q^2\ln q},</math>
+שמתקיים לאינסוף <math>\frac pq</math> כאשר <math>c \gt \tfrac12</math>, אבל לא כאשר <math>c \lt \tfrac12</math>.
+
+זה הופך את <math>e</math>, יחד עם המספרים הרציונליים והאי-רציונליים הריבועיים, לחריג ביחס לעובדה שעבור כמעט כל המספרים הממשיים <math>x</math>, לאי-השוויון הבא יש אינסוף פתרונות (ראו [[משפט חינצ'ין]]):{{הערה|שם=BB}}
+:<math>0 \lt \left|x - \frac pq\right| \lt \frac1{q^2\ln q}.</math>
+
+== ההכללה של מאהלר ==
+[[קורט מאהלר]] הרחיב את המושג של מידת אי-רציונליות והגדיר "מידת טרנסצנדנטיות", בהשראת רעיון מספרי ליוביל, ובעזרתה חילק את המספרים הטרנסצנדנטיים לשלוש מחלקות.{{הערה|שם=Bugeaud}}
+
+=== מידת האי-רציונליות של מאהלר ===
+במקום להתבונן, עבור מספר ממשי נתון <math>x</math>, בהפרש <math>|x - p/q|</math> עם <math>p/q \in \mathbb Q</math>, אפשר להתמקד בביטוי <math>|qx - p| = |L(x)|</math>, עם <math>p, q \in \mathbb Z</math> ו-<math>L \in \mathbb Z[x]</math> ממעלה 1. נתבונן באי-השוויון
+:<math>0 \lt |qx - p| \le \max(|p|, |q|)^{-\omega}, \qquad p, q \in \mathbb Z,\ \omega \ge 0.</math>
+נגדיר את <math>R</math> כקבוצת כל ה-<math>\omega \ge 0</math> שעבורם יש אינסוף פתרונות <math>p, q \in \mathbb Z</math> לאי-השוויון. אז <math>\omega_1(x) = \sup R</math> היא מידת האי-רציונליות של מאהלר. היא נותנת <math>\omega_1(p/q) = 0</math> למספרים רציונליים, <math>\omega_1(\alpha) = 1</math> למספרים אלגבריים אי-רציונליים, ובאופן כללי <math>\omega_1(x) = \mu(x) - 1</math>.
+
+=== מידת טרנסצנדנטיות ===
+אפשר להכליל את מידת האי-רציונליות של מאהלר כך:{{הערה|1=<span dir="ltr">A. N. Parshin, I. R. Shafarevich (eds.), Number Theory IV: Transcendental Numbers, Springer, 2013.</span>|כיווון=שמאל}}{{הערה|שם=Bugeaud}} יהי <math>P</math> פולינום ממעלה <math>\deg P \le n</math> עם מקדמים שלמים <math>a_i</math>. נגדיר [[פונקציית גובה]] <math>H(P) = \max(|a_0|, |a_1|, \ldots, |a_n|)</math>, ונתבונן, עבור [[מספר מרוכב|מספרים מרוכבים]] <math>z</math>, באי-השוויון
+:<math>0 \lt |P(z)| \le H(P)^{-\omega}, \qquad \omega \ge 0.</math>
+תהי <math>R</math> קבוצת כל ה-<math>\omega \ge 0</math> שעבורם יש אינסוף פולינומים כאלה שמקיימים את אי-השוויון, ונגדיר <math>\omega_n(z) = \sup R</math> לכל <math>n \in \mathbb Z^+</math> (<math>\omega_1(z)</math> היא מידת האי-רציונליות שלמעלה, <math>\omega_2(z)</math> היא "מידת אי-ריבועיות", וכן הלאה). מידת הטרנסצנדנטיות של מאהלר היא
+:<math>\omega(z) = \limsup_{n\to\infty}\omega_n(z).</math>
+המספרים הטרנסצנדנטיים מתחלקים עכשיו לשלוש מחלקות:
+* אם לכל <math>n</math> הערך <math>\omega_n(z)</math> סופי, וגם <math>\omega(z)</math> סופי, <math>z</math> נקרא '''מספר S''' (מטיפוס <math>\omega(z)</math>).
+* אם לכל <math>n</math> הערך <math>\omega_n(z)</math> סופי, אבל <math>\omega(z)</math> אינסופי, <math>z</math> נקרא '''מספר T'''.
+* אם יש שלם חיובי קטן ביותר <math>N</math> כך שלכל <math>n \ge N</math> הערכים <math>\omega_n(z)</math> אינסופיים, <math>z</math> נקרא '''מספר U''' (ממעלה <math>N</math>).
+המספר <math>z</math> אלגברי (ונקרא '''מספר A''') אם ורק אם <math>\omega(z) = 0</math>.
+
+כמעט כל המספרים הם מספרי S. למעשה, כמעט כל המספרים הממשיים נותנים <math>\omega(x) = 1</math>, וכמעט כל המספרים המרוכבים נותנים <math>\omega(z) = \tfrac12</math>.{{הערה|שם=Baker79|1=<span dir="ltr">A. Baker, Transcendental Number Theory, Cambridge University Press, 1979, pp. 86–87.</span>|כיווון=שמאל}} המספר <math>e</math> הוא מספר S עם <math>\omega(e) = 1</math>. המספר <math>\pi</math> הוא מספר S או מספר T.{{הערה|שם=Baker79}} מספרי U הם קבוצה ממידה 0, אבל עדיין לא בת מנייה. הם כוללים את מספרי ליוביל, שהם בדיוק מספרי U ממעלה 1.
+
+=== מידת אי-תלות לינארית ===
+הכללה אחרת של מידת האי-רציונליות של מאהלר נותנת מידת אי-תלות לינארית. עבור מספרים ממשיים <math>x_1, \ldots, x_n</math> נתבונן באי-השוויון
+:<math>0 \lt |c_1x_1 + \cdots + c_nx_n| \le \max(|c_1|, \ldots, |c_n|)^{-\nu}, \qquad c_1, \ldots, c_n \in \mathbb Z,\ \nu \ge 0.</math>
+נגדיר את <math>R</math> כקבוצת כל ה-<math>\nu \ge 0</math> שעבורם יש אינסוף פתרונות, ו-<math>\nu(x_1, \ldots, x_n) = \sup R</math> היא מידת האי-תלות הלינארית. אם <math>x_1, \ldots, x_n</math> תלויים לינארית מעל <math>\mathbb Q</math>, אז <math>\nu(x_1, \ldots, x_n) = 0</math>. אם <math>1, x_1, \ldots, x_n</math> מספרים אלגבריים [[אי-תלות לינארית|בלתי תלויים לינארית]] מעל <math>\mathbb Q</math>, אז <math>\nu(1, x_1, \ldots, x_n) \le n</math>. כמו כן <math>\nu(1, x) = \omega_1(x) = \mu(x) - 1</math>.
+
+== הכללות אחרות ==
+=== ההכללה של קוקסמה ===
+יורג'ן קוקסמה הציע ב-1939 הכללה נוספת, דומה לזו של מאהלר, שמבוססת על קירובים של מספרים מרוכבים על ידי מספרים אלגבריים.{{הערה|שם=Baker79}} עבור מספר מרוכב נתון <math>z</math>, מתבוננים במספרים אלגבריים <math>\alpha</math> ממעלה לכל היותר <math>n</math>, מגדירים גובה <math>H(\alpha) = H(P)</math>, כאשר <math>P</math> הפולינום המינימלי של <math>\alpha</math>, ומתבוננים באי-השוויון <math>0 \lt |z - \alpha| \le H(\alpha)^{-\omega^*-1}</math>. כמו קודם מגדירים <math>\omega_n^*(z)</math> ו-<math>\omega^*(z) = \limsup\omega_n^*(z)</math>, ומחלקים את המספרים המרוכבים לארבע מחלקות <math>A^*, S^*, T^*, U^*</math>. מתברר שהמחלקות האלה שקולות לאלה של מאהלר, במובן שהן נותנות בדיוק אותה חלוקה.
+
+=== קירוב סימולטני של מספרים ממשיים ===
+אם <math>x = \alpha</math> מספר אלגברי אי-רציונלי, לאי-השוויון <math>0 \lt \left|\alpha - \frac pq\right| \lt \frac1{q^\mu}</math> יש רק מספר סופי של פתרונות עבור <math>\mu \gt 2</math> – זה [[משפט רות]]. אפשר להכליל זאת: בהינתן מספרים ממשיים <math>x_1, \ldots, x_n</math>, אפשר לכמת כמה טוב אפשר לקרב אותם בבת אחת על ידי שברים <math>\frac{p_1}q, \ldots, \frac{p_n}q</math> עם אותו מכנה. אם <math>x_i = \alpha_i</math> מספרים אלגבריים כך ש-<math>1, \alpha_1, \ldots, \alpha_n</math> בלתי תלויים לינארית מעל <math>\mathbb Q</math>, אז לאי-השוויונות
+:<math>0 \lt \left|\alpha_i - \frac{p_i}q\right| \lt \frac1{q^\mu}, \qquad i = 1, \ldots, n,</math>
+יש רק מספר סופי של פתרונות כאשר <math>\mu \gt 1 + \frac1n</math>. התוצאה היא של [[וולפגנג שמידט]] ([[משפט תת-המרחב]]).{{הערה|1=<span dir="ltr">W. M. Schmidt, Norm form equations, Annals of Mathematics 96 (1972), pp. 526–551.</span>|כיווון=שמאל}}
+
+== ראו גם ==
+* [[משפט הקירוב של דיריכלה]]
+* [[משפט רות]]
+* [[מספר טרנסצנדנטי]]
+* [[שבר משולב]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:קירובים דיופנטיים]]
+[[קטגוריה:מספרים טרנסצנדנטיים]]
+[[קטגוריה:קבועים מתמטיים]]
+[[קטגוריה:מספרים אי-רציונליים]]
