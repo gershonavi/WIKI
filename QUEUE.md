@@ -428,6 +428,6 @@ Additive number theory:
 - [x] Turán's inequalities
 - [x] Polymath Project
 - [x] Riemann–Siegel theta function (קיים: פונקציית התטא של רימן-זיגל)
-- [ ] Gaussian ensemble
+- [x] Gaussian ensemble
 - [ ] Dyson Brownian motion
 - [ ] Hadamard factorization theorem
