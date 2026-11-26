@@ -1,0 +1,119 @@
+ב[[מתמטיקה]], '''הפונקציות האליפטיות הלמניסקטיות''' הן [[פונקציה אליפטית|פונקציות אליפטיות]] שקשורות לאורך הקשת של [[למניסקטה|למניסקטת ברנולי]]. חקרו אותן לראשונה ג'וליו פניאנו ב-1718, ואחריו [[לאונרד אוילר]], [[קרל פרידריך גאוס]] ואחרים.
+
+'''הסינוס הלמניסקטי''' ו'''הקוסינוס הלמניסקטי''', שמסומנים בדרך כלל <math>\operatorname{sl}</math> ו-<math>\operatorname{cl}</math> (הסימון של גאוס), הם האנלוגים של ה[[פונקציות טריגונומטריות|פונקציות הטריגונומטריות]] סינוס וקוסינוס. הסינוס הטריגונומטרי מקשר בין אורך קשת לאורך מיתר במעגל שקוטרו 1, <math>x^2+y^2 = x</math>; הסינוס הלמניסקטי מקשר בין אורך קשת לאורך מיתר בלמניסקטה <math>(x^2+y^2)^2=x^2-y^2</math>.
+
+לפונקציות הלמניסקטיות יש מחזורים שקשורים למספר <math>\varpi = 2.622057\ldots</math>, שנקרא '''הקבוע הלמניסקטי''' – היחס בין היקף הלמניסקטה לקוטר שלה. זה האנלוג ה"ממעלה רביעית" של <math>\pi = 3.141592\ldots</math>, היחס בין היקף המעגל לקוטרו.
+
+כפונקציות מרוכבות, ל-<math>\operatorname{sl}</math> ול-<math>\operatorname{cl}</math> יש '''סריג מחזורים ריבועי''' (כפולה של [[שלם גאוסי|השלמים הגאוסיים]]) עם המחזורים היסודיים <math>(1 + i)\varpi</math> ו-<math>(1 - i)\varpi</math>. הן מקרה פרטי של פונקציות אליפטיות של יעקובי: <math>\operatorname{sl} z = \operatorname{sn}(z; -1)</math> ו-<math>\operatorname{cl} z = \operatorname{cd}(z; -1)</math>.
+
+== הגדרות ==
+אפשר להגדיר את <math>\operatorname{sl}</math> ו-<math>\operatorname{cl}</math> כפתרון של בעיית ההתחלה
+:<math>\frac{d}{dz} \operatorname{sl} z = \bigl(1 + \operatorname{sl}^2 z\bigr)\operatorname{cl}z,\quad \frac{d}{dz} \operatorname{cl} z = -\bigl(1 + \operatorname{cl}^2 z\bigr)\operatorname{sl}z,\quad \operatorname{sl} 0 = 0,\ \operatorname{cl} 0 = 1,</math>
+או, באופן שקול, כהפכיות של [[אינטגרל אליפטי]] – העתקת שוורץ–כריסטופל מעיגול היחידה המרוכב לריבוע שקודקודיו <math>\pm\tfrac12\varpi, \pm\tfrac12\varpi i</math>:
+:<math>z = \int_0^{\operatorname{sl} z}\frac{dt}{\sqrt{1-t^4}} = \int_{\operatorname{cl} z}^1\frac{dt}{\sqrt{1-t^4}}.</math>
+מחוץ לריבוע הזה מרחיבים את הפונקציות לכל המישור המרוכב ב[[המשכה אנליטית]], על ידי שיקופים חוזרים.
+
+להשוואה: אפשר להגדיר את הסינוס והקוסינוס כפתרון של <math>\sin' = \cos</math>, <math>\cos' = -\sin</math>, <math>\sin 0 = 0</math>, <math>\cos 0 = 1</math>, או כהפכי של <math>z = \int_0^{\sin z}\frac{dt}{\sqrt{1-t^2}}</math>.
+
+== הקבוע הלמניסקטי ==
+לפונקציות הלמניסקטיות יש מחזור ממשי מינימלי <math>2\varpi</math>, מחזור מדומה מינימלי <math>2\varpi i</math>, ומחזורים מרוכבים יסודיים <math>(1\pm i)\varpi</math>, כאשר
+:<math>\varpi = 2\int_0^1\frac{dt}{\sqrt{1-t^4}} = \frac{\sqrt{2}\,\pi^{3/2}}{2\,\Gamma\left(\tfrac{3}{4}\right)^2} = 2.6220575542921\ldots</math>
+מתקיים <math>\operatorname{cl}z = \operatorname{sl}\bigl(\tfrac12\varpi - z\bigr)</math>, בדומה ל-<math>\cos z = \sin\bigl(\tfrac12\pi - z\bigr)</math>.
+
+הקבוע <math>\varpi</math> הוא אנלוג קרוב של <math>\pi</math>, ולזהויות רבות עם <math>\pi</math> יש אנלוגים עם <math>\varpi</math>. למשל, בדומה ל[[נוסחת מאצ'ין]] <math>\tfrac14\pi = 4\arctan\tfrac15 - \arctan\tfrac1{239}</math>, גאוס מצא
+:<math>\tfrac12\varpi = 2 \operatorname{arcsl} \tfrac12 + \operatorname{arcsl} \tfrac7{23}.</math>
+גאוס גילה גם את הקשר ל[[הממוצע האריתמטי-גאומטרי|ממוצע האריתמטי-גאומטרי]] <math>M</math>:
+:<math>\frac\pi\varpi = M\bigl(1, \sqrt2\bigr) = 1.1981402347\ldots</math>
+(בדקנו בחישוב את שני השוויונות, בדיוק של 30 ספרות.) ההבחנה הזו, מ-30 במאי 1799, הובילה את גאוס לתורת הפונקציות האליפטיות.
+
+== זהויות ==
+=== אפסים, קטבים וסימטריות ===
+<math>\operatorname{cl}</math> זוגית ו-<math>\operatorname{sl}</math> אי-זוגית. הזזה ב-<math>\tfrac12\varpi</math> מחליפה ביניהן: <math>\operatorname{sl}\bigl(z + \tfrac12\varpi\bigr) = \operatorname{cl} z</math> ו-<math>\operatorname{cl}\bigl(z + \tfrac12\varpi\bigr) = -\operatorname{sl} z</math>. הזזה ב-<math>\varpi</math> או ב-<math>i\varpi</math> הופכת את הסימן של שתיהן, ולכן הן שמורות תחת הזזה ב-<math>(a + bi)\varpi</math> כאשר <math>a + b</math> זוגי: זה סריג המחזורים הריבועי האלכסוני. שיקופים וסיבובים ברבע סיבוב פועלים בפשטות:
+:<math>\operatorname{sl}\bar z = \overline{\operatorname{sl} z}, \qquad \operatorname{sl}(iz) = i\operatorname{sl}z, \qquad \operatorname{cl}(iz) = \frac{1}{\operatorname{cl}z}.</math>
+ל-<math>\operatorname{sl}</math> יש אפסים פשוטים בכפולות שלמות-גאוסיות של <math>\varpi</math>, וקטבים פשוטים בנקודות <math>\bigl(a + \tfrac12\bigr)\varpi + \bigl(b + \tfrac12\bigr)\varpi i</math>.
+
+=== זהות "פיתגורית" ונגזרות ===
+:<math>\operatorname{cl}^2 z + \operatorname{sl}^2 z + \operatorname{cl}^2 z\, \operatorname{sl}^2 z = 1,</math>
+או באופן שקול <math>\bigl(1 + \operatorname{cl}^2 z\bigr) \bigl(1+\operatorname{sl}^2 z\bigr) = 2</math>.
+לכן <math>(x, y) = (\operatorname{cl} t, \operatorname{sl} t)</math> הוא פרמטריזציה של העקום <math>x^2 + y^2 + x^2y^2 = 1</math>. הנגזרות מקיימות <math>(\operatorname{sl}' z)^2 = 1 - \operatorname{sl}^4 z</math> ו-<math>\operatorname{sl}'' z = -2\operatorname{sl}^3 z</math> (ובאופן דומה ל-<math>\operatorname{cl}</math>). אינטגרלים: <math>\int\operatorname{cl}z\,dz = \arctan\operatorname{sl}z + C</math>.
+
+=== נוסחאות חיבור וכפל ===
+הזהות המקורית של פניאנו, ששימשה אותו לחציית הלמניסקטה, היא
+:<math>\operatorname{sl}(u+v) = \frac{\operatorname{sl}u\,\operatorname{sl}'v + \operatorname{sl}v\,\operatorname{sl}'u}{1 + \operatorname{sl}^2u\, \operatorname{sl}^2v}.</math>
+בעזרת הנגזרת והזהות הפיתגורית אפשר לכתוב אותה כך:
+:<math>\operatorname{sl}(u+v) = \frac{\operatorname{sl}u\, \operatorname{cl}v + \operatorname{cl}u\, \operatorname{sl}v}{1 - \operatorname{sl}u\, \operatorname{cl}u\, \operatorname{sl}v\, \operatorname{cl}v}, \qquad \operatorname{cl}(u+v) = \frac{\operatorname{cl}u\, \operatorname{cl}v - \operatorname{sl}u\, \operatorname{sl}v}{1 + \operatorname{sl}u\, \operatorname{cl}u\, \operatorname{sl}v\, \operatorname{cl}v}.</math>
+נוסחאות ההכפלה וההשלשה הן
+:<math>\operatorname{sl} 2x = 2\,\operatorname{sl}x\,\operatorname{cl}x\frac{1+\operatorname{sl}^2x}{1+\operatorname{sl}^4x}, \qquad \operatorname{sl} 3x = \frac{3\operatorname{sl}x - 6\operatorname{sl}^5x - \operatorname{sl}^9x}{1 + 6\operatorname{sl}^4x - 3\operatorname{sl}^8x}.</math>
+שימו לב ל"סימטריה ההפוכה" של המקדמים במונה ובמכנה של <math>\operatorname{sl}3x</math>.
+
+=== כפל מרוכב ===
+:<math>\operatorname{sl}\bigl((1\pm i)z\bigr)=(1\pm i)\frac{\operatorname{sl}z}{\operatorname{sl}'z}.</math>
+זה מקרה פרטי של [[כפל מרוכב]]: יש נוסחאות דומות ל-<math>\operatorname{sl}\bigl((n+mi)z\bigr)</math> לכל שלם גאוסי <math>n + mi</math>, כלומר ל-<math>\operatorname{sl}</math> יש כפל מרוכב ב-<math>\mathbb Z[i]</math>. העקום האליפטי שמתאים לסריג הוא <math>y^2 = x^3 - x</math> (עד כדי שינוי קנה מידה), ו[[אינווריאנט j|אינווריאנט ה-<math>j</math>]] שלו הוא 1728.
+
+(בדקנו בחישוב, בנקודה <math>z = 0.3 + 0.2i</math> ובערכים ממשיים, את הזהות הפיתגורית, נוסחת החיבור, נוסחת ההשלשה ונוסחת הכפל המרוכב.)
+
+== הפולינומים הלמנטומיים ==
+הפונקציה <math>\operatorname{sl}</math> מאפשרת לבנות את [[תורת שדות המחלקה|ההרחבות האבליות]] של <math>K = \mathbb Q(i)</math>, כמו ששורשי היחידה בונים את ההרחבות האבליות של <math>\mathbb Q</math> (זה ה'''יוגנדטראום''' של קרונקר עבור <math>\mathbb Q(i)</math>). לשלם גאוסי <math>\beta = m + ni</math> עם <math>m + n</math> אי-זוגי, '''הפולינום הלמנטומי''' ה-<math>\beta</math>-י הוא
+:<math>\Lambda_\beta(x) = \prod_{[\alpha]\in(\mathcal O/\beta\mathcal O)^\times}\bigl(x - \operatorname{sl}(\alpha\delta_\beta)\bigr),</math>
+כאשר <math>\mathcal O = \mathbb Z[i]</math> ו-<math>\delta_\beta</math> יוצר של נקודות ה-<math>\beta</math>-פיתול (למשל <math>2\varpi/\beta</math>). זה פולינום מתוקן ואי-פריק מעל <math>K</math> עם מקדמים ב-<math>\mathbb Z[i]</math>, והוא האנלוג הלמניסקטי של [[פולינום ציקלוטומי|הפולינומים הציקלוטומיים]]. למשל:
+* <math>\Lambda_5(x)=x^{16}+52x^{12}-26x^8-12x^4+1</math>, והשורש <math>\omega_5 = \operatorname{sl}(2\varpi/5)</math> שלו הוא <math>\omega_5 = \sqrt[4]{-13+6\sqrt{5}+2\sqrt{85-38\sqrt{5}}}</math>;
+* <math>\Lambda_{-1+2i}(x)=x^4-1+2i</math>, עם השורש <math>\operatorname{sl}\bigl(2\varpi/(-1+2i)\bigr)</math>.
+(בדקנו בחישוב ששני הערכים האלה אכן שורשים של הפולינומים.) עבור <math>\beta</math> חיובי ואי-זוגי, המעלה היא
+:<math>\deg\Lambda_{\beta}=\beta^2\prod_{p\mid\beta}\left(1-\frac{1}{p}\right)\left(1-\frac{(-1)^{(p-1)/2}}{p}\right),</math>
+בדומה ל-<math>\deg\Phi_{k}=k\prod_{p\mid k}\left(1-\frac{1}{p}\right)</math>. למשל <math>\deg\Lambda_5 = 25\cdot\frac45\cdot\frac45 = 16</math> ו-<math>\deg\Lambda_3 = 9\cdot\frac23\cdot\frac43 = 8</math>.
+
+== ערכים מיוחדים ==
+כמו בפונקציות הטריגונומטריות, אפשר לחשב את הערכים של הפונקציות הלמניסקטיות בנקודות החלוקה של הלמניסקטה ל-<math>n</math> חלקים שווים בעזרת פעולות חשבון ושורשים ריבועיים בלבד, אם ורק אם <math>n = 2^kp_1\cdots p_m</math>, כאשר <math>p_i</math> [[ראשוני פרמה|ראשוניי פרמה]] שונים. לדוגמה:
+:{| class="wikitable" style="text-align:center"
+! <math>z</math> !! <math>\operatorname{cl}z</math> !! <math>\operatorname{sl}z</math>
+|-
+| <math>\tfrac12\varpi</math> || 0 || 1
+|-
+| <math>\tfrac13\varpi</math> || <math>\tfrac12\bigl(\sqrt{3}+1-\sqrt[4]{12}\bigr) \approx 0.43542</math> || <math>\sqrt[4]{2\sqrt{3}-3} \approx 0.82538</math>
+|-
+| <math>\tfrac14\varpi</math> || <math>\sqrt{\sqrt2-1} \approx 0.64359</math> || <math>\sqrt{\sqrt2-1}</math>
+|-
+| <math>\tfrac16\varpi</math> || <math>\sqrt[4]{2\sqrt{3}-3}</math> || <math>\tfrac12\bigl(\sqrt{3}+1-\sqrt[4]{12}\bigr)</math>
+|}
+(בדקנו בחישוב.)
+
+== הקשר לצורות גאומטריות ==
+=== אורך הקשת של למניסקטת ברנולי ===
+תהי <math>\mathcal{L}</math> למניסקטת ברנולי שהמרחק ממרכזה לנקודה הרחוקה ביותר הוא 1. אפשר לאפיין אותה כמקום הגאומטרי של הנקודות שמכפלת מרחקיהן משני המוקדים <math>\bigl(\pm\tfrac1{\sqrt2},0\bigr)</math> היא <math>\tfrac12</math>, או על ידי המשוואה הקוטבית <math>r^2 = \cos 2\theta</math>, או המשוואה הקרטזית <math>(x^2+y^2)^2=x^2-y^2</math>. ההיקף של <math>\mathcal{L}</math> הוא <math>2\varpi</math>, והשטח שהיא חוסמת הוא 1.
+
+הנקודה ברביע הראשון במרחק <math>r</math> מהראשית היא <math>\big(x(r), y(r)\big) = \Bigl(\sqrt{\tfrac12r^2(1 + r^2)},\, \sqrt{\tfrac12r^2(1 - r^2)}\Bigr)</math>, ואורך הקשת מהראשית אליה הוא
+:<math>\int_0^r \sqrt{x'(t)^2 + y'(t)^2}\,dt = \int_0^r \frac{dt}{\sqrt{1-t^4}} = \operatorname{arcsl} r.</math>
+כלומר הסינוס הלמניסקטי נותן את המרחק מהראשית כפונקציה של אורך הקשת. (למשל עבור <math>r = 0.6</math> שני הצדדים שווים ל-<math>0.6082303\ldots</math>; בדקנו בחישוב.)
+
+=== חלוקת הלמניסקטה ===
+פניאנו גילה ב-1718 את נוסחת ההכפלה לאינטגרל הלמניסקטי, ובעזרתה חילק את הלמניסקטה לחצאים בסרגל ובמחוגה. [[נילס הנריק אבל|אבל]] הוכיח ב-1827–1828 שאפשר לחלק את הלמניסקטה ל-<math>n</math> חלקים שווים בסרגל ובמחוגה כאשר <math>n = 2^kp_1\cdots p_m</math> עם <math>p_i</math> ראשוניי פרמה שונים, ומייקל רוזן הוכיח ב-1981 שאלה המקרים היחידים – בדיוק כמו במשפט גאוס–ונצל על [[מצולע בר-בנייה|מצולעים משוכללים בני-בנייה]]. באופן שקול: החלוקה אפשרית אם ורק אם <math>\varphi(n)</math> חזקה של 2. למשל, אפשר לחלק את הלמניסקטה ל-15 חלקים שווים, כי <math>15 = 3\cdot 5</math>. נקודות החלוקה הן <math>\Bigl(r_j\sqrt{\tfrac12(1+r_j^2)},\ \pm\sqrt{\tfrac12r_j^2(1-r_j^2)}\Bigr)</math> עם <math>r_j=\operatorname{sl}\frac{2j\varpi}{n}</math>.
+
+== טורי חזקות ==
+טור החזקות של הסינוס הלמניסקטי סביב הראשית הוא
+:<math>\operatorname{sl}z = z-12\frac{z^5}{5!}+3024\frac{z^9}{9!}-4390848\frac{z^{13}}{13!}+\cdots,\qquad |z|\lt \tfrac{\varpi}{\sqrt{2}},</math>
+כאשר רק חזקות מהצורה <math>z^{4k+1}</math> מופיעות. המקדמים <math>a_n</math> מקיימים <math>a_1 = 1</math> והנסיגה
+:<math>a_{n+2}=-\frac{2}{(n+1)(n+2)}\sum_{i+j+k=n}a_ia_ja_k,</math>
+שנובעת מהמשוואה <math>\operatorname{sl}'' = -2\operatorname{sl}^3</math>. לדוגמה, ל-<math>a_{13}</math> תורמות רק ששת ההרכבים <math>11 = 9+1+1 = 1+9+1 = 1+1+9 = 5+5+1 = 5+1+5 = 1+5+5</math>, ומתקבל <math>a_{13} = -\frac{11}{15600} = -\frac{4390848}{13!}</math>.
+
+== חישוב ==
+אפשר לחשב את הפונקציות הלמניסקטיות מהר בעזרת [[פונקציית תטא|פונקציות התטא של יעקובי]] עם <math>q = e^{-\pi}</math>:
+:<math>\operatorname{sl}\Bigl(\frac\varpi\pi x\Bigr) = \frac{\theta_1(x, e^{-\pi})}{\theta_3(x, e^{-\pi})}, \qquad \operatorname{cl}\Bigl(\frac\varpi\pi x\Bigr)=\frac{\theta_2(x, e^{-\pi})}{\theta_4(x, e^{-\pi})}.</math>
+את כל הבדיקות המספריות בערך הזה עשינו בנוסחאות האלה. יש גם טור פורייה מהיר:
+:<math>\operatorname{sl}\Bigl(\frac{\varpi}{\pi}x\Bigr)=\frac{2\pi}{\varpi}\sum_{n=0}^\infty \frac{(-1)^n\sin ((2n+1)x)}{\cosh ((n+\tfrac12)\pi)},\qquad |\mathrm{Im}\,x|\lt\tfrac{\pi}{2}.</math>
+
+== ראו גם ==
+* [[כפל מרוכב]]
+* [[אינווריאנט j]]
+* [[הפונקציה האליפטית של ויירשטראס]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* R. Ayoub, "The lemniscate and Fagnano's contributions to elliptic integrals", ''Arch. Hist. Exact Sci.'' '''29''' (1984), 131–149
+* D. A. Cox, "The arithmetic-geometric mean of Gauss", ''L'Enseignement Math.'' '''30''' (1984), 275–330
+* D. A. Cox, J. Shurman, "Geometry and number theory on clovers", ''Amer. Math. Monthly'' '''112''' (2005), 682–704
+* M. Rosen, "Abel's theorem on the lemniscate", ''Amer. Math. Monthly'' '''88''' (1981), 387–395
+* V. Prasolov, Y. Solovyev, ''Elliptic Functions and Elliptic Integrals'', American Mathematical Society, 1997
+* W. P. Reinhardt, P. L. Walker, "Jacobian Elliptic Functions", ''NIST Digital Library of Mathematical Functions'', chapter 22
+</div>
+
+[[קטגוריה:פונקציות אליפטיות]]

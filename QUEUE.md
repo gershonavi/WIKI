@@ -419,5 +419,5 @@ Additive number theory:
 - [x] Tate pairing
 - [x] Hasse–Witt matrix
 - [x] Theta function of a lattice
-- [ ] Lemniscate elliptic functions
+- [x] Lemniscate elliptic functions
 - [ ] Monster group
