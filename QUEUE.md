@@ -190,7 +190,7 @@ Additive number theory:
 - [x] Siegel modular form
 - [x] Shimura correspondence
 - [x] Hecke algebra
-- [ ] Modular symbol
+- [x] Modular symbol
 - [ ] Maass cusp form
 - [ ] Eichler–Shimura isomorphism
 - [ ] Jacobi form

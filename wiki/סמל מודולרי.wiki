@@ -1,0 +1,43 @@
+ב[[מתמטיקה]], '''סמלים מודולריים''', שהוצגו באופן בלתי תלוי על ידי בריאן ג'ון בירץ' ועל ידי [[יורי מנין]] (1972), פורשים [[מרחב וקטורי]] שקשור הדוק למרחב של [[תבנית מודולרית|תבניות מודולריות]], ושעליו אפשר לתאר במפורש את הפעולה של [[אלגברת הקה]]. זה הופך אותם לשימושיים לחישובים עם מרחבי תבניות מודולריות.
+
+== הגדרה ==
+ה[[חבורה אבלית|חבורה האבלית]] של הסמלים המודולריים (האוניברסליים, ממשקל 2) נפרשת על ידי סמלים <math>\{\alpha, \beta\}</math> עבור <math>\alpha, \beta</math> ב[[ישר פרויקטיבי|ישר הפרויקטיבי]] הרציונלי <math>\mathbb Q \cup \{\infty\}</math>, בכפוף ליחסים
+:<math>\{\alpha, \beta\} + \{\beta, \gamma\} = \{\alpha, \gamma\}.</math>
+(בפרט <math>\{\alpha, \alpha\} = 0</math> ו-<math>\{\beta, \alpha\} = -\{\alpha, \beta\}</math>.) באופן לא פורמלי, <math>\{\alpha, \beta\}</math> מייצג [[הומוטופיה|מחלקת הומוטופיה]] של מסילות מ-<math>\alpha</math> ל-<math>\beta</math> ב[[חצי המישור העליון]].
+
+החבורה <math>\mathrm{GL}_2(\mathbb Q)</math> [[פעולת חבורה|פועלת]] על הישר הפרויקטיבי הרציונלי, וזה משרה פעולה על הסמלים המודולריים: <math>g\{\alpha, \beta\} = \{g\alpha, g\beta\}</math>. סמלים מודולריים ביחס ל[[תת-חבורת קונגרואנציה]] <math>\Gamma</math> מתקבלים כשמחלקים בפעולה של <math>\Gamma</math> (כלומר מזהים את <math>\{\alpha, \beta\}</math> עם <math>\{\gamma\alpha, \gamma\beta\}</math> עבור <math>\gamma \in \Gamma</math>); אז הם מתאימים למחלקות [[הומולוגיה]] על [[עקום מודולרי|העקום המודולרי]] <math>X(\Gamma)</math>, יחסית לחודים.
+
+יש זיווג בין [[תבנית שפיץ|תבניות שפיץ]] <math>f</math> ממשקל 2 לבין סמלים מודולריים, שמתקבל מאינטגרציה של תבנית השפיץ, או ליתר דיוק של <math>f\,d\tau</math>, לאורך המסילה שמתאימה לסמל:
+:<math>\langle f, \{\alpha, \beta\}\rangle = 2\pi i\int_\alpha^\beta f(\tau)\,d\tau.</math>
+כיוון ש-<math>f(\tau)\,d\tau</math> אינווריאנטי תחת <math>\Gamma</math> (זו המשמעות של "תבנית ממשקל 2"), הזיווג מוגדר היטב על הסמלים ביחס ל-<math>\Gamma</math>.
+
+== הטריק של מנין ==
+כל סמל <math>\{\alpha, \beta\}</math> הוא סכום של סמלים "אוניטריים" <math>\{b/d, b'/d'\}</math> עם <math>bd' - b'd = \pm1</math>, וסמל כזה הוא <math>g\{0, \infty\}</math> (או <math>g\{\infty, 0\}</math>) עבור <math>g = \left(\begin{smallmatrix} b' & b \\ d' & d\end{smallmatrix}\right) \in \mathrm{GL}_2(\mathbb Z)</math>. הפירוק מתקבל מה[[שבר משולב|מתכנסים]] של השבר המשולב: אם <math>p_0/q_0 = 0/1, p_1/q_1, \dots, p_r/q_r = a/c</math> הם המתכנסים של <math>a/c</math>, אז
+:<math>\{0, a/c\} = \sum_{i=1}^r\left\{\frac{p_{i-1}}{q_{i-1}}, \frac{p_i}{q_i}\right\},</math>
+ומתכנסים עוקבים מקיימים <math>p_{i-1}q_i - p_iq_{i-1} = \pm1</math>. למשל, <math>\tfrac37 = [0; 2, 3]</math>, עם המתכנסים <math>\tfrac01, \tfrac12, \tfrac37</math>, ולכן
+:<math>\{0, \tfrac37\} = \{\tfrac01, \tfrac12\} + \{\tfrac12, \tfrac37\},</math>
+כאשר <math>0\cdot2 - 1\cdot1 = -1</math> ו-<math>1\cdot7 - 3\cdot2 = 1</math>. כך מקבלים מספר סופי של יוצרים, '''סמלי מנין''', שמתאימים לקוסטים <math>\Gamma g</math>, <math>g \in \mathrm{SL}_2(\mathbb Z)</math>; עבור <math>\Gamma_0(N)</math> הם מתאימים לנקודות של <math>\mathbb P^1(\mathbb Z/N\mathbb Z)</math>. על הבסיס הסופי הזה אפשר לחשב את אופרטורי הקה במפורש, וזו הדרך שבה ג'ון קרמונה בנה את טבלאות העקומים האליפטיים שלו.{{הערה|1=<span dir="ltr">J. E. Cremona, Algorithms for Modular Elliptic Curves, 2nd ed., Cambridge University Press, 1997.</span>|כיווון=שמאל}}
+
+== דוגמה: ערך פונקציית L ==
+הסמל <math>\{0, \infty\}</math> מקודד את הערך המרכזי של [[פונקציית L]]: עבור תבנית שפיץ <math>f = \sum a_nq^n</math> ממשקל 2,
+:<math>\langle f, \{0, i\infty\}\rangle = 2\pi i\int_0^{i\infty}f(\tau)\,d\tau = -2\pi\int_0^\infty f(iy)\,dy = -L(f, 1).</math>
+עבור התבנית <math>f = \eta(\tau)^2\eta(11\tau)^2</math> של העקום האליפטי <math>E: y^2 + y = x^3 - x^2 - 10x - 20</math> (מוליך 11), חישוב נומרי נותן <math>L(E, 1) = 0.253841860855\ldots</math>, ואילו המחזור הממשי של העקום הוא <math>\Omega_E = 1.269209304279\ldots</math>, כך ש-
+:<math>\frac{L(E, 1)}{\Omega_E} = \frac15.</math>
+העובדה שהמנה הזו רציונלית היא משפט של מנין, והיא נובעת מכך שהסמל <math>\{0, \infty\}</math> הוא, ביחס ל-<math>\Gamma_0(N)</math>, צירוף רציונלי של מחלקות הומולוגיה (משפט מנין–דרינפלד). הערך <math>\tfrac15</math> מתאים ל[[השערת בירץ' וסווינרטון-דייר]]: לעקום יש 5 נקודות רציונליות (חבורה ציקלית מסדר 5), ו-<math>\frac{L(E,1)}{\Omega_E} = \frac{c_{11}\cdot\#\text{Ш}}{\#E(\mathbb Q)_{\text{tors}}^2} = \frac{5\cdot1}{25}</math>. (את <math>L(E, 1)</math> חישבנו מהטור <math>2\sum a_nn^{-1}e^{-2\pi n/\sqrt{11}}</math>, ואת <math>\Omega_E</math> כאינטגרל אליפטי.)
+
+== ראו גם ==
+* [[משפט מנין–דרינפלד]]
+* [[איזומורפיזם אייכלר–שימורה]]
+* [[אלגברת הקה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Yu. I. Manin, ''Parabolic points and zeta functions of modular curves'', Math. USSR Izv. '''6''' (1972), pp. 19–64
+* Yu. I. Manin, ''Lectures on modular symbols'', in: Arithmetic Geometry, Clay Math. Proc. '''8''', AMS, 2009, pp. 137–152
+* W. Stein, ''Modular Forms, a Computational Approach'', Graduate Studies in Mathematics '''79''', AMS, 2007
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
