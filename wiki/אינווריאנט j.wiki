@@ -1,0 +1,200 @@
+ב[[מתמטיקה]], '''אינווריאנט <math>j</math>''' או '''פונקציית <math>j</math>''' (נקרא גם '''האינווריאנט המודולרי''' או האינווריאנט של קליין) הוא [[פונקציה מודולרית]] ממשקל אפס ביחס ל[[חבורה לינארית מיוחדת|חבורה הלינארית המיוחדת]] <math>\mathrm{SL}(2, \mathbb Z)</math>, שמוגדרת על [[חצי המישור העליון]] של ה[[מספר מרוכב|מספרים המרוכבים]]. זו הפונקציה היחידה כזו שהיא [[פונקציה הולומורפית|הולומורפית]] מחוץ לקוטב פשוט ב[[חוד (תבניות מודולריות)|חוד]], ומקיימת
+:<math>j\left(e^{2\pi i/3}\right) = 0, \qquad j(i) = 1728 = 12^3.</math>
+[[פונקציה רציונלית|פונקציות רציונליות]] של <math>j</math> הן מודולריות, ולמעשה נותנות את כל הפונקציות המודולריות ממשקל 0. באופן קלאסי חקרו את אינווריאנט <math>j</math> כפרמטריזציה של [[עקום אליפטי|עקומים אליפטיים]] מעל <math>\mathbb C</math>, אבל יש לו גם קשרים מפתיעים לסימטריות של [[חבורת המפלצת]] (הקשר הזה נקרא [[ירח מפלצתי]]).
+
+== הגדרה ==
+אפשר להגדיר את אינווריאנט <math>j</math> כפונקציה על חצי המישור העליון <math>\mathcal H = \{\tau \in \mathbb C \mid \operatorname{Im}\tau \gt 0\}</math> על ידי
+:<math>j(\tau) = 1728\frac{g_2(\tau)^3}{\Delta(\tau)} = 1728\frac{g_2(\tau)^3}{g_2(\tau)^3 - 27g_3(\tau)^2} = 1728\frac{g_2(\tau)^3}{(2\pi)^{12}\eta(\tau)^{24}}.</math>
+מההגדרה השלישית רואים ש-<math>j(\tau)</math> הוא [[חזקה שלישית|קובייה]] של פונקציה (כי גם <math>1728 = 12^3</math> קובייה). אי אפשר להמשיך את הפונקציה [[המשכה אנליטית|אנליטית]] מעבר לחצי המישור העליון, כי הציר הממשי הוא [[שפה טבעית]] שלה.
+
+הפונקציות שמופיעות כאן הן [[הדיסקרימיננטה המודולרית]] <math>\Delta(\tau) = g_2(\tau)^3 - 27g_3(\tau)^2 = (2\pi)^{12}\eta(\tau)^{24}</math>, [[פונקציית אטא של דדקינד]] <math>\eta(\tau)</math>, והאינווריאנטים המודולריים
+:<math>g_2(\tau) = 60G_4(\tau) = 60\sum_{(m, n) \ne (0, 0)}(m + n\tau)^{-4}, \qquad g_3(\tau) = 140G_6(\tau) = 140\sum_{(m, n) \ne (0, 0)}(m + n\tau)^{-6},</math>
+כאשר ל-<math>G_4, G_6</math> יש [[טור אייזנשטיין|פיתוחי פורייה]]
+:<math>G_4(\tau) = \frac{\pi^4}{45}E_4(\tau), \qquad G_6(\tau) = \frac{2\pi^6}{945}E_6(\tau),</math>
+ו-<math>E_4, E_6</math> הם [[טור אייזנשטיין|טורי אייזנשטיין]] המנורמלים
+:<math>E_4(\tau) = 1 + 240\sum_{n=1}^\infty\frac{n^3q^n}{1 - q^n}, \qquad E_6(\tau) = 1 - 504\sum_{n=1}^\infty\frac{n^5q^n}{1 - q^n},</math>
+עם <math>q = e^{2\pi i\tau}</math> (ריבוע ה[[נום (מתמטיקה)|נום]]). כך אפשר לבטא את <math>j</math> ישירות בעזרת טורי אייזנשטיין:
+:<math>j(\tau) = 1728\frac{E_4(\tau)^3}{E_4(\tau)^3 - E_6(\tau)^2},</math>
+בלי מקדם מספרי נוסף מלבד 1728. מכאן נובעת גם דרך שלישית להגדיר את הדיסקרימיננטה המודולרית:
+:<math>\Delta(\tau) = (2\pi)^{12}\frac{E_4(\tau)^3 - E_6(\tau)^2}{1728}.</math>
+
+'''דוגמה: <math>\tau = 2i</math>.''' לפונקציית אטא של דדקינד יש ב-<math>2i</math> [[פונקציית אטא של דדקינד#ערכים מיוחדים|ערך מדויק]]
+:<math>\eta(2i) = \frac{\Gamma\left(\frac14\right)}{2^{11/8}\pi^{3/4}},</math>
+ומכאן ה[[מספר טרנסצנדנטי|מספרים הטרנסצנדנטיים]]
+:<math>g_2(2i) = \frac{11\,\Gamma\left(\frac14\right)^8}{2^8\pi^2}, \qquad g_3(2i) = \frac{7\,\Gamma\left(\frac14\right)^{12}}{2^{12}\pi^3},</math>
+אבל הצירוף שלהם נותן [[מספר אלגברי]], ולמעשה [[מספר שלם]]:
+:<math>j(2i) = 1728\frac{g_2(2i)^3}{g_2(2i)^3 - 27g_3(2i)^2} = 1728\cdot\frac{11^3}{11^3 - 27\cdot 7^2} = 1728\cdot\frac{1331}{8} = 66^3 = 287496.</math>
+(כל החזקות של <math>\Gamma(1/4)</math> ושל <math>\pi</math> מצטמצמות: <math>g_2^3</math> ו-<math>g_3^2</math> שתיהן מכפלות של <math>\Gamma(1/4)^{24}/\pi^6</math>. את ארבעת הערכים בדקנו גם בחישוב מספרי.)
+
+את כל זה אפשר להבין כשמסתכלים על כל <math>\tau</math> כמייצג מחלקת איזומורפיזם של עקומים אליפטיים. כל עקום אליפטי <math>E</math> מעל <math>\mathbb C</math> הוא [[טורוס מרוכב]], ולכן אפשר לזהות אותו עם [[סריג (חבורה)|סריג]] מדרגה 2 ב-<math>\mathbb C</math>. אפשר לסובב ולמתוח את הסריג (פעולות ששומרות על מחלקת האיזומורפיזם) כך שייווצר על ידי <math>1</math> ו-<math>\tau \in \mathcal H</math>. הסריג הזה מתאים לעקום האליפטי <math>y^2 = 4x^3 - g_2(\tau)x - g_3(\tau)</math> (ראו [[הפונקציה האליפטית של ויירשטראס]]).
+
+<math>j</math> מוגדרת בכל <math>\mathcal H</math>, כי הדיסקרימיננטה המודולרית אינה מתאפסת שם. זה נובע מכך שלפולינום הממעלה השלישית המתאים יש שורשים שונים.
+
+== התחום היסודי ==
+אפשר להראות ש-<math>\Delta</math> היא [[תבנית מודולרית]] ממשקל 12, ו-<math>g_2</math> ממשקל 4, כך ש-<math>g_2^3</math> גם היא ממשקל 12. לכן המנה שלהן, ומכאן <math>j</math>, היא פונקציה מודולרית ממשקל אפס; בפרט, פונקציה הולומורפית <math>\mathcal H \to \mathbb C</math> שאינה משתנה תחת הפעולה של <math>\mathrm{SL}(2, \mathbb Z)</math>. חלוקה במרכז <math>\{\pm I\}</math> נותנת את [[החבורה המודולרית]], שאפשר לזהות עם החבורה <math>\mathrm{PSL}(2, \mathbb Z)</math>.
+
+בעזרת העתקה מתאימה מהחבורה הזו,
+:<math>\tau \mapsto \frac{a\tau + b}{c\tau + d}, \qquad ad - bc = 1,</math>
+אפשר להעביר את <math>\tau</math> לערך שנותן אותו ערך של <math>j</math> ונמצא ב[[תחום יסודי|תחום היסודי]] של <math>j</math>, שמורכב מהערכים של <math>\tau</math> שמקיימים
+:<math>|\tau| \ge 1, \qquad -\tfrac12 \lt \operatorname{Re}\tau \le \tfrac12, \qquad -\tfrac12 \lt \operatorname{Re}\tau \lt 0 \Rightarrow |\tau| \gt 1.</math>
+הפונקציה <math>j(\tau)</math>, כשמצמצמים אותה לתחום הזה, עדיין מקבלת כל ערך מרוכב בדיוק פעם אחת. במילים אחרות, לכל <math>c \in \mathbb C</math> יש <math>\tau</math> יחיד בתחום היסודי שעבורו <math>c = j(\tau)</math>, ולכן <math>j</math> מעתיקה את התחום היסודי על כל המישור המרוכב.
+
+בנוסף, שני ערכים <math>\tau, \tau' \in \mathcal H</math> נותנים את אותו עקום אליפטי אם ורק אם <math>\tau = T(\tau')</math> עבור <math>T \in \mathrm{PSL}(2, \mathbb Z)</math> כלשהו. לכן <math>j</math> נותנת [[פונקציה חד-חד-ערכית ועל|התאמה חד-חד-ערכית ועל]] בין קבוצת מחלקות האיזומורפיזם של עקומים אליפטיים מעל <math>\mathbb C</math> לבין המישור המרוכב.{{הערה|1=<span dir="ltr">G. A. Jones, D. Singerman, Complex Functions: An Algebraic and Geometric Viewpoint, Cambridge University Press, 1987.</span>|כיווון=שמאל}}
+
+כ[[משטח רימן]], לתחום היסודי (אחרי הדבקת השפות והוספת החוד) יש [[גנוס (מתמטיקה)|גנוס]] 0, וכל פונקציה מודולרית ([[תבנית מודולרית|מרמה 1]]) היא פונקציה רציונלית ב-<math>j</math>; ולהפך, כל פונקציה רציונלית ב-<math>j</math> היא פונקציה מודולרית. במילים אחרות, שדה הפונקציות המודולריות הוא <math>\mathbb C(j)</math>.
+
+== תורת שדות המחלקה ו-<math>j</math> ==
+{{ערך מורחב|כפל מרוכב|הבעיה השתים-עשרה של הילברט}}
+לאינווריאנט <math>j</math> יש תכונות מופלאות רבות:
+* אם <math>\tau</math> נקודה בחצי המישור העליון שהעקום האליפטי המתאים לה הוא בעל [[כפל מרוכב]] (כלומר, אם <math>\tau</math> איבר של [[שדה ריבועי]] מדומה עם חלק מדומה חיובי), אז <math>j(\tau)</math> הוא [[שלם אלגברי]].{{הערה|שם=Sil|1=<span dir="ltr">J. H. Silverman, The Arithmetic of Elliptic Curves, Graduate Texts in Mathematics 106, Springer, 1986, p. 339.</span>|כיווון=שמאל}} הערכים המיוחדים האלה נקראים [[מודולי סינגולריים]].
+* ההרחבה <math>\mathbb Q(j(\tau), \tau)/\mathbb Q(\tau)</math> היא [[הרחבה אבלית|אבלית]], כלומר חבורת גלואה שלה אבלית.
+* יהי <math>\Lambda</math> הסריג ב-<math>\mathbb C</math> שנוצר על ידי <math>\{1, \tau\}</math>. קל לראות שכל האיברים של <math>\mathbb Q(\tau)</math> שמשמרים את <math>\Lambda</math> תחת כפל יוצרים חוג עם יחידה, שנקרא [[סדר (תורת החוגים)|סדר]]. הסריגים האחרים עם יוצרים <math>\{1, \tau'\}</math> שמתאימים באותו אופן לאותו סדר נותנים את ה[[צמוד (תורת השדות)|צמודים האלגבריים]] <math>j(\tau')</math> של <math>j(\tau)</math> מעל <math>\mathbb Q(\tau)</math>. בסדר ההכלה, הסדר המקסימלי היחיד ב-<math>\mathbb Q(\tau)</math> הוא [[חוג השלמים]] של <math>\mathbb Q(\tau)</math>, וערכי <math>\tau</math> שזה הסדר שלהם נותנים [[הרחבה לא מסועפת|הרחבות לא מסועפות]] של <math>\mathbb Q(\tau)</math>: <math>\mathbb Q(\tau, j(\tau))</math> הוא [[שדה המחלקה של הילברט]] של <math>\mathbb Q(\tau)</math>.
+
+'''דוגמאות.''' ל-<math>\mathbb Q(i)</math> מספר מחלקה 1, ולכן <math>j(i) = 1728</math> רציונלי; אותו דבר עבור <math>j(e^{2\pi i/3}) = 0</math>. לסדר <math>\mathbb Z[2i]</math> (מאינדקס 2 ב-<math>\mathbb Z[i]</math>) מספר מחלקה 1 גם הוא, ולכן <math>j(2i) = 66^3</math> רציונלי. עבור <math>\mathbb Q(\sqrt{-163})</math>, השדה הריבועי המדומה האחרון עם מספר מחלקה 1, מתקבל
+:<math>j\left(\frac{1 + \sqrt{-163}}2\right) = -640320^3.</math>
+
+התוצאות הקלאסיות האלה הן נקודת המוצא של תורת הכפל המרוכב.
+
+== תכונות טרנסצנדנטיות ==
+ב-1937 הוכיח תאודור שניידר את התוצאה שהוזכרה, שאם <math>\tau</math> [[מספר אי-רציונלי ריבועי]] בחצי המישור העליון אז <math>j(\tau)</math> שלם אלגברי. בנוסף הוא הוכיח שאם <math>\tau</math> [[מספר אלגברי]] שאינו ריבועי מדומה, אז <math>j(\tau)</math> [[מספר טרנסצנדנטי|טרנסצנדנטי]].
+
+לפונקציה <math>j</math> יש עוד תכונות טרנסצנדנטיות רבות. קורט מאהלר שיער תוצאת טרנסצנדנטיות מסוימת שנקראת לעיתים קרובות השערת מאהלר: אם <math>\tau</math> בחצי המישור העליון, אז <math>e^{2\pi i\tau}</math> ו-<math>j(\tau)</math> אינם אף פעם אלגבריים בו-זמנית. ההשערה הוכחה ב-1996 על ידי ברה-סירייה, דיאז, גרמן ופיליבר, ונובעת גם מהתוצאות של יורי נסטרנקו ופטריס פיליפון משנות ה-90.{{הערה|1=בערך האנגלי ההוכחה מיוחסת רק לנסטרנקו ולפיליפון. ההוכחה הראשונה היא של <span dir="ltr">K. Barré-Sirieix, G. Diaz, F. Gramain, G. Philibert, Une preuve de la conjecture de Mahler–Manin, Inventiones Mathematicae 124 (1996), pp. 1–9</span> ("המשפט הסטפנואי"); משפט נסטרנקו (1996) הוא חיזוק שלה.|כיווון=שמאל}} כיום ידועות תוצאות חזקות יותר; למשל, אם <math>e^{2\pi i\tau}</math> אלגברי, אז שלושת המספרים
+:<math>j(\tau), \quad \frac{j'(\tau)}{\pi}, \quad \frac{j''(\tau)}{\pi^2}</math>
+[[אי-תלות אלגברית|בלתי תלויים אלגברית]], ולכן לפחות שניים מהם טרנסצנדנטיים.
+
+== פיתוח <math>q</math> וירח ==
+כמה מהתכונות המופלאות של <math>j</math> קשורות ל[[פיתוח q|פיתוח ה-<math>q</math>]] שלה ([[טור פורייה|פיתוח פורייה]]), שנכתב כ[[טור לורן]] במשתנה <math>q = e^{2\pi i\tau}</math>, ומתחיל כך:
+:<math>j(\tau) = q^{-1} + 744 + 196884\,q + 21493760\,q^2 + 864299970\,q^3 + 20245856256\,q^4 + \cdots</math>
+ל-<math>j</math> יש [[קוטב (אנליזה מרוכבת)|קוטב פשוט]] בחוד, ולכן אין בפיתוח שלה איברים מתחת ל-<math>q^{-1}</math>. (את המקדמים האלה בדקנו בחישוב של <math>E_4^3/\Delta</math>, עם <math>\Delta/(2\pi)^{12} = q\prod_{n\ge1}(1 - q^n)^{24}</math>.)
+
+כל מקדמי פורייה שלמים, וזה נותן כמה [[כמעט-שלם|מספרים כמעט-שלמים]], ובמיוחד את '''הקבוע של רמנוג'אן''':
+:<math>e^{\pi\sqrt{163}} \approx 640320^3 + 744,</math>
+כאשר ההפרש הוא בערך <math>-7.5\cdot 10^{-13}</math>. ההסבר: עבור <math>\tau = \frac{1 + \sqrt{-163}}2</math> מתקיים <math>q = -e^{-\pi\sqrt{163}}</math>, ולכן <math>-640320^3 = j(\tau) = -e^{\pi\sqrt{163}} + 744 - 196884e^{-\pi\sqrt{163}} + \cdots</math>, והאיבר <math>196884e^{-\pi\sqrt{163}}</math> כבר זעיר.
+
+ה[[נוסחה אסימפטוטית]] למקדם של <math>q^n</math> היא
+:<math>\frac{e^{4\pi\sqrt n}}{\sqrt2\,n^{3/4}},</math>
+וניתן להוכיח אותה ב[[שיטת המעגל של הארדי–ליטלווד]].{{הערה|1=<span dir="ltr">H. Petersson, Über die Entwicklungskoeffizienten der automorphen Formen, Acta Mathematica 58 (1932), pp. 169–215; H. Rademacher, The Fourier coefficients of the modular invariant j(τ), American Journal of Mathematics 60 (1938), pp. 501–512.</span>|כיווון=שמאל}}
+
+=== ירח ===
+מפתיע עוד יותר שמקדמי פורייה של החזקות החיוביות של <math>q</math> הם הממדים של החלקים המדורגים של [[הצגה (מתמטיקה)|הצגה]] אינסופית-ממדית מדורגת של [[חבורת המפלצת]], שנקראת '''מודול הירח''': המקדם של <math>q^n</math> הוא הממד של החלק מדרגה <math>n</math> של מודול הירח. הדוגמה הראשונה היא [[אלגברת גריס]], שממדה 196884, בהתאם לאיבר <math>196884q</math>; ואכן <math>196884 = 1 + 196883</math>, כאשר 196883 הוא הממד של ההצגה האי-פריקה הלא-טריוויאלית הקטנה ביותר של המפלצת. ההבחנה המדהימה הזו, של ג'ון מקיי, הייתה נקודת המוצא של [[ירח מפלצתי|תורת הירח]].
+
+חקר השערת הירח הוביל את ג'ון הורטון קונוויי ואת סיימון נורטון לבחון את הפונקציות המודולריות מגנוס אפס. אם מנרמלים אותן לצורה
+:<math>q^{-1} + O(q),</math>
+אז ג'ון ג' תומפסון הראה שיש רק מספר סופי של פונקציות כאלה (מרמה סופית כלשהי), וכריס קאמינס הראה מאוחר יותר שיש בדיוק 6486 כאלה, ש-616 מהן בעלות מקדמים שלמים.{{הערה|1=<span dir="ltr">C. J. Cummins, Congruence subgroups of groups commensurable with PSL(2,Z) of genus 0 and 1, Experimental Mathematics 13 (2004), no. 3, pp. 361–382.</span>|כיווון=שמאל}}
+
+== ביטויים חלופיים ==
+מתקיים
+:<math>j(\tau) = \frac{256(1 - x)^3}{x^2},</math>
+כאשר <math>x = \lambda(1 - \lambda)</math> ו-<math>\lambda</math> היא [[פונקציית למבדא המודולרית]]
+:<math>\lambda(\tau) = \frac{\theta_2(e^{\pi i\tau})^4}{\theta_3(e^{\pi i\tau})^4} = k(\tau)^2,</math>
+מנה של [[פונקציית תטא|פונקציות תטא של יעקובי]] <math>\theta_m</math>, שהיא הריבוע של המודולוס האליפטי <math>k(\tau)</math>.{{הערה|שם=Ch|1=<span dir="ltr">K. Chandrasekharan, Elliptic Functions, Grundlehren der mathematischen Wissenschaften 281, Springer, 1985, pp. 108–110.</span>|כיווון=שמאל}} הערך של <math>j</math> אינו משתנה כאשר מחליפים את <math>\lambda</math> בכל אחד משישת הערכים של [[יחס כפול|היחס הכפול]]:{{הערה|שם=Ch}}
+:<math>\left\{\lambda,\ \frac1{1 - \lambda},\ \frac{\lambda - 1}\lambda,\ \frac1\lambda,\ \frac\lambda{\lambda - 1},\ 1 - \lambda\right\}.</math>
+נקודות ההסתעפות של <math>j</math> (כפונקציה של <math>\lambda</math>) הן מעל <math>\{0, 1728, \infty\}</math>, כך ש-<math>j/1728</math> היא [[פונקציית בלי]] עם נקודות הסתעפות <math>\{0, 1, \infty\}</math>.{{הערה|1=<span dir="ltr">E. Girondo, G. González-Diez, Introduction to Compact Riemann Surfaces and Dessins d'Enfants, London Mathematical Society Student Texts 79, Cambridge University Press, 2012, p. 267.</span>|כיווון=שמאל}}
+
+== ביטויים בעזרת פונקציות תטא ==
+מגדירים את ה[[נום (מתמטיקה)|נום]] <math>q = e^{\pi i\tau}</math> (שימו לב: כאן <math>q = e^{\pi i\tau}</math>, ולא <math>e^{2\pi i\tau}</math> כבסעיפים הקודמים) ואת [[פונקציית תטא|פונקציית התטא של יעקובי]]
+:<math>\vartheta(0; \tau) = \vartheta_{00}(0; \tau) = 1 + 2\sum_{n=1}^\infty\left(e^{\pi i\tau}\right)^{n^2} = \sum_{n=-\infty}^\infty q^{n^2},</math>
+שממנה אפשר לגזור את פונקציות התטא העזר. נסמן
+:<math>a = \theta_2(q) = \vartheta_{10}(0; \tau), \qquad b = \theta_3(q) = \vartheta_{00}(0; \tau), \qquad c = \theta_4(q) = \vartheta_{01}(0; \tau),</math>
+כאשר <math>\vartheta_{ij}</math> ו-<math>\theta_n</math> הם סימונים חלופיים, ו-<math>a^4 - b^4 + c^4 = 0</math> (זהות יעקובי). אז האינווריאנטים המודולריים <math>g_2, g_3</math> הם
+:<math>g_2(\tau) = \tfrac23\pi^4\left(a^8 + b^8 + c^8\right), \qquad g_3(\tau) = \tfrac4{27}\pi^6\sqrt{\frac{\left(a^8 + b^8 + c^8\right)^3 - 54(abc)^8}2},</math>
+והדיסקרימיננטה המודולרית היא
+:<math>\Delta = g_2^3 - 27g_3^2 = (2\pi)^{12}\left(\tfrac12 abc\right)^8 = (2\pi)^{12}\eta(\tau)^{24},</math>
+עם פונקציית אטא של דדקינד <math>\eta(\tau)</math>. כך אפשר לחשב את <math>j(\tau)</math> במהירות:
+:<math>j(\tau) = 1728\frac{g_2^3}{g_2^3 - 27g_3^2} = 32\frac{\left(a^8 + b^8 + c^8\right)^3}{(abc)^8}.</math>
+
+== הגדרה אלגברית ==
+עד כאן התייחסנו ל-<math>j</math> כפונקציה של משתנה מרוכב. אבל כאינווריאנט של מחלקות איזומורפיזם של עקומים אליפטיים, אפשר להגדיר אותו באופן אלגברי טהור.{{הערה|1=<span dir="ltr">S. Lang, Elliptic Functions, 2nd ed., Graduate Texts in Mathematics 112, Springer, 1987, pp. 299–300.</span>|כיווון=שמאל}} יהי
+:<math>y^2 + a_1xy + a_3y = x^3 + a_2x^2 + a_4x + a_6</math>
+עקום אליפטי מישורי '''מעל שדה כלשהו'''. מגדירים
+:<math>\begin{align}
+b_2 &= a_1^2 + 4a_2, & b_4 &= a_1a_3 + 2a_4,\\
+b_6 &= a_3^2 + 4a_6, & b_8 &= a_1^2a_6 - a_1a_3a_4 + a_2a_3^2 + 4a_2a_6 - a_4^2,\\
+c_4 &= b_2^2 - 24b_4, & c_6 &= -b_2^3 + 36b_2b_4 - 216b_6,
+\end{align}</math>
+ואת ה[[דיסקרימיננטה]]
+:<math>\Delta = -b_2^2b_8 + 9b_2b_4b_6 - 8b_4^3 - 27b_6^2.</math>
+כאשר המאפיין של השדה אינו 2 או 3, אפשר להעביר את המשוואה בהחלפות משתנים עוקבות לצורה הסטנדרטית <math>y^2 = 4x^3 - g_2x - g_3</math>, עם <math>g_2 = c_4/12</math> ו-<math>g_3 = c_6/216</math>.{{הערה|1=בערך האנגלי נכתב <math>g_2 = c_4</math> ו-<math>g_3 = c_6</math>. למשל עבור <math>y^2 = x^3 + ax + b</math>: <math>c_4 = -48a</math>, <math>c_6 = -864b</math>, ואילו בצורה <math>(2y)^2 = 4x^3 + 4ax + 4b</math> מקבלים <math>g_2 = -4a = c_4/12</math> ו-<math>g_3 = -4b = c_6/216</math>.|כיווון=שמאל}}
+
+אינווריאנט <math>j</math> של העקום האליפטי מוגדר אז כ-
+:<math>j = \frac{c_4^3}{\Delta}.</math>
+כאשר מאפיין השדה שונה מ-2 ו-3, זה שווה ל-
+:<math>j = 1728\frac{c_4^3}{c_4^3 - c_6^2}</math>
+(כי <math>1728\Delta = c_4^3 - c_6^2</math>). עבור עקום אליפטי בצורת ויירשטראס הקצרה <math>y^2 = x^3 + ax + b</math> הנוסחה מתפשטת ל-
+:<math>j = 1728\frac{4a^3}{4a^3 + 27b^2},</math>
+ועבור [[עקום מונטגומרי]] <math>By^2 = x^3 + Ax^2 + x</math> ל-
+:<math>j = 256\frac{(A^2 - 3)^3}{(A + 2)(A - 2)}.</math>
+
+'''דוגמאות.''' ל-<math>y^2 = x^3 - x</math> (<math>a = -1</math>, <math>b = 0</math>) מתקבל <math>j = 1728</math>, ול-<math>y^2 = x^3 + 1</math> מתקבל <math>j = 0</math>: אלה העקומים עם כפל מרוכב ב-<math>\mathbb Z[i]</math> וב-<math>\mathbb Z[e^{2\pi i/3}]</math>, בהתאמה. ל-<math>y^2 = x^3 + x + 1</math>: <math>j = 1728\cdot\frac{4}{4 + 27} = \frac{6912}{31}</math>.
+
+== הפונקציה ההפוכה ==
+את ה[[פונקציה הפוכה|פונקציה ההפוכה]] של אינווריאנט <math>j</math> אפשר לבטא בעזרת ה[[פונקציה היפרגאומטרית|פונקציה ההיפרגאומטרית]] <math>{}_2F_1</math> (ראו גם [[משוואת פיקאר–פוקס]]). במפורש, בהינתן מספר <math>N</math>, אפשר לפתור את המשוואה <math>j(\tau) = N</math> עבור <math>\tau</math> לפחות בארבע דרכים.
+
+'''שיטה 1:''' פותרים את המשוואה ממעלה שישית ב-<math>\lambda</math>,
+:<math>j(\tau) = \frac{256\bigl(1 - \lambda(1 - \lambda)\bigr)^3}{\bigl(\lambda(1 - \lambda)\bigr)^2} = \frac{256(1 - x)^3}{x^2},</math>
+כאשר <math>x = \lambda(1 - \lambda)</math>, כך שאפשר לפתור אותה כמשוואה ממעלה שלישית ב-<math>x</math>. אז
+:<math>\tau = i\,\frac{{}_2F_1\left(\tfrac12, \tfrac12; 1; 1 - \lambda\right)}{{}_2F_1\left(\tfrac12, \tfrac12; 1; \lambda\right)} = i\,\frac{M\left(1, \sqrt{1 - \lambda}\right)}{M\left(1, \sqrt\lambda\right)}</math>
+לכל אחד משישת הערכים של <math>\lambda</math>, כאשר <math>M</math> הוא [[הממוצע האריתמטי-גאומטרי]].{{הערה|1=השוויון מתקיים אם מגדירים את הממוצע האריתמטי-גאומטרי <math>M(a, b)</math> של מספרים מרוכבים <math>a, b</math> (עם <math>a, b \ne 0</math>, <math>a \ne \pm b</math>) כך: <math>a_0 = a</math>, <math>b_0 = b</math>, <math>a_{n+1} = (a_n + b_n)/2</math>, <math>b_{n+1} = \pm\sqrt{a_nb_n}</math>, כאשר הסימנים נבחרים כך ש-<math>|a_n - b_n| \le |a_n + b_n|</math> לכל <math>n</math>; אם <math>|a_n - b_n| = |a_n + b_n|</math>, בוחרים את הסימן כך ש-<math>\operatorname{Im}(b_n/a_n) \gt 0</math>. אז <math>M(a, b) = \lim a_n = \lim b_n</math>. עבור <math>a, b</math> חיוביים ממשיים ההגדרה מתלכדת עם ההגדרה הרגילה. ראו <span dir="ltr">D. A. Cox, The arithmetic-geometric mean of Gauss, L'Enseignement Mathématique 30 (1984), pp. 275–330.</span>|כיווון=שמאל}}
+
+'''שיטה 2:''' פותרים את המשוואה ממעלה רביעית ב-<math>\gamma</math>,
+:<math>j(\tau) = \frac{27(1 + 8\gamma)^3}{\gamma(1 - \gamma)^3},</math>
+ואז לכל אחד מארבעת השורשים,
+:<math>\tau = \frac i{\sqrt3}\,\frac{{}_2F_1\left(\tfrac13, \tfrac23; 1; 1 - \gamma\right)}{{}_2F_1\left(\tfrac13, \tfrac23; 1; \gamma\right)}.</math>
+
+'''שיטה 3:''' פותרים את המשוואה ממעלה שלישית ב-<math>\beta</math>,
+:<math>j(\tau) = \frac{64(1 + 3\beta)^3}{\beta(1 - \beta)^2},</math>
+ואז לכל אחד משלושת השורשים,
+:<math>\tau = \frac i{\sqrt2}\,\frac{{}_2F_1\left(\tfrac14, \tfrac34; 1; 1 - \beta\right)}{{}_2F_1\left(\tfrac14, \tfrac34; 1; \beta\right)}.</math>
+
+'''שיטה 4:''' פותרים את המשוואה הריבועית ב-<math>\alpha</math>,
+:<math>j(\tau) = \frac{1728}{4\alpha(1 - \alpha)},</math>
+ואז
+:<math>\tau = i\,\frac{{}_2F_1\left(\tfrac16, \tfrac56; 1; 1 - \alpha\right)}{{}_2F_1\left(\tfrac16, \tfrac56; 1; \alpha\right)}.</math>
+שורש אחד נותן את <math>\tau</math> והשני את <math>-1/\tau</math>, אבל כיוון ש-<math>j(\tau) = j(-1/\tau)</math>, לא משנה איזה <math>\alpha</math> בוחרים. שלוש השיטות האחרונות מופיעות בתורה של [[סריניוואסה רמנוג'אן|רמנוג'אן]] על [[פונקציה אליפטית|פונקציות אליפטיות]] בבסיסים חלופיים. (את ארבע השיטות בדקנו בחישוב מספרי, עבור <math>\tau = 0.3 + 0.9i</math> וכל השורשים שנמצאו: בכל המקרים <math>\tau</math> שמתקבל מקיים <math>j(\tau) = N</math>.)
+
+ההיפוך משמש בחישובים בדיוק גבוה של מחזורים של פונקציות אליפטיות, גם כשהמנות שלהם גדלות מאוד. תוצאה קשורה היא שאפשר לבטא בעזרת שורשים ריבועיים בלבד את ערכי <math>j</math> בנקודות על הציר המדומה שגודלן הוא חזקה של 2 (ולכן אפשר [[בנייה בסרגל ובמחוגה|לבנות אותם בסרגל ובמחוגה]]). התוצאה הזו כלל אינה מובנת מאליה, כי ה[[משוואה מודולרית|משוואה המודולרית]] של <math>j</math> מסדר 2 היא ממעלה שלישית.{{הערה|1=<span dir="ltr">J. M. Borwein, P. B. Borwein, Pi and the AGM, Wiley-Interscience, 1987, theorem 4.8.</span>|כיווון=שמאל}}
+
+== נוסחאות ל-π ==
+האחים צ'ודנובסקי מצאו ב-1987 את הנוסחה{{הערה|1=<span dir="ltr">D. V. Chudnovsky, G. V. Chudnovsky, The Computation of Classical Constants, Proceedings of the National Academy of Sciences of the USA 86 (1989), no. 21, pp. 8178–8182.</span>|כיווון=שמאל}}
+:<math>\frac1\pi = \frac{12}{640320^{3/2}}\sum_{k=0}^\infty\frac{(6k)!\,(163\cdot 3344418\,k + 13591409)}{(3k)!\,(k!)^3\,(-640320)^{3k}},</math>
+שכל איבר בה מוסיף בערך 14 ספרות עשרוניות נכונות. ההוכחה שלה משתמשת בעובדה ש-
+:<math>j\left(\frac{1 + \sqrt{-163}}2\right) = -640320^3.</math>
+לנוסחאות דומות ראו [[טור רמנוג'אן–סאטו]].
+
+== כישלון הסיווג מעל שדות אחרים ==
+אינווריאנט <math>j</math> מבחין רק בין מחלקות איזומורפיזם של עקומים אליפטיים מעל המספרים המרוכבים, או באופן כללי יותר מעל [[שדה סגור אלגברית]]. מעל שדות אחרים יש עקומים אליפטיים עם אותו אינווריאנט <math>j</math> שאינם איזומורפיים (הם [[סיבוב של עקום אליפטי|סיבובים]] זה של זה). למשל, יהיו
+:<math>E_1: y^2 = x^3 - 25x, \qquad E_2: y^2 = x^3 - 4x,</math>
+ולשניהם אינווריאנט <math>j = 1728</math>. הנקודות הרציונליות של <math>E_2</math> הן
+:<math>E_2(\mathbb Q) = \{\infty, (2, 0), (-2, 0), (0, 0)\},</math>
+כי <math>x^3 - 4x = x(x - 2)(x + 2)</math>, ואין פתרונות רציונליים עם <math>y \ne 0</math>. העובדה האחרונה שקולה לכך ש-2 אינו [[מספר קונגרואנטי]], תוצאה שהולכת אחורה עד [[פייר דה פרמה|פרמה]]; אפשר להוכיח אותה, למשל, בירידה (<math>2</math>-descent).{{הערה|1=בערך האנגלי נטען שאפשר להראות זאת בעזרת [[נוסחת קרדאנו]]. זה אינו טיעון תקף: נוסחת קרדאנו נותנת את השורשים של <math>x^3 - 4x - a^2</math> כביטויים עם שורשים, אבל אינה מראה שאף אחד מהם אינו רציונלי לכל <math>a</math> רציונלי.|כיווון=שמאל}}
+
+מצד שני, ל-<math>E_1</math> יש את הנקודה <math>(-4, 6)</math>: <math>(-4)^3 + 100 = 36</math>. כדי למצוא נקודות נוספות, מחפשים נקודות מהצורה <math>(-4n, 6n)</math> (הכפלה של הקואורדינטות ב-<math>n</math>, לא כפולה בחבורה). המשוואה של <math>E_1</math> הופכת ל-<math>36n^2 = -64n^3 + 100n</math>. חלוקה ב-<math>4n</math> (כדי לסלק את הפתרון <math>(0, 0)</math>) נותנת <math>16n^2 + 9n - 25 = 0</math>, ונוסחת השורשים נותנת את הפתרונות הרציונליים
+:<math>n = \frac{-9 \pm \sqrt{81 - 4\cdot 16\cdot(-25)}}{2\cdot 16} = \frac{-9 \pm 41}{32},</math>
+כלומר <math>n = 1</math> ו-<math>n = -\tfrac{25}{16}</math>. האחרון נותן את הנקודה <math>\left(\tfrac{25}4, -\tfrac{75}8\right)</math>, ואכן <math>\left(\tfrac{25}4\right)^3 - 25\cdot\tfrac{25}4 = \tfrac{5625}{64} = \left(\tfrac{75}8\right)^2</math>. למעשה <math>(-4, 6)</math> מסדר אינסופי, ולכן ל-<math>E_1</math> יש אינסוף נקודות רציונליות; לכן <math>E_1 \not\cong E_2</math> מעל <math>\mathbb Q</math>. (זה מתאים לכך ש-5 הוא מספר קונגרואנטי: הוא השטח של המשולש עם הצלעות <math>\tfrac32, \tfrac{20}3, \tfrac{41}6</math>.)
+
+מעל <math>\mathbb Q(\sqrt{10})</math>, לעומת זאת, העקומים איזומורפיים: ההעתקה
+:<math>E_2 \to E_1, \qquad (x, y) \mapsto (\mu^2x, \mu^3y), \qquad \mu = \frac{\sqrt{10}}2,</math>
+היא איזומורפיזם, כי <math>\mu^4 = \tfrac{25}4</math>, ולכן <math>(\mu^3y)^2 = \mu^6(x^3 - 4x) = (\mu^2x)^3 - 25(\mu^2x)</math>.
+
+== ראו גם ==
+* [[תבנית מודולרית]]
+* [[עקום מודולרי]]
+* [[כפל מרוכב]]
+* [[ירח מפלצתי]]
+* [[פונקציית אטא של דדקינד]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* T. M. Apostol, ''Modular Functions and Dirichlet Series in Number Theory'', 2nd ed., Graduate Texts in Mathematics '''41''', Springer, 1990
+* B. C. Berndt, H. H. Chan, ''Ramanujan and the modular j-invariant'', Canadian Mathematical Bulletin '''42''' (1999), pp. 427–440
+* J. H. Conway, S. P. Norton, ''Monstrous moonshine'', Bulletin of the London Mathematical Society '''11''' (1979), pp. 308–339
+* D. A. Cox, ''Primes of the Form x<sup>2</sup> + ny<sup>2</sup>'', Wiley, 1989
+* R. A. Rankin, ''Modular Forms and Functions'', Cambridge University Press, 1977
+* T. Schneider, ''Arithmetische Untersuchungen elliptischer Integrale'', Mathematische Annalen '''113''' (1937), pp. 1–13
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציות אליפטיות]]
+[[קטגוריה:תבניות מודולריות]]
