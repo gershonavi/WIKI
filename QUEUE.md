@@ -365,6 +365,6 @@ Additive number theory:
 - [x] Mian–Chowla sequence
 - [x] Sum-free sequence
 - [x] Moser–de Bruijn sequence
-- [ ] Highly cototient number
+- [x] Highly cototient number
 - [ ] Sparsely totient number
 - [ ] Home prime
