@@ -279,7 +279,7 @@ Additive number theory:
 - [x] Universal quadratic form
 - [x] Spinor genus
 - [x] Ramanujan's ternary quadratic form
-- [ ] Hermite reduction
+- [x] Hermite reduction
 - [ ] Hilbert's eleventh problem
 - [ ] Hurwitz problem
 
