@@ -1,0 +1,53 @@
+ב[[מתמטיקה]], '''מודול טייט''' (Tate module) של חבורה אבלית, שנקרא על שם ג'ון טייט, הוא מודול שבונים מ[[חבורה אבלית]] <math>A</math>. לרוב הבנייה נעשית במצב הבא: <math>G</math> סכמת חבורות קומוטטיבית מעל [[שדה (מבנה אלגברי)|שדה]] <math>K</math>, <math>K^s</math> הסגור הספרבילי של <math>K</math>, ו-<math>A = G(K^s)</math> (הנקודות של <math>G</math> עם ערכים ב-<math>K^s</math>). במקרה זה פועלת על מודול טייט של <math>A</math> [[חבורת גלואה|חבורת הגלואה]] המוחלטת של <math>K</math>, והוא נקרא מודול טייט של <math>G</math>.
+
+== הגדרה ==
+בהינתן חבורה אבלית <math>A</math> ו[[מספר ראשוני]] <math>p</math>, '''מודול טייט ה-<math>p</math>-אדי''' של <math>A</math> הוא
+:<math>T_p(A)=\varprojlim A[p^n]</math>
+כאשר <math>A[p^n]</math> הוא ה-<math>p^n</math>-פיתול של <math>A</math> (כלומר הגרעין של הכפל ב-<math>p^n</math>), וה[[גבול הפוך|גבול ההפוך]] הוא על השלמים החיוביים <math>n</math>, עם העתקות המעבר <math>A[p^{n+1}] \to A[p^n]</math> שניתנות על ידי כפל ב-<math>p</math>. כך מודול טייט מקודד את כל הפיתול מסדר חזקה של <math>p</math> ב-<math>A</math>. יש לו מבנה של מודול מעל [[מספר p-אדי|השלמים ה-<math>p</math>-אדיים]] <math>\mathbb Z_p</math>, דרך
+:<math>z(a_n)_n=((z\bmod p^n)\,a_n)_n.</math>
+
+== דוגמאות ==
+=== מודול טייט "ה"קלאסי ===
+כאשר החבורה האבלית <math>A</math> היא חבורת [[שורש יחידה|שורשי היחידה]] בסגור הספרבילי <math>K^s</math> של <math>K</math>, מודול טייט ה-<math>p</math>-אדי של <math>A</math> נקרא לפעמים פשוט "מודול טייט" (כשהבחירה של <math>p</math> ושל <math>K</math> מובנת מההקשר). זהו מודול חופשי מדרגה 1 מעל <math>\mathbb Z_p</math>, עם פעולה ליניארית של חבורת הגלואה המוחלטת <math>G_K</math> של <math>K</math>. כלומר זו [[הצגת גלואה]], שנקראת גם [[קרקטר ציקלוטומי|הקרקטר הציקלוטומי ה-<math>p</math>-אדי]] של <math>K</math>. אפשר להתייחס אליו גם כאל מודול טייט של החבורה הכפלית <math>\mathbb G_{m,K}</math> מעל <math>K</math>. למשל, ל-<math>K = \mathbb Q</math> ולראשוני <math>q \ne p</math>, איבר פרובניוס ב-<math>q</math> פועל על <math>T_p(\mu)</math> ככפל ב-<math>q \in \mathbb Z_p^\times</math>, כי הוא שולח כל שורש יחידה <math>\zeta</math> מסדר חזקה של <math>p</math> ל-<math>\zeta^q</math>.
+
+=== מודול טייט של יריעה אבלית ===
+בהינתן [[יריעה אבלית]] <math>G</math> מעל שדה <math>K</math>, הנקודות של <math>G</math> עם ערכים ב-<math>K^s</math> יוצרות חבורה אבלית. מודול טייט ה-<math>p</math>-אדי <math>T_p(G)</math> של <math>G</math> הוא הצגת גלואה (של חבורת הגלואה המוחלטת <math>G_K</math> של <math>K</math>).
+
+תוצאות קלאסיות על יריעות אבליות מראות שאם ל-<math>K</math> [[מאפיין (אלגברה)|מאפיין]] 0, או מאפיין <math>\ell</math> כאשר <math>p \ne \ell</math>, אז <math>T_p(G)</math> מודול חופשי מעל <math>\mathbb Z_p</math> מדרגה <math>2d</math>, כאשר <math>d</math> הממד של <math>G</math>.{{הערה|שם=Murty|1=<span dir="ltr">V. K. Murty, ''Introduction to Abelian Varieties'', CRM Monograph Series 3, American Mathematical Society, 2000, Proposition 13.4</span>|כיווון=שמאל}} במקרה האחר הוא עדיין חופשי, אבל הדרגה יכולה להיות כל ערך בין 0 ל-<math>d</math>.
+
+כאשר <math>p</math> שונה מהמאפיין של <math>K</math>, מודול טייט ה-<math>p</math>-אדי של <math>G</math> הוא הדואלי של הקוהומולוגיה האטאלית <math>H^1_{\text{et}}(G\times_KK^s,\mathbb{Z}_p)</math>.
+
+'''דוגמה: עקום אליפטי מעל שדה סופי.''' לעקום אליפטי <math>E</math> מעל <math>\mathbb F_q</math> ולראשוני <math>\ell \nmid q</math>, <math>T_\ell(E) \cong \mathbb Z_\ell^2</math>, ואנדומורפיזם פרובניוס <math>\phi</math> פועל עליו עם פולינום אופייני <math>X^2 - aX + q</math>, כאשר <math>a = q + 1 - \#E(\mathbb F_q)</math>. למשל ל-<math>y^2 = x^3 - 2</math> מעל <math>\mathbb F_7</math> (שבו יש 7 נקודות, <math>a = 1</math>): <math>\det(1 - \phi T \mid T_\ell E) = 1 - T + 7T^2</math>, שהוא בדיוק המונה של [[פונקציית זטא מקומית|פונקציית הזטא]] של העקום. מכאן נוסחת לפשץ <math>\#E(\mathbb F_{q^n}) = q^n + 1 - \mathrm{tr}(\phi^n \mid T_\ell E)</math>.
+
+מקרה פרטי של השערת טייט אפשר לנסח במונחי מודולי טייט.{{הערה|1=<span dir="ltr">Murty, ''Introduction to Abelian Varieties'', §13.8</span>|כיווון=שמאל}} נניח ש-<math>K</math> נוצר סופית מעל השדה הראשוני שלו (למשל [[שדה סופי]], [[שדה מספרים]] או שדה פונקציות גלובלי), ממאפיין שונה מ-<math>p</math>, ו-<math>A</math>, <math>B</math> שתי יריעות אבליות מעל <math>K</math>. השערת טייט חוזה ש-
+:<math>\mathrm{Hom}_K(A,B)\otimes\mathbb{Z}_p\cong\mathrm{Hom}_{G_K}(T_p(A),T_p(B))</math>
+כאשר <math>\mathrm{Hom}_K(A,B)</math> חבורת המורפיזמים של יריעות אבליות מ-<math>A</math> ל-<math>B</math>, ובצד ימין ההעתקות ה-<math>G_K</math>-ליניאריות מ-<math>T_p(A)</math> ל-<math>T_p(B)</math>. את המקרה ש-<math>K</math> שדה סופי הוכיח טייט עצמו בשנות ה-60.{{הערה|1=<span dir="ltr">J. Tate, "Endomorphisms of abelian varieties over finite fields", ''Inventiones Mathematicae'' '''2''' (1966), 134–144</span>|כיווון=שמאל}} [[גרד פלטינגס]] הוכיח את המקרה ש-<math>K</math> שדה מספרים במאמר המפורסם שלו על [[השערת מורדל]].{{הערה|1=<span dir="ltr">G. Faltings, "Endlichkeitssätze für abelsche Varietäten über Zahlkörpern", ''Inventiones Mathematicae'' '''73''' (1983), 349–366</span>|כיווון=שמאל}} (מכאן, למשל, ששני עקומים אליפטיים איזוגניים בדיוק כשמודולי טייט שלהם איזומורפיים כהצגות גלואה; ראו [[איזוגניה]].)
+
+במקרה של יעקוביאן של עקום <math>C</math> מעל שדה סופי <math>k</math> ממאפיין זר ל-<math>p</math>, אפשר לזהות את מודול טייט עם חבורת הגלואה של ההרחבה המורכבת
+:<math>k(C) \subset \hat k (C) \subset A^{(p)},</math>
+כאשר <math>\hat k</math> הרחבה של <math>k</math> שמכילה את כל שורשי היחידה מסדר חזקה של <math>p</math>, ו-<math>A^{(p)}</math> ה-<math>p</math>-הרחבה האבלית הלא מסועפת המקסימלית של <math>\hat k (C)</math>.{{הערה|שם=MP|1=<span dir="ltr">Yu. I. Manin, A. A. Panchishkin, ''Introduction to Modern Number Theory'', Encyclopaedia of Mathematical Sciences 49, 2nd ed., Springer, 2007, p. 245</span>|כיווון=שמאל}}
+
+== מודול טייט של שדה מספרים ==
+התיאור של מודול טייט לשדה הפונקציות של עקום מעל שדה סופי מרמז על הגדרה של מודול טייט ל[[שדה מספרים]] – הסוג האחר של [[שדה גלובלי]] – שהציג קנקיצ'י איוואסאווה. לשדה מספרים <math>K</math> נסמן ב-<math>K_m</math> את ההרחבה בשורשי היחידה מסדר <math>p^m</math>, ב-<math>\hat K</math> את האיחוד של ה-<math>K_m</math>, וב-<math>A^{(p)}</math> את ה-<math>p</math>-הרחבה האבלית הלא מסועפת המקסימלית של <math>\hat K</math>. נגדיר
+:<math>T_p(K) = \mathrm{Gal}(A^{(p)}/\hat K).</math>
+<math>T_p(K)</math> היא חבורה פרו-<math>p</math>, ולכן מודול מעל <math>\mathbb Z_p</math>. בעזרת [[תורת שדות המחלקה]] אפשר לתאר את <math>T_p(K)</math> כאיזומורפית לגבול ההפוך של חבורות המחלקות (ה-<math>p</math>-חלקים שלהן) <math>C_m</math> של ה-<math>K_m</math> ביחס לנורמה.{{הערה|שם=MP}}
+
+איוואסאווה הציג את <math>T_p(K)</math> כמודול מעל ההשלמה <math>\mathbb Z_p[\![T]\!]</math>, ומזה נובעת נוסחה למעריך של <math>p</math> בסדר של חבורות המחלקות <math>C_m</math>, עבור <math>m</math> גדול מספיק, מהצורה
+:<math> \lambda m + \mu p^m + \nu .</math>
+משפט פרו–וושינגטון אומר ש-<math>\mu = 0</math> כאשר <math>K</math> הרחבה אבלית של <math>\mathbb Q</math>.{{הערה|1=בערך האנגלי נכתב שמשפט פרו–וושינגטון אומר ש-<math>\mu</math> הוא אפס, בלי תנאי. המשפט (Ferrero–Washington 1979) הוכח לשדות שהם הרחבות אבליות של <math>\mathbb Q</math>; לשדות מספרים כלליים, ההשערה של איוואסאווה ש-<math>\mu = 0</math> בהרחבה הציקלוטומית עדיין פתוחה.|כיווון=שמאל}}
+
+== ראו גם ==
+* [[קרקטר ציקלוטומי]]
+* [[ההשערה המרכזית של תורת איוואסאווה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* "Tate module", ''Encyclopedia of Mathematics''
+* D. Rohrlich, "Elliptic curves and the Weil–Deligne group", in H. Kisilevsky, M. R. Murty (eds.), ''Elliptic Curves and Related Topics'', CRM Proceedings and Lecture Notes 4, American Mathematical Society, 1994, Section 13
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:יריעות אבליות]]
+[[קטגוריה:עקומים אליפטיים]]

@@ -394,7 +394,7 @@ Additive number theory:
 ### השלמות לשיעורים 19א–23, חלק ג' (8)
 
 - [x] Von Staudt–Clausen theorem
-- [ ] Tate module
+- [x] Tate module
 - [ ] Adele ring
 - [ ] Automorphic form
 - [ ] Monstrous moonshine
