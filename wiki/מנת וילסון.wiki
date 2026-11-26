@@ -1,0 +1,34 @@
+'''מנת וילסון''' <math>W(p)</math> מוגדרת כ-
+:<math>W(p) = \frac{(p-1)! + 1}{p}.</math>
+אם <math>p</math> [[מספר ראשוני]], המנה היא [[מספר שלם|שלם]] לפי [[משפט וילסון]]; יתרה מזו, אם <math>p</math> [[מספר פריק|פריק]], המנה אינה שלם. (אם <math>p = ab</math> עם <math>1 \lt a \lt p</math>, אז <math>a</math> מחלק את <math>(p-1)!</math>, ולכן אינו מחלק את <math>(p-1)! + 1</math>, ובוודאי <math>p</math> אינו מחלק אותו.) אם <math>p</math> מחלק את <math>W(p)</math>, הוא נקרא [[ראשוני וילסון]]. הערכים השלמים של <math>W(p)</math> הם ({{OEIS|A007619}}):
+:<math>W(2) = 1</math>
+:<math>W(3) = 1</math>
+:<math>W(5) = 5</math>
+:<math>W(7) = 103</math>
+:<math>W(11) = 329891</math>
+:<math>W(13) = 36846277</math>
+:<math>W(17) = 1230752346353</math>
+:<math>W(19) = 336967037143579</math>
+:...
+(את הערכים בדקנו בחישוב.)
+
+''דוגמאות:'' <math>W(7) = (720 + 1)/7 = 721/7 = 103</math>. ו-<math>W(5) = (24 + 1)/5 = 5</math>, שמתחלק ב-5 – לכן 5 הוא ראשוני וילסון. גם <math>W(13) = 36846277 = 13\cdot2834329</math> מתחלק ב-13. ראשוני הוילסון הידועים היחידים הם 5, 13 ו-563 (בדקנו שאין אחרים מתחת ל-600). במונחים של קונגרואנציות: <math>p</math> ראשוני וילסון בדיוק כש-<math>(p-1)! \equiv -1 \pmod{p^2}</math>.
+
+ידוע ש-{{הערה|שם=Lehmer|1=<span dir="ltr">E. Lehmer, On congruences involving Bernoulli numbers and the quotients of Fermat and Wilson, Annals of Mathematics 39 (1938), pp. 350–360.</span>|כיווון=שמאל}}
+:<math>W(p)\equiv B_{2(p-1)}-B_{p-1}\pmod{p},</math>
+:<math>p-1+ptW(p)\equiv pB_{t(p-1)}\pmod{p^2},</math>
+כאשר <math>B_k</math> הוא [[מספרי ברנולי|מספר ברנולי]] ה-<math>k</math>-י. שימו לב שהיחס הראשון מתקבל מהשני בחיסור, אחרי הצבת <math>t=1</math> ו-<math>t=2</math> וחלוקה ב-<math>p</math>.
+
+כאן הקונגרואנציות מתפרשות <math>p</math>-אדית: לפי [[משפט פון שטאודט–קלאוזן]], ל-<math>B_{p-1}</math> יש <math>p</math> במכנה (פעם אחת), אבל <math>pB_{t(p-1)}</math> והפרש <math>B_{2(p-1)} - B_{p-1}</math> הם מספרים רציונליים שהמכנה שלהם זר ל-<math>p</math>, ולכן אפשר לצמצם אותם מודולו <math>p</math> או <math>p^2</math>. ''דוגמה עבור <math>p = 5</math>, <math>t = 1</math>:'' <math>B_4 = -\tfrac1{30}</math>, ולכן <math>5B_4 = -\tfrac16</math>. מודולו 25, <math>6^{-1} \equiv 21</math> (כי <math>6\cdot21 = 126 \equiv 1</math>), ולכן <math>-\tfrac16 \equiv -21 \equiv 4</math>. מצד שני, <math>p - 1 + pW(p) = 4 + 25 = 29 \equiv 4 \pmod{25}</math>. השוויון מתקיים. (את שני היחסים בדקנו לכל הראשוניים <math>5 \le p \lt 80</math>, ואת השני עבור <math>t = 1, 2, 3, 4</math>.)
+
+== ראו גם ==
+* [[מנת פרמה]]
+* [[ראשוני וילסון]]
+
+== קישורים חיצוניים ==
+* {{MathWorld|WilsonQuotient|Wilson Quotient}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:סדרות של מספרים שלמים]]

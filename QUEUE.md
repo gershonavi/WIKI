@@ -337,7 +337,7 @@ Additive number theory:
 - [x] Highly totient number
 - [x] Perfect totient number
 - [x] Euclid–Mullin sequence
-- [ ] Wilson quotient
+- [x] Wilson quotient
 - [ ] Wolstenholme number
 - [ ] Lucas–Carmichael number
 - [ ] Lehmer sequence
