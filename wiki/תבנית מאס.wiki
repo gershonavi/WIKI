@@ -1,0 +1,254 @@
+ב[[מתמטיקה]], '''תבניות מאס''' או '''תבניות הגל של מאס''' נחקרות בתורת ה[[תבנית אוטומורפית|תבניות האוטומורפיות]]. תבניות מאס הן פונקציות חלקות בעלות ערכים מרוכבים על [[חצי המישור העליון]], שמתנהגות תחת הפעולה של [[תת-חבורה בדידה]] <math>\Gamma</math> של <math>\mathrm{SL}_2(\mathbb R)</math> באופן דומה ל[[תבנית מודולרית|תבניות מודולריות]]. הן [[פונקציה עצמית|פונקציות עצמיות]] של אופרטור לפלס ההיפרבולי <math>\Delta</math> שמוגדר על חצי המישור העליון, ומקיימות תנאי גידול מסוימים בחודים של [[תחום יסודי]] של <math>\Gamma</math>. בניגוד לתבניות מודולריות, תבניות מאס אינן חייבות להיות [[פונקציה הולומורפית|הולומורפיות]]. הראשון שחקר אותן היה הנס מאס, ב-1949.{{הערה|שם=Maass|1=<span dir="ltr">H. Maass, Über eine neue Art von nichtanalytischen automorphen Funktionen und die Bestimmung Dirichletscher Reihen durch Funktionalgleichungen, Mathematische Annalen 121 (1949), pp. 141–183.</span>|כיווון=שמאל}}
+
+== הערות כלליות ==
+החבורה
+:<math>G := \mathrm{SL}_2(\mathbb R) = \left\{\begin{pmatrix} a & b \\ c & d\end{pmatrix} \in M_2(\mathbb R) : ad - bc = 1\right\}</math>
+פועלת על חצי המישור העליון <math>\mathcal H = \{z \in \mathbb C : \operatorname{Im}(z) \gt 0\}</math> ב[[העתקת מביוס|העתקות לינאריות-שבורות]]:
+:<math>\begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot z := \frac{az + b}{cz + d}.</math>
+אפשר להרחיב אותה לפעולה על <math>\mathcal H \cup \{\infty\} \cup \mathbb R</math> על ידי
+:<math>\begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot z := \begin{cases}\frac{az + b}{cz + d} & cz + d \ne 0, \\ \infty & cz + d = 0,\end{cases} \qquad \begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot\infty := \lim_{\operatorname{Im}(z)\to\infty}\begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot z = \begin{cases} a/c & c \ne 0, \\ \infty & c = 0.\end{cases}</math>
+[[מידת ראדון|מידת ראדון]]
+:<math>d\mu(z) := \frac{dx\,dy}{y^2}</math>
+על <math>\mathcal H</math> אינווריאנטית תחת הפעולה של <math>G</math>.
+
+תהי <math>\Gamma</math> תת-חבורה בדידה של <math>G</math>. '''תחום יסודי''' של <math>\Gamma</math> הוא קבוצה פתוחה <math>F \subset \mathcal H</math> שעבורה יש מערכת נציגים <math>R</math> של <math>\Gamma\backslash\mathcal H</math> עם
+:<math>F \subset R \subset \overline F, \qquad \mu(\overline F\setminus F) = 0.</math>
+תחום יסודי של החבורה המודולרית <math>\Gamma(1) := \mathrm{SL}_2(\mathbb Z)</math> הוא
+:<math>F := \left\{z \in \mathcal H \;\middle|\; |\operatorname{Re}(z)| \lt \tfrac12,\ |z| \gt 1\right\}.</math>
+פונקציה <math>f: \mathcal H \to \mathbb C</math> נקראת <math>\Gamma</math>-אינווריאנטית אם <math>f(\gamma z) = f(z)</math> לכל <math>\gamma \in \Gamma</math> ו-<math>z \in \mathcal H</math>. לכל פונקציה [[פונקציה מדידה|מדידה]] ו-<math>\Gamma</math>-אינווריאנטית <math>f</math> מתקיים
+:<math>\int_Ff(z)\,d\mu(z) = \int_{\Gamma\backslash\mathcal H}f(z)\,d\mu(z),</math>
+כאשר המידה באגף ימין היא המידה המושרית על המנה <math>\Gamma\backslash\mathcal H</math>.
+
+== תבניות מאס קלאסיות ==
+=== אופרטור לפלס ההיפרבולי ===
+'''אופרטור לפלס ההיפרבולי''' על <math>\mathcal H</math> מוגדר כ-
+:<math>\Delta: C^\infty(\mathcal H) \to C^\infty(\mathcal H), \qquad \Delta = -y^2\left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}\right).</math>
+
+=== הגדרה ===
+'''תבנית מאס''' ביחס לחבורה <math>\Gamma(1) = \mathrm{SL}_2(\mathbb Z)</math> היא פונקציה חלקה בעלת ערכים מרוכבים <math>f</math> על <math>\mathcal H</math> שמקיימת
+# <math>f(\gamma z) = f(z)</math> לכל <math>\gamma \in \Gamma(1)</math> ו-<math>z \in \mathcal H</math>;
+# יש <math>\lambda \in \mathbb C</math> כך ש-<math>\Delta(f) = \lambda f</math>;
+# יש <math>N \in \mathbb N</math> כך ש-<math>f(x + iy) = O(y^N)</math> עבור <math>y \ge 1</math>.
+אם
+:<math>\int_0^1f(z + t)\,dt = 0 \quad \text{לכל } z \in \mathcal H,</math>
+קוראים ל-<math>f</math> '''תבנית שפיץ של מאס'''.
+
+=== הקשר בין תבניות מאס לטורי דיריכלה ===
+תהי <math>f</math> תבנית מאס. כיוון ש-<math>\gamma := \left(\begin{smallmatrix} 1 & 1 \\ 0 & 1\end{smallmatrix}\right) \in \Gamma(1)</math>, מתקיים <math>f(z) = f(\gamma z) = f(z + 1)</math> לכל <math>z</math>. לכן ל-<math>f</math> יש פיתוח פורייה מהצורה
+:<math>f(x + iy) = \sum_{n=-\infty}^\infty a_n(y)e^{2\pi inx},</math>
+עם פונקציות מקדמים <math>a_n</math>. קל להראות ש-<math>f</math> תבנית שפיץ של מאס אם ורק אם <math>a_0(y) = 0</math> לכל <math>y \gt 0</math>.
+
+אפשר לחשב את פונקציות המקדמים במדויק. לשם כך צריך את [[פונקציית בסל]] <math>K_\nu</math>, שמוגדרת על ידי
+:<math>K_s(y) := \frac12\int_0^\infty e^{-\frac{y(t + t^{-1})}2}t^s\frac{dt}t, \qquad s \in \mathbb C,\ y \gt 0.</math>
+האינטגרל מתכנס בהחלט ובמידה שווה מקומית ב-<math>s \in \mathbb C</math> עבור <math>y \gt 0</math>, ומתקיים אי-השוויון
+:<math>|K_s(y)| \le e^{-\frac y2}K_{\operatorname{Re}(s)}(2)</math>
+לכל <math>y \gt 4</math>. לכן <math>|K_s|</math> דועכת מעריכית כאשר <math>y \to \infty</math>. בנוסף, <math>K_{-s}(y) = K_s(y)</math> לכל <math>s</math> ו-<math>y \gt 0</math>.
+
+'''משפט (מקדמי פורייה של תבניות מאס).''' יהי <math>\lambda \in \mathbb C</math> הערך העצמי של תבנית המאס <math>f</math> ביחס ל-<math>\Delta</math>. יש <math>\nu \in \mathbb C</math>, יחיד עד כדי סימן, כך ש-<math>\lambda = \frac14 - \nu^2</math>. מקדמי פורייה של <math>f</math> הם
+:<math>a_n(y) = c_n\sqrt y\,K_\nu(2\pi|n|y), \quad c_n \in \mathbb C \quad (n \ne 0), \qquad a_0(y) = c_0y^{\frac12 - \nu} + d_0y^{\frac12 + \nu}, \quad c_0, d_0 \in \mathbb C.</math>
+
+'''הוכחה.''' מתקיים <math>\Delta(f) = \left(\frac14 - \nu^2\right)f</math>, ולפי ההגדרה <math>a_n(y) = \int_0^1f(x + iy)e^{-2\pi inx}\,dx</math>. לכן
+:<math>\begin{align}
+\left(\tfrac14 - \nu^2\right)a_n(y) &= \int_0^1(\Delta f)(x + iy)e^{-2\pi inx}\,dx \\
+&= -y^2\left(\int_0^1\frac{\partial^2f}{\partial x^2}(x + iy)e^{-2\pi inx}\,dx + \int_0^1\frac{\partial^2f}{\partial y^2}(x + iy)e^{-2\pi inx}\,dx\right) \\
+&= -y^2(2\pi in)^2a_n(y) - y^2\frac{\partial^2}{\partial y^2}a_n(y) = 4\pi^2n^2y^2a_n(y) - y^2\frac{\partial^2}{\partial y^2}a_n(y).
+\end{align}</math>
+כאן השתמשנו בכך שמקדם פורייה ה-<math>n</math>-י של <math>\frac{\partial^2f}{\partial x^2}</math> הוא <math>(2\pi in)^2a_n(y)</math>, ובמחובר השני החלפנו את סדר האינטגרציה והגזירה, מה שמותר כי <math>f</math> חלקה. מתקבלת [[משוואה דיפרנציאלית לינארית]] מסדר שני:
+:<math>y^2\frac{\partial^2}{\partial y^2}a_n(y) + \left(\tfrac14 - \nu^2 - 4\pi^2n^2y^2\right)a_n(y) = 0.</math>
+{{הערה|1=בערך האנגלי המקדם במשוואה הזו כתוב <math>4\pi n^2y^2</math>, במקום <math>4\pi^2n^2y^2</math> שמתקבל מהשורה הקודמת. בדקנו בחישוב מספרי שהפונקציה <math>\sqrt y\,K_\nu(2\pi|n|y)</math> פותרת את המשוואה עם <math>4\pi^2</math> (בדיוק של 20 ספרות), ואינה פותרת אותה עם <math>4\pi</math>.|כיווון=שמאל}}
+עבור <math>n = 0</math> אפשר להראות שלכל פתרון יש מקדמים יחידים <math>c_0, d_0</math> עם <math>a_0(y) = c_0y^{\frac12 - \nu} + d_0y^{\frac12 + \nu}</math>. עבור <math>n \ne 0</math>, לכל פתרון יש מקדמים יחידים <math>c_n, d_n</math> עם
+:<math>a_n(y) = c_n\sqrt y\,K_\nu(2\pi|n|y) + d_n\sqrt y\,I_\nu(2\pi|n|y),</math>
+כאשר <math>K_\nu, I_\nu</math> פונקציות בסל. פונקציות בסל <math>I_\nu</math> גדלות מעריכית, ואילו <math>K_\nu</math> דועכות מעריכית. יחד עם תנאי הגידול הפולינומי (3) מקבלים <math>d_n = 0</math>, כלומר <math>a_n(y) = c_n\sqrt y\,K_\nu(2\pi|n|y)</math>. <math>\blacksquare</math>
+
+'''תבניות מאס זוגיות ואי-זוגיות.''' יהי <math>i(z) := -\bar z</math>. אז <math>i</math> פועלת על כל פונקציה <math>f: \mathcal H \to \mathbb C</math> על ידי <math>i(f) := f(i(z))</math>, ומתחלפת עם הלפלסיאן ההיפרבולי. תבנית מאס <math>f</math> נקראת '''זוגית''' אם <math>i(f) = f</math>, ו'''אי-זוגית''' אם <math>i(f) = -f</math>. אם <math>f</math> תבנית מאס, אז <math>\tfrac12(f + i(f))</math> זוגית, <math>\tfrac12(f - i(f))</math> אי-זוגית, ו-<math>f</math> היא סכומן.
+
+=== פונקציית ה-L של תבנית מאס ===
+תהי
+:<math>f(x + iy) = \sum_{n\ne0}c_n\sqrt y\,K_\nu(2\pi|n|y)e^{2\pi inx}</math>
+תבנית שפיץ של מאס. מגדירים את [[פונקציית L|פונקציית ה-L]] של <math>f</math> כ-
+:<math>L(s, f) = \sum_{n=1}^\infty c_nn^{-s}.</math>
+הטור <math>L(s, f)</math> מתכנס עבור <math>\operatorname{Re}(s) \gt \frac32</math>, ואפשר להמשיך אותו לפונקציה שלמה על <math>\mathbb C</math>. אם <math>f</math> זוגית או אי-זוגית, נגדיר
+:<math>\Lambda(s, f) := \pi^{-s}\Gamma\left(\frac{s + \varepsilon + \nu}2\right)\Gamma\left(\frac{s + \varepsilon - \nu}2\right)L(s, f),</math>
+כאשר <math>\varepsilon = 0</math> אם <math>f</math> זוגית ו-<math>\varepsilon = 1</math> אם <math>f</math> אי-זוגית. אז <math>\Lambda</math> מקיימת את המשוואה הפונקציונלית
+:<math>\Lambda(s, f) = (-1)^\varepsilon\Lambda(1 - s, f).</math>
+{{הערה|1=בערך האנגלי נכתב <math>\varepsilon = -1</math> לתבנית אי-זוגית. גורמי הגמא הנכונים לתבנית אי-זוגית הם <math>\Gamma\left(\frac{s + 1 \pm \nu}2\right)</math> (שבאים מהתמרת מלין של <math>y\frac{\partial}{\partial x}f</math>, או, באופן שקול, מהגורם <math>\operatorname{sgn}(n)</math> במקדמים), כלומר <math>\varepsilon = 1</math>; הסימן במשוואה הפונקציונלית, <math>(-1)^\varepsilon</math>, זהה בשתי הבחירות.|כיווון=שמאל}}
+
+== דוגמה: טור אייזנשטיין הלא-הולומורפי ==
+'''טור אייזנשטיין הלא-הולומורפי''' מוגדר עבור <math>z = x + iy \in \mathcal H</math> ו-<math>s \in \mathbb C</math> כ-
+:<math>E(z, s) := \pi^{-s}\Gamma(s)\frac12\sum_{(m,n)\ne(0,0)}\frac{y^s}{|mz + n|^{2s}},</math>
+כאשר <math>\Gamma(s)</math> היא [[פונקציית גמא]]. הטור מתכנס בהחלט ב-<math>z \in \mathcal H</math> עבור <math>\operatorname{Re}(s) \gt 1</math>, ובמידה שווה מקומית ב-<math>\mathcal H \times \{\operatorname{Re}(s) \gt 1\}</math>, כי אפשר להראות שהטור
+:<math>S(z, s) := \sum_{(m,n)\ne(0,0)}\frac1{|mz + n|^s}</math>
+מתכנס בהחלט ב-<math>z \in \mathcal H</math> אם <math>\operatorname{Re}(s) \gt 2</math>; ליתר דיוק, הוא מתכנס במידה שווה על כל קבוצה <math>K \times \{\operatorname{Re}(s) \ge \alpha\}</math>, עבור <math>K \subset \mathcal H</math> קומפקטית ו-<math>\alpha \gt 2</math>.
+
+=== E היא תבנית מאס ===
+נראה רק את האינווריאנטיות תחת <math>\mathrm{SL}_2(\mathbb Z)</math> ואת המשוואה הדיפרנציאלית. הוכחה של החלקות אפשר למצוא אצל דייטמר או באמפ, ותנאי הגידול נובע מפיתוח פורייה של טור אייזנשטיין.
+
+יהי <math>\Gamma_\infty := \pm\left(\begin{smallmatrix} 1 & \mathbb Z \\ 0 & 1\end{smallmatrix}\right)</math> המייצב של <math>\infty</math> תחת הפעולה של <math>\mathrm{SL}_2(\mathbb Z)</math> על <math>\mathcal H \cup \{\infty\}</math>.
+
+'''טענה.''' <math>E</math> אינווריאנטית תחת <math>\Gamma(1)</math>.
+
+'''הוכחה.''' נגדיר
+:<math>\tilde E(z, s) := \sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\operatorname{Im}(\gamma z)^s.</math>
+(א) <math>\tilde E</math> מתכנסת בהחלט ב-<math>z \in \mathcal H</math> עבור <math>\operatorname{Re}(s) \gt 1</math>, ו-<math>E(z, s) = \pi^{-s}\Gamma(s)\zeta(2s)\tilde E(z, s)</math>. כיוון ש-<math>\operatorname{Im}(\gamma z) = \frac{\operatorname{Im}(z)}{|cz + d|^2}</math> עבור <math>\gamma = \left(\begin{smallmatrix} a & b \\ c & d\end{smallmatrix}\right) \in \Gamma(1)</math>, מקבלים
+:<math>\tilde E(z, s) = \sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\operatorname{Im}(\gamma z)^s = \sum_{(c,d)=1,\ \bmod\pm1}\frac{y^s}{|cz + d|^{2s}},</math>
+וזה מוכיח את ה[[התכנסות בהחלט]] עבור <math>\operatorname{Re}(s) \gt 1</math>. יתרה מזו,
+:<math>\zeta(2s)\tilde E(z, s) = \sum_{n=1}^\infty n^{-2s}\sum_{(c,d)=1,\ \bmod\pm1}\frac{y^s}{|cz + d|^{2s}} = \sum_{n=1}^\infty\sum_{(c,d)=1,\ \bmod\pm1}\frac{y^s}{|ncz + nd|^{2s}} = \frac12\sum_{(m,n)\ne(0,0)}\frac{y^s}{|mz + n|^{2s}},</math>
+כי ההעתקה <math>(n, (x, y)) \mapsto (nx, ny)</math> מ-<math>\mathbb N \times \{(x, y) \in \mathbb Z^2\setminus\{(0,0)\} : \gcd(x, y) = 1\}</math> ל-<math>\mathbb Z^2\setminus\{(0,0)\}</math> היא התאמה חד-חד-ערכית ועל (והגורם <math>\tfrac12</math> מתאים לזיהוי <math>\pm(c, d)</math>). מכאן (א).{{הערה|1=בערך האנגלי הטור בשוויון הזה כתוב עם <math>n^{-s}</math> ובלי הגורם <math>\tfrac12</math>; כיוון ש-<math>|ncz + nd|^{-2s} = n^{-2s}|cz + d|^{-2s}</math> ו-<math>\zeta(2s) = \sum_n n^{-2s}</math>, המקדם הנכון הוא <math>n^{-2s}</math>, והגורם <math>\tfrac12</math> נדרש כדי שהשוויון <math>E = \pi^{-s}\Gamma(s)\zeta(2s)\tilde E</math> יתאים להגדרה של <math>E</math>.|כיווון=שמאל}}
+
+(ב) <math>E(\gamma z, s) = E(z, s)</math> לכל <math>\gamma \in \Gamma(1)</math>: עבור <math>\tilde\gamma \in \Gamma(1)</math>,
+:<math>\tilde E(\tilde\gamma z, s) = \sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\operatorname{Im}(\gamma\tilde\gamma z)^s = \sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\operatorname{Im}(\gamma z)^s = \tilde E(z, s),</math>
+כי <math>\gamma \mapsto \gamma\tilde\gamma</math> מתמירה את הקוסטים. יחד עם (א), גם <math>E</math> אינווריאנטית תחת <math>\Gamma(1)</math>. <math>\blacksquare</math>
+
+'''טענה.''' <math>E</math> פונקציה עצמית של אופרטור לפלס ההיפרבולי.
+
+לשם כך צריך את הלמה הבאה: '''<math>\Delta</math> מתחלף עם הפעולה של <math>G</math> על <math>C^\infty(\mathcal H)</math>''', כלומר <math>L_g\Delta = \Delta L_g</math> לכל <math>g \in G</math>. ההוכחה: החבורה <math>\mathrm{SL}_2(\mathbb R)</math> נוצרת על ידי איברים מהצורות
+:<math>\begin{pmatrix} a & 0 \\ 0 & \frac1a\end{pmatrix},\ a \in \mathbb R^\times; \qquad \begin{pmatrix} 1 & x \\ 0 & 1\end{pmatrix},\ x \in \mathbb R; \qquad S = \begin{pmatrix} 0 & -1 \\ 1 & 0\end{pmatrix},</math>
+ובודקים את הטענה ישירות ליוצרים האלה.
+
+כיוון ש-<math>E(z, s) = \pi^{-s}\Gamma(s)\zeta(2s)\tilde E(z, s)</math>, מספיק להראות את המשוואה הדיפרנציאלית עבור <math>\tilde E</math>. מתקיים
+:<math>\Delta(\operatorname{Im}(z)^s) = \Delta(y^s) = -y^2\left(\frac{\partial^2y^s}{\partial x^2} + \frac{\partial^2y^s}{\partial y^2}\right) = s(1 - s)y^s,</math>
+וכיוון שהלפלסיאן מתחלף עם הפעולה של <math>\Gamma(1)</math>, <math>\Delta(\operatorname{Im}(\gamma z)^s) = s(1 - s)\operatorname{Im}(\gamma z)^s</math> לכל <math>\gamma</math>, ולכן
+:<math>\Delta\tilde E(z, s) = s(1 - s)\tilde E(z, s).</math>
+כך המשוואה הדיפרנציאלית מתקיימת עבור <math>E</math> בתחום ההתכנסות (בערך האנגלי מוזכר התחום <math>\operatorname{Re}(s) \gt 3</math>, שבו קל להצדיק את הגזירה איבר-איבר). כדי לקבל את הטענה לכל <math>s \in \mathbb C</math>, מתבוננים בפונקציה <math>\Delta E(z, s) - s(1 - s)E(z, s)</math>: חישוב מפורש של פיתוח פורייה שלה מראה שהיא [[פונקציה מרומורפית|מרומורפית]] ב-<math>s</math>, וכיוון שהיא מתאפסת בחצי מישור, לפי [[משפט היחידות לפונקציות אנליטיות|משפט היחידות]] היא פונקציית האפס.
+
+=== פיתוח פורייה של E ===
+לטור אייזנשטיין הלא-הולומורפי יש פיתוח פורייה
+:<math>E(z, s) = \sum_{n=-\infty}^\infty a_n(y, s)e^{2\pi inx},</math>
+כאשר
+:<math>\begin{align}
+a_0(y, s) &= \pi^{-s}\Gamma(s)\zeta(2s)y^s + \pi^{s-1}\Gamma(1 - s)\zeta(2(1 - s))y^{1-s}, \\
+a_n(y, s) &= 2|n|^{s - \frac12}\sigma_{1-2s}(|n|)\sqrt y\,K_{s - \frac12}(2\pi|n|y), \qquad n \ne 0.
+\end{align}</math>
+(בדקנו את הפיתוח בחישוב מספרי מול הסכום הכפול, ב-<math>z = 0.2 + 1.1i</math> ו-<math>s = 2.5</math>.) עבור <math>z \in \mathcal H</math>, ל-<math>E(z, s)</math> יש המשכה מרומורפית לכל <math>\mathbb C</math>, והיא הולומורפית פרט לקטבים פשוטים ב-<math>s = 0, 1</math>. טור אייזנשטיין מקיים את המשוואה הפונקציונלית
+:<math>E(z, s) = E(z, 1 - s)</math>
+לכל <math>z \in \mathcal H</math> (רואים זאת ישירות מהפיתוח: <math>a_0</math> סימטרי, ו-<math>|n|^{s-1/2}\sigma_{1-2s}(|n|) = |n|^{1/2-s}\sigma_{2s-1}(|n|)</math> ו-<math>K_{-\nu} = K_\nu</math>). באופן מקומי במידה שווה ב-<math>x \in \mathbb R</math> מתקיים תנאי הגידול
+:<math>E(x + iy, s) = O(y^\sigma), \qquad \sigma = \max(\operatorname{Re}(s), 1 - \operatorname{Re}(s)).</math>
+ההמשכה המרומורפית של <math>E</math> חשובה מאוד בתורה הספקטרלית של אופרטור לפלס ההיפרבולי.
+
+== תבניות מאס ממשקל k ==
+=== תת-חבורות קונגרואנציה ===
+עבור <math>N \in \mathbb N</math>, יהי <math>\Gamma(N)</math> הגרעין של ההטלה הקנונית <math>\mathrm{SL}_2(\mathbb Z) \to \mathrm{SL}_2(\mathbb Z/N\mathbb Z)</math>, [[תת-חבורת קונגרואנציה|תת-חבורת הקונגרואנציה הראשית]] מרמה <math>N</math>. תת-חבורה <math>\Gamma \subseteq \mathrm{SL}_2(\mathbb Z)</math> נקראת תת-חבורת קונגרואנציה אם יש <math>N</math> כך ש-<math>\Gamma(N) \subseteq \Gamma</math>. כל תת-חבורות הקונגרואנציה בדידות.
+
+יהי <math>\overline{\Gamma(1)} := \Gamma(1)/\{\pm1\}</math>, ולתת-חבורת קונגרואנציה <math>\Gamma</math> תהי <math>\overline\Gamma</math> תמונתה ב-<math>\overline{\Gamma(1)}</math>. אם <math>S</math> מערכת נציגים של <math>\overline\Gamma\backslash\overline{\Gamma(1)}</math>, אז
+:<math>SD = \bigcup_{\gamma\in S}\gamma D</math>
+הוא תחום יסודי של <math>\Gamma</math> (כאשר <math>D</math> תחום יסודי של <math>\Gamma(1)</math>). הקבוצה <math>S</math> נקבעת באופן יחיד על ידי התחום היסודי <math>SD</math>, והיא סופית. הנקודות <math>\gamma\infty</math>, <math>\gamma \in S</math>, נקראות החודים של התחום היסודי <math>SD</math>; הן תת-קבוצה של <math>\mathbb Q \cup \{\infty\}</math>. לכל חוד <math>c</math> יש <math>\sigma \in \Gamma(1)</math> עם <math>\sigma\infty = c</math>.
+
+=== תבניות מאס ממשקל k ===
+תהי <math>\Gamma</math> תת-חבורת קונגרואנציה ו-<math>k \in \mathbb Z</math>. נגדיר את אופרטור לפלס ההיפרבולי ממשקל <math>k</math>:
+:<math>\Delta_k = -y^2\left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}\right) + iky\frac\partial{\partial x}.</math>
+זו הכללה של <math>\Delta_0 = \Delta</math>. נגדיר פעולה של <math>\mathrm{SL}_2(\mathbb R)</math> על <math>C^\infty(\mathcal H)</math> על ידי
+:<math>f_{\|k}g(z) := \left(\frac{cz + d}{|cz + d|}\right)^{-k}f(gz), \qquad g = \begin{pmatrix} * & * \\ c & d\end{pmatrix} \in \mathrm{SL}_2(\mathbb R).</math>
+אפשר להראות ש-<math>(\Delta_kf)_{\|k}g = \Delta_k(f_{\|k}g)</math> לכל <math>f</math>, <math>k</math> ו-<math>g</math>. לכן <math>\Delta_k</math> פועל על המרחב
+:<math>C^\infty(\Gamma\backslash\mathcal H, k) := \{f \in C^\infty(\mathcal H) : f_{\|k}\gamma = f\ \forall\gamma \in \Gamma\}.</math>
+
+'''הגדרה.''' '''תבנית מאס''' ממשקל <math>k \in \mathbb Z</math> ביחס ל-<math>\Gamma</math> היא פונקציה <math>f \in C^\infty(\Gamma\backslash\mathcal H, k)</math> שהיא פונקציה עצמית של <math>\Delta_k</math> ובעלת גידול מתון בחודים.
+
+צריך להבהיר מהו גידול מתון בחודים. <math>\infty</math> הוא חוד של <math>\Gamma</math>, ופונקציה <math>f \in C^\infty(\Gamma\backslash\mathcal H, k)</math> היא בעלת גידול מתון ב-<math>\infty</math> אם <math>f(x + iy)</math> חסומה על ידי פולינום ב-<math>y</math> כאשר <math>y \to \infty</math>. יהי <math>c \in \mathbb Q</math> חוד אחר; אז יש <math>\theta \in \mathrm{SL}_2(\mathbb Z)</math> עם <math>\theta(\infty) = c</math>. יהי <math>f' := f_{\|k}\theta</math>; אז <math>f' \in C^\infty(\Gamma'\backslash\mathcal H, k)</math>, כאשר <math>\Gamma' = \theta^{-1}\Gamma\theta</math>. אומרים ש-<math>f</math> בעלת גידול מתון בחוד <math>c</math> אם <math>f'</math> בעלת גידול מתון ב-<math>\infty</math>.
+
+'''הגדרה.''' אם <math>\Gamma</math> מכילה תת-חבורת קונגרואנציה ראשית מרמה <math>N</math>, אומרים ש-<math>f</math> '''קוספידלית''' באינסוף אם
+:<math>\int_0^Nf(z + u)\,du = 0 \quad \text{לכל } z \in \mathcal H.</math>
+<math>f</math> קוספידלית בחוד <math>c</math> אם <math>f'</math> קוספידלית באינסוף, ו-<math>f</math> היא '''תבנית שפיץ''' אם היא קוספידלית בכל חוד.
+
+'''דוגמה.''' תהי <math>g: \mathcal H \to \mathbb C</math> תבנית מודולרית ממשקל זוגי <math>k</math> ביחס ל-<math>\Gamma(1)</math>. אז <math>f(z) := y^{k/2}g(z)</math> היא תבנית מאס ממשקל <math>k</math> ביחס ל-<math>\Gamma(1)</math>: אכן <math>\operatorname{Im}(\gamma z)^{k/2} = y^{k/2}|cz + d|^{-k}</math>, ולכן <math>f(\gamma z) = \left(\frac{cz + d}{|cz + d|}\right)^kf(z)</math>; והערך העצמי הוא <math>\Delta_kf = \frac k2\left(1 - \frac k2\right)f</math>. (בדקנו זאת בחישוב מספרי עבור <math>g = E_4</math>, שם הערך העצמי הוא <math>-2</math>.)
+
+=== הבעיה הספקטרלית ===
+תהי <math>\Gamma</math> תת-חבורת קונגרואנציה, ויהי <math>L^2(\Gamma\backslash\mathcal H, k)</math> המרחב של כל הפונקציות המדידות <math>f: \mathcal H \to \mathbb C</math> עם <math>f_{\|k}\gamma = f</math> לכל <math>\gamma \in \Gamma</math> ו-
+:<math>\|f\|^2 := \int_{\Gamma\backslash\mathcal H}|f(z)|^2\,d\mu(z) \lt \infty,</math>
+מודולו פונקציות עם <math>\|f\| = 0</math>. האינטגרל מוגדר היטב, כי <math>|f(z)|^2</math> אינווריאנטית תחת <math>\Gamma</math>. זהו [[מרחב הילברט]] עם המכפלה הפנימית
+:<math>\langle f, g\rangle = \int_{\Gamma\backslash\mathcal H}f(z)\overline{g(z)}\,d\mu(z).</math>
+את האופרטור <math>\Delta_k</math> אפשר להגדיר על תת-מרחב <math>B \subset L^2(\Gamma\backslash\mathcal H, k) \cap C^\infty(\Gamma\backslash\mathcal H, k)</math> שצפוף ב-<math>L^2(\Gamma\backslash\mathcal H, k)</math>. שם <math>\Delta_k</math> הוא [[אופרטור סימטרי]] חצי-מוגדר חיובי, ואפשר להראות שיש לו הרחבה צמודה לעצמה יחידה ל-<math>L^2(\Gamma\backslash\mathcal H, k)</math>.
+
+נסמן ב-<math>C(\Gamma\backslash\mathcal H, k)</math> את מרחב כל תבניות השפיץ ב-<math>L^2(\Gamma\backslash\mathcal H, k) \cap C^\infty(\Gamma\backslash\mathcal H, k)</math>. אז <math>\Delta_k</math> פועל על <math>C(\Gamma\backslash\mathcal H, k)</math> ויש לו שם [[ספקטרום בדיד]]. לספקטרום ששייך למשלים האורתוגונלי יש חלק רציף, שאפשר לתאר בעזרת טורי אייזנשטיין לא-הולומורפיים (מתוקנים), ההמשכות המרומורפיות שלהם והשאריות שלהם (ראו באמפ או איוונייץ).
+
+אם <math>\Gamma</math> תת-חבורה בדידה (חסרת פיתול) של <math>\mathrm{SL}_2(\mathbb R)</math> כך שהמנה <math>\Gamma\backslash\mathcal H</math> קומפקטית, הבעיה הספקטרלית פשוטה יותר, כי לתת-חבורה בדידה קו-קומפקטית אין חודים. במקרה הזה כל המרחב <math>L^2(\Gamma\backslash\mathcal H, k)</math> הוא סכום של מרחבים עצמיים.
+
+=== שיכון במרחב <math>L^2(\Gamma\backslash G)</math> ===
+<math>G = \mathrm{SL}_2(\mathbb R)</math> היא [[חבורה קומפקטית מקומית]] ו[[חבורה אונימודולרית|אונימודולרית]] עם הטופולוגיה של <math>\mathbb R^4</math>. תהי <math>\Gamma</math> תת-חבורת קונגרואנציה. כיוון ש-<math>\Gamma</math> בדידה ב-<math>G</math>, היא גם סגורה ב-<math>G</math>. החבורה <math>G</math> אונימודולרית, וכיוון שמידת המנייה היא [[מידת האר]] על החבורה הבדידה <math>\Gamma</math>, גם <math>\Gamma</math> אונימודולרית. לפי נוסחת האינטגרל של המנה, יש על המרחב הקומפקטי המקומי <math>\Gamma\backslash G</math> מידת ראדון <math>dx</math> שאינווריאנטית מימין תחת <math>G</math>. יהי <math>L^2(\Gamma\backslash G)</math> מרחב <math>L^2</math> המתאים. המרחב הזה מתפרק לסכום ישר של מרחבי הילברט:
+:<math>L^2(\Gamma\backslash G) = \bigoplus_{k\in\mathbb Z}L^2(\Gamma\backslash G, k),</math>
+כאשר
+:<math>L^2(\Gamma\backslash G, k) := \left\{\phi \in L^2(\Gamma\backslash G) \;\middle|\; \phi(xk_\theta) = e^{ik\theta}\phi(x)\ \forall x \in \Gamma\backslash G,\ \forall\theta \in \mathbb R\right\}, \qquad k_\theta = \begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix} \in \mathrm{SO}(2).</math>
+את מרחב הילברט <math>L^2(\Gamma\backslash\mathcal H, k)</math> אפשר לשכן באופן איזומטרי ב-<math>L^2(\Gamma\backslash G, k)</math>, על ידי ההעתקה <math>\psi_k(f)(g) := f_{\|k}g(i)</math>. לכן אפשר לחשוב על כל תבניות השפיץ של מאס ביחס לתת-חבורת הקונגרואנציה <math>\Gamma</math> כעל איברים של <math>L^2(\Gamma\backslash G)</math>.
+
+<math>L^2(\Gamma\backslash G)</math> הוא מרחב הילברט שעליו פועלת החבורה <math>G</math> ב[[הצגה רגולרית|הצגה הרגולרית הימנית]]:
+:<math>R_g\phi := \phi(xg), \qquad x \in \Gamma\backslash G,\ \phi \in L^2(\Gamma\backslash G).</math>
+קל להראות ש-<math>R</math> היא [[הצגה אוניטרית]] של <math>G</math> על <math>L^2(\Gamma\backslash G)</math>. מעוניינים בפירוק שלה לתת-הצגות אי-פריקות. זה אפשרי רק אם <math>\Gamma</math> קו-קומפקטית; אחרת יש גם חלק של אינטגרל הילברט רציף. העניין הוא שהפתרון של הבעיה הזו פותר גם את הבעיה הספקטרלית של תבניות מאס (ראו באמפ, פרק 2.3).
+
+== תבניות שפיץ של מאס ==
+'''תבנית שפיץ של מאס''', מקרה פרטי של תבנית מאס, היא פונקציה על חצי המישור העליון שמתנהגת כמו תבנית מודולרית אבל אינה חייבת להיות הולומורפית.
+
+=== הגדרה ===
+יהי <math>k</math> שלם, <math>s</math> מספר מרוכב, ו-<math>\Gamma</math> תת-חבורה בדידה של <math>\mathrm{SL}_2(\mathbb R)</math>. '''תבנית מאס''' ממשקל <math>k</math> ביחס ל-<math>\Gamma</math> עם ערך עצמי <math>s</math> של הלפלסיאן היא פונקציה חלקה מחצי המישור העליון למספרים המרוכבים שמקיימת:
+* לכל <math>\gamma = \left(\begin{smallmatrix} a & b \\ c & d\end{smallmatrix}\right) \in \Gamma</math> ולכל <math>z \in \mathcal H</math>: <math>f\left(\frac{az + b}{cz + d}\right) = \left(\frac{cz + d}{|cz + d|}\right)^kf(z)</math>;
+* <math>\Delta_kf = sf</math>, כאשר <math>\Delta_k</math> הלפלסיאן ההיפרבולי ממשקל <math>k</math> שהוגדר למעלה;
+* ל-<math>f</math> יש לכל היותר גידול פולינומי ב[[תבנית שפיץ|חודים]].
+'''[[תבנית מאס הרמונית|תבנית מאס חלשה]]''' מוגדרת באופן דומה, אבל התנאי השלישי מוחלף ב"ל-<math>f</math> יש לכל היותר גידול מעריכי-לינארי בחודים". בנוסף, <math>f</math> נקראת '''הרמונית''' אם הלפלסיאן מאפס אותה.
+
+=== תוצאות עיקריות ===
+תהי <math>f</math> תבנית שפיץ של מאס ממשקל 0. מקדם פורייה המנורמל שלה בראשוני <math>p</math> חסום על ידי <math>p^{7/64} + p^{-7/64}</math>. המשפט הוא של הנרי קים ו[[פיטר סרנק]], והוא קירוב ל[[השערת רמנוג'אן–פטרסון]] (שצופה את החסם <math>2</math>).
+
+=== ממדים גבוהים יותר ===
+אפשר לראות תבניות שפיץ של מאס כתבניות אוטומורפיות על <math>\mathrm{GL}(2)</math>. טבעי להגדיר תבניות שפיץ של מאס על <math>\mathrm{GL}(n)</math> כתבניות אוטומורפיות ספריות על <math>\mathrm{GL}(n)</math> מעל שדה המספרים הרציונליים. את קיומן הוכיחו מילר, מילר (Müller) ואחרים.
+
+== הצגות אוטומורפיות של חבורת האדלים ==
+=== החבורה <math>\mathrm{GL}_2(\mathbb A)</math> ===
+יהי <math>R</math> חוג קומוטטיבי עם יחידה, ותהי <math>G_R := \mathrm{GL}_2(R)</math> חבורת המטריצות <math>2\times2</math> עם מקדמים ב-<math>R</math> ודטרמיננטה הפיכה. יהי <math>\mathbb A = \mathbb A_{\mathbb Q}</math> [[חוג האדלים]] הרציונליים, <math>\mathbb A_{\text{fin}}</math> חוג האדלים הסופיים, ולכל ראשוני <math>p</math> יהי <math>\mathbb Q_p</math> שדה [[מספר p-אדי|המספרים ה-<math>p</math>-אדיים]] ו-<math>\mathbb Z_p</math> חוג השלמים ה-<math>p</math>-אדיים. נסמן <math>G_p := G_{\mathbb Q_p}</math>. גם <math>G_p</math> וגם <math>G_{\mathbb R}</math> הן חבורות קומפקטיות מקומית ואונימודולריות, עם טופולוגיות תת-המרחב של <math>\mathbb Q_p^4</math> ו-<math>\mathbb R^4</math>. אז
+:<math>G_{\text{fin}} := G_{\mathbb A_{\text{fin}}} \cong {\prod_{p\lt\infty}}'G_p,</math>
+כאשר אגף ימין הוא ה[[מכפלה מוגבלת|מכפלה המוגבלת]] ביחס לתת-החבורות הקומפקטיות-פתוחות <math>K_p := G_{\mathbb Z_p}</math>, ו-<math>G_{\text{fin}}</math> חבורה קומפקטית מקומית עם טופולוגיית המכפלה המוגבלת. החבורה <math>G_{\mathbb A}</math> איזומורפית ל-<math>G_{\text{fin}}\times G_{\mathbb R}</math>, והיא קומפקטית מקומית עם טופולוגיית המכפלה.
+
+יהי <math>\widehat{\mathbb Z} = \prod_{p\lt\infty}\mathbb Z_p</math>. תת-החבורה <math>G_{\widehat{\mathbb Z}} := \prod_{p\lt\infty}K_p</math> היא תת-חבורה קומפקטית-פתוחה מקסימלית של <math>G_{\text{fin}}</math>, ואפשר לראות בה תת-חבורה של <math>G_{\mathbb A}</math> דרך השיכון <math>x_{\text{fin}} \mapsto (x_{\text{fin}}, 1_\infty)</math>. נסמן ב-<math>Z_{\mathbb R}</math> את המרכז של <math>G_\infty</math>, כלומר את חבורת המטריצות האלכסוניות <math>\left(\begin{smallmatrix}\lambda & \\ & \lambda\end{smallmatrix}\right)</math>, <math>\lambda \in \mathbb R^\times</math>, ונחשוב עליה כתת-חבורה של <math>G_{\mathbb A}</math> דרך <math>z \mapsto (1_{G_{\text{fin}}}, z)</math>.
+
+החבורה <math>G_{\mathbb Q}</math> משוכנת באלכסון ב-<math>G_{\mathbb A}</math>; זה אפשרי כי לארבעת המקדמים של <math>x \in G_{\mathbb Q}</math> יש רק מספר סופי של מחלקים ראשוניים במכנים, ולכן <math>x \in K_p</math> לכל <math>p</math> פרט למספר סופי. תהי <math>G^1_{\mathbb A}</math> חבורת כל <math>x \in G_{\mathbb A}</math> עם <math>|\det(x)| = 1</math> (הערך המוחלט של אידל). קל לחשב ש-<math>G_{\mathbb Q}</math> תת-חבורה של <math>G^1_{\mathbb A}</math> (לפי [[נוסחת המכפלה]]). בעזרת ההעתקה החד-חד-ערכית <math>G^1_{\mathbb A} \hookrightarrow G_{\mathbb A}</math> אפשר לזהות את <math>G_{\mathbb Q}\backslash G^1_{\mathbb A}</math> עם <math>G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A}</math>.
+
+<math>G_{\mathbb Q}</math> צפופה ב-<math>G_{\text{fin}}</math> ובדידה ב-<math>G_{\mathbb A}</math>. המנה <math>G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A} = G_{\mathbb Q}\backslash G^1_{\mathbb A}</math> אינה קומפקטית, אבל מידת האר שלה סופית. לכן <math>G_{\mathbb Q}</math> סריג ב-<math>G^1_{\mathbb A}</math>, בדומה למקרה הקלאסי של החבורה המודולרית ב-<math>\mathrm{SL}_2(\mathbb R)</math>. מאנליזה הרמונית מקבלים גם ש-<math>G^1_{\mathbb A}</math> אונימודולרית.
+
+=== האדליזציה של תבניות שפיץ ===
+כעת רוצים לשכן את תבניות השפיץ הקלאסיות של מאס ממשקל 0 ביחס לחבורה המודולרית במרחב על <math>Z_{\mathbb R}G_{\mathbb Q}\backslash G_{\mathbb A}</math>. אפשר לעשות זאת בעזרת [[משפט הקירוב החזק]], שקובע שההעתקה
+:<math>\psi: G_{\mathbb Z}x_\infty \mapsto G_{\mathbb Q}(1, x_\infty)G_{\widehat{\mathbb Z}}</math>
+היא [[הומיאומורפיזם]] שמתחלף עם הפעולה של <math>G_{\mathbb R}</math>. כך מקבלים
+:<math>G_{\mathbb Z}\backslash G_{\mathbb R} \cong G_{\mathbb Q}\backslash G_{\mathbb A}/G_{\widehat{\mathbb Z}}, \qquad G_{\mathbb Z}Z_{\mathbb R}\backslash G_{\mathbb R} \cong G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A}/G_{\widehat{\mathbb Z}}.</math>
+את תבניות השפיץ של מאס ממשקל 0 ביחס לחבורה המודולרית אפשר לשכן ב-
+:<math>L^2(\mathrm{SL}_2(\mathbb Z)\backslash\mathrm{SL}_2(\mathbb R)) \cong L^2(\mathrm{GL}_2(\mathbb Z)Z_{\mathbb R}\backslash\mathrm{GL}_2(\mathbb R)),</math>
+ולפי משפט הקירוב החזק המרחב הזה איזומורפי באופן אוניטרי ל-
+:<math>L^2(G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A}/G_{\widehat{\mathbb Z}}) \cong L^2(G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A})^{G_{\widehat{\mathbb Z}}},</math>
+שהוא תת-מרחב של <math>L^2(G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A})</math>. באותו אופן אפשר לשכן את תבניות השפיץ ההולומורפיות הקלאסיות. בעזרת הכללה קלה של משפט הקירוב אפשר לשכן את כל תבניות השפיץ של מאס (וגם את תבניות השפיץ ההולומורפיות) מכל משקל וביחס לכל תת-חבורת קונגרואנציה ב-<math>L^2(G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A})</math>. קוראים ל-<math>L^2(G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A})</math> מרחב התבניות האוטומורפיות של חבורת האדלים.
+
+=== תבניות שפיץ של חבורת האדלים ===
+יהי <math>R</math> חוג, ותהי <math>N_R</math> חבורת כל המטריצות <math>\left(\begin{smallmatrix} 1 & r \\ & 1\end{smallmatrix}\right)</math>, <math>r \in R</math>; היא איזומורפית לחבורה החיבורית של <math>R</math>. פונקציה <math>f \in L^2(G_{\mathbb Q}\backslash G^1_{\mathbb A})</math> נקראת '''תבנית שפיץ''' אם
+:<math>\int_{N_{\mathbb Q}\backslash N_{\mathbb A}}f(nx)\,dn = 0</math>
+עבור כמעט כל <math>x \in G_{\mathbb Q}\backslash G^1_{\mathbb A}</math>. יהי <math>L^2_{\text{cusp}}(G_{\mathbb Q}\backslash G^1_{\mathbb A})</math> (או בקיצור <math>L^2_{\text{cusp}}</math>) מרחב תבניות השפיץ האלה. זהו תת-מרחב סגור של <math>L^2(G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A})</math>, אינווריאנטי תחת ההצגה הרגולרית הימנית של <math>G^1_{\mathbb A}</math>. שוב מעוניינים בפירוק של <math>L^2_{\text{cusp}}</math> לתת-מרחבים סגורים אי-פריקים, ויש את המשפט הבא:
+
+'''משפט.''' המרחב <math>L^2_{\text{cusp}}</math> מתפרק לסכום ישר של מרחבי הילברט אי-פריקים, עם ריבויים סופיים <math>N_{\text{cusp}}(\pi) \in \mathbb N_0</math>:
+:<math>L^2_{\text{cusp}} = \widehat{\bigoplus_{\pi\in\widehat G_{\mathbb A}}}N_{\text{cusp}}(\pi)\,\pi.</math>
+חישוב הריבויים <math>N_{\text{cusp}}(\pi)</math> הוא אחת הבעיות החשובות והקשות ביותר בתורת התבניות האוטומורפיות. (עבור <math>\mathrm{GL}_2</math> הריבויים הם 0 או 1, תוצאה שידועה כ"חד-ערכיות".)
+
+=== הצגות קוספידליות של חבורת האדלים ===
+הצגה אי-פריקה <math>\pi</math> של החבורה <math>G_{\mathbb A}</math> נקראת '''קוספידלית''' אם היא איזומורפית לתת-הצגה של <math>L^2_{\text{cusp}}</math>. הצגה אי-פריקה <math>\pi</math> של <math>G_{\mathbb A}</math> נקראת '''קבילה''' אם יש תת-חבורה קומפקטית <math>K \subset G_{\mathbb A}</math> כך שכל הצגה אי-פריקה של <math>K</math> מופיעה ב-<math>\pi|_K</math> בריבוי סופי. אפשר להראות שכל הצגה קוספידלית היא קבילה.
+
+הקבילות נדרשת כדי להפעיל את '''משפט מכפלת הטנזור''', שלפיו כל הצגה אי-פריקה, אוניטרית וקבילה של <math>G_{\mathbb A}</math> איזומורפית ל[[מכפלת טנזור אינסופית]]
+:<math>\bigotimes_{p\le\infty}\pi_p,</math>
+כאשר <math>\pi_p</math> הצגות אי-פריקות של החבורות <math>G_p</math>, וכמעט כולן לא מסועפות. (הצגה <math>\pi_p</math> של <math>G_p</math>, <math>p \lt \infty</math>, נקראת '''לא מסועפת''' אם המרחב <math>V_{\pi_p}^{K_p} = \{v \in V_{\pi_p} \mid \pi_p(k)v = v\ \forall k \in K_p\}</math> אינו מרחב האפס.) בנייה של מכפלת טנזור אינסופית אפשר למצוא אצל דייטמר, פרק 7.
+
+=== פונקציות L אוטומורפיות ===
+תהי <math>\pi</math> הצגה אי-פריקה, קבילה ואוניטרית של <math>G_{\mathbb A}</math>. לפי משפט מכפלת הטנזור, <math>\pi = \bigotimes_{p\le\infty}\pi_p</math>. תהי <math>S</math> קבוצה סופית של מקומות שמכילה את <math>\infty</math> ואת כל המקומות המסועפים. '''פונקציית הקה הגלובלית''' של <math>\pi</math> מוגדרת כ-
+:<math>L^S(s, \pi) := \prod_{p\notin S}L(s, \pi_p),</math>
+כאשר <math>L(s, \pi_p)</math> היא פונקציית L מקומית של ההצגה המקומית <math>\pi_p</math> (בנייה שלהן אפשר למצוא אצל דייטמר, פרק 8.2). אם <math>\pi</math> קוספידלית, ל-<math>L^S(s, \pi)</math> יש המשכה מרומורפית לכל <math>\mathbb C</math>, כי היא מקיימת משוואות פונקציונליות מסוימות.
+
+== ראו גם ==
+* [[תבנית מאס הרמונית]]
+* [[תבנית מודולרית מדומה]]
+* [[טור אייזנשטיין ממשי-אנליטי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. Bump, ''Automorphic Forms and Representations'', Cambridge Studies in Advanced Mathematics '''55''', Cambridge University Press, 1997
+* A. Deitmar, ''Automorphic Forms'', Universitext, Springer, 2012
+* H. Iwaniec, ''Spectral Methods of Automorphic Forms'', 2nd ed., Graduate Studies in Mathematics '''53''', AMS, 2002
+* W. Duke, J. B. Friedlander, H. Iwaniec, ''The subconvexity problem for Artin L-functions'', Inventiones Mathematicae '''149''' (2002), pp. 489–577
+* K. Bringmann, A. Folsom, ''Almost harmonic Maass forms and Kac–Wakimoto characters'', J. reine angew. Math. '''694''' (2014), pp. 179–202
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות אוטומורפיות]]
+[[קטגוריה:תבניות מודולריות]]
