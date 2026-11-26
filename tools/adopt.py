@@ -24,9 +24,14 @@ END = re.compile(r'^(== *(לקריאה נוספת|קישורים חיצוניי�
 done = []
 for o in orph:
     cands = [p for p in out[o] if p != o]
-    if not cands:
-        continue
-    p = max(cands, key=lambda p: (len(cats[o] & cats[p]), -len(out[p])))
+    if cands:
+        p = max(cands, key=lambda p: (len(cats[o] & cats[p]), -len(out[p])))
+    else:
+        # no outgoing local links: fall back to the article sharing most categories / title words
+        words = set(o.split())
+        p = max((p for p in ours if p != o), key=lambda p: (len(cats[o] & cats[p]), len(words & set(p.split())), -len(out[p])))
+        if not cats[o] & cats[p]:
+            continue
     s = txt[p]
     if '[[' + o + ']]' in s or '[[' + o + '|' in s:
         continue
