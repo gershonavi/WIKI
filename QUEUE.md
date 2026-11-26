@@ -211,7 +211,7 @@ Additive number theory:
 - [x] Thue equation
 - [x] Siegel's theorem on integral points
 - [x] Ramanujan–Nagell equation
-- [ ] Markov number
+- [x] Markov number
 - [ ] Coin problem
 - [ ] Chakravala method
 - [ ] Vieta jumping
