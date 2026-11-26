@@ -238,7 +238,7 @@ Additive number theory:
 - [x] Hurwitz's theorem (number theory)
 - [x] Roth's theorem
 - [x] Irrationality measure
-- [ ] Equidistributed sequence
+- [x] Equidistributed sequence
 - [ ] Equidistribution theorem
 - [ ] Kronecker's theorem
 - [ ] Three-gap theorem
