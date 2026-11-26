@@ -396,7 +396,7 @@ Additive number theory:
 - [x] Von Staudt–Clausen theorem
 - [x] Tate module
 - [x] Adele ring
-- [ ] Automorphic form
+- [x] Automorphic form
 - [x] Monstrous moonshine
 - [x] Chowla–Selberg formula
 - [x] Hecke L-function (דף פירושונים באנגלית; מכוסה ב-קרקטר של הקה ובתבנית מודולרית)
