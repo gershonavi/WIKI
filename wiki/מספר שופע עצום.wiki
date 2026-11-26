@@ -1,0 +1,86 @@
+ב[[תורת המספרים]], '''מספר שופע עצום''' (באנגלית: colossally abundant number, ולפעמים בקיצור CA) הוא [[מספר טבעי]] שיש לו, במובן מדויק מסוים, הרבה [[מחלק]]ים. ההגדרה מבוססת על היחס בין [[פונקציית סכום המחלקים|סכום המחלקים]] של שלם לבין השלם עצמו בחזקה מעט גדולה מ-1: לכל מעריך כזה, השלם שבו היחס מקסימלי הוא מספר שופע עצום. זו דרישה חזקה יותר מזו של [[מספר שופע-על]], אבל לא חזקה ממש יותר מזו של [[מספר שופע]].
+
+באופן פורמלי, מספר <math>n</math> נקרא שופע עצום אם יש <math>\varepsilon \gt 0</math> כך שלכל <math>k \gt 1</math>
+:<math>\frac{\sigma(n)}{n^{1+\varepsilon}}\geq\frac{\sigma(k)}{k^{1+\varepsilon}},</math>
+כאשר <math>\sigma</math> היא פונקציית סכום המחלקים.{{הערה|שם=briggs|1=<span dir="ltr">K. Briggs, Abundant numbers and the Riemann hypothesis, Experimental Mathematics 15:2 (2006), pp. 251–256.</span>|כיווון=שמאל}} כלומר, <math>n</math> משיג את הערך המקסימלי של <math>\frac{\sigma(k)}{k^{1+\varepsilon}}</math>.
+
+15 המספרים השופעים העצומים הראשונים, 2, 6, 12, 60, 120, 360, 2520, 5040, 55440, 720720, 1441440, 4324320, 21621600, 367567200, 6983776800 ({{OEIS|A004490}}), הם גם 15 ה[[מספר פריק עליון|מספרים הפריקים העליונים]] הראשונים, אבל אף אחת משתי הקבוצות אינה מוכלת בשנייה.
+
+== דוגמה מחושבת ==
+נבחר <math>\varepsilon = 0.3</math> ונחשב את <math>\sigma(k)/k^{1.3}</math> לכמה ערכים: עבור <math>k = 2</math> מקבלים <math>3/2^{1.3} \approx 1.218</math>; עבור <math>k = 6</math>: <math>12/6^{1.3} \approx 1.168</math>; עבור <math>k = 4</math>: <math>7/4^{1.3} \approx 1.155</math>; עבור <math>k = 12</math>: <math>28/12^{1.3} \approx 1.107</math>. בחיפוש על כל <math>k \lt 2000</math> המקסימום הוא ב-<math>k = 2</math>, ולכן 2 שופע עצום (עם <math>\varepsilon = 0.3</math>).
+
+כדי למצוא את כל המספרים השופעים העצומים אין צורך בחיפוש כזה. כשמוסיפים עוד גורם <math>p</math> ל-<math>p^{k-1}</math>, היחס <math>\sigma/n^{1+\varepsilon}</math> גדל פי <math>\frac{\sigma(p^k)}{\sigma(p^{k-1})}\cdot p^{-(1+\varepsilon)}</math>, וזה גדול מ-1 בדיוק כש-
+:<math>\varepsilon \lt \varepsilon_{p,k} = \log_p\frac{p^{k+1}-1}{p^k-1} - 1.</math>
+לכן המספר המקסימלי עבור <math>\varepsilon</math> נתון מכיל את <math>p^k</math> בדיוק כש-<math>\varepsilon \lt \varepsilon_{p,k}</math>. ערכי הסף הראשונים:
+{| class="wikitable" style="text-align:center"
+! הגורם שנוסף !! <math>\varepsilon_{p,k}</math> !! המספר השופע עצום מתחת לסף
+|-
+| <math>2</math> || 0.5850 || 2
+|-
+| <math>3</math> || 0.2619 || 6
+|-
+| <math>2^2</math> || 0.2224 || 12
+|-
+| <math>5</math> || 0.1133 || 60
+|-
+| <math>2^3</math> || 0.0995 || 120
+|-
+| <math>3^2</math> || 0.0729 || 360
+|-
+| <math>7</math> || 0.0686 || 2520
+|}
+למשל, עבור <math>\varepsilon = 0.2</math> (בין 0.1133 ל-0.2224) המספר השופע עצום הוא <math>2^2\cdot3 = 12</math>, ועבור <math>\varepsilon = 0.05</math> הוא <math>2^3\cdot3^2\cdot5\cdot7 = 2520</math>. (את כל הערכים בדקנו בחישוב.)
+
+זה בדיוק התיאור הבא: כמו במספרים הפריקים העליונים, יש בנייה אפקטיבית של קבוצת כל המספרים השופעים העצומים, דרך העתקה מונוטונית מהממשיים החיוביים. יהי
+:<math>e_p(\varepsilon) = \left\lfloor\frac{\ln\left(1+\frac{p-1}{p^{1+\varepsilon}-p}\right)}{\ln p}\right\rfloor</math>
+לכל [[מספר ראשוני|ראשוני]] <math>p</math> וממשי חיובי <math>\varepsilon</math>. אז
+:<math>s(\varepsilon) = \prod_{p} p^{e_p(\varepsilon)}</math>
+הוא מספר שופע עצום. (אכן, <math>1+\frac{p-1}{p^{1+\varepsilon}-p} = \frac{p^{1+\varepsilon}-1}{p^{1+\varepsilon}-p}</math>, ו-<math>e_p(\varepsilon) \ge k</math> שקול ל-<math>\varepsilon \lt \varepsilon_{p,k}</math>.)
+
+== היסטוריה ==
+מספרים שופעים עצומים נחקרו לראשונה על ידי [[סריניוואסה רמנוג'אן|רמנוג'אן]], והממצאים שלו נועדו להיכלל במאמרו מ-1915 על [[מספר פריק במיוחד|מספרים פריקים במיוחד]].{{הערה|1=<span dir="ltr">S. Ramanujan, Highly composite numbers, Proc. London Math. Soc. 14 (1915), pp. 347–407.</span>|כיווון=שמאל}} אלא שהמו"ל של כתב העת שאליו שלח רמנוג'אן את עבודתו, [[החברה המתמטית של לונדון]], היה אז בקשיים כלכליים, ורמנוג'אן הסכים להשמיט חלקים מהעבודה כדי להוזיל את ההדפסה.{{הערה|1=<span dir="ltr">S. Ramanujan, Collected Papers, Chelsea, 1962.</span>|כיווון=שמאל}} הממצאים שלו היו ברובם מותנים ב[[השערת רימן]], ובהנחה הזו הוא מצא חסמים עליונים ותחתונים לגודל המספרים השופעים העצומים, והוכיח שמה שייקרא לימים [[אי-שוויון רובין]] (ראו להלן) מתקיים לכל <math>n</math> גדול מספיק.{{הערה|1=<span dir="ltr">S. Ramanujan, Highly composite numbers, annotated and with a foreword by J.-L. Nicolas and G. Robin, Ramanujan Journal 1 (1997), pp. 119–153.</span>|כיווון=שמאל}}
+
+את המחלקה הזו בחנו מחדש, בצורה מעט חזקה יותר, [[לאונידס אלאוגלו]] ו[[פול ארדש]] במאמר מ-1944, שבו ניסו להרחיב את תוצאות רמנוג'אן.{{הערה|שם=AE|1=<span dir="ltr">L. Alaoglu, P. Erdős, On highly composite and similar numbers, Transactions of the American Mathematical Society 56 (1944), pp. 448–469.</span>|כיווון=שמאל}}
+
+== תכונות ==
+מספרים שופעים עצומים הם אחת מכמה מחלקות של שלמים שמנסות לתפוס את המושג "הרבה מחלקים". [[פאול בכמן]] הראה שבממוצע <math>\sigma(n)</math> הוא בערך <math>\pi^2 n / 6</math>.{{הערה|שם=HW|1=<span dir="ltr">G. H. Hardy, E. M. Wright, An Introduction to the Theory of Numbers, 5th ed., Oxford University Press, 1979.</span>|כיווון=שמאל}} [[משפט גרונוול]], לעומת זאת, אומר שהסדר המקסימלי של <math>\sigma(n)</math> גדול מעט יותר: יש סדרה עולה של שלמים <math>n</math> שעבורם <math>\sigma(n)</math> בערך בגודל <math>e^\gamma n\log\log n</math>, כאשר <math>\gamma</math> הוא [[קבוע אוילר–מסקרוני]].{{הערה|שם=HW}} לכן המספרים השופעים העצומים תופסים את המושג "הרבה מחלקים" בדרישה שהם ימקסמו, עבור <math>\varepsilon \gt 0</math> כלשהו, את ה[[פונקציה (מתמטיקה)|פונקציה]]
+:<math>\frac{\sigma(n)}{n^{1+\varepsilon}}</math>
+על פני כל הערכים של <math>n</math>. התוצאות של בכמן וגרונוול מבטיחות שלכל <math>\varepsilon \gt 0</math> לפונקציה הזו יש מקסימום, ושכש-<math>\varepsilon</math> שואף לאפס המקסימומים גדלים. לכן יש אינסוף מספרים שופעים עצומים, אף שהם דלילים למדי: רק 22 מהם קטנים מ-<math>10^{18}</math>{{הערה|שם=Lag|1=<span dir="ltr">J. C. Lagarias, An elementary problem equivalent to the Riemann hypothesis, American Mathematical Monthly 109 (2002), pp. 534–543.</span>|כיווון=שמאל}} (בדקנו בבנייה לפי ערכי הסף).
+
+לכל <math>\varepsilon</math> יש לפונקציה הנ"ל מקסימום, אבל לא ברור מאליו – ולמעשה לא נכון – שלכל <math>\varepsilon</math> המקסימום הזה מתקבל בשלם יחיד. אלאוגלו וארדש חקרו כמה ערכים שונים של <math>n</math> יכולים לתת את אותו ערך מקסימלי עבור <math>\varepsilon</math> נתון. הם הראו שעבור רוב ערכי <math>\varepsilon</math> יש שלם יחיד שממקסם את הפונקציה. מאוחר יותר הראו ארדש וז'אן-לואי ניקולא שעבור קבוצה בדידה מסוימת של ערכי <math>\varepsilon</math> יכולים להיות שניים או ארבעה ערכים שונים של <math>n</math> שנותנים את אותו מקסימום.{{הערה|1=<span dir="ltr">P. Erdős, J.-L. Nicolas, Répartition des nombres superabondants, Bull. Soc. Math. France 103 (1975), pp. 65–90.</span>|כיווון=שמאל}} (בדוגמה לעיל, בדיוק בערך הסף <math>\varepsilon = 0.2224\ldots</math> שני המספרים 6 ו-12 נותנים את אותו מקסימום.)
+
+במאמרם מ-1944 שיערו אלאוגלו וארדש שהמנה של שני מספרים שופעים עצומים עוקבים היא תמיד מספר ראשוני. הם הראו שזה היה נובע ממקרה פרטי של [[השערת ארבעת המעריכים]] ב[[תורת המספרים הטרנסצנדנטיים]]: שלכל שני ראשוניים שונים <math>p</math> ו-<math>q</math>, הממשיים היחידים <math>t</math> שעבורם גם <math>p^t</math> וגם <math>q^t</math> [[מספר רציונלי|רציונליים]] הם השלמים החיוביים. בעזרת התוצאה המקבילה לשלושה ראשוניים, שעליה [[קרל לודוויג זיגל|זיגל]] הבטיח להם שהיא נכונה – מקרה פרטי של [[משפט שש המעריכים]], שהוכח בשנות ה-60 על ידי [[סרג' לאנג]] וק. רמצ'נדרה{{הערה|1=<span dir="ltr">M. Waldschmidt, Six exponentials theorem — irrationality, Resonance 27 (2022), pp. 599–607.</span>|כיווון=שמאל}} – הצליחו להראות שהמנה של שני מספרים שופעים עצומים עוקבים היא תמיד ראשוני או [[מספר חצי-ראשוני|חצי-ראשוני]] (מספר עם שני גורמים ראשוניים בדיוק). המנה אף פעם אינה ריבוע של ראשוני.
+
+(הקשר: מנה שאינה ראשונית מופיעה רק אם שני ערכי סף <math>\varepsilon_{p,k}</math> ו-<math>\varepsilon_{q,l}</math> שווים, כלומר <math>p^{1+\varepsilon} = \frac{p^{k+1}-1}{p^k-1}</math> ו-<math>q^{1+\varepsilon} = \frac{q^{l+1}-1}{q^l-1}</math> שניהם רציונליים עבור אותו <math>t = 1+\varepsilon</math>, שאינו שלם.)
+
+השערת אלאוגלו וארדש עדיין פתוחה, אף שנבדקה לפחות עד <math>10^7</math>.{{הערה|1=<span dir="ltr">OEIS A073751, Prime numbers that when multiplied in order yield the sequence of colossally abundant numbers.</span>|כיווון=שמאל}} אם היא נכונה, יש סדרה של ראשוניים (לא בהכרח שונים) <math>p_1, p_2, p_3, \ldots</math> כך שהמספר השופע עצום ה-<math>n</math>-י הוא
+:<math>c_n = \prod_{i=1}^n p_{i}.</math>
+בהנחת ההשערה, סדרת הראשוניים הזו מתחילה ב-2, 3, 2, 5, 2, 3, 7, 2 ({{OEIS|A073751}}); בחישוב שלנו המשכה הוא 11, 13, 2, 3, 5, 17, 19, 23, 2, 29, 31, 7, ובכל 20 הצעדים הראשונים המנה אכן ראשונית. השערת אלאוגלו וארדש גם הייתה אומרת שאין ערך של <math>\varepsilon</math> שנותן ארבעה שלמים שונים <math>n</math> כמקסימומים של הפונקציה.
+
+=== קשר למספרים שופעים ===
+כמו [[מספר שופע-על|מספרים שופעים-על]], מספרים שופעים עצומים הם הכללה של [[מספר שופע|מספרים שופעים]]. וגם כמו מספרים שופעים-על, זו אינה הכללה במובן החזק: מספר יכול להיות שופע עצום ''בלי'' להיות שופע. זה המצב עבור 6: המחלקים של 6 הם 1, 2, 3 ו-6, אבל מספר שופע מוגדר כמספר שסכום מחלקיו, ''בלי המספר עצמו'', גדול ממנו; <math>1+2+3=6</math>, ולכן התנאי אינו מתקיים (ו-6 הוא [[מספר משוכלל]]). אבל כל המספרים השופעים העצומים הם גם מספרים שופעים-על.
+
+== קשר להשערת רימן ==
+בשנות ה-80 הראה גי רובן{{הערה|1=<span dir="ltr">G. Robin, Grandes valeurs de la fonction somme des diviseurs et hypothèse de Riemann, Journal de Mathématiques Pures et Appliquées 63 (1984), pp. 187–213.</span>|כיווון=שמאל}} ש[[השערת רימן]] שקולה לטענה שאי-השוויון הבא מתקיים לכל <math>n \gt 5040</math>:
+:<math>\sigma(n)\lt e^\gamma n \log\log n \approx 1.781072418\, n \log\log n.</math>
+ידוע שאי-השוויון נכשל עבור 27 מספרים ({{OEIS|A067698}}):
+:2, 3, 4, 5, 6, 8, 9, 10, 12, 16, 18, 20, 24, 30, 36, 48, 60, 72, 84, 120, 180, 240, 360, 720, 840, 2520, 5040
+(בדקנו שאין כישלונות נוספים עד <math>2\cdot10^5</math>). למשל, עבור <math>n = 5040</math>: <math>\sigma(5040) = 19344</math>, ואילו <math>e^\gamma\cdot5040\cdot\log\log5040 \approx 19237</math>.
+
+רובן הראה שאם השערת רימן נכונה, 5040 הוא השלם האחרון שעבורו אי-השוויון נכשל. אי-השוויון נקרא היום אי-שוויון רובין. ידוע שאם אי-שוויון רובין ייכשל אי פעם, הוא ייכשל במספר שופע עצום <math>n</math>; לכן השערת רימן שקולה לכך שאי-שוויון רובין מתקיים לכל מספר שופע עצום <math>n \gt 5040</math>.
+
+ב-2001–2002 הראה לגריאס{{הערה|שם=Lag}} צורה חלופית של הטענה של רובן שאינה דורשת יוצאים מן הכלל, בעזרת ה[[מספר הרמוני|מספרים ההרמוניים]] במקום הלוגריתם: השערת רימן שקולה ל-
+:<math>\sigma(n) \le H_n + \exp(H_n)\log(H_n)\quad\text{לכל } n \ge 1,</math>
+עם שוויון רק עבור <math>n = 1</math>.{{הערה|1=בערך האנגלי אי-השוויון מופיע עם <math>\lt</math>. אבל עבור <math>n = 1</math>: <math>\sigma(1) = 1 = H_1 + e\log 1</math>, ולכן יש שוויון; כך גם בניסוח של לגריאס.|כיווון=ימין}} או, מלבד שמונת היוצאים מן הכלל <math>n = 1, 2, 3, 4, 6, 12, 24, 60</math>:
+:<math>\sigma(n) \lt \exp(H_n)\log(H_n).</math>
+(בדקנו את שני הניסוחים עד <math>2\cdot10^5</math>.)
+
+== קישורים חיצוניים ==
+* <span dir="ltr">K. Briggs, Superabundant and colossally abundant numbers; Notes on the Riemann hypothesis and abundant numbers</span>
+* {{MathWorld|ColossallyAbundantNumber|Colossally Abundant Number}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פונקציית סכום המחלקים]]
+[[קטגוריה:סדרות של מספרים שלמים]]
