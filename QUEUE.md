@@ -330,7 +330,7 @@ Additive number theory:
 - [x] Woodall number
 - [x] Thabit number
 - [x] Giuga number
-- [ ] Blum integer
+- [x] Blum integer
 - [ ] Achilles number
 - [ ] Sphenic number
 - [ ] Nontotient
