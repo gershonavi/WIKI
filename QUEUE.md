@@ -374,6 +374,6 @@ Additive number theory:
 - [x] Hilbert class field
 - [x] Artin L-function
 - [x] Cyclotomic field
-- [ ] Ramanujan graph
+- [x] Ramanujan graph
 - [ ] Ring class field
 - [ ] Tate–Shafarevich group

@@ -1,0 +1,84 @@
+בתורת הגרפים הספקטרלית, '''גרף רמנוג'אן''' (Ramanujan graph) הוא [[גרף רגולרי]] שהפער הספקטרלי שלו גדול כמעט ככל האפשר. גרפים כאלה הם [[גרף מרחיב|מרחיבים ספקטרליים]] מצוינים. כפי שמציין סקר של ראם מורטי,{{הערה|שם=Murty|1=<span dir="ltr">M. Ram Murty, "Ramanujan graphs", ''J. Ramanujan Math. Soc.'' '''18''' (2003), http://www.mast.queensu.ca/~murty/ramanujan.pdf</span>|כיווון=שמאל}} גרפי רמנוג'אן מחברים תחומים שונים של המתמטיקה הטהורה: [[תורת המספרים]], [[תורת ההצגות]] ו[[גאומטריה אלגברית]].
+
+הגרפים נקראים על שם [[סריניוואסה רמנוג'אן]] בעקיפין: השם בא מ[[השערת רמנוג'אן–פטרסון]], שבה השתמשו בבנייה של חלק מהגרפים האלה.
+
+== הגדרה ==
+יהי <math>G</math> גרף [[גרף קשיר|קשיר]] ו-<math>d</math>-רגולרי עם <math>n</math> קודקודים, ויהיו <math>\lambda_1 \geq \lambda_2 \geq \cdots \geq \lambda_n</math> ה[[ערך עצמי|ערכים העצמיים]] של [[מטריצת שכנויות|מטריצת השכנויות]] של <math>G</math> (הספקטרום של <math>G</math>). כיוון ש-<math>G</math> קשיר ו-<math>d</math>-רגולרי, <math>d = \lambda_1 \gt \lambda_2 \geq \cdots \geq \lambda_n \geq -d</math>.
+
+נגדיר <math>\lambda(G) = \max_{i\neq 1}|\lambda_i| = \max(|\lambda_2|,\ldots, |\lambda_n|)</math>. גרף <math>d</math>-רגולרי קשיר <math>G</math> הוא '''גרף רמנוג'אן''' אם <math>\lambda(G) \leq 2\sqrt{d-1}</math>.
+
+מקורות רבים משתמשים בהגדרה חלופית, עם <math>\lambda'(G) = \max_{|\lambda_i| \lt d} |\lambda_i|</math>.{{הערה|שם=LPS|1=<span dir="ltr">A. Lubotzky, R. Phillips, P. Sarnak, "Ramanujan graphs", ''Combinatorica'' '''8''' (1988), no. 3, 261–277</span>|כיווון=שמאל}} כלומר מרשים גם את <math>-d</math>, בנוסף לערכים העצמיים ה"קטנים". כיוון ש-<math>\lambda_n = -d</math> אם ורק אם הגרף [[גרף דו-צדדי|דו-צדדי]], גרפים שמקיימים את ההגדרה החלופית אבל לא את הראשונה נקראים '''גרפי רמנוג'אן דו-צדדיים'''. אם <math>G</math> גרף רמנוג'אן, אז <math>G \times K_2</math> הוא גרף רמנוג'אן דו-צדדי (הערכים העצמיים שלו הם <math>\pm\lambda_i</math>), ולכן הקיום של גרפי רמנוג'אן הוא הטענה החזקה יותר.
+
+כפי שהבחין טושיקאזו סונאדה, גרף רגולרי הוא גרף רמנוג'אן אם ורק אם [[פונקציית זטא של איהרה|פונקציית הזטא של איהרה]] שלו מקיימת אנלוג של [[השערת רימן]].{{הערה|שם=Terras|1=<span dir="ltr">A. Terras, ''Zeta Functions of Graphs: A Stroll through the Garden'', Cambridge Studies in Advanced Mathematics 128, Cambridge University Press, 2011</span>|כיווון=שמאל}} במפורש: לגרף <math>(q+1)</math>-רגולרי, לפי נוסחת איהרה, הקטבים של פונקציית הזטא הם השורשים של <math>1 - \lambda u + qu^2</math> על פני הערכים העצמיים <math>\lambda</math>; לערך עצמי ממשי <math>|\lambda| \le 2\sqrt q</math> שני השורשים צמודים ומכפלתם <math>1/q</math>, ולכן הם על המעגל <math>|u| = 1/\sqrt q</math>, ואילו ל-<math>|\lambda| \gt 2\sqrt q</math> השורשים ממשיים ושונים בערכם המוחלט.
+
+== דוגמאות ובניות ==
+=== דוגמאות מפורשות ===
+* ל[[גרף שלם|גרף השלם]] <math>K_{d+1}</math> יש ספקטרום <math>d, -1, -1, \dots, -1</math>, ולכן <math>\lambda(K_{d+1}) = 1</math>, והוא גרף רמנוג'אן לכל <math>d \gt 1</math>. לגרף הדו-צדדי השלם <math>K_{d,d}</math> יש ספקטרום <math>d, 0, \dots, 0, -d</math>, ולכן הוא גרף רמנוג'אן דו-צדדי לכל <math>d</math>.
+* לגרף פטרסן יש ספקטרום <math>3, 1, 1, 1, 1, 1, -2, -2, -2, -2</math>, ולכן הוא גרף רמנוג'אן 3-רגולרי (<math>2 \le 2\sqrt2</math>). גרף האיקוסאהדרון הוא גרף רמנוג'אן 5-רגולרי (ספקטרום <math>5, \sqrt5^{(3)}, -1^{(5)}, -\sqrt5^{(3)}</math>, ו-<math>\sqrt5 \le 4</math>).{{הערה|1=<span dir="ltr">E. W. Weisstein, "Icosahedral Graph", MathWorld</span>|כיווון=שמאל}}
+* גרף פיילי מסדר <math>q</math> (עבור <math>q \equiv 1 \pmod 4</math> חזקת ראשוני) הוא <math>\frac{q-1}{2}</math>-רגולרי, וכל שאר הערכים העצמיים שלו הם <math>\frac{-1\pm\sqrt{q}}{2}</math>. לכן גרפי פיילי הם משפחה אינסופית של גרפי רמנוג'אן.
+* באופן כללי יותר, יהי <math>f(x)</math> פולינום ממעלה 2 מעל <math>\mathbb{F}_q</math>, תהי <math>S = \{f(x)\, :\, x \in \mathbb{F}_q\}</math> התמונה של <math>f</math> כמולטי-קבוצה, ונניח <math>S = -S</math>. אז [[גרף קיילי]] של <math>\mathbb{F}_q</math> עם היוצרים מ-<math>S</math> הוא גרף רמנוג'אן: הערכים העצמיים שלו הם [[סכום גאוס|סכומי גאוס]] <math>\sum_x e^{2\pi i\,\mathrm{Tr}(af(x))/p}</math>, שערכם המוחלט <math>\sqrt q</math>.{{הערה|1=בערך האנגלי נטען שהדבר נכון גם לפולינומים ממעלה 3. אבל לפולינום ממעלה 3, חסם וייל נותן רק <math>|\lambda| \le 2\sqrt q</math>, ואילו תנאי רמנוג'אן לגרף <math>q</math>-רגולרי הוא <math>|\lambda| \le 2\sqrt{q-1}</math>, שהוא חזק יותר. ואכן יש דוגמאות נגדיות: ל-<math>f(x) = x^3</math> מעל <math>\mathbb F_{13}</math> (שבו <math>S = -S</math> כי <math>-1</math> קוביה), הערך העצמי הגדול ביותר בערכו המוחלט הוא בערך <math>6.953</math>, יותר מ-<math>2\sqrt{12} \approx 6.928</math>. כך גם ל-<math>q = 19, 37, 79</math>; בדקנו בחישוב.|כיווון=שמאל}}
+
+מתמטיקאים מעוניינים בדרך כלל לבנות משפחות אינסופיות של גרפי רמנוג'אן <math>d</math>-רגולריים לכל <math>d</math> קבוע. משפחות כאלה שימושיות ביישומים.
+
+=== דוגמה: <math>K_4</math> ופונקציית הזטא שלו ===
+<math>K_4</math> הוא 3-רגולרי (<math>q = 2</math>), עם ערכים עצמיים <math>3, -1, -1, -1</math>. לפי נוסחת איהרה,
+:<math>\zeta_{K_4}(u)^{-1} = (1-u^2)^2(1-u)(1-2u)(1+u+2u^2)^3,</math>
+והשורשים של <math>1 + u + 2u^2</math> הם <math>\frac{-1 \pm i\sqrt7}{4}</math>, בערך מוחלט <math>1/\sqrt2</math> – בדיוק "השערת רימן". (בדקנו בחישוב.)
+
+=== בניות אלגבריות ===
+כמה בניות מפורשות של גרפי רמנוג'אן הן גרפי קיילי, ואופיין אלגברי. ראו את הסקר של וויני לי על השערת רמנוג'אן והיבטים נוספים של תורת המספרים שרלוונטיים לתוצאות האלה.{{הערה|1=<span dir="ltr">W. Li, "The Ramanujan conjecture and its applications", ''Phil. Trans. R. Soc. A'' '''378''' (2020), 20180441</span>|כיווון=שמאל}}
+
+[[אלכסנדר לובוצקי|לובוצקי]], פיליפס ו[[פיטר סרנק|סרנק]],{{הערה|שם=LPS}} ובאופן בלתי תלוי [[גריגורי מרגוליס|מרגוליס]],{{הערה|1=<span dir="ltr">G. A. Margulis, "Explicit group-theoretic constructions of combinatorial schemes and their applications in the construction of expanders and concentrators", ''Problemy Peredachi Informatsii'' '''24''' (1988), no. 1, 51–60</span>|כיווון=שמאל}} הראו איך לבנות משפחה אינסופית של גרפי רמנוג'אן <math>(p+1)</math>-רגולריים, לכל [[מספר ראשוני]] <math>p\equiv 1 \pmod 4</math>. שתי ההוכחות משתמשות ב[[השערת רמנוג'אן–פטרסון|השערת רמנוג'אן]] (משפט של [[פייר דלין|דלין]]), ומכאן השם. מעבר לכך שהם גרפי רמנוג'אן, לגרפים האלה תכונות נוספות; למשל המותן שלהם הוא <math>\Omega(\log_{p}n)</math>, כאשר <math>n</math> מספר הקודקודים.
+
+'''הבנייה של לובוצקי–פיליפס–סרנק.''' יהי <math>q \equiv 1 \pmod 4</math> ראשוני שונה מ-<math>p</math>. לפי [[משפט ארבעת הריבועים של יעקובי]], יש בדיוק <math>p+1</math> פתרונות למשוואה <math>p=a_0^2+a_1^2+a_2^2+a_3^2</math> עם <math>a_0 \gt 0</math> אי-זוגי ו-<math>a_1, a_2, a_3</math> זוגיים. (למשל ל-<math>p = 5</math>: <math>a_0 = 1</math> ואחד מ-<math>a_1, a_2, a_3</math> הוא <math>\pm2</math> – שישה פתרונות.) לכל פתרון כזה מתאימים את המטריצה ב-<math>\mathrm{PGL}(2,\mathbb Z/q\mathbb Z)</math>
+:<math>\tilde \alpha = \begin{pmatrix}a_0 + ia_1 & a_2 + ia_3 \\ -a_2 + ia_3 & a_0 - ia_1\end{pmatrix},</math>
+כאשר <math>i</math> פתרון קבוע של <math>i^2 \equiv -1 \pmod q</math>. אם <math>p</math> אינו [[שארית ריבועית]] מודולו <math>q</math>, יהי <math>X^{p,q}</math> גרף הקיילי של <math>\mathrm{PGL}(2,\mathbb Z/q\mathbb Z)</math> עם <math>p+1</math> היוצרים האלה; אחרת, יהי <math>X^{p,q}</math> גרף הקיילי של <math>\mathrm{PSL}(2,\mathbb Z/q\mathbb Z)</math> עם אותם יוצרים. אז <math>X^{p,q}</math> גרף <math>(p+1)</math>-רגולרי עם <math>n=q(q^2-1)</math> או <math>q(q^2-1)/2</math> קודקודים, בהתאמה, ומוכח שהוא גרף רמנוג'אן.
+
+מורגנשטרן{{הערה|1=<span dir="ltr">M. Morgenstern, "Existence and explicit constructions of q+1 regular Ramanujan graphs for every prime power q", ''J. Combin. Theory Ser. B'' '''62''' (1994), 44–62</span>|כיווון=שמאל}} הרחיב את הבנייה של לובוצקי, פיליפס וסרנק לכל <math>q</math> שהוא חזקת ראשוני, עם גרפים <math>(q+1)</math>-רגולריים.
+
+ארנולד פייזר הוכיח ש[[עקום אליפטי על-סינגולרי|גרפי האיזוגניה העל-סינגולריים]] הם גרפי רמנוג'אן, אם כי המותן שלהם בדרך כלל קטן יותר מזה של גרפי לובוצקי–פיליפס–סרנק.{{הערה|1=<span dir="ltr">A. K. Pizer, "Ramanujan graphs and Hecke operators", ''Bull. Amer. Math. Soc. (N.S.)'' '''23''' (1990), no. 1, 127–137</span>|כיווון=שמאל}} כמו בגרפים של לובוצקי, פיליפס וסרנק, הדרגות של הגרפים האלה הן תמיד ראשוני ועוד 1. (כאן הערכים העצמיים הם ערכים עצמיים של [[אופרטור הקה|אופרטורי הקה]] על תבניות מודולריות ממשקל 2, ולכן החסם נובע מהשערת רמנוג'אן–פטרסון.)
+
+=== דוגמאות הסתברותיות ===
+אדם מרקוס, דניאל שפילמן וניקהיל סריווסטבה{{הערה|שם=mss13|1=<span dir="ltr">A. Marcus, D. Spielman, N. Srivastava, "Interlacing families I: Bipartite Ramanujan graphs of all degrees", FOCS 2013; ''Annals of Mathematics'' '''182''' (2015), 307–325</span>|כיווון=שמאל}} הוכיחו שיש אינסוף גרפי רמנוג'אן ''דו-צדדיים'' <math>d</math>-רגולריים לכל <math>d\geq 3</math>. מאוחר יותר{{הערה|שם=mss15|1=<span dir="ltr">A. Marcus, D. Spielman, N. Srivastava, "Interlacing families IV: Bipartite Ramanujan graphs of all sizes", FOCS 2015</span>|כיווון=שמאל}} הם הוכיחו שיש גרפי רמנוג'אן דו-צדדיים מכל דרגה ומכל מספר קודקודים. מייקל ב' כהן הראה איך לבנות את הגרפים האלה בזמן פולינומי.{{הערה|1=<span dir="ltr">M. B. Cohen, "Ramanujan graphs in polynomial time", FOCS 2016, arXiv:1604.03544</span>|כיווון=שמאל}}
+
+העבודה הראשונית המשיכה גישה של בילו ו[[נתן ליניאל|ליניאל]]. הם התבוננו בפעולה שנקראת '''הרמה כפולה''' (2-lift): היא לוקחת גרף <math>d</math>-רגולרי <math>G</math> עם <math>n</math> קודקודים וסימן על כל צלע, ומייצרת גרף <math>d</math>-רגולרי <math>G'</math> עם <math>2n</math> קודקודים. בילו וליניאל שיערו שתמיד יש בחירת סימנים שבה כל ערך עצמי חדש של <math>G'</math> הוא בערך מוחלט לכל היותר <math>2\sqrt{d-1}</math>. ההשערה מבטיחה קיום של גרפי רמנוג'אן מדרגה <math>d</math> עם <math>2^k(d+1)</math> קודקודים לכל <math>k</math>: מתחילים מהגרף השלם <math>K_{d+1}</math> ולוקחים שוב ושוב הרמות כפולות ששומרות על תכונת רמנוג'אן.
+
+בעזרת שיטת הפולינומים המשתלבים, מרקוס, שפילמן וסריווסטבה{{הערה|שם=mss13}} הוכיחו שהשערת בילו–ליניאל נכונה כש-<math>G</math> כבר גרף רמנוג'אן דו-צדדי, וזה מספיק לתוצאת הקיום. בהמשך{{הערה|שם=mss15}} הם הוכיחו את הטענה החזקה יותר שסכום של <math>d</math> זיווגים דו-צדדיים מקריים הוא גרף רמנוג'אן בהסתברות חיובית. הול, פודר וסווין הרחיבו את העבודה של מרקוס, שפילמן וסריווסטבה להרמות מסדר <math>r</math>.{{הערה|1=<span dir="ltr">C. Hall, D. Puder, W. F. Sawin, "Ramanujan coverings of graphs", ''Advances in Mathematics'' '''323''' (2018), 367–410</span>|כיווון=שמאל}}
+
+שאלה פתוחה הייתה האם יש אינסוף גרפי רמנוג'אן <math>d</math>-רגולריים (לא דו-צדדיים) לכל <math>d\geq 3</math>. למשל, הבעיה הייתה פתוחה ל-<math>d = 7</math>, המקרה הקטן ביותר שבו <math>d-1</math> אינו חזקת ראשוני ולכן אינו מכוסה על ידי הבנייה של מורגנשטרן. ההשערה הוכחה ב-2024:{{הערה|שם=HMY|1=<span dir="ltr">J. Huang, T. McKenzie, H.-T. Yau, "Ramanujan property and edge universality of random regular graphs", arXiv:2412.20263 (2024)</span>|כיווון=שמאל}} לכל <math>d</math> ולכל <math>N</math> גדול מספיק, כ-69% מהגרפים ה-<math>d</math>-רגולריים עם <math>N</math> קודקודים הם גרפי רמנוג'אן.
+
+== גרפי רמנוג'אן כגרפים מרחיבים ==
+הקבוע <math>2\sqrt{d-1}</math> בהגדרה הדוק אסימפטוטית. במדויק, חסם אלון–בופנה אומר שלכל <math>d</math> ולכל <math>\epsilon \gt 0</math> יש <math>n</math> כך שכל הגרפים ה-<math>d</math>-רגולריים <math>G</math> עם לפחות <math>n</math> קודקודים מקיימים <math>\lambda(G) \gt 2\sqrt{d-1} - \epsilon</math>. כלומר גרפי רמנוג'אן הם בעצם ה[[גרף מרחיב|גרפים המרחיבים]] הטובים ביותר האפשריים. (הסיבה לקבוע: <math>2\sqrt{d-1}</math> הוא הרדיוס הספקטרלי של ה[[עץ (תורת הגרפים)|עץ]] ה-<math>d</math>-רגולרי האינסופי, שהוא ה"כיסוי האוניברסלי" של כל גרף <math>d</math>-רגולרי.)
+
+כיוון שגרפי רמנוג'אן משיגים את החסם ההדוק על <math>\lambda(G)</math>, הלמה של ערבוב במרחיבים נותנת חסמים מצוינים על האחידות של התפלגות הצלעות בהם, ול[[הילוך מקרי|הילוך מקרי]] עליהם יש זמן ערבוב לוגריתמי (במספר הקודקודים): ההילוך מתכנס מהר מאוד להתפלגות הסטציונרית האחידה. לכן גם ה[[קוטר (תורת הגרפים)|קוטר]] של גרפי רמנוג'אן חסום לוגריתמית במספר הקודקודים.
+
+=== גרפים מקריים ===
+פרידמן{{הערה|1=<span dir="ltr">J. Friedman, "Relative expanders or weakly relatively Ramanujan graphs", ''Duke Math. J.'' '''118''' (2003), no. 1, 19–35; see also J. Friedman, "A proof of Alon's second eigenvalue conjecture", ''Memoirs AMS'' (2008)</span>|כיווון=שמאל}} אישר השערה של [[נגה אלון|אלון]] והראה שמשפחות רבות של גרפים מקריים הן "חלשות-רמנוג'אן": לכל <math>d</math> ולכל <math>\epsilon \gt 0</math> ולכל <math>n</math> גדול מספיק, גרף <math>d</math>-רגולרי מקרי עם <math>n</math> קודקודים מקיים <math>\lambda(G) \lt 2\sqrt{d-1} + \epsilon</math> בהסתברות גבוהה. התוצאה מראה שגרפים מקריים קרובים לגרפי רמנוג'אן, אבל אי אפשר להשתמש בה כדי להוכיח קיום של גרפי רמנוג'אן. שוערו{{הערה|1=<span dir="ltr">S. J. Miller, T. Novikoff, A. Sabelli, "The distribution of the largest non-trivial eigenvalues in families of random regular graphs", ''Experimental Mathematics'' '''17''' (2008), no. 2, 231–244</span>|כיווון=שמאל}} שגרפים מקריים הם גרפי רמנוג'אן בהסתברות ניכרת (בערך 52%, לפי הניסויים המספריים של אז). מעבר לראיות המספריות, היה לזה גם בסיס תאורטי: נראה שהפער הספקטרלי של גרף <math>d</math>-רגולרי מתנהג לפי התפלגות טרייסי–וידום מתורת המטריצות המקריות.
+
+ב-2024 הוכיחו ג'יאויאנג הואנג, תאו מקנזי והורנג-צר יאו את ה"אוניברסליות בקצה" – הערך העצמי השני מתפלג (אחרי נרמול) לפי התפלגות טרייסי–וידום של אנסמבל גאוס האורתוגונלי – ומכאן שההסתברות ש-<math>\lambda(G) \le 2\sqrt{d-1}</math> שואפת לכ-69%.{{הערה|שם=HMY}}{{הערה|1=<span dir="ltr">L. Sloman, "New proof settles decades-old bet about connected networks", ''Quanta Magazine'', April 18, 2025</span>|כיווון=שמאל}}
+
+== שימושים ==
+לגרפים מרחיבים יש שימושים רבים במדעי המחשב, בתורת המספרים ובתורת החבורות; ראו למשל את הסקר של לובוצקי על שימושים במתמטיקה טהורה ושימושית, ואת הסקר של הורי, ליניאל ו[[אבי ויגדרזון|ויגדרזון]], שמתמקד במדעי המחשב. גרפי רמנוג'אן הם במובן מסוים המרחיבים הטובים ביותר, ולכן הם שימושיים במיוחד ביישומים שדורשים מרחיבים. חשוב שעל הגרפים של לובוצקי, פיליפס וסרנק אפשר לנוע מהר מאוד בפועל, ולכן הם מעשיים ליישומים.
+
+דוגמאות:
+* בפותרים מהירים למערכות ליניאריות לפלסיאניות, לי, פנג ושפילמן{{הערה|1=<span dir="ltr">Y. T. Lee, R. Peng, D. A. Spielman, "Sparsified Cholesky solvers for SDD linear systems", arXiv:1506.08204 (2015)</span>|כיווון=שמאל}} השתמשו בקיום של גרפי רמנוג'אן דו-צדדיים מכל דרגה כדי לקרב מהר את הגרף השלם.
+* לובצקי ו[[יובל פרס|פרס]] הוכיחו שההילוך המקרי הפשוט מראה תופעת חיתוך (cutoff) על כל גרפי רמנוג'אן.{{הערה|1=<span dir="ltr">E. Lubetzky, Y. Peres, "Cutoff on all Ramanujan graphs", ''Geom. Funct. Anal.'' '''26''' (2016), no. 4, 1190–1216</span>|כיווון=שמאל}} כלומר ההילוך המקרי עובר מעבר פאזה, מלא מעורבב לגמרי למעורבב לגמרי, במרחק ההשתנות הכולל. התוצאה נשענת על כך שהגרף הוא גרף רמנוג'אן, ולא רק מרחיב: ידועים מרחיבים טובים שאין בהם חיתוך.{{הערה|1=<span dir="ltr">E. Lubetzky, A. Sly, "Explicit expanders with cutoff phenomena", ''Electron. J. Probab.'' '''16''' (2011)</span>|כיווון=שמאל}}
+* גרפי רמנוג'אן של פייזר הוצעו כבסיס להצפנה פוסט-קוונטית מבוססת עקומים אליפטיים (חשבון איזוגניות).{{הערה|1=<span dir="ltr">K. Eisenträger, S. Hallgren, K. Lauter, T. Morrison, C. Petit, "Supersingular isogeny graphs and endomorphism rings: Reductions and solutions", EUROCRYPT 2018, Lecture Notes in Computer Science 10822, Springer, 2018, 329–368</span>|כיווון=שמאל}}
+* בעזרת גרפי רמנוג'אן אפשר לבנות קודים מרחיבים, שהם [[קוד לתיקון שגיאות|קודים טובים לתיקון שגיאות]].
+
+== ראו גם ==
+* [[גרף מרחיב]]
+* [[פונקציית זטא של איהרה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* G. Davidoff, P. Sarnak, A. Valette, ''Elementary Number Theory, Group Theory and Ramanujan Graphs'', LMS Student Texts 55, Cambridge University Press, 2003
+* T. Sunada, "L-functions in geometry and some applications", in ''Curvature and Topology of Riemannian Manifolds'' (Katata, 1985), Lecture Notes in Mathematics 1201, Springer, 1986, 266–284
+* A. Lubotzky, "Expander graphs in pure and applied mathematics", ''Bull. Amer. Math. Soc.'' '''49''' (2012), 113–162
+* S. Hoory, N. Linial, A. Wigderson, "Expander graphs and their applications", ''Bull. Amer. Math. Soc.'' '''43''' (2006), 439–561
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת הגרפים]]
