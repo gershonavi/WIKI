@@ -1,0 +1,63 @@
+ב[[תורת המספרים]], '''אי-שוויון פוליה–וינוגרדוב''' (Pólya–Vinogradov inequality) הוא חסם עליון על [[סכום קרקטרים|סכומים]] של [[קרקטר של דיריכלה|קרקטר דיריכלה]] על קטע של שלמים עוקבים. הוא מראה שהערכים של <math>\left(\frac ap\right)</math> עבור <math>a</math> עוקבים מתנהגים במידה מסוימת כמו משתנה מקרי – כמו [[הטלת מטבע]] – ושבכל קטע ארוך מספיק יש בערך אותו מספר של [[שארית ריבועית|שאריות ריבועיות]] ושל אי-שאריות.{{הערה|1=<span dir="ltr">R. Crandall, C. Pomerance, Prime Numbers: A Computational Perspective, Springer, ex. 2.38, pp. 106–108.</span> שם נדונים הדמיון והשוני: למשל, בהטלת <math>n</math> מטבעות אפשר (אם כי לא סביר) לקבל <math>n/2</math> "עץ" ואחריהם אותו מספר "פלי"; אי-שוויון פוליה–וינוגרדוב שולל זאת לשאריות ריבועיות.|כיווון=שמאל}}
+
+== ניסוח ==
+[[ג'ורג' פוליה]] ו[[איוואן וינוגרדוב]] הוכיחו (באופן בלתי תלוי) ב-1918 שלכל קרקטר דיריכלה לא ראשי <math>\chi(n)</math> מודולו <math>q</math> ולכל שלמים <math>M</math> ו-<math>N</math>,{{הערה|שם=Dav|1=<span dir="ltr">H. Davenport, Multiplicative Number Theory, 3rd ed., Springer, 2000, pp. 135–137.</span> (שם מוכח ש-<math>O</math> אפשר להחליף בקבוע 2.)|כיווון=שמאל}}
+:<math>\left|\sum_{n=M+1}^{M+N}\chi(n)\right| = O\left(\sqrt q\log q\right).</math>
+אם לוקחים <math>\chi(n) = \left(\frac nq\right)</math> ([[סמל לז'נדר]], עבור <math>q</math> ראשוני), מקבלים שמספר השאריות הריבועיות מודולו <math>q</math> בכל קטע באורך <math>N</math> הוא
+:<math>\frac12N + O(\sqrt q\log q).</math>
+
+קל יחסית להוכיח ש-
+:<math>\left|\sum_{n=M+1}^{M+N}\left(\frac nq\right)\right| \lt \sqrt q\log q,</math>
+ולמעשה{{הערה|1=<span dir="ltr">T. Cochrane, On a trigonometric inequality of Vinogradov, J. Number Theory 27 (1987), pp. 9–16.</span>|כיווון=שמאל}}
+:<math>\left|\sum_{n=M+1}^{M+N}\left(\frac nq\right)\right| \lt \frac4{\pi^2}\sqrt q\log q + 0.41\sqrt q + 0.61.</math>
+
+== הוכחה ==
+ההוכחה משתמשת ב[[סכום גאוס|סכומי גאוס]]. עבור <math>q = p</math> ראשוני ו-<math>\chi = \left(\frac\cdot p\right)</math>, יהי <math>\tau = \sum_{a=1}^{p-1}\left(\frac ap\right)e^{2\pi ia/p}</math> סכום גאוס; ידוע ש-<math>|\tau| = \sqrt p</math>, ושלכל <math>n</math>,
+:<math>\left(\frac np\right) = \frac1\tau\sum_{a=1}^{p-1}\left(\frac ap\right)e^{2\pi ian/p}.</math>
+(זה "התמרת פורייה" של הקרקטר: הקרקטר הוא, עד כדי קבוע, התמרת הפורייה של עצמו.) נסכם על <math>n</math> בקטע:
+:<math>\sum_{n=M+1}^{M+N}\left(\frac np\right) = \frac1\tau\sum_{a=1}^{p-1}\left(\frac ap\right)\sum_{n=M+1}^{M+N}e^{2\pi ian/p}.</math>
+הסכום הפנימי הוא [[טור הנדסי]], וערכו המוחלט לכל היותר <math>\frac1{|\sin(\pi a/p)|}</math>. לכן
+:<math>\left|\sum_{n=M+1}^{M+N}\left(\frac np\right)\right| \le \frac1{\sqrt p}\sum_{a=1}^{p-1}\frac1{|\sin(\pi a/p)|} \le \frac1{\sqrt p}\cdot2\sum_{a=1}^{(p-1)/2}\frac p{2a} \le \sqrt p\,(\log p + 1),</math>
+כאשר השתמשנו ב-<math>\sin x \ge 2x/\pi</math> עבור <math>0 \le x \le \pi/2</math>. הנקודה המרכזית: הקטע יכול להיות ארוך כרצוננו, אבל אחרי ההתמרה הסכום תלוי רק ב-<math>p - 1</math> תדרים.
+
+== דוגמאות מספריות ==
+חישבנו, לכל ראשוני <math>p \lt 20000</math>, את המקסימום של <math>\left|\sum_{n=M+1}^{M+N}\left(\frac np\right)\right|</math> על כל הקטעים (שווה להפרש בין המקסימום למינימום של הסכומים החלקיים). אף ראשוני לא הפר את החסם של קוקרן, והיחס בין המקסימום ל-<math>\sqrt p\log p</math> היה לכל היותר <math>0.556</math>. כמה ערכים:
+{| class="wikitable" style="text-align:center"
+! <math>p</math> !! המקסימום על קטעים !! <math>\max_N\left|\sum_{n\le N}\left(\frac np\right)\right|</math> !! <math>\sqrt p\log p</math>
+|-
+| 11 || 3 || 3 || 8.0
+|-
+| 101 || 14 || 7 || 46.4
+|-
+| 1009 || 36 || 18 || 219.7
+|-
+| 10007 || 130 || 130 || 921.4
+|-
+| 19991 || 256 || 256 || 1400.2
+|-
+| 19997 || 230 || 115 || 1400.4
+|}
+הערכים בפועל קטנים בהרבה מ-<math>\sqrt p\log p</math>, ובערך מסדר גודל של <math>\sqrt p</math>. ראשוניים <math>p \equiv 3 \pmod 4</math> (כמו 10007 ו-19991) נותנים סכומים חלקיים גדולים יחסית: עבור 19991, הסכום החלקי עד <math>N = 9086</math> הוא 256. הסיבה היא שעבורם הסכום עד <math>(p - 1)/2</math> פרופורציונלי ל[[מספר המחלקות]] של <math>\mathbb Q(\sqrt{-p})</math> (נוסחת דיריכלה), שיכול להיות גדול.
+
+== שיפורים וחסמים תחתונים ==
+[[יו מונטגומרי|מונטגומרי]] ו[[רוברט צ'ארלס ווהן|ווהן]] שיפרו את החסם ב-1977, והראו שאם [[השערת רימן המוכללת]] נכונה, אז
+:<math>\left|\sum_{n=M+1}^{M+N}\chi(n)\right| = O\left(\sqrt q\log\log q\right).</math>
+אי אפשר לשפר את התוצאה הזו באופן מהותי, כי [[יסאי שור|שור]] הוכיח ב-1918 ש-
+:<math>\max_N\left|\sum_{n=1}^N\left(\frac nq\right)\right| \gt \frac1{2\pi}\sqrt q,</math>
+ו[[ריימונד פיילי|פיילי]] הוכיח ב-1932 ש-
+:<math>\max_N\left|\sum_{n=1}^N\left(\frac dn\right)\right| \gt \frac17\sqrt d\log\log d</math>
+לאינסוף ערכים של <math>d \gt 0</math>.{{הערה|שם=Dav}} בחישוב שלנו, היחס <math>\max_N|\sum_{n\le N}(n/p)|/\sqrt p</math> עבור <math>p \lt 20000</math> הוא תמיד לפחות <math>0.447</math> (המינימום ב-<math>p = 5</math>), הרבה מעל <math>1/(2\pi) \approx 0.159</math>.
+
+== יישום: אי-השארית הריבועית הקטנה ביותר ==
+אי-השארית הריבועית הקטנה ביותר <math>n(p)</math> מודולו ראשוני <math>p</math> היא תמיד ראשונית (אם <math>n = ab</math> עם <math>a, b \lt n</math>, שניהם שאריות ולכן גם <math>n</math>). אי-שוויון פוליה–וינוגרדוב נותן <math>n(p) = O(\sqrt p\log p)</math>: אם כל המספרים <math>1, \ldots, N</math> שאריות, הסכום החלקי עד <math>N</math> הוא <math>N</math>, ולכן <math>N \le \sqrt p\log p</math>. וינוגרדוב שיפר זאת, בעזרת טריק כפלי, ל-<math>n(p) \ll p^{1/(2\sqrt e)+\varepsilon}</math>, והחסם הטוב ביותר הידוע ללא השערות, <math>n(p) \ll p^\theta</math> לכל <math>\theta \gt \frac1{4\sqrt e}</math>, מגיע מההערכות של בורג'ס לסכומי קרקטרים.{{הערה|שם=FI|1=<span dir="ltr">J. B. Friedlander, H. Iwaniec, Opera de Cribro, AMS, 2010, p. 156.</span>|כיווון=שמאל}} בהנחת השערת רימן המוכללת, אנקני קיבל <math>n(p) \ll (\log p)^2</math>.{{הערה|1=<span dir="ltr">H. L. Montgomery, Ten Lectures on the Interface Between Analytic Number Theory and Harmonic Analysis, AMS, 1994, p. 176.</span>|כיווון=שמאל}}
+
+== ראו גם ==
+* [[סכום גאוס]]
+* [[קרקטר של דיריכלה]]
+* [[שארית ריבועית]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האנליטית]]
+[[קטגוריה:אי-שוויונים]]
