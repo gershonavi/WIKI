@@ -389,4 +389,4 @@ Additive number theory:
 - [x] Néron–Tate height
 - [x] Supersingular isogeny graph
 - [x] Weil–Châtelet group
-- [ ] Néron model
+- [x] Néron model
