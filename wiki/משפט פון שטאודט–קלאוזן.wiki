@@ -1,0 +1,74 @@
+ב[[תורת המספרים]], '''משפט פון שטאודט–קלאוזן''' הוא תוצאה שקובעת את ה[[חלק שברי|חלק השברי]] של [[מספרי ברנולי]]. הוא התגלה באופן בלתי תלוי על ידי קרל פון שטאודט (1840) ותומאס קלאוזן (1840).
+
+במפורש: אם <math>n</math> שלם חיובי, ומוסיפים <math>1/p</math> למספר ברנולי <math>B_{2n}</math> לכל [[מספר ראשוני|ראשוני]] <math>p</math> שעבורו <math>p-1</math> מחלק את <math>2n</math>, מקבלים מספר שלם:
+:<math> B_{2n} + \sum_{(p-1)\mid 2n} \frac1p \in \mathbb Z . </math>
+
+מכאן מיד מתקבל תיאור של המכנים של מספרי ברנולי <math>B_{2n}</math> השונים מאפס: המכנה הוא מכפלת כל הראשוניים <math>p</math> שעבורם <math>p-1</math> מחלק את <math>2n</math>. בפרט, המכנים [[מספר חופשי מריבועים|חופשיים מריבועים]] ומתחלקים ב-6 (כי <math>p = 2, 3</math> תמיד מופיעים).
+
+המכנים הם
+: 6, 30, 42, 30, 66, 2730, 6, 510, 798, 330, 138, 2730, 6, 870, 14322, 510, 6, 1919190, 6, 13530, ... {{OEIS|A002445}}.
+סדרת השלמים <math>B_{2n} + \sum_{(p-1)\mid 2n} \frac1p</math> היא
+: 1, 1, 1, 1, 1, 1, 2, −6, 56, −528, 6193, −86579, 1425518, −27298230, ... {{OEIS|A000146}}.
+(בדקנו בחישוב את שתי הרשימות.)
+
+=== דוגמה: <math>B_{12}</math> ===
+<math>B_{12} = -\tfrac{691}{2730}</math>. הראשוניים שעבורם <math>p - 1 \mid 12</math> הם <math>2, 3, 5, 7, 13</math>, ומכפלתם <math>2730</math> – בדיוק המכנה. והסכום:
+:<math>\frac12 + \frac13 + \frac15 + \frac17 + \frac1{13} = \frac{1365 + 910 + 546 + 390 + 210}{2730} = \frac{3421}{2730},</math>
+ולכן <math>B_{12} + \tfrac{3421}{2730} = \tfrac{2730}{2730} = 1</math>. (המונה 691 של <math>B_{12}</math> הוא ה-691 של [[פונקציית הטאו של רמנוג'אן|קונגרואנציית רמנוג'אן]] <math>\tau(n) \equiv \sigma_{11}(n) \pmod{691}</math>.)
+
+== הוכחה ==
+הוכחה של משפט פון שטאודט–קלאוזן נובעת מנוסחה מפורשת למספרי ברנולי:
+:<math> B_{2n}=\sum_{j=0}^{2n}{\frac{1}{j+1}}\sum_{m=0}^{j}{(-1)^{m}{j\choose m}m^{2n}} </math>
+וכמסקנה:
+:<math> B_{2n}=\sum_{j=0}^{2n}{\frac{j!}{j+1}}(-1)^jS(2n,j) </math>
+כאשר <math>S(n,j)</math> הם [[מספרי סטירלינג]] מהסוג השני.
+
+נזדקק גם ללמות הבאות. יהי <math>p</math> ראשוני; אז:
+
+'''1'''. אם <math>p - 1</math> מחלק את <math>2n</math>, אז
+: <math> \sum_{m=0}^{p-1}{(-1)^m{p-1\choose m} m^{2n}}\equiv{-1}\pmod p. </math>
+
+'''2'''. אם <math>p - 1</math> אינו מחלק את <math>2n</math>, אז
+: <math> \sum_{m=0}^{p-1}{(-1)^m{p-1\choose m} m^{2n}}\equiv0\pmod p. </math>
+
+'''הוכחה של 1 ו-2.''' לפי [[המשפט הקטן של פרמה]], <math>m^{p-1} \equiv 1 \pmod{p}</math> לכל <math>m = 1, 2, \ldots, p - 1</math>.
+
+אם <math>p - 1</math> מחלק את <math>2n</math>, אז <math>m^{2n} \equiv 1 \pmod{p}</math> לכל <math>m = 1, \ldots, p - 1</math>, ולכן
+: <math> \sum_{m=1}^{p-1} (-1)^m \binom{p-1}{m} m^{2n} \equiv \sum_{m=1}^{p-1} (-1)^m \binom{p-1}{m} = (1 - 1)^{p-1} - 1 = -1 \pmod{p},</math>
+ומכאן (1).
+
+אם <math>p - 1</math> אינו מחלק את <math>2n</math>, אז לפי משפט פרמה <math>m^{2n} \equiv m^{2n-(p-1)} \pmod{p}</math>. נסמן <math>w = \lfloor 2n / (p - 1) \rfloor</math>; אחרי איטרציה,
+: <math> m^{2n} \equiv m^{2n-w(p-1)} \pmod{p} </math>
+לכל <math>m = 1, \ldots, p - 1</math>, ו-<math>0 \lt 2n - w(p - 1) \lt p - 1</math>. לכן
+: <math> \sum_{m=0}^{p-1} (-1)^m \binom{p-1}{m} m^{2n} \equiv \sum_{m=0}^{p-1} (-1)^m \binom{p-1}{m} m^{2n-w(p-1)} \pmod{p}. </math>
+הסכום בצד ימין הוא <math>(-1)^{p-1}(p-1)!\,S(k, p-1)</math> עם <math>k = 2n - w(p-1) \lt p - 1</math>, ולמה (2) נובעת מכך ש-<math>S(k,j) = 0</math> כאשר <math>j \gt k</math>.
+
+'''3'''. קל להראות שאם <math>a, b \gt 2</math>, אז <math>ab</math> מחלק את <math>(ab - 1)!</math>.
+
+'''4'''. מספרי סטירלינג מהסוג השני הם שלמים.
+
+עכשיו אפשר להוכיח את המשפט. בנוסחה <math>B_{2n} = \sum_j \frac{j!}{j+1}(-1)^jS(2n,j)</math>:
+* אם <math>j + 1</math> פריק ו-<math>j \gt 3</math>, אז לפי (3) <math>j + 1</math> מחלק את <math>j!</math>, והמחובר שלם (לפי (4)).
+* עבור <math>j = 3</math> (<math>j + 1 = 4</math>):
+: <math> \sum_{m=0}^{3} (-1)^m \binom{3}{m} m^{2n} = 3 \cdot 2^{2n} - 3^{2n} - 3 \equiv 0 \pmod{4}, </math>
+: כי <math>3\cdot 4^n \equiv 0</math> ו-<math>9^n \equiv 1 \pmod 4</math>.
+* אם <math>j + 1 = p</math> ראשוני, אז לפי (1) ו-(2) המחובר הוא <math>-\tfrac1p</math> ועוד שלם כש-<math>p - 1 \mid 2n</math>, ושלם אחרת.
+לכן
+:<math> B_{2n} = I_n - \sum_{(p-1)\mid 2n} \frac{1}{p}, </math>
+כאשר <math>I_n</math> שלם, כנדרש.{{הערה|1=<span dir="ltr">H. Rademacher, ''Topics in Analytic Number Theory'', Springer, New York, 1973; T. M. Apostol, ''Introduction to Analytic Number Theory'', Springer, 1976</span>|כיווון=שמאל}}
+
+== ראו גם ==
+* [[קונגרואנציות קומר]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Th. Clausen, "Theorem", ''Astronomische Nachrichten'' '''17''' (1840), no. 22, 351–352
+* R. Rado, "A new proof of a theorem of V. Staudt", ''J. London Math. Soc.'' '''9''' (1934), no. 2, 85–88
+* Ch. von Staudt, "Beweis eines Lehrsatzes, die Bernoullischen Zahlen betreffend", ''J. reine angew. Math.'' '''21''' (1840), 372–374
+* {{MathWorld|vonStaudt-ClausenTheorem|von Staudt-Clausen Theorem}}
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משפטים בתורת המספרים]]

@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (548)
+## ערכים (549)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -232,6 +232,7 @@
 * [משפט לוקאס](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9C%D7%95%D7%A7%D7%90%D7%A1.md) – Lucas's theorem
 * [משפט ליניק](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%9C%D7%99%D7%A0%D7%99%D7%A7.md) – Linnik's theorem
 * [משפט סקולם–מאהלר–לך](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A1%D7%A7%D7%95%D7%9C%D7%9D%E2%80%93%D7%9E%D7%90%D7%94%D7%9C%D7%A8%E2%80%93%D7%9C%D7%9A.md) – Skolem–Mahler–Lech theorem
+* [משפט פון שטאודט–קלאוזן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A4%D7%95%D7%9F%20%D7%A9%D7%98%D7%90%D7%95%D7%93%D7%98%E2%80%93%D7%A7%D7%9C%D7%90%D7%95%D7%96%D7%9F.md) – Von Staudt–Clausen theorem
 * [משפט צ'ן](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A6%27%D7%9F.md) – Chen's theorem
 * [משפט קפלנסקי על תבניות ריבועיות](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A7%D7%A4%D7%9C%D7%A0%D7%A1%D7%A7%D7%99%20%D7%A2%D7%9C%20%D7%AA%D7%91%D7%A0%D7%99%D7%95%D7%AA%20%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%95%D7%AA.md) – Kaplansky's theorem on quadratic forms
 * [משפט רומנוב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A8%D7%95%D7%9E%D7%A0%D7%95%D7%91.md) – Romanov's theorem

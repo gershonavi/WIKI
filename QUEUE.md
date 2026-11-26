@@ -390,3 +390,14 @@ Additive number theory:
 - [x] Supersingular isogeny graph
 - [x] Weil–Châtelet group
 - [x] Néron model
+
+### השלמות לשיעורים 19א–23, חלק ג' (8)
+
+- [x] Von Staudt–Clausen theorem
+- [ ] Tate module
+- [ ] Adele ring
+- [ ] Automorphic form
+- [ ] Monstrous moonshine
+- [ ] Chowla–Selberg formula
+- [ ] Hecke L-function
+- [ ] Supersingular prime (moonshine theory)

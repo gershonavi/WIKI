@@ -5,7 +5,7 @@
 == ניסוח ==
 הצורה הפשוטה ביותר של קונגרואנציית קומר היא
 :<math> \frac{B_h}{h}\equiv \frac{B_k}{k} \pmod p</math>
-בכל פעם ש-<math>h\equiv k \pmod {p-1}</math>, כאשר <math>p</math> ראשוני, <math>h</math> ו-<math>k</math> שלמים חיוביים זוגיים שאינם מתחלקים ב-<math>p-1</math>, ו-<math>B_h</math> הם [[מספרי ברנולי]]. (התנאי ש-<math>p - 1 \nmid h</math> מבטיח ש-<math>B_h/h</math> הוא <math>p</math>-אינטגרלי: לפי משפט פון שטאודט–קלאוזן, <math>p</math> מופיע במכנה של <math>B_h</math> בדיוק כש-<math>p - 1 \mid h</math>.)
+בכל פעם ש-<math>h\equiv k \pmod {p-1}</math>, כאשר <math>p</math> ראשוני, <math>h</math> ו-<math>k</math> שלמים חיוביים זוגיים שאינם מתחלקים ב-<math>p-1</math>, ו-<math>B_h</math> הם [[מספרי ברנולי]]. (התנאי ש-<math>p - 1 \nmid h</math> מבטיח ש-<math>B_h/h</math> הוא <math>p</math>-אינטגרלי: לפי [[משפט פון שטאודט–קלאוזן]], <math>p</math> מופיע במכנה של <math>B_h</math> בדיוק כש-<math>p - 1 \mid h</math>.)
 
 באופן כללי יותר, אם <math>h</math> ו-<math>k</math> שלמים חיוביים זוגיים שאינם מתחלקים ב-<math>p-1</math>, אז
 :<math> (1-p^{h-1})\frac{B_h}{h}\equiv (1-p^{k-1})\frac{B_k}{k} \pmod {p^{a+1}}</math>
@@ -20,7 +20,7 @@
 בדקנו בחישוב את הקונגרואנציה הכללית עבור <math>p = 5, 7, 11, 13</math>, <math>a = 0, 1, 2</math> ולכל <math>h \lt 60</math>, <math>k \lt 90</math> המתאימים.
 
 == ראו גם ==
-* משפט פון שטאודט–קלאוזן, קונגרואנציה נוספת שמערבת את מספרי ברנולי
+* [[משפט פון שטאודט–קלאוזן]], קונגרואנציה נוספת שמערבת את מספרי ברנולי
 * [[משפט הרברנד–ריבט]]
 
 == לקריאה נוספת ==
