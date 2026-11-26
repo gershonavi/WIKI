@@ -247,7 +247,7 @@ Additive number theory:
 - [x] Low-discrepancy sequence
 - [x] Subspace theorem
 - [x] Siegel's lemma
-- [ ] Markov spectrum
+- [x] Markov spectrum
 - [ ] Lagrange number
 - [ ] Duffin–Schaeffer theorem
 - [ ] Proof that e is irrational
