@@ -1,0 +1,122 @@
+ב[[תורת המספרים]], בהינתן מספר שלם חיובי <math>n</math> ומספר שלם <math>a</math> [[מספרים זרים|זר]] ל-<math>n</math>, ה'''סדר הכפלי''' של <math>a</math> מודולו <math>n</math> הוא המספר השלם החיובי הקטן ביותר <math>k</math> שעבורו <math>a^k \equiv 1 \pmod n</math>.{{הערה|שם=nzm|1=<span dir="ltr">I. Niven, H. S. Zuckerman, H. L. Montgomery, An Introduction to the Theory of Numbers, 5th ed., Wiley, 1991, Section 2.8, Definition 2.6.</span>|כיווון=שמאל}}
+
+במילים אחרות, הסדר הכפלי של <math>a</math> מודולו <math>n</math> הוא ה[[סדר (תורת החבורות)|סדר]] של <math>a</math> ב[[חבורה]] הכפלית של האיברים ההפיכים ב[[חוג (מבנה אלגברי)|חוג]] השלמים [[חשבון מודולרי|מודולו]] <math>n</math>.
+
+לעיתים מסמנים את הסדר של <math>a</math> מודולו <math>n</math> ב-<math>\operatorname{ord}_n(a)</math>.{{הערה|1=<span dir="ltr">J. von zur Gathen, J. Gerhard, Modern Computer Algebra, 3rd ed., Cambridge University Press, 2013, Section 18.1.</span>|כיווון=שמאל}}
+
+== דוגמה ==
+החזקות של 4 מודולו 7 הן:
+:<math>\begin{array}{llll}
+4^0 &= 1 &=0 \times 7 + 1 &\equiv 1\pmod7 \\
+4^1 &= 4 &=0 \times 7 + 4 &\equiv 4\pmod7 \\
+4^2 &= 16 &=2 \times 7 + 2 &\equiv 2\pmod7 \\
+4^3 &= 64 &=9 \times 7 + 1 &\equiv 1\pmod7 \\
+4^4 &= 256 &=36 \times 7 + 4 &\equiv 4\pmod7 \\
+4^5 &= 1024 &=146 \times 7 + 2 &\equiv 2\pmod7 \\
+\vdots\end{array}</math>
+המספר השלם החיובי הקטן ביותר <math>k</math> שעבורו <math>4^k \equiv 1 \pmod 7</math> הוא 3, ולכן הסדר של 4 מודולו 7 הוא 3. שימו לב ש-<math>a^0 = 1 \equiv 1 \pmod n</math> מתקיים תמיד, אבל 0 אינו מספר חיובי, ולכן הפתרון הטריוויאלי הזה אינו נחשב.
+
+מרגע שהגענו ל-1, החזקות חוזרות על עצמן במחזור: <math>4^{k+3} = 4^k\cdot 4^3 \equiv 4^k</math>. לכן הרצף <math>1, 4, 2, 1, 4, 2, \dots</math> מחזורי, ואורך המחזור הוא בדיוק הסדר.
+
+=== טבלה מלאה מודולו 13 ===
+מודולו 13 יש 12 שאריות זרות ל-13. אלה הסדרים שלהן (בדקנו בחישוב):
+
+{| class="wikitable" style="text-align:center"
+! <math>a</math>
+| 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 10 || 11 || 12
+|-
+! <math>\operatorname{ord}_{13}(a)</math>
+| 1 || 12 || 3 || 6 || 4 || 12 || 12 || 4 || 3 || 6 || 12 || 2
+|}
+
+כל הסדרים מחלקים את 12, כפי שמבטיח משפט לגראנז' (ראו להלן). יש בדיוק ארבעה איברים מסדר 12, והם 2, 6, 7 ו-11. מספרם הוא <math>\varphi(12) = 4</math>, וזה לא מקרה: לכל מחלק <math>d</math> של 12 יש בדיוק <math>\varphi(d)</math> איברים מסדר <math>d</math> (אחד מסדר 1, אחד מסדר 2, שניים מסדר 3, שניים מסדר 4, שניים מסדר 6 וארבעה מסדר 12), כי החבורה מודולו 13 [[חבורה ציקלית|ציקלית]].
+
+== תכונות ==
+גם בלי לדעת שאנחנו עובדים ב[[חבורת אוילר|חבורה הכפלית של השלמים מודולו <math>n</math>]], אפשר להראות של-<math>a</math> באמת יש סדר. לחזקות של <math>a</math> יש רק מספר סופי של ערכים שונים מודולו <math>n</math>, ולכן לפי [[עקרון שובך היונים]] יש שתי חזקות, נאמר <math>s</math> ו-<math>t</math> עם <math>s > t</math>, כך ש-<math>a^s \equiv a^t \pmod n</math>. מכיוון ש-<math>a</math> ו-<math>n</math> זרים, ל-<math>a</math> יש הופכי <math>a^{-1}</math> מודולו <math>n</math>, ואפשר לכפול את שני האגפים ב-<math>a^{-t}</math> ולקבל <math>a^{s-t} \equiv 1 \pmod n</math>.
+
+המושג סדר כפלי הוא מקרה פרטי של [[סדר (תורת החבורות)|סדר של איבר בחבורה]]. הסדר הכפלי של <math>a</math> מודולו <math>n</math> הוא הסדר של <math>a</math> בחבורה הכפלית שאיבריה הם השאריות מודולו <math>n</math> של המספרים הזרים ל-<math>n</math>, ופעולת החבורה בה היא כפל מודולו <math>n</math>. זוהי [[חבורת ההפיכים]] של החוג <math>\mathbb{Z}_n</math>. יש בה <math>\varphi(n)</math> איברים, כאשר <math>\varphi</math> היא [[פונקציית אוילר]], ומסמנים אותה <math>U(n)</math> או <math>U(\mathbb{Z}_n)</math>.
+
+כתוצאה מ[[משפט לגראנז' (תורת החבורות)|משפט לגראנז']], הסדר של <math>a</math> מודולו <math>n</math> תמיד [[מחלק]] את <math>\varphi(n)</math>. אם הסדר של <math>a</math> שווה בדיוק ל-<math>\varphi(n)</math>, כלומר גדול ככל האפשר, אומרים ש-<math>a</math> הוא [[איבר פרימיטיבי|שורש פרימיטיבי]] מודולו <math>n</math>. פירוש הדבר שהחבורה <math>U(n)</math> ציקלית, ומחלקת השארית של <math>a</math> יוצרת אותה.
+
+הסדר של <math>a</math> מודולו <math>n</math> מחלק גם את <math>\lambda(n)</math>, ערך של [[פונקציית קרמייקל]]. זו טענה חזקה יותר מהחלוקה של <math>\varphi(n)</math>.
+
+=== שלוש תכונות שימושיות עם הוכחות ===
+נסמן <math>d = \operatorname{ord}_n(a)</math>.
+
+'''1. <math>a^k \equiv 1 \pmod n</math> אם ורק אם <math>d \mid k</math>.''' אם <math>k = qd</math> אז <math>a^k = (a^d)^q \equiv 1</math>. בכיוון השני, נחלק עם שארית: <math>k = qd + r</math> עם <math>0 \le r \lt d</math>. אז <math>1 \equiv a^k = (a^d)^q a^r \equiv a^r</math>, ומהמינימליות של <math>d</math> נובע <math>r = 0</math>. מכאן גם ש-<math>a^s \equiv a^t</math> אם ורק אם <math>s \equiv t \pmod d</math>.
+
+מהתכונה הזו נובעת מיד החלוקה <math>d \mid \varphi(n)</math>, כי לפי [[משפט אוילר]] <math>a^{\varphi(n)} \equiv 1</math>.
+
+'''2. <math>\operatorname{ord}_n(a^j) = d/\gcd(d, j)</math>.''' לפי תכונה 1, <math>(a^j)^m \equiv 1</math> אם ורק אם <math>d \mid jm</math>, כלומר אם ורק אם <math>\tfrac{d}{\gcd(d,j)} \mid m</math>. למשל, מודולו 13 הסדר של 2 הוא 12, ולכן הסדר של <math>2^8 \equiv 9</math> הוא <math>12/\gcd(12, 8) = 3</math>, בהתאם לטבלה למעלה.
+
+'''3. אם <math>m</math> ו-<math>m'</math> זרים, אז <math>\operatorname{ord}_{mm'}(a) = \operatorname{lcm}\bigl(\operatorname{ord}_m(a), \operatorname{ord}_{m'}(a)\bigr)</math>.''' זה נובע מ[[משפט השאריות הסיני]]: <math>a^k \equiv 1 \pmod{mm'}</math> אם ורק אם <math>a^k \equiv 1</math> גם מודולו <math>m</math> וגם מודולו <math>m'</math>, ולפי תכונה 1 זה קורה אם ורק אם <math>k</math> מתחלק בשני הסדרים.
+
+== איך מחשבים סדר ==
+מכיוון ש-<math>d \mid \lambda(n)</math> (או לפחות <math>d \mid \varphi(n)</math>), אין צורך לעבור על כל החזקות. אם ידוע הפירוק לגורמים <math>\lambda(n) = \prod q_i^{e_i}</math>, מתחילים מ-<math>d = \lambda(n)</math>, ולכל ראשוני <math>q_i</math> מחלקים את <math>d</math> ב-<math>q_i</math> כל עוד עדיין מתקיים <math>a^{d/q_i} \equiv 1</math>. כל חזקה מחושבת ב[[העלאה בחזקה מודולרית]] בשיטת הריבוע החוזר.
+
+'''דוגמה 1: הסדר של 3 מודולו 101.''' כאן 101 ראשוני, ולכן <math>\varphi(101) = 100 = 2^2\cdot 5^2</math>. מספיק לבדוק את שתי החזקות <math>3^{100/2}</math> ו-<math>3^{100/5}</math>:
+:<math>3^{50} \equiv 100 \equiv -1 \pmod{101}, \qquad 3^{20} \equiv 84 \pmod{101}.</math>
+אף אחת מהן אינה 1, ולכן אין מחלק ממש של 100 שהוא הסדר. מכאן <math>\operatorname{ord}_{101}(3) = 100</math>, ו-3 הוא שורש פרימיטיבי מודולו 101 (בדקנו בחישוב).
+
+'''דוגמה 2: הסדר של 3 מודולו 1000.''' נפרק <math>1000 = 8\cdot 125</math> ונשתמש בתכונה 3. מודולו 8: <math>3^2 = 9 \equiv 1</math>, ולכן <math>\operatorname{ord}_8(3) = 2</math>. מודולו 125 יש <math>\varphi(125) = 100</math>, והחזקות הרלוונטיות הן <math>3^{50} \equiv 124 \equiv -1</math> ו-<math>3^{20} \equiv 26</math> מודולו 125, ולכן <math>\operatorname{ord}_{125}(3) = 100</math>. לכן
+:<math>\operatorname{ord}_{1000}(3) = \operatorname{lcm}(2, 100) = 100.</math>
+כלומר שלוש הספרות האחרונות של <math>3^k</math> חוזרות במחזור של 100 בדיוק. שימו לב שזה רבע מ-<math>\varphi(1000) = 400</math>; כאן <math>\lambda(1000) = 100</math>, ולכן הסדר הוא הגדול ביותר האפשרי. (בדקנו בחישוב, ולמשל <math>3^{50} \equiv 249</math> ו-<math>3^{100} \equiv 1 \pmod{1000}</math>.)
+
+== שימושים ==
+=== אורך המחזור של שבר עשרוני ===
+אם <math>p</math> ראשוני שונה מ-2 ומ-5, אז ההצגה העשרונית של <math>1/p</math> מחזורית טהורה, ואורך המחזור שלה הוא בדיוק <math>\operatorname{ord}_p(10)</math>. הסיבה: אם <math>10^k \equiv 1 \pmod p</math>, אז <math>\tfrac{10^k - 1}{p}</math> הוא מספר שלם <math>R</math>, ו-<math>\tfrac1p = \tfrac{R}{10^k - 1} = 0.\overline{R}</math> (עם <math>k</math> ספרות במחזור, כולל אפסים מובילים). דוגמאות (בדקנו בחישוב):
+
+{| class="wikitable" style="text-align:center"
+! <math>p</math> !! <math>\operatorname{ord}_p(10)</math> !! <math>1/p</math>
+|-
+| 3 || 1 || <math>0.\overline{3}</math>
+|-
+| 7 || 6 || <math>0.\overline{142857}</math>
+|-
+| 11 || 2 || <math>0.\overline{09}</math>
+|-
+| 13 || 6 || <math>0.\overline{076923}</math>
+|-
+| 37 || 3 || <math>0.\overline{027}</math>
+|-
+| 41 || 5 || <math>0.\overline{02439}</math>
+|-
+| 17 || 16 || <math>0.\overline{0588235294117647}</math>
+|}
+
+ב-7 וב-17 המחזור ארוך ככל האפשר (<math>p - 1</math>), כי 10 הוא שורש פרימיטיבי מודולו 7 ומודולו 17.
+
+=== מחלקים של מספרי מרסן ושל מספרי פרמה ===
+נניח ש-<math>p</math> ראשוני אי-זוגי ו-<math>q</math> ראשוני המחלק את [[מספר מרסן|מספר המרסן]] <math>2^p - 1</math>. אז <math>2^p \equiv 1 \pmod q</math>, ולכן לפי תכונה 1 <math>\operatorname{ord}_q(2)</math> מחלק את <math>p</math>. הסדר אינו 1 (כי <math>2^1 - 1 = 1</math> אינו מתחלק ב-<math>q</math>), ולכן הוא <math>p</math>. מצד שני הסדר מחלק את <math>q - 1</math> לפי [[המשפט הקטן של פרמה]]. לכן <math>p \mid q - 1</math>, ומכיוון ש-<math>q</math> אי-זוגי, <math>q \equiv 1 \pmod{2p}</math>.
+
+למשל, <math>2^{11} - 1 = 2047 = 23 \cdot 89</math>, ואכן <math>23 = 22 + 1</math> ו-<math>89 = 4\cdot 22 + 1</math>. באותו אופן <math>2^{23} - 1 = 47 \cdot 178\,481</math>, ושני הגורמים שקולים ל-1 מודולו 46 (בדקנו בחישוב). ההגבלה הזו מצמצמת מאוד את החיפוש אחר מחלקים.
+
+אותו טיעון עבור [[מספר פרמה|מספרי פרמה]] <math>F_m = 2^{2^m} + 1</math> נותן ש-<math>\operatorname{ord}_q(2) = 2^{m+1}</math> לכל מחלק ראשוני <math>q</math>, ולכן <math>q \equiv 1 \pmod{2^{m+1}}</math>. לכן כשאוילר חיפש מחלקים של <math>F_5 = 2^{32} + 1</math>, הוא היה צריך לבדוק רק ראשוניים מהצורה <math>64k + 1</math>. הוא מצא את <math>641 = 64\cdot 10 + 1</math>, ו-<math>F_5 = 641 \cdot 6\,700\,417</math>.
+
+=== השערת ארטין ===
+[[השערת ארטין על שורשים פרימיטיביים]] חוזה שלכל מספר שלם <math>a</math> שאינו ‎−1 ואינו ריבוע שלם, <math>a</math> הוא שורש פרימיטיבי מודולו אינסוף ראשוניים, ושהשכיחות של ראשוניים כאלה חיובית. עבור <math>a = 2</math> השכיחות החזויה היא קבוע ארטין, <math>\approx 0.3739558</math>. בדקנו בחישוב שבין הראשוניים האי-זוגיים הקטנים מ-<math>10^6</math>, ל-2 יש סדר <math>p - 1</math> בכ-<math>37.38\%</math> מהמקרים. ההשערה הוכחה בהנחת [[השערת רימן המוכללת]].{{הערה|1=<span dir="ltr">C. Hooley, On Artin's conjecture, Journal für die reine und angewandte Mathematik 225 (1967), pp. 209–220.</span>|כיווון=שמאל}}
+
+== בשפות תכנות ==
+* Maxima: <code>zn_order(a, n)</code>
+* Wolfram Language: <code>MultiplicativeOrder[k, n]</code>
+* [[PARI/GP]]: <code>znorder(Mod(a, n))</code>
+* SymPy בפייתון: <code>sympy.n_order(a, n)</code>
+
+== ראו גם ==
+* [[לוגריתם בדיד]]
+* [[חשבון מודולרי]]
+* [[איבר פרימיטיבי]]
+* [[פונקציית קרמייקל]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* Ivan Niven, Herbert S. Zuckerman, Hugh L. Montgomery, ''An Introduction to the Theory of Numbers'', 5th ed., John Wiley & Sons, 1991.
+</div>
+
+== קישורים חיצוניים ==
+* <span dir="ltr">[https://mathworld.wolfram.com/MultiplicativeOrder.html Multiplicative Order], MathWorld</span>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:חשבון מודולרי]]

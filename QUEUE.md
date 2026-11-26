@@ -431,3 +431,16 @@ Additive number theory:
 - [x] Gaussian ensemble
 - [x] Dyson Brownian motion
 - [x] Hadamard factorization theorem
+
+### השלמות לשיעורים 4, 5, 7 (חשבון מודולרי ואלגוריתמים) (10)
+
+- [ ] Modular exponentiation
+- [ ] Exponentiation by squaring
+- [x] Multiplicative order
+- [ ] Reduced residue system
+- [ ] Fermat quotient
+- [ ] Tonelli–Shanks algorithm
+- [ ] Cipolla's algorithm
+- [ ] Baby-step giant-step
+- [ ] Montgomery modular multiplication
+- [ ] Barrett reduction
