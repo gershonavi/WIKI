@@ -227,6 +227,7 @@ Additive number theory:
 - [x] Bhaskara's lemma
 - [x] Congruum
 - [x] Euler's sum of powers conjecture
+- [x] Sums of three cubes
 - [ ] Sum of four cubes problem
 - [ ] Goormaghtigh conjecture
 - [ ] Ljunggren's equation
