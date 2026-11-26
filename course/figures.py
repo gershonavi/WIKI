@@ -6327,6 +6327,188 @@ def _():
     save('20-6')
 
 
+
+# ---------- lesson 21: modular forms ----------
+def _sigma(n, k):
+    return sum(d ** k for d in range(1, n + 1) if n % d == 0)
+
+
+_TAU_CACHE = {}
+
+
+def _tau_list(N):
+    if N in _TAU_CACHE: return _TAU_CACHE[N]
+    # Delta = q * prod (1 - q^n)^24 via Euler's pentagonal series cubed: prod(1-q^n)^3 = sum (-1)^m (2m+1) q^{m(m+1)/2}
+    c3 = [0] * N
+    m = 0
+    while m * (m + 1) // 2 < N:
+        c3[m * (m + 1) // 2] = (-1) ** m * (2 * m + 1); m += 1
+    def mul(a, b):
+        out = [0] * N
+        nz = [(i, x) for i, x in enumerate(a) if x]
+        for j, y in enumerate(b):
+            if y:
+                for i, x in nz:
+                    if i + j >= N: break
+                    out[i + j] += x * y
+        return out
+    c6 = mul(c3, c3); c12 = mul(c6, c6); c24 = mul(c12, c12)
+    tau = [0] + c24[:N - 1]
+    _TAU_CACHE[N] = tau
+    return tau
+
+
+def _fd_boundary(ax, color='k'):
+    t = np.linspace(pi / 3, 2 * pi / 3, 100)
+    ax.plot(np.cos(t), np.sin(t), color=color); ax.plot([-0.5, -0.5], [np.sqrt(3) / 2, 2.6], color=color)
+    ax.plot([0.5, 0.5], [np.sqrt(3) / 2, 2.6], color=color)
+
+
+@fig('21-e1')
+def _():
+    ax = plt.gca()
+    # images of the fundamental domain under a few matrices
+    base_t = np.linspace(pi / 3, 2 * pi / 3, 60)
+    arc = np.cos(base_t) + 1j * np.sin(base_t)
+    left = -0.5 + 1j * np.linspace(np.sqrt(3) / 2, 6, 60); right = 0.5 + 1j * np.linspace(6, np.sqrt(3) / 2, 60)
+    F = np.concatenate([arc[::-1], left, right])
+    mats = [(1, n, 0, 1) for n in range(-3, 3)] + [(n, -1, 1, 0) for n in range(-2, 3)] + [(1, 0, n, 1) for n in (-2, 2, 3, -3)]
+    for a, b, c, d in mats:
+        Z = (a * F + b) / (c * F + d)
+        ax.fill(Z.real, Z.imag, color=C1 if (a, b, c, d) == (1, 0, 0, 1) else '#cfe2f3', ec='#7f9fbf', lw=0.6, alpha=0.9)
+    path = [0.3 + 0.1j, -3 + 1j, 1j]
+    ax.annotate('', xy=(-3, 1), xytext=(0.3, 0.1), arrowprops=dict(arrowstyle='->', color=C2))
+    ax.annotate('', xy=(0, 1), xytext=(-3, 1), arrowprops=dict(arrowstyle='->', color=C4))
+    for z, lab in zip(path, ['τ = (3+i)/10', 'S: −1/τ = −3+i', 'T³: i']):
+        ax.plot(z.real, z.imag, 'o', color=C2, ms=4); ax.text(z.real + 0.05, z.imag + 0.08, lab, fontsize=8)
+    ax.set_xlim(-3.4, 2.2); ax.set_ylim(0, 2.2); ax.set_aspect('equal')
+    ax.set_title('fundamental domain of SL₂(ℤ) (dark) and some of its images', fontsize=9)
+    save('21-e1')
+
+
+@fig('21-e2')
+def _():
+    ax = plt.gca(); N = 40
+    xs = np.linspace(-1.5, 1.5, 300); ys = np.linspace(0.15, 1.6, 150)
+    X, Y = np.meshgrid(xs, ys); Q = np.exp(2j * pi * (X + 1j * Y))
+    tau = _tau_list(N)
+    D = sum(tau[n] * Q ** n for n in range(1, N))
+    V = np.log10(np.abs(D) * Y ** 6 + 1e-300)
+    im = ax.imshow(V, extent=(xs[0], xs[-1], ys[0], ys[-1]), origin='lower', cmap='viridis', vmin=-8, vmax=-1.3, aspect='auto')
+    _fd_boundary(ax, 'w'); plt.colorbar(im, ax=ax, fraction=0.03); ax.set_ylim(ys[0], ys[-1])
+    ax.set_title('log₁₀( y⁶ |Δ(x + iy)| ): invariant under τ ↦ τ + 1 and τ ↦ −1/τ', fontsize=9)
+    save('21-e2')
+
+
+@fig('21-e3')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if p < 1500]
+    tau = _tau_list(1500)
+    x = [tau[p] / (2 * p ** 5.5) for p in ps]
+    ax.hist([math.acos(t) for t in x], bins=25, density=True, color=C1, alpha=0.7)
+    t = np.linspace(0, pi, 200); ax.plot(t, 2 / pi * np.sin(t) ** 2, color=C2)
+    ax.set_xlabel('θ_p,  τ(p) = 2p^(11/2) cos θ_p'); ax.set_title('Ramanujan τ(p), p < 1500: Deligne bound and Sato–Tate', fontsize=9)
+    save('21-e3')
+
+
+@fig('21-e4')
+def _():
+    ax = plt.gca(); ds = [3, 4, 7, 8, 11, 19, 43, 67, 163]
+    js = {3: 0, 4: 1728, 7: -3375, 8: 8000, 11: -32768, 19: -884736, 43: -884736000, 67: -147197952000, 163: -262537412640768000}
+    err = [abs(math.exp(pi * sqrt(d)) - (abs(js[d]) + 744)) if d % 4 == 3 and d > 3 else None for d in ds]
+    pts = [(d, e) for d, e in zip(ds, err) if e]
+    ax.semilogy([p[0] for p in pts], [p[1] for p in pts], 'o-', color=C1)
+    for d, e in pts: ax.text(d + 2, e, f'{e:.2g}', fontsize=8)
+    ax.set_xlabel('d (class number 1)'); ax.set_ylabel('|e^(π√d) − (|j| + 744)|')
+    ax.set_title('e^(π√d) is almost an integer: j((1+√−d)/2) is an integer', fontsize=9)
+    save('21-e4')
+
+
+@fig('21-e5')
+def _():
+    ax = plt.gca(); ns = range(1, 200)
+    r4 = [8 * sum(d for d in range(1, n + 1) if n % d == 0 and d % 4) for n in ns]
+    ax.scatter(list(ns), [r / n for r, n in zip(r4, ns)], s=8, c=[C2 if n % 2 == 0 else C1 for n in ns])
+    ax.set_xlabel('n'); ax.set_ylabel('r₄(n) / n'); ax.set_title('Jacobi: r₄(n) = 8 Σ_{d | n, 4 ∤ d} d  (red: n even)', fontsize=9)
+    save('21-e5')
+
+
+@fig('21-e6')
+def _():
+    ax = plt.gca(); N = 400; p = [1] + [0] * N
+    for k in range(1, N + 1):
+        for n in range(k, N + 1): p[n] += p[n - k]
+    ns = np.arange(1, N + 1)
+    hr = np.exp(pi * np.sqrt(2 * ns / 3)) / (4 * ns * sqrt(3))
+    ax.plot(ns, np.array(p[1:], dtype=float) / hr, color=C1)
+    ax.axhline(1, color=GR, ls=':'); ax.set_xlabel('n'); ax.set_ylabel('p(n) / HR(n)')
+    ax.set_title('partitions vs Hardy–Ramanujan e^(π√(2n/3)) / (4n√3)', fontsize=9)
+    save('21-e6')
+
+
+@fig('21-1')
+def _():
+    ax = plt.gca(); ns = range(1, 30)
+    lhs = [_sigma(n, 7) for n in ns]
+    rhs = [_sigma(n, 3) + 120 * sum(_sigma(m, 3) * _sigma(n - m, 3) for m in range(1, n)) for n in ns]
+    ax.semilogy(list(ns), lhs, 'o', color=C1, label='σ₇(n)'); ax.semilogy(list(ns), rhs, 'x', color=C2, label='σ₃(n) + 120 Σ σ₃(m)σ₃(n−m)')
+    ax.legend(fontsize=8); ax.set_xlabel('n'); ax.set_title('E₄² = E₈ as an identity of divisor sums', fontsize=9)
+    save('21-1')
+
+
+@fig('21-2')
+def _():
+    ax = plt.gca(); tau = _tau_list(30); ns = range(1, 30)
+    ax.bar(list(ns), [np.sign(tau[n]) * math.log10(abs(tau[n])) for n in ns], color=[C1 if tau[n] > 0 else C2 for n in ns])
+    ax.set_xlabel('n'); ax.set_ylabel('sign · log₁₀|τ(n)|'); ax.set_title('Ramanujan τ(n) for n < 30', fontsize=9)
+    save('21-2')
+
+
+@fig('21-3')
+def _():
+    ax = plt.gca(); tau = _tau_list(60); ns = range(1, 60)
+    ax.scatter(list(ns), [(tau[n] - _sigma(n, 11)) % 691 for n in ns], color=C3, s=12)
+    ax.set_ylim(-20, 690); ax.set_xlabel('n'); ax.set_ylabel('(τ(n) − σ₁₁(n)) mod 691')
+    ax.set_title('Ramanujan: τ(n) ≡ σ₁₁(n) (mod 691) – always 0', fontsize=9)
+    save('21-3')
+
+
+@fig('21-4')
+def _():
+    ax = plt.gca(); from itertools import product as _prod
+    ns = list(range(1, 31))
+    direct = [sum(1 for v in _prod(range(-6, 7), repeat=4) if sum(t * t for t in v) == n) for n in ns]
+    formula = [8 * sum(d for d in range(1, n + 1) if n % d == 0 and d % 4) for n in ns]
+    ax.bar(ns, direct, color=C1, alpha=0.6, label='direct count')
+    ax.plot(ns, formula, 'x', color=C2, label='8 Σ_{4∤d|n} d')
+    ax.plot([12], [96], 'o', mfc='none', mec='k', ms=10)
+    ax.legend(fontsize=8); ax.set_xlabel('n'); ax.set_ylabel('r₄(n)'); ax.set_title('r₄(n): direct count vs Jacobi (n = 12 circled)', fontsize=9)
+    save('21-4')
+
+
+@fig('21-5')
+def _():
+    ax = plt.gca(); _fd_boundary(ax)
+    z0 = 0.5 + 1j / (2 * sqrt(3)); z1 = -1 / z0; z2 = z1 + 1
+    for z, lab in ((z0, 'τ = 1/2 + i/(2√3)'), (z1, '−1/τ'), (z2, 'ρ = e^(2πi/3)')):
+        ax.plot(z.real, z.imag, 'o', color=C2, ms=4); ax.text(z.real + 0.05, z.imag + 0.05, lab, fontsize=8)
+    ax.annotate('', xy=(z1.real, z1.imag), xytext=(z0.real, z0.imag), arrowprops=dict(arrowstyle='->', color=C2))
+    ax.annotate('', xy=(z2.real, z2.imag), xytext=(z1.real, z1.imag), arrowprops=dict(arrowstyle='->', color=C4))
+    ax.set_xlim(-1.8, 1.2); ax.set_ylim(0, 1.6); ax.set_aspect('equal'); ax.set_title('reducing τ to the fundamental domain', fontsize=9)
+    save('21-5')
+
+
+@fig('21-6')
+def _():
+    ax = plt.gca(); N = 60; p = [1] + [0] * N
+    for k in range(1, N + 1):
+        for n in range(k, N + 1): p[n] += p[n - k]
+    ns = list(range(N + 1))
+    ax.scatter(ns, [p[n] % 5 for n in ns], c=[C3 if n % 5 == 4 else GR for n in ns], s=14)
+    ax.set_xlabel('n'); ax.set_ylabel('p(n) mod 5'); ax.set_title('Ramanujan: p(5n + 4) ≡ 0 (mod 5)  (green)', fontsize=9)
+    save('21-6')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
