@@ -361,7 +361,7 @@ Additive number theory:
 - [x] Primary pseudoperfect number
 - [x] Erdős–Woods number
 - [x] Ulam number
-- [ ] Stanley sequence
+- [x] Stanley sequence
 - [ ] Mian–Chowla sequence
 - [ ] Sum-free sequence
 - [ ] Moser–de Bruijn sequence
