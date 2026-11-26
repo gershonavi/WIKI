@@ -344,7 +344,7 @@ Additive number theory:
 - [x] Elliptic divisibility sequence
 - [x] Somos sequence
 - [x] Hilbert number
-- [ ] Rough number
+- [x] Rough number
 - [ ] Regular number
 - [ ] Mersenne number
 - [ ] Double Mersenne number
