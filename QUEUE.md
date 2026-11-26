@@ -384,7 +384,7 @@ Additive number theory:
 - [x] Selmer group
 - [x] Ramanujan's congruences
 - [x] Kummer's congruence
-- [ ] Isogeny
+- [x] Isogeny
 - [ ] Division polynomials
 - [ ] Néron–Tate height
 - [ ] Supersingular isogeny graph
