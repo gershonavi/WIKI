@@ -328,7 +328,7 @@ Additive number theory:
 - [x] Euclid number
 - [x] Cullen number
 - [x] Woodall number
-- [ ] Thabit number
+- [x] Thabit number
 - [ ] Giuga number
 - [ ] Blum integer
 - [ ] Achilles number
