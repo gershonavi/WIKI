@@ -202,7 +202,7 @@ Additive number theory:
 - [x] Diamond operator
 - [x] Poincaré series (modular form)
 - [x] Ring of modular forms
-- [ ] Weakly holomorphic modular form
+- [x] Weakly holomorphic modular form
 - [ ] Modular forms modulo p
 - [ ] P-adic modular form
 
