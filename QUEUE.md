@@ -270,7 +270,7 @@ Additive number theory:
 - [x] Isotropic quadratic form
 - [x] Hasse invariant of a quadratic form
 - [x] Smith–Minkowski–Siegel mass formula
-- [ ] Unimodular lattice
+- [x] Unimodular lattice
 - [ ] E8 lattice
 - [ ] Leech lattice
 - [ ] Niemeier lattice
