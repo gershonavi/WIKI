@@ -30,7 +30,7 @@
 :<math>f(\tau) = \eta(\tau)\eta(23\tau) = q\prod_{n\ge1}(1 - q^n)(1 - q^{23n}) = \sum_{n\ge1}a_nq^n</math>
 (כאשר <math>\eta</math> היא [[פונקציית אטא של דדקינד]]) היא תבנית שפיץ ממשקל 1 ביחס ל-<math>\Gamma_1(23)</math>, והיא פונקציה עצמית של כל אופרטורי היהלום עם הקרקטר
 :<math>\chi(d) = \left(\frac{-23}d\right) = \left(\frac d{23}\right),</math>
-[[סמל לז'נדר]] מודולו 23. כלומר, <math>f \in S_1(23, \chi)</math>. כצפוי, <math>\chi(-1) = \left(\frac{-1}{23}\right) = -1 = (-1)^1</math>.
+[[סימן לז'נדר|סמל לז'נדר]] מודולו 23. כלומר, <math>f \in S_1(23, \chi)</math>. כצפוי, <math>\chi(-1) = \left(\frac{-1}{23}\right) = -1 = (-1)^1</math>.
 
 '''בדיקה מספרית.''' הריבועים מודולו 23 הם <math>1, 2, 3, 4, 6, 8, 9, 12, 13, 16, 18</math>, ולכן 5 ו-7 אינם ריבועים ו-<math>\chi(5) = \chi(7) = -1</math>. נבחר
 :<math>\gamma_5 = \begin{pmatrix} 14 & 3 \\ 23 & 5\end{pmatrix}, \qquad \gamma_7 = \begin{pmatrix} 10 & 1 \\ 69 & 7\end{pmatrix}</math>

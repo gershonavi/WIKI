@@ -13,7 +13,7 @@
 == אופרטורי הקה במשקל חצי-שלם ==
 עבור <math>f = \sum b(n)q^n</math> ממשקל <math>k + \tfrac12</math> על <math>\Gamma_0(4N)</math> עם קרקטר <math>\chi</math>, ולראשוני <math>p \nmid 4N</math>, אופרטור הקה <math>T(p^2)</math> פועל על המקדמים כך:
 :<math>b(n) \mapsto b(p^2n) + \chi(p)\left(\frac{(-1)^kn}p\right)p^{k-1}b(n) + \chi(p^2)p^{2k-1}b(n/p^2),</math>
-כאשר <math>\left(\frac\cdot p\right)</math> הוא [[סמל לז'נדר]], ו-<math>b(n/p^2) = 0</math> אם <math>p^2 \nmid n</math>. אם <math>f</math> עצמית עם ערך עצמי <math>\omega_p</math> ו-<math>b(1) = 1</math>, הצבת <math>n = 1</math> נותנת
+כאשר <math>\left(\frac\cdot p\right)</math> הוא [[סימן לז'נדר|סמל לז'נדר]], ו-<math>b(n/p^2) = 0</math> אם <math>p^2 \nmid n</math>. אם <math>f</math> עצמית עם ערך עצמי <math>\omega_p</math> ו-<math>b(1) = 1</math>, הצבת <math>n = 1</math> נותנת
 :<math>\omega_p = b(p^2) + \chi(p)\left(\frac{(-1)^k}p\right)p^{k-1}.</math>
 
 == דוגמה: התבנית של טאנל ==

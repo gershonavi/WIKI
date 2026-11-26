@@ -1,0 +1,152 @@
+ב[[מתמטיקה]], '''שיטות בדיקת ראשוניות בעזרת [[עקום אליפטי|עקומים אליפטיים]]''', או '''הוכחת ראשוניות בעקומים אליפטיים''' (ECPP – Elliptic Curve Primality Proving), הן מהשיטות המהירות והנפוצות ביותר להוכחת ראשוניות.{{הערה|שם=HEHCC|1=<span dir="ltr">H. Cohen, G. Frey (eds.), ''Handbook of Elliptic and Hyperelliptic Curve Cryptography'', Chapman & Hall/CRC, 2006</span>|כיווון=שמאל}} את הרעיון הציגו שפי גולדווסר וג'ו קיליאן ב-1986, ובאותה שנה הפך אותו ארתור אטקין לאלגוריתם. האלגוריתם שונה ושופר מאוחר יותר על ידי כמה חוקרים, ובמיוחד על ידי אטקין ופרנסואה מורן ב-1993.{{הערה|שם=AM|1=<span dir="ltr">A. O. L. Atkin, F. Morain, "Elliptic curves and primality proving", ''Mathematics of Computation'' '''61''' (1993), no. 203, 29–68</span>|כיווון=שמאל}} את הרעיון להשתמש בעקומים אליפטיים לפירוק לגורמים פיתח הנדריק לנסטרה ב-1985 (ראו [[אלגוריתם לנסטרה לפירוק בעקומים אליפטיים]]), וההשלכות לבדיקת ראשוניות (ולהוכחתה) באו זמן קצר אחר כך.
+
+[[מבחן ראשוניות|בדיקת ראשוניות]] היא תחום שקיים מאז ימי [[פייר דה פרמה|פרמה]]; באותה תקופה רוב האלגוריתמים התבססו על פירוק לגורמים, שהופך לבלתי מעשי בקלטים גדולים. אלגוריתמים מודרניים מפרידים בין השאלה אם מספר ראשוני לבין השאלה מהם גורמיו. התחום קיבל חשיבות מעשית עם הופעת ה[[קריפטוגרפיה]] המודרנית. אף שמבחנים רבים בימינו נותנים תשובה הסתברותית (<math>N</math> מוכח כפריק, או "כנראה ראשוני", כמו ב[[אלגוריתם מילר-רבין|מבחן מילר–רבין]]), מבחן העקומים האליפטיים '''מוכיח''' ראשוניות (או פריקות) עם '''תעודה''' שקל לבדוק.{{הערה|שם=AM}}
+
+שיטות קודמות להוכחת ראשוניות, כמו מבחן פוקלינגטון, דרשו פירוק חלקי לפחות של <math>N \pm 1</math> כדי להוכיח ש-<math>N</math> ראשוני. לכן השיטות האלה היו תלויות במזל, ובדרך כלל איטיות בפועל.
+
+== הוכחת ראשוניות בעקומים אליפטיים ==
+זה אלגוריתם כללי: הוא אינו תלוי בכך שהמספר יהיה מצורה מיוחדת. ECPP הוא כיום בפועל האלגוריתם המהיר ביותר הידוע לבדיקת ראשוניות של מספרים כלליים, אבל זמן הריצה במקרה הגרוע אינו ידוע. הגרסה המהירה ביותר רצה בזמן <math>\tilde O(L^4)</math>, כאשר <math>L = \lceil\log_2 n\rceil</math> אורך המספר בביטים. אפשר למקבל את כל השלבים ל-<math>L</math> ליבות, כך שזמן השעון הוא בערך <math>\tilde O(L^3)</math>.{{הערה|שם=Enge|1=<span dir="ltr">A. Enge, "FastECPP over MPI", in ''Mathematical Software – ICMS 2024'', Lecture Notes in Computer Science 14749, Springer, 2024, 36–45</span>|כיווון=שמאל}}
+
+ECPP עובד כמו רוב מבחני הראשוניות: מוצאים [[חבורה (מבנה אלגברי)|חבורה]] ומראים שהגודל שלה הוא כזה ש-<math>N</math> חייב להיות ראשוני. במבחן של פוקלינגטון החבורה היא <math>(\mathbb Z/N\mathbb Z)^\times</math>, שסדרה (אם <math>N</math> ראשוני) הוא <math>N-1</math>; ב-ECPP החבורה היא <math>E(\mathbb Z/N\mathbb Z)</math> לעקום אליפטי <math>E</math>, וליתרון הגדול: כשמחליפים עקום, משתנה גם הסדר, ולכן אפשר לחפש עקום שהסדר שלו קל לפירוק.{{הערה|1=בערך האנגלי נכתב כאן שב-ECPP "החבורה היא עקום אליפטי מעל קבוצה סופית של תבניות ריבועיות, כך ש-<math>p-1</math> קל לפירוק מעל החבורה". המשפט אינו מדויק; ניסחנו מחדש את הרעיון.|כיווון=שמאל}}
+
+ECPP מייצר '''תעודת ראשוניות''' של אטקין–גולדווסר–קיליאן–מורן בתהליך [[רקורסיה|רקורסיבי]], ואחר כך בודק את התעודה. השלב שלוקח את רוב זמן החישוב הוא יצירת התעודה, כי צריך לפרק מעל [[שדה המחלקה של הילברט|שדה מחלקה]]. את התעודה אפשר לבדוק מהר.
+
+נכון לנובמבר 2025, הראשוני הגדול ביותר שהוכח בשיטת ECPP הוא <math>R(109297) = (10^{109297}-1)/9</math>, '''רפיוניט''' (מספר שכל ספרותיו 1) בן 109297 ספרות. את ההוכחה ביצע פול אנדרווד בתוכנת ''CM'' של אנדריאס אנגה, והיא הוגשה במאי 2025.{{הערה|1=<span dir="ltr">C. Caldwell, "The Top Twenty: Elliptic Curve Primality Proof", The Prime Pages (t5k.org); "PrimePage Primes: R(109297)", t5k.org</span>|כיווון=שמאל}}
+
+== הטענה הבסיסית ==
+מבחני הראשוניות בעקומים אליפטיים מבוססים על קריטריונים שדומים לקריטריון של פוקלינגטון,{{הערה|שם=SSW|1=<span dir="ltr">S. S. Wagstaff Jr., ''The Joy of Factoring'', American Mathematical Society, 2013, 187–188</span>|כיווון=שמאל}}{{הערה|שם=Wash|1=<span dir="ltr">L. C. Washington, ''Elliptic Curves: Number Theory and Cryptography'', Chapman & Hall/CRC, 2003</span>|כיווון=שמאל}} כשהחבורה <math>(\mathbb Z/N\mathbb Z)^\times</math> מוחלפת ב-<math>E(\mathbb Z/N\mathbb Z)</math>, ו-<math>E</math> עקום אליפטי שנבחר כראוי. הטענה הבאה היא הבסיס למבחן של גולדווסר–קיליאן–אטקין.
+
+יהי <math>N</math> מספר שלם חיובי, ו-<math>E</math> הקבוצה שמוגדרת על ידי המשוואה <math>y^2 = x^3 + ax + b \bmod N</math>. נתבונן ב-<math>E</math> מעל <math>\mathbb Z/N\mathbb Z</math> עם [[עקום אליפטי#חוק החבורה|חוק החיבור הרגיל]], ונסמן ב-0 את איבר היחידה.
+
+'''טענה.''' יהי <math>m</math> מספר שלם. אם יש ראשוני <math>q</math> שמחלק את <math>m</math> וגדול מ-<math>\left(\sqrt[4]{N}+1 \right)^2</math>, ויש נקודה <math>P</math> על <math>E</math> כך ש:
+# <math>mP = 0</math>;
+# <math>(m/q)P</math> מוגדרת ושונה מ-0,
+אז <math>N</math> ראשוני.
+
+'''הוכחה.''' אם <math>N</math> פריק, יש לו גורם ראשוני <math>p \le \sqrt{N}</math>. יהי <math>E_p</math> העקום האליפטי שמוגדר על ידי אותה משוואה, אבל מודולו <math>p</math> במקום מודולו <math>N</math>, ויהי <math>m_p</math> הסדר של החבורה <math>E_p</math>. לפי [[משפט האסה על עקומים אליפטיים|משפט האסה]],
+:<math>m_p \le p+1+2\sqrt{p} = \left(\sqrt{p} + 1 \right)^2 \le \left(\sqrt[4]{N}+1 \right)^2 \lt q,</math>
+ולכן <math>\gcd(q,m_p)=1</math>, ויש שלם <math>u</math> עם <math>uq \equiv 1 \pmod{m_p}</math>. תהי <math>P_p</math> הנקודה <math>P</math> מודולו <math>p</math>. אז ב-<math>E_p</math>:
+:<math>(m/q)P_p = uq(m/q)P_p = umP_p = 0,</math>
+לפי (1), כי <math>mP_p</math> מחושבת באותה דרך כמו <math>mP</math>, רק מודולו <math>p</math> (ו-<math>p \mid N</math>). זו סתירה ל-(2): אם <math>(m/q)P</math> מוגדרת ושונה מ-0 מודולו <math>N</math>, אז אותו חישוב מודולו <math>p</math> נותן <math>(m/q)P_p \ne 0</math>.{{הערה|שם=Kob|1=<span dir="ltr">N. Koblitz, ''A Course in Number Theory and Cryptography'', 2nd ed., Springer, 1994</span>|כיווון=שמאל}} ∎
+
+== האלגוריתם של גולדווסר–קיליאן ==
+מהטענה אפשר לבנות אלגוריתם שמוכיח ש-<math>N</math> ראשוני:{{הערה|שם=SSW}}
+
+בוחרים באקראי שלושה שלמים <math>a, x, y</math> ומגדירים
+:<math>b \equiv y^2 - x^3 - ax \pmod{N}.</math>
+אז <math>P = (x,y)</math> נקודה על <math>E: y^2 = x^3 + ax + b</math>. עכשיו צריך אלגוריתם שסופר את הנקודות על <math>E</math>; קובליץ ואחרים מציעים את [[האלגוריתם של סחוף]]. האלגוריתם נותן מספר <math>m</math>, שהוא מספר הנקודות של <math>E</math> מעל <math>\mathbb F_N</math> בתנאי ש-<math>N</math> ראשוני. אם האלגוריתם נתקע בביטוי לא מוגדר (היפוך של מספר שאינו זר ל-<math>N</math>), מקבלים גורם לא טריוויאלי של <math>N</math>.
+
+אם אפשר לכתוב <math>m = kq</math>, כאשר <math>k \ge 2</math> שלם קטן ו-<math>q</math> "כנראה ראשוני" (עובר מבחן ראשוניות הסתברותי), שומרים את <math>E</math>. אחרת בוחרים שלשה חדשה. הרעיון הוא למצוא <math>m</math> שמתחלק בראשוני גדול <math>q</math>, שקטן מ-<math>N</math> בכמה ספרות, ולכן קל יותר להוכיח את ראשוניותו.
+
+אחרי שנמצא עקום מתאים, מחשבים את <math>mP</math> ואת <math>kP</math>. אם אחד החישובים נתקע בביטוי לא מוגדר, מקבלים גורם של <math>N</math>. אם <math>mP \neq 0</math>, ברור ש-<math>N</math> אינו ראשוני (אילו היה ראשוני, הסדר של <math>E</math> היה <math>m</math>). אם <math>kP = 0</math>, מתחילים מחדש. ואם <math>mP = 0</math> ו-<math>kP \neq 0</math>, הטענה אומרת ש-<math>N</math> ראשוני – '''בתנאי ש-<math>q</math> ראשוני'''. את זה מוכיחים באותו אלגוריתם, וכך מתקבלת שרשרת יורדת של ראשוניים "כנראה" עד שמגיעים למספר קטן מספיק לבדיקה ישירה.
+
+=== בעיות באלגוריתם ===
+אטקין ומורן כתבו שהבעיה ב-GK היא שאת האלגוריתם של סחוף נראה כמעט בלתי אפשרי לממש.{{הערה|שם=AM}} ספירת הנקודות באלגוריתם המקורי של סחוף איטית ומסורבלת; יש לקרוא את ההערה הזו בהקשר ההיסטורי, לפני השיפורים של אלקיס ואטקין לשיטה של סחוף.
+
+בעיה שנייה שקובליץ מציין היא הקושי למצוא עקום <math>E</math> שמספר הנקודות שלו מהצורה <math>kq</math>. אין משפט ידוע שמבטיח שנמצא עקום כזה במספר פולינומי של ניסיונות: התפלגות הראשוניים ב'''קטע האסה''' <math>[p+1-2\sqrt{p},\, p+1+2\sqrt{p}]</math>, שמכיל את <math>m</math>, אינה בדיוק התפלגות הראשוניים בין סדרי החבורות (שנספרים עם ריבוי). בפועל זו אינה בעיה משמעותית.{{הערה|שם=Kob}}
+
+== המבחן של אטקין–מורן ==
+במאמר מ-1993 תיארו אטקין ומורן אלגוריתם ECPP שעוקף את הצורך בספירת נקודות מסורבלת. הוא עדיין מסתמך על הטענה, אבל במקום לבחור עקומים באקראי ולחפש <math>m</math> מתאים, הרעיון הוא '''לבנות''' עקום <math>E</math> שמספר הנקודות שלו קל לחישוב. המפתח הוא [[כפל מרוכב]].
+
+כדי להשתמש בכפל מרוכב צריך דיסקרימיננטה שלילית <math>D</math> כך ש-<math>N</math> מתפרק כמכפלה <math>N = \pi\bar{\pi}</math> בחוג השלמים של <math>\mathbb Q(\sqrt D)</math>, או באופן שקול
+:<math>a^2 + |D|b^2 = 4N</math>
+עבור שלמים <math>a, b</math>. אז אפשר לבנות עקום אליפטי <math>E</math> מעל <math>\mathbb Z/N\mathbb Z</math> עם כפל מרוכב בסדר מדיסקרימיננטה <math>D</math>, שמספר הנקודות שלו (אם <math>N</math> ראשוני) הוא
+:<math>|E(\mathbb{Z}/N\mathbb{Z})| = N + 1 - \pi - \bar{\pi} = N + 1 - a.</math>
+כדי ש-<math>N</math> יתפרק צריך ש-<math>\left(\frac{D}{N}\right) = 1</math> ([[סימן לז'נדר|סמל לז'נדר]]). זה תנאי הכרחי; הוא גם מספיק אם [[חבורת מחלקות האידיאלים|מספר המחלקות]] <math>h(D)</math> של הסדר ב-<math>\mathbb{Q}(\sqrt{D})</math> הוא 1. זה קורה רק ל-13 ערכים של <math>D</math>: <math>-3, -4, -7, -8, -11, -12, -16, -19, -27, -28, -43, -67, -163</math> (ראו [[מספר הגנר]] ו[[בעיית מספר המחלקה]]).
+
+=== המבחן ===
+עוברים על דיסקרימיננטות <math>D</math> לפי סדר עולה של <math>h(D)</math>. לכל <math>D</math> בודקים אם <math>\left(\frac{D}{N}\right) = 1</math> ואם אפשר לכתוב <math>4N = a^2 + |D|b^2</math> (את זה בודקים באלגוריתם של קורנקיה). אחרי שנמצאו <math>D</math> ו-<math>a</math> מתאימים, מחשבים <math>m = N + 1 - a</math>. אם ל-<math>m</math> יש גורם ראשוני <math>q \gt (N^{1/4}+1)^2</math>, בונים בשיטת הכפל המרוכב את העקום <math>E</math> ונקודה <math>P</math> עליו, ומשתמשים בטענה. אם ל-<math>m</math> אין גורם ראשוני גדול, או שאי אפשר לפרק אותו מהר, בוחרים <math>D</math> אחר.{{הערה|שם=HEHCC}}
+
+=== שיטת הכפל המרוכב ===
+נניח תחילה ש-<math>D \neq -3, -4</math> (המקרים האלה פשוטים יותר). מחשבים, כמספרים מרוכבים, את [[אינווריאנט j|אינווריאנטי <math>j</math>]] של <math>h(D)</math> המחלקות של הסדר מדיסקרימיננטה <math>D</math>, ובונים את הפולינום המתוקן <math>H_D(X)</math> שאלה שורשיו – '''פולינום המחלקה'''. לפי תורת הכפל המרוכב, ל-<math>H_D(X)</math> יש מקדמים שלמים, ולכן מספיק לחשב את המקדמים בדיוק מספק כדי לזהות אותם.
+
+אם <math>N</math> ראשוני, <math>H_D(X)</math> מתפרק מודולו <math>N</math> למכפלה של <math>h(D)</math> גורמים ליניאריים (כי <math>N</math> מתפרק בשדה המחלקה של הילברט של <math>\mathbb Q(\sqrt D)</math>). אם <math>j</math> אחד השורשים מודולו <math>N</math>, מגדירים
+:<math>E: y^2 = x^3 - 3kc^{2r}x + 2kc^{3r}, \qquad k = \frac{j}{j-1728},</math>
+כאשר <math>c</math> אי-שארית ריבועית מודולו <math>N</math>, ו-<math>r</math> הוא 0 או 1. לשורש נתון <math>j</math> יש רק שתי בחירות לא איזומורפיות של <math>E</math> (שתי הבחירות של <math>r</math> נותנות עקום ו'''סיבוב ריבועי''' שלו), עם מספרי נקודות
+:<math>|E(\mathbb{Z}/N\mathbb{Z})| = N+1-a</math> או <math>|E(\mathbb{Z}/N\mathbb{Z})| = N+1+a.</math>
+{{הערה|שם=HEHCC}}{{הערה|שם=BSS|1=<span dir="ltr">I. Blake, G. Seroussi, N. Smart, ''Elliptic Curves in Cryptography'', Cambridge University Press, 1999</span>|כיווון=שמאל}}
+
+=== דיון ===
+כמו במבחן של גולדווסר–קיליאן, גם כאן מתקבל תהליך יורד: אחרי שמוצאים <math>q</math> מתאים, צריך להוכיח שהוא ראשוני, כלומר להריץ את כל המבחן שוב על <math>q</math>. כך מתקבלת '''תעודה מקוננת''': בכל רמה יש עקום <math>E</math>, מספר <math>m</math>, נקודה <math>P</math> והראשוני הבא <math>q</math>.
+
+=== דוגמה מלאה: <math>N = 167</math> ===
+נוכיח ש-<math>N = 167</math> ראשוני במבחן של אטקין–מורן. עוברים על 13 הדיסקרימיננטות, ובודקים אם <math>\left(\frac{D}{N}\right) = 1</math> ואם <math>4N = a^2 + |D|b^2</math>.
+
+נבחר <math>D = -43</math>: <math>\left(\frac{-43}{167}\right) = 1</math>, ו-<math>4\cdot 167 = 668 = 25^2 + 43\cdot 1^2</math>, כך ש-<math>a = 25</math>, <math>b = 1</math>. לכן <math>m = N + 1 - a = 167 + 1 - 25 = 143</math>.
+
+עכשיו צריך גורם ראשוני <math>q</math> של <math>m</math> עם <math>q \gt (N^{1/4}+1)^2 \approx 21.11</math>. אבל <math>143 = 11 \cdot 13</math>, ואף אחד מהגורמים אינו גדול מספיק. כאן עוזרת גרסה של הטענה, ממאמר של מורן:{{הערה|1=<span dir="ltr">F. Morain, "Implementation of the Atkin–Goldwasser–Kilian primality testing algorithm", INRIA Research Report 911, 1988</span>|כיווון=שמאל}} אם <math>s</math> מחלק של <math>m</math> (לאו דווקא ראשוני) עם <math>s \gt (N^{1/4}+1)^2</math>, ולכל ראשוני <math>p_i \mid s</math> מתקיים <math>(m/p_i)P \neq 0</math> (ו-<math>mP = 0</math>), אז <math>N</math> ראשוני. (ההוכחה זהה: הסדר של <math>P_p</math> ב-<math>E_p</math> מתחלק ב-<math>s</math>, ולכן <math>m_p \ge s \gt (\sqrt p + 1)^2</math>, בסתירה למשפט האסה.)
+
+ניקח <math>s = m = 143</math>, עם <math>p_i \in \{11, 13\}</math>. ברור ש-<math>143 \gt 21.11</math>, ולכן צריך לבדוק רק את <math>13P = (143/11)P</math> ואת <math>11P = (143/13)P</math>.
+
+נבנה את העקום. אינווריאנט <math>j</math> של הסדר מדיסקרימיננטה <math>-43</math> הוא <math>j = -960^3</math>, ולכן
+:<math>j \equiv -960^3 \equiv 107 \pmod{167}, \qquad k = \frac{j}{1728-j} \equiv 158 \pmod{167}.</math>
+עם <math>r = 0</math>: <math>3k \equiv 140</math>, <math>2k \equiv 149 \pmod{167}</math>, ומתקבל{{הערה|1=בדוגמה משתמשים ב-<math>k = j/(1728-j)</math> ובעקום <math>y^2 = x^3 + 3kx + 2k</math>, ולא בנוסחה הכללית שלמעלה עם <math>k = j/(j-1728)</math>. בשתי הדרכים מתקבל עקום עם אינווריאנט <math>j</math> הנכון; ההבדל ביניהן הוא סיבוב ריבועי, כלומר בחירה בין <math>N+1-a</math> ל-<math>N+1+a</math>. בדקנו שבמקרה הזה מתקבל בדיוק <math>N+1-a = 143</math>.|כיווון=שמאל}}
+:<math>E: y^2 = x^3 + 140x + 149 \pmod{167}.</math>
+הנקודה <math>P = (6,6)</math> נמצאת על <math>E</math> (<math>6^3 + 140\cdot 6 + 149 = 1205 = 7\cdot 167 + 36 \equiv 36 = 6^2</math>), ואפשר לבדוק ש-<math>143P = 0</math>, בעוד ש-<math>13P = (12, 65) \ne 0</math> ו-<math>11P = (140, 147) \ne 0</math>. לפי הטענה של מורן, <math>N = 167</math> ראשוני. (בדקנו בחישוב: <math>|E(\mathbb F_{167})| = 143</math>, אינווריאנט ה-<math>j</math> של <math>E</math> הוא 107, וכל הכפולות של <math>P</math> כמתואר.)
+
+== סיבוכיות וזמני ריצה ==
+להלן <math>L = \lceil\log_2 n\rceil</math> אורך המספר הנבדק בביטים.
+
+=== גולדווסר וקיליאן ===
+האלגוריתם של גולדווסר וקיליאן מסתיים בזמן פולינומי בתוחלת עבור כל הקלטים הראשוניים פרט לחלק זניח מהם (חלק שקטן מאוד ככל ש-<math>L</math> גדל).{{הערה|1=בערך האנגלי מופיע כאן ביטוי משובש, <math>1 - O(2^{-N\frac{1}{\log\log n}})</math>. אצל גולדווסר וקיליאן, חלק הראשוניים באורך <math>L</math> שעבורם האלגוריתם אינו מובטח לרוץ בזמן פולינומי בתוחלת הוא <math>O\left(2^{-L^{c/\log\log L}}\right)</math> לקבוע <math>c \gt 0</math>.|כיווון=שמאל}}{{הערה|שם=GK|1=<span dir="ltr">S. Goldwasser, J. Kilian, "Almost all primes can be quickly certified", ''Proc. 18th ACM Symposium on Theory of Computing'', 1986, 316–329</span>|כיווון=שמאל}}
+
+'''השערה.''' יהי <math>\pi(x)</math> מספר הראשוניים הקטנים מ-<math>x</math>. קיימים <math>c_1, c_2 \gt 0</math> כך ש-
+:<math>\pi(x+\sqrt{x}) - \pi(x) \ge \frac{c_2\sqrt{x}}{\log^{c_1}x}</math>
+לכל <math>x</math> גדול מספיק. אם מקבלים את ההשערה, האלגוריתם של גולדווסר–קיליאן מסתיים בזמן פולינומי בתוחלת לכל קלט.
+
+'''השערה 2.''' נניח שקיימים קבועים חיוביים <math>c_1, c_2</math> כך שמספר הראשוניים בקטע <math>[x, x+\sqrt{2x}]</math>, <math>x \ge 2</math>, גדול מ-<math>c_1\sqrt{x}(\log x)^{-c_2}</math>. אז האלגוריתם של גולדווסר–קיליאן מוכיח את הראשוניות של <math>N</math> בזמן תוחלת <math>O(\log^{10 + c_2} N)</math>. מקורות מודרניים מציינים <math>O((\log N)^{6+\epsilon})</math>, או <math>\tilde O(L^6)</math>, כנראה בזכות אלגוריתמים משופרים לספירת נקודות;{{הערה|שם=Enge}} עם האלגוריתם המקורי של סחוף הסיבוכיות היא <math>O((\log N)^{8+\epsilon})</math>.{{הערה|שם=AM}}
+
+=== אטקין–מורן ===
+עבור האלגוריתם של אטקין–מורן, תחת אותן השערות היוריסטיות, זמן הריצה שציינו לנסטרה ולנסטרה (וציטטו אטקין ומורן) הוא <math>O((\log N)^{6+\epsilon})</math>, כלומר <math>\tilde O(L^6)</math>.{{הערה|שם=AM}}{{הערה|1=<span dir="ltr">A. K. Lenstra, H. W. Lenstra Jr., "Algorithms in number theory", in ''Handbook of Theoretical Computer Science, Vol. A: Algorithms and Complexity'', Elsevier, 1990, 673–715</span>|כיווון=שמאל}} מקורות מודרניים משתמשים בטיעון משופר של שאליט ומקבלים <math>\tilde O(L^5)</math>.{{הערה|1=<span dir="ltr">F. Morain, "Implementing the asymptotically fast version of the elliptic curve primality proving algorithm", ''Mathematics of Computation'' '''76''' (2007), 493–506</span>|כיווון=שמאל}}
+
+=== FastECPP ===
+עבור FastECPP (שאליט, פרנקה, מורן), תחת אותן השערות, זמן הריצה הוא <math>\tilde O(L^4)</math>, ועם מקבול ל-<math>L</math> ליבות זמן השעון הוא <math>\tilde O(L^3)</math>.{{הערה|שם=Enge}}
+
+=== בדיקת התעודה ===
+בהינתן ההשערה הראשונה, כל הגרסאות של ECPP יוצרות תעודה בגודל <math>O(L^2)</math> שאפשר לבדוק בזמן <math>O(L^4)</math>.{{הערה|שם=GK}}
+
+== ראשוניים מצורה מיוחדת ==
+לצורות מסוימות של מספרים יש "קיצורי דרך" להוכחת ראשוניות. זה המצב ב[[מספר מרסן|מספרי מרסן]]: בזכות המבנה המיוחד שלהם, ששת הראשוניים הגדולים ביותר הידועים הם כולם מספרי מרסן. לבדיקת ראשוניות של מספרי מרסן משתמשים זה זמן רב ב[[מבחן לוקאס-להמר|מבחן לוקאס–להמר]], שאינו מסתמך על עקומים אליפטיים. כאן נציג תוצאה שבה מספרים מהצורה <math>N = 2^kn - 1</math>, עם <math>k \ge 2</math> ו-<math>n</math> אי-זוגי, מוכחים כראשוניים (או כפריקים) בעזרת עקומים אליפטיים; המקרה <math>n = 1</math> הוא מספרי מרסן. השיטה לקוחה ממאמר של יו צומורה.{{הערה|שם=Tsu|1=<span dir="ltr">Y. Tsumura, "Primality tests for 2<sup>k</sup>n − 1 using elliptic curves", arXiv:0912.5279 (2009)</span>|כיווון=שמאל}}
+
+=== מבנה החבורה <math>E(\mathbb F_p)</math> ===
+יהי <math>E</math> העקום <math>y^2 = x^3 - mx</math>, עם <math>m \not\equiv 0 \pmod p</math>, כאשר <math>p \equiv 3 \pmod 4</math> ראשוני ו-<math>p+1 = 2^kn</math> עם <math>k \ge 2</math> ו-<math>n</math> אי-זוגי.
+* '''משפט 1.'''{{הערה|שם=Wash}} <math>|E(\mathbb{F}_p)| = p+1</math>. (העקום על-סינגולרי: ההעתקה <math>x \mapsto -x</math> מחליפה בין <math>x</math> שעבורו <math>x^3 - mx</math> ריבוע לבין <math>x</math> שעבורו הוא אי-ריבוע, כי <math>-1</math> אינו ריבוע מודולו <math>p</math>.)
+* '''משפט 2.''' <math>E(\mathbb{F}_p) \cong \mathbb Z_{2^kn}</math> או <math>E(\mathbb{F}_p) \cong \mathbb Z_2 \oplus \mathbb Z_{2^{k-1}n}</math>, לפי אם <math>m</math> הוא אי-שארית ריבועית או שארית ריבועית מודולו <math>p</math>.
+* '''משפט 3.''' תהי <math>Q = (x,y)</math> נקודה על <math>E</math> כך ש-<math>x</math> אי-שארית ריבועית מודולו <math>p</math>. אז הסדר של <math>Q</math> בחבורה הציקלית <math>E(\mathbb{F}_p) \cong \mathbb Z_{2^{k}n}</math> מתחלק ב-<math>2^k</math>.
+* '''משפט 4.''' נבחר <math>\lambda \gt 1</math> ונניח ש-<math>n \le \sqrt{p}/\lambda</math> ו-<math>\lambda\sqrt{p} \gt (\sqrt[4]{p} + 1)^2</math>. אז <math>p</math> ראשוני אם ורק אם יש נקודה <math>Q</math> על <math>E</math> שהסדר שלה הוא בדיוק <math>2^k</math>.{{הערה|1=בערך האנגלי המשפט מנוסח במונחי סדרה <math>S_i</math> "עם ערך התחלתי <math>S_0 = x</math>", בלי שהסדרה מוגדרת. ניסחנו את המשפט במונחי הסדר של <math>Q</math>, ובאלגוריתם למטה הגדרנו את הסדרה במפורש: היא סדרת קואורדינטות ה-<math>x</math> (בקואורדינטות פרויקטיביות) של <math>2^iQ</math>.|כיווון=שמאל}}
+
+=== האלגוריתם ===
+כדי לבדוק את ראשוניותו של <math>N = 2^kn - 1</math>:
+# בוחרים <math>x</math> עם <math>\left(\frac{x}{N}\right) = -1</math> ([[סימן יעקובי|סמל יעקובי]]), ו-<math>y</math> אי-זוגי עם <math>\left(\frac{x^3-y^2}{N}\right) = 1</math>. מגדירים <math>m \equiv \frac{x^3-y^2}{x} \pmod N</math> (ודורשים <math>m \not\equiv 0</math>). אז <math>Q'=(x,y)</math> על <math>E: y^2=x^3-mx</math>. מחשבים <math>Q = nQ'</math>; אם החישוב נתקע (מכנה שאינו זר ל-<math>N</math>), <math>N</math> פריק.
+# כותבים <math>Q = (X_0 : Z_0)</math> (קואורדינטת <math>x</math> בצורה פרויקטיבית), ומחשבים בעזרת נוסחת ההכפלה
+#:<math>X_{i+1} = (X_i^2 + mZ_i^2)^2, \qquad Z_{i+1} = 4X_iZ_i(X_i^2 - mZ_i^2) \pmod N</math>
+#:את הזוגות <math>(X_i : Z_i)</math>, שהם קואורדינטת ה-<math>x</math> של <math>2^iQ</math>. אם <math>\gcd(Z_i, N) \gt 1</math> לאיזה <math>1 \le i \le k-1</math>, אז <math>N</math> פריק.
+# אם <math>Z_k \equiv 0 \pmod{N}</math>, אז <math>N</math> ראשוני; אחרת <math>N</math> פריק.
+
+'''הצדקה.''' <math>\left(\frac{m}{N}\right) = \left(\frac{x}{N}\right)\left(\frac{x^3-y^2}{N}\right) = -1\cdot 1=-1</math>. לכן, אם <math>N</math> ראשוני, החבורה ציקלית (משפט 2), הסדר של <math>Q'</math> מתחלק ב-<math>2^k</math> (משפט 3), כלומר הוא <math>2^kd</math> עם <math>d \mid n</math>, ולכן ל-<math>Q = nQ'</math> יש סדר <math>2^k</math> בדיוק. שלבים 2 ו-3 בודקים בדיוק שהסדר של <math>Q</math> הוא <math>2^k</math>: <math>2^iQ \neq 0</math> עבור <math>i \lt k</math> ו-<math>2^kQ = 0</math>. לכן אם האלגוריתם מכריז "פריק", זה נכון; ואם הוא מכריז "ראשוני", התנאי של משפט 4 מתקיים, ו-<math>N</math> אכן ראשוני. (לאלגוריתם יש גם גרסה ל-<math>n</math> גדול; ראו את המאמר.{{הערה|שם=Tsu}})
+
+'''דוגמאות.''' (בכולן התנאים של משפט 4 מתקיימים, למשל עם <math>\lambda = 2</math>.)
+* <math>N = 47 = 2^4\cdot 3 - 1</math>: <math>x = 5</math>, <math>y = 5</math>, <math>m = 20</math>, <math>Q = 3Q' = (35, 4)</math>. הערכים <math>Z_1, Z_2, Z_3, Z_4</math> הם <math>17, 21, 36, 0</math> מודולו 47: שלושת הראשונים זרים ל-47 ו-<math>Z_4 = 0</math>, ולכן 47 ראשוני.
+* <math>N = 127 = 2^7 - 1</math> (מספר מרסן, <math>n = 1</math>): <math>x = 3</math>, <math>y = 1</math>, <math>m = 51</math>. הערכים <math>Z_1, \ldots, Z_7</math> הם <math>4, 64, 76, 35, 72, 74, 0</math>, ולכן 127 ראשוני.
+* <math>N = 95 = 2^5\cdot 3 - 1 = 5\cdot 19</math>: <math>x = 7</math>, <math>y = 3</math>, <math>m = 7</math>, <math>Q = (23, 51)</math>. הערכים <math>Z_1, \ldots, Z_5</math> הם <math>49, 74, 26, 54, 1</math>; <math>Z_5 \not\equiv 0</math>, ולכן 95 פריק.
+(בדקנו בחישוב.)
+
+== ראו גם ==
+* [[אלגוריתם לנסטרה לפירוק בעקומים אליפטיים]]
+* [[כפל מרוכב]]
+* [[מספר הגנר]]
+
+== קישורים חיצוניים ==
+<div dir="ltr">
+* A. O. L. Atkin, F. Morain, [https://www.ams.org/journals/mcom/1993-61-203/S0025-5718-1993-1199989-X/ "Elliptic Curves and Primality Proving"]
+* C. Caldwell, [http://primes.utm.edu/prove/prove4_2.html "Primality Proving 4.2: Elliptic curves and the ECPP test"], The Prime Pages
+* F. Morain, [http://www.lix.polytechnique.fr/~morain/Prgms/ecpp.english.html "The ECPP home page"]
+* [https://pari.math.u-bordeaux.fr/ PARI/GP] – includes functions that produce Atkin–Morain and Primo primality certificates
+* [https://www.multiprecision.org/cm CM] – a free library containing an ECPP implementation
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מבחני ראשוניות]]
+[[קטגוריה:עקומים אליפטיים]]

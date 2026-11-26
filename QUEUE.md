@@ -411,4 +411,4 @@ Additive number theory:
 - [x] Cuspidal representation
 - [x] Base change lifting
 - [x] Adelic algebraic group
-- [ ] Elliptic curve primality
+- [x] Elliptic curve primality

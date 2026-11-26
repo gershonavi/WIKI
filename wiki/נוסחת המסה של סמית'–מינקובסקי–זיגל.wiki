@@ -25,7 +25,7 @@
 נוסחת המסה נותנת את המסה כמכפלה אינסופית על כל הראשוניים. אפשר לכתוב אותה מחדש כמכפלה סופית. לכל הראשוניים פרט למספר סופי (אלה שאינם מחלקים את <math>2\det(f)</math>), ה-<math>p</math>-מסה <math>m_p(f)</math> שווה ל-'''<math>p</math>-מסה הסטנדרטית''':
 :<math>\operatorname{std}_p(f) = \frac1{2(1 - p^{-2})(1 - p^{-4})\cdots(1 - p^{2-n})\left(1 - \left(\frac{(-1)^{n/2}\det f}p\right)p^{-n/2}\right)}</math> (עבור <math>n</math> זוגי),
 :<math>\operatorname{std}_p(f) = \frac1{2(1 - p^{-2})(1 - p^{-4})\cdots(1 - p^{1-n})}</math> (עבור <math>n</math> אי-זוגי),
-כאשר [[סמל לז'נדר]] בנוסחה לממד זוגי מתפרש כ-0 אם <math>p</math> מחלק את <math>2\det(f)</math>.
+כאשר [[סימן לז'נדר|סמל לז'נדר]] בנוסחה לממד זוגי מתפרש כ-0 אם <math>p</math> מחלק את <math>2\det(f)</math>.
 
 אם לכל ה-<math>p</math>-מסות יש הערך הסטנדרטי, המסה הכוללת היא ה'''מסה הסטנדרטית'''
 :<math>\operatorname{std}(f) = 2\pi^{-n(n+1)/4}\left(\prod_{j=1}^n\Gamma(j/2)\right)\zeta(2)\zeta(4)\cdots\zeta(n - 1)</math> (עבור <math>n</math> אי-זוגי),
@@ -64,7 +64,7 @@
 כשהתבנית חופשית והערך האוקטני <math>-3</math>, 3 או 4 מודולו 8.
 
 == חישוב ζ<sub>D</sub>(s) ==
-את הערכים הנדרשים של טור דיריכלה <math>\zeta_D(s)</math> אפשר לחשב כך. נסמן ב-<math>\chi</math> את ה[[קרקטר של דיריכלה]] שבו <math>\chi(m) = 0</math> אם <math>m</math> זוגי, ו-<math>\chi(m) = \left(\frac Dm\right)</math> ([[סמל יעקובי]]) אם <math>m</math> אי-זוגי. נסמן ב-<math>k</math> את המודולוס של הקרקטר וב-<math>k_1</math> את ה[[מוליך (קרקטר)|מוליך]] שלו, ונכתוב <math>\chi = \chi_1\psi</math>, כאשר <math>\chi_1</math> הקרקטר הראשי מודולו <math>k</math> ו-<math>\psi</math> קרקטר פרימיטיבי מודולו <math>k_1</math>. אז
+את הערכים הנדרשים של טור דיריכלה <math>\zeta_D(s)</math> אפשר לחשב כך. נסמן ב-<math>\chi</math> את ה[[קרקטר של דיריכלה]] שבו <math>\chi(m) = 0</math> אם <math>m</math> זוגי, ו-<math>\chi(m) = \left(\frac Dm\right)</math> ([[סימן יעקובי|סמל יעקובי]]) אם <math>m</math> אי-זוגי. נסמן ב-<math>k</math> את המודולוס של הקרקטר וב-<math>k_1</math> את ה[[מוליך (קרקטר)|מוליך]] שלו, ונכתוב <math>\chi = \chi_1\psi</math>, כאשר <math>\chi_1</math> הקרקטר הראשי מודולו <math>k</math> ו-<math>\psi</math> קרקטר פרימיטיבי מודולו <math>k_1</math>. אז
 :<math>\zeta_D(s) = L(s, \chi) = L(s, \psi)\prod_{p\mid k}\left(1 - \frac{\psi(p)}{p^s}\right).</math>
 ה[[משוואה פונקציונלית|משוואה הפונקציונלית]] של טור ה-L היא
 :<math>L(1 - s, \psi) = \frac{k_1^{s-1}\Gamma(s)}{(2\pi)^s}\left(i^{-s} + \psi(-1)i^s\right)G(\psi)L(s, \psi),</math>

@@ -3,7 +3,7 @@
 == ניסוח ==
 [[ג'ורג' פוליה]] ו[[איוואן וינוגרדוב]] הוכיחו (באופן בלתי תלוי) ב-1918 שלכל קרקטר דיריכלה לא ראשי <math>\chi(n)</math> מודולו <math>q</math> ולכל שלמים <math>M</math> ו-<math>N</math>,{{הערה|שם=Dav|1=<span dir="ltr">H. Davenport, Multiplicative Number Theory, 3rd ed., Springer, 2000, pp. 135–137.</span> (שם מוכח ש-<math>O</math> אפשר להחליף בקבוע 2.)|כיווון=שמאל}}
 :<math>\left|\sum_{n=M+1}^{M+N}\chi(n)\right| = O\left(\sqrt q\log q\right).</math>
-אם לוקחים <math>\chi(n) = \left(\frac nq\right)</math> ([[סמל לז'נדר]], עבור <math>q</math> ראשוני), מקבלים שמספר השאריות הריבועיות מודולו <math>q</math> בכל קטע באורך <math>N</math> הוא
+אם לוקחים <math>\chi(n) = \left(\frac nq\right)</math> ([[סימן לז'נדר|סמל לז'נדר]], עבור <math>q</math> ראשוני), מקבלים שמספר השאריות הריבועיות מודולו <math>q</math> בכל קטע באורך <math>N</math> הוא
 :<math>\frac12N + O(\sqrt q\log q).</math>
 
 קל יחסית להוכיח ש-

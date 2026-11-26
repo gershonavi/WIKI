@@ -12,7 +12,7 @@
 סכום הגאוס מעל <math>F</math>, ו-<math>\tau(\chi', \psi')</math> סכום הגאוס מעל <math>F_s</math>. אז '''יחס ההרמה של האסה–דבנפורט''' קובע ש-
 :<math>(-1)^s\cdot\tau(\chi, \psi)^s = -\tau(\chi', \psi').</math>
 
-'''דוגמה מחושבת: <math>F = \mathbb F_3</math>, <math>s = 2</math>.''' יהי <math>\chi</math> [[סמל לז'נדר]] מודולו 3 ו-<math>\psi(x) = e^{2\pi ix/3}</math>. אז <math>\tau(\chi, \psi) = e^{2\pi i/3} - e^{4\pi i/3} = i\sqrt3</math>. היחס מנבא <math>\tau(\chi', \psi') = -(-1)^2(i\sqrt3)^2 = 3</math>. חישוב ישיר ב-<math>\mathbb F_9 = \mathbb F_3[i]</math> (<math>i^2 = -1</math>), עם <math>N(x) = x^4</math> ו-<math>\mathrm{Tr}(x) = x + x^3</math>, על כל שמונת האיברים השונים מאפס, נותן אכן <math>\tau(\chi', \psi') = 3</math>.
+'''דוגמה מחושבת: <math>F = \mathbb F_3</math>, <math>s = 2</math>.''' יהי <math>\chi</math> [[סימן לז'נדר|סמל לז'נדר]] מודולו 3 ו-<math>\psi(x) = e^{2\pi ix/3}</math>. אז <math>\tau(\chi, \psi) = e^{2\pi i/3} - e^{4\pi i/3} = i\sqrt3</math>. היחס מנבא <math>\tau(\chi', \psi') = -(-1)^2(i\sqrt3)^2 = 3</math>. חישוב ישיר ב-<math>\mathbb F_9 = \mathbb F_3[i]</math> (<math>i^2 = -1</math>), עם <math>N(x) = x^4</math> ו-<math>\mathrm{Tr}(x) = x + x^3</math>, על כל שמונת האיברים השונים מאפס, נותן אכן <math>\tau(\chi', \psi') = 3</math>.
 
 '''שימוש: ספירת נקודות.''' יחס ההרמה הוא מה שמאפשר לחשב את מספר הנקודות על יריעה (כמו עקום פרמה) מעל '''כל''' ההרחבות <math>\mathbb F_{q^s}</math> בבת אחת, ולכן לקבל ש[[פונקציית זטא מקומית|פונקציית הזטא]] רציונלית, עם אפסים שגודלם המוחלט <math>q^{-1/2}</math> – כי <math>|\tau| = \sqrt q</math>.
 

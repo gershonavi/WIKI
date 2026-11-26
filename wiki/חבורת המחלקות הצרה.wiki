@@ -22,7 +22,7 @@
 :<math>q_K(x, y) = N_{K/\mathbb Q}(\omega_1x + \omega_2y),</math>
 כאשר <math>N_{K/\mathbb Q}</math> ה[[נורמה (תורת השדות)|נורמה]]. אז מספר ראשוני <math>p</math> הוא מהצורה <math>p = q_K(x, y)</math> עם <math>x, y</math> שלמים '''אם ורק אם''' מתקיים אחד מהתנאים
 :<math>p \mid d_K;</math> או <math>p = 2</math> ו-<math>d_K \equiv 1 \pmod 8;</math> או <math>p \gt 2</math> ו-<math>\left(\tfrac{d_K}{p}\right) = 1,</math>
-כאשר <math>d_K</math> ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] של <math>K</math> ו-<math>\left(\tfrac ab\right)</math> [[סמל לז'נדר]].
+כאשר <math>d_K</math> ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] של <math>K</math> ו-<math>\left(\tfrac ab\right)</math> [[סימן לז'נדר|סמל לז'נדר]].
 
 (רעיון ההוכחה: התנאים הם בדיוק התנאים לכך ש-<math>p</math> אינו אינרטי, כלומר שיש אידיאל ראשוני <math>\mathfrak p</math> מנורמה <math>p</math>. אם <math>C_K^+</math> טריוויאלית, אז <math>\mathfrak p = (\alpha)</math> עם <math>\alpha</math> חיובי לחלוטין, ולכן <math>N(\alpha) = +p</math> – ולא רק <math>\pm p</math>.)
 

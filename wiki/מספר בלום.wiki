@@ -7,7 +7,7 @@
 * ל-<math>a</math> יש ארבעה שורשים ריבועיים מודולו <math>n</math>, ובדיוק אחד מהם נמצא גם ב-<math>Q_n</math>.
 * השורש הריבועי היחיד של <math>a</math> ב-<math>Q_n</math> נקרא '''השורש הריבועי הראשי''' של <math>a</math> מודולו <math>n</math>.
 * הפונקציה <math>f : Q_n \to Q_n</math> המוגדרת על ידי <math>f(x) = x^2 \bmod n</math> היא [[תמורה]]. הפונקציה ההפוכה של <math>f</math> היא <math>f^{-1}(x) = x^{((p-1)(q-1)+4)/8} \bmod n</math>.{{הערה|1=<span dir="ltr">A. Menezes, P. van Oorschot, S. Vanstone, Handbook of Applied Cryptography, CRC Press, 1997, p. 102.</span>|כיווון=שמאל}}
-* לכל מספר בלום <math>n</math>, ל-<math>-1</math> יש [[סמל יעקובי]] <math>+1</math> מודולו <math>n</math>, אף ש-<math>-1</math> אינו שארית ריבועית מודולו <math>n</math>:
+* לכל מספר בלום <math>n</math>, ל-<math>-1</math> יש [[סימן יעקובי|סמל יעקובי]] <math>+1</math> מודולו <math>n</math>, אף ש-<math>-1</math> אינו שארית ריבועית מודולו <math>n</math>:
 ::<math>\left(\frac{-1}{n}\right)=\left(\frac{-1}{p}\right)\left(\frac{-1}{q}\right)=(-1)^2=1.</math>
 (את שלוש התכונות הראשונות בדקנו בחישוב עבור <math>n = 21, 33, 77, 209, 437</math>.)
 
