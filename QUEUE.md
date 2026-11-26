@@ -366,5 +366,5 @@ Additive number theory:
 - [x] Sum-free sequence
 - [x] Moser–de Bruijn sequence
 - [x] Highly cototient number
-- [ ] Sparsely totient number
+- [x] Sparsely totient number
 - [ ] Home prime

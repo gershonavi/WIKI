@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (529)
+## ערכים (530)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -252,6 +252,7 @@
 * [מספר חופשי מריבועים](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%95%D7%A4%D7%A9%D7%99%20%D7%9E%D7%A8%D7%99%D7%91%D7%95%D7%A2%D7%99%D7%9D.md) – Square-free integer
 * [מספר חזק](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%97%D7%96%D7%A7.md) – Powerful number
 * [מספר טאו](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%98%D7%90%D7%95.md) – Refactorable number
+* [מספר טוטיינט דליל](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%98%D7%95%D7%98%D7%99%D7%99%D7%A0%D7%98%20%D7%93%D7%9C%D7%99%D7%9C.md) – Sparsely totient number
 * [מספר טוטיינט משוכלל](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%98%D7%95%D7%98%D7%99%D7%99%D7%A0%D7%98%20%D7%9E%D7%A9%D7%95%D7%9B%D7%9C%D7%9C.md) – Perfect totient number
 * [מספר טריזי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%98%D7%A8%D7%99%D7%96%D7%99.md) – Sphenic number
 * [מספר לוקאס–קרמייקל](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9C%D7%95%D7%A7%D7%90%D7%A1%E2%80%93%D7%A7%D7%A8%D7%9E%D7%99%D7%99%D7%A7%D7%9C.md) – Lucas–Carmichael number
