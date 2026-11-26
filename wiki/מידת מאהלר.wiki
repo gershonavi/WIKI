@@ -12,7 +12,7 @@
 
 '''דוגמאות (נוספו בתרגום, ונבדקו בחישוב).'''
 * עבור <math>p(z) = z^2 - z - 1</math>, השורשים הם <math>\varphi = \tfrac{1+\sqrt5}{2} \approx 1.618</math> ו-<math>-1/\varphi \approx -0.618</math>, ולכן <math>M(p) = \varphi</math>. גם האינטגרל של נוסחת ינסן נותן בחישוב נומרי <math>1.618034\ldots</math>.
-* לפולינום של להמר <math>z^{10}+z^9-z^7-z^6-z^5-z^4-z^3+z+1</math> יש מידת מאהלר <math>1.17628\ldots</math>, הקטנה ביותר הידועה שגדולה מ-1 (ראו השערת להמר).
+* לפולינום של להמר <math>z^{10}+z^9-z^7-z^6-z^5-z^4-z^3+z+1</math> יש מידת מאהלר <math>1.17628\ldots</math>, הקטנה ביותר הידועה שגדולה מ-1 (ראו [[השערת להמר על מידת מאהלר|השערת להמר]]).
 
 == תכונות ==
 * מידת מאהלר כפלית: <math>M(p \cdot q) = M(p) \cdot M(q)</math> לכל <math>p, q</math>.
@@ -33,7 +33,7 @@
 כאשר <math>\zeta</math> היא [[פונקציית זטא של רימן]]. כאן <math>m(P)=\log M(P)</math> נקראת ''מידת מאהלר הלוגריתמית''. (בחישוב נומרי: <math>m(1+x+y) = 0.3230659\ldots</math>, בהתאמה מלאה לאגף ימין; ו-<math>m(1+x+y+z) \approx 0.42628</math>, לעומת <math>\tfrac{7\zeta(3)}{2\pi^2} = 0.426278\ldots</math>.)
 
 === תוצאות של לוטון ובויד ===
-מההגדרה, מידת מאהלר היא אינטגרל של ערכי פולינומים על הטורוס (ראו גם השערת להמר). אם <math>p</math> מתאפס על הטורוס <math>(S^1)^n</math>, ההתכנסות של האינטגרל המגדיר את <math>M(p)</math> אינה מובנת מאליה, אבל ידוע ש-<math>M(p)</math> אכן מתכנס ושווה לגבול של מידות מאהלר במשתנה אחד,{{הערה|שם=law|1=W. M. Lawton, A problem of Boyd concerning geometric means of polynomials, Journal of Number Theory 16 (3), 1983, עמ' 356–362, {{DOI|10.1016/0022-314X(83)90063-X}}|כיווון=שמאל}} כפי ששיער בויד.{{הערה|שם=b81a|1=D. Boyd, Speculations concerning the range of Mahler's measure, Canadian Mathematical Bulletin 24 (4), 1981, עמ' 453–469, {{DOI|10.4153/cmb-1981-069-5}}|כיווון=שמאל}}{{הערה|שם=b81b|1=D. Boyd, Kronecker's Theorem and Lehmer's Problem for Polynomials in Several Variables, Journal of Number Theory 13, 1981, עמ' 116–121, {{DOI|10.1016/0022-314x(81)90033-0}}|כיווון=שמאל}}
+מההגדרה, מידת מאהלר היא אינטגרל של ערכי פולינומים על הטורוס (ראו גם [[השערת להמר על מידת מאהלר|השערת להמר]]). אם <math>p</math> מתאפס על הטורוס <math>(S^1)^n</math>, ההתכנסות של האינטגרל המגדיר את <math>M(p)</math> אינה מובנת מאליה, אבל ידוע ש-<math>M(p)</math> אכן מתכנס ושווה לגבול של מידות מאהלר במשתנה אחד,{{הערה|שם=law|1=W. M. Lawton, A problem of Boyd concerning geometric means of polynomials, Journal of Number Theory 16 (3), 1983, עמ' 356–362, {{DOI|10.1016/0022-314X(83)90063-X}}|כיווון=שמאל}} כפי ששיער בויד.{{הערה|שם=b81a|1=D. Boyd, Speculations concerning the range of Mahler's measure, Canadian Mathematical Bulletin 24 (4), 1981, עמ' 453–469, {{DOI|10.4153/cmb-1981-069-5}}|כיווון=שמאל}}{{הערה|שם=b81b|1=D. Boyd, Kronecker's Theorem and Lehmer's Problem for Polynomials in Several Variables, Journal of Number Theory 13, 1981, עמ' 116–121, {{DOI|10.1016/0022-314x(81)90033-0}}|כיווון=שמאל}}
 
 הניסוח הוא כך: נסמן ב-<math>\mathbb{Z}</math> את השלמים, ונגדיר <math>\mathbb{Z}^N_+=\{r=(r_1,\dots,r_N)\in\mathbb{Z}^N:\ r_j\ge0,\ 1\le j\le N\}</math>. אם <math>Q(z_1,\dots,z_N)</math> פולינום ב-<math>N</math> משתנים ו-<math>r \in\mathbb{Z}^N_+</math>, נגדיר את הפולינום במשתנה אחד
 :<math>Q_r(z):=Q(z^{r_1},\dots,z^{r_N}),</math>
