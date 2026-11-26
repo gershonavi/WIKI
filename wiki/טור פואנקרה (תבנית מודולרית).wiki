@@ -1,0 +1,63 @@
+{{אין לבלבל|טור הילברט–פואנקרה}}
+ב[[תורת המספרים]], '''טור פואנקרה''' הוא [[טור (מתמטיקה)|טור]] שמכליל את [[טור תטא|טורי התטא]] הקלאסיים, ומשויך לכל [[חבורה בדידה]] של סימטריות של [[תחום (אנליזה מרוכבת)|תחום מרוכב]], אולי ב[[פונקציה של כמה משתנים מרוכבים|כמה משתנים מרוכבים]]. בפרט, טורי פואנקרה מכלילים את [[טור אייזנשטיין|טורי אייזנשטיין]] הקלאסיים. הם נקראים על שם [[אנרי פואנקרה]].
+
+== הרעיון: מיצוע על החבורה ==
+אם <math>\Gamma</math> [[חבורה סופית]] שפועלת על תחום <math>D</math> ו-<math>H(z)</math> [[פונקציה מרומורפית]] כלשהי על <math>D</math>, מקבלים [[פונקציה אוטומורפית]] על ידי מיצוע על <math>\Gamma</math>:
+:<math>\sum_{\gamma\in\Gamma}H(\gamma(z)).</math>
+אבל אם <math>\Gamma</math> חבורה בדידה אינסופית, צריך להוסיף גורמים שיבטיחו את התכנסות הטור. לשם כך, '''טור פואנקרה''' הוא טור מהצורה
+:<math>\theta_k(z) = \sum_{\gamma\in\Gamma^*}(J_\gamma(z))^kH(\gamma(z)),</math>
+כאשר <math>J_\gamma</math> הוא ה[[יעקוביאן|דטרמיננטה היעקוביאנית]] של איבר החבורה <math>\gamma</math>,{{הערה|1=או [[גורם אוטומורפיות]] כללי יותר, כמו אצל <span dir="ltr">Kollár, Shafarevich Maps and Automorphic Forms, 1995, §5.2</span>.|כיווון=שמאל}} והכוכבית מציינת שהסכום רץ רק על נציגי מחלקות שנותנים איברים שונים בטור.
+
+== טורי פואנקרה קלאסיים ==
+'''טור פואנקרה''' הקלאסי ממשקל <math>2k</math> של [[חבורה פוקסיאנית]] <math>\Gamma</math> מוגדר על ידי הטור
+:<math>\theta_k(z) = \sum_{\gamma\in\Gamma^*}(cz + d)^{-2k}H\left(\frac{az + b}{cz + d}\right),</math>
+כאשר הסכום רץ על מחלקות של העתקות לינאריות-שבורות
+:<math>\gamma = \begin{pmatrix} a & b \\ c & d\end{pmatrix}</math>
+ששייכות ל-<math>\Gamma</math>. (שימו לב ש-<math>J_\gamma(z) = (cz + d)^{-2}</math>, כך שזה המקרה <math>J_\gamma^k</math> מלמעלה.) כשבוחרים <math>H(z) = e^{2\pi inz}</math>, שהוא קרקטר של המייצב <math>\Gamma_\infty</math> של החוד <math>\infty</math> (תת-חבורה ציקלית אינסופית שנוצרת על ידי <math>z \mapsto z + 1</math>), מקבלים את '''טור פואנקרה מסדר <math>n</math>''':
+:<math>\theta_{k,n}(z) = \sum_{\gamma\in\Gamma_\infty\backslash\Gamma}(cz + d)^{-2k}\exp\left(2\pi in\frac{az + b}{cz + d}\right).</math>
+{{הערה|1=בערך האנגלי נכתב ש-<math>H</math> נבחר כ"קרקטר של החבורה הציקלית מסדר <math>n</math>". בפועל <math>e^{2\pi inz}</math> הוא קרקטר של החבורה הציקלית '''האינסופית''' <math>\Gamma_\infty</math>, ו-<math>n</math> הוא האינדקס של הקרקטר (לא הסדר של החבורה). זו גם הסיבה שהסכום רץ על <math>\Gamma_\infty\backslash\Gamma</math>: האיבר <math>e^{2\pi in\gamma z}</math> אינו משתנה כשמחליפים את <math>\gamma</math> ב-<math>\left(\begin{smallmatrix} 1 & 1 \\ 0 & 1\end{smallmatrix}\right)\gamma</math>.|כיווון=שמאל}}
+טור פואנקרה הזה מתכנס בהחלט ובמידה שווה על קבוצות קומפקטיות (בחצי המישור העליון) כאשר <math>2k \gt 2</math>, והוא [[תבנית מודולרית]] ממשקל <math>2k</math> ביחס ל-<math>\Gamma</math>. כאשר <math>\Gamma</math> היא [[החבורה המודולרית]] המלאה ו-<math>n = 0</math>, מקבלים את טור אייזנשטיין ממשקל <math>2k</math>. באופן כללי, עבור <math>n \ge 1</math> טור פואנקרה הוא [[תבנית שפיץ]].
+
+== מקדמי פורייה ונוסחת פטרסון ==
+בסעיף הזה נסמן את המשקל ב-<math>k</math> (זוגי, <math>k \gt 2</math>), ונכתוב <math>P_m = \theta_{k/2,m}</math> עבור <math>\Gamma = \mathrm{SL}_2(\mathbb Z)</math>. טורי פואנקרה חשובים בגלל שתי עובדות:
+
+'''1. מקדמי פורייה מפורשים.''' אם <math>P_m(z) = \sum_{n\ge1}p_m(n)q^n</math>, אז
+:<math>p_m(n) = \delta_{mn} + 2\pi i^{-k}\left(\frac nm\right)^{\frac{k-1}2}\sum_{c=1}^\infty\frac{K(m, n; c)}c\,J_{k-1}\left(\frac{4\pi\sqrt{mn}}c\right),</math>
+כאשר <math>K(m, n; c) = \sum_{d \bmod c,\ (d,c)=1}e^{2\pi i(md + n\bar d)/c}</math> הוא [[סכום קלוסטרמן]] ו-<math>J_{k-1}</math> היא [[פונקציית בסל]]. זו אחת הדרכים העיקריות שבהן סכומי קלוסטרמן נכנסים לתורת התבניות המודולריות.
+
+'''2. תכונת השחזור (נוסחת פטרסון).''' לכל תבנית שפיץ <math>f = \sum a_nq^n</math> ממשקל <math>k</math>,
+:<math>\langle f, P_m\rangle = \frac{(k - 2)!}{(4\pi m)^{k-1}}\,a_m(f),</math>
+כאשר <math>\langle\cdot, \cdot\rangle</math> היא [[מכפלה פנימית של פטרסון|המכפלה הפנימית של פטרסון]]. ההוכחה היא "פתיחה" (unfolding): האינטגרל על תחום יסודי של <math>\Gamma</math> של <math>f\cdot\overline{P_m}</math> הופך לאינטגרל על הרצועה <math>\Gamma_\infty\backslash\mathcal H = \{0 \le x \le 1,\ y \gt 0\}</math> של <math>f(z)e^{-2\pi im\bar z}y^k</math>, ושם האינטגרל על <math>x</math> בורר את המקדם <math>a_m</math> והאינטגרל על <math>y</math> נותן פונקציית גמא. מכאן נובע ש'''טורי פואנקרה פורשים את מרחב תבניות השפיץ''': תבנית שפיץ שניצבת לכל <math>P_m</math> היא בעלת כל המקדמים אפס.
+
+=== דוגמה: משקל 12 ===
+המרחב <math>S_{12}(\mathrm{SL}_2(\mathbb Z))</math> חד-ממדי ונפרש על ידי <math>\Delta = \sum\tau(n)q^n</math>. לכן כל טור פואנקרה <math>P_m</math> ממשקל 12 הוא כפולה של <math>\Delta</math>, ומנוסחת פטרסון:
+:<math>P_m = \frac{\langle P_m, \Delta\rangle}{\langle\Delta, \Delta\rangle}\Delta = \frac{10!\,\tau(m)}{(4\pi m)^{11}\langle\Delta, \Delta\rangle}\Delta.</math>
+אפשר לבדוק את זה ישירות מהנוסחה עם סכומי קלוסטרמן. חישבנו את <math>p_m(n)</math> כסכום על <math>c \le 600</math> (עבור <math>k = 12</math> מתקיים <math>i^{-k} = 1</math>, והטור מתכנס מהר כי <math>J_{11}(x) \sim (x/2)^{11}/11!</math> עבור <math>x</math> קטן) וקיבלנו:
+* <math>p_1(1) = 2.8402873751675\ldots</math>;
+* <math>p_1(2)/p_1(1) = -24.000000\ldots = \tau(2)</math> ו-<math>p_1(3)/p_1(1) = 252.000000\ldots = \tau(3)</math> – כלומר <math>P_1</math> באמת כפולה של <math>\Delta</math>;
+* <math>p_2(1)/p_1(1) = -0.01171875 = \tau(2)/2^{11}</math>, כפי שהנוסחה <math>P_m \propto \tau(m)m^{-11}\Delta</math> צופה.
+יתרה מזו, מהשוואת המקדם הראשון מקבלים את הנורמה של פטרסון של <math>\Delta</math>:
+:<math>\langle\Delta, \Delta\rangle = \frac{10!}{(4\pi)^{11}p_1(1)} \approx 1.0353620568\times10^{-6},</math>
+בהתאם לערך הידוע.
+
+הדוגמה הזו ממחישה גם עיקרון כללי: הקביעה ש-<math>p_1(n)/p_1(1)</math> היא '''מספר שלם''' (<math>\tau(n)</math>) אינה גלויה כלל מהנוסחה עם סכומי קלוסטרמן ופונקציות בסל – היא נובעת רק מכך שהמרחב חד-ממדי.
+
+== ראו גם ==
+* [[טור אייזנשטיין]]
+* [[סכום קלוסטרמן]]
+* [[מכפלה פנימית של פטרסון]]
+* [[תבנית שפיץ]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. Kollár, ''Shafarevich Maps and Automorphic Forms'', M. B. Porter Lectures, Princeton University Press, 1995
+* H. Iwaniec, ''Topics in Classical Automorphic Forms'', Graduate Studies in Mathematics '''17''', AMS, 1997, §3
+* E. D. Solomentsev, ''Theta-series'', Encyclopedia of Mathematics
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות אוטומורפיות]]
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:טורים]]

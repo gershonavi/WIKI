@@ -200,7 +200,7 @@ Additive number theory:
 - [x] Manin–Drinfeld theorem
 - [x] Fricke involution
 - [x] Diamond operator
-- [ ] Poincaré series (modular form)
+- [x] Poincaré series (modular form)
 - [ ] Ring of modular forms
 - [ ] Weakly holomorphic modular form
 - [ ] Modular forms modulo p
