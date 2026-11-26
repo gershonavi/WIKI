@@ -253,7 +253,7 @@ Additive number theory:
 - [x] Proof that e is irrational
 - [x] Oppenheim conjecture
 - [x] Baker's theorem
-- [ ] Schanuel's conjecture
+- [x] Schanuel's conjecture
 - [ ] Six exponentials theorem
 - [ ] Four exponentials conjecture
 - [ ] Period (number theory)
