@@ -193,7 +193,7 @@ Additive number theory:
 - [x] Modular symbol
 - [x] Maass cusp form
 - [x] Eichler–Shimura isomorphism
-- [ ] Jacobi form
+- [x] Jacobi form
 - [ ] Modular equation
 - [ ] Weber modular function
 - [ ] Eisenstein ideal

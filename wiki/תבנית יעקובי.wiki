@@ -1,0 +1,81 @@
+ב[[מתמטיקה]], '''תבנית יעקובי''' היא [[תבנית אוטומורפית]] על [[חבורת יעקובי]], שהיא ה[[מכפלה חצי-ישרה]] של ה[[חבורה סימפלקטית|חבורה הסימפלקטית]] <math>\mathrm{Sp}(n; \mathbb R)</math> ו[[חבורת הייזנברג]] <math>H^{(n,h)}_{\mathbb R}</math>. את התורה חקרו לראשונה באופן שיטתי [[מרטין אייכלר]] ו[[דון זגייר]] ב-1985.{{הערה|שם=EZ|1=<span dir="ltr">M. Eichler, D. Zagier, The Theory of Jacobi Forms, Progress in Mathematics 55, Birkhäuser, 1985.</span>|כיווון=שמאל}}
+
+באופן לא פורמלי, תבנית יעקובי היא פונקציה של שני משתנים, <math>\tau</math> ב[[חצי המישור העליון]] ו-<math>z \in \mathbb C</math>, שמתנהגת כמו [[תבנית מודולרית]] במשתנה <math>\tau</math> וכמו [[פונקציה אליפטית|פונקציה אליפטית]] (ליתר דיוק, כמו [[פונקציית תטא]]) במשתנה <math>z</math>. היא מאחדת שני עולמות: [[פונקציית תטא של יעקובי|פונקציות התטא של יעקובי]] והפונקציה <math>\wp</math> של ויירשטראס מצד אחד, ותבניות מודולריות ממשקל חצי-שלם ו[[תבנית מודולרית של זיגל|תבניות זיגל]] מגנוס 2 מצד שני.
+
+== הגדרה ==
+'''תבנית יעקובי''' מרמה 1, מ'''משקל''' <math>k</math> ומ'''אינדקס''' <math>m</math> (שלמים, <math>m \ge 0</math>) היא פונקציה הולומורפית <math>\phi(\tau, z)</math> של שני משתנים מרוכבים (עם <math>\tau</math> בחצי המישור העליון) כך ש:
+* '''חוק מודולרי:''' <math>\phi\left(\frac{a\tau + b}{c\tau + d}, \frac z{c\tau + d}\right) = (c\tau + d)^ke^{\frac{2\pi imcz^2}{c\tau + d}}\phi(\tau, z)</math> לכל <math>\left(\begin{smallmatrix} a & b \\ c & d\end{smallmatrix}\right) \in \mathrm{SL}_2(\mathbb Z)</math>;
+* '''חוק אליפטי:''' <math>\phi(\tau, z + \lambda\tau + \mu) = e^{-2\pi im(\lambda^2\tau + 2\lambda z)}\phi(\tau, z)</math> לכל <math>\lambda, \mu</math> שלמים;
+* ל-<math>\phi</math> יש פיתוח פורייה
+:: <math>\phi(\tau, z) = \sum_{n\ge0}\ \sum_{r^2\le4mn}C(n, r)q^n\zeta^r, \qquad q = e^{2\pi i\tau},\ \zeta = e^{2\pi iz}.</math>
+
+אם בתנאי השלישי דורשים <math>r^2 \lt 4mn</math>, <math>\phi</math> נקראת '''תבנית שפיץ של יעקובי'''. אם מוותרים על התנאי <math>r^2 \le 4mn</math> ודורשים רק <math>n \ge 0</math>, <math>\phi</math> נקראת '''תבנית יעקובי חלשה'''. נסמן ב-<math>J_{k,m}</math>, <math>J^{\text{cusp}}_{k,m}</math> ו-<math>\tilde J_{k,m}</math> את המרחבים המתאימים.
+
+=== תכונות בסיסיות ===
+* '''המקדמים תלויים רק ב"דיסקרימיננטה".''' מהחוק האליפטי נובע ש-<math>C(n, r)</math> תלוי רק ב-<math>D = 4mn - r^2</math> וב-<math>r \bmod 2m</math>. עבור אינדקס <math>m = 1</math>, השארית <math>r \bmod 2</math> נקבעת על ידי <math>D \bmod 4</math>, ולכן <math>C(n, r) = c(4n - r^2)</math> לפונקציה <math>c</math> של משתנה אחד.
+* '''צמצום ל-<math>z = 0</math>.''' הצבת <math>z = 0</math> בחוק המודולרי מראה ש-<math>\phi(\tau, 0)</math> היא תבנית מודולרית ממשקל <math>k</math>. באופן כללי יותר, המקדמים של פיתוח טיילור של <math>\phi</math> ב-<math>z</math>, אחרי תיקונים מתאימים, הם תבניות מודולריות ממשקלים <math>k, k + 2, k + 4, \dots</math>.
+* '''פירוק תטא.''' כל תבנית יעקובי מאינדקס <math>m</math> אפשר לכתוב כ-
+:: <math>\phi(\tau, z) = \sum_{\mu \bmod 2m}h_\mu(\tau)\,\vartheta_{m,\mu}(\tau, z), \qquad \vartheta_{m,\mu}(\tau, z) = \sum_{r\equiv\mu\ (2m)}q^{r^2/4m}\zeta^r,</math>
+: כאשר <math>h_\mu(\tau) = \sum_Nc_\mu(N)q^{N/4m}</math>. הווקטור <math>(h_\mu)</math> הוא תבנית מודולרית וקטורית ממשקל <math>k - \tfrac12</math>. עבור <math>m = 1</math> מתקבל ש-<math>\sum_Dc(D)q^D</math> היא תבנית מודולרית ממשקל <math>k - \tfrac12</math> על <math>\Gamma_0(4)</math> ב"מרחב הפלוס" של קוהנן, ואייכלר וזגייר הראו שזה איזומורפיזם <math>J_{k,1} \cong M^+_{k-1/2}(\Gamma_0(4))</math>.
+* '''ממדים.''' עבור <math>k</math> זוגי, <math>\dim J_{k,1} = \dim M_k + \dim S_{k+2}</math>. למשל <math>J_{4,1}</math>, <math>J_{6,1}</math>, <math>J_{8,1}</math> ו-<math>J_{10,1}</math> חד-ממדיים, ו-<math>J_{12,1}</math> דו-ממדי.
+
+== דוגמאות ==
+דוגמאות בשני משתנים הן [[פונקציית תטא של יעקובי|פונקציות התטא של יעקובי]], [[הפונקציה האליפטית של ויירשטראס|הפונקציה <math>\wp</math> של ויירשטראס]] (תבנית יעקובי מרומורפית ממשקל 2 ואינדקס 0), ומקדמי פורייה–יעקובי של [[תבנית מודולרית של זיגל|תבניות זיגל]] מגנוס 2. דוגמאות ביותר משני משתנים הן ה[[קרקטר (תורת ההצגות)|קרקטרים]] של חלק מההצגות האי-פריקות עם משקל עליון של [[אלגברת קאץ–מודי|אלגברות קאץ–מודי]] אפיניות. תבניות יעקובי מרומורפיות מופיעות בתורת ה[[תבנית מודולרית מדומה|תבניות המודולריות המדומות]].
+
+=== טור אייזנשטיין–יעקובי <math>E_{4,1}</math> ===
+הדרך הקלה ביותר לראות תבנית יעקובי היא דרך [[סריג E8|סריג <math>E_8</math>]]. יהי <math>v</math> שורש קבוע של <math>E_8</math> (וקטור עם <math>v \cdot v = 2</math>), ונגדיר
+:<math>E_{4,1}(\tau, z) = \sum_{x\in E_8}q^{x\cdot x/2}\zeta^{x\cdot v}.</math>
+זו פונקציית התטא של הסריג עם "משתנה יעקובי", והיא תבנית יעקובי ממשקל 4 (חצי מהדרגה 8) ואינדקס 1 (חצי מ-<math>v \cdot v</math>). המקדם של <math>q^n\zeta^r</math> סופר את וקטורי הסריג עם <math>x \cdot x = 2n</math> ו-<math>x \cdot v = r</math>. מניה מפורשת של וקטורי <math>E_8</math> נותנת:
+{| class="wikitable" style="text-align:center"
+! <math>n</math> !! <math>r = 0</math> !! <math>r = \pm1</math> !! <math>r = \pm2</math> !! <math>r = \pm3</math> !! סך הכול
+|-
+| 0 || 1 || – || – || – || 1
+|-
+| 1 || 126 || 56 || 1 || – || 240
+|-
+| 2 || 756 || 576 || 126 || – || 2160
+|-
+| 3 || 2072 || 1512 || 756 || 56 || 6720
+|}
+כלומר
+:<math>E_{4,1}(\tau, z) = 1 + (\zeta^2 + 56\zeta + 126 + 56\zeta^{-1} + \zeta^{-2})q + (126\zeta^2 + 576\zeta + 756 + 576\zeta^{-1} + 126\zeta^{-2})q^2 + \cdots</math>
+
+אפשר לראות בטבלה את שתי התכונות הבסיסיות:
+* '''תלות ב-<math>D = 4n - r^2</math> בלבד:''' <math>c(0) = 1</math> מופיע ב-<math>(n, r) = (0, 0), (1, \pm2)</math>; <math>c(3) = 56</math> ב-<math>(1, \pm1), (3, \pm3)</math>; <math>c(4) = 126</math> ב-<math>(1, 0), (2, \pm2)</math>; <math>c(8) = 756</math> ב-<math>(2, 0), (3, \pm2)</math>. השאר: <math>c(7) = 576</math>, <math>c(11) = 1512</math>, <math>c(12) = 2072</math>.
+* '''צמצום ל-<math>z = 0</math>:''' עמודת הסכום, <math>1, 240, 2160, 6720</math>, היא המקדמים של <math>E_4(\tau) = 1 + 240\sum\sigma_3(n)q^n</math>, כצפוי (<math>240\sigma_3(2) = 2160</math>, <math>240\sigma_3(3) = 6720</math>).
+
+=== הצורות החלשות <math>\phi_{-2,1}</math> ו-<math>\phi_{0,1}</math> ===
+יהי <math>\vartheta(\tau, z) = \sum_{n\in\mathbb Z}(-1)^nq^{(n+1/2)^2/2}\zeta^{n+1/2}</math> (פונקציית התטא האי-זוגית של יעקובי, עד כדי גורם <math>i</math>), ו-<math>\eta</math> [[פונקציית אטא של דדקינד]]. אז
+:<math>\phi_{-2,1}(\tau, z) = \frac{\vartheta(\tau, z)^2}{\eta(\tau)^6}</math>
+היא תבנית יעקובי חלשה ממשקל <math>-2</math> ואינדקס 1 (בדקנו את החוק המודולרי עבור <math>\tau \mapsto -1/\tau</math> ואת החוק האליפטי בחישוב מספרי, בדיוק של 24 ספרות). פיתוח הסדרה נותן
+:<math>\phi_{-2,1} = (\zeta - 2 + \zeta^{-1}) + (-2\zeta^2 + 8\zeta - 12 + 8\zeta^{-1} - 2\zeta^{-2})q + (\zeta^3 - 12\zeta^2 + 39\zeta - 56 + 39\zeta^{-1} - 12\zeta^{-2} + \zeta^{-3})q^2 + \cdots</math>
+יש בו איברים עם <math>r^2 \gt 4n</math> (למשל <math>\zeta</math> ב-<math>q^0</math>, עם <math>D = -1</math>), ולכן זו תבנית חלשה ולא תבנית יעקובי ממש. בנוסף מגדירים
+:<math>\phi_{0,1}(\tau, z) = 4\sum_{i=2}^4\frac{\vartheta_i(\tau, z)^2}{\vartheta_i(\tau, 0)^2} = (\zeta + 10 + \zeta^{-1}) + (10\zeta^2 - 64\zeta + 108 - 64\zeta^{-1} + 10\zeta^{-2})q + \cdots,</math>
+תבנית יעקובי חלשה ממשקל 0 ואינדקס 1. הצמצומים ל-<math>z = 0</math> הם קבועים, כפי שמשקלים <math>-2</math> ו-0 מחייבים: <math>\phi_{-2,1}(\tau, 0) = 0</math> ו-<math>\phi_{0,1}(\tau, 0) = 12</math> (בדקנו את ארבעת המקדמים הראשונים).
+
+'''משפט המבנה של אייכלר–זגייר.''' כל תבנית יעקובי חלשה ממשקל זוגי היא פולינום ב-<math>\phi_{-2,1}</math> וב-<math>\phi_{0,1}</math> עם מקדמים ב[[תבנית מודולרית|חוג התבניות המודולריות]] <math>\mathbb C[E_4, E_6]</math>; במשקל זוגי ואינדקס <math>m</math>:
+:<math>\tilde J_{2*,m} = \bigoplus_{j=0}^m M_{2*+2j}\cdot\phi_{-2,1}^j\phi_{0,1}^{m-j}.</math>
+מכאן כל הדוגמאות באינדקס 1:
+:<math>E_{4,1} = \frac1{12}\left(E_4\phi_{0,1} - E_6\phi_{-2,1}\right), \qquad \phi_{10,1} = \Delta\,\phi_{-2,1} = \eta^{18}\vartheta^2, \qquad \phi_{12,1} = \Delta\,\phi_{0,1}.</math>
+אפשר לבדוק את הנוסחה הראשונה ישירות מהפיתוחים: עם <math>E_4 = 1 + 240q + \cdots</math> ו-<math>E_6 = 1 - 504q + \cdots</math>, המקדם של <math>q^0</math> הוא <math>\frac1{12}\left((\zeta + 10 + \zeta^{-1}) - (\zeta - 2 + \zeta^{-1})\right) = 1</math>, והמקדם של <math>q\zeta</math> הוא <math>\frac1{12}(-64 + 240 - 8 + 504) = 56</math>, והמקדם של <math>q\zeta^0</math> הוא <math>\frac1{12}(108 + 2400 + 12 - 1008) = 126</math> – בהתאם לטבלת <math>E_8</math>. <math>\phi_{10,1}</math> ו-<math>\phi_{12,1}</math> הן תבניות שפיץ של יעקובי, ומתחילות ב-<math>(\zeta - 2 + \zeta^{-1})q</math> וב-<math>(\zeta + 10 + \zeta^{-1})q</math>.
+
+'''קשר לגאומטריה.''' ה[[גנוס אליפטי|גנוס האליפטי]] של [[משטח K3]] שווה ל-<math>2\phi_{0,1}</math>. הצבת <math>z = 0</math> נותנת <math>24</math>, [[מאפיין אוילר]] של משטח K3, והמקדמים של הפירוק של <math>2\phi_{0,1}</math> לקרקטרים של האלגברה הסופר-קונפורמית <math>N = 4</math> הובילו לתגלית "המונשיין של מתייה" (Mathieu moonshine).
+
+== ראו גם ==
+* [[תבנית מודולרית של זיגל]]
+* [[תבנית מודולרית מדומה]]
+* [[פונקציית אטא של דדקינד]]
+* [[הפונקציה האליפטית של ויירשטראס]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* M. Eichler, D. Zagier, ''The Theory of Jacobi Forms'', Progress in Mathematics '''55''', Birkhäuser, 1985
+* V. Gritsenko, ''Elliptic genus of Calabi–Yau manifolds and Jacobi and Siegel modular forms'', St. Petersburg Math. J. '''11''' (2000), pp. 781–804
+* A. Dabholkar, S. Murthy, D. Zagier, ''Quantum black holes, wall crossing and mock modular forms'', arXiv:1208.4074
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:פונקציות תטא]]
