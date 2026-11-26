@@ -180,7 +180,7 @@ Additive number theory:
 - [x] Petersson inner product
 - [x] Eigenform
 - [x] Atkin–Lehner theory
-- [ ] Dedekind sum
+- [x] Dedekind sum
 - [ ] Mock modular form
 - [ ] Harmonic Maass form
 - [ ] Rogers–Ramanujan identities
