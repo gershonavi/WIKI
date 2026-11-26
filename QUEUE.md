@@ -348,7 +348,7 @@ Additive number theory:
 - [x] Regular number
 - [x] Mersenne number (הפניה לראשוני מרסן)
 - [x] Double Mersenne number
-- [ ] Unitary perfect number
+- [x] Unitary perfect number
 - [ ] Superperfect number
 - [ ] Erdős–Nicolas number
 - [ ] Primitive abundant number

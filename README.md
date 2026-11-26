@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (511)
+## ערכים (512)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -254,6 +254,7 @@
 * [מספר מחוספס](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%97%D7%95%D7%A1%D7%A4%D7%A1.md) – Rough number
 * [מספר מעשי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A2%D7%A9%D7%99.md) – Practical number
 * [מספר מרסן כפול](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A8%D7%A1%D7%9F%20%D7%9B%D7%A4%D7%95%D7%9C.md) – Double Mersenne number
+* [מספר משוכלל אוניטרי](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%95%D7%9B%D7%9C%D7%9C%20%D7%90%D7%95%D7%A0%D7%99%D7%98%D7%A8%D7%99.md) – Unitary perfect number
 * [מספר עתיר טוטיינט](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A2%D7%AA%D7%99%D7%A8%20%D7%98%D7%95%D7%98%D7%99%D7%99%D7%A0%D7%98.md) – Highly totient number
 * [מספר פריק עליון](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A4%D7%A8%D7%99%D7%A7%20%D7%A2%D7%9C%D7%99%D7%95%D7%9F.md) – Superior highly composite number
 * [מספר קאלן](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A7%D7%90%D7%9C%D7%9F.md) – Cullen number
