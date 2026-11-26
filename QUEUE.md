@@ -425,7 +425,7 @@ Additive number theory:
 ### השלמות לשיעור 18 (קבוע דה ברויין–ניומן) (7)
 
 - [x] Laguerre–Pólya class
-- [ ] Turán's inequalities
+- [x] Turán's inequalities
 - [ ] Polymath Project
 - [x] Riemann–Siegel theta function (קיים: פונקציית התטא של רימן-זיגל)
 - [ ] Gaussian ensemble

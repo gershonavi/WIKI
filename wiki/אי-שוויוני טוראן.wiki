@@ -1,0 +1,50 @@
+ב[[מתמטיקה]], '''אי-שוויוני טוראן''' הם אי-שוויונים על [[פולינומי לז'נדר]] שמצא [[פאל טוראן]]{{הערה|1=<span dir="ltr">P. Turán, "On the zeros of the polynomials of Legendre", ''Časopis pro pěstování matematiky a fysiky'' '''75''' (1950), no. 3, 113–122</span>|כיווון=שמאל}} (ושפורסמו לראשונה על ידי [[גאבור סגה]] ב-1948).{{הערה|1=<span dir="ltr">G. Szegö, "On an inequality of P. Turán concerning Legendre polynomials", ''Bull. Amer. Math. Soc.'' '''54''' (1948), no. 4, 401–405</span>|כיווון=שמאל}} יש הכללות רבות לפולינומים אחרים, שגם הן נקראות לעתים קרובות אי-שוויוני טוראן, של בקנבך, זיידל וסאס{{הערה|1=<span dir="ltr">E. F. Beckenbach, W. Seidel, O. Szász, "Recurrent determinants of Legendre and of ultraspherical polynomials", ''Duke Math. J.'' '''18''' (1951), 1–10</span>|כיווון=שמאל}} ושל מחברים אחרים. בתורת המספרים, אי-שוויונים מאותו סוג על מקדמי טיילור של [[פונקציית קסי של רימן]] הם תנאי הכרחי ל[[השערת רימן]].
+
+== פולינומים אורתוגונליים ==
+אם <math>P_n</math> הוא [[פולינומי לז'נדר|פולינום לז'נדר]] ה-<math>n</math>-י, אי-שוויוני טוראן אומרים ש-
+:<math>P_n(x)^2 \gt P_{n-1}(x)P_{n+1}(x) \qquad (-1\lt x\lt 1).</math>
+לדוגמה, <math>P_1(x)^2 - P_0(x)P_2(x) = \tfrac12(1-x^2)</math> ו-<math>P_2(x)^2 - P_1(x)P_3(x) = \tfrac14(1-x^4)</math>, ושניהם חיוביים בקטע.
+
+עבור <math>H_n</math>, [[פולינומי הרמיט|פולינום הרמיט]] ה-<math>n</math>-י (בנרמול של הפיזיקאים, <math>H_n(x) = (-1)^n e^{x^2}\frac{d^n}{dx^n}e^{-x^2}</math>), אי-שוויוני טוראן מתקבלים מהזהות
+:<math>H_n(x)^2 - H_{n-1}(x)H_{n+1}(x)= (n-1)!\sum_{i=0}^{n-1}\frac{2^{n-i}}{i!}H_i(x)^2 \gt 0,</math>
+שבה אגף ימין הוא סכום של ריבועים עם מקדמים חיוביים. למשל, עבור <math>n = 2</math>: <math>H_2^2 - H_1H_3 = 8x^2 + 4</math>.
+
+עבור [[פולינומי צ'בישב]] <math>T_n</math> הם נובעים מהזהות
+:<math>T_n(x)^2 - T_{n-1}(x)T_{n+1}(x)= 1-x^2 \gt 0 \qquad (-1\lt x\lt 1),</math>
+שנובעת מ-<math>T_n(\cos\theta) = \cos n\theta</math> ומהזהות <math>\cos^2 n\theta - \cos(n-1)\theta\cos(n+1)\theta = \sin^2\theta</math>.
+
+(בדקנו בחישוב את שלוש הזהויות עבור <math>n = 1, \ldots, 6</math>.)
+
+== אי-שוויוני טוראן לפונקציית קסי ==
+נכתוב, כמו ב[[השערת ניומן|מאמר של רוג'רס וטאו]],
+:<math>H_0(x) = \tfrac18\,\xi\bigl(\tfrac12 + \tfrac{ix}{2}\bigr) = \int_0^\infty \Phi(u)\cos(xu)\,du = \sum_{k \ge 0}(-1)^k b_k\frac{x^{2k}}{(2k)!},</math>
+כאשר
+:<math>\Phi(u) = \sum_{n=1}^\infty\left(2\pi^2n^4e^{9u} - 3\pi n^2e^{5u}\right)e^{-\pi n^2e^{4u}}, \qquad b_k = \int_0^\infty u^{2k}\Phi(u)\,du \gt 0.</math>
+אם השערת רימן נכונה, אז <math>H_0</math> שייכת ל[[מחלקת לגר–פויה]], ולכן המקדמים שלה מקיימים את '''אי-שוויוני טוראן'''
+:<math>b_k^2 \gt \frac{2k-1}{2k+1}\,b_{k-1}b_{k+1} \qquad (k \ge 1).</math>
+(אלה בדיוק התנאים לכך ש'''פולינומי ינסן''' ממעלה 2 של <math>H_0</math> יהיו היפרבוליים, כלומר בעלי שורשים ממשיים בלבד.) צ'ורדש, נורפוק ווארגה הוכיחו ב-1986 שהאי-שוויונים האלה אכן מתקיימים לכל <math>k</math> – בלי להניח את השערת רימן.{{הערה|1=<span dir="ltr">G. Csordas, T. S. Norfolk, R. S. Varga, "The Riemann hypothesis and the Turán inequalities", ''Trans. Amer. Math. Soc.'' '''296''' (1986), 521–541</span>|כיווון=שמאל}} גריפין, אונו, רולן וזגייר הוכיחו ב-2019 הכללה: לכל מעלה <math>d</math>, פולינומי ינסן ממעלה <math>d</math> (בהזזה <math>n</math>) של <math>\Xi</math> היפרבוליים לכל <math>n</math> גדול מספיק.{{הערה|1=<span dir="ltr">M. Griffin, K. Ono, L. Rolen, D. Zagier, "Jensen polynomials for the Riemann zeta function and other sequences", ''Proc. Natl. Acad. Sci. USA'' '''116''' (2019), no. 23, 11103–11110</span>|כיווון=שמאל}} השערת רימן שקולה להיפרבוליות של '''כל''' פולינומי ינסן.
+
+'''דוגמה מספרית.''' חישוב האינטגרלים נותן
+:<math>b_0 = 0.0621400973,\quad b_1 = 7.178733\times 10^{-4},\quad b_2 = 2.314725\times 10^{-5},\quad b_3 = 1.170500\times 10^{-6},\quad b_4 = 7.859696 \times 10^{-8},\ldots</math>
+(<math>b_0 = H_0(0) = \xi(\tfrac12)/8</math>), והיחסים <math>b_k^2/(b_{k-1}b_{k+1})</math> לעומת <math>\frac{2k-1}{2k+1}</math> הם:
+:{| class="wikitable" style="text-align:center"
+! <math>k</math> !! 1 !! 2 !! 3 !! 4 !! 5
+|-
+! <math>b_k^2/(b_{k-1}b_{k+1})</math>
+| 0.3583 || 0.6376 || 0.7531 || 0.8152 || 0.8535
+|-
+! <math>(2k-1)/(2k+1)</math>
+| 0.3333 || 0.6000 || 0.7143 || 0.7778 || 0.8182
+|}
+אי-השוויון מתקיים בכל המקרים, אבל בפער קטן יחסית – ביטוי לכך ש-<math>H_0</math> "בקושי" במחלקת לגר–פויה, ולכך שקבוע דה ברויין–ניומן הוא 0 בדיוק אם השערת רימן נכונה. גם הזהות <math>H_0(1) = \tfrac18\xi(\tfrac12 + \tfrac i2) = 0.0617821\ldots</math> נבדקה מספרית. (בדקנו בחישוב.)
+
+== ראו גם ==
+* [[מחלקת לגר–פויה]]
+* [[השערת ניומן]]
+* [[פונקציית קסי של רימן]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:השערת רימן]]
+[[קטגוריה:אי-שוויונים]]
