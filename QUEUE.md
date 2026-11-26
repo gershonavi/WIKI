@@ -306,7 +306,7 @@ Additive number theory:
 - [x] Primes in arithmetic progression
 - [x] Reciprocals of primes
 - [x] Prime constant
-- [ ] Wieferich pair
+- [x] Wieferich pair
 - [ ] Ruth–Aaron pair
 - [ ] Provable prime
 - [ ] Fortune's conjecture
