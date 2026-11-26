@@ -1,0 +1,93 @@
+ב[[מתמטיקה]], '''הפונקציות המודולריות של ובר''' הן משפחה של שלוש פונקציות, <math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math>, שחקר [[היינריך ובר]].{{הערה|1=<math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math> אינן [[תבנית מודולרית|פונקציות מודולריות]] במובן הצר (אינווריאנטיות תחת <math>\mathrm{SL}_2(\mathbb Z)</math>), אבל כל פונקציה מודולרית היא [[פונקציה רציונלית]] ב-<math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math>. חלק מהמחברים משתמשים בהגדרה אחרת, לא שקולה, של "פונקציה מודולרית".|כיווון=שמאל}} הן שימושיות במיוחד בתורת ה[[כפל מרוכב|כפל המרוכב]]: הערכים שלהן בנקודות מיוחדות נותנים "אינווריאנטי מחלקה" – מספרים אלגבריים שיוצרים את [[שדה המחלקות|שדה המחלקות של הילברט]] כמו <math>j</math>, אבל עם [[פולינום מינימלי|פולינומים מינימליים]] בעלי מקדמים קטנים בהרבה.
+
+== הגדרה ==
+יהי <math>q = e^{2\pi i\tau}</math>, כאשר <math>\tau</math> ב[[חצי המישור העליון]]. פונקציות ובר הן
+:<math>\begin{align}
+\mathfrak f(\tau) &= q^{-\frac1{48}}\prod_{n\gt0}(1 + q^{n-1/2}) = \frac{\eta^2(\tau)}{\eta\big(\tfrac\tau2\big)\eta(2\tau)} = e^{-\frac{\pi i}{24}}\frac{\eta\big(\frac{\tau + 1}2\big)}{\eta(\tau)}, \\
+\mathfrak f_1(\tau) &= q^{-\frac1{48}}\prod_{n\gt0}(1 - q^{n-1/2}) = \frac{\eta\big(\tfrac\tau2\big)}{\eta(\tau)}, \\
+\mathfrak f_2(\tau) &= \sqrt2\,q^{\frac1{24}}\prod_{n\gt0}(1 + q^n) = \frac{\sqrt2\,\eta(2\tau)}{\eta(\tau)}.
+\end{align}</math>
+אלה גם ההגדרות במאמר של דיוק "Continued Fractions and Modular Functions".{{הערה|1=<span dir="ltr">W. Duke, Continued fractions and modular functions, Bulletin of the AMS 42 (2005), pp. 137–162, עמ' 22–23 בגרסת ההדפסה המוקדמת.</span>|כיווון=שמאל}} כאן <math>\eta(\tau)</math> היא [[פונקציית אטא של דדקינד]], ואת <math>(e^{2\pi i\tau})^\alpha</math> יש לפרש כ-<math>e^{2\pi i\tau\alpha}</math>. מהתיאור כמנות של פונקציות אטא נובע מיד ש-
+:<math>\mathfrak f(\tau)\,\mathfrak f_1(\tau)\,\mathfrak f_2(\tau) = \sqrt2.</math>
+(במכפלה <math>\eta^2(\tau)\cdot\eta(\tau/2)\cdot\sqrt2\,\eta(2\tau)</math> במונה ו-<math>\eta(\tau/2)\eta(2\tau)\cdot\eta(\tau)\cdot\eta(\tau)</math> במכנה, הכול מצטמצם פרט ל-<math>\sqrt2</math>.)
+
+הטרנספורמציה <math>\tau \mapsto -1/\tau</math> מקבעת את <math>\mathfrak f</math> ומחליפה בין <math>\mathfrak f_1</math> ל-<math>\mathfrak f_2</math>. לכן החבורה <math>\mathrm{SL}_2(\mathbb Z)</math> פועלת על המרחב הווקטורי המרוכב התלת-ממדי שנפרש על ידי <math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math> (עד כדי כפל בשורשי יחידה מסדר 48).
+
+== מכפלה אינסופית חלופית ==
+לחלופין, יהי <math>q = e^{\pi i\tau}</math> ה[[נום (מתמטיקה)|נום]]. אז
+:<math>\begin{align}
+\mathfrak f(q) &= q^{-\frac1{24}}\prod_{n\gt0}(1 + q^{2n-1}) = \frac{\eta^2(\tau)}{\eta\big(\tfrac\tau2\big)\eta(2\tau)}, \\
+\mathfrak f_1(q) &= q^{-\frac1{24}}\prod_{n\gt0}(1 - q^{2n-1}) = \frac{\eta\big(\tfrac\tau2\big)}{\eta(\tau)}, \\
+\mathfrak f_2(q) &= \sqrt2\,q^{\frac1{12}}\prod_{n\gt0}(1 + q^{2n}) = \frac{\sqrt2\,\eta(2\tau)}{\eta(\tau)}.
+\end{align}</math>
+צורת המכפלה האינסופית השתנתה מעט, אבל מנות האטא נשארו זהות, ולכן <math>\mathfrak f_i(\tau) = \mathfrak f_i(q)</math> כל עוד בשנייה משתמשים בנום <math>q = e^{\pi i\tau}</math>. התועלת בצורה השנייה היא החיבור לסימון של פונקציות G ו-g של רמנוג'אן ושל [[פונקציית תטא|פונקציות התטא של יעקובי]], ששתיהן משתמשות בנום.
+
+== הקשר לפונקציות G ו-g של רמנוג'אן ==
+עדיין עם הנום <math>q = e^{\pi i\tau}</math>, פונקציות G ו-g של [[סריניוואסה רמנוג'אן|רמנוג'אן]] מוגדרות על ידי
+:<math>\begin{align}
+2^{1/4}G_n &= q^{-\frac1{24}}\prod_{k\gt0}(1 + q^{2k-1}), \\
+2^{1/4}g_n &= q^{-\frac1{24}}\prod_{k\gt0}(1 - q^{2k-1}),
+\end{align}</math>
+כאשר <math>\tau = \sqrt{-n}</math>, כלומר <math>q = e^{-\pi\sqrt n}</math>. לכן
+:<math>2^{1/4}G_n = \mathfrak f(\sqrt{-n}), \qquad 2^{1/4}g_n = \mathfrak f_1(\sqrt{-n}).</math>
+רמנוג'אן מצא קשרים רבים בין <math>G_n</math> ל-<math>g_n</math>, שמתורגמים לקשרים בין <math>\mathfrak f</math> ל-<math>\mathfrak f_1</math>. למשל, הזהות שלו
+:<math>(G_n^8 - g_n^8)(G_ng_n)^8 = \tfrac14</math>
+שקולה ל-
+:<math>\left[\mathfrak f^8 - \mathfrak f_1^8\right]\left[\mathfrak f\,\mathfrak f_1\right]^8 = \left[\sqrt2\right]^8 = 16.</math>
+אפשר להוכיח אותה ישירות משתי הזהויות שבערך: <math>\mathfrak f^8 - \mathfrak f_1^8 = \mathfrak f_2^8</math> (ראו למטה) ו-<math>(\mathfrak f\mathfrak f_1)^8 = (\sqrt2/\mathfrak f_2)^8 = 16/\mathfrak f_2^8</math>; המכפלה היא <math>16</math>. המעבר ל-<math>G, g</math>: <math>\mathfrak f^8 - \mathfrak f_1^8 = 4(G^8 - g^8)</math> ו-<math>(\mathfrak f\mathfrak f_1)^8 = 16(Gg)^8</math>, ולכן <math>64(G^8 - g^8)(Gg)^8 = 16</math>.
+
+רמנוג'אן גם טבלל ערכים רבים של <math>G_n</math> עבור <math>n</math> אי-זוגי ושל <math>g_n</math> עבור <math>n</math> זוגי. זה נותן אוטומטית ערכים מפורשים רבים של <math>\mathfrak f</math> ו-<math>\mathfrak f_1</math>. למשל, עבור <math>\tau = \sqrt{-5}, \sqrt{-13}, \sqrt{-37}</math>, שמתאימים לדיסקרימיננטות עם [[מספר מחלקה]] 2,
+:<math>\begin{align}
+G_5 &= \left(\frac{1 + \sqrt5}2\right)^{1/4}, \\
+G_{13} &= \left(\frac{3 + \sqrt{13}}2\right)^{1/4}, \\
+G_{37} &= \left(6 + \sqrt{37}\right)^{1/4}
+\end{align}</math>
+(בדקנו את שלושת הערכים בחישוב מספרי מתוך המכפלה האינסופית), ומהם מקבלים בקלות <math>\mathfrak f(\sqrt{-n}) = 2^{1/4}G_n</math>, וגם את הדוגמאות המסובכות יותר שבמחברות של רמנוג'אן.
+
+=== דוגמה: חישוב <math>j(\sqrt{-5})</math> ===
+אפשר להשתמש ב-<math>G_5</math> כדי לחשב את <math>j(\sqrt{-5})</math> במדויק. יהי <math>\varphi = \frac{1 + \sqrt5}2</math> [[יחס הזהב]]. אז <math>\mathfrak f(\sqrt{-5}) = 2^{1/4}\varphi^{1/4}</math>, ולכן
+:<math>\mathfrak f(\sqrt{-5})^{24} = 2^6\varphi^6 = 64(9 + 4\sqrt5).</math>
+לפי הנוסחה <math>j = \frac{(\mathfrak f^{24} - 16)^3}{\mathfrak f^{24}}</math> (ראו למטה):
+:<math>j(\sqrt{-5}) = \frac{\left(64(9 + 4\sqrt5) - 16\right)^3}{64(9 + 4\sqrt5)} = 632000 + 282880\sqrt5 \approx 1264538.909,</math>
+בהתאם לחישוב ישיר של <math>j(\sqrt{-5})</math> מתוך טור <math>q</math> (בדקנו את הפישוט בחישוב סימבולי ואת הערך המספרי בדיוק של 25 ספרות). מספר המחלקה של <math>\mathbb Q(\sqrt{-5})</math> הוא 2, ולכן <math>j(\sqrt{-5})</math> הוא שלם אלגברי ממעלה 2 – ובאמת הוא ב-<math>\mathbb Z[\sqrt5]</math>. שימו לב לפער בגדלים: <math>G_5^4 = \varphi</math> הוא יחידה קטנה, בעוד ש-<math>j(\sqrt{-5})</math> גדול ממיליון. זה היתרון של פונקציות ובר כאינווריאנטי מחלקה.
+
+== הקשר לפונקציות התטא של יעקובי ==
+הארגומנט של [[פונקציית תטא|פונקציות התטא של יעקובי]] הקלאסיות הוא באופן מסורתי הנום <math>q = e^{\pi i\tau}</math>:
+:<math>\begin{align}
+\vartheta_{10}(0; \tau) &= \theta_2(q) = \sum_{n=-\infty}^\infty q^{(n+1/2)^2} = \frac{2\eta^2(2\tau)}{\eta(\tau)}, \\[2pt]
+\vartheta_{00}(0; \tau) &= \theta_3(q) = \sum_{n=-\infty}^\infty q^{n^2} = \frac{\eta^5(\tau)}{\eta^2\left(\frac\tau2\right)\eta^2(2\tau)} = \frac{\eta^2\left(\frac{\tau + 1}2\right)}{\eta(\tau + 1)}, \\[3pt]
+\vartheta_{01}(0; \tau) &= \theta_4(q) = \sum_{n=-\infty}^\infty(-1)^nq^{n^2} = \frac{\eta^2\left(\frac\tau2\right)}{\eta(\tau)}.
+\end{align}</math>
+כשמחלקים אותן ב-<math>\eta(\tau)</math>, ומשתמשים בכך ש-<math>\eta(\tau) = e^{-\frac{\pi i}{12}}\eta(\tau + 1)</math>, מקבלים בדיוק את הריבועים של פונקציות ובר:
+:<math>\frac{\theta_2(q)}{\eta(\tau)} = \mathfrak f_2(q)^2, \qquad \frac{\theta_4(q)}{\eta(\tau)} = \mathfrak f_1(q)^2, \qquad \frac{\theta_3(q)}{\eta(\tau)} = \mathfrak f(q)^2.</math>
+לפי [[זהות יעקובי]]
+:<math>\theta_2(q)^4 + \theta_4(q)^4 = \theta_3(q)^4</math>
+מקבלים
+:<math>\mathfrak f_2(q)^8 + \mathfrak f_1(q)^8 = \mathfrak f(q)^8.</math>
+
+== הקשר לפונקציית j ==
+שלושת השורשים של ה[[משוואה ממעלה שלישית]]
+:<math>j(\tau) = \frac{(x - 16)^3}x,</math>
+כאשר <math>j(\tau)</math> היא [[אינווריאנט j|פונקציית j]], הם <math>x = \mathfrak f(\tau)^{24}, -\mathfrak f_1(\tau)^{24}, -\mathfrak f_2(\tau)^{24}</math>. בנוסף, מתקיים
+:<math>j(\tau) = 32\frac{\Big(\theta_2(q)^8 + \theta_3(q)^8 + \theta_4(q)^8\Big)^3}{\Big(\theta_2(q)\,\theta_3(q)\,\theta_4(q)\Big)^8},</math>
+ומההגדרות של פונקציות ובר דרך פונקציות התטא, יחד עם <math>\mathfrak f_2(q)^2\mathfrak f_1(q)^2\mathfrak f(q)^2 = 2</math>, נובע
+:<math>j(\tau) = \left(\frac{\mathfrak f(\tau)^{16} + \mathfrak f_1(\tau)^{16} + \mathfrak f_2(\tau)^{16}}2\right)^3.</math>
+(כל הזהויות בערך נבדקו בחישוב מספרי בנקודה כללית <math>\tau = 0.13 + 0.77i</math>, בדיוק של 40 ספרות.)
+
+== ראו גם ==
+* [[פונקציית אטא של דדקינד]]
+* [[פונקציית למבדא המודולרית]]
+* [[משוואה מודולרית]]
+* [[כפל מרוכב]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* W. Duke, ''Continued Fractions and Modular Functions'', Bulletin of the AMS '''42''' (2005), pp. 137–162
+* H. Weber, ''Lehrbuch der Algebra'', vol. 3, 3rd ed., AMS Chelsea Publishing, 1981 (orig. 1898)
+* N. Yui, D. Zagier, ''On the singular values of Weber modular functions'', Mathematics of Computation '''66''' (1997), pp. 1645–1662
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]

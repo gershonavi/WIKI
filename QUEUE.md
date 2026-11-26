@@ -195,7 +195,7 @@ Additive number theory:
 - [x] Eichler–Shimura isomorphism
 - [x] Jacobi form
 - [x] Modular equation
-- [ ] Weber modular function
+- [x] Weber modular function
 - [ ] Eisenstein ideal
 - [ ] Manin–Drinfeld theorem
 - [ ] Fricke involution
