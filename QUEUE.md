@@ -399,5 +399,5 @@ Additive number theory:
 - [ ] Automorphic form
 - [ ] Monstrous moonshine
 - [x] Chowla–Selberg formula
-- [ ] Hecke L-function
-- [ ] Supersingular prime (moonshine theory)
+- [x] Hecke L-function (דף פירושונים באנגלית; מכוסה ב-קרקטר של הקה ובתבנית מודולרית)
+- [x] Supersingular prime (moonshine theory)
