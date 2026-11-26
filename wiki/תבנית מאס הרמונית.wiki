@@ -1,0 +1,62 @@
+ב[[מתמטיקה]], '''תבנית מאס חלשה''' היא [[פונקציה חלקה]] <math>f</math> על [[חצי המישור העליון]], שמתנהגת כמו [[תבנית מודולרית]] תחת הפעולה של [[החבורה המודולרית]], היא [[פונקציה עצמית]] של [[אופרטור לפלס]] ההיפרבולי המתאים, וגדלה לכל היותר מעריכית-לינארית ב[[תבנית שפיץ|חודים]]. אם ה[[ערך עצמי|ערך העצמי]] של <math>f</math> תחת הלפלסיאן הוא אפס, <math>f</math> נקראת '''תבנית מאס חלשה הרמונית''', או בקיצור '''תבנית מאס הרמונית'''.
+
+תבנית מאס חלשה שהגידול שלה בחודים הוא למעשה מתון היא [[תבנית מאס|תבנית גל של מאס]] קלאסית.
+
+פיתוחי פורייה של תבניות מאס הרמוניות מקודדים לעיתים קרובות פונקציות יוצרות קומבינטוריות, אריתמטיות או גאומטריות מעניינות. בעזרת הרמות תטא מסודרות של תבניות מאס הרמוניות אפשר לבנות פונקציות גרין של [[תורת ארקלוב|ארקלוב]] עבור מחלקים מיוחדים על [[יריעת שימורה|יריעות שימורה]] אורתוגונליות.
+
+== הגדרה ==
+פונקציה חלקה <math>f</math> בעלת ערכים [[מספר מרוכב|מרוכבים]] על חצי המישור העליון <math>\mathbb H = \{z \in \mathbb C : \operatorname{Im}z \gt 0\}</math> נקראת '''תבנית מאס חלשה''' ממשקל שלם <math>k</math> (ביחס לחבורה <math>\mathrm{SL}(2, \mathbb Z)</math>) אם היא מקיימת את שלושת התנאים הבאים:
+# לכל מטריצה <math>\begin{pmatrix} a & b \\ c & d\end{pmatrix} \in \mathrm{SL}(2, \mathbb Z)</math> הפונקציה <math>f</math> מקיימת את חוק ההתמרה המודולרי
+#:<math>f\left(\frac{az + b}{cz + d}\right) = (cz + d)^kf(z).</math>
+# <math>f</math> פונקציה עצמית של הלפלסיאן ההיפרבולי ממשקל <math>k</math>
+#:<math>\Delta_k = -y^2\left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}\right) + iky\left(\frac\partial{\partial x} + i\frac\partial{\partial y}\right),</math>
+#:כאשר <math>z = x + iy</math>.
+# ל-<math>f</math> יש לכל היותר גידול מעריכי-לינארי בחוד, כלומר יש קבוע <math>C \gt 0</math> כך ש-<math>f(z) = O(e^{Cy})</math> כאשר <math>y \to \infty</math>.
+אם <math>f</math> תבנית מאס חלשה עם ערך עצמי 0 תחת <math>\Delta_k</math>, כלומר <math>\Delta_kf = 0</math>, אז <math>f</math> נקראת '''תבנית מאס חלשה הרמונית''', או בקיצור '''תבנית מאס הרמונית'''.
+
+כל פונקציה הולומורפית <math>f</math> מתאפסת תחת <math>\Delta_k</math>: עבורה <math>\partial f/\partial y = if'</math>, ולכן <math>\left(\partial_x + i\partial_y\right)f = f' - f' = 0</math>, וגם <math>(\partial_x^2 + \partial_y^2)f = 0</math>. לכן "הרמוני" כאן פירושו הכללה של "הולומורפי".
+
+== תכונות בסיסיות ==
+לכל תבנית מאס הרמונית <math>f</math> ממשקל <math>k</math> יש פיתוח פורייה מהצורה
+:<math>f(z) = \sum_{n\ge n^+}c^+(n)q^n + \sum_{n\le n^-}c^-(n)\Gamma(1 - k, -4\pi ny)q^n,</math>
+כאשר <math>q = e^{2\pi iz}</math>, ו-<math>n^+, n^-</math> שלמים שתלויים ב-<math>f</math>. בנוסף,
+:<math>\Gamma(s, y) = \int_y^\infty t^{s-1}e^{-t}\,dt</math>
+היא [[פונקציית גמא החלקית|פונקציית גמא הלא שלמה]] (שצריך לפרש אותה בצורה מתאימה כאשר <math>n = 0</math>). המחובר הראשון נקרא '''החלק ההולומורפי''' של <math>f</math>, והשני '''החלק הלא-הולומורפי'''. (עבור <math>n \lt 0</math>, <math>\Gamma(1 - k, 4\pi|n|y)q^n</math> דועך כמו <math>e^{-2\pi|n|y}</math>, כך שהחלק הלא-הולומורפי "קטן" ליד החוד.)
+
+יש אופרטור דיפרנציאלי מרוכב אנטי-לינארי <math>\xi_k</math> שמוגדר על ידי
+:<math>\xi_k(f)(z) = 2iy^k\,\overline{\frac\partial{\partial\bar z}f(z)}.</math>
+כיוון ש-<math>\Delta_k = -\xi_{2-k}\xi_k</math>, התמונה של תבנית מאס הרמונית היא הולומורפית חלשה. לכן <math>\xi_k</math> מגדיר העתקה מה[[מרחב וקטורי]] <math>H_k</math> של תבניות המאס ההרמוניות ממשקל <math>k</math> למרחב <math>M_{2-k}^!</math> של [[תבנית מודולרית הולומורפית חלשה|התבניות המודולריות ההולומורפיות החלשות]] ממשקל <math>2 - k</math>. ברונייר ופונקה הוכיחו{{הערה|שם=BF|1=<span dir="ltr">J. H. Bruinier, J. Funke, On two geometric theta lifts, Duke Mathematical Journal 125 (2004), no. 1, pp. 45–90.</span>|כיווון=שמאל}} (למשקלים, מערכות מכפילים ותת-חבורות קונגרואנציה כלשהם) שההעתקה הזו על. לכן יש [[סדרה מדויקת]]
+:<math>0 \to M_k^! \to H_k \to M_{2-k}^! \to 0,</math>
+שמספקת קשר לתורה האלגברית של התבניות המודולריות. תת-מרחב חשוב של <math>H_k</math> הוא המרחב <math>H_k^+</math> של תבניות המאס ההרמוניות שמועתקות ל[[תבנית שפיץ|תבניות שפיץ]] תחת <math>\xi_k</math>.
+
+אם מפרשים תבניות מאס הרמוניות כחתכים הרמוניים של [[אגד קווי|האגד הקווי]] של תבניות מודולריות ממשקל <math>k</math>, המצויד במטריקה של פטרסון, מעל העקום המודולרי, אז אפשר לראות את האופרטור הדיפרנציאלי הזה כהרכבה של [[אופרטור הכוכב של הודג']] עם הדיפרנציאל האנטי-הולומורפי. מושג תבניות המאס ההרמוניות מוכלל באופן טבעי לתת-חבורות קונגרואנציה כלשהן ולמערכות מכפילים (סקלריות ווקטוריות).
+
+== דוגמאות ==
+* כל תבנית מודולרית הולומורפית חלשה היא תבנית מאס הרמונית.
+* [[טור אייזנשטיין]] הלא-הולומורפי
+*:<math>E_2^*(z) = 1 - \frac3{\pi y} - 24\sum_{n=1}^\infty\sigma_1(n)q^n</math>
+*:ממשקל 2 הוא תבנית מאס הרמונית ממשקל 2. כאן אפשר לבדוק הכול ידנית: החלק ההולומורפי מתאפס תחת <math>\Delta_2</math>, ועבור <math>-\frac3{\pi y}</math> מקבלים <math>-y^2\cdot\left(-\frac{6}{\pi y^3}\right) + 2iy\cdot i\cdot\frac3{\pi y^2} = \frac6{\pi y} - \frac6{\pi y} = 0</math>. בנוסף, <math>\frac\partial{\partial\bar z}\left(-\frac3{\pi y}\right) = \frac{3i}{2\pi y^2}</math>, ולכן <math>\xi_2(E_2^*) = 2iy^2\cdot\left(-\frac{3i}{2\pi y^2}\right) = \frac3\pi</math>: הצל הוא קבוע, תבנית מודולרית ממשקל 0.
+* טור אייזנשטיין <math>E_{3/2}</math> של [[דון זגייר]] ממשקל <math>\tfrac32</math>{{הערה|1=<span dir="ltr">D. Zagier, Nombres de classes et formes modulaires de poids 3/2, C. R. Acad. Sci. Paris Sér. A 281 (1975), pp. 883–886.</span>|כיווון=שמאל}} (שהחלק ההולומורפי שלו הוא הפונקציה היוצרת של מספרי המחלקה של הורוויץ) הוא תבנית מאס הרמונית ממשקל <math>\tfrac32</math> (ביחס לחבורה <math>\Gamma_0(4)</math>). התמונה שלו תחת <math>\xi_{3/2}</math> היא כפולה שונה מאפס של פונקציית התטא של יעקובי
+*:<math>\theta(z) = \sum_{n\in\mathbb Z}q^{n^2}.</math>
+* הנגזרת של טור אייזנשטיין הלא-קוהרנטי ממשקל 1 שמתאים לסדר ריבועי מדומה{{הערה|1=<span dir="ltr">S. Kudla, M. Rapoport, T. Yang, On the derivative of an Eisenstein series of weight one, International Mathematics Research Notices 1999, no. 7, pp. 347–385.</span>|כיווון=שמאל}} היא תבנית מאס הרמונית ממשקל 1.
+* [[תבנית מודולרית מדומה]]{{הערה|שם=Zw|1=<span dir="ltr">S. P. Zwegers, Mock Theta Functions, PhD thesis, Utrecht, 2002.</span>|כיווון=שמאל}} היא החלק ההולומורפי של תבנית מאס הרמונית.
+* [[טור פואנקרה (תבנית מודולרית)|טורי פואנקרה]] שנבנים בעזרת [[פונקציית ויטקר]] M הם תבניות מאס חלשות.{{הערה|1=<span dir="ltr">J. Fay, Fourier coefficients of the resolvent for a Fuchsian group, J. reine angew. Math. 294 (1977), pp. 143–203; D. Hejhal, The Selberg Trace Formula for PSL(2,R), Lecture Notes in Mathematics 1001, Springer, 1983.</span>|כיווון=שמאל}} כשמציבים את הפרמטר הספקטרלי בנקודה ההרמונית, מתקבלות תבניות מאס הרמוניות.
+* הצבה של [[פונקציית הזטא של ויירשטראס]] באינטגרל של אייכלר של התבנית החדשה ממשקל 2 שמתאימה ל[[עקום אליפטי]] רציונלי <math>E</math> מאפשרת לשייך ל-<math>E</math> תבנית מאס הרמונית ממשקל 0.{{הערה|1=<span dir="ltr">C. Alfes, M. Griffin, K. Ono, L. Rolen, Weierstrass mock modular forms and elliptic curves, Research in Number Theory 1 (2015), no. 24; arXiv:1406.0443.</span>|כיווון=שמאל}}
+* הטור היוצר המשותף של הערכים על מחלקי הגנר ושל האינטגרלים לאורך מחזורים גאודזיים של פונקציית <math>J</math> של קליין (מנורמלת כך שהאיבר הקבוע מתאפס) הוא תבנית מאס הרמונית ממשקל <math>\tfrac12</math>.{{הערה|1=<span dir="ltr">W. Duke, Ö. Imamoḡlu, Á. Tóth, Cycle integrals of the j-function and mock modular forms, Annals of Mathematics 173 (2011), no. 2, pp. 947–981.</span>|כיווון=שמאל}}
+
+== היסטוריה ==
+את ההגדרה המופשטת שלמעלה של תבניות מאס הרמוניות, יחד עם חקירה שיטתית של תכונותיהן הבסיסיות, נתנו לראשונה ברונייר ופונקה.{{הערה|שם=BF}} עם זאת, דוגמאות רבות, כמו טורי אייזנשטיין וטורי פואנקרה, היו ידועות קודם לכן. באופן בלתי תלוי פיתח צוויגרס את תורת התבניות המודולריות המדומות, שגם היא קשורה לתבניות מאס הרמוניות.{{הערה|שם=Zw}}
+
+תורה אלגברית של תבניות מאס הרמוניות ממשקל שלם, ברוח העבודה של [[ניקולס כץ|כץ]], פיתח קנדלורי.{{הערה|1=<span dir="ltr">L. Candelori, Harmonic weak Maass forms: a geometric approach, Mathematische Annalen 360 (2014), pp. 489–517.</span>|כיווון=שמאל}}
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* K. Ono, ''Unearthing the visions of a master: harmonic Maass forms and number theory'', in: Current Developments in Mathematics 2008, International Press, 2009, pp. 347–454
+* K. Bringmann, A. Folsom, K. Ono, L. Rolen, ''Harmonic Maass Forms and Mock Modular Forms: Theory and Applications'', AMS Colloquium Publications '''64''', 2017
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות אוטומורפיות]]
+[[קטגוריה:תבניות מודולריות]]
