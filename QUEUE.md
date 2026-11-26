@@ -420,4 +420,4 @@ Additive number theory:
 - [x] Hasse–Witt matrix
 - [x] Theta function of a lattice
 - [x] Lemniscate elliptic functions
-- [ ] Monster group
+- [x] Monster group
