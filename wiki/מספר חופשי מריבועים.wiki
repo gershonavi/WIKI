@@ -1,0 +1,174 @@
+ב[[מתמטיקה]], '''מספר חופשי מריבועים''' הוא [[מספר שלם]] ש[[מחלק|מתחלק]] באף [[מספר ריבועי]] מלבד 1. כלומר, בפירוק ל[[גורם ראשוני|גורמים ראשוניים]] שלו כל ראשוני שמופיע מופיע בדיוק פעם אחת. למשל, <math>10 = 2\cdot5</math> חופשי מריבועים, אבל <math>18 = 2\cdot3\cdot3</math> אינו חופשי מריבועים, כי 18 מתחלק ב-<math>9 = 3^2</math>. המספרים החיוביים החופשיים מריבועים הקטנים ביותר הם
+:1, 2, 3, 5, 6, 7, 10, 11, 13, 14, 15, 17, 19, 21, 22, 23, 26, 29, 30, 31, 33, 34, 35, 37, 38, 39, ... ({{OEIS|A005117}}).
+
+אפשר למצוא אותם ב"נפה" ברוח [[הנפה של ארטוסתנס]]: מוחקים את כל הכפולות של <math>4, 9, 25, 49, \ldots</math> (ריבועי הראשוניים), ומה שנשאר הם המספרים החופשיים מריבועים.
+
+== פירוק חופשי-מריבועים ==
+כל שלם חיובי <math>n</math> אפשר לפרק באופן יחיד כ-
+:<math>n=\prod_{i=1}^k q_i^i,</math>
+כאשר ה-<math>q_i</math> שונים מ-1 הם מספרים חופשיים מריבועים [[מספרים זרים|זרים בזוגות]]. זה נקרא '''הפירוק החופשי-מריבועים''' של <math>n</math>.
+
+כדי לבנות אותו, יהי
+:<math>n=\prod_{j=1}^h p_j^{e_j}</math>
+הפירוק לגורמים ראשוניים של <math>n</math>, כאשר <math>p_j</math> ראשוניים שונים. אז הגורמים בפירוק החופשי-מריבועים מוגדרים כ-
+:<math>q_i=\prod_{j: e_j=i}p_j.</math>
+שלם הוא חופשי מריבועים אם ורק אם <math>q_i=1</math> לכל <math>i \gt 1</math>. שלם גדול מ-1 הוא חזקה <math>k</math>-ית של שלם אחר אם ורק אם <math>k</math> מחלק את כל ה-<math>i</math> שעבורם <math>q_i\neq 1</math>.
+
+השימוש בפירוק החופשי-מריבועים של שלמים מוגבל בכך שחישובו קשה כמו חישוב הפירוק לגורמים ראשוניים. ליתר דיוק, כל [[אלגוריתם]] ידוע לחישוב פירוק חופשי-מריבועים מחשב גם את הפירוק לגורמים ראשוניים. זה הבדל בולט מהמקרה של [[פולינום|פולינומים]], שעבורם אפשר לתת את אותן הגדרות, אבל שם [[פירוק חופשי-מריבועים של פולינומים|הפירוק החופשי-מריבועים]] לא רק קל יותר לחישוב מהפירוק המלא, אלא הוא הצעד הראשון בכל אלגוריתמי הפירוק הסטנדרטיים (שם משתמשים ב-<math>\gcd(f, f')</math>, ואין ל"נגזרת" אנלוג בשלמים).
+
+== גורמים חופשיים מריבועים של שלמים ==
+כל שלם חיובי <math>n</math> אפשר להציג באופן יחיד כמכפלה של ריבוע גדול ככל האפשר ומספר חופשי מריבועים,
+:<math> n=m^2 k,</math>
+כאשר <math>k</math> הוא מכפלת הגורמים הראשוניים של <math>n</math> שהמעריך שלהם אי-זוגי, ו-<math>m</math> הוא המחלק הגדול ביותר של <math>n</math> כך ש-<math>m^2</math> מחלק את <math>n</math>.
+
+כל שלם חיובי <math>n</math> אפשר להציג באופן יחיד גם כמכפלה של [[מספר חזק]] (שלם שמתחלק בריבוע של כל גורם ראשוני שלו) ומספר חופשי מריבועים <math>s</math>, הזר לו. כאן <math>s</math> הוא מכפלת הראשוניים שמחלקים את <math>n</math> רק בחזקה הראשונה, והמספר החזק הוא <math>n/s</math>.
+
+ה[[רדיקל של מספר שלם|רדיקל]] של <math>n</math> הוא הגורם החופשי מריבועים הגדול ביותר שלו, כלומר מכפלת כל המחלקים הראשוניים של <math>n</math>, שהיא <math>\textstyle \prod_{i=1}^k q_i</math> בסימון של הסעיף הקודם.
+
+לסיכום, יש שלושה גורמים חופשיים מריבועים שמותאמים באופן טבעי לכל שלם, וכל אחד מהם מחלק את הבא: הגורם <math>s</math>, הגורם <math>k</math> שהמנה בו היא ריבוע, והגורם החופשי מריבועים הגדול ביותר. אם
+:<math>n=\prod_{i=1}^h p_i^{e_i}=\prod_{i=1}^k q_i^i</math>
+הם הפירוק לגורמים ראשוניים והפירוק החופשי-מריבועים של <math>n</math>, אז
+:<math>s = \prod_{e_i=1} p_i =q_1,\qquad k = \prod_{e_i \text{ אי-זוגי}} p_i=\prod_{i \text{ אי-זוגי}} q_i,\qquad \operatorname{rad}(n) = \prod_{i=1}^h p_i=\prod_{i=1}^k q_i.</math>
+{{הערה|1=בערך האנגלי <math>k</math> נקרא בתחילה "החלק החופשי מריבועים" (square-free part) של <math>n</math>, ובהמשך אותו שם ניתן ל-<math>q_1 = s</math> (כך גם בדוגמה שם, שבה "החלק החופשי מריבועים" של 75600 הוא 7). כדי להימנע מהסתירה, לא השתמשנו כאן בשם הזה. בספרות, "החלק החופשי מריבועים" מציין בדרך כלל את <math>k</math> (ה-core).|כיווון=ימין}}
+
+''דוגמה:'' עבור <math>n=75600=2^4\cdot 3^3\cdot 5^2\cdot 7</math> יש <math>q_1=7,\; q_2=5,\;q_3=3,\;q_4=2</math>, כלומר <math>75600 = 7^1\cdot5^2\cdot3^3\cdot2^4</math>. לכן:
+* <math>s = 7</math>, והמספר החזק המתאים הוא <math>75600/7 = 10800 = 2^4\cdot3^3\cdot5^2</math>;
+* <math>k = 3\cdot7 = 21</math>, ו-<math>75600 = 60^2\cdot21</math> (<math>60 = 2^2\cdot3\cdot5</math>);
+* <math>\operatorname{rad}(75600) = 2\cdot3\cdot5\cdot7 = 210</math>.
+ואכן <math>7 \mid 21 \mid 210</math>.
+
+לא ידוע אלגוריתם לחישוב אף אחד מהגורמים האלה שמהיר יותר מחישוב הפירוק המלא לגורמים ראשוניים. בפרט, לא ידוע אלגוריתם ב[[זמן פולינומי]] לחישוב <math>k</math>, ואפילו לא ל[[בעיית הכרעה|הכרעה]] אם שלם נתון חופשי מריבועים.{{הערה|1=<span dir="ltr">L. M. Adleman, K. S. McCurley, Open problems in number theoretic complexity, II, ANTS-I, Lecture Notes in Computer Science 877, Springer, 1994, pp. 291–322.</span>|כיווון=שמאל}} לעומת זאת, ל[[מבחן ראשוניות|בדיקת ראשוניות]] ידועים אלגוריתמים בזמן פולינומי.{{הערה|1=<span dir="ltr">M. Agrawal, N. Kayal, N. Saxena, PRIMES is in P, Annals of Mathematics 160 (2004), pp. 781–793.</span>|כיווון=שמאל}}
+
+== אפיונים שקולים ==
+שלם חיובי <math>n</math> חופשי מריבועים אם ורק אם בפירוק של <math>n</math> לגורמים ראשוניים אף גורם ראשוני אינו מופיע עם מעריך גדול מ-1. ניסוח שקול: לכל גורם ראשוני <math>p</math> של <math>n</math>, <math>p</math> אינו מחלק את <math>n/p</math>. כמו כן, <math>n</math> חופשי מריבועים אם ורק אם בכל פירוק <math>n=ab</math> הגורמים <math>a</math> ו-<math>b</math> [[מספרים זרים|זרים]]. מההגדרה נובע מיד שכל המספרים הראשוניים חופשיים מריבועים.
+
+שלם חיובי <math>n</math> חופשי מריבועים אם ורק אם כל ה[[חבורה אבלית|חבורות האבליות]] מ[[סדר (תורת החבורות)|סדר]] <math>n</math> [[איזומורפיזם של חבורות|איזומורפיות]], וזה קורה אם ורק אם כל חבורה כזו [[חבורה ציקלית|ציקלית]]. זה נובע ממיון [[חבורה אבלית נוצרת סופית|החבורות האבליות הנוצרות סופית]]. למשל, מסדר 30 יש רק החבורה <math>\mathbb Z_{30} \cong \mathbb Z_2\times\mathbb Z_3\times\mathbb Z_5</math>, ואילו מסדר 12 יש שתיים: <math>\mathbb Z_{12} \cong \mathbb Z_4\times\mathbb Z_3</math> ו-<math>\mathbb Z_2\times\mathbb Z_6</math>, שאינה ציקלית.
+
+שלם <math>n</math> חופשי מריבועים אם ורק אם [[חוג מנה|חוג המנה]] <math>\mathbb{Z}/n\mathbb{Z}</math> (ראו [[חשבון מודולרי]]) הוא [[מכפלה ישרה של חוגים|מכפלה]] של [[שדה (מבנה אלגברי)|שדות]]. זה נובע מ[[משפט השאריות הסיני]] ומכך שחוג מהצורה <math>\mathbb{Z}/k\mathbb{Z}</math> הוא שדה אם ורק אם <math>k</math> ראשוני. (למשל <math>\mathbb Z/30\mathbb Z \cong \mathbb F_2\times\mathbb F_3\times\mathbb F_5</math>, ואילו ב-<math>\mathbb Z/12\mathbb Z</math> יש איבר [[איבר נילפוטנטי|נילפוטנטי]] שונה מאפס: <math>6^2 = 36 \equiv 0</math>.)
+
+לכל שלם חיובי <math>n</math>, קבוצת כל המחלקים החיוביים של <math>n</math> היא [[קבוצה סדורה חלקית]] ביחס ה[[מחלק|התחלקות]]. הקבוצה הזו היא תמיד [[סריג דיסטריבוטיבי]], והיא [[אלגברה בוליאנית]] אם ורק אם <math>n</math> חופשי מריבועים.{{הערה|1=<span dir="ltr">P. R. Halmos, Lectures on Boolean Algebras, Springer, 1974, p. 7.</span>|כיווון=שמאל}} (המחלקים של 30 יוצרים "קובייה" – כל מחלק <math>d</math> הוא בעל משלים <math>30/d</math>, זר לו; למחלק 2 של 12 אין משלים: אין <math>d \mid 12</math> עם <math>\gcd(2, d) = 1</math> ו-<math>\operatorname{lcm}(2, d) = 12</math>.)
+
+שלם חיובי <math>n</math> חופשי מריבועים [[אם ורק אם]] <math>\mu(n)\ne 0</math>, כאשר <math>\mu</math> היא [[פונקציית מביוס]].
+
+== טור דיריכלה ==
+הערך המוחלט של פונקציית מביוס הוא ה[[פונקציה מציינת|פונקציה המציינת]] של המספרים החופשיים מריבועים: <math>|\mu(n)|</math> שווה 1 אם <math>n</math> חופשי מריבועים, ו-0 אחרת. [[טור דיריכלה]] של הפונקציה הזו הוא
+:<math>\sum_{n=1}^{\infty}\frac{|\mu(n)|}{n^{s}} = \frac{\zeta(s)}{\zeta(2s)},</math>
+כאשר <math>\zeta</math> היא [[פונקציית זטא של רימן]]. זה נובע מ[[מכפלת אוילר]]
+:<math> \frac{\zeta(s)}{\zeta(2s) } =\prod_p \frac{1-p^{-2s}}{1-p^{-s}}=\prod_p (1+p^{-s}),</math>
+כאשר המכפלות הן על הראשוניים.
+
+== התפלגות ==
+יהי <math>Q(x)</math> מספר המספרים החופשיים מריבועים בין 1 ל-<math>x</math> ({{OEIS|A013928}}, בהזזת אינדקס ב-1). עבור <math>n</math> גדול, <math>3/4</math> מהשלמים החיוביים הקטנים מ-<math>n</math> אינם מתחלקים ב-4, <math>8/9</math> מאלה אינם מתחלקים ב-9, וכן הלאה. כיוון שהיחסים האלה מקיימים את תכונת ה[[פונקציה כפלית|כפליות]] (מ[[משפט השאריות הסיני]]), מתקבל הקירוב
+:<math>Q(x) \approx x\prod_{p} \left(1-\frac{1}{p^2}\right) = x\prod_{p} \frac{1}{1+\frac{1}{p^2}+\frac{1}{p^4}+\cdots} = \frac{x}{\sum_{k=1}^\infty \frac{1}{k^2}} = \frac{x}{\zeta(2)} = \frac{6x}{\pi^2}.</math>
+
+אפשר להפוך את הטיעון הזה למדויק ולקבל את ההערכה (ב[[סימון O גדול]])
+:<math>Q(x) = \frac{6x}{\pi^2} + O\left(\sqrt{x}\right).</math>
+
+''סקיצה של הוכחה:'' מכך ש-<math>|\mu(n)| = \sum_{d^2\mid n}\mu(d)</math> נקבל
+:<math>Q(x)=\sum_{n\leq x} \sum_{d^2\mid n} \mu(d)=\sum_{d\leq x} \mu(d)\sum_{n\leq x,\ d^2\mid n}1=\sum_{d\leq x} \mu(d)\left\lfloor\frac{x}{d^2}\right\rfloor;</math>
+המחובר האחרון מתאפס עבור <math>d\gt\sqrt{x}</math>, ולכן
+:<math>Q(x) = \sum_{d\leq\sqrt{x}} \mu(d)\left\lfloor\frac{x}{d^2}\right\rfloor \qquad (1)</math>
+:<math>\phantom{Q(x)} = x\sum_{d\leq\sqrt{x}} \frac{\mu(d)}{d^2}+O(\sqrt{x}) =x\sum_{d} \frac{\mu(d)}{d^2}+O\left(x\sum_{d\gt\sqrt{x}}\frac{1}{d^2}+\sqrt{x}\right) =\frac{x}{\zeta(2)}+O(\sqrt{x}).</math>
+
+''דוגמה לנוסחה (1):'' עבור <math>x = 100</math>, האיברים עם <math>\mu(d)\ne0</math> ו-<math>d \le 10</math> הם <math>d = 1, 2, 3, 5, 6, 7, 10</math>, עם <math>\mu = 1, -1, -1, -1, 1, -1, 1</math> ו-<math>\lfloor100/d^2\rfloor = 100, 25, 11, 4, 2, 2, 1</math>. לכן
+:<math>Q(100) = 100 - 25 - 11 - 4 + 2 - 2 + 1 = 61.</math>
+(הכפולות של 4 ושל 9 נגרעות; הכפולות של 36 נגרעו פעמיים ולכן מוחזרות; וכן הלאה – [[עקרון ההכלה וההדחה]].)
+
+בעזרת התחום הרחב ביותר הידוע שבו אין לפונקציית זטא אפסים, [[ארנולד ולפיש]] שיפר את הקירוב ל-{{הערה|1=<span dir="ltr">A. Walfisz, Weylsche Exponentialsummen in der neueren Zahlentheorie, VEB Deutscher Verlag der Wissenschaften, Berlin, 1963.</span>|כיווון=שמאל}}
+:<math>Q(x) = \frac{6x}{\pi^2} + O\left(x^{1/2}\exp\left(-c\frac{(\log x)^{3/5}}{(\log\log x)^{1/5}}\right)\right),</math>
+עבור קבוע חיובי <math>c</math>. בהנחת [[השערת רימן]] אפשר להקטין את איבר השגיאה ל-<math>O\left(x^{17/54+\varepsilon}\right)</math>,{{הערה|1=<span dir="ltr">Jia Chao Hua, The distribution of square-free numbers, Science in China Series A 36 (1993), pp. 154–169.</span>|כיווון=שמאל}} וב-2015 הוא הוקטן עוד (גם כן בהנחת השערת רימן) ל-<math>O\left(x^{11/35+\varepsilon}\right)</math>.{{הערה|1=<span dir="ltr">H.-Q. Liu, On the distribution of squarefree numbers, Journal of Number Theory 159 (2016), pp. 202–222.</span>|כיווון=שמאל}}
+
+ה[[צפיפות טבעית|צפיפות האסימפטוטית]] של המספרים החופשיים מריבועים היא לכן
+:<math>\lim_{x\to\infty} \frac{Q(x)}{x} = \frac{6}{\pi^2}\approx 0.6079,</math>
+כלומר יותר מ-<math>3/5</math> מהשלמים חופשיים מריבועים.
+
+באופן דומה, אם <math>Q(x, n)</math> מסמן את מספר השלמים ה-<math>n</math>-חופשיים (למשל, ה-3-חופשיים הם החופשיים מקוביות) בין 1 ל-<math>x</math>, אפשר להראות ש-{{הערה|1=<span dir="ltr">E. H. Linfoot, C. J. A. Evelyn, On a problem in the additive theory of numbers, Mathematische Zeitschrift 30 (1929), pp. 443–448.</span>|כיווון=שמאל}}
+:<math>Q(x,n) = \frac{x}{\zeta(n)} + O\left(\sqrt[n]{x}\right).</math>
+
+=== רצפים ופערים ===
+כיוון שכפולה של 4 מתחלקת בריבוע <math>4=2^2</math>, לא ייתכן שארבעה שלמים עוקבים יהיו כולם חופשיים מריבועים. מצד שני, יש אינסוף שלמים <math>n</math> שעבורם <math>4n+1</math>, <math>4n+2</math>, <math>4n+3</math> כולם חופשיים מריבועים (למשל <math>n = 0, 1, 3</math>: <math>1, 2, 3</math>; <math>5, 6, 7</math>; <math>13, 14, 15</math>). אחרת, החל ממקום מסוים, בכל רביעייה <math>4n, \ldots, 4n+3</math> היו לפחות שני מספרים שאינם חופשיים מריבועים, ולכן מחצית מהשלמים החיוביים (פרט למספר סופי) לא היו חופשיים מריבועים, ומכאן
+:<math>Q(x) \leq \frac{x}{2}+C</math>
+עבור קבוע <math>C</math> – בסתירה להערכה האסימפטוטית, כי <math>6/\pi^2 \gt 1/2</math>.
+
+יש רצפים של שלמים עוקבים שאינם חופשיים מריבועים בכל אורך. אכן, לכל <math>l</math>-יה <math>(p_1, \ldots, p_l)</math> של ראשוניים שונים, משפט השאריות הסיני מבטיח קיום <math>n</math> שמקיים את מערכת הקונגרואנציות
+:<math>n\equiv -i\pmod{p_i^2} \qquad (i=1, 2, \ldots, l).</math>
+אז כל <math>n + i</math> מתחלק ב-<math>p_i^2</math>.{{הערה|1=<span dir="ltr">D. P. Parent, Exercises in Number Theory, Springer, 1984.</span>|כיווון=שמאל}} (למשל, עם <math>(p_1, p_2, p_3) = (2, 3, 5)</math> מקבלים <math>n \equiv 547 \pmod{900}</math>, ואכן <math>548 = 2^2\cdot137</math>, <math>549 = 3^2\cdot61</math>, <math>550 = 5^2\cdot22</math> – שלושה מספרים עוקבים שאינם חופשיים מריבועים.) מצד שני, מההערכה <math>Q(x) = 6x/\pi^2 + O\left(\sqrt{x}\right)</math> נובע שקיים קבוע <math>c</math> כך שתמיד יש מספר חופשי מריבועים בין <math>x</math> ל-<math>x+c\sqrt{x}</math>. טיעון אלמנטרי מאפשר להחליף את <math>x+c\sqrt{x}</math> ב-<math>x+cx^{1/5}\log x</math>,{{הערה|1=<span dir="ltr">M. Filaseta, O. Trifonov, On gaps between squarefree numbers. II, Journal of the London Mathematical Society 45 (1992), pp. 215–221.</span>|כיווון=שמאל}} ו[[השערת abc]] הייתה מאפשרת <math>x+x^{o(1)}</math>.{{הערה|1=<span dir="ltr">A. Granville, ABC allows us to count squarefrees, Int. Math. Res. Not. 1998, no. 19, pp. 991–1009.</span>|כיווון=שמאל}}
+
+=== חישוב <math>Q(x)</math> ===
+את המספרים החופשיים מריבועים עד <math>x</math> אפשר לזהות ולספור בזמן <math>\tilde O(x)</math> בעזרת גרסה של הנפה של ארטוסתנס. אם רוצים רק את <math>Q(x)</math>, ולא את רשימת המספרים, אפשר להשתמש ב-(1) כדי לחשב את <math>Q(x)</math> בזמן <math>\tilde O(\sqrt{x})</math>. הערך הגדול ביותר הידוע של <math>Q(x)</math>, עבור <math>x = 10^{36}</math>, חושב על ידי יאקוב פבלביץ' ב-2011 באלגוריתם שרץ בזמן <math>\tilde O(x^{2/5})</math>,{{הערה|1=<span dir="ltr">J. Pawlewicz, Counting square-free numbers, arXiv:1107.4890 (2011).</span>|כיווון=שמאל}} ואלגוריתם בזמן <math>\tilde O(x^{1/3})</math> תואר אבל לא מומש.{{הערה|1=<span dir="ltr">D. Hirsch, I. Kessler, U. Mendlovic, Computing π(N): an elementary approach in Õ(√N) time, Mathematics of Computation (2024), §5.5.</span>|כיווון=שמאל}}
+
+=== טבלה של <math>Q(x)</math>, <math>\tfrac{6}{\pi^2}x</math> ו-<math>R(x)</math> ===
+הטבלה משווה את <math>Q(x)</math> ל-<math>\frac{6}{\pi^2}x</math> (מעוגל לספרה אחת אחרי הנקודה) בחזקות של 10, כאשר <math>R(x) = Q(x) -\frac{6}{\pi^2}x</math> (מסומן גם <math>\Delta(x)</math>). את השורות עד <math>10^{14}</math> חישבנו בעצמנו בנוסחה (1).
+:{| class="wikitable" style="text-align: right"
+! <math>x</math> !! <math>Q(x)</math> !! <math>\frac{6}{\pi^2}x</math> !! <math>R(x)</math>
+|-
+| 10 || 7 || 6.1 || 0.9
+|-
+| <math>10^2</math> || 61 || 60.8 || 0.2
+|-
+| <math>10^3</math> || 608 || 607.9 || 0.1
+|-
+| <math>10^4</math> || 6,083 || 6,079.3 || 3.7
+|-
+| <math>10^5</math> || 60,794 || 60,792.7 || 1.3
+|-
+| <math>10^6</math> || 607,926 || 607,927.1 || −1.1
+|-
+| <math>10^7</math> || 6,079,291 || 6,079,271.0 || 20.0
+|-
+| <math>10^8</math> || 60,792,694 || 60,792,710.2 || −16.2
+|-
+| <math>10^9</math> || 607,927,124 || 607,927,101.9 || 22.1
+|-
+| <math>10^{10}</math> || 6,079,270,942 || 6,079,271,018.5 || −76.5
+|-
+| <math>10^{11}</math> || 60,792,710,280 || 60,792,710,185.4 || 94.6
+|-
+| <math>10^{12}</math> || 607,927,102,274 || 607,927,101,854.0 || 420.0
+|-
+| <math>10^{13}</math> || 6,079,271,018,294 || 6,079,271,018,540.3 || −246.3
+|-
+| <math>10^{14}</math> || 60,792,710,185,947 || 60,792,710,185,402.7 || 544.3
+|-
+| <math>10^{15}</math> || 607,927,101,854,103 || 607,927,101,854,027.0 || 76.0
+|}
+{{הערה|1=בערך האנגלי נכתב <math>R(10^6) = -1.3</math>; אבל <math>607926 - 607927.10\ldots = -1.10\ldots</math>.|כיווון=ימין}}
+<math>R(x)</math> מחליף סימן אינסוף פעמים כש-<math>x</math> שואף לאינסוף.{{הערה|1=<span dir="ltr">M. Tanaka, Experiments concerning the distribution of squarefree numbers, Proceedings of the Japan Academy, Series A 55 (1979), pp. 101–105.</span>|כיווון=שמאל}} הערך המוחלט של <math>R(x)</math> קטן באופן מפתיע ביחס ל-<math>x</math> – הרבה פחות מ-<math>\sqrt x</math>.
+
+== קידוד כמספרים בינאריים ==
+אם מציגים מספר חופשי מריבועים כמכפלה האינסופית
+:<math>\prod_{n=0}^\infty (p_{n+1})^{a_n},\quad a_n \in \lbrace 0, 1 \rbrace,</math>
+כאשר <math>p_n</math> הוא הראשוני ה-<math>n</math>-י, אפשר לקחת את ה-<math>a_n</math> ולהשתמש בהם כסיביות של מספר בינארי, בקידוד
+:<math>\sum_{n=0}^\infty {a_n}\cdot 2^n .</math>
+למספר החופשי מריבועים 42 יש הפירוק <math>2 \times 3 \times 7</math>, או כמכפלה אינסופית <math>2^1 \cdot 3^1 \cdot 5^0 \cdot 7^1 \cdot 11^0 \cdot 13^0 \cdots</math>. לכן 42 מקודד כרצף הבינארי <code>001011...</code>, כלומר <math>1011_2 = 11</math> בעשרוני. (הספרות הבינאריות כתובות בסדר הפוך לסדר במכפלה.)
+
+כיוון שהפירוק לגורמים ראשוניים של כל מספר יחיד, גם הקידוד הבינארי של כל מספר חופשי מריבועים יחיד. גם ההפך נכון: לכל שלם חיובי יש ייצוג בינארי יחיד, ולכן אפשר להפוך את הקידוד ולפענח כל שלם אי-שלילי למספר חופשי מריבועים יחיד. למשל, אם מתחילים מהמספר 42, הפעם כשלם רגיל, הייצוג הבינארי שלו הוא <code>101010</code>, והוא מפוענח ל-<math>2^0 \cdot 3^1 \cdot 5^0 \cdot 7^1 \cdot 11^0 \cdot 13^1 = 3 \times 7 \times 13 = 273</math>. כך הקידוד הבינארי מגדיר [[התאמה חד-חד-ערכית ועל]] בין השלמים האי-שליליים לקבוצת המספרים החיוביים החופשיים מריבועים (ראו {{OEIS|A019565}}, {{OEIS|A048672}} ו-{{OEIS|A064273}}). (את שתי הדוגמאות בדקנו בחישוב.)
+
+== השערת ארדש על מקדמים בינומיים ==
+ה[[מקדם בינומי מרכזי|מקדם הבינומי המרכזי]]
+:<math>{2n \choose n}</math>
+אף פעם אינו חופשי מריבועים עבור <math>n \gt 4</math>. את זה הוכיח [[אנדראש שרקזי]] ב-1985 לכל השלמים הגדולים מספיק,{{הערה|1=<span dir="ltr">A. Sárközy, On divisors of binomial coefficients. I, Journal of Number Theory 20 (1985), pp. 70–80.</span>|כיווון=שמאל}} ו[[אוליבייה רמרה]] ו[[אנדרו גרנוויל]] הוכיחו זאת לכל השלמים הגדולים מ-4 ב-1996.{{הערה|1=<span dir="ltr">O. Ramaré, A. Granville, Explicit bounds on exponential sums and the scarcity of squarefree binomial coefficients, Mathematika 43 (1996), pp. 73–107.</span>|כיווון=שמאל}} (בחישוב שלנו עד <math>n = 400</math>, המקדמים החופשיים מריבועים היחידים הם <math>\binom21 = 2</math>, <math>\binom42 = 6</math> ו-<math>\binom84 = 70</math>; שימו לב ש-<math>\binom63 = 20</math> אינו חופשי מריבועים.)
+
+== גרעין חופשי ==
+נקרא לשלם חיובי "<math>t</math>-חופשי" אם אין בין מחלקיו חזקה <math>t</math>-ית (מלבד 1). בפרט, השלמים ה-2-חופשיים הם המספרים החופשיים מריבועים.
+
+ה[[פונקציה כפלית]] <math>\mathrm{core}_t(n)</math> שולחת כל שלם חיובי <math>n</math> למנה של <math>n</math> במחלק הגדול ביותר שלו שהוא חזקה <math>t</math>-ית. כלומר,
+: <math>\mathrm{core}_t(p^e) = p^{e\bmod t}.</math>
+השלם <math>\mathrm{core}_t(n)</math> הוא <math>t</math>-חופשי, וכל שלם <math>t</math>-חופשי נשלח לעצמו. (עבור <math>t = 2</math>, <math>\mathrm{core}_2(75600) = 21</math>, ה-<math>k</math> מהדוגמה לעיל.) [[פונקציה יוצרת|פונקציית דיריכלה היוצרת]] של הסדרה <math>\left(\mathrm{core}_t(n) \right)_{n\in \N}</math> היא
+: <math>\sum_{n\ge 1}\frac{\mathrm{core}_t(n)}{n^s} = \frac{\zeta(ts)\zeta(s-1)}{\zeta(ts-t)}.</math>
+ראו גם {{OEIS|A007913}} (<math>t=2</math>), {{OEIS|A050985}} (<math>t=3</math>) ו-{{OEIS|A053165}} (<math>t=4</math>).
+
+== ראו גם ==
+* [[מספר חזק]]
+* [[פירוק חופשי-מריבועים של פולינומים]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* H. N. Shapiro, ''Introduction to the Theory of Numbers'', Dover, 1983
+* R. K. Guy, ''Unsolved Problems in Number Theory'', 3rd ed., Springer, 2004
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:סדרות של מספרים שלמים]]

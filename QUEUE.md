@@ -315,7 +315,7 @@ Additive number theory:
 ### סדרות של מספרים שלמים (54)
 
 - [x] Powerful number
-- [ ] Square-free integer
+- [x] Square-free integer
 - [ ] Practical number
 - [ ] Prime power
 - [ ] Perfect power
