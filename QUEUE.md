@@ -240,7 +240,7 @@ Additive number theory:
 - [x] Irrationality measure
 - [x] Equidistributed sequence
 - [x] Equidistribution theorem
-- [ ] Kronecker's theorem
+- [x] Kronecker's theorem
 - [ ] Three-gap theorem
 - [ ] Beatty sequence
 - [ ] Discrepancy theory
