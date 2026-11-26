@@ -168,7 +168,7 @@ Additive number theory:
 
 ### תבניות מודולריות (37)
 
-- [ ] Upper half-plane
+- [x] Upper half-plane
 - [ ] Congruence subgroup
 - [ ] Modular curve
 - [ ] J-invariant
