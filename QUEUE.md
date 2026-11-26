@@ -214,7 +214,7 @@ Additive number theory:
 - [x] Markov number
 - [x] Coin problem
 - [x] Chakravala method
-- [ ] Vieta jumping
+- [x] Vieta jumping
 - [ ] Tree of primitive Pythagorean triples
 - [ ] Fermat–Catalan conjecture
 - [ ] Prouhet–Tarry–Escott problem
