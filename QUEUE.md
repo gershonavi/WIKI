@@ -401,3 +401,14 @@ Additive number theory:
 - [x] Chowla–Selberg formula
 - [x] Hecke L-function (דף פירושונים באנגלית; מכוסה ב-קרקטר של הקה ובתבנית מודולרית)
 - [x] Supersingular prime (moonshine theory)
+
+### השלמות לשיעורים 21–23, חלק ד' (8)
+
+- [ ] Selberg trace formula
+- [ ] Fuchsian group
+- [ ] Hilbert modular form
+- [ ] Jacquet–Langlands correspondence
+- [ ] Cuspidal representation
+- [ ] Base change lifting
+- [ ] Adelic algebraic group
+- [ ] Elliptic curve primality
