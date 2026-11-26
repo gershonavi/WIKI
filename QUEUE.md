@@ -252,7 +252,7 @@ Additive number theory:
 - [x] Duffin–Schaeffer theorem
 - [x] Proof that e is irrational
 - [x] Oppenheim conjecture
-- [ ] Baker's theorem
+- [x] Baker's theorem
 - [ ] Schanuel's conjecture
 - [ ] Six exponentials theorem
 - [ ] Four exponentials conjecture
