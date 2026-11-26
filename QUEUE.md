@@ -410,5 +410,5 @@ Additive number theory:
 - [x] Jacquet–Langlands correspondence
 - [x] Cuspidal representation
 - [x] Base change lifting
-- [ ] Adelic algebraic group
+- [x] Adelic algebraic group
 - [ ] Elliptic curve primality

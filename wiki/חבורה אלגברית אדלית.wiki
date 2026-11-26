@@ -1,0 +1,81 @@
+ב[[תורת המספרים]] ובגאומטריה אריתמטית, הנקודות ה[[חוג האדלים|אדליות]] של [[חבורה אלגברית]] <math>G</math> מעל [[שדה גלובלי]] <math>K</math> יוצרות [[חבורה טופולוגית]] שמסומנת <math>G(\mathbb A_K)</math>, כאשר <math>\mathbb A_K</math> הוא חוג האדלים של <math>K</math>. עבור חבורה אלגברית ליניארית, אפשר לתאר את <math>G(\mathbb A_K)</math> כ'''מכפלה מצומצמת''' של החבורות המקומיות <math>G(K_v)</math> על פני כל המקומות <math>v</math> של <math>K</math>, ביחס לתת-החבורות הפתוחות הקומפקטיות <math>G(\mathcal O_v)</math> כמעט בכל המקומות הלא-ארכימדיים.
+
+חבורות אדליות הן המסגרת הטבעית ל[[תבנית אוטומורפית|תבניות אוטומורפיות]] ולהצגות אוטומורפיות. המנות הבסיסיות שלהן, כמו <math>G(K)\backslash G(\mathbb A_K)</math>, מקודדות בבת אחת מידע אריתמטי מכל ההשלמות של <math>K</math>. דוגמאות חשובות הן '''חבורת האידלים''' <math>\mathbb A_K^\times=\mathbb G_m(\mathbb A_K)</math>, החבורות הליניאריות הכלליות האדליות <math>\mathrm{GL}_n(\mathbb A_K)</math>, טורוסים אדליים, והנקודות האדליות של חבורות רדוקטיביות. '''מידות טמגאווה''' ו'''מספרי טמגאווה''' מוגדרים בעזרת [[מידת האר|מידות האר]] על חבורות כאלה.
+
+== היסטוריה של המינוח ==
+את ה'''אידלים''' (idèles) הציג קלוד שבאלה ב-1936 תחת השם "élément idéal" ("איבר אידיאלי" בצרפתית), ובשנת 1940 קיצר שבאלה את השם ל-"idèle" בהצעת [[הלמוט הסה|האסה]]. (במאמרים האלה הוא גם נתן לאידלים טופולוגיה שאינה האוסדורף.) המטרה הייתה לנסח את [[תורת שדות המחלקה]] עבור הרחבות אינסופיות במונחים של חבורות טופולוגיות.{{הערה|1=<span dir="ltr">C. Chevalley, "Généralisation de la théorie du corps de classes pour les extensions infinies", ''J. Math. Pures Appl.'' '''15''' (1936), 359–371; "La théorie du corps de classes", ''Annals of Mathematics'' '''41''' (1940), 394–418</span>|כיווון=שמאל}} [[אנדרה וייל]] הגדיר ב-1938 (בלי לתת לו שם) את חוג האדלים במקרה של שדות פונקציות, והצביע על כך שחבורת ה"איברים האידיאליים" של שבאלה היא חבורת האיברים ההפיכים של החוג הזה.{{הערה|1=<span dir="ltr">A. Weil, "Zur algebraischen Theorie der algebraischen Funktionen", ''J. reine angew. Math.'' '''179''' (1938), 129–133</span>|כיווון=שמאל}} ג'ון טייט הגדיר ב[[עבודת הדוקטורט של טייט|עבודת הדוקטורט שלו]] (1950) את חוג האדלים כמכפלה ישרה מצומצמת, אבל קרא לאיברים שלו "וקטורי הערכות" ולא אדלים.{{הערה|1=<span dir="ltr">J. T. Tate, "Fourier analysis in number fields, and Hecke's zeta-functions", in J. W. S. Cassels, A. Fröhlich (eds.), ''Algebraic Number Theory (Proc. Instructional Conf., Brighton, 1965)'', Thompson, Washington, D.C., 1967, 305–347</span>|כיווון=שמאל}}{{הערה|1=בערך האנגלי הפריט הזה מופיע עם השנה 1950 ועם הכותר של כנס ברייטון מ-1965. 1950 היא שנת עבודת הדוקטורט של טייט; היא פורסמה בדפוס רק ב-1967, בספר של קאסלס ופרוהליך שנערך בעקבות הכנס.|כיווון=שמאל}}
+
+שבאלה הגדיר ב-1951 את חוג האדלים במקרה של שדות פונקציות, תחת השם "répartitions". המונח המודרני ''adèle'' הוא קיצור של "additive idèles" ("אידלים חיבוריים"), והוא גם שם פרטי צרפתי לאישה. המונח היה בשימוש זמן קצר אחר כך (ז'אפאר, 1953), וייתכן שהציג אותו וייל. הבנייה הכללית של חבורות אלגבריות אדליות על ידי טקשי אונו (1957) הסתמכה על התורה של חבורות אלגבריות שייסדו ארמן בורל והריש-צ'נדרה.{{הערה|1=<span dir="ltr">T. Ono, "Sur une propriété arithmétique des groupes algébriques commutatifs", ''Bull. Soc. Math. France'' '''85''' (1957), 307–323</span>|כיווון=שמאל}}
+
+== הגדרה ==
+יהי <math>K</math> שדה גלובלי, ויהי <math>\mathbb A_K</math> חוג האדלים שלו. אם <math>G</math> חבורה אלגברית מעל <math>K</math>, הסימון <math>G(\mathbb A_K)</math> מציין את חבורת הנקודות האדליות של <math>G</math>. באופן לא פורמלי, איבר של <math>G(\mathbb A_K)</math> הוא אוסף תואם של נקודות מקומיות של <math>G</math>, אחת מעל כל השלמה <math>K_v</math> של <math>K</math>.{{הערה|שם=Weil|1=<span dir="ltr">A. Weil, ''Adeles and Algebraic Groups'', Progress in Mathematics 23, Birkhäuser, 1982</span>|כיווון=שמאל}}{{הערה|שם=PR|1=<span dir="ltr">V. Platonov, A. Rapinchuk, ''Algebraic Groups and Number Theory'', Pure and Applied Mathematics 139, Academic Press, 1994, chapter "Adeles"</span>|כיווון=שמאל}}
+
+עבור חבורה אלגברית ליניארית, אפשר לתאר את החבורה האדלית כמכפלה מצומצמת
+:<math>G(\mathbb A_K)={\prod_v}' G(K_v),</math>
+כאשר <math>v</math> עובר על מקומות <math>K</math>. כמעט בכל המקומות הלא-ארכימדיים <math>v</math>, המכפלה המצומצמת נלקחת ביחס לתת-החבורה הפתוחה הקומפקטית <math>G(\mathcal O_v)</math>, כאשר <math>\mathcal O_v</math> חוג ההערכה של <math>K_v</math> (אחרי בחירה של מודל שלם של <math>G</math> מחוץ לקבוצה סופית של מקומות).{{הערה|שם=PR}} כלומר, איבר של <math>G(\mathbb A_K)</math> הוא סדרה
+:<math>(g_v)_v\in \prod_v G(K_v)</math>
+כך ש-<math>g_v\in G(\mathcal O_v)</math> לכל המקומות הלא-ארכימדיים <math>v</math> פרט למספר סופי.
+
+טופולוגיית המכפלה המצומצמת הופכת את <math>G(\mathbb A_K)</math> לחבורה טופולוגית [[מרחב קומפקטי מקומית|קומפקטית מקומית]] במקרים הליניאריים הרגילים. למשל, עבור <math>G=\mathrm{GL}_n</math>,
+:<math>\mathrm{GL}_n(\mathbb A_K) = {\prod_v}' \mathrm{GL}_n(K_v),</math>
+ביחס לתת-החבורות הפתוחות הקומפקטיות <math>\mathrm{GL}_n(\mathcal O_v)</math> כמעט בכל המקומות הלא-ארכימדיים.
+
+הנקודות הרציונליות <math>G(K)</math> משוכנות אלכסונית ב-<math>G(\mathbb A_K)</math>. עבור חבורות אלגבריות ליניאריות, התמונה האלכסונית הזו בדידה בטופולוגיה האדלית.{{הערה|שם=Weil}}{{הערה|שם=PR}} המנה שמתקבלת,
+:<math>G(K)\backslash G(\mathbb A_K),</math>
+היא אחד המרחבים הבסיסיים שעליהם מוגדרות תבניות אוטומורפיות והצגות אוטומורפיות.{{הערה|שם=BJ|1=<span dir="ltr">A. Borel, H. Jacquet, "Automorphic forms and automorphic representations", in A. Borel, W. Casselman (eds.), ''Automorphic Forms, Representations and L-functions'', Proc. Sympos. Pure Math. 33, American Mathematical Society, 1979, 189–207</span>|כיווון=שמאל}}
+
+הדוגמאות הפשוטות ביותר הן החבורה החיבורית והחבורה הכפלית. עבור החבורה החיבורית <math>\mathbb G_a</math>,
+:<math>\mathbb G_a(\mathbb A_K)=\mathbb A_K.</math>
+עבור החבורה הכפלית <math>\mathbb G_m</math>,
+:<math>\mathbb G_m(\mathbb A_K)=\mathbb A_K^\times,</math>
+חבורת האידלים של <math>K</math>. הטופולוגיה על <math>\mathbb A_K^\times</math> היא טופולוגיית המכפלה המצומצמת ביחס ל-<math>\mathcal O_v^\times</math> כמעט בכל המקומות הלא-ארכימדיים; באופן שקול, זו הטופולוגיה שמושרית מהשיכון
+:<math>x\longmapsto (x,x^{-1})</math>
+של <math>\mathbb A_K^\times</math> ב-<math>\mathbb A_K\times \mathbb A_K</math>. היא עדינה ממש מטופולוגיית תת-המרחב שמושרית מ-<math>\mathbb A_K</math>.{{הערה|שם=Weil}}
+
+== דוגמאות מלאות ==
+=== בדידות של <math>\mathbb Q</math> ב-<math>\mathbb A_{\mathbb Q}</math> ===
+הקבוצה <math>U</math> של האדלים <math>x</math> עם <math>|x_\infty| \lt 1</math> ועם <math>x_p \in \mathbb Z_p</math> לכל <math>p</math> פתוחה ב-<math>\mathbb A_{\mathbb Q}</math> (בטופולוגיית המכפלה המצומצמת, כי <math>\mathbb Z_p</math> פתוחה ב-<math>\mathbb Q_p</math>). אם מספר רציונלי <math>r</math> נמצא ב-<math>U</math>, אז <math>r \in \mathbb Z_p</math> לכל <math>p</math>, כלומר למכנה של <math>r</math> אין אף גורם ראשוני, ולכן <math>r \in \mathbb Z</math>; ו-<math>|r| \lt 1</math> נותן <math>r = 0</math>. לכן <math>U \cap \mathbb Q = \{0\}</math>, ו-<math>\mathbb Q</math> בדידה ב-<math>\mathbb A_{\mathbb Q}</math>. (המנה <math>\mathbb Q\backslash\mathbb A_{\mathbb Q}</math> אפילו קומפקטית: תחום יסודי הוא <math>[0,1) \times \prod_p \mathbb Z_p</math>.)
+
+=== מספר המחלקות של <math>\mathbb Q</math> כמנה אדלית ===
+מכיוון ש-<math>\mathbb Z</math> הוא [[תחום ראשי]], כל אידל של <math>\mathbb Q</math> אפשר לכתוב כמכפלה של רציונלי ושל איבר של <math>\mathbb R_{\gt0}\times\prod_p\mathbb Z_p^\times</math>:
+:<math>\mathbb A_{\mathbb Q}^\times = \mathbb Q^\times\cdot\left(\mathbb R_{\gt 0}\times\prod_p\mathbb Z_p^\times\right).</math>
+לדוגמה, ניקח את האידל <math>x</math> עם <math>x_\infty = -2</math>, <math>x_2 = 12</math>, <math>x_3 = \tfrac13</math>, ו-<math>x_p = 1</math> לכל ראשוני אחר. נבחר <math>q = \mathrm{sign}(x_\infty)\cdot\prod_p p^{v_p(x_p)} = -1\cdot 2^2\cdot 3^{-1} = -\tfrac43</math>. אז <math>u = q^{-1}x</math> מקיים <math>u_\infty = \tfrac32 \gt 0</math>, <math>u_2 = -9 \in \mathbb Z_2^\times</math>, <math>u_3 = -\tfrac14 \in \mathbb Z_3^\times</math>, ו-<math>u_p = -\tfrac34 \in \mathbb Z_p^\times</math> לכל <math>p \ne 2,3</math>. במונחים של חבורת מחלקות האידלים, זה אומר ש-<math>\mathbb Q^\times\backslash\mathbb A_{\mathbb Q}^\times/(\mathbb R_{\gt0}\times\prod_p\mathbb Z_p^\times)</math> טריוויאלית – הניסוח האדלי של העובדה ש[[חבורת מחלקות האידיאלים|מספר המחלקות]] של <math>\mathbb Q</math> הוא 1. לשדה מספרים כללי, המנה המקבילה היא בדיוק [[חבורת מחלקות האידיאלים]].
+
+=== מספר טמגאווה של <math>\mathrm{SL}_2</math> ===
+עבור <math>G = \mathrm{SL}_2</math> מעל <math>\mathbb Q</math>, מידת טמגאווה נותנת ל-<math>\mathrm{SL}_2(\mathbb Z_p)</math> את הנפח <math>|\mathrm{SL}_2(\mathbb F_p)|/p^3 = p(p^2-1)/p^3 = 1 - p^{-2}</math> (בדקנו בספירה: <math>|\mathrm{SL}_2(\mathbb F_p)| = 6, 24, 120</math> עבור <math>p = 2, 3, 5</math>). המכפלה על כל הראשוניים היא <math>\prod_p(1 - p^{-2}) = 1/\zeta(2) = 6/\pi^2</math>. בחלק הארכימדי, הנפח של <math>\mathrm{SL}_2(\mathbb Z)\backslash\mathrm{SL}_2(\mathbb R)</math> במידה המתאימה הוא <math>\zeta(2)</math>. מכיוון ש-<math>\mathrm{SL}_2(\mathbb Q)\backslash\mathrm{SL}_2(\mathbb A)/\prod_p\mathrm{SL}_2(\mathbb Z_p) \cong \mathrm{SL}_2(\mathbb Z)\backslash\mathrm{SL}_2(\mathbb R)</math> (קירוב חזק), מתקבל
+:<math>\tau(\mathrm{SL}_2) = \zeta(2)\cdot\frac{1}{\zeta(2)} = 1,</math>
+כפי שחוזה השערת וייל (ראו להלן). מספרית, המכפלה על הראשוניים עד <math>2\cdot 10^5</math> היא <math>0.6079273\ldots</math>, וכפול <math>\pi^2/6</math> מתקבל <math>1.0000004\ldots</math>.
+
+== מידות טמגאווה ומספרי טמגאווה ==
+תהי <math>G</math> חבורה אלגברית ליניארית קשירה מעל שדה גלובלי <math>K</math>. '''מידת טמגאווה''' היא מידת האר מנורמלת באופן קנוני על החבורה האדלית <math>G(\mathbb A_K)</math>, שבנויה מ[[תבנית דיפרנציאלית|תבניות דיפרנציאליות]] אלגבריות על <math>G</math>.{{הערה|שם=Weil}}{{הערה|1=<span dir="ltr">J. Oesterlé, "Nombres de Tamagawa et groupes unipotents en caractéristique p", in J.-P. Serre (ed.), ''Adeles and Tamagawa Numbers'', Progress in Mathematics 12, Birkhäuser, 1981, 122–150</span>|כיווון=שמאל}}
+
+נניח תחילה ש-<math>G</math> חלקה מממד <math>d</math>, ותהי <math>\omega</math> תבנית דיפרנציאלית רציונלית לא אפס, שמורה משמאל, מהדרגה העליונה על <math>G</math>, שמוגדרת מעל <math>K</math>. "רציונלית" פירושו כאן ש-<math>\omega</math> היא חתך רציונלי של האלומה הקנונית <math>\Omega^d_{G/K}</math>, או באופן שקול תבנית מהדרגה העליונה שמוגדרת בנקודה הגנרית של <math>G</math>, עם מקדמים בשדה הפונקציות <math>K(G)</math>. לכל מקום <math>v</math> של <math>K</math>, התבנית <math>\omega</math> מגדירה מידת האר מקומית <math>|\omega|_v</math> על החבורה הקומפקטית המקומית <math>G(K_v)</math>. עם נרמולי ההתכנסות הרגילים כמעט בכל המקומות, המידות המקומיות האלה מגדירות מידה על המכפלה המצומצמת <math>G(\mathbb A_K)</math>.{{הערה|שם=Weil}}
+
+הבנייה אינה תלויה בכפל של <math>\omega</math> באיבר של <math>K^\times</math>. אכן, אם מחליפים את <math>\omega</math> ב-<math>a\omega</math>, עם <math>a\in K^\times</math>, המידה המקומית ב-<math>v</math> מוכפלת ב-<math>|a|_v</math>. '''נוסחת המכפלה''' להערכות,
+:<math>\prod_v |a|_v=1,</math>
+גוררת שהמידה האדלית שמתקבלת אינה משתנה. (לדוגמה, עבור <math>a = -\tfrac43 \in \mathbb Q</math>: <math>|a|_\infty = \tfrac43</math>, <math>|a|_2 = \tfrac14</math>, <math>|a|_3 = 3</math>, וכל השאר 1; המכפלה היא <math>\tfrac43\cdot\tfrac14\cdot 3 = 1</math>.) ההבחנה הזו הייתה אחת המוטיבציות הבסיסיות להגדרת מידות טמגאווה באופן אדלי.{{הערה|שם=Weil}}
+
+כשלמנה יש מידה סופית, '''מספר טמגאווה''' של <math>G</math> מוגדר כ-
+:<math>\tau(G)=\operatorname{vol}\bigl(G(K)\backslash G(\mathbb A_K)\bigr),</math>
+כשהנפח נלקח ביחס למידת טמגאווה. יש מחברים שמשתמשים בסימון ההפוך <math>G(\mathbb A_K)/G(K)</math>; שני הסימונים מתייחסים לאותו מרחב מנה אחרי בחירת מוסכמות שמאל או ימין, אבל <math>G(K)\backslash G(\mathbb A_K)</math> הוא הסטנדרט בתורת התבניות האוטומורפיות.{{הערה|שם=Weil}}{{הערה|שם=BJ}}
+
+עבור חבורות רדוקטיביות רבות, מספרי טמגאווה מקודדים מידע אריתמטי. במקרה של טורוסים הם קשורים ל[[חבורת מחלקות האידיאלים|חבורות מחלקות]] ול[[קוהומולוגיית גלואה]], ועבור חבורות פשוטות-למחצה הם קשורים לאריתמטיקה של [[תבנית ריבועית|תבניות ריבועיות]] ולנפח של מנות אריתמטיות.{{הערה|1=<span dir="ltr">T. Ono, "On the Tamagawa number of algebraic tori", ''Annals of Mathematics'' '''78''' (1963), 47–73</span>|כיווון=שמאל}}{{הערה|שם=Weil}} וייל שיער שאם <math>G</math> חבורה אלגברית פשוטה-למחצה ופשוטת-קשר מעל שדה מספרים, אז
+:<math>\tau(G)=1.</math>
+ההשערה הוכחה מעל שדות מספרים בעבודה שהגיעה לשיאה בהוכחה של רוברט קוטוויץ, על בסיס עבודה קודמת של [[רוברט לנגלנדס]].{{הערה|1=<span dir="ltr">R. E. Kottwitz, "Tamagawa numbers", ''Annals of Mathematics'' '''127''' (1988), 629–646</span>|כיווון=שמאל}} עבור <math>\mathrm{SO}(q)</math> של תבנית ריבועית, השוויון <math>\tau = 2</math> שקול ל[[נוסחת המסה של סמית'–מינקובסקי–זיגל]].
+
+== ראו גם ==
+* [[חוג האדלים]]
+* [[תבנית אוטומורפית]]
+* [[נוסחת המסה של סמית'–מינקובסקי–זיגל]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* C. Chevalley, ''Introduction to the Theory of Algebraic Functions of One Variable'', Mathematical Surveys VI, American Mathematical Society, 1951
+* P. Jaffard, "Anneaux d'adèles (d'après Iwasawa)", Séminaire Bourbaki, 1953
+* A. S. Rapinchuk, "Tamagawa number", ''Encyclopedia of Mathematics'', Springer
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]

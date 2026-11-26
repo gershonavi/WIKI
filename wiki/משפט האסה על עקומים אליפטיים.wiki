@@ -4,7 +4,7 @@
 :<math>|N - (q + 1)| \le 2\sqrt q.</math>
 הסיבה היא ש-<math>N</math> שונה מ-<math>q + 1</math>, מספר הנקודות על [[ישר פרויקטיבי|הישר הפרויקטיבי]] מעל אותו שדה, ב"איבר שגיאה" שהוא סכום של שני [[מספר מרוכב|מספרים מרוכבים]], שהערך המוחלט של כל אחד מהם <math>\sqrt q</math>. בפירוט: <math>N = q + 1 - a</math>, כאשר <math>a = \alpha + \bar\alpha</math> ו-<math>\alpha\bar\alpha = q</math>; לכן <math>|a| \le 2|\alpha| = 2\sqrt q</math>. כאן <math>\alpha, \bar\alpha</math> הם הערכים העצמיים של [[אנדומורפיזם פרובניוס]] על מודול טייט של העקום, והם שורשי הפולינום <math>x^2 - ax + q</math>.
 
-התוצאה שוערה במקור על ידי [[אמיל ארטין]] בעבודת הדוקטורט שלו.{{הערה|1=E. Artin, ''Quadratische Körper im Gebiete der höheren Kongruenzen. II'', Mathematische Zeitschrift '''19''' (1924), pp. 207–246|כיווון=שמאל}} [[הלמוט האסה]] הוכיח אותה ב-1933, וההוכחה פורסמה בסדרת מאמרים ב-1936.{{הערה|1=H. Hasse, ''Zur Theorie der abstrakten elliptischen Funktionenkörper. I, II & III'', J. Reine Angew. Math. '''175''' (1936)|כיווון=שמאל}}
+התוצאה שוערה במקור על ידי [[אמיל ארטין]] בעבודת הדוקטורט שלו.{{הערה|1=E. Artin, ''Quadratische Körper im Gebiete der höheren Kongruenzen. II'', Mathematische Zeitschrift '''19''' (1924), pp. 207–246|כיווון=שמאל}} [[הלמוט הסה|הלמוט האסה]] הוכיח אותה ב-1933, וההוכחה פורסמה בסדרת מאמרים ב-1936.{{הערה|1=H. Hasse, ''Zur Theorie der abstrakten elliptischen Funktionenkörper. I, II & III'', J. Reine Angew. Math. '''175''' (1936)|כיווון=שמאל}}
 
 משפט האסה שקול לקביעת ה[[ערך מוחלט|ערך המוחלט]] של השורשים של [[פונקציית זטא מקומית|פונקציית הזטא המקומית]] של <math>E</math>. בצורה הזו אפשר לראות בו את המקבילה של [[השערת רימן]] עבור [[שדה פונקציות|שדה הפונקציות]] שמתאים לעקום האליפטי.
 
