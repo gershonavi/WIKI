@@ -334,7 +334,7 @@ Additive number theory:
 - [x] Achilles number
 - [x] Sphenic number
 - [x] Nontotient
-- [ ] Highly totient number
+- [x] Highly totient number
 - [ ] Perfect totient number
 - [ ] Euclid–Mullin sequence
 - [ ] Wilson quotient
