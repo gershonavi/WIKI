@@ -239,7 +239,7 @@ Additive number theory:
 - [x] Roth's theorem
 - [x] Irrationality measure
 - [x] Equidistributed sequence
-- [ ] Equidistribution theorem
+- [x] Equidistribution theorem
 - [ ] Kronecker's theorem
 - [ ] Three-gap theorem
 - [ ] Beatty sequence
