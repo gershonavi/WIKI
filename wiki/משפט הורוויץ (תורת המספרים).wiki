@@ -1,0 +1,40 @@
+ב[[תורת המספרים]], '''משפט הורוויץ''', שנקרא על שם [[אדולף הורוויץ]], נותן [[חסם עליון|חסם]] על [[קירוב דיופנטי]]. המשפט קובע שלכל [[מספר אי-רציונלי]] <math>\xi</math> יש אינסוף זוגות של שלמים [[מספרים זרים|זרים]] <math>m, n</math> כך ש-
+:<math>\left|\xi - \frac mn\right| \lt \frac1{\sqrt5\,n^2}.</math>
+אי אפשר לוותר על התנאי ש-<math>\xi</math> אי-רציונלי. יתרה מזו, הקבוע <math>\sqrt5</math> הוא הטוב ביותר האפשרי: אם מחליפים את <math>\sqrt5</math> במספר כלשהו <math>A \gt \sqrt5</math>, ולוקחים <math>\xi = (1 + \sqrt5)/2</math> ([[יחס הזהב]]), יש רק מספר '''סופי''' של זוגות שלמים זרים <math>m, n</math> שמקיימים את אי-השוויון.
+
+המשפט שקול לטענה ש[[קבוע מרקוב]] של כל מספר הוא לפחות <math>\sqrt5</math>. הוא משפר את [[משפט הקירוב של דיריכלה]], שנותן את אי-השוויון עם <math>1/n^2</math> במקום <math>1/(\sqrt5n^2)</math>.
+
+== הוכחה ==
+'''הקיום.''' יהיו <math>p_k/q_k</math> המנות המתקרבות של [[שבר משולב|השבר המשולב]] של <math>\xi</math>. הטענה המרכזית: מבין כל שלוש מנות מתקרבות עוקבות, לפחות אחת מקיימת <math>|\xi - p/q| \lt 1/(\sqrt5q^2)</math>. כיוון שיש אינסוף מנות מתקרבות (כש-<math>\xi</math> אי-רציונלי), מקבלים אינסוף קירובים כאלה. רעיון ההוכחה: אם <math>|\xi - p_k/q_k| \ge 1/(\sqrt5q_k^2)</math> לשתי מנות עוקבות, אז מכך ש-<math>\xi</math> בין <math>p_k/q_k</math> ל-<math>p_{k+1}/q_{k+1}</math> ו-<math>|p_{k+1}/q_{k+1} - p_k/q_k| = 1/(q_kq_{k+1})</math>, מקבלים <math>\frac1{q_kq_{k+1}} \ge \frac1{\sqrt5}\left(\frac1{q_k^2} + \frac1{q_{k+1}^2}\right)</math>, כלומר <math>t + 1/t \le \sqrt5</math> עבור <math>t = q_{k+1}/q_k</math>, ומכאן <math>t \lt \frac{1 + \sqrt5}2</math>. אם זה קורה גם לזוג הבא, מקבלים מ-<math>q_{k+2} = a_{k+2}q_{k+1} + q_k \ge q_{k+1} + q_k</math> ש-<math>\frac{q_{k+2}}{q_{k+1}} \ge 1 + \frac{q_k}{q_{k+1}} \gt 1 + \frac2{1 + \sqrt5} = \frac{1 + \sqrt5}2</math> – סתירה.
+
+'''האופטימליות של <math>\sqrt5</math>.''' יהי <math>\varphi = \frac{1 + \sqrt5}2</math> ו-<math>\varphi' = \frac{1 - \sqrt5}2</math>, ונניח ש-<math>\left|\varphi - \frac mn\right| \lt \frac1{An^2}</math> עם <math>A \gt \sqrt5</math>. נכתוב <math>m = n\varphi + \frac\delta n</math> עם <math>|\delta| \lt \frac1A</math>. אז <math>m - n\varphi' = n\sqrt5 + \frac\delta n</math>, ולכן
+:<math>m^2 - mn - n^2 = (m - n\varphi)(m - n\varphi') = \frac\delta n\left(n\sqrt5 + \frac\delta n\right) = \delta\sqrt5 + \frac{\delta^2}{n^2}.</math>
+אגף שמאל הוא מספר שלם שונה מאפס (כי <math>\varphi</math> אי-רציונלי), ולכן <math>\left|\delta\sqrt5 + \frac{\delta^2}{n^2}\right| \ge 1</math>, כלומר <math>|\delta| \ge \frac1{\sqrt5} - \frac{\delta^2}{\sqrt5n^2}</math>. עבור <math>n</math> גדול האגף הימני קרוב ל-<math>\frac1{\sqrt5} \gt \frac1A</math>, בסתירה ל-<math>|\delta| \lt \frac1A</math>. לכן יש רק מספר סופי של פתרונות.
+
+== דוגמאות ==
+נסמן <math>c(p/q) = q^2\left|\xi - \frac pq\right|</math>; משפט הורוויץ אומר ש-<math>c \lt 1/\sqrt5 = 0.44721\ldots</math> לאינסוף <math>p/q</math>.
+
+* '''יחס הזהב.''' המנות המתקרבות הן היחסים בין [[מספר פיבונאצ'י|מספרי פיבונאצ'י]] עוקבים, <math>F_{k+1}/F_k</math>, והערכים של <math>c</math> הם
+:: <math>0.382,\ 0.472,\ 0.438,\ 0.451,\ 0.446,\ 0.448,\ 0.4470,\ 0.4473,\ 0.44718,\ 0.44722,\ 0.44721, \ldots</math>
+: (עבור <math>\frac21, \frac32, \frac53, \frac85, \ldots, \frac{233}{144}</math>). הם מתכנסים ל-<math>1/\sqrt5</math> לסירוגין מעל ומתחת – בדיוק הגבול שמשפט הורוויץ קובע, ולכן אי אפשר לשפר את הקבוע.
+* '''<math>\sqrt2</math>.''' המנות המתקרבות <math>\frac11, \frac32, \frac75, \frac{17}{12}, \frac{41}{29}, \ldots</math> נותנות <math>c = 0.414, 0.343, 0.355, 0.3532, 0.3536, \ldots \to \frac1{2\sqrt2} = 0.35355\ldots</math>. לכן עבור <math>\sqrt2</math> אפשר לקחת אפילו קבוע <math>\sqrt8</math> במקום <math>\sqrt5</math> (אבל לא יותר).
+* '''<math>\pi</math>.''' עבור המנות המתקרבות <math>3, \frac{22}7, \frac{333}{106}, \frac{355}{113}, \frac{103993}{33102}, \frac{104348}{33215}</math>, הערכים הם <math>c = 0.142, 0.062, 0.935, 0.0034, 0.633, 0.366</math>. בדיוק כפי שההוכחה מבטיחה, בכל שלוש עוקבות לפחות אחת מתחת ל-<math>0.447</math>. הערך הקטן <math>0.0034</math> עבור <math>\frac{355}{113}</math> נובע מהמנה החלקית הגדולה <math>a_4 = 292</math> בשבר המשולב <math>\pi = [3; 7, 15, 1, 292, \ldots]</math>.
+
+== ההמשך: ספקטרום לגראנז' ==
+אם מוציאים את יחס הזהב ואת כל המספרים ה[[מספרים שקולים|שקולים]] לו (אלה שהשבר המשולב שלהם מסתיים ב-<math>1, 1, 1, \ldots</math>), אפשר להחליף את <math>\sqrt5</math> ב-<math>\sqrt8</math>; אחרי הוצאה נוספת של המספרים השקולים ל-<math>\sqrt2</math>, אפשר להחליף ב-<math>\sqrt{221}/5</math>, וכן הלאה. הסדרה <math>\sqrt5, \sqrt8, \sqrt{221}/5, \ldots</math> היא סדרת [[מספר לגראנז'|מספרי לגראנז']], <math>L_n = \sqrt{9 - 4/m_n^2}</math>, כאשר <math>m_n</math> הם [[מספר מרקוב|מספרי מרקוב]], והיא מתכנסת ל-3.
+
+== ראו גם ==
+* [[משפט הקירוב של דיריכלה]]
+* [[מספר לגראנז']]
+* [[ספקטרום מרקוב]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. Hurwitz, ''Ueber die angenäherte Darstellung der Irrationalzahlen durch rationale Brüche'', Mathematische Annalen '''39''' (1891), pp. 279–284
+* G. H. Hardy, E. M. Wright, ''An Introduction to the Theory of Numbers'', 6th ed., Oxford University Press, 2008, Theorem 193, p. 209
+* W. J. LeVeque, ''Topics in Number Theory'', Addison-Wesley, 1956
+* I. Niven, ''Diophantine Approximations'', Dover, 2013
+</div>
+
+[[קטגוריה:קירובים דיופנטיים]]
+[[קטגוריה:משפטים בתורת המספרים]]
