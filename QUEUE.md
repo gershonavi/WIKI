@@ -224,7 +224,7 @@ Additive number theory:
 - [x] Lander, Parkin, and Selfridge conjecture
 - [x] Tijdeman's theorem
 - [x] Brahmagupta's problem
-- [ ] Bhaskara's lemma
+- [x] Bhaskara's lemma
 - [ ] Congruum
 - [ ] Euler's sum of powers conjecture
 - [ ] Sum of four cubes problem
