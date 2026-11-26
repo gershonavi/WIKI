@@ -358,7 +358,7 @@ Additive number theory:
 - [x] Refactorable number
 - [x] Arithmetic number
 - [x] Znám's problem
-- [ ] Primary pseudoperfect number
+- [x] Primary pseudoperfect number
 - [ ] Erdős–Woods number
 - [ ] Ulam number
 - [ ] Stanley sequence
