@@ -1,0 +1,61 @@
+ב[[מתמטיקה]], '''תבנית מודולרית של הילברט''' היא הכללה של [[תבנית מודולרית|תבניות מודולריות]] לפונקציות של שני משתנים או יותר. זו [[פונקציה אנליטית]] (מרוכבת) על המכפלה של <math>m</math> עותקים של [[חצי המישור העליון]] <math>\mathcal{H}</math>, שמקיימת [[משוואה פונקציונלית]] מסוג מסוים.
+
+== הגדרה ==
+יהי <math>F</math> [[שדה ממשי לחלוטין|שדה מספרים ממשי לחלוטין]] ממעלה <math>m</math> מעל שדה הרציונליים, ויהיו <math>\sigma_1, \ldots, \sigma_m</math> השיכונים הממשיים של <math>F</math>. דרכם מתקבלת העתקה
+:<math>\mathrm{GL}_2(F) \to \mathrm{GL}_2(\mathbb R)^m</math>
+ששולחת את <math>\gamma</math> ל-<math>(\sigma_1(\gamma),\ldots,\sigma_m(\gamma))</math>. יהי <math>\mathcal O_F</math> [[חוג השלמים]] של <math>F</math>. החבורה <math>\mathrm{GL}_2^+(\mathcal O_F)</math> של המטריצות שהדטרמיננטה שלהן חיובית לחלוטין (כלומר חיובית תחת כל השיכונים) נקראת '''חבורת הילברט המודולרית המלאה'''. החבורה <math>\mathrm{GL}_2^+(\mathcal O_F)</math> פועלת על <math>\mathcal{H}^m</math> לפי <math>\gamma \cdot (z_1, \ldots, z_m) = (\sigma_1(\gamma) z_1, \ldots, \sigma_m(\gamma) z_m)</math>, כשכל רכיב פועל ב[[העתקת מביוס]].
+
+עבור
+:<math>g = \begin{pmatrix}a & b \\ c & d \end{pmatrix} \in \mathrm{GL}_2(\mathbb R)</math>
+נגדיר
+:<math>j(g, z) = \det(g)^{-1/2} (cz+d).</math>
+'''תבנית מודולרית של הילברט''' ממשקל <math>(k_1,\ldots,k_m)</math> היא פונקציה אנליטית על <math>\mathcal{H}^m</math> כך שלכל <math>\gamma \in \mathrm{GL}_2^+(\mathcal O_F)</math>
+:<math>f(\gamma z) = \prod_{i=1}^m j(\sigma_i(\gamma), z_i)^{k_i} f(z).</math>
+אם <math>F=\mathbb{Q}</math>, צריך להוסיף תנאי חסימות בחודים; אבל עבור שדות גדולים יותר התנאי הזה מתקיים אוטומטית, בגלל '''עקרון קכר''' (Koecher). כשכל המשקלים שווים, <math>k_1 = \cdots = k_m = k</math>, מדברים על משקל '''מקביל''' <math>k</math>. זו דוגמה ל[[תבנית אוטומורפית]] על החבורה <math>\mathrm{GL}_2</math> מעל <math>F</math>.
+
+=== פיתוח פורייה ===
+המטריצות <math>\begin{pmatrix}1 & b\\ 0 & 1\end{pmatrix}</math> עם <math>b \in \mathcal O_F</math> נמצאות בחבורה, ולכן <math>f(z + b) = f(z)</math> לכל <math>b \in \mathcal O_F</math> (כאשר <math>z + b = (z_1 + \sigma_1(b), \ldots, z_m + \sigma_m(b))</math>). לכן ל-<math>f</math> יש פיתוח פורייה על פני הסריג הדואלי, '''ההפכי של הדיפרנט''' <math>\mathfrak d^{-1} = \{\nu \in F : \mathrm{tr}(\nu\mathcal O_F) \subseteq \mathbb Z\}</math>:
+:<math>f(z) = \sum_{\nu \in \mathfrak d^{-1}} a(\nu)\, e^{2\pi i\, \mathrm{tr}(\nu z)}, \qquad \mathrm{tr}(\nu z) = \sum_i \sigma_i(\nu) z_i.</math>
+עקרון קכר אומר שכאשר <math>m \ge 2</math>, המקדמים <math>a(\nu)</math> מתאפסים אוטומטית אלא אם <math>\nu = 0</math> או ש-<math>\nu</math> חיובי לחלוטין (<math>\nu \gg 0</math>). הסיבה: חבורת היחידות <math>\mathcal O_F^\times</math> אינסופית, והפעולה של יחידות חיוביות לחלוטין <math>\varepsilon</math> דרך <math>\mathrm{diag}(\varepsilon, 1)</math> מקשרת בין <math>a(\nu)</math> ל-<math>a(\varepsilon\nu)</math> (עד כדי גורם קבוע); אם היה מקדם לא אפס עם <math>\nu</math> שאינו חיובי לחלוטין, הטור לא היה מתכנס.
+
+== דוגמה מלאה: טורי אייזנשטיין של <math>\mathbb Q(\sqrt5)</math> ==
+יהי <math>F = \mathbb Q(\sqrt 5)</math>, עם <math>m = 2</math>, <math>\mathcal O_F = \mathbb Z[\varphi]</math> כאשר <math>\varphi = \tfrac{1+\sqrt5}{2}</math>, ומספר מחלקות 1 (גם במובן הצר, כי ל[[יחידה יסודית (תורת המספרים)|יחידה היסודית]] <math>\varphi</math> יש נורמה <math>-1</math>). הדיפרנט הוא האידיאל <math>(\sqrt5)</math>, ולכן <math>\mathfrak d^{-1} = \tfrac{1}{\sqrt5}\mathcal O_F</math>.
+
+'''טור אייזנשטיין''' של הקה ממשקל מקביל זוגי <math>k \ge 2</math> הוא
+:<math>E_k(z) = 1 + \frac{4}{\zeta_F(1-k)} \sum_{\nu \in \mathfrak d^{-1},\ \nu \gg 0} \sigma_{k-1}(\nu\mathfrak d)\, e^{2\pi i\,\mathrm{tr}(\nu z)},</math>
+כאשר <math>\sigma_{k-1}(\mathfrak a) = \sum_{\mathfrak b \mid \mathfrak a} N(\mathfrak b)^{k-1}</math> הוא סכום על המחלקים האידיאליים, ו-<math>\zeta_F</math> היא [[פונקציית זטא של דדקינד]]. כאן <math>\zeta_F(s) = \zeta(s)L(s,\chi_5)</math>, ולכן
+:<math>\zeta_F(-1) = \zeta(-1)\,L(-1,\chi_5) = \left(-\tfrac{1}{12}\right)\left(-\tfrac{2}{5}\right) = \tfrac{1}{30}, \qquad \zeta_F(-3) = \tfrac{1}{120}\cdot 2 = \tfrac{1}{60},</math>
+והגורמים המנרמלים הם <math>4/\zeta_F(-1) = 120</math> ו-<math>4/\zeta_F(-3) = 240</math>.
+
+'''הצמצום לאלכסון.''' אם <math>f</math> תבנית מודולרית של הילברט ממשקל מקביל <math>k</math>, אז <math>g(z) = f(z, z)</math> היא תבנית מודולרית רגילה ממשקל <math>2k</math> עבור <math>\mathrm{SL}_2(\mathbb Z)</math>, כי <math>\mathrm{SL}_2(\mathbb Z) \subset \mathrm{SL}_2(\mathcal O_F)</math> ושני גורמי האוטומורפיות מוכפלים. המקדם של <math>q^n</math> ב-<math>g</math> הוא סכום המקדמים <math>a(\nu)</math> על כל <math>\nu \gg 0</math> עם <math>\mathrm{tr}(\nu) = n</math>.
+
+נחשב עבור <math>E_2</math>. כל <math>\nu \in \mathfrak d^{-1}</math> הוא מהצורה <math>\nu = \frac{x}{\sqrt5}</math> עם <math>x = \frac{a + b\sqrt5}{2} \in \mathcal O_F</math> (כאשר <math>a \equiv b \pmod 2</math>), ואז <math>\nu = \frac{b}{2} + \frac{a}{2\sqrt5}</math>, כך ש-<math>\mathrm{tr}(\nu) = b</math>, ו-<math>\nu \gg 0</math> אם ורק אם <math>|a| \lt b\sqrt5</math>. האידיאל <math>\nu\mathfrak d</math> הוא <math>(x)</math>, עם נורמה <math>|N(x)| = \frac{|a^2 - 5b^2|}{4}</math>.
+* <math>n = 1</math>: <math>b = 1</math>, <math>a</math> אי-זוגי עם <math>|a| \lt \sqrt5</math>, כלומר <math>a = \pm1</math>. שני האיברים <math>x = \frac{\pm1+\sqrt5}{2}</math> הם יחידות (נורמה <math>-1</math>), ולכן <math>\sigma_1((x)) = 1</math>. הסכום הוא 2, והמקדם של <math>q</math> הוא <math>120 \cdot 2 = 240</math>.
+* <math>n = 2</math>: <math>b = 2</math>, <math>a</math> זוגי עם <math>|a| \lt 2\sqrt5 \approx 4.47</math>, כלומר <math>a \in \{0, \pm2, \pm4\}</math>:
+** <math>a = 0</math>: <math>x = \sqrt5</math>, האידיאל הוא הראשוני המסועף מנורמה 5, ו-<math>\sigma_1 = 1 + 5 = 6</math>.
+** <math>a = \pm 2</math>: <math>x = \pm1 + \sqrt5</math>, נורמה 4. האידיאל הוא <math>(2)</math>, שהוא ראשוני (2 אינרטי ב-<math>\mathbb Q(\sqrt5)</math>) מנורמה 4, ולכן <math>\sigma_1 = 1 + 4 = 5</math> לכל אחד.
+** <math>a = \pm 4</math>: <math>x = \pm2+\sqrt5</math>, נורמה 1 – יחידה, <math>\sigma_1 = 1</math> לכל אחד.
+:הסכום הוא <math>6 + 5 + 5 + 1 + 1 = 18</math>, והמקדם של <math>q^2</math> הוא <math>120 \cdot 18 = 2160</math>.
+כלומר <math>E_2(z,z) = 1 + 240q + 2160q^2 + \cdots</math>. מרחב התבניות המודולריות ממשקל 4 עבור <math>\mathrm{SL}_2(\mathbb Z)</math> חד-ממדי, ולכן הצמצום חייב להיות <math>E_4(z) = 1 + 240\sum \sigma_3(n)q^n</math>; ואכן <math>240\sigma_3(1) = 240</math> ו-<math>240\sigma_3(2) = 240\cdot 9 = 2160</math>.
+
+המשכנו את החישוב עד <math>n = 6</math>: המקדמים של <math>E_2(z,z)</math> הם <math>240, 2160, 6720, 17520, 30240, 60480</math>, בדיוק <math>240\sigma_3(n)</math>; והמקדמים של <math>E_4(z,z)</math> (עם הגורם 240) הם <math>480, 61920, 1050240, 7926240, 37500480, 135480960</math>, בדיוק <math>480\sigma_7(n)</math>, כלומר <math>E_4(z,z) = E_8(z)</math>. (בדקנו בחישוב.) זו דרך יפה לראות זהויות בין מספרי מחלקות, סכומי מחלקים וערכי זטא: לדוגמה, השוויון במקדם של <math>q</math> הוא בדיוק השוויון <math>\frac{4}{\zeta_F(-1)}\cdot 2 = \frac{2}{\zeta(-3)}</math>, כלומר <math>240 = 240</math>.
+
+== היסטוריה ==
+התבניות המודולריות האלה, עבור [[שדה ריבועי|שדות ריבועיים ממשיים]], נחקרו לראשונה בעבודת ההביליטציה של אוטו בלומנטל מ-1901 ב[[אוניברסיטת גטינגן]]. בלומנטל מציין שם ש[[דוד הילברט]] עסק בהן לראשונה בעבודה מ-1893–1894 שלא פורסמה. העבודה של בלומנטל פורסמה ב-1903. לכן התבניות האלה נקראות היום לעתים קרובות '''תבניות מודולריות של הילברט–בלומנטל'''.
+
+התורה נשארה רדומה כמה עשורים; אריך הקה השתמש בה בעבודותיו המוקדמות, אבל עניין רב בתבניות מודולריות של הילברט התעורר רק אחרי התפתחות התורה של יריעות מרוכבות. המנה <math>\mathrm{SL}_2(\mathcal O_F)\backslash\mathcal H^2</math> עבור שדה ריבועי ממשי היא '''משטח מודולרי של הילברט''', שפרידריך הירצברוך חקר בפירוט בשנות ה-70.
+
+== ראו גם ==
+* [[תבנית מודולרית של זיגל]]
+* [[תבנית אוטומורפית]]
+* [[פונקציית זטא של דדקינד]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. H. Bruinier, "Hilbert modular forms and their applications", in ''The 1-2-3 of Modular Forms'', Springer, 2008; arXiv:math/0609763
+* P. B. Garrett, ''Holomorphic Hilbert Modular Forms'', Wadsworth & Brooks/Cole, 1990
+* E. Freitag, ''Hilbert Modular Forms'', Springer, 1990
+* G. van der Geer, ''Hilbert Modular Surfaces'', Springer, 1988
+</div>
+
+[[קטגוריה:תבניות אוטומורפיות]]
