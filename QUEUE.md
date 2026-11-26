@@ -298,7 +298,7 @@ Additive number theory:
 - [x] Formula for primes
 - [x] Generation of primes
 - [x] Goldbach's comet
-- [ ] Furstenberg's proof of the infinitude of primes
+- [x] Furstenberg's proof of the infinitude of primes
 - [ ] Backhouse's constant
 - [ ] Gaussian moat
 - [ ] Sierpiński number
