@@ -271,7 +271,7 @@ Additive number theory:
 - [x] Hasse invariant of a quadratic form
 - [x] Smith–Minkowski–Siegel mass formula
 - [x] Unimodular lattice
-- [ ] E8 lattice
+- [x] E8 lattice
 - [ ] Leech lattice
 - [ ] Niemeier lattice
 - [ ] Witt's theorem
