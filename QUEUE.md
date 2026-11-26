@@ -364,7 +364,7 @@ Additive number theory:
 - [x] Stanley sequence
 - [x] Mian–Chowla sequence
 - [ ] Sum-free sequence
-- [ ] Moser–de Bruijn sequence
+- [x] Moser–de Bruijn sequence
 - [ ] Highly cototient number
 - [ ] Sparsely totient number
 - [ ] Home prime
