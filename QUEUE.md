@@ -309,8 +309,8 @@ Additive number theory:
 - [x] Wieferich pair
 - [x] Ruth–Aaron pair
 - [x] Provable prime
-- [ ] Fortune's conjecture
-- [ ] Near-square prime conjecture
+- [x] Fortune's conjecture (מכוסה ב-מספר פורצ'ן)
+- [x] Near-square prime conjecture
 
 ### סדרות של מספרים שלמים (54)
 
