@@ -1,0 +1,142 @@
+ב[[תורת המספרים]], '''נוסחה לראשוניים''' היא [[נוסחה]] שמוציאה [[מספר ראשוני|מספרים ראשוניים]]. נוסחאות כאלה לחישוב ראשוניים קיימות, אבל הן איטיות מאוד מבחינה חישובית בהשוואה ל[[אלגוריתם]] פשוט למציאת ראשוניים. ידועים כמה אילוצים שמראים מה "נוסחה" כזו יכולה ומה היא לא יכולה להיות.
+
+את כל הנוסחאות שבערך בדקנו בחישוב, פרט לאלה שמסומנות אחרת.
+
+== נוסחאות מבוססות על משפט וילסון ==
+נוסחה פשוטה שמפיקה את כל הראשוניים, אם כי ברובם מעורבבים עם הראשוני 2, היא
+:<math>f(n) = \left\lfloor\frac{n! \bmod (n + 1)}n\right\rfloor(n - 1) + 2</math>
+עבור <math>n</math> [[מספר שלם|שלם]] חיובי, כאשר <math>\lfloor\ \rfloor</math> היא [[פונקציית הערך השלם]]. הערכים הראשונים, עבור <math>n = 1, 2, \ldots, 11</math>, הם <math>2, 3, 2, 5, 2, 7, 2, 2, 2, 11, 2</math>.{{הערה|1=בערך האנגלי הרשימה מתחילה ב-"2, 2, 3, 2, 5, ...", עם 2 נוסף בהתחלה (כנראה ערך ל-<math>n = 0</math> במוסכמה של {{OEIS|A118136}}). בחישוב שלנו <math>f(1) = 2</math>, <math>f(2) = 3</math>, ו-<math>f(n) = n + 1</math> בדיוק כש-<math>n + 1</math> ראשוני.|כיווון=שמאל}}
+
+הנוסחה עובדת כי לפי [[משפט וילסון]], <math>n + 1</math> ראשוני אם ורק אם <math>n! \equiv n \pmod{n + 1}</math>. לכן, כש-<math>n + 1</math> ראשוני, הגורם הראשון במכפלה הוא 1, והנוסחה מפיקה את הראשוני <math>n + 1</math>. וכש-<math>n + 1</math> אינו ראשוני, הגורם הראשון הוא אפס, והנוסחה מפיקה את הראשוני 2.{{הערה|1=<span dir="ltr">N. Mackinnon, Prime number formulae, The Mathematical Gazette 71 (1987), pp. 113–114.</span>|כיווון=שמאל}} (למשל עבור <math>n = 4</math>: <math>4! = 24 \equiv 4 \pmod 5</math>, ו-<math>\lfloor4/4\rfloor\cdot3 + 2 = 5</math>; עבור <math>n = 5</math>: <math>5! = 120 \equiv 0 \pmod 6</math>, והתוצאה 2.) הנוסחה אינה דרך יעילה לייצר ראשוניים, כי חישוב <math>n! \bmod (n + 1)</math> דורש בערך <math>n - 1</math> הכפלות וצמצומים מודולו <math>n + 1</math>.
+
+ב-1964 נתן ווילנס את הנוסחה
+:<math>p_n = 1 + \sum_{i=1}^{2^n}\left\lfloor\left(\frac n{\sum_{j=1}^i\left\lfloor\left(\cos\frac{(j - 1)! + 1}j\pi\right)^2\right\rfloor}\right)^{1/n}\right\rfloor</math>
+ל<math>n</math>-י בראשוניים <math>p_n</math>.{{הערה|1=<span dir="ltr">C. P. Willans, On formulae for the nth prime number, The Mathematical Gazette 48 (1964), pp. 413–415.</span>|כיווון=שמאל}} הנוסחה מצטמצמת ל-{{הערה|1=<span dir="ltr">T. B. M. Neill, M. Singer, To the Editor, The Mathematical Gazette 49 (1965), p. 303; R. L. Goodstein, C. P. Wormell, Formulae for primes, The Mathematical Gazette 51 (1967), pp. 35–38.</span>|כיווון=שמאל}}
+:<math>p_n = 1 + \sum_{i=1}^{2^n}[\pi(i) \lt n];</math>
+כלומר, היא מגדירה באופן טאוטולוגי את <math>p_n</math> כשלם הקטן ביותר <math>m</math> שעבורו [[פונקציית ספירת הראשוניים]] <math>\pi(m)</math> היא לפחות <math>n</math>. (הביטוי <math>\lfloor\cos^2(\tfrac{(j-1)!+1}j\pi)\rfloor</math> הוא 1 בדיוק כש-<math>j</math> ראשוני או <math>j = 1</math>, לפי משפט וילסון, ולכן המכנה הוא <math>\pi(i) + 1</math>.) גם הנוסחה הזו אינה יעילה. מלבד ההופעה של <math>(j - 1)!</math>, היא מחשבת את <math>p_n</math> על ידי חיבור <math>p_n</math> עותקים של 1; למשל,
+:<math>p_5 = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 0 + 0 + \cdots + 0 = 11.</math>
+המאמרים "What is an Answer?" של [[הרברט וילף]] (1982){{הערה|1=<span dir="ltr">H. S. Wilf, What is an answer?, American Mathematical Monthly 89 (1982), pp. 289–292.</span>|כיווון=שמאל}} ו-"Formulas for Primes" של אנדרווד דאדלי (1983){{הערה|1=<span dir="ltr">U. Dudley, Formulas for primes, Mathematics Magazine 56 (1983), pp. 17–22.</span>|כיווון=שמאל}} דנים עוד בחוסר התועלת של נוסחאות כאלה.
+
+נוסחה קצרה יותר, מבוססת על משפט וילסון, ניתנה על ידי ג'. פ. ג'ונס ב-1975, כשהיא משתמשת ב-<math>\bmod</math> כפונקציה:{{הערה|שם=Jones75|1=<span dir="ltr">J. P. Jones, Formula for the nth prime number, Canadian Mathematical Bulletin 18 (1975), pp. 433–434.</span>|כיווון=שמאל}}
+:<math>p_n = \sum_{i=0}^{n^2}\left(1 \mathbin{\dot-} \left(\left(\sum_{j=0}^i(j \mathbin{\dot-} 1)!^2 \bmod j\right) \mathbin{\dot-} n\right)\right).</math>
+כאן <math>\dot-</math> הוא אופרטור ה"מונוס", <math>a \mathbin{\dot-} b = \max(a - b, 0)</math>, ו-<math>x \bmod 0</math> מוגדר כ-<math>x</math>. בחישוב שלנו הנוסחה נותנת <math>2, 3, 5, 7, 11, 13, 17</math> עבור <math>n = 1, \ldots, 7</math>.
+
+== נוסחאות נסיגה לראשוניים ==
+=== הנוסחה של גנדי ===
+ב-1971 הוכיח ג'. מ. גנדי ש-
+:<math>p_n = \left\lfloor1 - \log_2\left(s_{n-1} - \frac12\right)\right\rfloor,</math>
+כאשר <math>s_n = \sum_{d\mid p_n\#}\frac{\mu(d)}{2^d - 1}</math>, <math>\mu</math> היא [[פונקציית מביוס]], ו-<math>d</math> עובר על כל המחלקים של <math>p_n\#</math>, ה[[פרימוריאל]] של <math>p_n</math>.{{הערה|1=<span dir="ltr">J. M. Gandhi, Formulae for the nth prime, Proceedings of the Washington State University Conference on Number Theory, 1971, pp. 96–107; C. Vanden Eynden, A proof of Gandhi's formula for the nth prime, American Mathematical Monthly 79 (1972), p. 625.</span>|כיווון=שמאל}}{{הערה|שם=Golomb74|1=<span dir="ltr">S. W. Golomb, A direct interpretation of Gandhi's formula, American Mathematical Monthly 81 (1974), pp. 752–754.</span>|כיווון=שמאל}} יש לראות בנוסחה הזו [[נוסחת נסיגה]] לראשוניים, שמבטאת את <math>p_n</math> בעזרת <math>p_1, p_2, \ldots, p_{n-1}</math>. בחישוב שלנו, הנוסחה נותנת נכון את <math>p_2, \ldots, p_6 = 3, 5, 7, 11, 13</math>.
+
+הביטוי של גנדי ל-<math>s_n</math> נובע מהפעלה של [[הנפה של ארטוסתנס]] בגרסה מותאמת, שפועלת על המעריכים של החזקות של <math>\frac12</math> בסכום <math>\sum_{k=1}^\infty\frac1{2^k}</math>, אחרי <math>n</math> צעדים. ליתר דיוק, גנדי הראה ש-<math>s_n = \frac1{2^1} + \frac1{2^{p_{n+1}}} + \cdots</math>, כאשר הנקודות מייצגות איברים עם מעריכים עולים גדולים מ-<math>p_{n+1}</math>.{{הערה|שם=Golomb74}} (במילים אחרות: אחרי הנפה בראשוניים <math>p_1, \ldots, p_n</math> נשארים בסכום רק 1 והמספרים שאין להם גורם ראשוני קטן, והקטן שבהם הוא <math>p_{n+1}</math>.) יש נוסחאות נסיגה מקבילות שבהן התהליך נעשה ב[[בסיס ספירה]] <math>b</math> אחר מ-2.
+
+ב-2025 פורסם ביטוי פשוט יותר ל-<math>s_n</math>:
+:<math>s_n = \left\{\frac1{2^{p_n\#} - 1}\prod_{i=1}^n\frac{2^{p_n\#} - 2^{p_n\#/p_i}}{2^{p_n\#/p_i} - 1}\right\},</math>
+כאשר <math>\{x\}</math> מסמן את ה[[חלק שברי|חלק השברי]] של <math>x</math>.{{הערה|1=<span dir="ltr">E. Tréfeu, Une jolie récurrence pour les nombres premiers, Quadrature 137, pp. 41–44.</span>|כיווון=שמאל}} הוא מבוסס על שימוש מתוחכם יותר בנפה של ארטוסתנס דרך [[משפט השאריות הסיני]]. בחישוב מדויק (בשברים), הצבת הביטוי בנוסחה של גנדי נותנת נכון את <math>p_2, \ldots, p_5</math>.
+
+=== הנוסחה של גולומב ===
+בהשראת ההוכחה של גנדי, [[סולומון גולומב|גולומב]] הוכיח את נוסחת הנסיגה{{הערה|1=<span dir="ltr">S. Golomb, Formulas for the next prime, Pacific Journal of Mathematics 63 (1976), pp. 401–404.</span>|כיווון=שמאל}}
+:<math>p_n = \lim_{s\to\infty}\left(\zeta(s)\prod_{k=1}^{n-1}(1 - p_k^{-s}) - 1\right)^{-1/s},</math>
+כאשר <math>\zeta</math> היא [[פונקציית זטא של רימן]]. היא מבוססת על [[מכפלת אוילר]] של <math>\zeta</math>: המכפלה מוחקת מ-<math>\zeta(s) = \sum m^{-s}</math> את כל המספרים שמתחלקים ב-<math>p_1, \ldots, p_{n-1}</math>, ונשאר <math>1 + p_n^{-s} + \cdots</math>.
+
+== קבועים שמייצגים את הראשוניים ==
+אפשר להשתמש ב[[שבר משולב|שברים משולבים]] כדי להגדיר את הקבוע <math>u_1 = [p_1; p_2, p_3, \ldots] = 2.31303673643\ldots</math> ({{OEIS|A064442}}), שממנו אפשר לשחזר את סדרת הראשוניים בעזרת הנסיגה <math>u_{n+1} = (u_n - \lfloor u_n\rfloor)^{-1}</math>, כך ש-<math>p_n = \lfloor u_n\rfloor</math>.
+
+בנייה חלופית ניתנה על ידי פרידמן ועמיתיו.{{הערה|1=<span dir="ltr">D. Fridman, J. Garbulsky, B. Glecer, J. Grime, M. Tron Florentin, A prime-representing constant, American Mathematical Monthly 126 (2019), pp. 70–73.</span>|כיווון=שמאל}} בהינתן הקבוע <math>f_1 = 2.920050977316\ldots</math> ({{OEIS|A249270}}), מגדירים עבור <math>n \ge 2</math> את הסדרה
+:<math>f_n = \lfloor f_{n-1}\rfloor\left(f_{n-1} - \lfloor f_{n-1}\rfloor + 1\right). \qquad (1)</math>
+אז <math>p_n = \lfloor f_n\rfloor</math> לכל <math>n \ge 1</math>. הקבוע <math>f_1 = 2.920050977316</math> שניתן במאמר מדויק מספיק כדי שנוסחה (1) תפיק את הראשוניים עד 37, הראשוני ה-12. הערך ''המדויק'' של <math>f_1</math>, שמפיק ''את כל'' הראשוניים, נתון על ידי ה[[טור (מתמטיקה)|טור]] המתכנס מהר
+:<math>f_1 = \sum_{n=1}^\infty\frac{p_n - 1}{p_{n-1}\#} = \frac{2 - 1}1 + \frac{3 - 1}2 + \frac{5 - 1}{2\cdot3} + \frac{7 - 1}{2\cdot3\cdot5} + \cdots.</math>
+ככל שיודעים יותר ספרות של <math>f_1</math>, נוסחה (1) מפיקה יותר ראשוניים. למשל, עם 25 איברים בטור (25 הראשוניים הקטנים מ-100) מקבלים את הקירוב המדויק יותר
+:<math>f_1 \simeq 2.920050977316134712092562917112019,</math>
+שיש בו מספיק ספרות כדי שנוסחה (1) תפיק שוב את 25 הראשוניים הקטנים מ-100. (בדקנו גם את <math>u_1</math> וגם את <math>f_1</math> בחישוב ברמת דיוק גבוהה.)
+
+== הנוסחה של מילס ==
+הנוסחה הראשונה מהסוג הזה נמצאה על ידי ו. ה. מילס ב-1947, שהוכיח שיש [[מספר ממשי]] <math>A</math> כך שאם <math>d_n = A^{3^n}</math>, אז
+:<math>\lfloor d_n\rfloor = \left\lfloor A^{3^n}\right\rfloor</math>
+ראשוני לכל שלם חיובי <math>n</math>.{{הערה|1=<span dir="ltr">W. H. Mills, A prime-representing function, Bulletin of the American Mathematical Society 53 (1947), p. 604.</span>|כיווון=שמאל}} אם [[השערת רימן]] נכונה, אז ל-<math>A</math> הקטן ביותר כזה יש ערך של בערך <math>1.3063778838630806904686144926\ldots</math> ({{OEIS|A051021}}), והוא נקרא [[קבוע מילס]].{{הערה|1=<span dir="ltr">C. K. Caldwell, Y. Cheng, Determining Mills' constant and a note on Honaker's problem, Journal of Integer Sequences 8 (2005), Article 05.4.1.</span>|כיווון=שמאל}} הערך הזה נותן את הראשוניים <math>\lfloor d_1\rfloor = 2</math>, <math>\lfloor d_2\rfloor = 11</math>, <math>\lfloor d_3\rfloor = 1361</math>, ... ({{OEIS|A051254}}). ידוע מעט מאוד על הקבוע <math>A</math>. לנוסחה הזו אין ערך מעשי, כי אין דרך ידועה לחשב את הקבוע בלי למצוא קודם ראשוניים.
+
+אין שום דבר מיוחד בפונקציית הערך השלם בנוסחה. טות הוכיח שיש גם קבוע <math>B</math> כך ש-<math>\left\lceil B^{r^n}\right\rceil</math> מייצג ראשוניים עבור <math>r \gt 2.106\ldots</math>.{{הערה|1=<span dir="ltr">L. Tóth, A variation on Mills-like prime-representing functions, Journal of Integer Sequences 20 (2017), Article 17.9.8.</span>|כיווון=שמאל}} במקרה <math>r = 3</math>, הקבוע <math>B</math> מתחיל ב-<math>1.24055470525201424067\ldots</math>, והראשוניים הראשונים שהוא מפיק הם
+:<math>2, 7, 337, 38272739, 56062005704198360319209,</math>
+:<math>176199995814327287356671209104585864397055039072110696028654438846269, \ldots</math>
+(בדקנו את ארבעת הראשונים ואת ראשוניותם).
+
+''בלי'' להניח את השערת רימן, אלסהולץ פיתח כמה [[פונקציה (מתמטיקה)|פונקציות]] שמייצגות ראשוניים, בדומה לאלה של מילס. למשל, אם <math>A = 1.00536773279814724017\ldots</math>, אז <math>\left\lfloor A^{10^{10n}}\right\rfloor</math> ראשוני לכל שלם חיובי <math>n</math>. באופן דומה, אם <math>A = 3.8249998073439146171615551375\ldots</math>, אז <math>\left\lfloor A^{3^{13n}}\right\rfloor</math> ראשוני לכל שלם חיובי <math>n</math>.{{הערה|1=<span dir="ltr">C. Elsholtz, Unconditional prime-representing functions, following Mills, American Mathematical Monthly 127 (2020), pp. 639–642.</span> (את הערכים האלה לא בדקנו: כבר המספר הראשון בכל אחת מהסדרות בן מיליוני ספרות.)|כיווון=שמאל}}
+
+== הנוסחה של רייט ==
+נוסחה שמייצרת ראשוניים בגידול "טטרציוני", דומה לזו של מילס, באה ממשפט של א. מ. רייט. הוא הוכיח שיש מספר ממשי <math>\alpha</math> כך שאם <math>g_0 = \alpha</math> ו-<math>g_{n+1} = 2^{g_n}</math> עבור <math>n \ge 0</math>, אז
+:<math>\lfloor g_n\rfloor = \left\lfloor2^{\cdots^{2^{2^\alpha}}}\right\rfloor</math>
+ראשוני לכל <math>n \ge 1</math>.{{הערה|1=<span dir="ltr">E. M. Wright, A prime-representing function, American Mathematical Monthly 58 (1951), pp. 616–618.</span>|כיווון=שמאל}} רייט נותן את שבע הספרות העשרוניות הראשונות של קבוע כזה: <math>\alpha = 1.9287800</math>. הערך הזה נותן את הראשוניים <math>\lfloor g_1\rfloor = \lfloor2^\alpha\rfloor = 3</math>, <math>\lfloor g_2\rfloor = 13</math> ו-<math>\lfloor g_3\rfloor = 16381</math>. <math>\lfloor g_4\rfloor</math> זוגי, ולכן אינו ראשוני. אבל עם <math>\alpha = 1.9287800 + 8.2843\cdot10^{-4933}</math>, הערכים <math>\lfloor g_1\rfloor</math>, <math>\lfloor g_2\rfloor</math>, <math>\lfloor g_3\rfloor</math> לא משתנים, ו-<math>\lfloor g_4\rfloor</math> הוא ראשוני בן 4932 ספרות.{{הערה|1=<span dir="ltr">R. Baillie, Wright's fourth prime, arXiv:1705.09741, 2017.</span>|כיווון=שמאל}} אי אפשר להמשיך את סדרת הראשוניים הזו מעבר ל-<math>\lfloor g_4\rfloor</math> בלי לדעת עוד ספרות של <math>\alpha</math>. כמו הנוסחה של מילס, ומאותן סיבות, אי אפשר להשתמש בנוסחה של רייט כדי למצוא ראשוניים.
+
+== הנוסחאות של פלוף ==
+ב-2018 שיער [[סיימון פלוף]] קבוצה של נוסחאות לראשוניים. בדומה לנוסחה של מילס, הן מהצורה
+:<math>\left\{a_0^{r^n}\right\},</math>
+כאשר <math>\{\ \}</math> היא פונקציית העיגול לשלם הקרוב. למשל, עם <math>a_0 \approx 43.80468771580293481</math> ו-<math>r = 5/4</math>, מתקבלים <math>113, 367, 1607, 10177, 102217, \ldots</math> ({{OEIS|A323176}}; בדקנו את חמשת הראשונים). עם <math>a_0 = 10^{500} + 961 + \varepsilon</math> ו-<math>r = 1.01</math>, כאשר <math>\varepsilon</math> מספר מסוים בין 0 לחצי, פלוף מצא שהוא יכול לייצר סדרה של 50 [[ראשוני הסתברותי|ראשוניים הסתברותיים]] (ראשוניים בסבירות גבוהה מאוד). כנראה יש <math>\varepsilon</math> שעבורו הנוסחה תיתן סדרה אינסופית של ראשוניים אמיתיים. מספר הספרות מתחיל ב-501 וגדל בערך ב-1% בכל פעם.{{הערה|1=<span dir="ltr">K. Steckles, Mathematician's record-beating formula can generate 50 prime numbers, New Scientist, January 2019; S. Plouffe, A set of formulas for primes, arXiv:1901.01849.</span> נכון לינואר 2019, המספר שפלוף נותן בנספח כ"מספר ה-50" הוא למעשה ה-48.|כיווון=שמאל}}
+
+== נוסחאות לראשוניים ופונקציות פולינומיות ==
+ידוע שאין [[פולינום]] לא קבוע <math>P(n)</math> עם מקדמים שלמים שמקבל ערך ראשוני לכל שלם <math>n</math>. ההוכחה: נניח שיש פולינום כזה. אז <math>P(1)</math> ראשוני <math>p</math>, כך ש-<math>P(1) \equiv 0 \pmod p</math>. אבל לכל שלם <math>k</math> גם <math>P(1 + kp) \equiv 0 \pmod p</math>, ולכן <math>P(1 + kp)</math> לא יכול להיות ראשוני (כי הוא מתחלק ב-<math>p</math>) אלא אם הוא <math>p</math> עצמו. אבל הדרך היחידה ש-<math>P(1 + kp) = P(1) = p</math> לכל <math>k</math> היא שהפולינום קבוע. אותו נימוק מראה תוצאה חזקה עוד יותר: אין פולינום לא קבוע שמקבל ערך ראשוני עבור [[כמעט כל]] השלמים <math>n</math>.
+
+[[לאונרד אוילר|אוילר]] הבחין לראשונה (ב-1772) שהפולינום ה[[פולינום ריבועי|ריבועי]]
+:<math>P(n) = n^2 + n + 41</math>
+ראשוני עבור 40 השלמים <math>n = 0, 1, 2, \ldots, 39</math>, עם הראשוניים <math>41, 43, 47, 53, 61, 71, \ldots, 1601</math>. ההפרשים בין האיברים הם <math>2, 4, 6, 8, 10, \ldots</math>. עבור <math>n = 40</math> הוא נותן [[מספר ריבועי]], <math>1681 = 41\times41</math>, המספר ה[[מספר פריק|פריק]] הקטן ביותר שהנוסחה נותנת עבור <math>n \ge 0</math>. אם 41 מחלק את <math>n</math>, הוא מחלק גם את <math>P(n)</math>; ובנוסף, כיוון ש-<math>P(n) = n(n + 1) + 41</math>, אם 41 מחלק את <math>n + 1</math>, הוא מחלק את <math>P(n)</math>. התופעה קשורה ל[[ספירלת אולם]], שגם היא ריבועית במובלע, ול[[מספר המחלקות]]; הפולינום הזה קשור ל[[מספר הגנר]] <math>163 = 4\cdot41 - 1</math>. יש פולינומים מקבילים עבור <math>p = 2, 3, 5, 11, 17</math> ([[המספרים המזליים של אוילר]]), שמתאימים למספרי הגנר אחרים.
+
+בהינתן שלם חיובי <math>S</math>, ייתכנו אינסוף ערכים של <math>c</math> כך שהביטוי <math>n^2 + n + c</math> תמיד זר ל-<math>S</math>. השלם <math>c</math> יכול להיות שלילי, ואז יש עיכוב לפני שמתחילים להתקבל ראשוניים.
+
+באופן דומה, פולינומים אחרים (ממעלה גבוהה יותר) מפיקים סדרות סופיות של ראשוניים.{{הערה|1=<span dir="ltr">F. Dress, B. Landreau, Polynômes de degré supérieur à 2 prenant beaucoup de valeurs premières, arXiv:1402.7312, 2014.</span>|כיווון=שמאל}} ב-2010 מצאו דרס ולנדרו את הפולינום הבא, שמייצג מספר שיא של 58 ראשוניים בערכים עוקבים:
+:<math>Q(n) = \frac1{72}n^6 - \frac5{24}n^5 - \frac{1493}{72}n^4 + \frac{1027}8n^3 + \frac{100471}{18}n^2 - \frac{11971}6n - 57347.</math>
+ליתר דיוק, <math>|Q(n)|</math> ראשוני עבור <math>n</math> מ-<math>-42</math> עד 15. (בחישוב שלנו: כל 58 הערכים שלמים, ראשוניים ושונים זה מזה; ב-<math>n = -43</math> וב-<math>n = 16</math> הערכים אינם ראשוניים.)
+
+ידוע, לפי [[משפט דיריכלה על ראשוניים בסדרות חשבוניות]], שפולינומים לינאריים <math>L(n) = an + b</math> מפיקים אינסוף ראשוניים בתנאי ש-<math>a</math> ו-<math>b</math> [[מספרים זרים|זרים]] (אם כי אף פונקציה כזו לא מקבלת ערכים ראשוניים לכל <math>n</math>). יתרה מזאת, [[משפט גרין–טאו]] אומר שלכל <math>k</math> יש זוג <math>a, b</math> כך ש-<math>L(n) = an + b</math> ראשוני לכל <math>n</math> מ-0 עד <math>k - 1</math>. אבל נכון ל-2020, התוצאה הטובה ביותר מהסוג הזה היא עבור <math>k = 27</math>:
+:<math>224584605939537911 + 18135696597948930n</math>
+ראשוני לכל <math>n</math> מ-0 עד 26.{{הערה|1=<span dir="ltr">PrimeGrid's AP27 Search, Official announcement; Jens Kruse Andersen, Primes in Arithmetic Progression Records.</span> בדקנו את ראשוניות 27 האיברים; האיבר ה-28 (<math>n = 27</math>) אינו ראשוני.|כיווון=שמאל}} אפילו לא ידוע אם יש [[פולינום]] במשתנה אחד ממעלה לפחות 2 שמקבל אינסוף ערכים ראשוניים; ראו [[השערת בוניאקובסקי]].
+
+== הסדרה של רולנד שמייצרת ראשוניים ==
+מחולל ראשוניים נוסף מוגדר על ידי [[נוסחת נסיגה|נוסחת הנסיגה]]
+:<math>a_n = a_{n-1} + \gcd(n, a_{n-1}), \qquad a_1 = 7,</math>
+כאשר <math>\gcd</math> היא פונקציית [[מחלק משותף מקסימלי|המחלק המשותף המקסימלי]]. סדרת ההפרשים <math>a_{n+1} - a_n</math> מתחילה ב-
+:<math>1, 1, 1, 5, 3, 1, 1, 1, 1, 11, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 23, 3, 1, \ldots, 1, 47, 3, 1, 5, 3, \ldots</math>
+({{OEIS|A132199}}; בדקנו את 50 האיברים הראשונים). רולנד הוכיח ב-2008 שהסדרה מכילה רק אחדות ומספרים ראשוניים.{{הערה|שם=Row|1=<span dir="ltr">E. S. Rowland, A natural prime-generating recurrence, Journal of Integer Sequences 11 (2008), Article 08.2.8.</span>|כיווון=שמאל}} אבל היא אינה מכילה את כל הראשוניים, כי האיברים <math>\gcd(n + 1, a_n)</math> תמיד [[מספר אי-זוגי|אי-זוגיים]], ולכן לעולם אינם 2. באותו מאמר משוער שהסדרה מכילה את כל הראשוניים האי-זוגיים; למעשה, 587 הוא הראשוני האי-זוגי הקטן ביותר שאינו מופיע ב-10,000 התוצאות הראשונות השונות מ-1.{{הערה|שם=Row}}
+
+הנסיגה הזו לא יעילה למדי. לשם השוואה, טריוויאלי לכתוב אלגוריתם שמייצר את כל הראשוניים (מההגדרה), וידועים [[ייצור ראשוניים|אלגוריתמים יעילים הרבה יותר]]. לכן נוסחאות נסיגה כאלה הן יותר עניין של סקרנות מאשר שימוש מעשי.
+
+== מערכת משוואות דיופנטיות שמתארת את הראשוניים ==
+כיוון שקבוצת הראשוניים היא [[קבוצה ניתנת למנייה רקורסיבית|ניתנת למנייה חישובית]], לפי [[משפט מטיאסביץ']] אפשר לקבל אותה ממערכת של [[משוואה דיופנטית|משוואות דיופנטיות]]. ג'ונס, סאטו, ואדה ווינס (1976) מצאו קבוצה מפורשת של 14 משוואות דיופנטיות ב-26 משתנים <math>a, b, \ldots, z</math>, כך שמספר נתון <math>k + 2</math> הוא ראשוני [[אם ורק אם]] למערכת יש פתרון בשלמים אי-שליליים:{{הערה|שם=JSWW|1=<span dir="ltr">J. P. Jones, D. Sato, H. Wada, D. Wiens, Diophantine representation of the set of prime numbers, American Mathematical Monthly 83 (1976), pp. 449–464.</span>|כיווון=שמאל}}
+:<math>\begin{align}
+\alpha_0 &= wz + h + j - q = 0 \\
+\alpha_1 &= (gk + 2g + k + 1)(h + j) + h - z = 0 \\
+\alpha_2 &= 16(k + 1)^3(k + 2)(n + 1)^2 + 1 - f^2 = 0 \\
+\alpha_3 &= 2n + p + q + z - e = 0 \\
+\alpha_4 &= e^3(e + 2)(a + 1)^2 + 1 - o^2 = 0 \\
+\alpha_5 &= (a^2 - 1)y^2 + 1 - x^2 = 0 \\
+\alpha_6 &= 16r^2y^4(a^2 - 1) + 1 - u^2 = 0 \\
+\alpha_7 &= n + \ell + v - y = 0 \\
+\alpha_8 &= (a^2 - 1)\ell^2 + 1 - m^2 = 0 \\
+\alpha_9 &= ai + k + 1 - \ell - i = 0 \\
+\alpha_{10} &= ((a + u^2(u^2 - a))^2 - 1)(n + 4dy)^2 + 1 - (x + cu)^2 = 0 \\
+\alpha_{11} &= p + \ell(a - n - 1) + b(2an + 2a - n^2 - 2n - 2) - m = 0 \\
+\alpha_{12} &= q + y(a - p - 1) + s(2ap + 2a - p^2 - 2p - 2) - x = 0 \\
+\alpha_{13} &= z + p\ell(a - p) + t(2ap - p^2 - 1) - pm = 0
+\end{align}</math>
+בעזרת 14 המשוואות <math>\alpha_0, \ldots, \alpha_{13}</math> אפשר לקבל אי-שוויון פולינומי שמייצר ראשוניים ב-26 משתנים:
+:<math>(k + 2)\left(1 - \alpha_0^2 - \alpha_1^2 - \cdots - \alpha_{13}^2\right) \gt 0.</math>
+קבוצת המספרים הראשוניים זהה לקבוצת הערכים החיוביים שאגף שמאל מקבל כשהמשתנים <math>a, b, \ldots, z</math> עוברים על השלמים האי-שליליים. (אם כל ה-<math>\alpha_i</math> מתאפסים, הערך הוא <math>k + 2</math>; אחרת הגורם השני הוא לכל היותר 0.)
+
+משפט כללי של [[יורי מטיאסביץ']] אומר שאם קבוצה מוגדרת על ידי מערכת משוואות דיופנטיות, אפשר להגדיר אותה גם על ידי מערכת משוואות דיופנטיות ב-9 משתנים בלבד.{{הערה|1=<span dir="ltr">Yu. V. Matiyasevich, Formulas for prime numbers, in: S. Tabachnikov (ed.), Kvant Selecta: Algebra and Analysis II, AMS, 1999, pp. 13–24.</span>|כיווון=שמאל}} לכן יש אי-שוויון פולינומי שמייצר ראשוניים כמו שלעיל עם 10 משתנים בלבד. אבל המעלה שלו גדולה (מסדר <math>10^{45}</math>). מצד שני, יש גם מערכת משוואות כזו ממעלה 4 בלבד, אבל ב-58 משתנים.{{הערה|1=<span dir="ltr">J. P. Jones, Universal diophantine equation, Journal of Symbolic Logic 47 (1982), pp. 549–571.</span>|כיווון=שמאל}}
+
+== ראו גם ==
+* [[משפט המספרים הראשוניים]]
+* [[קבוע מילס]]
+* [[ייצור ראשוניים]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* S. Regimbal, An explicit formula for the k-th prime number, ''Mathematics Magazine'' '''48''' (1975), 230–232
+* M. Prunescu, J. M. Shunia, On arithmetic terms expressing the prime-counting function and the n-th prime, arXiv:2412.14594, 2024
+</div>
+
+== קישורים חיצוניים ==
+* {{MathWorld|urlname=PrimeFormulas|title=Prime Formulas}}
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:מספרים ראשוניים]]
+[[קטגוריה:נוסחאות]]

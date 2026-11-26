@@ -295,7 +295,7 @@ Additive number theory:
 ### מספרים ראשוניים ותורת המספרים האדיטיבית (17)
 
 - [x] Cunningham chain
-- [ ] Formula for primes
+- [x] Formula for primes
 - [ ] Generation of primes
 - [ ] Goldbach's comet
 - [ ] Furstenberg's proof of the infinitude of primes
