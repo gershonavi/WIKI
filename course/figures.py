@@ -6671,6 +6671,136 @@ def _():
     save('22-6')
 
 
+
+# ---------- lesson 23: automorphic forms and Langlands ----------
+def _eta_eta23(N):
+    c = [0] * N; c[0] = 1
+    def mulf(c, e):
+        d = c[:]
+        for i in range(e, N): d[i] -= c[i - e]
+        return d
+    for n in range(1, N):
+        c = mulf(c, n)
+        if 23 * n < N: c = mulf(c, 23 * n)
+    return [0] + c[:N - 1]
+
+
+@fig('23-e1')
+def _():
+    ax = plt.gca(); ax.axis('off'); ax.set_xlim(0, 10); ax.set_ylim(0, 6)
+    rows = [('GL(1)', 'χ_{−4}: Gal(ℚ(i)/ℚ) → {±1}', 'Dirichlet character χ_{−4} mod 4'),
+            ('GL(2), weight 1', 'S₃-rep of x³ − x − 1 (dim 2)', 'η(τ)η(23τ)'),
+            ('GL(2), weight 2', 'Tate module of 11a', 'η(τ)²η(11τ)²'),
+            ('GL(2), weight 12', 'Deligne\'s ℓ-adic rep', 'Δ = Σ τ(n)qⁿ')]
+    ax.text(2.2, 5.5, 'Galois side', ha='center', fontsize=10, weight='bold')
+    ax.text(7.6, 5.5, 'automorphic side', ha='center', fontsize=10, weight='bold')
+    for i, (g, l, r) in enumerate(rows):
+        y = 4.5 - i * 1.1
+        ax.add_patch(plt.Rectangle((0.2, y - 0.35), 4.0, 0.7, fc='#e8f0fb', ec=C1))
+        ax.add_patch(plt.Rectangle((5.6, y - 0.35), 4.0, 0.7, fc='#fdece8', ec=C2))
+        ax.text(2.2, y, l, ha='center', va='center', fontsize=8); ax.text(7.6, y, r, ha='center', va='center', fontsize=8)
+        ax.annotate('', xy=(5.55, y), xytext=(4.25, y), arrowprops=dict(arrowstyle='<->', color='k'))
+        ax.text(4.9, y + 0.22, g, ha='center', fontsize=7, color=GR)
+    ax.set_title('the Langlands dictionary: same L-function on both sides', fontsize=9)
+    save('23-e1')
+
+
+@fig('23-e2')
+def _():
+    ax = plt.gca(); N = 500; a = _eta_eta23(N); ps = [p for p in PR if p < N]
+    col = {2: C3, 0: GR, -1: C1, 1: C4}
+    ax.scatter(ps, [a[p] for p in ps], c=[col[a[p]] for p in ps], s=14)
+    ax.set_yticks([-1, 0, 1, 2]); ax.set_yticklabels(['−1: 3-cycle (no root)', '0: transposition (1 root)', '1: p = 23', '2: identity (3 roots)'], fontsize=7)
+    ax.set_xlabel('p'); ax.set_title('coefficients a(p) of η(τ)η(23τ) = traces of Frob_p on the S₃ representation', fontsize=8)
+    save('23-e2')
+
+
+@fig('23-e3')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 20000 and p != 11]
+    ks = [2, 4, 6]; w = 0.27
+    for j, (f, name, col) in enumerate(((_f11a, '11a (no CM)', C1), (lambda x: x ** 3 - x, 'y² = x³ − x (CM)', C2))):
+        t = np.array([_ec_ap_short(f, p) / sqrt(p) for p in ps])
+        ax.bar(np.arange(3) + (j - 1) * w, [np.mean(t ** k) for k in ks], w, color=col, label=name)
+    ax.bar(np.arange(3) + w, [1, 2, 5], w, color=GR, label='semicircle: Catalan 1, 2, 5')
+    ax.set_xticks(range(3)); ax.set_xticklabels([f'E[(a_p/√p)^{k}]' for k in ks])
+    ax.legend(fontsize=8); ax.set_title('moments of a_p/√p over p < 20000', fontsize=9)
+    save('23-e3')
+
+
+@fig('23-e4')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 20000 and p != 11]
+    t = np.array([_ec_ap_short(_f11a, p) ** 2 / p for p in ps])
+    ax.plot(ps, np.cumsum(t) / np.arange(1, len(t) + 1), color=C1)
+    ax.axhline(1, color=C2, ls=':'); ax.set_xscale('log')
+    ax.set_xlabel('x'); ax.set_ylabel('mean of a_p²/p over p ≤ x')
+    ax.set_title('Rankin–Selberg: the average of a_p²/p tends to 1 (11a)', fontsize=9)
+    save('23-e4')
+
+
+@fig('23-1')
+def _():
+    ax = plt.gca(); K = 300
+    chi = lambda n: 1 if n % 3 == 1 else (-1 if n % 3 == 2 else 0)
+    s = np.cumsum([chi(n) / n for n in range(1, K)])
+    ax.plot(range(1, K), s, color=C1, lw=0.8); ax.axhline(pi / (3 * sqrt(3)), color=C2, ls=':')
+    ax.set_xlabel('N'); ax.set_ylabel('Σ_{n ≤ N} χ₋₃(n)/n'); ax.set_title('L(χ₋₃, 1) = π/(3√3) ≈ 0.6046', fontsize=9)
+    save('23-1')
+
+
+@fig('23-2')
+def _():
+    ax = plt.gca(); a = _eta_eta23(100); ns = list(range(1, 100))
+    ax.bar(ns, [a[n] for n in ns], color=[C1 if a[n] >= 0 else C2 for n in ns])
+    ax.set_xlabel('n'); ax.set_title('η(τ)η(23τ) = Σ a(n)qⁿ, n < 100', fontsize=9)
+    save('23-2')
+
+
+@fig('23-3')
+def _():
+    ax = plt.gca(); t = np.linspace(0, 2 * pi, 300); ax.plot(np.cos(t), np.sin(t), color=GR)
+    for p in [p for p in PR if p < 200 and p != 11]:
+        ap = _ec_ap_short(_f11a, p) if p > 2 else -2
+        z = complex(ap / sqrt(p), sqrt(max(0, 4 - ap * ap / p))) / 2
+        c = C2 if p == 2 else C1
+        ax.plot([z.real, z.real], [z.imag, -z.imag], 'o', color=c, ms=6 if p == 2 else 3)
+    ax.text(-0.95, 0.75, 'p = 2: e^(±3πi/4)', color=C2, fontsize=8)
+    ax.set_aspect('equal'); ax.set_title('Satake parameters of 11a, p < 200', fontsize=9)
+    save('23-3')
+
+
+@fig('23-4')
+def _():
+    ax = plt.gca(); th = np.linspace(0, pi, 2000); dens = 2 / pi * np.sin(th) ** 2
+    ks = range(0, 7)
+    mom = [np.trapezoid((2 * np.cos(th)) ** (2 * k) * dens, th) for k in ks]
+    cat = [math.comb(2 * k, k) // (k + 1) for k in ks]
+    ax.semilogy(list(ks), mom, 'o', color=C1, label='∫ (2cos θ)^{2k} (2/π) sin²θ dθ')
+    ax.semilogy(list(ks), cat, 'x', color=C2, ms=9, label='Catalan C_k')
+    ax.legend(fontsize=8); ax.set_xlabel('k'); ax.set_title('moments of the Sato–Tate measure are Catalan numbers', fontsize=9)
+    save('23-4')
+
+
+@fig('23-5')
+def _():
+    ax = plt.gca(); N = 3000; a = _eta_eta23(N); ps = [p for p in PR if p < N]
+    vals = [-1, 0, 1, 2]; cnt = [sum(1 for p in ps if a[p] == v) for v in vals]
+    ax.bar([str(v) for v in vals], [c / len(ps) for c in cnt], color=[C1, GR, C4, C3])
+    for i, c in enumerate(cnt): ax.text(i, c / len(ps) + 0.01, str(c), ha='center', fontsize=8)
+    ax.set_ylabel('fraction of p < 3000'); ax.set_title('a(p) of η(τ)η(23τ): Chebotarev predicts 1/3, 1/2, 0, 1/6', fontsize=9)
+    save('23-5')
+
+
+@fig('23-6')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 2000 and p != 11]
+    e1 = [(_ec_ap_short(_f11a, p) ** 2 - p) / p for p in ps]
+    ax.scatter(ps, e1, s=4, color=C1); ax.axhline(3, color=C2, ls=':'); ax.axhline(-1, color=C2, ls=':')
+    ax.set_xlabel('p'); ax.set_ylabel('(a_p² − p)/p'); ax.set_title('normalized Sym² coefficient of 11a lies in [−1, 3]', fontsize=9)
+    save('23-6')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
