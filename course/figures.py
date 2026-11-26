@@ -5968,6 +5968,185 @@ def _():
     save('19-6')
 
 
+# ---------- lesson 19a: class field theory ----------
+def _roots_mod(f, p):
+    return sum(1 for x in range(p) if f(x) % p == 0)
+
+
+def _leg(a, p):
+    a %= p
+    if a == 0: return 0
+    return 1 if pow(a, (p - 1) // 2, p) == 1 else -1
+
+
+@fig('19a-e1')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 5 < p < 100000]
+    cnt = [sum(1 for p in ps if p % 5 == r) for r in (1, 2, 3, 4)]
+    ax.bar(['1', '2', '3', '4'], cnt, color=[C3, C1, C1, C1])
+    for i, c in enumerate(cnt): ax.text(i, c + 30, str(c), ha='center', fontsize=8)
+    ax.set_xlabel('p mod 5  (Frob_p = σ_p in Gal(Q(ζ₅)/Q))'); ax.set_ylabel('# primes < 10⁵')
+    ax.set_title('Artin map for Q(ζ₅): green = splits completely', fontsize=9)
+    save('19a-e1')
+
+
+@fig('19a-e2')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 400 and p != 5]
+    f1 = lambda p: any(x * x + 5 * y * y == p for x in range(21) for y in range(10))
+    f2 = lambda p: any(2 * x * x + 2 * x * y + 3 * y * y == p for x in range(-20, 21) for y in range(-20, 21))
+    for p in ps:
+        c = C3 if f1(p) else (C4 if f2(p) else GR)
+        ax.scatter(p, p % 20, color=c, s=14)
+    ax.set_yticks([1, 3, 7, 9, 11, 13, 17, 19]); ax.set_xlabel('p'); ax.set_ylabel('p mod 20')
+    ax.set_title('green: p = x²+5y²,  orange: p = 2x²+2xy+3y²,  grey: neither', fontsize=9)
+    save('19a-e2')
+
+
+@fig('19a-e3')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if p < 300 and p != 7]
+    f = lambda x: x ** 3 + x * x - 2 * x - 1
+    r = [_roots_mod(f, p) for p in ps]
+    ax.scatter(ps, [p % 7 for p in ps], c=[C3 if k == 3 else GR for k in r], s=16)
+    ax.set_yticks(range(7)); ax.set_xlabel('p'); ax.set_ylabel('p mod 7')
+    ax.set_title('x³+x²−2x−1 has 3 roots mod p (green) iff p ≡ ±1 (mod 7)', fontsize=9)
+    save('19a-e3')
+
+
+@fig('19a-e4')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if p < 600 and p != 23]
+    f = lambda x: x ** 3 - x - 1
+    rep = lambda p: any(x * x + x * y + 6 * y * y == p for x in range(-60, 61) for y in range(0, 30))
+    for p in ps:
+        k = _roots_mod(f, p)
+        ax.scatter(p, k, color=C3 if rep(p) else (C1 if k == 1 else GR), s=14)
+    ax.set_yticks([0, 1, 3]); ax.set_xlabel('p'); ax.set_ylabel('# roots of x³−x−1 mod p')
+    ax.set_title('green: p = x²+xy+6y² (splits completely in the Hilbert class field of Q(√−23))', fontsize=8)
+    save('19a-e4')
+
+
+def _hilb(a, b, p):
+    def v(n):
+        k = 0
+        while n % p == 0: n //= p; k += 1
+        return k
+    al, be = v(a), v(b); u, w = a // p ** al, b // p ** be
+    if p != 2:
+        return (-1) ** (al * be * ((p - 1) // 2)) * _leg(u, p) ** be * _leg(w, p) ** al
+    e = lambda x: ((x - 1) // 2) % 2
+    om = lambda x: ((x * x - 1) // 8) % 2
+    return (-1) ** (e(u) * e(w) + al * om(w) + be * om(u))
+
+
+@fig('19a-e5')
+def _():
+    vals = [-1, 2, 3, 5, 6, -3, 7]
+    fig_, axs = plt.subplots(1, 3, figsize=(7.2, 2.8))
+    for ax, p in zip(axs, (2, 3, 5)):
+        M = np.array([[_hilb(a, b, p) for b in vals] for a in vals])
+        ax.imshow(M, cmap='RdYlGn', vmin=-1, vmax=1)
+        ax.set_xticks(range(len(vals))); ax.set_xticklabels(vals, fontsize=7)
+        ax.set_yticks(range(len(vals))); ax.set_yticklabels(vals, fontsize=7)
+        ax.set_title(f'(a, b)_{p}', fontsize=9)
+    save('19a-e5')
+
+
+@fig('19a-e6')
+def _():
+    ax = plt.gca(); w = cmath.exp(2j * pi / 3)
+    t = np.linspace(0, 2 * pi, 200); ax.plot(np.cos(t), np.sin(t), color=GR, lw=0.8)
+    for p in [p for p in PR if p % 3 == 1 and p < 400]:
+        g = next(g for g in range(2, p) if all(pow(g, (p - 1) // q, p) != 1 for q in set(_pf(p - 1))))
+        ind = {pow(g, k, p): k for k in range(p - 1)}
+        chi = lambda a: 0 if a % p == 0 else w ** (ind[a % p] % 3)
+        J = sum(chi(a) * chi(1 - a) for a in range(p)) / sqrt(p)
+        ax.plot(J.real, J.imag, 'o', color=C1, ms=3)
+    ax.set_aspect('equal'); ax.set_title('Jacobi sums J(χ,χ)/√p for cubic χ, p ≡ 1 (mod 3), p < 400', fontsize=9)
+    save('19a-e6')
+
+
+def _pf(n):
+    out, d = [], 2
+    while d * d <= n:
+        while n % d == 0: out.append(d); n //= d
+        d += 1
+    if n > 1: out.append(n)
+    return out
+
+
+@fig('19a-1')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 400]
+    ax.scatter(ps, [p % 8 for p in ps], c=[C3 if p % 8 in (1, 7) else C2 for p in ps], s=14)
+    ax.set_yticks([1, 3, 5, 7]); ax.set_xlabel('p'); ax.set_ylabel('p mod 8')
+    ax.set_title('Q(√2) ⊂ Q(ζ₈): p splits (green) iff p ≡ ±1 (mod 8)', fontsize=9)
+    save('19a-1')
+
+
+@fig('19a-2')
+def _():
+    ax = plt.gca(); places = ['∞', '2', '3', '5', '7', '11']
+    pairs = [(-1, -1), (2, 3), (3, 5), (-1, 3)]
+    for i, (a, b) in enumerate(pairs):
+        row = [(-1 if (a < 0 and b < 0) else 1)] + [_hilb(a, b, p) for p in (2, 3, 5, 7, 11)]
+        for j, s in enumerate(row):
+            ax.add_patch(plt.Rectangle((j, -i), 0.9, 0.9, color=C3 if s == 1 else C2))
+            ax.text(j + 0.45, -i + 0.45, '+' if s == 1 else '−', ha='center', va='center', color='w')
+    ax.set_xlim(-0.2, 6); ax.set_ylim(-3.2, 1); ax.axis('off')
+    for j, pl in enumerate(places): ax.text(j + 0.45, 1.0, pl, ha='center', fontsize=9)
+    for i, (a, b) in enumerate(pairs): ax.text(-0.15, -i + 0.45, f'({a},{b})', ha='right', va='center', fontsize=9)
+    ax.set_title('Hilbert symbols: an even number of − in each row (product formula)', fontsize=9)
+    save('19a-2')
+
+
+@fig('19a-3')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if p % 3 == 1 and p < 400]
+    cube = lambda p: pow(2, (p - 1) // 3, p) == 1
+    rep = lambda p: any(x * x + 27 * y * y == p for x in range(0, 21) for y in range(0, 4))
+    ax.scatter(ps, [1 if cube(p) else 0 for p in ps], c=[C3 if rep(p) else GR for p in ps], s=16)
+    ax.set_yticks([0, 1]); ax.set_yticklabels(['2 not a cube', '2 a cube'])
+    ax.set_xlabel('p ≡ 1 (mod 3)'); ax.set_title('green: p = x² + 27y²  (Gauss)', fontsize=9)
+    save('19a-3')
+
+
+@fig('19a-4')
+def _():
+    ax = plt.gca(); ps = [p for p in PR if 2 < p < 400 and p != 5]
+    split = [p for p in ps if _leg(-5, p) == 1 and _leg(-1, p) == 1]
+    ax.scatter(ps, [p % 20 for p in ps], c=[C3 if p in split else GR for p in ps], s=14)
+    ax.set_yticks([1, 3, 7, 9, 11, 13, 17, 19]); ax.set_xlabel('p'); ax.set_ylabel('p mod 20')
+    ax.set_title('splits completely in Q(√−5, i): (−5/p) = (−1/p) = 1  ⇔  p ≡ 1, 9 (mod 20)', fontsize=8)
+    save('19a-4')
+
+
+@fig('19a-5')
+def _():
+    ax = plt.gca(); reps = [1, 3, 5, 7, 2, 6, 10, 14]
+    for i, d in enumerate(reps):
+        ram = d not in (1, 5)
+        ax.add_patch(plt.Circle((i % 4, -(i // 4)), 0.35, color=GR if d == 1 else (C2 if ram else C3)))
+        ax.text(i % 4, -(i // 4), str(d), ha='center', va='center', color='w')
+    ax.set_xlim(-0.6, 3.6); ax.set_ylim(-1.6, 0.6); ax.set_aspect('equal'); ax.axis('off')
+    ax.set_title('Q₂*/(Q₂*)²: 8 classes; green = unramified Q₂(√5), red = 6 ramified', fontsize=9)
+    save('19a-5')
+
+
+
+@fig('19a-6')
+def _():
+    ax = plt.gca(); p = 5
+    for a, c in zip((1, 2, 3, 4), (GR, C1, C2, C3)):
+        ks = range(0, 7)
+        vals = [pow(a, p ** k, p ** 7) / p ** 7 for k in ks]
+        ax.plot(list(ks), vals, 'o-', color=c, label=f'a = {a}', ms=4)
+    ax.set_xlabel('k'); ax.set_ylabel('a^(5^k) mod 5⁷  (scaled to [0,1))')
+    ax.legend(fontsize=8); ax.set_title('Teichmüller lift ω(a) = lim a^(5^k) in ℤ₅', fontsize=9)
+    save('19a-6')
+
+
 if __name__ == '__main__':
     import sys
     keys = sys.argv[1:] or sorted(FIGS)
