@@ -300,7 +300,7 @@ Additive number theory:
 - [x] Goldbach's comet
 - [x] Furstenberg's proof of the infinitude of primes
 - [x] Backhouse's constant
-- [ ] Gaussian moat
+- [x] Gaussian moat
 - [ ] Sierpiński number
 - [ ] Prime k-tuple
 - [ ] Primes in arithmetic progression
