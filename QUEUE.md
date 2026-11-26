@@ -412,3 +412,12 @@ Additive number theory:
 - [x] Base change lifting
 - [x] Adelic algebraic group
 - [x] Elliptic curve primality
+
+### השלמות לשיעורים 20–23, חלק ה' (6)
+
+- [ ] Lehmer's conjecture
+- [ ] Tate pairing
+- [ ] Hasse–Witt matrix
+- [ ] Theta function of a lattice
+- [ ] Lemniscate elliptic functions
+- [ ] Monster group
