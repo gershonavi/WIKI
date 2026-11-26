@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (512)
+## ערכים (513)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -407,6 +407,7 @@
 ### [פונקציית סכום המחלקים](categories/%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%99%D7%AA%20%D7%A1%D7%9B%D7%95%D7%9D%20%D7%94%D7%9E%D7%97%D7%9C%D7%A7%D7%99%D7%9D.md)
 
 * [מספר היפר-משוכלל](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%94%D7%99%D7%A4%D7%A8-%D7%9E%D7%A9%D7%95%D7%9B%D7%9C%D7%9C.md) – Hyperperfect number
+* [מספר משוכלל-על](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%9E%D7%A9%D7%95%D7%9B%D7%9C%D7%9C-%D7%A2%D7%9C.md) – Superperfect number
 * [מספר שופע מאוד](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A9%D7%95%D7%A4%D7%A2%20%D7%9E%D7%90%D7%95%D7%93.md) – Highly abundant number
 * [מספר שופע עצום](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A9%D7%95%D7%A4%D7%A2%20%D7%A2%D7%A6%D7%95%D7%9D.md) – Colossally abundant number
 * [מספר שופע-על](pages/%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%A9%D7%95%D7%A4%D7%A2-%D7%A2%D7%9C.md) – Superabundant number

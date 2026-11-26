@@ -349,7 +349,7 @@ Additive number theory:
 - [x] Mersenne number (הפניה לראשוני מרסן)
 - [x] Double Mersenne number
 - [x] Unitary perfect number
-- [ ] Superperfect number
+- [x] Superperfect number
 - [ ] Erdős–Nicolas number
 - [ ] Primitive abundant number
 - [ ] Friendly number
