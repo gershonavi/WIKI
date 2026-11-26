@@ -345,7 +345,7 @@ Additive number theory:
 - [x] Somos sequence
 - [x] Hilbert number
 - [x] Rough number
-- [ ] Regular number
+- [x] Regular number
 - [ ] Mersenne number
 - [ ] Double Mersenne number
 - [ ] Unitary perfect number
