@@ -1,0 +1,47 @@
+בגאומטריה אריתמטית, '''חבורת סלמר''' (Selmer group), שנקראה כך לכבוד עבודתו של ארנסט סלמר (1951) על ידי ג'ון קאסלס (1962), היא [[חבורה (מתמטיקה)|חבורה]] שבונים מ[[איזוגניה]] של [[יריעה אבלית|יריעות אבליות]].
+
+== חבורת הסלמר של איזוגניה ==
+חבורת הסלמר של יריעה אבלית <math>A</math> ביחס לאיזוגניה <math>f:A\to B</math> של יריעות אבליות מוגדרת בשפת [[קוהומולוגיית גלואה]]:
+:<math>\operatorname{Sel}^{(f)}(A/K)=\bigcap_v\ker\left(H^1(G_K,\ker f) \rightarrow H^1(G_{K_v},A_v[f])/\operatorname{im}(\kappa_v)\right)</math>
+כאשר <math>A_v[f]</math> מסמן את ה-<math>f</math>-פיתול של <math>A_v</math>, ו-<math>\kappa_v</math> היא העתקת קומר המקומית (ראו [[תורת קומר]])
+:<math>B_v(K_v)/f(A_v(K_v))\rightarrow H^1(G_{K_v},A_v[f]).</math>
+המנה <math>H^1(G_{K_v},A_v[f])/\operatorname{im}(\kappa_v)</math> איזומורפית ל-<math>H^1(G_{K_v},A_v)[f]</math>. מבחינה גאומטרית, למרחבים ההומוגניים הראשיים שבאים מאיברים של חבורת סלמר יש נקודות רציונליות מעל <math>K_v</math> לכל מקום <math>v</math> של <math>K</math>. חבורת סלמר [[חבורה סופית|סופית]]. מכאן שגם החלק של [[חבורת טייט–שפרביץ']] שמתאפס על ידי <math>f</math> סופי, בזכות ה[[סדרה מדויקת|סדרה המדויקת]]
+:<math>0 \to B(K)/f(A(K)) \to \operatorname{Sel}^{(f)}(A/K) \to \text{Ш}(A/K)[f] \to 0.</math>
+{{הערה|1=בערך האנגלי הסדרה נכתבה עם <math>\operatorname{Sel}^{(2)}(A/K)</math> במקום <math>\operatorname{Sel}^{(f)}(A/K)</math>, ועם כל <math>\text{Ш}(A/K)</math> במקום <math>\text{Ш}(A/K)[f]</math> בסוף. חבורת סלמר נהרגת על ידי <math>\deg f</math>, ולכן גם התמונה שלה ב-<math>\text{Ш}</math>; האיבר האחרון בסדרה הוא תת-החבורה של <math>\text{Ш}(A/K)</math> שמתאפסת על ידי <math>f</math> (ב-<math>H^1(G_K, A)</math>), ולא כל החבורה.|כיווון=שמאל}}
+
+חבורת הסלמר שבאמצע הסדרה סופית ו[[חישוביות|ניתנת לחישוב אפקטיבי]]. מכאן נובע [[משפט מורדל–וייל]] ה"חלש": תת-החבורה <math>B(K)/f(A(K))</math> סופית. יש בעיה ידועה לשמצה: האם אפשר לחשב את תת-החבורה הזו באופן אפקטיבי. יש פרוצדורה לחישובה שעוצרת עם התשובה הנכונה אם יש ראשוני <math>p</math> כלשהו שעבורו הרכיב ה-<math>p</math>-י של חבורת טייט–שפרביץ' סופי. משערים שחבורת טייט–שפרביץ' סופית, ואז כל ראשוני <math>p</math> מתאים. אבל אם (מה שנראה לא סביר) לחבורת טייט–שפרביץ' יש רכיב <math>p</math>-י אינסופי לכל ראשוני <math>p</math>, הפרוצדורה עלולה לא לעצור לעולם.
+
+=== דוגמה: ירידה מסדר 2 על עקומי המספרים החופפים ===
+לעקום <math>E_n : y^2 = x^3 - n^2x</math> ול-<math>f = [2]</math> (כפל ב-2), הסדרה המדויקת נותנת
+:<math>\dim_{\mathbb F_2}\operatorname{Sel}^{(2)}(E_n/\mathbb Q) = r + 2 + \dim_{\mathbb F_2}\text{Ш}(E_n/\mathbb Q)[2],</math>
+כאשר <math>r</math> הדרגה של <math>E_n(\mathbb Q)</math>, והמחובר 2 בא מנקודות הפיתול <math>(0,0), (\pm n, 0)</math> (שתורמות <math>E(\mathbb Q)[2] \cong (\mathbb Z/2)^2</math> ל-<math>E(\mathbb Q)/2E(\mathbb Q)</math>). ירידה מסדר 2 (בדקנו בחישוב בעזרת PARI):
+* <math>n = 1</math>: <math>\dim\operatorname{Sel}^{(2)} = 2</math>, ולכן <math>r = 0</math> ו-<math>\text{Ш}[2] = 0</math> – 1 אינו [[מספר קונגרואנטי|מספר חופף]] (משפט של פרמה).
+* <math>n = 5, 6</math>: <math>\dim\operatorname{Sel}^{(2)} = 3</math> ו-<math>r = 1</math>.
+* <math>n = 17</math>: <math>\dim\operatorname{Sel}^{(2)} = 4</math>, אבל <math>r = 0</math> (גם הדרגה האנליטית 0), ולכן <math>\text{Ш}(E_{17}/\mathbb Q)[2] \cong (\mathbb Z/2)^2</math>. כאן חבורת סלמר "מבטיחה" דרגה 2 שאינה קיימת, והפער הוא בדיוק חבורת טייט–שפרביץ'.
+
+ראלף גרינברג (1994) הכליל את מושג חבורת סלמר ל[[הצגת גלואה|הצגות גלואה]] <math>p</math>-אדיות כלליות יותר, ולווריאציות <math>p</math>-אדיות של מוטיבים, בהקשר של תורת איוואסאווה.
+
+== חבורת הסלמר של מודול גלואה ==
+באופן כללי יותר, אפשר להגדיר את חבורת הסלמר של מודול גלואה <math>M</math> (כמו הגרעין של איזוגניה) כאוסף האיברים של <math>H^1(G_K,M)</math> שהתמונות שלהם נמצאות בתוך תת-חבורות נתונות של <math>H^1(G_{K_v},M)</math>, לכל מקום <math>v</math>.
+
+== היסטוריה ==
+במאמר שלו מ-1954, "השערה על נקודות רציונליות על עקומים קוביים",{{הערה|שם=SelmerConj|1=<span dir="ltr">E. S. Selmer, "A conjecture concerning rational points on cubic curves", ''Mathematica Scandinavica'' '''2''' (1954), 49–54</span>|כיווון=שמאל}} סלמר חקר יוצרים לנקודות הרציונליות על עקומים קוביים מסוימים בעזרת שתי ירידות. הוא ציין ששיטה של קאסלס{{הערה|1=<span dir="ltr">J. W. S. Cassels, "The rational solutions of the diophantine equation Y² = X³ − D", ''Acta Mathematica'' '''82''' (1950), 243–273</span>|כיווון=שמאל}} מצביעה על חוסר בשיטות לזיהוי יוצרים שסלמר השתמש בהן קודם. אבל גם השיטה של קאסלס אינה מספיקה כדי לזהות את כל היוצרים. סלמר בחן את המצב מספרית, וניסח את ההשערה שכאשר קיימת ירידה שנייה, מספר היוצרים שנמצאים קטן ממה שהירידה הראשונה מראה ב'''מספר זוגי'''.{{הערה|שם=SelmerConj}} (בשפה המודרנית: ההפרש בין <math>\dim\operatorname{Sel}^{(2)}</math> לבין הדרגה ועוד הפיתול הוא <math>\dim\text{Ш}[2]</math>, וזה זוגי כשחבורת טייט–שפרביץ' סופית, כי זיווג קאסלס–טייט מתחלף – כמו בדוגמה של <math>E_{17}</math>.)
+
+קאסלס חקר את המצב בסדרה של שמונה מאמרים, שהראשון בהם, ב-1959, נקרא "אריתמטיקה על עקומים מגנוס 1: I. על השערה של סלמר".{{הערה|1=<span dir="ltr">J. W. S. Cassels, "Arithmetic on curves of genus 1. I. On a conjecture of Selmer", ''J. reine angew. Math.'' '''202''' (1959), 52–99</span>|כיווון=שמאל}} במאמר השלישי בסדרה, "III. חבורות טייט–שפרביץ' וסלמר" (1962),{{הערה|1=<span dir="ltr">J. W. S. Cassels, "Arithmetic on curves of genus 1. III. The Tate–Šafarevič and Selmer groups", ''Proc. London Math. Soc.'' (3) '''12''' (1962), 259–296</span>|כיווון=שמאל}} כתב קאסלס שיקרא לחבורה "חבורת סלמר", כי סלמר הוא שהתחיל את העבודה. וכך נולדו חבורות סלמר.
+
+== ראו גם ==
+* [[חבורת טייט–שפרביץ']]
+* [[השערת בירץ' וסווינרטון-דייר]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. W. S. Cassels, ''Lectures on Elliptic Curves'', London Mathematical Society Student Texts 24, Cambridge University Press, 1991
+* R. Greenberg, "Iwasawa theory and p-adic deformation of motives", in U. Jannsen, S. Kleiman, J.-P. Serre (eds.), ''Motives'', American Mathematical Society, 1994
+* E. S. Selmer, "The Diophantine equation ax³ + by³ + cz³ = 0", ''Acta Mathematica'' '''85''' (1951), 203–362
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:גאומטריה אריתמטית]]
+[[קטגוריה:עקומים אליפטיים]]

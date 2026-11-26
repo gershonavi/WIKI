@@ -381,7 +381,7 @@ Additive number theory:
 ### השלמות לשיעורים 19א–23, חלק ב' (10)
 
 - [x] Principal ideal theorem
-- [ ] Selmer group
+- [x] Selmer group
 - [ ] Ramanujan's congruences
 - [ ] Kummer's congruence
 - [ ] Isogeny
