@@ -59,7 +59,7 @@
 נסמן <math>\varepsilon(n) = \delta_{n,1}</math>, איבר היחידה של קונבולוציית דיריכלה, כך ש-<math>\varepsilon * f = f * \varepsilon = f</math> לכל פונקציה אריתמטית <math>f</math>. ה'''הפכי של דיריכלה''' של <math>f</math> מקיים <math>f * f^{-1} = f^{-1} * f = \varepsilon</math>. יש נוסחה רקורסיבית ידועה לחישוב <math>f^{-1}(n)</math> באינדוקציה:{{הערה|1=ראו סעיף 2.7 בספר של אפוסטול.|כיווון=שמאל}}
 :<math>f^{-1}(n) = \begin{cases}\dfrac1{f(1)}, & n = 1, \\[2mm] -\dfrac1{f(1)}\displaystyle\sum_{\substack{d\mid n\\d\gt1}}f(d)f^{-1}\left(\frac nd\right), & n \gt 1.\end{cases}</math>
 
-לפונקציה קבועה <math>f</math>, נגדיר <math>f_\pm(n) := (-1)^{\delta_{n,1}}f(n)</math>, כלומר <math>-f(1)</math> עבור <math>n = 1</math> ו-<math>f(n)</math> אחרת, ושתי גרסאות של קונבולוציות מקוננות:
+לפונקציה נתונה <math>f</math>, נגדיר <math>f_\pm(n) := (-1)^{\delta_{n,1}}f(n)</math>, כלומר <math>-f(1)</math> עבור <math>n = 1</math> ו-<math>f(n)</math> אחרת, ושתי גרסאות של קונבולוציות מקוננות:
 :<math>\widetilde{\operatorname{ds}}_{j,f}(n) := \underbrace{(f_\pm * f * \cdots * f)}_{j\text{ פעמים}}(n), \qquad \operatorname{ds}_{j,f}(n) := \begin{cases}f_\pm(n), & j = 1, \\ \sum_{d\mid n, d\gt1}f(d)\operatorname{ds}_{j-1,f}(n/d), & j \gt 1.\end{cases}</math>
 הפונקציה <math>D_f(n)</math>, שמוגדרת על ידי זוג הנוסחאות השקולות
 :<math>D_f(n) := \sum_{j=1}^n\operatorname{ds}_{2j,f}(n) = \sum_{m=1}^{\lfloor n/2\rfloor}\sum_{i=0}^{2m-1}\binom{2m-1}i(-1)^{i+1}\widetilde{\operatorname{ds}}_{i+1,f}(n),</math>
