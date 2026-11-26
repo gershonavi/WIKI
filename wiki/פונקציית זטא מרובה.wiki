@@ -107,7 +107,8 @@
 
 === משפט 1 (הופמן) ===
 לכל <math>i_1,\ldots,i_k >1</math> [[מספר ממשי|ממשיים]]:
-:<math>\sum_{\sigma \in \Sigma_k}S(i_{\sigma(1)}, \dots, i_{\sigma(k)}) = \sum_{\Pi \text{ partition of } \{1,\dots,k\}}c(\Pi)\zeta(i,\Pi).</math>
+:<math>\sum_{\sigma \in \Sigma_k}S(i_{\sigma(1)}, \dots, i_{\sigma(k)}) = \sum_{\Pi \vdash \{1,\dots,k\}}c(\Pi)\zeta(i,\Pi),</math>
+כאשר <math>\Pi \vdash \{1,\dots,k\}</math> פירושו ש-<math>\Pi</math> עובר על החלוקות של הקבוצה <math>\{1,\dots,k\}</math>.
 
 '''הוכחה.''' נניח שכל ה-<math>i_j</math> שונים (אין בכך הגבלת כלליות, כי אפשר לעבור לגבולות). את אגף שמאל אפשר לכתוב כ
 <math>\sum_{\sigma}\sum_{n_1\geq n_2 \geq \cdots \geq n_k \geq1} \frac{1}{n_{\sigma(1)}^{i_1}n_{\sigma(2)}^{i_2} \cdots n_{\sigma(k)}^{i_k}}</math>. עכשיו חושבים על החבורה הסימטרית <math>\Sigma_k</math> כפועלת על <math>k</math>-יות <math>n = (n_1,\ldots,n_k)</math> של שלמים חיוביים. ל-<math>k</math>-יה נתונה <math>n</math> יש חבורת מייצב <math>\Sigma_k(n)</math> וחלוקה מתאימה <math>\Lambda</math> של <math>\{1,2,\ldots,k\}</math>: <math>\Lambda</math> היא קבוצת [[מחלקת שקילות|מחלקות השקילות]] של היחס <math>i \sim j \iff n_i=n_j</math>, ו-<math>\Sigma_k(n) = \{\sigma \in \Sigma_k : \sigma(i) \sim i\ \forall i\}</math>. האיבר <math>\frac{1}{n_{1}^{i_1}\cdots n_{k}^{i_k}}</math> מופיע באגף שמאל בדיוק <math>\left| \Sigma_k(n) \right|</math> פעמים. באגף ימין הוא מופיע באיברים המתאימים לחלוקות <math>\Pi</math> שהן עידונים של <math>\Lambda</math>: אם מסמנים עידון ב-<math>\succeq</math>, הוא מופיע <math>\sum_{\Pi\succeq\Lambda}c(\Pi)</math> פעמים. לכן המסקנה תנבע אם <math>\left| \Sigma_k(n) \right| =\sum_{\Pi\succeq\Lambda}c(\Pi)</math> לכל <math>k</math>-יה <math>n</math> וחלוקה מתאימה <math>\Lambda</math>. כדי לראות זאת, שימו לב ש-<math>c(\Pi)</math> סופר את התמורות שהמבנה המחזורים שלהן נתון על ידי <math>\Pi</math>: מכיוון שלכל איבר של <math>\Sigma_k(n)</math> יש מבנה מחזורים יחיד הנתון על ידי חלוקה שמעדנת את <math>\Lambda</math>, התוצאה נובעת.{{הערה|שם=hof|1=M. Hoffman, [http://projecteuclid.org/euclid.pjm/1102636166 Multiple Harmonic Series], Pacific Journal of Mathematics 152 (2), 1992, עמ' 275–290, {{DOI|10.2140/pjm.1992.152.275}}|כיווון=שמאל}}
@@ -120,10 +121,10 @@
 
 === משפט 2 (הופמן) ===
 לכל <math>i_1,\ldots,i_k>1</math> ממשיים:
-:<math>\sum_{\sigma \in \Sigma_k}\zeta(i_{\sigma(1)}, \dots, i_{\sigma(k)})=\sum_{\Pi \text{ partition of } \{1,\dots,k\}}\tilde{c}(\Pi)\zeta(i,\Pi).</math>
+:<math>\sum_{\sigma \in \Sigma_k}\zeta(i_{\sigma(1)}, \dots, i_{\sigma(k)})=\sum_{\Pi \vdash \{1,\dots,k\}}\tilde{c}(\Pi)\zeta(i,\Pi).</math>
 '''הוכחה.''' ממשיכים באותו קו טיעון כמו בהוכחה הקודמת. אגף שמאל הוא עכשיו
 <math>\sum_{\sigma}\sum_{n_1 > n_2 > \cdots > n_k \geq1} \frac{1}{n_{\sigma(1)}^{i_1}n_{\sigma(2)}^{i_2} \cdots n_{\sigma(k)}^{i_k}}</math>, והאיבר <math>\frac{1}{n^{i_1}_{1}n^{i_2}_{2} \cdots n^{i_k}_{k}}</math> מופיע באגף שמאל פעם אחת אם כל ה-<math>n_i</math> שונים, ולא מופיע כלל אחרת. לכן מספיק להראות ש
-:<math>\sum_{\Pi\succeq\Lambda}\tilde{c}(\Pi)=\begin{cases} 1, & \left| \Lambda \right|=k, \\ 0, & \text{otherwise}. \end{cases} \qquad (1)</math>
+:<math>\sum_{\Pi\succeq\Lambda}\tilde{c}(\Pi)=\begin{cases} 1, & \left| \Lambda \right|=k, \\ 0, & \left| \Lambda \right| \ne k. \end{cases} \qquad (1)</math>
 כדי להוכיח זאת, שימו לב קודם שהסימן של <math>\tilde{c}(\Pi)</math> חיובי אם התמורות ממבנה מחזורים <math>\Pi</math> [[סימן של תמורה|זוגיות]], ושלילי אם הן אי-זוגיות: לכן אגף שמאל של (1) הוא ההפרש בין מספר התמורות הזוגיות למספר התמורות האי-זוגיות בחבורת המייצב <math>\Sigma_k(n)</math>. אבל בחבורת מייצב כזו יש מספר שווה של תמורות זוגיות ואי-זוגיות, אלא אם כן היא טריוויאלית, כלומר אלא אם כן החלוקה המתאימה <math>\Lambda</math> היא <math>\{\{1\},\{2\},\ldots,\{k\}\}</math>.{{הערה|שם=hof}}
 
 (עבור <math>k = 2</math>, משפט 2 הוא בדיוק נוסחת ההשתקפות של אוילר, ועבור <math>k = 3</math> הוא הזהות על שש התמורות שלמעלה.)

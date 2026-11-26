@@ -2,13 +2,13 @@
 
 == ניסוח מתמטי ==
 יהי <math>p_n</math> הראשוני ה-<math>n</math>-י, ויהי <math>\pi(x)</math> מספר המספרים הראשוניים שאינם גדולים מ-<math>x</math> (ראו [[פונקציית המספרים הראשוניים]]). באופן פורמלי, השערת ברוקאר טוענת:
-:<math>\pi\big(p_{n+1}^2\big)-\pi\big(p_n^2\big)\geq 4\quad\text{for }n\geq2.</math>
+:<math>\pi\big(p_{n+1}^2\big)-\pi\big(p_n^2\big)\geq 4\qquad (n\geq2).</math>
 זה שקול לטענה שיש לפחות ארבעה ראשוניים בין הריבועים של כל שני ראשוניים עוקבים פרט ל-2 ול-3.
 
 == הקשר לבעיות פתוחות אחרות ==
 === השערת לז'נדר ===
 השערת לז'נדר טוענת שיש מספר ראשוני בין <math>n^2</math> לבין <math>(n+1)^2</math> לכל מספר טבעי <math>n</math>. נכון ל-2025 זו בעיה פתוחה. אם השערת לז'נדר נכונה, נובעת ממנה מיד גרסה חלשה של השערת ברוקאר:{{הערה|1=G. H. Hardy, E. M. Wright, An Introduction to the Theory of Numbers, מהדורה שישית (עורכים: D. R. Heath-Brown, J. H. Silverman), Oxford University Press, 2008|כיווון=שמאל}}
-:<math>\pi\big(p_{n+1}^2\big)-\pi\big(p_n^2\big)\geq 2\quad\text{for }n\geq 3.</math>
+:<math>\pi\big(p_{n+1}^2\big)-\pi\big(p_n^2\big)\geq 2\qquad (n\geq 3).</math>
 
 === השערת קרמר ===
 [[השערת קרמר]] טוענת ש-<math>p_{n+1}-p_n=O((\log p_n)^2)</math>, וזה נותן חסם על המרחק בין ראשוניים עוקבים. השערת קרמר גוררת את השערת ברוקאר עבור <math>n</math> גדול מספיק.{{הערה|שם=rib}}

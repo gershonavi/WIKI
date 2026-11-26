@@ -89,7 +89,7 @@
 
 == מספר ההצגות ==
 מספר ההצגות של מספר טבעי <math>n</math> כסכום של ארבעה ריבועים של מספרים שלמים מסומן <math>r_4(n)</math>. לפי משפט ארבעת הריבועים של יעקובי, הוא שווה לפי שמונה מסכום ה[[מחלק|מחלקים]] של <math>n</math> אם <math>n</math> אי-זוגי, ולפי 24 מסכום המחלקים האי-זוגיים של <math>n</math> אם <math>n</math> זוגי (ראו [[פונקציית מחלקים]]), כלומר
-:<math>r_4(n)=\begin{cases}8\sum\limits_{m\mid n}m&\text{if }n\text{ is odd},\\ 24\sum\limits_{m\mid n,\ m\text{ odd}}m&\text{if }n\text{ is even}.\end{cases}</math>
+:<math>r_4(n)=\begin{cases}8\sum\limits_{m\mid n}m& 2\nmid n,\\ 24\sum\limits_{m\mid n,\ 2\nmid m}m& 2\mid n.\end{cases}</math>
 באופן שקול, זהו פי שמונה מסכום כל המחלקים של <math>n</math> שאינם מתחלקים ב-4:
 :<math>r_4(n)=8\sum_{m\,:\, 4\nmid m\mid n}m.</math>
 אפשר לכתוב זאת גם כך:

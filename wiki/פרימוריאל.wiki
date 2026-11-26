@@ -16,9 +16,9 @@
 == הגדרה עבור מספרים טבעיים ==
 [[קובץ:Primorial n plot.png|ממוזער|300px|<math>n!</math> (בצהוב) כפונקציה של <math>n</math>, בהשוואה ל-<math>n\#</math> (באדום), בסקאלה לוגריתמית.]]
 באופן כללי, עבור מספר שלם חיובי <math>n</math>, הפרימוריאל <math>n\#</math> הוא מכפלת כל הראשוניים שאינם גדולים מ-<math>n</math>{{הערה|שם=mw}}{{הערה|1=סדרה [https://oeis.org/A034386 A034386] ב-OEIS|כיווון=שמאל}}:
-:<math>n\# = \prod_{p\,\leq\, n\atop p\,\text{prime}} p = \prod_{i=1}^{\pi(n)} p_i = p_{\pi(n)}\#,</math>
+:<math>n\# = \prod_{p\,\leq\, n\atop p\,\in\,\mathbb P} p = \prod_{i=1}^{\pi(n)} p_i = p_{\pi(n)}\#,</math> כאשר <math>\mathbb P</math> היא קבוצת המספרים הראשוניים,
 כאשר <math>\pi(n)</math> היא [[פונקציית המספרים הראשוניים]]. באופן שקול:
-:<math>n\# = \begin{cases} 1 & n = 0,\ 1 \\ (n-1)\# \times n & n \text{ prime} \\ (n-1)\# & n \text{ composite}. \end{cases}</math>
+:<math>n\# = \begin{cases} 1 & n = 0,\ 1 \\ (n-1)\# \times n & n \in \mathbb P, \\ (n-1)\# & n \ge 2,\ n \notin \mathbb P. \end{cases}</math>
 לדוגמה, <math>12\#</math> הוא מכפלת כל הראשוניים שאינם גדולים מ-12:
 :<math>12\# = 2 \times 3 \times 5 \times 7 \times 11= 2310.</math>
 מאחר ש-<math>\pi(12)=5</math>, אפשר לחשב זאת גם כ-<math>12\# = p_{\pi(12)}\# = p_5\# = 2310</math>.
@@ -36,7 +36,7 @@
 * לכל <math>n, p \in \mathbb{N}</math>, מתקיים <math>n\#=p\#</math> [[אם ורק אם]] <math>p</math> הוא הראשוני הגדול ביותר המקיים <math>p\leq n</math>.
 * יהי <math>p_k</math> הראשוני ה-<math>k</math>-י. למספר <math>p_k\#</math> יש בדיוק <math>2^k</math> מחלקים.
 * סכום ההופכיים של הפרימוריאלים [[טור מתכנס|מתכנס]] לקבוע:
-:<math>\sum_{p\,\text{prime}} {1 \over p\#} = {1 \over 2} + {1 \over 6} + {1 \over 30} + \ldots = 0.7052301717918\ldots</math>
+:<math>\sum_{p\,\in\,\mathbb P} {1 \over p\#} = {1 \over 2} + {1 \over 6} + {1 \over 30} + \ldots = 0.7052301717918\ldots</math>
 :פיתוח אנגל של מספר זה נותן את סדרת המספרים הראשוניים. גריפית'ס הוכיח ב-2015 שהוא [[מספר אי-רציונלי|אי-רציונלי]]{{הערה|1=Martin Griffiths, [https://doi.org/10.1017/mag.2015.91 99.29 On the sum of the reciprocals of the primorials], The Mathematical Gazette 99 (546), 2015, עמ' 522–523|כיווון=שמאל}}.
 * את הוכחתו של אוקלידס ל[[קיומם של אינסוף מספרים ראשוניים]] אפשר לנסח כך: לכל ראשוני <math>p</math>, למספר <math>p\# +1</math> יש מחלק ראשוני שאינו שייך לקבוצת הראשוניים שאינם גדולים מ-<math>p</math>.
 * <math>\lim_{n \to \infty}\sqrt[n]{n\#} = e</math>. עבור <math>n<10^{11}</math> הערכים קטנים מ-<math>e</math>{{הערה|1=L. Schoenfeld, Sharper bounds for the Chebyshev functions θ(x) and ψ(x). II, Math. Comp. 34 (134), 1976, עמ' 337–360; עמ' 359. מצוטט אצל G. Robin, Acta Arithm. XLII, 1983, עמ' 367–389; עמ' 371|כיווון=שמאל}}, אך עבור <math>n</math> גדולים יותר ערכי הפונקציה עולים על <math>e</math> ומתנודדים סביבו אינסוף פעמים.

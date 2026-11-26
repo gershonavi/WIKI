@@ -48,7 +48,7 @@
 
 לאחר מעבר ל[[לוגריתם]], די להראות שלכל פונקציה הולומורפית <math>g : U \to \mathbb{C}</math> ולכל <math>\varepsilon > 0</math> קיים מספר ממשי <math>t</math> כך ש
 
-:<math> \left| \ln \zeta(s+it)-g(s) \right| < \varepsilon \quad \text{for all} \quad s \in U.</math>
+:<math> \left| \ln \zeta(s+it)-g(s) \right| < \varepsilon \quad \forall\, s \in U.</math>
 
 תחילה מקרבים את <math>g(s)</math> בעזרת הלוגריתם של מכפלות סופיות מסוימות, שמזכירות את [[מכפלת אוילר]] של פונקציית זטא:
 

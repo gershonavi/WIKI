@@ -21,7 +21,7 @@
 ::<math>K(a,a;p) = \sum_{m=0}^{p-1} \left(\frac{m^2-4a^2}{p}\right) e^{\frac{2\pi i m}{p}},</math>
 :כאשר <math>\left(\tfrac{\ell}{m}\right)</math> הוא [[סימן יעקובי]].
 * יהי <math>m = p^k</math> עם <math>k > 1</math> ו-<math>p</math> ראשוני, ונניח <math>\gcd(p, 2ab) = 1</math>. אז
-::<math>K(a,b; m) = \begin{cases} 2 \left(\frac{\ell}{m}\right) \sqrt{m}\, \operatorname{Re}\left(\varepsilon_{m} e^{\frac{4 \pi i \ell}{m}} \right) & \left(\tfrac{a}{p}\right)=\left(\tfrac{b}{p}\right) \\ 0 & \text{otherwise} \end{cases}</math>
+::<math>K(a,b; m) = \begin{cases} 2 \left(\frac{\ell}{m}\right) \sqrt{m}\, \operatorname{Re}\left(\varepsilon_{m} e^{\frac{4 \pi i \ell}{m}} \right) & \left(\tfrac{a}{p}\right)=\left(\tfrac{b}{p}\right), \\ 0 & \left(\tfrac{a}{p}\right)\ne\left(\tfrac{b}{p}\right) \end{cases}</math>
 :כאשר <math>\ell</math> נבחר כך ש-<math>\ell^2 \equiv ab \pmod m</math>, ו-<math>\varepsilon_m = 1</math> אם <math>m \equiv 1 \pmod 4</math> ו-<math>\varepsilon_m = i</math> אם <math>m \equiv 3 \pmod 4</math>. את הנוסחה מצא לראשונה הנס זאלייה{{הערה|שם=salie|1=Hans Salié, Über die Kloostermanschen Summen S(u,v; q), Math. Zeit. 34, 1931–32, עמ' 91–109|כיווון=שמאל}}.
 
 == הערכות ==
@@ -56,8 +56,8 @@
 
 == נוסחת העקבה של קוזנצוב ==
 נוסחת קוזנצוב, או נוסחת העקבה היחסית, קושרת באופן עמוק את סכומי קלוסטרמן לתורה הספקטרלית של [[תבנית מודולרית|תבניות אוטומורפיות]]. בניסוחה המקורי: תהי <math>g: \mathbb{R}\to \mathbb{R}</math> פונקציה "מתנהגת היטב" במידה מספקת. אז [[נוסחת העקבה של קוזנצוב]] היא זהות מהצורה
-:<math>\sum_{c\equiv 0 \bmod N} c^{-r} K(m,n,c)\, g\left(\frac{4\pi \sqrt{mn}}{c}\right) = \text{integral transform} + \text{spectral terms},</math>
-כאשר החלק האינטגרלי הוא התמרה אינטגרלית כלשהי של <math>g</math>, והחלק הספקטרלי הוא סכום של מקדמי פורייה על פני מרחבים של תבניות מודולריות הולומורפיות ולא הולומורפיות. קוזנצוב מצא את הנוסחה כשחקר את הגידול של פונקציות אוטומורפיות ממשקל אפס{{הערה|1=N. V. Kuznecov, Petersson's conjecture for forms of weight zero and Linnik's conjecture. Sums of Kloosterman sums, Mathematics of the USSR-Sbornik 39 (3), 1981|כיווון=שמאל}}. בעזרת הערכות לסכומי קלוסטרמן הוא קיבל הערכות למקדמי פורייה של תבניות מודולריות במקרים שבהם ההוכחה של פייר דלין להשערות וייל לא הייתה ישימה. מאוחר יותר העביר ז'אקה את הנוסחה למסגרת של [[הצגה ליניארית|תורת ההצגות]].
+:<math>\sum_{c\equiv 0 \bmod N} c^{-r} K(m,n,c)\, g\left(\frac{4\pi \sqrt{mn}}{c}\right) = I(g) + S(g),</math>
+כאשר החלק האינטגרלי <math>I(g)</math> הוא התמרה אינטגרלית כלשהי של <math>g</math>, והחלק הספקטרלי <math>S(g)</math> הוא סכום של מקדמי פורייה על פני מרחבים של תבניות מודולריות הולומורפיות ולא הולומורפיות. קוזנצוב מצא את הנוסחה כשחקר את הגידול של פונקציות אוטומורפיות ממשקל אפס{{הערה|1=N. V. Kuznecov, Petersson's conjecture for forms of weight zero and Linnik's conjecture. Sums of Kloosterman sums, Mathematics of the USSR-Sbornik 39 (3), 1981|כיווון=שמאל}}. בעזרת הערכות לסכומי קלוסטרמן הוא קיבל הערכות למקדמי פורייה של תבניות מודולריות במקרים שבהם ההוכחה של פייר דלין להשערות וייל לא הייתה ישימה. מאוחר יותר העביר ז'אקה את הנוסחה למסגרת של [[הצגה ליניארית|תורת ההצגות]].
 
 == היסטוריה ==
 יש קשרים רבים בין סכומי קלוסטרמן לבין תבניות מודולריות. למעשה, הסכומים הופיעו לראשונה (בלי השם) במאמר של [[אנרי פואנקרה]] משנת 1912 על תבניות מודולריות. הנס זאלייה הציג צורה של סכום קלוסטרמן המפותלת על ידי [[קרקטר דיריכלה]]; ל"סכומי זאלייה" כאלה יש חישוב אלמנטרי{{הערה|שם=salie}}. את הערכת וייל אפשר ללמוד כיום בספרו של ו. מ. שמידט, והרעיונות שבבסיסה הם של ס. סטפנוב, בהשראת עבודתו של אקסל טואה על [[קירוב דיופנטי]].

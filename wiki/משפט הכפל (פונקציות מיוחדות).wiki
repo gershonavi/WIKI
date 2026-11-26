@@ -79,11 +79,11 @@
 ועבור פולינומי אוילר:
 :<math>k^{-m} E_m(kx)= \sum_{n=0}^{k-1}
 (-1)^n E_m \left(x+\frac{n}{k}\right)
-\quad \text{for } k=1,3,\dots</math>
+\qquad (k=1,3,\dots)</math>
 ו
 :<math>k^{-m} E_m(kx)= \frac{-2}{m+1} \sum_{n=0}^{k-1}
 (-1)^n B_{m+1} \left(x+\frac{n}{k}\right)
-\quad \text{for } k=2,4,\dots.</math>
+\qquad (k=2,4,\dots).</math>
 אפשר לקבל את פולינומי ברנולי כמקרה פרטי של פונקציית זטא של הורוויץ, ולכן הזהויות נובעות משם.
 
 == העתקת ברנולי ==

@@ -7,11 +7,11 @@
 
 והיא מקיימת את משוואת הפונקציה
 
-:<math>\xi(s)=\xi(1-s)\quad \text{for all } s\in \mathbb{C}.</math>
+:<math>\xi(s)=\xi(1-s)\quad \forall\, s\in \mathbb{C}.</math>
 
 מתברר ש-<math>2\xi(s)</math> מתאר את ה[[מומנט (סטטיסטיקה)|מומנטים]] של התפלגות הסתברות <math>\mu</math> על <math>(0,\infty)</math>:{{הערה|שם=MansuyYor}}{{הערה|1=L. Smith, P. Diaconis, ''Honest Bernoulli excursions'', Journal of Applied Probability '''25''' (1988), no. 3, pp. 464–477|כיווון=שמאל}}
 
-:<math>2\xi(s)=\mathbb{E}[X^s]=\int_{0}^{\infty} x^s \, d\mu(x)\quad \text{for all } s\in\mathbb{C},</math>
+:<math>2\xi(s)=\mathbb{E}[X^s]=\int_{0}^{\infty} x^s \, d\mu(x)\quad \forall\, s\in\mathbb{C},</math>
 
 כאשר <math>X</math> משתנה מקרי בעל ההתפלגות <math>\mu</math>. (בפרט <math>2\xi(0) = 1</math>, כפי שצריך: המסה הכוללת היא 1.) משוואת הפונקציה <math>\xi(s) = \xi(1-s)</math> אומרת אז ש-<math>\mathbb E[X^s] = \mathbb E[X^{1-s}]</math>.
 

@@ -20,7 +20,7 @@
 עבור קרקטר כלשהו <math>\chi'~(\mathrm{mod}~d)</math>; אחרת הוא נקרא '''פרימיטיבי'''.
 
 קרקטר <math>\chi</math> נקרא '''ממשי''' (או '''ריבועי''') אם הוא שווה ל[[צמוד מרוכב|צמוד המרוכב]] שלו <math>\overline{\chi}</math> (המוגדר על ידי <math>\overline{\chi}(n) := \overline{\chi(n)}</math>), או באופן שקול אם <math>\chi^2 = \chi_0</math>. הקרקטרים הפרימיטיביים הממשיים של דיריכלה נמצאים בהתאמה חד-חד-ערכית עם [[סימן קרונקר|סימני קרונקר]] <math>(D|\,\cdot\,): \mathbb{Z} \to \{-1,0,1\}</math>, כאשר <math>D\in\mathbb{Z}</math> הוא דיסקרימיננטה יסודית (כלומר, ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] של [[שדה ריבועי]]){{הערה|1=ראו Satz 4, §5 אצל Zagier (1981).|כיווון=שמאל}}. דרך אחת להגדיר את <math>(D|\,\cdot\,)</math> היא כפונקציה האריתמטית הכפלית לחלוטין הנקבעת על ידי (עבור <math>p</math> ראשוני):
-:<math>\bigg(\frac{D}{p}\bigg)=\begin{cases}1, &(p)\text{ splits in } \mathbb{Q}(\sqrt{D}), \\ -1, &(p)\text{ is inert } \cdots, \\ 0, &(p)\text{ ramifies } \cdots, \end{cases} \quad \bigg(\frac{D}{-1}\bigg) = \text{sign of } D.</math>
+:<math>\bigg(\frac{D}{p}\bigg)</math> שווה ל-1 אם <math>(p)</math> מתפצל ב-<math>\mathbb{Q}(\sqrt{D})</math>, ל-<math>-1</math> אם <math>(p)</math> נשאר ראשוני (אינרטי) שם, ול-0 אם <math>(p)</math> מסועף; ו-<math>\bigg(\frac{D}{-1}\bigg) = \operatorname{sgn} D</math>.
 כלומר, הערך הוא 1 אם האידאל <math>(p)</math> מתפצל ב-<math>\mathbb{Q}(\sqrt{D})</math>, ‏‎−1 אם הוא נשאר אינרטי, ו-0 אם הוא מסועף. לכן נהוג לכתוב <math>\chi_D := (D|\,\cdot\,)</math>; אלה קרקטרים פרימיטיביים ממשיים מודולו <math>|D|</math>.
 
 === פונקציות L של דיריכלה ===
@@ -64,7 +64,7 @@
 
 == הקשר לשדות ריבועיים ==
 אפסי זיגל אינם רק בעיה מלאכותית בטיעונים להסקת אזורים חסרי אפסים, שכן להערכות של אזורים חסרי אפסים יש קשרים עמוקים לאריתמטיקה של שדות ריבועיים. למשל, את הזהות <math>\zeta_{\mathbb{Q}(\sqrt{D})}(s) = \zeta(s) L(s,\chi_D)</math> אפשר לפרש כניסוח אנליטי של [[משפט ההדדיות הריבועית]]. הקשר המדויק בין התפלגות האפסים ליד <math>s=1</math> לבין האריתמטיקה נובע מ[[נוסחת מספר המחלקה של דיריכלה]]:
-:<math> L(1,\chi_D) = \begin{cases} \dfrac{2 \pi}{w_D \sqrt{|D|}} \, h(D), &\text{if } D < 0 \\[.5em] \dfrac{\log\varepsilon_D}{\sqrt{D}}\, h(D), &\text{if } D > 0, \end{cases}</math>
+:<math> L(1,\chi_D) = \begin{cases} \dfrac{2 \pi}{w_D \sqrt{|D|}} \, h(D), & D \lt 0, \\[.5em] \dfrac{\log\varepsilon_D}{\sqrt{D}}\, h(D), & D \gt 0, \end{cases}</math>
 כאשר:
 * <math>h(D)</math> הוא [[חבורת המחלקות|מספר המחלקות]] של <math>\mathbb{Q}(\sqrt{D})</math>;
 * <math>w_D</math> הוא מספר [[שורש יחידה|שורשי היחידה]] ב-<math>\mathbb{Q}(\sqrt{D})</math> (עבור <math>D<0</math>);

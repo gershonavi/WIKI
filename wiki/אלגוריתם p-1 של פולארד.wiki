@@ -16,7 +16,7 @@
 : '''קלט''': <math>n</math>, מספר (אולי) פריק.
 : '''פלט''': גורם לא טריוויאלי של <math>n</math>, או כישלון.
 # בוחרים חסם חלקות <math>B</math> (לא בהכרח ראשוני).
-# מגדירים <math>M = \prod_{q \le B,\ q \text{ prime}} q^{ \lfloor \log_q{B} \rfloor }</math> (הערה: <math>M=\mathrm{lcm}(1,2,\dots,B)</math> הוא המספר ה-<math>B</math>-חלק-חזקות הגדול ביותר; לא תמיד צריך לחשב את <math>M</math> במפורש).
+# מגדירים <math>M = \prod_{q \le B,\ q \in \mathbb P} q^{ \lfloor \log_q{B} \rfloor }</math>, כאשר <math>\mathbb P</math> היא קבוצת המספרים הראשוניים (הערה: <math>M=\mathrm{lcm}(1,2,\dots,B)</math> הוא המספר ה-<math>B</math>-חלק-חזקות הגדול ביותר; לא תמיד צריך לחשב את <math>M</math> במפורש).
 # בוחרים באקראי מספר שלם חיובי <math>a</math> הזר ל-<math>n</math> (הערה: אפשר גם לקבע את <math>a</math>; למשל, אם <math>n</math> אי-זוגי אפשר תמיד לבחור <math>a = 2</math>; הבחירה האקראית אינה הכרחית).
 # מחשבים <math>g = \gcd(a^M - 1, n)</math> (הערה: את ההעלאה בחזקה אפשר לבצע מודולו <math>n</math>).
 # אם <math>1 < g < n</math>, מחזירים את <math>g</math>.
@@ -51,9 +51,9 @@
 
 === השלב השני של פולארד וזיווג הראשוניים של מונטגומרי ===
 אחרי השלב הראשון, הזהה לאלגוריתם הבסיסי, במקום לחשב
-:<math>M' = \prod_{q \le B_2,\ q \text{ prime}} q^{ \lfloor \log_q B_2 \rfloor }</math>
+:<math>M' = \prod_{q \le B_2,\ q \in \mathbb P} q^{ \lfloor \log_q B_2 \rfloor }</math>
 עבור <math>B_2</math> ולבדוק את <math>\gcd(a^{M'} - 1, n)</math>, מחשבים
-:<math>Q = \prod_{q \in (B_1, B_2],\ q \text{ prime}} (H^q - 1),</math>
+:<math>Q = \prod_{q \in (B_1, B_2],\ q \in \mathbb P} (H^q - 1),</math>
 כאשר <math>H = a^M</math>, ובודקים אם <math>\gcd(Q, n)</math> נותן גורם לא טריוויאלי של <math>n</math>. כמו קודם, את ההעלאות בחזקה אפשר לבצע מודולו <math>n</math>.
 
 יהיו <math>\{q_1, q_2, \dots\}</math> הראשוניים העוקבים בקטע <math>(B_1, B_2]</math>, ויהי <math>d_n = q_n - q_{n-1}</math> ההפרש בין ראשוניים עוקבים. מכיוון שבדרך כלל <math>B_1 > 2</math>, ההפרשים <math>d_n</math> זוגיים. התפלגות הראשוניים היא כזו שכל ה-<math>d_n</math> יהיו קטנים יחסית; מוצע ש-<math>d_n \le \ln^2 B_2</math>. לכן אפשר לשמור בטבלה את הערכים <math>H^2, H^4, H^6, \dots \pmod n</math>, ולחשב את <math>H^{q_n}</math> כ-<math>H^{q_{n-1}}\cdot H^{d_n}</math>, וכך לחסוך העלאות בחזקה.
