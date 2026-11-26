@@ -246,7 +246,7 @@ Additive number theory:
 - [x] Discrepancy theory
 - [x] Low-discrepancy sequence
 - [x] Subspace theorem
-- [ ] Siegel's lemma
+- [x] Siegel's lemma
 - [ ] Markov spectrum
 - [ ] Lagrange number
 - [ ] Duffin–Schaeffer theorem
