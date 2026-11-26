@@ -43,7 +43,7 @@
 === הקשר לספקטרום מרקוב ===
 ספקטרום לגראנז' הוא תת-קבוצה אמיתית של ספקטרום מרקוב.{{הערה|1=<span dir="ltr">T. Cusick, M. Flahive, The Markoff and Lagrange Spectra, Mathematical Surveys and Monographs 30, AMS, 1989, Chapter 3: The Markoff and Lagrange spectra compared, pp. 35–45.</span>|כיווון=שמאל}} החלק ההתחלתי של ספקטרום לגראנז', כלומר החלק בקטע <math>[\sqrt5, 3)</math>, הוא גם החלק ההתחלתי של ספקטרום מרקוב. הערכים הראשונים הם <math>\sqrt5, \sqrt8, \sqrt{221}/5, \sqrt{1517}/13, \ldots</math>,{{הערה|1=<span dir="ltr">J. W. S. Cassels, An Introduction to Diophantine Approximation, Cambridge, 1957, p. 18.</span>|כיווון=שמאל}} וה-<math>n</math>-י בסדרה הזו (כלומר [[מספר לגראנז']] ה-<math>n</math>-י) מתקבל ממספר מרקוב ה-<math>n</math>-י <math>m_n</math> לפי הנוסחה
 :<math>L_n = \sqrt{9 - \frac4{m_n^2}}.</math>
-הערכים האלה עולים ומצטברים ל-3 בלבד (למשל <math>L_5 = \sqrt{9 - 4/29^2} \approx 2.99881</math>), ו-3 עצמו כבר שייך לספקטרום.
+הערכים האלה עולים ומצטברים ל-3 בלבד (למשל <math>L_5 = \sqrt{9 - 4/29^2} \approx 2.99921</math>), ו-3 עצמו כבר שייך לספקטרום.
 
 '''קבוע פריימן''' הוא השם שניתן לקצה של הפער האחרון בספקטרום לגראנז':
 :<math>F = \frac{2\,221\,564\,096 + 283\,748\sqrt{462}}{491\,993\,569} = 4.5278295661\ldots</math>{{OEIS|A118472}}

@@ -248,7 +248,7 @@ Additive number theory:
 - [x] Subspace theorem
 - [x] Siegel's lemma
 - [x] Markov spectrum
-- [ ] Lagrange number
+- [x] Lagrange number
 - [ ] Duffin–Schaeffer theorem
 - [ ] Proof that e is irrational
 - [ ] Oppenheim conjecture
