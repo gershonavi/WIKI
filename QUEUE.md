@@ -220,7 +220,7 @@ Additive number theory:
 - [x] Prouhet–Tarry–Escott problem
 - [x] Tunnell's theorem
 - [x] Erdős–Moser equation
-- [ ] Cannonball problem
+- [x] Cannonball problem
 - [ ] Lander, Parkin, and Selfridge conjecture
 - [ ] Tijdeman's theorem
 - [ ] Brahmagupta's problem
