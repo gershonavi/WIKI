@@ -341,7 +341,7 @@ Additive number theory:
 - [x] Wolstenholme number
 - [x] Lucas–Carmichael number
 - [x] Lehmer sequence
-- [ ] Elliptic divisibility sequence
+- [x] Elliptic divisibility sequence
 - [ ] Somos sequence
 - [ ] Hilbert number
 - [ ] Rough number
