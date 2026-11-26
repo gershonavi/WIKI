@@ -203,7 +203,7 @@ Additive number theory:
 - [x] Poincaré series (modular form)
 - [x] Ring of modular forms
 - [x] Weakly holomorphic modular form
-- [ ] Modular forms modulo p
+- [x] Modular forms modulo p
 - [ ] P-adic modular form
 
 ### משוואות דיופנטיות (22)
