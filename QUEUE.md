@@ -178,7 +178,7 @@ Additive number theory:
 - [x] Fundamental pair of periods
 - [x] Modular lambda function
 - [x] Petersson inner product
-- [ ] Eigenform
+- [x] Eigenform
 - [ ] Atkin–Lehner theory
 - [ ] Dedekind sum
 - [ ] Mock modular form
