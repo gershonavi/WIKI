@@ -322,7 +322,7 @@ Additive number theory:
 - [x] Colossally abundant number
 - [x] Superabundant number
 - [x] Superior highly composite number
-- [ ] Hyperperfect number
+- [x] Hyperperfect number
 - [ ] Highly abundant number
 - [ ] Primorial prime
 - [ ] Euclid number
