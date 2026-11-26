@@ -1,0 +1,54 @@
+ב[[מתמטיקה]], '''פולינומי חלוקה''' (division polynomials) נותנים דרך לחשב כפולות של נקודות על [[עקום אליפטי|עקומים אליפטיים]], ולחקור את השדות שנוצרים על ידי נקודות פיתול. יש להם תפקיד מרכזי ב[[ספירת נקודות על עקומים אליפטיים]], ב[[האלגוריתם של סחוף|אלגוריתם של סחוף]].
+
+== הגדרה ==
+פולינומי החלוקה הם סדרה של [[פולינום|פולינומים]] ב-<math>\mathbb{Z}[x,y,A,B]</math>, כאשר <math>x, y, A, B</math> משתנים חופשיים, שמוגדרת ברקורסיה:
+::<math>\psi_{0} = 0 </math>
+::<math>\psi_{1} = 1</math>
+::<math>\psi_{2} = 2y</math>
+::<math>\psi_{3} = 3x^{4} + 6Ax^{2} + 12Bx - A^{2}</math>
+::<math>\psi_{4} = 4y(x^{6} + 5Ax^{4} + 20Bx^{3} - 5A^{2}x^{2} - 4ABx - 8B^{2} - A^{3}) </math>
+::<math>\vdots</math>
+::<math>\psi_{2m+1} = \psi_{m+2} \psi_{m}^{3} - \psi_{m-1} \psi^{3}_{m+1} \quad (m \geq 2)</math>
+::<math>\psi_{2m} = \left( \frac{\psi_{m}}{2y} \right) \cdot ( \psi_{m+2}\psi^{2}_{m-1} - \psi_{m-2} \psi^{2}_{m+1}) \quad (m \geq 3)</math>
+הפולינום <math>\psi_n</math> נקרא פולינום החלוקה ה-<math>n</math>-י.
+
+== תכונות ==
+* בפועל מציבים <math>y^2=x^3+Ax+B</math>, ואז <math>\psi_{2m+1}\in\mathbb{Z}[x,A,B]</math> ו-<math>\psi_{2m}\in 2y\,\mathbb{Z}[x,A,B]</math>. כפולינום ב-<math>x</math>, ל-<math>n</math> אי-זוגי <math>\deg\psi_n = \tfrac{n^2 - 1}{2}</math> (למשל 4, 12, 24 ל-<math>n = 3, 5, 7</math>).
+* פולינומי החלוקה יוצרים [[סדרת התחלקות אליפטית]] גנרית מעל החוג <math>\mathbb{Q}[x,y,A,B]/(y^2-x^3-Ax-B)</math>.
+* אם [[עקום אליפטי]] <math>E</math> נתון בצורת ויירשטראס <math>y^2=x^3+Ax+B</math> מעל שדה <math>K</math>, כלומר <math>A, B\in K</math>, אפשר להציב את הערכים האלה ולהתבונן בפולינומי החלוקה בחוג הקואורדינטות של <math>E</math>. השורשים של <math>\psi_{2n+1}</math> הם קואורדינטות ה-<math>x</math> של הנקודות ב-<math>E[2n+1]\setminus \{O\}</math>, כאשר <math>E[2n+1]</math> תת-חבורת הפיתול מסדר <math>2n+1</math> של <math>E</math>. באופן דומה, השורשים של <math>\psi_{2n}/y</math> הם קואורדינטות ה-<math>x</math> של הנקודות ב-<math>E[2n]\setminus E[2]</math>.
+* בהינתן נקודה <math>P=(x_P,y_P)</math> על העקום <math>E:y^2=x^3+Ax+B</math> מעל שדה <math>K</math>, אפשר לבטא את הקואורדינטות של הכפולה ה-<math>n</math>-ית של <math>P</math> בעזרת פולינומי החלוקה:
+::<math>nP= \left( \frac{\phi_{n}(x)}{\psi_{n}^{2}(x)}, \frac{\omega_{n}(x,y)}{\psi^{3}_{n}(x,y)} \right) = \left( x - \frac {\psi_{n-1} \psi_{n+1}}{\psi^{2}_{n}(x)}, \frac{\psi_{2 n}(x,y)}{2\psi^{4}_{n}(x)} \right)</math>
+:כאשר
+::<math>\phi_{n}=x\psi_{n}^{2} - \psi_{n+1}\psi_{n-1},</math>
+::<math>\omega_{n}=\frac{\psi_{n+2}\psi_{n-1}^{2}-\psi_{n-2}\psi_{n+1}^{2}}{4y}.</math>
+בעזרת הקשר בין <math>\psi_{2m}</math> ל-<math>\psi _{2m + 1}</math>, ומשוואת העקום, הפונקציות <math>\psi_{n}^{2}</math>, <math>\psi_{2n}/y</math>, <math>\psi_{2n + 1}</math> ו-<math>\phi_{n}</math> כולן ב-<math>K[x]</math>.
+
+=== דוגמה ===
+לעקום <math>y^2 = x^3 - 2</math> (כלומר <math>A = 0</math>, <math>B = -2</math>) ולנקודה <math>P = (3, 5)</math>: <math>\psi_2 = 10</math>, <math>\psi_3 = 3\cdot 81 - 24\cdot 3 = 171</math>, ולכן <math>x(2P) = 3 - \frac{\psi_1\psi_3}{\psi_2^2} = 3 - \frac{171}{100} = \frac{129}{100}</math>, בהתאם לחישוב בחוק החיבור. מהנוסחאות מקבלים גם <math>3P = \left(\tfrac{164323}{29241}, -\tfrac{66234835}{5000211}\right)</math> (שימו לב: <math>29241 = 171^2</math>), וכך הלאה; בדקנו בחישוב את הנוסחאות עד <math>5P</math>.
+
+== מעל שדות סופיים ==
+יהי <math>p\gt 3</math> ראשוני ו-<math>E:y^2=x^3+Ax+B</math> עקום אליפטי מעל השדה הסופי <math>\mathbb{F}_p</math>. חבורת ה-<math>\ell</math>-פיתול של <math>E</math> מעל <math>\overline{\mathbb{F}}_p</math> איזומורפית ל-<math>\mathbb{Z}/\ell \times \mathbb{Z}/\ell</math> אם <math>\ell\neq p</math>, ול-<math>\mathbb{Z}/\ell</math> או <math>\{0\}</math> אם <math>\ell=p</math> (העקום '''רגיל''' או [[עקום אליפטי על-סינגולרי|על-סינגולרי]], בהתאמה). לכן, ל-<math>\ell</math> ראשוני אי-זוגי, ל-<math>\psi_\ell</math> יש <math>\tfrac{1}{2}(\ell^2-1)</math> שורשים שונים כש-<math>\ell \ne p</math>, ו-<math>\tfrac12(p - 1)</math> או 0 שורשים שונים כש-<math>\ell = p</math>.{{הערה|1=בערך האנגלי נכתב שהמעלה של <math>\psi_\ell</math> שווה ל-<math>\tfrac12(\ell^2 - 1)</math>, ל-<math>\tfrac12(\ell - 1)</math> או ל-0. במקרה <math>\ell = p</math> זה נכון למספר השורשים ה'''שונים''', אבל לא למעלה: הכפל ב-<math>p</math> אינו ספרבילי, וכל שורש של <math>\psi_p</math> מופיע בריבוי <math>p</math>, כך שלעקום רגיל המעלה היא <math>\tfrac12p(p-1)</math>. למשל ל-<math>y^2 = x^3 - x</math> מעל <math>\mathbb F_5</math> (רגיל, <math>a_5 = -2</math>): <math>\psi_5 \equiv -2x^{10} + 1 = -2(x^2 - 3)^5 \pmod 5</math>, ממעלה 10 עם שני שורשים שונים. ול-<math>y^2 = x^3 + 1</math> מעל <math>\mathbb F_5</math> (על-סינגולרי): <math>\psi_5 \equiv -1</math>. בדקנו בחישוב.|כיווון=שמאל}}
+
+רנה סחוף הבחין שעבודה מודולו פולינום החלוקה ה-<math>\ell</math>-י מאפשרת לטפל בכל נקודות ה-<math>\ell</math>-פיתול בבת אחת: פרובניוס <math>\phi</math> מקיים <math>\phi^2 - a\phi + p = 0</math> על <math>E[\ell]</math>, ומחשבים את <math>a \bmod \ell</math> על ידי בדיקת הזהות הזו בחוג <math>\mathbb F_p[x, y]/(\psi_\ell, y^2 - x^3 - Ax - B)</math>. אחרי מספיק ראשוניים <math>\ell</math> (עד שמכפלתם עולה על <math>4\sqrt p</math>), [[משפט השאריות הסיני]] ו[[משפט האסה על עקומים אליפטיים|חסם האסה]] קובעים את <math>a</math>. זה הבסיס ל[[האלגוריתם של סחוף|אלגוריתם של סחוף]] לספירת נקודות על עקומים אליפטיים.
+
+== ראו גם ==
+* [[האלגוריתם של סחוף]]
+* [[סדרת התחלקות אליפטית]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* A. Enge, ''Elliptic Curves and their Applications to Cryptography: An Introduction'', Kluwer, 1999
+* N. Koblitz, ''A Course in Number Theory and Cryptography'', Graduate Texts in Mathematics 114, Springer, 1987; 2nd ed. 1994
+* V. Müller, ''Die Berechnung der Punktanzahl von elliptischen Kurven über endlichen Primkörpern'', Master's thesis, Universität des Saarlandes, 1991
+* G. Musiker, "Schoof's algorithm for counting points on E(F_q)", https://www-users.cse.umn.edu/~musiker/schoof.pdf
+* R. Schoof, "Elliptic curves over finite fields and the computation of square roots mod p", ''Math. Comp.'' '''44''' (1985), 483–494
+* R. Schoof, "Counting points on elliptic curves over finite fields", ''J. Théor. Nombres Bordeaux'' '''7''' (1995), 219–254
+* L. C. Washington, ''Elliptic Curves: Number Theory and Cryptography'', Chapman & Hall/CRC, 2003
+* J. H. Silverman, ''The Arithmetic of Elliptic Curves'', Graduate Texts in Mathematics 106, Springer, 1986
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:עקומים אליפטיים]]
+[[קטגוריה:פולינומים]]
