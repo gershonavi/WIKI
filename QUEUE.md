@@ -408,7 +408,7 @@ Additive number theory:
 - [x] Fuchsian group
 - [x] Hilbert modular form
 - [x] Jacquet–Langlands correspondence
-- [ ] Cuspidal representation
+- [x] Cuspidal representation
 - [ ] Base change lifting
 - [ ] Adelic algebraic group
 - [ ] Elliptic curve primality

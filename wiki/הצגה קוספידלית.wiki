@@ -1,0 +1,57 @@
+ב[[תורת המספרים]], '''הצגות קוספידליות''' הן [[הצגה (תורת החבורות)|הצגות]] מסוימות של [[חבורה אלגברית|חבורות אלגבריות]] שמופיעות באופן בדיד במרחבי <math>L^2</math>.{{הערה|שם=CKM|1=<span dir="ltr">J. W. Cogdell, H. H. Kim, M. R. Murty, ''Lectures on Automorphic L-functions'', Fields Institute Monographs 20, American Mathematical Society, 2004, lecture 2, section 5</span>|כיווון=שמאל}} המונח ''קוספידלי'' נגזר, ממרחק מסוים, מ[[תבנית שפיץ|תבניות החוד]] (cusp forms) של התורה הקלאסית של [[תבנית מודולרית|תבניות מודולריות]]. בניסוח המודרני של הצגות אוטומורפיות, ההצגות תופסות את מקומן של ה[[פונקציה הולומורפית|פונקציות ההולומורפיות]]; אלה יכולות להיות הצגות של חבורות אלגבריות אדליות (ראו [[חוג האדלים]]).
+
+כשהחבורה היא [[החבורה הליניארית הכללית]] <math>\mathrm{GL}_2</math>, ההצגות הקוספידליות קשורות ישירות לתבניות חוד ול[[תבנית מאס|תבניות מאס]]. במקרה של תבניות חוד, כל תבנית עצמית של הקה ([[תורת אטקין–לנר|תבנית חדשה]]) מתאימה להצגה קוספידלית.
+
+== ניסוח ==
+תהי <math>G</math> חבורה אלגברית רדוקטיבית מעל [[שדה מספרים]] <math>K</math>, ויסמן <math>\mathbb{A}</math> את ה[[חוג האדלים|אדלים]] של <math>K</math>. החבורה <math>G(K)</math> משוכנת אלכסונית בחבורה <math>G(\mathbb{A})</math>, על ידי שליחת <math>g \in G(K)</math> ל-<math>(g_p)_p \in G(\mathbb{A})</math> עם <math>g_p=g</math> לכל הראשוניים (הסופיים והאינסופיים) <math>p</math>.
+
+יהי <math>Z</math> ה[[מרכז (תורת החבורות)|מרכז]] של <math>G</math>, ויהי <math>\omega</math> קרקטר אוניטרי רציף מ-<math>Z(K)\backslash Z(\mathbb{A})</math> ל-<math>\mathbb C^\times</math>.{{הערה|1=בערך האנגלי נכתב <math>Z(K)\setminus Z(\mathbb{A})^\times</math>; הסימן <math>^\times</math> מיותר, כי <math>Z(\mathbb A)</math> היא כבר חבורה.|כיווון=שמאל}} נקבע [[מידת האר]] על <math>G(\mathbb{A})</math>, ויהי <math>L^2_0(G(K)\backslash G(\mathbb{A}),\omega)</math> [[מרחב הילברט]] של הפונקציות המדידות המרוכבות <math>f</math> על <math>G(\mathbb{A})</math> שמקיימות:
+# <math>f(\gamma g)=f(g)</math> לכל <math>\gamma\in G(K)</math>;
+# <math>f(gz)=f(g)\omega(z)</math> לכל <math>z\in Z(\mathbb{A})</math>;
+# <math>\textstyle\int_{Z(\mathbb{A})G(K)\backslash G(\mathbb{A})} |f(g)|^2\,dg \lt \infty</math>;
+# <math>\textstyle \int_{U(K)\backslash U(\mathbb{A})}f(ug)\,du = 0</math> לכל <math>g\in G(\mathbb{A})</math> ולכל הרדיקלים האוניפוטנטיים <math>U</math> של תת-חבורות פרבוליות אמיתיות של <math>G</math> (שמוגדרות מעל <math>K</math>).{{הערה|1=בערך האנגלי נכתב "תת-חבורות פרבוליות של <math>G(\mathbb A)</math>". הכוונה היא לתת-חבורות פרבוליות <math>P</math> של <math>G</math> שמוגדרות מעל <math>K</math>, כי האינטגרל הוא על <math>U(K)\backslash U(\mathbb A)</math>, ולכן <math>U</math> צריכה להיות מוגדרת מעל <math>K</math>.|כיווון=שמאל}}
+המרחב הווקטורי <math>L^2_0(G(K)\backslash G(\mathbb{A}),\omega)</math> נקרא '''מרחב תבניות החוד עם קרקטר מרכזי <math>\omega</math>''' על <math>G(\mathbb{A})</math>. פונקציה במרחב כזה נקראת '''פונקציה קוספידלית'''. התנאי הרביעי הוא תנאי '''היעלמות האיבר הקבוע''': ההכללה של הדרישה שלתבנית חוד אין איבר קבוע בפיתוח פורייה באף חוד.
+
+פונקציה קוספידלית יוצרת הצגה אוניטרית של החבורה <math>G(\mathbb{A})</math> על מרחב הילברט המרוכב <math>V_f</math> שנוצר על ידי ההזזות הימניות של <math>f</math>. כאן הפעולה של <math>g\in G(\mathbb{A})</math> על <math>V_f</math> ניתנת על ידי
+:<math>(g \cdot u)(x) = u(xg), \qquad u(x) = \sum_j c_j f(xg_j) \in V_f.</math>
+מרחב תבניות החוד עם קרקטר מרכזי <math>\omega</math> מתפרק ל[[סכום ישר]] (מושלם) של מרחבי הילברט
+:<math>L^2_0(G(K)\backslash G(\mathbb{A}),\omega) = \widehat{\bigoplus}_{(\pi,V_\pi)} m_\pi V_\pi</math>
+כאשר הסכום הוא על תת-ההצגות ה[[הצגה אי-פריקה|אי-פריקות]] של <math>L^2_0(G(K)\backslash G(\mathbb{A}),\omega)</math>, וה-<math>m_\pi</math> הם מספרים שלמים חיוביים (כלומר כל תת-הצגה אי-פריקה מופיעה בריבוי '''סופי'''). '''הצגה קוספידלית של <math>G(\mathbb A)</math>''' היא תת-הצגה <math>(\pi, V_\pi)</math> כזו, עבור <math>\omega</math> כלשהו.
+
+חבורות שבהן כל הריבויים <math>m_\pi</math> שווים ל-1 נאמר שיש להן '''תכונת הריבוי-אחד'''. ל-<math>\mathrm{GL}_2</math> יש התכונה הזו (ז'אקה ו[[רוברט לנגלנדס|לנגלנדס]]), ובאופן כללי ל-<math>\mathrm{GL}_n</math> (שליקה ופיאטצקי-שפירו); ל-<math>\mathrm{SL}_2</math>, לעומת זאת, אין (לבס ולנגלנדס).
+
+== דוגמאות ==
+=== האיבר הקבוע של תבנית מודולרית ===
+עבור <math>G = \mathrm{GL}_2</math> מעל <math>\mathbb Q</math>, תת-החבורה הפרבולית האמיתית הסטנדרטית היא חבורת המטריצות המשולשות העליונות, והרדיקל האוניפוטנטי שלה הוא <math>U = \left\{\begin{pmatrix}1 & x\\ 0 & 1\end{pmatrix}\right\}</math>. כאשר מתרגמים תבנית מודולרית <math>f(\tau) = \sum_{n\ge0} a_n q^n</math> לפונקציה על <math>\mathrm{GL}_2(\mathbb A)</math> (ראו [[תבנית אוטומורפית#מתבנית מודולרית לפונקציה על החבורה|תבנית אוטומורפית]]), האינטגרל על <math>U(\mathbb Q)\backslash U(\mathbb A)</math> הופך לאינטגרל
+:<math>\int_0^1 f(x + iy)\,dx = a_0,</math>
+כי <math>\int_0^1 e^{2\pi i n x}\,dx = 0</math> לכל <math>n \ne 0</math>. לכן תנאי 4 אומר בדיוק ש-<math>a_0 = 0</math> בחוד <math>i\infty</math> (ובכל החודים האחרים, דרך ההזזות ב-<math>g</math>).
+
+לדוגמה, עבור <math>y = 1</math>: לדיסקרימיננטה <math>\Delta = q - 24q^2 + \cdots</math> מתקבל <math>\int_0^1 \Delta(x+i)\,dx = 0</math>, ואילו לטור אייזנשטיין <math>E_4 = 1 + 240q + \cdots</math> מתקבל <math>\int_0^1 E_4(x + i)\,dx = 1</math>. (בדקנו בחישוב נומרי.) לכן <math>\Delta</math> יוצרת הצגה קוספידלית, ו-<math>E_4</math> לא: היא שייכת לספקטרום הרציף, שאותו מתארים [[טור אייזנשטיין ממשי-אנליטי|טורי אייזנשטיין]].
+
+=== האנלוג הסופי: <math>\mathrm{GL}_2(\mathbb F_q)</math> ===
+אותה הגדרה הגיונית גם לחבורות סופיות: הצגה אי-פריקה של <math>\mathrm{GL}_2(\mathbb F_q)</math> נקראת קוספידלית אם אין בה וקטור לא אפס ששמור תחת <math>U(\mathbb F_q) = \left\{\begin{pmatrix}1 & x\\ 0 & 1\end{pmatrix}\right\}</math> (זה האנלוג של היעלמות האיבר הקבוע). ההצגות האי-פריקות של <math>\mathrm{GL}_2(\mathbb F_q)</math> מתחלקות לארבעה סוגים:
+* <math>q-1</math> הצגות חד-ממדיות (<math>\chi\circ\det</math>);
+* <math>q-1</math> הצגות מממד <math>q</math> (הצגת שטיינברג וסיבוביה);
+* <math>\tfrac{(q-1)(q-2)}{2}</math> הצגות של הסדרה הראשית, מממד <math>q+1</math>;
+* <math>\tfrac{q(q-1)}{2}</math> '''הצגות קוספידליות''', מממד <math>q-1</math>.
+שלושת הסוגים הראשונים מופיעים בהצגה המושרית מתת-החבורה המשולשת, ולכן יש בהם וקטור ששמור תחת <math>U</math>; רק הסוג הרביעי קוספידלי. ההצגות הקוספידליות מתאימות לקרקטרים של <math>\mathbb F_{q^2}^\times</math> שאינם מתפרקים דרך הנורמה – אנלוג סופי של ההתאמה בין הצגות קוספידליות לבין הצגות גלואה אי-פריקות.
+
+עבור <math>q = 3</math>: <math>|\mathrm{GL}_2(\mathbb F_3)| = (9-1)(9-3) = 48</math>. יש 2 הצגות חד-ממדיות, 2 מממד 3, אחת מממד 4, ו-3 הצגות קוספידליות מממד 2. ואכן <math>2\cdot 1^2 + 2\cdot 3^2 + 1\cdot 4^2 + 3\cdot 2^2 = 2 + 18 + 16 + 12 = 48</math>, ומספר ההצגות, <math>2 + 2 + 1 + 3 = 8 = q^2 - 1</math>, שווה למספר מחלקות הצמידות.
+
+== ראו גם ==
+* [[תבנית אוטומורפית]]
+* [[התאמת ז'אקה–לנגלנדס]]
+* [[תבנית שפיץ]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. Bump, ''Automorphic Forms and Representations'', Cambridge University Press, 1998
+* S. Gelbart, ''Automorphic Forms on Adele Groups'', Princeton University Press, 1975
+* C. J. Bushnell, G. Henniart, ''The Local Langlands Conjecture for GL(2)'', Springer, 2006
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות אוטומורפיות]]
+[[קטגוריה:תוכנית לנגלנדס]]
