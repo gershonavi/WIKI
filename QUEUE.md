@@ -194,7 +194,7 @@ Additive number theory:
 - [x] Maass cusp form
 - [x] Eichler–Shimura isomorphism
 - [x] Jacobi form
-- [ ] Modular equation
+- [x] Modular equation
 - [ ] Weber modular function
 - [ ] Eisenstein ideal
 - [ ] Manin–Drinfeld theorem
