@@ -179,7 +179,7 @@ Additive number theory:
 - [x] Modular lambda function
 - [x] Petersson inner product
 - [x] Eigenform
-- [ ] Atkin–Lehner theory
+- [x] Atkin–Lehner theory
 - [ ] Dedekind sum
 - [ ] Mock modular form
 - [ ] Harmonic Maass form
