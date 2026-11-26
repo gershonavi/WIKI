@@ -416,7 +416,7 @@ Additive number theory:
 ### השלמות לשיעורים 20–23, חלק ה' (6)
 
 - [x] Lehmer's conjecture
-- [ ] Tate pairing
+- [x] Tate pairing
 - [ ] Hasse–Witt matrix
 - [ ] Theta function of a lattice
 - [ ] Lemniscate elliptic functions
