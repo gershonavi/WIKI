@@ -319,7 +319,7 @@ Additive number theory:
 - [x] Practical number
 - [x] Prime power
 - [x] Perfect power
-- [ ] Colossally abundant number
+- [x] Colossally abundant number
 - [ ] Superabundant number
 - [ ] Superior highly composite number
 - [ ] Hyperperfect number
