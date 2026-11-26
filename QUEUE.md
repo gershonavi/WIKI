@@ -230,7 +230,7 @@ Additive number theory:
 - [x] Sums of three cubes
 - [x] Sum of four cubes problem
 - [x] Goormaghtigh conjecture
-- [ ] Ljunggren's equation
+- [x] Ljunggren's equation
 
 ### קירובים דיופנטיים ומספרים טרנסצנדנטיים (26)
 
