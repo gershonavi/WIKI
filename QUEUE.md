@@ -357,7 +357,7 @@ Additive number theory:
 - [x] Descartes number
 - [x] Refactorable number
 - [x] Arithmetic number
-- [ ] Znám's problem
+- [x] Znám's problem
 - [ ] Primary pseudoperfect number
 - [ ] Erdős–Woods number
 - [ ] Ulam number
