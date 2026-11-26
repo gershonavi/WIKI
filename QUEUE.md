@@ -234,7 +234,7 @@ Additive number theory:
 
 ### קירובים דיופנטיים ומספרים טרנסצנדנטיים (26)
 
-- [ ] Dirichlet's approximation theorem
+- [x] Dirichlet's approximation theorem
 - [ ] Hurwitz's theorem (number theory)
 - [ ] Roth's theorem
 - [ ] Irrationality measure

@@ -1,0 +1,74 @@
+ב[[תורת המספרים]], '''משפט דיריכלה על קירובים דיופנטיים''', שנקרא גם '''משפט הקירוב של דיריכלה''', קובע שלכל [[מספר ממשי|מספרים ממשיים]] <math>\alpha</math> ו-<math>N</math> עם <math>1 \le N</math>, יש שלמים <math>p</math> ו-<math>q</math> כך ש-<math>1 \le q \le N</math> ו-
+:<math>|q\alpha - p| \le \frac1{\lfloor N\rfloor + 1} \lt \frac1N.</math>
+כאן <math>\lfloor N\rfloor</math> מסמן את [[פונקציית הערך השלם|החלק השלם]] של <math>N</math>.
+
+זו תוצאה יסודית ב[[קירוב דיופנטי|קירובים דיופנטיים]], שמראה שלכל מספר ממשי יש סדרה של קירובים רציונליים טובים: מסקנה מיידית היא שעבור <math>\alpha</math> אי-רציונלי נתון, אי-השוויון
+:<math>\left|\alpha - \frac pq\right| \lt \frac1{q^2}</math>
+מתקיים עבור אינסוף זוגות שלמים <math>p</math> ו-<math>q</math>. (מחלקים את אי-השוויון של המשפט ב-<math>q</math> ומשתמשים ב-<math>q \le N</math>; כש-<math>N</math> גדל, <math>|q\alpha - p| \lt 1/N</math> שואף לאפס, ולכן מתקבלים אינסוף שברים שונים, כי <math>\alpha</math> אי-רציונלי.) זה מראה שלכל [[מספר אי-רציונלי]] [[מידת אי-רציונליות|מעריך אי-רציונליות]] לפחות 2.
+
+[[משפט תואה–זיגל–רות]] קובע שעבור מספרים אלגבריים אי-רציונליים, המעריך 2 במסקנה של משפט דיריכלה הוא הטוב ביותר האפשרי: מספרים כאלה אינם ניתנים לקירוב בשום מעריך גדול מ-2. המשפט של תואה–זיגל–רות משתמש בטכניקות מתקדמות, אבל עבור מספרים פשוטים רבים, כמו [[יחס הזהב]] <math>(1 + \sqrt5)/2</math>, הרבה יותר קל לבדוק שאינם ניתנים לקירוב מעבר למעריך 2. (עבור אי-רציונלי ריבועי <math>\alpha</math> עם פולינום מינימלי <math>f</math>, <math>|f(p/q)| \ge 1/(aq^2)</math> כי זה שבר עם מכנה <math>aq^2</math> שאינו אפס, ומכאן <math>|\alpha - p/q| \ge c/q^2</math>.)
+
+=== דוגמה ===
+יהי <math>\alpha = \sqrt2</math> ו-<math>N = 10</math>. החלקים השבריים של <math>k\sqrt2</math> עבור <math>k = 0, 1, \ldots, 10</math> הם
+:<math>0,\ 0.414,\ 0.828,\ 0.243,\ 0.657,\ 0.071,\ 0.485,\ 0.899,\ 0.314,\ 0.728,\ 0.142.</math>
+יש 11 מספרים ו-10 קטעים <math>[0, 0.1), [0.1, 0.2), \ldots</math>, ולכן לפי [[עקרון שובך היונים]] שניים מהם באותו קטע – למשל <math>0</math> (עבור <math>k = 0</math>) ו-<math>0.071</math> (עבור <math>k = 5</math>). ההפרש נותן <math>q = 5 - 0 = 5</math>: <math>|5\sqrt2 - 7| = 0.0711\ldots \lt \frac1{10}</math>, כלומר <math>\left|\sqrt2 - \frac75\right| \lt \frac1{50} \lt \frac1{25}</math>. ואכן, בין <math>1 \le q \le 10</math>, <math>q = 5</math> הוא היחיד עם <math>|q\sqrt2 - p| \le \frac1{11}</math>.
+
+== הגרסה הסימולטנית ==
+הגרסה הסימולטנית של משפט הקירוב של דיריכלה קובעת שבהינתן מספרים ממשיים <math>\alpha_1, \ldots, \alpha_d</math> ו[[מספר טבעי]] <math>N</math>, יש שלמים <math>p_1, \ldots, p_d, q \in \mathbb Z</math>, <math>1 \le q \le N</math>, כך ש-
+:<math>\left|\alpha_i - \frac{p_i}q\right| \le \frac1{qN^{1/d}}.</math>
+{{הערה|שם=Schmidt|1=<span dir="ltr">W. M. Schmidt, Diophantine Approximation, Lecture Notes in Mathematics 785, Springer, 1980, p. 27, Theorem 1B.</span>|כיווון=שמאל}}
+כלומר, אפשר לקרב כמה מספרים בבת אחת בעזרת מכנה משותף, אבל במחיר: המעריך יורד מ-2 ל-<math>1 + 1/d</math>.
+
+'''דוגמה.''' עבור <math>\alpha_1 = \sqrt2</math>, <math>\alpha_2 = \sqrt3</math> ו-<math>N = 100</math> (כך ש-<math>N^{1/2} = 10</math>), המכנה הקטן ביותר שעובד הוא <math>q = 41</math>: <math>\frac{58}{41}</math> ו-<math>\frac{71}{41}</math>, עם <math>|41\sqrt2 - 58| = 0.0042</math> ו-<math>|41\sqrt3 - 71| = 0.0034</math>, שניהם קטנים מ-<math>\frac1{10}</math>.
+
+== שיטות הוכחה ==
+=== הוכחה בעקרון שובך היונים ===
+המשפט נובע מ[[עקרון שובך היונים]]. [[פטר גוסטב לז'ן דיריכלה]], שהוכיח את התוצאה, השתמש באותו עיקרון בהקשרים אחרים (למשל ב[[משוואת פל]]), ובכך שנתן לעיקרון שם (בגרמנית, ''Schubfachprinzip'' – "עקרון המגירות") הפך אותו לנפוץ. השיטה מתרחבת גם לקירוב סימולטני.
+
+'''שלד ההוכחה.''' יהי <math>\alpha</math> מספר אי-רציונלי ו-<math>N</math> שלם. לכל <math>k = 0, 1, \ldots, N</math> נכתוב <math>k\alpha = m_k + x_k</math>, כאשר <math>m_k</math> שלם ו-<math>0 \le x_k \lt 1</math>. נחלק את הקטע <math>[0, 1)</math> ל-<math>N</math> קטעים קטנים באורך <math>\frac1N</math>. יש לנו <math>N + 1</math> מספרים <math>x_0, x_1, \ldots, x_N</math> ו-<math>N</math> קטעים, ולכן לפי עקרון שובך היונים לפחות שניים מהם באותו קטע. נקרא להם <math>x_i, x_j</math> עם <math>i \lt j</math>. אז
+:<math>|(j - i)\alpha - (m_j - m_i)| = |j\alpha - m_j - (i\alpha - m_i)| = |x_j - x_i| \lt \frac1N.</math>
+חלוקה של שני האגפים ב-<math>j - i</math> נותנת
+:<math>\left|\alpha - \frac{m_j - m_i}{j - i}\right| \lt \frac1{(j - i)N} \le \frac1{(j - i)^2},</math>
+וזה מוכיח את המשפט.
+
+=== הוכחה בעזרת משפט מינקובסקי ===
+הוכחה פשוטה נוספת למשפט הקירוב של דיריכלה מבוססת על [[משפט מינקובסקי]], שמופעל על הקבוצה
+:<math>S = \left\{(x, y) \in \mathbb R^2 : -N - \frac12 \le x \le N + \frac12,\ |\alpha x - y| \le \frac1N\right\}.</math>
+זו מקבילית קמורה וסימטרית ביחס לראשית, והשטח שלה הוא <math>(2N + 1)\cdot\frac2N = 4 + \frac2N \gt 4</math>; לכן משפט מינקובסקי מבטיח בה נקודה לא טריוויאלית עם קואורדינטות שלמות <math>(q, p)</math>. (אפשר להניח <math>q \gt 0</math>, ו-<math>q \ne 0</math> כי אחרת <math>|p| \le 1/N \lt 1</math> גורר <math>p = 0</math>.) ההוכחה מתרחבת באופן טבעי לקירובים סימולטניים, כשמתבוננים בקבוצה
+:<math>S = \left\{(x, y_1, \ldots, y_d) \in \mathbb R^{1+d} : -N - \frac12 \le x \le N + \frac12,\ |\alpha_ix - y_i| \le \frac1{N^{1/d}}\right\},</math>
+שנפחה <math>(2N + 1)\cdot\frac{2^d}N \gt 2^{d+1}</math>.
+
+== משפטים קשורים ==
+=== משפט לז'נדר על שברים משולבים ===
+בחיבורו ''Essai sur la théorie des nombres'' מ-1798 נתן [[אדריאן-מארי לז'נדר]] תנאי הכרחי ומספיק לכך שמספר רציונלי יהיה מנה מתקרבת של [[שבר משולב|השבר המשולב הפשוט]] של מספר ממשי נתון.{{הערה|1=<span dir="ltr">A.-M. Legendre, Essai sur la théorie des nombres, Duprat, Paris, 1798, pp. 27–29.</span>|כיווון=שמאל}} מסקנה של הקריטריון, שנקראת לעתים קרובות '''משפט לז'נדר''' בתורת השברים המשולבים, היא:{{הערה|1=<span dir="ltr">D. Barbolosi, H. Jager, On a theorem of Legendre in the theory of continued fractions, Journal de Théorie des Nombres de Bordeaux 6 (1994), pp. 81–94.</span>|כיווון=שמאל}}
+
+'''משפט.''' אם <math>\alpha</math> מספר ממשי ו-<math>p, q</math> שלמים חיוביים כך ש-<math>\left|\alpha - \frac pq\right| \lt \frac1{2q^2}</math>, אז <math>p/q</math> היא מנה מתקרבת של השבר המשולב של <math>\alpha</math>.
+
+'''הוכחה.''' נלך לפי ההוכחה ב''[[מבוא לתורת המספרים (הארדי ורייט)|מבוא לתורת המספרים]]'' של [[גודפרי הרולד הארדי|הארדי]] ו[[אדוארד מייטלנד רייט|רייט]].{{הערה|1=<span dir="ltr">G. H. Hardy, E. M. Wright, An Introduction to the Theory of Numbers, Oxford University Press, 1938, pp. 140–141, 153.</span>|כיווון=שמאל}} נניח ש-<math>\alpha, p, q</math> מקיימים <math>\left|\alpha - \frac pq\right| \lt \frac1{2q^2}</math>, ונניח ש-<math>\alpha \gt p/q</math>. אז אפשר לכתוב <math>\alpha - \frac pq = \frac\theta{q^2}</math>, עם <math>0 \lt \theta \lt 1/2</math>. נכתוב את <math>p/q</math> כשבר משולב סופי <math>[a_0; a_1, \ldots, a_n]</math>; כיוון שלכל מספר רציונלי יש שתי הצגות שונות כשבר משולב סופי, שאורכיהן נבדלים באחד (אחת עם <math>a_n = 1</math> ואחת עם <math>a_n \ne 1</math>), אפשר לבחור את <math>n</math> זוגי. (במקרה <math>\alpha \lt p/q</math> היינו בוחרים <math>n</math> אי-זוגי.)
+
+יהיו <math>p_0/q_0, \ldots, p_n/q_n = p/q</math> המנות המתקרבות של השבר המשולב הזה. נגדיר <math>\omega := \frac1\theta - \frac{q_{n-1}}{q_n}</math>, כך ש-<math>\theta = \frac{q_n}{q_{n-1} + \omega q_n}</math>, ולכן
+:<math>\alpha = \frac pq + \frac\theta{q^2} = \frac{p_n}{q_n} + \frac1{q_n(q_{n-1} + \omega q_n)} = \frac{(p_nq_{n-1} + 1) + \omega p_nq_n}{q_n(q_{n-1} + \omega q_n)} = \frac{p_{n-1}q_n + \omega p_nq_n}{q_n(q_{n-1} + \omega q_n)} = \frac{p_{n-1} + \omega p_n}{q_{n-1} + \omega q_n},</math>
+כאשר השתמשנו בכך ש-<math>p_{n-1}q_n - p_nq_{n-1} = (-1)^n</math> וש-<math>n</math> זוגי.
+
+מהמשוואה הזו נובע ש-<math>\alpha = [a_0; a_1, \ldots, a_n, \omega]</math>. כיוון ש-<math>0 \lt \theta \lt 1/2</math> גורר <math>\omega \gt 1</math> (כי <math>1/\theta \gt 2</math> ו-<math>q_{n-1}/q_n \le 1</math>), מסיקים שהשבר המשולב של <math>\alpha</math> הוא <math>[a_0; a_1, \ldots, a_n, b_0, b_1, \ldots]</math>, כאשר <math>[b_0; b_1, \ldots]</math> הוא השבר המשולב של <math>\omega</math>; ולכן <math>p_n/q_n = p/q</math> היא מנה מתקרבת של השבר המשולב של <math>\alpha</math>. <math>\blacksquare</math>
+
+'''דוגמה.''' <math>\pi = [3; 7, 15, 1, 292, 1, \ldots]</math>, והמנות המתקרבות הראשונות הן <math>3, \frac{22}7, \frac{333}{106}, \frac{355}{113}, \ldots</math>. למשל <math>\left|\pi - \frac{355}{113}\right| = 2.67\times10^{-7}</math>, הרבה מתחת ל-<math>\frac1{2\cdot113^2} = 3.9\times10^{-5}</math>. הקבוע <math>\frac12</math> במשפט חיוני: השבר <math>\frac{19}6</math> מקיים <math>\left|\pi - \frac{19}6\right| = 0.025 \lt \frac1{36}</math>, כלומר הוא "קירוב דיריכלה", אבל <math>0.025 \gt \frac1{72}</math>, והוא באמת '''אינו''' מנה מתקרבת של <math>\pi</math> (הוא מנה מתקרבת ביניים, <math>\frac{22 - 3}{7 - 1}</math>). חיפוש על <math>q \lt 120</math> מראה שזה השבר המצומצם היחיד עם <math>|\pi - p/q| \lt 1/q^2</math> שאינו מנה מתקרבת.
+
+המשפט הוא הבסיס של [[ההתקפה של וינר]], ניצול בזמן פולינומי של פרוטוקול ההצפנה [[RSA]] שעלול לקרות בבחירה לא זהירה של מפתח ציבורי ומפתח פרטי (ליתר דיוק, ההתקפה מצליחה אם הגורמים הראשוניים של המפתח הציבורי <math>n = pq</math> מקיימים <math>q \lt p \lt 2q</math>, והמפתח הפרטי <math>d</math> קטן מ-<math>\frac13n^{1/4}</math>).{{הערה|1=<span dir="ltr">M. J. Wiener, Cryptanalysis of short RSA secret exponents, IEEE Transactions on Information Theory 36 (1990), pp. 553–558.</span>|כיווון=שמאל}} הסיבה: <math>ed = 1 + k\varphi(n)</math>, ולכן <math>\left|\frac en - \frac kd\right|</math> קטן מאוד, ולפי משפט לז'נדר <math>k/d</math> מופיע בין המנות המתקרבות של <math>e/n</math> – שאותן כל אחד יכול לחשב.
+
+== ראו גם ==
+* [[משפט דיריכלה על סדרות חשבוניות]]
+* [[משפט הורוויץ (תורת המספרים)]]
+* [[משפט קרונקר]] (הכללה של משפט דיריכלה)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* W. M. Schmidt, ''Diophantine Approximation'', Lecture Notes in Mathematics '''785''', Springer, 1980
+* W. M. Schmidt, ''Diophantine Approximations and Diophantine Equations'', Lecture Notes in Mathematics '''1467''', Springer, 1991
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:קירובים דיופנטיים]]
+[[קטגוריה:משפטים בתורת המספרים]]
