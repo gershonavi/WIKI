@@ -218,7 +218,7 @@ Additive number theory:
 - [x] Tree of primitive Pythagorean triples
 - [x] Fermat–Catalan conjecture
 - [x] Prouhet–Tarry–Escott problem
-- [ ] Tunnell's theorem
+- [x] Tunnell's theorem
 - [ ] Erdős–Moser equation
 - [ ] Cannonball problem
 - [ ] Lander, Parkin, and Selfridge conjecture
