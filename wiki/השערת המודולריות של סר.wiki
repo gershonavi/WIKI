@@ -1,0 +1,58 @@
+{{אין לבלבל|משפט המודולריות}}
+ב[[מתמטיקה]], '''השערת המודולריות של סר''', שהציג [[ז'אן-פייר סר]] (1975, 1987), קובעת ש[[הצגת גלואה]] דו-ממדית, אי-זוגית ו[[הצגה אי-פריקה|אי-פריקה]] מעל [[שדה סופי]] באה מ[[תבנית מודולרית]]. גרסה חזקה יותר של ההשערה מציינת גם את המשקל והרמה של התבנית המודולרית. את ההשערה במקרה של רמה 1 הוכיח צ'נדרשקהר קארה ב-2005,{{הערה|שם=Kh|1=<span dir="ltr">C. Khare, Serre's modularity conjecture: the level one case, Duke Mathematical Journal 134 (2006), no. 3, pp. 557–589.</span>|כיווון=שמאל}} והוכחה של ההשערה המלאה השלימו קארה וז'אן-פייר וינטנברגר יחד ב-2008.{{הערה|שם=KW|1=<span dir="ltr">C. Khare, J.-P. Wintenberger, Serre's modularity conjecture (I), Inventiones Mathematicae 178 (2009), no. 3, pp. 485–504; Serre's modularity conjecture (II), Inventiones Mathematicae 178 (2009), no. 3, pp. 505–586.</span>|כיווון=שמאל}}
+
+== ניסוח ==
+ההשערה עוסקת ב[[חבורת גלואה מוחלטת|חבורת גלואה המוחלטת]] <math>G_{\mathbb Q}</math> של שדה [[מספר רציונלי|המספרים הרציונליים]] <math>\mathbb Q</math>.
+
+תהי <math>\rho</math> [[הצגה (מתמטיקה)|הצגה]] דו-ממדית [[רציפות|רציפה]] ו[[הצגה אי-פריקה לחלוטין|אי-פריקה לחלוטין]] של <math>G_{\mathbb Q}</math> מעל שדה סופי <math>F = \mathbb F_{\ell^r}</math>:
+:<math>\rho: G_{\mathbb Q} \to \mathrm{GL}_2(F).</math>
+בנוסף נניח ש-<math>\rho</math> '''אי-זוגית''', כלומר שהדטרמיננטה של תמונת [[צמוד מרוכב|ההצמדה המרוכבת]] היא <math>-1</math>.
+
+לכל [[תבנית עצמית|תבנית עצמית]] מודולרית מנורמלת
+:<math>f = q + a_2q^2 + a_3q^3 + \cdots</math>
+מ[[רמה (תבנית מודולרית)|רמה]] <math>N = N(\rho)</math>, [[משקל (תבנית מודולרית)|משקל]] <math>k = k(\rho)</math>, ועם [[קרקטר נבנטיפוס]] כלשהו
+:<math>\chi: \mathbb Z/N\mathbb Z \to F^*,</math>
+משפט של [[גורו שימורה|שימורה]], [[פייר דלין|דלין]] וסר–דלין משייך ל-<math>f</math> הצגה
+:<math>\rho_f: G_{\mathbb Q} \to \mathrm{GL}_2(\mathcal O),</math>
+כאשר <math>\mathcal O</math> [[חוג השלמים]] של [[הרחבת שדות|הרחבה סופית]] של <math>\mathbb Q_\ell</math>. ההצגה הזו נקבעת על ידי התנאי שלכל [[מספר ראשוני]] <math>p</math> [[מספרים זרים|זר]] ל-<math>N\ell</math>
+:<math>\operatorname{Trace}(\rho_f(\operatorname{Frob}_p)) = a_p, \qquad \det(\rho_f(\operatorname{Frob}_p)) = p^{k-1}\chi(p).</math>
+רדוקציה של ההצגה הזו מודולו ה[[אידיאל מקסימלי|אידיאל המקסימלי]] של <math>\mathcal O</math> נותנת הצגה מודולו <math>\ell</math>, <math>\overline{\rho_f}</math>, של <math>G_{\mathbb Q}</math>.
+
+השערת סר קובעת שלכל הצגה <math>\rho</math> כמו למעלה יש תבנית מודולרית עצמית <math>f</math> כך ש-
+:<math>\overline{\rho_f} \cong \rho.</math>
+
+את הרמה והמשקל של התבנית <math>f</math> המשוערת סר מציין במפורש במאמרו. בנוסף, הוא מסיק מההשערה כמה תוצאות, ביניהן [[המשפט האחרון של פרמה]] ואת השערת טניאמה–וייל (או טניאמה–שימורה), שהוכחה בינתיים וידועה היום כ[[משפט המודולריות]] (אף שזו גוררת את המשפט האחרון של פרמה, סר מוכיח אותו ישירות מההשערה שלו).
+
+=== דוגמאות ===
+* '''עקום אליפטי.''' אם <math>E</math> עקום אליפטי מעל <math>\mathbb Q</math> ו-<math>\ell</math> ראשוני, הפעולה של <math>G_{\mathbb Q}</math> על נקודות ה-<math>\ell</math>-פיתול <math>E[\ell] \cong \mathbb F_\ell^2</math> נותנת הצגה <math>\rho_{E,\ell}</math>. היא תמיד אי-זוגית: הדטרמיננטה שלה היא הקרקטר הציקלוטומי מודולו <math>\ell</math>, וההצמדה המרוכבת פועלת על שורשי היחידה כ-<math>\zeta \mapsto \zeta^{-1}</math>. כש-<math>\rho_{E,\ell}</math> אי-פריקה, השערת סר צופה שהיא באה מתבנית ממשקל 2, ומשפט המודולריות אכן נותן תבנית כזו.
+* '''תנאי האי-פריקות הכרחי.''' לעקום 11a, <math>y^2 + y = x^3 - x^2 - 10x - 20</math>, יש נקודה רציונלית מסדר 5, ולכן <math>\rho_{E,5}</math> פריקה: היא "סכום" של הקרקטר הטריוויאלי והקרקטר הציקלוטומי, ובהתאם <math>a_p \equiv 1 + p \pmod 5</math> לכל <math>p \ne 11</math> (למשל <math>a_2 = -2 \equiv 3</math>, <math>a_7 = -2 \equiv 8 \pmod 5</math>; בדקנו זאת לכל <math>p \lt 25</math>). הצגות פריקות כאלה מתאימות ל[[טור אייזנשטיין|טורי אייזנשטיין]], ולא לתבניות שפיץ. דוגמה דומה: עבור [[פונקציית טאו של רמנוג'אן|<math>\Delta</math>]] ו-<math>\ell = 691</math>, ההצגה <math>\overline{\rho_\Delta}</math> פריקה, בהתאם לקונגרואנציה של רמנוג'אן <math>\tau(p) \equiv 1 + p^{11} \pmod{691}</math> (למשל <math>\tau(2) = -24</math> ו-<math>2049 - (-24) = 2073 = 3\cdot691</math>).
+
+== רמה ומשקל אופטימליים ==
+הגרסה החזקה של השערת סר מתארת את הרמה והמשקל של התבנית המודולרית.
+
+הרמה האופטימלית היא [[מוליך ארטין|מוליך ארטין]] של ההצגה, בלי החזקה של <math>\ell</math>. כלומר, <math>N(\rho) = \prod_{p\ne\ell}p^{n(p)}</math>, כאשר <math>n(p)</math> הוא מעריך המוליך של <math>\rho</math> ב-<math>p</math>, שתלוי רק בהגבלה של <math>\rho</math> לחבורת ההתמדה ב-<math>p</math>; בפרט <math>N(\rho)</math> מתחלק רק בראשוניים שבהם <math>\rho</math> מסועפת. המשקל האופטימלי <math>k(\rho)</math> נקבע על ידי ההגבלה של <math>\rho</math> לחבורת ההתמדה ב-<math>\ell</math>; למשל, עבור <math>\rho_{E,\ell}</math> של עקום אליפטי עם רדוקציה טובה ב-<math>\ell</math>, המשקל הוא 2. ב-<math>\rho_{E,\ell}</math> שלמעלה, הרמה עשויה להיות קטנה מהמוליך של <math>E</math>: זו בדיוק תופעת "הורדת הרמה" של [[משפט ריבט]], שבה ראשוני <math>q</math> שהחזקה שלו בדיסקרימיננטה מתחלקת ב-<math>\ell</math> אינו מופיע ב-<math>N(\rho)</math>.
+
+== הוכחה ==
+הוכחה של המקרים של רמה 1 ומשקל קטן התקבלה ב-2004 על ידי צ'נדרשקהר קארה וז'אן-פייר וינטנברגר, בעזרת שיטות של הרמת הצגות, [[עקום אליפטי על-סינגולרי|עקומים אליפטיים על-סינגולריים]] ומשפט של מארק קיסין.{{הערה|1=<span dir="ltr">C. Khare, J.-P. Wintenberger, On Serre's reciprocity conjecture for 2-dimensional mod p representations of Gal(Q̄/Q), Annals of Mathematics 169 (2009), no. 1, pp. 229–253.</span>|כיווון=שמאל}} הוכחה נוספת פרסם באופן בלתי תלוי לואיס דיולפה ב-2007.{{הערה|1=<span dir="ltr">L. Dieulefait, The level 1 weight 2 case of Serre's conjecture, Revista Matemática Iberoamericana 23 (2007), no. 3, pp. 1115–1124; arXiv:math/0412099.</span>|כיווון=שמאל}}
+
+ב-2005 השיג צ'נדרשקהר קארה הוכחה של המקרה של רמה 1 של השערת סר,{{הערה|שם=Kh}} וב-2008, בשיתוף עם ז'אן-פייר וינטנברגר, הוכחה של ההשערה המלאה.{{הערה|שם=KW}}
+
+== ראו גם ==
+* [[משפט ריבט]]
+* [[משפט המודולריות]]
+* [[הצגת גלואה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J.-P. Serre, ''Valeurs propres des opérateurs de Hecke modulo ℓ'', Astérisque '''24–25''' (1975), pp. 109–117
+* J.-P. Serre, ''Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)'', Duke Mathematical Journal '''54''' (1987), pp. 179–230
+* W. A. Stein, K. A. Ribet, ''Lectures on Serre's conjectures'', in: Arithmetic Algebraic Geometry (Park City, 1999), IAS/Park City Math. Ser. '''9''', AMS, 2001, pp. 143–232
+* K. Ribet, ''Serre's Modularity Conjecture'', lecture, 2007
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:המשפט האחרון של פרמה]]
