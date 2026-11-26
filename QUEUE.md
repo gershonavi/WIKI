@@ -296,7 +296,7 @@ Additive number theory:
 
 - [x] Cunningham chain
 - [x] Formula for primes
-- [ ] Generation of primes
+- [x] Generation of primes
 - [ ] Goldbach's comet
 - [ ] Furstenberg's proof of the infinitude of primes
 - [ ] Backhouse's constant
