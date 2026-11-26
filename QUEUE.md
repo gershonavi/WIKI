@@ -377,3 +377,16 @@ Additive number theory:
 - [x] Ramanujan graph
 - [x] Ring class field
 - [x] Tate–Shafarevich group
+
+### השלמות לשיעורים 19א–23, חלק ב' (10)
+
+- [ ] Principal ideal theorem
+- [ ] Selmer group
+- [ ] Ramanujan's congruences
+- [ ] Kummer's congruence
+- [ ] Isogeny
+- [ ] Division polynomials
+- [ ] Néron–Tate height
+- [ ] Supersingular isogeny graph
+- [ ] Weil–Châtelet group
+- [ ] Néron model
