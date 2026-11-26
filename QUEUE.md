@@ -245,7 +245,7 @@ Additive number theory:
 - [x] Beatty sequence
 - [x] Discrepancy theory
 - [x] Low-discrepancy sequence
-- [ ] Subspace theorem
+- [x] Subspace theorem
 - [ ] Siegel's lemma
 - [ ] Markov spectrum
 - [ ] Lagrange number

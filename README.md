@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (425)
+## ערכים (426)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -342,6 +342,7 @@
 * [משפט קרונקר](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A7%D7%A8%D7%95%D7%A0%D7%A7%D7%A8.md) – Kronecker's theorem
 * [משפט רות](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A8%D7%95%D7%AA.md) – Roth's theorem
 * [משפט שלושת המרווחים](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%A9%D7%9C%D7%95%D7%A9%D7%AA%20%D7%94%D7%9E%D7%A8%D7%95%D7%95%D7%97%D7%99%D7%9D.md) – Three-gap theorem
+* [משפט תת-המרחב](pages/%D7%9E%D7%A9%D7%A4%D7%98%20%D7%AA%D7%AA-%D7%94%D7%9E%D7%A8%D7%97%D7%91.md) – Subspace theorem
 * [סדרה שוות-התפלגות](pages/%D7%A1%D7%93%D7%A8%D7%94%20%D7%A9%D7%95%D7%95%D7%AA-%D7%94%D7%AA%D7%A4%D7%9C%D7%92%D7%95%D7%AA.md) – Equidistributed sequence
 * [תורת אי-ההתאמה](pages/%D7%AA%D7%95%D7%A8%D7%AA%20%D7%90%D7%99-%D7%94%D7%94%D7%AA%D7%90%D7%9E%D7%94.md) – Discrepancy theory
 
