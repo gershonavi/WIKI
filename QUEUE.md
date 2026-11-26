@@ -346,8 +346,8 @@ Additive number theory:
 - [x] Hilbert number
 - [x] Rough number
 - [x] Regular number
-- [ ] Mersenne number
-- [ ] Double Mersenne number
+- [x] Mersenne number (הפניה לראשוני מרסן)
+- [x] Double Mersenne number
 - [ ] Unitary perfect number
 - [ ] Superperfect number
 - [ ] Erdős–Nicolas number
