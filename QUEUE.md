@@ -219,7 +219,7 @@ Additive number theory:
 - [x] Fermat–Catalan conjecture
 - [x] Prouhet–Tarry–Escott problem
 - [x] Tunnell's theorem
-- [ ] Erdős–Moser equation
+- [x] Erdős–Moser equation
 - [ ] Cannonball problem
 - [ ] Lander, Parkin, and Selfridge conjecture
 - [ ] Tijdeman's theorem

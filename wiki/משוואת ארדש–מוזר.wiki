@@ -1,0 +1,131 @@
+ב[[תורת המספרים]], '''משוואת ארדש–מוזר''' היא
+:<math>1^k + 2^k + \cdots + (m - 1)^k = m^k,</math>
+כאשר <math>m</math> ו-<math>k</math> מוגבלים ל[[מספר שלם|שלמים]] חיוביים – כלומר, מתייחסים אליה כאל [[משוואה דיופנטית]]. הפתרון היחיד הידוע הוא <math>1^1 + 2^1 = 3^1</math>, ו[[פול ארדש]] שיער שאין פתרונות נוספים. לכל פתרון נוסף חייב להיות <math>m \gt 10^{10^9}</math>.{{הערה|שם=GMZ|1=<span dir="ltr">Y. Gallot, P. Moree, W. Zudilin, The Erdős–Moser equation 1<sup>k</sup> + 2<sup>k</sup> + ⋯ + (m − 1)<sup>k</sup> = m<sup>k</sup> revisited using continued fractions, Mathematics of Computation 80 (2011), pp. 1221–1237.</span>|כיווון=שמאל}}
+
+בכל הערך, <math>p</math> מסמן אך ורק [[מספר ראשוני|מספרים ראשוניים]].
+
+(בחיפוש ישיר עם <math>m \lt 300</math> ו-<math>k \lt 3m</math> נמצא רק הפתרון <math>(m, k) = (3, 1)</math>. כמו שנראה למטה, תמיד <math>k + 1 \lt m \lt 3(k + 1)/2</math>, כך שהחיפוש הזה ממצה לטווח.)
+
+== אילוצים על פתרונות ==
+ב-1953 הוכיח [[ליאו מוזר]] שבכל פתרון נוסף:{{הערה|שם=Moser|1=<span dir="ltr">L. Moser, On the Diophantine equation 1<sup>k</sup> + 2<sup>k</sup> + ... + (m − 1)<sup>k</sup> = m<sup>k</sup>, Scripta Mathematica 19 (1953), pp. 84–88.</span>|כיווון=שמאל}}
+# <math>k</math> זוגי;
+# <math>p \mid m - 1</math> גורר <math>(p - 1) \mid k</math>;
+# <math>p \mid m + 1</math> גורר <math>(p - 1) \mid k</math>;
+# <math>p \mid 2m + 1</math> גורר <math>(p - 1) \mid k</math>;
+# <math>m - 1</math> [[מספר חופשי מריבועים|חופשי מריבועים]];
+# <math>m + 1</math> חופשי מריבועים, או פי 4 ממספר אי-זוגי חופשי מריבועים;
+# <math>2m - 1</math> חופשי מריבועים;
+# <math>2m + 1</math> חופשי מריבועים;
+# <math>\sum_{p\mid(m-1)}\frac{m-1}p \equiv -1 \pmod{m - 1}</math>;
+# <math>\sum_{p\mid(m+1)}\frac{m+1}p \equiv -2 \pmod{m + 1}</math> (אם <math>m + 1</math> זוגי);
+# <math>\sum_{p\mid(2m-1)}\frac{2m-1}p \equiv -2 \pmod{2m - 1}</math>;
+# <math>\sum_{p\mid(2m+1)}\frac{2m+1}p \equiv -4 \pmod{2m + 1}</math>;
+# <math>m \gt 10^{10^6}</math>.
+
+ב-1966 הוכח בנוסף ש:{{הערה|שם=Krz|1=<span dir="ltr">B. Krzysztofek, O równaniu 1<sup>n</sup> + ... + m<sup>n</sup> = (m + 1)<sup>n</sup>·k, Zeszyty Naukowe WSP w Katowicach, Sekcja Matematyki 5 (1966), pp. 47–54.</span>|כיווון=שמאל}}
+# <math>6 \le k + 2 \lt m \lt 3(k + 1)/2</math>;
+# <math>m - 1</math> אינו ראשוני.
+
+ב-1994 הוכח ש:{{הערה|1=<span dir="ltr">P. Moree, H. te Riele, J. Urbanowicz, Divisibility properties of integers x, k satisfying 1<sup>k</sup> + 2<sup>k</sup> + ⋯ + (x − 1)<sup>k</sup> = x<sup>k</sup>, Mathematics of Computation 63 (1994), pp. 799–815.</span>|כיווון=שמאל}}
+# [[כפולה משותפת מינימלית|<math>\operatorname{lcm}(1, 2, \ldots, 200)</math>]] מחלק את <math>k</math>;
+# <math>m \equiv 3 \pmod{2^{\operatorname{ord}_2(k) + 3}}</math>, כאשר <math>\operatorname{ord}_2(n)</math> היא [[הערכה p-אדית|ההערכה ה-2-אדית]] של <math>n</math>; באופן שקול, <math>\operatorname{ord}_2(m - 3) = \operatorname{ord}_2(k) + 3</math>;
+# לכל ראשוני אי-זוגי <math>p</math> שמחלק את <math>m</math>, <math>k \not\equiv 0, 2 \pmod{p - 1}</math>;
+# כל גורם ראשוני של <math>m</math> חייב להיות [[ראשוני לא רגולרי|לא רגולרי]] וגדול מ-10000.
+
+ב-1999 שוכללה השיטה של מוזר, והתקבל <math>m \gt 1.485\times10^{9{,}321{,}155}</math>.{{הערה|שם=BJM|1=<span dir="ltr">W. Butske, L. M. Jaje, D. R. Mayernik, The equation Σ<sub>p∣N</sub> 1/p + 1/N = 1, pseudoperfect numbers, and partially weighted graphs, Mathematics of Computation 69 (2000), pp. 407–420.</span>|כיווון=שמאל}}
+
+ב-2002 הוכח{{הערה|1=<span dir="ltr">B. C. Kellner, Über irreguläre Paare höherer Ordnungen, Diplomarbeit, Universität Göttingen, 2002, §4.</span>|כיווון=שמאל}} ש-<math>k</math> חייב להיות כפולה של <math>2^3\cdot3\#\cdot5\#\cdot7\#\cdot19\#\cdot1000\#</math>, כאשר <math>n\#</math> מסמן [[פרימוריאל]] – מכפלת כל הראשוניים עד <math>n</math>. המספר הזה גדול מ-<math>5.7462\times10^{427}</math> (בדקנו: יש לו 428 ספרות, והוא מתחיל ב-<math>5.74621\ldots</math>).
+
+ב-2009 הוכח ש-<math>2k/(2m - 3)</math> חייב להיות [[שבר משולב|מנה מתקרבת]] של <math>\ln 2</math>; במה שהמחברים כינו אחד המקרים הנדירים שבהם לחישוב בקנה מידה גדול של קבוע מספרי יש יישום, הם קבעו ש-<math>m \gt 2.7139\times10^{1{,}667{,}658{,}416}</math>.{{הערה|שם=GMZ}}
+
+ב-2010 הוכח ש:{{הערה|שם=Moree13|1=<span dir="ltr">P. Moree, Moser's mathemagical work on the equation 1<sup>k</sup> + 2<sup>k</sup> + ⋯ + (m − 1)<sup>k</sup> = m<sup>k</sup>, Rocky Mountain Journal of Mathematics 43 (2013), pp. 1707–1737.</span>|כיווון=שמאל}}
+# <math>m \equiv 3 \pmod 8</math> ו-<math>m \equiv \pm1 \pmod 3</math>;
+# ל-<math>(m^2 - 1)(4m^2 - 1)/12</math> יש לפחות 4,990,906 גורמים ראשוניים, שאף אחד מהם אינו חוזר.
+המספר 4,990,906 נובע מכך ש-<math>\sum_{n=1}^{4990905}\frac1{p_n} \lt \frac{19}6 \lt \sum_{n=1}^{4990906}\frac1{p_n}</math>, כאשר <math>p_n</math> הוא הראשוני ה-<math>n</math>-י. (בדקנו בנפה עד <math>9\cdot10^7</math>: הסכום חוצה את <math>19/6</math> בדיוק בראשוני ה-4,990,906, שהוא 85,861,889.)
+
+== השיטה של מוזר ==
+יהי <math>p</math> גורם ראשוני של <math>m - 1</math>. ליאו מוזר הראה שמכאן נובע ש-<math>p - 1</math> מחלק את <math>k</math> וש-
+:<math>1 + \frac{m - 1}p \equiv 0 \pmod p. \qquad (1)</math>
+(הסיבה: מודולו <math>p</math>, <math>m \equiv 1</math>, כך שאגף ימין שקול ל-1, ואגף שמאל מורכב מ-<math>(m - 1)/p</math> "בלוקים" מלאים של שאריות מודולו <math>p</math>; סכום החזקות ה-<math>k</math> של בלוק מלא הוא <math>-1</math> אם <math>(p - 1) \mid k</math> ו-0 אחרת.) הכפלה ב-<math>p</math> נותנת
+:<math>p + m - 1 \equiv 0 \pmod{p^2}.</math>
+מכאן ש-<math>m - 1</math> חייב להיות חופשי מריבועים (אילו <math>p^2 \mid m - 1</math>, היה נובע <math>p^2 \mid p</math>). יתרה מזו, כיוון שבפתרונות לא טריוויאליים <math>m - 1 \gt 2</math>, ולכל מספר חופשי מריבועים בטווח הזה יש גורם ראשוני אי-זוגי, ההנחה ש-<math>p - 1</math> מחלק את <math>k</math> גוררת ש-<math>k</math> זוגי.
+
+לכל גורם ראשוני <math>p</math> של <math>m - 1</math> יש קונגרואנציה מהצורה (1). הכפלת כולן נותנת
+:<math>\prod_{p\mid(m-1)}\left(1 + \frac{m - 1}p\right) \equiv 0 \pmod{m - 1}.</math>
+פתיחת המכפלה נותנת
+:<math>1 + \sum_{p\mid(m-1)}\frac{m - 1}p + (\text{איברים מסדר גבוה}) \equiv 0 \pmod{m - 1},</math>
+כאשר האיברים מסדר גבוה הם מכפלות של כמה גורמים מהצורה <math>(m - 1)/p</math>, עם ערכים שונים של <math>p</math> בכל גורם. כל האיברים האלה מתחלקים ב-<math>m - 1</math> (כי <math>m - 1</math> חופשי מריבועים), ולכן הם נעלמים מהקונגרואנציה:
+:<math>1 + \sum_{p\mid(m-1)}\frac{m - 1}p \equiv 0 \pmod{m - 1}.</math>
+חלוקה במודולוס נותנת
+:<math>\frac1{m - 1} + \sum_{p\mid(m-1)}\frac1p \equiv 0 \pmod 1. \qquad (2)</math>
+נימוק דומה נותן את הקונגרואנציות
+:<math>\frac2{m + 1} + \sum_{p\mid(m+1)}\frac1p \equiv 0 \pmod 1 \quad (\text{אם } m + 1 \text{ זוגי}), \qquad (3)</math>
+:<math>\frac2{2m - 1} + \sum_{p\mid(2m-1)}\frac1p \equiv 0 \pmod 1, \qquad (4)</math>
+:<math>\frac4{2m + 1} + \sum_{p\mid(2m+1)}\frac1p \equiv 0 \pmod 1. \qquad (5)</math>
+
+הקונגרואנציות (2)–(5) מגבילות מאוד. למשל, הערכים היחידים של <math>m \lt 1000</math> שמקיימים את (2) הם 3, 7 ו-43 (שימו לב: אלה המספרים <math>m</math> שעבורם <math>m - 1 = 2, 6, 42</math> – "המספרים הפסאודו-מושלמים הראשיים"; למשל <math>\frac1{42} + \frac12 + \frac13 + \frac17 = 1</math>), ושלושתם נשללים על ידי (4). (בדקנו זאת בחישוב.)
+
+מכאן מתפצלים לשני מקרים: <math>m + 1</math> זוגי או אי-זוגי.
+
+אם <math>m + 1</math> זוגי, סכום האגפים השמאליים של (2), (3), (4) ו-(5) חייב להיות שלם, ושלם זה הוא לפחות 4. יתרה מזו, [[אלגוריתם אוקלידס]] מראה שאף ראשוני <math>p \gt 3</math> אינו יכול לחלק יותר ממספר אחד בקבוצה <math>\{m - 1, m + 1, 2m - 1, 2m + 1\}</math>, ו-2 ו-3 יכולים לחלק לכל היותר שניים מהם. אם <math>M = (m - 1)(m + 1)(2m - 1)(2m + 1)</math>, מקבלים
+:<math>\frac1{m - 1} + \frac2{m + 1} + \frac2{2m - 1} + \frac4{2m + 1} + \sum_{p\mid M}\frac1p \ge 4 - \frac12 - \frac13 = 3.1666\ldots \qquad (6)</math>
+כיוון שאין פתרונות לא טריוויאליים עם <math>m \lt 1000</math>, החלק של אגף שמאל של (6) מחוץ לסכום אינו יכול לעלות על <math>0.006</math>, ולכן
+:<math>\sum_{p\mid M}\frac1p \gt 3.16.</math>
+לכן, אם <math>\sum_{p\le x}\frac1p \lt 3.16</math>, אז <math>M \gt \prod_{p\le x}p</math>. במאמר המקורי של מוזר משתמשים בחסמים על [[פונקציית ספירת הראשוניים]] כדי להראות ש-
+:<math>\sum_{p\le10^7}\frac1p \lt 3.16.</math>
+לכן <math>M</math> חייב להיות גדול ממכפלת 10,000,000 הראשוניים הראשונים, ומכאן <math>m \gt 10^{10^6}</math> במקרה הזה.
+
+אם <math>m + 1</math> אי-זוגי, אי אפשר להשתמש ב-(3), ולכן במקום (6) מקבלים
+:<math>\frac1{m - 1} + \frac2{2m - 1} + \frac4{2m + 1} + \sum_{p\mid N}\frac1p \ge 3 - \frac13 = 2.666\ldots,</math>
+כאשר <math>N = (m - 1)(2m - 1)(2m + 1)</math>. במבט ראשון זה נראה תנאי חלש מ-(6), אבל כיוון ש-<math>m + 1</math> אי-זוגי, הראשוני 2 אינו יכול להופיע באגף הגדול של אי-השוויון, ומתברר שזו הגבלה חזקה יותר על <math>m</math> מאשר במקרה השני.
+
+לכן לכל פתרון לא טריוויאלי <math>m \gt 10^{10^6}</math>. ב-1999 שוכללה השיטה בעזרת מחשבים, שהחליפו את ההערכות של פונקציית ספירת הראשוניים בחישובים מדויקים; זה נתן את החסם <math>m \gt 1.485\times10^{9{,}321{,}155}</math>.{{הערה|שם=BJM}}
+
+== חסימת היחס m/(k + 1) ==
+נסמן <math>S_k(m) = 1^k + 2^k + \cdots + (m - 1)^k</math>. אז משוואת ארדש–מוזר היא <math>S_k(m) = m^k</math>.
+
+=== שיטה 1: השוואה לאינטגרלים ===
+השוואה של הסכום <math>S_k(m)</math> לאינטגרלים מסוימים של הפונקציה <math>x^k</math> נותנת את החסמים <math>1 \lt m/(k + 1) \lt 3</math>.{{הערה|שם=GMZ}}
+
+הסכום <math>S_k(m)</math> הוא [[סכום רימן|סכום רימן העליון]] של האינטגרל <math>\int_0^{m-1}x^k\,dx</math>, עם חלוקה בערכים השלמים של <math>x</math>, ולכן
+:<math>S_k(m) \gt \int_0^{m-1}x^k\,dx.</math>
+לפי ההנחה <math>S_k(m) = m^k</math>, ולכן <math>m^k \gt \frac{(m - 1)^{k+1}}{k + 1}</math>, ומכאן
+:<math>\frac m{k + 1} \lt \left(1 + \frac1{m - 1}\right)^{k+1}. \qquad (7)</math>
+באופן דומה, <math>S_k(m)</math> הוא סכום רימן התחתון של <math>\int_1^mx^k\,dx</math>, ולכן <math>S_k(m) \le \int_1^mx^k\,dx</math>, כלומר <math>m^k \le \frac{m^{k+1} - 1}{k + 1} \lt \frac{m^{k+1}}{k + 1}</math>, ולכן
+:<math>k + 1 \lt m. \qquad (8)</math>
+הפעלה של זה על (7) נותנת
+:<math>\frac m{k + 1} \lt \left(1 + \frac1{m - 1}\right)^m = \left(1 + \frac1{m - 1}\right)^{m-1}\cdot\frac m{m - 1} \lt e\cdot\frac m{m - 1}.</math>
+חישוב מראה שאין פתרונות לא טריוויאליים עם <math>m \le 10</math>, ולכן <math>\frac m{k + 1} \lt e\cdot\frac{11}{10} \lt 3</math>. יחד עם (8) מקבלים <math>1 \lt m/(k + 1) \lt 3</math>.
+
+=== שיטה 2: מניפולציות אלגבריות ===
+את החסם העליון <math>m/(k + 1) \lt 3</math> אפשר לשפר ל-<math>m/(k + 1) \lt 3/2</math> בשיטה אלגברית.{{הערה|שם=Krz}} מ[[הבינום של ניוטון]], <math>(\ell + 1)^{r+1} = \sum_{i=0}^{r+1}\binom{r + 1}i\ell^{r+1-i}</math>; סכימה על <math>\ell = 1, \ldots, m - 1</math> ומעבר לסכומים <math>S</math> נותנים, לכל שלם חיובי <math>r</math>,
+:<math>m^{r+1} = 1 + (r + 1)S_r(m) + \sum_{i=2}^{r+1}\binom{r + 1}iS_{r+1-i}(m). \qquad (9)</math>
+עם <math>r = k</math> ו-<math>S_k(m) = m^k</math>:
+:<math>m^k\big(m - (k + 1)\big) = 1 + \sum_{i=2}^{k+1}\binom{k + 1}iS_{k+1-i}(m). \qquad (10)</math>
+אגף ימין חיובי, ולכן שוב <math>k + 1 \lt m</math>. עם <math>r = k - 1</math>, (9) נותנת <math>m^k = 1 + \sum_{s=1}^k\binom ksS_{k-s}(m)</math>. הצבה ב-(10) כדי לבטל את <math>m^k</math>, ושימוש ב-<math>\binom{k + 1}{s + 1} = \frac{k + 1}{s + 1}\binom ks</math>, נותנים
+:<math>m - k - 2 = \sum_{s=1}^k\left(\frac{k + 1}{s + 1} - m + (k + 1)\right)\binom ksS_{k-s}(m). \qquad (12)</math>
+אם <math>m = k + 2</math>, אגף שמאל אפס, והמקדם בסוגריים הוא <math>\frac{k - s}{s + 1}</math>, שהוא חיובי לכל <math>s \lt k</math> – ולכן אגף ימין חיובי לכל <math>k \gt 1</math>, סתירה. לכן <math>k + 2 \lt m</math>, ואגף שמאל של (12) חיובי. המקדמים <math>\frac{k + 1}{s + 1} - m + (k + 1)</math> יורדים ב-<math>s</math>, ולכן הראשון שבהם (<math>s = 1</math>) חייב להיות חיובי – אחרת כל האיברים בסכום אי-חיוביים. כלומר
+:<math>0 \lt \frac{k + 1}2 - m + (k + 1) \quad\Longrightarrow\quad \frac m{k + 1} \lt \frac32.</math>
+
+== שברים משולבים ==
+כל פתרון אפשרי של המשוואה חייב לבוא מ[[שבר משולב|השבר המשולב]] של [[הלוגריתם הטבעי של 2]]: ליתר דיוק, <math>2k/(2m - 3)</math> חייב להיות מנה מתקרבת של <math>\ln 2</math>.{{הערה|שם=GMZ}}
+
+הרעיון: המשוואה שקולה ל-
+:<math>1 = \sum_{j=1}^{m-1}\left(1 - \frac jm\right)^k.</math>
+כש-<math>m</math> ו-<math>k</math> גדולים, <math>\left(1 - \frac jm\right)^k \approx e^{-jk/m} = z^j</math> עם <math>z = e^{-k/m}</math>, ואגף ימין קרוב לטור הנדסי <math>\frac z{1 - z}</math>. התנאי <math>\frac z{1 - z} \approx 1</math> נותן <math>z \approx \frac12</math>, כלומר <math>k/m \approx \ln 2</math>. ניתוח מדויק יותר, עם איברי תיקון מפיתוח טיילור של <math>(1 - y)^ke^{ky}</math>, נותן
+:<math>\frac km = \ln 2\left(1 - \frac3{2m} - \frac{\frac{25}{12} - 3\ln 2}{m^2} + O\left(\frac1{m^3}\right)\right) \qquad (m \to \infty),</math>
+ואחרי חסימה אפקטיבית של איבר השגיאה (שמשתמשת בכך ש-<math>m \gt 10^9</math>, כפי שמוזר הראה) מתקבל
+:<math>0 \lt \ln 2 - \frac{2k}{2m - 3} \lt \frac{0.0111}{(2m - 3)^2}.</math>
+לפי [[משפט לז'נדר על שברים משולבים]], כל שבר <math>p/q</math> עם <math>|\alpha - p/q| \lt \frac1{2q^2}</math> הוא מנה מתקרבת של <math>\alpha</math>, ולכן <math>2k/(2m - 3)</math> הוא מנה מתקרבת של <math>\ln 2</math>. בעזרת התוצאה הזו, 31 מיליארד ספרות עשרוניות של <math>\ln 2</math> מספיקות כדי לשלול כל פתרון לא טריוויאלי מתחת ל-<math>10^{10^9}</math>.{{הערה|שם=GMZ}}
+
+'''הפתרון הטריוויאלי מקיים זאת.''' עבור <math>(m, k) = (3, 1)</math>: <math>\frac{2k}{2m - 3} = \frac23</math>, ואכן <math>\ln 2 = [0; 1, 2, 3, 1, 6, \ldots]</math> והמנות המתקרבות שלו הן <math>0, 1, \frac23, \frac7{10}, \frac9{13}, \ldots</math>.
+
+== ראו גם ==
+* [[נוסחת פאולהבר]]
+* [[מספר ברנולי]]
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:משוואות דיופנטיות]]
+[[קטגוריה:בעיות פתוחות בתורת המספרים]]
