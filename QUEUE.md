@@ -244,7 +244,7 @@ Additive number theory:
 - [x] Three-gap theorem
 - [x] Beatty sequence
 - [x] Discrepancy theory
-- [ ] Low-discrepancy sequence
+- [x] Low-discrepancy sequence
 - [ ] Subspace theorem
 - [ ] Siegel's lemma
 - [ ] Markov spectrum
