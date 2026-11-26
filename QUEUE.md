@@ -172,7 +172,7 @@ Additive number theory:
 - [x] Congruence subgroup
 - [x] Modular curve
 - [x] J-invariant
-- [ ] Dedekind eta function
+- [x] Dedekind eta function
 - [ ] Cusp form
 - [ ] Weierstrass elliptic function
 - [ ] Fundamental pair of periods
