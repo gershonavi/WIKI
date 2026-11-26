@@ -368,3 +368,12 @@ Additive number theory:
 - [x] Highly cototient number
 - [x] Sparsely totient number
 - [x] Home prime
+
+### השלמות לשיעורים 19א–23 (6)
+
+- [x] Hilbert class field
+- [ ] Artin L-function
+- [ ] Cyclotomic field
+- [ ] Ramanujan graph
+- [ ] Ring class field
+- [ ] Tate–Shafarevich group
