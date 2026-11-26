@@ -421,3 +421,13 @@ Additive number theory:
 - [x] Theta function of a lattice
 - [x] Lemniscate elliptic functions
 - [x] Monster group
+
+### השלמות לשיעור 18 (קבוע דה ברויין–ניומן) (7)
+
+- [ ] Laguerre–Pólya class
+- [ ] Turán's inequalities
+- [ ] Polymath Project
+- [ ] Riemann–Siegel theta function
+- [ ] Gaussian ensemble
+- [ ] Dyson Brownian motion
+- [ ] Hadamard factorization theorem
