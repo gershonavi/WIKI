@@ -299,7 +299,7 @@ Additive number theory:
 - [x] Generation of primes
 - [x] Goldbach's comet
 - [x] Furstenberg's proof of the infinitude of primes
-- [ ] Backhouse's constant
+- [x] Backhouse's constant
 - [ ] Gaussian moat
 - [ ] Sierpiński number
 - [ ] Prime k-tuple
