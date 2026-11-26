@@ -183,7 +183,7 @@ Additive number theory:
 - [x] Dedekind sum
 - [x] Mock modular form
 - [x] Harmonic Maass form
-- [ ] Rogers–Ramanujan identities
+- [x] Rogers–Ramanujan identities
 - [ ] Rogers–Ramanujan continued fraction
 - [ ] Ribet's theorem
 - [ ] Serre's modularity conjecture

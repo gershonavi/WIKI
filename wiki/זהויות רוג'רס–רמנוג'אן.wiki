@@ -1,0 +1,250 @@
+ב[[מתמטיקה]], '''זהויות רוג'רס–רמנוג'אן''' הן שתי זהויות שקשורות ל[[טור היפרגאומטרי בסיסי|טורים היפרגאומטריים בסיסיים]] ול[[חלוקה (תורת המספרים)|חלוקות של מספרים שלמים]]. את הזהויות גילה והוכיח לראשונה לאונרד ג'יימס רוג'רס ב-1894, ומאוחר יותר גילה אותן מחדש (בלי הוכחה) [[סריניוואסה רמנוג'אן]], זמן מה לפני 1913. לרמנוג'אן לא הייתה הוכחה, אבל ב-1917 הוא מצא מחדש את המאמר של רוג'רס, ושניהם פרסמו יחד הוכחה חדשה ב-1919. [[יששכר שור]] גילה מחדש והוכיח את הזהויות באופן בלתי תלוי ב-1917.
+
+== הגדרה ==
+זהויות רוג'רס–רמנוג'אן הן
+:<math>G(q) = \sum_{n=0}^\infty\frac{q^{n^2}}{(q; q)_n} = \frac1{(q; q^5)_\infty(q^4; q^5)_\infty} = 1 + q + q^2 + q^3 + 2q^4 + 2q^5 + 3q^6 + \cdots</math> (סדרה A003114 ב-OEIS)
+ו-
+:<math>H(q) = \sum_{n=0}^\infty\frac{q^{n^2+n}}{(q; q)_n} = \frac1{(q^2; q^5)_\infty(q^3; q^5)_\infty} = 1 + q^2 + q^3 + q^4 + q^5 + 2q^6 + \cdots</math> (סדרה A003106 ב-OEIS).
+כאן <math>(a; q)_n</math> מסמן את [[סמל פוכהאמר q|סמל פוכהאמר <math>q</math>]].
+
+== פירוש קומבינטורי ==
+נשים לב לעובדות הבאות:
+* <math>\frac{q^{n^2}}{(q; q)_n}</math> היא ה[[פונקציה יוצרת|פונקציה היוצרת]] של חלוקות עם בדיוק <math>n</math> מחוברים, שבהן כל שני מחוברים סמוכים נבדלים לפחות ב-2. (הסיבה: החלוקה הקטנה ביותר כזו היא <math>(2n-1) + \cdots + 3 + 1 = n^2</math>, ומעליה מוסיפים חלוקה כלשהי עם לכל היותר <math>n</math> חלקים, שהפונקציה היוצרת שלה היא <math>1/(q; q)_n</math>.)
+* <math>\frac1{(q; q^5)_\infty(q^4; q^5)_\infty}</math> היא הפונקציה היוצרת של חלוקות שבהן כל מחובר [[קונגרואנציה|קונגרואנטי]] ל-1 או ל-4 מודולו 5.
+* <math>\frac{q^{n^2+n}}{(q; q)_n}</math> היא הפונקציה היוצרת של חלוקות עם בדיוק <math>n</math> מחוברים, שבהן מחוברים סמוכים נבדלים לפחות ב-2 והמחובר הקטן ביותר הוא לפחות 2.
+* <math>\frac1{(q^2; q^5)_\infty(q^3; q^5)_\infty}</math> היא הפונקציה היוצרת של חלוקות שבהן כל מחובר קונגרואנטי ל-2 או ל-3 מודולו 5.
+
+לכן אפשר לפרש את זהויות רוג'רס–רמנוג'אן כך. יהי <math>n</math> שלם אי-שלילי.
+# מספר החלוקות של <math>n</math> שבהן מחוברים סמוכים נבדלים לפחות ב-2 שווה למספר החלוקות של <math>n</math> שבהן כל מחובר קונגרואנטי ל-1 או ל-4 מודולו 5.
+# מספר החלוקות של <math>n</math> שבהן מחוברים סמוכים נבדלים לפחות ב-2 והמחובר הקטן ביותר הוא לפחות 2 שווה למספר החלוקות של <math>n</math> שבהן כל מחובר קונגרואנטי ל-2 או ל-3 מודולו 5.
+
+באופן חלופי:
+# מספר החלוקות של <math>n</math> שבהן, כשיש <math>k</math> מחוברים, המחובר הקטן ביותר הוא לפחות <math>k</math>, שווה למספר החלוקות של <math>n</math> שבהן כל מחובר קונגרואנטי ל-1 או ל-4 מודולו 5.
+# מספר החלוקות של <math>n</math> שבהן, כשיש <math>k</math> מחוברים, המחובר הקטן ביותר הוא לפחות <math>k + 1</math>, שווה למספר החלוקות של <math>n</math> שבהן כל מחובר קונגרואנטי ל-2 או ל-3 מודולו 5.
+
+'''דוגמה.''' עבור <math>n = 9</math>: החלוקות עם הפרשים לפחות 2 הן <math>9,\ 8 + 1,\ 7 + 2,\ 6 + 3,\ 5 + 3 + 1</math> – חמש חלוקות; והחלוקות למחוברים מהצורה <math>5a + 1</math> או <math>5a + 4</math> הן <math>9,\ 6 + 1 + 1 + 1,\ 4 + 4 + 1,\ 4 + 1 + 1 + 1 + 1 + 1,\ 1 + \cdots + 1</math> – גם חמש. בזהות השנייה, עבור <math>n = 10</math>: <math>10,\ 8 + 2,\ 7 + 3,\ 6 + 4</math> מול <math>8 + 2,\ 7 + 3,\ 3 + 3 + 2 + 2,\ 2 + 2 + 2 + 2 + 2</math>.
+
+== יישום לחלוקות ==
+כיוון שהאיברים שבזהויות הם פונקציות יוצרות של [[פונקציית החלוקה (תורת המספרים)|חלוקות]] מסוימות, הזהויות הן טענות על חלוקות של [[מספר טבעי|מספרים טבעיים]]. סדרות המספרים שמתקבלות ממקדמי טורי מקלורן של פונקציות רוג'רס–רמנוג'אן <math>G</math> ו-<math>H</math> הן סדרות חלוקה מיוחדות מרמה 5:
+:<math>G(x) = \frac1{(x; x^5)_\infty(x^4; x^5)_\infty} = 1 + \sum_{n=1}^\infty P_G(n)x^n, \qquad H(x) = \frac1{(x^2; x^5)_\infty(x^3; x^5)_\infty} = 1 + \sum_{n=1}^\infty P_H(n)x^n.</math>
+הסדרה <math>P_G(n)</math> (A003114) נותנת את מספר הדרכים לפרק את <math>n</math> למחוברים מהצורה <math>5a + 1</math> או <math>5a + 4</math> עם <math>a \in \mathbb N_0</math>. לכן <math>P_G(n)</math> הוא מספר הפירוקים של <math>n</math> שבהם מחוברים סמוכים נבדלים לפחות ב-2, וזה שווה למספר הפירוקים שבהם כל מחובר שווה ל-1 או ל-4 מודולו 5.
+
+באופן דומה, הסדרה <math>P_H(n)</math> (A003106) נותנת את מספר הדרכים לפרק את <math>n</math> למחוברים מהצורה <math>5a + 2</math> או <math>5a + 3</math>. לכן <math>P_H(n)</math> הוא מספר הפירוקים של <math>n</math> שבהם מחוברים סמוכים נבדלים לפחות ב-2 והמחובר הקטן ביותר גדול או שווה ל-2, וזה שווה למספר הפירוקים שבהם המחוברים שווים ל-2 או ל-3 מודולו 5. שתי הטבלאות הבאות מדגימות זאת (את כל הערכים והפירוקים בדקנו במנייה ממוחשבת, וגם את השוויון לספירת החלוקות עם הפרשים לפחות 2):
+
+{| class="wikitable"
+|+ סדרת החלוקות <math>P_G(n)</math>
+! <math>n</math> !! <math>P_G(n)</math> !! הפירוקים המתאימים
+|-
+| 1 || 1 || 1
+|-
+| 2 || 1 || 1+1
+|-
+| 3 || 1 || 1+1+1
+|-
+| 4 || 2 || 4, 1+1+1+1
+|-
+| 5 || 2 || 4+1, 1+1+1+1+1
+|-
+| 6 || 3 || 6, 4+1+1, 1+1+1+1+1+1
+|-
+| 7 || 3 || 6+1, 4+1+1+1, 1+1+1+1+1+1+1
+|-
+| 8 || 4 || 6+1+1, 4+4, 4+1+1+1+1, 1+1+1+1+1+1+1+1
+|-
+| 9 || 5 || 9, 6+1+1+1, 4+4+1, 4+1+1+1+1+1, 1+1+1+1+1+1+1+1+1
+|-
+| 10 || 6 || 9+1, 6+4, 6+1+1+1+1, 4+4+1+1, 4+1+1+1+1+1+1, 1+1+1+1+1+1+1+1+1+1
+|-
+| 11 || 7 || 11, 9+1+1, 6+4+1, 6+1+1+1+1+1, 4+4+1+1+1, 4+1+1+1+1+1+1+1, 1+1+1+1+1+1+1+1+1+1+1
+|-
+| 12 || 9 || 11+1, 9+1+1+1, 6+6, 6+4+1+1, 6+1+1+1+1+1+1, 4+4+4, 4+4+1+1+1+1, 4+1+1+1+1+1+1+1+1, 1+1+1+1+1+1+1+1+1+1+1+1
+|-
+| 13 || 10 || 11+1+1, 9+4, 9+1+1+1+1, 6+6+1, 6+4+1+1+1, 6+1+1+1+1+1+1+1, 4+4+4+1, 4+4+1+1+1+1+1, 4+1+1+1+1+1+1+1+1+1, 1+1+1+1+1+1+1+1+1+1+1+1+1
+|-
+| 14 || 12 || 14, 11+1+1+1, 9+4+1, 9+1+1+1+1+1, 6+6+1+1, 6+4+4, 6+4+1+1+1+1, 6+1+1+1+1+1+1+1+1, 4+4+4+1+1, 4+4+1+1+1+1+1+1, 4+1+1+1+1+1+1+1+1+1+1, 1+1+1+1+1+1+1+1+1+1+1+1+1+1
+|-
+| 15 || 14 || 14+1, 11+4, 11+1+1+1+1, 9+6, 9+4+1+1, 9+1+1+1+1+1+1, 6+6+1+1+1, 6+4+4+1, 6+4+1+1+1+1+1, 6+1+1+1+1+1+1+1+1+1, 4+4+4+1+1+1, 4+4+1+1+1+1+1+1+1, 4+1+1+1+1+1+1+1+1+1+1+1, 1+1+1+1+1+1+1+1+1+1+1+1+1+1+1
+|-
+| 16 || 17 || 16, 14+1+1, 11+4+1, 11+1+1+1+1+1, 9+6+1, 9+4+1+1+1, 9+1+1+1+1+1+1+1, 6+6+4, 6+6+1+1+1+1, 6+4+4+1+1, 6+4+1+1+1+1+1+1, 6+1+1+1+1+1+1+1+1+1+1, 4+4+4+4, 4+4+4+1+1+1+1, 4+4+1+1+1+1+1+1+1+1, 4+1+1+1+1+1+1+1+1+1+1+1+1, 1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1
+|}
+
+{| class="wikitable"
+|+ סדרת החלוקות <math>P_H(n)</math>
+! <math>n</math> !! <math>P_H(n)</math> !! הפירוקים המתאימים
+|-
+| 1 || 0 || אין
+|-
+| 2 || 1 || 2
+|-
+| 3 || 1 || 3
+|-
+| 4 || 1 || 2+2
+|-
+| 5 || 1 || 3+2
+|-
+| 6 || 2 || 3+3, 2+2+2
+|-
+| 7 || 2 || 7, 3+2+2
+|-
+| 8 || 3 || 8, 3+3+2, 2+2+2+2
+|-
+| 9 || 3 || 7+2, 3+3+3, 3+2+2+2
+|-
+| 10 || 4 || 8+2, 7+3, 3+3+2+2, 2+2+2+2+2
+|}
+
+== השברים המשולבים של רוג'רס–רמנוג'אן R ו-S ==
+{{ערך מורחב|השבר המשולב של רוג'רס–רמנוג'אן}}
+=== הגדרת השברים המשולבים ===
+ה[[שבר משולב]] <math>R(q)</math> שלהלן נקרא '''השבר המשולב של רוג'רס–רמנוג'אן''', והשבר המשולב <math>S(q)</math> נקרא '''השבר המשולב המתחלף של רוג'רס–רמנוג'אן''':
+:<math>R(q) = \cfrac{q^{1/5}}{1 + \cfrac q{1 + \cfrac{q^2}{1 + \cfrac{q^3}{1 + \cdots}}}}, \qquad S(q) = \cfrac{q^{1/5}}{1 - \cfrac q{1 + \cfrac{q^2}{1 - \cfrac{q^3}{1 + \cdots}}}}.</math>
+{{הערה|1=בערך האנגלי השברים המשולבים כתובים כ-<math>q^{1/5}\left[1 + \frac q{1 + \cdots}\right]</math>, כלומר עם כפל במקום חלוקה, וכך גם בסעיף על פיזיקה (<math>H(q)/G(q) = 1 + \frac q{1 + \cdots}</math>). בדקנו בחישוב מספרי (בדיוק של 30 ספרות, עבור <math>q = 0.3</math> ו-<math>q = 0.07</math>) שהזהויות שבערך, כמו <math>R(q) = q^{1/5}H(q)/G(q)</math>, מתקיימות עם הצורה <math>q^{1/5}/(1 + \cdots)</math> ונכשלות עם הצורה שבערך האנגלי. למשל, <math>H(q)/G(q) \lt 1</math> לכל <math>0 \lt q \lt 1</math>.|כיווון=שמאל}}
+הגורם <math>q^{1/5}</math> הופך את השבר המשולב למנה של פונקציות מודולריות, ולכן גם השברים המשולבים האלה מודולריים.{{הערה|1=<span dir="ltr">B. C. Berndt, H. H. Chan, S.-S. Huang, S.-Y. Kang, J. Sohn, S. H. Son, The Rogers–Ramanujan continued fraction, Journal of Computational and Applied Mathematics 105 (1999), pp. 9–24.</span>|כיווון=שמאל}} עבור השבר המשולב מתקיים
+:<math>R(q) = q^{1/5}\frac{(q; q^5)_\infty(q^4; q^5)_\infty}{(q^2; q^5)_\infty(q^3; q^5)_\infty} = q^{1/5}\prod_{k=0}^\infty\frac{(1 - q^{5k+1})(1 - q^{5k+4})}{(1 - q^{5k+2})(1 - q^{5k+3})} = q^{1/5}\frac{H(q)}{G(q)}.</math>
+ההגדרה של [[פונקציית התטא של רמנוג'אן]] היא
+:<math>f(a, b) = \sum_{k=-\infty}^\infty a^{\frac{k(k+1)}2}b^{\frac{k(k-1)}2},</math>
+ובעזרתה אפשר לכתוב את השבר המשולב <math>R</math> כ-
+:<math>R(q) = q^{1/5}\frac{f(-q, -q^4)}{f(-q^2, -q^3)}.</math>
+את הקשר בין השבר המשולב לפונקציות רוג'רס–רמנוג'אן מצא כבר רוג'רס ב-1894 (ומאוחר יותר, באופן בלתי תלוי, רמנוג'אן).
+
+את השבר המשולב אפשר לבטא גם בעזרת [[פונקציית אטא של דדקינד]], בצורת ובר <math>\eta_W(x) = x^{1/24}(x; x)_\infty</math> (כפונקציה של הנום):
+:<math>R(q) = \tan\left\{\frac12\operatorname{arccot}\left[\frac{\eta_W(q^{1/5})}{2\eta_W(q^5)} + \frac12\right]\right\}.</math>
+לשבר המשולב המתחלף <math>S(q)</math> יש הזהויות הבאות עם שאר פונקציות רוג'רס–רמנוג'אן ועם פונקציית התטא של רמנוג'אן:
+:<math>S(q) = q^{1/5}\frac{H(-q)}{G(-q)} = q^{1/5}\frac{f(q, -q^4)}{f(-q^2, q^3)} = \frac{R(q^4)}{R(q)R(q^2)} = q^{1/5}\frac{G(q)G(q^2)H(q^4)}{H(q)H(q^2)G(q^4)}.</math>
+(את כל הזהויות בסעיף הזה ובסעיפים הבאים בדקנו בחישוב מספרי בדיוק גבוה, בכמה ערכים של <math>q</math>.)
+
+=== זהויות עם פונקציות התטא של יעקובי ===
+עבור פונקציות "ערך האפס" של התטא של יעקובי מתקיים:
+:<math>\vartheta_{00}(x) = 1 + 2\sum_{n=1}^\infty x^{n^2}, \qquad \vartheta_{01}(x) = 1 - 2\sum_{n=1}^\infty(-1)^{n+1}x^{n^2}, \qquad \vartheta_{10}(x) = 2x^{1/4} + 2x^{1/4}\sum_{n=1}^\infty x^{n^2+n},</math>
+והגדרות המכפלה הבאות זהות להגדרות הסכום:
+:<math>\vartheta_{00}(x) = \prod_{n=1}^\infty(1 - x^{2n})(1 + x^{2n-1})^2, \quad \vartheta_{01}(x) = \prod_{n=1}^\infty(1 - x^{2n})(1 - x^{2n-1})^2, \quad \vartheta_{10}(x) = 2x^{1/4}\prod_{n=1}^\infty(1 - x^{2n})(1 + x^{2n})^2.</math>
+שלוש הפונקציות האלה קשורות זו לזו ב'''זהות יעקובי'''
+:<math>\vartheta_{00}(x)^4 = \vartheta_{10}(x)^4 + \vartheta_{01}(x)^4.</math>
+את הזהויות האלה (שנובעות מ[[מכפלה משולשת של יעקובי|המכפלה המשולשת של יעקובי]]) אפשר למצוא, למשל, אצל ויטקר ווטסון.
+
+לשברים המשולבים <math>R(x)</math> ו-<math>S(x)</math> יש הקשרים הבאים לפונקציות התטא, כאשר <math>\operatorname{arccot}</math> מקבל ערכים בטווח <math>(0, \pi)</math>:{{הערה|1=הבחירה של הענף חשובה: אם לוקחים את <math>\operatorname{arccot}</math> בטווח <math>(-\pi/2, \pi/2]</math>, הנוסחה ל-<math>S</math> נכשלת כשהביטוי בסוגריים שלילי (למשל עבור <math>x = 0.3</math>). בטווח <math>(0, \pi)</math> בדקנו את הנוסחאות עבור <math>x = 0.07, 0.3, 0.5, 0.6</math>.|כיווון=שמאל}}
+:<math>R(x) = \tan\left\langle\frac12\operatorname{arccot}\left\{\frac{\vartheta_{01}(x^{1/5})\left[5\vartheta_{01}(x^5)^2 - \vartheta_{01}(x)^2\right]}{2\vartheta_{01}(x^5)\left[\vartheta_{01}(x)^2 - \vartheta_{01}(x^{1/5})^2\right]} + \frac12\right\}\right\rangle,</math>
+:<math>S(x) = \tan\left\langle\frac12\operatorname{arccot}\left\{\frac{\vartheta_{00}(x^{1/5})\left[5\vartheta_{00}(x^5)^2 - \vartheta_{00}(x)^2\right]}{2\vartheta_{00}(x^5)\left[\vartheta_{00}(x^{1/5})^2 - \vartheta_{00}(x)^2\right]} - \frac12\right\}\right\rangle.</math>
+אפשר גם להעביר את השורש החמישי מהנום של פונקציות התטא אל פונקציית הטנגנס החיצונית. כך מתקבלות נוסחאות שדורשות רק אחת משלוש פונקציות התטא העיקריות:
+:<math>R(x) = \tan\left\{\frac12\arctan\left[\frac12 - \frac{\vartheta_{01}(x)^2}{2\vartheta_{01}(x^5)^2}\right]\right\}^{1/5}\tan\left\{\frac12\operatorname{arccot}\left[\frac12 - \frac{\vartheta_{01}(x)^2}{2\vartheta_{01}(x^5)^2}\right]\right\}^{2/5},</math>
+:<math>S(x) = \tan\left\{\frac12\arctan\left[\frac{\vartheta_{00}(x)^2}{2\vartheta_{00}(x^5)^2} - \frac12\right]\right\}^{1/5}\cot\left\{\frac12\operatorname{arccot}\left[\frac{\vartheta_{00}(x)^2}{2\vartheta_{00}(x^5)^2} - \frac12\right]\right\}^{2/5}.</math>
+
+== הגרסאות המודולריות של G ו-H ==
+=== הגדרה ===
+אם מציבים <math>q = e^{2\pi i\tau}</math> (כאשר החלק המדומה של <math>\tau \in \mathbb C</math> חיובי), שתי הפונקציות הבאות הן [[פונקציה מודולרית|פונקציות מודולריות]] של <math>\tau</math>:
+:<math>G_M(q) = q^{-1/60}G(q), \qquad H_M(q) = q^{11/60}H(q).</math>
+באופן מוחשי: אפשר לבטא אותן באופן אלגברי בעזרת המודולוס האליפטי של לז'נדר (ה[[אקסצנטריות]] של האליפסה המתאימה), כפי שמוסבר להלן. עבור השבר המשולב של רוג'רס–רמנוג'אן מתקיים, בעזרת הגרסאות המודולריות של <math>G</math> ו-<math>H</math>,
+:<math>R(q) = \frac{H_M(q)}{G_M(q)}</math>
+(כי <math>q^{11/60}/q^{-1/60} = q^{1/5}</math>).
+
+=== ערכים מיוחדים ===
+לפונקציות האלה יש הערכים הבאים בהופכי של [[הקבוע של גלפונד]], <math>e^{-\pi}</math>, ובריבוע שלו, כאשר <math>\Phi = \frac{1 + \sqrt5}2</math> הוא [[יחס הזהב]]:
+:<math>G_M(e^{-\pi}) = 2^{-1/2}5^{-1/4}(\sqrt5 - 1)^{1/4}(\sqrt[4]5 + 1)^{1/2}R(e^{-\pi})^{-1/2} = 2^{1/4}5^{-1/8}\Phi^{1/2}\cos\left[\tfrac14\arctan(2) + \tfrac12\arcsin(\Phi^{-2})\right],</math>
+:<math>H_M(e^{-\pi}) = 2^{-1/2}5^{-1/4}(\sqrt5 - 1)^{1/4}(\sqrt[4]5 + 1)^{1/2}R(e^{-\pi})^{1/2} = 2^{1/4}5^{-1/8}\Phi^{1/2}\sin\left[\tfrac14\arctan(2) + \tfrac12\arcsin(\Phi^{-2})\right],</math>
+:<math>G_M(e^{-2\pi}) = 10^{-1/4}(\sqrt5 - 1)^{1/4}R(e^{-2\pi})^{-1/2} = 2^{1/2}5^{-1/8}\cos\left[\tfrac14\arctan(2)\right],</math>
+:<math>H_M(e^{-2\pi}) = 10^{-1/4}(\sqrt5 - 1)^{1/4}R(e^{-2\pi})^{1/2} = 2^{1/2}5^{-1/8}\sin\left[\tfrac14\arctan(2)\right].</math>
+בנקודות האלה מקבל השבר המשולב של רוג'רס–רמנוג'אן את הערכים
+:<math>R(e^{-\pi}) = \tfrac14(\sqrt5 + 1)\left(\sqrt5 - \sqrt{\sqrt5 + 2}\right)\left(\sqrt{\sqrt5 + 2} + \sqrt[4]5\right) = \tan\left[\tfrac14\arctan(2) + \tfrac12\arcsin(\Phi^{-2})\right] \approx 0.51143,</math>
+:<math>R(e^{-2\pi}) = 4\sin\left(\tfrac1{20}\pi\right)\sin\left(\tfrac3{20}\pi\right) = \tan\left[\tfrac14\arctan(2)\right] \approx 0.28408.</math>
+(<math>R(e^{-\pi})</math> ניתן גם כמכפלה של ערכי [[הפונקציות האליפטיות הלמניסקטיות|הקוסינוס הלמניסקטי]].) הערך <math>R(e^{-2\pi})</math> הוא אחד הערכים שרמנוג'אן שלח להרדי במכתבו הראשון.
+
+== זהויות עם פונקציית אטא של דדקינד ==
+=== גזירה בעזרת הממוצע הגאומטרי ===
+נתונות ההגדרות
+:<math>G_M(q) = q^{-1/60}\frac1{(q; q^5)_\infty(q^4; q^5)_\infty}, \qquad H_M(q) = q^{11/60}\frac1{(q^2; q^5)_\infty(q^3; q^5)_\infty}.</math>
+המנה שלהן היא בדיוק השבר המשולב: <math>H_M(q)/G_M(q) = R(q)</math>. המכפלה שלהן מצטמצמת לצירוף פשוט של מכפלות פוכהאמר:
+:<math>H_M(q)\,G_M(q) = q^{1/6}\frac1{(q; q^5)_\infty(q^2; q^5)_\infty(q^3; q^5)_\infty(q^4; q^5)_\infty} = q^{1/6}\frac{(q^5; q^5)_\infty}{(q; q)_\infty} = \frac{\eta_W(q^5)}{\eta_W(q)}.</math>
+הממוצע הגאומטרי של שתי שרשראות השוויונות האלה נותן מיד את הביטויים
+:<math>G_M(q) = \eta_W(q^5)^{1/2}\eta_W(q)^{-1/2}R(q)^{-1/2}, \qquad H_M(q) = \eta_W(q^5)^{1/2}\eta_W(q)^{-1/2}R(q)^{1/2}.</math>
+כך מבוטאות <math>G_M</math> ו-<math>H_M</math> רק בעזרת השבר המשולב <math>R</math> ומנת פונקציות אטא. בעזרת מכפלות פוכהאמר בלבד מתקבלות הזהויות הבאות לפונקציות <math>G</math> ו-<math>H</math> הלא-מודולריות:
+:<math>G(q) = (q^5; q^5)_\infty^{1/2}(q; q)_\infty^{-1/2}\left[\frac{H(q)}{G(q)}\right]^{-1/2}, \qquad H(q) = (q^5; q^5)_\infty^{1/2}(q; q)_\infty^{-1/2}\left[\frac{H(q)}{G(q)}\right]^{1/2}.</math>
+
+=== משפט המספרים המחומשים ===
+עבור פונקציית אטא של דדקינד בצורת ובר מתקיים:
+:<math>\eta_W(x) = 2^{-1/6}\vartheta_{10}(x)^{1/6}\vartheta_{00}(x)^{1/6}\vartheta_{01}(x)^{2/3} = 2^{-1/3}\left[\vartheta_{10}(x^{1/2})\vartheta_{00}(x^{1/2})\vartheta_{01}(x^{1/2})\right]^{1/3},</math>
+:<math>\eta_W(x) = x^{1/24}\prod_{n=1}^\infty(1 - x^n) = x^{1/24}(x; x)_\infty,</math>
+:<math>\eta_W(x) = x^{1/24}\left\{1 + \sum_{n=1}^\infty\left[-x^{\operatorname{Fn}(2n-1)} - x^{\operatorname{Kr}(2n-1)} + x^{\operatorname{Fn}(2n)} + x^{\operatorname{Kr}(2n)}\right]\right\},</math>
+:<math>\eta_W(x) = x^{1/24}\left\{1 + \sum_{n=1}^\infty P(n)x^n\right\}^{-1}.</math>
+הנוסחה השלישית היא [[משפט המספרים המחומשים]], בגלל המעריכים, כאשר
+:<math>\operatorname{Fn}(z) = \tfrac12z(3z - 1), \qquad \operatorname{Kr}(z) = \tfrac12z(3z + 1)</math>
+הם ה[[מספר מחומש|מספרים המחומשים]] ו"מספרי בית הקלפים". הנוסחה הרביעית מכילה כמקדמים את [[פונקציית החלוקה (תורת המספרים)|מספרי החלוקה]] הרגילים: <math>P(n)</math> הוא מספר הדרכים לכתוב את <math>n</math> כסכום של מחוברים שלמים חיוביים. למשל <math>P(1), \dots, P(6) = 1, 2, 3, 5, 7, 11</math>; עבור <math>n = 4</math> החלוקות הן <math>1 + 1 + 1 + 1,\ 1 + 1 + 2,\ 2 + 2,\ 1 + 3,\ 4</math>.
+
+=== זהויות נוספות עם פונקציית אטא ===
+את הפונקציות <math>G_M</math> ו-<math>H_M</math> אפשר לפשט עוד. הקשר הבא נוגע לפונקציית אטא בחזקה החמישית של הנום:
+:<math>\frac{\eta_W(q^5)}{\eta_W(q)} = \frac{\eta_W(q^2)^4}{\eta_W(q)^4}\,\frac{\vartheta_{01}(q^5)}{\vartheta_{01}(q)}\left[\frac{5\vartheta_{01}(q^5)^2}{4\vartheta_{01}(q)^2} - \frac14\right]^{-1}.</math>
+צירוף שלוש הנוסחאות האחרונות נותן את זוג הנוסחאות
+:<math>G_M(q) = \frac{\eta_W(q^2)^2}{\eta_W(q)^2}\left[\frac{\vartheta_{01}(q^5)}{\vartheta_{01}(q)}\right]^{1/2}\left[\frac{5\vartheta_{01}(q^5)^2}{4\vartheta_{01}(q)^2} - \frac14\right]^{-1/2}R(q)^{-1/2},</math>
+:<math>H_M(q) = \frac{\eta_W(q^2)^2}{\eta_W(q)^2}\left[\frac{\vartheta_{01}(q^5)}{\vartheta_{01}(q)}\right]^{1/2}\left[\frac{5\vartheta_{01}(q^5)^2}{4\vartheta_{01}(q)^2} - \frac14\right]^{-1/2}R(q)^{1/2}.</math>
+
+=== פונקציית ובר המודולרית המצומצמת ===
+[[פונקציית ובר המודולרית|פונקציות ובר המודולריות]] בצורתן המצומצמת הן דרך יעילה לחשב את ערכי פונקציות רוג'רס–רמנוג'אן. נסמן ב-<math>q(\varepsilon)</math> את הנום האליפטי כפונקציה של המודולוס <math>\varepsilon</math>, ונגדיר את פונקציות ובר המצומצמות
+:<math>w_{Rn}(\varepsilon) = \frac{2^{(n-1)/4}\left[q(\varepsilon)^n; q(\varepsilon)^{2n}\right]_\infty}{\left[q(\varepsilon); q(\varepsilon)^2\right]_\infty^n}, \qquad w_{R5}(\varepsilon) = \frac{2\left[q(\varepsilon)^5; q(\varepsilon)^{10}\right]_\infty}{\left[q(\varepsilon); q(\varepsilon)^2\right]_\infty^5}.</math>
+הפונקציה הזו מקיימת את המשוואה ממעלה שישית
+:<math>w_{R5}(\varepsilon)^6 - 2w_{R5}(\varepsilon)^5 = \tan\left[2\arctan(\varepsilon)\right]^2\left[2w_{R5}(\varepsilon) + 1\right],</math>
+ולכן היא [[פונקציה אלגברית]]. אבל לפי [[משפט אבל–רופיני]] אי אפשר בדרך כלל לבטא אותה בביטויים אלמנטריים במודולוס. עם זאת, ערכים רבים כן ניתנים לביטוי אלמנטרי. ארבע דוגמאות:
+# <math>\varepsilon = \tfrac12\sqrt2</math>: כאן <math>\tan[2\arctan\varepsilon]^2 = 8</math>, והמשוואה היא <math>w^6 - 2w^5 = 16w + 8</math>, עם הפתרון <math>w_{R5}\left(\tfrac12\sqrt2\right) = \sqrt[4]5 + 1</math>.
+# <math>\varepsilon = \sqrt2 - 1</math>: המשוואה היא <math>w^6 - 2w^5 = 2w + 1</math>, ו-
+#:<math>w_{R5}(\sqrt2 - 1) = \tfrac12\left\{\tfrac43\sqrt2\cos\left(\tfrac1{10}\pi\right)\cosh\left[\tfrac13\operatorname{artanh}\left(\tfrac38\sqrt6\right)\right] + \tfrac13\tan\left(\tfrac15\pi\right)\right\}^2 - \tfrac12 = \Phi^{-1}\cot\left[\tfrac14\pi - \arctan\left(\tfrac13\sqrt5 - \tfrac13\sqrt[3]{6\sqrt{30} + 4\sqrt5} + \tfrac13\sqrt[3]{6\sqrt{30} - 4\sqrt5}\right)\right].</math>
+# <math>\varepsilon = (2 - \sqrt3)(\sqrt3 - \sqrt2)</math>: המשוואה היא <math>w^6 - 2w^5 = (\sqrt2 - 1)^4(2w + 1)</math>, ו-<math>w_{R5} = \cot\left[\tfrac14\pi - \tfrac14\operatorname{arccsc}\left(\tfrac14\sqrt{10} + \tfrac14\right)\right]</math>.
+# <math>\varepsilon = (2 - \sqrt3)(\sqrt3 + \sqrt2)</math>: המשוואה היא <math>w^6 - 2w^5 = (\sqrt2 + 1)^4(2w + 1)</math>, ו-<math>w_{R5} = \cot\left[\tfrac14\operatorname{arccsc}\left(\tfrac14\sqrt{10} + \tfrac14\right)\right]</math>.
+(את ארבע הדוגמאות בדקנו בחישוב מספרי, הן מול ההגדרה כמכפלה והן מול המשוואה.) לפונקציה הזו יש גם הביטוי
+:<math>w_{R5}(\varepsilon) = \frac{5\vartheta_{01}[q(\varepsilon)^5]^2}{2\vartheta_{01}[q(\varepsilon)]^2} - \frac12.</math>
+
+=== זהות מדויקת באקסצנטריות לפונקציות G ו-H ===
+כך אפשר לקבל נוסחאות מדויקות ל-<math>G</math> ול-<math>H</math> כפונקציות של האקסצנטריות. מנת פונקציות האטא הבאה תלויה באקסצנטריות כך:
+:<math>\frac{\eta_W[q(\varepsilon)^2]}{\eta_W[q(\varepsilon)]} = 2^{-1/4}\tan\left[2\arctan(\varepsilon)\right]^{1/12},</math>
+והנוסחה לשבר המשולב <math>R</math> כפונקציה של האקסצנטריות היא
+:<math>R[q(\varepsilon)] = \tan\left\{\frac12\arctan\left[\frac{w_{R5}(\varepsilon) - 2}{2w_{R5}(\varepsilon) + 1}\right]\right\}^{1/5}\tan\left\{\frac12\operatorname{arccot}\left[\frac{w_{R5}(\varepsilon) - 2}{2w_{R5}(\varepsilon) + 1}\right]\right\}^{2/5}.</math>
+הצבת שלוש הנוסחאות האחרונות בנוסחאות הסופיות של הסעיף הקודם נותנת, עם <math>X = \frac{w_{R5}(\varepsilon) - 2}{2w_{R5}(\varepsilon) + 1}</math>:
+:<math>G_M[q(\varepsilon)] = \frac{\tan[2\arctan(\varepsilon)]^{1/6}\left[2w_{R5}(\varepsilon) + 1\right]^{1/4}}{5^{1/4}w_{R5}(\varepsilon)^{1/2}}\tan\left\{\tfrac12\arctan X\right\}^{-1/10}\tan\left\{\tfrac12\operatorname{arccot}X\right\}^{-1/5},</math>
+:<math>H_M[q(\varepsilon)] = \frac{\tan[2\arctan(\varepsilon)]^{1/6}\left[2w_{R5}(\varepsilon) + 1\right]^{1/4}}{5^{1/4}w_{R5}(\varepsilon)^{1/2}}\tan\left\{\tfrac12\arctan X\right\}^{1/10}\tan\left\{\tfrac12\operatorname{arccot}X\right\}^{1/5}.</math>
+באגף שמאל מופיעות <math>G_M(q)</math> ו-<math>H_M(q)</math> כפונקציות של הנום האליפטי <math>q(\varepsilon)</math>, ובאגף ימין צירוף אלגברי של האקסצנטריות <math>\varepsilon</math>. לכן הפונקציות <math>G_M(q) = q^{-1/60}G(q)</math> ו-<math>H_M(q) = q^{11/60}H(q)</math> אכן מודולריות.
+
+== יישום למשוואות ממעלה חמישית ==
+=== המודולוס המתאים לפי שארל ארמיט ===
+המקרה הכללי של משוואות ממעלה חמישית ב[[רדיקל של ברינג|צורת ברינג–ג'רארד]] אינו פתיר בביטויים אלמנטריים לפי [[משפט אבל–רופיני]], אבל יש לו פתרון בעזרת הנום האליפטי של מודולוס מתאים, שמתואר בדרך פשוטה בעזרת [[הפונקציות האליפטיות הלמניסקטיות]]. נתבונן במשוואה
+:<math>x^5 + 5x = 4c.</math>
+הפתרון הממשי לכל <math>c</math> ממשי חיובי הוא
+:<math>x = \frac{5\vartheta_{00}(Q^5)^3 - \vartheta_{00}(Q^5)\vartheta_{00}(Q)^2}{4\vartheta_{10}(Q)\vartheta_{01}(Q)\vartheta_{00}(Q)}\times\frac{S(Q)^2 + R(Q^2)}{S(Q)}\times\left[R(Q^2)S(Q) + R(Q^2) + S(Q) - 1\right],</math>
+כאשר <math>Q</math> הוא הנום האליפטי של המודולוס המתאים:
+:<math>Q = q\left\{\operatorname{ctlh}\left[\tfrac12\operatorname{aclh}(c)\right]^2\right\} = q\left[\left(\sqrt{\sqrt{c^4 + 1} + 1} + c\right)\left(2c^2 + 2 + 2\sqrt{c^4 + 1}\right)^{-1/2}\right].</math>
+הקיצור ctlh מסמן את הקוטנגנס הלמניסקטי ההיפרבולי, ו-aclh את פונקציית הקוסינוס הלמניסקטי ההיפרבולי ההפוכה. בערך האנגלי מופיעה גם צורה שקולה, ארוכה יותר, של אותו פתרון.
+
+המתמטיקאי [[שארל ארמיט]] קבע את המודולוס האליפטי <math>k</math> כפונקציה של המקדם החופשי בצורת ברינג–ג'רארד. במאמרו "Sur la résolution de l'Équation du cinquième degré" הוא תיאר את שיטת החישוב של המודולוס האליפטי מהמקדם החופשי, והגרסה האיטלקית של המאמר, "Sulla risoluzione delle equazioni del quinto grado", מכילה בעמוד 258 בדיוק את משוואת ברינג–ג'רארד שלמעלה, שאפשר לפתור אותה ישירות בעזרת הפונקציות שמבוססות על המודולוס המתאים.
+
+=== דוגמאות חישוב ===
+* עבור <math>x^5 + 5x = 8</math> (<math>c = 2</math>): <math>Q = q\left[\left(\sqrt{\sqrt{17} + 1} + 2\right)\left(10 + 2\sqrt{17}\right)^{-1/2}\right] = 0.30634665444660742653\ldots</math>, והפתרון הוא <math>x = 1.16703618370164304731\ldots</math>.
+* עבור <math>x^5 + 5x = 12</math> (<math>c = 3</math>): <math>Q = q\left[\left(\sqrt{\sqrt{82} + 1} + 3\right)\left(20 + 2\sqrt{82}\right)^{-1/2}\right] = 0.37066495115202407562\ldots</math>, והפתרון הוא <math>x = 1.38409179582314635924\ldots</math>.
+(חישבנו את שני הפתרונות מהנוסחה, והשווינו לשורש הממשי של המשוואה שנמצא בשיטה נומרית; הספרות מתלכדות.)
+
+== יישומים בפיזיקה ==
+זהויות רוג'רס–רמנוג'אן הופיעו בפתרון של בקסטר ל[[מודל המשושים הקשים]] ב[[מכניקה סטטיסטית]]. הצורה הסטנדרטית ה"לא מודולרית" של השבר המשולב של רמנוג'אן היא
+:<math>\frac{H(q)}{G(q)} = \cfrac1{1 + \cfrac q{1 + \cfrac{q^2}{1 + \cfrac{q^3}{1 + \cdots}}}}.</math>
+
+== קשרים לאלגבראות לי אפיניות ולאלגבראות של אופרטורי קודקוד ==
+ג'יימס לפובסקי ורוברט לי וילסון היו הראשונים שהוכיחו את זהויות רוג'רס–רמנוג'אן בשיטות של [[תורת ההצגות]] בלבד. הם הוכיחו את הזהויות בעזרת מודולים מרמה 3 של [[אלגברת לי אפינית|אלגברת לי האפינית]] <math>\widehat{\mathfrak{sl}_2}</math>, ותוך כדי ההוכחה המציאו והשתמשו במה שקראו לו <math>Z</math>-אלגבראות. הגישה של לפובסקי ווילסון אוניברסלית, במובן שהיא מטפלת בכל אלגבראות הלי האפיניות בכל הרמות, ואפשר להשתמש בה כדי למצוא (ולהוכיח) זהויות חלוקה חדשות. הדוגמה הראשונה כזו היא הזהויות של קפרלי, שגילה סטפנו קפרלי בעזרת מודולים מרמה 3 של אלגברת הלי האפינית <math>A_2^{(2)}</math>.
+
+== ראו גם ==
+* [[השבר המשולב של רוג'רס–רמנוג'אן]]
+* [[פולינומי רוג'רס]]
+* [[פונקציית החלוקה (תורת המספרים)|פונקציית החלוקה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* L. J. Rogers, S. Ramanujan, ''Proof of certain identities in combinatory analysis'', Proc. Cambridge Phil. Soc. '''19''' (1919), pp. 211–216
+* L. J. Rogers, ''Second memoir on the expansion of certain infinite products'', Proc. London Math. Soc. '''25''' (1894), pp. 318–343
+* I. Schur, ''Ein Beitrag zur additiven Zahlentheorie und zur Theorie der Kettenbrüche'', Sitzungsberichte der Berliner Akademie (1917), pp. 302–321
+* W. N. Bailey, ''Generalized Hypergeometric Series'', Cambridge Tracts '''32''', 1935
+* G. Gasper, M. Rahman, ''Basic Hypergeometric Series'', 2nd ed., Cambridge University Press, 2004
+* C. Boulet, I. Pak, ''A combinatorial proof of the Rogers–Ramanujan and Schur identities'', J. Combin. Theory Ser. A '''113''' (2006), pp. 1019–1030
+* L. J. Slater, ''Further identities of the Rogers–Ramanujan type'', Proc. London Math. Soc. '''54''' (1952), pp. 147–167
+* J. Lepowsky, R. L. Wilson, ''The structure of standard modules, I: Universal algebras and the Rogers–Ramanujan identities'', Invent. Math. '''77''' (1984), pp. 199–290
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:זהויות מתמטיות]]
+[[קטגוריה:חלוקות]]
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:סריניוואסה רמנוג'אן]]
