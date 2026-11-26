@@ -286,7 +286,7 @@ Additive number theory:
 ### תורת המספרים האנליטית – השלמות (2)
 
 - [x] Pólya–Vinogradov inequality
-- [ ] Selberg's identity
+- [x] Selberg's identity
 
 ### פונקציות אריתמטיות (1)
 
