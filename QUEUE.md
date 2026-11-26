@@ -302,7 +302,7 @@ Additive number theory:
 - [x] Backhouse's constant
 - [x] Gaussian moat
 - [x] Sierpiński number
-- [ ] Prime k-tuple
+- [x] Prime k-tuple
 - [ ] Primes in arithmetic progression
 - [ ] Reciprocals of primes
 - [ ] Prime constant
