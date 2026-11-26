@@ -199,7 +199,7 @@ Additive number theory:
 - [x] Eisenstein ideal
 - [x] Manin–Drinfeld theorem
 - [x] Fricke involution
-- [ ] Diamond operator
+- [x] Diamond operator
 - [ ] Poincaré series (modular form)
 - [ ] Ring of modular forms
 - [ ] Weakly holomorphic modular form
