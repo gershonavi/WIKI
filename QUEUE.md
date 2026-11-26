@@ -192,7 +192,7 @@ Additive number theory:
 - [x] Hecke algebra
 - [x] Modular symbol
 - [x] Maass cusp form
-- [ ] Eichler–Shimura isomorphism
+- [x] Eichler–Shimura isomorphism
 - [ ] Jacobi form
 - [ ] Modular equation
 - [ ] Weber modular function
