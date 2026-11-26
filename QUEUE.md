@@ -398,6 +398,6 @@ Additive number theory:
 - [x] Adele ring
 - [ ] Automorphic form
 - [ ] Monstrous moonshine
-- [ ] Chowla–Selberg formula
+- [x] Chowla–Selberg formula
 - [ ] Hecke L-function
 - [ ] Supersingular prime (moonshine theory)

@@ -1,0 +1,36 @@
+ב[[מתמטיקה]], '''נוסחת צ'אולה–סלברג''' (Chowla–Selberg formula) היא חישוב של מכפלה מסוימת של ערכי [[פונקציית גמא]] בנקודות רציונליות, במונחי ערכים של [[פונקציית אטא של דדקינד]] במספרים אי-רציונליים ריבועיים מדומים. התוצאה נמצאה בעיקרה על ידי מתיאש לרך (1897), והתגלתה מחדש על ידי צ'אולה ו[[אטלה סלברג|סלברג]] (1949, 1967).
+
+== ניסוח ==
+בצורה לוגריתמית, נוסחת צ'אולה–סלברג אומרת שבמקרים מסוימים אפשר לחשב את הסכום
+:<math> \frac{w}{4}\sum_r \chi(r)\log \Gamma\left( \frac{r}{D} \right) = \frac{h}{2}\log\left(4\pi\sqrt{|D|}\right) + \sum_\tau\log\left(\sqrt{\operatorname{Im}(\tau)}\,|\eta(\tau)|^2\right)</math>
+בעזרת [[נוסחת הגבול של קרונקר]]. כאן <math>\chi</math> הוא סמל השארית הריבועית מודולו <math>D</math>, כאשר <math>-D</math> ה[[דיסקרימיננטה]] של [[שדה ריבועי]] מדומה. הסכום הוא על <math>0 \lt r \lt D</math>, עם המוסכמה הרגילה <math>\chi(r) = 0</math> אם ל-<math>r</math> ול-<math>D</math> יש גורם משותף. <math>\eta</math> היא פונקציית האטא של דדקינד, <math>h</math> [[חבורת מחלקות האידיאלים|מספר המחלקה]], ו-<math>w</math> מספר שורשי היחידה בשדה. הסכום על <math>\tau</math> הוא על נציגים <math>\tau = \tfrac{-b + \sqrt{-D}}{2a}</math> של <math>h</math> מחלקות התבניות הריבועיות המצומצמות <math>(a, b, c)</math> עם דיסקרימיננטה <math>-D</math>.
+
+=== דוגמאות מספריות ===
+בדקנו בחישוב (ברמת דיוק של 30 ספרות) שהנוסחה מתקיימת בדיוק במקרים הבאים:
+* <math>D = 4</math> (<math>\mathbb Q(i)</math>, <math>w = 4</math>, <math>h = 1</math>, <math>\tau = i</math>): שני האגפים שווים ל-<math>1.0847415\ldots</math>.
+* <math>D = 3</math> (<math>w = 6</math>, <math>h = 1</math>, <math>\tau = \tfrac{-1 + \sqrt{-3}}{2}</math>): <math>1.0234055\ldots</math>.
+* <math>D = 7</math> (<math>w = 2</math>, <math>h = 1</math>): <math>1.1997285\ldots</math>.
+* <math>D = 23</math> (<math>w = 2</math>, <math>h = 3</math>, עם שלוש התבניות <math>x^2 + xy + 6y^2</math>, <math>2x^2 \pm xy + 3y^2</math>): <math>4.2558205\ldots</math>.
+
+== מקור ושימושים ==
+היום מבינים שמקורן של נוסחאות כאלה הוא בתורת ה[[כפל מרוכב|כפל המרוכב]], ובפרט בתורת המחזורים של יריעה אבלית מטיפוס CM. זה הוביל למחקר רב ולהכללות. בפרט יש אנלוג לנוסחת צ'אולה–סלברג ל[[מספר p-אדי|מספרים <math>p</math>-אדיים]], עם פונקציית גמא <math>p</math>-אדית, שנקרא נוסחת גרוס–קובליץ.
+
+נוסחת צ'אולה–סלברג נותנת נוסחה למכפלה סופית של ערכי פונקציית האטא. בשילוב עם תורת הכפל המרוכב אפשר לקבל נוסחה לערכים המוחלטים של פונקציית האטא בנקודות בודדות:
+:<math>\operatorname{Im}(\tau)\,|\eta(\tau)|^4 = \frac{\alpha}{4\pi\sqrt{|D|}} \prod_r\Gamma(r/|D|)^{\chi(r)\frac{w}{2h}}</math>
+עבור מספר אלגברי <math>\alpha</math> כלשהו.
+
+== דוגמה ==
+בעזרת נוסחת השיקוף של אוילר לפונקציית גמא (<math>\Gamma(\tfrac14)\Gamma(\tfrac34) = \pi\sqrt2</math>), המקרה <math>D = 4</math> נותן:
+:<math>\eta(i) = \frac{\Gamma(\tfrac{1}{4})}{2\pi^{3/4}} = 0.7682254223\ldots</math>
+(בדקנו בחישוב מול המכפלה <math>\eta(i) = e^{-\pi/12}\prod_{n\ge1}(1 - e^{-2\pi n})</math>.)
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* S. Chowla, A. Selberg, "On Epstein's zeta function. I", ''Proc. Natl. Acad. Sci. USA'' '''35''' (1949), no. 7, 371–374
+* S. Chowla, A. Selberg, "On Epstein's zeta-function", ''J. reine angew. Math.'' '''227''' (1967), 86–110
+* M. Lerch, "Sur quelques formules relatives au nombre des classes", ''Bulletin des Sciences Mathématiques'' '''21''' (1897), 290–304
+* N. Schappacher, ''Periods of Hecke Characters'', Lecture Notes in Mathematics 1301, Springer, 1988
+</div>
+
+[[קטגוריה:משפטים בתורת המספרים]]
+[[קטגוריה:פונקציית גמא]]
