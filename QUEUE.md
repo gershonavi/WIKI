@@ -335,7 +335,7 @@ Additive number theory:
 - [x] Sphenic number
 - [x] Nontotient
 - [x] Highly totient number
-- [ ] Perfect totient number
+- [x] Perfect totient number
 - [ ] Euclid–Mullin sequence
 - [ ] Wilson quotient
 - [ ] Wolstenholme number
