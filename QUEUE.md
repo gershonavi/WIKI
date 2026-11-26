@@ -161,7 +161,7 @@ Additive number theory:
 - [x] Néron–Ogg–Shafarevich criterion
 - [x] Heegner point
 - [x] Elliptic curve point multiplication
-- [ ] Edwards curve
+- [x] Edwards curve
 - [x] Montgomery curve
 - [x] Brumer bound
 - [x] Mestre bound
