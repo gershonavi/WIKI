@@ -363,7 +363,7 @@ Additive number theory:
 - [x] Ulam number
 - [x] Stanley sequence
 - [x] Mian–Chowla sequence
-- [ ] Sum-free sequence
+- [x] Sum-free sequence
 - [x] Moser–de Bruijn sequence
 - [ ] Highly cototient number
 - [ ] Sparsely totient number
