@@ -424,10 +424,10 @@ Additive number theory:
 
 ### השלמות לשיעור 18 (קבוע דה ברויין–ניומן) (7)
 
-- [ ] Laguerre–Pólya class
+- [x] Laguerre–Pólya class
 - [ ] Turán's inequalities
 - [ ] Polymath Project
-- [ ] Riemann–Siegel theta function
+- [x] Riemann–Siegel theta function (קיים: פונקציית התטא של רימן-זיגל)
 - [ ] Gaussian ensemble
 - [ ] Dyson Brownian motion
 - [ ] Hadamard factorization theorem
