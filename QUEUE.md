@@ -333,7 +333,7 @@ Additive number theory:
 - [x] Blum integer
 - [x] Achilles number
 - [x] Sphenic number
-- [ ] Nontotient
+- [x] Nontotient
 - [ ] Highly totient number
 - [ ] Perfect totient number
 - [ ] Euclid–Mullin sequence
