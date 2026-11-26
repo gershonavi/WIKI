@@ -360,7 +360,7 @@ Additive number theory:
 - [x] Znám's problem
 - [x] Primary pseudoperfect number
 - [x] Erdős–Woods number
-- [ ] Ulam number
+- [x] Ulam number
 - [ ] Stanley sequence
 - [ ] Mian–Chowla sequence
 - [ ] Sum-free sequence
