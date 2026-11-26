@@ -188,7 +188,7 @@ Additive number theory:
 - [x] Ribet's theorem
 - [x] Serre's modularity conjecture
 - [x] Siegel modular form
-- [ ] Shimura correspondence
+- [x] Shimura correspondence
 - [ ] Hecke algebra
 - [ ] Modular symbol
 - [ ] Maass cusp form

@@ -16,7 +16,7 @@
 
 **[קטגוריות ואינדקס ערכים לפי האלף-בית](CATEGORIES.md)**
 
-## ערכים (374)
+## ערכים (375)
 
 כל ערך מופיע כאן תחת הקטגוריה הראשית שלו; ערך יכול להופיע בכמה קטגוריות בדף הקטגוריות.
 
@@ -327,6 +327,7 @@
 
 * [השערת המודולריות של סר](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%94%D7%9E%D7%95%D7%93%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA%20%D7%A9%D7%9C%20%D7%A1%D7%A8.md) – Serre's modularity conjecture
 * [השערת רמנוג'אן–פטרסון](pages/%D7%94%D7%A9%D7%A2%D7%A8%D7%AA%20%D7%A8%D7%9E%D7%A0%D7%95%D7%92%27%D7%90%D7%9F%E2%80%93%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F.md) – Ramanujan–Petersson conjecture
+* [התאמת שימורה](pages/%D7%94%D7%AA%D7%90%D7%9E%D7%AA%20%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Shimura correspondence
 * [טור אייזנשטיין ממשי-אנליטי](pages/%D7%98%D7%95%D7%A8%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F%20%D7%9E%D7%9E%D7%A9%D7%99-%D7%90%D7%A0%D7%9C%D7%99%D7%98%D7%99.md) – Real analytic Eisenstein series
 * [יחס הקונגרואנציה של אייכלר–שימורה](pages/%D7%99%D7%97%D7%A1%20%D7%94%D7%A7%D7%95%D7%A0%D7%92%D7%A8%D7%95%D7%90%D7%A0%D7%A6%D7%99%D7%94%20%D7%A9%D7%9C%20%D7%90%D7%99%D7%99%D7%9B%D7%9C%D7%A8%E2%80%93%D7%A9%D7%99%D7%9E%D7%95%D7%A8%D7%94.md) – Eichler–Shimura congruence relation
 * [מכפלה פנימית של פטרסון](pages/%D7%9E%D7%9B%D7%A4%D7%9C%D7%94%20%D7%A4%D7%A0%D7%99%D7%9E%D7%99%D7%AA%20%D7%A9%D7%9C%20%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F.md) – Petersson inner product

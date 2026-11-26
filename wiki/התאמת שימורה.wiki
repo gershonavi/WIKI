@@ -1,0 +1,45 @@
+ב[[תורת המספרים]], '''התאמת שימורה''' היא התאמה בין [[תבנית מודולרית|תבניות מודולריות]] <math>F</math> ממשקל חצי-שלם <math>k + 1/2</math> לבין תבניות מודולריות <math>f</math> ממשקל זוגי <math>2k</math>, שגילה [[גורו שימורה]] ב-1973.{{הערה|שם=Sh|1=<span dir="ltr">G. Shimura, On modular forms of half integral weight, Annals of Mathematics 97 (1973), no. 3, pp. 440–481.</span>|כיווון=שמאל}} תכונתה העיקרית היא שהערך העצמי של [[אופרטור הקה]] <math>T_{n^2}</math> על <math>F</math> שווה לערך העצמי של <math>T_n</math> על <math>f</math>. (במשקל חצי-שלם, אופרטורי הקה <math>T_m</math> עם <math>m</math> שאינו ריבוע מתאפסים, ולכן האופרטורים המעניינים הם <math>T_{p^2}</math>.)
+
+תהי <math>f</math> [[תבנית שפיץ]] הולומורפית ממשקל <math>(2k+1)/2</math> וקרקטר <math>\chi</math>, שהיא תבנית עצמית של כל אופרטורי הקה <math>T(p^2)</math>. נגדיר
+:<math>\sum_{n=1}^\infty\Lambda(n)n^{-s} = \prod_p\left(1 - \omega_pp^{-s} + \chi(p)^2p^{2k-1-2s}\right)^{-1},</math>
+כאשר <math>\omega_p</math> הם הערכים העצמיים של אופרטורי הקה <math>T(p^2)</math>. בעזרת [[משוואה פונקציונלית (פונקציית L)|המשוואה הפונקציונלית]] של [[פונקציית L|פונקציות L]], שימורה הראה ש-
+:<math>F(z) = \sum_{n=1}^\infty\Lambda(n)q^n</math>
+היא תבנית מודולרית הולומורפית ממשקל <math>2k</math> וקרקטר <math>\chi^2</math>.
+
+ההוכחה של שימורה משתמשת ב[[שיטת רנקין–סלברג|קונבולוציית רנקין–סלברג]] של <math>f(z)</math> עם טורי התטא
+:<math>\theta_\psi(z) = \sum_{n=-\infty}^\infty\psi(n)\,n^\nu e^{2i\pi n^2z}, \qquad \nu = \frac{1 - \psi(-1)}2,</math>
+עבור [[קרקטר דיריכלה|קרקטרי דיריכלה]] <math>\psi</math> שונים, ואחר כך מפעילה את [[משפט ההיפוך של וייל]].
+
+== אופרטורי הקה במשקל חצי-שלם ==
+עבור <math>f = \sum b(n)q^n</math> ממשקל <math>k + \tfrac12</math> על <math>\Gamma_0(4N)</math> עם קרקטר <math>\chi</math>, ולראשוני <math>p \nmid 4N</math>, אופרטור הקה <math>T(p^2)</math> פועל על המקדמים כך:
+:<math>b(n) \mapsto b(p^2n) + \chi(p)\left(\frac{(-1)^kn}p\right)p^{k-1}b(n) + \chi(p^2)p^{2k-1}b(n/p^2),</math>
+כאשר <math>\left(\frac\cdot p\right)</math> הוא [[סמל לז'נדר]], ו-<math>b(n/p^2) = 0</math> אם <math>p^2 \nmid n</math>. אם <math>f</math> עצמית עם ערך עצמי <math>\omega_p</math> ו-<math>b(1) = 1</math>, הצבת <math>n = 1</math> נותנת
+:<math>\omega_p = b(p^2) + \chi(p)\left(\frac{(-1)^k}p\right)p^{k-1}.</math>
+
+== דוגמה: התבנית של טאנל ==
+התבנית
+:<math>g(z) = \eta(8z)\eta(16z)\theta(2z) = q + 2q^3 + q^9 - 2q^{11} - 4q^{17} - 2q^{19} - 3q^{25} + 4q^{33} - \cdots,</math>
+כאשר <math>\eta</math> היא [[פונקציית אטא של דדקינד]] ו-<math>\theta(z) = \sum_ne^{2\pi in^2z}</math>, היא תבנית שפיץ ממשקל <math>\tfrac32</math> (<math>k = 1</math>) על <math>\Gamma_0(128)</math>. ההתאמה של שימורה שולחת אותה לתבנית השפיץ ממשקל 2 שמתאימה ל[[עקום אליפטי|עקום האליפטי]] <math>y^2 = x^3 - x</math> (מוליך 32). כך, למשל:
+* <math>p = 5</math>: <math>\omega_5 = b(25) + \left(\frac{-1}5\right)b(1) = -3 + 1 = -2</math>, ואכן <math>a_5 = 5 + 1 - \#E(\mathbb F_5) = -2</math>.
+* <math>p = 13</math>: <math>\omega_{13} = b(169) + 1 = 6 = a_{13}</math>.
+* <math>p = 3</math>: <math>\omega_3 = b(9) + \left(\frac{-1}3\right) = 1 - 1 = 0 = a_3</math>, כמו לכל <math>p \equiv 3 \pmod 4</math> (העקום הוא בעל [[כפל מרוכב]] ב-<math>\mathbb Z[i]</math>).
+בדקנו בחישוב מחשב, עבור <math>p = 3, 5, 7, 11, 13, 17</math>, ש-<math>g</math> היא אכן פונקציה עצמית של <math>T(p^2)</math> (לכל המקדמים <math>b(n)</math> עם <math>n \lt 4000/p^2</math>), ושהערך העצמי שווה ל-<math>a_p</math> של העקום.
+
+הדוגמה הזו היא חלק מ'''משפט טאנל''' על [[מספר קונגרואנטי|מספרים קונגרואנטיים]]: לפי [[משפט ולדשפורגר]], המקדמים של תבניות ממשקל חצי-שלם כמו <math>g</math> קשורים לערכים המרכזיים <math>L(E_n, 1)</math> של הסיבובים <math>E_n: y^2 = x^3 - n^2x</math> של העקום, ולכן הם קובעים (בהנחת [[השערת בירץ' וסווינרטון-דייר]]) אם <math>n</math> מספר קונגרואנטי.
+
+== ראו גם ==
+* [[התאמת תטא]]
+* [[תבנית מודולרית מדומה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. Bump, ''Shimura correspondence'', Encyclopedia of Mathematics
+* N. Koblitz, ''Introduction to Elliptic Curves and Modular Forms'', 2nd ed., Springer, 1993, chapter IV
+* J. B. Tunnell, ''A classical Diophantine problem and modular forms of weight 3/2'', Inventiones Mathematicae '''72''' (1983), pp. 323–334
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:תוכנית לנגלנדס]]
