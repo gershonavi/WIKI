@@ -198,7 +198,7 @@ Additive number theory:
 - [x] Weber modular function
 - [x] Eisenstein ideal
 - [x] Manin–Drinfeld theorem
-- [ ] Fricke involution
+- [x] Fricke involution
 - [ ] Diamond operator
 - [ ] Poincaré series (modular form)
 - [ ] Ring of modular forms
