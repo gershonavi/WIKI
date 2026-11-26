@@ -351,7 +351,7 @@ Additive number theory:
 - [x] Unitary perfect number
 - [x] Superperfect number
 - [x] Erdős–Nicolas number
-- [ ] Primitive abundant number
+- [x] Primitive abundant number
 - [ ] Friendly number
 - [ ] Betrothed numbers
 - [ ] Descartes number
