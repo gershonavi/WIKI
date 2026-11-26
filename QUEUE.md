@@ -184,7 +184,7 @@ Additive number theory:
 - [x] Mock modular form
 - [x] Harmonic Maass form
 - [x] Rogers–Ramanujan identities
-- [ ] Rogers–Ramanujan continued fraction
+- [x] Rogers–Ramanujan continued fraction
 - [ ] Ribet's theorem
 - [ ] Serre's modularity conjecture
 - [ ] Siegel modular form

@@ -1,0 +1,206 @@
+'''השבר המשולב של רוג'רס–רמנוג'אן''' הוא [[שבר משולב]] שגילה לאונרד ג'יימס רוג'רס ב-1894, ובאופן בלתי תלוי [[סריניוואסה רמנוג'אן]], והוא קשור הדוק ל[[זהויות רוג'רס–רמנוג'אן]]. אפשר לחשב אותו במפורש עבור משפחה רחבה של ערכי הארגומנט שלו.
+
+== הגדרה ==
+בהינתן הפונקציות <math>G(q)</math> ו-<math>H(q)</math> שמופיעות בזהויות רוג'רס–רמנוג'אן, ובהנחה ש-<math>q = e^{2\pi i\tau}</math>,
+:<math>\begin{align}
+G(q) &= \sum_{n=0}^\infty\frac{q^{n^2}}{(1 - q)(1 - q^2)\cdots(1 - q^n)} = \sum_{n=0}^\infty\frac{q^{n^2}}{(q; q)_n} = \frac1{(q; q^5)_\infty(q^4; q^5)_\infty} = \prod_{n=1}^\infty\frac1{(1 - q^{5n-1})(1 - q^{5n-4})} \\
+&= \sqrt[60]{q\,j}\ {}_2F_1\left(-\tfrac1{60}, \tfrac{19}{60}; \tfrac45; \tfrac{1728}j\right) = \sqrt[60]{q(j - 1728)}\ {}_2F_1\left(-\tfrac1{60}, \tfrac{29}{60}; \tfrac45; -\tfrac{1728}{j - 1728}\right) \\
+&= 1 + q + q^2 + q^3 + 2q^4 + 2q^5 + 3q^6 + \cdots
+\end{align}</math>
+ו-
+:<math>\begin{align}
+H(q) &= \sum_{n=0}^\infty\frac{q^{n^2+n}}{(q; q)_n} = \frac1{(q^2; q^5)_\infty(q^3; q^5)_\infty} = \prod_{n=1}^\infty\frac1{(1 - q^{5n-2})(1 - q^{5n-3})} \\
+&= \frac1{\sqrt[60]{q^{11}j^{11}}}\ {}_2F_1\left(\tfrac{11}{60}, \tfrac{31}{60}; \tfrac65; \tfrac{1728}j\right) = \frac1{\sqrt[60]{q^{11}(j - 1728)^{11}}}\ {}_2F_1\left(\tfrac{11}{60}, \tfrac{41}{60}; \tfrac65; -\tfrac{1728}{j - 1728}\right) \\
+&= 1 + q^2 + q^3 + q^4 + q^5 + 2q^6 + 2q^7 + \cdots
+\end{align}</math>
+כאשר מקדמי פיתוחי ה-<math>q</math> הם הסדרות A003114 ו-A003106 ב-OEIS, <math>(a; q)_\infty</math> הוא [[סמל פוכהאמר q|סמל פוכהאמר <math>q</math>]] האינסופי, <math>j</math> הוא [[אינווריאנט j|פונקציית <math>j</math>]], ו-<math>{}_2F_1</math> היא [[פונקציה היפרגאומטרית|הפונקציה ההיפרגאומטרית]]. (את הביטויים ההיפרגאומטריים בדקנו בחישוב מספרי ב-<math>\tau = 2i</math>, שם <math>j = 66^3</math>.) השבר המשולב של רוג'רס–רמנוג'אן הוא אז
+:<math>R(q) = \frac{q^{\frac{11}{60}}H(q)}{q^{-\frac1{60}}G(q)} = q^{\frac15}\prod_{n=1}^\infty\frac{(1 - q^{5n-1})(1 - q^{5n-4})}{(1 - q^{5n-2})(1 - q^{5n-3})} = q^{1/5}\prod_{n=1}^\infty(1 - q^n)^{(n|5)} = \cfrac{q^{1/5}}{1 + \cfrac q{1 + \cfrac{q^2}{1 + \cfrac{q^3}{1 + \ddots}}}},</math>
+כאשר <math>(n \mid m)</math> הוא [[סמל יעקובי]].
+
+צריך להיזהר בסימונים: הנוסחאות עם פונקציית <math>j</math> עקביות עם האחרות רק אם משתמשים בסעיף הזה לכל אורכו ב-<math>q = e^{2\pi i\tau}</math> (ריבוע ה[[נום (מתמטיקה)|נום]]), כי פיתוח ה-<math>q</math> של פונקציית <math>j</math> (ושל [[פונקציית אטא של דדקינד]]) משתמש ב-<math>q = e^{2\pi i\tau}</math>. לעומת זאת, רמנוג'אן, בדוגמאות ששלח להרדי ושמובאות להלן, השתמש בנום <math>q = e^{\pi i\tau}</math>.
+
+== ערכים מיוחדים ==
+אם <math>q</math> הוא הנום או ריבועו, אז <math>q^{-\frac1{60}}G(q)</math> ו-<math>q^{\frac{11}{60}}H(q)</math>, וגם המנה שלהן <math>R(q)</math>, קשורות ל[[פונקציה מודולרית|פונקציות מודולריות]] של <math>\tau</math>. כיוון שיש להן מקדמים שלמים, תורת ה[[כפל מרוכב|כפל המרוכב]] גוררת שהערכים שלהן עבור <math>\tau</math> בשדה ריבועי מדומה הם [[מספר אלגברי|מספרים אלגבריים]] שאפשר לחשב במפורש.
+
+=== דוגמאות ל-R(q) ===
+בצורה הכללית, כשרמנוג'אן השתמש בנום <math>q = e^{\pi i\tau}</math>,
+:<math>R(q) = \cfrac{q^{1/5}}{1 + \cfrac q{1 + \cfrac{q^2}{1 + \cfrac{q^3}{1 + \ddots}}}}.</math>
+עם <math>\varphi = \tfrac{1 + \sqrt5}2</math> [[יחס הזהב]]:
+* כאשר <math>\tau = i</math>: <math>R(e^{-\pi}) = \tfrac12\varphi\left(\sqrt5 - \varphi^{3/2}\right)\left(\sqrt[4]5 + \varphi^{3/2}\right) = 0.511428\ldots</math>
+* כאשר <math>\tau = 2i</math>: <math>R(e^{-2\pi}) = \sqrt[4]5\,\varphi^{1/2} - \varphi = 0.284079\ldots</math>
+* כאשר <math>\tau = 4i</math>: <math>R(e^{-4\pi}) = \tfrac12\varphi\left(\sqrt5 - \varphi^{3/2}\right)\left(-\sqrt[4]5 + \varphi^{3/2}\right) = 0.081002\ldots</math>
+* כאשר <math>\tau = 2\sqrt5\,i</math>: <math>R(e^{-2\sqrt5\pi}) = \frac{\sqrt5}{1 + \left(5^{3/4}(\varphi - 1)^{5/2} - 1\right)^{1/5}} - \varphi = 0.0602094\ldots</math>
+* כאשר <math>\tau = 5i</math>: <math>R(e^{-5\pi}) = \frac{1 + \varphi^2}{\varphi + \left(\frac12\left(4 - \varphi - 3\sqrt{\varphi - 1}\right)\left(3\varphi^{3/2} - \sqrt[4]5\right)\right)^{1/5}} - \varphi = 0.0432139\ldots</math>
+* כאשר <math>\tau = 10i</math>: <math>R(e^{-10\pi}) = \frac{1 + \varphi^2}{\varphi + \left(3\sqrt{1 + \varphi^2} - 4 - \varphi\right)^{1/5}} - \varphi = 0.00186744\ldots</math>
+* כאשר <math>\tau = 20i</math>: <math>R(e^{-20\pi}) = \frac{1 + \varphi^2}{\varphi + \left(\frac12\left(4 - \varphi - 3\sqrt{\varphi - 1}\right)\left(3\varphi^{3/2} + \sqrt[4]5\right)\right)^{1/5}} - \varphi = 0.00000348734\ldots</math>
+(את שבעת הערכים בדקנו בחישוב מספרי מול המכפלה האינסופית.) <math>R(e^{-2\pi})</math> הוא שורש חיובי של ה[[משוואה ממעלה רביעית]]
+:<math>x^4 + 2x^3 - 6x^2 - 2x + 1 = 0,</math>
+ואילו <math>R(e^{-\pi})</math> ו-<math>R(e^{-4\pi})</math> הם שני שורשים חיוביים של המשוואה
+:<math>y^4 + 2\varphi^4y^3 + 6\varphi^2y^2 - 2\varphi^4y + 1 = 0,</math>
+שמקדמיה ב-<math>\mathbb Q(\sqrt5)</math>, כלומר של משוואה אחת ממעלה שמינית מעל <math>\mathbb Q</math>; זה מסביר את הדמיון בין שתי הצורות הסגורות. באופן כללי יותר, לכל <math>m</math> שלם חיובי, <math>R(e^{-2\pi/m})</math> ו-<math>R(e^{-2\pi m})</math> הם שני שורשים של אותה משוואה, וגם
+:<math>\left[R(e^{-2\pi/m}) + \varphi\right]\left[R(e^{-2\pi m}) + \varphi\right] = \sqrt5\,\varphi.</math>
+לפי OEIS (A082682), הדרגה האלגברית <math>k</math> של <math>R(e^{-\pi n})</math> עבור <math>n = 1, 2, 3, 4, \dots</math> היא <math>k = 8, 4, 32, 8, \dots</math>.
+
+אגב, אפשר להשתמש בשברים המשולבים האלה כדי לפתור כמה [[משוואה ממעלה חמישית|משוואות ממעלה חמישית]], כפי שמוסבר בסעיף להלן.
+
+=== דוגמאות ל-G(q) ול-H(q) ===
+יש נוסחאות מפורשות ל-<math>G(q)</math> ול-<math>H(q)</math> בעזרת פונקציית <math>j(\tau)</math> והשבר המשולב <math>R(q)</math>. כיוון ש-<math>j(\tau)</math> משתמשת בריבוע הנום <math>q = e^{2\pi i\tau}</math>, צריך להקפיד ש-<math>j(\tau)</math>, <math>G(q)</math>, <math>H(q)</math> ו-<math>r = R(q)</math> ישתמשו באותו <math>q</math>:
+:<math>G(q) = q^{1/60}\frac{j(\tau)^{1/60}}{(r^{20} - 228r^{15} + 494r^{10} + 228r^5 + 1)^{1/20}},</math>
+:<math>H(q) = \frac{-1}{q^{11/60}}\,\frac{(r^{20} - 228r^{15} + 494r^{10} + 228r^5 + 1)^{11/20}}{j(\tau)^{11/60}(r^{10} + 11r^5 - 1)}.</math>
+הנוסחאות האלה גוררות ש-<math>q^{-1/60}G(q)</math> ו-<math>q^{11/60}H(q)</math> הם [[מספר אלגברי|מספרים אלגבריים]] (אם כי בדרך כלל מדרגה גבוהה) כאשר <math>\tau</math> בשדה ריבועי מדומה. למשל, הן מתפשטות ל-
+:<math>G(e^{-2\pi}) = (e^{-2\pi})^{1/60}\frac1{(5\varphi)^{1/4}}\frac1{\sqrt{R(e^{-2\pi})}} = 1.00187093\ldots, \qquad H(e^{-2\pi}) = \frac1{(e^{-2\pi})^{11/60}}\frac1{(5\varphi)^{1/4}}\sqrt{R(e^{-2\pi})} = 1.00000349\ldots</math>
+ול-
+:<math>G(e^{-4\pi}) = (e^{-4\pi})^{1/60}\frac1{(5\varphi^3)^{1/4}(\varphi + \sqrt[4]5)^{1/4}}\frac1{\sqrt{R(e^{-4\pi})}} = 1.000003487354\ldots,</math>
+:<math>H(e^{-4\pi}) = \frac1{(e^{-4\pi})^{11/60}}\frac1{(5\varphi^3)^{1/4}(\varphi + \sqrt[4]5)^{1/4}}\sqrt{R(e^{-4\pi})} = 1.000000000012\ldots</math>
+וכן הלאה. (כאן הארגומנטים <math>e^{-2\pi}</math> ו-<math>e^{-4\pi}</math> הם ערכים של <math>q = e^{2\pi i\tau}</math>, עם <math>\tau = i</math> ו-<math>\tau = 2i</math>.)
+
+== גזירת הערכים המיוחדים ==
+=== סכומים טנגנסיאליים ===
+בסעיף הזה מנסחים את המשפטים העיקריים על השברים המשולבים <math>R</math> ו-<math>S</math> (השבר המשולב המתחלף, ראו [[זהויות רוג'רס–רמנוג'אן#השברים המשולבים של רוג'רס–רמנוג'אן R ו-S|זהויות רוג'רס–רמנוג'אן]]) בעזרת '''סכומים והפרשים טנגנסיאליים''':
+:<math>a \oplus b = \tan\left[\arctan(a) + \arctan(b)\right] = \frac{a + b}{1 - ab}, \qquad c \ominus d = \tan\left[\arctan(c) - \arctan(d)\right] = \frac{c - d}{1 + cd}.</math>
+הנום האליפטי <math>q</math> ו'''הנום המשלים''' <math>q_1</math> מקיימים
+:<math>\ln(q)\ln(q_1) = \pi^2,</math>
+והנום המשלים של מודולוס <math>k</math> שווה לנום של המודולוס המשלים הפיתגורי: <math>q_1(k) = q(k') = q\left(\sqrt{1 - k^2}\right)</math>. אלה '''משפטי השיקוף''' של השברים המשולבים:
+:<math>S(q) \oplus S(q_1) = \Phi, \qquad R(q^2) \oplus R(q_1^2) = \Phi^{-1},</math>
+כאשר <math>\Phi</math> הוא יחס הזהב:
+:<math>\Phi = \tfrac12(\sqrt5 + 1) = \cot\left[\tfrac12\arctan(2)\right] = 2\cos\left(\tfrac15\pi\right), \qquad \Phi^{-1} = \tfrac12(\sqrt5 - 1) = \tan\left[\tfrac12\arctan(2)\right] = 2\sin\left(\tfrac1{10}\pi\right).</math>
+המשפטים לנום בריבוע:
+:<math>R(q)^2R(q^2)^{-1} \oplus R(q)R(q^2)^2 = 1, \qquad S(q)^2R(q^2)^{-1} \ominus S(q)R(q^2)^2 = 1.</math>
+והקשרים לפונקציות התטא של יעקובי:
+:<math>S(q) \oplus R(q^2) = \frac{\vartheta_{00}(q^{1/5})^2 - \vartheta_{00}(q)^2}{5\vartheta_{00}(q^5)^2 - \vartheta_{00}(q)^2}, \qquad R(q) \ominus R(q^2) = \frac{\vartheta_{01}(q)^2 - \vartheta_{01}(q^{1/5})^2}{5\vartheta_{01}(q^5)^2 - \vartheta_{01}(q)^2}.</math>
+(את כל המשפטים האלה בדקנו בחישוב מספרי.)
+
+=== ערכים למניסקטיים ===
+נציב ערכים מסוימים במשפטים שלמעלה. עבור <math>q = q_1 = e^{-\pi}</math>:
+:<math>S(e^{-\pi}) \oplus S(e^{-\pi}) = \Phi,</math>
+ולכן
+:<math>S(e^{-\pi}) = \tan\left[\tfrac12\arctan(\Phi)\right] = \tan\left[\tfrac14\pi - \tfrac14\arctan(2)\right].</math>
+באותו אופן, <math>R(e^{-2\pi}) \oplus R(e^{-2\pi}) = \Phi^{-1}</math>, ולכן
+:<math>R(e^{-2\pi}) = \tan\left[\tfrac12\arctan(\Phi^{-1})\right] = \tan\left[\tfrac14\arctan(2)\right].</math>
+את אותו קשר מקבלים גם מהמשפט על פונקציות התטא: ב-<math>q = e^{-\pi}</math> מתקיים <math>\vartheta_{00}(q^{1/5})^2 = 5\,\vartheta_{00}(q^5)^2</math> (לפי [[נוסחת הסכימה של פואסון]], כי <math>\vartheta_{00}(e^{-\pi t}) = t^{-1/2}\vartheta_{00}(e^{-\pi/t})</math>; כאן <math>t = 1/5</math>), ולכן
+:<math>S(e^{-\pi}) \oplus R(e^{-2\pi}) = 1,</math>
+ומכאן <math>R(e^{-2\pi}) = 1 \ominus S(e^{-\pi}) = 1 \ominus \tan\left[\tfrac14\pi - \tfrac14\arctan(2)\right] = \tan\left[\tfrac14\arctan(2)\right]</math>.
+
+המשפט השני על פונקציות התטא נותן ערך נוסף:
+:<math>R(e^{-\pi}) \ominus R(e^{-2\pi}) = \frac{\vartheta_{01}(q)^2 - \vartheta_{01}(q^{1/5})^2}{5\vartheta_{01}(q^5)^2 - \vartheta_{01}(q)^2}\Bigg|_{q = e^{-\pi}} = \frac{\sqrt[4]5 - 1}{\sqrt[4]5 + 1} = \sqrt[4]5 \ominus 1 = \tan\left[\arctan\left(\sqrt[4]5\right) - \tfrac14\pi\right],</math>
+ולכן
+:<math>R(e^{-\pi}) = \tan\left[\tfrac14\arctan(2) + \arctan\left(\sqrt[4]5\right) - \tfrac14\pi\right].</math>
+שימוש נוסף במשפט השיקוף, <math>R(e^{-\pi}) \oplus R(e^{-4\pi}) = \Phi^{-1}</math>, נותן
+:<math>R(e^{-4\pi}) = \tan\left[\tfrac14\arctan(2) - \arctan\left(\sqrt[4]5\right) + \tfrac14\pi\right].</math>
+
+=== ערכים לא למניסקטיים ===
+משפט השיקוף נותן גם
+:<math>R(e^{-\sqrt2\pi}) \oplus R(e^{-2\sqrt2\pi}) = \Phi^{-1},</math>
+ומשפט התטא נותן קשר נוסף: עם <math>c_0 = \tfrac13\sqrt5 - \tfrac13\sqrt[3]{6\sqrt{30} + 4\sqrt5} + \tfrac13\sqrt[3]{6\sqrt{30} - 4\sqrt5}</math>,
+:<math>R(e^{-\sqrt2\pi}) \ominus R(e^{-2\sqrt2\pi}) = \tan\left[2\arctan(c_0) - \tfrac14\pi\right].</math>
+חיבור והפרש טנגנסיאליים של שני הקשרים נותנים
+:<math>R(e^{-\sqrt2\pi}) = \tan\left[\arctan(c_0) - \tfrac14\operatorname{arccot}(2)\right], \qquad R(e^{-2\sqrt2\pi}) = \tan\left[\tfrac14\operatorname{arccot}(-2) - \arctan(c_0)\right],</math>
+כאשר <math>\operatorname{arccot}</math> מקבל ערכים ב-<math>(0, \pi)</math>. בדרך חלופית, אפשר להציב את משפט השיקוף, <math>R(e^{-2\sqrt2\pi}) = \frac{1 - \Phi R(e^{-\sqrt2\pi})}{\Phi + R(e^{-\sqrt2\pi})}</math>, במשפט לנום בריבוע (שאפשר לכתוב כ-<math>\{R(q)^2R(q^2)^{-1} + 1\}\{R(q)R(q^2)^2 + 1\} = 2</math>). אחרי ביטול המכנים מתקבלת, עבור <math>x = R(e^{-\sqrt2\pi})</math>, המשוואה ממעלה שישית
+:<math>x^6 + 2\Phi^{-2}x^5 - \sqrt5\,\Phi^{-1}x^4 + 2\sqrt5\,\Phi x^3 + \sqrt5\,\Phi^{-1}x^2 + 2\Phi^{-2}x - 1 = 0,</math>
+והפתרון שלה הוא הערך שכבר נמצא, <math>R(e^{-\sqrt2\pi}) \approx 0.406461</math>.
+
+== קשר לתבניות מודולריות ==
+את <math>R(q)</math> אפשר לקשר ל[[פונקציית אטא של דדקינד]], [[תבנית מודולרית]] ממשקל <math>\tfrac12</math>, כך (עם <math>q = e^{2\pi i\tau}</math>):{{הערה|שם=Duke|1=<span dir="ltr">W. Duke, Continued fractions and modular functions, Bulletin of the AMS 42 (2005), pp. 137–162.</span>|כיווון=שמאל}}
+:<math>\frac1{R(q)} - R(q) = \frac{\eta(\frac\tau5)}{\eta(5\tau)} + 1, \qquad \frac1{R^5(q)} - R^5(q) = \left[\frac{\eta(\tau)}{\eta(5\tau)}\right]^6 + 11.</math>
+אפשר לבטא את השבר המשולב גם בעזרת [[פונקציית תטא|פונקציות התטא של יעקובי]], בסימון
+:<math>\vartheta_{10}(0; \tau) = \theta_2(q) = \sum_{n=-\infty}^\infty q^{(n+1/2)^2}, \quad \vartheta_{00}(0; \tau) = \theta_3(q) = \sum_{n=-\infty}^\infty q^{n^2}, \quad \vartheta_{01}(0; \tau) = \theta_4(q) = \sum_{n=-\infty}^\infty(-1)^nq^{n^2}.</math>
+(הסימון <math>\theta_n</math> נוח לזכירה, כי <math>\theta_2^4 + \theta_4^4 = \theta_3^4</math>, עם אינדקסים זוגיים באגף שמאל.) כך:
+:<math>R(x) = \tan\left\{\frac12\operatorname{arccot}\left[\frac12 + \frac{\theta_4(x^{1/5})\left[5\theta_4(x^5)^2 - \theta_4(x)^2\right]}{2\theta_4(x^5)\left[\theta_4(x)^2 - \theta_4(x^{1/5})^2\right]}\right]\right\},</math>
+:<math>R(x) = \tan\left\{\frac12\operatorname{arccot}\left[\frac12 + \left(\frac{\theta_2(x^{1/10})\theta_3(x^{1/10})\theta_4(x^{1/10})}{2^3\theta_2(x^{5/2})\theta_3(x^{5/2})\theta_4(x^{5/2})}\right)^{1/3}\right]\right\},</math>
+:<math>R(x) = \tan\left\{\frac12\arctan\left[\frac12 - \frac{\theta_4(x)^2}{2\theta_4(x^5)^2}\right]\right\}^{1/5}\tan\left\{\frac12\operatorname{arccot}\left[\frac12 - \frac{\theta_4(x)^2}{2\theta_4(x^5)^2}\right]\right\}^{2/5},</math>
+:<math>R(x) = \tan\left\{\frac12\arctan\left[\frac12 - \frac{\theta_4(x^{1/2})^2}{2\theta_4(x^{5/2})^2}\right]\right\}^{2/5}\cot\left\{\frac12\operatorname{arccot}\left[\frac12 - \frac{\theta_4(x^{1/2})^2}{2\theta_4(x^{5/2})^2}\right]\right\}^{1/5}.</math>
+שימו לב שפונקציות התטא משתמשות בדרך כלל בנום <math>q = e^{i\pi\tau}</math>, ואילו פונקציית אטא של דדקינד משתמשת בריבוע שלו, <math>q = e^{2i\pi\tau}</math>; לכן משתמשים כאן במשתנה <math>x</math> כדי לשמור על עקביות בין כל הפונקציות. למשל, עבור <math>\tau = i</math>, <math>x = e^{-\pi}</math>, ומקבלים את אותו ערך בכל ארבע הנוסחאות: <math>R(e^{-\pi}) = 0.511428\ldots</math>.
+
+אפשר גם להגדיר את הנום האליפטי
+:<math>q(k) = \exp\left[-\pi K\left(\sqrt{1 - k^2}\right)/K(k)\right],</math>
+כאשר <math>k</math> המודולוס האליפטי ו-<math>K</math> [[אינטגרל אליפטי|האינטגרל האליפטי השלם מהסוג הראשון]]. אז אפשר לבטא את השבר המשולב בעזרת [[הפונקציות האליפטיות של יעקובי]]:
+:<math>R\big(q(k)\big) = \tan\left\{\frac12\arctan y\right\}^{1/5}\tan\left\{\frac12\operatorname{arccot}y\right\}^{2/5} = \left\{\frac{\sqrt{y^2 + 1} - 1}y\right\}^{1/5}\left\{y\left[\sqrt{\frac1{y^2} + 1} - 1\right]\right\}^{2/5},</math>
+עם
+:<math>y = \frac{2k^2\operatorname{sn}\left[\tfrac25K(k); k\right]^2\operatorname{sn}\left[\tfrac45K(k); k\right]^2}{5 - k^2\operatorname{sn}\left[\tfrac25K(k); k\right]^2\operatorname{sn}\left[\tfrac45K(k); k\right]^2}.</math>
+
+== קשר לפונקציית j ==
+נוסחה אחת שמערבת את [[אינווריאנט j|פונקציית <math>j</math>]] ואת פונקציית אטא של דדקינד היא
+:<math>j(\tau) = \frac{(x^2 + 10x + 5)^3}x, \qquad x = \left[\frac{\sqrt5\,\eta(5\tau)}{\eta(\tau)}\right]^6.</math>
+כיוון שגם <math>\frac1{R^5(q)} - R^5(q) = \left[\frac{\eta(\tau)}{\eta(5\tau)}\right]^6 + 11</math>, אפשר לסלק את מנת האטא <math>x</math> בין שתי המשוואות ולבטא את <math>j(\tau)</math> בעזרת <math>r = R(q)</math>:
+:<math>j(\tau) = -\frac{(r^{20} - 228r^{15} + 494r^{10} + 228r^5 + 1)^3}{r^5(r^{10} + 11r^5 - 1)^5}, \qquad j(\tau) - 1728 = -\frac{(r^{30} + 522r^{25} - 10005r^{20} - 10005r^{10} - 522r^5 + 1)^2}{r^5(r^{10} + 11r^5 - 1)^5},</math>
+כאשר המונה והמכנה הם [[אינווריאנט פולינומי|אינווריאנטים פולינומיים]] של ה[[איקוסהדרון]]. בעזרת ה[[משוואה מודולרית|משוואה המודולרית]] בין <math>R(q)</math> ל-<math>R(q^5)</math> מקבלים
+:<math>j(5\tau) = -\frac{(r^{20} + 12r^{15} + 14r^{10} - 12r^5 + 1)^3}{r^{25}(r^{10} + 11r^5 - 1)}, \qquad j(5\tau) - 1728 = -\frac{(r^{30} + 18r^{25} + 75r^{20} + 75r^{10} - 18r^5 + 1)^2}{r^{25}(r^{10} + 11r^5 - 1)}.</math>
+אם <math>z = r^5 - \frac1{r^5}</math>, אז <math>j(5\tau) = -\frac{(z^2 + 12z + 16)^3}{z + 11}</math>, וששת השורשים של המשוואה הזו (כמשוואה ב-<math>z</math>) הם
+:<math>z_\infty = -\left[\frac{\sqrt5\,\eta(25\tau)}{\eta(5\tau)}\right]^6 - 11,\quad z_0 = -\left[\frac{\eta(\tau)}{\eta(5\tau)}\right]^6 - 11,\quad z_1 = \left[\frac{\eta(\frac{5\tau+2}5)}{\eta(5\tau)}\right]^6 - 11,</math>
+:<math>z_2 = -\left[\frac{\eta(\frac{5\tau+4}5)}{\eta(5\tau)}\right]^6 - 11,\quad z_3 = \left[\frac{\eta(\frac{5\tau+6}5)}{\eta(5\tau)}\right]^6 - 11,\quad z_4 = -\left[\frac{\eta(\frac{5\tau+8}5)}{\eta(5\tau)}\right]^6 - 11.</math>
+<math>j(5\tau)</math> הוא למעשה אינווריאנט <math>j</math> של ה[[עקום אליפטי]]
+:<math>y^2 + (1 + r^5)xy + r^5y = x^3 + r^5x^2,</math>
+שהוא צורת טייט הנורמלית של עקום עם נקודה מסדר 5 (הנקודה <math>(0, 0)</math>), ומפורמטר על ידי הנקודות שאינן חודים של [[עקום מודולרי|העקום המודולרי]] <math>X_1(5)</math>. (את כל הנוסחאות בסעיף הזה, כולל ששת השורשים ואינווריאנט <math>j</math> של העקום, בדקנו בחישוב מספרי.)
+
+== משוואה פונקציונלית ==
+לנוחות, נסמן <math>r(\tau) = R(q)</math> כאשר <math>q = e^{2\pi i\tau}</math> (ו-<math>q^{1/5} = e^{2\pi i\tau/5}</math>). בעוד שפונקציות מודולריות אחרות, כמו אינווריאנט <math>j</math>, מקיימות <math>j(-\tfrac1\tau) = j(\tau)</math>, ופונקציית אטא של דדקינד מקיימת <math>\eta(-\tfrac1\tau) = \sqrt{-i\tau}\,\eta(\tau)</math>, ה[[משוואה פונקציונלית|משוואה הפונקציונלית]] של השבר המשולב של רוג'רס–רמנוג'אן מערבת את [[יחס הזהב]] <math>\varphi</math>:{{הערה|שם=Duke}}
+:<math>r\left(-\tfrac1\tau\right) = \frac{1 - \varphi\,r(\tau)}{\varphi + r(\tau)}.</math>
+אגב, <math>r\left(\tfrac{7 + i}{10}\right) = i</math>. (כאן חשוב לקחת <math>q^{1/5} = e^{2\pi i\tau/5}</math> ולא את הענף הראשי של <math>q^{1/5}</math>; בענף הראשי מתקבל ערך שונה, <math>e^{\pi i/10}</math>.)
+
+== משוואות מודולריות ==
+יש [[משוואה מודולרית|משוואות מודולריות]] בין <math>R(q)</math> ל-<math>R(q^n)</math>. משוואות אלגנטיות עבור <math>n</math> [[מספר ראשוני|ראשוני]] קטן הן:{{הערה|שם=BCHKSS|1=<span dir="ltr">B. C. Berndt, H. H. Chan, S.-S. Huang, S.-Y. Kang, J. Sohn, S. H. Son, The Rogers–Ramanujan continued fraction, Journal of Computational and Applied Mathematics 105 (1999), pp. 9–24.</span>|כיווון=שמאל}}
+* עבור <math>n = 2</math>, עם <math>u = R(q)</math> ו-<math>v = R(q^2)</math>: <math>v - u^2 = (v + u^2)uv^2</math>.
+* עבור <math>n = 3</math>, עם <math>u = R(q)</math> ו-<math>v = R(q^3)</math>: <math>(v - u^3)(1 + uv^3) = 3u^2v^2</math>.
+* עבור <math>n = 5</math>, עם <math>u = R(q)</math> ו-<math>v = R(q^5)</math>: <math>v(v^4 - 3v^3 + 4v^2 - 2v + 1) = (v^4 + 2v^3 + 4v^2 + 3v + 1)u^5</math>; או באופן שקול, עם <math>\varphi = \tfrac{1 + \sqrt5}2</math>, <math>u^5 = \frac{v(v^2 - \varphi^2v + \varphi^2)(v^2 - \varphi^{-2}v + \varphi^{-2})}{(v^2 + v + \varphi^2)(v^2 + v + \varphi^{-2})}</math>.
+* עבור <math>n = 11</math>, עם <math>u = R(q)</math> ו-<math>v = R(q^{11})</math>: <math>uv(u^{10} + 11u^5 - 1)(v^{10} + 11v^5 - 1) = (u - v)^{12}</math>.
+לגבי <math>n = 5</math>, שימו לב ש-<math>v^{10} + 11v^5 - 1 = (v^2 + v - 1)(v^4 - 3v^3 + 4v^2 - 2v + 1)(v^4 + 2v^3 + 4v^2 + 3v + 1)</math>.
+
+== תוצאות נוספות ==
+רמנוג'אן מצא עוד תוצאות מעניינות רבות על <math>R(q)</math>.{{הערה|שם=BCHKSS}} יהיו <math>a, b \in \mathbb R^+</math>, ו-<math>\varphi</math> יחס הזהב. אם <math>ab = \pi^2</math>, אז
+:<math>\left[R(e^{-2a}) + \varphi\right]\left[R(e^{-2b}) + \varphi\right] = \sqrt5\,\varphi.</math>
+אם <math>5ab = \pi^2</math>, אז
+:<math>\left[R^5(e^{-2a}) + \varphi^5\right]\left[R^5(e^{-2b}) + \varphi^5\right] = 5\sqrt5\,\varphi^5.</math>
+גם את החזקות של <math>R(q)</math> אפשר לבטא בדרכים לא שגרתיות. עבור ה[[חזקה שלישית]],
+:<math>R^3(q) = q^{3/5}\frac\alpha\beta,</math>
+כאשר
+:<math>\alpha = \sum_{n=0}^\infty\frac{q^{2n}}{1 - q^{5n+2}} - \sum_{n=0}^\infty\frac{q^{3n+1}}{1 - q^{5n+3}}, \qquad \beta = \sum_{n=0}^\infty\frac{q^n}{1 - q^{5n+1}} - \sum_{n=0}^\infty\frac{q^{4n+3}}{1 - q^{5n+4}}.</math>
+{{הערה|1=בערך האנגלי הנוסחה כתובה <math>R^3(q) = \alpha/\beta</math>, בלי הגורם <math>q^{3/5}</math>. אבל <math>\alpha</math> ו-<math>\beta</math> הם טורי חזקות שלמים ב-<math>q</math>, ואילו ב-<math>R^3</math> מופיע הגורם <math>q^{3/5}</math>. בחישוב מספרי (עבור <math>q = 0.1</math> ו-<math>q = 0.3</math>) מתקיים בדיוק <math>\alpha/\beta = (H(q)/G(q))^3 = q^{-3/5}R^3(q)</math>.|כיווון=שמאל}}
+עבור החזקה החמישית, נסמן <math>w = R(q)R^2(q^2)</math>; אז
+:<math>R^5(q) = w\left(\frac{1 - w}{1 + w}\right)^2, \qquad R^5(q^2) = w^2\left(\frac{1 + w}{1 - w}\right).</math>
+
+== משוואות ממעלה חמישית ==
+את המשוואה הכללית ממעלה חמישית בצורת ברינג–ג'רארד
+:<math>x^5 - 5x - 4a = 0</math>
+אפשר לפתור, לכל <math>a \gt 1</math> ממשי, בעזרת השבר המשולב של רוג'רס–רמנוג'אן <math>R(q)</math> והנום האליפטי
+:<math>q(k) = \exp\left[-\pi K\left(\sqrt{1 - k^2}\right)/K(k)\right].</math>
+כדי לפתור את המשוואה, קובעים תחילה את המודולוס האליפטי
+:<math>k = \tan\left[\tfrac14\pi - \tfrac14\operatorname{arccsc}(a^2)\right].</math>
+אז הפתרון הממשי הוא
+:<math>x = \frac{2 - \{1 - R[q(k)]\}\{1 + R[q(k)^2]\}}{\sqrt{R[q(k)]\,R[q(k)^2]}\sqrt[4]{4\cot\langle4\arctan\{S\}\rangle - 3}} = \frac{2 - \{1 - R[q(k)]\}\{1 + R[q(k)^2]\}}{\sqrt{R[q(k)]R[q(k)^2]}\sqrt[4]{\frac2{S - 1} + \frac2{S + 1} + \frac1S - S - 3}},</math>
+כאשר <math>S = R[q(k)]\,R^2[q(k)^2]</math>. כזכור מהסעיף הקודם, אפשר לבטא את החזקה החמישית של <math>R(q)</math> בעזרת <math>S</math>: <math>R^5[q(k)] = S\left(\frac{1 - S}{1 + S}\right)^2</math>.
+
+=== דוגמה 1 ===
+את המשוואה <math>x^5 - x - 1 = 0</math> מעבירים לצורה
+:<math>(\sqrt[4]5\,x)^5 - 5(\sqrt[4]5\,x) - 4\left(\tfrac54\sqrt[4]5\right) = 0,</math>
+ולכן <math>a = \tfrac54\sqrt[4]5</math>, ו-
+:<math>k = \tan\left[\tfrac14\pi - \tfrac14\operatorname{arccsc}(a^2)\right] = \frac{5^{5/4} + \sqrt{25\sqrt5 - 16}}{5^{5/4} + \sqrt{25\sqrt5 + 16}}, \quad q(k) = 0.0851414716\ldots, \quad R[q(k)] = 0.5633613184\ldots, \quad R[q(k)^2] = 0.3706122329\ldots</math>
+והפתרון הוא
+:<math>x = \frac{2 - \{1 - R[q(k)]\}\{1 + R[q(k)^2]\}}{\sqrt{R[q(k)]R[q(k)^2]}\sqrt[4]{20\cot\langle4\arctan\{R[q(k)]R[q(k)^2]^2\}\rangle - 15}} = 1.167303978\ldots,</math>
+שאי אפשר לבטא אותו בשורשים אלמנטריים. (את <math>k</math>, <math>q(k)</math>, ערכי <math>R</math> והפתרון בדקנו בחישוב מספרי, מול השורש הממשי של <math>x^5 - x - 1</math>.)
+
+=== דוגמה 2 ===
+עבור <math>x^5 - 5x - 4\sqrt[4]{\tfrac{81}{32}} = 0</math>, כלומר <math>a = \sqrt[4]{\tfrac{81}{32}}</math>, מתקבל <math>k = \tfrac1{\sqrt2}</math> ו-<math>q(k) = e^{-\pi}</math>, והשברים המשולבים הם בעלי הצורות הסגורות
+:<math>r_1 = R(e^{-\pi}) = 0.511428\ldots, \qquad r_2 = R(e^{-2\pi}) = 0.284079\ldots, \qquad r_4 = R(e^{-4\pi}) = 0.081002\ldots</math>
+מלמעלה. הפתרון מתפשט ל-
+:<math>x = \sqrt[4]5\,\frac{2 - \{1 - r_1\}\{1 + r_2\}}{\sqrt{r_1r_2}\sqrt[4]{20\cot\langle4\arctan\{r_1r_2^2\}\rangle - 15}} = \sqrt[4]5\,\frac{2 - \{1 - r_2\}\{1 + r_4\}}{\sqrt{r_2r_4}\sqrt[4]{20\cot\langle4\arctan\{r_2r_4^2\}\rangle - 15}} = \sqrt[4]8 = 1.681792\ldots</math>
+ואכן <math>(\sqrt[4]8)^5 - 5\sqrt[4]8 = 3\sqrt[4]8 = 4\sqrt[4]{81/32}</math>.
+
+== ראו גם ==
+* [[זהויות רוג'רס–רמנוג'אן]]
+* [[שבר משולב]]
+* [[אינווריאנט j]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* L. J. Rogers, ''Second memoir on the expansion of certain infinite products'', Proc. London Math. Soc. '''25''' (1894), pp. 318–343
+* B. C. Berndt, H. H. Chan, S.-S. Huang, S.-Y. Kang, J. Sohn, S. H. Son, ''The Rogers–Ramanujan continued fraction'', J. Comput. Appl. Math. '''105''' (1999), pp. 9–24
+* E. W. Weisstein, ''Rogers–Ramanujan Continued Fraction'', MathWorld
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:זהויות מתמטיות]]
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:שברים משולבים]]
+[[קטגוריה:סריניוואסה רמנוג'אן]]
