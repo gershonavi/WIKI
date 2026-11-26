@@ -375,5 +375,5 @@ Additive number theory:
 - [x] Artin L-function
 - [x] Cyclotomic field
 - [x] Ramanujan graph
-- [ ] Ring class field
+- [x] Ring class field
 - [ ] Tate–Shafarevich group

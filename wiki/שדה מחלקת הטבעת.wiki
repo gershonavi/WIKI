@@ -1,0 +1,29 @@
+ב[[תורת המספרים האלגברית]], '''שדה מחלקת הטבעת''' (ring class field) הוא ה[[הרחבה אבלית|הרחבה האבלית]] של [[שדה מספרים]] <math>K</math> שמתאימה, לפי [[תורת שדות המחלקה]], ל'''חבורת מחלקות הטבעת''' של סדר <math>\mathcal{O}</math> בתוך [[חוג השלמים]] של <math>K</math>.{{הערה|שם=FL|1=<span dir="ltr">G. Frey, T. Lange, "Varieties over special fields", in H. Cohen, G. Frey (eds.), ''Handbook of Elliptic and Hyperelliptic Curve Cryptography'', Chapman & Hall/CRC, Boca Raton, 2006, pp. 87–113, p. 99</span>|כיווון=שמאל}}
+
+המקרה החשוב הוא של [[שדה ריבועי]] מדומה <math>K</math>. כל סדר בו הוא מהצורה <math>\mathcal O = \mathbb Z + f\mathcal O_K</math>, כאשר <math>f \ge 1</math> נקרא ה'''מוליך''' של הסדר, והדיסקרימיננטה של הסדר היא <math>D = f^2 d_K</math>. חבורת מחלקות הטבעת היא חבורת המחלקות של האידיאלים ההפיכים (ה"נאותים") של <math>\mathcal O</math> מודולו האידיאלים הראשיים, והיא איזומורפית לחבורת המחלקות של [[תבנית ריבועית|תבניות ריבועיות]] בינאריות פרימיטיביות חיוביות עם דיסקרימיננטה <math>D</math>; הסדר שלה הוא [[בעיית מספר המחלקה|מספר המחלקה]] <math>h(D)</math>. שדה מחלקת הטבעת <math>L_{\mathcal O}</math> הוא שדה מחלקת קרן מודולו <math>f</math> (או תת-שדה שלו), ו-<math>\text{Gal}(L_{\mathcal O}/K)</math> איזומורפית לחבורת מחלקות הטבעת. מעל <math>\mathbb Q</math>, <math>L_{\mathcal O}</math> היא הרחבת גלואה שחבורת הגלואה שלה היא מכפלה חצי-ישרה של חבורת מחלקות הטבעת בחבורה מסדר 2 שפועלת בהיפוך.
+
+== דוגמאות ==
+* יהי <math>K</math> שדה מספרים כלשהו. שדה מחלקת הטבעת של הסדר המקסימלי <math>\mathcal{O}=\mathcal{O}_K</math> הוא [[שדה המחלקה של הילברט]] <math>H</math>.
+* יהי <math>K=\mathbb Q(\sqrt{-n})</math>, עם <math>n</math> חיובי.
+** שדה מחלקת הטבעת של הסדר <math>\mathcal{O}=\mathbb Z[\sqrt{-n}]</math> (דיסקרימיננטה <math>-4n</math>) הוא <math>L=K(\alpha)</math>, כאשר <math>\alpha</math> [[שלם אלגברי]] שה[[פולינום מינימלי|פולינום המינימלי]] שלו מעל <math>\mathbb Q</math> הוא ממעלה <math>h(-4n)</math>, מספר המחלקה של הסדר עם דיסקרימיננטה <math>-4n</math>. (למשל אפשר לקחת <math>\alpha = j(\sqrt{-n})</math>, ראו להלן.) יתר על כן, אם <math>p</math> ראשוני אי-זוגי שאינו מחלק את <math>n</math>, אז <math>p</math> [[פיצול של אידיאלים ראשוניים בהרחבות גלואה|מתפצל לחלוטין]] ב-<math>L</math> אם ורק אם <math>p = x^2 + ny^2</math> עבור שלמים <math>x, y</math>.{{הערה|1=בערך האנגלי נכתב ש-<math>p</math> מתפצל לחלוטין ב-<math>L</math> אם ורק אם הוא מתפצל לחלוטין ב-<math>K</math>. זה לא נכון כשמספר המחלקה גדול מ-1: התנאי הנכון (<span dir="ltr">D. A. Cox, ''Primes of the Form x² + ny²'', Theorem 9.4</span>) הוא <math>p = x^2 + ny^2</math>, ופיצול ב-<math>K</math> הוא רק תנאי הכרחי. למשל ל-<math>n = 5</math>, <math>L = \mathbb Q(\sqrt{-5}, i)</math>, והראשוני 3 מתפצל ב-<math>K = \mathbb Q(\sqrt{-5})</math> (כי <math>-5 \equiv 1</math> ריבוע מודולו 3) אבל לא ב-<math>L</math>, ואכן <math>3 \ne x^2 + 5y^2</math>.|כיווון=שמאל}}
+** אם <math>\mathcal{O}</math> סדר ו-<math>\mathfrak a</math> [[אידיאל שבור]] נאות של <math>\mathcal O</math>, כלומר
+:::<math>\{x\in K^\times: x\mathfrak a\subseteq \mathfrak a\}=\mathcal{O},</math>
+::נסמן ב-<math>j(\mathfrak a)</math> את [[אינווריאנט j|אינווריאנט ה-<math>j</math>]] של ה[[עקום אליפטי]] <math>\mathbb C/\mathfrak a</math>. אז <math>K(j(\mathfrak a))</math> הוא שדה מחלקת הטבעת של <math>\mathcal{O}</math>, ו-<math>j(\mathfrak a)</math> שלם אלגברי (זו תורת ה[[כפל מרוכב|כפל המרוכב]]).
+
+=== <math>p = x^2 + 27y^2</math> ===
+הסדר <math>\mathbb Z[\sqrt{-27}]</math> בתוך <math>K = \mathbb Q(\sqrt{-3})</math> הוא בעל מוליך 3 ודיסקרימיננטה <math>-108</math>, ו-<math>h(-108) = 3</math>. שדה מחלקת הטבעת שלו הוא <math>L = K(\sqrt[3]2)</math>, שדה הפיצול של <math>x^3 - 2</math>. מכאן משפט של [[קרל פרידריך גאוס|גאוס]]: ראשוני <math>p \ne 2, 3</math> הוא <math>x^2 + 27y^2</math> אם ורק אם <math>p \equiv 1 \pmod 3</math> ו-2 הוא שארית ממעלה שלישית מודולו <math>p</math>. הראשוניים הראשונים כאלה הם 31, 43, 109, 127, 157; ואילו 7, 13, 19, 37, 61 הם <math>\equiv 1 \pmod 3</math> אבל אינם מהצורה הזו (בדקנו בחישוב).
+
+=== <math>p = x^2 + 14y^2</math> ===
+כאן <math>h(-56) = 4</math>, וחבורת מחלקות הטבעת ציקלית מסדר 4 (התבניות המצומצמות <math>x^2 + 14y^2</math>, <math>2x^2 + 7y^2</math>, <math>3x^2 \pm 2xy + 5y^2</math>). שדה מחלקת הטבעת הוא <math>K(\alpha)</math> עם <math>\alpha = \sqrt{2\sqrt2 - 1}</math>, ולכן: ראשוני <math>p \ne 2, 7</math> הוא <math>x^2 + 14y^2</math> אם ורק אם <math>\left(\tfrac{-14}{p}\right) = 1</math> ול-<math>(x^2 + 1)^2 \equiv 8 \pmod p</math> יש פתרון. הראשוניים הראשונים: 23, 127, 137, 151, 233, 239, 281 (בדקנו בחישוב את השקילות לכל הראשוניים עד 3000).
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* D. A. Cox, ''Primes of the Form x² + ny²: Fermat, Class Field Theory, and Complex Multiplication'', 2nd ed., Wiley, 2013
+* B. Osserman, "Ring class fields and p = x² + ny²", lecture notes, UC Davis
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
+[[קטגוריה:תורת שדות המחלקה]]
