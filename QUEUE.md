@@ -162,7 +162,7 @@ Additive number theory:
 - [x] Heegner point
 - [x] Elliptic curve point multiplication
 - [ ] Edwards curve
-- [ ] Montgomery curve
+- [x] Montgomery curve
 - [x] Brumer bound
 - [x] Mestre bound
 

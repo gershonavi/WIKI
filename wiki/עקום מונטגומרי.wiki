@@ -1,0 +1,140 @@
+ב[[מתמטיקה]], '''עקום מונטגומרי''' הוא צורה של [[עקום אליפטי]] שהציג פיטר ל' מונטגומרי ב-1987,{{הערה|שם=M87|1=<span dir="ltr">P. L. Montgomery, Speeding the Pollard and Elliptic Curve Methods of Factorization, Mathematics of Computation 48 (1987), no. 177, pp. 243–264.</span>|כיווון=שמאל}} השונה מ[[צורת ויירשטראס]] הרגילה. הוא משמש לחישובים מסוימים, ובפרט ביישומים שונים של [[קריפטוגרפיה של עקומים אליפטיים|קריפטוגרפיה]]. מונטגומרי הציג אותו במקור כדי להאיץ את [[שיטת העקומים האליפטיים של לנסטרה|שיטת העקומים האליפטיים לפירוק לגורמים]]; כיום הדוגמה המפורסמת ביותר היא [[Curve25519]].
+
+== הגדרה ==
+עקום מונטגומרי מעל [[שדה (מבנה אלגברי)|שדה]] <math>K</math> מוגדר על ידי המשוואה
+:<math>M_{A,B}: By^2 = x^3 + Ax^2 + x</math>
+עבור <math>A, B \in K</math> כך ש-<math>B(A^2 - 4) \ne 0</math>.
+
+בדרך כלל מתבוננים בעקום הזה מעל [[שדה סופי]] <math>K</math> (למשל <math>K = \mathbb F_q</math>, שדה בן <math>q</math> איברים) ש[[מאפיין (אלגברה)|המאפיין]] שלו שונה מ-2, עם <math>A \ne \pm 2</math> ו-<math>B \ne 0</math>. מעל שדות כאלה, [[סדר (תורת החבורות)|סדר]] החבורה של העקום מתחלק תמיד ב-4. מתבוננים בעקומי מונטגומרי גם מעל [[מספר רציונלי|המספרים הרציונליים]], עם אותן הגבלות על <math>A</math> ו-<math>B</math>.
+
+לכל עקום מונטגומרי יש את הנקודה <math>(0, 0)</math>, והיא נקודה מסדר 2 (המשיק בה אנכי).
+
+=== למה הסדר מתחלק ב-4 ===
+נקודות מסדר 2 הן הנקודות עם <math>y = 0</math>, כלומר <math>x = 0</math> או <math>x^2 + Ax + 1 = 0</math>. מנוסחת ההכפלה שלהלן, <math>x(2P) = \frac{(x^2-1)^2}{4x(x^2+Ax+1)}</math>, ולכן <math>2P = (0, 0)</math> אם ורק אם <math>x(P) = \pm 1</math>. הנקודות עם <math>x = 1</math> קיימות מעל <math>\mathbb F_q</math> אם ורק אם <math>(A+2)/B</math> ריבוע, והנקודות עם <math>x = -1</math> אם ורק אם <math>(A-2)/B</math> ריבוע. אם <math>A^2 - 4</math> ריבוע, ל-<math>x^2 + Ax + 1</math> יש שורשים, וכל שלוש הנקודות מסדר 2 רציונליות – תת-חבורה מסדר 4. אחרת, המכפלה <math>\frac{A+2}{B}\cdot\frac{A-2}{B} = \frac{A^2-4}{B^2}</math> אינה ריבוע, ולכן בדיוק אחד משני הגורמים ריבוע, ויש נקודה מסדר 4. בשני המקרים 4 מחלק את <math>\#M_{A,B}(\mathbb F_q)</math>.
+
+'''דוגמה.''' העקום <math>y^2 = x^3 + 3x^2 + x</math> מעל <math>\mathbb F_{13}</math> (<math>A = 3</math>, <math>B = 1</math>). כאן <math>A^2 - 4 = 5</math> אינו ריבוע מודולו 13, ולכן <math>(0, 0)</math> היא הנקודה היחידה מסדר 2. לעומת זאת <math>A - 2 = 1</math> ריבוע, והנקודות <math>(-1, \pm 1) = (12, \pm 1)</math> הן מסדר 4. ספירה ישירה נותנת 16 נקודות (כולל הנקודה באינסוף), והחבורה [[חבורה ציקלית|ציקלית]]: למשל <math>P = (2, 3)</math> מסדר 16, ו-<math>8P = (0, 0)</math>.
+
+== אריתמטיקה של מונטגומרי ==
+אפשר לבצע "פעולות" בין [[נקודה (גאומטריה)|נקודות]] של עקום אליפטי: "חיבור" של שתי נקודות <math>P, Q</math> פירושו מציאת נקודה שלישית <math>R = P + Q</math>; "הכפלה" של נקודה פירושה חישוב <math>[2]P = P + P</math> (ראו [[עקום אליפטי#חוק החבורה|חוק החבורה]] ולהלן).
+
+נקודה <math>P = (x, y)</math> על עקום מונטגומרי <math>By^2 = x^3 + Ax^2 + x</math> אפשר לייצג ב'''קואורדינטות מונטגומרי''' <math>P = (X : Z)</math>, שהן [[מרחב פרויקטיבי|קואורדינטות פרויקטיביות]] עם <math>x = X/Z</math> כאשר <math>Z \ne 0</math>.
+
+הייצוג הזה מאבד מידע: אין בו הבחנה בין הנקודות ה[[מרחב אפיני|אפיניות]] <math>(x, y)</math> ו-<math>(x, -y)</math>, כי שתיהן מיוצגות על ידי אותה <math>(X : Z)</math>. בכל זאת, אפשר לחשב בעזרתו כפולות של נקודות: בהינתן <math>P = (X : Z)</math>, לחשב <math>[n]P = (X_n : Z_n)</math>. המחיר הוא שאי אפשר לחבר שתי נקודות כלליות לפי ה-<math>x</math> שלהן בלבד (ל-<math>x(P+Q)</math> ול-<math>x(P-Q)</math> אותו מידע התחלתי), ולכן חיבור דורש לדעת גם את ההפרש – "חיבור דיפרנציאלי".
+
+נתבונן בשתי הנקודות <math>P_n = [n]P = (X_n : Z_n)</math> ו-<math>P_m = [m]P = (X_m : Z_m)</math>. הסכום שלהן הוא <math>P_{m+n} = P_m + P_n = (X_{m+n} : Z_{m+n})</math>, עם
+:<math>X_{m+n} = Z_{m-n}\bigl((X_m - Z_m)(X_n + Z_n) + (X_m + Z_m)(X_n - Z_n)\bigr)^2,</math>
+:<math>Z_{m+n} = X_{m-n}\bigl((X_m - Z_m)(X_n + Z_n) - (X_m + Z_m)(X_n - Z_n)\bigr)^2.</math>
+
+אם <math>m = n</math>, הפעולה היא הכפלה, והקואורדינטות של <math>[2]P_n = P_{2n} = (X_{2n} : Z_{2n})</math> נתונות על ידי
+:<math>4X_nZ_n = (X_n + Z_n)^2 - (X_n - Z_n)^2,</math>
+:<math>X_{2n} = (X_n + Z_n)^2(X_n - Z_n)^2,</math>
+:<math>Z_{2n} = (4X_nZ_n)\left((X_n - Z_n)^2 + \frac{A+2}{4}(4X_nZ_n)\right).</math>
+
+הפעולה הראשונה (חיבור דיפרנציאלי) עולה <math>4\mathbf M + 2\mathbf S</math>, ו-<math>3\mathbf M + 2\mathbf S</math> כאשר <math>Z_{m-n} = 1</math>, כמו בסולם מונטגומרי עם נקודת בסיס מנורמלת;{{הערה|1=בערך האנגלי מופיעה העלות <math>3\mathbf M + 2\mathbf S</math> בלי הסתייגות. בנוסחה כפי שהיא כתובה יש שתי מכפלות בסוגריים ועוד שתי מכפלות ב-<math>Z_{m-n}</math> וב-<math>X_{m-n}</math>; רק כאשר <math>Z_{m-n} = 1</math> אחת מהן נחסכת.|כיווון=שמאל}} כאן <math>\mathbf M</math> מסמן כפל של שני איברים כלליים בשדה שמעליו מוגדר העקום, ו-<math>\mathbf S</math> מסמן העלאה בריבוע של איבר כללי.
+
+הפעולה השנייה (הכפלה) עולה <math>2\mathbf M + 2\mathbf S + 1\mathbf D</math>, כאשר <math>\mathbf D</math> מסמן כפל של איבר כללי בקבוע. הקבוע הוא <math>(A+2)/4</math>, ולכן אפשר לבחור את <math>A</math> כך ש-<math>\mathbf D</math> יהיה זול. למשל, ב-Curve25519 <math>A = 486662</math> ו-<math>(A+2)/4 = 121666</math>, מספר קטן.
+
+שתי הנוסחאות יחד הן הבסיס ל[[כפל סקלרי על עקום אליפטי#סולם מונטגומרי|סולם מונטגומרי]]: שומרים את הזוג <math>(P_k, P_{k+1})</math>, שההפרש ביניהם תמיד <math>P</math>, ובכל צעד מחשבים <math>(P_{2k}, P_{2k+1})</math> או <math>(P_{2k+1}, P_{2k+2})</math> בהכפלה אחת וחיבור דיפרנציאלי אחד.
+
+=== אלגוריתם ודוגמה ===
+האלגוריתם הבא מכפיל נקודה <math>P_1 = (X_1 : Z_1)</math> על עקום מונטגומרי, בהנחה ש-<math>Z_1 = 1</math>. עלותו <math>1\mathbf M + 2\mathbf S</math>, כפל אחד ב-<math>A</math>, שלוש פעולות חיבור וכפל אחד ב-4:
+:<math>XX_1 = X_1^2,</math>
+:<math>X_2 = (XX_1 - 1)^2,</math>
+:<math>Z_2 = 4X_1(XX_1 + AX_1 + 1).</math>
+
+'''דוגמה מעל הממשיים.''' תהי <math>P_1 = (2, \sqrt 3)</math> נקודה על העקום <math>2y^2 = x^3 - x^2 + x</math> (<math>A = -1</math>, <math>B = 2</math>; אכן <math>8 - 4 + 2 = 6 = 2\cdot 3</math>). בקואורדינטות <math>(X_1 : Z_1)</math>, <math>P_1 = (2 : 1)</math>, ואז
+:<math>XX_1 = 4, \qquad X_2 = (4-1)^2 = 9, \qquad Z_2 = 4\cdot 2\cdot(4 - 2 + 1) = 24.</math>
+התוצאה היא <math>P_2 = (9 : 24)</math>, כלומר <math>x(2P_1) = 3/8</math>; הנוסחה האפינית שלהלן נותנת אותו ערך.
+
+'''דוגמה מעל <math>\mathbb F_{13}</math>.''' על <math>y^2 = x^3 + 3x^2 + x</math>, עם <math>P = (2, 3)</math>:
+* הכפלה: <math>X_2 = (4-1)^2 = 9</math>, <math>Z_2 = 4\cdot 2\cdot(4 + 6 + 1) = 88 \equiv 10</math>, ולכן <math>x(2P) = 9\cdot 10^{-1} = 9\cdot 4 \equiv 10 \pmod{13}</math>.
+* חיבור דיפרנציאלי של <math>2P = (9 : 10)</math> ו-<math>P = (2 : 1)</math>, עם ההפרש <math>P = (2 : 1)</math>: <math>(X_m - Z_m)(X_n + Z_n) + (X_m + Z_m)(X_n - Z_n) = (-1)(3) + 19\cdot 1 = 16</math>, וההפרש שלהם הוא <math>-22</math>; לכן <math>X_3 = 1\cdot 16^2 \equiv 9</math> ו-<math>Z_3 = 2\cdot 22^2 \equiv 6</math>, ו-<math>x(3P) = 9\cdot 6^{-1} \equiv 8 \pmod{13}</math>.
+ואכן, בחישוב אפיני מלא <math>2P = (10, 7)</math> ו-<math>3P = (8, 7)</math>.
+
+== חיבור ==
+בהינתן שתי נקודות <math>P_1 = (x_1, y_1)</math>, <math>P_2 = (x_2, y_2)</math> על עקום מונטגומרי <math>M_{A,B}</math> בקואורדינטות אפיניות, הנקודה <math>P_3 = P_1 + P_2</math> מתקבלת [[גאומטריה|גאומטרית]] מנקודת החיתוך השלישית של <math>M_{A,B}</math> עם הישר דרך <math>P_1</math> ו-<math>P_2</math>. את הקואורדינטות <math>(x_3, y_3)</math> של <math>P_3</math> מוצאים כך:
+# מתבוננים בישר כללי <math>y = lx + m</math> ודורשים שיעבור דרך <math>P_1</math> ו-<math>P_2</math>. מקבלים <math>l = \frac{y_2 - y_1}{x_2 - x_1}</math> ו-<math>m = y_1 - lx_1</math>.
+# חותכים את הישר עם העקום: מציבים <math>y = lx + m</math> במשוואת העקום ומקבלים [[משוואה ממעלה שלישית]]
+#:<math>x^3 + (A - Bl^2)x^2 + (1 - 2Blm)x - Bm^2 = 0.</math>
+#:למשוואה הזו שלושה פתרונות, שהם קואורדינטות ה-<math>x</math> של <math>P_1</math>, <math>P_2</math> ונקודת החיתוך השלישית. לכן אפשר לכתוב אותה כ-<math>(x - x_1)(x - x_2)(x - x_3) = 0</math>.
+# השוואת המקדמים של <math>x^2</math> נותנת <math>-x_1 - x_2 - x_3 = A - Bl^2</math>, ולכן
+#:<math>x_3 = B\left(\frac{y_2 - y_1}{x_2 - x_1}\right)^2 - A - x_1 - x_2.</math>
+# כדי למצוא את קואורדינטת ה-<math>y</math> מציבים את <math>x_3</math> במשוואת הישר. זה לא נותן את <math>P_3</math> ישירות, אלא את הנקודה <math>R</math> שמקיימת <math>R + P_1 + P_2 = P_\infty</math>. כיוון ש-<math>R + P_1 + P_2 = P_\infty</math> [[אם ורק אם]] <math>-R = P_1 + P_2</math>, צריך להפוך את הסימן של קואורדינטת ה-<math>y</math> של <math>R</math>.
+
+לסיכום, הקואורדינטות של <math>P_3 = P_1 + P_2</math> הן
+:<math>x_3 = \frac{B(y_2 - y_1)^2}{(x_2 - x_1)^2} - A - x_1 - x_2,</math>
+:<math>y_3 = \frac{(2x_1 + x_2 + A)(y_2 - y_1)}{x_2 - x_1} - \frac{B(y_2 - y_1)^3}{(x_2 - x_1)^3} - y_1.</math>
+
+== הכפלה ==
+בהינתן נקודה <math>P_1</math> על <math>M_{A,B}</math>, הנקודה <math>[2]P_1</math> מתקבלת גאומטרית מנקודת החיתוך השלישית של העקום עם המשיק ב-<math>P_1</math>. לכן אפשר לפעול כמו בנוסחת החיבור, אבל עכשיו הישר <math>y = lx + m</math> משיק לעקום ב-<math>P_1</math>. אם <math>M_{A,B}: f(x, y) = 0</math> עם
+:<math>f(x, y) = x^3 + Ax^2 + x - By^2,</math>
+אז השיפוע נתון, לפי [[משפט הפונקציה הסתומה]], על ידי
+:<math>l = -\frac{\partial f/\partial x}{\partial f/\partial y} = \frac{3x_1^2 + 2Ax_1 + 1}{2By_1},</math>
+והקואורדינטות של <math>P_3 = 2P_1</math> הן
+:<math>x_3 = Bl^2 - A - 2x_1 = \frac{B(3x_1^2 + 2Ax_1 + 1)^2}{(2By_1)^2} - A - 2x_1,</math>
+:<math>y_3 = (3x_1 + A)l - Bl^3 - y_1.</math>
+כשמצמצמים את הביטוי ל-<math>x_3</math> בעזרת משוואת העקום מקבלים את הנוסחה הפרויקטיבית שלמעלה: <math>x_3 = \frac{(x_1^2 - 1)^2}{4x_1(x_1^2 + Ax_1 + 1)}</math>.
+
+== שקילות לעקומי אדוארדס מסובבים ==
+יהי <math>K</math> שדה ממאפיין שונה מ-2, ויהי <math>M_{A,B}</math> עקום אליפטי בצורת מונטגומרי
+:<math>M_{A,B}: Bv^2 = u^3 + Au^2 + u</math>
+עם <math>A \in K \setminus \{-2, 2\}</math>, <math>B \in K \setminus \{0\}</math>, ויהי <math>E_{a,d}</math> עקום אליפטי בצורת [[עקום אדוארדס|אדוארדס מסובב]]:
+:<math>E_{a,d}: ax^2 + y^2 = 1 + dx^2y^2,</math>
+עם <math>a, d \in K \setminus \{0\}</math>, <math>a \ne d</math>.
+
+המשפט הבא מראה שעקומי מונטגומרי ועקומי אדוארדס מסובבים [[גאומטריה בירציונלית|שקולים בירציונלית]]:{{הערה|שם=BBJLP|1=<span dir="ltr">D. J. Bernstein, P. Birkner, M. Joye, T. Lange, C. Peters, Twisted Edwards Curves, AFRICACRYPT 2008, LNCS 5023, Springer, pp. 389–405.</span>|כיווון=שמאל}}
+
+'''משפט.''' כל עקום אדוארדס מסובב שקול בירציונלית לעקום מונטגומרי מעל <math>K</math>. בפרט, העקום <math>E_{a,d}</math> שקול בירציונלית לעקום <math>M_{A,B}</math> עם
+:<math>A = \frac{2(a+d)}{a-d}, \qquad B = \frac{4}{a-d}.</math>
+ההעתקה
+:<math>\psi: E_{a,d} \to M_{A,B}, \qquad (x, y) \mapsto (u, v) = \left(\frac{1+y}{1-y}, \frac{1+y}{(1-y)x}\right)</math>
+היא שקילות בירציונלית, וההפכית שלה היא
+:<math>\psi^{-1}: M_{A,B} \to E_{a,d}, \qquad (u, v) \mapsto (x, y) = \left(\frac uv, \frac{u-1}{u+1}\right), \qquad a = \frac{A+2}{B},\ d = \frac{A-2}{B}.</math>
+
+השקילות אינה מוגדרת בכל מקום: ההעתקה <math>\psi^{-1}</math> אינה מוגדרת בנקודות של <math>M_{A,B}</math> שבהן <math>v = 0</math> או <math>u + 1 = 0</math>.{{הערה|1=בערך האנגלי נכתב שההעתקה <math>\psi</math> אינה מוגדרת בנקודות האלה, אבל <math>\psi</math> מוגדרת על <math>E_{a,d}</math>; הנקודות <math>v = 0</math> ו-<math>u = -1</math> הן נקודות של <math>M_{A,B}</math>, ושם אין הגדרה ל-<math>\psi^{-1}</math>.|כיווון=שמאל}} השקילות היא גם [[הומומורפיזם]] של חבורות, ולכן אפשר לעבור בין הצורות לפי הצורך: למשל, Curve25519 שקול לעקום האדוארדס המסובב שעליו בנויה מערכת החתימות Ed25519.
+
+'''דוגמה.''' עבור העקום <math>y^2 = x^3 + 3x^2 + x</math> מעל <math>\mathbb F_{13}</math>: <math>a = (3+2)/1 = 5</math>, <math>d = (3-2)/1 = 1</math>, והנקודה <math>(u, v) = (2, 3)</math> עוברת ל-<math>(x, y) = (2\cdot 3^{-1}, 1\cdot 3^{-1}) = (5, 9)</math>. אכן <math>5\cdot 5^2 + 9^2 = 206 \equiv 11</math> ו-<math>1 + 5^2\cdot 9^2 = 2026 \equiv 11 \pmod{13}</math>.
+
+== שקילות לעקומי ויירשטראס ==
+כל עקום אליפטי אפשר לכתוב בצורת ויירשטראס. בפרט, את העקום בצורת מונטגומרי
+:<math>M_{A,B}: By^2 = x^3 + Ax^2 + x</math>
+אפשר להעביר כך: מחלקים כל איבר במשוואה ב-<math>B^3</math>, ומציבים <math>u = x/B</math>, <math>v = y/B</math>. מקבלים
+:<math>v^2 = u^3 + \frac AB u^2 + \frac{1}{B^2}u.</math>
+כדי לקבל צורת ויירשטראס קצרה, מחליפים את <math>u</math> ב-<math>t - \frac{A}{3B}</math>, ומקבלים
+:<math>v^2 = t^3 + \left(\frac{3 - A^2}{3B^2}\right)t + \left(\frac{2A^3 - 9A}{27B^3}\right).</math>
+לכן ההעתקה היא
+:<math>\psi: M_{A,B} \to E_{a,b}, \qquad (x, y) \mapsto (t, v) = \left(\frac xB + \frac{A}{3B}, \frac yB\right), \qquad a = \frac{3 - A^2}{3B^2},\ b = \frac{2A^3 - 9A}{27B^3}.</math>
+(כאן <math>a, b</math> הם מקדמי ויירשטראס, ולא מקדמי אדוארדס מהסעיף הקודם; ההעברה דורשת גם שהמאפיין יהיה שונה מ-3.)
+
+בכיוון ההפוך, עקום אליפטי מעל שדה <math>\mathbb F</math> בצורת ויירשטראס
+:<math>E_{a,b}: v^2 = t^3 + at + b</math>
+אפשר להעביר לצורת מונטגומרי אם ורק אם מתקיימים שני התנאים:{{הערה|1=<span dir="ltr">K. Okeya, H. Kurumatani, K. Sakurai, Elliptic Curves with the Montgomery-Form and Their Cryptographic Applications, PKC 2000, LNCS 1751, pp. 238–257.</span>|כיווון=שמאל}}
+# למשוואה <math>z^3 + az + b = 0</math> יש לפחות שורש אחד <math>\alpha \in \mathbb F</math> (כלומר יש נקודה רציונלית מסדר 2);
+# <math>3\alpha^2 + a</math> הוא [[שארית ריבועית]] ב-<math>\mathbb F</math>.
+כאשר התנאים מתקיימים, עבור <math>s = \left(\sqrt{3\alpha^2 + a}\right)^{-1}</math> ההעתקה היא
+:<math>\psi^{-1}: E_{a,b} \to M_{A,B}, \qquad (t, v) \mapsto (x, y) = \bigl(s(t - \alpha), sv\bigr), \qquad A = 3\alpha s,\ B = s.</math>
+
+'''דוגמה.''' העקום <math>y^2 = x^3 + 3x^2 + x</math> מעל <math>\mathbb F_{13}</math> עובר לעקום <math>v^2 = t^3 + 11t + 1</math>, והנקודה <math>(2, 3)</math> עוברת ל-<math>(t, v) = (2 + 3\cdot 3^{-1}, 3) = (3, 3)</math>: אכן <math>3^3 + 11\cdot 3 + 1 = 61 \equiv 9 = 3^2 \pmod{13}</math>.
+
+בפרט, עקום בצורת ויירשטראס שסדר החבורה שלו אי-זוגי (למשל עקום מסדר ראשוני, כמו העקומים של NIST) אינו ניתן להעברה לצורת מונטגומרי, כי אין לו נקודה מסדר 2.
+
+== ראו גם ==
+* [[Curve25519]]
+* [[עקום אדוארדס]]
+* [[כפל סקלרי על עקום אליפטי]]
+* [[קריפטוגרפיה של עקומים אליפטיים]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* P. L. Montgomery, ''Speeding the Pollard and Elliptic Curve Methods of Factorization'', Mathematics of Computation '''48''' (1987), pp. 243–264
+* D. J. Bernstein, P. Birkner, M. Joye, T. Lange, C. Peters, ''Twisted Edwards Curves'', AFRICACRYPT 2008, LNCS 5023, pp. 389–405
+* W. Castryck, S. Galbraith, R. R. Farashahi, ''Efficient Arithmetic on Elliptic Curves using a Mixed Edwards-Montgomery Representation'', 2008
+* D. J. Bernstein, T. Lange, ''Montgomery curves and the Montgomery ladder'', 2017
+* [http://hyperelliptic.org/EFD/g1p/index.html Explicit-Formulas Database: genus-1 curves over large-characteristic fields]
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:עקומים אליפטיים]]
+[[קטגוריה:קריפטוגרפיה]]
