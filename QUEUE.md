@@ -209,7 +209,7 @@ Additive number theory:
 ### משוואות דיופנטיות (22)
 
 - [x] Thue equation
-- [ ] Siegel's theorem on integral points
+- [x] Siegel's theorem on integral points
 - [ ] Ramanujan–Nagell equation
 - [ ] Markov number
 - [ ] Coin problem
