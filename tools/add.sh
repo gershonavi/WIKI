@@ -13,6 +13,7 @@ q = open('QUEUE.md', encoding='utf-8').read()
 q = q.replace(f'- [ ] {en}\n', f'- [x] {en}\n')
 open('QUEUE.md', 'w', encoding='utf-8').write(q)
 EOF
+python3 tools/relink.py "$he" >/dev/null
 python3 build.py | tail -1
 git add -A
 git -c user.name=gershonavi -c user.email=gershonavi@users.noreply.github.com commit -qm "Add: $he ($en)
