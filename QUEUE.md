@@ -225,7 +225,7 @@ Additive number theory:
 - [x] Tijdeman's theorem
 - [x] Brahmagupta's problem
 - [x] Bhaskara's lemma
-- [ ] Congruum
+- [x] Congruum
 - [ ] Euler's sum of powers conjecture
 - [ ] Sum of four cubes problem
 - [ ] Goormaghtigh conjecture
