@@ -1,0 +1,96 @@
+'''השערת להמר''', שנקראת גם '''בעיית להמר על מידת מאהלר''', היא בעיה ב[[תורת המספרים]] שהעלה דריק הנרי להמר ב-1933.{{הערה|שם=L33|1=<span dir="ltr">D. H. Lehmer, "Factorization of certain cyclotomic functions", ''Annals of Mathematics'' (2) '''34''' (1933), no. 3, 461–479</span>|כיווון=שמאל}} (אין לבלבל אותה עם השערת להמר על אי-התאפסות [[פונקציית הטאו של רמנוג'אן]], או עם [[בעיית פונקציית אוילר של להמר]].) ההשערה טוענת שיש קבוע מוחלט <math>\mu \gt 1</math> כך שכל [[פולינום]] עם מקדמים שלמים <math>P(x)\in\mathbb{Z}[x]</math> מקיים אחת משתי התכונות הבאות:
+* [[מידת מאהלר]]{{הערה|שם=Smyth|1=<span dir="ltr">C. Smyth, "The Mahler measure of algebraic numbers: a survey", in J. McKee, C. Smyth (eds.), ''Number Theory and Polynomials'', Cambridge University Press, 2008, 322–349</span>|כיווון=שמאל}} <math>\mathcal{M}(P)</math> של <math>P</math> גדולה או שווה ל-<math>\mu</math>;
+* <math>P</math> הוא כפולה שלמה של מכפלה של [[פולינום ציקלוטומי|פולינומים ציקלוטומיים]] ושל המונום <math>x</math>, ואז <math>\mathcal{M}(P)=1</math>. (באופן שקול: כל שורש מרוכב של <math>P</math> הוא [[שורש יחידה]] או 0.)
+
+יש כמה הגדרות שקולות של מידת מאהלר; אחת מהן היא לפרק את <math>P</math> מעל <math>\mathbb{C}</math>:
+:<math>P(x)=a_0 (x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_D),</math>
+ולהגדיר
+:<math>\mathcal{M}(P) = |a_0| \prod_{i=1}^{D} \max(1,|\alpha_i|).</math>
+
+מידת המאהלר הקטנה ביותר הידועה (שגדולה מ-1) היא של '''הפולינום של להמר'''
+:<math>L(x)= x^{10}+x^9-x^7-x^6-x^5-x^4-x^3+x+1,</math>
+שמידת המאהלר שלו היא מספר סאלם{{הערה|1=<span dir="ltr">P. Borwein, ''Computational Excursions in Analysis and Number Theory'', CMS Books in Mathematics, Springer, 2002, p. 16</span>|כיווון=שמאל}}
+:<math>\mathcal{M}(L)=1.17628081825991\ldots</math>
+מקובל להאמין שזה הערך המינימלי האמיתי, כלומר ש-<math>\mu=1.176280818\ldots</math> בהשערת להמר.{{הערה|שם=S324|1=Smyth (2008), p. 324|כיווון=שמאל}}{{הערה|1=<span dir="ltr">G. Everest, A. van der Poorten, I. Shparlinski, T. Ward, ''Recurrence Sequences'', Mathematical Surveys and Monographs 104, American Mathematical Society, 2003, p. 30</span>|כיווון=שמאל}}
+
+== דוגמה: השורשים של הפולינום של להמר ==
+הפולינום של להמר הוא '''הדדי''': <math>x^{10}L(1/x) = L(x)</math>, ולכן אם <math>\alpha</math> שורש, גם <math>1/\alpha</math> שורש. חישוב השורשים נותן:
+* שורש ממשי אחד <math>\lambda \approx 1.1762808</math> מחוץ למעגל היחידה;
+* השורש ההפכי <math>1/\lambda \approx 0.8501371</math> בתוך המעגל;
+* שמונה שורשים נוספים, כולם על מעגל היחידה (<math>|\alpha| = 1</math>), אבל אף אחד מהם אינו שורש יחידה.
+לכן <math>\mathcal M(L) = \lambda</math>, ו-<math>\lambda</math> הוא מספר סאלם: שלם אלגברי ממשי גדול מ-1 שכל הצמודים האחרים שלו נמצאים בתוך מעגל היחידה או עליו, ולפחות אחד עליו.
+
+להשוואה: מידת המאהלר של <math>x^3 - x - 1</math> היא <math>1.3247179\ldots</math> (ה'''מספר הפלסטי''', השורש הממשי), ושל <math>x^2 - x - 1</math> היא <math>\varphi = 1.6180339\ldots</math> ([[יחס הזהב]]). (בדקנו בחישוב.)
+
+== מוטיבציה ==
+לנוסחת ינסן יש מסקנה: אם <math>P(x)=a_0 (x-\alpha_1)\cdots(x-\alpha_D)</math>, אז
+:<math>\log\mathcal{M}(P) = \int_0^1 \log\left|P(e^{2\pi i t})\right|\,dt,</math>
+והאגף הימני שווה ל-<math>\log|a_0| + \sum_i \log\max(1,|\alpha_i|)</math>. בפסקה הזו נסמן <math>m(P)=\log\mathcal{M}(P)</math>; גם הגודל הזה נקרא מידת מאהלר (הלוגריתמית).
+
+אם ל-<math>P</math> יש מקדמים שלמים, אז <math>\mathcal{M}(P)</math> הוא [[מספר אלגברי]], ולכן <math>m(P)</math> הוא הלוגריתם של [[שלם אלגברי]]. עוד נובע ש-<math>m(P)\ge 0</math>, ושאם <math>m(P)=0</math> אז <math>P</math> הוא מכפלה של פולינומים ציקלוטומיים (פולינומים מתוקנים שכל שורשיהם שורשי יחידה) ושל חזקה של <math>x</math> (זה [[משפט קרונקר]] על שלמים אלגבריים שכל צמודיהם על מעגל היחידה).
+
+להמר הבחין{{הערה|שם=L33}}{{הערה|1=<span dir="ltr">D. Boyd, "Speculations concerning the range of Mahler's measure", ''Canad. Math. Bull.'' '''24''' (1981), no. 4, 453–469</span>|כיווון=שמאל}} שהערך <math>m(P)=0</math> חשוב בחקר סדרות המספרים השלמים
+:<math>\Delta_n=\mathrm{Res}(P(x), x^n-1)=\prod_{i=1}^D(\alpha_i^n-1)</math>
+עבור <math>P</math> מתוקן. אם <math>P</math> אינו מתאפס על מעגל היחידה, אז <math>\lim|\Delta_n|^{1/n}=\mathcal{M}(P)</math>. אם <math>P</math> מתאפס על המעגל אבל לא בשורש יחידה, אותה התכנסות מתקיימת לפי [[משפט בייקר]] (למעשה מספיקה תוצאה מוקדמת יותר של [[אלכסנדר גלפונד|גלפונד]], כפי שהעיר לינד בהקשר של מחקרו על אוטומורפיזמים קוואזי-היפרבוליים של טורוסים).{{הערה|1=<span dir="ltr">D. A. Lind, "Dynamical properties of quasihyperbolic toral automorphisms", ''Ergodic Theory Dynam. Systems'' '''2''' (1982), 49–68; G. Everest, T. Ward, ''Heights of Polynomials and Entropy in Algebraic Dynamics'', Springer, 1999</span>|כיווון=שמאל}} להמר חיפש דרך כזו ראשוניים גדולים: כשמידת המאהלר קרובה ל-1, המספרים <math>\Delta_n</math> גדלים לאט, ולכן יש סיכוי טוב יותר שיהיו ראשוניים (או בעלי גורמים גדולים). כך הגיע לשאלות:
+:האם יש קבוע <math>c\gt 0</math> כך ש-<math>m(P)\gt c</math> לכל <math>P</math> שאינו ציקלוטומי?
+או
+:בהינתן <math>c \gt 0</math>, האם יש <math>P</math> עם מקדמים שלמים כך ש-<math>0\lt m(P)\lt c</math>?
+
+=== דוגמה: הסדרה <math>\Delta_n</math> של הפולינום של להמר ===
+כש-<math>P = L</math> הוא הפולינום של להמר, <math>\Delta_n</math> הוא תמיד ריבוע שלם (כי <math>L</math> הדדי ממעלה זוגית), ולעתים קרובות השורש הריבועי שלו ראשוני:
+:{| class="wikitable" style="text-align:center"
+! <math>n</math> !! 19 !! 31 !! 41 !! 43 !! 53 !! 59 !! 61 !! 127
+|-
+! <math>|\Delta_n|</math>
+| <math>37^2</math> || <math>32^2 = 2^{10}</math> || <math>83^2</math> || <math>173^2</math> || <math>317^2</math> || <math>1297^2</math> || <math>367^2</math> || <math>140207^2</math>
+|}
+כל השורשים בטבלה ראשוניים, פרט ל-32. עבור כל הראשוניים <math>n \lt 19</math> (וגם עבור 23, 29, 37 ו-47) מתקבל <math>|\Delta_n| = 1</math>. ההתכנסות <math>|\Delta_n|^{1/n} \to \mathcal M(L)</math> איטית ותנודתית, בגלל שמונת השורשים שעל מעגל היחידה: עבור <math>n = 401, 997, 1999</math> מתקבל <math>1.1617, 1.1739, 1.1761</math>, לעומת <math>\mathcal M(L) = 1.17628</math>. (בדקנו בחישוב.)
+
+התשובות החיוביות שניתנו עד כה מתוארות להלן, אבל השערת להמר עדיין לא הוכחה במלואה, והיא עדיין שאלה מעניינת מאוד.
+
+== תוצאות חלקיות ==
+יהי <math>P(x)\in\mathbb{Z}[x]</math> [[פולינום אי-פריק]] מתוקן ממעלה <math>D</math>.
+
+סמית' הוכיח שהשערת להמר נכונה לכל הפולינומים שאינם '''הדדיים''', כלומר שמקיימים <math>x^DP(x^{-1})\ne P(x)</math>.{{הערה|1=<span dir="ltr">C. J. Smyth, "On the product of the conjugates outside the unit circle of an algebraic integer", ''Bull. London Math. Soc.'' '''3''' (1971), no. 2, 169–175</span>|כיווון=שמאל}}
+
+בלנקסבי ומונטגומרי,{{הערה|1=<span dir="ltr">P. E. Blanksby, H. L. Montgomery, "Algebraic integers near the unit circle", ''Acta Arith.'' '''18''' (1971), 355–369</span>|כיווון=שמאל}} ובאופן בלתי תלוי סטיוארט,{{הערה|1=<span dir="ltr">C. L. Stewart, "Algebraic integers whose conjugates lie near the unit circle", ''Bull. Soc. Math. France'' '''106''' (1978), 169–176</span>|כיווון=שמאל}} הוכיחו שיש קבוע מוחלט <math>C \gt 0</math> כך שאו <math>\mathcal{M}(P)=1</math> או{{הערה|1=Smyth (2008), p. 325. בערך האנגלי נכתב <math>C \gt 1</math>. הקבועים שהתקבלו בפועל קטנים בהרבה: בלנקסבי ומונטגומרי הוכיחו <math>\mathcal M(P) \gt 1 + \frac{1}{52\,D\log(6D)}</math>.|כיווון=שמאל}}
+:<math>\log\mathcal{M}(P)\ge \frac{C}{D\log D}.</math>
+דוברובולסקי שיפר את זה ל-{{הערה|1=<span dir="ltr">E. Dobrowolski, "On a question of Lehmer and the number of irreducible factors of a polynomial", ''Acta Arith.'' '''34''' (1979), no. 4, 391–401</span>|כיווון=שמאל}}
+:<math>\log\mathcal{M}(P)\ge C\left(\frac{\log\log D}{\log D}\right)^3.</math>
+דוברובולסקי קיבל את הערך <math>C \ge 1/1200</math>, ובאופן אסימפטוטי <math>C \gt 1-\varepsilon</math> לכל <math>D</math> גדול מספיק. ווטייה קיבל ב-1996 את <math>C \ge 1/4</math> לכל <math>D \ge 2</math>.{{הערה|1=<span dir="ltr">P. Voutier, "An effective lower bound for the height of algebraic numbers", ''Acta Arith.'' '''74''' (1996), 81–95</span>|כיווון=שמאל}}
+
+== אנלוגים אליפטיים ==
+יהי <math>E/K</math> [[עקום אליפטי]] שמוגדר מעל [[שדה מספרים]] <math>K</math>, ותהי <math>\hat{h}_E:E(\bar{K})\to\mathbb{R}</math> פונקציית [[גובה נרון–טייט|הגובה הקנוני]]. הגובה הקנוני הוא האנלוג של הפונקציה <math>(\deg P)^{-1}\log\mathcal{M}(P)</math> עבור עקומים אליפטיים. יש לו התכונה ש-<math>\hat{h}_E(Q)=0</math> אם ורק אם <math>Q</math> נקודת פיתול ב-<math>E(\bar{K})</math>. '''השערת להמר האליפטית''' טוענת שיש קבוע <math>C(E/K)\gt 0</math> כך ש-
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D}</math>
+לכל נקודה <math>Q\in E(\bar{K})</math> שאינה נקודת פיתול, כאשר <math>D=[K(Q):K]</math>. אם לעקום <math>E</math> יש [[כפל מרוכב]], אז מתקיים האנלוג של התוצאה של דוברובולסקי:
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D} \left(\frac{\log\log D}{\log D}\right)^3,</math>
+בזכות לורן.{{הערה|1=Smyth (2008), p. 327|כיווון=שמאל}} לעקומים אליפטיים כלליים, התוצאה הטובה ביותר הידועה היא
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D^3(\log D)^2},</math>
+של מאסר.{{הערה|1=<span dir="ltr">D. W. Masser, "Counting points of small height on elliptic curves", ''Bull. Soc. Math. France'' '''117''' (1989), no. 2, 247–265</span>|כיווון=שמאל}} עבור עקומים אליפטיים עם [[אינווריאנט j]] שאינו שלם, הינדרי וסילברמן שיפרו את זה ל-{{הערה|1=<span dir="ltr">M. Hindry, J. H. Silverman, "On Lehmer's conjecture for elliptic curves", in C. Goldstein (ed.), ''Séminaire de Théorie des Nombres, Paris 1988–89'', Progress in Mathematics 91, Birkhäuser, 1990, 103–116</span>|כיווון=שמאל}}
+:<math>\hat{h}_E(Q) \ge \frac{C(E/K)}{D^2(\log D)^2}.</math>
+
+== תוצאות למחלקות מוגבלות ==
+למחלקות מוגבלות של פולינומים או של מספרים אלגבריים ידועות תוצאות חזקות יותר. אם <math>P</math> אינו הדדי, אז
+:<math>\mathcal M(P) \ge \mathcal M(x^3 - x - 1) \approx 1.3247,</math>
+וזה כמובן החסם הטוב ביותר האפשרי.{{הערה|1=Smyth (2008), p. 328|כיווון=שמאל}} אם בנוסף כל המקדמים של <math>P</math> אי-זוגיים, אז{{הערה|שם=S329|1=Smyth (2008), p. 329. התוצאה על מקדמים אי-זוגיים היא של בורוויין, דוברובולסקי ומוסינגהוף.|כיווון=שמאל}}
+:<math>\mathcal M(P) \ge \mathcal M(x^2 -x - 1) \approx 1.618.</math>
+לכל מספר אלגברי <math>\alpha</math>, תהי <math>\mathcal M(\alpha)</math> מידת המאהלר של ה[[פולינום מינימלי|פולינום המינימלי]] <math>P_\alpha</math> של <math>\alpha</math>. אם השדה <math>\mathbb{Q}(\alpha)</math> הוא הרחבת גלואה של <math>\mathbb{Q}</math>, אז השערת להמר נכונה עבור <math>P_\alpha</math>.{{הערה|שם=S329}}
+
+== קשר למבנה של אוטומורפיזמים של חבורות קומפקטיות ==
+ידוע שהאנטרופיה במובן של תורת המידה של אוטומורפיזם ארגודי של חבורה אבלית קומפקטית מטריזבילית נתונה על ידי מידת המאהלר הלוגריתמית של פולינום עם מקדמים שלמים, אם היא סופית.{{הערה|1=<span dir="ltr">D. Lind, K. Schmidt, T. Ward, "Mahler measure and entropy for commuting automorphisms of compact groups", ''Inventiones Mathematicae'' '''101''' (1990), 593–629</span>|כיווון=שמאל}} כפי שהעיר לינד, המשמעות היא שקבוצת הערכים האפשריים של האנטרופיה של פעולות כאלה היא או כל <math>(0,\infty]</math> או קבוצה בת מנייה, בהתאם לפתרון של בעיית להמר.{{הערה|1=<span dir="ltr">D. Lind, "The structure of skew products with ergodic group automorphisms", ''Israel J. Math.'' '''28''' (1977), no. 3, 205–248</span>|כיווון=שמאל}} לינד הראה גם שלטורוס האינסוף-ממדי יש או אוטומורפיזמים ארגודיים עם אנטרופיה חיובית סופית, או רק אוטומורפיזמים עם אנטרופיה אינסופית – שוב בהתאם לפתרון בעיית להמר. מכיוון שאוטומורפיזם ארגודי של חבורה קומפקטית איזומורפי (במובן של תורת המידה) להזזת ברנולי, והזזות ברנולי מסווגות עד כדי איזומורפיזם לפי האנטרופיה שלהן (משפט אורנשטיין), נובע שמרחב המודולים של כל האוטומורפיזמים הארגודיים של חבורות קומפקטיות (עד כדי איזומורפיזם) הוא בן מנייה או לא בן מנייה – בהתאם לפתרון בעיית להמר.
+
+== ראו גם ==
+* [[מידת מאהלר]]
+* [[גובה נרון–טייט]]
+
+== קישורים חיצוניים ==
+<div dir="ltr">
+* M. J. Mossinghoff, [http://wayback.cecm.sfu.ca/~mjm/Lehmer/ Lehmer's problem] – lists of polynomials with small Mahler measure
+* E. W. Weisstein, [https://mathworld.wolfram.com/LehmersMahlerMeasureProblem.html "Lehmer's Mahler Measure Problem"], MathWorld
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:פולינומים]]
+[[קטגוריה:השערות פתוחות בתורת המספרים]]

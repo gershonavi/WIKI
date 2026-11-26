@@ -415,7 +415,7 @@ Additive number theory:
 
 ### השלמות לשיעורים 20–23, חלק ה' (6)
 
-- [ ] Lehmer's conjecture
+- [x] Lehmer's conjecture
 - [ ] Tate pairing
 - [ ] Hasse–Witt matrix
 - [ ] Theta function of a lattice

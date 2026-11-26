@@ -25,6 +25,8 @@ elif sys.argv[1] in ('new', 'ok'):
     known = set()
     if os.path.exists('tools/known_ok.txt'):
         known = {l.strip() for l in open('tools/known_ok.txt', encoding='utf-8') if l.strip()}
+    if sys.argv[1] == 'new' and os.path.exists('tools/missing_checked.txt'):
+        known |= {l.strip() for l in open('tools/missing_checked.txt', encoding='utf-8') if l.strip()}
     if sys.argv[1] == 'ok':
         known |= {l.strip() for l in open(sys.argv[2], encoding='utf-8') if l.strip()}
         open('tools/known_ok.txt', 'w', encoding='utf-8').write('\n'.join(sorted(known)) + '\n')
@@ -44,6 +46,9 @@ elif sys.argv[1] in ('new', 'ok'):
         print('https://he.wikipedia.org/w/api.php?action=query&format=json&redirects=1&titles=' + urllib.parse.quote('|'.join(ts[i:i + 50])))
 elif sys.argv[1] == 'unlink':
     missing = {l.strip() for l in open(sys.argv[2], encoding='utf-8') if l.strip()} - ours
+    if sys.argv[2] != 'tools/missing_checked.txt':  # remember them, so 'new' does not list them again
+        old = {l.strip() for l in open('tools/missing_checked.txt', encoding='utf-8') if l.strip()} if os.path.exists('tools/missing_checked.txt') else set()
+        open('tools/missing_checked.txt', 'w', encoding='utf-8').write('\n'.join(sorted(old | missing)) + '\n')
     n = 0
     for f in glob.glob('wiki/*.wiki'):
         s = open(f, encoding='utf-8').read()
