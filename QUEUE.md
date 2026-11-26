@@ -376,4 +376,4 @@ Additive number theory:
 - [x] Cyclotomic field
 - [x] Ramanujan graph
 - [x] Ring class field
-- [ ] Tate–Shafarevich group
+- [x] Tate–Shafarevich group

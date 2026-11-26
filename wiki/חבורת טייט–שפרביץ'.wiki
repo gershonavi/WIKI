@@ -1,0 +1,45 @@
+בגאומטריה אריתמטית, '''חבורת טייט–שפרביץ'''' <math>\text{Ш}(A/K)</math> של [[יריעה אבלית]] <math>A</math> (או באופן כללי יותר, של סכמת חבורות) מעל [[שדה מספרים]] <math>K</math> מורכבת מהאיברים של '''חבורת וייל–שאטלה''' <math>\mathrm{WC}(A/K) = H^1(G_K, A)</math>, כאשר <math>G_K = \mathrm{Gal}(\overline K/K)</math> חבורת הגלואה המוחלטת של <math>K</math>, שנעשים טריוויאליים בכל ההשלמות של <math>K</math> – ההשלמות הממשיות והמרוכבות, ו[[מספר p-אדי|השדות ה-<math>p</math>-אדיים]] שמתקבלים מ-<math>K</math> בהשלמה לפי כל ה[[הערכה (אלגברה)|הערכות]] <math>v</math> שלו, הארכימדיות והלא ארכימדיות. כלומר, בשפת [[קוהומולוגיית גלואה]]:
+:<math>\text{Ш}(A/K) = \bigcap_v\ker\left(H^1(G_K,A)\rightarrow H^1(G_{K_v},A_v)\right).</math>
+
+החבורה הוצגה על ידי סרג' לנג וג'ון טייט{{הערה|שם=LT|1=<span dir="ltr">S. Lang, J. Tate, "Principal homogeneous spaces over abelian varieties", ''American Journal of Mathematics'' '''80''' (1958), no. 3, 659–684</span>|כיווון=שמאל}} ועל ידי איגור שפרביץ'.{{הערה|שם=Sh|1=<span dir="ltr">I. R. Shafarevich, "The group of principal homogeneous algebraic manifolds", ''Doklady Akademii Nauk SSSR'' '''124''' (1959), 42–43 (Russian)</span>|כיווון=שמאל}} קאסלס הציג את הסימון <math>\text{Ш}(A/K)</math>, כאשר <math>\text{Ш}</math> היא האות ה[[אלפבית קירילי|קירילית]] "שה", על שם שפרביץ',{{הערה|שם=C62b|1=<span dir="ltr">J. W. S. Cassels, "Arithmetic on curves of genus 1. IV. Proof of the Hauptvermutung", ''J. reine angew. Math.'' '''211''' (1962), 95–112</span>|כיווון=שמאל}} במקום הסימון הישן <math>TS</math> או <math>T\check S</math>.{{הערה|שם=C62|1=<span dir="ltr">J. W. S. Cassels, "Arithmetic on curves of genus 1. III. The Tate–Šafarevič and Selmer groups", ''Proc. London Math. Soc.'' (3) '''12''' (1962), 259–296</span>|כיווון=שמאל}}
+
+== איברי חבורת טייט–שפרביץ' ==
+מבחינה גאומטרית, אפשר לחשוב על האיברים הלא טריוויאליים של חבורת טייט–שפרביץ' כעל המרחבים ההומוגניים של <math>A</math> שיש להם נקודות מעל <math>K_v</math> לכל מקום <math>v</math> של <math>K</math>, אבל אין להם נקודה מעל <math>K</math>. לכן החבורה מודדת עד כמה [[עקרון הסה|עקרון האסה]] נכשל למשוואות רציונליות עם מקדמים בשדה <math>K</math>. קרל-אריק לינד נתן דוגמה למרחב הומוגני כזה: הוא הראה שלעקום מ[[גנוס (גאומטריה אלגברית)|גנוס]] 1
+:<math>2y^2 = x^4 - 17</math>
+יש פתרונות מעל הממשיים ומעל כל השדות ה-<math>p</math>-אדיים, אבל אין לו נקודות רציונליות.{{הערה|שם=Lind|1=<span dir="ltr">C.-E. Lind, ''Untersuchungen über die rationalen Punkte der ebenen kubischen Kurven vom Geschlecht Eins'', thesis, University of Uppsala, 1940</span>|כיווון=שמאל}} ארנסט סלמר נתן דוגמאות רבות נוספות, כמו העקום הקובי{{הערה|שם=Selmer|1=<span dir="ltr">E. S. Selmer, "The Diophantine equation ax³+by³+cz³=0", ''Acta Mathematica'' '''85''' (1951), 203–362</span>|כיווון=שמאל}}
+:<math>3x^3 + 4y^3 + 5z^3 = 0.</math>
+
+המקרה הפרטי של חבורת טייט–שפרביץ' לסכמת החבורות הסופית של הנקודות מסדר נתון <math>n</math> של יריעה אבלית קשור קשר הדוק לחבורת סלמר: יש סדרה מדויקת
+:<math>0 \to A(K)/nA(K) \to \mathrm{Sel}^{(n)}(A/K) \to \text{Ш}(A/K)[n] \to 0,</math>
+וחבורת סלמר <math>\mathrm{Sel}^{(n)}</math> סופית וניתנת לחישוב. זו בדיוק הדרך שבה מחשבים את הדרגה של [[עקום אליפטי]] בפועל ("ירידה מסדר <math>n</math>"): <math>\text{Ш}[n]</math> הוא המכשול שמונע מהחסם העליון על הדרגה שחבורת סלמר נותנת להיות שוויון.
+
+== השערת טייט–שפרביץ' ==
+'''השערת טייט–שפרביץ'''' אומרת שחבורת טייט–שפרביץ' סופית. [[קרל רובין]] הוכיח זאת לחלק מה[[עקום אליפטי|עקומים האליפטיים]] מ[[דרגה של עקום אליפטי|דרגה]] לכל היותר 1 עם [[כפל מרוכב]].{{הערה|שם=Rubin|1=<span dir="ltr">K. Rubin, "Tate–Shafarevich groups and L-functions of elliptic curves with complex multiplication", ''Inventiones Mathematicae'' '''89''' (1987), no. 3, 527–559</span>|כיווון=שמאל}} ויקטור קוליווגין הרחיב זאת לעקומים אליפטיים מודולריים מעל הרציונליים מדרגה אנליטית לכל היותר 1.{{הערה|שם=Kol|1=<span dir="ltr">V. A. Kolyvagin, "Finiteness of E(Q) and Ш(E,Q) for a subclass of Weil curves", ''Izv. Akad. Nauk SSSR Ser. Mat.'' '''52''' (1988), no. 3, 522–540</span>|כיווון=שמאל}} (מאוחר יותר [[משפט המודולריות]] הראה שהנחת המודולריות מתקיימת תמיד.)
+
+ידוע שחבורת טייט–שפרביץ' היא חבורת פיתול,{{הערה|1=<span dir="ltr">V. A. Kolyvagin, "On the structure of Shafarevich–Tate groups", in ''Algebraic Geometry'', Lecture Notes in Mathematics 1479, Springer, 1991, 94–121; B. Poonen, "The Selmer group, the Shafarevich–Tate group, and the weak Mordell–Weil theorem", lecture notes</span>|כיווון=שמאל}} ולכל <math>n</math> תת-החבורה <math>\text{Ш}[n]</math> סופית (מהסדרה המדויקת שלמעלה). לכן ההשערה שקולה לכך שהחבורה [[חבורה אבלית נוצרת סופית|נוצרת סופית]].
+
+חבורת טייט–שפרביץ' מופיעה בנוסחה של [[השערת בירץ' וסווינרטון-דייר]]. למשל לעקום <math>y^2 + y = x^3 - x^2 - 10x - 20</math> (מוליך 11), הנוסחה <math>L(E,1)/\Omega = |\text{Ш}|\cdot c_{11}/|E(\mathbb Q)_{\mathrm{tors}}|^2</math> עם <math>L(E,1)/\Omega = 1/5</math>, <math>c_{11} = 5</math> ו-<math>|E(\mathbb Q)_{\mathrm{tors}}| = 5</math> נותנת <math>|\text{Ш}| = 1</math> (בדקנו בחישוב את הערכים המספריים).
+
+== זיווג קאסלס–טייט ==
+זיווג קאסלס–טייט הוא [[תבנית בילינארית|זיווג בילינארי]] <math>\text{Ш}(A) \times \text{Ш}(\hat A) \to \mathbb Q/\mathbb Z</math>, כאשר <math>A</math> יריעה אבלית ו-<math>\hat A</math> היריעה הדואלית שלה. קאסלס הציג אותו ל[[עקום אליפטי|עקומים אליפטיים]], שבהם אפשר לזהות את <math>A</math> עם <math>\hat A</math> והזיווג הוא תבנית מתחלפת.{{הערה|שם=C62}} הגרעין של התבנית הזו הוא תת-החבורה של האיברים ה[[חבורה חליקה|חליקים]], והוא טריוויאלי אם השערת טייט–שפרביץ' נכונה. טייט הרחיב את הזיווג ליריעות אבליות כלליות, כגרסה של דואליות טייט.{{הערה|שם=Tate63|1=<span dir="ltr">J. Tate, "Duality theorems in Galois cohomology over number fields", in ''Proceedings of the International Congress of Mathematicians (Stockholm, 1962)'', Institut Mittag-Leffler, 1963, 288–295</span>|כיווון=שמאל}} בחירת קיטוב על <math>A</math> נותנת העתקה מ-<math>A</math> ל-<math>\hat A</math>, שמשרה זיווג בילינארי על <math>\text{Ш}(A)</math> עם ערכים ב-<math>\mathbb Q/\mathbb Z</math>; אבל בניגוד למקרה של עקומים אליפטיים, הזיווג הזה לא חייב להיות מתחלף ואפילו לא אנטי-סימטרי.
+
+לעקום אליפטי קאסלס הראה שהזיווג מתחלף, ומכאן שאם הסדר של <math>\text{Ш}</math> סופי, הוא '''ריבוע'''. ליריעות אבליות כלליות האמינו בטעות במשך שנים רבות שהסדר של <math>\text{Ш}</math> הוא ריבוע בכל פעם שהוא סופי. הטעות מקורה במאמר של סווינרטון-דייר,{{הערה|1=<span dir="ltr">P. Swinnerton-Dyer, "The conjectures of Birch and Swinnerton-Dyer, and of Tate", in T. A. Springer (ed.), ''Proceedings of a Conference on Local Fields (Driebergen, 1966)'', Springer, 1967, 132–157</span>|כיווון=שמאל}} שציטט באופן לא מדויק אחת מהתוצאות של טייט.{{הערה|שם=Tate63}} פונן ושטול נתנו דוגמאות שבהן הסדר הוא פעמיים ריבוע, למשל היעקוביאן של עקום מסוים מגנוס 2 מעל הרציונליים שחבורת טייט–שפרביץ' שלו מסדר 2,{{הערה|1=<span dir="ltr">B. Poonen, M. Stoll, "The Cassels–Tate pairing on polarized abelian varieties", ''Annals of Mathematics'' (2) '''150''' (1999), no. 3, 1109–1149</span>|כיווון=שמאל}} ושטיין נתן דוגמאות שבהן החזקה של ראשוני אי-זוגי שמחלקת את הסדר היא אי-זוגית.{{הערה|1=<span dir="ltr">W. A. Stein, "Shafarevich–Tate groups of nonsquare order", in ''Modular Curves and Abelian Varieties'', Progress in Mathematics 224, Birkhäuser, 2004, 277–289</span>|כיווון=שמאל}} אם ליריעה האבלית יש קיטוב ראשי, התבנית על <math>\text{Ш}</math> אנטי-סימטרית, ולכן הסדר של <math>\text{Ш}</math> (אם הוא סופי) הוא ריבוע או פעמיים ריבוע; ואם בנוסף הקיטוב הראשי בא ממחלק רציונלי (כמו בעקומים אליפטיים), התבנית מתחלפת והסדר הוא ריבוע. מנגד, על בסיס התוצאות האלה, קונסטנטינו הראה שלכל מספר <math>n</math> [[מספר חופשי מריבועים|חופשי מריבועים]] יש יריעה אבלית <math>A</math> מעל <math>\mathbb Q</math> ושלם <math>m</math> כך ש-<math>|\text{Ш}| = n\cdot m^2</math>.{{הערה|1=<span dir="ltr">A. Konstantinou, "A note on the order of the Tate–Shafarevich group modulo squares", arXiv:2404.16785 (2024)</span>|כיווון=שמאל}} בדוגמאות של קונסטנטינו <math>\text{Ш}</math> סופית, והן מאשרות השערה של שטיין. כך שמודולו ריבועים, כל שלם יכול להיות הסדר של <math>\text{Ш}</math>.
+
+== ראו גם ==
+* [[השערת בירץ' וסווינרטון-דייר]]
+* [[עקרון הסה|עקרון האסה]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* J. W. S. Cassels, ''Lectures on Elliptic Curves'', London Mathematical Society Student Texts 24, Cambridge University Press, 1991
+* M. Hindry, J. H. Silverman, ''Diophantine Geometry: An Introduction'', Graduate Texts in Mathematics 201, Springer, 2000
+* R. Greenberg, "Iwasawa theory and p-adic deformation of motives", in U. Jannsen, S. Kleiman, J.-P. Serre (eds.), ''Motives'', American Mathematical Society, 1994
+* J. Tate, "WC-groups over p-adic fields", Séminaire Bourbaki, exposé 156, 1957/58
+* A. Weil, "On algebraic groups and homogeneous spaces", ''American Journal of Mathematics'' '''77''' (1955), 493–512
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:גאומטריה אריתמטית]]
+[[קטגוריה:עקומים אליפטיים]]
