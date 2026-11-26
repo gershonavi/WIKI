@@ -305,7 +305,7 @@ Additive number theory:
 - [x] Prime k-tuple
 - [x] Primes in arithmetic progression
 - [x] Reciprocals of primes
-- [ ] Prime constant
+- [x] Prime constant
 - [ ] Wieferich pair
 - [ ] Ruth–Aaron pair
 - [ ] Provable prime
