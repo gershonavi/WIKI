@@ -274,7 +274,7 @@ Additive number theory:
 - [x] E8 lattice
 - [x] Leech lattice
 - [x] Niemeier lattice
-- [ ] Witt's theorem
+- [x] Witt's theorem
 - [ ] Kaplansky's theorem on quadratic forms
 - [ ] Universal quadratic form
 - [ ] Spinor genus
