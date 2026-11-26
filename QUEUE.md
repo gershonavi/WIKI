@@ -353,7 +353,7 @@ Additive number theory:
 - [x] Erdős–Nicolas number
 - [x] Primitive abundant number
 - [x] Friendly number
-- [ ] Betrothed numbers
+- [x] Betrothed numbers
 - [ ] Descartes number
 - [ ] Refactorable number
 - [ ] Arithmetic number
