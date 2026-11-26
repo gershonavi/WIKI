@@ -354,7 +354,7 @@ Additive number theory:
 - [x] Primitive abundant number
 - [x] Friendly number
 - [x] Betrothed numbers
-- [ ] Descartes number
+- [x] Descartes number
 - [ ] Refactorable number
 - [ ] Arithmetic number
 - [ ] Znám's problem
