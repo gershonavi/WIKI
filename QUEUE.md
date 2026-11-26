@@ -340,7 +340,7 @@ Additive number theory:
 - [x] Wilson quotient
 - [x] Wolstenholme number
 - [x] Lucas–Carmichael number
-- [ ] Lehmer sequence
+- [x] Lehmer sequence
 - [ ] Elliptic divisibility sequence
 - [ ] Somos sequence
 - [ ] Hilbert number

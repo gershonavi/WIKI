@@ -1,0 +1,48 @@
+{{אין לבלבל|[[בעיית פונקציית אוילר של להמר]]}}
+ב[[מתמטיקה]], '''סדרת להמר''' <math>U_n(\sqrt R, Q)</math> או <math>V_n(\sqrt R, Q)</math> היא הכללה של [[סדרת לוקאס]] <math>U_n(P, Q)</math> או <math>V_n(P, Q)</math>, שמאפשרת את השורש הריבועי של שלם <math>R</math> במקום השלם <math>P</math>.{{הערה|1={{MathWorld|LehmerNumber|Lehmer Number}}|כיווון=שמאל}} איברי הסדרה נקראים '''מספרי להמר''', על שם [[דריק הנרי להמר]].
+
+כדי להבטיח שהערכים יהיו תמיד שלמים, כל איבר שני בסדרת להמר מחולק ב-<math>\sqrt{R}</math> ביחס לאיבר המתאים בסדרת לוקאס. כלומר, כש-<math>R = P^2</math>, סדרות להמר ולוקאס קשורות כך:
+:<math>\begin{align}
+P\,U_{2n}(\sqrt{P^2},Q) &= U_{2n}(P,Q), & U_{2n+1}(\sqrt{P^2},Q) &= U_{2n+1}(P,Q), \\
+V_{2n}(\sqrt{P^2},Q) &= V_{2n}(P,Q), & P\,V_{2n+1}(\sqrt{P^2},Q) &= V_{2n+1}(P,Q).
+\end{align}</math>
+
+== יחסים אלגבריים ==
+יהיו <math>a</math> ו-<math>b</math> [[מספר מרוכב|מספרים מרוכבים]] עם
+:<math>a + b = \sqrt{R},\qquad ab = Q,</math>
+בתנאים הבאים:
+* <math>Q</math> ו-<math>R</math> שלמים שונים מאפס ו[[מספרים זרים|זרים]];
+* <math>a/b</math> אינו [[שורש יחידה]].
+אז מספרי להמר המתאימים הם
+:<math>U_n(\sqrt{R},Q) = \frac{a^n-b^n}{a-b}</math> עבור <math>n</math> [[מספר אי-זוגי|אי-זוגי]], ו-
+:<math>U_n(\sqrt{R},Q) = \frac{a^n-b^n}{a^2-b^2}</math> עבור <math>n</math> זוגי.
+המספרים הנלווים להם הם
+:<math>V_n(\sqrt{R},Q) = \frac{a^n+b^n}{a+b}</math> עבור <math>n</math> אי-זוגי, ו-
+:<math>V_n(\sqrt{R},Q) = a^n+b^n</math> עבור <math>n</math> זוגי.
+
+== נוסחת נסיגה ==
+מספרי להמר מקיימים [[נוסחת נסיגה]] ליניארית
+:<math>U_n = (R-2Q)U_{n-2}-Q^2U_{n-4} = (a^2+b^2)U_{n-2}-a^2b^2U_{n-4},</math>
+עם ערכי ההתחלה <math>U_0=0</math>, <math>U_1=1</math>, <math>U_2=1</math>, <math>U_3=R-Q=a^2+ab+b^2</math>. באופן דומה, הסדרה הנלווית מקיימת
+:<math>V_n = (R-2Q)V_{n-2}-Q^2V_{n-4} = (a^2+b^2)V_{n-2}-a^2b^2V_{n-4},</math>
+עם ערכי ההתחלה <math>V_0=2</math>, <math>V_1=1</math>, <math>V_2=R-2Q=a^2+b^2</math>, <math>V_3=R-3Q=a^2-ab+b^2</math>.
+(הסיבה: <math>a^2</math> ו-<math>b^2</math> הם שורשי <math>x^2 - (a^2+b^2)x + a^2b^2 = x^2 - (R - 2Q)x + Q^2</math>, שמקדמיו שלמים, ולכן כל אחת מתת-הסדרות הזוגית והאי-זוגית היא סדרת לוקאס במשתנה <math>a^2</math>.)
+
+כל נוסחאות הנסיגה של סדרות לוקאס תקפות גם לסדרות להמר, אם מחלקים אותן למקרים של <math>n</math> זוגי ואי-זוגי ומכניסים גורמים מתאימים של <math>\sqrt R</math>. למשל,
+:<math>\begin{align}
+U_{2n}(\sqrt R,Q) &= U_{2n-1}(\sqrt R,Q) - Q\, U_{2n-2}(\sqrt R,Q), &
+U_{2n+1}(\sqrt R,Q) &= R\, U_{2n}(\sqrt R,Q) - Q\, U_{2n-1}(\sqrt R,Q), \\
+V_{2n}(\sqrt R,Q) &= R\, V_{2n-1}(\sqrt R,Q) - Q\, V_{2n-2}(\sqrt R,Q), &
+V_{2n+1}(\sqrt R,Q) &= V_{2n}(\sqrt R,Q) - Q\, V_{2n-1}(\sqrt R,Q).
+\end{align}</math>
+
+== דוגמאות ==
+(את כל הנוסחאות לעיל בדקנו בחישוב סימבולי עבור <math>(R, Q) = (5, 1), (3, -1), (7, 2), (1, -1)</math>.)
+* <math>R = 1</math>, <math>Q = -1</math>: כאן <math>R = P^2</math> עם <math>P = 1</math>, וסדרת להמר מתלכדת עם סדרת לוקאס <math>U_n(1, -1)</math>, כלומר עם [[סדרת פיבונאצ'י]]: <math>0, 1, 1, 2, 3, 5, 8, 13, \ldots</math>; וה-<math>V_n</math> הם [[מספרי לוקאס]] (לפי היחסים שבפתיחה, עם <math>P = 1</math>).
+* <math>R = 5</math>, <math>Q = 1</math>: כאן <math>a = \tfrac{1+\sqrt5}2 = \phi</math> (ה[[יחס הזהב]]) ו-<math>b = 1/\phi</math>. מקבלים <math>U_n = 0, 1, 1, 4, 3, 11, 8, 29, \ldots</math>: האיברים במקומות האי-זוגיים הם מספרי לוקאס <math>L_1, L_3, L_5, L_7 = 1, 4, 11, 29</math>, ואלה שבמקומות הזוגיים הם מספרי פיבונאצ'י <math>F_2, F_4, F_6 = 1, 3, 8</math>. אפשר לבדוק את נוסחת הנסיגה: <math>R - 2Q = 3</math>, <math>Q^2 = 1</math>, ו-<math>U_6 = 3U_4 - U_2 = 9 - 1 = 8</math>, <math>U_7 = 3U_5 - U_3 = 33 - 4 = 29</math>.
+* <math>R = 3</math>, <math>Q = -1</math>: <math>U_n = 0, 1, 1, 4, 5, 19, 24, 91, \ldots</math>, עם <math>R - 2Q = 5</math> ו-<math>U_7 = 5\cdot19 - 4 = 91</math>.
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:סדרות של מספרים שלמים]]
