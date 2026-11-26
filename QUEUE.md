@@ -407,7 +407,7 @@ Additive number theory:
 - [x] Selberg trace formula
 - [x] Fuchsian group
 - [x] Hilbert modular form
-- [ ] Jacquet–Langlands correspondence
+- [x] Jacquet–Langlands correspondence
 - [ ] Cuspidal representation
 - [ ] Base change lifting
 - [ ] Adelic algebraic group
