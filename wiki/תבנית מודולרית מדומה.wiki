@@ -1,0 +1,221 @@
+ב[[מתמטיקה]], '''תבנית מודולרית מדומה''' (mock modular form) היא ה[[פונקציה הולומורפית|חלק ההולומורפי]] של [[תבנית מאס הרמונית|תבנית מאס חלשה הרמונית]], ו'''פונקציית תטא מדומה''' (mock theta function) היא, בעיקרו של דבר, תבנית מודולרית מדומה ממשקל <math>\tfrac12</math>. את הדוגמאות הראשונות לפונקציות תטא מדומות תיאר [[סריניוואסה רמנוג'אן]] במכתבו האחרון ל[[גודפרי הרולד הרדי|הרדי]] מ-1920 וב[[המחברת האבודה של רמנוג'אן|מחברת האבודה]] שלו. סנדר צוויגרס גילה שהוספה של פונקציות לא-הולומורפיות מסוימות הופכת אותן לתבניות מאס חלשות הרמוניות.{{הערה|שם=Zw01|1=<span dir="ltr">S. P. Zwegers, Mock θ-functions and real analytic modular forms, in: q-series with applications to combinatorics, number theory, and physics, Contemp. Math. 291, AMS, 2001, pp. 269–277.</span>|כיווון=שמאל}}{{הערה|שם=Zw02|1=<span dir="ltr">S. P. Zwegers, Mock Theta Functions, PhD thesis, Utrecht, 2002.</span>|כיווון=שמאל}}
+
+== היסטוריה ==
+{{ציטוט|תוכן="נניח שיש פונקציה בצורה האוילרית, ונניח שכל הנקודות, או אינסוף מהן, הן סינגולריות מעריכיות, ונניח גם שבנקודות האלה הצורה האסימפטוטית נסגרת יפה כמו במקרים (A) ו-(B). השאלה היא: האם הפונקציה היא סכום של שתי פונקציות, שאחת מהן היא פונקציית θ רגילה והשנייה פונקציה (טריוויאלית) שהיא O(1) ב'''כל''' הנקודות <math>e^{2m\pi i/n}</math>? ... כאשר זה לא כך, אני קורא לפונקציה פונקציית θ מדומה."|מקור=ההגדרה המקורית של רמנוג'אן לפונקציית תטא מדומה, במכתבו להרדי מ-1920 (בתרגום)}}
+
+במכתבו להרדי מ-12 בינואר 1920{{הערה|שם=Ram2000|1=<span dir="ltr">S. Ramanujan, Collected Papers of Srinivasa Ramanujan, eds. G. H. Hardy, P. V. Seshu Aiyar, B. M. Wilson, AMS Chelsea, 2000, Appendix II.</span>|כיווון=שמאל}} מנה רמנוג'אן 17 דוגמאות לפונקציות שהוא קרא להן פונקציות תטא מדומות, ובמחברת האבודה שלו{{הערה|שם=Ram88|1=<span dir="ltr">S. Ramanujan, The Lost Notebook and Other Unpublished Papers, Springer, 1988.</span>|כיווון=שמאל}} היו עוד כמה דוגמאות. (רמנוג'אן השתמש במונח "פונקציית תטא" למה שהיום נקרא [[תבנית מודולרית]].) רמנוג'אן הצביע על כך שיש להן [[פיתוח אסימפטוטי]] בחודים, בדומה לזה של תבניות מודולריות ממשקל <math>\tfrac12</math> (אולי עם קטבים בחודים), אבל אי אפשר לבטא אותן בעזרת [[פונקציית תטא|פונקציות תטא]] "רגילות". פונקציות עם תכונות דומות הוא כינה "פונקציות תטא מדומות". מאוחר יותר גילה צוויגרס את הקשר בין פונקציות התטא המדומות לתבניות מאס חלשות.
+
+רמנוג'אן שייך לפונקציות התטא המדומות שלו '''סדר''', שלא הוגדר בבירור. לפני העבודה של צוויגרס, הסדרים של פונקציות התטא המדומות הידועות היו
+:3, 5, 6, 7, 8, 10.
+מאוחר יותר התברר שמושג הסדר של רמנוג'אן מתאים ל[[מוליך של קרקטר דיריכלה|מוליך]] של [[קרקטר נבנטיפוס|קרקטר הנבנטיפוס]] של תבניות מאס הרמוניות ממשקל <math>\tfrac12</math> שההטלות ההולומורפיות שלהן הן פונקציות התטא המדומות של רמנוג'אן.
+
+בעשורים שלאחר מכן חקרו את פונקציות התטא המדומות של רמנוג'אן ווטסון, אנדרוז, סלברג, היקרסון, צ'וי, מקינטוש ואחרים, שהוכיחו את טענותיו של רמנוג'אן עליהן ומצאו עוד דוגמאות וזהויות. (רוב הזהויות והדוגמאות "החדשות" כבר היו ידועות לרמנוג'אן והופיעו שוב במחברת האבודה.) ב-1936 מצא ווטסון שתחת הפעולה של איברי [[החבורה המודולרית]], פונקציות התטא המדומות מסדר 3 מתנהגות '''כמעט''' כמו [[תבנית מודולרית|תבניות מודולריות]] ממשקל <math>\tfrac12</math> (כשמכפילים אותן בחזקות מתאימות של <math>q</math>), אלא שבמשוואות הפונקציונליות יש "איברי שגיאה", שבדרך כלל נתונים כאינטגרלים מפורשים.{{הערה|שם=Wat36|1=<span dir="ltr">G. N. Watson, The final problem: an account of the mock theta functions, Journal of the London Mathematical Society 11 (1936), pp. 55–80.</span>|כיווון=שמאל}} עם זאת, במשך שנים רבות לא הייתה הגדרה טובה של פונקציית תטא מדומה. זה השתנה ב-2001, כשצוויגרס גילה את הקשר לתבניות מודולריות לא-הולומורפיות, לסכומי לרך ולטורי תטא בלתי מוגדרים. צוויגרס הראה, בעזרת העבודות הקודמות של ווטסון ואנדרוז, שאפשר לכתוב את פונקציות התטא המדומות מסדרים 3, 5 ו-7 כסכום של תבנית מאס חלשה ממשקל <math>\tfrac12</math> ופונקציה שחסומה לאורך [[גאודזה|גאודזות]] שמסתיימות בחודים.{{הערה|שם=Zw02}} לתבנית המאס החלשה יש [[ערך עצמי]] <math>\tfrac3{16}</math> תחת [[הלפלסיאן ההיפרבולי]] (אותו ערך כמו לתבניות מודולריות הולומורפיות ממשקל <math>\tfrac12</math>); אבל היא גדלה מהר באופן מעריכי ליד החודים, ולכן אינה מקיימת את תנאי הגידול הרגיל של [[תבנית מאס|תבניות מאס]]. צוויגרס הוכיח את התוצאה בשלוש דרכים שונות: על ידי קישור פונקציות התטא המדומות לפונקציות התטא של הקה של סריגים בלתי מוגדרים מממד 2, לסכומי אפל–לרך, ול[[תבנית יעקובי|תבניות יעקובי]] מרומורפיות.
+
+התוצאה היסודית של צוויגרס מראה שפונקציות תטא מדומות הן "החלקים ההולומורפיים" של תבניות מודולריות ממשיות-אנליטיות ממשקל <math>\tfrac12</math>. זה מאפשר להרחיב אליהן תוצאות רבות על תבניות מודולריות. בפרט, כמו תבניות מודולריות, כל פונקציות התטא המדומות נמצאות במרחבים סוף-ממדיים מפורשים מסוימים, וזה הופך את ההוכחות הארוכות והקשות של זהויות רבות ביניהן ל[[אלגברה לינארית]] שגרתית. לראשונה התאפשר לייצר אינסוף דוגמאות של פונקציות תטא מדומות; לפני העבודה הזו היו ידועות רק כ-50 דוגמאות (רובן מצא לראשונה רמנוג'אן). כיישומים נוספים של רעיונות צוויגרס, קתרין ברינגמן ו[[קן אונו]] הראו שטורי <math>q</math> מסוימים שבאים מהטור ההיפרגאומטרי הבסיסי של רוג'רס–פיין קשורים לחלקים ההולומורפיים של תבניות מאס חלשות הרמוניות ממשקל <math>\tfrac32</math>,{{הערה|1=<span dir="ltr">K. Bringmann, A. Folsom, K. Ono, q-series and weight 3/2 Maass forms, Compositio Mathematica 145 (2009), pp. 541–552.</span>|כיווון=שמאל}} והראו שהטור האסימפטוטי למקדמים של פונקציית התטא המדומה מסדר 3 <math>f(q)</math>, שחקרו ג'ורג' אנדרוז{{הערה|1=<span dir="ltr">G. E. Andrews, On the theorems of Watson and Dragonette for Ramanujan's mock theta functions, American Journal of Mathematics 88 (1966), pp. 454–490.</span>|כיווון=שמאל}} ולילה דרגונט,{{הערה|שם=Drag|1=<span dir="ltr">L. A. Dragonette, Some asymptotic formulae for the mock theta series of Ramanujan, Transactions of the AMS 72 (1952), pp. 474–500.</span>|כיווון=שמאל}} מתכנס למקדמים.{{הערה|1=<span dir="ltr">K. Bringmann, K. Ono, The f(q) mock theta function conjecture and partition ranks, Inventiones Mathematicae 165 (2006), pp. 243–266.</span>|כיווון=שמאל}} בפרט, לפונקציות תטא מדומות יש פיתוחים אסימפטוטיים בחודים של החבורה המודולרית, הפועלת על [[חצי המישור העליון]], שדומים לאלה של תבניות מודולריות ממשקל <math>\tfrac12</math> עם קטבים בחודים.
+
+== הגדרה ==
+תבנית מודולרית מדומה מוגדרת כ"חלק ההולומורפי" של [[תבנית מאס הרמונית|תבנית מאס חלשה הרמונית]].
+
+נקבע משקל <math>k</math>, בדרך כלל עם <math>2k</math> שלם. נקבע תת-חבורה <math>\Gamma</math> של <math>\mathrm{SL}_2(\mathbb Z)</math> (או של [[החבורה המטפלקטית]], אם <math>k</math> חצי-שלם) וקרקטר <math>\rho</math> של <math>\Gamma</math>. תבנית מודולרית <math>f</math> ביחס לקרקטר ולחבורה האלה מתנהגת תחת איברי <math>\Gamma</math> כך:
+:<math>f\left(\frac{a\tau + b}{c\tau + d}\right) = \rho\begin{pmatrix} a & b \\ c & d\end{pmatrix}(c\tau + d)^kf(\tau).</math>
+'''תבנית מאס חלשה''' ממשקל <math>k</math> היא [[פונקציה רציפה]] על חצי המישור העליון שמתנהגת כמו תבנית מודולרית ממשקל <math>k</math> והיא פונקציה עצמית של אופרטור לפלס ממשקל <math>k</math>. היא נקראת '''הרמונית''' אם הערך העצמי שלה הוא <math>\left(\frac{1 - k}2\right)\frac k2</math>.{{הערה|1=<span dir="ltr">J. H. Bruinier, J. Funke, On two geometric theta lifts, Duke Mathematical Journal 125 (2004), pp. 45–90.</span>|כיווון=שמאל}} זה הערך העצמי של תבניות מודולריות הולומורפיות ממשקל <math>k</math>, ולכן כולן דוגמאות לתבניות מאס חלשות הרמוניות. (תבנית מאס היא תבנית מאס חלשה שדועכת מהר בחודים.) לכן תבנית מאס חלשה הרמונית מתאפסת תחת [[אופרטור דיפרנציאלי|האופרטור הדיפרנציאלי]]
+:<math>\frac\partial{\partial\tau}y^k\frac\partial{\partial\bar\tau}.</math>
+
+אם <math>F</math> תבנית מאס חלשה הרמונית כלשהי, אז הפונקציה <math>g</math> שנתונה על ידי
+:<math>g = y^k\frac{\partial\overline F}{\partial\tau} = \sum_nb_nq^n</math>
+הולומורפית ומתנהגת כמו תבנית מודולרית ממשקל <math>2 - k</math>, אם כי ייתכן שאינה הולומורפית בחודים.{{הערה|1=בערך האנגלי נכתב ש-<math>g</math> מתנהגת כמו תבנית מודולרית ממשקל <math>k</math>. אבל <math>g</math> היא ה"צל" של <math>F</math>, וכפי שהערך עצמו מציין בהמשך, הצל הוא ממשקל <math>2 - k</math>; האופרטור <math>\xi_k: F \mapsto 2iy^k\overline{\partial F/\partial\bar\tau}</math> מעביר משקל <math>k</math> למשקל <math>2 - k</math>.|כיווון=שמאל}} אם מוצאים פונקציה אחרת <math>g^*</math> עם אותה תמונה <math>g</math>, אז <math>F - g^*</math> הולומורפית. פונקציה כזו מתקבלת מהיפוך האופרטור הדיפרנציאלי באינטגרציה; למשל, אפשר להגדיר
+:<math>g^*(\tau) = \left(\frac i2\right)^{k-1}\int_{-\bar\tau}^{i\infty}(z + \tau)^{-k}\overline{g(-\bar z)}\,dz = \sum_nn^{k-1}\overline{b_n}\beta_k(4ny)q^{-n+1},</math>
+כאשר
+:<math>\beta_k(t) = \int_t^\infty u^{-k}e^{-\pi u}\,du</math>
+היא, בעיקרו של דבר, [[פונקציית גמא החלקית|פונקציית גמא הלא שלמה]]. האינטגרל מתכנס כאשר ל-<math>g</math> יש אפס בחוד <math>i\infty</math>, ואת פונקציית גמא הלא שלמה אפשר להרחיב ב[[המשכה אנליטית]], כך שאפשר להשתמש בנוסחה הזו כדי להגדיר את החלק <math>g^*</math> של <math>F</math> גם כאשר <math>g</math> מרומורפית ב-<math>i\infty</math>, אם כי צריך זהירות אם <math>k</math> שווה ל-1 או אינו שלם, או אם <math>n = 0</math>. ההיפוך של האופרטור הדיפרנציאלי רחוק מלהיות יחיד, כי אפשר להוסיף ל-<math>g^*</math> כל פונקציה הולומורפית בלי לשנות את תמונתה, ולכן <math>g^*</math> אינה בהכרח אינווריאנטית תחת החבורה <math>\Gamma</math>. הפונקציה <math>h = F - g^*</math> נקראת '''החלק ההולומורפי''' של <math>F</math>.
+
+'''תבנית מודולרית מדומה''' מוגדרת כחלק ההולומורפי <math>h</math> של תבנית מאס חלשה הרמונית <math>F</math> כלשהי. לכן יש איזומורפיזם ממרחב התבניות המודולריות המדומות <math>h</math> לתת-מרחב של התבניות החלשות ההרמוניות.
+
+התבנית המודולרית המדומה <math>h</math> הולומורפית אבל לא ממש מודולרית, ואילו <math>h + g^*</math> מודולרית אבל לא ממש הולומורפית. מרחב התבניות המודולריות המדומות ממשקל <math>k</math> מכיל כתת-מרחב את מרחב התבניות "כמעט מודולריות" ("תבניות מודולריות שעשויות להיות מרומורפיות בחודים") ממשקל <math>k</math>. המנה איזומורפית (באופן אנטי-לינארי) למרחב התבניות המודולריות ההולומורפיות ממשקל <math>2 - k</math>. התבנית המודולרית <math>g</math> ממשקל <math>2 - k</math> שמתאימה לתבנית מודולרית מדומה <math>h</math> נקראת ה'''צל''' (shadow) שלה. נפוץ שלפונקציות תטא מדומות שונות יש אותו צל. למשל, עשר פונקציות התטא המדומות מסדר 5 שמצא רמנוג'אן מתחלקות לשתי קבוצות של חמש, וכל הפונקציות בכל קבוצה הן בעלות אותו צל (עד כדי כפל בקבוע).
+
+[[דון זגייר]]{{הערה|שם=Zag|1=<span dir="ltr">D. Zagier, Ramanujan's mock theta functions and their applications (after Zwegers and Ono-Bringmann), Séminaire Bourbaki, Exp. 986 (2007), Astérisque 326 (2009), pp. 143–164.</span>|כיווון=שמאל}} מגדיר '''פונקציית תטא מדומה''' כחזקה רציונלית של <math>q = e^{2\pi i\tau}</math> כפול תבנית מודולרית מדומה ממשקל <math>\tfrac12</math>, שהצל שלה הוא טור תטא מהצורה
+:<math>\sum_{n\in\mathbb Z}\varepsilon(n)\,n\,q^{\kappa n^2}</math>
+עבור <math>\kappa</math> רציונלי חיובי ו[[פונקציה מחזורית]] אי-זוגית <math>\varepsilon</math>. (כל טור תטא כזה הוא תבנית מודולרית ממשקל <math>\tfrac32</math>.) החזקה הרציונלית של <math>q</math> היא מקרה היסטורי.
+
+לרוב התבניות המודולריות המדומות ולרוב תבניות המאס החלשות יש גידול מהיר בחודים. נהוג לדרוש שהן יגדלו לכל היותר מהר באופן מעריכי בחודים (מה שעבור תבניות מודולריות מדומות פירושו שהן "מרומורפיות" בחודים). מרחב התבניות המודולריות המדומות (ממשקל וחבורה נתונים) שהגידול שלהן בחודים חסום על ידי פונקציה מעריכית קבועה הוא סוף-ממדי.
+
+== סכומי אפל–לרך ==
+סכומי אפל–לרך, הכללה של [[טור למברט|טורי למברט]], נחקרו לראשונה על ידי פול אמיל אפל{{הערה|1=<span dir="ltr">P. Appell, Sur les fonctions doublement périodiques de troisième espèce, Annales Scientifiques de l'École Normale Supérieure 1 (1884), pp. 135–164.</span>|כיווון=שמאל}} ומתיאש לרך.{{הערה|1=<span dir="ltr">M. Lerch, Bemerkungen zur Theorie der elliptischen Funktionen, Jahrbuch über die Fortschritte der Mathematik 24 (1892), pp. 442–445.</span>|כיווון=שמאל}} ווטסון חקר את פונקציות התטא המדומות מסדר 3 על ידי ביטוין בעזרת סכומי אפל–לרך, וצוויגרס השתמש בהם כדי להראות שפונקציות תטא מדומות הן, בעיקרו של דבר, תבניות מודולריות מדומות.
+
+טור אפל–לרך הוא
+:<math>\mu(u, v; \tau) = \frac{a^{\frac12}}{\theta(v; \tau)}\sum_{n\in\mathbb Z}\frac{(-b)^nq^{\frac12n(n+1)}}{1 - aq^n},</math>
+כאשר
+:<math>q = e^{2\pi i\tau}, \quad a = e^{2\pi iu}, \quad b = e^{2\pi iv}</math>
+ו-
+:<math>\theta(v; \tau) = \sum_{n\in\mathbb Z}(-1)^nb^{n + \frac12}q^{\frac12\left(n + \frac12\right)^2}.</math>
+הטור המתוקן
+:<math>\hat\mu(u, v; \tau) = \mu(u, v; \tau) - \frac12R(u - v; \tau),</math>
+כאשר
+:<math>R(z; \tau) = \sum_{\nu\in\mathbb Z + \frac12}(-1)^{\nu - \frac12}\left(\operatorname{sign}(\nu) - E\left[\left(\nu + \frac{\operatorname{Im}(z)}y\right)\sqrt{2y}\right]\right)e^{-2\pi i\nu z}q^{-\frac12\nu^2},</math>
+<math>y = \operatorname{Im}\tau</math>, ו-
+:<math>E(z) = 2\int_0^ze^{-\pi u^2}\,du,</math>
+מקיים את תכונות ההתמרה הבאות:
+:<math>\begin{align}
+\hat\mu(u + 1, v; \tau) &= a^{-1}bq^{-\frac12}\hat\mu(u + \tau, v; \tau) = -\hat\mu(u, v; \tau), \\
+e^{\frac{\pi i}4}\hat\mu(u, v; \tau + 1) &= \hat\mu(u, v; \tau) = -\left(\frac\tau i\right)^{-\frac12}e^{\frac{\pi i}\tau(u - v)^2}\hat\mu\left(\frac u\tau, \frac v\tau; -\frac1\tau\right).
+\end{align}</math>
+במילים אחרות, טור אפל–לרך המתוקן מתנהג כמו תבנית מודולרית ביחס ל-<math>\tau</math>. כיוון שאפשר לבטא פונקציות תטא מדומות בעזרת טורי אפל–לרך, פונקציות תטא מדומות מתנהגות כמו תבניות מודולריות אם מוסיפים להן טור לא-אנליטי מסוים.
+
+== טורי תטא בלתי מוגדרים ==
+ג'ורג' אנדרוז{{הערה|שם=And86|1=<span dir="ltr">G. E. Andrews, The fifth and seventh order mock theta functions, Transactions of the AMS 293 (1986), pp. 113–134.</span>|כיווון=שמאל}} הראה שכמה מפונקציות התטא המדומות מסדר חמישי של רמנוג'אן שוות למנות <math>\Theta(\tau)/\theta(\tau)</math>, כאשר <math>\theta(\tau)</math> תבנית מודולרית ממשקל <math>\tfrac12</math> ו-<math>\Theta(\tau)</math> פונקציית תטא של [[תבנית ריבועית בינארית]] '''בלתי מוגדרת''', ודין היקרסון{{הערה|שם=Hic88b|1=<span dir="ltr">D. Hickerson, On the seventh order mock theta functions, Inventiones Mathematicae 94 (1988), pp. 661–677.</span>|כיווון=שמאל}} הוכיח תוצאות דומות לפונקציות תטא מדומות מסדר שביעי. צוויגרס הראה איך להשלים את פונקציות התטא הבלתי מוגדרות כך שיתקבלו תבניות מודולריות ממשיות-אנליטיות, והשתמש בזה כדי לתת הוכחה נוספת לקשר בין פונקציות תטא מדומות לתבניות מאס חלשות.
+
+== תבניות יעקובי מרומורפיות ==
+ג'ורג' אנדרוז{{הערה|1=<span dir="ltr">G. E. Andrews, Ramanujan's fifth order mock theta functions as constant terms, in: Ramanujan Revisited, Academic Press, 1988, pp. 47–56.</span>|כיווון=שמאל}} הבחין שאפשר לבטא כמה מפונקציות התטא המדומות מסדר חמישי של רמנוג'אן בעזרת מנות של פונקציות התטא של יעקובי. צוויגרס השתמש ברעיון הזה כדי לבטא פונקציות תטא מדומות כמקדמי פורייה של [[תבנית יעקובי|תבניות יעקובי]] מרומורפיות.
+
+== יישומים ==
+* [[רות לורנס]] ודון זגייר קשרו פונקציות תטא מדומות ל[[אינווריאנט קוונטי|אינווריאנטים קוונטיים]] של יריעות תלת-ממדיות.{{הערה|1=<span dir="ltr">R. Lawrence, D. Zagier, Modular forms and quantum invariants of 3-manifolds, Asian Journal of Mathematics 3 (1999), pp. 93–107.</span>|כיווון=שמאל}}
+* א' מ' סמיחטוב, א' טאורמינה וא' יו' טיפונין קשרו פונקציות תטא מדומות ל[[סופר-אלגברת לי|סופר-אלגבראות לי]] אינסוף-ממדיות ול[[תורת שדות קונפורמית דו-ממדית]].{{הערה|1=<span dir="ltr">A. M. Semikhatov, A. Taormina, I. Yu. Tipunin, Higher-level Appell functions, modular transformations, and characters, Communications in Mathematical Physics 255 (2005), pp. 469–512.</span>|כיווון=שמאל}}
+* י' טרוסט הראה שההשלמות המודולריות של תבניות מודולריות מדומות מופיעות כגנוסים אליפטיים של תורות שדות קונפורמיות עם ספקטרום רציף.{{הערה|1=<span dir="ltr">J. Troost, The non-compact elliptic genus: mock or modular, Journal of High Energy Physics 2010, no. 6, 104.</span>|כיווון=שמאל}}
+* פונקציות תטא מדומות מופיעות בתורת [[ירח אמברלי|הירח האמברלי]].
+* אטיש דבהולקר, סמיר מורתי ודון זגייר הראו שתבניות מודולריות מדומות קשורות לניוון של [[חור שחור|חורים שחורים]] קוונטיים בתורות מיתרים עם <math>N = 4</math>.{{הערה|1=<span dir="ltr">A. Dabholkar, S. Murthy, D. Zagier, Quantum Black Holes, Wall Crossing, and Mock Modular Forms, arXiv:1208.4074, 2012.</span>|כיווון=שמאל}}
+
+== דוגמאות ==
+* כל תבנית מודולרית ממשקל <math>k</math> (אולי רק מרומורפית בחודים) היא תבנית מודולרית מדומה ממשקל <math>k</math> עם צל 0.
+* [[טור אייזנשטיין]] הקוואזי-מודולרי
+*:<math>E_2(\tau) = 1 - 24\sum_{n\gt 0}\sigma_1(n)q^n</math>
+*:ממשקל 2 ורמה 1 הוא תבנית מודולרית מדומה ממשקל 2, שהצל שלה קבוע. פירוש הדבר הוא ש-
+*:<math>E_2(\tau) - \frac3{\pi y}</math>
+*:מתנהגת כמו תבנית מודולרית ממשקל 2 (כאשר <math>\tau = x + iy</math>). (בדקנו בחישוב מספרי ש-<math>E_2^*(-1/\tau) = \tau^2E_2^*(\tau)</math> עבור <math>E_2^* = E_2 - 3/(\pi y)</math>, בעוד ש-<math>E_2</math> עצמה אינה מקיימת זאת.)
+* הפונקציה שחקר דון זגייר,{{הערה|1=<span dir="ltr">D. Zagier, Nombres de classes et formes modulaires de poids 3/2, C. R. Acad. Sci. Paris Sér. A–B 281 (1975), A883–A886; F. Hirzebruch, D. Zagier, Intersection numbers of curves on Hilbert modular surfaces and modular forms of Nebentypus, Inventiones Mathematicae 36 (1976), pp. 57–113, section 2.2.</span>|כיווון=שמאל}} שמקדמי פורייה שלה הם '''מספרי המחלקה של הורוויץ''' <math>H(N)</math> של שדות ריבועיים מדומים, היא תבנית מודולרית מדומה ממשקל <math>\tfrac32</math>, רמה 4 וצל <math>\sum q^{n^2}</math>. תבנית המאס החלשה המתאימה היא
+*:<math>F(\tau) = \sum_NH(N)q^N + y^{-1/2}\sum_{n\in\mathbb Z}\beta(4\pi n^2y)q^{-n^2},</math>
+*:כאשר
+*:<math>\beta(x) = \frac1{16\pi}\int_1^\infty u^{-3/2}e^{-xu}\,du,</math>
+*:<math>y = \operatorname{Im}\tau</math> ו-<math>q = e^{2\pi i\tau}</math>. הערכים הראשונים הם <math>H(0) = -\tfrac1{12}</math>, <math>H(3) = \tfrac13</math>, <math>H(4) = \tfrac12</math>, <math>H(7) = H(8) = H(11) = 1</math>, <math>H(12) = \tfrac43</math>, <math>H(15) = 2</math>, <math>H(16) = \tfrac32</math>, <math>H(23) = 3</math>, ו-<math>H(N) = 0</math> כאשר <math>N \equiv 1, 2 \pmod 4</math> (חישבנו אותם מספירת תבניות ריבועיות מצומצמות, עם המשקלים <math>\tfrac12</math> ו-<math>\tfrac13</math> לתבניות שמתאימות ל-<math>\mathbb Z[i]</math> ול-<math>\mathbb Z[\rho]</math>). האיבר <math>n = 0</math> בסכום הלא-הולומורפי הוא <math>\frac1{8\pi\sqrt y}</math>.
+
+פונקציות תטא מדומות הן תבניות מודולריות מדומות ממשקל <math>\tfrac12</math> שהצל שלהן הוא פונקציית תטא אונרית, מוכפלות (מסיבות היסטוריות) בחזקה רציונלית של <math>q</math>. לפני שהעבודה של צוויגרס הובילה לשיטה כללית לבנות אותן, רוב הדוגמאות ניתנו כ[[פונקציה היפרגאומטרית בסיסית|פונקציות היפרגאומטריות בסיסיות]], אבל זה בעיקר מקרה היסטורי, ולרוב פונקציות התטא המדומות אין ביטוי פשוט ידוע בעזרת פונקציות כאלה.
+
+פונקציות התטא המדומות "הטריוויאליות" הן התבניות המודולריות (ההולומורפיות) ממשקל <math>\tfrac12</math>, שאותן סיווגו סר וסטארק,{{הערה|1=<span dir="ltr">J.-P. Serre, H. M. Stark, Modular forms of weight 1/2, in: Modular Functions of One Variable VI, Lecture Notes in Mathematics 627, Springer, 1977, pp. 27–67.</span>|כיווון=שמאל}} שהראו שאפשר לכתוב את כולן בעזרת פונקציות תטא של סריגים חד-ממדיים.
+
+בדוגמאות שלהלן משתמשים ב[[סמל פוכהאמר q|סמלי פוכהאמר <math>q</math>]] <math>(a; q)_n</math>, המוגדרים כ-
+:<math>(a; q)_n = \prod_{0 \le j \lt n}(1 - aq^j) = (1 - a)(1 - aq)\cdots(1 - aq^{n-1}).</math>
+את כל הזהויות בין טורים שמופיעות להלן (הצורות החלופיות והקשרים בין הפונקציות בסדרים 2, 3, 5 ו-8) בדקנו בחישוב מספרי בדיוק של 30 ספרות, בכמה ערכים ממשיים ומרוכבים של <math>q</math>.
+
+=== סדר 2 ===
+כמה פונקציות תטא מדומות מסדר 2 נחקרו על ידי מקינטוש.{{הערה|1=<span dir="ltr">R. J. McIntosh, Second order mock theta functions, Canadian Mathematical Bulletin 50 (2007), pp. 284–290.</span>|כיווון=שמאל}}
+:<math>A(q) = \sum_{n\ge0}\frac{q^{(n+1)^2}(-q; q^2)_n}{(q; q^2)_{n+1}^2} = \sum_{n\ge0}\frac{q^{n+1}(-q^2; q^2)_n}{(q; q^2)_{n+1}}</math> (A006304)
+:<math>B(q) = \sum_{n\ge0}\frac{q^{n(n+1)}(-q^2; q^2)_n}{(q; q^2)_{n+1}^2} = \sum_{n\ge0}\frac{q^n(-q; q^2)_n}{(q; q^2)_{n+1}}</math> (A153140)
+:<math>\mu(q) = \sum_{n\ge0}\frac{(-1)^nq^{n^2}(q; q^2)_n}{(-q^2; q^2)_n^2}</math> (A006306)
+את הפונקציה <math>\mu</math> מצא רמנוג'אן במחברת האבודה. הפונקציות קשורות לפונקציות מסדר 8 (ראו להלן) על ידי
+:<math>U_0(q) - 2U_1(q) = \mu(q), \qquad V_0(q) - V_0(-q) = 4qB(q^2), \qquad V_1(q) + V_1(-q) = 2A(q^2).</math>
+
+=== סדר 3 ===
+רמנוג'אן הזכיר ארבע פונקציות תטא מדומות מסדר 3 במכתבו להרדי, ומנה עוד שלוש במחברת האבודה, שאותן גילה מחדש ג'ורג' נוויל ווטסון.{{הערה|שם=Wat36}} ווטסון הוכיח את הקשרים ביניהן שרמנוג'אן טען, ומצא גם את ההתמרות שלהן תחת איברי החבורה המודולרית על ידי ביטוין כסכומי אפל–לרך. דרגונט{{הערה|שם=Drag}} תיארה את הפיתוח האסימפטוטי של המקדמים שלהן. צוויגרס{{הערה|שם=Zw01}} קשר אותן לתבניות מאס חלשות הרמוניות. ראו גם את המונוגרפיה של נתן פיין.{{הערה|1=<span dir="ltr">N. J. Fine, Basic Hypergeometric Series and Applications, Mathematical Surveys and Monographs 27, AMS, 1988.</span>|כיווון=שמאל}}
+
+שבע פונקציות התטא המדומות מסדר 3 שנתן רמנוג'אן הן
+:<math>f(q) = \sum_{n\ge0}\frac{q^{n^2}}{(-q; q)_n^2} = \frac2{\prod_{n\gt0}(1 - q^n)}\sum_{n\in\mathbb Z}\frac{(-1)^nq^{n(3n+1)/2}}{1 + q^n}</math> (A000025)
+:<math>\phi(q) = \sum_{n\ge0}\frac{q^{n^2}}{(-q^2; q^2)_n} = \frac1{\prod_{n\gt0}(1 - q^n)}\sum_{n\in\mathbb Z}\frac{(-1)^n(1 + q^n)q^{n(3n+1)/2}}{1 + q^{2n}}</math> (A053250)
+:<math>\psi(q) = \sum_{n\gt0}\frac{q^{n^2}}{(q; q^2)_n} = \frac q{\prod_{n\gt0}(1 - q^{4n})}\sum_{n\in\mathbb Z}\frac{(-1)^nq^{6n(n+1)}}{1 - q^{4n+1}}</math> (A053251)
+:<math>\chi(q) = \sum_{n\ge0}\frac{q^{n^2}}{\prod_{1\le i\le n}(1 - q^i + q^{2i})} = \frac1{2\prod_{n\gt0}(1 - q^n)}\sum_{n\in\mathbb Z}\frac{(-1)^n(1 + q^n)q^{n(3n+1)/2}}{1 - q^n + q^{2n}}</math> (A053252)
+:<math>\omega(q) = \sum_{n\ge0}\frac{q^{2n(n+1)}}{(q; q^2)_{n+1}^2} = \frac1{\prod_{n\gt0}(1 - q^{2n})}\sum_{n\ge0}(-1)^nq^{3n(n+1)}\frac{1 + q^{2n+1}}{1 - q^{2n+1}}</math> (A053253)
+:<math>\nu(q) = \sum_{n\ge0}\frac{q^{n(n+1)}}{(-q; q^2)_{n+1}} = \frac1{\prod_{n\gt0}(1 - q^n)}\sum_{n\ge0}(-1)^nq^{3n(n+1)/2}\frac{1 - q^{2n+1}}{1 + q^{2n+1}}</math> (A053254)
+:<math>\rho(q) = \sum_{n\ge0}\frac{q^{2n(n+1)}}{\prod_{0\le i\le n}(1 + q^{2i+1} + q^{4i+2})} = \frac1{\prod_{n\gt0}(1 - q^{2n})}\sum_{n\ge0}(-1)^nq^{3n(n+1)}\frac{1 - q^{4n+2}}{1 + q^{2n+1} + q^{4n+2}}</math> (A053255)
+ארבע הראשונות יוצרות קבוצה עם אותו צל (עד כדי קבוע), וכך גם שלוש האחרונות. ליתר דיוק, הפונקציות מקיימות את הקשרים הבאים (שמצא רמנוג'אן והוכיח ווטסון):
+:<math>\begin{align}
+2\phi(-q) - f(q) &= f(q) + 4\psi(-q) = \theta_4(0, q)\prod_{r\gt0}(1 + q^r)^{-1}, \\
+4\chi(q) - f(q) &= 3\theta_4^2(0, q^3)\prod_{r\gt0}(1 - q^r)^{-1}, \\
+2\rho(q) + \omega(q) &= 3\left(\tfrac12q^{-\frac38}\theta_2\left(0, q^{\frac32}\right)\right)^2\prod_{r\gt0}(1 - q^{2r})^{-1}, \\
+\nu(\pm q) \pm q\omega(q^2) &= \tfrac12q^{-\frac14}\theta_2(0, q)\prod_{r\gt0}(1 + q^{2r}), \\
+f(q^8) \pm 2q\omega(\pm q) \pm 2q^3\omega(-q^4) &= \theta_3(0, \pm q)\theta_3^2(0, q^2)\prod_{r\gt0}(1 - q^{4r})^{-2}, \\
+f(q^8) + q\omega(q) - q\omega(-q) &= \theta_3(0, q^4)\theta_3^2(0, q^2)\prod_{r\gt0}(1 - q^{4r})^{-2}.
+\end{align}</math>
+'''דוגמה מספרית.''' פיתוח <math>f(q)</math> מתחיל ב-<math>1 + q - 2q^2 + 3q^3 - 3q^4 + 3q^5 - 5q^6 + \cdots</math>; המקדמים מתחלפים בסימן וגדלים כמו <math>e^{\pi\sqrt{n/6}}</math> בערך – התנהגות שמאפיינת את הגידול של "קוטב" בחוד <math>q = -1</math>, שאותה רמנוג'אן תיאר במכתבו.
+
+=== סדר 5 ===
+רמנוג'אן רשם עשר פונקציות תטא מדומות מסדר 5 במכתבו להרדי מ-1920, וטען כמה קשרים ביניהן שהוכיח ווטסון.{{הערה|1=<span dir="ltr">G. N. Watson, The mock theta functions (2), Proceedings of the London Mathematical Society s2-42 (1937), pp. 274–304.</span>|כיווון=שמאל}} במחברת האבודה טען זהויות נוספות שמקשרות בין הפונקציות האלה, שקולות ל'''השערות התטא המדומות''',{{הערה|1=<span dir="ltr">G. E. Andrews, F. G. Garvan, Ramanujan's lost notebook VI: the mock theta conjectures, Advances in Mathematics 73 (1989), pp. 242–255.</span>|כיווון=שמאל}} שהוכיח היקרסון.{{הערה|1=<span dir="ltr">D. Hickerson, A proof of the mock theta conjectures, Inventiones Mathematicae 94 (1988), pp. 639–660.</span>|כיווון=שמאל}} אנדרוז{{הערה|שם=And86}} מצא ייצוגים לרבות מהפונקציות האלה כמנה של טור תטא בלתי מוגדר בתבניות מודולריות ממשקל <math>\tfrac12</math>.
+:<math>f_0(q) = \sum_{n\ge0}\frac{q^{n^2}}{(-q; q)_n}</math> (A053256)
+:<math>f_1(q) = \sum_{n\ge0}\frac{q^{n^2+n}}{(-q; q)_n}</math> (A053257)
+:<math>\phi_0(q) = \sum_{n\ge0}q^{n^2}(-q; q^2)_n</math> (A053258)
+:<math>\phi_1(q) = \sum_{n\ge0}q^{(n+1)^2}(-q; q^2)_n</math> (A053259)
+:<math>\psi_0(q) = \sum_{n\ge0}q^{(n+1)(n+2)/2}(-q; q)_n</math> (A053260)
+:<math>\psi_1(q) = \sum_{n\ge0}q^{n(n+1)/2}(-q; q)_n</math> (A053261)
+:<math>\chi_0(q) = \sum_{n\ge0}\frac{q^n}{(q^{n+1}; q)_n} = 2F_0(q) - \phi_0(-q)</math> (A053262)
+:<math>\chi_1(q) = \sum_{n\ge0}\frac{q^n}{(q^{n+1}; q)_{n+1}} = 2F_1(q) + q^{-1}\phi_1(-q)</math> (A053263)
+:<math>F_0(q) = \sum_{n\ge0}\frac{q^{2n^2}}{(q; q^2)_n}</math> (A053264)
+:<math>F_1(q) = \sum_{n\ge0}\frac{q^{2n^2+2n}}{(q; q^2)_{n+1}}</math> (A053265)
+:<math>\Psi_0(q) = -1 + \sum_{n\ge0}\frac{q^{5n^2}}{(1 - q)(1 - q^4)(1 - q^6)(1 - q^9)\cdots(1 - q^{5n-1})(1 - q^{5n+1})}</math> (A053266)
+:<math>\Psi_1(q) = -1 + \sum_{n\ge0}\frac{q^{5n^2}}{(1 - q^2)(1 - q^3)(1 - q^7)(1 - q^8)\cdots(1 - q^{5n-2})(1 - q^{5n+2})}</math> (A053267)
+
+=== סדר 6 ===
+רמנוג'אן{{הערה|שם=Ram88}} רשם שבע פונקציות תטא מדומות מסדר 6 במחברת האבודה, וטען 11 זהויות ביניהן, שהוכיחו אנדרוז והיקרסון.{{הערה|1=<span dir="ltr">G. E. Andrews, D. Hickerson, Ramanujan's lost notebook VII: the sixth order mock theta functions, Advances in Mathematics 89 (1991), pp. 60–105.</span>|כיווון=שמאל}} שתיים מהזהויות של רמנוג'אן מקשרות את <math>\phi</math> ו-<math>\psi</math> בארגומנטים שונים, ארבע מבטאות את <math>\phi</math> ו-<math>\psi</math> בעזרת טורי אפל–לרך, וחמש האחרונות מבטאות את חמש פונקציות התטא המדומות הנותרות מסדר שישי בעזרת <math>\phi</math> ו-<math>\psi</math>. ברנדט וצ'אן{{הערה|1=<span dir="ltr">B. C. Berndt, S. H. Chan, Sixth order mock theta functions, Advances in Mathematics 216 (2007), pp. 771–786.</span>|כיווון=שמאל}} גילו עוד שתי פונקציות מסדר שישי.
+
+פונקציות התטא המדומות מסדר 6 הן:
+:<math>\phi(q) = \sum_{n\ge0}\frac{(-1)^nq^{n^2}(q; q^2)_n}{(-q; q)_{2n}}</math> (A053268)
+:<math>\psi(q) = \sum_{n\ge0}\frac{(-1)^nq^{(n+1)^2}(q; q^2)_n}{(-q; q)_{2n+1}}</math> (A053269)
+:<math>\rho(q) = \sum_{n\ge0}\frac{q^{n(n+1)/2}(-q; q)_n}{(q; q^2)_{n+1}}</math> (A053270)
+:<math>\sigma(q) = \sum_{n\ge0}\frac{q^{(n+1)(n+2)/2}(-q; q)_n}{(q; q^2)_{n+1}}</math> (A053271)
+:<math>\lambda(q) = \sum_{n\ge0}\frac{(-1)^nq^n(q; q^2)_n}{(-q; q)_n}</math> (A053272)
+:<math>2\mu(q) = \sum_{n\ge0}\frac{(-1)^nq^{n+1}(1 + q^n)(q; q^2)_n}{(-q; q)_{n+1}}</math> (A053273)
+:<math>\gamma(q) = \sum_{n\ge0}\frac{q^{n^2}(q; q)_n}{(q^3; q^3)_n}</math> (A053274)
+:<math>\phi_-(q) = \sum_{n\ge1}\frac{q^n(-q; q)_{2n-1}}{(q; q^2)_n}</math> (A153251)
+:<math>\psi_-(q) = \sum_{n\ge1}\frac{q^n(-q; q)_{2n-2}}{(q; q^2)_n}</math> (A153252)
+
+=== סדר 7 ===
+רמנוג'אן נתן שלוש פונקציות תטא מדומות מסדר 7 במכתבו להרדי מ-1920. אותן חקר סלברג,{{הערה|1=<span dir="ltr">A. Selberg, Über die Mock-Thetafunktionen siebenter Ordnung, Archiv for Mathematik og Naturvidenskab 41 (1938), pp. 3–15.</span>|כיווון=שמאל}} שמצא פיתוח אסימפטוטי למקדמיהן, וגם אנדרוז.{{הערה|שם=And86}} היקרסון{{הערה|שם=Hic88b}} מצא ייצוגים לרבות מהפונקציות האלה כמנות של טורי תטא בלתי מוגדרים בתבניות מודולריות ממשקל <math>\tfrac12</math>. צוויגרס{{הערה|שם=Zw01}}{{הערה|שם=Zw02}} תיאר את תכונות ההתמרה המודולריות שלהן.
+* <math>F_0(q) = \sum_{n\ge0}\frac{q^{n^2}}{(q^{n+1}; q)_n}</math> (A053275)
+* <math>F_1(q) = \sum_{n\ge1}\frac{q^{n^2}}{(q^n; q)_n}</math> (A053276)
+* <math>F_2(q) = \sum_{n\ge0}\frac{q^{n(n+1)}}{(q^{n+1}; q)_{n+1}}</math> (A053277)
+לשלוש פונקציות התטא המדומות האלה יש צללים שונים, ולכן, בניגוד לפונקציות מסדרים 3 ו-5 של רמנוג'אן, אין קשרים לינאריים בינן לבין תבניות מודולריות רגילות. תבניות המאס החלשות המתאימות הן
+:<math>\begin{align}
+M_1(\tau) &= q^{-1/168}F_0(q) - R_{7,1}(\tau), \\
+M_2(\tau) &= -q^{-25/168}F_1(q) - R_{7,2}(\tau), \\
+M_3(\tau) &= q^{47/168}F_2(q) - R_{7,3}(\tau),
+\end{align}</math>
+כאשר
+:<math>R_{p,j}(\tau) = \sum_{n\equiv j \bmod p}\left(\frac{12}n\right)\operatorname{sgn}(n)\,\beta\left(\frac{n^2y}{6p}\right)q^{-n^2/24p}</math>
+(<math>\left(\frac{12}n\right)</math> הוא [[סמל קרונקר]]), ו-
+:<math>\beta(x) = \int_x^\infty u^{-1/2}e^{-\pi u}\,du = \operatorname{erfc}\left(\sqrt{\pi x}\right)</math>
+היא, פחות או יותר, [[פונקציית השגיאה]] המשלימה.{{הערה|1=בערך האנגלי יש שלושה הבדלים לעומת הנוסחאות כאן: הסכום של <math>F_1</math> מתחיל ב-<math>n = 0</math> (מה שמוסיף לה את הקבוע 1); תבניות המאס כתובות בעזרת <math>F_1, F_2, F_3</math>, אף ש-<math>F_3</math> אינה מוגדרת והפונקציות שהוגדרו הן <math>F_0, F_1, F_2</math>; והאיבר הלא-הולומורפי נוסף בסימן <math>+R_{7,j}</math>. בדקנו בחישוב מספרי (עם הנוסחה <math>\beta(x) = \operatorname{erfc}\sqrt{\pi x}</math>, בשתי נקודות <math>\tau</math> שונות, עד דיוק <math>10^{-25}</math>) שחוק ההתמרה תחת <math>\tau \mapsto -1/\tau</math> שלהלן מתקיים בדיוק עם הנוסחאות שכאן, ונכשל עם כל אחד משלושת השינויים.|כיווון=שמאל}}
+תחת החבורה המטפלקטית, שלוש הפונקציות האלה מתנהגות לפי הצגה תלת-ממדית מסוימת של החבורה המטפלקטית:
+:<math>\begin{align}
+M_j\left(-\frac1\tau\right) &= \sqrt{\frac\tau{7i}}\sum_{k=1}^32\sin\left(\frac{6\pi jk}7\right)M_k(\tau), \\
+M_1(\tau + 1) &= e^{-2\pi i/168}M_1(\tau), \\
+M_2(\tau + 1) &= e^{-2\cdot25\pi i/168}M_2(\tau), \\
+M_3(\tau + 1) &= e^{-2\cdot121\pi i/168}M_3(\tau).
+\end{align}</math>
+במילים אחרות, הן הרכיבים של תבנית מאס חלשה הרמונית וקטורית מרמה 1 וממשקל <math>\tfrac12</math>. (שימו לב ש-<math>e^{-2\cdot121\pi i/168} = e^{2\cdot47\pi i/168}</math>, בהתאם לגורם <math>q^{47/168}</math>.)
+
+=== סדר 8 ===
+גורדון ומקינטוש{{הערה|1=<span dir="ltr">B. Gordon, R. J. McIntosh, Some eighth order mock theta functions, Journal of the London Mathematical Society 62 (2000), pp. 321–335.</span>|כיווון=שמאל}} מצאו שמונה פונקציות תטא מדומות מסדר 8. הם מצאו חמישה קשרים לינאריים ביניהן, ביטאו ארבע מהן כסכומי אפל–לרך, ותיארו את ההתמרות שלהן תחת החבורה המודולרית. את שתי הפונקציות <math>V_1</math> ו-<math>U_0</math> מצא רמנוג'אן קודם לכן במחברת האבודה.
+:<math>S_0(q) = \sum_{n\ge0}\frac{q^{n^2}(-q; q^2)_n}{(-q^2; q^2)_n}</math> (A153148)
+:<math>S_1(q) = \sum_{n\ge0}\frac{q^{n(n+2)}(-q; q^2)_n}{(-q^2; q^2)_n}</math> (A153149)
+:<math>T_0(q) = \sum_{n\ge0}\frac{q^{(n+1)(n+2)}(-q^2; q^2)_n}{(-q; q^2)_{n+1}}</math> (A153155)
+:<math>T_1(q) = \sum_{n\ge0}\frac{q^{n(n+1)}(-q^2; q^2)_n}{(-q; q^2)_{n+1}}</math> (A153156)
+:<math>U_0(q) = \sum_{n\ge0}\frac{q^{n^2}(-q; q^2)_n}{(-q^4; q^4)_n}</math> (A153172)
+:<math>U_1(q) = \sum_{n\ge0}\frac{q^{(n+1)^2}(-q; q^2)_n}{(-q^2; q^4)_{n+1}}</math> (A153174)
+:<math>V_0(q) = -1 + 2\sum_{n\ge0}\frac{q^{n^2}(-q; q^2)_n}{(q; q^2)_n} = -1 + 2\sum_{n\ge0}\frac{q^{2n^2}(-q^2; q^4)_n}{(q; q^2)_{2n+1}}</math> (A153176)
+:<math>V_1(q) = \sum_{n\ge0}\frac{q^{(n+1)^2}(-q; q^2)_n}{(q; q^2)_{n+1}} = \sum_{n\ge0}\frac{q^{2n^2+2n+1}(-q^4; q^4)_n}{(q; q^2)_{2n+2}}</math> (A153178)
+
+=== סדר 10 ===
+רמנוג'אן{{הערה|שם=Ram88}} מנה ארבע פונקציות תטא מדומות מסדר 10 במחברת האבודה, וטען כמה קשרים ביניהן, שהוכיח צ'וי.{{הערה|1=<span dir="ltr">Y.-S. Choi, Tenth order mock theta functions in Ramanujan's lost notebook I–IV, Inventiones Mathematicae 136 (1999), pp. 497–569; Advances in Mathematics 156 (2000), pp. 180–285; Proceedings of the London Mathematical Society 94 (2007), pp. 26–52; Transactions of the AMS 354 (2002), pp. 705–733.</span>|כיווון=שמאל}}
+* <math>\phi(q) = \sum_{n\ge0}\frac{q^{n(n+1)/2}}{(q; q^2)_{n+1}}</math> (A053281)
+* <math>\psi(q) = \sum_{n\ge0}\frac{q^{(n+1)(n+2)/2}}{(q; q^2)_{n+1}}</math> (A053282)
+* <math>X(q) = \sum_{n\ge0}\frac{(-1)^nq^{n^2}}{(-q; q)_{2n}}</math> (A053283)
+* <math>\chi(q) = \sum_{n\ge0}\frac{(-1)^nq^{(n+1)^2}}{(-q; q)_{2n+1}}</math> (A053284)
+(המספרים בסוגריים הם מספרי הסדרות ב-[[OEIS]].)
+
+== ראו גם ==
+* [[תבנית מאס הרמונית]]
+* [[תבנית מאס]]
+* [[תבנית יעקובי]]
+* [[המחברת האבודה של רמנוג'אן]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* K. Ono, ''Mock theta functions, ranks and Maass forms'', in: Surveys in Number Theory, Developments in Mathematics '''17''', Springer, 2008, pp. 119–141
+* K. Bringmann, K. Ono, ''Dyson's ranks and Maass forms'', Annals of Mathematics '''171''' (2010), pp. 419–449
+* K. Bringmann, K. Ono, ''Lifting cusp forms to Maass forms with an application to partitions'', PNAS '''104''' (2007), pp. 3725–3731
+* S. A. Garthwaite, ''The coefficients of the ω(q) mock theta function'', International Journal of Number Theory '''4''' (2008), pp. 1027–1042
+* G. E. Andrews, ''Mock theta functions'', in: Theta functions—Bowdoin 1987, Proc. Sympos. Pure Math. '''49''', AMS, 1989, pp. 283–298
+* E. W. Weisstein, ''Mock Theta Function'', MathWorld
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:סריניוואסה רמנוג'אן]]

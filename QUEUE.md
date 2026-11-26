@@ -181,7 +181,7 @@ Additive number theory:
 - [x] Eigenform
 - [x] Atkin–Lehner theory
 - [x] Dedekind sum
-- [ ] Mock modular form
+- [x] Mock modular form
 - [ ] Harmonic Maass form
 - [ ] Rogers–Ramanujan identities
 - [ ] Rogers–Ramanujan continued fraction

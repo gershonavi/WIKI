@@ -169,6 +169,13 @@ def render_template(name, pos, named):
         return ''
     if name == 'דרוש מקור':
         return ''
+    if name == 'ציטוט':
+        body = expand(named.get('תוכן') or get('1'))
+        src = expand(named.get('מקור') or get('2'))
+        return f'<blockquote>{body}' + (f'<br/>— {src}' if src.strip() else '') + '</blockquote>'
+    if name == 'אין לבלבל':
+        links = ', '.join(f'[[{p.strip()}]]' for p in pos if p.strip())
+        return f"''אין לבלבל עם {links}.''" if links else ''
     if name == 'OEIS':
         a = (named.get('id') or get('1')).strip()
         return f'(סדרה [https://oeis.org/{a} {a}] ב-OEIS)'
