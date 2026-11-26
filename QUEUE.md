@@ -85,7 +85,7 @@ Additive number theory:
 - [x] Heegner number
 - [x] Kummer theory
 - [x] Reciprocity law
-- [ ] Proofs of quadratic reciprocity
+- [x] Proofs of quadratic reciprocity
 - [x] Cubic reciprocity
 - [x] Quartic reciprocity
 - [x] Eisenstein reciprocity

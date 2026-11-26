@@ -1,0 +1,156 @@
+ב[[תורת המספרים]], [[חוק ההדדיות הריבועית]], כמו [[משפט פיתגורס]], זכה למספר גדול באופן חריג של [[הוכחה מתמטית|הוכחות]]. פורסמו כמה מאות הוכחות שונות שלו. נזכיר את החוק: אם <math>p</math> ו-<math>q</math> ראשוניים אי-זוגיים שונים, אז
+:<math>\left(\frac qp\right)\left(\frac pq\right) = (-1)^{\frac{p-1}2\cdot\frac{q-1}2},</math>
+כאשר <math>\left(\frac ap\right)</math> הוא [[סמל לז'נדר]]; ולצידו שני "המשלימים": <math>\left(\frac{-1}p\right) = (-1)^{(p-1)/2}</math> ו-<math>\left(\frac2p\right) = (-1)^{(p^2-1)/8}</math>.
+
+== סקירת ההוכחות ==
+מבין ההוכחות הקומבינטוריות האלמנטריות, יש שתיים שמשתמשות בסוגים של [[ספירה כפולה]]. אחת, של [[גוטהולד אייזנשטיין]], סופרת [[נקודת סריג|נקודות סריג]]. אחרת מפעילה את [[הלמה של זולוטריוב]] על <math>(\mathbb{Z}/pq\mathbb{Z})^{\times}</math>, שמתואר לפי [[משפט השאריות הסיני]] כ-<math>(\mathbb{Z} /p \mathbb{Z})^{\times} \times (\mathbb{Z} /q \mathbb{Z})^{\times}</math>, ומחשבת את ה[[סימן של תמורה|סימן של תמורה]]. ההוכחה הקצרה ביותר הידועה משתמשת גם היא בגרסה פשוטה של ספירה כפולה, כלומר ספירה כפולה מודולו ראשוני קבוע. בערך הזה נציג את ההוכחה של אייזנשטיין, הוכחה בעזרת [[סכום גאוס|סכומי גאוס]], והוכחה בעזרת [[תורת המספרים האלגברית]].
+
+== ההוכחה של אייזנשטיין ==
+ההוכחה של אייזנשטיין לחוק ההדדיות הריבועית היא פישוט של ההוכחה השלישית של [[קרל פרידריך גאוס|גאוס]]. היא אינטואיטיבית יותר מבחינה גאומטרית ודורשת פחות מניפולציות טכניות.
+
+נקודת המוצא היא "הלמה של אייזנשטיין", שאומרת שעבור ראשוני אי-זוגי <math>p</math> ושלם חיובי <math>a</math> שאינו מתחלק ב-<math>p</math>,
+:<math>\left(\frac ap\right) = (-1)^{\sum_u \left \lfloor au/p \right \rfloor},</math>
+כאשר <math>\lfloor x \rfloor</math> מסמן את [[פונקציית הערך השלם|הערך השלם]] (השלם הגדול ביותר שאינו גדול מ-<math>x</math>), והסכום הוא על השלמים ה''זוגיים'' <math>u = 2, 4, 6, \ldots, p-1</math>. למשל,
+:<math>\left(\frac 7{11}\right) = (-1)^{ \lfloor 14/11 \rfloor + \lfloor 28/11 \rfloor + \lfloor 42/11 \rfloor + \lfloor 56/11 \rfloor + \lfloor 70/11 \rfloor } = (-1)^{1 + 2 + 3 + 5 + 6} = (-1)^{17} = -1.</math>
+(ואכן, השאריות הריבועיות מודולו 11 הן 1, 3, 4, 5, 9, ו-7 אינו ביניהן.) התוצאה הזו דומה מאוד ל[[הלמה של גאוס (תורת המספרים)|למה של גאוס]], ואפשר להוכיח אותה באופן דומה (ההוכחה מובאת להלן).
+
+בעזרת הייצוג הזה של <math>(q/p)</math>, הטיעון המרכזי אלגנטי למדי. נצייר את המלבן <math>[0, p] \times [0, q]</math> במישור, עם הקודקודים <math>A = (0, 0)</math>, <math>B = (p, 0)</math>, <math>C = (p, q)</math>, ועם הנקודות <math>X = (p/2, 0)</math>, <math>Y = (p/2, q/2)</math>, <math>Z = (p, q/2)</math> ו-<math>W = (0, q/2)</math>. הסכום <math>\sum_u \lfloor qu/p \rfloor</math> סופר את נקודות הסריג עם קואורדינטת <math>x</math> זוגית בפנים המשולש <math>ABC</math> (מתחת לאלכסון <math>AC</math>): בעמודה <math>x = u</math> יש בדיוק <math>\lfloor qu/p \rfloor</math> נקודות כאלה.
+
+כיוון שבכל עמודה יש מספר זוגי של נקודות (כלומר <math>q-1</math> נקודות בגבהים <math>1, \ldots, q-1</math>), מספר הנקודות האלה באזור <math>BCYX</math> שווה ''מודולו 2'' למספר הנקודות כאלה באזור <math>CZY</math>: בכל עמודה <math>x = u \gt p/2</math>, הנקודות מתחת לאלכסון ומעליו משלימות זו את זו ל-<math>q - 1</math>.
+
+אחר כך, כשהופכים את הציור בשני הצירים (<math>(x, y) \mapsto (p - x, q - y)</math>), רואים שמספר הנקודות עם קואורדינטת <math>x</math> זוגית בתוך <math>CZY</math> שווה למספר הנקודות בתוך <math>AXY</math> עם קואורדינטת <math>x</math> ''אי-זוגית''. אפשר להצדיק זאת מתמטית כשמציינים ש-<math>q-1-\lfloor 2kq/p \rfloor = \lfloor (p-2k)q/p \rfloor</math>.{{הערה|1=<span dir="ltr">Gauß, Eisenstein, and the third proof of the Quadratic Reciprocity Theorem: Ein kleines Schauspiel, New Mexico State University.</span>|כיווון=שמאל}}
+
+המסקנה היא
+:<math>\left(\frac qp\right) = (-1)^\mu,</math>
+כאשר <math>\mu</math> הוא המספר ''הכולל'' של נקודות הסריג בפנים <math>AXY</math>, כלומר <math>\mu = \sum_{x=1}^{(p-1)/2}\lfloor qx/p \rfloor</math>.
+
+כשמחליפים בין <math>p</math> ל-<math>q</math>, אותו טיעון מראה ש-
+:<math>\left(\frac pq\right) = (-1)^\nu,</math>
+כאשר <math>\nu</math> הוא מספר נקודות הסריג בפנים <math>WYA</math>. כיוון שאין נקודות סריג על הקו <math>AY</math> עצמו (כי <math>p</math> ו-<math>q</math> [[מספרים זרים|זרים]]), וכיוון שמספר הנקודות הכולל במלבן <math>WYXA</math> הוא
+:<math>\frac{p-1}2 \cdot \frac{q-1}2,</math>
+מקבלים
+:<math>\left(\frac qp\right) \left(\frac pq\right) = (-1)^{\mu + \nu} = (-1)^{(p-1)(q-1)/4}.</math>
+
+''דוגמה מלאה, <math>p = 11</math>, <math>q = 7</math>:'' כאן <math>\mu = \sum_{x=1}^{5}\lfloor 7x/11\rfloor = 0 + 1 + 1 + 2 + 3 = 7</math>, ו-<math>\nu = \sum_{y=1}^{3}\lfloor 11y/7\rfloor = 1 + 3 + 4 = 8</math>. אכן <math>\mu + \nu = 15 = 5\cdot3</math>; <math>\left(\frac7{11}\right) = (-1)^7 = -1</math>, ו-<math>\left(\frac{11}7\right) = \left(\frac47\right) = 1 = (-1)^8</math>. (את הלמה של אייזנשטיין ואת ספירת נקודות הסריג בדקנו בחישוב לכל הראשוניים עד 80 ו-60, בהתאמה.)
+
+=== הוכחת הלמה של אייזנשטיין ===
+עבור שלם זוגי <math>u</math> בתחום <math>1 \le u \le p-1</math>, נסמן ב-<math>r(u)</math> את השארית החיובית הקטנה ביותר של <math>au</math> מודולו <math>p</math>. (למשל, עבור <math>p = 11</math>, <math>a = 7</math>, הערכים המותרים הם <math>u = 2, 4, 6, 8, 10</math>, והערכים המתאימים של <math>r(u)</math> הם 3, 6, 9, 1, 4.)
+
+המספרים <math>(-1)^{r(u)}r(u)</math>, שוב כשאריות חיוביות קטנות ביותר מודולו <math>p</math>, כולם ''זוגיים'' (בדוגמה שלנו הם 8, 6, 2, 10, 4). יתרה מזו, כולם שונים, כי אם <math>(-1)^{r(u)}r(u) \equiv (-1)^{r(t)}r(t) \pmod p</math>, אפשר לחלק ב-<math>a</math> ולקבל <math>u \equiv \pm t \pmod p</math>. זה מחייב <math>u \equiv t \pmod p</math>, כי <math>u</math> ו-<math>t</math> שניהם ''זוגיים'', ואילו <math>p</math> אי-זוגי (אם <math>u \equiv -t</math>, אז <math>u + t = p</math>, וזה בלתי אפשרי). כיוון שיש בדיוק <math>(p-1)/2</math> מהם, וכולם שונים, הם פשוט סידור מחדש של השלמים הזוגיים <math>2, 4, \ldots, p-1</math> (השוו ל[[המשפט הקטן של פרמה#הוכחות|הוכחה דומה של המשפט הקטן של פרמה]]). כשכופלים אותם יחד מקבלים
+:<math>(-1)^{r(2)}r(2) \cdot (-1)^{r(4)}r(4) \cdots (-1)^{r(p-1)}r(p-1) \equiv 2 \cdot 4 \cdots (p-1)\pmod{p}.</math>
+מצד שני, <math>r(u) \equiv au</math>, ולכן אגף שמאל שקול ל-<math>(-1)^{\sum r(u)}a^{(p-1)/2}\cdot 2\cdot4\cdots(p-1)</math>. כשמחלקים בשני האגפים ב-<math>2, 4, \ldots, p-1</math> (מותר, כי אף אחד מהם אינו מתחלק ב-<math>p</math>) ומסדרים מחדש, מקבלים
+:<math>a^{(p-1)/2} \equiv (-1)^{r(2) + r(4) + \cdots + r(p-1)}\pmod{p}.</math>
+מצד שני, מההגדרה של <math>r(u)</math> ושל פונקציית הערך השלם,
+:<math>au = p\left\lfloor\frac{au}p\right\rfloor + r(u),</math>
+וכיוון ש-<math>p</math> אי-זוגי ו-<math>u</math> זוגי, נובע ש-<math>\lfloor au/p \rfloor</math> ו-<math>r(u)</math> שקולים מודולו 2, ולכן
+:<math>a^{(p-1)/2} \equiv (-1)^{\sum_u \lfloor au/p \rfloor} \pmod{p}.</math>
+סיימנו, כי אגף שמאל הוא פשוט ביטוי חלופי ל-<math>(a/p)</math>, לפי [[קריטריון אוילר]].
+
+=== תוספת ללמה ===
+מאותו שוויון, <math>qu = p\lfloor qu/p \rfloor + r(u)</math>, נובע ש-<math>\lfloor qu/p \rfloor</math> ו-<math>r(u)</math> שקולים מודולו 2 או לא שקולים, תלוי רק בזוגיות של <math>u</math>: הם שקולים כש-<math>u</math> זוגי, ולא שקולים כש-<math>u</math> אי-זוגי. לכן, כשסוכמים על <math>1\le u\le \frac{p-1}{2}</math> (כמו בלמה של גאוס), מקבלים
+:<math>(-1)^{\sum_u \lfloor qu/p \rfloor}= (-1)^{\sum_u (r(u)+u)}.</math>
+למשל, עבור <math>p = 11</math>, <math>q = 7</math>, השאריות <math>r(u)</math> עבור <math>u = 1, \ldots, 5</math> הן 7, 3, 10, 6, 2, ופונקציית הערך השלם נותנת 0, 1, 1, 2, 3. תבנית השקילות מודולו 2 (1 = שקולים) היא 0, 1, 0, 1, 0 – בדיוק לפי זוגיות <math>u</math>.{{הערה|1=בערך האנגלי הדוגמה מוצגת "עבור <math>p=7, q=11</math>", אבל המספרים שם (השאריות 7, 3, 10, 6, 2 והערכים השלמים 0, 1, 1, 2, 3) מתאימים ל-<math>p = 11</math>, <math>q = 7</math>, כפי שבדקנו. גם תבנית השקילות שם מופיעה הפוכה (1, 0, 1, 0, 1), כנראה במשמעות "לא שקולים".|כיווון=ימין}}
+
+== הוכחה בעזרת סכומי גאוס ריבועיים ==
+ההוכחה של חוק ההדדיות הריבועית בעזרת [[סכום גאוס|סכומי גאוס]] היא אחת ההוכחות הנפוצות והקלאסיות. ההוכחות האלה עובדות כשמשווים חישוב של ערך אחד בשתי דרכים שונות: אחת בעזרת [[קריטריון אוילר]], והשנייה בעזרת [[הבינום של ניוטון]]. כדוגמה לשימוש בקריטריון אוילר, אפשר להשתמש בו כדי לתת הוכחה מהירה של המקרה המשלים הראשון, קביעת <math>\left(\frac{-1}{p}\right)</math> עבור ראשוני אי-זוגי <math>p</math>: לפי קריטריון אוילר <math>\left(\frac{-1}{p}\right) \equiv (-1)^{\frac{p-1}{2}} \pmod{p}</math>, אבל כיוון ששני האגפים הם <math>\pm1</math> ו-<math>p</math> אי-זוגי (ובפרט <math>p \gt 2</math>), נובע ש-<math>\left(\frac{-1}{p}\right) = (-1)^{\frac{p-1}{2}}</math>.
+
+=== המקרה המשלים השני ===
+יהי <math>\zeta_8 = e^{2\pi i/8}</math>, [[שורש יחידה]] פרימיטיבי מסדר 8, ונגדיר <math>\tau = \zeta_8+\zeta_8^{-1}</math>. כיוון ש-<math>\zeta_8^2 = i</math> ו-<math>\zeta_8^{-2}=-i</math>, רואים ש-<math>\tau^{2} = \zeta_8^2 + 2 + \zeta_8^{-2} = 2</math> (ואכן <math>\tau = \sqrt2</math>). כיוון ש-<math>\tau</math> הוא [[שלם אלגברי]], עבור <math>p</math> ראשוני אי-זוגי יש משמעות לדבר עליו מודולו <math>p</math>. (באופן פורמלי, מתבוננים ב[[חוג (מבנה אלגברי)|חוג]] החילופי שמתקבל ממנת השלמים האלגבריים <math>\mathbf A</math> באידיאל שנוצר על ידי <math>p</math>. כיוון ש-<math>p^{-1}</math> אינו שלם אלגברי, <math>1, 2, \ldots, p</math> הם איברים שונים של <math>\mathbf A/p\mathbf A</math>.) מקריטריון אוילר נובע ש-
+:<math>\tau^{p-1} =(\tau^2)^{\frac{p-1}{2}} = 2^{\frac{p-1}{2}} \equiv \left(\frac{2}{p}\right) \pmod{p},</math>
+ולכן
+:<math>\tau^p\equiv \left(\frac{2}{p}\right)\tau\pmod{p}.</math>
+אבל אפשר לחשב את <math>\tau^p \bmod p</math> גם בעזרת הבינום של ניוטון. כיוון שכל האיברים המעורבים בפיתוח הבינומי מכילים גורם <math>p</math>, מקבלים <math>\tau^p\equiv \zeta_8^p+\zeta_8^{-p} \pmod{p}</math>. אפשר להעריך את זה בדיוק כשמפרידים לשני מקרים:
+* <math>p\equiv \pm 1\pmod{8} \Rightarrow \zeta_8^p+\zeta_8^{-p} = \zeta_8+\zeta_8^{-1}</math>;
+* <math>p\equiv \pm 3 \pmod{8} \Rightarrow \zeta_8^p+\zeta_8^{-p} = -\zeta_8-\zeta_8^{-1}</math>.
+אלה האפשרויות היחידות לראשוני אי-זוגי מודולו 8, ואת שני המקרים אפשר לחשב בעזרת הצורה המעריכית <math>\zeta_8=e^{2\pi i/8}</math> (למשל, <math>\zeta_8^3 + \zeta_8^{-3} = 2\cos(3\pi/4) = -\sqrt2</math>). אפשר לכתוב זאת בקצרה לכל הראשוניים האי-זוגיים כ-
+:<math>\tau^p \equiv (-1)^{\frac{p^2-1}{8}}\tau \pmod{p}.</math>
+כשמשלבים את שני הביטויים ל-<math>\tau^p \bmod p</math> וכופלים ב-<math>\tau</math>, מקבלים <math>2\cdot \left(\frac{2}{p}\right) \equiv 2\cdot(-1)^{\frac{p^2-1}{8}}\pmod{p}</math>. כיוון שגם <math>\left(\frac{2}{p}\right)</math> וגם <math>(-1)^{\frac{p^2-1}{8}}</math> הם <math>\pm1</math>, ו-2 הפיך מודולו <math>p</math>, מסיקים ש-
+:<math>\left(\frac{2}{p}\right) = (-1)^{\frac{p^2-1}{8}}.</math>
+
+=== המקרה הכללי ===
+הרעיון של ההוכחה הכללית הולך בעקבות המקרה המשלים לעיל: מוצאים שלם אלגברי ש"מקודדים" בו בדרך כלשהי סמלי לז'נדר של <math>p</math>, ואז מוצאים יחס בין סמלי לז'נדר כשמחשבים את החזקה ה-<math>q</math>-ית של השלם האלגברי הזה מודולו <math>q</math> בשתי דרכים שונות: אחת בעזרת קריטריון אוילר והשנייה בעזרת הבינום של ניוטון.
+
+יהי
+:<math>g_p = \sum_{k=1}^{p-1}\left(\frac{k}{p}\right)\zeta_p^k,</math>
+כאשר <math>\zeta_p=e^{2\pi i/p}</math> הוא שורש יחידה פרימיטיבי מסדר <math>p</math>. זהו [[סכום גאוס]] ריבועי. תכונה יסודית של סכומי גאוס האלה היא ש-
+:<math>g_p^2 = p^*,</math>
+כאשר <math>p^*=\left(\frac{-1}{p}\right) p</math>. (למשל, עבור <math>p = 5</math>: <math>g_5 = \zeta - \zeta^2 - \zeta^3 + \zeta^4 = 2\cos(2\pi/5) - 2\cos(4\pi/5) = \sqrt5</math>; ועבור <math>p = 7</math>, <math>g_7 = i\sqrt7</math>, ו-<math>g_7^2 = -7</math>. בדקנו מספרית עבור <math>p = 5, 7, 11, 13</math>.) כדי למקם זאת בהקשר של ההוכחה הבאה: האיברים הבודדים בסכום גאוס נמצאים ב[[שדה ציקלוטומי|שדה הציקלוטומי]] <math>L = \mathbb{Q}(\zeta_p)</math>, אבל הנוסחה לעיל מראה שהסכום עצמו יוצר את השדה הריבועי היחיד שמוכל ב-<math>L</math>. שוב, כיוון שסכום גאוס הריבועי הוא שלם אלגברי, אפשר להשתמש איתו בחשבון מודולרי. מהנוסחה היסודית הזו ומקריטריון אוילר מקבלים
+:<math>g_p^{q-1} = (g_p^2)^{\frac{q-1}{2}} = (p^*)^{\frac{q-1}{2}} \equiv \left(\frac{p^*}{q}\right)\pmod{q},</math>
+ולכן
+:<math>g_p^q \equiv \left(\frac{p^*}{q}\right)g_p\pmod{q}.</math>
+בעזרת הבינום של ניוטון מקבלים גם <math>g_p^q\equiv\sum_{k=1}^{p-1}\left(\frac{k}{p}\right)^q\zeta_p^{qk} = \sum_{k=1}^{p-1}\left(\frac{k}{p}\right)\zeta_p^{qk} \pmod{q}</math> (כי <math>q</math> אי-זוגי). אם <math>a</math> הוא ההופכי של <math>q</math> מודולו <math>p</math>, אפשר לכתוב את הסכום הזה מחדש כ-<math>\left(\frac{a}{p}\right)\sum_{t=1}^{p-1}\left(\frac{t}{p}\right)\zeta_p^t</math> בעזרת ההצבה <math>t=qk</math> (כי <math>\left(\frac kp\right) = \left(\frac{at}p\right)</math>), שאינה משנה את תחום הסכימה. כיוון ש-<math>\left(\frac{a}{p}\right)=\left(\frac{q}{p}\right)</math>, אפשר לכתוב
+:<math>g_p^q\equiv\left(\frac{q}{p}\right)g_p\pmod{q}.</math>
+כשמשתמשים בשני הביטויים האלה ל-<math>g_p^q \bmod q</math> וכופלים ב-<math>g_p</math>, מקבלים
+:<math>\left(\frac{q}{p}\right)p^*\equiv \left(\frac{p^*}{q}\right)p^*\pmod{q}.</math>
+כיוון ש-<math>p^*</math> הפיך מודולו <math>q</math>, וסמלי לז'נדר הם <math>\pm1</math>, מסיקים ש-
+:<math>\left(\frac{q}{p}\right) = \left(\frac{p^*}{q}\right),</math>
+וזה, בצירוף <math>\left(\frac{-1}q\right) = (-1)^{(q-1)/2}</math>, הוא בדיוק חוק ההדדיות הריבועית.
+
+== הוכחה בעזרת תורת המספרים האלגברית ==
+ההוכחה שמוצגת כאן אינה בשום אופן הפשוטה ביותר הידועה; אבל היא עמוקה למדי, במובן שהיא מניעה כמה מהרעיונות של [[הדדיות ארטין]].
+
+=== מבנה השדה הציקלוטומי ===
+נניח ש-<math>p</math> ראשוני אי-זוגי. הכול מתרחש בתוך ה[[שדה ציקלוטומי|שדה הציקלוטומי]] <math>L = \mathbb Q(\zeta_p)</math>, כאשר <math>\zeta_p</math> הוא [[שורש יחידה]] פרימיטיבי מסדר <math>p</math>. התורה הבסיסית של שדות ציקלוטומיים אומרת שיש איזומורפיזם קנוני
+:<math>G = \operatorname{Gal}(L/\mathbb Q) \cong (\mathbb Z/p\mathbb Z)^\times</math>
+ששולח את האוטומורפיזם <math>\sigma_a</math> המקיים <math>\sigma_a(\zeta_p) = \zeta_p^a</math> לאיבר <math>a \in (\mathbb Z/p\mathbb Z)^\times</math>.{{הערה|1=בערך האנגלי נכתב שההעתקה הזו חד-חד-ערכית "כי החבורה הכפלית של שדה סופי ציקלית". אבל החד-חד-ערכיות נובעת פשוט מכך שאוטומורפיזם נקבע לפי התמונה של <math>\zeta_p</math>, והעל נובעת מאי-הפריקות של [[פולינום ציקלוטומי|הפולינום הציקלוטומי]] <math>\Phi_p</math>. הציקליות של <math>(\mathbb Z/p\mathbb Z)^\times</math> משמשת בשלב הבא, כדי שלתת-חבורת הריבועים יהיה אינדקס 2.|כיווון=ימין}}
+
+עכשיו נתבונן בתת-החבורה <math>H</math> של ה''ריבועים'' של איברי <math>G</math>. כיוון ש-<math>G</math> ציקלית (מסדר זוגי <math>p - 1</math>), ל-<math>H</math> יש [[אינדקס של תת-חבורה|אינדקס]] 2 ב-<math>G</math>, ולכן תת-השדה שמתאים ל-<math>H</math> לפי [[המשפט היסודי של תורת גלואה|התאמת גלואה]] חייב להיות הרחבה ''ריבועית'' של <math>\mathbb Q</math>. (למעשה זו ההרחבה הריבועית ''היחידה'' של <math>\mathbb Q</math> שמוכלת ב-<math>L</math>.) תורת [[מחזור גאוסי|המחזורים הגאוסיים]] קובעת איזו: מתברר שזו <math>\mathbb Q(\sqrt{p^*})</math>, כאשר
+:<math>p^* = \begin{cases} p & p \equiv 1 \pmod{4}, \\ -p & p \equiv 3 \pmod{4}. \end{cases}</math>
+(זה בדיוק התוכן של <math>g_p^2 = p^*</math> מהסעיף הקודם.)
+
+בשלב הזה מתחילים לראות רמז לחוק ההדדיות הריבועית. מצד אחד, התמונה של <math>H</math> ב-<math>(\mathbb Z/p\mathbb Z)^\times</math> מורכבת בדיוק מ''השאריות הריבועיות מודולו <math>p</math>'' (השונות מאפס). מצד שני, <math>H</math> קשורה לניסיון להוציא ''שורש ריבועי של <math>p</math>'' (או אולי של <math>-p</math>). במילים אחרות, אם עכשיו <math>q</math> ראשוני (שונה מ-<math>p</math>), הראינו ש-
+:<math>\left(\frac qp\right) =1 \quad \iff \quad \sigma_q \in H \quad \iff \quad \sigma_q \text{ משאיר את } \mathbb Q(\sqrt{p^*}) \text{ במקומו}.</math>
+
+=== אוטומורפיזם פרובניוס ===
+ב[[חוג השלמים]] <math>\mathcal O_L=\mathbb Z[\zeta_p]</math>, נבחר [[אידיאל ראשוני]] לא מסועף <math>\beta</math> כלשהו שמעל <math>q</math>, ויהי <math>\phi \in \operatorname{Gal}(L/\mathbb Q)</math> [[אוטומורפיזם פרובניוס]] המשויך ל-<math>\beta</math>; התכונה המאפיינת של <math>\phi</math> היא ש-
+:<math>\phi(x) \equiv x^q \pmod{\beta}\quad \text{לכל } x\in \mathcal O_L.</math>
+(קיומו של איבר פרובניוס כזה תלוי בלא מעט מהמנגנון של תורת המספרים האלגברית.)
+
+העובדה המרכזית על <math>\phi</math> שאנחנו צריכים היא שלכל תת-שדה <math>K</math> של <math>L</math>,
+:<math>\phi\text{ משאיר את } K \text{ במקומו} \quad \iff \quad q\text{ מתפצל לחלוטין ב-} K.</math>
+אכן, יהי <math>\delta</math> אידיאל כלשהו של <math>\mathcal O_K</math> מתחת ל-<math>\beta</math> (ולכן מעל <math>q</math>). אז, כיוון ש-<math>\phi(x) \equiv x^q \pmod{\delta}</math> לכל <math>x\in \mathcal O_K</math>, רואים ש-<math>\phi\vert_K \in \operatorname{Gal}(K/\mathbb Q)</math> הוא פרובניוס של <math>\delta</math>. תוצאה סטנדרטית על <math>\phi</math> היא שהסדר שלו שווה לדרגת האינרציה המתאימה; כלומר,
+:<math>\operatorname{ord}(\phi\vert_K) = [\mathcal O_K/\delta : \mathbb Z/q\mathbb Z].</math>
+אגף שמאל שווה 1 אם ורק אם <math>\phi</math> משאיר את <math>K</math> במקומו, ואגף ימין שווה 1 אם ורק אם <math>q</math> מתפצל לחלוטין ב-<math>K</math> (ב[[הרחבת גלואה]] כל דרגות האינרציה שוות), וסיימנו.
+
+עכשיו, כיוון ששורשי היחידה מסדר <math>p</math> שונים זה מזה מודולו <math>\beta</math> (כלומר, הפולינום <math>X^p - 1</math> [[פולינום ספרבילי|ספרבילי]] במאפיין <math>q</math>), חייב להתקיים
+:<math>\phi(\zeta_p) = \zeta_p^q;</math>
+כלומר, <math>\phi</math> מתלכד עם האוטומורפיזם <math>\sigma_q</math> שהוגדר קודם. כשלוקחים את <math>K</math> להיות השדה הריבועי שמעניין אותנו, מקבלים את השקילות
+:<math>\left(\frac qp\right) =1 \quad \iff \quad q\text{ מתפצל לחלוטין ב-} \mathbb Q(\sqrt{p^*}).</math>
+
+=== סיום ההוכחה ===
+לבסוף צריך להראות ש-
+:<math>q\text{ מתפצל לחלוטין ב-} \mathbb Q(\sqrt{p^*}) \quad \iff \quad \left(\frac{p^*}q\right) = 1.</math>
+אחרי שנעשה זאת, חוק ההדדיות הריבועית נובע מיד, כי
+:<math>\left(\frac{p^*}q\right) = \left(\frac pq\right)\quad \text{עבור } p\equiv 1 \pmod 4,</math>
+ו-
+:<math>\left(\frac{p^*}q\right) = \left(\frac{-p}q\right) = \left(\frac{-1}q\right)\left(\frac pq\right) = \begin{cases} +\left(\frac pq \right) & q \equiv 1 \pmod{4}, \\ -\left(\frac pq\right) & q \equiv 3 \pmod{4}\end{cases}</math>
+עבור <math>p\equiv 3 \pmod 4</math>.
+
+כדי להראות את השקילות האחרונה, נניח קודם ש-<math>\left(\frac{p^*}q\right) = 1</math>. במקרה הזה יש שלם <math>x</math> (שאינו מתחלק ב-<math>q</math>) כך ש-<math>x^2 \equiv p^* \pmod{q}</math>, נאמר <math>x^2 - p^* = cq</math> עבור שלם <math>c</math>. נסמן <math>K = \mathbb Q(\sqrt{p^*})</math>, ונתבונן באידיאל <math>(x-\sqrt{p^*},q)</math> של <math>K</math>. הוא בוודאי מחלק את האידיאל הראשי <math>(q)</math>. הוא אינו יכול להיות שווה ל-<math>(q)</math>, כי <math>x-\sqrt{p^*}</math> אינו מתחלק ב-<math>q</math>. הוא אינו יכול להיות האידיאל כולו, כי אז
+:<math>(x+\sqrt{p^*}) = (x+\sqrt{p^*})(x-\sqrt{p^*},q) = (cq, q(x+\sqrt{p^*}))</math>
+היה מתחלק ב-<math>q</math>, וזה שוב בלתי אפשרי. לכן <math>(q)</math> חייב להתפצל ב-<math>K</math>.
+
+להפך, נניח ש-<math>(q)</math> מתפצל, ויהי <math>\beta</math> ראשוני של <math>K</math> מעל <math>q</math>. אז <math>(q) \subsetneq \beta</math>, ולכן אפשר לבחור
+:<math>a+b\sqrt{p^*} \in \beta\setminus(q),\quad a,b\in \mathbb Q.</math>
+למעשה, כיוון ש-<math>p^* \equiv 1 \pmod{4}</math>, מהתורה האלמנטרית של [[שדה ריבועי|שדות ריבועיים]] נובע שחוג השלמים של <math>K</math> הוא בדיוק <math>\mathbb Z\left[\frac{1+\sqrt{p^*}}2\right]</math>, ולכן המכנים של <math>a</math> ו-<math>b</math> הם לכל היותר 2. כיוון ש-<math>q \ne 2</math>, אפשר לכפול בבטחה את <math>a</math> ו-<math>b</math> ב-2, ולהניח ש-<math>a+b\sqrt{p^*} \in \beta\setminus(q)</math> כאשר עכשיו <math>a</math> ו-<math>b</math> שלמים. במקרה הזה
+:<math>(a+b\sqrt{p^*})(a-b\sqrt{p^*}) = a^2 - b^2p^* \in \beta \cap \mathbb Z = (q),</math>
+כלומר <math>q \mid a^2 - b^2p^*</math>. אבל <math>q</math> אינו יכול לחלק את <math>b</math>, כי אז <math>q</math> מחלק גם את <math>a</math>, וזה סותר את בחירת <math>a+b\sqrt{p^*}</math>. לכן אפשר לחלק ב-<math>b</math> מודולו <math>q</math>, ולקבל <math>p^* \equiv (ab^{-1})^2 \pmod{q}</math>, כנדרש.
+
+''דוגמה:'' עבור <math>p = 7</math>: <math>p^* = -7</math>, ו-<math>K = \mathbb Q(\sqrt{-7})</math>. עבור <math>q = 11</math>: <math>-7 \equiv 4 = 2^2 \pmod{11}</math>, ולכן 11 מתפצל ב-<math>K</math> – ואכן <math>11 = \left(2 + \sqrt{-7}\right)\left(2 - \sqrt{-7}\right)</math>. לכן <math>\left(\frac{11}7\right) = 1</math>, כמו שראינו בדוגמה של אייזנשטיין.
+
+== לקריאה נוספת ==
+כל ספר לימוד ב[[תורת המספרים האלמנטרית]] (ולא מעט ספרים ב[[תורת המספרים האלגברית]]) כולל הוכחה של חוק ההדדיות הריבועית. שניים ראויים לציון מיוחד: ספרו של למרמאייר (2000) כולל הוכחות רבות (חלקן בתרגילים) של חוקי הדדיות ריבועיים ומחזקות גבוהות, ודיון בהיסטוריה שלהם; הביבליוגרפיה העצומה שלו כוללת הפניות ל-196 הוכחות שונות שפורסמו. גם בספרם של איירלנד ורוזן (1990) יש הוכחות רבות לחוק ההדדיות הריבועית (ותרגילים רבים), והוא עוסק גם במקרים הקוביים והריבועיים-ריבועיים. תרגיל 13.26 שם מבקש מהקורא לספור את ההוכחות לחוק שניתנו עד אותו שלב בספר – ולמצוא עוד אחת.
+<div dir="ltr">
+* K. Ireland, M. Rosen, ''A Classical Introduction to Modern Number Theory'', 2nd ed., Graduate Texts in Mathematics 84, Springer, 1990
+* F. Lemmermeyer, ''Reciprocity Laws: from Euler to Eisenstein'', Springer Monographs in Mathematics, Springer, 2000
+* G. Rousseau, On the quadratic reciprocity law, ''Journal of the Australian Mathematical Society, Series A'' '''51''' (1991), 423–425
+* L. C. Washington, ''Introduction to Cyclotomic Fields'', 2nd ed., Graduate Texts in Mathematics 83, Springer, 2012
+</div>
+
+== קישורים חיצוניים ==
+* <span dir="ltr">F. Lemmermeyer, Chronology and bibliography of proofs of the Quadratic Reciprocity Law (345 proofs)</span>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תורת המספרים האלגברית]]
