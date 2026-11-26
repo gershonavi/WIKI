@@ -217,7 +217,7 @@ Additive number theory:
 - [x] Vieta jumping
 - [x] Tree of primitive Pythagorean triples
 - [x] Fermat–Catalan conjecture
-- [ ] Prouhet–Tarry–Escott problem
+- [x] Prouhet–Tarry–Escott problem
 - [ ] Tunnell's theorem
 - [ ] Erdős–Moser equation
 - [ ] Cannonball problem
