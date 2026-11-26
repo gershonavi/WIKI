@@ -268,7 +268,7 @@ Additive number theory:
 - [x] Genus of a quadratic form
 - [x] Definite quadratic form
 - [x] Isotropic quadratic form
-- [ ] Hasse invariant of a quadratic form
+- [x] Hasse invariant of a quadratic form
 - [ ] Smith–Minkowski–Siegel mass formula
 - [ ] Unimodular lattice
 - [ ] E8 lattice
