@@ -173,7 +173,7 @@ Additive number theory:
 - [x] Modular curve
 - [x] J-invariant
 - [x] Dedekind eta function
-- [ ] Cusp form
+- [x] Cusp form
 - [ ] Weierstrass elliptic function
 - [ ] Fundamental pair of periods
 - [ ] Modular lambda function
