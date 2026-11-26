@@ -221,7 +221,7 @@ Additive number theory:
 - [x] Tunnell's theorem
 - [x] Erdős–Moser equation
 - [x] Cannonball problem
-- [ ] Lander, Parkin, and Selfridge conjecture
+- [x] Lander, Parkin, and Selfridge conjecture
 - [ ] Tijdeman's theorem
 - [ ] Brahmagupta's problem
 - [ ] Bhaskara's lemma
