@@ -1,0 +1,114 @@
+'''האלגוריתם של סחוף''' הוא אלגוריתם יעיל לספירת נקודות על [[עקום אליפטי|עקומים אליפטיים]] מעל [[שדה סופי|שדות סופיים]]. לאלגוריתם יש שימושים ב[[קריפטוגרפיה של עקומים אליפטיים]], שבה חשוב לדעת את מספר הנקודות כדי להעריך את הקושי של פתרון '''בעיית הלוגריתם הבדיד''' ב[[חבורה (מבנה אלגברי)|חבורת]] הנקודות על עקום אליפטי.
+
+האלגוריתם פורסם על ידי רנה סחוף (René Schoof) ב-1985, והוא היה פריצת דרך תאורטית: האלגוריתם הדטרמיניסטי הראשון בזמן פולינומי ל[[ספירת נקודות על עקומים אליפטיים]]. לפני האלגוריתם של סחוף, גישות לספירת נקודות על עקומים אליפטיים, כמו האלגוריתם הנאיבי ואלגוריתם צעד-תינוק צעד-ענק, היו ברובן מייגעות, עם זמן ריצה מעריכי.
+
+הערך מסביר את הגישה של סחוף, בדגש על הרעיונות המתמטיים שעומדים ביסוד מבנה האלגוריתם.
+
+== מבוא ==
+יהי <math>E</math> עקום אליפטי שמוגדר מעל השדה הסופי <math>\mathbb F_q</math>, כאשר <math>q = p^n</math> עם <math>p</math> ראשוני ו-<math>n \ge 1</math> שלם. מעל שדה ממאפיין שונה מ-2 ו-3 אפשר לתת עקום אליפטי על ידי משוואת ויירשטראס (קצרה)
+:<math>y^2 = x^3 + Ax + B</math>
+עם <math>A, B \in \mathbb F_q</math>. קבוצת הנקודות שמוגדרות מעל <math>\mathbb F_q</math> מורכבת מהפתרונות <math>(a, b) \in \mathbb F_q^2</math> של משוואת העקום ומ"נקודה באינסוף" <math>O</math>. בעזרת חוק החבורה על עקומים אליפטיים, הקבוצה <math>E(\mathbb F_q)</math> היא [[חבורה אבלית]], עם <math>O</math> כאיבר האפס. כדי לספור את הנקודות על עקום אליפטי, מחשבים את העוצמה של <math>E(\mathbb F_q)</math>. הגישה של סחוף לחישוב <math>\#E(\mathbb F_q)</math> משתמשת ב[[משפט האסה על עקומים אליפטיים|משפט האסה]], ב[[משפט השאריות הסיני]] וב'''פולינומי חלוקה'''.
+
+== משפט האסה ==
+משפט האסה קובע שאם <math>E/\mathbb F_q</math> עקום אליפטי מעל השדה הסופי <math>\mathbb F_q</math>, אז
+:<math>|q + 1 - \#E(\mathbb F_q)| \le 2\sqrt q.</math>
+התוצאה החזקה הזו, שהאסה הוכיח ב-1933–1934, מפשטת את הבעיה בכך שהיא מצמצמת את <math>\#E(\mathbb F_q)</math> לקבוצה סופית (אם כי גדולה) של אפשרויות. אם מגדירים <math>t = q + 1 - \#E(\mathbb F_q)</math>, אז לפי התוצאה הזו מספיק לחשב את <math>t</math> מודולו <math>N</math>, כאשר <math>N \gt 4\sqrt q</math>, כדי לקבוע את <math>t</math>, ולכן את <math>\#E(\mathbb F_q)</math>. אין דרך יעילה לחשב את <math>t \bmod N</math> ישירות עבור <math>N</math> כללי, אבל אפשר לחשב ביעילות את <math>t \bmod l</math> עבור <math>l</math> ראשוני קטן. בוחרים קבוצה <math>S = \{l_1, \dots, l_r\}</math> של ראשוניים שונים כך ש-<math>\prod l_i = N \gt 4\sqrt q</math>. בהינתן <math>t \bmod l_i</math> לכל <math>l_i \in S</math>, משפט השאריות הסיני מאפשר לחשב את <math>t \bmod N</math>.
+
+כדי לחשב את <math>t \bmod l</math> עבור ראשוני <math>l \ne p</math>, משתמשים בתורה של [[אנדומורפיזם פרובניוס]] <math>\phi</math> ובפולינומי החלוקה. שימו לב שההגבלה לראשוניים <math>l \ne p</math> אינה מגבילה, כי תמיד אפשר לבחור ראשוני גדול יותר במקומו. בכל מקרה, האלגוריתם של סחוף משמש בעיקר במקרה <math>q = p</math>, כי לשדות ממאפיין קטן יש אלגוריתמים יעילים יותר, שנקראים אלגוריתמים p-אדיים.
+
+== אנדומורפיזם פרובניוס ==
+בהינתן העקום האליפטי <math>E</math> שמוגדר מעל <math>\mathbb F_q</math>, מתבוננים בנקודות על <math>E</math> מעל <math>\bar{\mathbb F}_q</math>, ה[[סגור אלגברי|סגור האלגברי]] של <math>\mathbb F_q</math>. אנדומורפיזם פרובניוס של <math>\bar{\mathbb F}_q</math> מעל <math>\mathbb F_q</math> מתרחב לעקום האליפטי על ידי <math>\phi : (x, y) \mapsto (x^q, y^q)</math>. ההעתקה הזו היא הזהות על <math>E(\mathbb F_q)</math>, ואפשר להרחיב אותה לנקודה שבאינסוף <math>O</math>, כך שהיא מורפיזם של חבורות מ-<math>E(\bar{\mathbb F}_q)</math> לעצמה.
+
+אנדומורפיזם פרובניוס מקיים פולינום ריבועי שקשור לעוצמה של <math>E(\mathbb F_q)</math>, לפי המשפט הבא:
+
+'''משפט.''' אנדומורפיזם פרובניוס <math>\phi</math> מקיים את המשוואה האופיינית
+:<math>\phi^2 - t\phi + q = 0, \qquad t = q + 1 - \#E(\mathbb F_q).</math>
+לכן לכל <math>P = (x, y) \in E</math> מתקיים <math>(x^{q^2}, y^{q^2}) + q(x, y) = t(x^q, y^q)</math>, כאשר <math>+</math> מסמן חיבור על העקום האליפטי ו-<math>q(x, y)</math>, <math>t(x^q, y^q)</math> מסמנים כפל סקלרי של <math>(x, y)</math> ב-<math>q</math> ושל <math>(x^q, y^q)</math> ב-<math>t</math>.
+
+אפשר היה לנסות לחשב סימבולית את הנקודות <math>(x^{q^2}, y^{q^2})</math>, <math>(x^q, y^q)</math> ו-<math>q(x, y)</math> כפונקציות בחוג הקואורדינטות <math>\mathbb F_q[x, y]/(y^2 - x^3 - Ax - B)</math> של <math>E</math>, ואז לחפש ערך של <math>t</math> שמקיים את המשוואה. אבל המעלות גדלות מאוד, והגישה הזו אינה מעשית.
+
+הרעיון של סחוף היה לבצע את החישוב הזה מוגבל לנקודות מסדר <math>l</math>, עבור ראשוניים קטנים שונים <math>l</math>. נקבע ראשוני אי-זוגי <math>l</math>; עכשיו עוברים לבעיה של קביעת <math>t_l = t \bmod l</math>, עבור ראשוני נתון <math>l \ne 2, p</math>. אם נקודה <math>(x, y)</math> נמצאת בתת-חבורת ה-<math>l</math>-פיתול <math>E[l] = \{P \in E(\bar{\mathbb F}_q) : lP = O\}</math>, אז <math>qP = \bar qP</math>, כאשר <math>\bar q</math> השלם היחיד כך ש-<math>q \equiv \bar q \pmod l</math> ו-<math>|\bar q| \lt l/2</math>. שימו לב ש-<math>\phi(O) = O</math>, ושלכל שלם <math>r</math> מתקיים <math>r\phi(P) = \phi(rP)</math>; לכן ל-<math>\phi(P)</math> אותו סדר כמו ל-<math>P</math>. לכן עבור <math>(x, y) \in E[l]</math> מתקיים גם <math>t(x^q, y^q) = \bar t(x^q, y^q)</math> אם <math>t \equiv \bar t \pmod l</math>. כך צמצמנו את הבעיה לפתרון המשוואה
+:<math>(x^{q^2}, y^{q^2}) + \bar q(x, y) \equiv \bar t(x^q, y^q),</math>
+כאשר ל-<math>\bar t</math> ול-<math>\bar q</math> ערכים שלמים ב-<math>[-(l-1)/2, (l-1)/2]</math>.
+
+== חישוב מודולו ראשוניים ==
+פולינום החלוקה ה-<math>l</math>-י <math>\psi_l</math> מוגדר כך ששורשיו הם בדיוק קואורדינטות ה-<math>x</math> של הנקודות מסדר <math>l</math>. לכן, הגבלת החישוב של <math>(x^{q^2}, y^{q^2}) + \bar q(x, y)</math> לנקודות ה-<math>l</math>-פיתול פירושה לחשב את הביטויים האלה כפונקציות בחוג הקואורדינטות של <math>E</math>, '''ו'''מודולו פולינום החלוקה ה-<math>l</math>-י. כלומר, עובדים בחוג <math>\mathbb F_q[x, y]/(y^2 - x^3 - Ax - B, \psi_l)</math>. בפרט, המעלה של <math>X</math> ושל <math>Y</math>, שמוגדרים על ידי <math>(X(x, y), Y(x, y)) := (x^{q^2}, y^{q^2}) + \bar q(x, y)</math>, היא לכל היותר 1 ב-<math>y</math> ולכל היותר <math>(l^2 - 3)/2</math> ב-<math>x</math>.
+
+את הכפל הסקלרי <math>\bar q(x, y)</math> אפשר לבצע בשיטות "הכפל-והוסף", או בעזרת פולינום החלוקה ה-<math>\bar q</math>-י. בגישה השנייה:
+:<math>\bar q(x, y) = (x_{\bar q}, y_{\bar q}) = \left(x - \frac{\psi_{\bar q-1}\psi_{\bar q+1}}{\psi_{\bar q}^2},\ \frac{\psi_{2\bar q}}{2\psi_{\bar q}^4}\right),</math>
+כאשר <math>\psi_n</math> פולינום החלוקה ה-<math>n</math>-י. שימו לב ש-<math>y_{\bar q}/y</math> הוא פונקציה של <math>x</math> בלבד; נסמן אותה <math>\theta(x)</math>.
+
+צריך לפצל את הבעיה לשני מקרים: המקרה <math>(x^{q^2}, y^{q^2}) \ne \pm\bar q(x, y)</math>, והמקרה <math>(x^{q^2}, y^{q^2}) = \pm\bar q(x, y)</math>. השוויונות האלה נבדקים מודולו <math>\psi_l</math>.
+
+=== מקרה 1 ===
+כש-<math>(x^{q^2}, y^{q^2}) \ne \pm\bar q(x, y)</math>, נוסחת החיבור של החבורה נותנת:
+:<math>X(x, y) = \left(\frac{y^{q^2} - y_{\bar q}}{x^{q^2} - x_{\bar q}}\right)^2 - x^{q^2} - x_{\bar q}.</math>
+(החישוב נכשל אם ההנחה של אי-השוויון הייתה שגויה.)
+
+עכשיו אפשר להשתמש בקואורדינטת ה-<math>x</math> כדי לצמצם את הבחירה של <math>\bar t</math> לשתי אפשרויות, החיובית והשלילית. בעזרת קואורדינטת ה-<math>y</math> קובעים אחר כך איזו מהשתיים נכונה.
+
+ראשית נראה ש-<math>X</math> פונקציה של <math>x</math> בלבד. נתבונן ב-<math>(y^{q^2} - y_{\bar q})^2 = y^2(y^{q^2-1} - y_{\bar q}/y)^2</math>. כיוון ש-<math>q^2 - 1</math> זוגי, אחרי החלפת <math>y^2</math> ב-<math>x^3 + Ax + B</math> אפשר לכתוב את הביטוי כ-
+:<math>(x^3 + Ax + B)\bigl((x^3 + Ax + B)^{\frac{q^2-1}{2}} - \theta(x)\bigr)^2,</math>
+ולכן
+:<math>X(x) \equiv (x^3 + Ax + B)\left(\frac{(x^3 + Ax + B)^{\frac{q^2-1}{2}} - \theta(x)}{x^{q^2} - x_{\bar q}}\right)^2 \bmod \psi_l(x).</math>
+אם <math>X \equiv x^q_{\bar t} \bmod \psi_l(x)</math> עבור <math>\bar t \in [0, (l-1)/2]</math> כלשהו (כאשר <math>x^q_{\bar t}</math> מסמן את קואורדינטת ה-<math>x</math> של <math>\bar t\phi(P)</math>), אז <math>\bar t</math> מקיים
+:<math>\phi^2(P) \mp \bar t\phi(P) + \bar qP = O</math>
+לכל נקודות ה-<math>l</math>-פיתול <math>P</math>. כאמור, בעזרת <math>Y</math> ו-<math>y^q_{\bar t}</math> אפשר לקבוע איזה משני הערכים (<math>\bar t</math> או <math>-\bar t</math>) מתאים. זה נותן את <math>t \equiv \bar t \pmod l</math>.
+
+=== מקרה 2 ===
+כש-<math>(x^{q^2}, y^{q^2}) = \pm\bar q(x, y)</math>. נניח תחילה ש-<math>(x^{q^2}, y^{q^2}) = \bar q(x, y)</math>. כיוון ש-<math>l</math> ראשוני אי-זוגי, לא ייתכן ש-<math>\bar q(x, y) = -\bar q(x, y)</math>, ולכן <math>\bar t \ne 0</math>. המשוואה האופיינית נותנת <math>\bar t\phi(P) = 2\bar qP</math>, ומכאן <math>\bar t^2\bar q \equiv (2q)^2 \pmod l</math>. זה גורר ש-<math>q</math> ריבוע מודולו <math>l</math>. יהי <math>q \equiv w^2 \pmod l</math>. מחשבים את <math>w\phi(x, y)</math> בחוג <math>\mathbb F_q[x, y]/(y^2 - x^3 - Ax - B, \psi_l)</math> ובודקים אם <math>\bar q(x, y) = w\phi(x, y)</math>. אם כן, <math>t_l</math> הוא <math>\pm 2w \pmod l</math>, לפי קואורדינטת ה-<math>y</math>.
+
+אם מתברר ש-<math>q</math> אינו ריבוע מודולו <math>l</math>, או שהמשוואה אינה מתקיימת אף לא עבור אחד מ-<math>w</math> ו-<math>-w</math>, ההנחה ש-<math>(x^{q^2}, y^{q^2}) = +\bar q(x, y)</math> שגויה, ולכן <math>(x^{q^2}, y^{q^2}) = -\bar q(x, y)</math>. המשוואה האופיינית נותנת אז <math>t_l = 0</math>.
+
+=== המקרה <math>l = 2</math> ===
+ההתייחסות שלמעלה השמיטה את המקרה <math>l = 2</math>. כיוון שאנו מניחים ש-<math>q</math> אי-זוגי, <math>q + 1 - t \equiv t \pmod 2</math>, ובפרט <math>t_2 \equiv 0 \pmod 2</math> אם ורק אם ל-<math>E(\mathbb F_q)</math> יש איבר מסדר 2. לפי הגדרת החיבור בחבורה, כל איבר מסדר 2 חייב להיות מהצורה <math>(x_0, 0)</math>. לכן <math>t_2 \equiv 0 \pmod 2</math> אם ורק אם לפולינום <math>x^3 + Ax + B</math> יש שורש ב-<math>\mathbb F_q</math>, אם ורק אם <math>\gcd(x^q - x, x^3 + Ax + B) \ne 1</math>.
+
+== דוגמה מחושבת ==
+נתבונן ב-<math>E : y^2 = x^3 + x + 1</math> מעל <math>\mathbb F_5</math> (שבו, בספירה ישירה, <math>\#E(\mathbb F_5) = 9</math> ו-<math>t = -3</math>), ונראה מה כל צעד של האלגוריתם "רואה".
+* '''<math>l = 2</math>.''' <math>x^3 + x + 1</math> אינו מתאפס ב-<math>\mathbb F_5</math> (הערכים <math>1, 3, 1, 1, 4</math>), ולכן <math>t_2 = 1</math>, כלומר <math>t</math> אי-זוגי.
+* '''<math>l = 3</math>.''' כאן <math>\bar q = 5 \bmod 3 = -1</math>. חישוב ב-<math>\mathbb F_{25}</math> מראה שכל תשע נקודות ה-3-פיתול נמצאות ב-<math>E(\mathbb F_{25})</math> (שיש בו 27 נקודות), כלומר <math>\phi^2</math> פועלת כזהות על <math>E[3]</math>, ואז <math>\phi^2(P) = P = -\bar qP</math> – המקרה <math>(x^{q^2}, y^{q^2}) = -\bar q(x, y)</math> של מקרה 2. לכן <math>t_3 = 0</math>.
+* משפט השאריות הסיני נותן <math>t \equiv 3 \pmod 6</math>. אבל <math>2\cdot3 = 6 \lt 4\sqrt5 \approx 8.94</math>, ולפי חסם האסה <math>|t| \le 4.47</math> נשארות שתי אפשרויות: <math>t = 3</math> או <math>t = -3</math>. לכן האלגוריתם חייב להשתמש בראשוני נוסף (<math>l = 7</math>, כי <math>l = 5 = p</math> אסור), וזה מכריע: <math>t = -3</math>, <math>\#E(\mathbb F_5) = 5 + 1 + 3 = 9</math>.
+
+== האלגוריתם ==
+'''קלט:'''
+# עקום אליפטי <math>E : y^2 = x^3 + Ax + B</math>.
+# שלם <math>q</math> לשדה סופי <math>\mathbb F_q</math>, <math>q = p^b</math>, <math>b \ge 1</math>.
+'''פלט:''' מספר הנקודות של <math>E</math> מעל <math>\mathbb F_q</math>.
+# בוחרים קבוצה <math>S</math> של ראשוניים אי-זוגיים שאינה מכילה את <math>p</math>, כך ש-<math>N = \prod_{l\in S}l \gt 4\sqrt q</math> (כולל הגורם 2 מהשלב הבא).
+# קובעים <math>t_2 = 0</math> אם <math>\gcd(x^q - x, x^3 + Ax + B) \ne 1</math>, ואחרת <math>t_2 = 1</math>.
+# לכל <math>l \in S</math>, מחשבים את פולינום החלוקה <math>\psi_l</math>; כל החישובים בלולאה מתבצעים בחוג <math>\mathbb F_q[x, y]/(y^2 - x^3 - Ax - B, \psi_l)</math>:
+## יהי <math>\bar q</math> השלם היחיד כך ש-<math>q \equiv \bar q \pmod l</math> ו-<math>|\bar q| \lt l/2</math>.
+## מחשבים את <math>(x^q, y^q)</math>, <math>(x^{q^2}, y^{q^2})</math> ו-<math>(x_{\bar q}, y_{\bar q})</math>.
+## '''אם''' <math>x^{q^2} \ne x_{\bar q}</math>: מחשבים את <math>(X, Y)</math>. לכל <math>1 \le \bar t \le (l-1)/2</math>: אם <math>X = x^q_{\bar t}</math>, אז <math>t_l = \bar t</math> אם <math>Y = y^q_{\bar t}</math>, ו-<math>t_l = -\bar t</math> אחרת.
+## '''אחרת, אם''' <math>q</math> ריבוע מודולו <math>l</math>: מחשבים <math>w</math> עם <math>q \equiv w^2 \pmod l</math>, ואת <math>w(x^q, y^q)</math>. אם <math>w(x^q, y^q) = (x^{q^2}, y^{q^2})</math>, אז <math>t_l = 2w</math>; אם <math>w(x^q, y^q) = (x^{q^2}, -y^{q^2})</math>, אז <math>t_l = -2w</math>; אחרת <math>t_l = 0</math>.
+## '''אחרת''' <math>t_l = 0</math>.
+# בעזרת משפט השאריות הסיני מחשבים את <math>t</math> מודולו <math>N</math> מהמשוואות <math>t \equiv t_l \pmod l</math>, <math>l \in S</math>, ובוחרים את הנציג עם <math>|t| \le 2\sqrt q</math>.
+# הפלט: <math>q + 1 - t</math>.
+
+== סיבוכיות ==
+רוב החישוב מושקע בחישוב <math>\phi(P)</math> ו-<math>\phi^2(P)</math> לכל ראשוני <math>l</math>, כלומר בחישוב <math>x^q, y^q, x^{q^2}, y^{q^2}</math> לכל ראשוני <math>l</math>. זה כרוך בהעלאה בחזקה בחוג <math>R = \mathbb F_q[x, y]/(y^2 - x^3 - Ax - B, \psi_l)</math>, ודורש <math>O(\log q)</math> כפלים. כיוון שמעלת <math>\psi_l</math> היא <math>\tfrac{l^2 - 1}{2}</math>, כל איבר בחוג הוא פולינום ממעלה <math>O(l^2)</math>. לפי [[משפט המספרים הראשוניים]], יש בערך <math>O(\log q)</math> ראשוניים מגודל <math>O(\log q)</math>, כך ש-<math>l = O(\log q)</math> ו-<math>O(l^2) = O(\log^2 q)</math>. לכן כל כפל בחוג <math>R</math> דורש <math>O(\log^4 q)</math> כפלים ב-<math>\mathbb F_q</math>, שכל אחד מהם דורש <math>O(\log^2 q)</math> פעולות על ביטים. בסך הכול מספר הפעולות על ביטים לכל ראשוני <math>l</math> הוא <math>O(\log^7 q)</math>. כיוון שצריך לבצע את החישוב לכל אחד מ-<math>O(\log q)</math> הראשוניים, הסיבוכיות הכוללת של האלגוריתם של סחוף היא <math>O(\log^8 q)</math>. שימוש באריתמטיקה מהירה של פולינומים ושלמים מוריד אותה ל-<math>\tilde O(\log^5 q)</math>.
+
+== שיפורים לאלגוריתם של סחוף ==
+בשנות ה-90 פיתחו [[נועם אלקיס]], ואחריו א' או' ל' אטקין, שיפורים לאלגוריתם הבסיסי של סחוף, על ידי הגבלת קבוצת הראשוניים <math>S</math> לראשוניים מסוג מסוים, שנקראו '''ראשוני אלקיס''' ו'''ראשוני אטקין'''. ראשוני <math>l</math> נקרא ראשוני אלקיס אם המשוואה האופיינית <math>\phi^2 - t\phi + q = 0</math> מתפרקת מעל <math>\mathbb F_l</math>, וראשוני אטקין הוא ראשוני שאינו ראשוני אלקיס. אטקין הראה איך לשלב את המידע מראשוני אטקין עם המידע מראשוני אלקיס כדי לקבל אלגוריתם יעיל, שנודע כ'''אלגוריתם סחוף–אלקיס–אטקין''' (SEA). הבעיה הראשונה היא לקבוע אם ראשוני נתון הוא מסוג אלקיס או אטקין; לשם כך משתמשים בפולינומים מודולריים, שבאים מחקר [[תבנית מודולרית|התבניות המודולריות]] ומהפירוש של עקומים אליפטיים מעל המרוכבים כסריגים. אחרי שקובעים באיזה מקרה מדובר, במקום פולינומי חלוקה אפשר לעבוד עם פולינום ממעלה נמוכה יותר: <math>O(l)</math> במקום <math>O(l^2)</math>. למימוש יעיל משתמשים באלגוריתמים הסתברותיים למציאת שורשים, וזה הופך את האלגוריתם לאלגוריתם מסוג לאס וגאס במקום דטרמיניסטי. בהנחה ההיוריסטית שבערך חצי מהראשוניים עד חסם <math>O(\log q)</math> הם ראשוני אלקיס, מתקבל אלגוריתם יעיל יותר משל סחוף, עם זמן ריצה צפוי <math>O(\log^6 q)</math> באריתמטיקה נאיבית ו-<math>\tilde O(\log^4 q)</math> באריתמטיקה מהירה. אף על פי שידוע שההנחה ההיוריסטית הזו מתקיימת לרוב העקומים האליפטיים, לא ידוע שהיא מתקיימת בכל מקרה, אפילו בהנחת [[השערת רימן המוכללת]].
+
+== מימושים ==
+כמה אלגוריתמים מומשו ב-C++ על ידי מייק סקוט. המימושים חופשיים ומשתמשים בספריית MIRACL, שמופצת תחת רישיון AGPLv3: האלגוריתם של סחוף עבור <math>E(\mathbb F_p)</math> עם <math>p</math> ראשוני, ועבור <math>E(\mathbb F_{2^m})</math>.
+
+== ראו גם ==
+* [[ספירת נקודות על עקומים אליפטיים]]
+* [[קריפטוגרפיה של עקומים אליפטיים]]
+* [[אנדומורפיזם פרובניוס]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* R. Schoof, ''Elliptic curves over finite fields and the computation of square roots mod p'', Math. Comp. '''44''' (1985), pp. 483–494
+* R. Schoof, ''Counting points on elliptic curves over finite fields'', J. Théor. Nombres Bordeaux '''7''' (1995), pp. 219–254
+* G. Musiker, ''Schoof's Algorithm for Counting Points on E(F<sub>q</sub>)''
+* V. Müller, ''Die Berechnung der Punktanzahl von elliptischen Kurven über endlichen Primkörpern'', Master's thesis, Universität des Saarlandes, 1991
+* A. Enge, ''Elliptic Curves and their Applications to Cryptography: An Introduction'', Kluwer, 1999
+* L. C. Washington, ''Elliptic Curves: Number Theory and Cryptography'', Chapman & Hall/CRC, 2003
+* N. Koblitz, ''A Course in Number Theory and Cryptography'', Graduate Texts in Mathematics '''114''', Springer, 1987
+</div>
+
+[[קטגוריה:עקומים אליפטיים]]
+[[קטגוריה:שדות סופיים]]

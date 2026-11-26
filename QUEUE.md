@@ -148,7 +148,7 @@ Additive number theory:
 - [x] Mazur's torsion theorem (הפניה ל-Torsion conjecture: השערת הפיתול)
 - [x] Supersingular elliptic curve
 - [x] Counting points on elliptic curves
-- [ ] Schoof's algorithm
+- [x] Schoof's algorithm
 - [x] Modular elliptic curve
 - [x] Frey curve
 - [x] Sato–Tate conjecture
