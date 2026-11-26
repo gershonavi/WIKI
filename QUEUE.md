@@ -177,7 +177,7 @@ Additive number theory:
 - [x] Weierstrass elliptic function
 - [x] Fundamental pair of periods
 - [x] Modular lambda function
-- [ ] Petersson inner product
+- [x] Petersson inner product
 - [ ] Eigenform
 - [ ] Atkin–Lehner theory
 - [ ] Dedekind sum
