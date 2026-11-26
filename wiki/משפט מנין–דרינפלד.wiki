@@ -1,0 +1,43 @@
+ב[[מתמטיקה]], '''משפט מנין–דרינפלד''', שהוכיחו [[יורי מנין]] ב-1972{{הערה|שם=Manin|1=<span dir="ltr">Ju. I. Manin, Parabolic points and zeta functions of modular curves, Izvestiya Akademii Nauk SSSR, Ser. Mat. 36 (1972), pp. 19–66.</span>|כיווון=שמאל}} ו[[ולדימיר דרינפלד]] ב-1973,{{הערה|שם=Drinfeld|1=<span dir="ltr">V. G. Drinfeld, Two theorems on modular curves, Funkcional. Anal. i Priložen. 7 (1973), no. 2, pp. 83–84.</span>|כיווון=שמאל}} קובע שההפרש של שני [[חוד (סינגולריות)|חודים]] של [[עקום מודולרי]] הוא בעל סדר סופי ב[[יריעת יעקובי]].
+
+== ניסוח ==
+יהי <math>\Gamma</math> [[תת-חבורת קונגרואנציה]] של <math>\mathrm{SL}_2(\mathbb Z)</math>, <math>X_\Gamma</math> העקום המודולרי (הקומפקטי) המתאים ו-<math>J_\Gamma</math> יריעת יעקובי שלו – החבורה של [[מחלק (גאומטריה אלגברית)|מחלקים]] ממעלה 0 מודולו מחלקים ראשיים. אם <math>c_1, c_2</math> שני חודים של <math>X_\Gamma</math>, המחלק <math>(c_1) - (c_2)</math> ממעלה 0 מגדיר נקודה ב-<math>J_\Gamma</math>, והמשפט קובע שהנקודה הזו היא '''נקודת פיתול''': יש <math>n \ge 1</math> כך ש-<math>n\big((c_1) - (c_2)\big)</math> הוא מחלק של פונקציה רציונלית על <math>X_\Gamma</math>. באופן שקול: יש פונקציה מודולרית ביחס ל-<math>\Gamma</math> שכל האפסים והקטבים שלה נמצאים בחודים.
+
+תת-החבורה של <math>J_\Gamma</math> שנוצרת על ידי הפרשי החודים נקראת '''החבורה הקוספידלית''', ולפי המשפט היא סופית.
+
+== רעיון ההוכחה ==
+ההוכחה של דרינפלד משתמשת ב[[אופרטור הקה|אופרטורי הקה]]. יהי <math>p</math> ראשוני שאינו מחלק את הרמה. אופרטור הקה <math>T_p</math> פועל על <math>J_\Gamma</math>, ועל מחלקים שנתמכים בחודים הוא פועל ככפל ב-<math>p + 1</math>. לכן האנדומורפיזם <math>T_p - (p + 1)</math> מאפס את החבורה הקוספידלית. מצד שני, לפי [[איזומורפיזם אייכלר–שימורה]], הערכים העצמיים של <math>T_p</math> על <math>J_\Gamma</math> הם מקדמי הקה <math>a_p</math> של תבניות שפיץ ממשקל 2, ולפי חסם רמנוג'אן–פטרסון (שבמשקל 2 נובע מ[[השערות ויל|השערת רימן]] לעקומים מעל שדות סופיים) <math>|a_p| \le 2\sqrt p \lt p + 1</math>. לכן <math>T_p - (p + 1)</math> הפיך על המרחב של התבניות, כלומר הוא [[איזוגניה]] של <math>J_\Gamma</math>, ובפרט הגרעין שלו סופי. החבורה הקוספידלית נמצאת בגרעין, ולכן היא סופית.
+
+== דוגמאות ==
+עבור <math>N</math> ראשוני, ל-<math>X_0(N)</math> יש שני חודים, <math>0</math> ו-<math>\infty</math>. אנדרו אוג חישב שהסדר של <math>(0) - (\infty)</math> הוא
+:<math>n = \text{המונה של } \frac{N - 1}{12}.</math>
+הפונקציה שמממשת זאת היא [[פונקציית אטא של דדקינד|מנת אטא]]: עבור <math>r</math> זוגי עם <math>24 \mid r(N - 1)</math>, הפונקציה
+:<math>F_r(\tau) = \left(\frac{\eta(\tau)}{\eta(N\tau)}\right)^r</math>
+אינווריאנטית תחת <math>\Gamma_0(N)</math>. הסדר שלה ב-<math>\infty</math> הוא <math>\frac{r(1 - N)}{24}</math> (מפיתוח <math>\eta(\tau) = q^{1/24}\prod(1 - q^m)</math>), וכיוון שאין לה אפסים או קטבים ב-<math>\mathcal H</math>, המחלק שלה הוא <math>\frac{r(N - 1)}{24}\big((0) - (\infty)\big)</math>.
+
+* '''<math>N = 11</math>.''' התנאי <math>24 \mid 10r</math> נותן <math>r = 12</math>, והסדר ב-<math>\infty</math> הוא <math>\frac{12\cdot(-10)}{24} = -5</math>. לכן <math>5\big((0) - (\infty)\big)</math> הוא מחלק ראשי. כיוון ש-5 ראשוני ו-<math>X_0(11)</math> מגנוס 1 (כך ש-<math>(0) - (\infty)</math> עצמו אינו ראשי – אחרת הייתה פונקציה ממעלה 1 והעקום היה רציונלי), הסדר הוא בדיוק 5. מבחינה גאומטרית: <math>X_0(11)</math> הוא עקום אליפטי, ואם בוחרים את <math>\infty</math> כראשית, החוד <math>0</math> הוא נקודה רציונלית מסדר 5.
+* '''<math>N = 37</math>.''' התנאי <math>24 \mid 36r</math> נותן <math>r = 2</math>, והסדר ב-<math>\infty</math> הוא <math>\frac{2\cdot(-36)}{24} = -3</math>. לכן <math>(0) - (\infty)</math> מסדר 3 ב-<math>J_0(37)</math>, בהתאם לכך שהמונה של <math>\frac{36}{12}</math> הוא 3.
+בדקנו בחישוב מספרי (בדיוק של 29 ספרות) ש-<math>F_{12}</math> עבור <math>N = 11</math> ו-<math>F_2</math> עבור <math>N = 37</math> אינווריאנטיות תחת איברים של <math>\Gamma_0(N)</math>, כמו <math>\left(\begin{smallmatrix} 2 & 1 \\ 11 & 6\end{smallmatrix}\right)</math> ו-<math>\left(\begin{smallmatrix} 3 & 1 \\ 74 & 25\end{smallmatrix}\right)</math>.
+
+[[ברי מזור]] הוכיח שעבור <math>N</math> ראשוני, החבורה הקוספידלית היא '''כל''' חבורת הפיתול הרציונלית של <math>J_0(N)</math> – תוצאה שקשורה ל[[אידיאל אייזנשטיין]].
+
+== הכללות ==
+המשפט נכון לכל תת-חבורת קונגרואנציה, אבל '''לא''' לתת-חבורות בעלות אינדקס סופי של <math>\mathrm{SL}_2(\mathbb Z)</math> שאינן תת-חבורות קונגרואנציה: שם אין אופרטורי הקה מתאימים, ויש דוגמאות שבהן הפרשי חודים הם בעלי סדר אינסופי. גם עבור תבניות מודולריות של הילברט ועבור [[עקום שימורה|עקומי שימורה]] יש גרסאות של המשפט.
+
+== ראו גם ==
+* [[אידיאל אייזנשטיין]]
+* [[עקום מודולרי]]
+* [[סמל מודולרי]]
+
+== לקריאה נוספת ==
+<div dir="ltr">
+* V. G. Drinfeld, ''Two theorems on modular curves'', Functional Analysis and Its Applications '''7''' (1973), pp. 155–156
+* Ju. I. Manin, ''Parabolic points and zeta functions of modular curves'', Mathematics of the USSR-Izvestiya '''6''' (1972), pp. 19–64
+* A. P. Ogg, ''Rational points on certain elliptic modular curves'', Proc. Sympos. Pure Math. '''24''', AMS, 1973, pp. 221–231
+</div>
+
+== הערות שוליים ==
+{{הערות שוליים}}
+
+[[קטגוריה:תבניות מודולריות]]
+[[קטגוריה:משפטים בתורת המספרים]]
