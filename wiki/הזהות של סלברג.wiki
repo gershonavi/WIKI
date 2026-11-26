@@ -1,4 +1,4 @@
-ב[[תורת המספרים]], '''הזהות של סלברג''' (Selberg's identity) היא זהות מקורבת שמערבת [[לוגריתם|לוגריתמים]] של [[מספר ראשוני|ראשוניים]], שמצא [[אטלה סלברג]]. הזהות היא נקודת המוצא המכרעת בהוכחה ה[[הוכחה אלמנטרית|אלמנטרית]] הראשונה של [[משפט המספרים הראשוניים]], שהגיעו אליה במשותף{{הערה|1=<span dir="ltr">D. Goldfeld, The elementary proof of the prime number theorem: an historical perspective, in: D. Chudnovsky, G. Chudnovsky, M. Nathanson (eds.), Number Theory: New York Seminar 2003, Springer, 2004.</span>|כיווון=שמאל}} סלברג ו[[פול ארדש]].{{הערה|1=<span dir="ltr">A. Selberg, An elementary proof of the prime-number theorem, Annals of Mathematics 50 (1949), pp. 305–313; C. Pisot, Démonstration élémentaire du théorème des nombres premiers, Séminaire Bourbaki 1 (1949), exp. 20.</span>|כיווון=שמאל}}
+ב[[תורת המספרים]], '''הזהות של סלברג''' (Selberg's identity) היא זהות מקורבת שמערבת [[לוגריתם|לוגריתמים]] של [[מספר ראשוני|ראשוניים]], שמצא [[אטלה סלברג]]. הזהות היא נקודת המוצא המכרעת בהוכחה האלמנטרית הראשונה של [[משפט המספרים הראשוניים]], שהגיעו אליה במשותף{{הערה|1=<span dir="ltr">D. Goldfeld, The elementary proof of the prime number theorem: an historical perspective, in: D. Chudnovsky, G. Chudnovsky, M. Nathanson (eds.), Number Theory: New York Seminar 2003, Springer, 2004.</span>|כיווון=שמאל}} סלברג ו[[פול ארדש]].{{הערה|1=<span dir="ltr">A. Selberg, An elementary proof of the prime-number theorem, Annals of Mathematics 50 (1949), pp. 305–313; C. Pisot, Démonstration élémentaire du théorème des nombres premiers, Séminaire Bourbaki 1 (1949), exp. 20.</span>|כיווון=שמאל}}
 
 == ניסוח ==
 יש כמה צורות שונות אך שקולות של הזהות של סלברג. אחת מהן:
@@ -24,9 +24,9 @@
 == הסבר ==
 הביטוי המוזר בצד שמאל של הזהות הוא (עד כדי איברים קטנים יותר) הסכום <math>\sum_{n\lt x}c_n</math>, כאשר המספרים
 :<math>c_n = \Lambda(n)\log n + \sum_{d\mid n}\Lambda(d)\Lambda(n/d)</math>
-(<math>\Lambda</math> היא [[פונקציית פון מנגולדט]]) הם המקדמים של [[טור דיריכלה]]
+(<math>\Lambda</math> היא פונקציית פון מנגולדט) הם המקדמים של [[טור דיריכלה]]
 :<math>\frac{\zeta''(s)}{\zeta(s)} = \left(\frac{\zeta'(s)}{\zeta(s)}\right)' + \left(\frac{\zeta'(s)}{\zeta(s)}\right)^2 = \sum\frac{c_n}{n^s}.</math>
-ל[[פונקציה (מתמטיקה)|פונקציה]] הזו יש [[קוטב (אנליזה מרוכבת)|קוטב]] מסדר 2 ב-<math>s = 1</math> עם מקדם 2 (כי <math>\zeta(s) \approx \frac1{s-1}</math> ו-<math>\zeta''(s) \approx \frac2{(s-1)^3}</math>), וזה נותן את האיבר הדומיננטי <math>2x\log x</math> בפיתוח האסימפטוטי של <math>\sum_{n\lt x}c_n</math>. (ההבדל בין <math>\sum c_n</math> לצד שמאל של הזהות מגיע מחזקות של ראשוניים, ותרומתו <math>O(x)</math>.)
+ל[[פונקציה|פונקציה]] הזו יש [[קוטב (אנליזה מרוכבת)|קוטב]] מסדר 2 ב-<math>s = 1</math> עם מקדם 2 (כי <math>\zeta(s) \approx \frac1{s-1}</math> ו-<math>\zeta''(s) \approx \frac2{(s-1)^3}</math>), וזה נותן את האיבר הדומיננטי <math>2x\log x</math> בפיתוח האסימפטוטי של <math>\sum_{n\lt x}c_n</math>. (ההבדל בין <math>\sum c_n</math> לצד שמאל של הזהות מגיע מחזקות של ראשוניים, ותרומתו <math>O(x)</math>.)
 
 == גרסה נוספת של הזהות ==
 לפעמים "הזהות של סלברג" מתייחסת גם לזהות הבאה על סכומי מחלקים, שמערבת את פונקציית פון מנגולדט ואת [[פונקציית מביוס]], עבור <math>n \ge 1</math>:{{הערה|1=<span dir="ltr">T. Apostol, Introduction to Analytic Number Theory, Springer, 1976, p. 46 (Section 2.19).</span>|כיווון=שמאל}}
@@ -37,7 +37,7 @@
 
 == ראו גם ==
 * [[משפט המספרים הראשוניים]]
-* [[פונקציית פון מנגולדט]]
+* פונקציית פון מנגולדט
 * [[אטלה סלברג]]
 
 == הערות שוליים ==

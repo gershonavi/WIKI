@@ -2,17 +2,17 @@
 ב[[מתמטיקה]], '''השערת המודולריות של סר''', שהציג [[ז'אן-פייר סר]] (1975, 1987), קובעת ש[[הצגת גלואה]] דו-ממדית, אי-זוגית ו[[הצגה אי-פריקה|אי-פריקה]] מעל [[שדה סופי]] באה מ[[תבנית מודולרית]]. גרסה חזקה יותר של ההשערה מציינת גם את המשקל והרמה של התבנית המודולרית. את ההשערה במקרה של רמה 1 הוכיח צ'נדרשקהר קארה ב-2005,{{הערה|שם=Kh|1=<span dir="ltr">C. Khare, Serre's modularity conjecture: the level one case, Duke Mathematical Journal 134 (2006), no. 3, pp. 557–589.</span>|כיווון=שמאל}} והוכחה של ההשערה המלאה השלימו קארה וז'אן-פייר וינטנברגר יחד ב-2008.{{הערה|שם=KW|1=<span dir="ltr">C. Khare, J.-P. Wintenberger, Serre's modularity conjecture (I), Inventiones Mathematicae 178 (2009), no. 3, pp. 485–504; Serre's modularity conjecture (II), Inventiones Mathematicae 178 (2009), no. 3, pp. 505–586.</span>|כיווון=שמאל}}
 
 == ניסוח ==
-ההשערה עוסקת ב[[חבורת גלואה מוחלטת|חבורת גלואה המוחלטת]] <math>G_{\mathbb Q}</math> של שדה [[מספר רציונלי|המספרים הרציונליים]] <math>\mathbb Q</math>.
+ההשערה עוסקת בחבורת גלואה המוחלטת <math>G_{\mathbb Q}</math> של שדה [[מספר רציונלי|המספרים הרציונליים]] <math>\mathbb Q</math>.
 
-תהי <math>\rho</math> [[הצגה (מתמטיקה)|הצגה]] דו-ממדית [[רציפות|רציפה]] ו[[הצגה אי-פריקה לחלוטין|אי-פריקה לחלוטין]] של <math>G_{\mathbb Q}</math> מעל שדה סופי <math>F = \mathbb F_{\ell^r}</math>:
+תהי <math>\rho</math> [[הצגה (מתמטיקה)|הצגה]] דו-ממדית [[רציפות|רציפה]] ואי-פריקה לחלוטין של <math>G_{\mathbb Q}</math> מעל שדה סופי <math>F = \mathbb F_{\ell^r}</math>:
 :<math>\rho: G_{\mathbb Q} \to \mathrm{GL}_2(F).</math>
 בנוסף נניח ש-<math>\rho</math> '''אי-זוגית''', כלומר שהדטרמיננטה של תמונת [[צמוד מרוכב|ההצמדה המרוכבת]] היא <math>-1</math>.
 
 לכל [[תבנית עצמית|תבנית עצמית]] מודולרית מנורמלת
 :<math>f = q + a_2q^2 + a_3q^3 + \cdots</math>
-מ[[רמה (תבנית מודולרית)|רמה]] <math>N = N(\rho)</math>, [[משקל (תבנית מודולרית)|משקל]] <math>k = k(\rho)</math>, ועם [[קרקטר נבנטיפוס]] כלשהו
+מרמה <math>N = N(\rho)</math>, משקל <math>k = k(\rho)</math>, ועם קרקטר נבנטיפוס כלשהו
 :<math>\chi: \mathbb Z/N\mathbb Z \to F^*,</math>
-משפט של [[גורו שימורה|שימורה]], [[פייר דלין|דלין]] וסר–דלין משייך ל-<math>f</math> הצגה
+משפט של [[גורו שימורה|שימורה]], דלין וסר–דלין משייך ל-<math>f</math> הצגה
 :<math>\rho_f: G_{\mathbb Q} \to \mathrm{GL}_2(\mathcal O),</math>
 כאשר <math>\mathcal O</math> [[חוג השלמים]] של [[הרחבת שדות|הרחבה סופית]] של <math>\mathbb Q_\ell</math>. ההצגה הזו נקבעת על ידי התנאי שלכל [[מספר ראשוני]] <math>p</math> [[מספרים זרים|זר]] ל-<math>N\ell</math>
 :<math>\operatorname{Trace}(\rho_f(\operatorname{Frob}_p)) = a_p, \qquad \det(\rho_f(\operatorname{Frob}_p)) = p^{k-1}\chi(p).</math>
@@ -25,7 +25,7 @@
 
 === דוגמאות ===
 * '''עקום אליפטי.''' אם <math>E</math> עקום אליפטי מעל <math>\mathbb Q</math> ו-<math>\ell</math> ראשוני, הפעולה של <math>G_{\mathbb Q}</math> על נקודות ה-<math>\ell</math>-פיתול <math>E[\ell] \cong \mathbb F_\ell^2</math> נותנת הצגה <math>\rho_{E,\ell}</math>. היא תמיד אי-זוגית: הדטרמיננטה שלה היא הקרקטר הציקלוטומי מודולו <math>\ell</math>, וההצמדה המרוכבת פועלת על שורשי היחידה כ-<math>\zeta \mapsto \zeta^{-1}</math>. כש-<math>\rho_{E,\ell}</math> אי-פריקה, השערת סר צופה שהיא באה מתבנית ממשקל 2, ומשפט המודולריות אכן נותן תבנית כזו.
-* '''תנאי האי-פריקות הכרחי.''' לעקום 11a, <math>y^2 + y = x^3 - x^2 - 10x - 20</math>, יש נקודה רציונלית מסדר 5, ולכן <math>\rho_{E,5}</math> פריקה: היא "סכום" של הקרקטר הטריוויאלי והקרקטר הציקלוטומי, ובהתאם <math>a_p \equiv 1 + p \pmod 5</math> לכל <math>p \ne 11</math> (למשל <math>a_2 = -2 \equiv 3</math>, <math>a_7 = -2 \equiv 8 \pmod 5</math>; בדקנו זאת לכל <math>p \lt 25</math>). הצגות פריקות כאלה מתאימות ל[[טור אייזנשטיין|טורי אייזנשטיין]], ולא לתבניות שפיץ. דוגמה דומה: עבור [[פונקציית טאו של רמנוג'אן|<math>\Delta</math>]] ו-<math>\ell = 691</math>, ההצגה <math>\overline{\rho_\Delta}</math> פריקה, בהתאם לקונגרואנציה של רמנוג'אן <math>\tau(p) \equiv 1 + p^{11} \pmod{691}</math> (למשל <math>\tau(2) = -24</math> ו-<math>2049 - (-24) = 2073 = 3\cdot691</math>).
+* '''תנאי האי-פריקות הכרחי.''' לעקום 11a, <math>y^2 + y = x^3 - x^2 - 10x - 20</math>, יש נקודה רציונלית מסדר 5, ולכן <math>\rho_{E,5}</math> פריקה: היא "סכום" של הקרקטר הטריוויאלי והקרקטר הציקלוטומי, ובהתאם <math>a_p \equiv 1 + p \pmod 5</math> לכל <math>p \ne 11</math> (למשל <math>a_2 = -2 \equiv 3</math>, <math>a_7 = -2 \equiv 8 \pmod 5</math>; בדקנו זאת לכל <math>p \lt 25</math>). הצגות פריקות כאלה מתאימות ל[[טור אייזנשטיין|טורי אייזנשטיין]], ולא לתבניות שפיץ. דוגמה דומה: עבור <math>\Delta</math> ו-<math>\ell = 691</math>, ההצגה <math>\overline{\rho_\Delta}</math> פריקה, בהתאם לקונגרואנציה של רמנוג'אן <math>\tau(p) \equiv 1 + p^{11} \pmod{691}</math> (למשל <math>\tau(2) = -24</math> ו-<math>2049 - (-24) = 2073 = 3\cdot691</math>).
 
 == רמה ומשקל אופטימליים ==
 הגרסה החזקה של השערת סר מתארת את הרמה והמשקל של התבנית המודולרית.

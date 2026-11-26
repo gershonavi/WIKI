@@ -1,7 +1,7 @@
 ב[[מתמטיקה]], '''חסם מסטר''' הוא חסם על '''הדרגה האנליטית''' של [[עקום אליפטי]] במונחי [[מוליך של עקום אליפטי|המוליך]] שלו, שהציג ז'אן-פרנסואה מסטר (1986).{{הערה|1=J.-F. Mestre, ''Formules explicites et minorations de conducteurs de variétés algébriques'', Compositio Mathematica '''58''' (1986), pp. 209–232|כיווון=שמאל}}
 
 == התוצאה ==
-יהי <math>E</math> עקום אליפטי מעל <math>\mathbb Q</math> עם מוליך <math>N</math>, ותהי <math>r_{\text{an}}</math> הדרגה האנליטית שלו – סדר האפס של [[פונקציית L של עקום אליפטי|פונקציית ה-L]] <math>L(E, s)</math> בנקודה <math>s = 1</math>. מסטר הוכיח, בהנחת [[השערת רימן המוכללת]] עבור <math>L(E, s)</math>, ש-
+יהי <math>E</math> עקום אליפטי מעל <math>\mathbb Q</math> עם מוליך <math>N</math>, ותהי <math>r_{\text{an}}</math> הדרגה האנליטית שלו – סדר האפס של פונקציית ה-L <math>L(E, s)</math> בנקודה <math>s = 1</math>. מסטר הוכיח, בהנחת [[השערת רימן המוכללת]] עבור <math>L(E, s)</math>, ש-
 :<math>r_{\text{an}} = O\!\left(\frac{\log N}{\log\log N}\right).</math>
 ללא ההנחה, השיטה נותנת חסם חלש יותר, <math>r_{\text{an}} = O(\log N)</math>.
 

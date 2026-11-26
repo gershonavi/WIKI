@@ -1,7 +1,7 @@
-ב[[מתמטיקה]], '''סכומי דדקינד''' הם סכומים סופיים מסוימים של מכפלות של [[פונקציית שן מסור]]. [[ריכרד דדקינד]] הציג אותם בשנות ה-80 של המאה ה-19, כדי לבטא את [[משוואה פונקציונלית|המשוואה הפונקציונלית]] של [[פונקציית אטא של דדקינד]], בהערות שכתב לכתבים המכונסים של [[ברנהרד רימן]].{{הערה|שם=Ded|1=<span dir="ltr">R. Dedekind, Erläuterungen zu den Fragmenten XXVIII, in: Collected Works of Bernhard Riemann, Dover, 1953, pp. 466–478.</span>|כיווון=שמאל}} מאז נחקרו רבות ב[[תורת המספרים]], אבל הם מופיעים גם בתוצאות ב[[טופולוגיה]],{{הערה|1=<span dir="ltr">F. Hirzebruch, D. Zagier, The Atiyah–Singer Theorem and Elementary Number Theory, Publish or Perish, 1974.</span>|כיווון=שמאל}} ב[[קומבינטוריקה גאומטרית]],{{הערה|1=<span dir="ltr">J. E. Pommersheim, Toric varieties, lattice points and Dedekind sums, Math. Ann. 295 (1993), pp. 1–24.</span>|כיווון=שמאל}} ב[[גאומטריה אלגברית]]{{הערה|1=<span dir="ltr">S. Garoufalidis, J. E. Pommersheim, Values of zeta functions at negative integers, Dedekind sums and toric geometry, J. Amer. Math. Soc. 14 (2001), pp. 1–23.</span>|כיווון=שמאל}} וב[[סיבוכיות חישובית|סיבוכיות חישובית]] (למשל בניתוח של מחוללי מספרים אקראיים לינאריים קונגרואנטיים).{{הערה|1=<span dir="ltr">D. E. Knuth, The Art of Computer Programming, Vol. 2, Addison-Wesley, 1981.</span>|כיווון=שמאל}} סכומי דדקינד הוכללו בכיוונים רבים ומקיימים מספר רב של משוואות פונקציונליות; כאן מובא רק חלק קטן מהן.
+ב[[מתמטיקה]], '''סכומי דדקינד''' הם סכומים סופיים מסוימים של מכפלות של פונקציית שן מסור. [[ריכרד דדקינד]] הציג אותם בשנות ה-80 של המאה ה-19, כדי לבטא את [[משוואה פונקציונלית|המשוואה הפונקציונלית]] של [[פונקציית אטא של דדקינד]], בהערות שכתב לכתבים המכונסים של [[ברנהרד רימן]].{{הערה|שם=Ded|1=<span dir="ltr">R. Dedekind, Erläuterungen zu den Fragmenten XXVIII, in: Collected Works of Bernhard Riemann, Dover, 1953, pp. 466–478.</span>|כיווון=שמאל}} מאז נחקרו רבות ב[[תורת המספרים]], אבל הם מופיעים גם בתוצאות ב[[טופולוגיה]],{{הערה|1=<span dir="ltr">F. Hirzebruch, D. Zagier, The Atiyah–Singer Theorem and Elementary Number Theory, Publish or Perish, 1974.</span>|כיווון=שמאל}} בקומבינטוריקה גאומטרית,{{הערה|1=<span dir="ltr">J. E. Pommersheim, Toric varieties, lattice points and Dedekind sums, Math. Ann. 295 (1993), pp. 1–24.</span>|כיווון=שמאל}} ב[[גאומטריה אלגברית]]{{הערה|1=<span dir="ltr">S. Garoufalidis, J. E. Pommersheim, Values of zeta functions at negative integers, Dedekind sums and toric geometry, J. Amer. Math. Soc. 14 (2001), pp. 1–23.</span>|כיווון=שמאל}} וב[[סיבוכיות חישובית|סיבוכיות חישובית]] (למשל בניתוח של מחוללי מספרים אקראיים לינאריים קונגרואנטיים).{{הערה|1=<span dir="ltr">D. E. Knuth, The Art of Computer Programming, Vol. 2, Addison-Wesley, 1981.</span>|כיווון=שמאל}} סכומי דדקינד הוכללו בכיוונים רבים ומקיימים מספר רב של משוואות פונקציונליות; כאן מובא רק חלק קטן מהן.
 
 == הגדרה ==
-מגדירים את [[פונקציית שן מסור|פונקציית שן המסור]] <math>(\!(\,)\!) : \mathbb R \to \mathbb R</math> על ידי
+מגדירים את פונקציית שן המסור <math>(\!(\,)\!) : \mathbb R \to \mathbb R</math> על ידי
 :<math>(\!(x)\!) = \begin{cases} x - \lfloor x\rfloor - 1/2, & x \in \mathbb R\setminus\mathbb Z; \\ 0, & x \in \mathbb Z.\end{cases}</math>
 אז '''סכום דדקינד''' <math>D: \mathbb Z^2 \times \mathbb Z_{\gt 0} \to \mathbb Q</math> מוגדר על ידי
 :<math>D(a, b; c) = \sum_{n=1}^{c-1}\left(\!\!\left(\frac{an}c\right)\!\!\right)\left(\!\!\left(\frac{bn}c\right)\!\!\right).</math>
@@ -36,7 +36,7 @@
 
 באופן שקול, אם <math>b</math> ו-<math>c</math> זרים, אז
 :<math>s(b, c) = \frac1{4c}\sum_{n=1}^{c-1}\cot\left(\frac{\pi n}c\right)\cot\left(\frac{\pi nb}c\right).</math>
-הניסוח הזה משקף את העובדה שפונקציית הקוטנגנס הזו היא [[התמרת פורייה בדידה|התמרת פורייה הבדידה]] של פונקציית שן המסור.{{הערה|שם=BR}}
+הניסוח הזה משקף את העובדה שפונקציית הקוטנגנס הזו היא התמרת פורייה הבדידה של פונקציית שן המסור.{{הערה|שם=BR}}
 
 == חוק ההדדיות ==
 דדקינד הוכיח{{הערה|שם=Ded}} שאם <math>b</math> ו-<math>c</math> שלמים חיוביים זרים, אז
@@ -64,7 +64,7 @@
 == ההכללה של רדמכר לחוק ההדדיות ==
 הנס רדמכר מצא את ההכללה הבאה לחוק ההדדיות של סכומי דדקינד:{{הערה|1=<span dir="ltr">H. Rademacher, Generalization of the reciprocity formula for Dedekind sums, Duke Mathematical Journal 21 (1954), pp. 391–397.</span>|כיווון=שמאל}} אם <math>a, b, c</math> שלמים חיוביים זרים בזוגות, אז
 :<math>D(a, b; c) + D(b, c; a) + D(c, a; b) = \frac1{12}\,\frac{a^2 + b^2 + c^2}{abc} - \frac14.</math>
-(עבור <math>a = 1</math> זה בדיוק חוק ההדדיות של דדקינד, כי <math>D(b, c; 1) = 0</math>.) מכאן, הסכום המשולש שלמעלה מתאפס [[אם ורק אם]] <math>(a, b, c)</math> הוא '''שלשת מרקוב''', כלומר פתרון של [[משוואת מרקוב]]
+(עבור <math>a = 1</math> זה בדיוק חוק ההדדיות של דדקינד, כי <math>D(b, c; 1) = 0</math>.) מכאן, הסכום המשולש שלמעלה מתאפס [[אם ורק אם]] <math>(a, b, c)</math> הוא '''שלשת מרקוב''', כלומר פתרון של משוואת מרקוב
 :<math>a^2 + b^2 + c^2 = 3abc.</math>
 השלשות הראשונות הן <math>(1, 1, 1), (1, 1, 2), (1, 2, 5), (1, 5, 13), (2, 5, 29), (1, 13, 34), \dots</math>; למשל, עבור <math>(1, 2, 5)</math> מתקבל <math>D(1, 2; 5) + D(2, 5; 1) + D(5, 1; 2) = s(2, 5) + 0 + 0 = 0</math> (סכום על קבוצה ריקה כש-<math>c = 1</math>, ו-<math>(\!(5/2)\!) = (\!(1/2)\!) = 0</math> כש-<math>c = 2</math>).
 

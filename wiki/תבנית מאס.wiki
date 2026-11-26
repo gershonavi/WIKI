@@ -7,7 +7,7 @@
 :<math>\begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot z := \frac{az + b}{cz + d}.</math>
 אפשר להרחיב אותה לפעולה על <math>\mathcal H \cup \{\infty\} \cup \mathbb R</math> על ידי
 :<math>\begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot z := \begin{cases}\frac{az + b}{cz + d} & cz + d \ne 0, \\ \infty & cz + d = 0,\end{cases} \qquad \begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot\infty := \lim_{\operatorname{Im}(z)\to\infty}\begin{pmatrix} a & b \\ c & d\end{pmatrix}\cdot z = \begin{cases} a/c & c \ne 0, \\ \infty & c = 0.\end{cases}</math>
-[[מידת ראדון|מידת ראדון]]
+מידת ראדון
 :<math>d\mu(z) := \frac{dx\,dy}{y^2}</math>
 על <math>\mathcal H</math> אינווריאנטית תחת הפעולה של <math>G</math>.
 
@@ -109,7 +109,7 @@
 :<math>\Delta(\operatorname{Im}(z)^s) = \Delta(y^s) = -y^2\left(\frac{\partial^2y^s}{\partial x^2} + \frac{\partial^2y^s}{\partial y^2}\right) = s(1 - s)y^s,</math>
 וכיוון שהלפלסיאן מתחלף עם הפעולה של <math>\Gamma(1)</math>, <math>\Delta(\operatorname{Im}(\gamma z)^s) = s(1 - s)\operatorname{Im}(\gamma z)^s</math> לכל <math>\gamma</math>, ולכן
 :<math>\Delta\tilde E(z, s) = s(1 - s)\tilde E(z, s).</math>
-כך המשוואה הדיפרנציאלית מתקיימת עבור <math>E</math> בתחום ההתכנסות (בערך האנגלי מוזכר התחום <math>\operatorname{Re}(s) \gt 3</math>, שבו קל להצדיק את הגזירה איבר-איבר). כדי לקבל את הטענה לכל <math>s \in \mathbb C</math>, מתבוננים בפונקציה <math>\Delta E(z, s) - s(1 - s)E(z, s)</math>: חישוב מפורש של פיתוח פורייה שלה מראה שהיא [[פונקציה מרומורפית|מרומורפית]] ב-<math>s</math>, וכיוון שהיא מתאפסת בחצי מישור, לפי [[משפט היחידות לפונקציות אנליטיות|משפט היחידות]] היא פונקציית האפס.
+כך המשוואה הדיפרנציאלית מתקיימת עבור <math>E</math> בתחום ההתכנסות (בערך האנגלי מוזכר התחום <math>\operatorname{Re}(s) \gt 3</math>, שבו קל להצדיק את הגזירה איבר-איבר). כדי לקבל את הטענה לכל <math>s \in \mathbb C</math>, מתבוננים בפונקציה <math>\Delta E(z, s) - s(1 - s)E(z, s)</math>: חישוב מפורש של פיתוח פורייה שלה מראה שהיא [[פונקציה מרומורפית|מרומורפית]] ב-<math>s</math>, וכיוון שהיא מתאפסת בחצי מישור, לפי משפט היחידות היא פונקציית האפס.
 
 === פיתוח פורייה של E ===
 לטור אייזנשטיין הלא-הולומורפי יש פיתוח פורייה
@@ -158,18 +158,18 @@ a_n(y, s) &= 2|n|^{s - \frac12}\sigma_{1-2s}(|n|)\sqrt y\,K_{s - \frac12}(2\pi|n
 :<math>\langle f, g\rangle = \int_{\Gamma\backslash\mathcal H}f(z)\overline{g(z)}\,d\mu(z).</math>
 את האופרטור <math>\Delta_k</math> אפשר להגדיר על תת-מרחב <math>B \subset L^2(\Gamma\backslash\mathcal H, k) \cap C^\infty(\Gamma\backslash\mathcal H, k)</math> שצפוף ב-<math>L^2(\Gamma\backslash\mathcal H, k)</math>. שם <math>\Delta_k</math> הוא [[אופרטור סימטרי]] חצי-מוגדר חיובי, ואפשר להראות שיש לו הרחבה צמודה לעצמה יחידה ל-<math>L^2(\Gamma\backslash\mathcal H, k)</math>.
 
-נסמן ב-<math>C(\Gamma\backslash\mathcal H, k)</math> את מרחב כל תבניות השפיץ ב-<math>L^2(\Gamma\backslash\mathcal H, k) \cap C^\infty(\Gamma\backslash\mathcal H, k)</math>. אז <math>\Delta_k</math> פועל על <math>C(\Gamma\backslash\mathcal H, k)</math> ויש לו שם [[ספקטרום בדיד]]. לספקטרום ששייך למשלים האורתוגונלי יש חלק רציף, שאפשר לתאר בעזרת טורי אייזנשטיין לא-הולומורפיים (מתוקנים), ההמשכות המרומורפיות שלהם והשאריות שלהם (ראו באמפ או איוונייץ).
+נסמן ב-<math>C(\Gamma\backslash\mathcal H, k)</math> את מרחב כל תבניות השפיץ ב-<math>L^2(\Gamma\backslash\mathcal H, k) \cap C^\infty(\Gamma\backslash\mathcal H, k)</math>. אז <math>\Delta_k</math> פועל על <math>C(\Gamma\backslash\mathcal H, k)</math> ויש לו שם ספקטרום בדיד. לספקטרום ששייך למשלים האורתוגונלי יש חלק רציף, שאפשר לתאר בעזרת טורי אייזנשטיין לא-הולומורפיים (מתוקנים), ההמשכות המרומורפיות שלהם והשאריות שלהם (ראו באמפ או איוונייץ).
 
 אם <math>\Gamma</math> תת-חבורה בדידה (חסרת פיתול) של <math>\mathrm{SL}_2(\mathbb R)</math> כך שהמנה <math>\Gamma\backslash\mathcal H</math> קומפקטית, הבעיה הספקטרלית פשוטה יותר, כי לתת-חבורה בדידה קו-קומפקטית אין חודים. במקרה הזה כל המרחב <math>L^2(\Gamma\backslash\mathcal H, k)</math> הוא סכום של מרחבים עצמיים.
 
 === שיכון במרחב <math>L^2(\Gamma\backslash G)</math> ===
-<math>G = \mathrm{SL}_2(\mathbb R)</math> היא [[חבורה קומפקטית מקומית]] ו[[חבורה אונימודולרית|אונימודולרית]] עם הטופולוגיה של <math>\mathbb R^4</math>. תהי <math>\Gamma</math> תת-חבורת קונגרואנציה. כיוון ש-<math>\Gamma</math> בדידה ב-<math>G</math>, היא גם סגורה ב-<math>G</math>. החבורה <math>G</math> אונימודולרית, וכיוון שמידת המנייה היא [[מידת האר]] על החבורה הבדידה <math>\Gamma</math>, גם <math>\Gamma</math> אונימודולרית. לפי נוסחת האינטגרל של המנה, יש על המרחב הקומפקטי המקומי <math>\Gamma\backslash G</math> מידת ראדון <math>dx</math> שאינווריאנטית מימין תחת <math>G</math>. יהי <math>L^2(\Gamma\backslash G)</math> מרחב <math>L^2</math> המתאים. המרחב הזה מתפרק לסכום ישר של מרחבי הילברט:
+<math>G = \mathrm{SL}_2(\mathbb R)</math> היא [[חבורה קומפקטית מקומית]] ואונימודולרית עם הטופולוגיה של <math>\mathbb R^4</math>. תהי <math>\Gamma</math> תת-חבורת קונגרואנציה. כיוון ש-<math>\Gamma</math> בדידה ב-<math>G</math>, היא גם סגורה ב-<math>G</math>. החבורה <math>G</math> אונימודולרית, וכיוון שמידת המנייה היא [[מידת האר]] על החבורה הבדידה <math>\Gamma</math>, גם <math>\Gamma</math> אונימודולרית. לפי נוסחת האינטגרל של המנה, יש על המרחב הקומפקטי המקומי <math>\Gamma\backslash G</math> מידת ראדון <math>dx</math> שאינווריאנטית מימין תחת <math>G</math>. יהי <math>L^2(\Gamma\backslash G)</math> מרחב <math>L^2</math> המתאים. המרחב הזה מתפרק לסכום ישר של מרחבי הילברט:
 :<math>L^2(\Gamma\backslash G) = \bigoplus_{k\in\mathbb Z}L^2(\Gamma\backslash G, k),</math>
 כאשר
 :<math>L^2(\Gamma\backslash G, k) := \left\{\phi \in L^2(\Gamma\backslash G) \;\middle|\; \phi(xk_\theta) = e^{ik\theta}\phi(x)\ \forall x \in \Gamma\backslash G,\ \forall\theta \in \mathbb R\right\}, \qquad k_\theta = \begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix} \in \mathrm{SO}(2).</math>
 את מרחב הילברט <math>L^2(\Gamma\backslash\mathcal H, k)</math> אפשר לשכן באופן איזומטרי ב-<math>L^2(\Gamma\backslash G, k)</math>, על ידי ההעתקה <math>\psi_k(f)(g) := f_{\|k}g(i)</math>. לכן אפשר לחשוב על כל תבניות השפיץ של מאס ביחס לתת-חבורת הקונגרואנציה <math>\Gamma</math> כעל איברים של <math>L^2(\Gamma\backslash G)</math>.
 
-<math>L^2(\Gamma\backslash G)</math> הוא מרחב הילברט שעליו פועלת החבורה <math>G</math> ב[[הצגה רגולרית|הצגה הרגולרית הימנית]]:
+<math>L^2(\Gamma\backslash G)</math> הוא מרחב הילברט שעליו פועלת החבורה <math>G</math> בהצגה הרגולרית הימנית:
 :<math>R_g\phi := \phi(xg), \qquad x \in \Gamma\backslash G,\ \phi \in L^2(\Gamma\backslash G).</math>
 קל להראות ש-<math>R</math> היא הצגה אוניטרית של <math>G</math> על <math>L^2(\Gamma\backslash G)</math>. מעוניינים בפירוק שלה לתת-הצגות אי-פריקות. זה אפשרי רק אם <math>\Gamma</math> קו-קומפקטית; אחרת יש גם חלק של אינטגרל הילברט רציף. העניין הוא שהפתרון של הבעיה הזו פותר גם את הבעיה הספקטרלית של תבניות מאס (ראו באמפ, פרק 2.3).
 
@@ -193,16 +193,16 @@ a_n(y, s) &= 2|n|^{s - \frac12}\sigma_{1-2s}(|n|)\sqrt y\,K_{s - \frac12}(2\pi|n
 === החבורה <math>\mathrm{GL}_2(\mathbb A)</math> ===
 יהי <math>R</math> חוג קומוטטיבי עם יחידה, ותהי <math>G_R := \mathrm{GL}_2(R)</math> חבורת המטריצות <math>2\times2</math> עם מקדמים ב-<math>R</math> ודטרמיננטה הפיכה. יהי <math>\mathbb A = \mathbb A_{\mathbb Q}</math> [[חוג האדלים]] הרציונליים, <math>\mathbb A_{\text{fin}}</math> חוג האדלים הסופיים, ולכל ראשוני <math>p</math> יהי <math>\mathbb Q_p</math> שדה [[מספר p-אדי|המספרים ה-<math>p</math>-אדיים]] ו-<math>\mathbb Z_p</math> חוג השלמים ה-<math>p</math>-אדיים. נסמן <math>G_p := G_{\mathbb Q_p}</math>. גם <math>G_p</math> וגם <math>G_{\mathbb R}</math> הן חבורות קומפקטיות מקומית ואונימודולריות, עם טופולוגיות תת-המרחב של <math>\mathbb Q_p^4</math> ו-<math>\mathbb R^4</math>. אז
 :<math>G_{\text{fin}} := G_{\mathbb A_{\text{fin}}} \cong {\prod_{p\lt\infty}}'G_p,</math>
-כאשר אגף ימין הוא ה[[מכפלה מוגבלת|מכפלה המוגבלת]] ביחס לתת-החבורות הקומפקטיות-פתוחות <math>K_p := G_{\mathbb Z_p}</math>, ו-<math>G_{\text{fin}}</math> חבורה קומפקטית מקומית עם טופולוגיית המכפלה המוגבלת. החבורה <math>G_{\mathbb A}</math> איזומורפית ל-<math>G_{\text{fin}}\times G_{\mathbb R}</math>, והיא קומפקטית מקומית עם טופולוגיית המכפלה.
+כאשר אגף ימין הוא המכפלה המוגבלת ביחס לתת-החבורות הקומפקטיות-פתוחות <math>K_p := G_{\mathbb Z_p}</math>, ו-<math>G_{\text{fin}}</math> חבורה קומפקטית מקומית עם טופולוגיית המכפלה המוגבלת. החבורה <math>G_{\mathbb A}</math> איזומורפית ל-<math>G_{\text{fin}}\times G_{\mathbb R}</math>, והיא קומפקטית מקומית עם טופולוגיית המכפלה.
 
 יהי <math>\widehat{\mathbb Z} = \prod_{p\lt\infty}\mathbb Z_p</math>. תת-החבורה <math>G_{\widehat{\mathbb Z}} := \prod_{p\lt\infty}K_p</math> היא תת-חבורה קומפקטית-פתוחה מקסימלית של <math>G_{\text{fin}}</math>, ואפשר לראות בה תת-חבורה של <math>G_{\mathbb A}</math> דרך השיכון <math>x_{\text{fin}} \mapsto (x_{\text{fin}}, 1_\infty)</math>. נסמן ב-<math>Z_{\mathbb R}</math> את המרכז של <math>G_\infty</math>, כלומר את חבורת המטריצות האלכסוניות <math>\left(\begin{smallmatrix}\lambda & \\ & \lambda\end{smallmatrix}\right)</math>, <math>\lambda \in \mathbb R^\times</math>, ונחשוב עליה כתת-חבורה של <math>G_{\mathbb A}</math> דרך <math>z \mapsto (1_{G_{\text{fin}}}, z)</math>.
 
-החבורה <math>G_{\mathbb Q}</math> משוכנת באלכסון ב-<math>G_{\mathbb A}</math>; זה אפשרי כי לארבעת המקדמים של <math>x \in G_{\mathbb Q}</math> יש רק מספר סופי של מחלקים ראשוניים במכנים, ולכן <math>x \in K_p</math> לכל <math>p</math> פרט למספר סופי. תהי <math>G^1_{\mathbb A}</math> חבורת כל <math>x \in G_{\mathbb A}</math> עם <math>|\det(x)| = 1</math> (הערך המוחלט של אידל). קל לחשב ש-<math>G_{\mathbb Q}</math> תת-חבורה של <math>G^1_{\mathbb A}</math> (לפי [[נוסחת המכפלה]]). בעזרת ההעתקה החד-חד-ערכית <math>G^1_{\mathbb A} \hookrightarrow G_{\mathbb A}</math> אפשר לזהות את <math>G_{\mathbb Q}\backslash G^1_{\mathbb A}</math> עם <math>G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A}</math>.
+החבורה <math>G_{\mathbb Q}</math> משוכנת באלכסון ב-<math>G_{\mathbb A}</math>; זה אפשרי כי לארבעת המקדמים של <math>x \in G_{\mathbb Q}</math> יש רק מספר סופי של מחלקים ראשוניים במכנים, ולכן <math>x \in K_p</math> לכל <math>p</math> פרט למספר סופי. תהי <math>G^1_{\mathbb A}</math> חבורת כל <math>x \in G_{\mathbb A}</math> עם <math>|\det(x)| = 1</math> (הערך המוחלט של אידל). קל לחשב ש-<math>G_{\mathbb Q}</math> תת-חבורה של <math>G^1_{\mathbb A}</math> (לפי נוסחת המכפלה). בעזרת ההעתקה החד-חד-ערכית <math>G^1_{\mathbb A} \hookrightarrow G_{\mathbb A}</math> אפשר לזהות את <math>G_{\mathbb Q}\backslash G^1_{\mathbb A}</math> עם <math>G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A}</math>.
 
 <math>G_{\mathbb Q}</math> צפופה ב-<math>G_{\text{fin}}</math> ובדידה ב-<math>G_{\mathbb A}</math>. המנה <math>G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A} = G_{\mathbb Q}\backslash G^1_{\mathbb A}</math> אינה קומפקטית, אבל מידת האר שלה סופית. לכן <math>G_{\mathbb Q}</math> סריג ב-<math>G^1_{\mathbb A}</math>, בדומה למקרה הקלאסי של החבורה המודולרית ב-<math>\mathrm{SL}_2(\mathbb R)</math>. מאנליזה הרמונית מקבלים גם ש-<math>G^1_{\mathbb A}</math> אונימודולרית.
 
 === האדליזציה של תבניות שפיץ ===
-כעת רוצים לשכן את תבניות השפיץ הקלאסיות של מאס ממשקל 0 ביחס לחבורה המודולרית במרחב על <math>Z_{\mathbb R}G_{\mathbb Q}\backslash G_{\mathbb A}</math>. אפשר לעשות זאת בעזרת [[משפט הקירוב החזק]], שקובע שההעתקה
+כעת רוצים לשכן את תבניות השפיץ הקלאסיות של מאס ממשקל 0 ביחס לחבורה המודולרית במרחב על <math>Z_{\mathbb R}G_{\mathbb Q}\backslash G_{\mathbb A}</math>. אפשר לעשות זאת בעזרת משפט הקירוב החזק, שקובע שההעתקה
 :<math>\psi: G_{\mathbb Z}x_\infty \mapsto G_{\mathbb Q}(1, x_\infty)G_{\widehat{\mathbb Z}}</math>
 היא [[הומיאומורפיזם]] שמתחלף עם הפעולה של <math>G_{\mathbb R}</math>. כך מקבלים
 :<math>G_{\mathbb Z}\backslash G_{\mathbb R} \cong G_{\mathbb Q}\backslash G_{\mathbb A}/G_{\widehat{\mathbb Z}}, \qquad G_{\mathbb Z}Z_{\mathbb R}\backslash G_{\mathbb R} \cong G_{\mathbb Q}Z_{\mathbb R}\backslash G_{\mathbb A}/G_{\widehat{\mathbb Z}}.</math>
@@ -224,7 +224,7 @@ a_n(y, s) &= 2|n|^{s - \frac12}\sigma_{1-2s}(|n|)\sqrt y\,K_{s - \frac12}(2\pi|n
 === הצגות קוספידליות של חבורת האדלים ===
 הצגה אי-פריקה <math>\pi</math> של החבורה <math>G_{\mathbb A}</math> נקראת '''קוספידלית''' אם היא איזומורפית לתת-הצגה של <math>L^2_{\text{cusp}}</math>. הצגה אי-פריקה <math>\pi</math> של <math>G_{\mathbb A}</math> נקראת '''קבילה''' אם יש תת-חבורה קומפקטית <math>K \subset G_{\mathbb A}</math> כך שכל הצגה אי-פריקה של <math>K</math> מופיעה ב-<math>\pi|_K</math> בריבוי סופי. אפשר להראות שכל [[הצגה קוספידלית]] היא קבילה.
 
-הקבילות נדרשת כדי להפעיל את '''משפט מכפלת הטנזור''', שלפיו כל הצגה אי-פריקה, אוניטרית וקבילה של <math>G_{\mathbb A}</math> איזומורפית ל[[מכפלת טנזור אינסופית]]
+הקבילות נדרשת כדי להפעיל את '''משפט מכפלת הטנזור''', שלפיו כל הצגה אי-פריקה, אוניטרית וקבילה של <math>G_{\mathbb A}</math> איזומורפית למכפלת טנזור אינסופית
 :<math>\bigotimes_{p\le\infty}\pi_p,</math>
 כאשר <math>\pi_p</math> הצגות אי-פריקות של החבורות <math>G_p</math>, וכמעט כולן לא מסועפות. (הצגה <math>\pi_p</math> של <math>G_p</math>, <math>p \lt \infty</math>, נקראת '''לא מסועפת''' אם המרחב <math>V_{\pi_p}^{K_p} = \{v \in V_{\pi_p} \mid \pi_p(k)v = v\ \forall k \in K_p\}</math> אינו מרחב האפס.) בנייה של מכפלת טנזור אינסופית אפשר למצוא אצל דייטמר, פרק 7.
 

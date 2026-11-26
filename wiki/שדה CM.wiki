@@ -6,7 +6,7 @@
 במילים אחרות, יש תת-שדה <math>F</math> של <math>K</math> כך ש-<math>K</math> נוצר מעל <math>F</math> על ידי שורש ריבועי יחיד של איבר, נאמר <math>\beta = \sqrt{\alpha}</math>, באופן שכל השורשים של ה[[פולינום מינימלי|פולינום המינימלי]] של <math>\beta</math> מעל <math>\mathbb Q</math> הם מספרים מרוכבים לא ממשיים. לשם כך צריך לבחור את <math>\alpha</math> '''שלילי לחלוטין''', כלומר כך שלכל שיכון <math>\sigma</math> של <math>F</math> בשדה הממשי מתקיים <math>\sigma(\alpha) \lt 0</math>.
 
 == תכונות ==
-אחת התכונות של שדה CM היא שה[[הצמדה מרוכבת|הצמדה המרוכבת]] ב-<math>\mathbb C</math> משרה אוטומורפיזם של השדה שאינו תלוי בשיכון שלו ב-<math>\mathbb C</math>. בסימונים שלמעלה, האוטומורפיזם הזה בהכרח שולח את <math>\beta</math> ל-<math>-\beta</math> ומקבע את <math>F</math>.
+אחת התכונות של שדה CM היא שההצמדה המרוכבת ב-<math>\mathbb C</math> משרה אוטומורפיזם של השדה שאינו תלוי בשיכון שלו ב-<math>\mathbb C</math>. בסימונים שלמעלה, האוטומורפיזם הזה בהכרח שולח את <math>\beta</math> ל-<math>-\beta</math> ומקבע את <math>F</math>.
 
 שדה מספרים <math>K</math> הוא שדה CM אם ורק אם יש לו "חוסר ביחידות", כלומר אם הוא מכיל תת-שדה אמיתי <math>F</math> שלחבורת היחידות שלו יש אותה דרגה (מעל <math>\mathbb Z</math>) כמו לזו של <math>K</math>.{{הערה|1=R. Remak, ''Über algebraische Zahlkörper mit schwachem Einheitsdefekt'', Compositio Mathematica '''12''' (1954), pp. 35–80|כיווון=שמאל}} למעשה, <math>F</math> הוא תת-השדה הממשי לחלוטין שהוזכר למעלה. זה נובע מ[[משפט היחידות של דיריכלה]]: אם <math>[F:\mathbb Q] = d</math>, אז ל-<math>F</math> (ממשי לחלוטין) יש <math>r_1 = d</math>, <math>r_2 = 0</math>, ודרגת היחידות <math>d - 1</math>; ול-<math>K</math> (מדומה לחלוטין, ממעלה <math>2d</math>) יש <math>r_1 = 0</math>, <math>r_2 = d</math>, ושוב דרגה <math>d - 1</math>.
 

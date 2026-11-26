@@ -1,4 +1,4 @@
-ב[[מתמטיקה]], '''הפונקציות המודולריות של ובר''' הן משפחה של שלוש פונקציות, <math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math>, שחקר [[היינריך ובר]].{{הערה|1=<math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math> אינן [[תבנית מודולרית|פונקציות מודולריות]] במובן הצר (אינווריאנטיות תחת <math>\mathrm{SL}_2(\mathbb Z)</math>), אבל כל פונקציה מודולרית היא [[פונקציה רציונלית]] ב-<math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math>. חלק מהמחברים משתמשים בהגדרה אחרת, לא שקולה, של "פונקציה מודולרית".|כיווון=שמאל}} הן שימושיות במיוחד בתורת ה[[כפל מרוכב|כפל המרוכב]]: הערכים שלהן בנקודות מיוחדות נותנים "אינווריאנטי מחלקה" – מספרים אלגבריים שיוצרים את [[שדה המחלקות|שדה המחלקות של הילברט]] כמו <math>j</math>, אבל עם [[פולינום מינימלי|פולינומים מינימליים]] בעלי מקדמים קטנים בהרבה.
+ב[[מתמטיקה]], '''הפונקציות המודולריות של ובר''' הן משפחה של שלוש פונקציות, <math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math>, שחקר [[היינריך ובר]].{{הערה|1=<math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math> אינן [[תבנית מודולרית|פונקציות מודולריות]] במובן הצר (אינווריאנטיות תחת <math>\mathrm{SL}_2(\mathbb Z)</math>), אבל כל פונקציה מודולרית היא [[פונקציה רציונלית]] ב-<math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math>. חלק מהמחברים משתמשים בהגדרה אחרת, לא שקולה, של "פונקציה מודולרית".|כיווון=שמאל}} הן שימושיות במיוחד בתורת ה[[כפל מרוכב|כפל המרוכב]]: הערכים שלהן בנקודות מיוחדות נותנים "אינווריאנטי מחלקה" – מספרים אלגבריים שיוצרים את שדה המחלקות של הילברט כמו <math>j</math>, אבל עם [[פולינום מינימלי|פולינומים מינימליים]] בעלי מקדמים קטנים בהרבה.
 
 == הגדרה ==
 יהי <math>q = e^{2\pi i\tau}</math>, כאשר <math>\tau</math> ב[[חצי המישור העליון]]. פונקציות ובר הן
@@ -14,7 +14,7 @@
 הטרנספורמציה <math>\tau \mapsto -1/\tau</math> מקבעת את <math>\mathfrak f</math> ומחליפה בין <math>\mathfrak f_1</math> ל-<math>\mathfrak f_2</math>. לכן החבורה <math>\mathrm{SL}_2(\mathbb Z)</math> פועלת על המרחב הווקטורי המרוכב התלת-ממדי שנפרש על ידי <math>\mathfrak f</math>, <math>\mathfrak f_1</math> ו-<math>\mathfrak f_2</math> (עד כדי כפל בשורשי יחידה מסדר 48).
 
 == מכפלה אינסופית חלופית ==
-לחלופין, יהי <math>q = e^{\pi i\tau}</math> ה[[נום (מתמטיקה)|נום]]. אז
+לחלופין, יהי <math>q = e^{\pi i\tau}</math> הנום. אז
 :<math>\begin{align}
 \mathfrak f(q) &= q^{-\frac1{24}}\prod_{n\gt0}(1 + q^{2n-1}) = \frac{\eta^2(\tau)}{\eta\big(\tfrac\tau2\big)\eta(2\tau)}, \\
 \mathfrak f_1(q) &= q^{-\frac1{24}}\prod_{n\gt0}(1 - q^{2n-1}) = \frac{\eta\big(\tfrac\tau2\big)}{\eta(\tau)}, \\
@@ -36,7 +36,7 @@
 :<math>\left[\mathfrak f^8 - \mathfrak f_1^8\right]\left[\mathfrak f\,\mathfrak f_1\right]^8 = \left[\sqrt2\right]^8 = 16.</math>
 אפשר להוכיח אותה ישירות משתי הזהויות שבערך: <math>\mathfrak f^8 - \mathfrak f_1^8 = \mathfrak f_2^8</math> (ראו למטה) ו-<math>(\mathfrak f\mathfrak f_1)^8 = (\sqrt2/\mathfrak f_2)^8 = 16/\mathfrak f_2^8</math>; המכפלה היא <math>16</math>. המעבר ל-<math>G, g</math>: <math>\mathfrak f^8 - \mathfrak f_1^8 = 4(G^8 - g^8)</math> ו-<math>(\mathfrak f\mathfrak f_1)^8 = 16(Gg)^8</math>, ולכן <math>64(G^8 - g^8)(Gg)^8 = 16</math>.
 
-רמנוג'אן גם טבלל ערכים רבים של <math>G_n</math> עבור <math>n</math> אי-זוגי ושל <math>g_n</math> עבור <math>n</math> זוגי. זה נותן אוטומטית ערכים מפורשים רבים של <math>\mathfrak f</math> ו-<math>\mathfrak f_1</math>. למשל, עבור <math>\tau = \sqrt{-5}, \sqrt{-13}, \sqrt{-37}</math>, שמתאימים לדיסקרימיננטות עם [[מספר מחלקה]] 2,
+רמנוג'אן גם טבלל ערכים רבים של <math>G_n</math> עבור <math>n</math> אי-זוגי ושל <math>g_n</math> עבור <math>n</math> זוגי. זה נותן אוטומטית ערכים מפורשים רבים של <math>\mathfrak f</math> ו-<math>\mathfrak f_1</math>. למשל, עבור <math>\tau = \sqrt{-5}, \sqrt{-13}, \sqrt{-37}</math>, שמתאימים לדיסקרימיננטות עם מספר מחלקה 2,
 :<math>\begin{align}
 G_5 &= \left(\frac{1 + \sqrt5}2\right)^{1/4}, \\
 G_{13} &= \left(\frac{3 + \sqrt{13}}2\right)^{1/4}, \\
@@ -60,7 +60,7 @@ G_{37} &= \left(6 + \sqrt{37}\right)^{1/4}
 \end{align}</math>
 כשמחלקים אותן ב-<math>\eta(\tau)</math>, ומשתמשים בכך ש-<math>\eta(\tau) = e^{-\frac{\pi i}{12}}\eta(\tau + 1)</math>, מקבלים בדיוק את הריבועים של פונקציות ובר:
 :<math>\frac{\theta_2(q)}{\eta(\tau)} = \mathfrak f_2(q)^2, \qquad \frac{\theta_4(q)}{\eta(\tau)} = \mathfrak f_1(q)^2, \qquad \frac{\theta_3(q)}{\eta(\tau)} = \mathfrak f(q)^2.</math>
-לפי [[זהות יעקובי]]
+לפי זהות יעקובי
 :<math>\theta_2(q)^4 + \theta_4(q)^4 = \theta_3(q)^4</math>
 מקבלים
 :<math>\mathfrak f_2(q)^8 + \mathfrak f_1(q)^8 = \mathfrak f(q)^8.</math>

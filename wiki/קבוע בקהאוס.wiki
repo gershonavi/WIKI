@@ -7,7 +7,7 @@
 אז:
 :<math>\lim_{k\to\infty}\left|\frac{q_{k+1}}{q_k}\right| = 1.45607\ldots</math>{{הערה|1={{OEIS|A072508}}|כיווון=שמאל}}
 
-בקהאוס שיער שהגבול הזה קיים,{{הערה|1=<span dir="ltr">N. Backhouse, Formal reciprocal of a prime power series, unpublished note, 1995.</span>|כיווון=שמאל}} ו[[פיליפ פלאז'ולה]] הוכיח זאת מאוחר יותר.{{הערה|1=<span dir="ltr">P. Flajolet, On the existence and the computation of Backhouse's constant, unpublished manuscript, 25 November 1995; reproduced in H.-K. Hwang (with B. Vallée and J. Clément), Les cahiers de Philippe Flajolet, AofA 2014, Paris.</span>|כיווון=שמאל}}
+בקהאוס שיער שהגבול הזה קיים,{{הערה|1=<span dir="ltr">N. Backhouse, Formal reciprocal of a prime power series, unpublished note, 1995.</span>|כיווון=שמאל}} ופיליפ פלאז'ולה הוכיח זאת מאוחר יותר.{{הערה|1=<span dir="ltr">P. Flajolet, On the existence and the computation of Backhouse's constant, unpublished manuscript, 25 November 1995; reproduced in H.-K. Hwang (with B. Vallée and J. Clément), Les cahiers de Philippe Flajolet, AofA 2014, Paris.</span>|כיווון=שמאל}}
 
 == חישוב ==
 '''המקדמים.''' מהזהות <math>P(x)Q(x) = 1</math> מקבלים את הנסיגה <math>q_0 = 1</math> ו-<math>q_k = -\sum_{i=1}^kp_iq_{k-i}</math>. בחישוב שלנו, המקדמים הראשונים הם

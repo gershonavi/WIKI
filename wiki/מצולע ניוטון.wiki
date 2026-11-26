@@ -7,7 +7,7 @@
 == הגדרה ==
 יהי <math>K</math> שדה עם [[הערכה (אלגברה)|הערכה]] לא ארכימדית <math>v_K : K \to \mathbb R \cup \{\infty\}</math>, ויהי
 :<math>f(x) = a_nx^n + \cdots + a_1x + a_0 \in K[x],</math>
-עם <math>a_0a_n \ne 0</math>. '''מצולע ניוטון''' של <math>f</math> מוגדר כשפה התחתונה של ה[[קמור (גאומטריה)|קמור]] של קבוצת הנקודות <math>P_i = (i, v_K(a_i))</math>, כשמתעלמים מהנקודות עם <math>a_i = 0</math>.
+עם <math>a_0a_n \ne 0</math>. '''מצולע ניוטון''' של <math>f</math> מוגדר כשפה התחתונה של הקמור של קבוצת הנקודות <math>P_i = (i, v_K(a_i))</math>, כשמתעלמים מהנקודות עם <math>a_i = 0</math>.
 
 בניסוח גאומטרי: משרטטים את כל הנקודות <math>P_i</math> במישור, מ-<math>P_0</math> (השמאלית ביותר) עד <math>P_n</math> (הימנית ביותר). מתחילים ב-<math>P_0</math>, משרטטים קרן כלפי מטה במקביל לציר <math>y</math>, ומסובבים אותה נגד כיוון השעון עד שהיא פוגעת בנקודה <math>P_{k_1}</math> (לא בהכרח <math>P_1</math>). שם שוברים את הקרן, משרטטים קרן חדשה כלפי מטה מ-<math>P_{k_1}</math>, ומסובבים עד שפוגעים ב-<math>P_{k_2}</math>; וכן הלאה עד <math>P_n</math>. הקו השבור <math>P_0, P_{k_1}, P_{k_2}, \dots, P_n</math> הוא מצולע ניוטון.
 
@@ -44,7 +44,7 @@
 :'''דוגמה.''' ל-<math>f(x) = x^3 - 2</math> מעל <math>\mathbb Q_2</math>: הנקודות <math>(0, 1)</math> ו-<math>(3, 0)</math>, קטע אחד בשיפוע <math>-\tfrac13</math>. לכן <math>x^3 - 2</math> אי-פריק מעל <math>\mathbb Q_2</math>, ולשורש <math>\sqrt[3]2</math> יש הערכה <math>\tfrac13</math>: ההרחבה <math>\mathbb Q_2(\sqrt[3]2)/\mathbb Q_2</math> מסועפת לחלוטין.
 
 מסקנה נוספת:
-* ''נניח ש-<math>(K, v_K)</math> [[חוג הנזלי|הנזלי]] (למשל <math>K = \mathbb Q_p</math>). אם במצולע ניוטון של <math>f</math> מתקיים <math>\lambda_i = 1</math> עבור <math>i</math> כלשהו, אז ל-<math>f</math> יש שורש ב-<math>K</math>.''
+* ''נניח ש-<math>(K, v_K)</math> הנזלי (למשל <math>K = \mathbb Q_p</math>). אם במצולע ניוטון של <math>f</math> מתקיים <math>\lambda_i = 1</math> עבור <math>i</math> כלשהו, אז ל-<math>f</math> יש שורש ב-<math>K</math>.''
 :'''דוגמה.''' ל-<math>f(x) = x^2 + x + 2</math> מעל <math>\mathbb Q_2</math>: הנקודות <math>(0, 1), (1, 0), (2, 0)</math> נותנות שני קטעים – שיפוע <math>-1</math> באורך 1 ושיפוע <math>0</math> באורך 1. לכן ל-<math>f</math> שני שורשים ב-<math>\mathbb Q_2</math>, אחד מהערכה 1 ואחד מהערכה 0. (בהתאם לכך, הדיסקרימיננטה <math>-7 \equiv 1 \pmod 8</math> היא ריבוע ב-<math>\mathbb Q_2</math>.)
 
 באופן כללי יותר, מתקיים משפט הפירוק הבא:

@@ -8,7 +8,7 @@
 אידיאל שטיקלברגר מרמה <math>m</math>, שמסומן <math>I(K_m)</math>, הוא קבוצת הכפולות השלמות של <math>\theta(K_m)</math> שהמקדמים שלהן שלמים:
 :<math>I(K_m) = \theta(K_m)\mathbb Z[G_m] \cap \mathbb Z[G_m].</math>
 
-באופן כללי יותר, אם <math>F</math> [[הרחבה אבלית|שדה מספרים אבלי]] שחבורת הגלואה שלו מעל <math>\mathbb Q</math> מסומנת <math>G_F</math>, אפשר להגדיר את '''איבר שטיקלברגר של <math>F</math>''' ואת '''אידיאל שטיקלברגר של <math>F</math>'''. לפי [[משפט קרונקר–ובר]] יש שלם <math>m</math> כך ש-<math>F \subseteq K_m</math>. נקבע את ה-<math>m</math> הקטן ביותר כזה (זה החלק הסופי של [[מוליך (תורת שדות המחלקה)|המוליך]] של <math>F</math> מעל <math>\mathbb Q</math>). יש הומומורפיזם טבעי <math>G_m \to G_F</math> שנתון על ידי צמצום: לכל <math>\sigma \in G_m</math>, התמונה שלו ב-<math>G_F</math> היא הצמצום שלו ל-<math>F</math>, שמסומן <math>\mathrm{res}_m\sigma</math>. איבר שטיקלברגר של <math>F</math> מוגדר אז כ-
+באופן כללי יותר, אם <math>F</math> [[הרחבה אבלית|שדה מספרים אבלי]] שחבורת הגלואה שלו מעל <math>\mathbb Q</math> מסומנת <math>G_F</math>, אפשר להגדיר את '''איבר שטיקלברגר של <math>F</math>''' ואת '''אידיאל שטיקלברגר של <math>F</math>'''. לפי [[משפט קרונקר-ובר|משפט קרונקר–ובר]] יש שלם <math>m</math> כך ש-<math>F \subseteq K_m</math>. נקבע את ה-<math>m</math> הקטן ביותר כזה (זה החלק הסופי של [[מוליך (תורת שדות המחלקה)|המוליך]] של <math>F</math> מעל <math>\mathbb Q</math>). יש הומומורפיזם טבעי <math>G_m \to G_F</math> שנתון על ידי צמצום: לכל <math>\sigma \in G_m</math>, התמונה שלו ב-<math>G_F</math> היא הצמצום שלו ל-<math>F</math>, שמסומן <math>\mathrm{res}_m\sigma</math>. איבר שטיקלברגר של <math>F</math> מוגדר אז כ-
 :<math>\theta(F) = \frac1m\sum_{\substack{a=1\\(a,m)=1}}^m a\cdot\mathrm{res}_m\sigma_a^{-1} \in \mathbb Q[G_F],</math>
 ואידיאל שטיקלברגר של <math>F</math>, <math>I(F) = \theta(F)\mathbb Z[G_F] \cap \mathbb Z[G_F]</math>, מוגדר כמו במקרה של <math>K_m</math>.
 
@@ -21,10 +21,10 @@
 
 '''דוגמה מחושבת: <math>F = \mathbb Q(\sqrt{-23})</math>.''' המוליך הוא 23, ו-<math>G_F = \{1, \sigma\}</math> עם <math>\sigma</math> ההצמדה. הצמצום של <math>\sigma_a^{-1}</math> ל-<math>F</math> הוא 1 אם <math>a</math> [[שארית ריבועית]] מודולו 23, ו-<math>\sigma</math> אחרת. סכום השאריות הריבועיות בין 1 ל-22 הוא <math>A = 92</math>, וסכום אי-השאריות הוא <math>B = 161</math>, ולכן
 :<math>\theta(F) = \frac{92 + 161\sigma}{23} = 4 + 7\sigma \in \mathbb Z[G_F].</math>
-(שימו לב ש-<math>(B - A)/23 = 3 = h(-23)</math>, בהתאם ל[[נוסחת מספר המחלקות]] של דיריכלה.) לפי המשפט, <math>4 + 7\sigma</math> מאפס את חבורת המחלקות: לכל אידיאל <math>J</math>, האידיאל <math>J^4\,\sigma(J)^7</math> ראשי. אכן, <math>J\sigma(J) = (N(J))</math> ראשי, ולכן במחלקות <math>\sigma(J) \sim J^{-1}</math> ו-<math>J^4\sigma(J)^7 \sim J^{-3}</math> – שהוא ראשי, כי חבורת המחלקות מסדר 3.
+(שימו לב ש-<math>(B - A)/23 = 3 = h(-23)</math>, בהתאם ל[[נוסחת מספר המחלקה|נוסחת מספר המחלקות]] של דיריכלה.) לפי המשפט, <math>4 + 7\sigma</math> מאפס את חבורת המחלקות: לכל אידיאל <math>J</math>, האידיאל <math>J^4\,\sigma(J)^7</math> ראשי. אכן, <math>J\sigma(J) = (N(J))</math> ראשי, ולכן במחלקות <math>\sigma(J) \sim J^{-1}</math> ו-<math>J^4\sigma(J)^7 \sim J^{-3}</math> – שהוא ראשי, כי חבורת המחלקות מסדר 3.
 
 == ניסוח המשפט ==
-<blockquote>'''משפט שטיקלברגר.'''{{הערה|1=Washington, Theorem 6.10.|כיווון=שמאל}} יהי <math>F</math> שדה מספרים אבלי. אז אידיאל שטיקלברגר של <math>F</math> [[מאפס (תורת החוגים)|מאפס]] את חבורת המחלקות של <math>F</math>.</blockquote>
+<blockquote>'''משפט שטיקלברגר.'''{{הערה|1=Washington, Theorem 6.10.|כיווון=שמאל}} יהי <math>F</math> שדה מספרים אבלי. אז אידיאל שטיקלברגר של <math>F</math> מאפס את חבורת המחלקות של <math>F</math>.</blockquote>
 
 שימו לב ש-<math>\theta(F)</math> עצמו אינו חייב להיות מאפס, אבל כל כפולה שלו ב-<math>\mathbb Z[G_F]</math> היא כזו.
 

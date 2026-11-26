@@ -1,4 +1,4 @@
-'''הלמה של בהסקרה''' היא זהות שמשמשת כ[[למה (מתמטיקה)|למה]] ב[[שיטת צ'קרוואלה]] לפתרון [[משוואת פל]]. היא נקראת על שם [[בהסקרה השני]], והיא קובעת:
+'''הלמה של בהסקרה''' היא זהות שמשמשת כ[[למה (מתמטיקה)|למה]] ב[[שיטת צ'קרוואלה]] לפתרון [[משוואת פל]]. היא נקראת על שם בהסקרה השני, והיא קובעת:
 :<math>Nx^2 + k = y^2 \implies N\left(\frac{mx + y}k\right)^2 + \frac{m^2 - N}k = \left(\frac{my + Nx}k\right)^2</math>
 לכל [[מספר שלם|שלמים]] <math>m, x, y, N</math> ושלם שונה מאפס <math>k</math>.
 
@@ -12,7 +12,7 @@
 :<math>\implies N\left(\frac{mx + y}k\right)^2 + \frac{m^2 - N}k = \left(\frac{my + Nx}k\right)^2.</math>
 כל עוד <math>k</math> ו-<math>m^2 - N</math> שונים מאפס, הגרירה נכונה בשני הכיוונים. (הלמה נכונה גם למספרים ממשיים או מרוכבים, לא רק לשלמים.)
 
-'''הסבר מושגי.''' זה מקרה פרטי של [[זהות ברהמגופטה]]: מרכיבים את הפתרון <math>(y, x)</math> של <math>y^2 - Nx^2 = k</math> עם הפתרון הטריוויאלי <math>(m, 1)</math> של <math>m^2 - N\cdot1^2 = m^2 - N</math>, ומקבלים פתרון של <math>Y^2 - NX^2 = k(m^2 - N)</math>; אחר כך מחלקים ב-<math>k^2</math>. במונחי הנורמה ב-<math>\mathbb Z[\sqrt N]</math>: <math>(y + x\sqrt N)(m + \sqrt N) = (my + Nx) + (mx + y)\sqrt N</math>.
+'''הסבר מושגי.''' זה מקרה פרטי של זהות ברהמגופטה: מרכיבים את הפתרון <math>(y, x)</math> של <math>y^2 - Nx^2 = k</math> עם הפתרון הטריוויאלי <math>(m, 1)</math> של <math>m^2 - N\cdot1^2 = m^2 - N</math>, ומקבלים פתרון של <math>Y^2 - NX^2 = k(m^2 - N)</math>; אחר כך מחלקים ב-<math>k^2</math>. במונחי הנורמה ב-<math>\mathbb Z[\sqrt N]</math>: <math>(y + x\sqrt N)(m + \sqrt N) = (my + Nx) + (mx + y)\sqrt N</math>.
 
 == דוגמה ==
 עבור <math>N = 61</math>: <math>61\cdot1^2 + 3 = 64 = 8^2</math>, כלומר <math>x = 1</math>, <math>y = 8</math>, <math>k = 3</math>. כדי ש-<math>\frac{mx + y}k = \frac{m + 8}3</math> יהיה שלם, צריך <math>m \equiv 1 \pmod 3</math>, ומבין הערכים האלה <math>m = 7</math> ממזער את <math>|m^2 - 61|</math>. הלמה נותנת

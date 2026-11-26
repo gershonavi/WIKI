@@ -31,7 +31,7 @@
 כמו בכל שדה, החיבור והכפל ב-<math>\mathbb Q(\sqrt5)</math> [[אסוציאטיביות|אסוציאטיביים]] ו[[קומוטטיביות|קומוטטיביים]], 0 ו-1 הם האיברים הנייטרליים, לכל איבר יש נגדי ולכל איבר שונה מאפס יש הופכי, והכפל [[דיסטריבוטיביות|מתפלג]] מעל החיבור. החשבון תואם את החשבון במספרים הממשיים, כלומר <math>\mathbb Q(\sqrt5)</math> הוא תת-שדה של <math>\mathbb R</math>.
 
 == הצמדה ונורמה ==
-המספרים <math>\sqrt5</math> ו-<math>-\sqrt5</math> פותרים שניהם את <math>x^2 = 5</math>. לכל מספר <math>\alpha = a + b\sqrt5</math> יש '''צמוד''' <math>\overline\alpha = a - b\sqrt5</math>, שמתקבל מהחלפת שני השורשים. הצמוד של <math>\varphi</math> הוא <math>\overline\varphi = \tfrac12(1 - \sqrt5) = -\varphi^{-1} = 1 - \varphi</math>, ובאופן כללי <math>\overline{a + b\varphi} = (a + b) - b\varphi</math>. ההצמדה היא [[אינוולוציה (מתמטיקה)|אינוולוציה]] ושומרת על החשבון: <math>\overline{\alpha_1 + \alpha_2} = \overline\alpha_1 + \overline\alpha_2</math>, <math>\overline{\alpha_1\alpha_2} = \overline\alpha_1\,\overline\alpha_2</math>. היא ה[[הומומורפיזם של חוגים]] היחיד מ-<math>\mathbb Q(\sqrt5)</math> לעצמו פרט לזהות.
+המספרים <math>\sqrt5</math> ו-<math>-\sqrt5</math> פותרים שניהם את <math>x^2 = 5</math>. לכל מספר <math>\alpha = a + b\sqrt5</math> יש '''צמוד''' <math>\overline\alpha = a - b\sqrt5</math>, שמתקבל מהחלפת שני השורשים. הצמוד של <math>\varphi</math> הוא <math>\overline\varphi = \tfrac12(1 - \sqrt5) = -\varphi^{-1} = 1 - \varphi</math>, ובאופן כללי <math>\overline{a + b\varphi} = (a + b) - b\varphi</math>. ההצמדה היא [[אינוולוציה (מתמטיקה)|אינוולוציה]] ושומרת על החשבון: <math>\overline{\alpha_1 + \alpha_2} = \overline\alpha_1 + \overline\alpha_2</math>, <math>\overline{\alpha_1\alpha_2} = \overline\alpha_1\,\overline\alpha_2</math>. היא ההומומורפיזם של חוגים היחיד מ-<math>\mathbb Q(\sqrt5)</math> לעצמו פרט לזהות.
 
 ה'''עקבה''' היא סכום המספר וצמודו:
 :<math>\mathrm{tr}(a + b\sqrt5) = 2a, \qquad \mathrm{tr}(a + b\varphi) = 2a + b.</math>
@@ -44,7 +44,7 @@
 מנקודת המבט של [[תורת גלואה]], השדה הזהוב הוא קבוצת המספרים <math>a + bu</math>, כאשר כל מה שידוע על <math>u</math> הוא ש-<math>u^2 = 5</math>. יש שתי דרכים לשכן את הקבוצה הזו בממשיים: <math>u \mapsto \sqrt5</math> או <math>u \mapsto -\sqrt5</math>, וההצמדה מחליפה ביניהן. [[חבורת גלואה|חבורת הגלואה]] של השדה הזהוב היא לכן החבורה בת שני האיברים.
 
 == השלמים הזהובים ==
-[[חוג השלמים]] של השדה הזהוב, <math>\mathbb Z[\varphi]</math>, שלפעמים נקרא '''השלמים הזהובים''', הוא קבוצת כל ה[[שלם אלגברי|שלמים האלגבריים]] בשדה – האיברים שה[[פולינום מינימלי|פולינום המינימלי]] שלהם מעל <math>\mathbb Q</math> בעל מקדמים שלמים; אלה בדיוק האיברים שהעקבה והנורמה שלהם שלמות. המספרים <math>1</math> ו-<math>\varphi</math> הם [[בסיס שלם]] של החוג: כל איבר נכתב ביחידות כ-<math>a + b\varphi</math> עם <math>a, b</math> שלמים. לחלופין, אפשר לכתוב את איברי <math>\mathbb Z[\varphi]</math> בצורה <math>\tfrac12a + \tfrac12b\sqrt5</math>, עם <math>a, b</math> שלמים מאותה [[זוגיות (מתמטיקה)|זוגיות]]. (בפרט <math>\mathbb Z[\sqrt5] \subsetneq \mathbb Z[\varphi]</math>, מאינדקס 2 – ראו [[שדה מונוגני]].)
+[[חוג השלמים]] של השדה הזהוב, <math>\mathbb Z[\varphi]</math>, שלפעמים נקרא '''השלמים הזהובים''', הוא קבוצת כל ה[[שלם אלגברי|שלמים האלגבריים]] בשדה – האיברים שה[[פולינום מינימלי|פולינום המינימלי]] שלהם מעל <math>\mathbb Q</math> בעל מקדמים שלמים; אלה בדיוק האיברים שהעקבה והנורמה שלהם שלמות. המספרים <math>1</math> ו-<math>\varphi</math> הם בסיס שלם של החוג: כל איבר נכתב ביחידות כ-<math>a + b\varphi</math> עם <math>a, b</math> שלמים. לחלופין, אפשר לכתוב את איברי <math>\mathbb Z[\varphi]</math> בצורה <math>\tfrac12a + \tfrac12b\sqrt5</math>, עם <math>a, b</math> שלמים מאותה [[זוגיות (מתמטיקה)|זוגיות]]. (בפרט <math>\mathbb Z[\sqrt5] \subsetneq \mathbb Z[\varphi]</math>, מאינדקס 2 – ראו [[שדה מונוגני]].)
 
 === נורמות ===
 הנורמות של השלמים הזהובים הן המספרים <math>a^2 + ab - b^2 = \mathrm N(a + b\varphi)</math> עם <math>a, b</math> שלמים. אלה בדיוק השלמים שבהם כל גורם ראשוני ששקול ל-<math>\pm 2</math> מודולו 5 מופיע בחזקה זוגית (ראו [[#ראשוניים ופירוק לגורמים|ראשוניים ופירוק לגורמים]]). הנורמות האי-שליליות הראשונות (בערך מוחלט):{{הערה|1={{OEIS|A031363}}|כיווון=שמאל}}
@@ -55,7 +55,7 @@
 אם <math>\alpha, \beta</math> שלמים זהובים ויש שלם זהוב <math>\gamma</math> כך ש-<math>\alpha\gamma = \beta</math>, אומרים ש-<math>\alpha</math> '''מחלק''' את <math>\beta</math> וכותבים <math>\alpha \mid \beta</math>. כמו השלמים, <math>\mathbb Z[\varphi]</math> הוא [[תחום שלמות]]: אין בו מחלקי אפס.
 
 === יחידות ===
-[[הפיך (מתמטיקה)|יחידה]] היא שלם אלגברי שמחלק את 1, כלומר שההופכי שלו גם שלם אלגברי; זה קורה בדיוק כשהנורמה היא <math>\pm 1</math>. בין השלמים הרגילים היחידות הן רק <math>\pm1</math>, אבל בין השלמים הזהובים יש אינסוף יחידות: כל <math>a + b\varphi</math> שבו <math>a, b</math> פותרים את ה[[משוואה דיופנטית|משוואה הדיופנטית]] <math>a^2 + ab - b^2 = \pm1</math>. בכתיבה <math>\tfrac12a + \tfrac12b\sqrt5</math>, המקדמים פותרים את [[משוואת פל]] המוכללת <math>a^2 - 5b^2 = \pm4</math>. היחידה היסודית – היחידה הקטנה ביותר שגדולה מ-1 – היא יחס הזהב <math>\varphi</math>, ושאר היחידות הן <math>\pm\varphi^n</math> לכל <math>n</math> שלם. כמה חזקות:
+יחידה היא שלם אלגברי שמחלק את 1, כלומר שההופכי שלו גם שלם אלגברי; זה קורה בדיוק כשהנורמה היא <math>\pm 1</math>. בין השלמים הרגילים היחידות הן רק <math>\pm1</math>, אבל בין השלמים הזהובים יש אינסוף יחידות: כל <math>a + b\varphi</math> שבו <math>a, b</math> פותרים את ה[[משוואה דיופנטית|משוואה הדיופנטית]] <math>a^2 + ab - b^2 = \pm1</math>. בכתיבה <math>\tfrac12a + \tfrac12b\sqrt5</math>, המקדמים פותרים את [[משוואת פל]] המוכללת <math>a^2 - 5b^2 = \pm4</math>. היחידה היסודית – היחידה הקטנה ביותר שגדולה מ-1 – היא יחס הזהב <math>\varphi</math>, ושאר היחידות הן <math>\pm\varphi^n</math> לכל <math>n</math> שלם. כמה חזקות:
 
 {| class="wikitable" style="text-align:center"
 ! <math>n</math> !! <math>-2</math> !! <math>-1</math> !! <math>0</math> !! <math>1</math> !! <math>2</math> !! <math>3</math> !! <math>4</math> !! <math>n</math>
@@ -64,13 +64,13 @@
 | <math>2 - \varphi</math> || <math>-1 + \varphi</math> || <math>1</math> || <math>\varphi</math> || <math>1 + \varphi</math> || <math>1 + 2\varphi</math> || <math>2 + 3\varphi</math> || <math>F_{n-1} + F_n\varphi</math>
 |}
 
-באופן כללי <math>\varphi^n = F_{n-1} + F_n\varphi</math>, כאשר <math>F_n</math> הוא מספר פיבונאצ'י ה-<math>n</math>-י (הוכחה באינדוקציה: <math>\varphi^{n+1} = (F_{n-1} + F_n\varphi)\varphi = F_{n-1}\varphi + F_n(1 + \varphi) = F_n + F_{n+1}\varphi</math>). חבורת היחידות <math>\mathbb Z[\varphi]^\times</math> היא [[מכפלה ישרה של חבורות|מכפלה ישרה]] של [[חבורה ציקלית]] מסדר 2 שנוצרת על ידי <math>-1</math>, וחבורה ציקלית אינסופית שנוצרת על ידי <math>\varphi</math> – בהתאם ל[[משפט היחידות של דיריכלה]] (דרגה <math>r_1 + r_2 - 1 = 2 + 0 - 1 = 1</math>).
+באופן כללי <math>\varphi^n = F_{n-1} + F_n\varphi</math>, כאשר <math>F_n</math> הוא מספר פיבונאצ'י ה-<math>n</math>-י (הוכחה באינדוקציה: <math>\varphi^{n+1} = (F_{n-1} + F_n\varphi)\varphi = F_{n-1}\varphi + F_n(1 + \varphi) = F_n + F_{n+1}\varphi</math>). חבורת היחידות <math>\mathbb Z[\varphi]^\times</math> היא מכפלה ישרה של [[חבורה ציקלית]] מסדר 2 שנוצרת על ידי <math>-1</math>, וחבורה ציקלית אינסופית שנוצרת על ידי <math>\varphi</math> – בהתאם ל[[משפט היחידות של דיריכלה]] (דרגה <math>r_1 + r_2 - 1 = 2 + 0 - 1 = 1</math>).
 
 === חברים ===
 שני שלמים זהובים <math>\alpha_1, \alpha_2</math> הם '''חברים''' (associates) אם כל אחד מחלק את השני; באופן שקול, המנה שלהם היא יחידה: <math>\alpha_2 = \pm\varphi^n\alpha_1</math>. זה [[יחס שקילות]], ולחברים יש אותה נורמה עד כדי סימן. אבל לא כל שני איברים שהנורמות שלהם שוות בערך מוחלט הם חברים: ראשוני זהוב וצמודו תמיד מאותה נורמה, אבל הם חברים רק אם הם חברים של <math>\sqrt5</math> או של ראשוני רגיל.
 
 === ראשוניים ופירוק לגורמים ===
-[[איבר ראשוני]] בחוג הוא איבר <math>\gamma</math> כך שאם <math>\gamma \mid \alpha\beta</math> אז <math>\gamma \mid \alpha</math> או <math>\gamma \mid \beta</math>. ב-<math>\mathbb Z[\varphi]</math> יש שלושה סוגי ראשוניים:{{הערה|1=G. H. Hardy, E. M. Wright, ''An Introduction to the Theory of Numbers'', 3rd ed., Oxford, 1954, pp. 221–222|כיווון=שמאל}}
+איבר ראשוני בחוג הוא איבר <math>\gamma</math> כך שאם <math>\gamma \mid \alpha\beta</math> אז <math>\gamma \mid \alpha</math> או <math>\gamma \mid \beta</math>. ב-<math>\mathbb Z[\varphi]</math> יש שלושה סוגי ראשוניים:{{הערה|1=G. H. Hardy, E. M. Wright, ''An Introduction to the Theory of Numbers'', 3rd ed., Oxford, 1954, pp. 221–222|כיווון=שמאל}}
 * <math>\sqrt5 = -1 + 2\varphi</math> (ה[[סיעוף (מתמטיקה)|מסועף]]: <math>5 = (\sqrt5)^2</math>);
 * ראשוניים רגילים מהצורה <math>p = 5n \pm 2</math> (שנשארים ראשוניים – "אינרטיים");
 * הגורמים של ראשוניים רגילים מהצורה <math>p = 5n \pm 1</math>, שמתפרקים לזוג ראשוניים צמודים.
@@ -83,7 +83,7 @@
 === אידיאלים ===
 [[אידיאל (אלגברה)|אידיאל]] של <math>\mathbb Z[\varphi]</math> הוא תת-קבוצה ש"בולעת כפל": היא מכילה כל כפולה זהובה של כל אחד מאיבריה. לכל שלם זהוב <math>\alpha</math>, קבוצת כל הכפולות שלו, <math>(\alpha)</math>, היא האידיאל שנוצר על ידי <math>\alpha</math>; ומתקיים <math>(\alpha) = (\beta)</math> בדיוק כאשר <math>\alpha = \pm\beta\varphi^n</math>. כיוון ש-<math>\mathbb Z[\varphi]</math> [[תחום ראשי]], כל אידיאל נוצר על ידי איבר יחיד. סכום ומכפלה של אידיאלים מוגדרים כרגיל:
 :<math>\mathfrak a + \mathfrak b = \{\alpha + \beta : \alpha\in\mathfrak a, \beta\in\mathfrak b\}, \qquad \mathfrak a\mathfrak b = \Bigl\{\textstyle\sum_{i=1}^n \alpha_i\beta_i : \alpha_i \in \mathfrak a, \beta_i \in \mathfrak b\Bigr\}.</math>
-באופן כללי יותר, [[אידיאל שבור]] של <math>\mathbb Q(\sqrt5)</math> הוא תת-קבוצה שהכפלתה בשלם זהוב כלשהו ("מכנה") נותנת אידיאל. גם כל אידיאל שבור נוצר על ידי איבר יחיד, וההעתקה <math>\alpha \mapsto (\alpha)</math> משרה [[איזומורפיזם של חבורות]] בין <math>\mathbb Q(\sqrt5)^\times/U</math> (כאשר <math>U</math> חבורת היחידות) לבין חבורת האידיאלים השבורים. במילים אחרות, [[חבורת מחלקות האידיאלים]] טריוויאלית.
+באופן כללי יותר, [[אידיאל שבור]] של <math>\mathbb Q(\sqrt5)</math> הוא תת-קבוצה שהכפלתה בשלם זהוב כלשהו ("מכנה") נותנת אידיאל. גם כל אידיאל שבור נוצר על ידי איבר יחיד, וההעתקה <math>\alpha \mapsto (\alpha)</math> משרה איזומורפיזם של חבורות בין <math>\mathbb Q(\sqrt5)^\times/U</math> (כאשר <math>U</math> חבורת היחידות) לבין חבורת האידיאלים השבורים. במילים אחרות, [[חבורת מחלקות האידיאלים]] טריוויאלית.
 
 === טבלת שלמים ===
 בטבלה הבאה השלמים הזהובים החיוביים מסודרים בשורות, עם נציג אחד לכל מחלקת חברים (הנציג הוא האיבר החיובי <math>\alpha</math> במחלקה שעבורו <math>\alpha + |\overline\alpha|</math> מינימלי).
@@ -160,10 +160,10 @@
 \mathbf\Phi^n\mathbf R = \begin{bmatrix} L_{n-1} & L_n \\ L_n & L_{n+1} \end{bmatrix},\ \ \mathrm{tr}(\mathbf\Phi^n\mathbf R) = 5F_n.</math>
 למשל <math>\mathbf\Phi^{10} = \left[\begin{smallmatrix} 34 & 55 \\ 55 & 89 \end{smallmatrix}\right]</math> ו-<math>\mathbf\Phi^{10}\mathbf R = \left[\begin{smallmatrix} 76 & 123 \\ 123 & 199 \end{smallmatrix}\right]</math>.
 
-לכל מטריצה <math>a\mathbf I + b\mathbf\Phi</math> יש [[וקטור עצמי|וקטורים עצמיים]] בכיוונים <math>(1, \varphi)^{\mathsf T}</math> ו-<math>(1, \overline\varphi)^{\mathsf T}</math>. כשמציירים את איברי השדה במערכת צירים שבה הציר האופקי הוא ערך המספר והציר האנכי הוא ערך הצמוד שלו ("השיכון הקנוני"), הווקטורים העצמיים מכוונים לאורך שני הצירים. המטריצות <math>\mathbf\Phi^{2n}</math>, שמייצגות יחידות מנורמה 1, הן [[העתקת סחיטה|העתקות סחיטה]]: הן מותחות את המישור לאורך ציר אחד ומכווצות לאורך השני, ומשמרות את ה[[היפרבולה|היפרבולות]] של נורמה קבועה.
+לכל מטריצה <math>a\mathbf I + b\mathbf\Phi</math> יש [[וקטור עצמי|וקטורים עצמיים]] בכיוונים <math>(1, \varphi)^{\mathsf T}</math> ו-<math>(1, \overline\varphi)^{\mathsf T}</math>. כשמציירים את איברי השדה במערכת צירים שבה הציר האופקי הוא ערך המספר והציר האנכי הוא ערך הצמוד שלו ("השיכון הקנוני"), הווקטורים העצמיים מכוונים לאורך שני הצירים. המטריצות <math>\mathbf\Phi^{2n}</math>, שמייצגות יחידות מנורמה 1, הן העתקות סחיטה: הן מותחות את המישור לאורך ציר אחד ומכווצות לאורך השני, ומשמרות את ה[[היפרבולה|היפרבולות]] של נורמה קבועה.
 
 == תכונות נוספות ==
-השדה הזהוב הוא השדה הריבועי הממשי עם ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] הקטנה ביותר, <math>\Delta_{\mathbb Q(\sqrt5)} = 5</math>. [[מספר המחלקות]] שלו הוא 1, כלומר חוג השלמים שלו הוא [[תחום ראשי]] ו[[תחום פריקות יחידה]].
+השדה הזהוב הוא השדה הריבועי הממשי עם ה[[דיסקרימיננטה של שדה מספרים|דיסקרימיננטה]] הקטנה ביותר, <math>\Delta_{\mathbb Q(\sqrt5)} = 5</math>. מספר המחלקות שלו הוא 1, כלומר חוג השלמים שלו הוא [[תחום ראשי]] ו[[תחום פריקות יחידה]].
 
 כל איבר חיובי בשדה הזהוב אפשר לכתוב כסוג מוכלל של [[שבר משולב]], שבו המנות החלקיות הן סכומים של חזקות אי-שליליות של <math>\varphi</math>.
 
@@ -189,13 +189,13 @@ L_0 &= 2, & L_1 &= 1, & L_{n+1} &= L_n + L_{n-1}, \\
 
 מספרי פיבונאצ'י ולוקאס הם הרכיבים כאשר כותבים חזקה של יחס הזהב בצורה <math>\tfrac12a + \tfrac12b\sqrt5</math>:
 :<math>\varphi^n = \tfrac12L_n + \tfrac12F_n\sqrt5, \qquad \overline\varphi^n = \tfrac12L_n - \tfrac12F_n\sqrt5.</math>
-מכאן [[נוסחת בינה]]:
+מכאן נוסחת בינה:
 :<math>F_n = \frac{\varphi^n - \overline\varphi^n}{\sqrt5} = \frac{\mathrm{tr}(\varphi^n\sqrt5)}{5}, \qquad L_n = \varphi^n + \overline\varphi^n = \mathrm{tr}(\varphi^n).</math>
 '''דוגמה.''' <math>\varphi^5 = F_4 + F_5\varphi = 3 + 5\varphi = \tfrac{11}{2} + \tfrac52\sqrt5</math>, ואכן <math>L_5 = 11</math> ו-<math>F_5 = 5</math>.
 
 בצורה <math>a + b\varphi</math>:
 :<math>\varphi^n = F_{n-1} + F_n\varphi, \quad \overline\varphi^n = F_{n+1} - F_n\varphi, \quad \varphi^n\sqrt5 = L_{n-1} + L_n\varphi, \quad \overline\varphi^n\sqrt5 = -L_{n+1} + L_n\varphi.</math>
-טענות על השלמים הזהובים אפשר לתרגם לטענות על מספרי פיבונאצ'י ולוקאס. למשל, העובדה ש-<math>\varphi^n</math> יחידה, <math>\mathrm N(\varphi^n) = (-1)^n</math>, היא לאחר פתיחת סוגריים בדיוק [[זהות קסיני]]; ו-<math>\mathrm N(\varphi^n\sqrt5) = (-1)^n\cdot(-5)</math> נותנת את הזהות המקבילה למספרי לוקאס:
+טענות על השלמים הזהובים אפשר לתרגם לטענות על מספרי פיבונאצ'י ולוקאס. למשל, העובדה ש-<math>\varphi^n</math> יחידה, <math>\mathrm N(\varphi^n) = (-1)^n</math>, היא לאחר פתיחת סוגריים בדיוק זהות קסיני; ו-<math>\mathrm N(\varphi^n\sqrt5) = (-1)^n\cdot(-5)</math> נותנת את הזהות המקבילה למספרי לוקאס:
 :<math>F_{n-1}F_{n+1} - F_n^2 = (-1)^n, \qquad L_n^2 - L_{n-1}L_{n+1} = (-1)^n\cdot 5.</math>
 '''בדיקה ל-<math>n = 6</math>:''' <math>5\cdot 13 - 8^2 = 1</math>, ו-<math>18^2 - 11\cdot 29 = 324 - 319 = 5</math>.
 

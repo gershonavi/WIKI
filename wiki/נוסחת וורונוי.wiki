@@ -32,7 +32,7 @@
 וזה מסביר את הגודל <math>X^{1/4}</math> של התנודות. (בדיקה מספרית: עבור <math>X = 1000.5</math>, <math>D(X) \approx 2.782</math>, ו-200,000 האיברים הראשונים של הטור, ועוד <math>1/4</math>, נותנים <math>2.732</math>; עבור <math>X = 5000.5</math> מתקבל <math>13.04</math> לעומת <math>12.83</math>. ההפרשים נובעים מקטימת הטור, שמתכנס לאט.) ההשערה המקובלת היא ששתי השגיאות הן <math>O(X^{1/4+\varepsilon})</math> לכל <math>\varepsilon \gt 0</math>.
 
 == ניסוח מודרני ==
-תהי <math>f</math> [[צורת מאס|צורת חוד של מאס]] עבור [[החבורה המודולרית]] <math>PSL(2,\mathbb{Z})</math>, ויהיו <math>a(n)</math> מקדמי פורייה שלה. יהיו <math>a, c</math> שלמים עם <math>\gcd(a,c) = 1</math>. תהי <math>\omega</math> פונקציית בדיקה "מתנהגת יפה". נוסחת וורונוי עבור <math>f</math> קובעת ש
+תהי <math>f</math> צורת חוד של מאס עבור [[החבורה המודולרית]] <math>PSL(2,\mathbb{Z})</math>, ויהיו <math>a(n)</math> מקדמי פורייה שלה. יהיו <math>a, c</math> שלמים עם <math>\gcd(a,c) = 1</math>. תהי <math>\omega</math> פונקציית בדיקה "מתנהגת יפה". נוסחת וורונוי עבור <math>f</math> קובעת ש
 :<math>\sum_n a(n)e(an/c)\omega(n) = \sum_n a(n)e(-\bar a n/c)\Omega(n),</math>
 כאשר <math>e(x) = e^{2\pi i x}</math>, <math>\bar{a}</math> הוא ההופכי הכפלי של <math>a</math> מודולו <math>c</math>, ו-<math>\Omega</math> היא התמרת הנקל אינטגרלית מסוימת של <math>\omega</math> (ראו Good, 1984).
 

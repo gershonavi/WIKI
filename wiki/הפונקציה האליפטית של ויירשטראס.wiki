@@ -1,9 +1,9 @@
-ב[[מתמטיקה]], '''הפונקציות האליפטיות של ויירשטראס''' הן [[פונקציה אליפטית|פונקציות אליפטיות]] בעלות צורה פשוטה במיוחד. הן קרויות על שם [[קרל ויירשטראס]]. משפחת הפונקציות הזו נקראת גם '''פונקציות <math>\wp</math>''', ובדרך כלל מסמנים אותן באות <math>\wp</math>, צורה מסוגננת וייחודית של האות p. הן ממלאות תפקיד חשוב בתורת הפונקציות האליפטיות, כלומר [[פונקציה מרומורפית|פונקציות מרומורפיות]] [[פונקציה מחזורית כפולה|מחזוריות כפולות]]. פונקציית <math>\wp</math> יחד עם הנגזרת שלה מאפשרות לתת פרמטריזציה ל[[עקום אליפטי|עקומים אליפטיים]], והן יוצרות את שדה הפונקציות האליפטיות ביחס לסריג מחזורים נתון.
+ב[[מתמטיקה]], '''הפונקציות האליפטיות של ויירשטראס''' הן [[פונקציה אליפטית|פונקציות אליפטיות]] בעלות צורה פשוטה במיוחד. הן קרויות על שם [[קרל ויירשטראס]]. משפחת הפונקציות הזו נקראת גם '''פונקציות <math>\wp</math>''', ובדרך כלל מסמנים אותן באות <math>\wp</math>, צורה מסוגננת וייחודית של האות p. הן ממלאות תפקיד חשוב בתורת הפונקציות האליפטיות, כלומר [[פונקציה מרומורפית|פונקציות מרומורפיות]] מחזוריות כפולות. פונקציית <math>\wp</math> יחד עם הנגזרת שלה מאפשרות לתת פרמטריזציה ל[[עקום אליפטי|עקומים אליפטיים]], והן יוצרות את שדה הפונקציות האליפטיות ביחס לסריג מחזורים נתון.
 
 == מוטיבציה ==
-עקום ממעלה שלישית מהצורה <math>C_{g_2,g_3}^{\mathbb C} = \{(x, y) \in \mathbb C^2 : y^2 = 4x^3 - g_2x - g_3\}</math>, כאשר <math>g_2, g_3 \in \mathbb C</math> מספרים מרוכבים עם <math>g_2^3 - 27g_3^2 \ne 0</math>, אינו ניתן ל[[יריעה רציונלית|פרמטריזציה רציונלית]].{{הערה|שם=Hulek|1=<span dir="ltr">K. Hulek, Elementare Algebraische Geometrie, 2nd ed., Vieweg+Teubner, 2012, p. 8.</span>|כיווון=שמאל}} ובכל זאת רוצים למצוא דרך לתת לו פרמטריזציה.
+עקום ממעלה שלישית מהצורה <math>C_{g_2,g_3}^{\mathbb C} = \{(x, y) \in \mathbb C^2 : y^2 = 4x^3 - g_2x - g_3\}</math>, כאשר <math>g_2, g_3 \in \mathbb C</math> מספרים מרוכבים עם <math>g_2^3 - 27g_3^2 \ne 0</math>, אינו ניתן לפרמטריזציה רציונלית.{{הערה|שם=Hulek|1=<span dir="ltr">K. Hulek, Elementare Algebraische Geometrie, 2nd ed., Vieweg+Teubner, 2012, p. 8.</span>|כיווון=שמאל}} ובכל זאת רוצים למצוא דרך לתת לו פרמטריזציה.
 
-עבור ה[[משטח ריבועי|ריבועית]] <math>K = \{(x, y) \in \mathbb R^2 : x^2 + y^2 = 1\}</math>, [[מעגל היחידה]], יש פרמטריזציה (לא רציונלית) בעזרת פונקציית ה[[סינוס]] והנגזרת שלה, הקוסינוס:
+עבור הריבועית <math>K = \{(x, y) \in \mathbb R^2 : x^2 + y^2 = 1\}</math>, [[מעגל היחידה]], יש פרמטריזציה (לא רציונלית) בעזרת פונקציית ה[[סינוס]] והנגזרת שלה, הקוסינוס:
 :<math>\psi: \mathbb R/2\pi\mathbb Z \to K, \qquad t \mapsto (\sin t, \cos t).</math>
 בגלל המחזוריות של הסינוס והקוסינוס בוחרים את <math>\mathbb R/2\pi\mathbb Z</math> כתחום, וכך הפונקציה חד-חד-ערכית ועל.
 
@@ -17,14 +17,14 @@
 
 פונקציות אליפטיות הן הפונקציות ההפוכות של [[אינטגרל אליפטי|אינטגרלים אליפטיים]]. בפרט, יהי
 :<math>u(z) = \int_z^\infty\frac{ds}{\sqrt{4s^3 - g_2s - g_3}}.</math>
-אז ההרחבה של <math>u^{-1}</math> למישור המרוכב היא פונקציית <math>\wp</math>.{{הערה|שם=Busam}} ההפיכות הזו משמשת ב[[אנליזה מרוכבת]] כדי לפתור [[משוואה דיפרנציאלית לא לינארית|משוואות דיפרנציאליות לא לינאריות]] מסוימות שיש להן [[תכונת פנלבה]], כלומר משוואות שהסינגולריות הניידות היחידות של פתרונותיהן הן [[קוטב (אנליזה מרוכבת)|קטבים]].{{הערה|1=<span dir="ltr">M. J. Ablowitz, A. S. Fokas, Complex Variables: Introduction and Applications, Cambridge University Press, 2003, p. 185.</span>|כיווון=שמאל}}
+אז ההרחבה של <math>u^{-1}</math> למישור המרוכב היא פונקציית <math>\wp</math>.{{הערה|שם=Busam}} ההפיכות הזו משמשת ב[[אנליזה מרוכבת]] כדי לפתור משוואות דיפרנציאליות לא לינאריות מסוימות שיש להן תכונת פנלבה, כלומר משוואות שהסינגולריות הניידות היחידות של פתרונותיהן הן [[קוטב (אנליזה מרוכבת)|קטבים]].{{הערה|1=<span dir="ltr">M. J. Ablowitz, A. S. Fokas, Complex Variables: Introduction and Applications, Cambridge University Press, 2003, p. 185.</span>|כיווון=שמאל}}
 
 == הגדרה ==
 יהיו <math>\omega_1, \omega_2 \in \mathbb C</math> שני מספרים מרוכבים [[תלות לינארית|בלתי תלויים לינארית]] מעל <math>\mathbb R</math>, ויהי <math>\Lambda := \mathbb Z\omega_1 + \mathbb Z\omega_2 = \{m\omega_1 + n\omega_2 : m, n \in \mathbb Z\}</math> '''סריג המחזורים''' שהם יוצרים. אז פונקציית <math>\wp</math> מוגדרת כך:
 :<math>\wp(z, \omega_1, \omega_2) := \wp(z) = \frac1{z^2} + \sum_{\lambda\in\Lambda\setminus\{0\}}\left(\frac1{(z - \lambda)^2} - \frac1{\lambda^2}\right).</math>
-הטור [[התכנסות במידה שווה|מתכנס בהחלט ובמידה שווה]] מקומית ב[[טורוס מרוכב|טורוס המרוכב]] <math>\mathbb C/\Lambda</math> (מחוץ לנקודות הסריג). החיסור של <math>1/\lambda^2</math> הכרחי: הטור <math>\sum 1/|\lambda|^2</math> מתבדר, ואילו <math>\frac1{(z-\lambda)^2} - \frac1{\lambda^2} = O(|\lambda|^{-3})</math>, ו-<math>\sum|\lambda|^{-3}</math> מתכנס.
+הטור [[התכנסות במידה שווה|מתכנס בהחלט ובמידה שווה]] מקומית בטורוס המרוכב <math>\mathbb C/\Lambda</math> (מחוץ לנקודות הסריג). החיסור של <math>1/\lambda^2</math> הכרחי: הטור <math>\sum 1/|\lambda|^2</math> מתבדר, ואילו <math>\frac1{(z-\lambda)^2} - \frac1{\lambda^2} = O(|\lambda|^{-3})</math>, ו-<math>\sum|\lambda|^{-3}</math> מתכנס.
 
-נהוג לבחור את <math>1</math> ואת <math>\tau</math> ב[[חצי המישור העליון]] <math>\mathbb H := \{z \in \mathbb C : \operatorname{Im}z \gt 0\}</math> כ[[פרישה לינארית|יוצרים]] של ה[[סריג (חבורה)|סריג]]. חלוקה ב-<math>\omega_1</math> מעתיקה את הסריג <math>\mathbb Z\omega_1 + \mathbb Z\omega_2</math> באופן איזומורפי על הסריג <math>\mathbb Z + \mathbb Z\tau</math>, עם <math>\tau = \omega_2/\omega_1</math>. כיוון שאפשר להחליף את <math>\tau</math> ב-<math>-\tau</math>, אפשר להניח [[בלי הגבלת הכלליות]] ש-<math>\tau \in \mathbb H</math>, ולהגדיר <math>\wp(z, \tau) := \wp(z, 1, \tau)</math>. עם ההגדרה הזו מתקיים <math>\wp(z, \omega_1, \omega_2) = \omega_1^{-2}\wp(z/\omega_1, \omega_2/\omega_1)</math>.
+נהוג לבחור את <math>1</math> ואת <math>\tau</math> ב[[חצי המישור העליון]] <math>\mathbb H := \{z \in \mathbb C : \operatorname{Im}z \gt 0\}</math> כיוצרים של הסריג. חלוקה ב-<math>\omega_1</math> מעתיקה את הסריג <math>\mathbb Z\omega_1 + \mathbb Z\omega_2</math> באופן איזומורפי על הסריג <math>\mathbb Z + \mathbb Z\tau</math>, עם <math>\tau = \omega_2/\omega_1</math>. כיוון שאפשר להחליף את <math>\tau</math> ב-<math>-\tau</math>, אפשר להניח [[בלי הגבלת הכלליות]] ש-<math>\tau \in \mathbb H</math>, ולהגדיר <math>\wp(z, \tau) := \wp(z, 1, \tau)</math>. עם ההגדרה הזו מתקיים <math>\wp(z, \omega_1, \omega_2) = \omega_1^{-2}\wp(z/\omega_1, \omega_2/\omega_1)</math>.
 
 == תכונות ==
 * <math>\wp</math> היא פונקציה מרומורפית עם קוטב מסדר 2 בכל מחזור <math>\lambda \in \Lambda</math>.
@@ -39,7 +39,7 @@
 *:השוויון הלפני-אחרון נכון כי <math>\{-\lambda : \lambda \in \Lambda\} = \Lambda</math>. כיוון שהטור מתכנס בהחלט, סידור מחדש אינו משנה את הגבול.
 * הנגזרת של <math>\wp</math> נתונה על ידי{{הערה|שם=Apo|1=<span dir="ltr">T. M. Apostol, Modular Functions and Dirichlet Series in Number Theory, Springer, 1976, pp. 11–14.</span>|כיווון=שמאל}}
 *:<math>\wp'(z) = -2\sum_{\lambda\in\Lambda}\frac1{(z - \lambda)^3}.</math>
-* <math>\wp</math> ו-<math>\wp'</math> [[פונקציה מחזורית כפולה|מחזוריות כפולות]] עם המחזורים <math>\omega_1</math> ו-<math>\omega_2</math>:{{הערה|שם=Apo}}
+* <math>\wp</math> ו-<math>\wp'</math> מחזוריות כפולות עם המחזורים <math>\omega_1</math> ו-<math>\omega_2</math>:{{הערה|שם=Apo}}
 *:<math>\wp(z + \omega_1) = \wp(z) = \wp(z + \omega_2), \qquad \wp'(z + \omega_1) = \wp'(z) = \wp'(z + \omega_2).</math>
 *:מכאן ש-<math>\wp(z + \lambda) = \wp(z)</math> ו-<math>\wp'(z + \lambda) = \wp'(z)</math> לכל <math>\lambda \in \Lambda</math>. (עבור <math>\wp'</math> זה ברור מהטור, כי הזזה ב-<math>\lambda</math> רק מסדרת מחדש את המחוברים; עבור <math>\wp</math> מסיקים מכך ש-<math>\wp(z + \omega_i) - \wp(z)</math> קבוע, והצבה של <math>z = -\omega_i/2</math> והזוגיות של <math>\wp</math> מראות שהקבוע הוא אפס.)
 
@@ -68,7 +68,7 @@
 
 טורי פורייה של <math>g_2</math> ו-<math>g_3</math> הם{{הערה|1=<span dir="ltr">T. M. Apostol, Modular Functions and Dirichlet Series in Number Theory, 2nd ed., Springer, 1990, p. 20.</span>|כיווון=שמאל}}
 :<math>g_2(\tau) = \frac43\pi^4\left[1 + 240\sum_{k=1}^\infty\sigma_3(k)q^{2k}\right], \qquad g_3(\tau) = \frac8{27}\pi^6\left[1 - 504\sum_{k=1}^\infty\sigma_5(k)q^{2k}\right],</math>
-כאשר <math>\sigma_m(k) := \sum_{d\mid k}d^m</math> היא [[פונקציית סכום המחלקים]] ו-<math>q = e^{\pi i\tau}</math> הוא ה[[נום (מתמטיקה)|נום]].
+כאשר <math>\sigma_m(k) := \sum_{d\mid k}d^m</math> היא פונקציית סכום המחלקים ו-<math>q = e^{\pi i\tau}</math> הוא הנום.
 
 '''דוגמה: הסריג הריבועי.''' עבור <math>\Lambda = \mathbb Z + \mathbb Zi</math> (<math>\tau = i</math>), כפל ב-<math>i</math> שומר על הסריג, ולכן <math>G_6 = i^{-6}G_6 = -G_6</math>, כלומר <math>g_3 = 0</math>. הערך של <math>g_2</math> הוא
 :<math>g_2(i) = \frac{\Gamma\left(\frac14\right)^8}{16\pi^2} \approx 189.0727,</math>
@@ -79,7 +79,7 @@
 :<math>\Delta = g_2^3 - 27g_3^2.</math>
 הדיסקרימיננטה היא תבנית מודולרית ממשקל 12. כלומר, תחת הפעולה של [[החבורה המודולרית]] היא מתנהגת כך:
 :<math>\Delta\left(\frac{a\tau + b}{c\tau + d}\right) = (c\tau + d)^{12}\Delta(\tau),</math>
-כאשר <math>a, b, c, d \in \mathbb Z</math> ו-<math>ad - bc = 1</math>.{{הערה|1=<span dir="ltr">T. M. Apostol, Modular Functions and Dirichlet Series in Number Theory, Springer, 1976, p. 50.</span>|כיווון=שמאל}} מתקיים <math>\Delta = (2\pi)^{12}\eta^{24}</math>, כאשר <math>\eta</math> היא [[פונקציית אטא של דדקינד]].{{הערה|שם=Ch|1=<span dir="ltr">K. Chandrasekharan, Elliptic Functions, Springer, 1985, pp. 33, 122.</span>|כיווון=שמאל}} למקדמי פורייה של <math>\Delta</math> ראו [[פונקציית טאו של רמנוג'אן]].
+כאשר <math>a, b, c, d \in \mathbb Z</math> ו-<math>ad - bc = 1</math>.{{הערה|1=<span dir="ltr">T. M. Apostol, Modular Functions and Dirichlet Series in Number Theory, Springer, 1976, p. 50.</span>|כיווון=שמאל}} מתקיים <math>\Delta = (2\pi)^{12}\eta^{24}</math>, כאשר <math>\eta</math> היא [[פונקציית אטא של דדקינד]].{{הערה|שם=Ch|1=<span dir="ltr">K. Chandrasekharan, Elliptic Functions, Springer, 1985, pp. 33, 122.</span>|כיווון=שמאל}} למקדמי פורייה של <math>\Delta</math> ראו פונקציית טאו של רמנוג'אן.
 
 === הקבועים <math>e_1, e_2, e_3</math> ===
 בדרך כלל מסמנים <math>e_1, e_2, e_3</math> את הערכים של פונקציית <math>\wp</math> בחצאי המחזורים:
@@ -99,7 +99,7 @@
 '''דוגמאות.''' בסריג הריבועי <math>\mathbb Z + \mathbb Zi</math>, השורשים של <math>4x^3 - g_2x</math> הם <math>0, \pm\sqrt{g_2}/2</math>, ובסימון שלמעלה <math>e_1 = \wp(1/2) = \sqrt{g_2}/2 \approx 6.875</math>, <math>e_2 = \wp(i/2) = -e_1</math>, <math>e_3 = \wp\left(\frac{1+i}2\right) = 0</math>; לכן <math>\lambda(i) = \frac{0 + e_1}{2e_1} = \frac12</math>. בסריג המלבני <math>\mathbb Z + 1.3i\,\mathbb Z</math> הערכים (בחישוב מספרי) הם <math>e_1 \approx 6.6245</math>, <math>e_2 \approx -4.6433</math>, <math>e_3 \approx -1.9812</math>; כולם ממשיים, <math>e_1 \gt e_3 \gt e_2</math>, וסכומם אפס.
 
 == קשר לפונקציות האליפטיות של יעקובי ==
-בעבודה נומרית נוח לעיתים קרובות לחשב את הפונקציה האליפטית של ויירשטראס בעזרת [[הפונקציות האליפטיות של יעקובי]]. כאשר השורשים ממשיים, מסמנים אותם כאן לפי הסדר <math>e_1 \gt e_2 \gt e_3</math>; שימו לב שבסריג מלבני (<math>\omega_1</math> ממשי, <math>\omega_2</math> מדומה) זה אומר <math>e_1 = \wp(\omega_1/2)</math>, <math>e_2 = \wp\left(\frac{\omega_1 + \omega_2}2\right)</math> ו-<math>e_3 = \wp(\omega_2/2)</math>, כלומר <math>e_2</math> ו-<math>e_3</math> מתחלפים לעומת הסימון של הסעיף הקודם.{{הערה|1=בערך האנגלי הנוסחאות של הסעיף הזה מופיעות עם אותם הסמלים <math>e_1, e_2, e_3</math> כמו בסעיף על חצאי המחזורים, אבל הן נכונות רק בסדר <math>e_1 \gt e_2 \gt e_3</math>. בסימון של חצאי המחזורים, בסריג מלבני מתקיים <math>e_1 \gt e_3 \gt e_2</math>, ואז הנוסחה <math>k^2 = (e_2 - e_3)/(e_1 - e_3)</math> נותנת מספר שלילי. בדקנו את הנוסחאות בסדר <math>e_1 \gt e_2 \gt e_3</math> בחישוב מספרי, עבור הסריג <math>\mathbb Z + 1.3i\,\mathbb Z</math>.|כיווון=שמאל}} הקשרים הבסיסיים הם:{{הערה|1=<span dir="ltr">G. A. Korn, T. M. Korn, Mathematical Handbook for Scientists and Engineers, McGraw–Hill, 1961, p. 721.</span>|כיווון=שמאל}}
+בעבודה נומרית נוח לעיתים קרובות לחשב את הפונקציה האליפטית של ויירשטראס בעזרת הפונקציות האליפטיות של יעקובי. כאשר השורשים ממשיים, מסמנים אותם כאן לפי הסדר <math>e_1 \gt e_2 \gt e_3</math>; שימו לב שבסריג מלבני (<math>\omega_1</math> ממשי, <math>\omega_2</math> מדומה) זה אומר <math>e_1 = \wp(\omega_1/2)</math>, <math>e_2 = \wp\left(\frac{\omega_1 + \omega_2}2\right)</math> ו-<math>e_3 = \wp(\omega_2/2)</math>, כלומר <math>e_2</math> ו-<math>e_3</math> מתחלפים לעומת הסימון של הסעיף הקודם.{{הערה|1=בערך האנגלי הנוסחאות של הסעיף הזה מופיעות עם אותם הסמלים <math>e_1, e_2, e_3</math> כמו בסעיף על חצאי המחזורים, אבל הן נכונות רק בסדר <math>e_1 \gt e_2 \gt e_3</math>. בסימון של חצאי המחזורים, בסריג מלבני מתקיים <math>e_1 \gt e_3 \gt e_2</math>, ואז הנוסחה <math>k^2 = (e_2 - e_3)/(e_1 - e_3)</math> נותנת מספר שלילי. בדקנו את הנוסחאות בסדר <math>e_1 \gt e_2 \gt e_3</math> בחישוב מספרי, עבור הסריג <math>\mathbb Z + 1.3i\,\mathbb Z</math>.|כיווון=שמאל}} הקשרים הבסיסיים הם:{{הערה|1=<span dir="ltr">G. A. Korn, T. M. Korn, Mathematical Handbook for Scientists and Engineers, McGraw–Hill, 1961, p. 721.</span>|כיווון=שמאל}}
 :<math>\wp(z) = e_3 + \frac{e_1 - e_3}{\operatorname{sn}^2w} = e_2 + (e_1 - e_3)\frac{\operatorname{dn}^2w}{\operatorname{sn}^2w} = e_1 + (e_1 - e_3)\frac{\operatorname{cn}^2w}{\operatorname{sn}^2w},</math>
 כאשר המודולוס <math>k</math> של פונקציות יעקובי הוא
 :<math>k = \sqrt{\frac{e_2 - e_3}{e_1 - e_3}},</math>
@@ -112,9 +112,9 @@
 כאשר <math>q = e^{\pi i\tau}</math> הוא הנום ו-<math>\tau</math> יחס המחזורים (<math>\tau \in \mathbb H</math>).{{הערה|1=<span dir="ltr">W. P. Reinhardt, P. L. Walker, Weierstrass Elliptic and Modular Functions, NIST Digital Library of Mathematical Functions, eq. 23.6.7.</span>|כיווון=שמאל}} זה נותן גם אלגוריתם מהיר מאוד לחישוב <math>\wp(z, \tau)</math>, כי טורי התטא מתכנסים מהר בהרבה מהסכום על הסריג. (בדקנו את הנוסחה מול הסכום על הסריג, ואת המשוואה הדיפרנציאלית ונוסחאות החיבור שלהלן בעזרתה.)
 
 == קשר לעקומים אליפטיים ==
-נתבונן בשיכון של העקום הממעלה השלישית ב[[המישור הפרויקטיבי המרוכב|מישור הפרויקטיבי המרוכב]]
+נתבונן בשיכון של העקום הממעלה השלישית במישור הפרויקטיבי המרוכב
 :<math>\bar C_{g_2,g_3}^{\mathbb C} = \{(x, y) \in \mathbb C^2 : y^2 = 4x^3 - g_2x - g_3\} \cup \{O\} \subset \mathbb C^2 \cup \mathbb P_1(\mathbb C) = \mathbb P_2(\mathbb C),</math>
-כאשר <math>O</math> נקודה על [[הישר שבאינסוף]] <math>\mathbb P_1(\mathbb C)</math>. אם <math>\Delta \ne 0</math>, לעקום הזה אין פרמטריזציה רציונלית,{{הערה|שם=Hulek}} ובמקרה הזה הוא נקרא עקום אליפטי. בכל זאת יש לו פרמטריזציה ב[[קואורדינטות הומוגניות]] בעזרת פונקציית <math>\wp</math> והנגזרת שלה <math>\wp'</math>:
+כאשר <math>O</math> נקודה על הישר שבאינסוף <math>\mathbb P_1(\mathbb C)</math>. אם <math>\Delta \ne 0</math>, לעקום הזה אין פרמטריזציה רציונלית,{{הערה|שם=Hulek}} ובמקרה הזה הוא נקרא עקום אליפטי. בכל זאת יש לו פרמטריזציה ב[[קואורדינטות הומוגניות]] בעזרת פונקציית <math>\wp</math> והנגזרת שלה <math>\wp'</math>:
 :<math>\varphi(\wp, \wp'): \mathbb C/\Lambda \to \bar C_{g_2,g_3}^{\mathbb C}, \qquad z \mapsto \begin{cases}[\wp(z) : \wp'(z) : 1] & z \notin \Lambda, \\ [0 : 1 : 0] & z \in \Lambda.\end{cases}</math>
 ההעתקה <math>\varphi</math> [[פונקציה חד-חד-ערכית ועל|חד-חד-ערכית ועל]], ונותנת פרמטריזציה של העקום האליפטי <math>\bar C_{g_2,g_3}^{\mathbb C}</math>. <math>\mathbb C/\Lambda</math> היא [[חבורה אבלית]] וגם [[מרחב טופולוגי]] עם [[טופולוגיית מנה|טופולוגיית המנה]], ו-<math>\varphi</math> מעבירה את החיבור ב-<math>\mathbb C/\Lambda</math> לחוק החבורה של העקום (ראו משפט החיבור שלהלן).
 
@@ -150,11 +150,11 @@
 
 '''הוכחה ישירה.'''{{הערה|1=<span dir="ltr">N. I. Akhiezer, Elements of the Theory of Elliptic Functions, AMS Translations of Mathematical Monographs 79, 1990, pp. 40–41.</span>|כיווון=שמאל}} כל פונקציה אליפטית <math>f</math> אפשר לכתוב כ-
 :<math>f(u) = c\prod_{i=1}^n\frac{\sigma(u - a_i)}{\sigma(u - b_i)}, \qquad c \in \mathbb C,</math>
-כאשר <math>\sigma</math> היא [[פונקציית הסיגמא של ויירשטראס]], ו-<math>a_i, b_i</math> הם האפסים והקטבים במקבילית המחזורים. כשמתבוננים ב-<math>\wp(u) - \wp(v)</math> כפונקציה של <math>u</math> (אפסים ב-<math>\pm v</math>, קוטב כפול ב-0), מקבלים
+כאשר <math>\sigma</math> היא פונקציית הסיגמא של ויירשטראס, ו-<math>a_i, b_i</math> הם האפסים והקטבים במקבילית המחזורים. כשמתבוננים ב-<math>\wp(u) - \wp(v)</math> כפונקציה של <math>u</math> (אפסים ב-<math>\pm v</math>, קוטב כפול ב-0), מקבלים
 :<math>\wp(u) - \wp(v) = c\,\frac{\sigma(u + v)\sigma(u - v)}{\sigma(u)^2}.</math>
 כפל של שני האגפים ב-<math>u^2</math> ומעבר לגבול <math>u \to 0</math> נותנים <math>1 = c\,\sigma(v)\sigma(-v) = -c\,\sigma(v)^2</math>, ולכן
 :<math>c = -\frac1{\sigma(v)^2} \implies \wp(u) - \wp(v) = -\frac{\sigma(u + v)\sigma(u - v)}{\sigma(u)^2\sigma(v)^2}.</math>
-לפי ההגדרה של [[פונקציית הזטא של ויירשטראס]], <math>\frac d{dz}\ln\sigma(z) = \zeta(z)</math>. גזירה לוגריתמית של שני האגפים לפי <math>u</math> ולפי <math>v</math> נותנת
+לפי ההגדרה של פונקציית הזטא של ויירשטראס, <math>\frac d{dz}\ln\sigma(z) = \zeta(z)</math>. גזירה לוגריתמית של שני האגפים לפי <math>u</math> ולפי <math>v</math> נותנת
 :<math>\frac{\wp'(u)}{\wp(u) - \wp(v)} = \zeta(u + v) + \zeta(u - v) - 2\zeta(u), \qquad \frac{-\wp'(v)}{\wp(u) - \wp(v)} = \zeta(u + v) - \zeta(u - v) - 2\zeta(v),</math>
 וחיבור שתי המשוואות נותן
 :<math>\zeta(u + v) - \zeta(u) - \zeta(v) = \frac12\,\frac{\wp'(u) - \wp'(v)}{\wp(u) - \wp(v)}.</math>
@@ -170,9 +170,9 @@
 ב-[[TeX]] האות זמינה כ-<code>\wp</code>. ב-[[יוניקוד]] נקודת הקוד היא U+2118, ששמה הרשמי "SCRIPT CAPITAL P", עם הכינוי המדויק יותר "WEIERSTRASS ELLIPTIC FUNCTION". קונסורציום יוניקוד הכיר בשתי בעיות בשם האות: היא למעשה אות קטנה, והיא אינה אות מסוג "כתב" כמו U+1D4C5 (MATHEMATICAL SCRIPT SMALL P), אלא האות של הפונקציה האליפטית של ויירשטראס; לכן נוסף הכינוי כתיקון. ב-[[HTML]] אפשר לכתוב אותה כ-<code>&amp;weierp;</code> או <code>&amp;wp;</code>.
 
 == ראו גם ==
-* [[פונקציית הסיגמא של ויירשטראס]]
-* [[פונקציית הזטא של ויירשטראס]]
-* [[הפונקציות האליפטיות של יעקובי]]
+* פונקציית הסיגמא של ויירשטראס
+* פונקציית הזטא של ויירשטראס
+* הפונקציות האליפטיות של יעקובי
 * [[אינווריאנט j]]
 * [[עקום אליפטי]]
 

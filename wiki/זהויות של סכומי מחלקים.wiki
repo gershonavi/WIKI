@@ -2,7 +2,7 @@
 :<math>g(n) := \sum_{d\mid n}f(d).</math>
 הזהויות כוללות יישומים לסכומים של פונקציה אריתמטית רק על המחלקים הראשוניים של <math>n</math>. נגדיר גם גרסאות [[פונקציה מחזורית|מחזוריות]] של סכומי המחלקים האלה, ביחס ל[[מחלק משותף מקסימלי|מחלק המשותף המקסימלי]]:
 :<math>g_m(n) := \sum_{d\mid(m,n)}f(d), \qquad 1 \le m \le n.</math>
-יחסי היפוך ידועים, שמאפשרים לבטא את <math>f(n)</math> בעזרת <math>g(n)</math>, נותנת [[נוסחת ההיפוך של מביוס]]. הדוגמאות המעניינות ביותר של זהויות כאלה מתקבלות כשמתבוננים בסכומי [[הסדר הממוצע של פונקציה אריתמטית|הסדר הממוצע]] של פונקציה אריתמטית <math>f(n)</math> שמוגדרת כסכום מחלקים של פונקציה אחרת <math>g(n)</math>.
+יחסי היפוך ידועים, שמאפשרים לבטא את <math>f(n)</math> בעזרת <math>g(n)</math>, נותנת [[נוסחת ההיפוך של מביוס]]. הדוגמאות המעניינות ביותר של זהויות כאלה מתקבלות כשמתבוננים בסכומי הסדר הממוצע של פונקציה אריתמטית <math>f(n)</math> שמוגדרת כסכום מחלקים של פונקציה אחרת <math>g(n)</math>.
 
 את כל הזהויות בערך (פרט לאלה שמסומנות אחרת) בדקנו בחישוב, עם פונקציות שלמות מקריות ועבור כל <math>x, n \lt 40</math> בערך.
 
@@ -16,7 +16,7 @@
 # <math>\sum_{m=1}^x\left(\sum_{d\mid(m,x)}f(d)g\left(\frac xd\right)\right)t^m = (t^x - 1)\cdot\sum_{d\mid x}\frac{t^df(d)}{t^d - 1}g\left(\frac xd\right)</math>
 הזהויות האלה אינן קשות להוכחה, והן תרגיל בהחלפת סדר סכימה. למשל, בזהות 4, לכל <math>d \mid x</math> יש בדיוק <math>x/d</math> ערכים של <math>m \le x</math> שמתחלקים ב-<math>d</math>; ובזהות 5 הם תורמים <math>\sum_{j=1}^{x/d}t^{jd} = t^d\frac{t^x - 1}{t^d - 1}</math>.
 
-'''דוגמה.''' בזהות 2 עם <math>f = g = 1</math>: אגף שמאל הוא <math>\sum_{n\le x}d(n)</math> (סכום [[פונקציית מספר המחלקים]]), ואגף האמצע הוא <math>\sum_{n\le x}\lfloor x/n\rfloor</math>. עבור <math>x = 10</math> שניהם 27 (<math>d(1) + \cdots + d(10) = 1 + 2 + 2 + 3 + 2 + 4 + 2 + 4 + 3 + 4 = 27</math>, ו-<math>10 + 5 + 3 + 2 + 2 + 1 + 1 + 1 + 1 + 1 = 27</math>).
+'''דוגמה.''' בזהות 2 עם <math>f = g = 1</math>: אגף שמאל הוא <math>\sum_{n\le x}d(n)</math> (סכום פונקציית מספר המחלקים), ואגף האמצע הוא <math>\sum_{n\le x}\lfloor x/n\rfloor</math>. עבור <math>x = 10</math> שניהם 27 (<math>d(1) + \cdots + d(10) = 1 + 2 + 2 + 3 + 2 + 4 + 2 + 4 + 3 + 4 = 27</math>, ו-<math>10 + 5 + 3 + 2 + 2 + 1 + 1 + 1 + 1 + 1 = 27</math>).
 
 === שיטת הקונבולוציה ===
 '''שיטת הקונבולוציה''' היא טכניקה כללית להערכת סכומים ממוצעים מהצורה
@@ -26,9 +26,9 @@
 (עם <math>ab = n</math>), שנקראת [[שיטת ההיפרבולה של דיריכלה]].
 
 == סכומי מחלקים מחזוריים ==
-פונקציה אריתמטית היא ''מחזורית (מודולו <math>k</math>)'' אם <math>f(n + k) = f(n)</math> לכל <math>n</math>. דוגמאות הן [[קרקטר של דיריכלה|קרקטרי דיריכלה]] <math>\chi(n)</math> מודולו <math>k</math>, ופונקציית המחלק המשותף המקסימלי <math>f(n) = (n, k)</math>. ידוע שלכל פונקציה <math>k</math>-מחזורית יש הצגה כ[[טור פורייה]] בדיד סופי
+פונקציה אריתמטית היא ''מחזורית (מודולו <math>k</math>)'' אם <math>f(n + k) = f(n)</math> לכל <math>n</math>. דוגמאות הן קרקטרי דיריכלה <math>\chi(n)</math> מודולו <math>k</math>, ופונקציית המחלק המשותף המקסימלי <math>f(n) = (n, k)</math>. ידוע שלכל פונקציה <math>k</math>-מחזורית יש הצגה כ[[טור פורייה]] בדיד סופי
 :<math>f(n) = \sum_{m=1}^ka_k(m)e\left(\frac{mn}k\right),</math>
-כאשר <math>e(x) = e^{2\pi ix}</math>, ו[[מקדמי פורייה|מקדמי הפורייה]] <math>a_k(m) = \frac1k\sum_{n=1}^kf(n)e\left(-\frac{mn}k\right)</math> גם הם <math>k</math>-מחזוריים. מעניינים אותנו סכומי המחלקים ה-<math>k</math>-מחזוריים
+כאשר <math>e(x) = e^{2\pi ix}</math>, ומקדמי הפורייה <math>a_k(m) = \frac1k\sum_{n=1}^kf(n)e\left(-\frac{mn}k\right)</math> גם הם <math>k</math>-מחזוריים. מעניינים אותנו סכומי המחלקים ה-<math>k</math>-מחזוריים
 :<math>s_k(n) := \sum_{d\mid(n,k)}f(d)g\left(\frac kd\right) = \sum_{m=1}^ka_k(m)e\left(\frac{mn}k\right).</math>
 מקדמי הפורייה שלהם נתונים על ידי הנוסחה{{הערה|1=<span dir="ltr">NIST Digital Library of Mathematical Functions, §27.10.</span>|כיווון=שמאל}}
 :<math>a_k(m) = \sum_{d\mid(m,k)}g(d)f\left(\frac kd\right)\frac dk.</math>
@@ -42,18 +42,18 @@
 == סכומים על מחלקים ראשוניים ==
 תהי <math>a(n)</math> ה[[פונקציה מציינת|פונקציה המציינת]] של הראשוניים. כמקרה פרטי של הזהות הראשונה בסעיף החלפת סדר הסכימה, אפשר לבטא את הסכומים הממוצעים
 :<math>\sum_{n=1}^x\sum_{\substack{p\mid n\\p\text{ ראשוני}}}f(p) = \sum_{p=1}^xa(p)f(p)\left\lfloor\frac xp\right\rfloor = \sum_{\substack{p\le x\\p\text{ ראשוני}}}f(p)\left\lfloor\frac xp\right\rfloor.</math>
-יש גם נוסחה אינטגרלית, שמבוססת על [[סכימה בחלקים|סכימת אבל]], לסכומים מהצורה{{הערה|1=ראו סעיף 2.2 ב-<span dir="ltr">M. B. Villarino, Mertens' proof of Mertens' theorem, arXiv:math/0504289, 2005.</span>|כיווון=שמאל}}
+יש גם נוסחה אינטגרלית, שמבוססת על סכימת אבל, לסכומים מהצורה{{הערה|1=ראו סעיף 2.2 ב-<span dir="ltr">M. B. Villarino, Mertens' proof of Mertens' theorem, arXiv:math/0504289, 2005.</span>|כיווון=שמאל}}
 :<math>\sum_{\substack{p\le x\\p\text{ ראשוני}}}f(p) = \pi(x)f(x) - \int_2^x\pi(t)f'(t)\,dt \approx \frac{xf(x)}{\log x} - \int_2^x\frac t{\log t}f'(t)\,dt,</math>
-כאשר <math>\pi(x) \sim \frac x{\log x}</math> היא [[פונקציית ספירת הראשוניים]], ובדרך כלל מניחים ש-<math>f</math> [[פונקציה רציפה|רציפה]] ו[[פונקציה גזירה|גזירה]].
+כאשר <math>\pi(x) \sim \frac x{\log x}</math> היא פונקציית ספירת הראשוניים, ובדרך כלל מניחים ש-<math>f</math> [[פונקציה רציפה|רציפה]] ו[[פונקציה גזירה|גזירה]].
 
 == זהויות פחות מוכרות ==
 יש את הנוסחאות הבאות לסכומי מחלקים, כאשר <math>\varphi(n)</math> היא [[פונקציית אוילר]] ו-<math>\mu(n)</math> [[פונקציית מביוס]]:{{הערה|1=לפי הסדר, מהספר של אפוסטול: תרגיל 2.29, משפט 2.18, ותרגילים 2.30–2.32. לזהות הראשונה יש טור דיריכלה ידוע, <math>\sum_{n\ge1}\frac1{n^s}\sum_{k=1}^nf(\gcd(n, k)) = \frac{\zeta(s-1)}{\zeta(s)}\sum_{n\ge1}\frac{f(n)}{n^s}</math>; ראו <span dir="ltr">H. W. Gould, T. Shonhiwa, A catalogue of interesting Dirichlet series, Missouri J. Math. Sci. 20 (2008).</span>|כיווון=שמאל}}
-# לכל פונקציה <math>f</math>: <math>\sum_{d\mid n}f(d)\varphi\left(\frac nd\right) = \sum_{k=1}^nf(\gcd(n, k))</math>. למשל עם <math>f(n) = n</math> ו-<math>n = 12</math>: <math>\sum_{k=1}^{12}\gcd(12, k) = 40 = \sum_{d\mid12}d\,\varphi(12/d)</math> ([[פונקציית פילאי]]).
+# לכל פונקציה <math>f</math>: <math>\sum_{d\mid n}f(d)\varphi\left(\frac nd\right) = \sum_{k=1}^nf(\gcd(n, k))</math>. למשל עם <math>f(n) = n</math> ו-<math>n = 12</math>: <math>\sum_{k=1}^{12}\gcd(12, k) = 40 = \sum_{d\mid12}d\,\varphi(12/d)</math> (פונקציית פילאי).
 # לכל פונקציה '''כפלית''' <math>f</math>: <math>\sum_{d\mid n}\mu(d)f(d) = \prod_{p\mid n}(1 - f(p))</math>.{{הערה|1=בערך האנגלי נכתב שהזהויות בסעיף נכונות "ל-<math>f</math> כל פונקציה אריתמטית". הזהות הזו דורשת ש-<math>f</math> תהיה כפלית; עם פונקציה מקרית היא נכשלת (למשל עבור <math>n = 6</math>, אגף שמאל הוא <math>f(1) - f(2) - f(3) + f(6)</math>, ואגף ימין <math>1 - f(2) - f(3) + f(2)f(3)</math>).|כיווון=שמאל}} למשל עם <math>f(n) = 1/n</math>: <math>\sum_{d\mid n}\mu(d)/d = \prod_{p\mid n}(1 - 1/p) = \varphi(n)/n</math>.
 # אם <math>f</math> כפלית, <math>g</math> [[פונקציה כפלית לחלוטין|כפלית לחלוטין]], ו-<math>f(p^{n+1}) = f(p)f(p^n) - g(p)f(p^{n-1})</math> לכל ראשוני <math>p</math> ולכל <math>n \ge 1</math>, אז <math>f(m)f(n) = \sum_{d\mid(m,n)}g(d)f\left(\frac{mn}{d^2}\right)</math>. דוגמה: <math>f = \sigma_k</math> (סכום חזקות <math>k</math> של המחלקים) עם <math>g(n) = n^k</math>; בדקנו עבור <math>k = 2</math> ו-<math>m, n \lt 25</math>. זו הצורה של יחסי [[אופרטור הקה|הקה]].
 # אם <math>f</math> כפלית לחלוטין, אז הכפל הנקודתי <math>\cdot</math> מתחלף עם קונבולוציית דיריכלה: <math>f\cdot(g * h) = (f\cdot g) * (f\cdot h)</math>.
 # <math>\sum_{d^k\mid n}\mu(d) = \begin{cases}0 & \text{אם } m^k \mid n \text{ עבור } m \gt 1 \text{ כלשהו}, \\ 1 & \text{אחרת}\end{cases}</math> (הפונקציה המציינת של המספרים ה"חופשיים מחזקות <math>k</math>").
-# אם <math>m \ge 1</math> ול-<math>n</math> יש יותר מ-<math>m</math> [[פונקציית אומגה של ראשוניים|גורמים ראשוניים שונים]], אז <math>\sum_{d\mid n}\mu(d)\log^m(d) = 0</math>.
+# אם <math>m \ge 1</math> ול-<math>n</math> יש יותר מ-<math>m</math> גורמים ראשוניים שונים, אז <math>\sum_{d\mid n}\mu(d)\log^m(d) = 0</math>.
 
 == ההפכי של דיריכלה של פונקציה אריתמטית ==
 נסמן <math>\varepsilon(n) = \delta_{n,1}</math>, איבר היחידה של קונבולוציית דיריכלה, כך ש-<math>\varepsilon * f = f * \varepsilon = f</math> לכל פונקציה אריתמטית <math>f</math>. ה'''הפכי של דיריכלה''' של <math>f</math> מקיים <math>f * f^{-1} = f^{-1} * f = \varepsilon</math>. יש נוסחה רקורסיבית ידועה לחישוב <math>f^{-1}(n)</math> באינדוקציה:{{הערה|1=ראו סעיף 2.7 בספר של אפוסטול.|כיווון=שמאל}}
@@ -80,7 +80,7 @@
 | 6 || <math>\frac{2f(2)f(3) - f(1)f(6)}{f(1)^3}</math> || 11 || <math>-\frac{f(11)}{f(1)^2}</math> || 16 || <math>\frac{f(2)^4}{f(1)^5} - \frac{3f(4)f(2)^2}{f(1)^4} + \frac{f(4)^2 + 2f(2)f(8)}{f(1)^3} - \frac{f(16)}{f(1)^2}</math>
 |}
 
-תהי <math>p_k(n) := p(n - k)</math>, כאשר <math>p</math> היא [[פונקציית החלוקה (תורת המספרים)|פונקציית החלוקות]]. אז יש ביטוי נוסף להפכי של דיריכלה, עבור <math>n \gt 1</math>, בעזרת הפונקציות שלעיל והמקדמים של [[סמל q-פוכהמר]]:{{הערה|שם=MS}}
+תהי <math>p_k(n) := p(n - k)</math>, כאשר <math>p</math> היא [[פונקציית החלוקה (תורת המספרים)|פונקציית החלוקות]]. אז יש ביטוי נוסף להפכי של דיריכלה, עבור <math>n \gt 1</math>, בעזרת הפונקציות שלעיל והמקדמים של סמל q-פוכהמר:{{הערה|שם=MS}}
 :<math>f^{-1}(n) = \sum_{k=1}^n\left[(p_k * \mu)(n) + (p_k * D_f * \mu)(n)\right]\times[q^{k-1}]\frac{(q; q)_\infty}{1 - q}.</math>
 (גם את זה בדקנו, לכל <math>n \le 40</math>, עם <math>f(1) = 1</math>.)
 

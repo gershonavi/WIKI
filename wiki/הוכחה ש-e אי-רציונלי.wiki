@@ -3,7 +3,7 @@
 == ההוכחה של אוילר ==
 אוילר כתב את ההוכחה הראשונה לאי-הרציונליות של <math>e</math> ב-1737 (אבל הטקסט פורסם רק שבע שנים אחר כך).{{הערה|1=<span dir="ltr">L. Euler, De fractionibus continuis dissertatio, Commentarii Academiae Scientiarum Petropolitanae 9 (1744), pp. 98–137; English translation: An essay on continued fractions, Mathematical Systems Theory 18 (1985), pp. 295–398.</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">C. E. Sandifer, How Euler Did It, MAA, 2007, Chapter 32: Who proved e is irrational?, pp. 185–190.</span>|כיווון=שמאל}} הוא חישב את הייצוג של <math>e</math> כ[[שבר משולב]] פשוט:
 :<math>e = [2; 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, \ldots, 2n, 1, 1, \ldots].</math>
-כיוון שהשבר המשולב הזה אינסופי, ולכל מספר רציונלי יש שבר משולב סופי (זה בדיוק [[האלגוריתם של אוקלידס]]), <math>e</math> אי-רציונלי. ידועה הוכחה קצרה לשוויון הזה.{{הערה|1=<span dir="ltr">H. Cohn, A short proof of the simple continued fraction expansion of e, American Mathematical Monthly 113 (2006), pp. 57–62.</span>|כיווון=שמאל}} כיוון שהשבר המשולב של <math>e</math> אינו [[שבר משולב מחזורי|מחזורי]], זה מוכיח גם ש-<math>e</math> אינו שורש של פולינום ריבועי עם מקדמים רציונליים ([[משפט לגראנז' על שברים משולבים|משפט לגראנז']]); בפרט, <math>e^2</math> אי-רציונלי.
+כיוון שהשבר המשולב הזה אינסופי, ולכל מספר רציונלי יש שבר משולב סופי (זה בדיוק [[האלגוריתם של אוקלידס]]), <math>e</math> אי-רציונלי. ידועה הוכחה קצרה לשוויון הזה.{{הערה|1=<span dir="ltr">H. Cohn, A short proof of the simple continued fraction expansion of e, American Mathematical Monthly 113 (2006), pp. 57–62.</span>|כיווון=שמאל}} כיוון שהשבר המשולב של <math>e</math> אינו מחזורי, זה מוכיח גם ש-<math>e</math> אינו שורש של פולינום ריבועי עם מקדמים רציונליים (משפט לגראנז'); בפרט, <math>e^2</math> אי-רציונלי.
 
 '''דוגמה.''' בחישוב שלנו, 20 האיברים הראשונים של השבר המשולב הם <math>2, 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10, 1, 1, 12, 1, 1</math>, בהתאם לתבנית. המתכנסים הראשונים:
 :<math>3,\ \frac83,\ \frac{11}4,\ \frac{19}7,\ \frac{87}{32},\ \frac{106}{39},\ \frac{193}{71},\ \frac{1264}{465},\ \frac{1457}{536},\ \frac{2721}{1001},\ \frac{23225}{8544},\ \ldots</math>
@@ -51,7 +51,7 @@
 
 הוכחה נוספת{{הערה|1=<span dir="ltr">L. L. Penesi, Elementary proof that e is irrational, American Mathematical Monthly 60 (1953), p. 474.</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">T. Apostol, Mathematical Analysis, 2nd ed., Addison-Wesley, 1974.</span>|כיווון=שמאל}} מתקבלת מהעובדה ש-
 :<math>\frac1e = e^{-1} = \sum_{n=0}^\infty\frac{(-1)^n}{n!}.</math>
-נגדיר <math>s_n = \sum_{k=0}^n\frac{(-1)^k}{k!}</math>. כיוון שזה [[טור מתחלף]] עם איברים יורדים,
+נגדיר <math>s_n = \sum_{k=0}^n\frac{(-1)^k}{k!}</math>. כיוון שזה טור מתחלף עם איברים יורדים,
 :<math>0 \lt e^{-1} - s_{2n-1} \lt \frac1{(2n)!},</math>
 ולכן
 :<math>0 \lt (2n - 1)!\left(e^{-1} - s_{2n-1}\right) \lt \frac1{2n} \le \frac12</math>
@@ -60,11 +60,11 @@
 == הכללות ==
 ב-1840 פרסם [[ז'וזף ליוביל]] הוכחה לכך ש-<math>e^2</math> אי-רציונלי,{{הערה|1=<span dir="ltr">J. Liouville, Sur l'irrationalité du nombre e = 2,718…, J. Math. Pures Appl. 5 (1840), p. 192.</span>|כיווון=שמאל}} ואחריה הוכחה ש-<math>e^2</math> אינו שורש של פולינום ממעלה שנייה עם מקדמים רציונליים.{{הערה|1=<span dir="ltr">J. Liouville, Addition à la note sur l'irrationnalité du nombre e, J. Math. Pures Appl. 5 (1840), pp. 193–194.</span>|כיווון=שמאל}} העובדה האחרונה גוררת ש-<math>e^4</math> אי-רציונלי. ההוכחות שלו דומות להוכחה של פורייה. ב-1891 הסביר [[אדולף הורוויץ]] איך אפשר להוכיח באותו קו רעיוני ש-<math>e</math> אינו שורש של פולינום ממעלה שלישית עם מקדמים רציונליים, ומכאן ש-<math>e^3</math> אי-רציונלי.{{הערה|1=<span dir="ltr">A. Hurwitz, Über die Kettenbruchentwicklung der Zahl e (1891), in: Mathematische Werke, vol. 2, Birkhäuser, 1933, pp. 129–133.</span>|כיווון=שמאל}} באופן כללי יותר, <math>e^q</math> אי-רציונלי לכל <math>q</math> רציונלי שונה מאפס.{{הערה|1=<span dir="ltr">M. Aigner, G. M. Ziegler, Proofs from THE BOOK, 4th ed., Springer, pp. 27–36.</span>|כיווון=שמאל}}
 
-[[שארל הרמיט]] הוכיח ב-1873 ש-<math>e</math> הוא [[מספר טרנסצנדנטי]], כלומר אינו שורש של שום פולינום עם מקדמים רציונליים; וכך גם <math>e^\alpha</math> לכל <math>\alpha</math> [[מספר אלגברי|אלגברי]] שונה מאפס ([[משפט לינדמן–ויירשטראס]]).{{הערה|1=<span dir="ltr">C. Hermite, Sur la fonction exponentielle, Comptes rendus de l'Académie des Sciences de Paris 77 (1873), pp. 18–24.</span>|כיווון=שמאל}}{{הערה|1=בערך האנגלי הניסוח מייחס להרמיט גם את הטענה על <math>e^\alpha</math> לכל <math>\alpha</math> אלגברי. הרמיט הוכיח את הטרנסצנדנטיות של <math>e</math>; המקרה הכללי הוא [[משפט לינדמן–ויירשטראס]] (לינדמן 1882, ויירשטראס 1885).|כיווון=שמאל}}
+[[שארל הרמיט]] הוכיח ב-1873 ש-<math>e</math> הוא [[מספר טרנסצנדנטי]], כלומר אינו שורש של שום פולינום עם מקדמים רציונליים; וכך גם <math>e^\alpha</math> לכל <math>\alpha</math> [[מספר אלגברי|אלגברי]] שונה מאפס ([[משפט לינדמן-ויירשטראס|משפט לינדמן–ויירשטראס]]).{{הערה|1=<span dir="ltr">C. Hermite, Sur la fonction exponentielle, Comptes rendus de l'Académie des Sciences de Paris 77 (1873), pp. 18–24.</span>|כיווון=שמאל}}{{הערה|1=בערך האנגלי הניסוח מייחס להרמיט גם את הטענה על <math>e^\alpha</math> לכל <math>\alpha</math> אלגברי. הרמיט הוכיח את הטרנסצנדנטיות של <math>e</math>; המקרה הכללי הוא [[משפט לינדמן-ויירשטראס|משפט לינדמן–ויירשטראס]] (לינדמן 1882, ויירשטראס 1885).|כיווון=שמאל}}
 
 == ראו גם ==
 * [[מספר טרנסצנדנטי]]
-* [[משפט לינדמן–ויירשטראס]]
+* [[משפט לינדמן-ויירשטראס|משפט לינדמן–ויירשטראס]]
 * [[מידת אי-רציונליות]]
 
 == הערות שוליים ==

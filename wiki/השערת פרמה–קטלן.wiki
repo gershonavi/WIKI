@@ -33,14 +33,14 @@
 |}
 (בדקנו בחשבון שלמים מדויק את כל עשר הזהויות, את הזרות של <math>a, b, c</math> ואת תנאי (2).) שימו לב לשתי תופעות: בכל הפתרונות מופיע המעריך 2, וכל הסכומים <math>\frac1m + \frac1n + \frac1k</math> קרובים מאוד ל-1 – הערך המקסימלי שקטן מ-1, <math>\frac{41}{42}</math>, מתקבל עבור <math>(2, 3, 7)</math>, והוא מופיע בחמישה פתרונות.
 
-הראשון מבין אלה (<math>1^m + 2^3 = 3^2</math>) הוא הפתרון היחיד שבו אחד מ-<math>a</math>, <math>b</math> או <math>c</math> הוא 1, לפי השערת קטלן, ש[[פרדה מיכאילסקו]] הוכיח ב-2002. אף שהמקרה הזה נותן אינסוף פתרונות של (1) (כי אפשר לבחור כל <math>m \gt 6</math>), הם נותנים רק שלשת ערכים אחת <math>(a^m, b^n, c^k)</math>.
+הראשון מבין אלה (<math>1^m + 2^3 = 3^2</math>) הוא הפתרון היחיד שבו אחד מ-<math>a</math>, <math>b</math> או <math>c</math> הוא 1, לפי השערת קטלן, שפרדה מיכאילסקו הוכיח ב-2002. אף שהמקרה הזה נותן אינסוף פתרונות של (1) (כי אפשר לבחור כל <math>m \gt 6</math>), הם נותנים רק שלשת ערכים אחת <math>(a^m, b^n, c^k)</math>.
 
 == תוצאות חלקיות ==
-לפי משפט דרמון–גרנוויל, שמשתמש ב[[משפט פלטינגס]], לכל בחירה קבועה של שלמים חיוביים <math>m</math>, <math>n</math> ו-<math>k</math> שמקיימים את (2), יש רק מספר סופי של שלשות זרות <math>(a, b, c)</math> שפותרות את (1).{{הערה|1=<span dir="ltr">H. Darmon, A. Granville, On the equations z<sup>m</sup> = F(x, y) and Ax<sup>p</sup> + By<sup>q</sup> = Cz<sup>r</sup>, Bulletin of the London Mathematical Society 27 (1995), pp. 513–543.</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">N. D. Elkies, The ABC's of number theory, The Harvard College Mathematics Review 1 (2007), p. 64.</span>|כיווון=שמאל}} (הרעיון: כל פתרון כזה מתרומם לנקודה רציונלית על אחד ממספר סופי של עקומים מגנוס 2 לפחות, ולכל אחד מהם יש רק מספר סופי של נקודות רציונליות.) אבל השערת פרמה–קטלן המלאה חזקה יותר, כי היא מאפשרת למעריכים <math>m</math>, <math>n</math> ו-<math>k</math> להשתנות.
+לפי משפט דרמון–גרנוויל, שמשתמש במשפט פלטינגס, לכל בחירה קבועה של שלמים חיוביים <math>m</math>, <math>n</math> ו-<math>k</math> שמקיימים את (2), יש רק מספר סופי של שלשות זרות <math>(a, b, c)</math> שפותרות את (1).{{הערה|1=<span dir="ltr">H. Darmon, A. Granville, On the equations z<sup>m</sup> = F(x, y) and Ax<sup>p</sup> + By<sup>q</sup> = Cz<sup>r</sup>, Bulletin of the London Mathematical Society 27 (1995), pp. 513–543.</span>|כיווון=שמאל}}{{הערה|1=<span dir="ltr">N. D. Elkies, The ABC's of number theory, The Harvard College Mathematics Review 1 (2007), p. 64.</span>|כיווון=שמאל}} (הרעיון: כל פתרון כזה מתרומם לנקודה רציונלית על אחד ממספר סופי של עקומים מגנוס 2 לפחות, ולכל אחד מהם יש רק מספר סופי של נקודות רציונליות.) אבל השערת פרמה–קטלן המלאה חזקה יותר, כי היא מאפשרת למעריכים <math>m</math>, <math>n</math> ו-<math>k</math> להשתנות.
 
 [[השערת abc]] גוררת את השערת פרמה–קטלן.{{הערה|1=<span dir="ltr">M. Waldschmidt, Lecture on the abc conjecture and some of its consequences, in: Mathematics in the 21st Century, Springer Proc. Math. Stat. 98, Springer, 2015, pp. 211–230.</span>|כיווון=שמאל}} הנה הטיעון: אם <math>a^m + b^n = c^k</math>, אז הרדיקל (מכפלת הראשוניים השונים) של <math>a^mb^nc^k</math> הוא לכל היותר <math>abc \le (c^k)^{1/m + 1/n + 1/k}</math> בערך. כשהסכום קטן מ-1, הרדיקל קטן מ-<math>(c^k)^{1-\delta}</math> עבור <math>\delta = 1 - \frac{41}{42} = \frac1{42}</math> לפחות, והשערת abc אומרת שיש רק מספר סופי של משוואות <math>A + B = C</math> כאלה.
 
-לרשימת תוצאות על צירופים בלתי אפשריים של מעריכים, ראו [[השערת בעל]]. השערת בעל נכונה [[אם ורק אם]] בכל פתרונות פרמה–קטלן <math>m = 2</math>, <math>n = 2</math> או <math>k = 2</math>.
+לרשימת תוצאות על צירופים בלתי אפשריים של מעריכים, ראו השערת בעל. השערת בעל נכונה [[אם ורק אם]] בכל פתרונות פרמה–קטלן <math>m = 2</math>, <math>n = 2</math> או <math>k = 2</math>.
 
 פונן, שפר ושטול{{הערה|שם=PSS|1=<span dir="ltr">B. Poonen, E. F. Schaefer, M. Stoll, Twists of X(7) and primitive solutions to x<sup>2</sup> + y<sup>3</sup> = z<sup>7</sup>, Duke Mathematical Journal 137 (2007), pp. 103–158.</span>|כיווון=שמאל}} מנו את שלשות המעריכים שעבורן הפתרונות נקבעו במלואם (הסימון <math>\{p, q, r\}</math> פירושו שהפתרונות נקבעו לכל תמורה של <math>(p, q, r)</math>):
 {| class="wikitable"
@@ -74,12 +74,12 @@
 |}
 לכל אחת משלשות המעריכים האלה, אם יש לה פתרון בכלל, הוא מופיע ברשימה שבסעיף "פתרונות ידועים". למשל, עבור <math>\{2, 3, 7\}</math> אלה בדיוק <math>1^7 + 2^3 = 3^2</math>, <math>2^7 + 17^3 = 71^2</math>, <math>1414^3 + 2213459^2 = 65^7</math>, <math>9262^3 + 15312283^2 = 113^7</math> ו-<math>17^7 + 76271^3 = 21063928^2</math>.
 
-סיקורה השתמש בין השאר במחשבי ה[[מחשב אשכול|אשכול]] של המרכז לחקר חישובי ב[[אוניברסיטת באפלו]] כדי לבדוק את כל השישיות <math>(a, b, c, m, n, k)</math> עם <math>\min(m, n, k) \le 113</math> ו-<math>a^m, b^n, c^k \lt M_{\min(m,n,k)}</math>, כאשר <math>M_2 = 2^{71}</math>, <math>M_3 = 2^{80}</math>, <math>M_4 = 2^{100}</math> ו-<math>M_5 = \dots = M_{113} = 2^{113}</math>. הוא לא מצא פתרונות נוספים על אלה שלמעלה.{{הערה|שם=Sikora}} (למשל, חמשת הפתרונות הגדולים הידועים שוחזרו כולם בבדיקה עבור <math>\min(m, n, k) = 2</math>, שבה <math>a^m</math>, <math>b^n</math> ו-<math>c^k</math> נבדקו עד <math>2^{71} \approx 2.4\cdot10^{21}</math>; הגדול שבהם, <math>30042907^2 \approx 9.0\cdot10^{14}</math>, רחוק מתחת לחסם הזה.)
+סיקורה השתמש בין השאר במחשבי האשכול של המרכז לחקר חישובי ב[[אוניברסיטת באפלו]] כדי לבדוק את כל השישיות <math>(a, b, c, m, n, k)</math> עם <math>\min(m, n, k) \le 113</math> ו-<math>a^m, b^n, c^k \lt M_{\min(m,n,k)}</math>, כאשר <math>M_2 = 2^{71}</math>, <math>M_3 = 2^{80}</math>, <math>M_4 = 2^{100}</math> ו-<math>M_5 = \dots = M_{113} = 2^{113}</math>. הוא לא מצא פתרונות נוספים על אלה שלמעלה.{{הערה|שם=Sikora}} (למשל, חמשת הפתרונות הגדולים הידועים שוחזרו כולם בבדיקה עבור <math>\min(m, n, k) = 2</math>, שבה <math>a^m</math>, <math>b^n</math> ו-<math>c^k</math> נבדקו עד <math>2^{71} \approx 2.4\cdot10^{21}</math>; הגדול שבהם, <math>30042907^2 \approx 9.0\cdot10^{14}</math>, רחוק מתחת לחסם הזה.)
 
 == ראו גם ==
-* [[השערת בעל]]
+* השערת בעל
 * [[השערת abc]]
-* [[משפט מיכאילסקו]]
+* משפט מיכאילסקו
 * [[השערת אוילר על סכומי חזקות]]
 
 == קישורים חיצוניים ==

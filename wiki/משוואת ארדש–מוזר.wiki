@@ -7,7 +7,7 @@
 (בחיפוש ישיר עם <math>m \lt 300</math> ו-<math>k \lt 3m</math> נמצא רק הפתרון <math>(m, k) = (3, 1)</math>. כמו שנראה למטה, תמיד <math>k + 1 \lt m \lt 3(k + 1)/2</math>, כך שהחיפוש הזה ממצה לטווח.)
 
 == אילוצים על פתרונות ==
-ב-1953 הוכיח [[ליאו מוזר]] שבכל פתרון נוסף:{{הערה|שם=Moser|1=<span dir="ltr">L. Moser, On the Diophantine equation 1<sup>k</sup> + 2<sup>k</sup> + ... + (m − 1)<sup>k</sup> = m<sup>k</sup>, Scripta Mathematica 19 (1953), pp. 84–88.</span>|כיווון=שמאל}}
+ב-1953 הוכיח ליאו מוזר שבכל פתרון נוסף:{{הערה|שם=Moser|1=<span dir="ltr">L. Moser, On the Diophantine equation 1<sup>k</sup> + 2<sup>k</sup> + ... + (m − 1)<sup>k</sup> = m<sup>k</sup>, Scripta Mathematica 19 (1953), pp. 84–88.</span>|כיווון=שמאל}}
 # <math>k</math> זוגי;
 # <math>p \mid m - 1</math> גורר <math>(p - 1) \mid k</math>;
 # <math>p \mid m + 1</math> גורר <math>(p - 1) \mid k</math>;
@@ -30,7 +30,7 @@
 # [[כפולה משותפת מינימלית|<math>\operatorname{lcm}(1, 2, \ldots, 200)</math>]] מחלק את <math>k</math>;
 # <math>m \equiv 3 \pmod{2^{\operatorname{ord}_2(k) + 3}}</math>, כאשר <math>\operatorname{ord}_2(n)</math> היא [[הערכה p-אדית|ההערכה ה-2-אדית]] של <math>n</math>; באופן שקול, <math>\operatorname{ord}_2(m - 3) = \operatorname{ord}_2(k) + 3</math>;
 # לכל ראשוני אי-זוגי <math>p</math> שמחלק את <math>m</math>, <math>k \not\equiv 0, 2 \pmod{p - 1}</math>;
-# כל גורם ראשוני של <math>m</math> חייב להיות [[ראשוני לא רגולרי|לא רגולרי]] וגדול מ-10000.
+# כל גורם ראשוני של <math>m</math> חייב להיות לא רגולרי וגדול מ-10000.
 
 ב-1999 שוכללה השיטה של מוזר, והתקבל <math>m \gt 1.485\times10^{9{,}321{,}155}</math>.{{הערה|שם=BJM|1=<span dir="ltr">W. Butske, L. M. Jaje, D. R. Mayernik, The equation Σ<sub>p∣N</sub> 1/p + 1/N = 1, pseudoperfect numbers, and partially weighted graphs, Mathematics of Computation 69 (2000), pp. 407–420.</span>|כיווון=שמאל}}
 
@@ -71,7 +71,7 @@
 :<math>\frac1{m - 1} + \frac2{m + 1} + \frac2{2m - 1} + \frac4{2m + 1} + \sum_{p\mid M}\frac1p \ge 4 - \frac12 - \frac13 = 3.1666\ldots \qquad (6)</math>
 כיוון שאין פתרונות לא טריוויאליים עם <math>m \lt 1000</math>, החלק של אגף שמאל של (6) מחוץ לסכום אינו יכול לעלות על <math>0.006</math>, ולכן
 :<math>\sum_{p\mid M}\frac1p \gt 3.16.</math>
-לכן, אם <math>\sum_{p\le x}\frac1p \lt 3.16</math>, אז <math>M \gt \prod_{p\le x}p</math>. במאמר המקורי של מוזר משתמשים בחסמים על [[פונקציית ספירת הראשוניים]] כדי להראות ש-
+לכן, אם <math>\sum_{p\le x}\frac1p \lt 3.16</math>, אז <math>M \gt \prod_{p\le x}p</math>. במאמר המקורי של מוזר משתמשים בחסמים על פונקציית ספירת הראשוניים כדי להראות ש-
 :<math>\sum_{p\le10^7}\frac1p \lt 3.16.</math>
 לכן <math>M</math> חייב להיות גדול ממכפלת 10,000,000 הראשוניים הראשונים, ומכאן <math>m \gt 10^{10^6}</math> במקרה הזה.
 
@@ -108,7 +108,7 @@
 :<math>0 \lt \frac{k + 1}2 - m + (k + 1) \quad\Longrightarrow\quad \frac m{k + 1} \lt \frac32.</math>
 
 == שברים משולבים ==
-כל פתרון אפשרי של המשוואה חייב לבוא מ[[שבר משולב|השבר המשולב]] של [[הלוגריתם הטבעי של 2]]: ליתר דיוק, <math>2k/(2m - 3)</math> חייב להיות מנה מתקרבת של <math>\ln 2</math>.{{הערה|שם=GMZ}}
+כל פתרון אפשרי של המשוואה חייב לבוא מ[[שבר משולב|השבר המשולב]] של הלוגריתם הטבעי של 2: ליתר דיוק, <math>2k/(2m - 3)</math> חייב להיות מנה מתקרבת של <math>\ln 2</math>.{{הערה|שם=GMZ}}
 
 הרעיון: המשוואה שקולה ל-
 :<math>1 = \sum_{j=1}^{m-1}\left(1 - \frac jm\right)^k.</math>
@@ -116,12 +116,12 @@
 :<math>\frac km = \ln 2\left(1 - \frac3{2m} - \frac{\frac{25}{12} - 3\ln 2}{m^2} + O\left(\frac1{m^3}\right)\right) \qquad (m \to \infty),</math>
 ואחרי חסימה אפקטיבית של איבר השגיאה (שמשתמשת בכך ש-<math>m \gt 10^9</math>, כפי שמוזר הראה) מתקבל
 :<math>0 \lt \ln 2 - \frac{2k}{2m - 3} \lt \frac{0.0111}{(2m - 3)^2}.</math>
-לפי [[משפט לז'נדר על שברים משולבים]], כל שבר <math>p/q</math> עם <math>|\alpha - p/q| \lt \frac1{2q^2}</math> הוא מנה מתקרבת של <math>\alpha</math>, ולכן <math>2k/(2m - 3)</math> הוא מנה מתקרבת של <math>\ln 2</math>. בעזרת התוצאה הזו, 31 מיליארד ספרות עשרוניות של <math>\ln 2</math> מספיקות כדי לשלול כל פתרון לא טריוויאלי מתחת ל-<math>10^{10^9}</math>.{{הערה|שם=GMZ}}
+לפי משפט לז'נדר על שברים משולבים, כל שבר <math>p/q</math> עם <math>|\alpha - p/q| \lt \frac1{2q^2}</math> הוא מנה מתקרבת של <math>\alpha</math>, ולכן <math>2k/(2m - 3)</math> הוא מנה מתקרבת של <math>\ln 2</math>. בעזרת התוצאה הזו, 31 מיליארד ספרות עשרוניות של <math>\ln 2</math> מספיקות כדי לשלול כל פתרון לא טריוויאלי מתחת ל-<math>10^{10^9}</math>.{{הערה|שם=GMZ}}
 
 '''הפתרון הטריוויאלי מקיים זאת.''' עבור <math>(m, k) = (3, 1)</math>: <math>\frac{2k}{2m - 3} = \frac23</math>, ואכן <math>\ln 2 = [0; 1, 2, 3, 1, 6, \ldots]</math> והמנות המתקרבות שלו הן <math>0, 1, \frac23, \frac7{10}, \frac9{13}, \ldots</math>.
 
 == ראו גם ==
-* [[נוסחת פאולהבר]]
+* נוסחת פאולהבר
 * [[מספר ברנולי]]
 
 == הערות שוליים ==

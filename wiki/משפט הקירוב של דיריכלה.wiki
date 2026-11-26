@@ -23,7 +23,7 @@
 
 == שיטות הוכחה ==
 === הוכחה בעקרון שובך היונים ===
-המשפט נובע מ[[עקרון שובך היונים]]. [[פטר גוסטב לז'ן דיריכלה]], שהוכיח את התוצאה, השתמש באותו עיקרון בהקשרים אחרים (למשל ב[[משוואת פל]]), ובכך שנתן לעיקרון שם (בגרמנית, ''Schubfachprinzip'' – "עקרון המגירות") הפך אותו לנפוץ. השיטה מתרחבת גם לקירוב סימולטני.
+המשפט נובע מ[[עקרון שובך היונים]]. פטר גוסטב לז'ן דיריכלה, שהוכיח את התוצאה, השתמש באותו עיקרון בהקשרים אחרים (למשל ב[[משוואת פל]]), ובכך שנתן לעיקרון שם (בגרמנית, ''Schubfachprinzip'' – "עקרון המגירות") הפך אותו לנפוץ. השיטה מתרחבת גם לקירוב סימולטני.
 
 '''שלד ההוכחה.''' יהי <math>\alpha</math> מספר אי-רציונלי ו-<math>N</math> שלם. לכל <math>k = 0, 1, \ldots, N</math> נכתוב <math>k\alpha = m_k + x_k</math>, כאשר <math>m_k</math> שלם ו-<math>0 \le x_k \lt 1</math>. נחלק את הקטע <math>[0, 1)</math> ל-<math>N</math> קטעים קטנים באורך <math>\frac1N</math>. יש לנו <math>N + 1</math> מספרים <math>x_0, x_1, \ldots, x_N</math> ו-<math>N</math> קטעים, ולכן לפי עקרון שובך היונים לפחות שניים מהם באותו קטע. נקרא להם <math>x_i, x_j</math> עם <math>i \lt j</math>. אז
 :<math>|(j - i)\alpha - (m_j - m_i)| = |j\alpha - m_j - (i\alpha - m_i)| = |x_j - x_i| \lt \frac1N.</math>
@@ -44,7 +44,7 @@
 
 '''משפט.''' אם <math>\alpha</math> מספר ממשי ו-<math>p, q</math> שלמים חיוביים כך ש-<math>\left|\alpha - \frac pq\right| \lt \frac1{2q^2}</math>, אז <math>p/q</math> היא מנה מתקרבת של השבר המשולב של <math>\alpha</math>.
 
-'''הוכחה.''' נלך לפי ההוכחה ב''[[מבוא לתורת המספרים (הארדי ורייט)|מבוא לתורת המספרים]]'' של [[גודפרי הרולד הארדי|הארדי]] ו[[אדוארד מייטלנד רייט|רייט]].{{הערה|1=<span dir="ltr">G. H. Hardy, E. M. Wright, An Introduction to the Theory of Numbers, Oxford University Press, 1938, pp. 140–141, 153.</span>|כיווון=שמאל}} נניח ש-<math>\alpha, p, q</math> מקיימים <math>\left|\alpha - \frac pq\right| \lt \frac1{2q^2}</math>, ונניח ש-<math>\alpha \gt p/q</math>. אז אפשר לכתוב <math>\alpha - \frac pq = \frac\theta{q^2}</math>, עם <math>0 \lt \theta \lt 1/2</math>. נכתוב את <math>p/q</math> כשבר משולב סופי <math>[a_0; a_1, \ldots, a_n]</math>; כיוון שלכל מספר רציונלי יש שתי הצגות שונות כשבר משולב סופי, שאורכיהן נבדלים באחד (אחת עם <math>a_n = 1</math> ואחת עם <math>a_n \ne 1</math>), אפשר לבחור את <math>n</math> זוגי. (במקרה <math>\alpha \lt p/q</math> היינו בוחרים <math>n</math> אי-זוגי.)
+'''הוכחה.''' נלך לפי ההוכחה ב''מבוא לתורת המספרים'' של [[גודפרי הרולד הארדי|הארדי]] ורייט.{{הערה|1=<span dir="ltr">G. H. Hardy, E. M. Wright, An Introduction to the Theory of Numbers, Oxford University Press, 1938, pp. 140–141, 153.</span>|כיווון=שמאל}} נניח ש-<math>\alpha, p, q</math> מקיימים <math>\left|\alpha - \frac pq\right| \lt \frac1{2q^2}</math>, ונניח ש-<math>\alpha \gt p/q</math>. אז אפשר לכתוב <math>\alpha - \frac pq = \frac\theta{q^2}</math>, עם <math>0 \lt \theta \lt 1/2</math>. נכתוב את <math>p/q</math> כשבר משולב סופי <math>[a_0; a_1, \ldots, a_n]</math>; כיוון שלכל מספר רציונלי יש שתי הצגות שונות כשבר משולב סופי, שאורכיהן נבדלים באחד (אחת עם <math>a_n = 1</math> ואחת עם <math>a_n \ne 1</math>), אפשר לבחור את <math>n</math> זוגי. (במקרה <math>\alpha \lt p/q</math> היינו בוחרים <math>n</math> אי-זוגי.)
 
 יהיו <math>p_0/q_0, \ldots, p_n/q_n = p/q</math> המנות המתקרבות של השבר המשולב הזה. נגדיר <math>\omega := \frac1\theta - \frac{q_{n-1}}{q_n}</math>, כך ש-<math>\theta = \frac{q_n}{q_{n-1} + \omega q_n}</math>, ולכן
 :<math>\alpha = \frac pq + \frac\theta{q^2} = \frac{p_n}{q_n} + \frac1{q_n(q_{n-1} + \omega q_n)} = \frac{(p_nq_{n-1} + 1) + \omega p_nq_n}{q_n(q_{n-1} + \omega q_n)} = \frac{p_{n-1}q_n + \omega p_nq_n}{q_n(q_{n-1} + \omega q_n)} = \frac{p_{n-1} + \omega p_n}{q_{n-1} + \omega q_n},</math>
@@ -54,10 +54,10 @@
 
 '''דוגמה.''' <math>\pi = [3; 7, 15, 1, 292, 1, \ldots]</math>, והמנות המתקרבות הראשונות הן <math>3, \frac{22}7, \frac{333}{106}, \frac{355}{113}, \ldots</math>. למשל <math>\left|\pi - \frac{355}{113}\right| = 2.67\times10^{-7}</math>, הרבה מתחת ל-<math>\frac1{2\cdot113^2} = 3.9\times10^{-5}</math>. הקבוע <math>\frac12</math> במשפט חיוני: השבר <math>\frac{19}6</math> מקיים <math>\left|\pi - \frac{19}6\right| = 0.025 \lt \frac1{36}</math>, כלומר הוא "קירוב דיריכלה", אבל <math>0.025 \gt \frac1{72}</math>, והוא באמת '''אינו''' מנה מתקרבת של <math>\pi</math> (הוא מנה מתקרבת ביניים, <math>\frac{22 - 3}{7 - 1}</math>). חיפוש על <math>q \lt 120</math> מראה שזה השבר המצומצם היחיד עם <math>|\pi - p/q| \lt 1/q^2</math> שאינו מנה מתקרבת.
 
-המשפט הוא הבסיס של [[ההתקפה של וינר]], ניצול בזמן פולינומי של פרוטוקול ההצפנה [[RSA]] שעלול לקרות בבחירה לא זהירה של מפתח ציבורי ומפתח פרטי (ליתר דיוק, ההתקפה מצליחה אם הגורמים הראשוניים של המפתח הציבורי <math>n = pq</math> מקיימים <math>q \lt p \lt 2q</math>, והמפתח הפרטי <math>d</math> קטן מ-<math>\frac13n^{1/4}</math>).{{הערה|1=<span dir="ltr">M. J. Wiener, Cryptanalysis of short RSA secret exponents, IEEE Transactions on Information Theory 36 (1990), pp. 553–558.</span>|כיווון=שמאל}} הסיבה: <math>ed = 1 + k\varphi(n)</math>, ולכן <math>\left|\frac en - \frac kd\right|</math> קטן מאוד, ולפי משפט לז'נדר <math>k/d</math> מופיע בין המנות המתקרבות של <math>e/n</math> – שאותן כל אחד יכול לחשב.
+המשפט הוא הבסיס של ההתקפה של וינר, ניצול בזמן פולינומי של פרוטוקול ההצפנה [[RSA]] שעלול לקרות בבחירה לא זהירה של מפתח ציבורי ומפתח פרטי (ליתר דיוק, ההתקפה מצליחה אם הגורמים הראשוניים של המפתח הציבורי <math>n = pq</math> מקיימים <math>q \lt p \lt 2q</math>, והמפתח הפרטי <math>d</math> קטן מ-<math>\frac13n^{1/4}</math>).{{הערה|1=<span dir="ltr">M. J. Wiener, Cryptanalysis of short RSA secret exponents, IEEE Transactions on Information Theory 36 (1990), pp. 553–558.</span>|כיווון=שמאל}} הסיבה: <math>ed = 1 + k\varphi(n)</math>, ולכן <math>\left|\frac en - \frac kd\right|</math> קטן מאוד, ולפי משפט לז'נדר <math>k/d</math> מופיע בין המנות המתקרבות של <math>e/n</math> – שאותן כל אחד יכול לחשב.
 
 == ראו גם ==
-* [[משפט דיריכלה על סדרות חשבוניות]]
+* משפט דיריכלה על סדרות חשבוניות
 * [[משפט הורוויץ (תורת המספרים)]]
 * [[משפט קרונקר]] (הכללה של משפט דיריכלה)
 

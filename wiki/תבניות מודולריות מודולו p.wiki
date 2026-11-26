@@ -7,16 +7,16 @@
 === בסיס לתבניות מודולריות מודולו 2 ===
 התבניות המודולריות מרמה 1 נוצרות על ידי [[טור אייזנשטיין|טורי אייזנשטיין]] <math>G_4</math> ו-<math>G_6</math>.{{הערה|שם=Stein|1=<span dir="ltr">W. Stein, Modular Forms, a Computational Approach, Graduate Studies in Mathematics 79, AMS, 2007, Theorem 2.17 ו-Lemma 2.20.</span>|כיווון=שמאל}} אפשר לנרמל אותם ל-
 :<math>E_4 = 1 + 240\sum\sigma_3(n)q^n, \qquad E_6 = 1 - 504\sum\sigma_5(n)q^n,</math>
-עם מקדמים שלמים. כיוון ש-240 ו-504 זוגיים, '''<math>E_4 \equiv E_6 \equiv 1 \pmod 2</math>''' – הצמצום טריוויאלי.{{הערה|1=בערך האנגלי התכונה הזו מיוחסת ל"בסיס של מילר". בפועל היא נובעת ישירות מכך ש-240 ו-504 זוגיים, ואין לה קשר לבחירת הבסיס.|כיווון=שמאל}} כדי לקבל צמצום לא טריוויאלי, צריך להשתמש ב[[פונקציית Δ|דיסקרימיננטה המודולרית]] <math>\Delta</math>. לכן, אם רואים תבניות מודולריות כפולינומים ב-<math>E_4</math>, <math>E_6</math> ו-<math>\Delta</math> (מעל <math>\mathbb C</math> באופן כללי, אבל מעל <math>\mathbb Z</math> לצורך הצמצום), אחרי צמצום מודולו 2 הן הופכות לפולינומים ב-<math>\Delta</math> בלבד, מעל <math>\mathbb F_2</math>.
+עם מקדמים שלמים. כיוון ש-240 ו-504 זוגיים, '''<math>E_4 \equiv E_6 \equiv 1 \pmod 2</math>''' – הצמצום טריוויאלי.{{הערה|1=בערך האנגלי התכונה הזו מיוחסת ל"בסיס של מילר". בפועל היא נובעת ישירות מכך ש-240 ו-504 זוגיים, ואין לה קשר לבחירת הבסיס.|כיווון=שמאל}} כדי לקבל צמצום לא טריוויאלי, צריך להשתמש בדיסקרימיננטה המודולרית <math>\Delta</math>. לכן, אם רואים תבניות מודולריות כפולינומים ב-<math>E_4</math>, <math>E_6</math> ו-<math>\Delta</math> (מעל <math>\mathbb C</math> באופן כללי, אבל מעל <math>\mathbb Z</math> לצורך הצמצום), אחרי צמצום מודולו 2 הן הופכות לפולינומים ב-<math>\Delta</math> בלבד, מעל <math>\mathbb F_2</math>.
 
 === הדיסקרימיננטה המודולרית מודולו 2 ===
 הדיסקרימיננטה המודולרית מוגדרת על ידי מכפלה אינסופית,
 :<math>\Delta(q) = q\prod_{n=1}^\infty(1 - q^n)^{24} = \sum_{n=1}^\infty\tau(n)q^n,</math>
-כאשר <math>\tau(n)</math> היא [[פונקציית טאו של רמנוג'אן]]. תוצאות של קולברג{{הערה|1=<span dir="ltr">O. Kolberg, Congruences for Ramanujan's function τ(n), Årbok for Universitetet i Bergen, Mat.-naturv. Serie 11 (1962).</span>|כיווון=שמאל}} ו[[ז'אן-פייר סר]]{{הערה|שם=Serre|1=<span dir="ltr">J.-P. Serre, A Course in Arithmetic, Springer, 1973, pp. 96, 100.</span>|כיווון=שמאל}} מראות שמודולו 2 מתקיים
+כאשר <math>\tau(n)</math> היא פונקציית טאו של רמנוג'אן. תוצאות של קולברג{{הערה|1=<span dir="ltr">O. Kolberg, Congruences for Ramanujan's function τ(n), Årbok for Universitetet i Bergen, Mat.-naturv. Serie 11 (1962).</span>|כיווון=שמאל}} ו[[ז'אן-פייר סר]]{{הערה|שם=Serre|1=<span dir="ltr">J.-P. Serre, A Course in Arithmetic, Springer, 1973, pp. 96, 100.</span>|כיווון=שמאל}} מראות שמודולו 2 מתקיים
 :<math>\Delta(q) \equiv \sum_{m=0}^\infty q^{(2m+1)^2} = q + q^9 + q^{25} + q^{49} + \cdots \pmod 2,</math>
 כלומר טור ה-<math>q</math> של <math>\Delta</math> מודולו 2 מורכב מחזקות של <math>q</math> בריבועים אי-זוגיים.
 
-'''הוכחה.''' מודולו 2, <math>(1 - q^n)^{24} = \left((1 - q^n)^8\right)^3 \equiv (1 - q^{8n})^3</math>, כי העלאה בריבוע היא הומומורפיזם מודולו 2. לכן <math>\Delta \equiv q\prod(1 - q^{8n})^3</math>. לפי זהות יעקובי לחזקה השלישית של המכפלה (מקרה פרטי של [[מכפלה משולשת של יעקובי|המכפלה המשולשת של יעקובי]]), <math>\prod(1 - x^n)^3 = \sum_{m\ge0}(-1)^m(2m + 1)x^{m(m+1)/2}</math>, ומודולו 2 כל המקדמים <math>2m + 1</math> הם 1. עם <math>x = q^8</math> מקבלים <math>\Delta \equiv \sum_mq^{1 + 4m(m+1)} = \sum_mq^{(2m+1)^2}</math>. <math>\blacksquare</math>
+'''הוכחה.''' מודולו 2, <math>(1 - q^n)^{24} = \left((1 - q^n)^8\right)^3 \equiv (1 - q^{8n})^3</math>, כי העלאה בריבוע היא הומומורפיזם מודולו 2. לכן <math>\Delta \equiv q\prod(1 - q^{8n})^3</math>. לפי זהות יעקובי לחזקה השלישית של המכפלה (מקרה פרטי של המכפלה המשולשת של יעקובי), <math>\prod(1 - x^n)^3 = \sum_{m\ge0}(-1)^m(2m + 1)x^{m(m+1)/2}</math>, ומודולו 2 כל המקדמים <math>2m + 1</math> הם 1. עם <math>x = q^8</math> מקבלים <math>\Delta \equiv \sum_mq^{1 + 4m(m+1)} = \sum_mq^{(2m+1)^2}</math>. <math>\blacksquare</math>
 
 בדקנו את הקונגרואנציה ישירות מול <math>\tau(n)</math> לכל <math>n \le 2000</math>: למשל <math>\tau(9) = -113643</math> אי-זוגי, ו-<math>\tau(2) = -24</math>, <math>\tau(3) = 252</math>, <math>\tau(5) = 4830</math> זוגיים.
 
@@ -44,7 +44,7 @@
 |}
 למשל <math>T_3(\Delta) = 0</math>: המקדם של <math>q^n</math> ב-<math>T_3\Delta</math> הוא <math>c(3n) + c(n/3)</math>, ו-<math>3n</math> הוא ריבוע אי-זוגי רק אם <math>3 \mid n</math> ו-<math>n/3</math> ריבוע אי-זוגי, ואז שני המחוברים שווים ל-1 ומתבטלים. בכל עמודה המעלה יורדת, ולכן:
 
-אופרטורי הקה מודולו 2 הם '''נילפוטנטיים''' על <math>\mathcal F</math>. על המרחב <math>\mathcal F(15)</math> (שנפרש על ידי <math>\Delta, \ldots, \Delta^{29}</math>), למשל, <math>T_3^4 = T_5^4 = 0</math>, <math>T_7^3 = 0</math> ו-<math>T_{17}^2 = 0</math>. את סדר הנילפוטנטיות המדויק מצאו [[ז'אן-פייר סר]] ו[[ז'אן-לואי ניקולא]] במאמר מ-2012.{{הערה|1=<span dir="ltr">J.-L. Nicolas, J.-P. Serre, Formes modulaires modulo 2: l'ordre de nilpotence des opérateurs de Hecke, Comptes Rendus Mathématique 350 (2012), pp. 343–348.</span>|כיווון=שמאל}}
+אופרטורי הקה מודולו 2 הם '''נילפוטנטיים''' על <math>\mathcal F</math>. על המרחב <math>\mathcal F(15)</math> (שנפרש על ידי <math>\Delta, \ldots, \Delta^{29}</math>), למשל, <math>T_3^4 = T_5^4 = 0</math>, <math>T_7^3 = 0</math> ו-<math>T_{17}^2 = 0</math>. את סדר הנילפוטנטיות המדויק מצאו [[ז'אן-פייר סר]] וז'אן-לואי ניקולא במאמר מ-2012.{{הערה|1=<span dir="ltr">J.-L. Nicolas, J.-P. Serre, Formes modulaires modulo 2: l'ordre de nilpotence des opérateurs de Hecke, Comptes Rendus Mathématique 350 (2012), pp. 343–348.</span>|כיווון=שמאל}}
 
 == אלגברת הקה מודולו 2 ==
 אפשר לצמצם מודולו 2 גם את [[אלגברת הקה]]. היא מוגדרת כאלגברה מעל <math>\mathbb F_2</math> שנוצרת על ידי אופרטורי הקה מודולו 2.
@@ -58,7 +58,7 @@
 ומגדירים את <math>A</math> כ[[גבול הפוך|הגבול ההפוך]] <math>A = \varprojlim_nA(n)</math>. זו אלגברה מקומית שלמה; איבריה הם טורים אינסופיים (מתכנסים) במכפלות של אופרטורי הקה.
 
 התכונה העיקרית של <math>A</math> היא שהיא '''אלגברת טורי חזקות בשני משתנים''', <math>T_3</math> ו-<math>T_5</math>:{{הערה|שם=NS2}}
-:<math>A = \mathbb F_2[[T_3, T_5]].</math>
+:<math>A = \mathbb F_2T_3, T_5.</math>
 לכן לכל ראשוני <math>p</math> יש מקדמים <math>a_{ij}(p) \in \mathbb F_2</math> כך ש-
 :<math>T_p = \sum_{i+j\ge1}a_{ij}(p)T_3^iT_5^j.</math>
 האיבר המוביל נקבע על ידי <math>p \bmod 8</math>. חישבנו את הפיתוח (מודולו איברים שמתאפסים על <math>\mathcal F(15)</math>) לכמה ראשוניים:
@@ -78,7 +78,7 @@
 המקרה <math>p = 31</math> מראה שהאיבר המוביל אינו נקבע רק לפי <math>p \bmod 8</math>: ל-7 ול-23 יש איבר מוביל <math>T_3T_5</math>, ול-31 (שגם הוא <math>\equiv 7 \pmod 8</math>) האיבר <math>T_3T_5</math> נעלם. ניקולא וסר הגדירו לכל ראשוני <math>p</math> "קוד" – זוג מספרים שלמים – שקובע את האיבר המוביל של <math>T_p</math>.
 
 == ראו גם ==
-* [[פונקציית טאו של רמנוג'אן]]
+* פונקציית טאו של רמנוג'אן
 * [[אלגברת הקה]]
 * [[אידיאל אייזנשטיין]]
 

@@ -1,6 +1,6 @@
-ב[[מתמטיקה]], '''פונקציית למבדא המודולרית''' <math>\lambda(\tau)</math>{{הערה|1=<math>\lambda(\tau)</math> אינה פונקציה מודולרית ביחס ל-<math>\mathrm{SL}_2(\mathbb Z)</math> כולה (היא אינה אינווריאנטית תחת <math>\tau \mapsto \tau + 1</math>), אבל כל פונקציה מודולרית היא [[פונקציה רציונלית]] של <math>\lambda(\tau)</math>, כי [[אינווריאנט j]] הוא כזה. יש מחברים שמשתמשים בהגדרה אחרת, לא שקולה, של "פונקציות מודולריות".|כיווון=שמאל}} היא [[פונקציה הולומורפית]] בעלת סימטריה רבה על [[חצי המישור העליון]] המרוכב. היא אינווריאנטית תחת הפעולה ה[[העתקת מביוס|לינארית-שבורה]] של [[תת-חבורת קונגרואנציה|תת-חבורת הקונגרואנציה]] <math>\Gamma(2)</math> של <math>\mathrm{SL}_2(\mathbb Z)</math>, והיא יוצרת את [[שדה פונקציות|שדה הפונקציות]] של המנה המתאימה; כלומר, היא '''האופטמודול''' של [[עקום מודולרי|העקום המודולרי]] <math>X(2)</math>. בכל נקודה <math>\tau</math> אפשר לתאר את ערכה כ[[יחס כפול]] של נקודות ההסתעפות של הכיסוי הכפול המסועף של [[ישר פרויקטיבי|הישר הפרויקטיבי]] על ידי ה[[עקום אליפטי]] <math>\mathbb C/\langle 1, \tau\rangle</math>, כאשר ההעתקה היא המנה ביחס לאינוולוציה <math>[-1]</math>.
+ב[[מתמטיקה]], '''פונקציית למבדא המודולרית''' <math>\lambda(\tau)</math>{{הערה|1=<math>\lambda(\tau)</math> אינה פונקציה מודולרית ביחס ל-<math>\mathrm{SL}_2(\mathbb Z)</math> כולה (היא אינה אינווריאנטית תחת <math>\tau \mapsto \tau + 1</math>), אבל כל פונקציה מודולרית היא [[פונקציה רציונלית]] של <math>\lambda(\tau)</math>, כי [[אינווריאנט j]] הוא כזה. יש מחברים שמשתמשים בהגדרה אחרת, לא שקולה, של "פונקציות מודולריות".|כיווון=שמאל}} היא [[פונקציה הולומורפית]] בעלת סימטריה רבה על [[חצי המישור העליון]] המרוכב. היא אינווריאנטית תחת הפעולה ה[[העתקת מביוס|לינארית-שבורה]] של [[תת-חבורת קונגרואנציה|תת-חבורת הקונגרואנציה]] <math>\Gamma(2)</math> של <math>\mathrm{SL}_2(\mathbb Z)</math>, והיא יוצרת את [[שדה פונקציות|שדה הפונקציות]] של המנה המתאימה; כלומר, היא '''האופטמודול''' של [[עקום מודולרי|העקום המודולרי]] <math>X(2)</math>. בכל נקודה <math>\tau</math> אפשר לתאר את ערכה כ[[יחס כפול]] של נקודות ההסתעפות של הכיסוי הכפול המסועף של הישר הפרויקטיבי על ידי ה[[עקום אליפטי]] <math>\mathbb C/\langle 1, \tau\rangle</math>, כאשר ההעתקה היא המנה ביחס לאינוולוציה <math>[-1]</math>.
 
-פיתוח ה-<math>q</math>, עם <math>q = e^{\pi i\tau}</math> ה[[נום (מתמטיקה)|נום]], הוא
+פיתוח ה-<math>q</math>, עם <math>q = e^{\pi i\tau}</math> הנום, הוא
 :<math>\lambda(\tau) = 16q - 128q^2 + 704q^3 - 3072q^4 + 11488q^5 - 38400q^6 + \cdots</math>
 (סדרה A115977 ב-[[OEIS]]). אם מסמטרים את פונקציית למבדא תחת הפעולה הקנונית של ה[[החבורה הסימטרית|חבורה הסימטרית]] <math>S_3</math> על <math>X(2)</math>, ומנרמלים בצורה מתאימה, מתקבלת פונקציה על חצי המישור העליון שאינווריאנטית תחת כל החבורה המודולרית <math>\mathrm{SL}_2(\mathbb Z)</math>, ולמעשה זו [[אינווריאנט j|פונקציית <math>j</math>]] המודולרית של קליין.
 
@@ -14,7 +14,7 @@
 החבורה <math>\mathrm{SL}_2(\mathbb Z)/\Gamma(2) \cong \mathrm{SL}_2(\mathbb F_2) \cong S_3</math> פועלת על ששת הערכים האלה בדיוק כמו <math>S_3</math> על סידורי שלוש נקודות ההסתעפות.
 
 == קשר לפונקציות אחרות ==
-<math>\lambda</math> היא ה[[ריבוע (אלגברה)|ריבוע]] של המודולוס האליפטי,{{הערה|שם=Ch}} כלומר <math>\lambda(\tau) = k^2(\tau)</math>. בעזרת [[פונקציית אטא של דדקינד]] <math>\eta(\tau)</math> ו[[פונקציית תטא|פונקציות התטא]]:{{הערה|שם=Ch}}
+<math>\lambda</math> היא הריבוע של המודולוס האליפטי,{{הערה|שם=Ch}} כלומר <math>\lambda(\tau) = k^2(\tau)</math>. בעזרת [[פונקציית אטא של דדקינד]] <math>\eta(\tau)</math> ו[[פונקציית תטא|פונקציות התטא]]:{{הערה|שם=Ch}}
 :<math>\lambda(\tau) = \left(\frac{\sqrt2\,\eta\left(\frac\tau2\right)\eta^2(2\tau)}{\eta^3(\tau)}\right)^8 = \frac{16}{\left(\frac{\eta(\tau/2)}{\eta(2\tau)}\right)^8 + 16} = \frac{\theta_2^4(\tau)}{\theta_3^4(\tau)},</math>
 וכן
 :<math>\frac1{\lambda(\tau)^{1/4}} - \lambda(\tau)^{1/4} = \frac12\left(\frac{\eta\left(\frac\tau4\right)}{\eta(\tau)}\right)^4 = 2\,\frac{\theta_4^2\left(\frac\tau2\right)}{\theta_2^2\left(\frac\tau2\right)},</math>
@@ -29,14 +29,14 @@
 
 הקשר ל[[אינווריאנט j]] הוא{{הערה|שם=Ch}}{{הערה|1=<span dir="ltr">R. A. Rankin, Modular Forms and Functions, Cambridge University Press, 1977, pp. 226–228.</span>|כיווון=שמאל}}
 :<math>j(\tau) = \frac{256\bigl(1 - \lambda(1 - \lambda)\bigr)^3}{\bigl(\lambda(1 - \lambda)\bigr)^2} = \frac{256(1 - \lambda + \lambda^2)^3}{\lambda^2(1 - \lambda)^2},</math>
-וזה אינווריאנט <math>j</math> של העקום האליפטי ב[[צורת לז'נדר]] <math>y^2 = x(x - 1)(x - \lambda)</math>. למשל, <math>\lambda(i) = \tfrac12</math> נותן <math>j(i) = 256\cdot(3/4)^3/(1/16) = 1728</math>.
+וזה אינווריאנט <math>j</math> של העקום האליפטי בצורת לז'נדר <math>y^2 = x(x - 1)(x - \lambda)</math>. למשל, <math>\lambda(i) = \tfrac12</math> נותן <math>j(i) = 256\cdot(3/4)^3/(1/16) = 1728</math>.
 
 בהינתן <math>m \in \mathbb C\setminus\{0, 1\}</math>, יהי
 :<math>\tau = i\frac{K\{1 - m\}}{K\{m\}},</math>
 כאשר <math>K</math> הוא [[אינטגרל אליפטי#אינטגרל אליפטי שלם מהסוג הראשון|האינטגרל האליפטי השלם מהסוג הראשון]] עם פרמטר <math>m = k^2</math>. אז <math>\lambda(\tau) = m</math>. (בדקנו זאת בחישוב מספרי עבור <math>m = 0.3</math>.)
 
 == משוואות מודולריות ==
-'''המשוואה המודולרית ממעלה <math>p</math>''' (כאשר <math>p</math> [[מספר ראשוני]]) היא [[משוואה אלגברית]] ב-<math>\lambda(p\tau)</math> וב-<math>\lambda(\tau)</math>. אם <math>\lambda(p\tau) = u^8</math> ו-<math>\lambda(\tau) = v^8</math>, המשוואות המודולריות ממעלות <math>p = 2, 3, 5, 7</math> הן, בהתאמה,{{הערה|שם=BB|1=<span dir="ltr">J. M. Borwein, P. B. Borwein, Pi and the AGM: A Study in Analytic Number Theory and Computational Complexity, Wiley-Interscience, 1987, pp. 103–109, 134, 152.</span>|כיווון=שמאל}}
+'''המשוואה המודולרית ממעלה <math>p</math>''' (כאשר <math>p</math> [[מספר ראשוני]]) היא משוואה אלגברית ב-<math>\lambda(p\tau)</math> וב-<math>\lambda(\tau)</math>. אם <math>\lambda(p\tau) = u^8</math> ו-<math>\lambda(\tau) = v^8</math>, המשוואות המודולריות ממעלות <math>p = 2, 3, 5, 7</math> הן, בהתאמה,{{הערה|שם=BB|1=<span dir="ltr">J. M. Borwein, P. B. Borwein, Pi and the AGM: A Study in Analytic Number Theory and Computational Complexity, Wiley-Interscience, 1987, pp. 103–109, 134, 152.</span>|כיווון=שמאל}}
 :<math>\begin{align}
 &(1 + u^4)^2v^8 - 4u^4 = 0, \\
 &u^4 - v^4 + 2uv(1 - u^2v^2) = 0, \\
@@ -47,9 +47,9 @@
 :<math>v = \prod_{k=1}^\infty\tanh\frac{(k - 1/2)\pi i}\tau = \sqrt2e^{\pi i\tau/8}\frac{\sum_{k\in\mathbb Z}e^{(2k^2 + k)\pi i\tau}}{\sum_{k\in\mathbb Z}e^{k^2\pi i\tau}} = \cfrac{\sqrt2e^{\pi i\tau/8}}{1 + \cfrac{e^{\pi i\tau}}{1 + e^{\pi i\tau} + \cfrac{e^{2\pi i\tau}}{1 + e^{2\pi i\tau} + \cfrac{e^{3\pi i\tau}}{1 + e^{3\pi i\tau} + \ddots}}}}</math>
 (בדקנו את ארבע המשוואות המודולריות ואת שלושת הביטויים ל-<math>v</math> בחישוב מספרי, עבור <math>\tau = 1.1i</math>.)
 
-כיוון ש-<math>\lambda(i) = 1/2</math>, אפשר להשתמש במשוואות המודולריות כדי לקבל [[מספר אלגברי|ערכים אלגבריים]] של <math>\lambda(pi)</math> לכל ראשוני <math>p</math>. (לכל [[חזקת ראשוני]] אפשר לחזור על המשוואה המודולרית ממעלה <math>p</math>, ולכן התהליך נותן ערכים אלגבריים של <math>\lambda(ni)</math> לכל <math>n</math> טבעי.) למשל, עבור <math>p = 2</math>: <math>v^8 = \tfrac12</math> והמשוואה <math>(1 + u^4)^2 = 8u^4</math> נותנת <math>u^4 = 3 - 2\sqrt2 = (\sqrt2 - 1)^2</math>, ולכן <math>\lambda(2i) = u^8 = (\sqrt2 - 1)^4 \approx 0.02944</math>. הערכים האלגבריים של <math>\lambda(ni)</math> נתונים גם על ידי{{הערה|שם=Jac|1=<span dir="ltr">C. G. J. Jacobi, Fundamenta nova theoriae functionum ellipticarum, 1829, p. 42.</span>|כיווון=שמאל}}
+כיוון ש-<math>\lambda(i) = 1/2</math>, אפשר להשתמש במשוואות המודולריות כדי לקבל [[מספר אלגברי|ערכים אלגבריים]] של <math>\lambda(pi)</math> לכל ראשוני <math>p</math>. (לכל חזקת ראשוני אפשר לחזור על המשוואה המודולרית ממעלה <math>p</math>, ולכן התהליך נותן ערכים אלגבריים של <math>\lambda(ni)</math> לכל <math>n</math> טבעי.) למשל, עבור <math>p = 2</math>: <math>v^8 = \tfrac12</math> והמשוואה <math>(1 + u^4)^2 = 8u^4</math> נותנת <math>u^4 = 3 - 2\sqrt2 = (\sqrt2 - 1)^2</math>, ולכן <math>\lambda(2i) = u^8 = (\sqrt2 - 1)^4 \approx 0.02944</math>. הערכים האלגבריים של <math>\lambda(ni)</math> נתונים גם על ידי{{הערה|שם=Jac|1=<span dir="ltr">C. G. J. Jacobi, Fundamenta nova theoriae functionum ellipticarum, 1829, p. 42.</span>|כיווון=שמאל}}
 :<math>\lambda(ni) = \prod_{k=1}^{n/2}\operatorname{sl}^8\frac{(2k - 1)\varpi}{2n} \quad (n \text{ זוגי}), \qquad \lambda(ni) = \frac1{2^n}\prod_{k=1}^{n-1}\left(1 - \operatorname{sl}^2\frac{k\varpi}n\right)^2 \quad (n \text{ אי-זוגי}),</math>
-כאשר <math>\operatorname{sl}</math> הוא [[הסינוס הלמניסקטי]] ו-<math>\varpi \approx 2.62206</math> הוא [[קבוע הלמניסקטה]] (ו-<math>\operatorname{sl}(a\varpi)</math> אלגברי לכל <math>a</math> רציונלי). (בדקנו את שתי הנוסחאות עבור <math>n = 2, \dots, 7</math>.)
+כאשר <math>\operatorname{sl}</math> הוא הסינוס הלמניסקטי ו-<math>\varpi \approx 2.62206</math> הוא קבוע הלמניסקטה (ו-<math>\operatorname{sl}(a\varpi)</math> אלגברי לכל <math>a</math> רציונלי). (בדקנו את שתי הנוסחאות עבור <math>n = 2, \dots, 7</math>.)
 
 == למבדא-כוכב ==
 === הגדרה וחישוב ===
@@ -67,7 +67,7 @@
 
 הביטוי הבא נכון לכל <math>n \in \mathbb N</math>:
 :<math>\sqrt n = \sum_{a=1}^n\operatorname{dn}\left[\frac{2a}nK\left[\lambda^*\left(\frac1n\right)\right];\lambda^*\left(\frac1n\right)\right],</math>
-כאשר <math>\operatorname{dn}</math> היא [[הפונקציות האליפטיות של יעקובי|פונקציית יעקובי]] delta amplitudinis עם מודולוס <math>k</math>.
+כאשר <math>\operatorname{dn}</math> היא פונקציית יעקובי delta amplitudinis עם מודולוס <math>k</math>.
 
 כשיודעים ערך אחד של <math>\lambda^*</math>, אפשר להשתמש בנוסחה הבאה כדי לחשב ערכים קשורים:{{הערה|שם=Jac}}
 :<math>\lambda^*(n^2x) = \lambda^*(x)^n\prod_{a=1}^n\operatorname{sn}\left\{\frac{2a - 1}nK[\lambda^*(x)];\lambda^*(x)\right\}^2,</math>
@@ -162,25 +162,25 @@
 :<math>g_{58} = \sqrt{\frac{5 + \sqrt{29}}2}, \qquad g_{190} = \sqrt{\left(\sqrt5 + 2\right)\left(\sqrt{10} + 3\right)}.</math>
 בין הזהויות שמקיימים אינווריאנטי המחלקה:{{הערה|1=<span dir="ltr">P. Eymard, J.-P. Lafon, Autour du nombre π, Hermann, 1999, p. 240.</span>|כיווון=שמאל}}
 :<math>G_n = G_{1/n}, \qquad g_n = \frac1{g_{4/n}}, \qquad g_{4n} = 2^{1/4}g_nG_n.</math>
-אינווריאנטי המחלקה קשורים הדוק ל[[פונקציית ובר המודולרית|פונקציות ובר המודולריות]] <math>\mathfrak f</math> ו-<math>\mathfrak f_1</math>. אלה הקשרים בין למבדא-כוכב לאינווריאנטי המחלקה:
+אינווריאנטי המחלקה קשורים הדוק לפונקציות ובר המודולריות <math>\mathfrak f</math> ו-<math>\mathfrak f_1</math>. אלה הקשרים בין למבדא-כוכב לאינווריאנטי המחלקה:
 :<math>G_n = \sin\{2\arcsin[\lambda^*(n)]\}^{-1/12} = 1\Big/\left[\sqrt[12]{2\lambda^*(n)}\sqrt[24]{1 - \lambda^*(n)^2}\right],</math>
 :<math>g_n = \tan\{2\arctan[\lambda^*(n)]\}^{-1/12} = \sqrt[12]{[1 - \lambda^*(n)^2]/[2\lambda^*(n)]},</math>
 :<math>\lambda^*(n) = \tan\left\{\frac12\arctan[g_n^{-12}]\right\} = \sqrt{g_n^{24} + 1} - g_n^{12}.</math>
 
 == הופעות נוספות ==
 === משפט פיקאר הקטן ===
-פונקציית למבדא שימשה בהוכחה המקורית של [[משפט פיקאר הקטן]], שלפיו [[פונקציה שלמה]] לא קבועה על [[המישור המרוכב]] אינה יכולה להחמיץ יותר מערך אחד. פיקאר הוכיח את המשפט ב-1879.{{הערה|שם=Ch}} נניח, בדרך השלילה, ש-<math>f</math> שלמה ואינה מקבלת את הערכים 0 ו-1. כיוון ש-<math>\lambda</math> הולומורפית, יש לה הופכית הולומורפית מקומית <math>\omega</math> שמוגדרת מחוץ ל-<math>0, 1, \infty</math>. נתבונן בפונקציה <math>z \mapsto \omega(f(z))</math>. לפי [[משפט המונודרומיה]] היא הולומורפית (ומוגדרת היטב, כי <math>\mathbb C</math> פשוט קשר), ומעתיקה את המישור המרוכב לחצי המישור העליון. מכאן קל לבנות פונקציה הולומורפית מ-<math>\mathbb C</math> לעיגול היחידה (למשל על ידי הרכבה עם <math>w \mapsto \frac{w - i}{w + i}</math>), שלפי [[משפט ליוביל (אנליזה מרוכבת)|משפט ליוביל]] חייבת להיות קבועה; לכן גם <math>f</math> קבועה.{{הערה|שם=Ch}}
+פונקציית למבדא שימשה בהוכחה המקורית של משפט פיקאר הקטן, שלפיו [[פונקציה שלמה]] לא קבועה על [[המישור המרוכב]] אינה יכולה להחמיץ יותר מערך אחד. פיקאר הוכיח את המשפט ב-1879.{{הערה|שם=Ch}} נניח, בדרך השלילה, ש-<math>f</math> שלמה ואינה מקבלת את הערכים 0 ו-1. כיוון ש-<math>\lambda</math> הולומורפית, יש לה הופכית הולומורפית מקומית <math>\omega</math> שמוגדרת מחוץ ל-<math>0, 1, \infty</math>. נתבונן בפונקציה <math>z \mapsto \omega(f(z))</math>. לפי משפט המונודרומיה היא הולומורפית (ומוגדרת היטב, כי <math>\mathbb C</math> פשוט קשר), ומעתיקה את המישור המרוכב לחצי המישור העליון. מכאן קל לבנות פונקציה הולומורפית מ-<math>\mathbb C</math> לעיגול היחידה (למשל על ידי הרכבה עם <math>w \mapsto \frac{w - i}{w + i}</math>), שלפי [[משפט ליוביל (אנליזה מרוכבת)|משפט ליוביל]] חייבת להיות קבועה; לכן גם <math>f</math> קבועה.{{הערה|שם=Ch}}
 
 === ירח ===
 הפונקציה <math>\tau \mapsto 16/\lambda(2\tau) - 8</math> היא [[עקום מודולרי#גנוס אפס|האופטמודול]] המנורמל של החבורה <math>\Gamma_0(4)</math>, ופיתוח ה-<math>q</math> שלה
 :<math>q^{-1} + 20q - 62q^3 + 216q^5 - 641q^7 + \cdots</math>
-(סדרה A007248 ב-OEIS), עם <math>q = e^{2\pi i\tau}</math>, הוא הקרקטר המדורג של כל איבר במחלקת הצמידות 4C של [[חבורת המפלצת]] כשהיא פועלת על [[אלגברת הקודקודים של המפלצת]]. (את המקדמים שכאן בדקנו בחישוב מספרי.)
+(סדרה A007248 ב-OEIS), עם <math>q = e^{2\pi i\tau}</math>, הוא הקרקטר המדורג של כל איבר במחלקת הצמידות 4C של חבורת המפלצת כשהיא פועלת על אלגברת הקודקודים של המפלצת. (את המקדמים שכאן בדקנו בחישוב מספרי.)
 
 == ראו גם ==
 * [[אינווריאנט j]]
 * [[עקום מודולרי]]
-* [[פונקציית ובר המודולרית]]
-* [[הפונקציות האליפטיות של יעקובי]]
+* פונקציית ובר המודולרית
+* הפונקציות האליפטיות של יעקובי
 
 == לקריאה נוספת ==
 <div dir="ltr">
