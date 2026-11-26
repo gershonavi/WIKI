@@ -430,4 +430,4 @@ Additive number theory:
 - [x] Riemann–Siegel theta function (קיים: פונקציית התטא של רימן-זיגל)
 - [x] Gaussian ensemble
 - [x] Dyson Brownian motion
-- [ ] Hadamard factorization theorem
+- [x] Hadamard factorization theorem
