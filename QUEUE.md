@@ -301,7 +301,7 @@ Additive number theory:
 - [x] Furstenberg's proof of the infinitude of primes
 - [x] Backhouse's constant
 - [x] Gaussian moat
-- [ ] Sierpiński number
+- [x] Sierpiński number
 - [ ] Prime k-tuple
 - [ ] Primes in arithmetic progression
 - [ ] Reciprocals of primes
