@@ -332,7 +332,7 @@ Additive number theory:
 - [x] Giuga number
 - [x] Blum integer
 - [x] Achilles number
-- [ ] Sphenic number
+- [x] Sphenic number
 - [ ] Nontotient
 - [ ] Highly totient number
 - [ ] Perfect totient number
