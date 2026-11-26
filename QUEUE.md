@@ -212,7 +212,7 @@ Additive number theory:
 - [x] Siegel's theorem on integral points
 - [x] Ramanujan–Nagell equation
 - [x] Markov number
-- [ ] Coin problem
+- [x] Coin problem
 - [ ] Chakravala method
 - [ ] Vieta jumping
 - [ ] Tree of primitive Pythagorean triples
