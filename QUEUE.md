@@ -196,7 +196,7 @@ Additive number theory:
 - [x] Jacobi form
 - [x] Modular equation
 - [x] Weber modular function
-- [ ] Eisenstein ideal
+- [x] Eisenstein ideal
 - [ ] Manin–Drinfeld theorem
 - [ ] Fricke involution
 - [ ] Diamond operator
