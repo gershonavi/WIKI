@@ -318,7 +318,7 @@ Additive number theory:
 - [x] Square-free integer
 - [x] Practical number
 - [x] Prime power
-- [ ] Perfect power
+- [x] Perfect power
 - [ ] Colossally abundant number
 - [ ] Superabundant number
 - [ ] Superior highly composite number
