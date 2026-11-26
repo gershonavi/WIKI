@@ -265,7 +265,7 @@ Additive number theory:
 
 - [x] Gauss composition law
 - [x] Bhargava cube
-- [ ] Genus of a quadratic form
+- [x] Genus of a quadratic form
 - [ ] Definite quadratic form
 - [ ] Isotropic quadratic form
 - [ ] Hasse invariant of a quadratic form
