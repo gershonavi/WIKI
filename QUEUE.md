@@ -281,7 +281,7 @@ Additive number theory:
 - [x] Ramanujan's ternary quadratic form
 - [x] Hermite reduction
 - [x] Hilbert's eleventh problem
-- [ ] Hurwitz problem
+- [x] Hurwitz problem
 
 ### תורת המספרים האנליטית – השלמות (2)
 
