@@ -258,7 +258,7 @@ Additive number theory:
 - [x] Four exponentials conjecture
 - [x] Period (number theory)
 - [x] Schneider–Lang theorem
-- [ ] Analytic subgroup theorem
+- [x] Analytic subgroup theorem
 - [ ] Auxiliary function
 
 ### תבניות ריבועיות (19)
